@@ -42,3 +42,4 @@ Or Telephone:
 * 2018-03-09 - no meeting
 * [2018-03-16 SAFE Meeting](https://docs.google.com/document/d/1nYN3cy7jrKQbEziT43447w8ZValOuioxEKYE0D4vkPU/edit)
 * [2018-03-23 SAFE Meeting](https://docs.google.com/document/d/1H3VOI9-GqRAj_tdPL9sECF1c8t4x_sF1G08PqLzlUWM/edit) - NIST Big Data public working group - security and privacy subgroup with Mark Underwood
+* [2018-03-30 SAFE Meeting](https://docs.google.com/document/d/1KwqAlBpb8TAex4_ABFmxpPZq9-MPvK3kraLUW9ws1EE/edit#) - SAFE Personas WhitePaper
