@@ -10,7 +10,7 @@ Working Group Proposal: Safe Access for Everyone (SAFE)
 * Dan Shaw ([@dshaw](https://github.com/dshaw)) [chair]
 * Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), Google [chair]
 * Jeyappragash JJ ([@pragashj](https://github.com/pragashj)) [technical lead]
-* Kamil Pawlowski ([@kbpawlowski](https://github.com/kbpawlowski)) [for review]
+* Kamil Pawlowski ([@kbpawlowski](https://github.com/kbpawlowski))
 * PLEASE ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
