@@ -11,6 +11,7 @@ Working Group Proposal: Safe Access for Everyone (SAFE)
 * Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), Google [chair]
 * Jeyappragash JJ ([@pragashj](https://github.com/pragashj)) [technical lead]
 * Geri Jennings ([@izgeri](https://github.com/izgeri)), CyberArk
+* Howard Huang ([@hannibalhuang](https://github.com/hannibalhuang)) [Kubernetes Policy WG co-chair]
 * PLEASE ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
