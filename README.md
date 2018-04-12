@@ -16,6 +16,7 @@ Working Group Proposal: Safe Access for Everyone (SAFE)
 * Howard Huang ([@hannibalhuang](https://github.com/hannibalhuang)) [Kubernetes Policy WG co-chair]
 * Jason Melo ([@jasonmelo](https://github.com/jasonmelo)), nearForm
 * Torin Sandall ([@tsandall](https://github.com/tsandall)), OPA
+* Sree Tummidi ([@sreetummidi](https://github.com/sreetummidi)), [Pivotal] [Cloud Foundry Project Lead]
 * PLEASE ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
