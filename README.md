@@ -17,6 +17,7 @@ Working Group Proposal: Safe Access for Everyone (SAFE)
 * Jason Melo ([@jasonmelo](https://github.com/jasonmelo)), nearForm
 * Torin Sandall ([@tsandall](https://github.com/tsandall)), OPA
 * Christian Kemper ([@ckemper67](https://github.com/ckemper67)), Google
+* Ray Colline ([@raycolline](https://github.com/rcolline)), Google
 * PLEASE ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
