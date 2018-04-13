@@ -34,11 +34,11 @@ Enterprise Operator
 
 * As an enterprise operator, I need a way to nominate per-policy-type operators (e.g. network and quota operators) both at the corporate level but also at lower levels.
 
-* As an enterprise operator, I can \ |LINK7|\  through growth, mergers and divestitures.
+* As an enterprise operator, I can [evolve my organization structure](https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.58j9tsccjq45)  through growth, mergers and divestitures.
 
-* As an enterprise operator, I can \ |LINK8|\  my organizations’ cloud resources.
+* As an enterprise operator, I can <a href="https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.mhh6qgyk76tv" target="_blank">delete</a>  my organizations’ cloud resources.
 
-* As an enterprise operator, I can \ |LINK9|\  within the organization or a compartment within an organization that I administer.
+* As an enterprise operator, I can <a href="https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.tb39rmtqjah2" target="_blank">act autonomously</a>  within the organization or a compartment within an organization that I administer.
 
 * As an enterprise operator, I can understand the effect of changes to policy that I am making
 
@@ -90,7 +90,7 @@ End User
 Compliance Officer /Auditor
 ===============================
 
-* As a compliance officer, I can \ |LINK10|\  all accesses and understand all policy grants for my organizations’ cloud resources - including all accesses of other administrators.
+* As a compliance officer, I can <a href="https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.norkt12d88ma" target="_blank">audit</a>  all accesses and understand all policy grants for my organizations’ cloud resources - including all accesses of other administrators.
 
 * As a compliance officer, I can certify access to resources on a periodic basis.
 
@@ -104,21 +104,21 @@ Compliance Officer /Auditor
 Security Administrator
 ==========================
 
-* As a security administrator, I can \ |LINK11|\  my organizations’ cloud resources.
+* As a security administrator, I can <a href="https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.ems5pk2exnlb" target="_blank">centrally administer</a>  my organizations’ cloud resources.
 
-* As a security administrator, I can \ |LINK12|\  all accesses and understand all policy grants for my organizations’ cloud resources
+* As a security administrator, I can <a href="https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.norkt12d88ma" target="_blank">audit</a> all accesses and understand all policy grants for my organizations’ cloud resources
 
-* As a security administrator, I can \ |LINK13|\  my organizations’ cloud resources.
+* As a security administrator, I can <a href="https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.v7s39hyjpvjh" target="_blank">compartmentalize</a>  my organizations’ cloud resources.
 
-* As a security administrator, I can \ |LINK14|\  of a compartment of my organization’s cloud resources to another administrator.
+* As a security administrator, I can <a href="https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.cop8leqlt29" target="_blank">delegate administration</a>  of a compartment of my organization’s cloud resources to another administrator.
 
-* As a security administrator, I can \ |LINK15|\  within the organization or a compartment within an organization that I administer.
+* As a security administrator, I can <a href="https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.tb39rmtqjah2" target="_blank">act autonomously</a>  within the organization or a compartment within an organization that I administer.
 
-* As a security administrator, I can \ |LINK16|\  the behavior of users and resources within my organization.
+* As a security administrator, I can <a href="https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.iwrgo3lponp3" target="_blank">constrain</a>  the behavior of users and resources within my organization.
 
-* As a security administrator, I can \ |LINK17|\  to rules governing my organization’s cloud resources.
+* As a security administrator, I can <a href="https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.amocw7z631ri" target="_blank">make exceptions</a>  to rules governing my organization’s cloud resources.
 
-* As a security administrator, I can \ |LINK18|\  without compromising my ability to manage my organizations’ cloud resources.
+* As a security administrator, I can <a href="https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.7wavwjkp2pz2" target="_blank">exercise the above rights in hybrid and mutli-cloud deployments</a>  without compromising my ability to manage my organizations’ cloud resources.
 
 
 Third Party Security Product/System
