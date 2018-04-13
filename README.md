@@ -1,9 +1,9 @@
 # safe
-Working Group Proposal: Safe Access for Everyone (SAFE)
+Working Group Proposal: Secure Access for Everyone (SAFE)
 
 ## Draft Proposal
 
-[Safe Access for Everyone](https://docs.google.com/document/d/1Yt5IPtN5Mc-FrQDFGUhLpBRePmMAZUA83NbENb69oLs/edit)
+[Secure Access for Everyone (SAFE)](https://docs.google.com/document/d/1Yt5IPtN5Mc-FrQDFGUhLpBRePmMAZUA83NbENb69oLs/edit)
 
 ## Members
 
