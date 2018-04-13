@@ -27,7 +27,7 @@ Working Group Proposal: Safe Access for Everyone (SAFE)
 
 ## Meeting Time
 
-The Cloud Native Security Policy group meets every Friday at 10:30am PT (USA Pacific):
+The SAFE group meets every Friday at 11:00am PT (USA Pacific):
 
 Join: https://zoom.us/j/629934721
 
