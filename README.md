@@ -19,6 +19,7 @@ Working Group Proposal: Safe Access for Everyone (SAFE)
 * Sree Tummidi ([@sreetummidi](https://github.com/sreetummidi)), [Pivotal] [Cloud Foundry Project Lead]
 * Christian Kemper ([@ckemper67](https://github.com/ckemper67)), Google
 * Ray Colline ([@raycolline](https://github.com/rcolline)), Google
+* Doug Davis ([@duglin](https://github.com/duglin)), IBM
 * PLEASE ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
