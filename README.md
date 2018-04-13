@@ -53,3 +53,5 @@ Or Telephone:
 * [2018-03-23 SAFE Meeting](https://docs.google.com/document/d/1H3VOI9-GqRAj_tdPL9sECF1c8t4x_sF1G08PqLzlUWM/edit) - NIST Big Data public working group - security and privacy subgroup with Mark Underwood
 * [2018-03-30 SAFE Meeting](https://docs.google.com/document/d/1KwqAlBpb8TAex4_ABFmxpPZq9-MPvK3kraLUW9ws1EE/edit)
 * [2018-04-06 SAFE Meeting](https://docs.google.com/document/d/1a_a0dUTdSERgHiAnbUL0r2PNvbTe0SWHmYh7yFhTiFk/edit) - SAFE Personas WhitePaper
+* [2018-04-13 SAFE Meeting](https://docs.google.com/document/d/1SVPJzQrEpBixugI1Kjww90RxhaOovdNhWtWb3LsSjYU/edit) - Prep for the SAFE WG proposal presentation to the CNCF TOC on 4/17
+* [2018-04-20 SAFE Meeting](https://docs.google.com/document/d/1B7G0_V1i8DTX-JIzMquUzFJgJBzZN-NWkJDCi62LOh4/edit#) - CNCF TOC Proposal follow-up
