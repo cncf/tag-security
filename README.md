@@ -20,6 +20,7 @@ Working Group Proposal: Secure Access for Everyone (SAFE)
 * Christian Kemper ([@ckemper67](https://github.com/ckemper67)), Google
 * Ray Colline ([@raycolline](https://github.com/rcolline)), Google
 * Doug Davis ([@duglin](https://github.com/duglin)), IBM
+* Sabree Blackmon ([@heavypackets](https://github.com/heavypackets)), Scytale + SPIFFE
 * PLEASE ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
