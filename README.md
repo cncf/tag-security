@@ -21,6 +21,7 @@ Working Group Proposal: Secure Access for Everyone (SAFE)
 * Ray Colline ([@raycolline](https://github.com/rcolline)), Google
 * Doug Davis ([@duglin](https://github.com/duglin)), IBM
 * Sabree Blackmon ([@heavypackets](https://github.com/heavypackets)), Scytale + SPIFFE
+* Justin Cormack ([@justincormack](https://github.com/justincormack)), Docker
 * PLEASE ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
