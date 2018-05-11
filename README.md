@@ -60,3 +60,7 @@ Or Telephone:
 * [2018-04-13 SAFE Meeting](https://docs.google.com/document/d/1SVPJzQrEpBixugI1Kjww90RxhaOovdNhWtWb3LsSjYU/edit) - Prep for the SAFE WG proposal presentation to the CNCF TOC on 4/17
 * [2018-04-20 SAFE Meeting](https://docs.google.com/document/d/1B7G0_V1i8DTX-JIzMquUzFJgJBzZN-NWkJDCi62LOh4/edit) - CNCF TOC Proposal follow-up
 * [2018-04-27 SAFE Meeting](https://docs.google.com/document/d/1mtdBg6-8eGgBCfIFT56dDe_LVRCw5_tSeIAsRH_8KfM/edit)
+* KubeCon Europe 2018 Intro Session
+* KubeCon Europe 2018 Deep-dive Session
+* [2018-05-11 SAFE Meeting](https://docs.google.com/document/d/1U5SKjp4vvN_I1CEw-O0mf7yhjhLzpRnTsaCxQS3CdIQ/edit)
+* [2018-05-18 SAFE Meeting](https://docs.google.com/document/d/1xzJ29fTOJSioqrDuSkvBfsewV2lvgbr8olmDWb4kdPk/edit)
