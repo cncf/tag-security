@@ -64,3 +64,6 @@ Or Telephone:
 * KubeCon Europe 2018 Deep-dive Session
 * [2018-05-11 SAFE Meeting](https://docs.google.com/document/d/1U5SKjp4vvN_I1CEw-O0mf7yhjhLzpRnTsaCxQS3CdIQ/edit)
 * [2018-05-18 SAFE Meeting](https://docs.google.com/document/d/1xzJ29fTOJSioqrDuSkvBfsewV2lvgbr8olmDWb4kdPk/edit)
+* [2018-05-25 SAFE Meeting](https://docs.google.com/document/d/1LEXzz1PUaboqyIBg-1QBj-R0T1z6950fsetkBEW7b8g/edit)
+* 2018-06-01 - no meeting
+* [2018-06-08 SAFE Meeting](https://docs.google.com/document/d/10iJ3wA7uVI6JMyvIv9qXdxdLCyQeS-djYsTqL_JG3d0/edit)
