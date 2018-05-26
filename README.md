@@ -44,7 +44,12 @@ Or Telephone:
 
 ## In Person Meetings
 
-[@pragashj](https://github.com/pragashj) is working with [@cra](https://github.com/cra) to line up space for an in person meeting at [KubeConEU](https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2018/) May 2-4, 2018 in Copenhagen, Denmark.
+Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup (via the linked github issue):
+* KubeCon + CloudNativeCon, Shanghai, Nov 14-15, 2018 - [issue#28](https://github.com/cn-security/safe/issues/28) 
+* KubeCon + CloudNativeCon, North America, Dec 11-13, 2018 - [issue#29](https://github.com/cn-security/safe/issues/29)
+
+Past
+* [KubeConEU](https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2018/) May 2-4, 2018 in Copenhagen, Denmark ([notes](safe_kubecon.md))
 
 ## Meeting Minutes
 
