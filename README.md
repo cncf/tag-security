@@ -23,6 +23,7 @@ Working Group Proposal: Secure Access for Everyone (SAFE)
 * Sabree Blackmon ([@heavypackets](https://github.com/heavypackets)), Scytale + SPIFFE
 * Justin Cormack ([@justincormack](https://github.com/justincormack)), Docker
 * Liz Rice ([@lizrice](https://github.com/lizrice)), Aqua Security
+* Erik St. Martin ([@erikstmartin](https://github.com/erikstmartin)), Microsoft
 * PLEASE ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
