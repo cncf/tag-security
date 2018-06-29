@@ -18,7 +18,7 @@ Working Group Proposal: Secure Access for Everyone (SAFE)
 * Torin Sandall ([@tsandall](https://github.com/tsandall)), OPA
 * Sree Tummidi ([@sreetummidi](https://github.com/sreetummidi)), [Pivotal] [Cloud Foundry Project Lead]
 * Christian Kemper ([@ckemper67](https://github.com/ckemper67)), Google
-* Ray Colline ([@raycolline](https://github.com/rcolline)), Google
+* Ray Colline ([@rcolline](https://github.com/rcolline)), Google
 * Doug Davis ([@duglin](https://github.com/duglin)), IBM
 * Sabree Blackmon ([@heavypackets](https://github.com/heavypackets)), Scytale + SPIFFE
 * Justin Cormack ([@justincormack](https://github.com/justincormack)), Docker
