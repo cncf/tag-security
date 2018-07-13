@@ -74,3 +74,6 @@ Past
 * [2018-05-25 SAFE Meeting](https://docs.google.com/document/d/1LEXzz1PUaboqyIBg-1QBj-R0T1z6950fsetkBEW7b8g/edit)
 * 2018-06-01 - no meeting
 * [2018-06-08 SAFE Meeting](https://docs.google.com/document/d/10iJ3wA7uVI6JMyvIv9qXdxdLCyQeS-djYsTqL_JG3d0/edit)
+* [2018-06-15 SAFE Meeting](https://docs.google.com/document/d/1usB6Xw1GVjW--RkRw1RPypwvUP_E8trtzg9JTO1ZAkM/edit)
+* [2018-06-29 SAFE Meeting](https://docs.google.com/document/d/1fyBDIm82xtTYWhZu3gyLahltMdTOxl9aWfOfRxYHapo/edit)
+* [2018-07-13 SAFE Meeting](https://docs.google.com/document/d/1sniqXFFcP4vpX2bO6NeB31mzO1YOJrcQy2ryXATSHmk/edit)
