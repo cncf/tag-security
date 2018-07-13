@@ -24,6 +24,7 @@ Working Group Proposal: Secure Access for Everyone (SAFE)
 * Justin Cormack ([@justincormack](https://github.com/justincormack)), Docker
 * Liz Rice ([@lizrice](https://github.com/lizrice)), Aqua Security
 * Erik St. Martin ([@erikstmartin](https://github.com/erikstmartin)), Microsoft
+* Cheney Hester ([@quiqie](https://github.com/quiqie)), Fifth Third Bank
 * PLEASE ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
