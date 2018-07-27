@@ -15,6 +15,7 @@ Working Group Proposal: Safe Access for Everyone (SAFE)
 * Geri Jennings ([@izgeri](https://github.com/izgeri)), CyberArk
 * Howard Huang ([@hannibalhuang](https://github.com/hannibalhuang)) [Kubernetes Policy WG co-chair]
 * Jason Melo ([@jasonmelo](https://github.com/jasonmelo)), nearForm
+* TK Lala ([@tk2929](https://github.com/tk2929)), ZcureZ
 * PLEASE ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
