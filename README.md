@@ -25,6 +25,7 @@ Working Group Proposal: Secure Access for Everyone (SAFE)
 * Liz Rice ([@lizrice](https://github.com/lizrice)), Aqua Security
 * Erik St. Martin ([@erikstmartin](https://github.com/erikstmartin)), Microsoft
 * Cheney Hester ([@quiqie](https://github.com/quiqie)), Fifth Third Bank
+* Erica von Buelow ([@ericavonb](https://github.com/ericavonb)), Red Hat [Kubernetes Policy WG]
 * PLEASE ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
