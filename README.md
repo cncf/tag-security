@@ -80,3 +80,6 @@ Past
 * [2018-07-27 SAFE Meeting](https://docs.google.com/document/d/1DqqeTguBpalPj-y4nqY0uo8vYn_tU6DJzmbIdoyslhw/edit)
 * [2018-08-02 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit) - Working Session
 * [2018-08-03 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
+* [2018-08-09 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
+* [2018-08-10 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
+
