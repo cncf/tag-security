@@ -31,7 +31,10 @@ Working Group Proposal: Secure Access for Everyone (SAFE)
 
 ## Related Groups
 
+* [(Proposed) CNCF Policy Working Group](/policy-wg-merging.md) - Merged into SAFE WG
 * [Kubernetes Policy Working Group](https://github.com/kubernetes/community/tree/master/wg-policy)
+* [Kubernetes SIG-Auth](https://github.com/kubernetes/community/tree/master/sig-auth)
+* [NIST Big Data WG](https://bigdatawg.nist.gov/)
 
 ## Meeting Time
 
