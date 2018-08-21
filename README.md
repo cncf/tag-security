@@ -27,6 +27,7 @@ Working Group Proposal: Secure Access for Everyone (SAFE)
 * Cheney Hester ([@quiqie](https://github.com/quiqie)), Fifth Third Bank
 * Erica von Buelow ([@ericavonb](https://github.com/ericavonb)), Red Hat [Kubernetes Policy WG]
 * Mark Underwood ([@knowlengr](https://github.com/knowlengr))
+* Rae Wang ([@rae42](https://github.com/rae42)), Google
 * Rachel Myers([@rachelmyers](https://github.com/rachelmyers))
 * PLEASE ADD YOURSELF VIA PULL REQUEST
 
