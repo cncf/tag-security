@@ -28,7 +28,8 @@ Working Group Proposal: Secure Access for Everyone (SAFE)
 * Erica von Buelow ([@ericavonb](https://github.com/ericavonb)), Red Hat [Kubernetes Policy WG]
 * Mark Underwood ([@knowlengr](https://github.com/knowlengr))
 * Rae Wang ([@rae42](https://github.com/rae42)), Google
-* Rachel Myers([@rachelmyers](https://github.com/rachelmyers))
+* Rachel Myers ([@rachelmyers](https://github.com/rachelmyers))
+* Evan Gilman ([@evan2645](https://github.com/evan2645))
 * PLEASE ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
