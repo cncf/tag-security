@@ -29,6 +29,7 @@ Working Group Proposal: Secure Access for Everyone (SAFE)
 * Mark Underwood ([@knowlengr](https://github.com/knowlengr))
 * Rae Wang ([@rae42](https://github.com/rae42)), Google
 * Rachel Myers([@rachelmyers](https://github.com/rachelmyers))
+* Andrew Weiss ([@anweiss](https://github.com/anweiss)), Docker
 * TK Lala ([@tk2929](https://github.com/tk2929)), ZcureZ
 * PLEASE ADD YOURSELF VIA PULL REQUEST
 
