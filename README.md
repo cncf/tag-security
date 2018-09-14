@@ -103,3 +103,10 @@ Past
 * [2018-08-24 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
 * [2018-08-30 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
 * [2018-08-31 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
+* [2018-08-31 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
+* [2018-09-06 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit) - Working Session
+* [2018-09-07 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
+* [2018-09-14 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
+* [2018-09-20 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit) - Working Session
+* [2018-09-21 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
+* [2018-09-28 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
