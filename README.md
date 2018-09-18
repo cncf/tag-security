@@ -37,6 +37,7 @@ Secure Access for Everyone (SAFE) Working Group will explore secure access, poli
 * Rachel Myers([@rachelmyers](https://github.com/rachelmyers))
 * Andrew Weiss ([@anweiss](https://github.com/anweiss)), Docker
 * TK Lala ([@tk2929](https://github.com/tk2929)), ZcureZ
+* Hamza Ben Amara ([@Hamza2404](https://github.com/Hamza2404))
 * PLEASE ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
