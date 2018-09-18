@@ -37,6 +37,7 @@ Secure Access for Everyone (SAFE) Working Group will explore secure access, poli
 * Rachel Myers([@rachelmyers](https://github.com/rachelmyers))
 * Andrew Weiss ([@anweiss](https://github.com/anweiss)), Docker
 * TK Lala ([@tk2929](https://github.com/tk2929)), ZcureZ
+* Chase Pettet ([@chasemp](https://github.com/chasemp)), Wikimedia Foundation
 * Jia Xuan ([@xuanjia](https://github.com/xuanjia)), China Mobile
 * John Morello ([@morellonet](https://github.com/morellonet)), Twistlock
 * Alban Crequy ([@alban](https://github.com/alban)), Kinvolk
