@@ -17,5 +17,6 @@ name: SAFE
       - name: Jeyappragash JJ
         github: pragashj
         company:
+        term_began_at:
       tech_leads:
       emeritus_leads:
