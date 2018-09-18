@@ -17,7 +17,7 @@ Members.
 - Members of a role *SHOULD* remove any other members that have not communicated a leave of absence and either cannot be reached for more than 1 month or are not fulfilling their documented responsibilities for more than 1 month. This may be done through a [super-majority] vote of members, or if there are not enough *active* members to get a super-majority of votes cast, then removal may occur through a [super-majority] vote between Chairs and Technical Leads.
 - Membership disagreements may be escalated to the WG Chairs.  WG Chair membership disagreements may be escalated to the CNCF Steering Committee.
 - Members *MAY* decide to step down at anytime and propose a replacement.  
-- The group will use lazy consensus amongst other members with fallback on majority vote to accept proposal.  The candidate *SHOULD* be supported by a majority of SIG Members or Subproject Contributors (as applicable).
+- The group will use lazy consensus amongst other members with fallback on majority vote to accept proposal.  The candidate *SHOULD* be supported by a majority of WG Members.
 - Members *MAY* select additional members through a [super-majority] vote amongst members. This *SHOULD* be supported by a majority of WG Members.
 
 ### Role of Chairs
