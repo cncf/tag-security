@@ -37,7 +37,15 @@ Secure Access for Everyone (SAFE) Working Group will explore secure access, poli
 * Rachel Myers([@rachelmyers](https://github.com/rachelmyers))
 * Andrew Weiss ([@anweiss](https://github.com/anweiss)), Docker
 * TK Lala ([@tk2929](https://github.com/tk2929)), ZcureZ
-* Hamza Ben Amara ([@Hamza2404](https://github.com/Hamza2404))
+* Hamza Ben Amara ([@Hamza2404](https://github.com/Hamza2404)), National Injection Services
+* Andrew Martin ([@sublimino](https://github.com/sublimino)), ControlPlane
+* Karthik Gaekwad ([@iteration1](https://github.com/karthequian)), Oracle
+* Chase Pettet ([@chasemp](https://github.com/chasemp)), Wikimedia Foundation
+* Jia Xuan ([@xuanjia](https://github.com/xuanjia)), China Mobile
+* John Morello ([@morellonet](https://github.com/morellonet)), Twistlock
+* Alban Crequy ([@alban](https://github.com/alban)), Kinvolk
+* Michael Schubert ([@schu](https://github.com/schu)), Kinvolk
+
 * PLEASE ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
