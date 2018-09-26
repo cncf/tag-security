@@ -14,7 +14,7 @@ Members.
 - Members *SHOULD* remain active and responsive in their Roles.
 - Members taking an extended leave of 1 or more months *SHOULD* coordinate with other members to ensure the role is adequately staffed during the leave.
 - Members going on leave for 1-3 months *MAY* work with other members to identify a temporary replacement.
-- Members of a role *SHOULD* remove any other members that have not communicated a leave of absence and either cannot be reached for more than 1 month or are not fulfilling their documented responsibilities for more than 1 month. This may be done through a [super-majority] vote of members, or if there are not enough *active* members to get a super-majority of votes cast, then removal may occur through a [super-majority] vote between Chairs and Technical Leads.
+- Members of a role *SHOULD* remove any other members that have not communicated a leave of absence and either cannot be reached for more than 1 month or are not fulfilling their documented responsibilities for more than 1 month. This may be done through a [super-majority] vote of members, or if there are not enough *active* members to get a super-majority of votes cast, then removal may occur through a [super-majority] vote between Chairs and Technical Leads. Those roles are described below.
 - Membership disagreements may be escalated to the WG Chairs.  WG Chair membership disagreements may be escalated to the CNCF Steering Committee.
 - Members *MAY* decide to step down at anytime and propose a replacement.  
 - The group will use lazy consensus amongst other members with fallback on majority vote to accept proposal.  The candidate *SHOULD* be supported by a majority of WG Members.
@@ -40,7 +40,7 @@ There will be two to three TLs and their membership will be tracked in [`wg.yaml
 
 ## Creating, discussing and accepting proposals
 
-Each proposal is unique and might deviate slightly from the process below. For example, a smaller project may each step. For example, a small addition may not require establishing completion criteria. In general, we encourage this process below to be followed to ensure that contributions are in line with the goals of the Working Group.
+Each proposal is unique and might deviate slightly from the process below. For example, a small addition may not require that the group write completion criteria. In general, we encourage this process below to be followed to ensure that contributions are in line with the goals of the Working Group.
 ### Proposal process
 
 1. **Raise an Issue.** [Create an issue](https://github.com/cn-security/safe/issues/new) in the SAFE repo that outlines the problem to be solved. If possible, include:
