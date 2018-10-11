@@ -44,6 +44,7 @@ Secure Access for Everyone (SAFE) Working Group will explore secure access, poli
 * John Morello ([@morellonet](https://github.com/morellonet)), Twistlock
 * Alban Crequy ([@alban](https://github.com/alban)), Kinvolk
 * Michael Schubert ([@schu](https://github.com/schu)), Kinvolk
+* Junyuan Zeng ([@jzeng4](https://github.com/jzeng4)), jd.com
 * PLEASE ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
