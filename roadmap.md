@@ -1,5 +1,11 @@
 ## SAFE WG Roadmap
 
+|     | #2 Discover | #3 Describe | #4 Identify
+| --- | --- | --- | --- |
+| Artifacts | Personas<br/>Use Cases<br/>Categories | Standards<br/>Common Definitions<br/>Block Architecture | Catalog Projects<br/>Fill in Boxes<br/>Identify Gaps
+| Topics | Presentations<br/>WG members & guests | Standards in Practice<br/>Real World Systems Architecture | Platforms & Products<br/>Tools & Libraries
+
+
 1. **Charter** the working group. Draft vision, process and initial members (done)
 2. **Discover** (in progress)
    * Explore the problem space of the working group
@@ -18,3 +24,4 @@
 4. **Identify** existing security components in CNCF and projects in the CNCF landscape and catalog
    * Identify gaps and make recommendations to the community and TOC
    * Continually monitor the viability of the existing projects and update the landscape document
+
