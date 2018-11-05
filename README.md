@@ -3,11 +3,49 @@ Working Group Proposal: Secure Access for Everyone (SAFE)
 
 ## Objective
 
-Secure Access for Everyone (SAFE) Working Group will explore secure access, policy control and safety for operators, administrators, developers, and end-users across the cloud native ecosystem.
+Secure Access for Everyone (SAFE) Working Group will explore secure access,
+policy control and safety for operators, administrators, developers, and
+end-users across the cloud native ecosystem.
 
-## Draft Proposal
+## Background
+“Cloud Native” is open source cloud computing for applications — a complete
+trusted toolkit for modern architectures (CNCF presentation).  There are
+multiple projects which address key parts of the problem of providing access
+controls and addressing safety concerns. Each of these adds value, yet for
+these technical solutions to be capable of working well together and manageable
+to operate they will need a minimal shared context of what defines a secure
+system architecture.
 
-[Secure Access for Everyone (SAFE)](https://docs.google.com/document/d/1Yt5IPtN5Mc-FrQDFGUhLpBRePmMAZUA83NbENb69oLs/edit)
+## Vision
+There is a future where operators, administrators and developers feel confident
+creating new cloud native applications.  They use cloud technologies with clear
+understanding of risks and the ability to validate that their security policy
+decisions are reflected in deployed software.
+
+We envision that there could exist an ecosystem of tools that can simplify
+the experience of cloud native operators, administrators and developers,
+including:
+1. System security architecture that understands and accommodates the ever
+growing heterogeneity of systems and provides a framework to protect resources
+and data while servicing their users
+2. Common vocabulary and open source libraries that make it easy for developers
+to create and deploy apps that meet system security requirements
+3. Common libraries and protocols that enable people to reason about the
+security of the system, such as auditing and explainability features.
+
+## Charter
+The charter of the working group is to reduce risk that cloud native
+applications expose end user data or allow other unintended access.
+Distributed deployments across heterogeneous infrastructure are increasingly
+common for cloud native applications. The working group sees common need
+patterns in cloud-native application architecture to improve the security of
+the systems. Without common ways to programatically ensure consistent policy,
+it is increasingly difficult to evaluate system architecture security at scale.
+We propose that the creation of open source libraries, if needed, that enable
+interoperability across software and providers will enable the adoption of
+common protocols for access control. This will in turn accelerate the adoption
+of cloud-native application development models, as well as streamline operations
+for both cloud and traditional infrastructure.
 
 ## Members
 
@@ -69,7 +107,7 @@ Or Telephone:
 ## In Person Meetings
 
 Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup (via the linked github issue):
-* KubeCon + CloudNativeCon, Shanghai, Nov 14-15, 2018 - [issue#28](https://github.com/cn-security/safe/issues/28) 
+* KubeCon + CloudNativeCon, Shanghai, Nov 14-15, 2018 - [issue#28](https://github.com/cn-security/safe/issues/28)
 * KubeCon + CloudNativeCon, North America, Dec 11-13, 2018 - [issue#29](https://github.com/cn-security/safe/issues/29)
 
 Past
