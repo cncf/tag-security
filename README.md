@@ -124,3 +124,12 @@ Past
 * [2018-10-19 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
 * [2018-10-25 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit) - Working Session
 * [2018-10-26 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
+* [2018-11-08 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit) - Working Session
+* 2018-11-09 - no meeting: [SPIFFE Community Day](https://docs.google.com/document/d/1Gt91uPgemRuW56P3qnuQfs0VoWn_2n0D8N-LxpnUu5c/edit)
+* 2018-11-14 - KubeCon Shanghai 2018 Intro Session: [Intro: SAFE (A Cloud Native Security Working Group)](https://kccncchina2018english.sched.com/event/FuLG)
+* [2018-11-15 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit) - Working Session
+* [2018-11-16 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
+* 2018-11-22 - no meeting :turkey:
+* 2018-11-23 - no meeting 
+* [2018-11-29 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit) - Working Session
+* [2018-11-30 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
