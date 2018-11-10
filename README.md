@@ -3,10 +3,7 @@ Working Group Proposal: Secure Access for Everyone (SAFE)
 
 ## Objective
 
-Secure Access for Everyone (SAFE) Working Group
-* facilitates collaboration to discover and produce resources
-* to enable secure access, policy control and safety
-* for operators, administrators, developers, and end-users across the cloud native ecosystem.
+Secure Access for Everyone (SAFE) Working Group facilitates collaboration to discover and produce resources which enable secure access, policy control and safety for operators, administrators, developers, and end-users across the cloud native ecosystem.
 
 ## Draft Proposal
 
