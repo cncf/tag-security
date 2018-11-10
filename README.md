@@ -55,7 +55,7 @@ for both cloud and traditional infrastructure.
 * Devarajan P Ramaswamy ([@deva](https://github.com/deva26)), PADME
 * Kamil Pawlowski ([@kbpawlowski](https://github.com/kbpawlowski))
 * Geri Jennings ([@izgeri](https://github.com/izgeri)), CyberArk
-* Howard Huang ([@hannibalhuang](https://github.com/hannibalhuang)) [Kubernetes Policy WG co-chair]
+* Howard Huang ([@hannibalhuang](https://github.com/hannibalhuang)), Huawei [Kubernetes Policy WG co-chair]
 * Jason Melo ([@jasonmelo](https://github.com/jasonmelo)), NearForm
 * Torin Sandall ([@tsandall](https://github.com/tsandall)), OPA
 * Sree Tummidi ([@sreetummidi](https://github.com/sreetummidi)), Pivotal [Cloud Foundry Project Lead]
