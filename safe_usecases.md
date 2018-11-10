@@ -98,7 +98,9 @@ Compliance Officer /Auditor
 
 * As a compliance officer, I can set audit logging policy that controls what data gets collected for auditing purposes.
 
-* As a compliance office, I can understand the effect of changes to audit logging policy that I am making
+* As a compliance officer, I can understand the effect of changes to audit logging policy that I am making.
+
+* As a compliance officer, I can configure my organization's resources to meet the requirements of relevant standards such as [PCI](https://www.pcisecuritystandards.org/), [FedRAMP](https://www.fedramp.gov/) or [HIPAA](https://www.gpo.gov/fdsys/pkg/PLAW-104publ191/html/PLAW-104publ191.htm), and I can generate assessment and attestation artifacts showing how the relevant requirements are met.
 
 
 Security Administrator
