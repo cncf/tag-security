@@ -49,16 +49,16 @@ for both cloud and traditional infrastructure.
 
 ## Members
 
-* Dan Shaw ([@dshaw](https://github.com/dshaw)) [chair]
+* Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [chair]
 * Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), Google [chair]
-* Jeyappragash JJ ([@pragashj](https://github.com/pragashj)) [technical lead]
-* Devarajan P Ramaswamy ([@deva](https://github.com/deva26)) [PADME]
+* Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [chair]
+* Devarajan P Ramaswamy ([@deva](https://github.com/deva26)), PADME
 * Kamil Pawlowski ([@kbpawlowski](https://github.com/kbpawlowski))
 * Geri Jennings ([@izgeri](https://github.com/izgeri)), CyberArk
 * Howard Huang ([@hannibalhuang](https://github.com/hannibalhuang)) [Kubernetes Policy WG co-chair]
-* Jason Melo ([@jasonmelo](https://github.com/jasonmelo)), nearForm
+* Jason Melo ([@jasonmelo](https://github.com/jasonmelo)), NearForm
 * Torin Sandall ([@tsandall](https://github.com/tsandall)), OPA
-* Sree Tummidi ([@sreetummidi](https://github.com/sreetummidi)), [Pivotal] [Cloud Foundry Project Lead]
+* Sree Tummidi ([@sreetummidi](https://github.com/sreetummidi)), Pivotal [Cloud Foundry Project Lead]
 * Christian Kemper ([@ckemper67](https://github.com/ckemper67)), Google
 * Ray Colline ([@rcolline](https://github.com/rcolline)), Google
 * Doug Davis ([@duglin](https://github.com/duglin)), IBM
@@ -70,9 +70,8 @@ for both cloud and traditional infrastructure.
 * Erica von Buelow ([@ericavonb](https://github.com/ericavonb)), Red Hat [Kubernetes Policy WG]
 * Mark Underwood ([@knowlengr](https://github.com/knowlengr))
 * Rae Wang ([@rae42](https://github.com/rae42)), Google
-* Rachel Myers ([@rachelmyers](https://github.com/rachelmyers))
-* Evan Gilman ([@evan2645](https://github.com/evan2645))
-* Rachel Myers([@rachelmyers](https://github.com/rachelmyers))
+* Rachel Myers ([@rachelmyers](https://github.com/rachelmyers)), Google
+* Evan Gilman ([@evan2645](https://github.com/evan2645)), Scytale.io
 * Andrew Weiss ([@anweiss](https://github.com/anweiss)), Docker
 * TK Lala ([@tk2929](https://github.com/tk2929)), ZcureZ
 * Maor Goldberg ([@goldberg10](https://github.com/goldberg10))
@@ -83,7 +82,7 @@ for both cloud and traditional infrastructure.
 * John Morello ([@morellonet](https://github.com/morellonet)), Twistlock
 * Alban Crequy ([@alban](https://github.com/alban)), Kinvolk
 * Michael Schubert ([@schu](https://github.com/schu)), Kinvolk
-* PLEASE ADD YOURSELF VIA PULL REQUEST
+* JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
 
