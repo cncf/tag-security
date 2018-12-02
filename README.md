@@ -62,7 +62,7 @@ for both cloud and traditional infrastructure.
 * Christian Kemper ([@ckemper67](https://github.com/ckemper67)), Google
 * Ray Colline ([@rcolline](https://github.com/rcolline)), Google
 * Doug Davis ([@duglin](https://github.com/duglin)), IBM
-* Sabree Blackmon ([@heavypackets](https://github.com/heavypackets)), Scytale + SPIFFE
+* Sabree Blackmon ([@heavypackets](https://github.com/heavypackets)), Docker
 * Justin Cormack ([@justincormack](https://github.com/justincormack)), Docker
 * Liz Rice ([@lizrice](https://github.com/lizrice)), Aqua Security
 * Erik St. Martin ([@erikstmartin](https://github.com/erikstmartin)), Microsoft
