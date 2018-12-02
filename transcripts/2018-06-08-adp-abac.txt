@@ -1,0 +1,260 @@
+[07:33.500 - 07:33.900]
+Yes.
+
+[07:35.900 - 07:38.900]
+We could be entertaining.
+
+[07:40.200 - 07:55.000]
+So from from ATP Mike Michael herawati, it's going to be joining. He's got the invite. I was chatting with him earlier. So should be on it any other way.
+
+[08:02.000 - 08:10.000]
+That's really a primary discussing will do around of check-in Mark you have anything.
+
+[08:36.400 - 08:41.100]
+and Sarah
+
+[08:42.400 - 08:45.200]
+actually share today.
+
+[09:48.900 - 10:16.000]
+So folks are logging on waiting for their Island to get to them. We have a presentation today from team at ATP and going to go into discussion around our back security. So drop a link to
+
+[10:30.900 - 10:32.100]
+Hey Dad, I'm here now.
+
+[10:53.100 - 11:06.300]
+So here's the Net stock if it get a couple volunteers, we have a use case today. Then we're going to have been discussing.
+
+[11:31.900 - 11:50.800]
+I'll give it a shot. Then I'll fill you in on some work root stuff at the end if we have time actually if you want to do that beginning or do you need to know it's pretty good?
+
+[12:04.200 - 12:21.100]
+Anyone else want would like to join Mark and capturing minutes. The document is in our chat and like that get a primary and Alternate on on that.
+
+[12:38.000 - 12:44.200]
+Larry do you have a cycle today to take that take that I got it.
+
+[12:45.500 - 12:58.900]
+Yeah, we've got mark on it. So for
+
+[13:22.400 - 14:22.300]
+Sure, this would be pretty short. So in the 2675 Group, which is devops security. We did a briefing today on be semi don't know if anybody on this calls using it but it's pretty widely used with regulated Industries. It's kind of your cisos sort of cisos guidepost to how to build out your organization because it kind of identifies all the roles and responsibilities for your typical see so operation not so much in the weeds for development. But and also it's not very well informed about devops but there's enough in there and it's got enough visibility with high profile people that we're going to try to find some stuff in there too to make some adaptations on the devops side. So it's still preliminary, but you know, I hope to both share
+
+[14:22.400 - 14:37.400]
+What we get out of that from this group and also do the reverse to see if we can Elevate the status of besom with the doers because the doers and the technology side are kind of skeptical about that framework.
+
+[14:38.500 - 15:30.200]
+On this side the nist risk management framework is out for public comment until Monday and if anybody's interested in you know chiming in and trying to twist them in a different direction like something less organizational hint hint, you know be my guess that's open to the public and I know from being on this side, they read all the comments. They're required sort of by law or by edict inside of mr. Respond to them. The nist frame risk management framework is pretty important because this version of it tries to do a crosswalk to 853 and cover the life cycle issues with sdlc and deal with some of the newer technology. So if it falls short it's kind of on us to not it's on us to not help them get there in some response in some guidance or rather.
+
+[15:31.100 - 15:35.500]
+Let's see. Another thing I wanted to bring up. Is anybody on this group use cucumber?
+
+[15:38.200 - 15:56.900]
+One of the challenges on Shannon is the framework. Yeah. Yeah. I have so cucumber. And what's the Garrick or something? There's a another kind of pickle terminology. Yeah, that's the domain specific language that it uses.
+
+[15:59.100 - 16:46.100]
+That's kind of a preference for you know, an automated devops friendly more security and risk aware framework because it incorporates the domain aspect of things in a systematic way that other ones do not so I'm not sure what I'm going to do with it. I'm going to bring this to the standards groups that I'm in and say hey, let's take a look at this. We need a way to address where to put our natural language annotations and artifacts for the automation process. So anyway, that's that's FYI. Nothing really new on that. I'm not a user of it. So I'm an advocate for dsls, but who knows they might do a terrible job of it. Let's see. I had one other topic other that I forgot already.
+
+[16:50.300 - 16:52.100]
+Stack Rock
+
+[17:01.400 - 18:00.900]
+So I didn't hear this stuff that's sitting in natural language. Sometimes it's the results of a meeting, right? How do you get from that to something that's in the code? That's traceable that explains why you you know, answer the are you sure question with an explanation or you decide not to or you decide not to even ask are you sure and there's a whole, you know panoply of problems around connecting up the natural language things to that so cucumber and that parallel DSL tries to address that and make the make it natural language friendly have a better continuity between code and
+
+[18:01.400 - 18:33.400]
+Requirements process and the test harness and the rationale for the test harness. So it's maybe it's a little peripheral for CN CF and kubernetes. But you know, you got to be able to orchestrate these artifacts and figure out where to put them and you know for at least for revision control you need automation to do that. So it seems appropriate to me at this juncture. Anyway, it may turn out to be yet another dead end and a whole pile of dead end solutions that have been trying to deal with this since the 60s.
+
+[18:34.600 - 19:34.600]
+So is Nest proposing that the requirements from like the human scenario requirements would be implemented in cucumber to have natural language representation of the like language of like what's requirement and then that those would be able to be executed right dear you're extrapolating from where I'm at to where they might go you're hearing a proposal from me not at nist ideas that you'll know what this looks like without looking at it. It's a spreadsheet was stuff in the First Column being the to dues and the stuff you never get around to going in the other direction, right? I'm exaggerating but you know, it's a spreadsheet driven kind of thing with one of the cells maybe being your natural language annotation from a meeting and how you do that in your requirements, you know my differ if you have doors.
+
+[19:34.600 - 19:56.600]
+One of these other Legacy products that do it but in the agile world and when we're orchestrating this intersection of operations and code it's not clear how to do that in a systematic way that has traceability that works for forensics and scalability. So whether cucumber is the answer or not, it's novel enough to make us think differently about the paradigm.
+
+[19:57.800 - 20:51.100]
+So the last thing and this is short my company's doing a proof of concept with stack rocks. This is a obviously commercial provider that's doing security for containers. So it's kind of peripherally related but DHS is a partial sponsor of this work as well as my company. So I'm you know, I'm open to suggestions from CN CF community and this group as to what we might want to ask them. You know, what tires to kick in the proof-of-concept with them. It's going to be hosted in their Cloud within doing most of the setup but their initial concept for how to do the POC was to put Metasploit in there and try to kick the tires that way and I was hoping for something more systematic than that. So just sharing that in case there is a connection
+
+[20:53.400 - 20:55.400]
+And that's all the time. I've going to monopolize.
+
+[20:58.200 - 21:05.600]
+Thank you, Mark. Just an encouragement to drop some of those linked into the mix. We have a second.
+
+[21:21.900 - 22:21.500]
+Yeah, hi. So right so in the beginning of was thinking about you know, where have we seen attributes attribute-based access controls and then even more specifically having used cases where there was kind of the the the approach or the
+
+[22:21.800 - 23:21.200]
+To roll that up into two are back rights are kind of the combination there. And so I thought that what we the work that we had done over at ATP and what Mike's team continues to do TP would be relevant in this situation. You know what we all just kind of give some some high-level Framing and hand things off to my queue has kind of the the Salient details on things. But what we were trying to accomplish was that we were building essentially a fairly kind of indeterminate, you know, kind of run time right into the HR domain. So what that means is that different organizations. Hmm, excuse me different development groups would have different needs around creating essentially eligibility on data access rights on functional kind of functional execution rides, you know, what can they do not do and applying that in different organizational hierarchies, right? So
+
+[23:21.800 - 24:21.600]
+There's going to be a number of different type of other attributes or criteria criteria, which says do I have access to this particular object, right or or or function? Do I have the ability to approve a given request right kind of one of the typical scenarios may be something where there is leave approval that is going through the system who can actually see a prove that when maybe your direct line manager is is say on vacation as well. Right? So kind of those are kind of the different scenarios that we were uncovering all the way down to kind of much more the need for much more secure conditions. Where say access to Social Security numbers or the ability to actually change someone's paying the system depending on even the amount that you want to give them in terms of a pay raise. You may not your access rights May no longer be valid, right?
+
+[24:21.800 - 25:21.600]
+The inputs that you're driving through right so fairly kind of complex use cases with a lot of kind of variables. So the fundamental approach was to say we can certainly kind of decorate the different actors in their actions in the system through attributes, but they would also need to be the addition of this notion of criteria based access as well. So it I wouldn't turn what we're going to go through is kind of a pure a back but more so kind of a combination of a back and see back right criteria base and you know kind of with that one to introduce Michael herawati Mike is I guess kind of principle solution Architects over it at ATP in the lithium Group, which essentially after the spokes. Well it was that Mike no nothing. I just did my microphone just make sure you guys can hear me. Oh great. Yeah, so so forth as being me.
+
+[25:21.700 - 26:05.800]
+A Solutions architect over there essentially means you're you know, you're a technical product owner and you're architecting a lot of the kind of solutions that you're pushing forward. So with that I'd like to introduce Mike and take things a little bit further. Thank you Jason. Hi everyone. So Jason already did the introduction. My name is Mike herawati. I'm the principal solution architect here one of the principal solution architect here at Leafeon by ATP. So as Jason mentioned one of my themes is actually working on building the access control layer for lithium. So, let me share my screen and see if you guys can see me see this.
+
+[26:07.900 - 26:11.000]
+Okay, let me know if you can see the PowerPoint.
+
+[26:12.700 - 27:11.800]
+I can see it we can see that great. So I created this deck essentially to highlight. You know, what attribute based access control is how is it different than role-based and towards the end. I have several slides that show how we actually modify to work along the lines that Jason mentioned earlier which is to take on more complex use cases that we see on the HR domain and you know, essentially introducing what we call criterias into into the access control layer. So this is high-level. This is the agenda. We don't really have to stick to this. I just did this to a structure my deck a bit and if you guys have any questions along the way feel free to ask, you know, and we can go over that. So at a very high level in typical Access Control environment, at least the one that I've seen in most of the Enterprises, they are still role-based.
+
+[27:12.600 - 28:12.300]
+At the you know at the basic authorization policy or Access Control rule essentially, you know a subject needs to or can operate on an object and the object in this case is also called resources. Typically, it could be anything from data to you know, individual say like servers or even like devices it's so it's really fairly wide open. So the combination of this subject action and object is what we typically call called a rule or a policy. So what is role-based Access Control, right? So it's a fairly manual process where you create a role or a security group and then typically these policies that have been implemented by the developers are assigned and the users are manually assigned to it as well. So a given example here where you know, it's system admins can log into production notes and
+
+[28:12.600 - 28:34.900]
+Scripts, obviously, somebody needs to create the role system. Admin manually, they they need to assign the access control rule to login and to execute scripts also manually to the role itself. And even the user sometimes they could sometimes they're part of a group and the entire group is assigned to the role or individual users are assigned to the role.
+
+[28:35.800 - 29:17.100]
+Obviously, there are a lot of limitations here. If you imagine that you know, somebody then come along and say I need like a more granular type of policy assignment. Then there really isn't any other choice other than to create a new role or a new group and obviously that caused a proliferation of roles typically in the system and as more and more of this edge cases come in it's going to be more and more of these roles. It's going to be a headache to manage and at some point somebody will not really sure how somebody or a group gets assigned to a roll. So I've seen this happen before in the past. So
+
+[29:17.800 - 29:20.300]
+Sorry, somebody say something.
+
+[29:23.800 - 30:03.000]
+Okay. So how does attribute based Access Control help in this scenario? So this is actually a quote from the NISD project overview of access-based other attribute based Access Control in its most basic form. We basically relies upon the evaluation of attributes. The attributes itself can be of the subject or of the object or even on the environment. So for example, like a device type could be an attribute or IP addresses. So in the previous example, if somebody then comes along and say well this is still for the system admin group.
+
+[30:03.700 - 31:03.200]
+And it is stockstill for managing access so they can also only them can log into the production notes. However, I want to add this little cork here that says in their office region right with role-based access control system. Typically, what they'll need to do is to create a new group and then assign the proper person or you know groups to it. However with the attribute-based what they can do is we have this additional component and I can go over this in more details later where you basically assign additional rule that's based on the attribute and it could be something as simple as if the subject that office that region attributes is equals to object that location dot region, right? Sorry subject office region equals to object location region. So once they set this up what this means is for each of the individual in the group they could have
+
+[31:03.600 - 31:33.500]
+Friend access to different notes because during the decision-making time we actually take this attribute rolls into account. So it's not just looking at this the higher level policy which is which says can log into production notes. We're also saying well you can log into production notes, but we also need to check where the production node is located and where you are located and see if you can allow you access to that. So it makes sense so far.
+
+[31:39.200 - 32:38.500]
+All right. So going into the architecture a little bit. This is a typical architecture for an attribute based access control with the different components on it. So we basically have this policy enforcement point where the decision is process and access is given from the subject to the object. Typically it is done at the product level and what I mean by that is if you're building a more generic access control like the way we do here depending on which product somebody is allowed to do something means different things, right? It could mean they could see somebody's time sheets or it could mean they could modify somebody's compensation. But the data that we operate on is different the action that they can operate on it's different. So typically the enforcement point is something
+
+[32:39.200 - 33:38.900]
+That we expose maybe as an API or as a as a as a module for the products themselves to consume within their code and then you have the decision point so this is kind of like the brain of the system. This is where you know, every time a request comes in they look at the assignment Store where the policy assignments are being stored and once they have the assignment they actually Branch out to the to this at the third component here the policy information point which typically have one or more data sources where they can retrieve the attributes for both the subject for both the objects and maybe even for the policy itself and they basically pass that back to the decision point and decision point is the ones that make the final allow or deny decision potentially with additional information and return that back to the enforcement.
+
+[33:39.100 - 34:00.400]
+Point so each of the product can do what it is that they need to do. So these are essentially the standard components standard names that are that is being used industry-wide. There is no real guidelines on how they are implemented whether it's a service as a monolith. It could really be anything as long as it meets. The Enterprise's needs.
+
+[34:03.500 - 34:59.100]
+Now that is the theory right? However, I have I've been part of a team that built this in a couple of companies other than ATP. So what we found is obviously there are other stakeholders that are not really have been taken into account in the standard implementation. Obviously, the developers will need to be able to implement these policies and apply them to whatever objects that they're working on and whatever subjects are actor that they're interested in the security elements themselves, right? There's they still need to configure roles as we call them still the policies as well that are assigned to the rolls. But in addition to that not necessarily assigning users manually, but they need to configure the attribute assignments and yet the the assignment rules for those attributes. They also need to do other things like running audit reports for their you know for their leadership.
+
+[34:59.700 - 35:34.300]
+And then obviously the end user they just want to log in and perform some operations. They don't it's they don't want to deal with you know, I can't really do this because there's something wrong with the system. So the system just has to work. So when in thinking about this, there are actually a couple more components that I feel like we need to introduce one is what I call myself policy configurator or it's essentially the toolkit for the developers to do the implementation. And then the second one is I think the more important Point here is really what we call the policy Administration point.
+
+[35:34.600 - 36:28.400]
+So what does that means? So the red areas here are the ones that we just added? So if you look at the flow essentially on how somebody needs to set this up if I'm a developer, then I have to use this development toolkit during my implementation so I can properly Define my authorization policies, right and that typically involves what I want the subject to be able to do to the component or the object that I'm working on. Once that's done. Then I store it in this policy store and then add configuration time somebody like a security admin or maybe like an onboarding Specialist or something. They can then go in and basically use some kind of a like a web UI or you know apis or something that is provided by this Administration point.
+
+[36:28.700 - 36:42.600]
+To set up how the access control will actually work at run time. So I found that this Compares two components are essentially just basically a must-have for for an access control to work.
+
+[36:44.100 - 37:43.800]
+Now we're getting to the interesting part. Once we have all these things set up and especially at ADP. We realize that in order for us to be able to serve our users properly. We really need to make this as real time as possible. Right? So that's where this idea of dynamic assignment comes in. We're leveraging an event-driven reactor pattern. So what we realize is that a lot of these attributes for both the subject and the object are actually coming from maybe just one or two more data sources. So what we do is we basically make the attribute repository link to the policy information Point more than a like a pops up mechanism. So it's going through a data pipe, you know, something like could be like a messaging to like a Kafka or Canisius or something like that. And then the policy information Point itself could be an event-driven service.
+
+[37:44.100 - 38:30.600]
+That access the reactor. So any changes that happens in any of the web web app or any other app that affects the attributes in the repository. We essentially get the change events in almost real time and we can adjust the policy assignments properly. The other thing that needs to change here is that because we are evaluating the attributes at runtime. Sorry in real time. The store that we have is not really a policy assignment store anymore. It's turning into more of a runtime cash because we're literally flattening out the policy assignments for each subject and for each object based on their attributes.
+
+[38:31.300 - 39:30.700]
+To make sense to anybody any questions so far. I was wondering if you can go over exactly what is the use case that drives this eventually pattern like the necessity for real time. I think I'm getting it but maybe you can just go over that again. So the one use case that is you know, fairly generic General in the HR space is if somebody gets terminated, right? So typically when somebody gets terminated for let's say for a gross violation of misconduct or something. We literally want to get them out the door as soon as possible because our access control is based on actress attribute-based. We can basically say in all of our policies that we assign to that employee. We have to part of the attribute that we need to look at is if this if this employee record is
+
+[39:31.300 - 40:09.700]
+Active employee, right or if the if the active date is still in still in the future or sorry. It's how do I say this? If there is no termination date in his or her record, I guess I should say. So if we make that part of the attribute assignment in the in the access control policy itself, the minute somebody has their termination date updated with today's date. We can literally act on that change if an immediately and within seconds that employee will not have access to anything anymore.
+
+[40:10.300 - 40:11.900]
+It makes sense.
+
+[40:13.300 - 41:06.200]
+Yeah that I could chime in here part of the Kool-Aid for this which is kind of exciting is that if it's event-driven you get the intersection of multiple events that normally your policy apparatus doesn't include so, what is it? Yeah. So one of the examples of that is I just had in my head. It's when you have a rule that says nobody's allowed into this building without a badge and the badge reader is located, you know, I at eye height but you might have some employees that are in protected classes. They are in wheelchairs or whatever so you can have rules that consult these protected classes and have secondary policies that can be invoked based on this kind of information and typically the policy creators don't think through all of these highly domain specific details.
+
+[41:07.100 - 42:07.000]
+Right. And another thing that I have seen this used in the past is to actually temporarily restrict access. So for example, because we're using attributes, there is one more sort of like concept that is standard which is the environment attributes and typically what that is is are things like IP ranges or device types. So let's say, you know an Enterprise is located all over the world, but they're still in data centers. So we have as an as an Enterprise software provider for the enterprise we know where the requests are coming from and let's say they tell us one day that hey we're getting we have a breach in some of our data centers. Please restrict access from this IP ranges. We can literally block those IP ranges in into our attribute repository and our policy assignments will react immediately, right? So starting from that point on any requests
+
+[42:07.100 - 42:15.300]
+Comes in if we check for the IP address and we see the IP address is coming in from this block data center. We will block access to it.
+
+[42:19.300 - 43:04.600]
+Cool, so moving on and again, this is getting more interesting. We are we looked at the type of data that we store especially in ADP in the HR domain and we figure out that most of them are really hierarchical. Right? So for example, the use cases that will deal with are things like only a manager can only approve say time offs for their employees right for their own reports. They can approve anybody else's outside of their teams and we have other use cases like this up and down the products and that gets us to the think about how we can leverage sort of like a hierarchical data store.
+
+[43:05.000 - 44:03.100]
+And Jason is actually a big part of this as well. So Jason, feel free to keep me honest or chime in if you if you if you want to hear will do so we introduce a graph database in our system and wherever we can we try to sensually create a replicate source of truth from our real source of Truth in a graph format. Right? So with graph you have the ability to you know to represent entities or a Fields within entities as as nodes and the relationship between those fields as as the edges, right? And even though it's a graph we can put limitations around it so that we say, all right. This is kind of like a top-down hierarchical pipedraft so we can put some software validation around how the data gets entered and how the graph gets May maintain.
+
+[44:05.000 - 45:01.100]
+Using like location IP addresses or degree of connections as examples here, but you know in our world in the HR World reporting structure is typically very big hierarchical use case sort of like legal cost center is another one, right? So for example, if you're an Enterprise company and you have five different cost centers that are four five different location and it's cut across all the different departments your say like your compensation product or your budgeting product may need to look at those cost center to decide who can act on which Department's budget who can approve them who can reject them. You can manage them that type of stuff now, what does that what that means for the actual system itself is we actually put an extra layer in the middle here before we evaluate the attributes for Access Control.
+
+[45:02.000 - 45:43.900]
+What we do here is that the attribute repository still pushes change events out to the data pipe, but we have an additional sub system basically in the middle, which is the graph reactor which takes the same change events and wherever relevant maintains the graph so it updates the graph. It creates new nodes creates new edges and then it the graph itself emits, its own change events the access control system now listens to the graph change events wherever it's relevant and depending on what changes it will process and update the runtime assignment.
+
+[45:44.300 - 46:44.300]
+So this is basically how the system works at the moment and this is like sort of like the whole picture. I'm just going to close off or this this is this is basically what we've been discussing so far what I do want you to go to look at is this though? So once we have once we started going down this path and you know, we were defining the products and the benefits of using the graph two things that come up is it we can use it as a source of data for attributes, like what I just went through, you know, as far as hierarchical scoping what we call it or data entitlement. However, what makes it really powerful in our opinion is that we can use the graph itself to represent the policy definition. For example, if we go back to the sort of like the access control statement in the beginning where you have your subject that can operate on an object and when you think about roles and security groups, we can represent them as nodes in the graph.
+
+[46:44.300 - 47:44.200]
+Right and then the graph edges essentially represent the relationship between them so subject belongs to roll and policies are assigned to the role. And therefore the subject is authorized to do those policies thinking about graph and traversals within the graph we can do so much more with the kind of traversal queries that we cannot do with a flat or relational data structure data stores. So for example, if there is a role called the junior manager and there is a policy that says the manager can see their team members compensation and manager can see the can update their team members compensation. We can actually create this more granular level of access control and allows for policy inheritance. So what I mean by that is a senior manager is at the level higher than a junior manager if there is a row.
+
+[47:44.300 - 48:44.100]
+All between. Sorry if there is a relationship between senior manager and Junior manager in the graph we can assign the cedar team members compensation policy to the junior manager role therefore allowing them to have it but then because the senior manager is a level above we don't really need to reassign that policy again just because there are senior manager. They encapsulate their their Access Control essentially encapsulate everything that's below them. And in that case, we only need to add the update their team members compensation policy at the senior manager role note and the just-in-time access control changes. This is basically what we discussed earlier because everything is sort of like event-driven we are actually able to modify our runtime assignment and since we're treating it more
+
+[48:44.200 - 49:22.800]
+The cash than of anything else. The decision-making process is literally changing just in time as the attribute changes make sense to anyone any question on this. Yeah might just a question around non hierarchical structures and the ability to address kind of similar thing ready a scenario there would be maybe you know number of employees are on the same project at a company or they're part of the same group, but these are not structures that fall into the typical HR hierarchies.
+
+[49:23.900 - 50:18.600]
+Right. So basically are you do you mean the the criteria based? Well, it's so far we have the so you mentioned there right the hierarchical right? So yeah question was I can we apply these types of access pattern approaches in non hierarchical structures. Yes. So in addition to the graph sort of graph attributes that we use we are still maintaining the ability to essentially for somebody to create something like almost like a SQL query right if the source of Truth is flat or relational then we can still query the attributes from the table. They were interested in and via the same event driven mechanism. We can still adjust the policy real time.
+
+[50:19.000 - 51:18.700]
+The the criteria stuff though. It's something interesting that we could go into next if there are no more questions. It makes sense Jason or yeah, definitely. Okay. So Mike was also a leading question to so I figured all right. So let's get into the criteria stuff. I don't actually have a slide for it. But basically what that means is what we find out when we're talking to a lot of our clients and anything clients the ability to Define these attributes are really client specific and even in some clients the large enough client is almost Department specific, right? So what that means is as a developer on the on the development side, there's only so much that we can do to predefine all these policies.
+
+[51:19.200 - 52:18.900]
+We need to build a mechanism for the end user to Define these attributes themselves and apply them to policies at at execution time at runtime. So what we come up with is a way for them to almost literally Define their SQL query up front. We as I mentioned before and Sgt Jason alluded to we actually still have two different types of attribute resolution one is this graph based one and the second one is still be relational database, you know, the flat data structure one. So we are building what we call a criteria based system where we will have a web API front end for say like a security admin or even an HR admin to go in and Define the data inside Roman rule. So for example, if an HR Manager
+
+[52:19.200 - 53:11.600]
+They're says-- only a certain level of managers can you know get actually approved promotions for their department or their division except for the people that are in another office location that is not something that we can Define on the development side of things just because it's so granular and it's so specific. So that's that's why we need to do this. The criteria based right now is turning into more or less like an eligibility engine. So essentially this is just another type of attributes that we need to resolve and store in our cache so that when the user actually tries to perform an operation on our system we check against this this attribute as well.
+
+[53:17.000 - 54:16.700]
+So, okay. So the last slide I have here is really not about anything that we've done before and there's a reason for it. So there is a effort by this Oasis Consortium to create a an access control policy language is called Satchmo. It stands for extensible Access Control markup language. I think they started this effort in the early 2000. They release their 3.0 version of the 3.0 syntax of the language few years back in one of my previous job. I actually tried to use this it's very verbose and in most cases in my mind. It's little bit of an Overkill even for Enterprise systems, but it is very for both. I put some links in there as references. If you guys are interested the Wiki page, I believe it or not actually has a great summary on it and it has a
+
+[54:16.900 - 54:18.400]
+all the external links in there
+
+[54:20.900 - 54:34.500]
+And that's really all I have so, you know open for questions if anybody has anything. Hopefully this has been helpful. Thank you. So does to folks on the call have questions.
+
+[54:38.700 - 55:38.500]
+Oh, yes, we have questions. Thank you so much. This is very interesting and it's great to see somebody doing this. I talk about it a lot not doing it very much when you implemented this thing was very concerned that given the sometimes fragility of you know, highly scaled assets like active directory that the access control thing that you built which is called a thing is too fragile to to scale properly. We haven't really seen that I mean in so as far as what we're building now, we are still in I would say probably like the beta version of the product but in my in my previous company out, it was actually being used in a fairly large user base. I used to work at Comcast.
+
+[55:38.700 - 56:37.000]
+And this is literally what they use for their TV everywhere initiative in terms of determining if a user tries to go to say like an HBO website and whether or not they actually purchase HBO and we actually use actual there. So it the policy itself is pretty verbose and we haven't really seen any issues with scalability. The one thing I would say though. What on what we are doing now, we do take some precautions around me the event driven system right that the back end that essentially Updates this policies real time because that's one of the areas where you know, it's asynchronous. There's always like some precautions. So we need to make their so we do have other services some sort of like a Recon service essentially that monitors discrepancies and tries to report on it and tries to fix it in real time.
+
+[56:38.700 - 57:15.400]
+I haven't really seen any scalability issues for say it. Also. I think it's a part of the the good thing about access. Sorry attribute based access control is that there is no really just one way to build this and that's why they break it apart into those components. You can scale each of the components up or down depending on your needs. So if you see a lot of attributes coming in then maybe you want to scale your information point and your decision points, but you know, you can keep your enforcement point in however mechanism you already have or vice versa
+
+[57:16.800 - 58:16.700]
+But I take your point there. I guess I'm puzzled. Then why Microsoft has such a challenge with this? I mean I what's the best way to say this I think their challenge is real that the intersection of the number of people the number of changes being made to policies number of groups that have to handle the crosswalk to all the resources that act active directory and ldap have to manage is a challenge by itself. And if you try to put an overlay of attributes on top of that because really that's that implementation really if you think about it is is primitive in many senses, right? Yeah. That was yeah exactly. I was just going to say so we have overlaid this type of system on on an ldap before but honestly at that point the aldub is becoming more no more than just sort of
+
+[58:16.700 - 58:25.700]
+Groupings of users right? We don't actually use sort of like their access controllability. We just basically use it as a user store at that point.
+
+[58:26.600 - 58:48.600]
+They have other uses in terms of the the security of roles and domains and you know, the more traditional sort of like I am roll set up that they have but for like an Enterprise to user-facing real-time apps that we're dealing with its it is a little a little too static and I could see why they that wouldn't scale.
+
+[58:49.100 - 58:50.900]
+interesting
+
+[58:53.800 - 59:53.100]
+So, let me ask one other thing before I relinquish the floor and thanks for the forbearance team on the application development side. This is not a thing that developers understand. Yes. The idea of the attributes is tied to their domain model understanding of their application with they're obviously not too well educated about in the first place even in the role world. They're not do well educated and the decision about what attributes need to be pushed out is one that they have to tackle for logging and auditing as well as alerting. So, I wonder how that got surface when you struggle with that, so I'll give you two examples, I guess in at Comcast. Our attribute list isn't anywhere near as big as in atp's right because at the end of the day, it's like Cable cable channel, maybe device type maybe browser type maybe IP addresses.
+
+[59:53.800 - 01:00:53.600]
+And those are yes, those are domain-specific but the engineers they're more or less know their domain. Now. What we're doing here at ADP is a completely different animal. We are actually building a platform, right? So even the engineers on the platform side, they don't know what the business logic is on the application that they that other people are building and other teams are building. So we we actually built a genetic so there are other generic platform functionalities that we are building that allows us to essentially hook into their source of Truth. Okay. So if I'm an application developer and I'm using the Leafeon platform to build an application I have away already to figure out to basically Define the scheme of Might able to basically
+
+[01:00:53.700 - 01:01:53.700]
+Find my SQL queries. And as a part of that we do on the authorization side. We do have access to the fields on the tables that people will that people can use as attributes? So we're dealing with like a meta data on our side sensually and therefore we left the domain knowledge of the attribute more at the business domain level. So if I'm working on like a like a payroll application, I know what all my payroll fields are and what they mean and what kind of policies will need to put around it, right? So especially in the HR world and the parallel world we deal a lot with you know, per pi and SPI extensive different personal information and personally identify sorry and identifiable information. Right? So we do need to put some precautions around it, but we do realize that it's not
+
+[01:01:53.700 - 01:02:08.300]
+Possible for an engineer who is building this to understand all those attributes. So we just build a system using this method data platform to allow the application layer to have that business Logic on their site to make sense.
+
+[01:02:13.300 - 01:03:07.700]
+Mark Mark, I promise to shut up but I have to jump in again with another some of the use cases you gave us where what we think of as in the security space cross-disciplinary right like us having to do it firewalls and infrastructure stuff, right? Absolutely. Yeah, so that's that's in the security domain if you want to think of it that way in a simplistic that's so so that part is sort of hard coded. Is that how you deal with it? No, not necessarily. I mean we haven't really used this or at least I haven't in sort of like an infrastructure type of policies, but the the example that I give you around like let's say it's kind of like Crossing both domain. So let's say a a what do you call it a
+
+[01:03:08.900 - 01:04:08.800]
+A partner of Comcast. Let's see HBO, right HBO doesn't want people to access their their website or their online streaming video app, if they live in a certain region, or if they come in through like a certain IP ranges on their site, we actually use that as a real use case and we have to you know, we have to look at the record the almost at the header level of the requests that are coming into us to retrieve all this, you know IP information what kind of like and cross-reference that we like a geolocation and make sure we allow or deny properly but I have not really used it in terms of you know, making sure that like a what do you call it? Like a system? Admin role can only operate on say like a certain type of servers or certain type of database?
+
+[01:04:08.800 - 01:05:00.900]
+But on others I think you know, we're using a lot of like AWS product here and back at Comcast as well. I think the the IM roles that they have our can still be made more granular, but I don't think they're using this type of attribute base. Okay. I want to just interrupt because we just got a minute left. Thank you so much Mike for the presentation. I think it sparked a lot of discussion and and Mark. Thanks for all your questions. I want to point out that we had a prior presentation from Opa that talked about their Rego be to policy language, which is I think an evolution of what back home was trying to do. So if folks are interested, you can look back on that and then I think next week on the 22nd and is cancelled the meeting but
+
+[01:05:02.000 - 01:05:14.100]
+I just want if there's any last announcements or questions about what we're doing with the working group, you know, and and next up things. I wanted to give a moment for that.
+
+[01:05:18.400 - 01:05:46.000]
+Great, and then Mike if you do you have a link to the slides in the GitHub issue or would you mind sharing those I will I will share that after this. That would be fabulous sure. Okay, so so I think Ali wrap up the meeting and and thanks everybody for your participation today. Yeah. Thanks everyone. Thank you Mike. No problem. Thanks for having me. Really nice.

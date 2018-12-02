@@ -1,0 +1,428 @@
+[00:30.300 - 00:57.200]
+I doing good. How are you? Great. So I'm in Prague and I just got finished hosting a working group and my wife I was iffy. So are sir Alan is gonna lead facilitation. Okay.
+
+[00:58.500 - 01:02.900]
+Nothing really changed much for you. Just so you know, yeah.
+
+[01:04.400 - 01:06.700]
+Hi, Sarah.
+
+[01:11.700 - 01:12.500]
+speaking of the devil
+
+[01:20.600 - 01:25.000]
+You're muted. Hello. Hi.
+
+[01:37.600 - 01:39.700]
+Michael's our presenter
+
+[01:41.600 - 02:27.500]
+Oh my the only prisoner so I have someone that was slated from about a month ago lined up for today, but Jerry hasn't been on last couple weeks and I haven't received a confirmation from her. So, you know, if she shows it's her slot, but if not here then we went. Yeah, then then the fact that you're enthusiastic to get it in today is really fantastic because it gives it potentially want that up. So awesome.
+
+[02:32.100 - 02:34.600]
+I just out of the notes the calendar invite.
+
+[02:36.100 - 02:37.000]
+Awesome. Thank you.
+
+[03:28.000 - 03:28.800]
+Jerry
+
+[03:31.800 - 03:32.300]
+hey.
+
+[03:33.200 - 03:34.800]
+You're muted.
+
+[03:37.000 - 03:56.200]
+Are you believe that I come? Yes, though. I wanted to sanity check with you before we went live. Are you ready to present today? I haven't seen you a couple weeks, but I want to have your you slated for today. Okay? Great. Awesome.
+
+[04:03.300 - 04:25.100]
+So Michael, this is the priority. So sir, I recommend if we end up filling time then we prioritize that and not try to squeeze both sessions and less It lines up that we're making a good use of time.
+
+[04:31.600 - 05:11.200]
+So when you said this is priority Gary is priorities. He was on the schedule. Michael asked if it would be possible to present today. And you know, I said that we have maybe 20 minutes so and and Jerry is one of the reasons why I'm managing expectations so much is I'm in Prague and my love Wi-Fi has been really poor and the last session that I was facilitating. I was dropping a lot. So Sarah's going to be facilitating today.
+
+[05:13.200 - 05:20.200]
+But you are recording I am recording and just hopeful.
+
+[05:23.000 - 05:31.100]
+And I don't know any other item that I can do Cloud recording Maybe.
+
+[05:33.500 - 05:39.600]
+Maybe record button on my screen. Is it possible for anybody to record Go words?
+
+[05:40.900 - 05:45.100]
+if not, I can probably upgrade your
+
+[05:47.000 - 06:06.600]
+I think you need to be a co-host. It recreates request out loud. Jerry is the co-host. All right, and now I think you should have the privileges. So having a backup recording we could create okay.
+
+[06:07.700 - 06:37.100]
+Thanks, Jerry. Yeah, even if there's just like two minutes Dan and I can just point people to the purple I can add on the road going up the top image July and so we're just trying to get the word out and give people more of an understanding of what Taco is and what it does and how it can help in the security space for kubernetes and Cloud native app. So excellent right provide a platform for them.
+
+[06:38.900 - 06:43.000]
+So Jerry, I yeah I see recording. So yay.
+
+[06:49.700 - 07:02.900]
+And I volunteer describe is it somebody else's willing to take notes?
+
+[07:16.300 - 07:18.400]
+Michael Christian
+
+[07:22.200 - 07:35.100]
+I added it to the meeting invite. I will also add it just okay.
+
+[07:37.700 - 07:58.600]
+So I just added the chat. So yeah, and anybody should feel free to like add in notes. I added people that had names in the participants. But please feel free to fix your name if I spelled it wrong and add your affiliation and any links or anything.
+
+[08:11.700 - 08:28.800]
+Do we have any other orders of business than or should we just dive in? Yeah, so Doug Doug, are you dialed in someone's dialed in?
+
+[08:31.300 - 08:41.400]
+the game is of IBM in so there's
+
+[08:43.100 - 09:41.800]
+check ins in for the the cigs and working groups. And I did ask Doug if he would share a bit of context from the TOC meeting great, right if Doug's not here, and since we have a full docket, I think we should probably go ahead and get started. I can I can fill in a little bit of my interpretation of that what happened? So a couple things were happening so that the the cloud events project is cloud events is graduating out of the service serverless working group and one of the discussion points that was highlighted was that that project that working group.
+
+[09:43.100 - 10:42.800]
+Itself to having code was seen as the the best way to engage in the CN CF. So I was very yeah, I did one of those it doesn't have code. It has a specification and the working. I'm part of that working group over them and people have done there was like an interrupt demo but the group has not produced code. So one of the things that I was very intrigued about was I thought CN CF projects were all code base and this is the first time there's been a product project where the goal of the group is to create a specification and it's kind of an open question. I think there's a lot of interest in creating shared libraries, but there has been I haven't been actually at the attending the meetings for a few weeks maybe a month. So things might have changed a little bit, but I hadn't noticed I hadn't seen
+
+[10:43.000 - 11:18.600]
+That it changed but but yeah, so there was some kind of an open question whether it would be like lots of people doing separate interoperable libraries more like ietf style where like there's different implementations that interoperate with this kind of where we were what we did with the oh one specification and so or whether the group would get together and build software together. So so yes, it was there discussion of that at the TOC being here's Doug. I don't speak to this because I haven't been at the meetings for a while.
+
+[11:19.600 - 12:18.400]
+Oh, hi, Joanna, welcome graduating from being a project of the working group to being it's only its own sandbox project. Okay, Dan was saying that it was that it was because it had code and I was saying that I think it like it was to my mind the first thing that had become a Sandbox project that didn't have code but maybe Doug you can speak a little bit to yeah. We were the whole Plantation while you're gone. No, no, actually. No, you're right. It does not have code as of today. The closest I've heard about us having code is we start some discussions around possibly some shared libraries or shared coding efforts around some shared libraries and stuff whether they would actually become part of our working group or we just have pointers to a common open source project simple talk about party.
+
+[12:19.900 - 12:34.400]
+I did it was weird though during the call. I think it was Alexis made a comment about us having code and I think correct him because I thought it was just off the coffee Market anything was worth diving into I didn't quite understand what you meant by that to be honest.
+
+[12:36.000 - 13:35.400]
+Okay, it may be that the interrupt demo was mistaken as code that the group had built together. Maybe yeah, maybe I don't know. Okay, so it sounds like you know, we don't need to over index on that thing, but that was Doug's feedback to me, but I pinged of that to talk about this great. Okay, so that was the there's that discussion and then there was an interesting discussion around projects that are only associated with with kubernetes and whether they would be appropriate in the CN CF and there was a fair amount of debate there. It was it was fun for me since no Jess. No just Foundation was referenced a lot since we in the
+
+[13:36.000 - 14:35.600]
+Did chose not to integrate and support user land projects and inside of node and that was just scale and scope the scope of supporting and integrating and you know choosing which are the blast usual and projects that we choose to support inside of the node.js foundation was created to sustain the no Jess project was something that we could not sustain within the structure of the know just Foundation as it says so that's you know tangential to to safe. But we generally interesting. Yeah. I thought the first half of this week's Toc meeting was was quite interesting if you
+
+[14:35.900 - 14:40.100]
+Have the opportunity to go back and give it a listen. I recommend that.
+
+[14:44.000 - 14:52.200]
+And I don't know if there any other check-ins from other cigs and working groups.
+
+[14:58.300 - 14:59.500]
+Could just get started.
+
+[15:07.300 - 15:12.800]
+So are you ready for me? Yeah, do you want to kick it off sir?
+
+[15:16.400 - 15:17.000]
+Jenny
+
+[15:18.600 - 15:23.100]
+Jerry yes, okay. I'm going to share my screen.
+
+[15:28.200 - 16:28.000]
+So let me know if you can see it. I can see it. So at the time that I propose getting this talk, I wasn't really sure what made sense for the group. But what I've decided to focus on is just what our experience was integrating our service with both Cloud Foundry and kubernetes and I'll give sort of a high level overview of what we did in each case and this part of that overview. I'm going to touch lightly on things like how we determine application identity in each of these systems and in each system how the system ABI apis can be leveraged perform. Some of the tasks that were required which is probably indicative of the fact that those apis should be designed with fine-grained permissions so that we can preserve the
+
+[16:28.100 - 16:30.700]
+monkeys privilege in that kind of a situation
+
+[16:32.500 - 17:03.200]
+So the first piece I'm going to talk about is our integration with Cloud Foundry. Both of these Integrations were customer-driven where we have request from some of our Enterprise customers to make it easier for them to use our product on these platforms and the first customer requested that was for cloud Foundry integration. So, that's the one I'll talk about first. And as we started to investigate what that integration would look like very early on we discovered the concept of a service broker.
+
+[17:04.200 - 17:19.600]
+So what is a service broker most of the time if you have a service that you want to list in the cloud Foundry Marketplace, you're going to need to create a service broker. So the marketplace is a listing of all the services that are available.
+
+[17:21.000 - 17:21.400]
+first
+
+[17:23.400 - 18:21.500]
+Look for services on there. So it's a great way to make sure that your service is visible and easy to use for developers. So the service broker is just basically an application that you also deployed a cloud Foundry and it has a handful of API endpoints that list the service offerings that are available that allow you to provision an instance of your service. Whatever that means for your service and the delivers credentials to access your service to the application. So you basically just need to implement a few in points. And then you have a service broker and the service broker has to conform to the open service broker API standard and that standard has been accepted for use in Cloud Foundry kubernetes and openshift to varying degrees. So on the last side was sort of
+
+[18:23.000 - 19:01.400]
+I guess I would like to just show a little graphic of how this works. So you have your external service. You have your Cloud Foundry installation deploy the serviceworker application to its own organ space to steal it off because nobody except me having to need to access it directly you create an organ space for your application to be deployed in and in that app organ space you would create a service instance and creating that service instance is that provision stuff and that communicates with the external service and does everything that needs to be done at that step?
+
+[19:01.600 - 19:12.000]
+Once you're ready to deploy your application the application will bind to the service instance and communicate with the external service to get credentials to access that service.
+
+[19:14.600 - 19:55.400]
+So what I said on the last screen was Step 2 on this screen, this is from the pivotal Point Foundry documentation. There are other ways to integrate your service and Cloud Foundry level 3 and 4 both evolve the service being deployed directly to Cloud Foundry, which is something we haven't explored yet. And then they're sort of standard ways that that you might interact with an external service like just providing the database credentials the usual way instead of worrying about the service program, but that's sort of the possible scopes of doing it and Cloud Foundry.
+
+[19:56.200 - 20:45.700]
+So having said all that I'd like to just take a second look at specifically what ours does so I work for cyber-ark on The Conjurer team Condor is Secure Vault that people use to secure credentials required by applications. And so applications use these credentials to connect to data bases or apis. So if you have an existing Contour installation, you want you to place a Max two class boundary, you'll install our service broker and we also created a buildpack to make it easy to inject those credentials needed by the application into the app and when you deploy your application, you're going to bind it to the service broker.
+
+[20:46.200 - 20:52.800]
+Which gives you credentials to access Conger and creates an identity in conjure for the application?
+
+[20:53.900 - 21:14.200]
+you update the policy within our service to Grant access to the credentials of the application needs and then when the application starts, it uses those credentials to get the access keys that it needs to access other services, so
+
+[21:15.900 - 21:20.400]
+So that was our Cloud Foundry integration.
+
+[21:20.900 - 21:30.200]
+Shortly after maybe even during the time we were working on that we started to get a lot of customer requests to integrate with kubernetes.
+
+[21:32.100 - 21:39.800]
+And so in the next few slides, I'll talk a little bit about what that looks like and ended up being quite a bit different from the way that we handle things and Cloud Foundry.
+
+[21:41.600 - 22:41.500]
+So even though kubernetes officially supports the use of service Brokers and still in pretty early stages and if you actually look at their code and get Hub it hasn't actually had a stable release. Yes. It's probably not something that is worth trying to use in production at this time. So instead of doing the same kind of model that we did in Cloud Foundry we decided on a completely different tack. So one of the big differences is that in kubernetes, we facilitate deploying our service to kubernetes as a high availability cluster and then our service has special authentication plug-in. It's specific to be were Nettie's and each application is deployed with an authenticator container that interacts with our service and delivers a Time limited access token to the application so that it can authenticate with our service so
+
+[22:41.600 - 22:58.900]
+Just a graphic of our workflow. What happens is the authenticator container that's deployed with the application starts out by submitting a certificate signing request to conjure with this 50 ID with the pot information contained.
+
+[23:00.800 - 23:14.400]
+And Conger responds by injecting a time-limited certificate into the pot and using the kubernetes API using that pot information that was included in the search request.
+
+[23:15.400 - 23:17.300]
+then the
+
+[23:20.600 - 24:15.600]
+Again, and that authentication process results in a time-limited token being placed into this shared memory. So now that application has access to a Time limited access token in the shared memory and it can use that to open to retrieve whatever information it needs from the external service and an issue that connections the external service. So I'm hopeful that this kind of a model might be something that other services also find useful or that the way that we've implemented. It means that external Services would actually be able to use the application identity. We providing kubernetes to authenticate kubernetes deployed applications themselves. So curious to see where this will go right now. It's only available for our Enterprise customers because it is a
+
+[24:19.400 - 24:35.800]
+Still in that opens that will be released at the end of the month and that open source release is going to include both the custom authenticator that we use which is specific to our products, but could be a good model for other products and the authenticator container which is deployed together with applications.
+
+[24:39.400 - 24:53.000]
+So having sort of covered what we did both in Cloud Foundry and in kubernetes, there's one last thing I would like to talk about and that is the developments that have been happening in Cloud Foundry since we created our integration there.
+
+[24:53.600 - 25:53.200]
+So since we did our Cloud Foundry integration Cloud Foundry has released something that they're calling app instance identity which just basically means that every instance of every application deployed in Cloud Foundry is deployed with an x.509 certificate and a private key pair that encodes its identity in the CF deployments as information about the application good the instance good and the org and the space that the app is deployed in and so my hope would be that we might be able to change our Cloud Foundry integration to leverage these certificates similarly to how we have been operating kubernetes. So in our provides integration, we basically turn Ponder into a certificate Authority for the kubernetes deployed applications and configured Condor to accept the
+
+[25:53.500 - 26:44.000]
+Are generated certificates as proof of identity be a mutual TLS. We might be able to modify our existing Cloud Foundry integration to work in a similar way to have an authenticator buildpack is probably how it would work that would take on that role of communicating with the custom Cloud Foundry authenticator to inject time limited access token into the application memory. So where is it now? It's not as fully compliant. I expect that they may be working on that though and that may change and they're working on improving the specs on the workload for accessing the certificates and validating them against the certificate Authority.
+
+[26:44.800 - 27:16.400]
+So I think this is really interesting. I'm really glad that things have progressed this way in Cloud Foundry, which also led me to the question of how long it might be until kubernetes is also is updated to come with f identity out of the box. We know that the city is currently a Sandbox project in CN CF to get it remains to be seen where that's going to go but it's an interesting time to be talking about application identity.
+
+[27:16.900 - 27:22.500]
+So at this point, I would ask if anybody has any questions and I will do my best to answer them.
+
+[27:26.900 - 28:26.800]
+And this is sort of I didn't try to plan something very in-depth or low level if there are things that come out of this that would like more information about or would like me to dig deeper into another time. I'd be happy to consider doing that. I don't know if people have a way to get in touch with me, but I'm on GitHub. So my information is there. I think we're also all on the calendar invite and if anybody's not on the calendar invite paying me or than I do or JJ and I had a link to these slides a PDF of the slides in the Minnesota people wanted to go back and refer to them they could and particular I had this note here that if you're curious about looking at the code for what we did for our kubernetes integration work with a cloud Foundry service broker or Bill packets all publicly available or will be by the end of the month. We'll announce the kubernetes on our website contador.
+
+[28:26.800 - 29:19.100]
+So that would be a good place to watch out for it great. Awesome. So so I did just a question like you called out that this notion of instance identity. And if that were actually a thing that was consistent across platforms that seems like a very clear opportunity and that it would have made some of the work easier or at least you could have leverage this work perhaps across the platforms, but I am wondering whether there's anything else in the sort of aspect of secure aspect of secure access where you saw that will you had to maybe Implement stuff in application logic or you saw things in one platform that you wish were more ubiquitous, you know, and if you can kind of speak to those kind of challenges and opportunities.
+
+[29:22.700 - 30:15.000]
+To have a consistent way to identify applications no matter which platform you're in seems to me so valuable. We're one service but there are a lot of services out there that are trying to do the same kind of thing pivotal has a great relationship with the people that add services on their platform and through them. I've encountered a lot of other people trying to do this kind of work. And so I think everybody would be glad to see a secure and consistent way to validate the identity of applications one other thing that I really only like let you touch on but I think is really important too is making sure that these platform level apis. So in Cloud Foundry, it's the cloud controller API.
+
+[30:16.000 - 30:34.200]
+has you really want to design them so that you can give granular access so that you can provision a service account that can only access certain routes or
+
+[30:36.200 - 30:41.800]
+And as granular as you can make it so that if I want to develop something.
+
+[30:42.900 - 30:43.800]
+that
+
+[30:45.000 - 30:53.500]
+Could use that API, for example, if I want to validate that there really is a pod in a given name space.
+
+[30:54.100 - 31:17.000]
+Using that API. I don't I don't want to have to give that service account really expansive permissions to be able to do that. I want something that I can just allow it to ask this one specific question that I want to ask and then not give it any other position permission so that if somebody were to somehow get those access credentials that the service account has they're not going to be able to go very far.
+
+[31:19.600 - 32:19.600]
+So sorry, hopefully my connection come through. So Jerry one thing I wanted to since you were presenting. I wanted to make sure you saw in the chat that Doug is the co-lead of the open service broker API specification. I did see that next time. I just yesterday finally got my legal department to approve me as a contributor. So I have a PR nice or not project that I need to go back and review now that they finally it's been months. It took them a very long time to prove it. So I will be doing that probably in the next two days. Yes. Thank you beyond that. I had a question in addition to kubernetes and Cloud Foundry. Are you looking at supporting any other plow platforms? Are you supporting?
+
+[32:19.600 - 33:19.200]
+A platform list not one of those deals. So we do have other stuff. For example, we have a custom authenticator for I am and then we have a workflow that we call host Factory that people use if they're deploying like Beyonce WS I don't know that implementation as specific as one of these would be required for most other workflows. It's one of those things where when it comes up will know it and we'll have to deal with it but it's not come up right. Now. A lot of armor General tooling has been workable for a lot of different systems whether the reason why I ask is just yeah, I think that's great perspective knowing those use cases where folks have things that go outside of the the cloud native were closed and you know being able to validate.
+
+[33:19.600 - 33:31.300]
+The approach is that we have in that non sort of the cloud native blessed cases is I think interesting to our work.
+
+[33:34.100 - 33:36.800]
+Thank you.
+
+[33:38.700 - 33:55.600]
+Jerry you mentioned a custom authenticator for I am is that AWS? I am specifically I think that's the focus at first, but I'm hoping that it will be more General we have customers that use gcp we have customers that use Azure. So I'm sure we'll need to address all those pieces.
+
+[34:05.100 - 34:10.700]
+Well, thank you for giving me the opportunity to talk about. This is fun. Does anybody else have any questions?
+
+[34:12.600 - 34:32.300]
+I guess only question I would ask how would you compare it to the Vault and what bolts doing with open service broker? Hash corpse. Well, so I know that Vault has a service broker. I don't know how much they're doing with that or how it's being used.
+
+[34:34.000 - 35:11.000]
+I do like that our solution also has the buildpack which makes it easy to inject the secret values into the application at runtime because it installs summon, which is our tool to do that. So I do think that's an advantage for what we've done but in terms of you know, having a service programs are very similar what and so like you have to end up building something like summon to get the secret from vault at runtime and in general because they don't have some in your probably like modifying the code in your application to use a client library or something like that.
+
+[35:12.300 - 35:16.300]
+Some and just puts the values in the environment of the running process.
+
+[35:27.800 - 35:32.800]
+Alright, well, thank you everybody. Thanks for Jerry.
+
+[35:40.000 - 36:15.000]
+So I don't know if we have a fan has connectivity, but we can I looks like we have time to have Michael talk about this use case and project. Thanks. Sorry. My wife just asked me if my son can do piano and he's right above me. So I tell her no, let me just share my screen. Um, so I'm not sure how much everyone knows about sis dig dig.
+
+[36:18.500 - 37:18.400]
+Is it started off a company with an open source project that focused on capturing system calls. So easiest way to think of this dig is TCP dump for system calls. So what we can do is we can look at a Linux based system and we can see all the system calls that are going through it and then capture those system calls into what we call it s cap file and then that s cap Cloud then can then be used to go back and see what was happening on the system from a system called perspective at that time. So what we did is we took that same similar concept of capturing system calls and we wrote a rules engine around the system calls and that's really what Taco is so it allows you to detect abnormal behavior inside of those system calls. We specifically have focused on container based systems. Although it will work for any Linux based system and it is the next only right?
+
+[37:18.400 - 38:02.700]
+Now and this is kind of where the market is starting to kind of Define this term what we call runtime security. We're definitely not the only ones in this space of runtime security. There's other tools out there such as twist lock and aqua fresh tracks also done some things around this as well. And there's one other I think stock rocks. So this is starting to kind of become this more burgeoning space around runtime security. We're the only ones that offer a open source solution to runtime security and we also offer a proprietary version of Falco as well that gives you a lot of features out of the box.
+
+[38:03.400 - 39:00.000]
+So what does abnormal detection can do to detect things like shells or prophecies found inside of a container unexpected outbound connections? So all of a sudden your database container starts making outbound connections to the internet, that would be something that would be abnormal processes start listening on ports that you don't expect binaries being changed inside of a container and so forth the way we want to look at this from a security perspective as well. We can do things in the image. No processed using if a notary and image scanning to make sure that we're not shipping things with vulnerabilities or we know what we're shipping out of a container when the container actually launches most container runtime environments are not immutable. So containers can then make changes to their environment once it's up and running. So installing new packages modifying things and so forth.
+
+[39:00.600 - 40:00.500]
+And what Taco allows you to do is that when we detect this abnormal update Behavior will notify you and that notification is up to you to determine how you want to process it. So while you need it were or why do you need it? So the cloud native Paradigm really gives you a lot of choices. Let's just release down to the development teams, right development developers can package up their application inside of a container and let's just say you don't always know what's inside of that container that development packaged up and want to deploy to your production environment image scanning is seen more as a point in time. So when you scan the image, you know, the image doesn't have any vulnerabilities, but when the container image actually goes to production there's a lag time between when you stand that image and when that container image is actually running as I mentioned running containers aren't necessarily A
+
+[40:00.600 - 41:00.000]
+Edible unless you specifically have them running in that way. The resource isolation Paradigm of containers is much different than the ends. And we see this as a need in the market when you see things like divisor and containers as well and of come around as well that seeks to provide that more VM like isolation for containers. And so what Falco can detect is vulnerabilities and things like container isolation exploited applications things like exposed dashboards or expose API ports for all of a sudden images circuiting launched that we don't expect which the last one exposed dashboards and API ports is kind of a common thing. If we think back to the Tesla the Tesla hack over really wasn't a hack Tesla just left with kubernetes dashboard wide open on the internet. And also what you can do with Falco is
+
+[41:00.600 - 41:11.200]
+To enforce best practices around things like see is DCI socks and everyone's favorite gdpr as well as organizational security best practices.
+
+[41:12.500 - 41:18.900]
+So a little bit more about how Falco actually works and I'll just show a couple other slides that I'll give you a quick demo.
+
+[41:28.300 - 42:15.500]
+Is to certain functions inside of the colonel it uses something called Trace points inside of the kernel and then we have an alpha an early Alpha version of Annie BPF probe that can be loaded up as well. It has limitations. Of course, you need to be running a newer version of a colonel in order to take advantage of that and then these two have EPF support built into it as well. So for those of the people who aren't necessarily comfortable with the kernel module level of integration, then we can do it with EVP up as well. Then this basically this stream of system calls will come into the processing libraries in the event engine that is then rules are applied to that.
+
+[42:21.700 - 43:21.000]
+As far as alerting is concerned so we can log the syslog we can log the file standard out or we can execute a program that program could be something that then goes and post to a web hook or something like that. Well, we want to try and do and why we're actually presenting Falco as a potential sandbox project. The CN CF talk is that we see a lot of possibilities that if we could have other event streams where we could take this Rich rules engine and apply these rules to those other event streams and then also having more generic notification providers as well so that we could hit a web Hook natively from Taco if we could hit or push to something like a messaging system like gnats or something like that natively inside of Falco as well so that we can kind of be this.
+
+[43:21.700 - 43:30.400]
+His engine and then from a modularity cloud native perspective. We can have other events frames that are actually sending us data that were processed.
+
+[43:32.400 - 44:23.700]
+A little bit about the project and growth of the project were actually seeing lots of usage at least from a downloads perspective and Docker Hub poles as well. So we're well over three quarters of a million Docker Hub holes for our images about thirty-four thousand downloads of the actual RPMs themselves. And of course everyone loves GitHub stars or about 805 GitHub stars as well users of notes. So lift his used us for a while and we're in the process of trying to document that story from them, but another great one is cloud dot-gov so cloud dot-gov and by the way this presentation is linked in the the issue, but I open to do the presentation which is in the notes for this meeting.
+
+[44:24.100 - 44:41.100]
+but this right here is actually called dot dot goes documentation that actually talks about how they have this big behavioral monitoring in an experimental mode right now in their Cloud that font our Cloud Foundry environment for cloud dot-gov
+
+[44:42.900 - 44:59.300]
+and then they've also given a presentation at the cloud Foundry Summit as well about detecting tainted apps using Falco and side of the boundary as well. So it's not just something that can work with kubernetes. It is something that can work with founder as well.
+
+[44:59.700 - 45:12.800]
+And so I kind of let you look at the rest of the presentation on your own is are there any questions and I can just give people a quick demo and kind of show how it works very quickly.
+
+[45:15.200 - 45:50.400]
+General would be there's also a good presentation which I can drop in the document are in that meeting minutes as well. There's a good presentation around runtime security that Google gave at qu Connie. You just a few weeks ago. It kind of lays out. What are the areas of security that you need to worry about and kind of defining what the space of runtime security is and what runtime security means and how it's different from supply chain security or infrastructures.
+
+[45:52.100 - 45:56.700]
+So, let me stop my share and share my entire screen.
+
+[46:03.600 - 46:04.200]
+All right.
+
+[46:06.700 - 46:09.800]
+So what we have here is I have a
+
+[46:11.300 - 46:12.500]
+bar in my way
+
+[46:14.000 - 47:05.200]
+So in this environment, I've got a couple different things up and running. So the main thing is that we have Falco up and running here. This is deployed as a Daemon set. We provide Damon set for users to actually quickly deploy. This all of the configuration for Falco is stored in the configuration map and this Damon set will then pull down that configuration. So all of your rules and things like that would be stored in a config map. And then those rules are pulled down when the container is launches or the pods launches launch. The other thing that we have in this environment is Matt's as well. And so Nats is acid acting as our messaging platform. And what Falco will do in this demo is it will push an alert over to Matt and then we have kubis running as well.
+
+[47:06.000 - 47:20.600]
+And what coulis is set up to do is it's set up to listen to a particular topic or a subject and naps and when it detects a critical alert, it will actually go and take action. So let me show you what the rules actually look like.
+
+[47:23.800 - 47:24.500]
+So in the
+
+[47:28.300 - 48:15.100]
+The rules use a pretty simple language. It's the same language that we use for Cystic and what this looks like is you basically just have the field and then some value and then you can string it together with other values as well. There's a lots of different Boolean logic that you can do inside of the rules as well. The other thing that you can do is you can key off of kubernetes metadata as well. So Taco will connect to the communities API solder server and pull that information back so you can say for this particular application that's running in a certain name space with a certain pod name, but certain label I want to be able to take action on it.
+
+[48:18.900 - 49:18.600]
+Rules - Krypto miners running inside of kubernetes. So we take the node front-end application and if I spot a process and I'm in a container. So basically I'm not running on the host system and my command line contains stratum TCP, which is a common protocol that's used for minors. Then I want to throw this alert. Another example is you can list out all like common minor ports in this case and if I see a front-end application making an outbound connection to a minor Port then I want to throw a critical alert as well. So you can see the rule language is actually pretty flexible. It's also fairly simple as well. And then also what we have is over and the coolest side of things. We have a very simple function that basically says if I see a critical alert and I'm not running I'm running inside of a container
+
+[49:18.900 - 49:31.900]
+Then I want to actually take action on that and it won't this will actually do is that if I detect a critical alert running inside of a pot and kubernetes will actually go and delete that particular poem.
+
+[49:34.800 - 49:38.400]
+Any questions before I run this real quick?
+
+[49:40.000 - 50:39.700]
+So this is an ojf. I have a quick question. How is this secured can anybody else inject the critical alert and use that for DDOS attack on a pot? Yeah. So the way it would be secured at least in this particular case is that you have Security on that so that only certain people could actually log into that. The other thing is people would have to get access to the particular post system and they did they wouldn't necessarily easy be easily be able to spoof that it was coming from a particular container because it you have to be inside of the container and then we're actually looking at the system calls themselves and side of the Linux kernel so you would have to somehow spoof the system calls to say that it's hap this particular process is being ran from a
+
+[50:39.900 - 50:40.700]
+the container
+
+[50:42.800 - 51:03.600]
+the other thing that you can do as far as Nats is concerned is a course use TLS so that you're making encrypted connections into into knots as well. So that people can't easily go and see what's being sent or if you're using my Mutual authentication then only certain people being able to connect the net server.
+
+[51:06.800 - 51:24.000]
+But if somebody's able to get to the host system and spoof this and DDOS this then you probably have worst case you have probably have worst situations going on in your environment. If somebody's able to get to the host system and smooth thing. Does that answer your question?
+
+[51:24.900 - 51:27.100]
+Yes. Thanks.
+
+[51:29.200 - 51:46.700]
+So the first thing that I'll do here is I'll go and connect to let me just pull this so I have a node js application up and running but since Dan on the phone, I didn't know if it was appropriate to remotely exploit it.
+
+[51:48.700 - 52:00.200]
+Sure, go ahead. Yeah, so let me just jump onto this running machine real quick and fast Flags.
+
+[52:03.900 - 52:09.200]
+And so the first thing I'll do is I'll just just run a bash terminal on it.
+
+[52:10.200 - 52:10.500]
+Huh?
+
+[52:12.400 - 52:13.500]
+Oh, sorry.
+
+[52:16.400 - 53:16.300]
+Of course when you jump to the demo, nothing starts working, right? I need to specify my name space and there we go. So you see right away that I've opened a terminal and I get an alert right here over in this Falco pod where I'm tailing the logs and you can see that I've opened a shell so it shall was spawned inside of a container with an attached terminal. So somebody's went interactive inside of this container. So what I can do now is I can run something that will actually trigger the alert. So let me actually go over here and see if I can get this to work. It wasn't working earlier via the remote exploit. Let me see if I can get it and so this is actually sending a profile cookie. This profile cookie is actually encoded in this application doesn't actually sanitize the inputs from the cookie and there's a way that you can actually exploit JavaScript by doing it's essentially a form of just-in-time execution it you can inject
+
+[53:16.400 - 53:17.500]
+functions inside
+
+[53:18.800 - 53:19.500]
+Ida
+
+[53:21.100 - 53:44.700]
+application was poorly written in somebody's not sanitizing the inputs. And if I click Send, let's see if it works. It didn't work. So let me go over here and let me just do it this way. So I'll just do a curl and remember that rule that I had opened that if I had stratum TCP in the command line, it would throw a critical alert.
+
+[53:48.000 - 53:56.800]
+And of course, my demo doesn't work, but it should actually go and kill that particular container and shut it down.
+
+[54:06.800 - 55:00.900]
+And of course I tested it before I got on the call and it worked fine, but it should have shut that container down but you can see that it is long. So if I did then hello, I I get an alert right there that I modified or I've created that new file. If I did something like move then I'll us to then unless old I get an alert right there as well that I'm modifying things in the binary directory as well. And these are all kind of common things that you would expect somebody who's getting into a system to do as they're trying to compromise a system. So with that I'll ask if there's any other questions for anyone
+
+[55:03.500 - 55:20.300]
+I have a general question. I might've missed the context for why we're talking about this today. I was wondering if you'd be willing to talk about that a little bit more. What do you mean context so I didn't
+
+[55:21.400 - 55:36.200]
+So and you can feel free to throw this back at me and said did a bad job of this too because I think I might have Mighty did a bad job of explaining things. So it's the secure access for everyone working group.
+
+[55:36.600 - 56:36.500]
+So I guess maybe I'm asking as a you and of me like what is what is what is what we're talking about really to the Charter of the group? I would I would throw out there that it may not necessarily take care of the access perspectives of things and the authentication perspective of things. I was actually under the Prussian the impression that the working group was more focused on cloud native Security in general and how you solve that problem with cognitive Security in general. And if I'm wrong then I've wasted everyone's time. Well, actually I am I think we're also working to tighten up our Charter so that it's clear to newcomers. So but I what I wanted to ask this kind of related to this what we're really seeking to do is kind of figure out is there a common or maybe a few common secure
+
+[56:36.600 - 57:34.900]
+Protectors right? What are the things that if you are coming to setting up a cloud native deployment? What do you need? You know, what are the things that every cloud deployment should have and what are the patterns there and particularly with regard to solving these problems where different clouds have to interoperate and there's kind of complexity and hybrid systems. And so I'm curious in this work you're doing which you've made efforts to make it work in kubernetes not in kubernetes in different places. Are there some things that you are seeing in patterns that have made it easier for you to build something that works in multiple environments in the cloud and are there's areas where you've had to kind of fill in gaps and do things that are substantially different in different environments where you kind of wish there was a little more commonality.
+
+[57:35.900 - 58:35.600]
+Yeah, I think that where the challenges are going to come in from the different clouds and what we've seen is that it's important to provide context and these security events that were throwing and so in this case, we're only integrating in with kubernetes. We can also integrate in with mezzos or Marathon. We can't pull any metadata right now back from something like Todd boundaries. So when these security events happen, we want to be able to access the API and give people information about its this particular application works this particular pot or it's this particular deployment. That's actually the that's causing problems. The other thing is is that we need API access and getting those API access and authentication to those different platforms can sometimes be challenging and then the other thing is that if you're going to take action inside of that, how can you limit these functions that are
+
+[58:35.900 - 58:54.600]
+Action, especially if you're using something like functions as a service or service functions, how can you give them the right level of access to just do that one individual thing that they do without being able to compromise the entire system and I think that kind of goes back to is a Christian.
+
+[58:56.600 - 59:19.600]
+Well, Jerry brought up that point but maybe Christian Testament early, right? Yeah of of how do you know that like you're not ddosing it? And the thing that is taking action is actually taking a is supposed to be taking action, right? And how can you not trick those functions into killing something that it's not supposed to the nice thing is that if it is a
+
+[59:30.300 - 01:00:15.800]
+It is definitely a challenge that we see I think more broadly and this isn't necessarily a knock against the CN CF but if you look at the CN CF landscape security is one area overall, whether if it's authentication or runtime security or infrastructure security is not anywhere on the landscape whatsoever. There's admittance control which allows applications then there's things like Network policy, but I kind of personally feel that security is one of those areas in that landscape that's missing. I agree. I've actually given the same feedback and they told me to feel free to add myself. So I don't know if you've added this.
+
+[01:00:19.500 - 01:01:18.900]
+Fill it out. Yeah, and we've I've opened up an issue on the landscape to say like we're done. I'll go fit where does our commercial product that and so it's still TBD to figure that out as I've talked to some members of the talk. They're like, well, we're not Security Experts. So it's hard for them to kind of digest some of this information. Yeah, I think that that's kind of that's part of what we are trying to like trying to help with right is that it's also hard to put just I don't know. I have mixed feelings. Like there are things you need for security like authorization like identity their these different things that you need that are kind of in their own security world, but but everything needs security so so how do we actually sketch out that landscape? I can't think is one of the questions of this working group and
+
+[01:01:19.400 - 01:01:37.900]
+So we're not there yet. The all of these use case presentations are way for us to get common language and understand the problems that people are trying to solve so so I found this to be really helpful in assisting. Yeah. I hope you keep coming Michael. I like your perspective.
+
+[01:01:41.200 - 01:02:05.700]
+So we just got two minutes left. I think we have a presentation planned for next week. So anyway, I forgot what it is offhand, but we'll send it out. So should we should be having a presentation about the open service broker as well? I'm not sure if we have that scheduled already. It seems to be relevant.
+
+[01:02:07.000 - 01:02:13.800]
+That's a great idea in what respect is there really isn't any security aspect of the OSB API.
+
+[01:02:15.100 - 01:03:15.000]
+Oh, really? No definitely is identity seems to be broken by it for well. Yes, the you can't pass enough identity and yet passes around credentials, but it doesn't really it doesn't really do a whole lot in terms of helping you with security other than passes around credentials. All right talk about how it passes around credentials and whether they're to improve that since it has such a big impact on so many platforms right now. Yeah, I guess we could talk about yeah. Yeah, I think more generically just understanding that there's this goal is having this generic API where anyone can go and ask for services and have those Services went up and then start consuming those Services. You have to ask yourself. How do you restrict access? It would be really dug. Maybe you can find the person who's thinking about like, how do you like issues of trusting services and and dishing out access and whether open service broker has all the
+
+[01:03:15.100 - 01:04:14.900]
+Rolls, it wants to have or whether you know, they're crossed like the the people implementing it are asking for things that maybe need to come from the platforms. Maybe there's somebody who has been focused on developing that area could kind of talk to how it uses the services and off. I think particularly Key Management is kind of a big deal. So I think talk to some of that but I think I'm probably gonna need a little more information to where I can identify the right person for the rest of the stuff. So what I could do is at some future call and of course, I don't know when is the doctor car next week and that's when I'm traveling in Asia for weeks, but the next time on I could talk about the various data that flows back and forth. How do you observe broker gets it does its job relative to credentials and then from that hopefully you guys can then say okay. Here's the problem. We want to talk more about and that I can identify the right person to talk about that or bring them in that makes sense. That's great. And I think we have a couple of presentations already lined up. So whenever your hair back and forth
+
+[01:04:15.000 - 01:04:44.600]
+Be fabulous. Okay, sounds good. So I want to be respectful of everybody's time. It's 12:01. So I thank you so much Jerry and Michael for your presentations, and please feel free to review the notes, and if we got anything wrong, or you want to add color or links. I tried to add some links into the slot into the notes, but please they're at editable by everybody. So, thank you everyone. Thanks everybody. Have a good one.
