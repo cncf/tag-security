@@ -1,4 +1,4 @@
-Authors: stummidi@pivotal.io, rayc@google.com, pragashjj@gmail.com, ckemper@google.com 
+Authors: stummidi@pivotal.io, rayc@google.com, pragashjj@gmail.com, ckemper@google.com
 
 Created: 7 March 2017
 
@@ -12,9 +12,9 @@ SAFE Cloud Foundry Use Cases: https://goo.gl/4pmdqt
 Administrators Bill of Rights: https://goo.gl/yQCxE8
 
 
-Summary 
+Summary
 ============
-Within an enterprise, based on the organization structure, we may have one or more of the personas. They could be from Developer, Enterprise Operator, Network Operator, End User, Infrastructure Provider. In this document, we will try to breakdown the use cases by applying bill of rights to each personas. 
+Within an enterprise, based on the organization structure, we may have one or more of the personas. They could be from Developer, Enterprise Operator, Network Operator, End User, Infrastructure Provider. In this document, we will try to breakdown the use cases by applying bill of rights to each personas.
 
 Developer
 =============
@@ -28,7 +28,7 @@ Enterprise Operator
 =============
 * As an enterprise operator, I need a central way to look at the organizational resources, so that I can administer them in a single view
 
-* As an enterprise operator, I need the ability to see what about the resource changed, who changed it and when it was changed, so that I can report on for compliance 
+* As an enterprise operator, I need the ability to see what about the resource changed, who changed it and when it was changed, so that I can report on for compliance
 
 * As an enterprise operator, I need a way to delegate policy control to lower level admins, including sub enterprise operators, who help me scale.
 
@@ -45,6 +45,18 @@ Enterprise Operator
 
 Quota Operator
 ==================
+
+Since quota is often used for cost control, this may imply a different persona
+with financial, rather than an engineering background.
+
+An important use of quota is to protect a service from abuse. By setting a
+quota, we can ensure that a single individual or group cannot bring down the
+service for everybody else (either intentionally or unintentionally).
+For example, services may lack sufficient protections (such as exponential
+backoff) and a simple quota enforcement in front of the service can reduce the
+impact of repeated request on the rest of the infrastructure.
+
+
 
 * As an quota operator, I need a central way to look at the organizational resources, so that I can administer them in a single view
 
@@ -131,6 +143,6 @@ Third Party Security Product/System
     * To put it more generically, I should be able to associate resources with dynamic labels/tags which can be used to trigger certain policies
 
 
-    
+
 
 
