@@ -31,7 +31,7 @@ among the WG Chairs may be escalated to the CNCF Steering Committee.
 * Members *MAY* decide to step down at anytime and optionally propose a
 replacement.
 * The group will use lazy consensus amongst other members with fallback on
-majority vote to accept proposal.  The candidate *SHOULD* be supported by a
+majority vote to accept proposal.  The proposal *SHOULD* be supported by a
 majority of WG Members.
 
 ### Role of Chairs
