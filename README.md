@@ -93,7 +93,7 @@ for both cloud and traditional infrastructure.
 
 ## Meeting Time
 
-The SAFE group meets every other Friday at 11:00am PT (USA Pacific):
+The SAFE group meets every Friday at 11:00am PT (USA Pacific):
 
 Join: https://zoom.us/j/629934721
 
