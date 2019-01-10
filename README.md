@@ -115,6 +115,14 @@ Past
 
 ## Meeting Minutes
 
+* [2018-01-11 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)
+* [2018-01-10 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session - :star: new meeting notes doc
+* [2018-12-21 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
+* [2018-12-13 SAFE WG BOF Deep Dive @ KubeCon + CloudNativeCon North America 2018](https://kccna18.sched.com/event/GrdR/deep-dive-safe-bof-jeyappragash-jeyakeerthi-padmeio-dan-shaw-danshaw-llc)
+* 2018-12-11 SAFE WG Dinner @ KubeCon + CloudNativeCon North America 2018
+* [2018-12-11 SAFE WG BOF Intro @ KubeCon + CloudNativeCon North America 2018](https://kccna18.sched.com/event/GrbV/intro-safe-bof-jeyappragash-jeyakeerthi-padmeio-dan-shaw-danshaw-llc)
+* [2018-12-14 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
+* [2018-12-07 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
 * [2018-11-30 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
 * [2018-11-29 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit) - Working Session
 * 2018-11-23 - no meeting
