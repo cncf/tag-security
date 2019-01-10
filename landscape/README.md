@@ -14,9 +14,10 @@ of projects in the CNCF Landscape and recommendations by SANS and Gartner for
 good security practices, as well as drawing on the experience of the SAFE WG.
 
 Next steps:
-[ ] Determine approach to category mapping (see below)
-[ ] Map cloud-native tools into categories (adjusting categories as needed)
-[ ] Validate categories and landscape with review by makers and users of
+
+- [ ] Determine approach to category mapping (see below)
+- [ ] Map cloud-native tools into categories (adjusting categories as needed)
+- [ ] Validate categories and landscape with review by makers and users of
     cloud-native security solutions, as well as partner working groups
 
 A note on how the work of mapping tools into the sub-categories may proceed:
