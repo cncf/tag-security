@@ -1,4 +1,4 @@
-# How does this release to the CNCF Landscape?
+# How does this relate to the CNCF Landscape?
 
 The [CNCF Landscape](https://landscape.cncf.io/) is a valuable resource for
 companies building cloud-native software. It’s a single place with a fairly
