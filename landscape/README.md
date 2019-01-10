@@ -13,8 +13,9 @@ Security Landscape”. We drafted this document after reviewing the current list
 of projects in the CNCF Landscape and recommendations by SANS and Gartner for
 good security practices, as well as drawing on the experience of the SAFE WG.
 
-Next steps:
+## Landscape Process
 
+- [X] Draft [categories](categories.md)
 - [ ] Determine approach to category mapping (see below)
 - [ ] Map cloud-native tools into categories (adjusting categories as needed)
 - [ ] Validate categories and landscape with review by makers and users of
