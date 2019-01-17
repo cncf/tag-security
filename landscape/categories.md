@@ -11,9 +11,13 @@ sub-categories. The remaining text is a description of each sub-category.
     - Checking OS for vulnerabilities (updates available? Reports from https://www.us-cert.gov/ etc), image scanning
     - Check for vulnerabilities in dependent libraries
     - Check for maintenance of dependent projects => increased potential for vulnerabilities
-  - _Pipeline security testing_
-    - Tools that facilitate automated security testing in pipelines; eg for functional security tests of authn and authz,
+  - _Functional testing_
+    - Tools that facilitate automated security testing in pipelines;
+    eg for functional security tests of authn and authz,
       tests of known potential weaknesses or misconfigurations
+  - _Piplines_
+    - Tools that ensure a secure pipeline or workflow, for example,
+    as applied to devops (CI/CD), supply chain, etc.
 
 - **Identity & Access Control**
   - _Identity_
@@ -37,15 +41,17 @@ sub-categories. The remaining text is a description of each sub-category.
 
 - **Privacy**
   - _Storage Security_
-    - Data colocation and encryption at rest/motion
+    - Data colocation (aka data sovereignty)
+    - Encryption at rest/motion
     - Preventing insider access to protected data
     - Monitoring for accidental data spills
 
 - **Provisioning**
   - _Automation & Configuration Compliance_
     - Compliance checkers, check platform configurations, verify private resources are not unexpectedly publicly accessible (eg S3 buckets), etc
-  - _Secure Container Registries_
-    - Image signing, etc
+  - _Trusted Compute_
+    - Secure container registries
+    - Self-hosted package repositories
 
 - **Runtime Observability and Analysis**
   - _Workload Runtime Protection_
