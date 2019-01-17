@@ -1,11 +1,12 @@
 # Approach to the landscape
 
+## Goal
 Our goal is the help organizations practice better security by providing a
 map to cloud-native tools that require security considerations at each stage
 of the software development lifecycle (SDLC), as well as tools that are focused
 on specific cross-cutting security concerns.
 
-# How does this relate to the CNCF landscape?
+## How does this relate to the CNCF landscape?
 
 The [CNCF Landscape](https://landscape.cncf.io/) is a valuable resource for
 companies building cloud-native software. It’s a single place with a fairly
