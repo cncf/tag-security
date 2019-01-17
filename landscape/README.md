@@ -17,7 +17,7 @@ good security practices, as well as drawing on the experience of the SAFE WG.
 ## Landscape Process
 
 - [X] Draft [categories](categories.md)
-- [ ] Determine [approach to category mapping](approach#mapping)
+- [ ] Determine [approach to category mapping](approach.md#mapping)
 - [ ] Map cloud-native tools into categories (adjusting categories as needed)
 - [ ] Validate categories and landscape with review by makers and users of
     cloud-native security solutions, as well as partner working groups
