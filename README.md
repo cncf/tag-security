@@ -116,6 +116,8 @@ Past
 
 ## Meeting Minutes
 
+* [2018-01-18 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)
+* [2018-01-17 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session
 * [2018-01-11 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)
 * [2018-01-10 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session - :star: [new meeting notes doc](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)
 * [2018-12-21 SAFE Meeting](https://docs.google.com/document/d/1JsEv4vk_61UaF9SaHBRzzPGja-bNsHeLqxa53RPVfos/edit)
