@@ -7,13 +7,15 @@ can help the CNCF ensure that projects that are being considered for
 inclusion in the CNCF have reasonable security fundamentals that are
 expected to stop an attacker.  
 
-Due to the nature and timeframe for the analysis, this review is not meant
-to subsume the need for a professional security audit of the code.  Audits
+Due to the nature and timeframe for the analysis, *this review is not meant
+to subsume the need for a professional security audit of the code*.  Audits
 of implementation vulnerabilities and similar issues at that level are not
-intended to be covered by this audit.
+intended to be covered by this audit.  The purpose of this effort is to 
+uncover design flaws and to obtain a clear articulation of what the project's 
+design goals and security properties are intended to be.
 
 
-=Needed information for assessment=
+## Needed information for assessment
 
 First of all, the burden is primarily on the proposing project to
 demonstrate it is secure in a manner that is understandable to the broader
@@ -79,7 +81,7 @@ community members to understand the answers to some questions, especially
 involving deployment scenarios and the impact of attacks.
 
 
-=Expected time / effort=
+## Expected time / effort
 
 
 The level of effort for the team providing the information is expected to
@@ -95,7 +97,7 @@ document and analyzing the security assertions and assumptions. The SAFE WG
 may decide on minimum security best practices for the software development
 process that the project must also demonstrate it is following. 
 
-=SAFE examiner qualifications=
+## SAFE examiner qualifications
 
 Unless approved by the SAFE WG chairs, at least one of the examiners will
 have previously performed a SAFE WG audit.  (Exemptions are expected to be
