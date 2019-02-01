@@ -4,8 +4,8 @@ Working Group Proposal: Secure Access for Everyone (SAFE)
 ## Objective
 
 Secure Access for Everyone (SAFE) Working Group facilitates collaboration
-to discover and produce resources which enable secure access, policy control 
-and safety for operators, administrators, developers, and end-users across 
+to discover and produce resources which enable secure access, policy control
+and safety for operators, administrators, developers, and end-users across
 the cloud native ecosystem.
 
 ## Background
@@ -107,11 +107,15 @@ Or Telephone:
 
 ## In Person Meetings
 
-Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup (via the linked github issue):
-* KubeCon + CloudNativeCon, Shanghai, Nov 14-15, 2018 - [issue#28](https://github.com/cn-security/safe/issues/28)
-* KubeCon + CloudNativeCon, North America, Dec 11-13, 2018 - [issue#29](https://github.com/cn-security/safe/issues/29)
+Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup. Create a [github issue](https://github.com/cn-security/safe/issues/new) for an event and add to list
+below:
+
+* KubeCon + CloudNativeCon, Barcelona, Spain, May 20 – 23, 2019 - [issue#127]
+* KubeCon + CloudNativeCon, San Diego, CA - Nov 18 – 21, 2019 - [issue#128]
 
 Past
+* KubeCon + CloudNativeCon, North America, Dec 11-13, 2018 - [issue#29](https://github.com/cn-security/safe/issues/29)
+* KubeCon + CloudNativeCon, Shanghai, Nov 14-15, 2018 - [issue#28](https://github.com/cn-security/safe/issues/28)
 * [KubeConEU](https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2018/) May 2-4, 2018 in Copenhagen, Denmark ([notes](safe_kubecon.md))
 
 ## Meeting Minutes
