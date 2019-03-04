@@ -83,6 +83,7 @@ for both cloud and traditional infrastructure.
 * John Morello ([@morellonet](https://github.com/morellonet)), Twistlock
 * Alban Crequy ([@alban](https://github.com/alban)), Kinvolk
 * Michael Schubert ([@schu](https://github.com/schu)), Kinvolk
+* Andrei Manea ([@andrei_821](https://github.com/andrei821)), CloudHero
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
