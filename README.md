@@ -84,6 +84,8 @@ for both cloud and traditional infrastructure.
 * Alban Crequy ([@alban](https://github.com/alban)), Kinvolk
 * Michael Schubert ([@schu](https://github.com/schu)), Kinvolk
 * Andrei Manea ([@andrei_821](https://github.com/andrei821)), CloudHero
+* Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
+* Santiago Torres-Arias ([@SantiagoTorres](https://github.com/SantiagoTorres)), New York University
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
