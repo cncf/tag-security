@@ -99,13 +99,13 @@ for both cloud and traditional infrastructure.
 
 The SAFE group meets every Friday at 11:00am PT (USA Pacific):
 
-Join: https://zoom.us/j/709980684
+Join: https://zoom.us/j/665428022
 
 Or iPhone one-tap:
-* US: +16699006833,,709980684# or +16468769923,,709980684#
+* US: +16699006833,,665428022# or +16468769923,,665428022#
 
 Or Telephone:
-* US: +1 669 900 6833 or +1 646 876 9923, Meeting ID: 709-980-684
+* US: +1 669 900 6833 or +1 646 876 9923, Meeting ID: 665-428-022
 * International numbers available: https://zoom.us/zoomconference?m=r-YGNTQJzZphTlO4LYkdhAt4oIQpwl2g
 
 ## In Person Meetings
