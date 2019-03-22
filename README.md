@@ -95,6 +95,10 @@ for both cloud and traditional infrastructure.
 * [Kubernetes SIG-Auth](https://github.com/kubernetes/community/tree/master/sig-auth)
 * [NIST Big Data WG](https://bigdatawg.nist.gov/)
 
+## Communications
+
+* Join us on [CNCF Slack](https://slack.cncf.io/) #safe-wg channel
+
 ## Meeting Time
 
 The SAFE group meets every Friday at 11:00am PT (USA Pacific):
