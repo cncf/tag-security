@@ -86,6 +86,7 @@ for both cloud and traditional infrastructure.
 * Andrei Manea ([@andrei_821](https://github.com/andrei821)), CloudHero
 * Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
 * Santiago Torres-Arias ([@SantiagoTorres](https://github.com/SantiagoTorres)), New York University
+* Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
