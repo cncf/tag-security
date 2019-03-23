@@ -51,7 +51,7 @@ for both cloud and traditional infrastructure.
 ## Members
 
 * Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [chair]
-* Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), Google [chair]
+* Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [chair]
 * Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [chair]
 * Devarajan P Ramaswamy ([@deva](https://github.com/deva26)), PADME
 * Kamil Pawlowski ([@kbpawlowski](https://github.com/kbpawlowski))
