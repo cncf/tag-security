@@ -14,3 +14,4 @@ as references, but that's ongoing work.
 | [Kingslayer](compromises/2017/kingslayer.md) | 2017 | Publishing Infrastructure | [1](https://www.rsa.com/content/dam/premium/en/white-paper/kingslayer-a-supply-chain-attack.pdf) |
 | [HackTask](compromises/2017/hacktask.md) | 2017 | TypoSquat | [1](https://securityintelligence.com/news/typosquatting-attack-puts-developers-at-risk-from-infected-javascript-packages/) |
 | [XCodeGhost](compromises/2015/xcodeghost.md) | 2015 | Fake toolchain | [1](https://www.theregister.co.uk/2015/09/21/xcodeghost_apple_ios_store_malware_zapped/) | 
+| [NotPetya](compromises/2017/notpetya.md) | 2017 | Multiple steps | [1](https://www.welivesecurity.com/2017/07/04/analysis-of-telebots-cunning-backdoor/) |
