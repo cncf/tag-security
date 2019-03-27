@@ -9,3 +9,4 @@ as references, but that's ongoing work.
 | ----------------- | ------------------ | ------------------    | ----------- |
 | [Juniper Incident](compromises/2015/juniper.md) | 2015    | Source Code Compromise| [1](https://eprint.iacr.org/2016/376.pdf)
 | [Operation Aurora](compromises/2010/aurora.md) | 2010 | Watering-hole attack | [1](https://www.wired.com/2010/03/source-code-hacks/) | 
+| [Foxif/CCleaner](compromises/2017/ccleaner.md) | 2017 | Publishing Infrastructure | [1](http://blog.talosintelligence.com/2017/09/avast-distributes-malware.html) |
