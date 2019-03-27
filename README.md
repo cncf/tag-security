@@ -12,3 +12,4 @@ as references, but that's ongoing work.
 | [Foxif/CCleaner](compromises/2017/ccleaner.md) | 2017 | Publishing Infrastructure | [1](http://blog.talosintelligence.com/2017/09/avast-distributes-malware.html) |
 | [HandBrake](compromises/2017/handbrake.md) | 2017 | Publishing Infrastructure | [1](https://blog.malwarebytes.com/threat-analysis/mac-threat-analysis/2017/05/handbrake-hacked-to-drop-new-variant-of-proton-malware/) |
 | [Kingslayer](compromises/2017/kingslayer.md) | 2017 | Publishing Infrastructure | [1](https://www.rsa.com/content/dam/premium/en/white-paper/kingslayer-a-supply-chain-attack.pdf) |
+| [HackTask](compromises/2017/hacktask.md) | 2017 | TypoSquat | [1](https://securityintelligence.com/news/typosquatting-attack-puts-developers-at-risk-from-infected-javascript-packages/) |
