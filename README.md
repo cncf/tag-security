@@ -13,3 +13,4 @@ as references, but that's ongoing work.
 | [HandBrake](compromises/2017/handbrake.md) | 2017 | Publishing Infrastructure | [1](https://blog.malwarebytes.com/threat-analysis/mac-threat-analysis/2017/05/handbrake-hacked-to-drop-new-variant-of-proton-malware/) |
 | [Kingslayer](compromises/2017/kingslayer.md) | 2017 | Publishing Infrastructure | [1](https://www.rsa.com/content/dam/premium/en/white-paper/kingslayer-a-supply-chain-attack.pdf) |
 | [HackTask](compromises/2017/hacktask.md) | 2017 | TypoSquat | [1](https://securityintelligence.com/news/typosquatting-attack-puts-developers-at-risk-from-infected-javascript-packages/) |
+| [XCodeGhost](compromises/2015/xcodeghost.md) | 2015 | Fake toolchain | [1](https://www.theregister.co.uk/2015/09/21/xcodeghost_apple_ios_store_malware_zapped/) | 
