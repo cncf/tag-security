@@ -8,3 +8,4 @@ as references, but that's ongoing work.
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
 | [Juniper Incident](compromises/2015/juniper.md) | 2015    | Source Code Compromise| [1](https://eprint.iacr.org/2016/376.pdf)
+| [Operation Aurora](compromises/2010/aurora.md) | 2010 | Watering-hole attack | [1](https://www.wired.com/2010/03/source-code-hacks/) | 
