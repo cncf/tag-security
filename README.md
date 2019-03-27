@@ -17,3 +17,4 @@ as references, but that's ongoing work.
 | [NotPetya](compromises/2017/notpetya.md) | 2017 | Multiple steps | [1](https://www.welivesecurity.com/2017/07/04/analysis-of-telebots-cunning-backdoor/) |
 | [Bitcoin Gold](compromises/2017/bitcoingold.md) | 2017 | Source Code Compromise | [1](https://bitcoingold.org/critical-warning-nov-26/) | 
 | [ExpensiveWall](compromises/2017/expensivewall.md) | 2017 | Backdooring SDK | [1](https://blog.checkpoint.com/2017/09/14/expensivewall-dangerous-packed-malware-google-play-will-hit-wallet/)[2](https://research.checkpoint.com/expensivewall-dangerous-packed-malware-google-play-will-hit-wallet/)
+| [keydnap](compromises/2016/keydnap.md) | 2016 | Publishing infrastructure | [1](https://blog.malwarebytes.com/threat-analysis/2016/09/transmission-hijacked-again-to-spread-malware)[2](https://www.welivesecurity.com/2016/08/30/osxkeydnap-spreads-via-signed-transmission-application/)
