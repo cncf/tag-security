@@ -21,6 +21,7 @@ as references, but that's ongoing work.
 | [OSX Elmedia player](compromises/2017/elmedia.md) | 2017 | Publishing infrastructure | [1](https://www.hackread.com/hackers-infect-mac-users-proton-malware-using-elmedia-player/) |
 | [keydnap](compromises/2016/keydnap.md) | 2016 | Publishing infrastructure | [1](https://blog.malwarebytes.com/threat-analysis/2016/09/transmission-hijacked-again-to-spread-malware),[2](https://www.welivesecurity.com/2016/08/30/osxkeydnap-spreads-via-signed-transmission-application/) |
 | [Fosshub Breach](compromises/2016/fosshub.md) | 2016 | Publishing infrastructure | [1](https://www.ghacks.net/2016/08/03/attention-fosshub-downloads-compromised/),[2](https://www.theregister.co.uk/2016/08/04/classicshell_audicity_infection/) |
+| [Linux Mint](compromises/2016/mint.md) | 2016 | Publishing infrastructure | [1](https://www.zdnet.com/article/linux-mint-website-hacked-malicious-backdoor-version/) |
 | [Juniper Incident](compromises/2015/juniper.md) | 2015    | Source Code Compromise| [1](https://eprint.iacr.org/2016/376.pdf)
 | [XCodeGhost](compromises/2015/xcodeghost.md) | 2015 | Fake toolchain | [1](https://www.theregister.co.uk/2015/09/21/xcodeghost_apple_ios_store_malware_zapped/) | 
 | [Ceph and Inktank](compromises/2015/ceph-and-inktank.md) | 2015 | Build, source and publishing infrastructure | [1](https://www.zdnet.com/article/red-hats-ceph-and-inktank-code-repositories-were-cracked/) |
