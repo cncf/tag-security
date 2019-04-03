@@ -10,11 +10,11 @@ then configured the server to only deliver malicious files if the client is
 located in the range of IP addresses of their target organizations.
 
 
-## Effect
+## Imapct
 
 N/A
 
-## Attacker Type of Access
+## Type of Compromise
 
 It appears the attackers compromised the publishing infrastructure, 
 as well as signing keys for updates.

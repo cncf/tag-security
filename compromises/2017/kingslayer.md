@@ -4,7 +4,7 @@ Attackers could breach the download server of an application (used by system
 administrators to analyze Windows logs) and replaced the legitimate application
 and updates with a signed malicious version. 
 
-## Effect
+## Impact
 
 Organizations who used Alpha's free license edition software (the compromised
 version) include:

@@ -7,11 +7,11 @@ the malicious coinminer code hidden inside the font package
 would receive full access to the victims' system.
 
 
-## Effect
+## Impact
 
 Users who have installed this PDF editor between January and March 2018 have been affected.
 
-## Attacker Type of Access
+## Type of Compromise
 
 This was a counterfeit artifact delivered to developers.
 

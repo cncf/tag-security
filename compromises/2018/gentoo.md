@@ -5,11 +5,11 @@ removed access to Gentoo repositories from developers,
 and modified the content of repositories as well as pages.
 
 
-## Effect
+## Impact
 
 N/A
 
-## Attacker Type of Access
+## Type of Compromise
 
 It seems that the attackers have been able to hack 
 the source code repository but not developer keys.
