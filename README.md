@@ -26,5 +26,6 @@ as references, but that's ongoing work.
 | [XCodeGhost](compromises/2015/xcodeghost.md) | 2015 | Fake toolchain | [1](https://www.theregister.co.uk/2015/09/21/xcodeghost_apple_ios_store_malware_zapped/) | 
 | [Ceph and Inktank](compromises/2015/ceph-and-inktank.md) | 2015 | Build, source and publishing infrastructure | [1](https://www.zdnet.com/article/red-hats-ceph-and-inktank-code-repositories-were-cracked/) |
 | [Code Spaces](compromises/2014/code-spaces.md) | 2014    | Source Code Compromise| [1](https://threatpost.com/hacker-puts-hosting-service-code-spaces-out-of-business/106761/)
+| [Monju Incident](compromises/2014/monju.md) | 2014    | Publishing infrastructure| [1](https://www.contextis.com/en/blog/context-threat-intelligence-the-monju-incident)
 | [Operation Aurora](compromises/2010/aurora.md) | 2010 | Watering-hole attack | [1](https://www.wired.com/2010/03/source-code-hacks/) | 
 | [ProFTPD](compromises/2010/proftpd.md) | 2010 | Source Code Repository | [1](https://www.zdnet.com/article/open-source-proftpd-hacked-backdoor-planted-in-source-code/) |
