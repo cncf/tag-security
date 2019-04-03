@@ -20,4 +20,4 @@ as references, but that's ongoing work.
 | [keydnap](compromises/2016/keydnap.md) | 2016 | Publishing infrastructure | [1](https://blog.malwarebytes.com/threat-analysis/2016/09/transmission-hijacked-again-to-spread-malware),[2](https://www.welivesecurity.com/2016/08/30/osxkeydnap-spreads-via-signed-transmission-application/)
 | [Ceph and Inktank](compromises/2015/ceph-and-inktank.md) | 2015 | Build, source and publishing infrastructure | [1](https://www.zdnet.com/article/red-hats-ceph-and-inktank-code-repositories-were-cracked/) |
 | [OSX Elmedia player](compromises/2017/elmedia.md) | 2017 | Publishing infrastructure | [1](https://www.hackread.com/hackers-infect-mac-users-proton-malware-using-elmedia-player/) |
-| [ProFTPD](compromises/2010/proftpd) | 2010 | Source Code Repository | [1](https://www.zdnet.com/article/open-source-proftpd-hacked-backdoor-planted-in-source-code/) |
+| [ProFTPD](compromises/2010/proftpd.md) | 2010 | Source Code Repository | [1](https://www.zdnet.com/article/open-source-proftpd-hacked-backdoor-planted-in-source-code/) |
