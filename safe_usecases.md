@@ -1,31 +1,36 @@
 Authors: stummidi@pivotal.io, rayc@google.com, pragashjj@gmail.com, ckemper@google.com
 
-Created: 7 March 2017
+Updated: 9 April 2019
 
-This is a living document, please feel free to add use cases and personas through a PR. We want this to be a repository of cloud native security related use cases.
-
-Refer:
-============
-
+This is a living document, please feel free to add use cases and personas through a PR. 
+This initial version was derived from inputs referencd below.  Please add 
+references for new use cases, which could included shared documents from other 
+projects, published research or case studies of cloud native technologies in
+real world use.
+ 
+## References
 SAFE Cloud Foundry Use Cases: https://goo.gl/4pmdqt
-
 Administrators Bill of Rights: https://goo.gl/yQCxE8
 
-
-Summary
+Overview
 ============
-Within an enterprise, based on the organization structure, we may have one or more of the personas. They could be from Developer, Enterprise Operator, Network Operator, End User, Infrastructure Provider. In this document, we will try to breakdown the use cases by applying bill of rights to each personas.
+This is a list of use cases to enable secure access, policy control and safety.
 
-Developer
-=============
-* As a developer, I need to provide logs for any changes to a critical resources, such that they can be made available for auditing
+Within an enterprise, based on the organization structure, we may have one or 
+more of the personas. The target user groups from SAFE mission statement are
+separated into these more detailed personas where roles may be held by 
+different people in a large organization.
 
-* As a developer, I need to be able to tag my resources so that they can be grouped by an administrator when required
+Users: 
+* Operators: Enterprise, Quota, Network
+* Administrators: Security, Compliance/Audit
+* Developers, including Third Party Security Products
+* End-users 
 
-* As a developer I need to be able to perform an access check for a resource
+# Operators
 
-Enterprise Operator
-=============
+## Enterprise 
+
 * As an enterprise operator, I need a central way to look at the organizational resources, so that I can administer them in a single view
 
 * As an enterprise operator, I need the ability to see what about the resource changed, who changed it and when it was changed, so that I can report on for compliance
@@ -43,8 +48,7 @@ Enterprise Operator
 * As an enterprise operator, I can understand the effect of changes to policy that I am making
 
 
-Quota Operator
-==================
+## Quota 
 
 Since quota is often used for cost control, this may imply a different persona
 with financial, rather than an engineering background.
@@ -73,8 +77,7 @@ impact of repeated request on the rest of the infrastructure.
 * As a quota operator, I can understand the effect of changes to quota that I am making
 
 
-Network Operator
-====================
+## Network 
 
 * As a network operator, I need a central way to look at the networks in my organization, so that I can administer them in a single view.
 
@@ -87,20 +90,9 @@ Network Operator
 * As a network operator, I can understand the effect of changes to network policy that I am making
 
 
-End User
-============
+# Adminsitrators
 
-* As an end user, I can understand which resources I can access and how I can request access to a resource
-
-* As an end user, I can delegate or revoke access to downstream applications/resource or other users
-
-* As an end user, I can request access to a resource and operations.
-
-* As an end user, I can understand the effect of changes to policy that I am making
-
-
-Compliance Officer /Auditor
-===============================
+## Compliance Officer / Auditor
 
 * As a compliance officer, I can <a href="https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.norkt12d88ma" target="_blank">audit</a>  all accesses and understand all policy grants for my organizations’ cloud resources - including all accesses of other administrators.
 
@@ -115,8 +107,7 @@ Compliance Officer /Auditor
 * As a compliance officer, I can configure my organization's resources to meet the requirements of relevant standards such as [PCI](https://www.pcisecuritystandards.org/), [FedRAMP](https://www.fedramp.gov/) or [HIPAA](https://www.gpo.gov/fdsys/pkg/PLAW-104publ191/html/PLAW-104publ191.htm), and I can generate assessment and attestation artifacts showing how the relevant requirements are met.
 
 
-Security Administrator
-==========================
+## Security Administrator
 
 * As a security administrator, I can <a href="https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.ems5pk2exnlb" target="_blank">centrally administer</a>  my organizations’ cloud resources.
 
@@ -134,13 +125,34 @@ Security Administrator
 
 * As a security administrator, I can <a href="https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.7wavwjkp2pz2" target="_blank">exercise the above rights in hybrid and mutli-cloud deployments</a>  without compromising my ability to manage my organizations’ cloud resources.
 
+# Developers
 
-Third Party Security Product/System
-==========================
+* As a developer, I need to provide logs for any changes to a critical resources, such that they can be made available for auditing
+
+* As a developer, I need to be able to tag my resources so that they can be grouped by an administrator when required
+
+* As a developer I need to be able to perform an access check for a resource
+
+# Third Party Security Product/System
 
 * A third party system should be able to affect security policy based on assets being tagged as quarantined.
 
     * To put it more generically, I should be able to associate resources with dynamic labels/tags which can be used to trigger certain policies
+
+
+
+
+# End-users
+
+* As an end user, I can understand which resources I can access and how I can request access to a resource
+
+* As an end user, I can delegate or revoke access to downstream applications/resource or other users
+
+* As an end user, I can request access to a resource and operations.
+
+* As an end user, I can understand the effect of changes to policy that I am making
+
+
 
 
 
