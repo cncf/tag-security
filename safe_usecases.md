@@ -90,7 +90,7 @@ impact of repeated request on the rest of the infrastructure.
 * As a network operator, I can understand the effect of changes to network policy that I am making
 
 
-# Adminsitrators
+# Administrators
 
 ## Compliance Officer / Auditor
 
