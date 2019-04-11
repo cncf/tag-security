@@ -2,11 +2,11 @@
 
 First of all, the burden is primarily on the proposing project to
 demonstrate it is secure in a manner that is understandable to the broader
-community.  The SAFE examiners will help to assess and probe the design.
+community.  The [reviewers](security-reviewer.md) will help to assess and probe the design.
 
 The proposing project must provide a written document that describes the
 project and its security.  The document must contain the following
-information, at a minimum.  
+information, at a minimum.
 
 * Goal. The intended goal of the projects including the security guarantees
 the project is meant to provide (e.g., Flibble only allows parties with an
@@ -43,7 +43,7 @@ various attacks are launched.  Note, that no system is secure in all
 scenarios, hence it is expected that this will include areas where attacks
 compromise all meaningful security.  (e.g., If an attacker is able to
 compromise the “master” Flibble server, they may read, write, or delete any
-content stored on any system) 
+content stored on any system)
 * Attack risk.  A rough estimation of the risk posed by different attacks.
 (e.g., The master Flibble server only communicates with Flibble servers
 using a minimalistic API that is formally verified and written in Rust.)
@@ -52,15 +52,4 @@ using a minimalistic API that is formally verified and written in Rust.)
 that the software undergoes as it is developed and built.
 * CII Best Practices.  A brief discussion of where the project is at with
 respect to CII best practices and what it would need to achieve the badge.
-
-Using this information, the SAFE examiners will try to understand the
-system and probe its security.  Specifically design level issues are meant
-to be addressed as well as high level problems with the project’s setup and
-operation. This is meant to provide an independent analysis and estimation
-of the above information.  The goal is to ask questions to understand if
-there are hidden assumptions, underestimated risk, or design issues that
-harm the security of the project.  It may be useful to reach out to
-community members to understand the answers to some questions, especially
-involving deployment scenarios and the impact of attacks.
-
 
