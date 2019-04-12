@@ -9,8 +9,9 @@ projects, published research or case studies of cloud native technologies in
 real world use.
  
 ## References
-SAFE Cloud Foundry Use Cases: https://goo.gl/4pmdqt
-Administrators Bill of Rights: https://goo.gl/yQCxE8
+
+* SAFE Cloud Foundry Use Cases: https://goo.gl/4pmdqt
+* Administrators Bill of Rights: https://goo.gl/yQCxE8
 
 Overview
 ============
