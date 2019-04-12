@@ -14,18 +14,25 @@ Administrators Bill of Rights: https://goo.gl/yQCxE8
 
 Overview
 ============
-This is a list of use cases to enable secure access, policy control and safety.
+This is a list of use cases to enable secure access, policy control and safety
+for users of cloud native technology.
+
+## Users
 
 Within an enterprise, based on the organization structure, we may have one or 
-more of the personas. The target user groups from SAFE mission statement are
+more of the personas. The more general user categories are
 separated into these more detailed personas where roles may be held by 
 different people in a large organization.
 
-Users: 
 * Operators: Enterprise, Quota, Network
 * Administrators: Security, Compliance/Audit
 * Developers, including Third Party Security Products
 * End-users 
+
+A project will often have a very focused target audience and not all
+use cases are applicable in every situaton.  The use cases below are a guide
+to consider common needs that often require support from multiple products
+or technologies in order to be fully functional for the target users.
 
 # Operators
 
