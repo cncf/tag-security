@@ -4,8 +4,8 @@ Working Group Proposal: Secure Access for Everyone (SAFE)
 ## Objective
 
 Secure Access for Everyone (SAFE) Working Group facilitates collaboration
-to discover and produce resources which enable secure access, policy control 
-and safety for operators, administrators, developers, and end-users across 
+to discover and produce resources which enable secure access, policy control
+and safety for operators, administrators, developers, and end-users across
 the cloud native ecosystem.
 
 ## Background
@@ -51,7 +51,7 @@ for both cloud and traditional infrastructure.
 ## Members
 
 * Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [chair]
-* Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), Google [chair]
+* Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [chair]
 * Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [chair]
 * Devarajan P Ramaswamy ([@deva](https://github.com/deva26)), PADME
 * Kamil Pawlowski ([@kbpawlowski](https://github.com/kbpawlowski))
@@ -83,6 +83,10 @@ for both cloud and traditional infrastructure.
 * John Morello ([@morellonet](https://github.com/morellonet)), Twistlock
 * Alban Crequy ([@alban](https://github.com/alban)), Kinvolk
 * Michael Schubert ([@schu](https://github.com/schu)), Kinvolk
+* Andrei Manea ([@andrei_821](https://github.com/andrei821)), CloudHero
+* Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
+* Santiago Torres-Arias ([@SantiagoTorres](https://github.com/SantiagoTorres)), New York University
+* Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
@@ -92,30 +96,64 @@ for both cloud and traditional infrastructure.
 * [Kubernetes SIG-Auth](https://github.com/kubernetes/community/tree/master/sig-auth)
 * [NIST Big Data WG](https://bigdatawg.nist.gov/)
 
+## Communications
+
+Anyone is welcome to join our open discussions of WG projects and share news related to the group's mission and charter. Much of the work of the group happens outside of WG meetings and we encourage project teams to share progress updates or post questions in these channels:
+
+* [Email list](https://groups.google.com/forum/#!forum/cloud-native-security)
+* [CNCF Slack](https://slack.cncf.io/) #safe-wg channel
+
 ## Meeting Time
 
 The SAFE group meets every Friday at 11:00am PT (USA Pacific):
 
-Join: https://zoom.us/j/709980684
+Join: https://zoom.us/j/665428022
 
 Or iPhone one-tap:
-* US: +16699006833,,709980684# or +16468769923,,709980684#
+* US: +16699006833,,665428022# or +16468769923,,665428022#
 
 Or Telephone:
-* US: +1 669 900 6833 or +1 646 876 9923, Meeting ID: 709-980-684
+* US: +1 669 900 6833 or +1 646 876 9923, Meeting ID: 665-428-022
 * International numbers available: https://zoom.us/zoomconference?m=r-YGNTQJzZphTlO4LYkdhAt4oIQpwl2g
 
 ## In Person Meetings
 
-Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup (via the linked github issue):
-* KubeCon + CloudNativeCon, Shanghai, Nov 14-15, 2018 - [issue#28](https://github.com/cn-security/safe/issues/28)
-* KubeCon + CloudNativeCon, North America, Dec 11-13, 2018 - [issue#29](https://github.com/cn-security/safe/issues/29)
+Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup. Create a [github issue](https://github.com/cn-security/safe/issues/new) for an event and add to list
+below:
+
+* KubeCon + CloudNativeCon, Barcelona, Spain, May 20 – 23, 2019 - [issue#127]
+* KubeCon + CloudNativeCon, San Diego, CA - Nov 18 – 21, 2019 - [issue#128]
 
 Past
+* KubeCon + CloudNativeCon, North America, Dec 11-13, 2018 - [issue#29](https://github.com/cn-security/safe/issues/29)
+* KubeCon + CloudNativeCon, Shanghai, Nov 14-15, 2018 - [issue#28](https://github.com/cn-security/safe/issues/28)
 * [KubeConEU](https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2018/) May 2-4, 2018 in Copenhagen, Denmark ([notes](safe_kubecon.md))
 
 ## Meeting Minutes
 
+* [2018-04-12 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - OPA with SAFE Presentation Framework
+* [2018-04-11 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session
+* [2018-04-05 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Google Open Source Project Onboarding
+* [2018-04-04 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session
+* [2018-03-29 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Revised presentation framework with in-toto (OPA, Kamus, TOC invited) 
+* [2018-03-28 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session
+* [2018-03-22 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)
+* [2018-03-22 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - SAFE Whitepaper Working Session
+* [2018-03-15 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)
+* [2018-03-08 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)
+* [2018-03-07 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session
+* [2018-03-08 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)
+* [2018-03-07 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session
+* [2018-03-01 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)
+* [2018-02-28 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session
+* [2018-02-22 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)
+* [2018-02-21 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session
+* [2018-02-15 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)
+* [2018-02-08 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)
+* [2018-02-01 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)
+* [2018-01-31 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session
+* [2018-01-25 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)
+* [2018-01-24 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session
 * [2018-01-18 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)
 * [2018-01-17 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session
 * [2018-01-11 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)

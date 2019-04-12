@@ -15,7 +15,7 @@ sub-categories. The remaining text is a description of each sub-category.
     - Tools that facilitate automated security testing in pipelines;
     eg for functional security tests of authn and authz,
       tests of known potential weaknesses or misconfigurations
-  - _Piplines_
+  - _Pipelines_
     - Tools that ensure a secure pipeline or workflow, for example,
     as applied to devops (CI/CD), supply chain, etc.
 
