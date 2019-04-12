@@ -1,6 +1,6 @@
-The SAFE WG has been ask to provide the CNCF’s TOC with effective
-information about the security of different projects.  The purpose of this
-document is to outline the procedure by which a project should be evaluated.
+To provide the CNCF’s TOC with effective
+information about the security of different projects,
+this document outlines the procedure by which a project should be evaluated.
 
 The project assessment process is intended to be a collaborative process for
 the benefit of the project and the community, where the primary content is
