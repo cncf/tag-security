@@ -1,9 +1,8 @@
-# SAFE WG
-Working Group Proposal: Secure Access for Everyone (SAFE)
+# CNCF Special Interest Group for Security (SIG-Security)
 
 ## Objective
 
-Secure Access for Everyone (SAFE) Working Group facilitates collaboration
+SIG-Security facilitates collaboration
 to discover and produce resources which enable secure access, policy control
 and safety for operators, administrators, developers, and end-users across
 the cloud native ecosystem.
@@ -92,21 +91,26 @@ for both cloud and traditional infrastructure.
 
 ## Related Groups
 
-* [(Proposed) CNCF Policy Working Group](/policy-wg-merging.md) - Merged into SAFE WG
 * [Kubernetes Policy Working Group](https://github.com/kubernetes/community/tree/master/wg-policy)
 * [Kubernetes SIG-Auth](https://github.com/kubernetes/community/tree/master/sig-auth)
 * [NIST Big Data WG](https://bigdatawg.nist.gov/)
+
+## History
+
+* SAFE WG - renamed to CNCF Security SIG
+* [(Proposed) CNCF Policy Working Group](/policy-wg-merging.md) - Merged into SAFE WG
+
 
 ## Communications
 
 Anyone is welcome to join our open discussions of WG projects and share news related to the group's mission and charter. Much of the work of the group happens outside of WG meetings and we encourage project teams to share progress updates or post questions in these channels:
 
 * [Email list](https://groups.google.com/forum/#!forum/cloud-native-security)
-* [CNCF Slack](https://slack.cncf.io/) #safe-wg channel
+* [CNCF Slack](https://slack.cncf.io/) #sig-security channel
 
 ## Meeting Time
 
-The SAFE group meets every Friday at 11:00am PT (USA Pacific):
+The Security SIG group meets every Friday at 11:00am PT (USA Pacific):
 
 Join: https://zoom.us/j/665428022
 
@@ -119,15 +123,15 @@ Or Telephone:
 
 ## In Person Meetings
 
-Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup. Create a [github issue](https://github.com/cn-security/safe/issues/new) for an event and add to list
+Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup. Create a [github issue](https://github.com/cncf/sig-security/issues/new) for an event and add to list
 below:
 
 * KubeCon + CloudNativeCon, Barcelona, Spain, May 20 – 23, 2019 - [issue#127]
 * KubeCon + CloudNativeCon, San Diego, CA - Nov 18 – 21, 2019 - [issue#128]
 
 Past
-* KubeCon + CloudNativeCon, North America, Dec 11-13, 2018 - [issue#29](https://github.com/cn-security/safe/issues/29)
-* KubeCon + CloudNativeCon, Shanghai, Nov 14-15, 2018 - [issue#28](https://github.com/cn-security/safe/issues/28)
+* KubeCon + CloudNativeCon, North America, Dec 11-13, 2018 - [issue#29](https://github.com/cncf/sig-security/issues/29)
+* KubeCon + CloudNativeCon, Shanghai, Nov 14-15, 2018 - [issue#28](https://github.com/cncf/sig-security/issues/28)
 * [KubeConEU](https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2018/) May 2-4, 2018 in Copenhagen, Denmark ([notes](safe_kubecon.md))
 
 ## Meeting Minutes

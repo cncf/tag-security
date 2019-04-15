@@ -8,7 +8,7 @@ line with the goals of the Working Group.
 ### Proposal process
 
 1. **Raise an Issue:**
-[Create an issue](https://github.com/cn-security/safe/issues/new) in the SAFE
+[Create an issue](https://github.com/cncf/sig-security/issues/new) in the SAFE
 repo that outlines the problem to be solved. If possible, include:
   * The customer impact of the problem
   * The scope of the work required
