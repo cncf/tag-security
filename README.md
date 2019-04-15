@@ -87,6 +87,7 @@ for both cloud and traditional infrastructure.
 * Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
 * Santiago Torres-Arias ([@SantiagoTorres](https://github.com/SantiagoTorres)), New York University
 * Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
+* Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), OPA
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
