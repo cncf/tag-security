@@ -10,29 +10,29 @@ line with the goals of the Working Group.
 1. **Raise an Issue:**
 [Create an issue](https://github.com/cncf/sig-security/issues/new) in the SAFE
 repo that outlines the problem to be solved. If possible, include:
-  * The customer impact of the problem
-  * The scope of the work required
+    * The customer impact of the problem
+    * The scope of the work required
 
 1. **Ask the group for collaboration:** Rather than immediately beginning work
 on a solution, bring the issue up for discussion at a meeting, explain it, and
 ask if others are interested in collaborating. This ensures that solutions are
 created with multiple perspectives. The outcome of this conversation will be:
-  * The group agrees that this is a problem within the scope if the Working
+    * The group agrees that this is a problem within the scope if the Working
   Group.
-  * Criteria for completion are added to the issue that include a "definition
+    * Criteria for completion are added to the issue that include a "definition
   of done", ideally with validation by the target audience. Also note in the
   issue if it will be a time-bounded or on-going project.
-  * At least one person is tasked with creating a solution
-  * Those interested in working on the solution either begin work or set up
+    * At least one person is tasked with creating a solution
+    * Those interested in working on the solution either begin work or set up
   time or expectations with others to begin work.
-  * A Technical Lead agrees to actively sponsor the work.
+    * A Technical Lead agrees to actively sponsor the work.
 
 1. **Track progress.** As long as work is ongoing, progress should be tracked
 both in the Issue or PR and in meetings.
-  * Someone working on the project will attend weekly meetings to answer
+    * Someone working on the project will attend weekly meetings to answer
   questions. In case of their absence, ensure that the Technical Lead or their
   delegate is informed about the latest changes in case questions arise.
-  * It's strongly encouraged to include a checklist that shows what has been
+    * It's strongly encouraged to include a checklist that shows what has been
   done and what work remains in the Issue or PR.
 
 1. **Discuss the work at a meeting.** If an objection to a PR is made either in
