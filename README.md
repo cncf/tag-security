@@ -121,8 +121,8 @@ Or Telephone:
 Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup. Create a [github issue](https://github.com/cn-security/safe/issues/new) for an event and add to list
 below:
 
-* KubeCon + CloudNativeCon, Barcelona, Spain, May 20 – 23, 2019 - [issue#127]
-* KubeCon + CloudNativeCon, San Diego, CA - Nov 18 – 21, 2019 - [issue#128]
+* KubeCon + CloudNativeCon, Barcelona, Spain, May 20 – 23, 2019 - [issue#127](/issues/127)
+* KubeCon + CloudNativeCon, San Diego, CA - Nov 18 – 21, 2019 - [issue#128](/issues/128)
 
 Past
 * KubeCon + CloudNativeCon, North America, Dec 11-13, 2018 - [issue#29](https://github.com/cn-security/safe/issues/29)
