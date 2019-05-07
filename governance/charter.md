@@ -7,7 +7,7 @@ and [Governance](#governance) section describes how our operations are consisten
 applications expose end user data or allow other unintended access.
 
 ## Motivation
-Security has been an area in which open source can flourish and sometimes has done so; however, with cloud native platforms and applications security has received less attention than other areas of the cloud native landscape.
+Security has been an area in which open source can flourish and sometimes has done so; however, with cloud native platforms and applications, security has received less attention than other areas of the cloud native landscape.
 
 This means that there is less visibility about the internals of security projects, and fewer projects being deeply integrated into cloud native tooling. While there are many open source security projects, there are fewer security experts focused on the cloud native ecosystem. This has contributed to a culture where people feel they cannot understand how to securely set up and operate cloud native systems, due to obscurity and uncertainty. Yet the cloud native principles, although they mean change, have encouraged the development of tools that help manage fast changing environments, and which have the promise of both simplifying and improving security.
 
@@ -23,12 +23,12 @@ it is increasingly difficult to evaluate system architecture security at scale.
 
 Three keys areas:
 * protection of heterogeneous, distributed and fast changing systems, while providing access that is needed,
-* a common understanding and common tooling to help developers meet security requirements, and
+* common understanding and common tooling to help developers meet security requirements, and
 * common tooling for audit and reasoning about system properties.
 
 ### In scope
 
-Terminology note: SIG-Security uses the term "end-user" to describe the humans who use cloud native applications, whereas CNCF refers to companies that operate cloud native systems as CNCF End Users. In the context of security, we often need to discuss how a particular control affects the people who use the software deployed by a company or organization.
+Terminology note: SIG-Security uses the term "end user" to describe the humans who use cloud native applications, whereas CNCF refers to companies that operate cloud native systems as CNCF End Users. In the context of security, we often need to discuss how a particular control affects the people who use the software deployed by a company or organization.
 
 When we use the word "security" within this group, it is defined to be inclusive of concerns that affect the integrity of the a cloud native
 system or the privacy of its users,  specifically how to enable secure
@@ -60,7 +60,7 @@ the following activities:
 
 Given that the group is comprised of volunteers, specific requests from the TOC
 may be queued according to the bandwidth of the group. The co-chairs will
-facilitate prioritization under the guidance of the SIG-Security CNSF TOC leads.
+facilitate prioritization under the guidance of the SIG-Security CNCF TOC leads.
 
 ### Out of scope
 * Not a standards body: We won't be creating standards.
