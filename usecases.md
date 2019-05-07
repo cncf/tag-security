@@ -2,12 +2,12 @@ Authors: stummidi@pivotal.io, rayc@google.com, pragashjj@gmail.com, ckemper@goog
 
 Updated: 9 April 2019
 
-This is a living document, please feel free to add use cases and personas through a PR. 
-This initial version was derived from inputs referencd below.  Please add 
-references for new use cases, which could included shared documents from other 
+This is a living document, please feel free to add use cases and personas through a PR.
+This initial version was derived from inputs referencd below.  Please add
+references for new use cases, which could included shared documents from other
 projects, published research or case studies of cloud native technologies in
 real world use.
- 
+
 ## References
 
 * SAFE Cloud Foundry Use Cases: https://goo.gl/4pmdqt
@@ -20,24 +20,24 @@ for users of cloud native technology.
 
 ## Users
 
-Within an enterprise, based on the organization structure, we may have one or 
+Within an enterprise, based on the organization structure, we may have one or
 more of the personas. The more general user categories are
-separated into these more detailed personas where roles may be held by 
+separated into these more detailed personas where roles may be held by
 different people in a large organization.
 
 * Operators: Enterprise, Quota, Network
 * Administrators: Security, Compliance/Audit
 * Developers, including Third Party Security Products
-* End-users 
+* End-users
 
 A project will often have a very focused target audience and not all
 use cases are applicable in every situaton.  The use cases below are a guide
 to consider common needs that often require support from multiple products
 or technologies in order to be fully functional for the target users.
 
-# Operators
+# Operator
 
-## Enterprise 
+## Enterprise
 
 * As an enterprise operator, I need a central way to look at the organizational resources, so that I can administer them in a single view
 
@@ -56,7 +56,7 @@ or technologies in order to be fully functional for the target users.
 * As an enterprise operator, I can understand the effect of changes to policy that I am making
 
 
-## Quota 
+## Quota
 
 Since quota is often used for cost control, this may imply a different persona
 with financial, rather than an engineering background.
@@ -85,7 +85,7 @@ impact of repeated request on the rest of the infrastructure.
 * As a quota operator, I can understand the effect of changes to quota that I am making
 
 
-## Network 
+## Network
 
 * As a network operator, I need a central way to look at the networks in my organization, so that I can administer them in a single view.
 
@@ -98,7 +98,7 @@ impact of repeated request on the rest of the infrastructure.
 * As a network operator, I can understand the effect of changes to network policy that I am making
 
 
-# Administrators
+# Administrator
 
 ## Compliance Officer / Auditor
 
@@ -133,7 +133,7 @@ impact of repeated request on the rest of the infrastructure.
 
 * As a security administrator, I can <a href="https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.7wavwjkp2pz2" target="_blank">exercise the above rights in hybrid and mutli-cloud deployments</a>  without compromising my ability to manage my organizations’ cloud resources.
 
-# Developers
+# Developer
 
 * As a developer, I need to provide logs for any changes to a critical resources, such that they can be made available for auditing
 
@@ -150,7 +150,7 @@ impact of repeated request on the rest of the infrastructure.
 
 
 
-# End-users
+# End user
 
 * As an end user, I can understand which resources I can access and how I can request access to a resource
 
