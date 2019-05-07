@@ -110,16 +110,21 @@ Anyone is welcome to join our open discussions of WG projects and share news rel
 
 ## Meeting Time
 
-The Security SIG group meets every Friday at 11:00am PT (USA Pacific):
+The Security SIG group meets every Wednesday at 10:00am PT (USA Pacific):
 
-Join: https://zoom.us/j/665428022
+Join: https://zoom.us/my/cncfsigsecurity
 
-Or iPhone one-tap:
-* US: +16699006833,,665428022# or +16468769923,,665428022#
+One tap mobile:
+* +16465588656,,7375677271# US (New York)
+* +16699006833,,7375677271# US (San Jose)
 
-Or Telephone:
-* US: +1 669 900 6833 or +1 646 876 9923, Meeting ID: 665-428-022
-* International numbers available: https://zoom.us/zoomconference?m=r-YGNTQJzZphTlO4LYkdhAt4oIQpwl2g
+Dial by your location:
+* +1 646 558 8656 US (New York)
+* +1 669 900 6833 US (San Jose)
+* 877 369 0926 US Toll-free
+* 855 880 1246 US Toll-free
+Meeting ID: 737 567 7271
+Find your local number: https://zoom.us/u/alwlmxlNn
 
 ## In Person Meetings
 
