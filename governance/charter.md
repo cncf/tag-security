@@ -1,5 +1,8 @@
 # SIG-Security Charter (draft)
 
+This charter describes operations as a [CNCF SIG](https://github.com/cncf/toc/blob/master/sigs/). The [Focus](#focus) section below describes what is in and out of scope,
+and [Governance](#governance) section describes how our operations are consistent with CNCF policies with links to more detailed documents.
+
 **Mission:** to reduce risk that cloud native
 applications expose end user data or allow other unintended access.
 
@@ -23,3 +26,59 @@ Three keys areas:
 * a common understanding and common tooling to help developers meet security requirements, and
 * common tooling for audit and reasoning about system properties.
 
+### In scope
+
+Terminology note: SIG-Security uses the term "end-user" to describe the humans who use cloud native applications, whereas CNCF refers to companies that operate cloud native systems as CNCF End Users. In the context of security, we often need to discuss how a particular control affects the people who use the software deployed by a company or organization.
+
+When we use the word "security" within this group, it is defined to be inclusive of concerns that affect the integrity of the a cloud native
+system or the privacy of its users,  specifically how to enable secure
+access, policy control and safety for operators, administrators,
+developers, and end-users  across the cloud native ecosystem.
+
+SIG-Security will consider [proposals](proccess.md) from its members or delegated
+tasks from the CNCF TOC that are consistent with the mission, including
+the following activities:
+
+* Publish educational resources on cloud native security
+  * a common vocabulary to talk about and understand cloud native security
+  * block architecture(s) for secure access
+  * CNCF project ecosystem & landscape
+  * Videos and/or slides from invited presentations by security providers and use cases
+* Security assessments of specific proposals or projects
+* Identify projects for consideration for CNCF
+* Cross-pollinate knowledge by participating and inviting people from other projects and SIGs to share security practices
+* Integrate relevant external standards, such as from CII or NIST, as part of educational resoruces and/or SIG processes
+
+Given that the group is comprised of volunteers, specific requests from the TOC
+may be queued according to the bandwidth of the group. The co-chairs will
+facilitate prioritization under the guidance of the SIG-Security CNSF TOC leads.
+
+### Out of scope
+
+
+## Governance
+
+Security must be addressed at all levels of the stack and across the whole
+ecosystem, so the group seeks to encourage participation and membership across
+a wide range of roles, from diverse companies and organizations.
+
+### Cross-group relationships
+To focus our efforts, we avoid duplication by developing relationships with other groups that
+focus on a particular technology (such as Kubernetes SIGs) or have a broader
+mandate (such as government organizations).
+
+As a guide to visitors, we maintain the list of groups in the repo
+[README](https://github.com/cncf/sig-security#related-groups).
+
+Co-chairs are responsible to ensure periodic cross-group knowledge sharing,
+which is accomplished by cross-group membership, invitation to present at
+a SIG meeting and/or offering to present to the related group.
+
+## Operations
+SIG-Security operations are consistent with standard SIG operating guidelines
+provided by the CNCF Technical Oversight Committee
+[TOC](https://github.com/cncf/toc).  We have provided a more detailed
+description of roles and process to facilitate group collaboration:
+
+* [Roles](roles.md) - the work of the group is facilited by Chairs, Technical Leads, and active group members
+* [Process](process.md) - how projects are proposed and work is tracked
