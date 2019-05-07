@@ -130,6 +130,7 @@ below:
 * KubeCon + CloudNativeCon, San Diego, CA - Nov 18 – 21, 2019 - [issue#128]
 
 Past
+* DockerCon, San Francisco, CA, Apr 30 - May 2, 2019 - [issue#151](https://github.com/cncf/sig-security/issues/151)
 * KubeCon + CloudNativeCon, North America, Dec 11-13, 2018 - [issue#29](https://github.com/cncf/sig-security/issues/29)
 * KubeCon + CloudNativeCon, Shanghai, Nov 14-15, 2018 - [issue#28](https://github.com/cncf/sig-security/issues/28)
 * [KubeConEU](https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2018/) May 2-4, 2018 in Copenhagen, Denmark ([notes](safe_kubecon.md))
