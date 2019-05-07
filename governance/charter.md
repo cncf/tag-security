@@ -40,10 +40,19 @@ tasks from the CNCF TOC that are consistent with the mission, including
 the following activities:
 
 * Publish educational resources on cloud native security
-  * a common vocabulary to talk about and understand cloud native security
-  * block architecture(s) for secure access
-  * CNCF project ecosystem & landscape
   * Videos and/or slides from invited presentations by security providers and use cases
+  * Answer the following questions (referring to already existing resources where possible):
+      * What is different about cloud security? (including hybrid and multi-cloud)
+      * What are effective practices for implementing policy controls?
+      * How can we test, validate, explain, audit our systems?
+      * What additional measures are needed, specific to cloud, in highly regulated environments?
+  * Personas and use cases
+  * Common vocabulary to talk about and understand cloud native security
+  * CNCF project ecosystem & landscape
+  * Define security scenarios (e.g. network configuration, application security, service orchestration)
+  * Block architecture(s) for secure access
+  * Highlight trade-offs (e.g. Expressability vs Explainability)
+  * Best practices and anti-patterns (potentially highlighing where there is disagreement on these)
 * Security assessments of specific proposals or projects
 * Identify projects for consideration for CNCF
 * Cross-pollinate knowledge by participating and inviting people from other projects and SIGs to share security practices
@@ -54,7 +63,16 @@ may be queued according to the bandwidth of the group. The co-chairs will
 facilitate prioritization under the guidance of the SIG-Security CNSF TOC leads.
 
 ### Out of scope
-
+* Not a standards body: We won't be creating standards.
+* Not an umbrella organization: We interact with other groups for knowledge sharing, not decision-making.
+* Not a compliance body
+* Not a certification board for security of individual projects
+* We will not
+  * answer any specific questions regarding the state of security of any project or product
+  * consider device security unless there is some impact to cloud systems.
+  * explore trust and safety concerns that are not specific to cloud (e.g. fraud detection, user generated content moderation, spam filtering, phishing, cross-site scripting attacks, SQL injection, etc.)
+* We will not ensure the saftey of any operational system.
+* This is not related to vulnerability detection and handling any specific security vulnerability or attack.
 
 ## Governance
 
