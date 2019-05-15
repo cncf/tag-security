@@ -105,7 +105,7 @@ for both cloud and traditional infrastructure.
 
 Anyone is welcome to join our open discussions of WG projects and share news related to the group's mission and charter. Much of the work of the group happens outside of WG meetings and we encourage project teams to share progress updates or post questions in these channels:
 
-* [Email list](https://groups.google.com/forum/#!forum/cloud-native-security)
+* [Email list](https://lists.cncf.io/g/cncf-sig-security)
 * [CNCF Slack](https://slack.cncf.io/) #sig-security channel
 
 ## Meeting Time
