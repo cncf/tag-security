@@ -97,7 +97,7 @@ facilitate prioritization under the guidance of the SIG-Security CNCF TOC leads.
   * explore trust and safety concerns that are not specific to cloud
     (e.g. fraud detection, user generated content moderation, spam filtering,
     phishing, cross-site scripting attacks, SQL injection, etc.)
-* We will not ensure the saftey of any operational system.
+* We will not ensure the safety of any operational system.
 * This is not related to vulnerability detection and handling any specific
   security vulnerability or attack.
 
