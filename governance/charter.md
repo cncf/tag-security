@@ -1,4 +1,4 @@
-# SIG-Security Charter (draft)
+# SIG-Security Charter
 
 This charter describes operations as a [CNCF SIG](https://github.com/cncf/toc/blob/master/sigs/). The [Focus](#focus) section below describes what is in and out of scope,
 and [Governance](#governance) section describes how our operations are consistent with CNCF policies with links to more detailed documents.
