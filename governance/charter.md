@@ -4,7 +4,7 @@ This charter describes operations as a [CNCF SIG](https://github.com/cncf/toc/bl
 and [Governance](#governance) section describes how our operations are consistent with CNCF policies with links to more detailed documents.
 
 **Mission:** to reduce risk that cloud native
-applications expose end user data or allow other unintended access.
+applications expose end user data or allow other unauthorized access.
 
 ## Motivation
 Security has been an area in which open source can flourish and sometimes
@@ -28,10 +28,11 @@ and it is difficult to measure and value the inputs precisely, which can also
 cause issues with evaluation of security software and designs.
 
 Distributed deployments across heterogeneous infrastructure are increasingly
-common for cloud native applications. The working group sees common need
-patterns in cloud-native application architecture to improve the security of
-the systems. Without common ways to programatically ensure consistent policy,
+common for cloud native applications.
+Without common ways to programatically ensure consistent policy,
 it is increasingly difficult to evaluate system architecture security at scale.
+Emerging common architectural patterns offer the opportunity
+improve overall security in cloud native systems.
 
 ## Focus
 
@@ -122,9 +123,6 @@ a SIG meeting and/or offering to present to the related group.
 ## Operations
 SIG-Security operations are consistent with standard SIG operating guidelines
 provided by the CNCF Technical Oversight Committee
-[TOC](https://github.com/cncf/toc).  We have provided a more detailed
-description of roles and process to facilitate group collaboration:
+[TOC](https://github.com/cncf/toc). 
 
-* [Roles](roles.md) - the work of the group is facilitated by Chairs,
-  Technical Leads, and active group members
-* [Process](process.md) - how projects are proposed and work is tracked
+Full details of process and roles are linked from [governance README](/governance).
