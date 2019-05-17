@@ -73,12 +73,12 @@ the following activities:
   * CNCF project ecosystem & landscape
   * Define security scenarios (e.g. network configuration, application security, service orchestration)
   * Block architecture(s) for secure access
-  * Highlight trade-offs (e.g. Expressability vs Explainability)
-  * Best practices and anti-patterns (potentially highlighing where there is disagreement on these)
+  * Highlight trade-offs (e.g. Expressibility vs Explainability)
+  * Best practices and anti-patterns (potentially highlighting where there is disagreement on these)
 * Security assessments of specific proposals or projects
 * Identify projects for consideration for CNCF
 * Cross-pollinate knowledge by participating and inviting people from other projects and SIGs to share security practices
-* Integrate relevant external standards, such as from CII or NIST, as part of educational resoruces and/or SIG processes
+* Integrate relevant external standards, such as from CII or NIST, as part of educational resources and/or SIG processes
 
 Given that the group is comprised of volunteers, specific requests from the TOC
 may be queued according to the bandwidth of the group. The co-chairs will
@@ -113,7 +113,7 @@ other groups that
 focus on a particular technology (such as Kubernetes SIGs) or have a broader
 mandate (such as government organizations).
 
-As a guide to visitors, we maintain the list of groups in the repo
+As a guide to visitors, we maintain the list of groups in the SIG
 [README](https://github.com/cncf/sig-security#related-groups).
 
 Co-chairs are responsible to ensure periodic cross-group knowledge sharing,
@@ -123,6 +123,6 @@ a SIG meeting and/or offering to present to the related group.
 ## Operations
 SIG-Security operations are consistent with standard SIG operating guidelines
 provided by the CNCF Technical Oversight Committee
-[TOC](https://github.com/cncf/toc). 
+[TOC](https://github.com/cncf/toc).
 
 Full details of process and roles are linked from [governance README](/governance).
