@@ -82,7 +82,7 @@ the following activities:
 
 Given that the group is comprised of volunteers, specific requests from the TOC
 may be queued according to the bandwidth of the group. The co-chairs will
-facilitate prioritization under the guidance of the SIG-Security CNCF TOC leads.
+facilitate prioritization under the guidance of the SIG-Security TOC liaison.
 
 ### Out of scope
 * Not a standards body: We won't be creating standards.
