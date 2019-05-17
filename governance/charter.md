@@ -36,12 +36,14 @@ improve overall security in cloud native systems.
 
 ## Focus
 
-Three keys areas:
-* protection of heterogeneous, distributed and fast changing systems, while
+In addition to the [CNCF security-related projects](cncf-projects.md), there
+are three key focus areas:
+* Protection of heterogeneous, distributed and fast changing systems, while
 providing needed access
-* common understanding and common tooling to help developers meet security
+* Common understanding and common tooling to help developers meet security
 requirements
-* common tooling for audit and reasoning about system properties.
+* Common tooling for audit and reasoning about system properties.
+
 
 ### In scope
 
