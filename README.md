@@ -87,6 +87,7 @@ for both cloud and traditional infrastructure.
 * Santiago Torres-Arias ([@SantiagoTorres](https://github.com/SantiagoTorres)), New York University
 * Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
 * Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), OPA
+* Lorenzo Fontana ([@fntlnz](https://github.com/fntlnz)), Sysdig [Falco Maintainer]
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
