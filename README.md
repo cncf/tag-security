@@ -124,14 +124,9 @@ Find your local number: https://zoom.us/u/alwlmxlNn
 Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup. Create a [github issue](https://github.com/cncf/sig-security/issues/new) for an event and add to list
 below:
 
-* KubeCon + CloudNativeCon, Barcelona, Spain, May 20 – 23, 2019 - [issue#127]
 * KubeCon + CloudNativeCon, San Diego, CA - Nov 18 – 21, 2019 - [issue#128]
 
-Past
-* DockerCon, San Francisco, CA, Apr 30 - May 2, 2019 - [issue#151](https://github.com/cncf/sig-security/issues/151)
-* KubeCon + CloudNativeCon, North America, Dec 11-13, 2018 - [issue#29](https://github.com/cncf/sig-security/issues/29)
-* KubeCon + CloudNativeCon, Shanghai, Nov 14-15, 2018 - [issue#28](https://github.com/cncf/sig-security/issues/28)
-* [KubeConEU](https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2018/) May 2-4, 2018 in Copenhagen, Denmark ([notes](safe_kubecon.md))
+[Past Events](past-events.md)
 
 ## Meeting Minutes
 

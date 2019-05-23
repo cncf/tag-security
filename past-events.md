@@ -1,0 +1,34 @@
+
+# Past Events 
+
+## KubeCon + CloudNativeCon, Barcelona, Spain, May 20 – 23, 2019 
+
+[issue#127](https://github.com/cncf/sig-security/issues/127)
+
+### SIG talks
+- [CNCF SIG-Security Intro](https://kccnceu19.sched.com/event/OB0K/intro-cncf-security-sig-sarah-allen-jeyappragash-jeyakeerthi-tetrateio) -  [slides](https://docs.google.com/presentation/d/1KE2tDDOeEOXQLF6hSrAuQLn4z25O_jeHIeAVE4CB-VI/edit#slide=id.gc6fa3c898_0_70)
+- [CNCF SIG-Security Deep Dive](https://kccnceu19.sched.com/event/Oscd/deep-dive-cncf-security-sig-justin-cappos-new-york-university-zhipeng-huang-huawei) - [slides](https://docs.google.com/presentation/d/18nzXspPuRDRKfGUSI1ogFHmUOP_XHS78nz-0uTG9Ogs/edit?usp=sharing)
+- [Inside CNCF Project Security Reviews](https://kccnceu19.sched.com/event/MPdf/inside-the-cncf-project-security-reviews-justin-cormack-docker)
+- [Deep Dive: TUF/Notary](https://kccnceu19.sched.com/event/MPkF/deep-dive-tuf-notary-justin-cappos-lukas-puehringer-nyu)
+
+
+## DockerCon, San Francisco, CA, Apr 30 - May 2, 2019
+[issue#151](https://github.com/cncf/sig-security/issues/151)
+
+## KubeCon + CloudNativeCon, North America, Dec 11-13, 2018
+
+[issue#29](https://github.com/cncf/sig-security/issues/29)
+
+## KubeCon + CloudNativeCon, Shanghai, Nov 14-15, 2018
+ [issue#28](https://github.com/cncf/sig-security/issues/28)
+
+## KubeConEU May 2-4, 2018 in Copenhagen, Denmark
+
+https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2018/
+
+[notes](safe_kubecon.md)
+
+
+
+
+
