@@ -11,11 +11,11 @@
 - [Inside CNCF Project Security Reviews](https://kccnceu19.sched.com/event/MPdf/inside-the-cncf-project-security-reviews-justin-cormack-docker)
 - [Intro: TUF/Notary](https://docs.google.com/presentation/d/1Mp4pSMEvZIv0qo6wBWm-4vM6CZ-0IXimpq8zD3iTH0Q/edit#slide=id.g5a645bebe8_0_921)
 - [Deep Dive: TUF/Notary](https://kccnceu19.sched.com/event/MPkF/deep-dive-tuf-notary-justin-cappos-lukas-puehringer-nyu)
-- Intro: SPIFFE
-- Deep Dive: SPIFFE
-- Intro: Open Policy Agent
-- Deep Dive: Open Policy Agent
-- Secrets Store CSI Driver-Bring Your Own Enterprise Secrets Store to K8s
+- [Intro: SPIFFE](https://kccnceu19.sched.com/event/MPib/intro-spiffe-emiliano-bernbaum-scott-emmons-scytale)
+- [Deep Dive: SPIFFE](https://kccnceu19.sched.com/event/MPk9/deep-dive-spiffe-scott-emmons-emiliano-bernbaum-scytale)
+- [Intro: Open Policy Agent](https://kccnceu19.sched.com/event/MPiM/intro-open-policy-agent-rita-zhang-microsoft-max-smythe-google)
+- [Deep Dive: Open Policy Agent](https://kccnceu19.sched.com/event/MPk0/deep-dive-open-policy-agent-torin-sandall-tim-hinrichs-styra)
+- [Secrets Store CSI Driver-Bring Your Own Enterprise Secrets Store to K8s](https://kccnceu19.sched.com/event/MPdZ/secrets-store-csi-driver-bring-your-own-enterprise-secrets-store-to-k8s-rita-zhang-microsoft-anubhav-mishra-hashicorp)
 - [Protecting the Data Lake with OPA](https://sched.co/MPdu) - [slides](https://drive.google.com/file/d/1NVKn88EoRAzi_Kd5KGPfOjd6fZpLhjJE/view?usp=sharing)
 
 
