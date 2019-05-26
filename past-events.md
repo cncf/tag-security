@@ -16,6 +16,7 @@
 - Intro: Open Policy Agent
 - Deep Dive: Open Policy Agent
 - Secrets Store CSI Driver-Bring Your Own Enterprise Secrets Store to K8s
+- [Protecting the Data Lake with OPA](https://sched.co/MPdu) - [slides](https://drive.google.com/file/d/1NVKn88EoRAzi_Kd5KGPfOjd6fZpLhjJE/view?usp=sharing)
 
 
 ## DockerCon, San Francisco, CA, Apr 30 - May 2, 2019
