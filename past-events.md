@@ -11,6 +11,7 @@
 - [Inside CNCF Project Security Reviews](https://kccnceu19.sched.com/event/MPdf/inside-the-cncf-project-security-reviews-justin-cormack-docker)
 - [Intro: TUF/Notary](https://docs.google.com/presentation/d/1Mp4pSMEvZIv0qo6wBWm-4vM6CZ-0IXimpq8zD3iTH0Q/edit#slide=id.g5a645bebe8_0_921)
 - [Deep Dive: TUF/Notary](https://kccnceu19.sched.com/event/MPkF/deep-dive-tuf-notary-justin-cappos-lukas-puehringer-nyu)
+- [Protecting the Data Lake with OPA](https://sched.co/MPdu) - [slides](https://drive.google.com/file/d/1NVKn88EoRAzi_Kd5KGPfOjd6fZpLhjJE/view?usp=sharing)
 
 
 ## DockerCon, San Francisco, CA, Apr 30 - May 2, 2019
