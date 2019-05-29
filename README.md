@@ -81,6 +81,8 @@ details how we work.
 * Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), OPA
 * Lorenzo Fontana ([@fntlnz](https://github.com/fntlnz)), Sysdig [Falco Maintainer]
 * Daniel Iziourov ([@danmx](https://github.com/danmx)), Adevinta
+* Michael Hausenblas ([@mhausenblas](https://github.com/mhausenblas), AWS
+* Zach Arnold ([@zparnold](https://github.com/zparnold)), Ygrene Energy Fund
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
