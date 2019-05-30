@@ -83,6 +83,7 @@ details how we work.
 * Daniel Iziourov ([@danmx](https://github.com/danmx)), Adevinta
 * Michael Hausenblas ([@mhausenblas](https://github.com/mhausenblas), AWS
 * Zach Arnold ([@zparnold](https://github.com/zparnold)), Ygrene Energy Fund
+* Tsvi Korren ([@tsvikorren](https://github.com/tsvikorren)), Aqua Security
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
