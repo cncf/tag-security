@@ -16,6 +16,7 @@
    * [Presentations](issues?utf8=%E2%9C%93&q=is%3Aclosed+is%3Aissue+label%3Ausecase-presentation+) from members & guests
    * Describe [personas & use cases](safe_usecases.md)
    * Draft a picture or set of categories that will serve as a starting point for an evaluation framework
+   * Solicit real world use cases and practices (and compensating controls) for projects
 3. **Describe** the landscape
    * Define the terminology used in the output documents, and in the community
    * Describe the current state (landscape) of cloud native security, which might include:
@@ -27,4 +28,5 @@
 4. **Identify** existing security components in CNCF and projects in the CNCF landscape and catalog
    * Identify gaps and make recommendations to the community and TOC
    * Continually monitor the viability of the existing projects and update the landscape document
+   * Document and disseminate best practices (provide training?)
 
