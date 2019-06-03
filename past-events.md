@@ -17,6 +17,8 @@
 - [Deep Dive: Open Policy Agent](https://kccnceu19.sched.com/event/MPk0/deep-dive-open-policy-agent-torin-sandall-tim-hinrichs-styra) - [video](https://www.youtube.com/watch?v=n94_FNhuzy4)
 - [Secrets Store CSI Driver-Bring Your Own Enterprise Secrets Store to K8s](https://kccnceu19.sched.com/event/MPdZ/secrets-store-csi-driver-bring-your-own-enterprise-secrets-store-to-k8s-rita-zhang-microsoft-anubhav-mishra-hashicorp) - [video](https://www.youtube.com/watch?v=bIC4kLnrKN0)
 - [Protecting the Data Lake with OPA](https://sched.co/MPdu) - [slides](https://drive.google.com/file/d/1NVKn88EoRAzi_Kd5KGPfOjd6fZpLhjJE/view?usp=sharing) | [video](https://www.youtube.com/watch?v=9m4FymEvOqM)
+- [Securing Kubernetes with Trusted Platform Module (TPM)](https://kccnceu19.sched.com/event/MPdN/securing-kubernetes-with-trusted-platform-module-tpm-alex-tcherniakhovski-andrew-lytvynov-google) - [slides](https://static.sched.com/hosted_files/kccnceu19/a9/Securing%20Kubernetes%20with%20Trusted%20Platform%20Module.pdf) | [video](https://www.youtube.com/watch?v=_kxmkI8Kc8Y)
+- [Uber x Security: Why and How We Built Our Workload Identity Platform](https://kccnceu19.sched.com/event/MPe6) - [slides](https://static.sched.com/hosted_files/kccnceu19/bf/slides-julian-feldman.pdf) | [video](https://www.youtube.com/watch?v=JKkq60DvPBw)
 
 
 ## DockerCon, San Francisco, CA, Apr 30 - May 2, 2019
