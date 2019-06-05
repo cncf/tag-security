@@ -38,7 +38,7 @@ Larger changes should have multiple reviewers.
 
 Consistency creates clarity in communication. 
 
-* When referring to users and use cases, ensure consistency with [/usecases.md] 
+* When referring to users and use cases, ensure consistency with [use cases](usecases.md)
 * See [CNCF Style
   Guide](https://github.com/cncf/foundation/blob/master/style-guide.md) for
   common terms. Note that the following terms are not hyphenated and all lower
