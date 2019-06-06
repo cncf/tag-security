@@ -98,10 +98,14 @@ team or describe in corresponding section.
   * Internal. How do team members communicate with each other?
   * Inbound. How do users or prospective users communicate with the team?
   * Outbound. How do you communicate with your users? (e.g. flibble-announce@ mailing list)
-* Vulnerability Response Process. Who is responsible for responding to a report. What is the reporting process? How would you respond?
 * Ecosystem. How does your software fit into the cloud native ecosystem?  (e.g. Flibber is integrated with both Flocker and Noodles which covers virtualization for 80% of cloud users. So, our small number of "users" actually represents very
 wide usage across the ecosytem since every virtual instance uses Flibber
 encryption by default.)
+
+## Security Issue Resolution
+* Responsible Disclosures Process. A outline of the project's responsible disclosures process should suspected security issues, incidents, or vulnerabilities be discovered both external and internal to the project. The outline should discuss communication methods/strategies.
+  * Vulnerability Response Process. Who is responsible for responding to a report. What is the reporting process? How would you respond?
+* Incident Response. A description of the defined procedures for triage, confirmation, notification of vulnerability or security incident, and patching/update availability.
 
 ## Roadmap
 
