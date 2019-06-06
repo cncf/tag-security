@@ -67,7 +67,7 @@ of the system.  Include architecture and network (if applicable) information suc
 
 
 ## Security Analysis
-* Attacker Motivations.  A discussion about the likely goals of an attacker as well as the kind of attacker (do not forget to invlude discussion of insider threat with trusted access to the project)
+* Attacker Motivations.  A discussion about the likely goals of an attacker as well as the kind of attacker (do not forget to include discussion of insider threat with trusted access to the project)
 This likely relates closely to the impact of different attacks in the
 scenarios.  (e.g., In the password hash case, the attacker wants to expose
 those hashes on the Flibble server.  However, a Flibble cloudlet attacker
