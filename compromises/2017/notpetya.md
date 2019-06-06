@@ -10,7 +10,7 @@ machines with a new malicious version.
 Note that it seems unlikely that the attackers could plant such stealthy
 backdoor without having access to MeDoc’s source code. 
 
-## impact
+## Impact
 
 N/A
 

@@ -4,7 +4,7 @@ A popular video converter, HandBrake, for Mac systems was hacked by replacing
 the app on one of the download servers with a malicious copy. So the attackers
 could gain admin privileges on victims’ systems.
 
-## Effect
+## Impact
 
 N/A
 

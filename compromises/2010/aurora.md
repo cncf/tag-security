@@ -8,12 +8,12 @@ The SCM was developed by a company called Perforce. This system has had some
 known vulnerabilities (detected by McAfee).  The attacker most likely exploited
 those security holes to gain unauthorized access to the system.
 
-## Effect
+## Impact
 
 More than 34 organizations affected, including Symanted, Northrop Grumman,
 Morgan Stanley, Dow chemical, Yahoo, Rackspace, Adobe and Google.
 
-## Attacker type of Access
+## Type of Compromise
 
 The attacker was able to compromise different tools used within the
 organizations to target their version control systems and exfiltrate source
