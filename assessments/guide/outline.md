@@ -72,7 +72,7 @@ This likely relates closely to the impact of different attacks in the
 scenarios.  (e.g., In the password hash case, the attacker wants to expose
 those hashes on the Flibble server.  However, a Flibble cloudlet attacker
 may find it more interesting to bring down the service.)
-* Predisposing Conditions. A listing of potential vulnerabilities and configurations of the project that could potentially be exploited or used correctly to result in an increased likelihood of attack success. Include any established trusts with other projects as a potential vulnerable point from a pivoted attack (i.e. compromise of the LDAP results in loss of access control integrity for the project)
+* Predisposing Conditions. A list of potential vulnerabilities and configurations of the project that could potentially be exploited or used correctly to result in an increased likelihood of attack success. Include any trust relationships with other projects that pose a risk of compromise for this project (i.e. compromise of the LDAP results in loss of access control integrity for the project)
 * Expected Attacker Capabilities.  A description of likely capabilities that
 the attacker has in these scenarios should be described.  Both assumptions
 about the strength and limitations of attackers should be described.
