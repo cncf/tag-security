@@ -85,6 +85,7 @@ details how we work.
 * Michael Hausenblas ([@mhausenblas](https://github.com/mhausenblas), AWS
 * Zach Arnold ([@zparnold](https://github.com/zparnold)), Ygrene Energy Fund
 * Tsvi Korren ([@tsvikorren](https://github.com/tsvikorren)), Aqua Security
+* Simarpreet Singh ([@simar7](https://github.com/simar7))
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
