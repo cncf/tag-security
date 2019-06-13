@@ -1,18 +1,10 @@
 ﻿# in-toto security self-assessment 
-## with input from the SIG-Security WG
 
 June 5, 2019
 
-*_Authors_*
+*_Authors_*: Santiago Torres-Arias, Justin Cappos 
 
-Santiago Torres-Arias (santiago@nyu.edu, @santiagoTorres), 
-Justin Cappos (jcappos@nyu.edu, @jcappos)
-
-*_Contributors/Reviewers_*
-
-Sarah Allen (@ultrasaurus), 
-Justin Cormack (@justinCormack), 
-Brandon Lum (@lumjjb)
+*_Contributors/Reviewers_*: Sarah Allen (@ultrasaurus),  Justin Cormack (@justinCormack),  Brandon Lum (@lumjjb)
 
 
 This document elaborates and explores the design goals for in-toto as well as
@@ -514,8 +506,8 @@ in-toto-dev@googlegroups.com
 
 It is possible to reach out the in-toto team members at:
 
-* #in-toto@irc.freenode.net
-* The #in-toto channel at secure-systems-lab.slack.com
+* [#in-toto@irc.freenode.net](http://webchat.freenode.net?channels=%23in-toto)
+* The #in-toto channel at secure-systems-lab.slack.com (requires an invitation from a core member)
 
 There is a bot linking both instances together
 
