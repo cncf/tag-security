@@ -12,20 +12,28 @@ involving deployment scenarios and the impact of attacks.
 
 ## Qualifications
 
+### Required
+
 Unless approved by the SIG chairs, at least one of the reviewers will
-have previously performed a SAFE WG audit.  (Exemptions are expected to be
-granted bootstrap the process but only in extreme cases later on.)  In
-general, a reviewer should have performed security audits for diverse
-organizations.  The ideal reviewer should also have been the recipient
-of security audits for a software project they manage.  Note that it is
-encouraged to have participation (shadowing) from participants that are not
-yet qualified to help them gain the necessary skills to be a reviewer
+have previously performed a CNCF project security assessment.
+Exemptions to this are reviewed case by case upon established need by the CNCF Security SIG Chairs and Co-Chairs in order to bootstrap the process as appropriate.
+
+### Preferred
+
+It is preferred reviewers have previous experience performing security audits or assessments for a variety of
+organizations.  An ideal reviewer should also have been the recipient
+of CNCF project security assessments for a software project they manage.  
+
+Note: it is encouraged to have participation (shadowing) from participants that are not
+yet qualified in order to provide and assist in gaining necessary skills to be a reviewer
 in the future.
 
 ## Time and effort
 
-The level of effort for the reviewers is expected to be 10 hours.
-Despite the fact that there may be some back and forth to get clarification
-on a few points, it is expected analysis can usually be concluded in a few
-weeks.  This will primarily involve carefully reading the written
-document and analyzing the security assertions and assumptions.
+The level of effort for the reviewers is expected to be 10 hours over the course of a few weeks.
+Correspondance, project availability, and clarification of a project's scope or other details in the ticketed request for project security assessment may add additional time.  Effort is expected to include and may not be limited to:
+* reviewing existing security documentation
+* reviewing ticketed request for project security assessment
+* analysis of security assertions and assumptions
+
+
