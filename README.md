@@ -80,6 +80,12 @@ details how we work.
 * Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
 * Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), OPA
 * Lorenzo Fontana ([@fntlnz](https://github.com/fntlnz)), Sysdig [Falco Maintainer]
+* Leonardo Di Donato ([@leodido](https://github.com/leodido)), Sysdig [Falco Maintainer]
+* Daniel Iziourov ([@danmx](https://github.com/danmx)), Adevinta
+* Michael Hausenblas ([@mhausenblas](https://github.com/mhausenblas), AWS
+* Zach Arnold ([@zparnold](https://github.com/zparnold)), Ygrene Energy Fund
+* Tsvi Korren ([@tsvikorren](https://github.com/tsvikorren)), Aqua Security
+* Simarpreet Singh ([@simar7](https://github.com/simar7))
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
