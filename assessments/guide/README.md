@@ -9,7 +9,7 @@ this document outlines the procedure by which a project should be evaluated.
 
 ## Steps
 
-1. Create tracking issue
+1. [Create tracking issue](https://github.com/cncf/sig-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
    * Issue may be a request from TOC liason or project itself
 2. Project provides self-assessment
    * [project lead](project-lead.md) responds to the issue with draft document (see [outline](outline.md))
