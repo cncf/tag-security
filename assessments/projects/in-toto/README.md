@@ -35,6 +35,10 @@ underserved by other tech. Threats are well-understood and mitigated, including
 a reasonable degradation approach. Solid code processes; resiliency would
 benefit from additional participants.  
 
+All questions from reviewers were addressed in
+[self-assessment](self-assessment.md) with non-critical issues captured as
+issues and noted below. 
+
 ## Recommendations
 
 To address supply chain vulnerabilities, companies need more than technology,
@@ -60,18 +64,20 @@ they will need to adopt or formalize effective policies and procedures.
     issue#287)
 *   Proceed with [CII silver
     badge](https://bestpractices.coreinfrastructure.org/en/projects/1523?criteria_level=1)
-    & [roadmap](https://github.com/in-toto/in-toto/blob/develop/ROADMAP.md). a)
-    Projects MUST monitor or periodically check their external dependencies
+    & [roadmap](https://github.com/in-toto/in-toto/blob/develop/ROADMAP.md). 
+    Just a few open items, listed below:
+    * Projects MUST monitor or periodically check their external dependencies
     (including convenience copies) to detect known vulnerabilities, and fix
-    exploitable vulnerabilities or verify them as unexploitable. b) The project
-    MUST implement secure design principles (from "know_secure_design"), where
-    applicable. If the project is not producing software, select "not
-    applicable" (N/A). c) The project MUST provide an assurance case that
+    exploitable vulnerabilities or verify them as unexploitable. 
+    * The projectMUST implement secure design principles, where
+    applicable.
+    * The project MUST provide an assurance case that
     justifies why its security requirements are met. The assurance case MUST
     include: a description of the threat model, clear identification of trust
     boundaries, an argument that secure design principles have been applied, and
     an argument that common implementation security weaknesses have been
-    countered. 
+    countered. (This assessment should be able to provide reference, if needed.)
+
 
 ### Additional recommendations
 * Formal security audit: no blocking issues for a formal code audit
