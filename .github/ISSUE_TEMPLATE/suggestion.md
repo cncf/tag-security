@@ -7,13 +7,13 @@ assignees: ''
 
 ---
 
-Description: what's your idea? 
+Description: What's your idea?
 
-Impact: Describe your hopes for how this would reduce risk for the cloud native ecosystem. Who will this help?  How will it help them?
+Impact: Describe your hopes for how this would reduce risk for the cloud native ecosystem. Who will this help? How will it help them?
 
 Scope: How much effort will this take? ok to provide a range of options if or "not yet determined" 
 
 Additional info:
-- reference to supporting material
-- links to related site
-- feel free delete this section if you don't have more info
+- Reference to supporting material
+- Links to related site
+- Feel free to delete this section if you don't have more info
