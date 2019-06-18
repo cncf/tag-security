@@ -1,4 +1,13 @@
-# in-toto
+# in-toto Security Assessment
+
+Completed: May 2019
+
+Security reviewers: Sarah Allen, Justin Cormack, Brandon Lum
+
+Project security lead: Santiago Torres Arias
+
+* Source code: [github.com/in-toto](https://github.com/in-toto)
+* Web site: https://in-toto.github.io/
 
 ## Background
 [Supply chain compromises](https://github.com/in-toto/supply-chain-compromises)
@@ -6,14 +15,15 @@ are a powerful attack vector. In cloud native deployments, if you control the
 supply chain you can potentially reconfigure anything in an insecure way, since
 everything is software-defined.
 
-In-toto ensures the integrity of the supply chain itself, specifically: What
-steps are to be carried in the supply chain Who can carry out each step How the
-artifacts between each step interconnect with each other
+In-toto ensures the integrity of the supply chain itself, specifically:
+1. What steps are to be carried in the supply chain
+2. Who can carry out each step
+3. How the artifacts between each step interconnect with each other
 
-_Maturity_: 1 public company case study: [Datadog Agent full
+_Maturity_
+* 1 public company case study: [Datadog Agent full
 pipeline](https://www.datadoghq.com/blog/engineering/secure-publication-of-datadog-agent-integrations-with-tuf-and-in-toto/)
-\
-multiple integrations: [Debian apt
+* multiple integrations: [Debian apt
 get](https://github.com/in-toto/apt-transport-in-toto) ([3 Debian
 contributors](https://salsa.debian.org/reproducible-builds/debian-rebuilder-setup/graphs/master)),
 [Jenkins plug-in](https://plugins.jenkins.io/in-toto) ([+1
@@ -21,8 +31,6 @@ contributor](https://github.com/jenkinsci/in-toto-plugin/graphs/contributors)),
 [K8s admission controller](https://github.com/in-toto/in-toto-webhook) ([+1
 contributor](https://github.com/in-toto/in-toto-webhook/graphs/contributors))
 
-* Source code: [github.com/in-toto](https://github.com/in-toto)
-* Web site: https://in-toto.github.io/
 
 ## Summary
 
@@ -86,9 +94,5 @@ they will need to adopt or formalize effective policies and procedures.
   promotion
 * Consider integrations with other CI/CD projects
 
-
-Security reviewers: Sarah Allen, Justin Cormack, Brandon Lum
-
-Project security lead: Santiago Torres Arias
 
 Tracking issue: https://github.com/cncf/sig-security/issues/166
