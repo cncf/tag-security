@@ -1,6 +1,6 @@
-To provide the CNCF’s TOC with effective
-information about the security of different projects,
-this document outlines the procedure by which a project should be evaluated.
+# Purpose
+
+     To provide the CNCF’s TOC with effective information about the security of different projects, this document outlines the procedure by which a project should be evaluated.
 
 ## Roles
 
@@ -13,17 +13,13 @@ this document outlines the procedure by which a project should be evaluated.
    * Issue may be a request from TOC liason or project itself
 2. Project provides self-assessment
    * [project lead](project-lead.md) responds to the issue with draft document (see [outline](outline.md))
-   * issue assigned to lead [security reviewer](security-reviewer.md) who
-   will recruit a second reviewer, if one not already assigned, and facilitate
-   the process
+   * issue assigned to lead [security reviewer](security-reviewer.md) who will recruit a second reviewer, if one not already assigned, and facilitate the process
 3. Inital review
-   * Upon request by the project, security reviewer may do an inital review to
-   verify completeness, ask for clarifications and provide quick feedback
-   * Project posts their document to the group mailing list, allowing at least
-   one week for review before presenting to the WG
+   * Upon request by the project, security reviewer may do an inital review to verify completeness, ask for clarifications and provide quick feedback
+   * Project posts their document to the group mailing list, allowing at least one week for review before presenting to the SIG
 4. Presentation
-   * Project lead presents to WG
-   * This will be recorded as part of standard WG process
+   * Project lead presents to SIG
+   * This will be recorded as part of standard SIG process
 5. Final assessment
    * Reviewers provide final feedback with recommendations
    * Either project lead or reviewers may request further WG discussion
@@ -31,16 +27,8 @@ this document outlines the procedure by which a project should be evaluated.
 
 ## Additional Process Notes
 
-Iteration is expected; however, we expect quick turnaround (at most a week).
-In rare cases unrelated issues can unexpectedly interrupt the process and
-it may be appropriate to address specific concerns rather than continuing with
-the assessment. We encourage open communication between project lead and s
-ecurity reviewers:
-
-* At any time, the project lead may request additional time to respond
-  to feedback from security reviewers
-* Project lead or lead security reviewer may pause the process where a delay
-  of over a week cannot be accomodated by the review team. Simply close
-  the github issue with a note to SIG co-chairs.
+     Iteration is expected; however, we expect quick turnaround (at most a week). In rare cases unrelated issues can unexpectedly interrupt the process and it may be appropriate to address specific concerns rather than continuing with the assessment. We encourage open communication between project lead and security reviewers:
+* At any time, the project lead may request additional time to respond   to feedback from security reviewers
+* Project lead or lead security reviewer may pause the process where a delay of over a week cannot be accomodated by the review team. Simply close the github issue with a note to SIG co-chairs.
 
 
