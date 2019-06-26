@@ -9,7 +9,6 @@
 
 ### Details
 
-1. **Charter** the working group. Draft vision, process and initial members (done)
 2. **Discover** (in progress)
    * Explore the problem space of the working group
    * Investigating what is happening in the community today with respect to security for cloud native applications and infrastructure
@@ -32,14 +31,11 @@
 
 ### Completed
 
-|   # Task  | # Date | # Action | # Comment
+|   Milestone  | Date | Action
 | --- | --- | --- | --- |
-| Started socializing at Kubecon Austin | Dec 2017 | Meeting with CNCF community and gathering feedback | |
-| Initial Commit for SAFE repo | 13 Mar 2018 | [First commit](https://github.com/cncf/sig-security/commit/fe999bd637456ade5e6cc8866d0db4107a0d9778) | First commit|
-| Policy WG merged | 10 Aug 2018 | [Merging policy WG](https://github.com/cncf/sig-security/blob/master/policy-wg-merging.md)  | By Howard Huang |
-| PR created for CNCF consideration | 21 Aug 2018 | [CNCF SIG-Security charter and roles](https://github.com/cncf/toc/pull/146)| |
-| Rename to CNCF SIG-Security | 15 Apr 2019 | [Repo rename](https://github.com/cncf/sig-security/pull/148) | |
-| Updated Charter and Governance |  7 May 2019 | [New repo](https://github.com/cncf/sig-security/tree/master/governance) | |
-
-
-
+| Updated Charter and Governance ratified by CNCF TOC |  7 May 2019 | [New repo](https://github.com/cncf/sig-security/tree/master/governance) |
+| Moved SAFE WG to CNCF  | 15 Apr 2019 | [Repo rename](https://github.com/cncf/sig-security/pull/148) |
+| CNCF WG proposal | 21 Aug 2018 | [CNCF SIG-Security charter and roles](https://github.com/cncf/toc/pull/146)|
+| Policy WG merged | 10 Aug 2018 | [Merging policy WG](https://github.com/cncf/sig-security/blob/master/policy-wg-merging.md)  |
+| Initial Commit for SAFE repo | 13 Mar 2018 | [First commit](https://github.com/cncf/sig-security/commit/fe999bd637456ade5e6cc8866d0db4107a0d9778) |
+| Informal discussions at Kubecon Austin | Dec 2017 | Meeting with CNCF community and gathering feedback |
