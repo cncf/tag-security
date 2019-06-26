@@ -1,4 +1,4 @@
-# SIG-Security Case Studies
+# Case Studies
 
 ## Objective
 
@@ -8,7 +8,7 @@ This falls into 2 categories: process examples (e.g. how well did an assessment 
 
 ## Vision
 * Document example case studies, both uses of where things went right, and where things went wrong
-* Define a process for protecting the guilty (for the wrong cases) and preventing spam (for vendors or FOSS projects just looking to market their wares indesciriminately)
+* Support knowledge-sharing that reduces security risks, providing data about vendors and open source projects
 * Define a process for "admission control" for what a case study should look like to add value (not too detailed, not too hand-wavy)
 
 # Suggested Case Studies
