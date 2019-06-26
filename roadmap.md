@@ -9,6 +9,7 @@
 
 ### Details
 
+1. **Charter** (done, see below)
 2. **Discover** (in progress)
    * Explore the problem space of the working group
    * Investigating what is happening in the community today with respect to security for cloud native applications and infrastructure
