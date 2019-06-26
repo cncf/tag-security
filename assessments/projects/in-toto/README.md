@@ -23,7 +23,7 @@ In-toto ensures the integrity of the supply chain itself, specifically:
 _Maturity_
 * 1 public company case study: [Datadog Agent full
 pipeline](https://www.datadoghq.com/blog/engineering/secure-publication-of-datadog-agent-integrations-with-tuf-and-in-toto/)
-* multiple integrations: [Debian apt
+* Multiple integrations: [Debian apt
 get](https://github.com/in-toto/apt-transport-in-toto) ([3 Debian
 contributors](https://salsa.debian.org/reproducible-builds/debian-rebuilder-setup/graphs/master)),
 [Jenkins plug-in](https://plugins.jenkins.io/in-toto) ([+1
@@ -61,15 +61,15 @@ they will need to adopt or formalize effective policies and procedures.
 
 ### Project recommendations
 
-*   Verify in-toto's supply chain with in-toto_
-    _[in-toto/issue#278](https://github.com/in-toto/in-toto/issues/278)
+*   Verify in-toto's supply chain with in-toto
+    [in-toto/issue#278](https://github.com/in-toto/in-toto/issues/278)
 *   Improve introductory documentation to clearly communicate security scope
     [docs/issue#15](https://github.com/in-toto/docs/issues/15)
 *   Additional integrations, examples and/or documented case studies (such as:
     [in-toto/issue#284](https://github.com/in-toto/in-toto/issues/284),
     [roadmap#3](https://github.com/in-toto/ITE/issues/3))
 *   Consider encoding best practices in default implementation (such as
-    issue#287)
+    [issue#287](https://github.com/in-toto/in-toto/issues/287))
 *   Proceed with [CII silver
     badge](https://bestpractices.coreinfrastructure.org/en/projects/1523?criteria_level=1)
     & [roadmap](https://github.com/in-toto/in-toto/blob/develop/ROADMAP.md). 
@@ -77,7 +77,7 @@ they will need to adopt or formalize effective policies and procedures.
     * Projects MUST monitor or periodically check their external dependencies
     (including convenience copies) to detect known vulnerabilities, and fix
     exploitable vulnerabilities or verify them as unexploitable. 
-    * The projectMUST implement secure design principles, where
+    * The project MUST implement secure design principles, where
     applicable.
     * The project MUST provide an assurance case that
     justifies why its security requirements are met. The assurance case MUST
