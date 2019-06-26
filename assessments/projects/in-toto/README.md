@@ -58,6 +58,7 @@ they will need to adopt or formalize effective policies and procedures.
   time and effort required to integrate in-toto and recommend improvements
 * SIG-Security collaboration to document common supply chain threats and
   complementary solutions that would cover security of all inputs
+  (see [issues#224](https://github.com/cncf/sig-security/issues/224))
 
 ### Project recommendations
 
