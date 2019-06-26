@@ -1,4 +1,4 @@
-# Security Reviewers
+# Security Reviewer Role
 
 Reviewers will try to understand the system and probe its security.
 Specifically design level issues are meant to be addressed as well as high
@@ -22,7 +22,7 @@ encouraged to have participation (shadowing) from participants that are not
 yet qualified to help them gain the necessary skills to be a reviewer
 in the future.
 
-## Time and Effort
+## Time and effort
 
 The level of effort for the reviewers is expected to be 10 hours per review.
 Despite the fact that there may be some back and forth to get clarification
@@ -30,7 +30,7 @@ on a few points, it is expected analysis can usually be concluded in a few
 weeks.  This will primarily involve carefully reading the written
 document and analyzing the security assertions and assumptions.
 
-# Security Reviewer Expectations
+# Expectations
 
 GitHub issues are assigned to Security Reviewers. Security Reviewers are 
 expected to conduct an in-depth review described in the [Security Assessment
