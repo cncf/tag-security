@@ -13,19 +13,19 @@ repository:
   # Collaborators: give specific users access to this repository.
 collaborators:
   - username: ultrasaurus
-    # Note: Only valid on organization-owned repositories.
-    # The permission to grant the collaborator. Can be one of:
-    # * `pull` - can pull, but not push to or administer this repository.
-    # * `push` - can pull and push, but not administer this repository.
-    # * `admin` - can pull, push and administer this repository.
+    permission: admin
+
+  - username: dshaw
     permission: admin
 
   - username: pragashj
     permission: admin
 
+    # Security Assessment Facilitator
   - username: JustinCappos
     permission: push
   
+    # Triage Team
   - username: lumjjb
     permission: push
 
