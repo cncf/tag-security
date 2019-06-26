@@ -30,7 +30,7 @@ on a few points, it is expected analysis can usually be concluded in a few
 weeks.  This will primarily involve carefully reading the written
 document and analyzing the security assertions and assumptions.
 
-# Expectations
+## Expectations
 
 GitHub issues are assigned to Security Reviewers. Security Reviewers are 
 expected to conduct an in-depth review described in the [Security Assessment
