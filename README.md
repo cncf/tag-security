@@ -88,6 +88,7 @@ details how we work.
 * Simarpreet Singh ([@simar7](https://github.com/simar7))
 * Craig Ingram ([@cji](https://github.com/cji)), Salesforce
 * Roger Klorese ([@qnetter](https://github.com/qnetter)), SUSE
+* Peter Benjamin ([@petermbenjamin](https://github.com/petermbenjamin)), Teradata
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
