@@ -87,6 +87,7 @@ details how we work.
 * Tsvi Korren ([@tsvikorren](https://github.com/tsvikorren)), Aqua Security
 * Simarpreet Singh ([@simar7](https://github.com/simar7))
 * Craig Ingram ([@cji](https://github.com/cji)), Salesforce
+* Roger Klorese ([@qnetter](https://github.com/qnetter)), SUSE
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
