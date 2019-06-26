@@ -85,6 +85,9 @@ details how we work.
 * Michael Hausenblas ([@mhausenblas](https://github.com/mhausenblas), AWS
 * Zach Arnold ([@zparnold](https://github.com/zparnold)), Ygrene Energy Fund
 * Tsvi Korren ([@tsvikorren](https://github.com/tsvikorren)), Aqua Security
+* Simarpreet Singh ([@simar7](https://github.com/simar7))
+* Craig Ingram ([@cji](https://github.com/cji)), Salesforce
+* Roger Klorese ([@qnetter](https://github.com/qnetter)), SUSE
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
@@ -135,6 +138,15 @@ below:
 
 ## Meeting Minutes
 
+* [2019-07-31 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-07-24 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-07-17 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-07-10 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-07-03 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-06-26 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-06-19 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-06-12 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-06-05 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
 * [2019-05-29 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
 * 2019-05-22 CNCF SIG-Security Meeting - No Meeting due to KubeCon Europe
 * [2019-05-15 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)  - OPA with SAFE Presentation Framework
