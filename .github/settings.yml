@@ -20,10 +20,6 @@ collaborators:
 
   - username: pragashj
     permission: admin
-
-    # Security Assessment Facilitator
-  - username: JustinCappos
-    permission: push
   
     # Triage Team
   - username: lumjjb
@@ -32,3 +28,11 @@ collaborators:
   - username: hannibalhuang
     permission: push
     
+    # Security Assessment Facilitator
+  - username: JustinCappos
+    permission: push
+
+    # Security Reviewers
+  # JustinCappos, ultrasaurus, lumjjb
+  - username: JustinCormack
+    permission: push
