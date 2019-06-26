@@ -6,7 +6,9 @@ sub-categories. The remaining text is a description of each sub-category.
 
 - **App definition and development**
   - _Static Code Analysis_
-    - Inspecting code for OWASP vulnerabilities, pen testing, etc
+    - Inspecting code for vulnerabilities, pen testing, etc
+  - _Dynamic Analysis_
+    - Checking application in runtime for various vulnerabilities
   - _Dependency analysis_
     - Checking OS for vulnerabilities (updates available? Reports from https://www.us-cert.gov/ etc), image scanning
     - Check for vulnerabilities in dependent libraries
@@ -18,6 +20,8 @@ sub-categories. The remaining text is a description of each sub-category.
   - _Pipelines_
     - Tools that ensure a secure pipeline or workflow, for example,
     as applied to devops (CI/CD), supply chain, etc.
+  - _Secret Management_
+    - Tools that help to manage, encrypt or distribute secrets and other sensitive information.
 
 - **Identity & Access Control**
   - _Identity_
