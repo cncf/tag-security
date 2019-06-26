@@ -100,10 +100,10 @@ Facilitation roles are identified in [github settings](/.github/settings.yaml)
 and include additional permissions in the repo which are governed by policies
 described below.
 
-### Security assessment facilitator
+### Security Assessment Facilitator
 
 [Security Assessments](/assessments) are part of the on-going work of the group
-and led by a Security assessment facilitator, who will:
+and led by a Security Assessment Facilitator, who will:
 
 * coordinate security review leads for upcoming security assessments.
 * identify and recommend security reviewers.
@@ -132,8 +132,12 @@ Each member of the Triage Team will:
 * assign labels to issues.
 * comment where issues need more detail.
 * recommend proposals or suggestions for discussion at working session meetings.
-* paricipate on #sig-security-triage slack channel.
+* participate on #sig-security-triage slack channel.
 
+### Project teams
 
+Some on-going projects may have teams where members are identified for
+additional roles and may be required to have specific expertise. For visibility,
+these additional project roles are listed below:  
 
-
+* [Security Reviewers](../assessments/guide/security-reviewer.md/)
