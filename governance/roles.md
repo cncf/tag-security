@@ -96,9 +96,42 @@ TOC, to further the [CNCF mission](https://github.com/cncf/foundation/blob/maste
 
 ## Facilitation roles
 
-Facilitation roles are identified in [github settings](/.github/settings.yaml)
-and include additional permissions in the repo which are governed by policies
-described below.
+Members often contribute by working in small groups that research and discuss
+options and then share their findings with the rest of the group in a
+presentation and typically contribute to the body of work in this
+repository (via Pull Request). Some tasks can be effectively executed
+by simply chiming in on a github issue and independently contributing a PR
+without any particular role or authorization.
+
+This section describes roles where more coordination is helpful and the
+work benefits from identifying one or more Members who will take
+on specific responsibilities.  Our goal is to empower Members to move forward
+independently, while defining an approval process designed to support
+communication and alignment across the wider group.
+
+New roles in this section are typically defined after someone has acted in
+that role for some time informally, then proposed as an on-going role by Pull
+Request which must be approved by a majority of Chairs.  Process clarifications
+are welcome and PRs can be approved by any single Chair.
+
+Members who take on Roles are responsible for
+understanding the approval policies related to their role and ensure that
+commits to the repo are reviewed in accordance with our [governance](./)
+and all actions are within roles defined in this document.
+
+**Write access to the repo**: Where applicable, the following roles define
+specific areas of the repo or actions on issues where changes require write
+access. In any case, governance is not enforced by access permissions, but
+rather by Members who are expected to thoughtfully consider their actions to
+support the group.
+
+**Github permissions note**: Facilitation roles are identified in
+[github settings](/.github/settings.yaml) which grants Github permissions.
+Pull Requests to appoint Members to new Roles must be approved by at least one
+Chair, along with whatever additional process, if any, is described in this
+document. When a member has multiple roles, the additional role that does not
+require additional access are noted in a comment. PRs to remove someone from
+a role must be approved by the person themselves or a majority of Chairs.
 
 ### Security Assessment Facilitator
 

@@ -1,11 +1,13 @@
 # Security Reviewer Role
 
-Reviewers will try to understand the system and probe its security.
-Specifically design level issues are meant to be addressed as well as high
-level problems with the project’s setup and operation. This is meant to 
-provide an independent analysis and estimation of the above information. 
-The goal is to ask questions to understand if there are hidden assumptions,
-underestimated risk, or design issues that harm the security of the project. 
+Reviewers seek to understand the system and probe its security.
+Design level issues should be considered as well as any high
+level problems with the project’s setup and operation. The [process](./)
+is intended to provide an independent analysis based primarily on documents
+provided by the project itself.
+
+Reviewers may look at code, but aren't required to do so. They review docimen
+documents includes asking questions to understand if there are hidden assumptions, underestimated risk, or design issues that harm or risk the security of the project.
 It may be useful to reach out to community members to understand the answers
 to some questions, especially involving deployment scenarios and the impact
  of attacks.
