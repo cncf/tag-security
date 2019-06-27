@@ -11,24 +11,38 @@ repository:
   homepage: https://cncf.io/projects
   
   # Collaborators: give specific users access to this repository.
+  # see /governance/roles.md for details on write access policy
+  # note that the permissions below may provide wider access than needed for
+  # a specific role, and we trust these individuals to act according to their
+  # role. If there are questions, please contact one of the chairs.
 collaborators:
+  # Chairs
   - username: ultrasaurus
-    # Note: Only valid on organization-owned repositories.
-    # The permission to grant the collaborator. Can be one of:
-    # * `pull` - can pull, but not push to or administer this repository.
-    # * `push` - can pull and push, but not administer this repository.
-    # * `admin` - can pull, push and administer this repository.
+    permission: admin
+
+  - username: dshaw
     permission: admin
 
   - username: pragashj
     permission: admin
-
-  - username: JustinCappos
-    permission: push
   
+    # Triage Team
+    # manage issues (edit labels, occasionally edit)
   - username: lumjjb
     permission: push
 
   - username: hannibalhuang
     permission: push
     
+    # Security Assessment Facilitator
+    # merge PRs in /assesssments according to guidelines
+    # triage related issues
+  - username: JustinCappos
+    permission: push
+
+    # Security Reviewers
+    # issues may be assigned, edited by assignee
+    # merge PRs for assigned issue according to guidelines
+    # JustinCappos, ultrasaurus, lumjjb
+  - username: JustinCormack
+    permission: push
