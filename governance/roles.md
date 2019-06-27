@@ -1,18 +1,17 @@
-## Working group roles
+## Working Group Roles
 
 * [Three Chairs](#role-of-chairs)
 * [Technical Leads](#role-of-technical-leads)
 * [Project Leads](#role-of-project-leads)
 * [Group Members](#role-of-members)
 * [TOC Liaison](#toc-liaison)
-* [Facilitation Roles](#facilitation)
 
 The group may have many members. Within this document, "member" may refer to a Chair, a Technical Lead, or a Member.
 
 All Members are identified in the SIG [README](/readme.md), with annotations
 where they hold an additional role.
 
-### Role of members
+### Role of Members
 * The primary role of a member is to contribute expertise to the group.
 * To add yourself as a member, submit a Pull Request (PR) adding yourself
 to the list of members.
@@ -31,10 +30,9 @@ removal may occur through a super-majority vote of the Chairs.
 among the Chairs may be escalated to the TOC Liaison.
 * Members *MAY* decide to step down at anytime and optionally propose a
 replacement.
-* Members contribute to projects, according to the standard group
-  [process](process.md).
+* Members contribute to projects, according to the standard group [process](process.md).
 
-### Role of chairs
+### Role of Chairs
 
 While CNCF TOC allows for Chairs to serve in purely administrative roles,
 SIG-Security was formed with deeply technical Chairs based on early need
@@ -49,7 +47,7 @@ members who cannot attend a specific meeting time.
   * scheduling discussing of proposals that have been submitted
   * asking for new proposals to be made to address an identified need
 
-### Role of technical leads
+### Role of Technical Leads
 
 Technical Leads (TLs) expand the bandwidth of the leadership team. Proposals
 must have a TL or Chair working as an active sponsor
@@ -68,7 +66,7 @@ TLs are elected by the following process:
   1. Members are invited to comment and vote according to the regular voting
   process described below.
 
-### Role of project leads
+### Role of Project Leads
 
 Project Leads will lead larger streams of work that require sustained
 effort and coordination.
@@ -83,7 +81,7 @@ Project Leads are nominated and approved by the following process:
   to ensure that the Project Lead is set up for success or suggest alternatives.
 
 
-## TOC liaison
+## TOC Liaison
 
 The [CNCF SIG](https://github.com/cncf/toc/blob/master/sigs) process identifies
 a TOC Liaison.  The SIG chairs are responsible for establishing effective
@@ -92,52 +90,3 @@ wider TOC upon request.
 
 The TOC Liaison will occasionally prioritize SIG activities, as needed by the
 TOC, to further the [CNCF mission](https://github.com/cncf/foundation/blob/master/charter.md#1-mission-of-the-cloud-native-computing-foundation).
-
-
-## Facilitation roles
-
-Facilitation roles are identified in [github settings](/.github/settings.yaml)
-and include additional permissions in the repo which are governed by policies
-described below.
-
-### Security Assessment Facilitator
-
-[Security Assessments](/assessments) are part of the on-going work of the group
-and led by a Security Assessment Facilitator, who will:
-
-* coordinate security review leads for upcoming security assessments.
-* identify and recommend security reviewers.
-* contribute to process improvements.
-* review and merge PRs in the /assessments directory (ensuring co-chair review
-  of significant process changes).
-* triage issues related to security assessments.
-
-
-### Triage Team
-
-All members are expected to review Pull Requests (PRs), comment on issues, and 
-provide meaningful feedback or helpful references.
-
-Members who have contributed regularly, including discussion on multiple
-PRs and submitting PRs themselves, can volunteer to participate as a member
-of the Triage Team.  Interested members should first join ` #sig-security-triage`
-on Slack and flag issues that need attention, ask questions and volunteer
-to take on process improvement PRs that may arise.
-
-When there is a vacancy or need additional help, they will ask on Slack for
-volunteers to officially join the team.
-
-Each member of the Triage Team will:
-
-* assign labels to issues.
-* comment where issues need more detail.
-* recommend proposals or suggestions for discussion at working session meetings.
-* participate on #sig-security-triage slack channel.
-
-### Project teams
-
-Some on-going projects may have teams where members are identified for
-additional roles and may be required to have specific expertise. For visibility,
-these additional project roles are listed below:  
-
-* [Security Reviewers](../assessments/guide/security-reviewer.md/)
