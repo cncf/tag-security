@@ -5,7 +5,7 @@ Specifically design level issues are meant to be addressed as well as high
 level problems with the project’s setup and operation. This is meant to 
 provide an independent analysis and estimation of the above information. 
 The goal is to ask questions to understand if there are hidden assumptions,
-underestimated risk, or design issues that harm the security of the project. 
+underestimated risk, or design issues that harm or risk the security of the project. 
 It may be useful to reach out to community members to understand the answers
 to some questions, especially involving deployment scenarios and the impact
  of attacks.
