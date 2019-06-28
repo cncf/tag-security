@@ -2,15 +2,17 @@
 
 ## Objective
 
-     SIG-Security facilitates collaboration to discover and produce resources which enable secure access, policy control and safety for operators, administrators, developers, and end-users across the cloud native ecosystem.
+SIG-Security facilitates collaboration to discover and produce resources which enable secure access, policy control and safety for operators, administrators, developers, and end-users across the cloud native ecosystem.
 
 ## Background
-     “Cloud Native” is open source cloud computing for applications — a complete trusted toolkit for modern architectures (CNCF presentation).  There are multiple projects which address key parts of the problem of providing access controls and addressing safety concerns. Each of these adds value, yet for these technical solutions to be capable of working well together and manageable to operate they will need a minimal shared context of what defines a secure system architecture.
+
+“Cloud Native” is open source cloud computing for applications — a complete trusted toolkit for modern architectures (CNCF presentation).  There are multiple projects which address key parts of the problem of providing access controls and addressing safety concerns. Each of these adds value, yet for these technical solutions to be capable of working well together and manageable to operate they will need a minimal shared context of what defines a secure system architecture.
 
 ## Vision
-     There is a future where operators, administrators and developers feel confident creating new cloud native applications.  They use cloud technologies with clear understanding of risks and the ability to validate that their security policy decisions are reflected in deployed software.
 
-     We envision that there could exist an ecosystem of tools that can simplify the experience of cloud native operators, administrators and developers, including:
+There is a future where operators, administrators and developers feel confident creating new cloud native applications.  They use cloud technologies with clear understanding of risks and the ability to validate that their security policy decisions are reflected in deployed software.
+
+We envision that there could exist an ecosystem of tools that can simplify the experience of cloud native operators, administrators and developers, including:
 1. System security architecture that understands and accommodates the ever
 growing heterogeneity of systems and provides a framework to protect resources
 and data while servicing their users
@@ -21,7 +23,7 @@ security of the system, such as auditing and explainability features.
 
 # Governance
 
-     [SIG-Security charter](governance/charter.md) outlines the scope  of our group activities, as part of our [governance process](governance) which details how we work.
+[SIG-Security charter](governance/charter.md) outlines the scope  of our group activities, as part of our [governance process](governance) which details how we work.
 
 ## Members
 
@@ -89,14 +91,14 @@ security of the system, such as auditing and explainability features.
 
 ## Communications
 
-     Anyone is welcome to join our open discussions of WG projects and share news related to the group's mission and charter. Much of the work of the group happens outside of WG meetings and we encourage project teams to share progress updates or post questions in these channels:
+Anyone is welcome to join our open discussions of WG projects and share news related to the group's mission and charter. Much of the work of the group happens outside of WG meetings and we encourage project teams to share progress updates or post questions in these channels:
 
 * [Email list](https://lists.cncf.io/g/cncf-sig-security)
 * [CNCF Slack](https://slack.cncf.io/) #sig-security channel
 
 ## Meeting Time
 
-     The Security SIG group meets every Wednesday at 10:00am PT (USA Pacific):
+The Security SIG group meets every Wednesday at 10:00am PT (USA Pacific):
 
 Join: https://zoom.us/my/cncfsigsecurity
 
@@ -114,7 +116,7 @@ Find your local number: https://zoom.us/u/alwlmxlNn
 
 ## In Person Meetings
 
-     Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup. Create a [github issue](https://github.com/cncf/sig-security/issues/new) for an event and add to list below:
+Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup. Create a [github issue](https://github.com/cncf/sig-security/issues/new) for an event and add to list below:
 
 * KubeCon + CloudNativeCon, San Diego, CA - Nov 18 – 21, 2019 - [issue#128]
 
