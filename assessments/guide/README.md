@@ -1,6 +1,6 @@
 # Purpose
 
-To provide the CNCF’s TOC with effective information about the security of different projects, this document outlines the procedure by which a project should be evaluated.
+     To provide the CNCF’s TOC with effective information about the security of different projects, this document outlines the procedure by which a project should be evaluated.
 
 ## Roles
 
@@ -27,7 +27,7 @@ To provide the CNCF’s TOC with effective information about the security of dif
 
 ## Additional Process Notes
 
-Iteration is expected; however, we expect quick turnaround (at most a week). In rare cases unrelated issues can unexpectedly interrupt the process and it may be appropriate to address specific concerns rather than continuing with the assessment. We encourage open communication between project lead and security reviewers:
+     Iteration is expected; however, we expect quick turnaround (at most a week). In rare cases unrelated issues can unexpectedly interrupt the process and it may be appropriate to address specific concerns rather than continuing with the assessment. We encourage open communication between project lead and security reviewers:
 * At any time, the project lead may request additional time to respond   to feedback from security reviewers
 * Project lead or lead security reviewer may pause the process where a delay of over a week cannot be accomodated by the review team. Simply close the github issue with a note to SIG co-chairs.
 
