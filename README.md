@@ -74,7 +74,7 @@ security of the system, such as auditing and explainability features.
 * Simarpreet Singh ([@simar7](https://github.com/simar7))
 * Craig Ingram ([@cji](https://github.com/cji)), Salesforce
 * Roger Klorese ([@qnetter](https://github.com/qnetter)), SUSE
-* Emily Fox([@TheFoxAtWork](https://github.com/TheFoxAtWork)), ([National Security Agency](https://nsa.dev))
+* Emily Fox([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A.
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
