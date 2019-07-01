@@ -6,7 +6,7 @@ Reviewers will try to understand the system and probe its security.  Specificall
 
 ### Required 
 
-Unless approved by the SIG chairs, at least one of the reviewers will have previously performed a CNCF project security assessment.  Exemptions to this are reviewed case by case upon established need by the CNCF Security SIG Chairs in order to bootstrap the process as appropriate.
+Unless approved by the SIG chairs, at least one of the reviewers will have previously performed a CNCF security assessment.  Exemptions to this are reviewed case by case upon established need by the CNCF Security SIG Chairs in order to bootstrap the process as appropriate.
 
 ### Preferred
 
