@@ -28,7 +28,7 @@ We expect that this process will raise awareness of how specific open source pro
 Each project's security assessment shall include a description of:
 1. the project's design goals with respect to security
 2. any aspects of design and configuration that could introduce risk
-3. known limitations, such as expectations or assumptions that aspects of security, whole or in part, are to be handled by upstream or dowwnstream dependencies or complementary software
+3. known limitations, such as expectations or assumptions that aspects of security, whole or in part, are to be handled by upstream or downstream dependencies or complementary software
 4. next steps toward increasing security of the project itself and/or increasing the applications of the project toward a more secure cloud native ecosystem
 
 Due to the nature and timeframe for the analysis, *this review is not meant to subsume the need for a professional security audit of the code*.  Audits of implementation-specific vulnerabilities, improper deployment configuration, etc. are not in scope of a security assessment.  A security assessmet is intended to uncover design and configuration flaws and to obtain a clear, comprehensive articulation of the project's design goals and aspirations while documenting the intended security properties enforced, fulfilled, or executed by said project.
