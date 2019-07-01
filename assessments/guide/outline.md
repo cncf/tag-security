@@ -1,13 +1,13 @@
 # Outline
 
-     The burden is primarily on the proposing project to demonstrate it is secure in a manner that is understandable to the broader community.  The [reviewers](security-reviewer.md) will help to assess and probe the design.
+The burden is primarily on the proposing project to demonstrate it is secure in a manner that is understandable to the broader community.  The [reviewers](security-reviewer.md) will help to assess and probe the design.
 
-     The proposing project must provide a written document that describes the project and its security.  The document must contain the following information, at a minimum. Where security considerations do not fit into the outline below, if possible, add a sub-section when possible such that the additional content conforms to the general flow of the review.
+The proposing project must provide a written document that describes the project and its security.  The document must contain the following information, at a minimum. Where security considerations do not fit into the outline below, if possible, add a sub-section when possible such that the additional content conforms to the general flow of the review.
 
 
 ## Metadata
 
-     A table at the top for quick reference information, later used for indexing.
+A table at the top for quick reference information, later used for indexing.
 
 |   |  |
 | -- | -- |
@@ -17,7 +17,7 @@
 
 ## Overview
 
-     One or two sentences describing the project -- something memorable and accurate that distinguishes your project to quickly orient readers who may be reviewing multiple assessments.
+One or two sentences describing the project -- something memorable and accurate that distinguishes your project to quickly orient readers who may be reviewing multiple assessments.
 
 * Background. Provide information for reviewers who may not be familiar with your project's domain or problem area.
 * Goal. The intended goal of the projects including the security guarantees the project is meant to provide (e.g., Flibble only allows parties with an authorization key to change data it stores)
