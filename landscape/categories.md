@@ -23,24 +23,29 @@ sub-categories. The remaining text is a description of each sub-category.
   - _Secret Management_
     - Tools that help to manage, encrypt or distribute secrets and other sensitive information.
 
-- **Identity & Access Control**
-  - _Identity_
-    - SPIFFE, identity providers, OpenID, LDAP, Okta
+- **Identity Lifecycle and & Access Management**
+  - _Identity Lifecycle_
+    - Systems for creating, governing and terminating identities and entitlements for users and systems
+      - Lifecycle management tools like Okta, FreeIPA
+      - Service identity for identifying ephemeral workloads, e.g. Spiffe
+      - Identity federation and single sign-on, typically supporting OpenID connect and SAML
+      - Directory and attribute management, typically LDAP
   - _Access Controls_
     - Controls within the orchestration layer to provide minimum required access to orchestrator resources.
-    - Authentication / Authorization
+    - Resource authorization
       - OAuth, IAM
-    - Privilege & Access Management
-      - Managing privileges in the platform for humans and machines, access controls, audit logging, privilege revocation,
-        etc
-    - Network Policy & Protection
-      - Firewalls, network segmentation, network policy
+      - Policy engines
+    - Privileged Access Management
+      - Applying higher levels of control for sensitive actions, including just-in-time access and enhaned logging
   - _Service access_
     - Service admittance & admission controllers
       - Allowing new service instances to join existing services, and preventing insecure application instances from running.
     - Storage access
+      - Governing access to stored data by volume, schema, record or field
+    - Network Policy & Protection
+      - Firewalls, network segmentation, network policy
   - _Key and Certificate Management_
-    - Provisioning of access to required services for application instances, service accounts, orchestrator access to shared components, etc
+    - Provisioning of access to required workloads for application instances, service accounts, orchestrator access to shared components, etc
     - Provisioning of SSL certs for application instances
 
 - **Privacy**
