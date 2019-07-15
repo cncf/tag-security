@@ -7,9 +7,8 @@ This will help create a feedback loop between the theoretical/hypothetical and p
 This falls into 2 categories: process examples (e.g. how well did an assessment go?) and security practices examples (irrespective of the assessment, how are tools working out in the wild?)
 
 ## Vision
-* Document example case studies, both uses of where things went right, and where things went wrong
-* Support knowledge-sharing that reduces security risks, providing data about vendors and open source projects
-* Define a process for "admission control" for what a case study should look like to add value (not too detailed, not too hand-wavy)
+* Document example case studies, the methodology used, and solicit feedback from participants and consumers - this effort is performed by someone who was not directly participating either as assessor or from the project being assessed.
+* Support knowledge-sharing that reduces security risks earlier in the design and implementation cycles across CNCF projects (aka awesomeness!)
 
 # Suggested Case Studies
 
