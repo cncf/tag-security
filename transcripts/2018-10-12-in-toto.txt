@@ -1,464 +1,320 @@
-[02:53.200 - 02:58.400]
-Andrew Andrew
+Dan:                Andrew. Justin. I can't hear folks, let me see if I..
 
-[03:19.100 - 03:24.200]
-Justin I can't hear folks and see if I
+Justin:             I can here you, [crosstalk 00:03:31]. How's it going? Let me try that again without being muted. 
 
-[03:29.200 - 03:32.900]
-I can go. How's it going? Let me try that again without being muted.
+Dan:                It's probably me. Okay. Hi, Sarah.
 
-[03:36.400 - 03:37.400]
-It's probably me.
+Sarah:              Hello.
 
-[03:45.300 - 03:48.500]
-Okay, I Sarah.
+Dan:                So it might be you, Justin. 
 
-[03:50.200 - 04:00.100]
-Hello might be you Justin. Yeah, you can you hear me now? Okay, great.
+Justin:             Yeah, can you hear me now?
 
-[04:05.400 - 04:06.800]
-Santiago, I think you're muted.
+Dan:                I can here you now. 
 
-[04:10.700 - 04:13.400]
-Hello, can you hear me guys? Yes.
+Justin:             Okay, great. Santiago, I think you're muted. 
 
-[04:20.200 - 04:23.700]
-So as everyone joins, please sign in.
+Santiago:           Hello. Now can you here me guys? 
 
-[04:40.800 - 05:23.000]
-We have a pretty full agenda today. So if we could get scribe signed up, that'd be fantastic and we're going to have deep Dives that the team the internal teams back this week with a deep dive and we would go through and try to take us through our agenda items updates fairly quickly so we can have a fairly solid amount of time for four in total and and you know, I want to make sure that we also not only get the presentation in but you know get any discussion now have some time for discussion.
+Dan:                Yes. So as everyone joins, please sign in. We have a pretty full agenda today so we can get a scribe signed up, that'd be fantastic. We're going to have a deep dives, the team, the in-toto team is back this week with a deep dive and we are going to go through and try to take us through our agenda items and updates fairly quickly so we can have, a fairly solid amount of time for in-toto. I want to make sure that we also not only get the presentation in, but get discussion now as in time for our discussion. Sarah, thank you so much. Welcome Andrew. Thanks for signing in. So can I get one more person to join Sarah and then I'll kick us off? 
 
-[05:27.400 - 05:31.900]
-Sarah thank you so much.
+Christian:          Yeah. I can do it. 
 
-[05:41.200 - 05:42.900]
-Well Commander thanks for signing in.
+Dan:                Thank you, Christian I appreciate it. Okay. So with that... and once again, those who just signed on, please add yourself to the list and I'll use the attendance list to do check-ins. So quick check-in for me I'll kick off the process. It's [inaudible 00:06:34] I have news on the job front, that I will publish on next week. But the research is done, now just paperwork. Beyond that coming live from not just interactive and we're doing a big collaboration event, so I've stolen a conference room and hosting from here. Let's see, who's this up next. Jerry will you chick in? 
 
-[05:48.100 - 05:54.900]
-So, can I get one more person to join Sarah and then I'll kick us off.
+Jerry:              Sure. Hello everybody. I don't have too much to say except that I did touch base with Michael Jesse this week. He and I are both kind of thinking about taking a step back to reflect on all the comments that we've received about the suggested security subcategories and giving it another look. So hopefully we'll be able to do that in the next week before the next meeting.
 
-[06:02.400 - 07:01.400]
-Yeah, I could do it thank you for said we should okay. So with that once again those who just signed on please at yourself to the list and I'll use the attendance list to to do check-ins. So quick check-in for me. I'll kick off the process. It's been three week. I have news on the job front that I will publish your next week, but the search is done not just before and beyond that coming live from know just interactive and we're doing a big collaboration event. So I've stolen a conference room and coasting from here.
+Dan:                Fantastic. We have an agenda item just to touch on that, and that'll be great time, sort of to both folks to go review. Sarah.
 
-[07:02.200 - 07:33.200]
-Let's see. Who's up. Next Jerry one second. Sure. Hello everybody. I don't have too much to say except that. I did touch base with my gold you see this week and he and I are both kind of thinking about taking a step back to reflect on all the comments that we've received about the suggested security subcategories and giving another look so hopefully we'll be able to that in the next weeks before the next meeting and that's it.
+Sarah:              I have also, I've been out of touch for week and half. Since Dan is giving personal news, I will also, I lead this nonprofit called bridge foundry, which does like outreach in diversity and tech and we had a big event last night and now that's done. So, I'm back stage and catching up on things and I did review the governance PR and I love it. I've few minor tweaks and some stuff I want, I get back and propose some specific orgs to. But it just really great to see that coming together. I think that, the one thing that I don't know whether people want to add as in... are we going to talk about governance system? 
 
-[07:33.700 - 07:45.600]
-We'll have an agenda item just to touch on that and the be great time to put folks to go view. Okay, sir.
+Dan:                Not this time.
 
-[07:46.800 - 08:44.500]
-I have also I've been out of touch for a week and a half. I am since then is giving personal news. I would also I believe this nonprofit culprit Foundry which does like Outreach and diversity in Tech and we had a big event last night. And now that's done. Yay. I'm back safe and catching up on things and I did review the governance PR and I love it. I have few minor tweaks and and some stuff. I want I get back in proposing specific words to but it is just really great to see that coming together. I think the one thing that I don't know whether people want to add as an are we going to talk about governance system. Not this time. Okay. Let me just put it in the pr because I know where you got a full agenda. I'm really like the Russians. Okay. Thank you. And thank you Rachel and Jennifer the effort sir, Justin.
+Sarah:              Okay. Let me just put it in the PR because I know we've got a full agenda. I really like the direction. 
 
-[08:46.800 - 09:45.500]
-All right. I've been continuing to work with a spiffy Inspire folks security audit. We had blog post come out and discuss a little bit about what we came up with and we're looking at putting this together for an academic conference. So that's my main update actually enter and your wife. Sorry. Yep. Bye all so just still waiting for some additional feedback on the compliance scoping doc. That's out there in The Ether that lives in item putting together some additional suggestions in there that I added today namely around ietf and other standards bodies and how they can potentially relate to some of the CNC of project landscape. So thinking spiffy tough and and how potentially those can be proposed to those bodies if warranted and then also Dan I sent you the intros to dr. Yoga and David Walton Maya over in this so feel free to run with that thread as you see fit. Thank you. Yeah.
+Dan:                Great. Thank you. Thank you Rachel and JJ for being their [inaudible 00:08:43]. Justin? 
 
-[09:46.800 - 10:25.400]
-Seen I reached out to them for availability and we'll try to schedule in based on their schedules. Awesome. Thank you, and I'm sorry to jump in but let me just say this. We're definitely quite interested in ietf standardization. We have occasionally had folks especially from government say hey wouldn't it be nice if tough as ietf standardized so we are in fact just had a conversation about earlier this week would love it. Excellent. Awesome. Yeah, I throw it in there as proposal. It's not something I personally will own since I'm not as familiar with the whole ietf publication process. It is a little bit involved, but that is something that we should all collectively look at figuring out.
+Justin:             All right. I've been continuing to work with a spiffy and spire folks security audit. We had blog posts come out and discuss a little bit about, what we came up with and we're looking at putting this together for an academic conference. So that's my main update. 
 
-[10:27.000 - 10:43.800]
-Great, can someone who's taking notes add an action item for me to follow up with Justin make sure that I'm connecting our agenda with the nice folks.
+Dan:                Excellent. Andrew? Andrew Weiss. Sorry.
 
-[10:45.800 - 11:45.700]
-Thank you. Andrew Martin. Welcome. Hello. Thank you. This is my first time on the call. I've been lurking on the repo for a few weeks now, so it's been she's myself financially Martin. I have consultancy called control plane in London and we are focused on ultimately container and Cuba data security engineering but it's basically that narrow scope is obviously most wider when you consider how does contain to get to be with the pipeline Etc. So we're just basically doing none of them setups with containers focus and we've been working with Santiago for the past few months looking for now blowing in Toto with with a web facing customer needs and helping to sort of bring some commercial requirements back down in lovely time. Everything's going very nice.
+Andrew Weiss:       Yup. I'm, so just still waiting for some additional feedback on the compliance scoping doc, that's out there in [inaudible 00:09:20] put it together. Some additional suggestions in there, that I had today, namely around, IETF and other standards bodies and how they can potentially relate to some of the CNC of project landscape. So thinking spiffy TUF and how potentially those can be proposed to those bodies if warranted. Then also Dan, I sent you the intros to [inaudible 00:09:40] and [inaudible 00:09:41]. So feel free to, to run with that thread as you see of it. 
 
-[11:45.700 - 11:53.800]
-Say so hello. I'm very pleased to be here and hope to punch you awesome. Welcome and Erica.
+Dan:                Thank you. Yeah, I've seen... I reached out to them for availability and we'll try to schedule in based on their schedules. 
 
-[11:57.700 - 12:15.300]
-I actually just flew back from London yesterday I have for the week just did a little intro to kubernetes 4 stf thing. So I mostly don't have we cancelled the working group for kubernetes this week?
+Andrew Weiss:       Awesome. 
 
-[12:16.000 - 12:59.400]
-I think it's amazing that the thing though that I've been thinking and wondering about particular for the kubernetes case is how to deal with concurrent see and or concurrent events and distributed systems. And whether be it makes sense to have the like full gates at certain points or what does that mean when there are multiple timelines of the truth going on and especially also what that means for like contributing actions to any one individual should we look at ways of extending that thinking about it more comprehensively?
+Dan:                Thank you.
 
-[13:00.000 - 13:21.000]
-That's all I've got Erica. Well, you're here. Could I ask if you could check off an agenda item and you know share with folks the thank you for posting about the coop SEC. Can you search are second on that and what folks would be preparing in terms of the cfp?
+Justin:             Sorry to jump in, but let me just say that we're definitely quite interested in IETS standardization. We have occasionally had folks, especially from government say, hey, wouldn't it be nice to IETS standardized? So we are in fact just had a conversation about it earlier this week. Would [crosstalk 00:10:11] it.
 
-[13:23.900 - 14:15.000]
-Sure. Could the cube say Cube Khan is the big event in the kubernetes world. And because everyone in kubernetes only thinks about the kubernetes world, that's like the entire thing it's a big deal. So there's a lot of code located events. One of which is dead red hat. I think AWS and aqua stick or sponsoring specifically devoted for Enterprise security so that I can get say the clients are the people who would be intending and interested are those who are trying to deal with security in the Enterprise and they're like the real situations of the compliance and larger demands at so those are the things that I think we're going to be discussing their end user focused. So or
+Dan:                Excellent.
 
-[14:16.800 - 14:48.800]
-Customers like Enterprise customer and supplier focused that because I don't know very many developers who think I'm developing the specifically for a large Financial organization sir. There's a lot of apps in that space But yeah Enterprise customers are still customers or some kind of user of security right? Well, everyone's a user security whether it's good security different story. Good point.
+Andrew Weiss:       Yeah, I drew it in there as proposal. It's not something I personally will own. Since I'm not as familiar with the whole IETF publication process. It is a little bit involved. But that is something that we should all collectively look at figuring out. 
 
-[14:50.000 - 15:49.800]
-Is there an interest in like having it still a working group level discussion? Would that be appropriate for us to keep the shirt at Cube Seck or around then? Right? I'm down to meet up with anyone and everyone right? So we're going to have you know in a coupon Cloudy of Khan will have the sort of normal normally sanctioned working group events through that. I'm just wondering if we should prioritize anything for the cube Seck thing or if that's we're not appropriate there. I would need to cop get in touch with the organizers cool. I think more of an engineer side. Yeah, I'm more helping and participating rather than organizing but I am sure it fits within this scope and like subject.
+Dan:                Great. Can someone who's taking notes, add an action item for me to follow up with Justin and make sure that I'm connecting our agenda with the next folks. Thank you. Andrew Martin, welcome.
 
-[15:49.900 - 16:12.800]
-Sure, so I just don't know what we all night. You know, I present the plan is sort of will continue to organize something at puke on General and then, you know, keep sack, you know, please if you're in that space and interested submitted City closes on Monday. Thank you Christian.
+Andrew Martin:      Hello. This is my first time on a call. I've been looking on the record for a few weeks now, so to introduce myself, I'm Andrew Martin, I have a consultancy called Control Plane in London and we are focused on ultimately a container in Kubernetes security engineering. But it's basically a... that narrow scope is obviously the much wider when you consider how's [inaudible 00:11:17]  get be, when it comes to pipeline, et cetera. So we're just basically doing kind of DevSecOps with containers focus and we've been working with Santiago for the past few months, hoping for like four now. [inaudible 00:11:33] in-toto with a web facing customer in the UK, and developing the... sort of bring some commercial requirements back down. We had lovely time. Everything's going very nicely. So hello. I'm very pleased to be here and hopefully [inaudible 00:11:50].
 
-[16:14.000 - 16:24.700]
-I actually don't have anything to report my last note was from this meeting last week. Everything else was internal cool. We could see Mark.
+Dan:                Awesome. Welcome Andrew. Erica?
 
-[16:25.300 - 16:26.900]
-Come back.
+Erica:              Hi, I actually just flew back from London yesterday, for the week, just did a little intro to Kubernetes for CNCF. So I mostly don't have... we canceled the working group for Kubernetes this week. That, I think that's amazing. There things though that I've been thinking and wondering about in particular for the Kubernetes case is how to deal with concurrent seeing or concurrent events in distributed systems and whether it makes sense to have the full Git at certain points or what does that mean when there are no multiple timelines of the truth going on? Especially also what that means for contributing actions to any one individual. Should we look at ways of extending that, thinking about it more comprehensive things? That's all I've got.
 
-[16:29.900 - 17:04.600]
-Hey guys, nothing too much new were about to launch our internal container POC next week. So I was catching up at the issues from the meeting week after less. So I'll have those three posted up here before this meeting ends. It's about it from here. Excellent TK. Nothing new from my side as well. And this will waiting for the flight G security working group to organize swim. The next meeting is going to be and also in 1915.
+Dan:                Erica. [inaudible 00:13:04] could I ask if you could check off an agenda item and share with folks the... thank you for posting about the CubeSec. Can you share a second on that and what folks should be preparing in terms of the CFP? 
 
-[17:08.600 - 17:14.300]
-Excellent. Thank you Santiago.
+Erica:              Sure. Kind of think KubeCon is the big invention in the Kubernetes world and because everyone in Kubernetes only thinks about the Kubernetes world and that's like the entire thing. It's a big deal. So there's a lot of code located events, one of which is the red hat. I think, AWS and Aquasec are sponsoring specifically devoted for enterprise security. So that I can get to say the clients are, or the people who will be attending an interested are those who are trying to deal with security in the enterprise in the real situations of the compliance and larger demands at. So those are the things we're going to be discussing there. 
 
-[17:17.400 - 17:44.100]
-Hello. Yeah, most of this week. I just prepared this presentation very much and I review the little bit about the government documents mostly to gain inspiration because we're also starting to like get a more formal process to start building you Toto standards and tribution guidelines and codes of conduct and
+Dan:                User focused? So, or-
 
-[17:46.200 - 18:06.600]
-Excellent Rachel, I address concerns that were left it in the governance stock PR as of like 9:00 a.m. This morning. I saw just before this called the renew comments and those are not dressed. So if you have any more comments, there's a bit more time open.
+Erica:              Custom or like enterprise customer and supplier focused. If that make sense? I don't know very many developers who think I'm developing this specifically for a large financial organization.
 
-[18:08.900 - 18:16.300]
-Excellent. Thanks Rachel. Is there anyone who I haven't called on to wasn't checked in? I've got everybody.
+Sarah:              There's a lot of apps in that space. But yeah, enterprise customers are still customers or some kind of user of security, right? 
 
-[18:16.800 - 18:43.100]
-Right. So just going through the the last little bit of an agenda items on to get into the internal Deep dive. So the Compliance Document entered Works. Where's the new new material? Where should we be looking there?
+Erica:              Well, everyone's a user of security, whether it's good security, it's different structuring. 
 
-[18:44.100 - 18:47.600]
-It posted it. Yeah in the chat there, okay.
+Sarah:              Good point. 
 
-[18:49.300 - 19:05.300]
-That's pretty high level to pretty short concise was put the initial draft together. I've added a few additional suggestions in there, but we go and there's some couple of comments on the side.
+Dan:                Is there an interest in having a working group level discussion, would that be appropriate for us to [crosstalk 00:15:04] at CubeSec?
 
-[19:07.500 - 19:09.100]
-so
+Erica:              Around then? I'm down to meet up with anyone and everyone. 
 
-[19:11.000 - 19:24.400]
-have we have I haven't had a chance to schedule you for this. I I was away or during week to do go through this entire Proposal with the working repair.
+Dan:                Right. So we were going to have in... at KubeCon at cloud Damcon we'll have the sort of normal, normally sanctioned, working group events, through that. I was just wondering if we should prioritize anything for the, the CubeSec thing or is that... if we're not appropriate there. 
 
-[19:26.300 - 20:17.200]
-Not formally not yet. We've had some conversations just on the GitHub issue, but I have to go through it now or at another would you be available next week to do that? Let me check. Yeah, I can do next week awesome. Let's schedule that for next week and go through this in depth and you know get some you some more formal feedback. Sure. Yeah, if anyone else has any suggestions, please don't hesitate Adam on excellent. All right, and now I think there was there anything else in safe landscape that folks should look at I've kept it in just to keep the our attention focused on it anything new that we're that you're looking for specific feedback on so, I don't think that there is anything
+Erica:              I would need to get in touch with the organizers. 
 
-[20:19.500 - 20:51.200]
-News that I'm looking for feedback on but one of the things that I'm going to be thinking about and reflecting on the next week is whether the subcategories are well named and I suspect that it would be helpful to get the perspectives of people who come from different backgrounds on that. So that's one thing that I would really like everybody to just kind of take a look through and see if the name of each subcategory resonates with you or if there's something that you think we could modify to make it more generally applicable or just clear.
+Dan:                Cool.
 
-[20:52.100 - 21:30.600]
-At this point you have you we've gotten rid of kind of all of the examples and are is everything now sort of the descriptor? And the definition is that that I mean that could potentially use improvements to that's all part of what I'll be looking at in the next week. So I would say that if you feel like you could offer an interesting perspective on that or even if you're not sure if your perspective would be interesting I would still like to hear from you ask questions. Yeah. Hopefully we can get all of our feedback together and pull it into a more final draft.
+Erica:              As in more of an engineer side, I'm more helping and participating rather than organizing.
 
-[21:30.900 - 22:05.300]
-Thanks a lot. All right. Well, let's today we have Santiago and Justin and they're going to thank you for the introduction last week and we're going to go into a deeper dive on that and then have some time for discussion at the end. So Santiago are you presenting? Yes, awesome. So do you know where the the sharing you have slides through? Let's see if this works on my machine.
+Dan:                Well-
 
-[22:07.700 - 22:11.200]
-Manager goes crazy with his things.
+Erica:              I am sure it fits within this scope in like subjects for sure. I just don't much of [inaudible 00:15:52]. 
 
-[22:15.000 - 22:15.500]
-No.
+Dan:                At present. The plan is sort of we'll continue and we'll organize something at a KubeCon in general and then CubeSec. Please if you're in that space and interested, CFP closes on Monday. 
 
-[22:16.800 - 22:18.300]
-Good good.
+Erica:              Thank you.
 
-[22:19.600 - 23:19.400]
-Okay, great. The guy's just to give some context. I tried to my understanding from what you mentioned last week is that since each application process was changing into presentation and this presentation was kind of the first draft to see exactly how they may look like. So I try to pretty much take a look at the existing TLC guidelines for applications try to massage it into something that wasn't present the warm. I also took some content that I had there's going to be a little demo about python reference implementation. But let's see. Let's see how this whole thing works out. So yeah, I think everyone here already knows that I'm all about in Toto and the I would say a longer just in the lead designer of this solution and I'm going to talk about how it matches the club native landscape and how it it's very necessary.
+Dan:                Christian.
 
-[23:19.600 - 24:02.700]
-For security Next Generation Cloud native Solutions. Now it's called application. We need a description. So I just put a slide in there encoders a framework because if your supply chains in and out the cloud most of current cloud native deployments use a very like very diverse very like configurable graphs of notes that interact each other and they most of them perform operations from the artifacts to either to Quality Assurance like a vulnerability scanner or transformation. Say the knocker field or a or regular field or a linting or anything like this.
+Christian:          I actually don't have anything to report. My last note was from this meeting last week. Everything else was in-toto. 
 
-[24:03.900 - 24:46.100]
-Now something that I want to I wanted to like to do is to give a little bit more of backgrounds to as to what this means in terms of the description and I'm going to use a very like idealize supply chain and I'm going to walk through exactly how things can break in this context. Now all of you may like laugh about how simple desists but it's a pretty much like a very very bones application that you may check into GitHub. You may be using a build system. I think this logos mess and I forgot what it was. You may be checking it in a CI system to run the test drivers or whatever you want to use and you may do some packaging in this case. We're building a duck that file.
+Dan:                Cool. We'll get to you. Mark, welcome back. 
 
-[24:46.900 - 25:19.700]
-So Lobos, like a in the same group knows all of this single point of failure can be attacked in this case. For example, you can break into the version control system and you can introduce vectors just it has happened many times before or you could for example try to break into the build system and use the back door in compiler and or create a backdoor version of xcode to introduce backwards in mobile applications and so on and so forth.
+Mark:               Hey guys, nothing too much new. We're about to launch our internal container POC next week. So I was catching up with the issues from the meeting week after less. So I'll have those three posted up here before this meeting ends. That's about it from here. 
 
-[25:20.300 - 26:11.800]
-Or you can compromise the packaging infrastructure and choose a backward version of the whole final product and so on the fourth or as it has happened before you can sometimes even by mistake forget about CI and just release the untested versions of Windows and update everyone's machines and kind of break it were a couple of hours and that's not the only thing you can also even though there's Point Solutions. We've worked on this I made some patches to give to like increase the security of power and meta data store you can users today and most of you guys are some familiar with tough, which is a solution that takes care of what would be this which is the last mile of software delivery it has
+Dan:                Excellent. TK?
 
-[26:12.600 - 27:12.400]
-Pretty much resulted in many in securing many things that you guys are familiar with the moon. They recognize low going there and yeah, like all of this good news, if you security the visual aspects, but the complete problem is not fixed there's gaps between steps which is how is not interact together and there's also a matter of compliance you can sometimes even though the stiff exists you really are not listening to what the for example of security scanners telling you. So what in total is all about is to secure the complete supply chain in Toto is means there's a hole in that in and it is not a coincidence. We really want to do allistic complete thorough verification of the supply chain as a whole in key points. This means that we want the verifiable to find the steps of the software supply chain want to verifiable Lee Define who's able to
+TK:                 Nothing new from my side as well I'm still waiting for these quite this, security working group to basically organize when the next meeting is going to be and So [inaudible 00:17:04].
 
-[27:12.600 - 28:03.500]
-To perform operations and supply chain and which operations and then guarantee that everything happens to how this definition is done. And in other way, so to do this we pretty much used to things the layout and at the stations and forms of like metadata now the layout here's like a toy version of it. It's pretty much what steps exist in the toy example that I showed before. Well, we had a Version Control System a CI system. We had a build server and we have a package here. It also tells you who's able to do what for example Rob it's only able to interact with a version control system and they've who's the owner of Travis? It's the one that's performing to build and Carl and Erin will be the ones who build and package the final application.
+Dan:                Excellent. Thank you. Santiago.
 
-[28:04.500 - 28:54.900]
-We also have a layout we have a rules a series of rules to find how this artifacts interrelated to each other to make sure that all of the artifact flow is done properly. In this case. We know that the sources that were created by Bob and no one else are the ones that we need to eat it to check down the CI system and the ones that are needed to be sent over to the to the build server and what Carl bildt is what it's the only thing only what Carl bildt is going to go into the packaging infrastructure and it also has a signature to authenticate who created this layout in this case. We know that Alice is the owner or this CE CE o of the company and she's the one that says exactly how the software is built and that's why we have her signature on this layout file.
+Santiago:           Hello. Yeah. For most of this week. I just prepared this presentation pretty much and I reviewed a little bit about the governance documents, mostly to gain inspiration because we're also starting to get a more formal process to start building in-toto, standards and the distribution guidelines and codes of conduct and [inaudible 00:17:44].
 
-[28:55.600 - 29:15.800]
-the counterpart of the layout file the other the other piece of metadata is what we called links and links are essentially at the stations that each of the actors that were selected in the layout create every time they perform an operation for example involve created a
+Dan:                Excellent. Rachel?
 
-[29:17.300 - 30:02.000]
-Created a source code or check out the source code. He will report in a link what was in the virtual control system in this case? You will see in the bottom left that it says to and a spear hash of food. So that's what we're going to use to link things together. And finally once we have all of the links and layout and final product we bundle of together and send it to the user. This can be a package manager. This can be a an admission controller in the case of cloud or it can be just general audit scanner that you can put inside of your continued work straighter to like continuously verify that all of your images were produced properly.
+Rachel:             I addressed concerns that were left to in the governance stock PR as of 9:00 AM this morning I saw just before this call there were new comments and those are not addressed. So if you have any more comments, there's a little bit more time open. 
 
-[30:03.200 - 30:04.000]
-now
+Dan:                Excellent. Thanks Rachel. Is there anyone who I haven't called on to... wasn't checked in? We've got everybody. All right. So just going through the last little bit of agenda items, I want to get into the in-toto deep dive. So, the compliance document, Andrew Weiss, where's the new material? We should we be looking there.
 
-[30:06.600 - 30:17.700]
-this is the big picture. I don't know how much of a deep dive you guys want. I don't know that the you want me to go deep into the specifics of the layout or is that a yes?
+Andrew Weiss:       I just posted it here in the chat there. 
 
-[30:19.300 - 30:44.900]
-Okay. Yes, sir is updated. Yeah, please do. Okay. So it's out of the way. Oh, I already said that what are the key components? Sorry. One thing I do want to mention too is that we will be doing a demo where you'll also have the opportunity to see a lot of this. So even if we go through this a little quickly now, they'll be a good point later to stop us or stop us now. Whatever you prefer.
+Dan:                Okay.
 
-[30:45.900 - 31:45.700]
-Thanks for the context. Okay, so so basically in the layout as I said, it's essentially a policy that you defined for your supply chain and how everything connects together in this case the key points to consider steps. What are the what are what are the steps to perform functionaries which are the people that operate on the supply chain and I'll see you soon rules link the steps together. There's also other useful information like an expiration date. You may want your layout to expire so you can take the policy forceful the every couple of months for example, and of course, it has a signature of it whole thing. So, you know, the layout this The Trusted that the right person created layout inside of the layout you find something that are called steps or step definitions. They essentially describe who's able to perform this step and it contains a series of rules that
+Andrew Weiss:       That's pretty high level. It's pretty short in size. Was put the initial draft together. I've added a few initial suggestions in there, but, addition, couple of comments on the side. 
 
-[31:45.900 - 32:17.000]
-Limit and interconnect steps together. For example, this is an example. This is a very simple rule. It says create through the fee why that means that the person who is performing that step. It's allowed to create the file called food. In this case. The artifact Foo is the file. We are the ideas that it's this is really agnostic to the type of artifacts. For example in the clouds. You may have Docker images so you may want to specify
+Dan:                So have we... I haven't had a chance to schedule you for this. I was away during that week. Did you go through this entire proposal with working with [inaudible 00:19:24]? 
 
-[32:19.000 - 32:57.700]
-Dr. Fields step is actually building a Docker image with this stack. In this case, of course for others control system. There's no Foo and then there's food and you want to like ensure that this happens another example of an artifact rule is for example match, which is what you use to link steps together matched in this case match is matching boo, but the why that was created on the tag release so it for example this was done in the build on the build step you want to only use the artifacts that were created at actually step. In this case. It was the food of py file.
+Andrew Weiss:       Not formally, not yet. we've had some conversations just on the Github issue, but have to go through it now or another.
 
-[32:58.500 - 33:06.000]
-You want to make it so that the version control system is correctly linked by their artifacts with the packaging step or drill step.
+Dan:                Would you be available next week to do that?
 
-[33:07.600 - 33:54.100]
-Another like interesting element inside of the layout is so what we call inspections so far. We only know who did what and how the artifacts interconnect interconnect together. For example, you may want to know if your CI system doesn't have any instance of the word warning inside of it or if you are running a vulnerability scanner and you want to like verifiably ensure that there's no CDs with a CD and forgot the acronym the score higher than seven then Jill met you could put an inspection within it which will and say essentially unpack the link metadata and verify that the specifics of that link follow for the roofs.
+Andrew Weiss:       Let me check. Yeah, I can do next week.
 
-[33:55.100 - 34:26.800]
-An example that we're doing what it is that you can do something push and you can link them together you can pass this sign push certificates forward and you can use them to for example enforce that only certain people merged into master or that know people that are not allowed into the project created any commit so that no commits are inside. That's the kind of information that you would verify using an inspection.
+Dan:                Awesome. Let's, schedule that for next week and go through this in depth and get some more formal feedback. 
 
-[34:27.700 - 34:31.400]
-Now we're going to the fun part the demo.
+Andrew Weiss:       Sure. Yeah. If anyone else has any suggestions, please don't hesitate to add them on.
 
-[34:33.400 - 34:35.900]
-Let me try to do another Shuffle.
+Dan:                Excellent. Thanks Andrew. All right. Now I think Jerry was there anything else in safe landscape that folks should look at? I've kept it in just to keep our attention focused on it. Anything new that we're, that you're looking for specific feedback on.
 
-[34:37.400 - 34:38.400]
-this work
+Jerry:              So I don't think that there's anything new that I'm looking for feedback on, but one of the things that I'm going to be thinking about and reflecting on in the next week is whether the sub categories are well named and I suspect that it would be helpful to get the perspectives of people who come from different backgrounds on that. So that's one thing that I would really like everybody to just kind of take a look through and see if the name of each subcategory resonates with you or if there's something that you think we could modify to make it a more generally applicable or just clear.
 
-[34:39.600 - 34:42.000]
-awesome. Is this font size good?
+Dan:                At this point. Have you... we've gotten rid of kind of all of the examples and is everything now a sort of the descriptor and the definition?
 
-[34:43.000 - 35:14.000]
-Look a little small better better. Awesome. Okay. So in this demo we're essentially going to follow what the what I did for the presentation also essentially use the total python implementation to create the layout will see the layouts together and then we're going to simulate all of the functionaries acting through the supply chain until we have to work station step and we can verify and we can see that everything's very tight proper.
+Jerry:              That could potentially use improvements to, that's all part of what I'll be looking at in the next week. So I would say that if you feel like you could offer an interesting perspective on that or even if you're not sure, if your perspective would be interesting, I would still like to hear from you.
 
-[35:15.400 - 35:19.900]
-So thanks for being the score.
+Dan:                Of course yes.
 
-[35:24.300 - 35:32.400]
-So remember Alice is the one that creates a layout. She's the she's a project owner. I made a helper script just too.
+Jerry:              Yeah. Hopefully we can get all of our feedback together and pull it into a more final draft. 
 
-[35:39.600 - 35:41.100]
-That I forget to do this.
+Dan:                Excellent. Thanks a lot All right, well let's... today we have Santiago and Justin and they're going to... thank you for the introduction last week and we're going to go into a deeper dive on that and then have some time for discussion at the end. So Santiago, are you presenting?
 
-[35:42.900 - 35:47.400]
-Yeah, I totally forgot. Sorry. I needed to install in total.
+Santiago:           Yes. 
 
-[35:55.000 - 35:57.300]
-okay, so now
+Dan:                Awesome. So do you know where the sharing... do you have slides? 
 
-[35:59.600 - 36:05.600]
-now I created the layout file just to give a little bit of a
+Santiago:           Let's see if this works on my machine. From time to time my manager goes crazy with his things, now.
 
-[36:07.400 - 36:41.400]
-Like quick guide on what's on it, you can see that there's a bunch of rules in it. There are connecting all the steps together. There's a bunch of public keys of the functionaries that are saved into the layout and if you see there's a key ID field here. That's the key idea is the one that we put on the steps. For example, this is a step and that's how we tell that for example this packaging step.
+Dan:                Looks good.
 
-[36:42.200 - 36:43.900]
-Let me highlight.
+Santiago:           Okay, great. 
 
-[36:47.000 - 36:48.500]
-This packaging step here.
+Dan:                Take it away. 
 
-[36:49.800 - 37:05.300]
-Is signed by the key that got there. Okay. Finally, we have a signature old way the bottom. This is a signature of a lace that essentially authenticates this layout.
+Santiago:           So just to give some context, they tried to... my understanding from what you mentioned last week is that the CNCF application process was changing into a presentation, and this presentation was kind of the first draft to see exactly how they may look like. So I tried to pretty much take a look at the existing TOC guide lines for applications. Tried to massage it into something that was a presentable form. I also took some content that I had, there was going to be a little demo but the path and preference implementation, but let's see how this whole thing works out. So yeah, I think everyone here already knows that I'm all about in-toto. 
+                    I would say I'm a long adjustment the lead signer of this solution and I'm going to talk about how it matches the cloud native landscape and how it's very necessary for security. Next generation cloud native solutions. Now for the application we need a description, so I just put a slide in there. In-toto's framework because security supply chain's in and out of the cloud. Most of current cloud native deployments use very diverse, very configurable graphs and notes that interact between each other and they most of them perform operations from the artifacts through their, through quality assurance, like whenever they scan or a transformation, say the docker field or regular field or a linting or anything like this. Now, something that I want to do is to give it a little more of backgrounds to as to what this means in terms of description. 
+                    I'm going to use a very idealized supply chain and I'm going to walk through exactly how things can break in this context. Now all of you may laugh about how simple this is, but it's a pretty much a very, very [inaudible 00:24:28] application that you may check into Github. You may be using a built system. I think this logo's missing, I forgot what it was... you may be checking it in a CII system to run tests, [inaudible 00:24:39] or whatever you want to use and you may do some packaging. In this case, we're building adopted file. I saw levels in the safe group, knows all of this single points of failure can be attacked. In this case, for example, you can break into the version control system and you can introduce backdoor, as it has happened many times before. 
+                    You could, for example, I tried to break into the build system and the using the backdoor compiler and the... or create the backdoor [inaudible 00:25:15] of Xcodes to introduced backdoor in mobile applications and so on and so forth. Or you can... the compromising packaging infrastructure and introduce a backdoor version of the whole final product and so on and so forth, or as it has happened before, you can sometimes even by mistake forget about CII and just release the untested versions of Windows, and update everyone's machines and kind of break it for a couple of hours. That's not the only thing you can also... even though there's  solutions of working this, I made some patches to get through like increase the security of probably our metadata store. You can use [inaudible 00:25:58] today and most of you are familiar with the TUF, which is a solution that takes care of what would be this, which is the last mile of a software delivery. 
+                    It has pretty much resulted in many, in securing many things that you guys are like [inaudible 00:26:20] recognized logo in there. Yeah, all of this is good news if you secure individual aspects, but the complete problem is not fixed. There's gaps between steps, which is how this nodes interact together and there's also a matter of compliance. You can sometimes, even though the step exists to really are not listening to what the, for example, security scanner is telling you. So what in-toto is all about, is to secure the complete supply chain. In-toto is means as a whole in Latin and it's not a coincidence. We really want to do a holistic, complete, thorough verification of the supply chain as a whole. In Key points this means that we want the verifiable defined steps of the software supply chain. 
+                    We, want to verifiably define who is able to perform operations in supply chain and which operations and then guarantee that everything happens to have this definition is done and in no other way. So to do this, we pretty much use two things, a layout and at the stations in forms of link metadata. Now the layout, here's like the toy version of it. It's pretty much what steps exist in the toy example that I showed before, well, we had a version control system, a CII system. We had a build server and we have a packager. It also tells you who's able to do what. For example, Bob is only able to interact with the version control system and Dave who's the owner of Travis, is the one that's performing the built and Carol and Erin will be the ones that build and package the final application. 
+                    We also have, in the layout, we have the rules, a series of rules to define how these artifacts interrelate with each other to make sure that all of the artifacts flow is done properly. In this case, we know that the sources that were created by Bob and no one else, are the ones that we need to do either to check down the CII system, are the ones that are needed to be sent over to the build server and what Carol built is what it's the only thing, only what Carol built is going to go into the packaging infrastructure. It also has a signature to authenticate who created this layout. In this case, we know that Alice is the owner or the CSO of the company and she's the one that says exactly how the software is built and that's why we have our signature on this layout file. 
+                    The counterpart of the layout file, the other piece of Metadata is what we call links. Links are essentially at the stations that each of the actors that were selected in the layout, create every time they perform an operation. For example, if Bob created the source code or checked out the source code, he will report in a link, what was in the version control system in this case, you will see in the bottom left that it says foo and a spear hash of foo. So that's what we're going to use to link things together. Finally, once we have all of the links and layout and the final product, we bundle it all together and send it to the user, this can be a package manager, or this can be an admission controller in the case of cloud, or it can be just a general audit scanner that you can put inside of your container extruder to like continuously verify that all of your images were produced properly. 
+                    Now, this is the big picture. I don't know how much of a deep dive you guys want. I don't know Dan, do you want me to go deep into the specifics of the layout or... is that a yes? Okay. 
 
-[37:06.500 - 37:13.600]
-Now well, I was created the layout. We have a couple of functionaries that need to perform steps.
+Dan:                Yes. [crosstalk 00:30:21] submitted. Yeah, please do.
 
-[37:14.400 - 37:18.300]
-How do you remove the links that I left from a demo yesterday?
+Santiago:           Yeah, I thought that's a yes. Okay. So inside of the layout I already said the what are the key components-
 
-[37:26.400 - 37:51.000]
-So what I'm going to run now, it's a step in the supply chain. This is basically your you see we're using the in Total Tool chain to do what you would usually do with just check out our story check out the repository and then create the signup station of that specific check out.
+Justin:             Sorry. One thing I do want to mention to you is that we will be doing a demo where you'll also have the opportunity to see a lot of this. So even if we go through this a little quickly now there'll be a good point later to stop us or stop us now, whatever you perfect. 
 
-[37:51.500 - 38:12.500]
-So in this case, we created this piece of Link metadata. When we run git checkout that created an attestation of the operation that we perform this at the station's. This is a link metadata are the what we're going to use later to essentially build this graph and verify that everything is proper.
+Dan:                Thanks for the context.
 
-[38:14.000 - 38:17.800]
-inside of the link you can see there's a
+Santiago:           Okay. So basically in the layout, as I said, it's essentially a policy that you defined for your supply chain and how everything connects together. In this case the key points to consider steps, what are the steps performed, functionaries, which are the people that operate on the supply chain and a series of rules link this steps together. There's also other useful information like an expiration date. You may want your layout to expire so you can [inaudible 00:31:20] the policy forceful [inaudible 00:31:22] every couple of months for example, and of course it has a signature of the whole thing. So the layout is entrusted. That the right person, created the layout. Inside of the layout you find something that I called steps or step definitions. They essentially describe who's able to perform the step. 
+                    It completes a series of rules that will limit and interconnect steps together. For example, this is a very simple rule. It says create foo.py. That means that the person who is performing that step is allowed to create the file, called foo. In this case, the artifact foo is file, where the idea is that this is really agnostic to the type of artifacts. For example, in cloud you may have docker images. So you may want to specify docker build step. It's actually building a docker image with this stack. In this case, of course for version control system, there's no foo and then there's a foo and you want to ensure that this happens. Another example of an artifact rule is for example, match, which is what you use to link steps together, match in this case match is matching foo.py that was created on the tag release. 
+                    So if for example, this was done in the build step, you want to only use the artifacts that were created in the tag release step. In this case it was the foo.py. You want to make it so that the version control system is correctly linked by the artifacts with a packaging step or the real step. Another interesting element inside of the layout is so what we call inspections. So far we only know who did what and how the artifacts interconnect together. For example, you may want to know if your CII system doesn't have any instance of the word warning inside of it. Or if you are running a vulnerability scanner and you want to verifiably ensure that there is no CDEs, whether a CDE, I forgot the acronym, a score higher than seven, then you'll may, you could put an inspection within it, which will essentially unpack the link metadata and verify that the specifics of that link follow the rules. 
+                    An example that we are doing with Git is so that you can do signed push and you can link them together. You can pass this side push, certificates forward and you can use them to for example enforce that only certain people merged into master or that no people that are not allowed into the project created any commits or that no commits are inside. That's the kind of information that you would verify using an inspection. Now we're going to the fun part, the demo. Let me try to do another, like shuffle this work. Is this font size good?
 
-[38:22.100 - 38:34.800]
-There's for example the pilot was tracked through wi and then ask your hash of eight and there's a signature cloth saying hey, actually perform this step. This is the product of Performing distance.
+Dan:                Little, too small.
 
-[38:47.100 - 39:42.200]
-Now say that we have another step for example before release increases increasing the version number of the project. So if you guys see now it have a full wi we have full conversion 0 if we want to increase it just to Showcase another another tool say that we instead of having them or actually now that we have them then bolt. It is a little hard to wrap them using Color Run. So what we can do instead is use to record which is essentially taking a snapshot of the state of the file system and the host before before running which we do here and then we can we can conveniently edit.
+Santiago:           Better?
 
-[39:43.600 - 39:48.100]
-the version number and then we can
+Dan:                Better.
 
-[39:51.100 - 40:41.700]
-stop recording and save a piece of Link metadata that will essentially be a statement of what we now as you guys see this this is a limit of data created by recording both States. It originally had the secure hash of food up the why that was checked out in the version control system and then as a product of reported in you secure hash of the food of UI. This is how we're going to start tracking artifacts. How us, they moving like now we're going to move to the last the last step in the supply chain, which is Carl is going to package. What what Bob did so for this I'm going to copy.
+Santiago:           Awesome. Okay. So in this demo, we're essentially going to follow what the... what I did for the presentation. I'll essentially use in-toto python implementation to create the layout we'll see the layouts together. Then we're going to simulate all of the functionary sack thing through the supply chain until we're at the verification step, and we can verify and we can see that everything's verified properly. So [inaudible 00:35:19] just for it. So remember Alice is the one that's creates the layout. She's the project owner. I made a helper script just to... That I forget to do this. I totally forgot. Sorry. I needed to install in-toto. 
+                    Okay. Now I created the layout file. Just to give a little bit of a quick guide on what's on it. You can see there's a bunch of rules in it that are connecting all the steps together. There's a bunch of public keys of the functionaries that are saved into the layout and if you see there's a key ID field here. That key ID is the one that we put on the steps. For example, this is a step and that's how we tell that, for example, this packaging step, let me highlight, this packaging step here, is signed by the key that we got there. Finally we have a signature all the way in the bottom. This is a signature of Alice that essentially authenticates this layout. Now, well Alice created the layout. We have a couple of functionaries that need to perform steps, help to remove the links that I left from a demo yesterday.
+                    So what I'm going to run now, is a step in the supply chain. This is basically, we're using the in-toto tool chain to do what you would usually do, which is check out the repository, and then create the signed up station of that specific checkout. So in this case we created this piece of link metadata, when we run Git checkout that created in that station of the operation that we perform this are the stations. This is a link metadata, are the ones we're going to use later to essentially build this graph and verify that everything is proper. Inside of the link you can see there's for example, the file that was tracked will apply and then [inaudible 00:38:27]. Then there's a signature of flops saying, hey, I actually performed this step is the product of a performing step. 
+                    Now say, let me have another step for example, before I release increasing the version number of the project. So I think i see now we have a foo.py. We have full direction zero. If we want to increase it. Just to showcase another tool, say that we, instead of having them or actually now that we have them ... it is a little hard to wrap them, using coded run. So what we can do instead is use in-toto record, which is essentially taking a snapshot of the state of the false system and the host before running which we do here, and then we can conveniently edit the version number and then we can stop recording and save a piece of link metadata that will essentially be a statement of what we did. 
+                    Now as you guys see this new piece of link metadata, that we created by recording both states. If the original character secure hash or foo.py that was checked out in the version control system, and then as a product it recorded, the new secure hash of the foo.py. This is how we're going to start tracking artifacts, as they move into PLUGE now we're going to move to the last step in the supply chain, which is Carol is going to package what Bob did. So for this I'm going draft the demo project Carol and we're going to use some code to run again, we're going to wrap [inaudible 00:40:54]. 
+                    Again, we're using the wrapper. We pass on a step name, a couple of [inaudible 00:41:16] to the tool to, so it now starts to sign it and which artifacts to pay attention to, if you don't pass this, it will just track everything, which is a little slower. Then, the command that we're running. In this case a package link it tracked the foo.py that came in, which as you can see, this is how we are linking the update version, step with a package, and finally we have the demo project RGC. That's the product of packaging. Finally we want to verify all of this. So in this..
+                    For this we pretty much need Alice's public key, the layout, the links, and the final product itself that you want to verify. In this case it's the project [inaudible 00:42:31]. So again we need a public key, couple of links, the artifact that we want to verify the final product and the layout that's going to tell us everything, that's about this logic. We run our verification command, we pass what's the rule layout, and then we pass the key that's signing this layout. If I've screw up, I screwed up. It actually caught that, I probably did something wrong. In this case it says, the match between the clone and yeah, between the clone and the verification number. It doesn't match. 
+                    Actually it's because, yeah. if we look at the clone link, that's this. Yeah. Okay. So I see what's wrong. I didn't remove the demo project when I run the clone step. Yeah. Now it actually run them, the clone step. I performed the step, since the requester existed because I didn't clean up properly, the step was failing. We can actually see that the return value is now zero. To check out the final product, build version of the link metadata as a return value was 128 which meant that the step had failed. So now we run a verification and now everything works. Unintendedly I showed what this is all about. I committed a mistake when the clone and it was caught by in-toto, which is great news. Now I'm going to go back to the presentation just to finalize with a little bit more of the formalities of the whole-
 
-[40:43.300 - 40:47.500]
-the demo project Carl
+Justin:             Maybe we can take a couple of questions here. We've had a few [crosstalk 00:45:25]. So Erica just asked if in-toto handles key link revocation? 
 
-[40:49.400 - 41:01.900]
-and we're going to use encoder run again. We're going to wrap tar tar you see.
+Santiago:           So no, we use the implicit revocation using expiration dates, we don't have an explicit mechanism. Something that I'll talk a little bit then the roadmap is that notary and TUF, for example are reconditions for handling name spacing of the metadata for projects and for explicitly revocating a certain things basis within the supply chain, without rotating the whole layout for example. 
 
-[41:07.200 - 41:28.000]
-Again, will you were using the like in a wrapper we pass a step name a couple of hints to the tool to so it knows how to sign it and which Architects to like pay attention to if you don't pass this, it will just track everything which is a little slower and then the command that we're running.
+Justin:             Right. 
 
-[41:29.700 - 41:49.500]
-In this case package thing. It's attractive food. Otherwise, it came in which we can see. This is how we are linking the update version step with a package. And finally we have a demo project rgc. That's product Packaging.
+Erica:              This is something, Uptane handles, right? Uptane has a lot of interesting features that would be cool to not be so [inaudible 00:46:20] specific. 
 
-[41:51.700 - 41:56.800]
-And finally, we want to verify all of this. So in this out.
+Justin:             Yeah. There's within this currently, in-toto doesn't have a separate time server component, but if you shipped and verified in-toto metadata from a top repository or an Uptane repository, then you automatically get that. So it's not sort of a foisted into the system as a separable thing. It's in-toto in general assumes that you have this, it does, there are ways you can do key and link revocation and stuff like that and in-toto, but there isn't a separate explicit time server like there is with Uptane. 
 
-[42:00.700 - 42:15.000]
-For this we pretty much just need Alice's public key the layout.
+Santiago:           Yeah. Something to that, is that Uptane and in-toto are very like a metadata family between each others. One of the integrations that we have right now, they're actually using Uptane and in-toto together and we're thinking of standardized and that mechanism. That's a way to just get the complete supply chain security out of the box. 
 
-[42:17.200 - 42:19.300]
-the links
+Dan:                Excellent. So Mark, you had a question about a metadata and Andrew has one about validating a referential integrity.
 
-[42:24.100 - 42:29.800]
-and the final product itself, but what verify this case it's project.
+Andrew Weiss:       Let me get to the chat.
 
-[42:32.400 - 42:55.400]
-So again, the we need a public key couple of links the artifact that the one to verify the final product and the layout that's going to tell us everything that's about this election. We're on our vacation command we pass what's the roof layout? And then we pass the key that signing this layout.
+Mark:               I'll let you go first because mine is kind of a netted question.
 
-[42:56.500 - 43:12.000]
-And if I didn't screw up, I screwed up it actually caught that I probably did something wrong in this case says the match between the Clone.
+Andrew Weiss:       Yeah. So this is good stuff. Thanks for taking the time to share this stuff. Is there a way to use in-toto to validate referential integrity between artifacts? So you mentioned that artifacts can really be anything from binary's to source code packages and whatnot. But let's say I have some sort of artifact that's maybe an attestation artifact in the context of risk management. How can I validate that, that artifact is from who it says it's from and that it's being updated accordingly, and in connected to maybe other artifacts?
 
-[43:13.300 - 43:14.100]
-and
+Santiago:           So let me see if I understood your question property. Something that we do have is the concept of stuff layout. So you can essentially part of your supply chain steps be part of a third party supply chain. Say that, you're using a couple of debian packages in your docker build, you can verify that those debian packages themselves were made on a proper supply chain layout that follow best practices and everything within it. It's verifiably using in-toto to... is this what you were asking?
 
-[43:16.700 - 43:21.800]
-yeah between the Clone and the big version number doesn't match.
+Andrew Weiss:       Yeah, that's exactly it. 
 
-[43:24.900 - 43:26.300]
-Oh, no, actually it's because
+Justin:             Yeah. Great. I think there's another component to that kind of comes up here, which is that you can also interrelate aspects of how your other things got built and how they work together. So for instance, if you're saying, the library that I'm using here should be built by the same compiler as the main thing as the main project or something like that. Also validate and verify that all of those sorts of things have happened. So all those sorts of things like this, you can imagine expressing the expressible and in-toto in this way. 
 
-[43:29.000 - 43:31.500]
-if you look at the clown link.
+Andrew Weiss:       Okay. Very cool. Thank you.
 
-[43:33.100 - 43:33.900]
-as this
+Erica:              Another question real quick, related how to sort of verify the information flows are secure. So what is... especially in situations where the system is running on itself or triggering any other actions, is there a way we can kind of incorporate and have a security model, proven security model?
 
-[43:45.500 - 44:04.200]
-Yeah, okay, so I see what's wrong. I didn't remove the dollar project when I run the clown step.
+Santiago:           Let me see if [crosstalk 00:50:02]. I'm sorry.
 
-[44:19.800 - 44:30.600]
-Yeah, now we've actually run it in the plum step but I perform step since the requester existed because I didn't clean up properly step was failing we can actually see.
+Erica:              So like SELinux it was kind of based on the Bell-Lapadula Model. There's few other ones, and then once you have these like interconnecting, which is what we're dealing with a lot?
 
-[44:31.900 - 44:45.300]
-The return value is now 0 to check out the final product. You'll version of the link metadata. The return value was 128, which meant up at Step at fail.
+Santiago:           Right. So something that we do have in a metadata right now it's kind of like a vacant structure is environment information, environment dictionary that you can expect something that we've been tinkering with and we don't have anything formal yet. This tool for example, have GPM, at the stations inside the environment dictionary about the whole host file system integrity. You'll see might secure with or something. I don't know if this is answering your question or did I go on another line? 
 
-[44:54.000 - 45:25.100]
-So now we run the verification and now everything works unintended lie. I I showed what this is all about. I committed a mistake when doing the Clone and it was caught by in total which is radius. Now. I'm going to go back to the presentation just to finalize with a little bit more of the formalities of the whole. Maybe we can take a couple of questions here. We've had a few. Oh, yeah.
+Erica:              It was another one of my questions. We can just-
 
-[45:27.300 - 45:32.600]
-So Eric had just asked if in Toto handles key or link revocation.
+Justin:             I will help. I will quickly say that we have a very detailed analysis like on the level of what we did for talk about why in-toto is secure, including link metadata tampering and layout tampering and other things like that and what scenarios it loses security and to what degree. So I think that this probably closer to the answer to your question and we can talk more about that later, but I think Santiago you want to maybe move on with the rest of the presentation just so we can be sure we get through it. 
 
-[45:34.100 - 46:22.600]
-So now we'll use the blister location using expiration dates, but we don't have an explicit mechanism something that I'll talk a little bit in the roadmap is that notary and tough for example are great additions for handling name spacing of the metadata for projects and for explicitly replicating certain like things basis within the supply chain without rotating the whole the whole layout for example, write something up in handles. Right update has interesting features. That would be cool to not be so vehicle-specific. Yeah.
+Santiago:           Sure. Okay. So roadmap. This is what we're working a lot on now getting out is... I'm trying to formalize the governance documents which is like, how to interact the whole community, how to get changes in. I've been trying to get the thinking of adding code kubernetes that sort of like [inaudible 00:51:46] code of conduct is. We're also working on cloud native enhancements. We don't have the specification that URI artifact definition, but it's pretty much just something we need to formalize. We are working with Grafeas. You guys know these guys, we're trying to get them to use interchangeable metadata and to help them fix their security model. We also something that we're working on is, we want to integrate the in-toto and TUF in a more formal way and probably even launch service using TUF and notary to provide layout registration and name spacing of the layouts. 
+                    You could, essentially like lets him encrypt for your artifact layouts. Then... this is something that I [inaudible 00:52:36] share for the team, but a continuous metadata verification, you could use it in the cloud as a container, not only an emission controller, but as a continuous verification, anytime you revoke a piece of linked metadata, you could pull a container out and you could revoke a piece of linked metadata data, for example, redoing a CV scanning and finding that there's new vulnerability of certain degree. We've wrote metadata kind of as a consequence essentially for any unsafe image from the cloud. I know there's similar solutions to this, but this could be just like a very like simple, elegant and automatic way to do things. 
+                    On the beyond cloud native, we will probably launch with a reproducible builds people to reproduce a set up and then in-toto transport that you can use to fetch your debian and packages for and make sure that they're reproducibly built by a couple of nonprofits that are joining the whole effort. Something that we wanted to do is integrate the build kit to start identifying artifacts and verifying them as they're pulling in. They're being pulled in into your entire images, which go similar in the vein of what Andrew was asking, we're also thinking of adding security enhancements and formalizing them, HSM and TPM support. We already support [inaudible 00:54:00] using GPG signatures, we'd be probably want to do something a little bit more... like on a general grade and only a like RFC for 4880. 
+                    We also want to have a host at the stations, which is something that, I just mentioned using like the [inaudible 00:54:18] to authenticate the whole host and provide read only boxes for building and performing steps and does the SGX cloud builders will be something that I've loved to work on. We also have a goal implementation under the works to be more friendly with cloud native environments and layout scanning. We, very nice consequence of this is that you can essentially just check a layout and see if someone is doing the best CII practices for example-
 
-[46:24.400 - 47:21.200]
-Yeah, there's it within this currently in total doesn't have a separate time server component. But if you if you shipped and verified in Toto metadata from a tough repository or obtain repository, then you automatically get that so it's not sort of like foisted into the system as a separable thing. It's in Toto in general assumes that you have this it does. There are ways like you can do key and Link revocation and stuff like that and in Toto but there isn't a separate explicit time server like there is with obtain. Yeah something to have for that is that the coffin and tour very like metadata friendly to each other's one of the one of the integration that we have right now. They're actually using company tell them together and we're thinking of standardizing that mechanism. That's a way to just like get the complete supply chain security out of the box.
+Erica:              Can you define a layout real quick? What you mean by a layout?
 
-[47:26.600 - 47:36.600]
-So Mark, you had a question about metadata and Andrew has one about valve daddy validating referential Integrity in the chat.
+Santiago:           Policy. The big file that I made in the beginning and containing the steps and the signatures under public keys of the people that perform every step and a restriction on each step. Did that... is that good? Yes? Did I lose connection?
 
-[47:38.000 - 48:37.800]
-Let you go first because mine is kind of a meta question good at her. Yeah. So this is good stuff. Thanks for taking the time to share this. Is there a way to using Toto to validate referential Integrity between artifacts to mention that artifacts can really be anything from binaries to source code packages and whatnot. But let's say I have some sort of artifact that's maybe an attestation artifact in the context of risk management. How can I validate that that artifact is you know, from who it says it's from and that it's being updated accordingly and it connected to maybe other artifacts. So let me see if I understood your question properly something that we do have is the concept of sub layout so you can essentially part of your supply chain steps be part of a third party supply chain say that you're using a circle of Debian packages in your doctor build. You can verify that those that
+Mark:               That's great. Go ahead.
 
-[48:37.900 - 49:30.000]
-Packages themselves were made on the proper supply chain layouts that follow the best practices and everything within it is verifiably using Toto to this what you were asking or yeah. Yeah, that's exactly it. I quit. I think there's another component to that kind of comes up your which is that you can also enter a enter relate aspects of how your other things got built and how they work together. So for instance, if you're saying, you know, the the library that I'm using here should be built by the same compiler as the main thing as the main project or something like that. Yeah and also validate and verify that all those sorts of things happen. So all those all those sorts of things like this you can imagine expressing are expressible in Toto in this way.
+Santiago:           Okay.
 
-[49:30.700 - 49:58.700]
-Okay Circle. Thank you. Another question real quick really did how to sort of verify the information flows are secure. So what is I mean, especially in situations where the system is running on itself or triggering other actions? Is there a way we can kind of incorporate and have a you know have a security model proven security model.
+Mark:               Keep going.
 
-[50:01.600 - 50:03.600]
-Let Me Wait like there isn't Linux
+Santiago:           Awesome. Sorry. Well, the... we have a couple of integrations go [inaudible 00:55:23]. There's Related Work, there's SPDX, Go Ready... of Peter, we're all in the same like supply chain environment implication architect number station, cloud native are artifact that recording as Grafeas, then this is the the big integration stuff we have right now. We have on the bottom brighter, very [inaudible 00:55:48] projects that are already releasing internal metadata. Andrew here may recognize the logo of his company here if he's okay... We also are... we actually hit production today in Datadog, in the new agent. We are also working with [inaudible 00:56:06]. We are taking care of the reproducer setup, which is this thing that I spoke about and they already, I'm an arch developer. 
+                    By the way I use arch and we also are working with Grafeas to fix this the security model and to provide us with a transport that can help us provide more cloud native metadata. transfer between like all of the... like super convoluted distributed systems that are in the cloud. There's also other people that are interested. We have some talks with docker, we have some integration with the health and social build system. I also work with the [inaudible 00:56:49] people, and I don't know each other. Oh, we spoke with [inaudible 00:56:55] and Peter. I know they're developers, for Peter he wants to like, essentially merge the metadata's that... there's so much going on that's like, there's only so much things you can focus on at same time. 
+                    Other information that is required as part of the application. We have attempted sponsorship from Alexis Richardson. It's like we've got no yet. We would like to join an incubation. We have in-toto [inaudible 00:57:21] current projects sponsor. I really don't know exactly what this is. I don't know if I have to say NSF. Just in probably helps better. The license is Apache. We actually got all the signatures to relicense as Apache as of Monday. We used to be MIT. We have all of this gold repositories, theorists also only the ones that have a star are not a Apache, but they can be changed later actually. Yeah. 
+                    Then dependency licenses, I think this is just the formalisms that need to go through, there's a bunch of dependencies on different components of what we've released This are communication channels. You can always join the IRC. I'll be there with couple of [inaudible 00:58:10] and couple developers. You can join our mailing lists and you can, I don't know how this works on slack, but we're also there. We have a couple of websites up. You can use sort of time tool to create their layouts today. We actually updated it to latest specification, a week ago. We usually release a [inaudible 00:58:31] poster out in-toto in our... in the last website. We have this release cannons. We are very devoted to semantic versioning. I think when people don't do it, we do release candidates monthly, or sometimes even faster depending on if it's a batch release. 
+                    With a major feature as at the same time. We still don't know when to release the major version. So we can not say if like a timeline for each major version to be released. They started the initial committers two years ago, I checked the logs, we'd have 13 committers and the reference of location and 16 contributors among all of the projects that I put out there. Version controller, the, you control the flocking in the Jenkins plugin, et cetera. We deserve.. 
 
-[50:04.700 - 50:18.400]
-All right. So like selinux, you know, it was kind of based on like the bell laputa model. There's a few other ones there. Once you have these like interconnecting, which is what we're dealing with a lot right so some
+Mark:               Picture. 
 
-[50:19.700 - 51:19.500]
-Thing that we do have in the metadata is right. Now it's kind of like a bacon structure is environment information environment dictionary that you can expect something that we've been like tinkering with and we don't have like anything formal yet is to for example have TPM at the stations inside of environment dictionary about the whole host file system Integrity using my secure boot or something. I don't know if this is answers your question or did I go on another line? It was another one of my questions. It's okay. We can just quickly say that we have a very detailed analysis like like on the level of what we did for tough about why in Toto is secure including you know, link metadata tampering and layout tampering and other things like that and what scenarios it loses security and to what degree so I think that this probably closer to the answer to your question and we can talk more about that later, but I think so.
+Santiago:           Any questions? 
 
-[51:19.600 - 51:24.500]
-I know you want to maybe move on with the rest of the presentation just we can be sure we get through it. Sure.
+Mark:               Can you put the slide up with the URLs again? 
 
-[51:25.600 - 51:57.900]
-Okay. So roadmap things were working a lot on now getting out. It's trying to formalize say governance documents which is like a calculator out to the whole Community how to get changes in. I've been trying to get the thinking of like adding code Covenant that's are like fault the Fault Code of Conduct of this. We're also working on cloud native enhancements. We don't have the specification at your I expect the Phoenician, but it's pretty much just something we need to formalize.
+Santiago:           This?
 
-[51:59.900 - 52:08.500]
-We are working with brafilius. You guys know these guys were trying to get them to use interchangeable metadata and to help them fix their security model.
+Mark:               That's it. Thanks. 
 
-[52:11.100 - 52:41.500]
-We also something that we're working on is I we want to integrate in total and talk in a more formal way and probably even launch service using copper notary to provide a layout registration and then spacing of the layouts you could essentially like let's encrypt the for your artifact layouts. And then some this is something that I haven't shared with the team but continues meta data verification, you could use it in the cloud as a container.
+Santiago:           No problem. Yeah. Sorry if I flipped through faster, that's, I was looking at the clock. I was thinking [crosstalk 00:59:55].
 
-[52:43.000 - 53:42.100]
-Not only in the mission controller. But as a continuous replication anytime you revoke a piece of lint metadata, you can pull a container out and you can revoke a piece of Link meditative. I for example redoing CD scanning and finding that there's evil their ability of certain degree and we vote the metadata kind of sitcom as a consequence essentially cool any unsafe image from the cloud. I know there's similar solutions to his but this Begins the like a very like simple elegant not automatic way to do things on be on cloud native. We will probably launch with a reproducible builds people reproduce your setup and then in Total Transport that you can use to purchase your Debian packages for and make sure that they're reproducibly built by a couple of like a nonprofits that are joining the whole lever and something that we wanted to do is integrate the build kit to like start identifying.
+Christian:          Can you put a link to this slide tech into the document? 
 
-[53:43.000 - 54:04.400]
-And verifying them as they're pulling in there being pulled in into your entire images, which goes similar in the vein of what Andy was asking we're also thinking of adding security enhancements and formalizing them h70 p.m. Support. We already support you because using tpg signatures would be probably want to do something a little bit more.
+Santiago:           Sure. Something that I want to ask Andrew Martin, I'm sharing this, but I know there are sensitive information about your company, so I don't know and I mean just those two logos. I don't know how you'd like it? 
 
-[54:06.000 - 54:45.400]
-Like on a general grade not only of the like RFC 4880. We also want to have a hosta to stations which is something that a just like mentioned using like the PM's to authenticate the whole host and provide a read-only boxes for building and Performing steps. And this GX Cloud Builders would be something that I would love to work on. We also have a goal implementation on The Works to like be more friendly with Cloud native environments and layoffs scanning. We very nice consequence of this is that you can essentially just check it out and see if someone is doing best CII practices, for example
+Andrew Martin:      My understanding is that, that is fine. So I will just for final confirmation, but yeah, give me one moment.
 
-[54:46.300 - 55:03.000]
-The final layout real quick. What do you mean by a layout policy the big file that I made in the beginning some things the steps of signatures on the public keys of the people that you perform every step and restriction on each them.
+Santiago:           Okay. [crosstalk 01:00:24]
 
-[55:05.400 - 55:07.300]
-They that is that good.
+Erica:              Share with this group, which is gated. 
 
-[55:11.900 - 55:19.100]
-Did I lose connection? That's great. Good and well.
+Santiago:           Okay. Yeah, I'll do that. should I get... yeah, I'll send it on the, emails of everybody. I think I have access to that or is there a better way? I'm not too familiar with group, so it's really..
 
-[55:20.700 - 55:36.800]
-We have a couple of Integrations going there. Oh, there's really like their 60s SPX already. If Peter were only the same like supply chain Department of Education architect memoization Cloud native.
+Dan:                Christian will put this into the minutes if you share [crosstalk 01:00:52].
 
-[55:38.700 - 56:37.600]
-Artifact to recording as 40s then this is the like the big Inspirations that we have right now. We have a on the bottom brighter very Homebrew project that are already releasing into the metadata Andrew here may recognize the love of his company here and use UK. We also are we actually hit production today and beta dog in the new agent and we are also working with reputable builds. We are taking care of the reproducer self, which is the thing that I spoke about and I already I'm an arch developer, by the way, I use Arch and and we also we also are working with refugees to like fix this the security model and to provide us with a transport that can help us provide more Cloud native meta data transfer between like all of the like super convoluted distributed systems that are in the cloud.
+Santiago:           So just share the link?
 
-[56:38.700 - 56:50.000]
-There's also other people that are interested. We have some talks with Docker. We have some integration with the help and Susie up and build system. I also work with an Aryan people.
+Dan:                Yep. That's perfect.
 
-[56:52.100 - 57:27.400]
-And I don't know each other only spoken go Freddy and repeater. I know the developer of computer. He wants to like safely merge the metadata, but there's so much going on. That's like there's only so much things can focus on same time other information that is required for the application. We have a tentative tentative sponsorship from Alexis Richardson tell yet we would like to join an incubation. We have encoded in higher current project sponsor. I really don't know exactly. What was this. I don't know if I have to say NSF Justin prop house better.
+Santiago:           Okay. 
 
-[57:28.600 - 58:28.200]
-And the license is Apache actually got all the signatures three licenses Apache. So Monday we were used to yeah Mikey we have all of this code repositories to your disposal only the ones that have a star are not Apache, but they can be changed later actually. Yeah, and then Dependency license a so, I think this is just the like formalisms that we need to go to go through there's a bunch of dependencies and different components of what we've released this or communication channels. You can always join IRC. I'll be there that couple thoughts and couple of developers. You can join our mailing list and you can I don't know how this works on flag, but we're also there we have are a couple of websites up you can use our design tool to create your layouts today. We actually update it to the latest creation week ago.
+Dan:                So right before, the folks drop, I want to make sure I get the time to sort of see if we can do some triangulation. Andrew in the safe compliance work that we're currently scoping. Is there anything that we kind of leverage in-toto to inform where we're going with that compliance journey and provide additional feedback to TOC to Alexis and to Ken? What do you think? Andrew did you have to go?
 
-[58:28.700 - 58:33.000]
-And when you should we release lock poster out and Toto in our laps.
+Andrew Martin:      Sorry, I was on mute. Okay. So I was actually just talking about this with a couple folks on my side. I think if we can get a couple of minutes folks to talk about the work that's taking place with the open security controls assessment language. I think like in-toto can fit in really nicely with that and help to bridge the gap. In fact, I already posted a link to it to some of those folks in the upstream [inaudible 01:02:08]. So yeah, I think there's a lot of value here in, in merging those two for sure.
 
-[58:35.500 - 58:58.500]
-Laughs website we have this release cannons. We are very like devoted to semantic versioning. I hate when people don't do it. We do release candidates release candidates candidates monthly or sometimes even faster depending if they if it's a patch release.
+Dan:                Great. Okay. So yeah next week we'll have Andrew and we'll kick off some of the discussion around the safe lights scoping. Once again we're still working on the security landscape for CNCF safe landscape and association with the CNCF landscape. If you have some time over the weekend or next week to review both of those documents, we'll appreciate the attention there. Santiago and Justin, thank you so much for joining us today. This was fantastic and I can let a little bit of overflow time if folks have a little bit more discussion that wanted to have around this. But I want to make sure we wrap up for anyone else to drop. Are there any further questions that folks would like to get into before we wrap up today? 
 
-[58:59.900 - 59:39.800]
-Yes with a major feature. That's the same time and we're still don't know when to release the major version. So we cannot say we like timeline for each major version to be released. These are the initial committers two years ago, like check the logs. We have 13 committers in the reference implementation and 16 contributors among all of the projects that I put out that mission controller the cube control blocking the Jenkins plug-in, etc. Etc, etc. And we'll deserve picture any questions.
+Justin:             Because mark, I just put this on the agenda for a future conversation cause I think it needs more than three minutes. But this issue of metadata management is thorny one, and the FSI set group, which is a finance project supported by DHS, is trying to use a metadata model to follow providence for data. You got the same set of issues there. How do you map from these domain specific models for what's in the metadata to things that are interoperable to other tools like even in the NIST stack. How do you map to other things like thread depth representations that the difference between a policy and an attribute and even the name of an application that might show up on an alert. So I think it's an unfair thing to ask this project to address that, but maybe there's some groundbreaking stuff we can do by trying to inject some kind of model based representation at the ground for of a project like this. 
 
-[59:42.000 - 59:50.500]
-You put the slide up with the URLs again. This this that's it. Thanks problem.
+Mark:               Right. So we've actually thought about this specific issue in a couple of different contexts a lot, and our philosophy with this to this point is that these models and these ways of having these general abstractions are not yet defined and rich and sort of static enough that it in our opinion, it makes sense that this time to invest an enormous amount of effort in them. So instead what we're focused on is actual metadata and the actual cryptographically verifiable aspects of this are all produced in a way that is verifiable and non-modifiable and so on across these different contexts. So, and then if something like that has a richer model, like for instance, Grafeas, Google has a richer model for some of these aspects of things in the cloud, then that layer's perfectly well on top of what we're doing and that we provided the metadata they can actually trust. 
 
-[59:52.300 - 01:00:03.100]
-Yeah, sorry if I click through faster this I was looking at the clock. I think we can link to the slide deck into the document sure something that I want to ask under marketing.
+Erica:              We're hitting this in Kubernetes quite directly where there's no standardized place to store metadata and it's kind of spread out. That makes interoperability very difficult. There are like invitations on the objects themselves, but those have no access controls separate from the objects themselves. So that one's a very complicated one, is that there needs to be kind of almost field specific access policies per thing, which gets that multidimensionality is very difficult to handle. I'd love to know if you have a solution? 
 
-[01:00:04.800 - 01:00:12.500]
-I'm sharing this but I know there since the the information about your company, so I don't know like and I mean just those look to logos. I don't know how like it.
+Mark:               Well, longer conversation. This is one of those interdisciplinary problems, right? Because the modeling folks have solutions for this. You could argue that schema.org out of Google's may be a better representation, but you could do reasoning with and the traditional security models that we inherit from active directory. But there's a lot of work to do to make the connections there. 
 
-[01:00:13.600 - 01:00:29.500]
-My understanding is that that is fine. So I would just that for final confirmation. But yeah, give me one okay with this group, which is gated. Okay. Yeah, I'll do that.
+Justin:             We did try this in the beginning and spent about, I don't know, six to nine months of painful time with Santiago on that end until we gave up. 
 
-[01:00:32.700 - 01:00:55.300]
-Should I get yeah, I'll send a send it on the email to everybody. I think I have access to that or is there a better way I'm not I'm not too familiar with Google zones. Really Christian will pull will put this into the minutes. If you said that like I just the Cheryl shareable link or yeah, that's perfect. Okay.
+Mark:               I believe it.
 
-[01:00:56.600 - 01:01:29.500]
-So right before folks drop, I want to make sure I the time to serve see if we can do some triangulation. Andrew is in the safe compliance work that were, you know currently scoping. Is there anything that we can kind of Leverage in Toto to inform where we're going with that compliance journey and provide additional feedback to POC to Lexington in the kitchen.
+Dan:                So mark and Erica I'll take an action item to a schedule in, would probably be two, three, maybe four meetings out and discussion around metadata management. Come back in and have a deeper dive. 
 
-[01:01:31.000 - 01:01:39.400]
-What do you think?
+Mark:               Sure, great. 
 
-[01:01:40.500 - 01:02:39.800]
-And did you have to go sorry? Yeah, so I was actually just talking about this on my side. I think if we can get a couple of nice folks to talk about the work that's taking place with wood off scale the open security controls assessment language, like in total confidence really nicely with that and help to bridge the gap. In fact, I already posted a link to it to some of those folks in the Upstream repo. So so yeah, I think there's a lot of value here in merging those two for sure group. Okay. So next week we'll have and room will kick off some of the discussion around the safe light scoping, you know, once again, we're still working on the security landscape for seems tough landscape and association with this didn't seem to have landscape and if you have some time over the weekend or next week to review both of those documents.
+Dan:                Meditating about metadata, it doesn't stop. 
 
-[01:02:40.500 - 01:02:45.400]
-you appreciate the attention there Santiago and
+Erica:              That's [crosstalk 01:07:11]. I think you've got it. Now you want to know who put... who touched that metadata is already touched by [inaudible 01:07:17].
 
-[01:02:48.200 - 01:03:13.100]
-And Justin, thank you so much for joining us today. This was fantastic and I can let a little bit of overflow time if folks have a little bit more discussion that we wanted to have run this but I want to make sure we wrap up pretty one has to drop any other are there any further questions that we do folks would like it to get into before we wrap up today?
-
-[01:03:14.200 - 01:04:13.800]
-Mark I just put this on the agenda for a future conversation because I think it needs more than three minutes. But this issue of metadata management is is a thorny one and the the emphasize that group which is a finance project supported by DHS is trying to use a metadata model to you know to follow provenance for data and you got the same set of issues there. How do you map from these domain specific bottles for what's in the metadata to things that are interoperable to other tools? Like even in the in the nist stack, how do you you know map to other things like thread depth representations of the difference between a policy in an attribute and even the name of an application that might show up on it alert. So I think it's an unfair thing to ask this project to address that but maybe there's some you know, groundbreaking stuff we could do by trying to
-
-[01:04:14.200 - 01:05:13.800]
-Some kind of model based representation at the ground floor of a project like this, right? So so we've actually thought about this specific issue in a couple different contexts a lot and our philosophy with this to this point is these models and these ways of having these General abstractions are not yet defined and Rich and and sort of static enough that it in our opinion. It makes sense at this time to invest an enormous amount of effort and them so instead what we're focused on it for the actual metadata and the actual cryptographically verifiable aspects of this are all are all produced in a way that is verifiable and non-modifiable and so on across these different contexts, so and then you know, if something like that has a richer model like for instance graffiti us from Google has a richer model for some of these
-
-[01:05:14.200 - 01:05:21.500]
-Of things in the cloud then that layers perfectly well on top of what we're doing and now we've provided the metadata they can actually trust.
-
-[01:05:23.100 - 01:06:00.700]
-We're hitting this in kubernetes quite directly where there's no standardized place to store metadata and it's kind of spread out and that makes interoperability very difficult. There are like annotations on the objects themselves, but those have no access control separate from the objects themselves. That was a very complicated one is that there needs to be kind of almost filled specific access policies her thing, which gets that multidimensionality is very difficult to handle and what do you want to know if you have a solution
-
-[01:06:02.500 - 01:06:30.100]
-Well longer conversation. I mean this is one of those interdisciplinary problems, right? Because the the modeling folks have solutions for this, you know, you could argue that schema.org out of Google's maybe a better representation that you could do reasoning within the traditional security models that we inherit from active directory. But you know, there's a lot of work to do to make the connections there.
-
-[01:06:31.800 - 01:07:26.300]
-We did try this in the beginning and spent about I don't know six to nine months of painful time of Santiago on dead ends until we realized this was I believe it believe it. So Mark and Erica, I'll take an action item to schedule in probably be two three. Maybe four meetings out a discussion around metadata men's men's come back and have a deeper dive sir. Sure. Great. Is it about me doesn't stop? Okay. Well, thanks again everybody weekend and we'll see you next week.
-
-[01:07:26.900 - 01:07:29.300]
-Thank you everybody.
+Dan:                Sure. Well thanks again everybody. Have a wonderful weekend and we'll see you next week. Thank you. 

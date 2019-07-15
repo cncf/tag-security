@@ -1,428 +1,261 @@
-[00:30.300 - 00:57.200]
-I doing good. How are you? Great. So I'm in Prague and I just got finished hosting a working group and my wife I was iffy. So are sir Alan is gonna lead facilitation. Okay.
+Dan:                (silence)
+                    Hey, Jason. Who are we expecting to entertain?
 
-[00:58.500 - 01:02.900]
-Nothing really changed much for you. Just so you know, yeah.
+Jason Mello:        So from ADP, Michael Hirawady is going to be joining. He's got the invite. I was chatting with him earlier. So he should be on.
 
-[01:04.400 - 01:06.700]
-Hi, Sarah.
+Dan:                Okay. [inaudible 00:07:53].
 
-[01:11.700 - 01:12.500]
-speaking of the devil
+Jason Mello:        Do we have agenda topics before we get into that, or is that what we wanted to kick off with? 
 
-[01:20.600 - 01:25.000]
-You're muted. Hello. Hi.
+Dan:                It's actually going to be a primary discussion. We will do round of check-ins. Mark, do you have anything? Sorry, Mark has just [inaudible 00:08:11] us to the room. Sorry, Mark. We'll go around, and we'll check on both to see if they have any check-in items from working groups. But that will usually be at most, five minutes or so. 
 
-[01:37.600 - 01:39.700]
-Michael's our presenter
+Jason Mello:        Sounds good. Mike's on now. So once we get through those kind of updates, we can get kick right into things.
 
-[01:41.600 - 02:27.500]
-Oh my the only prisoner so I have someone that was slated from about a month ago lined up for today, but Jerry hasn't been on last couple weeks and I haven't received a confirmation from her. So, you know, if she shows it's her slot, but if not here then we went. Yeah, then then the fact that you're enthusiastic to get it in today is really fantastic because it gives it potentially want that up. So awesome.
+Dan:                Great. And they're... This has actually been not shared today. Share on. [inaudible 00:08:49]. 
+                    (silence)
+                    While folks are logging on, we're waiting for Sarah Allen to get us to quorum. We have a presentation today from the team at ADP, and we're going to go into a discussion around RBAC based security. 
+                    So, soon, let me draw up the link to notes. [inaudible 00:10:27] notes.
 
-[02:32.100 - 02:34.600]
-I just out of the notes the calendar invite.
+Mark:               Hey, Dan, I'm here now. 
 
-[02:36.100 - 02:37.000]
-Awesome. Thank you.
+Dan:                Bring in the notes. So here's the minutes doc. If we can get a couple of volunteers, we have a use case today. We're going to have the discussion from the ADP team discussing action-based control in the enterprise use case. And a bit of ABAC versus RBAC. And so we really want to make sure we capture minutes today, so if we can get a couple folks. 
 
-[03:28.000 - 03:28.800]
-Jerry
+Mark:               I'll give it a shot, Dan. I'll fill you in on some work group stuff at the end if we have time. 
 
-[03:31.800 - 03:32.300]
-hey.
+Dan:                Actually, if you want to do that in the beginning, or do you need to follow other work things? 
 
-[03:33.200 - 03:34.800]
-You're muted.
+Mark:               No, it's pretty-
 
-[03:37.000 - 03:56.200]
-Are you believe that I come? Yes, though. I wanted to sanity check with you before we went live. Are you ready to present today? I haven't seen you a couple weeks, but I want to have your you slated for today. Okay? Great. Awesome.
+Dan:                So there's an agenda item.
 
-[04:03.300 - 04:25.100]
-So Michael, this is the priority. So sir, I recommend if we end up filling time then we prioritize that and not try to squeeze both sessions and less It lines up that we're making a good use of time.
+Mark:               I can do that.
 
-[04:31.600 - 05:11.200]
-So when you said this is priority Gary is priorities. He was on the schedule. Michael asked if it would be possible to present today. And you know, I said that we have maybe 20 minutes so and and Jerry is one of the reasons why I'm managing expectations so much is I'm in Prague and my love Wi-Fi has been really poor and the last session that I was facilitating. I was dropping a lot. So Sarah's going to be facilitating today.
+Dan:                Let me go ahead and get another individual signed up to Stribe. So Mark, the first victim. Who's next? Anyone else would like to join Mark in capturing minutes? The document is in our chat and we'd like to get a primary and alternate on that. 
+                    Ray or Cherie, do have cycles today to take minutes? You want to take minutes? 
 
-[05:13.200 - 05:20.200]
-But you are recording I am recording and just hopeful.
+Ray:                I got it. 
 
-[05:23.000 - 05:31.100]
-And I don't know any other item that I can do Cloud recording Maybe.
+Dan:                All right, thanks Ray.
 
-[05:33.500 - 05:39.600]
-Maybe record button on my screen. Is it possible for anybody to record Go words?
+Ray:                Cool, no worries. 
 
-[05:40.900 - 05:45.100]
-if not, I can probably upgrade your
+Cherie:             Yeah, Dan, I'm available for only half an hour, but I'll also jump in on the doc and try to take some notes. 
 
-[05:47.000 - 06:06.600]
-I think you need to be a co-host. It recreates request out loud. Jerry is the co-host. All right, and now I think you should have the privileges. So having a backup recording we could create okay.
+Dan:                Okay, cool. We've got Mark and Ray on it. So save it for the next... [inaudible 00:13:00] for next time. Appreciate it.
 
-[06:07.700 - 06:37.100]
-Thanks, Jerry. Yeah, even if there's just like two minutes Dan and I can just point people to the purple I can add on the road going up the top image July and so we're just trying to get the word out and give people more of an understanding of what Taco is and what it does and how it can help in the security space for kubernetes and Cloud native app. So excellent right provide a platform for them.
+Cherie:             Sounds good.
 
-[06:38.900 - 06:43.000]
-So Jerry, I yeah I see recording. So yay.
+Dan:                Okay, well, let's go ahead and get started and do any check-ins that folks might have from the various working groups. Mark, you said you had a check-in. So I'll go ahead and start with you. 
 
-[06:49.700 - 07:02.900]
-And I volunteer describe is it somebody else's willing to take notes?
+Mark:               Sure, this will be pretty short. So in the 2675 group, which is DevOps security, we did a briefing today on BSIM. I don't know if anybody on this call is using it, but it's pretty widely used with regulated industries. It's kind of your CSO's sort of guideposts to how to build out your organization, because it kind of identifies all the roles and responsibilities for your typical CSO operation.
+                    Not so much in the weeds for development, and also, it's not very well-informed about DevOps, but there's enough in there and it has got enough visibility with high profile people that we're going to try to find some stuff in there to make some adaptations on the DevOps side.
+                    So it's still preliminary, but I hope to both share what we get out of that from this group and also do the reverse, to see if we can't elevate the status of BSIM with the doers. Because the doers in the technology side are kind of skeptical about that framework. 
+                    On the NIST side, the NIST risk management framework is out for public comment until Monday. And if anybody's interested in chiming in and trying to twist them in a different direction, like something less organizational, hint, hint, be my guest. That's open to the public. 
+                    And I know from being on the NIST side, they read all the comments. They're required sort of by law or by edict inside of NIST to respond to them. The risk management framework is pretty important, because this version of it tries to do a crosswalk to 853 and cover the lifecycle issues with SDLC and deal with some of the newer technology. So if it falls short, it's kind of on us to not... It's on us to not help them get there in some response, in some guidance or other.
+                    Let's see, another thing I wanted to bring up is, anybody on this group use Cucumber? One the challenges on a CN is-
 
-[07:16.300 - 07:18.400]
-Michael Christian
+Sarah Allen:        The testing framework? 
 
-[07:22.200 - 07:35.100]
-I added it to the meeting invite. I will also add it just okay.
+Mark:               Yeah.
 
-[07:37.700 - 07:58.600]
-So I just added the chat. So yeah, and anybody should feel free to like add in notes. I added people that had names in the participants. But please feel free to fix your name if I spelled it wrong and add your affiliation and any links or anything.
+Sarah Allen:        I have.  
 
-[08:11.700 - 08:28.800]
-Do we have any other orders of business than or should we just dive in? Yeah, so Doug Doug, are you dialed in someone's dialed in?
+Mark:               So Cucumber, and what's the... Garrick or something. There's another kind of pickle terminology.
 
-[08:31.300 - 08:41.400]
-the game is of IBM in so there's
+Sarah Allen:        Gherkin?
 
-[08:43.100 - 09:41.800]
-check ins in for the the cigs and working groups. And I did ask Doug if he would share a bit of context from the TOC meeting great, right if Doug's not here, and since we have a full docket, I think we should probably go ahead and get started. I can I can fill in a little bit of my interpretation of that what happened? So a couple things were happening so that the the cloud events project is cloud events is graduating out of the service serverless working group and one of the discussion points that was highlighted was that that project that working group.
+Mark:               Yeah, that's the domain specific language that it uses. That's kind of a preference for an automated DevOps friendly, more security and risk aware framework, because it incorporates the domain aspect of things, in a systematic way that other ones do not. So I'm not sure what I'm going to do with it. I'm going to bring this to the standards groups that I'm in and say, hey, let's take a look at this, we need a way to address where to put our natural language annotations and artifacts for the automation process. So anyway, that's FYI. Nothing really new on that. I'm not a user of it. So I'm an advocate for DSLs, but who knows? They might do a terrible job of it. 
+                    Let's see, I had one other topic. I forgot already. StackRox.
 
-[09:43.100 - 10:42.800]
-Itself to having code was seen as the the best way to engage in the CN CF. So I was very yeah, I did one of those it doesn't have code. It has a specification and the working. I'm part of that working group over them and people have done there was like an interrupt demo but the group has not produced code. So one of the things that I was very intrigued about was I thought CN CF projects were all code base and this is the first time there's been a product project where the goal of the group is to create a specification and it's kind of an open question. I think there's a lot of interest in creating shared libraries, but there has been I haven't been actually at the attending the meetings for a few weeks maybe a month. So things might have changed a little bit, but I hadn't noticed I hadn't seen
+Dan:                So Mark, is the actionable the DSL and potential alignment with DSL with [inaudible 00:17:00]?
 
-[10:43.000 - 11:18.600]
-That it changed but but yeah, so there was some kind of an open question whether it would be like lots of people doing separate interoperable libraries more like ietf style where like there's different implementations that interoperate with this kind of where we were what we did with the oh one specification and so or whether the group would get together and build software together. So so yes, it was there discussion of that at the TOC being here's Doug. I don't speak to this because I haven't been at the meetings for a while.
+Mark:               Sorry, I didn't hear the beginning of your question, Dan. 
 
-[11:19.600 - 12:18.400]
-Oh, hi, Joanna, welcome graduating from being a project of the working group to being it's only its own sandbox project. Okay, Dan was saying that it was that it was because it had code and I was saying that I think it like it was to my mind the first thing that had become a Sandbox project that didn't have code but maybe Doug you can speak a little bit to yeah. We were the whole Plantation while you're gone. No, no, actually. No, you're right. It does not have code as of today. The closest I've heard about us having code is we start some discussions around possibly some shared libraries or shared coding efforts around some shared libraries and stuff whether they would actually become part of our working group or we just have pointers to a common open source project simple talk about party.
+Dan:                So is the actionable item there, the DSL the being involved and the evaluation of that as a common language? 
 
-[12:19.900 - 12:34.400]
-I did it was weird though during the call. I think it was Alexis made a comment about us having code and I think correct him because I thought it was just off the coffee Market anything was worth diving into I didn't quite understand what you meant by that to be honest.
+Mark:               Right, right. So the challenge for everybody is how do you get from use cases, whatever you want to call them, use cases, scenarios, user stories, this stuff that's sitting in natural language, sometimes it's the results of a meeting, right? How do you get from that to something that's in the code, that's traceable, that explains why you answer the are you sure question with an explanation or you decide not to, or you decide not to even ask are you sure?
+                    And as a whole, panoply of problems around connecting up the natural language things to that. So Cucumber and that parallel DSL tries to address that and make it natural language friendly, have a better continuity between code and the requirements process and the test harness and the rationale for the test harness. 
+                    So maybe it's a little peripheral for CNCF and Kubernetes. But you got to be able to orchestrate these artifacts and figure out where to put them. And at least for revision control, you need automation to do that. So it seems appropriate to me at this juncture anyway. 
+                    It may turn out to be yet another dead end and a whole pile of dead end solutions that have been trying to deal with this since the '60s. 
 
-[12:36.000 - 13:35.400]
-Okay, it may be that the interrupt demo was mistaken as code that the group had built together. Maybe yeah, maybe I don't know. Okay, so it sounds like you know, we don't need to over index on that thing, but that was Doug's feedback to me, but I pinged of that to talk about this great. Okay, so that was the there's that discussion and then there was an interesting discussion around projects that are only associated with with kubernetes and whether they would be appropriate in the CN CF and there was a fair amount of debate there. It was it was fun for me since no Jess. No just Foundation was referenced a lot since we in the
+Sarah Allen:        So is NIST proposing that the requirements from, like the human scenario requirements would be implemented in Cucumber to have natural language representation of the language of what's the requirement? And then those will be able to be executed? 
 
-[13:36.000 - 14:35.600]
-Did chose not to integrate and support user land projects and inside of node and that was just scale and scope the scope of supporting and integrating and you know choosing which are the blast usual and projects that we choose to support inside of the node.js foundation was created to sustain the no Jess project was something that we could not sustain within the structure of the know just Foundation as it says so that's you know tangential to to safe. But we generally interesting. Yeah. I thought the first half of this week's Toc meeting was was quite interesting if you
+Mark:               Right. You're extrapolating from where I'm at to where they might go. You're hearing a proposal from me, not a NIST idea.
 
-[14:35.900 - 14:40.100]
-Have the opportunity to go back and give it a listen. I recommend that.
+Sarah Allen:        I see. So that's [crosstalk 00:19:03].
 
-[14:44.000 - 14:52.200]
-And I don't know if there any other check-ins from other cigs and working groups.
+Mark:               The NIST work we've done so far is, you'll know what this looks like without looking at it. It's a spreadsheet with stuff in the first column being the to-dos and the stuff you never get around to going in the other direction, right? I'm exaggerating, but it's a spreadsheet driven kind of thing with one of the cells maybe being your natural language annotation from a meeting and how you do that and your requirements might differ if you have doors or one of these other legacy products to do it. 
+                    But in the agile world, and when we're orchestrating this intersection of operations and code, it's not clear how to do that in a systematic way, that has traceability, that works for forensics and scalability. So whether Cucumber is the answer or not, it's novel enough to make us think differently about the paradigm. 
+                    The last thing and this is short, my company's doing a proof of concept with StackRox. This is obviously a commercial provider that's doing security for containers. So it's kind of peripherally related. But DHS is a partial sponsor of this work, as well as my company. So I'm open to suggestions from CNCF community and this group as to what we might want to ask them, what tires to kick in the proof of concept with them.
+                    It's going to be hosted in their cloud, with them doing most of the setup, but their initial concept for how to do the POC was to put Metasploit in there and try to kick the tires that way, and I was hoping for something more systematic than that. So just sharing that in case there's a connection. 
+                    And that's all the time, I'm going to monopolize.
 
-[14:58.300 - 14:59.500]
-Could just get started.
+Dan:                Thank you, Mark, just an encouragement to drop some of those links into the notes when you have a second.
 
-[15:07.300 - 15:12.800]
-So are you ready for me? Yeah, do you want to kick it off sir?
+Mark:               Will do.
 
-[15:16.400 - 15:17.000]
-Jenny
+Dan:                So we can follow-up. Appreciate that. Anyone else have any working group check-ins to share? Or it's time to get moving, if not. Okay, well, I'm going to hand the sharing of the rest of our session today over to Sarah, not that she is here with us. And Sarah, Jason Mello is joined by Mike Hirawady, and I'll hand it over to Sarah first, and then let her kick things off. 
 
-[15:18.600 - 15:23.100]
-Jerry yes, okay. I'm going to share my screen.
+Sarah Allen:        Wonderful. Thanks, Dan. And I'm really excited to welcome Jason Mello, who's going to tell us about enterprise ABAC, I think. Jason? 
 
-[15:28.200 - 16:28.000]
-So let me know if you can see it. I can see it. So at the time that I propose getting this talk, I wasn't really sure what made sense for the group. But what I've decided to focus on is just what our experience was integrating our service with both Cloud Foundry and kubernetes and I'll give sort of a high level overview of what we did in each case and this part of that overview. I'm going to touch lightly on things like how we determine application identity in each of these systems and in each system how the system ABI apis can be leveraged perform. Some of the tasks that were required which is probably indicative of the fact that those apis should be designed with fine-grained permissions so that we can preserve the
+Jason Mello:        Hi. Kind of in the interest of, we've been talking about enterprise use cases, way back since the beginning of the working group here. Was thinking about where have we attribute based access controls? And then even more specifically, having use cases where there is kind of the approach or the ability to roll that up into RBAC. So kind of the combination there.
+                    And so I thought that the work that we had done over at ADP and what Mike's team continues to do at ADP would be relevant in this situation. I'll just kind of give some high level framing and hand things off to Mike, who has kind of the salient details on things.
+                    But what we were trying to accomplish was that we were building essentially a fairly kind of indeterminant runtime right into the HR domain. So what that means is that different organizations, excuse me, different development groups would have different needs around creating, essentially, eligibility on data access rights, on functional institution rights, what can they do, what can they not do? And applying that in different organizational hierarchies.
+                    So there's going to be a number of different type of either attributes or criteria, which says, do I have access to this particular object or function? Do I have the ability to approve a given request? Kind of one of the typical scenarios, maybe something where there is leave approval, that is going through the system. Who can actually say approve that when maybe your direct line manager is say on vacation as well?
+                    Those are kind of the different scenarios that we were uncovering. All the way down to the need for much more secured conditions where say access to social security numbers, or the ability to actually change someone's pay in the system. Depending on even the amount that you want to give them, in terms of a pay raise, your access rights may no longer be valid, given the inputs that you're driving through. So fairly kind of complex use cases with a lot of kind of variables.
+                    So the fundamental approach was to say we can certainly kind of decorate the different actors in their actions and the system through attributes, but there would also need to be the addition of this notion of criteria based access as well. So I wouldn't term what we're going to go through as kind of a pure ABAC, but more so kind of a combination of ABAC and CBAC, criteria based.
+                    And kind of with that, wanted to introduce my Michael Hirawady. Mike is, I guess, kind of principal solution architect over at ATP in the Lifion group, which essentially, is those folks... What's that, Mike? 
+
+Mike Hirawady:      No, nothing. I just muted my microphone. Just make sure you guys can hear me. 
+
+Jason Mello:        Oh, great. Yeah, so for that, being a solutions architect over there essentially means you're a technical product owner and you're architecting a lot of the kind of solutions that you're pushing forward. 
+                    So with that, I'd like to introduce Mike, and thus we're going to take things a little bit further.
+
+Mike Hirawady:      Thank you, Jason. Hi, everyone. So Jason already did the introduction. My name is Mike Hirawady. I'm the principal solution architect here, one of the principal solution architect here at Lifion by ADP.
+                    So as Jason mentioned, one of my themes is actually working on building the access control layer for Lifion. So let me share my screen, let's see if you guys can see me, see this. Okay, let me know if you can see the PowerPoint. 
+
+Sarah Allen:        I can see it.
+
+Jason Mello:        We can see it.
+
+Mike Hirawady:      Okay, great. So I created this deck, essentially to highlight what attribute based access control is, how is it different than role based and towards the end, I have several slides that show how we actually modify to work along the lines that Jason mentioned earlier, which is to take on more complex use cases that we see on the HR domain. And essentially introducing, what we call criterias into the access control layer. 
+                    So this is high level, this is the agenda, we don't really have to stick to this. I just did this to structure my deck a bit. And if you guys have any questions along the way, feel free to ask and we can go over that.
+                    So at a very high level, in a typical access control environment, at least the one that I've seen in most of the enterprises, they are still role based. At the basic authorization policy or access control rule, essentially, a subject needs to or can operate on an object. And the object in this case, it's also called resources, typically. It could be anything from data to individual say like servers or even like devices. So it's really fairly wide open.
+                    So the combination of this subject, action and object is what we typically call a rule or a policy. So what is role-based access control? So it's a fairly manual process where you create a role or a security group and then typically, these policies that have been implemented by the developers are assigned and the users are manually assigned to it as well.
+                    So a given example here, where it's system admins can log into production notes and execute scripts. Obviously, somebody needs to create the role system admin, manually. They need to assign the access control rule to login and to execute scripts also manually to the role itself. And even the users, sometimes they're part of a group, and the entire group is assigned to the role, or individual users are assigned to the role. 
+                    Obviously, there are a lot of limitations here. If you imagine that somebody then comes along and say, I need like a more granular type of policy assignment, then there really isn't any other choice other than to create a new role or a new group. And obviously, that causes a proliferation of roles typically in the system. And as more and more of these edge cases come in, it's going to be more and more of these roles, it's going to be a headache to manage. And at some point, somebody will not really sure how somebody or a group gets assigned to a role.
+                    So I've seen this happen before in the past. So... Sorry, somebody said something?
+                    Okay, so how does attribute based access control help in this scenario? So this is actually a quote from the NIST project overview of attribute based access control. "In its most basic form, we basically relies upon the evaluation of attributes. The attributes itself can be off the subject, or off the object, or even on the environment."
+                    So for example, like device type could be an attribute or IP addresses. So in the previous example, if somebody then comes along and say, well, this is still for the system admin group and this is still for managing access, so only them can log into the production nodes. However, I want to add this little quirk here that says in their office region.
+                    With role-based access control system, typically, what they'll need to do is to create a new group, and then assign the proper person or groups to it. However, with the attribute based, what they can do is, we have this additional component. And I can go over this in more details later, where you basically assign additional rule that's based on the attribute. And it could be something as simple as if the subject, that office, that region attributes is equals to object .location, .region, right? Sorry, subject, office region equals to object, location, region. 
+                    So once they set this up, what this means is, for each of the individual in the group, they could have different access to different nodes. Because during the decision-making time, we actually take this attribute roles into account. So it's not just looking at this at the higher level policy, which says can log into production nodes, we are also saying, well, you can log into production nodes, but we also need to check where the production node is located and where you are located and see if we can allow you access to that.
+                    So does that makes sense so far?
+
+Jason Mello:        We get everything, Mike.
+
+Mike Hirawady:      All right, so going into the architecture a little bit, this is a typical architecture for an attribute based access control with the different components on it. So we basically have this policy enforcement point, where the decision is processed and access is given from the subject to the object. 
+                    Typically, it is done at the product level. And what I mean by that is, if you're building a more generic access control, like the way we do here, depending on which product, somebody is allowed to do something means different things, right? It could mean, they could see somebody's time sheets, or it could mean they could modify somebody's compensation. 
+                    But the data that we operate on is different, the action that they can operate on is different. So typically, the enforcement point is something that we expose maybe as an API or as a module for the products themselves to consume within their code.
+                    And then you have the decision point. So this is kind of like the brain of the system. This is where every time a request comes in, they look at the assignment store, where the policy assignments are being stored. And once they have the assignment, they actually branch out to the third component here, the policy information point, which typically have one or more data sources, where they can retrieve the attributes for both the subject, for both the objects, and maybe even for the policy itself. 
+                    And they basically pass that back to the decision point and the decision point is the ones that make the final allow or deny decision, potentially with additional information, and return that back to the enforcement point. So each of the product can do what it is that they need to do.
+                    So these are essentially the standard components, standard names that is being used industry wide. There is no real guidelines on how they are implemented, whether it's a surface, it's a monolith, it could really be anything, as long as it meets the enterprise's needs. 
+                    Now, that is the theory. However, I've been part of a team that built this in a couple of companies other than ADP. So what we find is, obviously, there are other stakeholders that are not really, have been taken into account in the standard implementation. Obviously, the developers will need to be able to implement these policies and apply them to whatever objects that they're working on and whatever subjects or actor that they're interested in.
+                    The security admins themselves, they still need to configure roles, as we call them still, the policies as well that are assigned to their roles. But in addition to that, not necessarily assigning users manually, but they need to configure the attribute assignments, and the assignment rules for those attributes. They also need to do other things like running audit reports for their leadership.
+                    And then obviously, the end user, they just want to log in and perform operations. They don't want to deal with, I can't really do this, because there's something wrong with the system. So the system just has to work. 
+                    So in thinking about this, there are actually a couple more components that I feel like we need to introduce. One is what I call myself, policy configurator. Or it's essentially the toolkit for the developers to do the implementation. 
+                    And then the second one is, I think the more important point here, is really what we call the policy administration point. So what does that mean? So the red areas here are the ones that we just added. So if you look at the flow essentially on how somebody needs to set this up, if I'm a developer, then I have to use this development toolkit during my implementation, so I can properly define my authorization policies. And that typically involves what I want the subject to be able to do, to the component or the object that I'm working on.
+                    Once that's done, then I store it in this policy store. And then at configuration time, somebody like a security admin or maybe like an onboarding specialist or something, they can then go in and basically use some kind of a web UI or APIs or something that is provided by this administration point, to set up how the access control will actually work at runtime. So I found that these two components are essentially just basically a must-have for an access control to work. 
+                    Now, we're getting to the interesting part. Once we have all these things set up, and especially at ADP, we realized that in order for us to be able to serve our users properly, we really need to make this as real-time as possible. So that's where this idea of dynamic assignment comes in. We're leveraging an event driven reactor pattern. 
+                    So what we realized is that a lot of these attributes for both the subject and the object are actually coming from maybe just one or two more data sources. So what we do is we basically make the attribute repository link to the policy information point more on like a pub/sub mechanism. So it's going through a data pipe, could be like messaging queue, like a Kafka or Kinesis or something like that. And then the policy information point itself could be an event driven surface, that access a reactor.
+                    So any changes that happens in any of the web app, or any other app that affects the attributes in the repository, we essentially get that change event in almost real-time. We can adjust the policy assignments properly. The other thing that needs to change here is that, because we are evaluating the attributes at runtime, sorry, in real-time, the store that we have is not really a policy assignment store anymore. It's turning into more of a runtime cache, because we're literally flattening out the policy assignments for each subject, and for each object based on their attributes. 
+                    Does it make sense to anybody, any questions so far?
+
+Sarah Allen:        I was wondering if you can go over exactly what is the use case that drives this event driven pattern, like the necessity for real-time. I think I'm getting it, but maybe you can just go over that again. 
+
+Mike Hirawady:      So the one use case that is fairly general in the HR space is if somebody gets terminated. So typically, when somebody gets terminated for, let's say, for a gross violation of misconduct or something, we literally want to get them out the door as soon as possible. Because our access control is attributed based, we can basically say in all of our policies that we assigned to that employee, part of the attribute that we need to look at is if this employee record is an active employee, right? Or if the active date is still in the future, or sorry, it's... How do I say this? If there is no termination date in his or her record, I guess I should say.
+                    So if we make that part of the attribute assignment in the access control policy itself, the minute somebody has their termination date updated with today's date, we can literally act on that change event immediately. And within seconds, that employee will not have access to anything anymore.
+                    Does it makes sense?
+
+Mark:               Yeah, if I could chime in here, part of the Kool-Aid for this, which is kind of exciting is that if it's event driven, you get the intersection of multiple events that normally your policy apparatus doesn't include.
+                    So one of the examples of that is, I just had it in my head. It's when you have a rule that says nobody's allowed into this building without a badge, and the badge reader is located at eye height. But you might have some employees that are in protected classes, say they are in wheelchairs or whatever. So you can have rules that consult these protected classes, and have secondary policies that can be invoked based on this kind of information.
+                    And typically, the policy creators don't think through all of these highly domain specific details. 
 
-[16:28.100 - 16:30.700]
-monkeys privilege in that kind of a situation
+Mike Hirawady:      And another thing that I have seen this used in the past is to actually temporarily restrict access. So for example, because we're using attributes, there is one more sort of like concept that is standard, which is the environment attributes. And typically what that is, are things like IP ranges or device types. 
+                    So let's say an enterprise is located all over the world, but they're still in data centers. So we have as a software provider for the enterprise, we know where the requests are coming from. And let's say they tell us one day that, hey, we have a breach in some of our data centers. Please restrict access from these IP ranges. We can literally block those IP ranges in our attribute repository, and our policy assignments with react immediately. So starting from that point on, any request that comes in, if we check for the IP address, and we see the IP address is coming in from this blocked data center, we will block access to it. 
+                    Cool. So moving on, and again, this is getting more interesting. We looked at the type of data that we store, especially in ADP, in the HR domain. And we figured out that most of them are really hierarchical. So for example, the use cases they will deal with are things like a manager can only approve say time off for their employees, for their own reports. They can't approve anybody else that's outside of their teams. 
+                    And we have other use cases like this, up and down the products. And that gets us to the think about how we can leverage sort of like a hierarchical data store. And Jason is actually a big part of this as well. So Jason, feel free to keep me honest, or chime in if you want to here. 
 
-[16:32.500 - 17:03.200]
-So the first piece I'm going to talk about is our integration with Cloud Foundry. Both of these Integrations were customer-driven where we have request from some of our Enterprise customers to make it easier for them to use our product on these platforms and the first customer requested that was for cloud Foundry integration. So, that's the one I'll talk about first. And as we started to investigate what that integration would look like very early on we discovered the concept of a service broker.
+Jason Mello:        Will do.
 
-[17:04.200 - 17:19.600]
-So what is a service broker most of the time if you have a service that you want to list in the cloud Foundry Marketplace, you're going to need to create a service broker. So the marketplace is a listing of all the services that are available.
+Mike Hirawady:      So we introduced a graph database in our system. And wherever we can, we tried to centrally create a replicate source of truth from our real source of truth in a graph format, right? So with graph, you have the ability to represent entities or fields within entities as notes, and the relationship between those fields as the edges. And even though it's a graph, we can put limitations around it, so that we say, all right, this is kind of like a top down hierarchical type graph. So we can put some software validation around how the data gets entered and how the graph gets maintained.
+                    I'm using like location IP addresses or degree of connections as examples here. But in our world, in the HR world, reporting structure is typically a very big hierarchical use case. Cost center is another one, right? So for example, if you're an enterprise company and you have five different cost centers that are at four or five different locations and it's cut across all the different departments, say like your compensation product or your budgeting product may need to look at those cost centers to decide who can act on which department's budget. Who can approve them, who can reject them, who can manage them, that type of stuff.
+                    Now, what that means for the actual system itself is we actually put an extra layer in the middle here, before we evaluate the attributes for access control. What we do here is that the attribute repository still pushes change events out to the data pipe. But we have an additional subsystem, basically, in the middle, which is the graph reactor, which takes the same change events and wherever relevant, maintains the graph. 
+                    So it updates the graph, it creates new nodes, creates new edges. And then the graph itself emits its own change events. The access control system now listens to the graph change events, wherever it's relevant. And depending on what changes, it will process and update the runtime assignment.
+                    So this is basically how the system works at the moment. And this is sort of like the whole picture, I'm just going to close off this, this is basically what we've been discussing so far.
+                    What I do want you to look at is this though. So once we started going down this path, and we were defining the products and the benefits of using the graph, two things that come up is, we can use it as a source of data for attributes, like what I just went through, as far as hierarchical scoping, what we call it, or data entitlement.
+                    However, what makes it really powerful in our opinion, is that we can use the graph itself to represent the policy definition. For example, if we go back to the access control statement in the beginning, where you have your subject that can operate on an object, and when you think about roles and security groups, we can represent them as nodes in the graph. And then the graph edges essentially represent the relationship between them. So a subject belongs to a role and policies are assigned to the role and therefore, the subject is authorized to do those policies.
+                    Thinking about graph and traversals within the graph, we can do so much more with the kind of traversal queries that we cannot do with a flat or relational data stores. So for example, if there is a role called a junior manager and there is a policy that says a manager can see their team members' compensation, and a manager can update their team members' compensation, we can actually create this more granular level of access control and allows for policy inheritance.
+                    So what I mean by that is, a senior manager is at the level higher than a junior manager. If there is a role between, sorry, if there is a relationship between senior manager and junior manager in the graph, we can assign the see their team members' compensation policy to the junior manager role, therefore allowing them to have it. 
+                    But then because the senior manager is a level above, we don't really need to reassign that policy again. Just because they're a senior manager, their access control essentially encapsulates everything that's below them. And in that case, we only need to update their team members' compensation policy at the senior manager role node.
+                    And adjusting time access control changes, this is basically what we discussed earlier. Because everything is sort of like event driven, we are actually able to modify our runtime assignment. And since we're treating it more as a cache than of anything else, the decision-making process is literally changing, just in time as the attribute changes. 
+                    Does it make sense to anyone, any questions on this? 
 
-[17:21.000 - 17:21.400]
-first
+Jason Mello:        Yeah, Mike, just a question around non-hierarchical structures, and the ability to address kind of a similar thing, right? A scenario there would be maybe a number of employees are on the same project at a company, or they're part of the same group, but these are not structures that fall into the typical HR hierarchies. 
 
-[17:23.400 - 18:21.500]
-Look for services on there. So it's a great way to make sure that your service is visible and easy to use for developers. So the service broker is just basically an application that you also deployed a cloud Foundry and it has a handful of API endpoints that list the service offerings that are available that allow you to provision an instance of your service. Whatever that means for your service and the delivers credentials to access your service to the application. So you basically just need to implement a few in points. And then you have a service broker and the service broker has to conform to the open service broker API standard and that standard has been accepted for use in Cloud Foundry kubernetes and openshift to varying degrees. So on the last side was sort of
+Mike Hirawady:      So basically, do you mean the criteria based type of structures?
 
-[18:23.000 - 19:01.400]
-I guess I would like to just show a little graphic of how this works. So you have your external service. You have your Cloud Foundry installation deploy the serviceworker application to its own organ space to steal it off because nobody except me having to need to access it directly you create an organ space for your application to be deployed in and in that app organ space you would create a service instance and creating that service instance is that provision stuff and that communicates with the external service and does everything that needs to be done at that step?
+Jason Mello:        Well, you had mentioned there the hierarchical. So the question was, can we apply these types of access pattern approaches in non-hierarchical structures? 
 
-[19:01.600 - 19:12.000]
-Once you're ready to deploy your application the application will bind to the service instance and communicate with the external service to get credentials to access that service.
+Mike Hirawady:      Yes. So in addition to the graph attributes that we use, we are still maintaining the ability to, essentially for somebody to create something almost like a SQL query, right? If the source of truth is flat or relational, then we can still query the attributes from the table that we're interested in. And via the same event driven mechanism, we can still adjust the policy real-time.
+                    The criteria stuff though, it's something interesting that we could go into next, if there are no more questions. Does it makes sense, Jason?
 
-[19:14.600 - 19:55.400]
-So what I said on the last screen was Step 2 on this screen, this is from the pivotal Point Foundry documentation. There are other ways to integrate your service and Cloud Foundry level 3 and 4 both evolve the service being deployed directly to Cloud Foundry, which is something we haven't explored yet. And then they're sort of standard ways that that you might interact with an external service like just providing the database credentials the usual way instead of worrying about the service program, but that's sort of the possible scopes of doing it and Cloud Foundry.
+Jason Mello:        Yeah, definitely. 
 
-[19:56.200 - 20:45.700]
-So having said all that I'd like to just take a second look at specifically what ours does so I work for cyber-ark on The Conjurer team Condor is Secure Vault that people use to secure credentials required by applications. And so applications use these credentials to connect to data bases or apis. So if you have an existing Contour installation, you want you to place a Max two class boundary, you'll install our service broker and we also created a buildpack to make it easy to inject those credentials needed by the application into the app and when you deploy your application, you're going to bind it to the service broker.
+Mike Hirawady:      Okay, so-
 
-[20:46.200 - 20:52.800]
-Which gives you credentials to access Conger and creates an identity in conjure for the application?
+Jason Mello:        Mike it was also a little bit of a leading question too.
 
-[20:53.900 - 21:14.200]
-you update the policy within our service to Grant access to the credentials of the application needs and then when the application starts, it uses those credentials to get the access keys that it needs to access other services, so
+Mike Hirawady:      I figured.
+                    All right, so let's get into the criteria stuff. I don't actually have a slide for it. But basically, what that means is, what we find out when we're talking to a lot of our clients, ADP clients, the ability to define these attributes are really client specific. And even in some clients, large enough clients, it is almost department specific.
+                    So what that means is, as a developer on the development side, there's only so much that we can do to predefine all these policies. We need to build a mechanism for the end user to define these attributes themselves, and apply them to policies at execution time, at runtime. 
+                    So what we've come up with is a way for them to almost literally define their SQL query upfront. We, as I mentioned before, and as Jason alluded to, we actually still have two different types of attribute resolution. One is this graph based one and the second one is still the relational database, the flat data structure one.
+                    So we are building what we call a criteria based system, where we will have a web API front end for say, like a security admin or even an HR admin to go in and define the data entitlement rule. So for example, if an HR manager says only a certain level of managers can actually approve promotions for their department or division, except for the people that are in another office location, that is not something that we can define on the development side of things. Just because it's so granular, and it's so specific. So that's why we need to do this. 
+                    The criteria based right now is turning into more or less like an eligibility engine. So essentially, this is just another type of attribute that we need to resolve and store in our cache. So that when the user actually tries to perform an operation on our system, we check against this attribute as well. 
+                    So the last slide I have here is really not about anything that we've done before and there's a reason for it. So there is an effort by this OASIS consortium to create an access control policy language, it's called XACML. It stands for extensible access control markup language. I think they started this effort in the early 2000s, they released their 3.0 version of the... 3.0 syntax of the language a few years back.
+                    In one of my previous jobs, I actually tried to use this, it's very verbose and in most cases, in my mind, it's little bit an overkill, even for enterprise systems, but it is very verbose. I put some links in there as references, if you guys are interested. The Wiki page, believe it or not, actually has a great summary on it and it has all the external links in there. 
+                    That's really all I have. So open for questions, if anybody has anything. Hopefully, this has been helpful. 
 
-[21:15.900 - 21:20.400]
-So that was our Cloud Foundry integration.
+Sarah Allen:        Thank you, do folks on the call have questions?
 
-[21:20.900 - 21:30.200]
-Shortly after maybe even during the time we were working on that we started to get a lot of customer requests to integrate with kubernetes.
+Mark:               Oh, yes, we have questions. Thank you so much. This was very interesting and it's great to see somebody doing this. I talk about it a lot, not doing very much.
+                    When you implemented this thing, was there a concern that given the sometimes fragility of highly scaled assets like Active Directory, that the access control thing that you built, let's just call it a thing, is too fragile to scale properly?
 
-[21:32.100 - 21:39.800]
-And so in the next few slides, I'll talk a little bit about what that looks like and ended up being quite a bit different from the way that we handle things and Cloud Foundry.
+Mike Hirawady:      We haven't really seen that. So as far as what we're building now, we are still in, I would say, probably like the beta version of the product. But in my previous company, it was actually being used in a fairly large user base. I used to work at Comcast and this is literally what they used for their TV Everywhere initiative, in terms of determining if a user tries to go to say, like an HBO website and whether or not they actually purchase HBO. And we actually use XACML there. So the policy itself is pretty verbose. And we haven't really seen any issues with scalability. 
+                    The one thing I would say though, on what we are doing now, we do take some precautions around the event driven system. The back end that essentially updates these policies real-time, because that's one of the areas where it's asynchronous, there's always like some precautions we need to make there.
+                    So we do have other services, some sort of like a recon service essentially, that monitors discrepancies and tries to report on it and tries to fix it in real-time. But I haven't really seen any scalability issues, per se. It also, I think, as a part of the... the good thing about attribute based access control is that there is no really just one way to build this. And that's why they break it apart into those components. 
+                    You can scale each of the components up or down, depending on your needs. So if you see a lot of attributes coming in, then maybe you want to scale your information point and your decision points. But you can keep your enforcement point in however mechanism you already have, or vice versa. 
 
-[21:41.600 - 22:41.500]
-So even though kubernetes officially supports the use of service Brokers and still in pretty early stages and if you actually look at their code and get Hub it hasn't actually had a stable release. Yes. It's probably not something that is worth trying to use in production at this time. So instead of doing the same kind of model that we did in Cloud Foundry we decided on a completely different tack. So one of the big differences is that in kubernetes, we facilitate deploying our service to kubernetes as a high availability cluster and then our service has special authentication plug-in. It's specific to be were Nettie's and each application is deployed with an authenticator container that interacts with our service and delivers a Time limited access token to the application so that it can authenticate with our service so
+Mark:               I take your point there. I guess I'm puzzled then why Microsoft has such a challenge with this. I mean, what's the best way to say this? I think their challenge is real, that the intersection of the number of people, the number of changes being made to policies, the number of groups that have to handle the crosswalk to all the resources that Active Directory and LDAP have to manage is a challenge by itself.
+                    And if you try to put an overlay of attributes on top of that, because, really, that implementation, really, if you think about it is primitive in many senses, right? 
 
-[22:41.600 - 22:58.900]
-Just a graphic of our workflow. What happens is the authenticator container that's deployed with the application starts out by submitting a certificate signing request to conjure with this 50 ID with the pot information contained.
+Mike Hirawady:      Yeah, exactly. I was just going to say, we have overlaid this type of system on an LDAP before, but honestly at that point, the LDAP is becoming no more than just sort of like groupings of users. We don't actually use sort of like their access control ability, we just basically use it as a user store at that point. 
+                    They have other uses in terms of the security roles and domains and the more traditional sort of like AIM role setup that they have. But for like an enterprise, user-facing real-time apps that we're dealing with, it is a little too static. And I could see why that wouldn't scale. 
 
-[23:00.800 - 23:14.400]
-And Conger responds by injecting a time-limited certificate into the pot and using the kubernetes API using that pot information that was included in the search request.
+Mark:               Interesting. So let me ask one other thing before I relinquish the floor, and thanks for the forbearance, team. On the application development side, this is not a thing that developers understand. The idea of the attributes is tied to their domain model understanding of their application, which they're obviously not too well educated about in the first place. Even in the role world, they're not too well educated in.
+                    The decision about what attributes need to be pushed out is one that they have to tackle for logging and auditing, as well as alerting. So I wonder how that got surfaced when you struggle with that. 
 
-[23:15.400 - 23:17.300]
-then the
+Mike Hirawady:      So I'll give you two examples, I guess. At Comcast, our attributes list isn't anywhere near as big as in ADP's, right? Because at the end of the day, it's like cable, cable channel, maybe device type, maybe browser type, maybe IP addresses. And those are, yes, those are domain specific, but the engineers there more or less know their domain.
+                    What we're doing here at ADP is a completely different animal. We are actually building a platform. So even the engineers on the platform side, they don't know what the business logic is on the application that other people are building and other teams are building. So we actually build a generic...
+                    So there are other generic platform functionalities that we are building that allows us to essentially hook into their source of truth. So if I'm an application developer, and I'm using the Lifion platform to build an application, I have a way already to figure out, to basically define the schema of my table, to basically define my SQL queries.
+                    And as a part of that, we do on the authorization side, we do have access to the fields on the tables that people can use as attributes. So we're dealing with like a metadata on our side, essentially. And therefore, we left the domain knowledge of the attribute more at the business domain level. 
+                    So if I'm working on like a payroll application, I know what all my payroll fields are and what they mean, and what kind of policies will need to put around it. So especially in the HR world and the payroll world, we deal a lot with PII and SPI, different personal information and personally identifiable information. 
+                    So we do need to put some precautions around it. But we do realize that it's not possible for an engineer who's building this to understand all those attributes. So we just built a system using this method in a platform, to allow the application layer to have that business logic on their side. 
+                    Does that make sense? Mark?
 
-[23:20.600 - 24:15.600]
-Again, and that authentication process results in a time-limited token being placed into this shared memory. So now that application has access to a Time limited access token in the shared memory and it can use that to open to retrieve whatever information it needs from the external service and an issue that connections the external service. So I'm hopeful that this kind of a model might be something that other services also find useful or that the way that we've implemented. It means that external Services would actually be able to use the application identity. We providing kubernetes to authenticate kubernetes deployed applications themselves. So curious to see where this will go right now. It's only available for our Enterprise customers because it is a
+Mark:               I promised to shut up. But I have to jump in again with another question. Some of the use cases you gave us were, what we think of as in the security space, cross disciplinary, right? Like having to do with firewalls and infrastructure stuff, right? 
 
-[24:19.400 - 24:35.800]
-Still in that opens that will be released at the end of the month and that open source release is going to include both the custom authenticator that we use which is specific to our products, but could be a good model for other products and the authenticator container which is deployed together with applications.
+Mike Hirawady:      Absolutely. 
 
-[24:39.400 - 24:53.000]
-So having sort of covered what we did both in Cloud Foundry and in kubernetes, there's one last thing I would like to talk about and that is the developments that have been happening in Cloud Foundry since we created our integration there.
+Mark:               Yeah. So that's in the security domain, if you want to think of it that way, in a simplistic sense. So that part is sort of hard coded, is that how you deal with it?
 
-[24:53.600 - 25:53.200]
-So since we did our Cloud Foundry integration Cloud Foundry has released something that they're calling app instance identity which just basically means that every instance of every application deployed in Cloud Foundry is deployed with an x.509 certificate and a private key pair that encodes its identity in the CF deployments as information about the application good the instance good and the org and the space that the app is deployed in and so my hope would be that we might be able to change our Cloud Foundry integration to leverage these certificates similarly to how we have been operating kubernetes. So in our provides integration, we basically turn Ponder into a certificate Authority for the kubernetes deployed applications and configured Condor to accept the
+Mike Hirawady:      No, not necessarily. I mean, we haven't really used this, or at least I haven't, in sort of like an infrastructure type of policies. But the example that I gave you around like let's say, it's kind of like crossing both domains. So let's say a, what do you call it? A partner of Comcast, let's say HBO, right? HBO doesn't want people to access their website or their online streaming video app if they live in a certain region, or if they come in through like a certain IP ranges on their side.
+                    We actually used that as a real use case and we have to look almost at the header level of the requests that are coming into us to retrieve all this IP information, what kind of like... and cross reference that with like a geolocation and make sure we allow or deny properly. But I have not really used it in terms of making sure that, what do you call it? Like a system admin role can only operate on say like a certain type of servers or certain type of databases, not on others. 
+                    I think we're using a lot of like AWS product here and back at Comcast as well. I think the IM roles that they have can still be made more granular, but I don't think they're using this type of attribute based.
 
-[25:53.500 - 26:44.000]
-Are generated certificates as proof of identity be a mutual TLS. We might be able to modify our existing Cloud Foundry integration to work in a similar way to have an authenticator buildpack is probably how it would work that would take on that role of communicating with the custom Cloud Foundry authenticator to inject time limited access token into the application memory. So where is it now? It's not as fully compliant. I expect that they may be working on that though and that may change and they're working on improving the specs on the workload for accessing the certificates and validating them against the certificate Authority.
+Sarah Allen:        Okay, I want to just interrupt, because we've just got a minute left. Thank you so much, Mike for the presentation. I think it sparked a lot of discussion. And Mark, thanks for all your questions. I want to point out that we had a prior presentation from OPA that talked about their Rego v2 policy language, which is I think an evolution of what XACML was trying to do. So if folks are interested, you can look back on that. 
+                    And then I think next week on the 22nd, Dan has canceled the meeting. But I just want, if there's any last announcements or questions about what we're doing with the working group and next up things, I wanted to give a moment for that. 
+                    Great. And then Mike, do you have a link to the slides in the GitHub issue or would you mind sharing those? 
 
-[26:44.800 - 27:16.400]
-So I think this is really interesting. I'm really glad that things have progressed this way in Cloud Foundry, which also led me to the question of how long it might be until kubernetes is also is updated to come with f identity out of the box. We know that the city is currently a Sandbox project in CN CF to get it remains to be seen where that's going to go but it's an interesting time to be talking about application identity.
+Mike Hirawady:      I will share that after this.
 
-[27:16.900 - 27:22.500]
-So at this point, I would ask if anybody has any questions and I will do my best to answer them.
+Sarah Allen:        That would be fabulous. 
 
-[27:26.900 - 28:26.800]
-And this is sort of I didn't try to plan something very in-depth or low level if there are things that come out of this that would like more information about or would like me to dig deeper into another time. I'd be happy to consider doing that. I don't know if people have a way to get in touch with me, but I'm on GitHub. So my information is there. I think we're also all on the calendar invite and if anybody's not on the calendar invite paying me or than I do or JJ and I had a link to these slides a PDF of the slides in the Minnesota people wanted to go back and refer to them they could and particular I had this note here that if you're curious about looking at the code for what we did for our kubernetes integration work with a cloud Foundry service broker or Bill packets all publicly available or will be by the end of the month. We'll announce the kubernetes on our website contador.
+Mike Hirawady:      Sure. 
 
-[28:26.800 - 29:19.100]
-So that would be a good place to watch out for it great. Awesome. So so I did just a question like you called out that this notion of instance identity. And if that were actually a thing that was consistent across platforms that seems like a very clear opportunity and that it would have made some of the work easier or at least you could have leverage this work perhaps across the platforms, but I am wondering whether there's anything else in the sort of aspect of secure aspect of secure access where you saw that will you had to maybe Implement stuff in application logic or you saw things in one platform that you wish were more ubiquitous, you know, and if you can kind of speak to those kind of challenges and opportunities.
+Sarah Allen:        Okay, so we'll officially wrap up the meeting, and thanks everybody for your participation today. 
 
-[29:22.700 - 30:15.000]
-To have a consistent way to identify applications no matter which platform you're in seems to me so valuable. We're one service but there are a lot of services out there that are trying to do the same kind of thing pivotal has a great relationship with the people that add services on their platform and through them. I've encountered a lot of other people trying to do this kind of work. And so I think everybody would be glad to see a secure and consistent way to validate the identity of applications one other thing that I really only like let you touch on but I think is really important too is making sure that these platform level apis. So in Cloud Foundry, it's the cloud controller API.
+Jason Mello:        Yeah. Thanks, everyone. Thank you, Mike.
 
-[30:16.000 - 30:34.200]
-has you really want to design them so that you can give granular access so that you can provision a service account that can only access certain routes or
+Mike Hirawady:      No problem. Thanks for having me.
 
-[30:36.200 - 30:41.800]
-And as granular as you can make it so that if I want to develop something.
-
-[30:42.900 - 30:43.800]
-that
-
-[30:45.000 - 30:53.500]
-Could use that API, for example, if I want to validate that there really is a pod in a given name space.
-
-[30:54.100 - 31:17.000]
-Using that API. I don't I don't want to have to give that service account really expansive permissions to be able to do that. I want something that I can just allow it to ask this one specific question that I want to ask and then not give it any other position permission so that if somebody were to somehow get those access credentials that the service account has they're not going to be able to go very far.
-
-[31:19.600 - 32:19.600]
-So sorry, hopefully my connection come through. So Jerry one thing I wanted to since you were presenting. I wanted to make sure you saw in the chat that Doug is the co-lead of the open service broker API specification. I did see that next time. I just yesterday finally got my legal department to approve me as a contributor. So I have a PR nice or not project that I need to go back and review now that they finally it's been months. It took them a very long time to prove it. So I will be doing that probably in the next two days. Yes. Thank you beyond that. I had a question in addition to kubernetes and Cloud Foundry. Are you looking at supporting any other plow platforms? Are you supporting?
-
-[32:19.600 - 33:19.200]
-A platform list not one of those deals. So we do have other stuff. For example, we have a custom authenticator for I am and then we have a workflow that we call host Factory that people use if they're deploying like Beyonce WS I don't know that implementation as specific as one of these would be required for most other workflows. It's one of those things where when it comes up will know it and we'll have to deal with it but it's not come up right. Now. A lot of armor General tooling has been workable for a lot of different systems whether the reason why I ask is just yeah, I think that's great perspective knowing those use cases where folks have things that go outside of the the cloud native were closed and you know being able to validate.
-
-[33:19.600 - 33:31.300]
-The approach is that we have in that non sort of the cloud native blessed cases is I think interesting to our work.
-
-[33:34.100 - 33:36.800]
-Thank you.
-
-[33:38.700 - 33:55.600]
-Jerry you mentioned a custom authenticator for I am is that AWS? I am specifically I think that's the focus at first, but I'm hoping that it will be more General we have customers that use gcp we have customers that use Azure. So I'm sure we'll need to address all those pieces.
-
-[34:05.100 - 34:10.700]
-Well, thank you for giving me the opportunity to talk about. This is fun. Does anybody else have any questions?
-
-[34:12.600 - 34:32.300]
-I guess only question I would ask how would you compare it to the Vault and what bolts doing with open service broker? Hash corpse. Well, so I know that Vault has a service broker. I don't know how much they're doing with that or how it's being used.
-
-[34:34.000 - 35:11.000]
-I do like that our solution also has the buildpack which makes it easy to inject the secret values into the application at runtime because it installs summon, which is our tool to do that. So I do think that's an advantage for what we've done but in terms of you know, having a service programs are very similar what and so like you have to end up building something like summon to get the secret from vault at runtime and in general because they don't have some in your probably like modifying the code in your application to use a client library or something like that.
-
-[35:12.300 - 35:16.300]
-Some and just puts the values in the environment of the running process.
-
-[35:27.800 - 35:32.800]
-Alright, well, thank you everybody. Thanks for Jerry.
-
-[35:40.000 - 36:15.000]
-So I don't know if we have a fan has connectivity, but we can I looks like we have time to have Michael talk about this use case and project. Thanks. Sorry. My wife just asked me if my son can do piano and he's right above me. So I tell her no, let me just share my screen. Um, so I'm not sure how much everyone knows about sis dig dig.
-
-[36:18.500 - 37:18.400]
-Is it started off a company with an open source project that focused on capturing system calls. So easiest way to think of this dig is TCP dump for system calls. So what we can do is we can look at a Linux based system and we can see all the system calls that are going through it and then capture those system calls into what we call it s cap file and then that s cap Cloud then can then be used to go back and see what was happening on the system from a system called perspective at that time. So what we did is we took that same similar concept of capturing system calls and we wrote a rules engine around the system calls and that's really what Taco is so it allows you to detect abnormal behavior inside of those system calls. We specifically have focused on container based systems. Although it will work for any Linux based system and it is the next only right?
-
-[37:18.400 - 38:02.700]
-Now and this is kind of where the market is starting to kind of Define this term what we call runtime security. We're definitely not the only ones in this space of runtime security. There's other tools out there such as twist lock and aqua fresh tracks also done some things around this as well. And there's one other I think stock rocks. So this is starting to kind of become this more burgeoning space around runtime security. We're the only ones that offer a open source solution to runtime security and we also offer a proprietary version of Falco as well that gives you a lot of features out of the box.
-
-[38:03.400 - 39:00.000]
-So what does abnormal detection can do to detect things like shells or prophecies found inside of a container unexpected outbound connections? So all of a sudden your database container starts making outbound connections to the internet, that would be something that would be abnormal processes start listening on ports that you don't expect binaries being changed inside of a container and so forth the way we want to look at this from a security perspective as well. We can do things in the image. No processed using if a notary and image scanning to make sure that we're not shipping things with vulnerabilities or we know what we're shipping out of a container when the container actually launches most container runtime environments are not immutable. So containers can then make changes to their environment once it's up and running. So installing new packages modifying things and so forth.
-
-[39:00.600 - 40:00.500]
-And what Taco allows you to do is that when we detect this abnormal update Behavior will notify you and that notification is up to you to determine how you want to process it. So while you need it were or why do you need it? So the cloud native Paradigm really gives you a lot of choices. Let's just release down to the development teams, right development developers can package up their application inside of a container and let's just say you don't always know what's inside of that container that development packaged up and want to deploy to your production environment image scanning is seen more as a point in time. So when you scan the image, you know, the image doesn't have any vulnerabilities, but when the container image actually goes to production there's a lag time between when you stand that image and when that container image is actually running as I mentioned running containers aren't necessarily A
-
-[40:00.600 - 41:00.000]
-Edible unless you specifically have them running in that way. The resource isolation Paradigm of containers is much different than the ends. And we see this as a need in the market when you see things like divisor and containers as well and of come around as well that seeks to provide that more VM like isolation for containers. And so what Falco can detect is vulnerabilities and things like container isolation exploited applications things like exposed dashboards or expose API ports for all of a sudden images circuiting launched that we don't expect which the last one exposed dashboards and API ports is kind of a common thing. If we think back to the Tesla the Tesla hack over really wasn't a hack Tesla just left with kubernetes dashboard wide open on the internet. And also what you can do with Falco is
-
-[41:00.600 - 41:11.200]
-To enforce best practices around things like see is DCI socks and everyone's favorite gdpr as well as organizational security best practices.
-
-[41:12.500 - 41:18.900]
-So a little bit more about how Falco actually works and I'll just show a couple other slides that I'll give you a quick demo.
-
-[41:28.300 - 42:15.500]
-Is to certain functions inside of the colonel it uses something called Trace points inside of the kernel and then we have an alpha an early Alpha version of Annie BPF probe that can be loaded up as well. It has limitations. Of course, you need to be running a newer version of a colonel in order to take advantage of that and then these two have EPF support built into it as well. So for those of the people who aren't necessarily comfortable with the kernel module level of integration, then we can do it with EVP up as well. Then this basically this stream of system calls will come into the processing libraries in the event engine that is then rules are applied to that.
-
-[42:21.700 - 43:21.000]
-As far as alerting is concerned so we can log the syslog we can log the file standard out or we can execute a program that program could be something that then goes and post to a web hook or something like that. Well, we want to try and do and why we're actually presenting Falco as a potential sandbox project. The CN CF talk is that we see a lot of possibilities that if we could have other event streams where we could take this Rich rules engine and apply these rules to those other event streams and then also having more generic notification providers as well so that we could hit a web Hook natively from Taco if we could hit or push to something like a messaging system like gnats or something like that natively inside of Falco as well so that we can kind of be this.
-
-[43:21.700 - 43:30.400]
-His engine and then from a modularity cloud native perspective. We can have other events frames that are actually sending us data that were processed.
-
-[43:32.400 - 44:23.700]
-A little bit about the project and growth of the project were actually seeing lots of usage at least from a downloads perspective and Docker Hub poles as well. So we're well over three quarters of a million Docker Hub holes for our images about thirty-four thousand downloads of the actual RPMs themselves. And of course everyone loves GitHub stars or about 805 GitHub stars as well users of notes. So lift his used us for a while and we're in the process of trying to document that story from them, but another great one is cloud dot-gov so cloud dot-gov and by the way this presentation is linked in the the issue, but I open to do the presentation which is in the notes for this meeting.
-
-[44:24.100 - 44:41.100]
-but this right here is actually called dot dot goes documentation that actually talks about how they have this big behavioral monitoring in an experimental mode right now in their Cloud that font our Cloud Foundry environment for cloud dot-gov
-
-[44:42.900 - 44:59.300]
-and then they've also given a presentation at the cloud Foundry Summit as well about detecting tainted apps using Falco and side of the boundary as well. So it's not just something that can work with kubernetes. It is something that can work with founder as well.
-
-[44:59.700 - 45:12.800]
-And so I kind of let you look at the rest of the presentation on your own is are there any questions and I can just give people a quick demo and kind of show how it works very quickly.
-
-[45:15.200 - 45:50.400]
-General would be there's also a good presentation which I can drop in the document are in that meeting minutes as well. There's a good presentation around runtime security that Google gave at qu Connie. You just a few weeks ago. It kind of lays out. What are the areas of security that you need to worry about and kind of defining what the space of runtime security is and what runtime security means and how it's different from supply chain security or infrastructures.
-
-[45:52.100 - 45:56.700]
-So, let me stop my share and share my entire screen.
-
-[46:03.600 - 46:04.200]
-All right.
-
-[46:06.700 - 46:09.800]
-So what we have here is I have a
-
-[46:11.300 - 46:12.500]
-bar in my way
-
-[46:14.000 - 47:05.200]
-So in this environment, I've got a couple different things up and running. So the main thing is that we have Falco up and running here. This is deployed as a Daemon set. We provide Damon set for users to actually quickly deploy. This all of the configuration for Falco is stored in the configuration map and this Damon set will then pull down that configuration. So all of your rules and things like that would be stored in a config map. And then those rules are pulled down when the container is launches or the pods launches launch. The other thing that we have in this environment is Matt's as well. And so Nats is acid acting as our messaging platform. And what Falco will do in this demo is it will push an alert over to Matt and then we have kubis running as well.
-
-[47:06.000 - 47:20.600]
-And what coulis is set up to do is it's set up to listen to a particular topic or a subject and naps and when it detects a critical alert, it will actually go and take action. So let me show you what the rules actually look like.
-
-[47:23.800 - 47:24.500]
-So in the
-
-[47:28.300 - 48:15.100]
-The rules use a pretty simple language. It's the same language that we use for Cystic and what this looks like is you basically just have the field and then some value and then you can string it together with other values as well. There's a lots of different Boolean logic that you can do inside of the rules as well. The other thing that you can do is you can key off of kubernetes metadata as well. So Taco will connect to the communities API solder server and pull that information back so you can say for this particular application that's running in a certain name space with a certain pod name, but certain label I want to be able to take action on it.
-
-[48:18.900 - 49:18.600]
-Rules - Krypto miners running inside of kubernetes. So we take the node front-end application and if I spot a process and I'm in a container. So basically I'm not running on the host system and my command line contains stratum TCP, which is a common protocol that's used for minors. Then I want to throw this alert. Another example is you can list out all like common minor ports in this case and if I see a front-end application making an outbound connection to a minor Port then I want to throw a critical alert as well. So you can see the rule language is actually pretty flexible. It's also fairly simple as well. And then also what we have is over and the coolest side of things. We have a very simple function that basically says if I see a critical alert and I'm not running I'm running inside of a container
-
-[49:18.900 - 49:31.900]
-Then I want to actually take action on that and it won't this will actually do is that if I detect a critical alert running inside of a pot and kubernetes will actually go and delete that particular poem.
-
-[49:34.800 - 49:38.400]
-Any questions before I run this real quick?
-
-[49:40.000 - 50:39.700]
-So this is an ojf. I have a quick question. How is this secured can anybody else inject the critical alert and use that for DDOS attack on a pot? Yeah. So the way it would be secured at least in this particular case is that you have Security on that so that only certain people could actually log into that. The other thing is people would have to get access to the particular post system and they did they wouldn't necessarily easy be easily be able to spoof that it was coming from a particular container because it you have to be inside of the container and then we're actually looking at the system calls themselves and side of the Linux kernel so you would have to somehow spoof the system calls to say that it's hap this particular process is being ran from a
-
-[50:39.900 - 50:40.700]
-the container
-
-[50:42.800 - 51:03.600]
-the other thing that you can do as far as Nats is concerned is a course use TLS so that you're making encrypted connections into into knots as well. So that people can't easily go and see what's being sent or if you're using my Mutual authentication then only certain people being able to connect the net server.
-
-[51:06.800 - 51:24.000]
-But if somebody's able to get to the host system and spoof this and DDOS this then you probably have worst case you have probably have worst situations going on in your environment. If somebody's able to get to the host system and smooth thing. Does that answer your question?
-
-[51:24.900 - 51:27.100]
-Yes. Thanks.
-
-[51:29.200 - 51:46.700]
-So the first thing that I'll do here is I'll go and connect to let me just pull this so I have a node js application up and running but since Dan on the phone, I didn't know if it was appropriate to remotely exploit it.
-
-[51:48.700 - 52:00.200]
-Sure, go ahead. Yeah, so let me just jump onto this running machine real quick and fast Flags.
-
-[52:03.900 - 52:09.200]
-And so the first thing I'll do is I'll just just run a bash terminal on it.
-
-[52:10.200 - 52:10.500]
-Huh?
-
-[52:12.400 - 52:13.500]
-Oh, sorry.
-
-[52:16.400 - 53:16.300]
-Of course when you jump to the demo, nothing starts working, right? I need to specify my name space and there we go. So you see right away that I've opened a terminal and I get an alert right here over in this Falco pod where I'm tailing the logs and you can see that I've opened a shell so it shall was spawned inside of a container with an attached terminal. So somebody's went interactive inside of this container. So what I can do now is I can run something that will actually trigger the alert. So let me actually go over here and see if I can get this to work. It wasn't working earlier via the remote exploit. Let me see if I can get it and so this is actually sending a profile cookie. This profile cookie is actually encoded in this application doesn't actually sanitize the inputs from the cookie and there's a way that you can actually exploit JavaScript by doing it's essentially a form of just-in-time execution it you can inject
-
-[53:16.400 - 53:17.500]
-functions inside
-
-[53:18.800 - 53:19.500]
-Ida
-
-[53:21.100 - 53:44.700]
-application was poorly written in somebody's not sanitizing the inputs. And if I click Send, let's see if it works. It didn't work. So let me go over here and let me just do it this way. So I'll just do a curl and remember that rule that I had opened that if I had stratum TCP in the command line, it would throw a critical alert.
-
-[53:48.000 - 53:56.800]
-And of course, my demo doesn't work, but it should actually go and kill that particular container and shut it down.
-
-[54:06.800 - 55:00.900]
-And of course I tested it before I got on the call and it worked fine, but it should have shut that container down but you can see that it is long. So if I did then hello, I I get an alert right there that I modified or I've created that new file. If I did something like move then I'll us to then unless old I get an alert right there as well that I'm modifying things in the binary directory as well. And these are all kind of common things that you would expect somebody who's getting into a system to do as they're trying to compromise a system. So with that I'll ask if there's any other questions for anyone
-
-[55:03.500 - 55:20.300]
-I have a general question. I might've missed the context for why we're talking about this today. I was wondering if you'd be willing to talk about that a little bit more. What do you mean context so I didn't
-
-[55:21.400 - 55:36.200]
-So and you can feel free to throw this back at me and said did a bad job of this too because I think I might have Mighty did a bad job of explaining things. So it's the secure access for everyone working group.
-
-[55:36.600 - 56:36.500]
-So I guess maybe I'm asking as a you and of me like what is what is what is what we're talking about really to the Charter of the group? I would I would throw out there that it may not necessarily take care of the access perspectives of things and the authentication perspective of things. I was actually under the Prussian the impression that the working group was more focused on cloud native Security in general and how you solve that problem with cognitive Security in general. And if I'm wrong then I've wasted everyone's time. Well, actually I am I think we're also working to tighten up our Charter so that it's clear to newcomers. So but I what I wanted to ask this kind of related to this what we're really seeking to do is kind of figure out is there a common or maybe a few common secure
-
-[56:36.600 - 57:34.900]
-Protectors right? What are the things that if you are coming to setting up a cloud native deployment? What do you need? You know, what are the things that every cloud deployment should have and what are the patterns there and particularly with regard to solving these problems where different clouds have to interoperate and there's kind of complexity and hybrid systems. And so I'm curious in this work you're doing which you've made efforts to make it work in kubernetes not in kubernetes in different places. Are there some things that you are seeing in patterns that have made it easier for you to build something that works in multiple environments in the cloud and are there's areas where you've had to kind of fill in gaps and do things that are substantially different in different environments where you kind of wish there was a little more commonality.
-
-[57:35.900 - 58:35.600]
-Yeah, I think that where the challenges are going to come in from the different clouds and what we've seen is that it's important to provide context and these security events that were throwing and so in this case, we're only integrating in with kubernetes. We can also integrate in with mezzos or Marathon. We can't pull any metadata right now back from something like Todd boundaries. So when these security events happen, we want to be able to access the API and give people information about its this particular application works this particular pot or it's this particular deployment. That's actually the that's causing problems. The other thing is is that we need API access and getting those API access and authentication to those different platforms can sometimes be challenging and then the other thing is that if you're going to take action inside of that, how can you limit these functions that are
-
-[58:35.900 - 58:54.600]
-Action, especially if you're using something like functions as a service or service functions, how can you give them the right level of access to just do that one individual thing that they do without being able to compromise the entire system and I think that kind of goes back to is a Christian.
-
-[58:56.600 - 59:19.600]
-Well, Jerry brought up that point but maybe Christian Testament early, right? Yeah of of how do you know that like you're not ddosing it? And the thing that is taking action is actually taking a is supposed to be taking action, right? And how can you not trick those functions into killing something that it's not supposed to the nice thing is that if it is a
-
-[59:30.300 - 01:00:15.800]
-It is definitely a challenge that we see I think more broadly and this isn't necessarily a knock against the CN CF but if you look at the CN CF landscape security is one area overall, whether if it's authentication or runtime security or infrastructure security is not anywhere on the landscape whatsoever. There's admittance control which allows applications then there's things like Network policy, but I kind of personally feel that security is one of those areas in that landscape that's missing. I agree. I've actually given the same feedback and they told me to feel free to add myself. So I don't know if you've added this.
-
-[01:00:19.500 - 01:01:18.900]
-Fill it out. Yeah, and we've I've opened up an issue on the landscape to say like we're done. I'll go fit where does our commercial product that and so it's still TBD to figure that out as I've talked to some members of the talk. They're like, well, we're not Security Experts. So it's hard for them to kind of digest some of this information. Yeah, I think that that's kind of that's part of what we are trying to like trying to help with right is that it's also hard to put just I don't know. I have mixed feelings. Like there are things you need for security like authorization like identity their these different things that you need that are kind of in their own security world, but but everything needs security so so how do we actually sketch out that landscape? I can't think is one of the questions of this working group and
-
-[01:01:19.400 - 01:01:37.900]
-So we're not there yet. The all of these use case presentations are way for us to get common language and understand the problems that people are trying to solve so so I found this to be really helpful in assisting. Yeah. I hope you keep coming Michael. I like your perspective.
-
-[01:01:41.200 - 01:02:05.700]
-So we just got two minutes left. I think we have a presentation planned for next week. So anyway, I forgot what it is offhand, but we'll send it out. So should we should be having a presentation about the open service broker as well? I'm not sure if we have that scheduled already. It seems to be relevant.
-
-[01:02:07.000 - 01:02:13.800]
-That's a great idea in what respect is there really isn't any security aspect of the OSB API.
-
-[01:02:15.100 - 01:03:15.000]
-Oh, really? No definitely is identity seems to be broken by it for well. Yes, the you can't pass enough identity and yet passes around credentials, but it doesn't really it doesn't really do a whole lot in terms of helping you with security other than passes around credentials. All right talk about how it passes around credentials and whether they're to improve that since it has such a big impact on so many platforms right now. Yeah, I guess we could talk about yeah. Yeah, I think more generically just understanding that there's this goal is having this generic API where anyone can go and ask for services and have those Services went up and then start consuming those Services. You have to ask yourself. How do you restrict access? It would be really dug. Maybe you can find the person who's thinking about like, how do you like issues of trusting services and and dishing out access and whether open service broker has all the
-
-[01:03:15.100 - 01:04:14.900]
-Rolls, it wants to have or whether you know, they're crossed like the the people implementing it are asking for things that maybe need to come from the platforms. Maybe there's somebody who has been focused on developing that area could kind of talk to how it uses the services and off. I think particularly Key Management is kind of a big deal. So I think talk to some of that but I think I'm probably gonna need a little more information to where I can identify the right person for the rest of the stuff. So what I could do is at some future call and of course, I don't know when is the doctor car next week and that's when I'm traveling in Asia for weeks, but the next time on I could talk about the various data that flows back and forth. How do you observe broker gets it does its job relative to credentials and then from that hopefully you guys can then say okay. Here's the problem. We want to talk more about and that I can identify the right person to talk about that or bring them in that makes sense. That's great. And I think we have a couple of presentations already lined up. So whenever your hair back and forth
-
-[01:04:15.000 - 01:04:44.600]
-Be fabulous. Okay, sounds good. So I want to be respectful of everybody's time. It's 12:01. So I thank you so much Jerry and Michael for your presentations, and please feel free to review the notes, and if we got anything wrong, or you want to add color or links. I tried to add some links into the slot into the notes, but please they're at editable by everybody. So, thank you everyone. Thanks everybody. Have a good one.
+Jason Mello:        Really nice, thanks.
