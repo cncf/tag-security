@@ -15,7 +15,7 @@ This falls into 2 categories: process examples (e.g. how well did an assessment 
 
 ## Process Case Studies
 * OPA Assessment
-* In-Toto Assessment
+* in-toto Assessment
 * Falco Assessment
 
 ## Security Practice Case Studies
