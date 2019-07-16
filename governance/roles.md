@@ -5,11 +5,11 @@
 * [Project Leads](#role-of-project-leads)
 * [Group Members](#role-of-members)
 * [TOC Liaison](#toc-liaison)
-* [Facilitation Roles](#facilitation)
+* [Facilitation Roles](#facilitation-roles)
 
 The group may have many members. Within this document, "member" may refer to a Chair, a Technical Lead, or a Member.
 
-All Members are identified in the SIG [README](/readme.md), with annotations
+All members are identified in the SIG [README](/readme.md), with annotations
 where they hold an additional role.
 
 ### Role of members
@@ -96,9 +96,42 @@ TOC, to further the [CNCF mission](https://github.com/cncf/foundation/blob/maste
 
 ## Facilitation roles
 
-Facilitation roles are identified in [github settings](/.github/settings.yaml)
-and include additional permissions in the repo which are governed by policies
-described below.
+Members often contribute by working in small groups that research and discuss
+options and then share their findings with the rest of the group in a
+presentation and typically contribute to the body of work in this
+repository (via Pull Request). Some tasks can be effectively executed
+by simply chiming in on a github issue and independently contributing a PR
+without any particular role or authorization.
+
+This section describes roles where more coordination is helpful and the
+work benefits from identifying one or more members who will take
+on specific responsibilities.  Our goal is to empower members to move forward
+independently, while defining an approval process designed to support
+communication and alignment across the wider group.
+
+New roles in this section are typically defined after someone has acted in
+that role for some time informally, then proposed as an on-going role by Pull
+Request which must be approved by a majority of Chairs.  Process clarifications
+are welcome and PRs can be approved by any single Chair.
+
+Members who take on roles are responsible for
+understanding the approval policies related to their role and ensure that
+commits to the repo are reviewed in accordance with our [governance](./)
+and all actions are within roles defined in this document.
+
+**Write access to the repo**: Where applicable, the following roles define
+specific areas of the repo or actions on issues where changes require write
+access. In any case, governance is not enforced by access permissions, but
+rather by members who are expected to thoughtfully consider their actions to
+support the group.
+
+**Github permissions note**: Facilitation roles are identified in
+[github settings](/.github/settings.yaml) which grants Github permissions.
+Pull Requests to appoint members to new Roles must be approved by at least one
+Chair, along with whatever additional process, if any, is described in this
+document. When a member has multiple roles, the additional role that does not
+require additional access are noted in a comment. PRs to remove someone from
+a role must be approved by the person themselves or a majority of Chairs.
 
 ### Security Assessment Facilitator
 
@@ -115,7 +148,7 @@ and led by a Security Assessment Facilitator, who will:
 
 ### Triage Team
 
-All members are expected to review Pull Requests (PRs), comment on issues, and 
+All members are expected to review Pull Requests (PRs), comment on issues, and
 provide meaningful feedback or helpful references.
 
 Members who have contributed regularly, including discussion on multiple
@@ -138,6 +171,6 @@ Each member of the Triage Team will:
 
 Some on-going projects may have teams where members are identified for
 additional roles and may be required to have specific expertise. For visibility,
-these additional project roles are listed below:  
+these additional project roles are listed below:
 
 * [Security Reviewers](../assessments/guide/security-reviewer.md/)
