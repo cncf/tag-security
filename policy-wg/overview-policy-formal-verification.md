@@ -1,13 +1,13 @@
 # Formal Verification for Policy Configurations
 
 ## Overview
-To borrow from an AWS paper <sup>[[0]](^0)</sup>, the reason for this discussion is:
+To borrow from an AWS paper <sup>[[0]]</sup>, the reason for this discussion is:
 
 > The security challenge for many ... is becoming one of reasoning about static policies for their dynamic systems. Cloud [users] want a tool that allows them to check policy configurations based on their security requirements. 
 
 Let's first define what I mean by "verification". In simplest terms it is a means to tell that a program was built as intended, but it does not say if the _correct_ program was built to solve a particular problem. For example, I might build a perfectly secure coffee maker, when the customer wanted a car! To tell if the right program was built for the job, that requires _validation_ ... though formal verification and validation are very complimentary.
 
-OVERVIEW DIAGRAM <sup>[[2]](^2)</sup> ![OVERVIEW DIAGRAM](overview-formal-verification.png "CONCETPTUAL OVERVIEW")
+OVERVIEW DIAGRAM <sup>[[2]]</sup> ![OVERVIEW DIAGRAM](overview-formal-verification.png "CONCETPTUAL OVERVIEW")
 
 The "formal" part means I have something symbolic, as close to mathematical formulae as possible. Otherwise, just using human prose, or diagrams, or pictures, I can do both verification and validation of a sort, but machines cannot assist in the process (not yet), and it is generally assumed that machine proofs are more reliable than manual processes, especially if ad hoc. In any case, even if some AI existed where diagrams go in and verification comes out it would probably convert diagrams to intermediate symbolic formulae.
 
@@ -15,12 +15,12 @@ I could use formal verification in the context of security, but also performance
 
 Next we need a specification that codifies the intent (security policy requirements).  I like specification here instead of model, since I think model is overloaded and has particular meaning to practitioners. Let's say a model can be an "instantiation" of a particular specification in a particular language or notation. I've seen "contract" also used. In all discussions we are verifying something against the specification. 
 
-A specification defines the desired constraints/properties encoded in the "policy configurations" to be evaluated to achieve the security requirements of a dynamic system. A _policy configuration_ is a combination of a static policy (e.g. a particular set of expressions to be validated) and the context/inputs fulfilling the parameters the specification allows.  Note, the specification can be distinct and separate from the policy, thought some like AWS Zelkova seem to use the policy language itself AS the specification language: "The property to be verified is specified in the policy language itself, eliminating the need for a different specification or formalism for properties." <sup>[[0]](^0)</sup> (The reader may meditate on G&ouml;del or Hofstadter as to whether this is a good idea.  For example, could we use Rego as both specification and policy?) Regardless, let's differentiate between "parameter" as a variable in the specification, and "context" or inputs to the policy evaluation entity that are particular values.  For example AWS considers the Context to be "the principal making the request, the resource being requested, and the specific action being requested." <sup>[[0]](^0)</sup>
+A specification defines the desired constraints/properties encoded in the "policy configurations" to be evaluated to achieve the security requirements of a dynamic system. A _policy configuration_ is a combination of a static policy (e.g. a particular set of expressions to be validated) and the context/inputs fulfilling the parameters the specification allows.  Note, the specification can be distinct and separate from the policy, thought some like AWS Zelkova seem to use the policy language itself AS the specification language: "The property to be verified is specified in the policy language itself, eliminating the need for a different specification or formalism for properties." <sup>[[0]]</sup> (The reader may meditate on G&ouml;del or Hofstadter as to whether this is a good idea.  For example, could we use Rego as both specification and policy?) Regardless, let's differentiate between "parameter" as a variable in the specification, and "context" or inputs to the policy evaluation entity that are particular values.  For example AWS considers the Context to be "the principal making the request, the resource being requested, and the specific action being requested." <sup>[[0]]</sup>
 
 
 Regardless of how we define the specification and policy and inputs, we ultimately desire a tool that evaluates *policy configurations* (policy+context) against a *parameterized specification* of security requirements (intent expressed as properties) so we can verify whether the policy configurations meet the specified security requirements for a particular dynamic system state.  
 
-To quote<sup>[[2]](^2)</sup>:
+To quote<sup>[[2]]</sup>:
 > "With the translations from ideal concepts and from the physical world into formal logic, that we can use the tool of formal proof. In an ideal setting, at this point we are able to make formal correctness guarantees with an absolute degree of assurance. Even in the less than perfect real world, with machine-checked proof we can achieve a level of assurance about our formal statements that surpasses our confidence in mathematical theorems which we base all of physics and engineering on."
 
 As others have observed, there exist several formal methods to prove the connections between properties, specification, and model. The trade-off is between the expressiveness of the logic and the degree of automation. For example SAT solvers make it hard to write down the three required logical artefacts and hard to understand the resulting formalisations, but provide a high degree of automation. Zermelo-Fraenkel Set Theory or Higher-Order Logic make it easier to express properties and specifications precisely and in a readable way, but they require human effort and expertise in performing the proof. Others include model checking and automated first-order theorem proving as two intermediate examples. Here we are focused on what Tim noted as the common use case: a user has a policy and wants to easily verify it against some specification that is available and parameterized.  That implies that experts should produce and package up the specification, and provide automation to the operator user to easily verify her policy.
@@ -41,8 +41,8 @@ Ignoring all the hypothetical discussion above, speaking in terms of what human 
 * CI/CD or daemon running software wants to continuously monitor a stream of configuration changes and validate the updated configurations against their respective specifications,
   * report and alert on the validation
   * Alerts raised should contains detailed difference info that can be used to deduce the changes needed to correct the policy configuration
-* "return to the user a concrete request context using the model generated by the SMT solver when performing the check. The concrete request context will provide information to the user on why a certain check passed or failed." [0]
-* "support for recommending policy repairs in cases when the policy fails a certain check." <sup>[[0]](^0)</sup>
+* "return to the user a concrete request context using the model generated by the SMT solver when performing the check. The concrete request context will provide information to the user on why a certain check passed or failed." <sup>[[0]]</sup>
+* "support for recommending policy repairs in cases when the policy fails a certain check." <sup>[[0]]</sup>
 
 for all the above "policy" examples include:
 * it might be a policy to grant or deny user access to a resource in a multi-tenant cluster,
@@ -64,7 +64,7 @@ As the poor devops person responsible for answering the question "are we secure?
 * attempt to explicitly enumerate all possible requests to a policy (test generator, record/playback)
 * use commercial tools or cloud-specific tools provided by my public cloud host (Zelkova, SecGuru) and don't worry about it
 * define a mapping/translation from a given policy to a logic notation and then convert that to boolean (SAT) or more complex formulas (SMT) and then check if the formulas are satisfiable.
-  * eg encode policies as bit vectors and use Z3 solver <sup>[[1]](^1)</sup>
+  * eg encode policies as bit vectors and use Z3 solver <sup>[[1]]</sup>
 * pick a particular solver or model checker or prover and just play around with it in one particular use case and learn more about it
 * write up GHIs on Formal Verification and hope smarter people jump in and magically make the world a better place :) 
 
@@ -80,7 +80,7 @@ As the poor devops person responsible for answering the question "are we secure?
 
 ## Challenges
 
-* bounded or unbounded analysis? unbounded is NP-complete or maybe NP-hard. Using wildcards is PSPACE-complete but practical <sup>[[0]](^0)</sup>. 
+* bounded or unbounded analysis? unbounded is NP-complete or maybe NP-hard. Using wildcards is PSPACE-complete but practical <sup>[[0]]</sup>. 
 * ordering constraints on statements in a policy, eg. firewall rules
 * policy language constructs such as loops or dynamically allocated arrays
 * per AWS: solvers seem very sensitive to small changes in the input encoding, where a quickly solved problem in our domain becomes non-terminating. Yet, the theory of regular expressions is decidable. how current is this observation? Zelkova "solves regular expression problems using the
@@ -95,9 +95,9 @@ standard translation to deterministic finite automata (DFAs) via non-determinist
 * [@timothyhinrichs](https://github.com/timothyhinrichs)
 * [@tsandall](https://github.com/tsandall)
 
-[^0]: https://d1.awsstatic.com/Security/pdfs/Semantic_Based_Automated_Reasoning_for_AWS_Access_Policies_Using_SMT.pdf
-[^1]: https://sites.cs.ucsb.edu/~bultan/publications/sttt08.pdf
-[^2]: http://ts.data61.csiro.au/publications/nicta_full_text/955.pdf
+[0]: https://d1.awsstatic.com/Security/pdfs/Semantic_Based_Automated_Reasoning_for_AWS_Access_Policies_Using_SMT.pdf
+[1]: https://sites.cs.ucsb.edu/~bultan/publications/sttt08.pdf
+[2]: http://ts.data61.csiro.au/publications/nicta_full_text/955.pdf
 
 ### Historical Note
 
