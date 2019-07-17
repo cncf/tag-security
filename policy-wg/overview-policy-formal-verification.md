@@ -56,9 +56,9 @@ for all the above "policy" examples include:
 
 An ongoing  task in this effort is to catalog the fuller set of interesting use cases/stories and map the enumeration of those to specific features of the verification tool.
 
-## What Can I Do Today On My Own?
+## What Can I Do Today?
 
-As the poor devops person responsible for answering the question "are we secure?" today, there are some things I can do today given enough time, money, people, and focus. These have been built in some form or another already, so I could easily modify or improve such tools to:
+As a devops person responsible for answering the question "are we secure?" today, there are some things one can do today given  time, money, people, and focus. These have been built in some form or another already, so I could modify or improve existing examples:
 
 * look for patterns in policies, e.g., the use of a wildcard that makes resources publicly accessible. 
 * attempt to explicitly enumerate all possible requests to a policy (test generator, record/playback)
@@ -68,18 +68,18 @@ As the poor devops person responsible for answering the question "are we secure?
 * pick a particular solver or model checker or prover and just play around with it in one particular use case and learn more about it
 * write up GHIs on Formal Verification and hope smarter people jump in and magically make the world a better place :) 
 
-## What Could the Future Look Like
-
-* We could create de novo the security policy requirements and specification for various facets of kubernetes and other CNCF projects and encode the security specification in some symbolic language.
+## Possible Action Items
+* We could collect real world policy examples and/or generate test policies to reverse engineer the requirements for policy configuration.
+* We could create de novo the security policy requirements by reviewing existing code and design notes and extracting a more thorough requirements list, and amending as needing.
+* Once we have a solid requirements statement, we can create a formal specification for various facets of kubernetes and other CNCF projects and encode the security specification in some symbolic language.
   * admission control policy 
   * RBAC policy
-  * We can use Z, TLA+ or Alloy or ___ as the specification language
+* We can use Z, TLA+ or Alloy or ___ as the specification language
 * The human operator can then write a new policy and run a tool that uses the specifications for various parameterized operations to verify the policy
 * Human operator or a tool would somehow need to collect, enumerate, generate, or in some way binds inputs to the parameters of a specification:
   * eg. LDAP data, namespace list, IP addresses, buckets, keys, CIDRs, etc
 
 ## Challenges
-
 * bounded or unbounded analysis? unbounded is NP-complete or maybe NP-hard. Using wildcards is PSPACE-complete but practical <sup>[[0]]</sup>. 
 * ordering constraints on statements in a policy, eg. firewall rules
 * policy language constructs such as loops or dynamically allocated arrays
