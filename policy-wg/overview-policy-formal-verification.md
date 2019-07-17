@@ -7,7 +7,7 @@ To borrow from an AWS paper <sup>[[0]](^0)</sup>, the reason for this discussion
 
 Let's first define what I mean by "verification". In simplest terms it is a means to tell that a program was built as intended, but it does not say if the _correct_ program was built to solve a particular problem. For example, I might build a perfectly secure coffee maker, when the customer wanted a car! To tell if the right program was built for the job, that requires _validation_ ... though formal verification and validation are very complimentary.
 
-![OVERVIEW DIAGRAM](overview-formal-verification.png "CONCETPTUAL OVERVIEW") <sup>[[2]](^2)</sup>
+OVERVIEW DIAGRAM <sup>[[2]](^2)</sup> ![OVERVIEW DIAGRAM](overview-formal-verification.png "CONCETPTUAL OVERVIEW")
 
 The "formal" part means I have something symbolic, as close to mathematical formulae as possible. Otherwise, just using human prose, or diagrams, or pictures, I can do both verification and validation of a sort, but machines cannot assist in the process (not yet), and it is generally assumed that machine proofs are more reliable than manual processes, especially if ad hoc. In any case, even if some AI existed where diagrams go in and verification comes out it would probably convert diagrams to intermediate symbolic formulae.
 
