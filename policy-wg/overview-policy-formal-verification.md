@@ -17,8 +17,7 @@ Next we need a specification that codifies the intent (security policy requireme
 
 A specification defines the desired constraints/properties encoded in the "policy configurations" to be evaluated to achieve the security requirements of a dynamic system. A _policy configuration_ is a combination of a static policy (e.g. a particular set of expressions to be validated) and the context/inputs fulfilling the parameters the specification allows.  Note, the specification can be distinct and separate from the policy, thought some like AWS Zelkova seem to use the policy language itself AS the specification language: "The property to be verified is specified in the policy language itself, eliminating the need for a different specification or formalism for properties." <sup>[[0]]</sup> (The reader may meditate on G&ouml;del or Hofstadter as to whether this is a good idea.  For example, could we use Rego as both specification and policy?) Regardless, let's differentiate between "parameter" as a variable in the specification, and "context" or inputs to the policy evaluation entity that are particular values.  For example AWS considers the Context to be "the principal making the request, the resource being requested, and the specific action being requested." <sup>[[0]]</sup>
 
-
-Regardless of how we define the specification and policy and inputs, we ultimately desire a tool that evaluates *policy configurations* (policy+context) against a *parameterized specification* of security requirements (intent expressed as properties) so we can verify whether the policy configurations meet the specified security requirements for a particular dynamic system state.  
+Regardless of how we define the specification and policy and inputs, we ultimately desire a tool that queries the *policy configurations* (policy+context) with respect to a *parameterized specification* of security requirements (intent expressed as properties) so we can verify whether the policy configurations meet the specified security requirements for a particular dynamic system state.
 
 To quote<sup>[[2]]</sup>:
 > "With the translations from ideal concepts and from the physical world into formal logic, that we can use the tool of formal proof. In an ideal setting, at this point we are able to make formal correctness guarantees with an absolute degree of assurance. Even in the less than perfect real world, with machine-checked proof we can achieve a level of assurance about our formal statements that surpasses our confidence in mathematical theorems which we base all of physics and engineering on."
@@ -29,12 +28,14 @@ As others have observed, there exist several formal methods to prove the connect
 
 Ignoring all the hypothetical discussion above, speaking in terms of what human operators want when on pager duty on Xmas...these are some example stories I've heard in various calls and threads that the tool and specifications should improve if not completely automate:
 
-* Human wants to ask questions about the system running under a policy or set of policies:
+* Human operator wants to ask questions about users and resources under a policy or set of policies:
   * Is resource X accessible by a particular user Alice?
   * Can any user deploy to this namespace? 
   * is one policy less-or-equally permissive than another? put another way, check whether a policy is over or under-constrained with respect to another one.
   *  Did I deny access to authorized users unintentionally? If so which ones? Which policy did that?
-  * Is access to a resource  only allowed from a certain range of IP addresses? If so which? If not which policy is granting access to which IPs?
+* Operator wants to ask questions about the network:
+  * Is access to a resource allowed from a certain set (or all, or empty set) of IP addresses? If so which? If not which policy is granting access to which IPs? Which are blocking access?
+  * Are there any NetworkPolicies, Endpoints, or Pods in namespace ‘Web’ that are labeled as ‘Bastion’?
 * Human needs to show a reviewer/auditor that there are no missing or superfluous policies.
 * Human gets a particular response from the combined set of policies (or one very large policy) under test (ACCEPT/DENY) and wants to see the particular policies or policy rules responsible for the response.
 * Human wants to understand the impact of changing policy P to P'. Enumerate the users or resources that will be affected and how.
@@ -65,6 +66,8 @@ As a devops person responsible for answering the question "are we secure?" today
 * use commercial tools or cloud-specific tools provided by my public cloud host (Zelkova, SecGuru) and don't worry about it
 * define a mapping/translation from a given policy to a logic notation and then convert that to boolean (SAT) or more complex formulas (SMT) and then check if the formulas are satisfiable.
   * eg encode policies as bit vectors and use Z3 solver <sup>[[1]]</sup>
+  * eg use FormuLog as the specification and use Z3 solver <sup>[[6]]</sup>
+  * eg use Souffle to evaluate a Datalog specification as discussed in <sup>[[5]]</sup>
 * pick a particular solver or model checker or prover and just play around with it in one particular use case and learn more about it
 * write up GHIs on Formal Verification and hope smarter people jump in and magically make the world a better place :) 
 
@@ -74,7 +77,8 @@ As a devops person responsible for answering the question "are we secure?" today
 * Once we have a solid requirements statement, we can create a formal specification for various facets of kubernetes and other CNCF projects and encode the security specification in some symbolic language.
   * admission control policy 
   * RBAC policy
-* We can use Z, TLA+ or Alloy or ___ as the specification language
+  * network policy eg Tiros <sup>[[3]]</sup>
+* We can use Z, TLA+, Alloy, Souffle <sup>[[4]]</sup>, Rego or ___ as the specification language
 * The human operator can then write a new policy and run a tool that uses the specifications for various parameterized operations to verify the policy
 * Human operator or a tool would somehow need to collect, enumerate, generate, or in some way binds inputs to the parameters of a specification:
   * eg. LDAP data, namespace list, IP addresses, buckets, keys, CIDRs, etc
@@ -98,6 +102,10 @@ standard translation to deterministic finite automata (DFAs) via non-determinist
 [0]: https://d1.awsstatic.com/Security/pdfs/Semantic_Based_Automated_Reasoning_for_AWS_Access_Policies_Using_SMT.pdf
 [1]: https://sites.cs.ucsb.edu/~bultan/publications/sttt08.pdf
 [2]: http://ts.data61.csiro.au/publications/nicta_full_text/955.pdf
+[3]: https://d1.awsstatic.com/whitepapers/Security/Reachability_Analysis_for_AWS-based_Networks.pdf
+[4]: https://souffle-lang.github.io/docs.html
+[5]: http://discovery.ucl.ac.uk/10067190/1/Subotic_10067190_thesis.pdf
+[6]: https://github.com/HarvardPL/formulog
 
 ### Historical Note
 
