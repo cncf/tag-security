@@ -24,20 +24,34 @@ sub-categories. The remaining text is a description of each sub-category.
     - Tools that help to manage, encrypt or distribute secrets and other sensitive information.
 
 - **Identity Lifecycle and & Access Management**
-  - _Identity Lifecycle_
-    - Systems for creating, governing and terminating identities and entitlements for users and systems
-      - Lifecycle management tools like Okta, FreeIPA
-      - Service identity for identifying ephemeral workloads, e.g. Spiffe
-      - Identity federation and single sign-on, typically supporting OpenID connect and SAML
-      - Directory and attribute management, typically LDAP
-  - _Access Controls_
-    - Controls within the orchestration layer to provide minimum required access to orchestrator resources.
-    - Resource authorization
-      - OAuth, IAM
-      - Policy engines
+  - _Identity Provisioning and Lifecycle Management_
+    - Enrollment and rovisioning of identities for individuals
+      - Lifecycle management of identities and associated roles and entitlements
+      - Includes implementations of protocols like SCIM for cross-domain provisioning
+      - See, e.g. NIST SP 800-63A
+    - Identity provisioning for service and machine identities
+      - Cloud-native identity for ephemeral workloads, e.g. the spiffe project
+      - Historical implementations may be based on, or need to interact with, systems like Kerberos
+    - Directory and attribute management
+      - Typically implemented atop protocols like LDAP, or other hierarchical and graph-based stores
+  - _Identity Consumption and Single-sign-on_
+    - Identity federation and single sign-on
+      - Typically supporting OpenID connect and SAML
+    - Anonymization
+    - Identity intelligence
+      - Know-Your-Customer/Anti-Money-Laundering projects
+      - Anti-fraud systems
+  - _Access control and enforcement engines_
+    - Attribute and policy-based resource authorization engines and libraries
+      - Including general policy engines
+    - Role-based access control engines
+      - Including libraries and standards for common roles
     - Privileged Access Management
-      - Applying higher levels of control for sensitive actions, including just-in-time access and enhaned logging
-  - _Service access_
+      - Applying higher levels of control for sensitive actions, including just-in-time access and enhanced logging
+  - _Resource-specific access layers_
+    - Controls within the orchestration layer to provide minimum required access to orchestrator resources.
+    - API access management tools
+      - Engines for allowing or rejecting API actions based on action type or resource
     - Service admittance & admission controllers
       - Allowing new service instances to join existing services, and preventing insecure application instances from running.
     - Storage access
