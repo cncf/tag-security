@@ -9,24 +9,35 @@ Let's first define what I mean by "verification". In simplest terms it is a mean
 
 OVERVIEW DIAGRAM <sup>[[2]]</sup> ![OVERVIEW DIAGRAM](overview-formal-verification.png "CONCETPTUAL OVERVIEW")
 
-The "formal" part means I have something symbolic, as close to mathematical formulae as possible. Otherwise, just using human prose, or diagrams, or pictures, I can do both verification and validation of a sort, but machines cannot assist in the process (not yet), and it is generally assumed that machine proofs are more reliable than manual processes, especially if ad hoc. In any case, even if some AI existed where diagrams go in and verification comes out it would probably convert diagrams to intermediate symbolic formulae.
+The "formal" part means I have something symbolic, as close to mathematical formulae as possible. Otherwise, just using human prose, or diagrams, or pictures, I can do both verification and validation of a sort, but machines cannot assist in the process (not yet), and it is generally assumed that machine proofs are more reliable than manual processes, especially if such manual processes are ad hoc. In any case, even if some AI existed where diagrams go in and verification comes out it would probably convert diagrams to intermediate symbolic formulae. I speak of formal verification in the context of security policy here, but formal verification could also be used to verify other types of securiy requirements.  
 
-I could use formal verification in the context of security, but also performance, efficiency, correct blockchain contracts, or any other set of requirements devised by humans that benefit from machine aided verification.  However, here we are focused only on security requirements, and in particular *security policy* verification. I would define security policy requirements as the high-level human intent for how the system should behave in terms of who can use it and how (i.e. what operations are allowed by which users and on what resources or with which capabilities), and how data should be managed. (I suspect a side-effect of even this minimal focus will yield improvements in reliability, integrity, and performance, too.) Referring to the overview diagram, security requirements would be a collection of constraints/properties that can be expressed in both human languages and then translated to machine executable symbolic expressions.  
+First we need requirements for a secuirty policy. I would define the security policy requirements as the high-level human intent for a cloud native system that constrains:
 
-Next we need a specification that codifies the intent (security policy requirements).  I like specification here instead of model, since I think model is overloaded and has particular meaning to practitioners. Let's say a model can be an "instantiation" of a particular specification in a particular language or notation. I've seen "contract" also used. In all discussions we are verifying something against the specification. 
+* who can use it (human or machine users)
+* what operations are allowed by those users
+* what resources can be accessed or modified by those operations (leaving resources undefined, could be services, VMs, data)
+* and possibly  which capabilities are required by those operations. 
 
-A specification defines the desired constraints/properties encoded in the "policy configurations" to be evaluated to achieve the security requirements of a dynamic system. A _policy configuration_ is a combination of a static policy (e.g. a particular set of expressions to be validated) and the context/inputs fulfilling the parameters the specification allows.  Note, the specification can be distinct and separate from the policy, thought some like AWS Zelkova seem to use the policy language itself AS the specification language: "The property to be verified is specified in the policy language itself, eliminating the need for a different specification or formalism for properties." <sup>[[0]]</sup> (The reader may meditate on G&ouml;del or Hofstadter as to whether this is a good idea.  For example, could we use Rego as both specification and policy?) Regardless, let's differentiate between "parameter" as a variable in the specification, and "context" or inputs to the policy evaluation entity that are particular values.  For example AWS considers the Context to be "the principal making the request, the resource being requested, and the specific action being requested." <sup>[[0]]</sup>
+As such, security policy requirements are simply a collection of constraints/properties on the above that can be expressed in  human language and possibly diagrams and other notation (not requiring any particular format or framework).  
 
-Regardless of how we define the specification and policy and inputs, we ultimately desire a tool that queries the *policy configurations* (policy+context) with respect to a *parameterized specification* of security requirements (intent expressed as properties) so we can verify whether the policy configurations meet the specified security requirements for a particular dynamic system state.
+Next we need a specification that refines this intent (security policy requirements) into something machine readable, but not yet as specific as a logic language.  I like specification here instead of model, since I think model is overloaded and has particular meaning to practitioners. Let's say a model can be an "instantiation" of a particular specification in a particular language or notation. I've seen "contract" also used. In all discussions we are verifying something against the specification. 
+
+The specification encodes the desired constraints/properties to be evaluated to achieve the security policy requirements of the cloud native system.  Note, the specification can be distinct and separate from the policy expression itself, thought some like AWS Zelkova seem to use the policy language itself AS the specification language: "The property to be verified is specified in the policy language itself, eliminating the need for a different specification or formalism for properties." <sup>[[0]]</sup> 
+
+Let's also define a "parameter" as a variable in the specification, and "context" or inputs to the policy used by the policy evaluation software; context binds specification parameters to a policy with particular values.  For example AWS considers the Context to be "the principal making the request, the resource being requested, and the specific action being requested." <sup>[[0]]</sup> A _policy configuration_ is a combination of a static policy (e.g. a particular set of expressions to be validated) and the context/inputs fulfilling the parameters the specification allows. 
+
+Once we define the specification/parameters, policy itself, and context/inputs, we ultimately desire a tool that queries the policy configurations (policy+context) with respect to a parameterized specification of security requirements (intent expressed as properties) so we can verify whether the policy configurations meet the specified security requirements for a particular dynamic system state.
 
 To quote<sup>[[2]]</sup>:
 > "With the translations from ideal concepts and from the physical world into formal logic, that we can use the tool of formal proof. In an ideal setting, at this point we are able to make formal correctness guarantees with an absolute degree of assurance. Even in the less than perfect real world, with machine-checked proof we can achieve a level of assurance about our formal statements that surpasses our confidence in mathematical theorems which we base all of physics and engineering on."
 
-As others have observed, there exist several formal methods to prove the connections between properties, specification, and model. The trade-off is between the expressiveness of the logic and the degree of automation. For example SAT solvers make it hard to write down the three required logical artefacts and hard to understand the resulting formalisations, but provide a high degree of automation. Zermelo-Fraenkel Set Theory or Higher-Order Logic make it easier to express properties and specifications precisely and in a readable way, but they require human effort and expertise in performing the proof. Others include model checking and automated first-order theorem proving as two intermediate examples. Here we are focused on what Tim noted as the common use case: a user has a policy and wants to easily verify it against some specification that is available and parameterized.  That implies that experts should produce and package up the specification, and provide automation to the operator user to easily verify her policy.
+As others have observed, there exist several formal methods to prove the connections between constraints/properties, specification, and model. The trade-off is between the expressiveness of the logic and the degree of automation. For example SAT solvers make it hard to write down the required logical artefacts and hard to understand the resulting formalisations, but provide a high degree of automation. Zermelo-Fraenkel Set Theory (e.g. Z language) or Higher-Order Logic (e.g. Haskell) make it easier to express properties and specifications precisely and in a readable way, but they require human effort and expertise in performing the proof. Others include model checking and automated first-order theorem proving as intermediate examples. 
+
+Let's consider a common use case: a user has a policy and wants to easily verify it against some specification that is available (and parameterized).  Somehow someone should produce and package up the specification, and provide automation to the operator user to easily verify her policy.
 
 ## Use Cases/Stories
 
-Ignoring all the hypothetical discussion above, speaking in terms of what human operators want when on pager duty on Xmas...these are some example stories I've heard in various calls and threads that the tool and specifications should improve if not completely automate:
+Ignoring all the hypothetical discussion above, speaking in terms of what human operators want...these are some example ideas I've heard in various calls and threads that the tool and specifications should improve if not completely automate:
 
 * Human operator wants to ask questions about users and resources under a policy or set of policies:
   * Is resource X accessible by a particular user Alice?
@@ -45,7 +56,7 @@ Ignoring all the hypothetical discussion above, speaking in terms of what human 
 * "return to the user a concrete request context using the model generated by the SMT solver when performing the check. The concrete request context will provide information to the user on why a certain check passed or failed." <sup>[[0]]</sup>
 * "support for recommending policy repairs in cases when the policy fails a certain check." <sup>[[0]]</sup>
 
-for all the above "policy" examples include:
+Considering the above "policy" examples:
 * it might be a policy to grant or deny user access to a resource in a multi-tenant cluster,
 * or it might be a policy that requires certain syscall activity to be monitored on some pods with certain labels,
 * or it might be a policy that says network traffic that is regulated by PCI or HIPAA should be read-only to some microservices but writeable by others,
@@ -55,7 +66,7 @@ for all the above "policy" examples include:
 * deny deployments of load balancers that do not use https traffic
 * check compliance whenever a new resource is created or the policy attached to it is changed. 
 
-An ongoing  task in this effort is to catalog the fuller set of interesting use cases/stories and map the enumeration of those to specific features of the verification tool.
+An ongoing task in this effort is to catalog the fuller set of interesting use cases/stories and map the enumeration of those to specific features of the verification tool.
 
 ## What Can I Do Today?
 
@@ -73,14 +84,14 @@ As a devops person responsible for answering the question "are we secure?" today
 
 ## Possible Action Items
 * We could collect real world policy examples and/or generate test policies to reverse engineer the requirements for policy configuration.
-* We could create de novo the security policy requirements by reviewing existing code and design notes and extracting a more thorough requirements list, and amending as needing.
-* Once we have a solid requirements statement, we can create a formal specification for various facets of kubernetes and other CNCF projects and encode the security specification in some symbolic language.
+* We could create de novo the security policy requirements by reviewing existing code and design notes and extracting a more thorough requirements document that can be translated into some form of a machine readable specification.
+* Once we have a solid requirements document, we can create a formal specification for various facets of kubernetes and other CNCF projects and encode the security specification in some symbolic language.
   * admission control policy 
   * RBAC policy
   * network policy eg Tiros <sup>[[3]]</sup>
-* We can use Z, TLA+, Alloy, Souffle <sup>[[4]]</sup>, Rego or ___ as the specification language
+* We can use Z, TLA+, Alloy, Souffle <sup>[[4]]</sup>, Rego or _add your favorite one here__ as the specification language
 * The human operator can then write a new policy and run a tool that uses the specifications for various parameterized operations to verify the policy
-* Human operator or a tool would somehow need to collect, enumerate, generate, or in some way binds inputs to the parameters of a specification:
+* Human operator or a tool would somehow need to collect, enumerate, generate, or in some way bind inputs to the parameters of a specification:
   * eg. LDAP data, namespace list, IP addresses, buckets, keys, CIDRs, etc
 
 ## Challenges
