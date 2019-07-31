@@ -1,5 +1,7 @@
 # CNCF Special Interest Group for Security (SIG-Security)
 
+<img src="https://github.com/cncf/artwork/blob/master/other/sig-security/horizontal/color/sig-security-horizontal-color.png" width="300">
+
 ## Objective
 
 SIG-Security facilitates collaboration to discover and produce resources which enable secure access, policy control and safety for operators, administrators, developers, and end-users across the cloud native ecosystem.
