@@ -1,10 +1,10 @@
-|  Project | Notes                        |            Project Contacts           |    Lead    |    Volunteer    |   Volunteer  | Volunteer | Observer   |
-|:--------:|------------------------------|:-------------------------------------:|:----------:|:---------------:|:------------:|-----------|------------|
-| KeyCloak | Next                         |                                       | lumjjb     | harche          | cloudsriseup | danmx     | rficcaglia |
-| Falco    | After Falco                  | Michael Ducy                          |            | Daniel Iziourov |              |           |            |
-| Harbor   |                              |                                       |            | JustinCappos    | rficcaglia   | ? qnetter |            |
-| Notary   |                              |                                       |            | ? jonmuk        |              |           |            |
-| NSM      | Justin and Robert in contact | edwarnicke, nickolaev, fkautz, haiodo | rficcaglia |                 |              |           |            |
-| Strimz   |                              |                                       |            |                 |              |           |            |
-| Envoy    |                              |                                       |            |                 |              |           |            |
-| Fluentd  |                              |                                       |            |                 |              |           |            |
+|  Project | Ready for assessment? | Notes                        |            Project Contacts           |      Lead     |              Volunteers             | Observers  |
+|:--------:|-----------------------|------------------------------|:-------------------------------------:|:-------------:|:-----------------------------------:|------------|
+| [KeyCloak](https://www.keycloak.org/) |                       | Next                         |                                       | justincormack | lumjjb, harche, cloudsriseup, danmx | rficcaglia |
+| [Falco](https://sysdig.com/opensource/falco/)    |                       | After Falco                  | Michael Ducy                          |               | Daniel Iziourov                     |            |
+| [Harbor](https://goharbor.io/)   |                       |                              |                                       |               | JustinCappos, rficcaglia, qnetter?  |            |
+| [Notary](https://github.com/theupdateframework/notary)   |                       |                              |                                       |               | ? jonmuk                            |            |
+| [NSM](https://networkservicemesh.io/)      |                       | Justin and Robert in contact | edwarnicke, nickolaev, fkautz, haiodo | rficcaglia    |                                     |            |
+| [Strimzi](https://strimzi.io/)   |                       |                              |                                       |               |                                     |            |
+| [Envoy](https://www.envoyproxy.io/)    |                       |                              |                                       |               |                                     |            |
+| [Fluentd](https://www.fluentd.org/)  |                       |                              |                                       |               |                                     |            |
