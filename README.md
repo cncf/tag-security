@@ -1,6 +1,6 @@
 # CNCF Special Interest Group for Security (SIG-Security)
 
-<img src="https://github.com/cncf/artwork/blob/master/other/sig-security/horizontal/color/sig-security-horizontal-color.png" width="300">
+<img src="https://github.com/cncf/artwork/blob/master/other/sig-security/horizontal/color/sig-security-horizontal-color.svg" width="300">
 
 ## Objective
 
