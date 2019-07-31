@@ -29,6 +29,7 @@ different people in a large organization.
 * Administrators: Security, Compliance/Audit
 * Developers, including Third Party Security Products
 * End-users
+* Platform Implementers
 
 A project will often have a very focused target audience and not all
 use cases are applicable in every situaton.  The use cases below are a guide
@@ -160,8 +161,18 @@ impact of repeated request on the rest of the infrastructure.
 
 * As an end user, I can understand the effect of changes to policy that I am making
 
+# Platform Implementer
 
-
+* As a platform implementer I can make my organization's **enterprise, network and quota operators** successful.
+* As a platform implementer I can make my organization's **security administrators and compliance officers** successful.
+* As a platform implementer I can provide central administration of cloud resources to my **operators and administrators**.
+* As a platform implementer I can provide compartmentalization of cloud resources for delegation purposes by **operators and administrators**. 
+* As a platform implementer I can allow my **operators and administrators** to delegate administration of resources.
+* As a platform implementer I can enable my **security administrators** to constrain the behavior of **developers** by setting guardrails.
+* As a platform implementer I can enable my **security administrators and compliance officers** to enforce auditing of access policies. 
+* As a platform implementer I can enable my **security administrators and compliance officers** the auditing of resource access.
+* As a platform implementer I can enable my **compliance officers** the setting of audit logging policies for my organization's resources
+* As a platform implementer I can enable my **compliance officers** to certify the non-violation of my organization's compliance needs.
 
 
 
