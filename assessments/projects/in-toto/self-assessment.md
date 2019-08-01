@@ -18,14 +18,14 @@ information about the chain itself.
 ## Background 
 
 Modern software is built through a complex series of steps called a _software
-supply chain_.  These steps are performed as the software is written, tested,
+supply chain_. These steps are performed as the software is written, tested,
 built, packaged, localized, obfuscated, optimized, and distributed.  In a
 typical software supply chain, these steps are "chained" together to transform
 (e.g., compilation) or verify the state (e.g., the code quality) of the project
 in order to drive it into a _delivered product_, i.e., the finished software
 that will be installed on a device. Usually, the software supply chain starts
 with the inclusion of code and other assets (icons, documentation, etc.) in a
-version control system  The software supply chain ends with the creation,
+version control system. The software supply chain ends with the creation,
 testing and distribution of a delivered product.
 
 
@@ -61,7 +61,7 @@ Currently, supply chain security strategies are limited to securing each
 individual step within it. For example, Git commit signing controls which
 developers can modify a repository, reproducible builds enables multiple
 parties to build software from source and verify they received the same result,
-and there are a myriad of security systems that protect software deliver.
+and there are a myriad of security systems that protect software delivery.
 These building blocks help to secure an individual step in the process.
 
 
@@ -74,8 +74,8 @@ malicious actors because there is no mechanism to verify that:
 2. that tampering did not occur in between steps.
 
 For example, a web server compromise was enough to allow hackers to redirect
-user downloads to a modified Linux Mint disk image, even though  every single
-package in the image was signed and the image checksums  on the site did not
+user downloads to a modified Linux Mint disk image, even though every single
+package in the image was signed and the image checksums on the site did not
 match. Though this was a trivial compromise, it allowed attackers to build a
 hundred-host botnet in a couple of hours due to the lack of verification on the
 tampered image.
@@ -85,7 +85,7 @@ tampered image.
 in-toto is geared towards protecting the software supply chain _as a whole_. In
 order to achieve this, in-toto provides a series of mechanisms to define:
 
-* What steps are to be carried in the supply chain
+* What steps are to be carried out in the supply chain
 * Who can carry out each step
 * How the artifacts between each step interconnect with each other
 
@@ -106,7 +106,7 @@ specific requirements are up to each integrator to define.
 
 ### Intended Use
 
-For project that produces built artifacts (e.g. binary executable, container
+For a project that produces built artifacts (e.g. binary executable, container
 image, website), in-toto can be used to ensure that the intended process is
 carried out to integrate multiple sources and produce the desired artifact(s).
 If a project is used as source code, then in-toto is less applicable (although
@@ -127,7 +127,7 @@ in-toto are heavily dependent on the deployment’s practices.
 
 
 Required pre-conditions:
-1. CI system or buildserver is in place to package releases.
+1. CI system or buildserver is in place to package releases
 2. Written process document 
 
 
@@ -135,7 +135,7 @@ We also recommend considering the following, as to whether they will be
 required as part of the pipeline:
 
 1. Git (or any other VCS) commit/tag signing and verification is not in place
-2. A secure software update system (e.g., TUF)  is used.
+2. A secure software update system (e.g., TUF) is used
 3. A mechanism for distributing package metadata to the end user is available
 
 ### Target users and use cases 
@@ -158,17 +158,20 @@ Use cases
 ### Operation
 
 A project owner declares and signs a layout of how the supply chain's steps
-need to be carried out, and by who. When these steps are performed, the
+need to be carried out, and by whom. When these steps are performed, the
 involved parties will record their actions and create a cryptographically
-signed statement — called Iink metadata — for the step they performed. The link
+signed statement — called link metadata — for the step they performed. The link
 metadata recorded from each step can be verified to ensure that all steps were
 carried out appropriately and by the correct party in the manner specified by
 the layout.
 
 
-You can read on how to use the Python implementation to define layouts here and
-how to produce signed attestations here. A full-fledged user-guide is scheduled
-to be released in readthedocs.io as part of this year’s roadmap.
+You can read on how to use the Python implementation to define layouts
+[here](https://github.com/in-toto/in-toto/#layout) and how to produce signed
+attestations
+[here](https://github.com/in-toto/in-toto/#carrying-out-software-supply-chain-steps).
+A full-fledged user-guide is scheduled to be released in readthedocs.io as part
+of this year’s roadmap.
 
 ## Project Design
 
@@ -197,7 +200,7 @@ it with his private key and publish it so clients can use it for verification.
 
 Functionaries are the parties in charge of carrying out the steps within the
 supply chain. When doing so, they will also generate an accompanying
-attestation of their actions in the form of link metadata. Thelink metadata
+attestation of their actions in the form of link metadata. The link metadata
 will contain information such as the command ran, the artifacts used as input,
 the artifacts produced (both with their hashes), as well as other environment
 information (e.g., filesystem status, environment variables, standard streams,
@@ -225,7 +228,7 @@ in-toto-verify) will perform the following checks for the client:
    link metadata matches the rules described
 
 
-If any of these four guarantees are met, then in-toto blocks the installation
+If any of these four guarantees are not met, then in-toto blocks the installation
 of software and describes the reason.
 
 
@@ -259,7 +262,7 @@ that can:
 * Interpose between two existing elements of the supply chain to change the
   input of a step. For example, an attacker may ask a hardware security module
   to sign a malicious copy of a package before it is added to the repository
-  and signed repository metadata is created to index it
+  and signed repository metadata is created to index it.
 * Act as a step (e.g., compilation), perhaps by compromising or coercing the
   party that usually performs that step. For example, a hacked compiler could
   insert malicious code into binaries it produces.
@@ -375,8 +378,8 @@ than one which, for example, can only alter localization files. Further, a
 compromise in functionary keys that do not create a product is restricted to a
 fake check attack (row two). To trigger an unintended retention, the first step
 must also have rules that allow for some artifacts before the `DELETE` rule
-(e.g., the `ALLOW` rule with a similar artifact pattern). This is because rules
-behave like artifact rules, and the attacker can leverage the ambiguity of the
+(e.g., the `ALLOW` rule with a similar artifact pattern). This is because artifact rules
+behave like firewall rules, and the attacker can leverage the ambiguity of the
 wildcard patterns to register an artifact that was meant to be deleted.
 Lastly, note that the effect of product modification and unintended retention
 is limited by the namespace on such rules (i.e., the `artifact_pattern`).
@@ -477,7 +480,7 @@ these practices:
 
 * all code is pushed into a feature branch and reviewed by at least one core
   member. Pushes to master (develop) are forbidden
-* All pull-requests are run into travis-ci (linux, python 2.7, 3.4, 3.5, 3.6)
+* All pull-requests are run into travis-ci (linux, python 2.7, 3.5, 3.6, 3.7)
   and appveyor (windows) and more than 240+ unit tests are run
 * Static analysis is performed using python-bandit
 * Code style is performed using pylint following the lab’s canonical pylintrc
@@ -488,7 +491,7 @@ these practices:
      new version
    * A version bump commit is added
    * A signed tag is created
-   * .zip and .tar.gz releases are generated and signed with the gpg  keys:
+   * .zip and .tar.gz releases are generated and signed with the gpg keys:
      `"903BAB73640EB6D65533EFF3468F122CE8162295"`
      `"8BA69B87D43BE294F23E812089A2AD3C07D962E8"`
 * The resulting releases and signatures are both uploaded to Github and PyPI,
@@ -521,7 +524,7 @@ list in-toto-public@googlegroups.com
 Response Team:
 * Justin Cappos (@JustinCappos)
 * Santiago Torres-Arias (@SantiagoTorres)
-* Lukas Pühringher (@Lukpueh)
+* Lukas Pühringer (@lukpueh)
 
 Process:
 
@@ -539,7 +542,7 @@ At the time of writing, in-toto consists of three implementations and three
 integration projects.
 
 #### Implementations
-Three in-toto implementations exist for Go, Python and Java. These three implementations are interoperable, and the Python implementation is the one that most closely follows the spec. As such, this is the one that’s intended to be adopted into the CNCF.[a]
+Three in-toto implementations exist for Go, Python and Java. These three implementations are interoperable, and the Python implementation is the one that most closely follows the spec. As such, this is the one that’s intended to be adopted into the CNCF.
 
 
 #### Integrations
@@ -555,7 +558,7 @@ Three integration projects exist:
 ## Roadmap
 
 Project has an organizational roadmap and a roadmap for its python
-implementation, next steps[b] related to this security assessment are:
+implementation, next steps related to this security assessment are:
 
 * Working towards the CII silver badge (currently 95% complete)
 * Formalizing the library APIs between different implementations
@@ -596,10 +599,10 @@ following:
 Other bugs found retroactively only resulted in, at the worst, a false positive
 result when verifying:
 
-* [One](https://github.com/in-toto/in-toto/pull/259) issue in which a certain
+* [One](https://github.com/in-toto/in-toto/pull/262) issue in which a certain
   set of artifact rules would fail verification (i.e., report an error) even on
   valid supply chains.
-* [One](https://github.com/in-toto/in-toto/issue/170) issue in which signatures
+* [One](https://github.com/in-toto/in-toto/issues/171) issue in which signatures
   generated using gnupg would fail to verify using the openssl backend due to a
   mishandling of zero-padding.
 
@@ -637,7 +640,7 @@ authentication (due to the SMS requirements).
 
 in-toto is designed to be cloud-agnostic, which has resulted in deployments in
 cloud-native, hybrid-cloud and cloud-edge deployments. We will use examples of
-these deployments to exemplify its possible operational considerations The
+these deployments to exemplify its possible operational considerations. The
 deployments described here are:
 
 
@@ -646,7 +649,7 @@ deployments described here are:
 
 
 There is a third case study for the Datadog agent integrations downloader,
-which widely described on this [blogpost](https://www.datadoghq.com/blog/engineering/secure-publication-of-datadog-agent-integrations-with-tuf-and-in-toto/).
+which is widely described on this [blog post](https://www.datadoghq.com/blog/engineering/secure-publication-of-datadog-agent-integrations-with-tuf-and-in-toto/).
 
 #### Reproducible Builds rebuilder constellation
 
@@ -681,7 +684,7 @@ Within the context of this project, the project owner role matches that of the
 debian packagers, which define the layout and package in-toto as well as the
 transport for their clients. The project owner public key is also part of the
 debian keyring and is used to sign and verify package-specific layouts, as well
-as fallback layout for those packages that do not have a layout defined for
+as a fallback layout for those packages that do not have a layout defined for
 themselves yet.
 
 
@@ -703,7 +706,7 @@ install [package-name]`.
 
 #### Cloud Native builds with Jenkins and Kubernetes
 
-In the context of cloud native applications, in-toto is used by Control Planeto
+In the context of cloud native applications, in-toto is used by Control Plane to
 track the build and quality-assurance steps on kubesec, a Kubernetes resource
 and configuration static analyzer. In order to secure the kubesec supply chain,
 we developed two in-toto components: a Jenkins plugin and a Kubernetes
@@ -714,7 +717,7 @@ below shows a (simplified) graphical depiction of their supply chain.
 
 This deployment exemplifies an architecture for the supply chains of cloud
 native applications, in which new container images, serverless functions and
-many types of deployments are quickly updated using highly-automated pipelines
+many types of deployments are quickly updated using highly-automated pipelines.
 In this case, a pipeline serves as a coordinator, scheduling steps to worker
 nodes that serve as functionaries. These functionaries then submit their
 metadata to an in-toto metadata store. Once a new artifact is ready to be
@@ -762,8 +765,8 @@ chain.  The following projects relate to in-toto or interact with it:
 * [Grafeas](https://grafeas.io) -- serves as a store for metadata related to
   supply chain steps but is not a security product.  In-toto serves an
   important role in securing the metadata necessary for validation.  There is
-  an in-toto / Grafeas integration branch on the grafeas repository here as
-  well as issues on creating a tighter integration
+  an in-toto / Grafeas integration branch on the grafeas repository as
+  well as issues on creating a tighter integration.
 * [SPDX](https://spdx.org) -- describes a metadata format about the creation of
   a piece of software and its resulting properties.  In-toto could provide
   cryptographic validation of this metadata and the SPDX information can be
