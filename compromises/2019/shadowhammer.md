@@ -13,7 +13,11 @@ hardware drivers and other ASUS tools.
 Over a million users might have downloaded and installed a 
 backdoored version of the application. For example, a report by
 Kaspersky shows over 57,000 Kaspersky users have installed
-the backdoored version of ASUS Live Update Utility. 
+the backdoored version of ASUS Live Update Utility.
+Interestingly, a second stage of the attack was deployed
+on at least 600 specific systems whose mac addresses were
+hardcoded to receive a secondary payload.
+
 
 ## Type of Compromise
 
