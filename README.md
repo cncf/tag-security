@@ -74,6 +74,7 @@ security of the system, such as auditing and explainability features.
 * Zach Arnold ([@zparnold](https://github.com/zparnold)), Ygrene Energy Fund
 * Tsvi Korren ([@tsvikorren](https://github.com/tsvikorren)), Aqua Security
 * Simarpreet Singh ([@simar7](https://github.com/simar7))
+* Michael Ducy ([@mfdii](https://github.com/mfdii))
 * Craig Ingram ([@cji](https://github.com/cji)), Salesforce
 * Roger Klorese ([@qnetter](https://github.com/qnetter)), SUSE
 * Emily Fox([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A.
