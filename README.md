@@ -1,5 +1,7 @@
 # CNCF Special Interest Group for Security (SIG-Security)
 
+<img src="https://github.com/cncf/artwork/blob/master/other/sig-security/horizontal/color/sig-security-horizontal-color.svg" width="300">
+
 ## Objective
 
 SIG-Security facilitates collaboration to discover and produce resources which enable secure access, policy control and safety for operators, administrators, developers, and end-users across the cloud native ecosystem.
@@ -72,6 +74,7 @@ security of the system, such as auditing and explainability features.
 * Zach Arnold ([@zparnold](https://github.com/zparnold)), Ygrene Energy Fund
 * Tsvi Korren ([@tsvikorren](https://github.com/tsvikorren)), Aqua Security
 * Simarpreet Singh ([@simar7](https://github.com/simar7))
+* Michael Ducy ([@mfdii](https://github.com/mfdii))
 * Craig Ingram ([@cji](https://github.com/cji)), Salesforce
 * Roger Klorese ([@qnetter](https://github.com/qnetter)), SUSE
 * Emily Fox([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A.
