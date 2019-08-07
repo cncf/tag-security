@@ -124,10 +124,12 @@ namespace "bar", and wants to reliably verify her encoded policy does that
 eg "baz").  
 
 This is expressed in our specification as something like:
+
 "foo" in pod.labels & node.namespace = "bar" => 
 node.namespace = "bar" | ( "bar" not in node.namespaces & node.namespace = Nil)
 
 This is translated to boolean variables:
+
 ~p1 | ~p2 | p3 | (p4 & p5)
 
 A theory solver checks its satisfiability given values for the context of the 
