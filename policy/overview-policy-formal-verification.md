@@ -136,13 +136,15 @@ A theory solver checks its satisfiability given values for the context of the
 system with its existing policies and labels and namespaces:
 
 UNSAT
-pod.labels: "foo,baz"
-pod.node.namespace = "bar"
+
+* pod.labels: "foo,baz"
+* pod.node.namespace = "bar"
 
 UNSAT
-pod.labels: "baz"
-"bar" in node.namespaces
-pod.node.namespace = Nil
+
+* pod.labels: "baz"
+* "bar" in node.namespaces
+* pod.node.namespace = Nil
 
 In the above example, the parameterized specification describes how the 
 kubernetes pod and namespace topology must be constrained. Using this, the 
