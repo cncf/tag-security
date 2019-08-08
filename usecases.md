@@ -163,15 +163,27 @@ impact of repeated request on the rest of the infrastructure.
 
 # Platform Implementer
 
-* As a platform implementer I can make my organization's **enterprise, network and quota operators** successful.
-* As a platform implementer I can make my organization's **security administrators and compliance officers** successful.
+The recognition of the platform implementer as a distinct role is a relatively recent phenomenon. The goal of the platform
+implementer is to take the business requirements and translate them to the underlying technology or cloud platform to make the 
+organization's **enterprise, network and quota operators** and **security administrators and compliance officers** successful.
+
+One important aspect of this role may be to bridge between the heterogenous cloud environments that are in use at the
+organization to provide a homogeneous management surface to the administrators and operators. This role is more technical than the roles of the operators and administrators and will often overlap with the role of a developer.
+
 * As a platform implementer I can provide central administration of cloud resources to my **operators and administrators**.
+
 * As a platform implementer I can provide compartmentalization of cloud resources for delegation purposes by **operators and administrators**. 
+
 * As a platform implementer I can allow my **operators and administrators** to delegate administration of resources.
+
 * As a platform implementer I can enable my **security administrators** to constrain the behavior of **developers** by setting guardrails.
+
 * As a platform implementer I can enable my **security administrators and compliance officers** to enforce auditing of access policies. 
+
 * As a platform implementer I can enable my **security administrators and compliance officers** the auditing of resource access.
+
 * As a platform implementer I can enable my **compliance officers** the setting of audit logging policies for my organization's resources
+
 * As a platform implementer I can enable my **compliance officers** to certify the non-violation of my organization's compliance needs.
 
 
