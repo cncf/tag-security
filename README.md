@@ -77,7 +77,10 @@ security of the system, such as auditing and explainability features.
 * Michael Ducy ([@mfdii](https://github.com/mfdii))
 * Craig Ingram ([@cji](https://github.com/cji)), Salesforce
 * Roger Klorese ([@qnetter](https://github.com/qnetter)), SUSE
+* Peter Benjamin ([@petermbenjamin](https://github.com/petermbenjamin)), Teradata
 * Emily Fox([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A.
+* Carlos Villavicencio ([@solrac901](https://github.com/solrac901)), Intel
+* Gareth Rushgrove ([@garethr](https://github.com/garethr)), Snyk
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
