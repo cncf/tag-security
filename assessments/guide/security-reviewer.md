@@ -50,7 +50,7 @@ the project being reviewed due to the closely-knit nature of the community. Havi
 guidelines for conflict of interest situations are important to prevent:
 
 - Individuals from intentionally or unintentionally promote their own company's project
-- Sig-security chairs and assessment leads could intentionally or unintentionally limit the participation of an individual unfairly by asserting conflict of interest
+- SIG-Security chairs and assessment leads could intentionally or unintentionally limit the participation of an individual unfairly by asserting conflict of interest
 - Security reviews being stalled while groups discuss whether this person or that person should be allowed to participate
 
 The conflicts of interest lie on a spectrum, and are classified into hard and soft conflicts.
@@ -60,14 +60,18 @@ A reviewer with a soft conflict is required to document the nature of the confli
 security assessment documentation. It is the responsibility of the security reviewer
 to make known his/her own conflict of interests.
 
+For each project, 2 SIG-Security chairs must sign off on the conflicts presented to them that the assessment lead has no conflicts, and reviewers have no hard conflicts.
+
 Below are classifications of hard/soft conflicts.
 
 Hard conflicts:
 - Reviewer is a maintainer of the project
 - Reviewer is a direct report of/to a maintainer of the project
 - Reviewer is paid to work on the project
+- Reviewer has significant financial interest directly tied to success of the project
 
 Soft conflicts:
 - Reviewer belongs to the same company/organization of the project, but does not work on the project
 - Reviewer uses the project in his/her work
-- Reviewer has a personal stake in the project (investments, personal relationships, etc.)
+- Reviewer has contributed to the project.
+- Reviewer has a personal stake in the project (personal relationships, etc.)
