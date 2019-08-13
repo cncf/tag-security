@@ -20,6 +20,9 @@
 - [Securing Kubernetes with Trusted Platform Module (TPM)](https://kccnceu19.sched.com/event/MPdN/securing-kubernetes-with-trusted-platform-module-tpm-alex-tcherniakhovski-andrew-lytvynov-google) - [slides](https://static.sched.com/hosted_files/kccnceu19/a9/Securing%20Kubernetes%20with%20Trusted%20Platform%20Module.pdf) | [video](https://www.youtube.com/watch?v=_kxmkI8Kc8Y)
 - [Uber x Security: Why and How We Built Our Workload Identity Platform](https://kccnceu19.sched.com/event/MPe6) - [slides](https://static.sched.com/hosted_files/kccnceu19/bf/slides-julian-feldman.pdf) | [video](https://www.youtube.com/watch?v=JKkq60DvPBw)
 
+## KubeCon + CloudNativeCon + Open Source Summit, Shanghai, Jun 24-26, 2019
+
+[issue#200](https://github.com/cncf/sig-security/issues/200)
 
 ## DockerCon, San Francisco, CA, Apr 30 - May 2, 2019
 [issue#151](https://github.com/cncf/sig-security/issues/151)
