@@ -10,9 +10,13 @@ To borrow from an AWS paper <sup>[[0]]</sup>, the origin of this discussion is:
 
 Let's first define what I mean by "verification". In simplest terms it is a 
 means to tell that a program was built as _intended_. To say if the 
-appropriate program was built for a particular job requires "validation". Verification is what I attempt to formalize, whereas validation relies on testing and review. In short, I can formally verify whether a security policy does what I intended; I still must validate whether what I intended in the context of all possible attacks stops attackers. For example, I might construct and formally verify a bucket access policy that restricts access to data, but then put the access token in a public github repo for anyone to use.
-
-TL;DR: Formal verification is not a silver bullet.
+appropriate program was built for a particular job requires "validation". 
+Verification is what I attempt to formalize, whereas validation relies on 
+testing and review. In short, I can formally verify whether a security policy 
+does what I intended; I still must validate whether what I intended in the 
+context of all possible attacks stops attackers. For example, I might 
+construct and formally verify a bucket access policy that restricts access to 
+data, but then put the access token in a public github repo for anyone to use.
 
 OVERVIEW DIAGRAM <sup>[[2]]</sup> ![OVERVIEW DIAGRAM](overview-formal-verification.png "CONCETPTUAL OVERVIEW")
 
@@ -24,7 +28,8 @@ verification and validation of a sort today, but machines cannot completly
 automate the proof of correctness from these less specific notations (not yet).
 It is assumed that machine proofs are more reliable than manual processes, 
 especially when such manual processes are ad hoc and the proofs are highly 
-complex. Even if/when AI exists where diagrams go in and proof comes out, it would probably convert diagrams to intermediate symbolic formulae. 
+complex. Even if/when AI exists where diagrams go in and proof comes out, it 
+would probably convert diagrams to intermediate symbolic formulae. 
 
 Formal verification is discussed here in the context of security policy 
 (formal verification could be used to verify other types of security 
@@ -57,7 +62,10 @@ A "specification parameter" is a variable declared in the specification.
 "Context" are inputs to the policy used during policy evaluation; context 
 binds specification parameters to particular values. For example AWS considers 
 the Context to be "the principal making the request, the resource being 
-requested, and the specific action being requested." <sup>[[0]]</sup>. Another example might be a snapshot of the network. Or an API call with the values passed into the API.
+requested, and the specific action being requested." <sup>[[0]]</sup>. Another 
+example might be a snapshot of the network. Or an API call with the values 
+passed 
+into the API.
 
 With a policy intent, the specification, and context defined we can now 
 construct an actual security policy "encoding". This is probably what most 
@@ -160,34 +168,59 @@ become increasingly more difficult to process manually, with any confidence.
 These are some example ideas I've heard in various calls and threads that the 
 tool should improve if not completely automate:
 
-* Human operator wants to ask questions about users and resources under a policy or set of policies:
+* Human operator wants to ask questions about users and resources under a 
+policy or set of policies:
   * Is resource X accessible by a particular user Alice?
   * Can any user deploy to this namespace? 
-  * is one policy less-or-equally permissive than another? put another way, check whether a policy is over or under-constrained with respect to another one.
-  *  Did I deny access to authorized users unintentionally? If so which ones? Which policy did that?
+  * is one policy less-or-equally permissive than another? put another way, 
+  check whether a policy is over or under-constrained with respect to another 
+  one.
+  *  Did I deny access to authorized users unintentionally? If so which ones? 
+  Which policy did that?
 * Operator wants to ask questions about the network:
-  * Is access to a resource allowed from a certain set (or all, or empty set) of IP addresses? If so which? If not which policy is granting access to which IPs? Which are blocking access?
-  * Are there any NetworkPolicies, Endpoints, or Pods in namespace ‘Web’ that are labeled as ‘Bastion’?
-  * All nodes/pods in the subnet “Web” can access all network nodes in the subnet “Database”?
-  * only nodes/pods that have the label "dmz" have port 22 (SSH) accessible from the internet.
-* Human needs to show a reviewer/auditor that there are no missing or superfluous policies.
-* Human gets a particular response from the combined set of policies (or one very large policy) under test (ACCEPT/DENY) and wants to see the particular policies or policy rules responsible for the response.
-* Human wants to understand the impact of changing policy P to P'. Enumerate the users or resources that will be affected and how.
-* CI/CD or daemon running software wants to continuously monitor a stream of configuration changes and validate the updated configurations against their respective specifications,
+  * Is access to a resource allowed from a certain set (or all, or empty set) 
+  of IP addresses? If so which? If not which policy is granting access to 
+  which IPs? Which are blocking access?
+  * Are there any NetworkPolicies, Endpoints, or Pods in namespace ‘Web’ that 
+  are labeled as ‘Bastion’?
+  * All nodes/pods in the subnet “Web” can access all network nodes in the 
+  subnet “Database”?
+  * only nodes/pods that have the label "dmz" have port 22 (SSH) accessible 
+  from the internet.
+* Human needs to show a reviewer/auditor that there are no missing or 
+superfluous policies.
+* Human gets a particular response from the combined set of policies (or one 
+very large policy) under test (ACCEPT/DENY) and wants to see the particular 
+policies or policy rules responsible for the response.
+* Human wants to understand the impact of changing policy P to P'. Enumerate 
+the users or resources that will be affected and how.
+* CI/CD or daemon running software wants to continuously monitor a stream of 
+configuration changes and validate the updated configurations against their 
+respective specifications,
   * report and alert on the validation
-  * Alerts raised should contains detailed difference info that can be used to deduce the changes needed to correct the policy configuration
-* "return to the user a concrete request context using the model generated by the SMT solver when performing the check. The concrete request context will provide information to the user on why a certain check passed or failed." <sup>[[0]]</sup>
-* "support for recommending policy repairs in cases when the policy fails a certain check." <sup>[[0]]</sup>
+  * Alerts raised should contains detailed difference info that can be used to 
+  deduce the changes needed to correct the policy configuration
+* "return to the user a concrete request context using the model generated by 
+the SMT solver when performing the check. The concrete request context will 
+provide information to the user on why a certain check passed or failed." <sup>[[0]]</sup>
+* "support for recommending policy repairs in cases when the policy fails a 
+certain check." <sup>[[0]]</sup>
+* provide a "defense-in-depth-o-meter"
 
 Considering the above "policy" examples:
-* it might be a policy to grant or deny user access to a resource in a multi-tenant cluster,
-* or it might be a policy that requires certain syscall activity to be monitored on some pods with certain labels,
-* or it might be a policy that says network traffic that is regulated by PCI or HIPAA should be read-only to some microservices but writeable by others,
-* or it might be a policy that specifies some alert action to be triggered when a given audit event occurs;
+* it might be a policy to grant or deny user access to a resource in a multi-tenant 
+cluster,
+* or it might be a policy that requires certain syscall activity to be 
+monitored on some pods with certain labels,
+* or it might be a policy that says network traffic that is regulated by PCI 
+or HIPAA should be read-only to some microservices but writeable by others,
+* or it might be a policy that specifies some alert action to be triggered 
+when a given audit event occurs;
 * deny microservices granting unrestricted access to data stores
 * deny write requests to data stores that do not have encryption configured
 * deny deployments of load balancers that do not use https traffic
-* check compliance whenever a new resource is created or the policy attached to it is changed. 
+* check compliance whenever a new resource is created or the policy attached 
+to it is changed. 
 
 An ongoing task in this effort is to catalog the fuller set of interesting use 
 cases/stories and map the enumeration of those to specific features of the 
@@ -205,16 +238,18 @@ resources publicly accessible.
 * attempt to explicitly enumerate all possible requests to a policy (test 
 generator, record/playback)
 * use commercial tools or cloud-specific tools provided by my public cloud 
-host (Zelkova, SecGuru) and don't worry about it
+host (Zelkova, SecGuru)
 * define a mapping/translation from a given policy to a logic notation and 
 then convert that to boolean (SAT) or more complex formulas (SMT) and then 
 check if the formulas are satisfiable.
   * eg encode policies as bit vectors and use [Z3 solver](https://rise4fun.com/z3/) <sup>[[1]]</sup>
   * eg use FormuLog as the specification and use [Z3 solver](https://rise4fun.com/z3/) <sup>[[6]]</sup>
   * eg use Souffle to evaluate a Datalog specification as discussed in <sup>[[5]]</sup>
-* pick a particular solver or model checker or prover and just play around 
-with it in one particular use case and learn more about it
-* write up GHIs on Formal Verification and hope smarter people jump in and 
+* model policy as a workflow, automata, or FSM (e.g. PrT nets) and use 
+temporal logic <sup>[[24]], [[25]], [[26]], [[27]], [[28]], [[29]]</sup> 
+* use graph algorithms <sup>[[22]]</sup>
+* read review papers <sup>[[23]]</sup>
+* write up GHIs on Formal Verification, and hope smarter people jump in and 
 magically make the world a better place :) 
 
 ## Possible Action Items and Next Steps
@@ -230,16 +265,21 @@ encode the security specification in some symbolic language.
   * admission control policy 
   * RBAC policy
   * network policy eg Tiros <sup>[[3]]</sup>
-* We can use Z, TLA+, Alloy, Souffle <sup>[[4]]</sup>, Rego or _your favorite  here__ 
-as the specification language
+* We can use Z, TLA+, Alloy, Souffle <sup>[[4]]</sup>, Scheme<sup>[[20]], [[21]]</sup>, 
+Rego, (modified) datalog, or come up with something new as the specification language
 * The human operator can then write a new policy and run a tool that uses the 
 specifications for various parameterized operations to verify the policy
 * Human operator or a tool would somehow need to collect, enumerate, generate, 
 or in some way bind inputs to the parameters of a specification:
   * eg. LDAP data, namespace list, IP addresses, buckets, keys, CIDRs, etc
 
-## Challenges
-* bounded or unbounded analysis? unbounded is NP-complete or maybe NP-hard. Using wildcards is PSPACE-complete but practical <sup>[[0]]</sup>. 
+## Open Questions, Challenges
+
+* To bootstrap, it is sufficient to formally verify the policy only, or must we first 
+formally verify the policy enforcement software (e.g. OPA, CNI plugins, etc)? Or can
+we "compose" a formal structure within an unverified environment akin to UC <sup>[[30]]</sup> ?
+* bounded or unbounded analysis? unbounded is NP-complete or maybe NP-hard. 
+Using wildcards is PSPACE-complete but practical <sup>[[0]]</sup>. 
 * ordering constraints on statements in a policy, eg. firewall rules
 * policy language constructs such as loops or dynamically allocated arrays
 * per AWS: solvers seem very sensitive to small changes in the input encoding, 
@@ -285,6 +325,17 @@ solvers?
 [17]: https://pdfs.semanticscholar.org/5988/5d51177d628565c94542373aba78debe89bc.pdf
 [18]: http://theory.stanford.edu/~barrett/pubs/MRT+17.pdf
 [19]: http://klee.github.io/publications/
+[20]: https://ws680.nist.gov/publication/get_pdf.cfm?pub_id=921189
+[21]: https://lmeyerov.github.io/projects/margrave/paper.pdf
+[22]: https://ws680.nist.gov/publication/get_pdf.cfm?pub_id=922390
+[23]: https://pdfs.semanticscholar.org/810e/a64193f974f3cb4e9a2a1a93e4e975c41e1f.pdf
+[24]: https://www.mouelhi.com/uploads/1/8/2/6/1826097/sacmat12-xu.pdf
+[25]: https://ksiresearchorg.ipage.com/seke/seke17paper/seke17paper_162.pdf
+[26]: https://en.wikipedia.org/wiki/Promela
+[27]: https://en.wikipedia.org/wiki/SPIN_model_checker
+[28]: https://www.researchgate.net/publication/221585943_Conformance_Checking_of_RBAC_Policies_in_Process-Aware_Information_Systems/link/02e7e51cea9031151c000000/download
+[29]: http://www.sis.pitt.edu/jjoshi/courses/IS2620/Spring11/reading_files/04385334.pdf
+[30]: https://eprint.iacr.org/2000/067.pdf
 
 ### Historical Note
 
@@ -298,9 +349,10 @@ Since the start of this discussion, the [CapitalOne data loss incident](https://
 how relatively simple policies...e.g. assign only the minimally necessary 
 permissions to components ... are [not being adequately enforced in real 
 world, industrial scale environments](https://news.ycombinator.com/item?id=20568708). 
-It would be great to have a tool to automate policy proofs when someone wants a "temporary" monkey patch policy to circumvent the 
+It would be great to have a tool to automate policy proofs when someone wants 
+a "temporary" monkey patch policy to circumvent the 
 expected/intended/reviewed/approved policies, both when the change is 
 proposed, and even if/when it is jammed in for "agile" reasons, to continually 
-alert of its continued presence so it can be removed in a timely manner. Say 
-for example an overly permissive WAF policy? Well, we can dream anyway. 
+alert of its continued presence so it can be removed in a 
+timely manner. Say for example an overly permissive WAF policy? 
 ¯\_(ツ)_/¯
