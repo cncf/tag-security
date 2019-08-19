@@ -5,3 +5,7 @@ In the context of the project security assessment, the "project lead" should be 
 ## Time and effort
 
 The level of effort for the team providing the information is expected to be around 80 hours of work.  Note, projects that have already performed a security analysis internally are expected to have much lower requirements.
+
+## Conflict of interest
+
+A project lead should not have any [conflict of interest](./security-reviewer#conflict-of-interest) with the project.
