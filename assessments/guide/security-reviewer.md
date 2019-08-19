@@ -51,7 +51,7 @@ guidelines for conflict of interest situations are important to prevent:
 
 - Individuals from intentionally or unintentionally promote their own company's project
 - SIG-Security chairs and assessment leads could intentionally or unintentionally limit the participation of an individual unfairly by asserting conflict of interest
-- Security reviews being stalled while groups discuss whether this person or that person should be allowed to participate
+- Security reviews being stalled while groups belabor on who should be allowed to participate
 
 The conflicts of interest lie on a spectrum, and are classified into hard and soft conflicts.
 Hard conflicts makes a reviewer ineligible to review a project.
@@ -60,7 +60,7 @@ A reviewer with a soft conflict is required to document the nature of the confli
 security assessment documentation. It is the responsibility of the security reviewer
 to make known his/her own conflict of interests.
 
-For each project, 2 SIG-Security chairs must sign off on the conflicts presented to them that the assessment lead has no conflicts, and reviewers have no hard conflicts.
+For each project, 2 SIG-Security chairs must sign off on the conflicts presented to them that the assessment lead has no conflicts, and reviewers have no hard conflicts. Reasons for accepting and rejecting conflicts should be documented.
 
 Below are classifications of hard/soft conflicts.
 
