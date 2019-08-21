@@ -1,5 +1,7 @@
 # CNCF Special Interest Group for Security (SIG-Security)
 
+<img src="https://github.com/cncf/artwork/blob/master/other/sig-security/horizontal/color/sig-security-horizontal-color.svg" width="300">
+
 ## Objective
 
 SIG-Security facilitates collaboration to discover and produce resources which enable secure access, policy control and safety for operators, administrators, developers, and end-users across the cloud native ecosystem.
@@ -72,9 +74,13 @@ security of the system, such as auditing and explainability features.
 * Zach Arnold ([@zparnold](https://github.com/zparnold)), Ygrene Energy Fund
 * Tsvi Korren ([@tsvikorren](https://github.com/tsvikorren)), Aqua Security
 * Simarpreet Singh ([@simar7](https://github.com/simar7))
+* Michael Ducy ([@mfdii](https://github.com/mfdii))
 * Craig Ingram ([@cji](https://github.com/cji)), Salesforce
 * Roger Klorese ([@qnetter](https://github.com/qnetter)), SUSE
+* Peter Benjamin ([@petermbenjamin](https://github.com/petermbenjamin)), Teradata
 * Emily Fox([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A.
+* Carlos Villavicencio ([@solrac901](https://github.com/solrac901)), Intel
+* Gareth Rushgrove ([@garethr](https://github.com/garethr)), Snyk
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
@@ -124,6 +130,10 @@ Please let us know if you are going and if you are interested in attending (or h
 
 ## Meeting Minutes
 
+* [2019-08-28 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-08-21 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-08-14 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-08-07 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
 * [2019-07-31 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
 * [2019-07-24 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
 * [2019-07-17 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
