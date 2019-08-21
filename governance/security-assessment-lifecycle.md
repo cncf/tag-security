@@ -15,7 +15,7 @@ This document is an attempt to define the lifecycle events of an assessment and 
 
 # Lifecycle Outline
 
-![Assessment Lifecycle](AssessmentLifecycle.png "Assessment Lifecycle")
+![Assessment Lifecycle](assessment-lifecycle.png "Assessment Lifecycle")
 
 ## Initial Assessment
 All projects should go through the same initial assessment so we have a consistent baseline.  If 3rd party code audits or pen tests or vulnerability scans have been performed previously, these should be used as inputs into a complete security assessment.
@@ -37,6 +37,8 @@ Given the demands on assessor resources and project teams it seems reasonable to
 ## Discrete Event Reviews (e.g. CVE)
 
 CVEs (or other discrete security alerts or incidents) should be reviewed and inform the regularly scheduled assessments.  Similar to the reassessment schedule, the frequency of these CVE reviews can be adjusted to the risk level of the project.  Lower risk projects can batch up CVEs annually, and do a cursory inspection and quickly update the current assessment with any suggestions or warnings.  However, High Risk projects should perform CVE reviews semi-annually, ideally quarterly.
+
+## WIP
 
 * Review Scope
 * Update Process
