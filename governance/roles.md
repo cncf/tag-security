@@ -133,7 +133,7 @@ document. When a member has multiple roles, the additional role that does not
 require additional access are noted in a comment. PRs to remove someone from
 a role must be approved by the person themselves or a majority of Chairs.
 
-### Security Assessment Facilitator
+### Security assessment facilitator
 
 [Security Assessments](/assessments) are part of the on-going work of the group
 and led by a Security Assessment Facilitator, who will:
@@ -145,8 +145,29 @@ and led by a Security Assessment Facilitator, who will:
   of significant process changes).
 * triage issues related to security assessments.
 
+### Meeting facilitator
 
-### Triage Team
+The group meetings are an important part of community building and the 
+facilitator ensures a welcoming and inclusive atmosphere. In keeping with these
+goals, the meeting facilitator has the following responsibilities:
+* prepares the meeting notes with template and agenda
+* coordinates with presenter, if applicable
+* ensures there are scribes
+* runs meeting check-in, including partner groups
+* leads the meeting through the agenda
+
+Prerequisites:
+* active member
+* history of regular attendance
+* participation as scribe
+
+One or more of the following:
+* served in another facilitator role
+* leader on a project team
+* tech lead
+* co-chair
+
+### Triage team
 
 All members are expected to review Pull Requests (PRs), comment on issues, and
 provide meaningful feedback or helpful references.
