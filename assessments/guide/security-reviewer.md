@@ -1,4 +1,4 @@
-# Security Reviewer Role
+# Security reviewer
 
 Reviewers seek to understand the system and probe its security.
 Design level issues should be considered as well as any high
@@ -19,7 +19,7 @@ of attacks.
 
 ### Required 
 
-Unless approved by the SIG chairs, at least one of the reviewers will have previously performed a CNCF security assessment.  Exemptions to this are reviewed case by case upon established need by the CNCF Security SIG Chairs in order to bootstrap the process as appropriate.
+Unless approved by SIG-Security chairs, at least one of the reviewers will have previously performed a CNCF security assessment.  Exemptions to this are reviewed case by case upon established need by the CNCF SIG-Security chairs in order to bootstrap the process as appropriate.
 
 ### Preferred
 
@@ -38,10 +38,10 @@ The level of effort for the reviewers is expected to be 10 hours per review. Cor
 
 ## Expectations
 
-GitHub issues are assigned to Security Reviewers. Security Reviewers are
+GitHub issues are assigned to security reviewers. Security reviewers are
 expected to conduct an in-depth review described in the [Security Assessment
-Guide](./). Security Reviewers should seek the approval of the other
-participating Security Reviewers and at least 1 co-chair before merging.
+Guide](./). Security reviewers should seek the approval of the other
+participating security reviewers and at least 1 co-chair before merging.
 
 ## Conflict of interest
 
