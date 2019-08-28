@@ -42,7 +42,10 @@ to navigate a complex security landscape. Until at least two Technical Leads
 are identified, any Chair may act as Technical Lead.
 
 * Primary role of Chairs is to run operations and the governance of the group.
-* The Chairs are responsible for
+* The Chairs are responsible for ensuring that group meetings are planned
+and facilitated effectively, while also engaging group members in leadership
+roles. Effective facilitation includes (but is not limited to) the following
+activities:
   * setting the agenda for meetings
   * extending discussion via asynchronous communication to be inclusive of
 members who cannot attend a specific meeting time.
@@ -159,13 +162,16 @@ goals, the meeting facilitator has the following responsibilities:
 Prerequisites:
 * active member
 * history of regular attendance
-* participation as scribe
+* prior participation as scribe
 
 One or more of the following:
 * served in another facilitator role
 * leader on a project team
 * tech lead
 * co-chair
+
+Any member who meets the above qualifications is encouraged to add themselves
+to the [list of people in this role](.github/settings.yml).
 
 ### Triage team
 
