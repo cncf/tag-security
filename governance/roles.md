@@ -171,7 +171,7 @@ One or more of the following:
 * co-chair
 
 Any member who meets the above qualifications is encouraged to add themselves
-to the [list of people in this role](.github/settings.yml).
+to the [list of people in this role](/.github/settings.yml).
 
 ### Triage team
 

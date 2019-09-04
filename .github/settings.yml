@@ -25,7 +25,7 @@ collaborators:
 
   - username: pragashj
     permission: admin
-        
+
     # Triage Team
     # manage issues (edit labels, occasionally edit)
   - username: lumjjb
