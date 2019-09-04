@@ -1,6 +1,6 @@
-|  Project | Ready for assessment? | Notes                        |            Project Contacts           |      Lead     |              Volunteers             |
+|  Project | Ready for assessment? | Notes                        |            Project Contacts           |      Lead Security Reviewer    |              Security Reviewers             |
 |:--------:|-----------------------|------------------------------|:-------------------------------------:|:-------------:|:-----------------------------------|
-| [Falco](https://sysdig.com/opensource/falco/)    |                       | NEXT UP                  | Michael Ducy, Kris Nova             |  ?Robert Ficcaglia?         | Daniel Iziourov                     |
+| [Falco](https://sysdig.com/opensource/falco/)    |                       | NEXT UP                  | Michael Ducy, Kris Nova             |  lumjjb and/or rficcaglia         | Daniel Iziourov, JustinCappos, MVrachev                      |
 | [Harbor](https://goharbor.io/)   |                       |                              |                                       |               | JustinCappos, rficcaglia, qnetter?  |
 | [Notary](https://github.com/theupdateframework/notary)   |                       |                              |                                       |               | ? jonmuk                            |
 | [NSM](https://networkservicemesh.io/)      |                       | Justin and Robert in contact | edwarnicke, nickolaev, fkautz, haiodo | rficcaglia    |                                     |
