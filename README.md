@@ -81,6 +81,8 @@ security of the system, such as auditing and explainability features.
 * Emily Fox([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A.
 * Carlos Villavicencio ([@solrac901](https://github.com/solrac901)), Intel
 * Gareth Rushgrove ([@garethr](https://github.com/garethr)), Snyk
+* Martin Vrachev ([@MVrachev](https://github.com/MVrachev)), VMware
+* Ricardo Aravena ([@raravena80](https://github.com/raravena80)), Rakuten
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
