@@ -63,7 +63,7 @@ security of the system, such as auditing and explainability features.
 * Alban Crequy ([@alban](https://github.com/alban)), Kinvolk
 * Michael Schubert ([@schu](https://github.com/schu)), Kinvolk
 * Andrei Manea ([@andrei_821](https://github.com/andrei821)), CloudHero
-* Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
+* Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University [Security Assessment Facilitator]
 * Santiago Torres-Arias ([@SantiagoTorres](https://github.com/SantiagoTorres)), New York University
 * Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
 * Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), OPA
@@ -81,6 +81,8 @@ security of the system, such as auditing and explainability features.
 * Emily Fox([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A.
 * Carlos Villavicencio ([@solrac901](https://github.com/solrac901)), Intel
 * Gareth Rushgrove ([@garethr](https://github.com/garethr)), Snyk
+* Martin Vrachev ([@MVrachev](https://github.com/MVrachev)), VMware
+* Ricardo Aravena ([@raravena80](https://github.com/raravena80)), Rakuten
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
