@@ -83,6 +83,7 @@ security of the system, such as auditing and explainability features.
 * Gareth Rushgrove ([@garethr](https://github.com/garethr)), Snyk
 * Martin Vrachev ([@MVrachev](https://github.com/MVrachev)), VMware
 * Ricardo Aravena ([@raravena80](https://github.com/raravena80)), Rakuten
+* Lakshmi Manohar Velicheti ([@manohar9999](https://github.com/manohar9999)), Shape Security
 * JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Related Groups
