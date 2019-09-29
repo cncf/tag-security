@@ -29,9 +29,9 @@ security of the system, such as auditing and explainability features.
 
 ## Members
 
-* Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [chair]
-* Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [chair]
-* Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [chair]
+* Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 1 year - start date: 6/3/2019 - 6/3/2020]
+* Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 2 years - start date: 6/3/2019 - 6/3/2021]
+* Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 2 years - 6/3/2019 - 6/3/2021]
 * Devarajan P Ramaswamy ([@deva](https://github.com/deva26)), PADME
 * Kamil Pawlowski ([@kbpawlowski](https://github.com/kbpawlowski))
 * Geri Jennings ([@izgeri](https://github.com/izgeri)), CyberArk
