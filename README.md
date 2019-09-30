@@ -27,11 +27,65 @@ security of the system, such as auditing and explainability features.
 
 [SIG-Security charter](governance/charter.md) outlines the scope  of our group activities, as part of our [governance process](governance) which details how we work.
 
-## Members
+## Communications
 
-* Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 1 year - start date: 6/3/2019 - 6/3/2020]
-* Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 2 years - start date: 6/3/2019 - 6/3/2021]
-* Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 2 years - 6/3/2019 - 6/3/2021]
+Anyone is welcome to join our open discussions of WG projects and share news related to the group's mission and charter. Much of the work of the group happens outside of WG meetings and we encourage project teams to share progress updates or post questions in these channels:
+
+* [Email list](https://lists.cncf.io/g/cncf-sig-security)
+* [CNCF Slack](https://slack.cncf.io/) #sig-security channel
+
+## Meeting Time
+
+The Security SIG group meets every Wednesday at 10:00am PT (USA Pacific):
+
+Meeting minutes and agenda: https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/
+Join: https://zoom.us/my/cncfsigsecurity
+
+One tap mobile:
+* +16465588656,,7375677271# US (New York)
+* +16699006833,,7375677271# US (San Jose)
+
+Dial by your location:
+* +1 646 558 8656 US (New York)
+* +1 669 900 6833 US (San Jose)
+* 877 369 0926 US Toll-free
+* 855 880 1246 US Toll-free
+Meeting ID: 737 567 7271
+Find your local number: https://zoom.us/u/alwlmxlNn
+
+[List of meetings](#meeting-list)
+
+## In Person Meetings
+
+Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup. Create a [github issue](https://github.com/cncf/sig-security/issues/new) for an event and add to list below:
+
+* KubeCon + CloudNativeCon, San Diego, CA - Nov 18 – 21, 2019 - [issue#128]
+
+[Past Events](past-events.md)
+
+## New Members
+
+If you are new to the group, check out our [New Members Page](NEWMEMBERS.md)
+
+## Related Groups
+
+* [Kubernetes Policy Working Group](https://github.com/kubernetes/community/tree/master/wg-policy)
+* [Kubernetes SIG-Auth](https://github.com/kubernetes/community/tree/master/sig-auth)
+* [NIST Big Data WG](https://bigdatawg.nist.gov/)
+
+## History
+
+* SAFE WG - renamed to CNCF Security SIG
+* [(Proposed) CNCF Policy Working Group](/policy-wg-merging.md) - Merged into SAFE WG
+
+## Members list
+
+<<<<<<< HEAD
+* Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 6/3/2020]
+* Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 6/3/2019 - 6/3/2021]
+* Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 6/3/2019 - 6/3/2021]
+<details><summary>see full list</summary>
+
 * Devarajan P Ramaswamy ([@deva](https://github.com/deva26)), PADME
 * Kamil Pawlowski ([@kbpawlowski](https://github.com/kbpawlowski))
 * Geri Jennings ([@izgeri](https://github.com/izgeri)), CyberArk
@@ -85,54 +139,16 @@ security of the system, such as auditing and explainability features.
 * Martin Vrachev ([@MVrachev](https://github.com/MVrachev)), VMware
 * Ricardo Aravena ([@raravena80](https://github.com/raravena80)), Rakuten
 * Lakshmi Manohar Velicheti ([@manohar9999](https://github.com/manohar9999)), Shape Security
-* JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
-
-## Related Groups
-
-* [Kubernetes Policy Working Group](https://github.com/kubernetes/community/tree/master/wg-policy)
-* [Kubernetes SIG-Auth](https://github.com/kubernetes/community/tree/master/sig-auth)
-* [NIST Big Data WG](https://bigdatawg.nist.gov/)
-
-## History
-
-* SAFE WG - renamed to CNCF Security SIG
-* [(Proposed) CNCF Policy Working Group](/policy-wg-merging.md) - Merged into SAFE WG
+</details>
+JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 
-## Communications
 
-Anyone is welcome to join our open discussions of WG projects and share news related to the group's mission and charter. Much of the work of the group happens outside of WG meetings and we encourage project teams to share progress updates or post questions in these channels:
+# Additional Information
 
-* [Email list](https://lists.cncf.io/g/cncf-sig-security)
-* [CNCF Slack](https://slack.cncf.io/) #sig-security channel
+## Meeting List
 
-## Meeting Time
-
-The Security SIG group meets every Wednesday at 10:00am PT (USA Pacific):
-
-Join: https://zoom.us/my/cncfsigsecurity
-
-One tap mobile:
-* +16465588656,,7375677271# US (New York)
-* +16699006833,,7375677271# US (San Jose)
-
-Dial by your location:
-* +1 646 558 8656 US (New York)
-* +1 669 900 6833 US (San Jose)
-* 877 369 0926 US Toll-free
-* 855 880 1246 US Toll-free
-Meeting ID: 737 567 7271
-Find your local number: https://zoom.us/u/alwlmxlNn
-
-## In Person Meetings
-
-Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup. Create a [github issue](https://github.com/cncf/sig-security/issues/new) for an event and add to list below:
-
-* KubeCon + CloudNativeCon, San Diego, CA - Nov 18 – 21, 2019 - [issue#128]
-
-[Past Events](past-events.md)
-
-## Meeting Minutes
+<details><summary>Click to view list</summary>
 
 * [2019-09-25 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
 * [2019-09-18 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
@@ -243,3 +259,5 @@ Please let us know if you are going and if you are interested in attending (or h
 * [2018-02-23 SAFE Meeting](https://docs.google.com/document/d/1U4x1wynL-JlojF1Qidus97t8bJve3XJWTpc07hHCAxU/edit) - Open Policy Agent (OPA) Use Case with [@tsandall](https://github.com/tsandall) and [@timothyhinrichs](https://github.com/timothyhinrichs)
 * [2018-02-16 SAFE Meeting](https://docs.google.com/document/d/1aAldFgdU6EhtmQWCFMefFMaevKumDe08wMlfoCt9mFw/edit) - Cloud Foundry Use Case with [@sreetummidi](https://github.com/sreetummidi)
 * [2018-02-07 SAFE Meeting](https://docs.google.com/document/d/1Z30hfVquiRz9dIjek0Tcg540LuX3D4TPhJ3UWpDMltU/edit)
+</details>
+
