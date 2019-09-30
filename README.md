@@ -29,7 +29,7 @@ security of the system, such as auditing and explainability features.
 
 ## Communications
 
-Anyone is welcome to join our open discussions of WG projects and share news related to the group's mission and charter. Much of the work of the group happens outside of WG meetings and we encourage project teams to share progress updates or post questions in these channels:
+Anyone is welcome to join our open discussions of SIG-Security projects and share news related to the group's mission and charter. Much of the work of the group happens outside of SIG-Security meetings and we encourage project teams to share progress updates or post questions in these channels:
 
 * [Email list](https://lists.cncf.io/g/cncf-sig-security)
 * [CNCF Slack](https://slack.cncf.io/) #sig-security channel
