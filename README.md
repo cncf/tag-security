@@ -38,8 +38,8 @@ Anyone is welcome to join our open discussions of SIG-Security projects and shar
 
 The Security SIG group meets every Wednesday at 10:00am PT (USA Pacific):
 
-Meeting minutes and agenda: https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/
-Join: https://zoom.us/my/cncfsigsecurity
+[Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
+[Meeting Link: zoom.us/my/cncfsigsecurity](https://zoom.us/my/cncfsigsecurity)
 
 One tap mobile:
 * +16465588656,,7375677271# US (New York)
@@ -65,7 +65,7 @@ Please let us know if you are going and if you are interested in attending (or h
 
 ## New Members
 
-If you are new to the group, check out our [New Members Page](NEWMEMBERS.md)
+If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and submit a PR to add yourself to the [members list](#members-list).
 
 ## Related Groups
 
@@ -80,11 +80,13 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md)
 
 ## Members list
 
-<<<<<<< HEAD
+### SIG Chairs
 * Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 6/3/2020]
 * Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 6/3/2019 - 6/3/2021]
 * Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 6/3/2019 - 6/3/2021]
-<details><summary>see full list</summary>
+
+### SIG Members
+<details><summary>Click to view list</summary>
 
 * Devarajan P Ramaswamy ([@deva](https://github.com/deva26)), PADME
 * Kamil Pawlowski ([@kbpawlowski](https://github.com/kbpawlowski))
