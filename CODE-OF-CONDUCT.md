@@ -25,7 +25,7 @@ In keeping with this commitment, we offer the following guidelines:
      outside of the working group.
      * Participate in online forums to be inclusive of those who cannot 
      attend meetings.
-
+   * Work performed within this group, either finalized or in draft, is for ethical use by its members and the community and is not designed to be used for competive advantage.  Further information on use of work may be found in [Security Assessments: Outcome](https://github.com/cncf/sig-security/tree/master/assessments#outcome)
 
 # Inspiration
 
