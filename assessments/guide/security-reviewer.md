@@ -1,12 +1,25 @@
-# Security Reviewer Role
+# Security reviewer
 
-Reviewers will try to understand the system and probe its security.  Specifically design level issues are meant to be addressed as well as high level problems with the project’s setup and operation. This is meant to provide an independent analysis and estimation of the above information.  The goal is to ask questions to understand if there are hidden assumptions, underestimated risk, or design issues that harm the security of the project.  It may be useful to reach out to community members to understand the answers to some questions, especially involving deployment scenarios and the impact of attacks.
+Reviewers seek to understand the system and probe its security.
+Design level issues should be considered as well as any high
+level problems with the project’s setup and operation. The [process](./)
+is intended to provide an independent analysis based primarily on documents
+provided by the project itself.
+
+Reviewers may look at code, but aren't required to do so. Review of
+documents includes asking questions to understand if there are hidden
+assumptions, underestimated risk, or design issues that harm or risk
+the security of the project.
+
+Reviewers are encouraged to reach out to community members to resolve
+some questions, especially involving deployment scenarios and the impact
+of attacks.
 
 ## Qualifications
 
 ### Required 
 
-Unless approved by the SIG chairs, at least one of the reviewers will have previously performed a CNCF security assessment.  Exemptions to this are reviewed case by case upon established need by the CNCF Security SIG Chairs in order to bootstrap the process as appropriate.
+Unless approved by SIG-Security chairs, at least one of the reviewers will have previously performed a CNCF security assessment.  Exemptions to this are reviewed case by case upon established need by the CNCF SIG-Security chairs in order to bootstrap the process as appropriate.
 
 ### Preferred
 
@@ -25,9 +38,40 @@ The level of effort for the reviewers is expected to be 10 hours per review. Cor
 
 ## Expectations
 
-GitHub issues are assigned to Security Reviewers. Security Reviewers are 
+GitHub issues are assigned to security reviewers. Security reviewers are
 expected to conduct an in-depth review described in the [Security Assessment
-Guide](./). Security Reviewers should seek the approval of the other 
-participating Security Reviewers and at least 1 co-chair before merging.
+Guide](./). Security reviewers should seek the approval of the other
+participating security reviewers and at least 1 co-chair before merging.
 
+## Conflict of interest
 
+There is a possibility of conflict of interest that can arise between a security reviewer and
+the project being reviewed due to the closely-knit nature of the community. Having clear
+guidelines for conflict of interest situations are important to prevent:
+
+- Individuals from intentionally or unintentionally promote their own company's project
+- SIG-Security chairs and assessment leads could intentionally or unintentionally limit the participation of an individual unfairly by asserting conflict of interest
+- Security reviews being stalled while groups belabor on who should be allowed to participate
+
+The conflicts of interest lie on a spectrum, and are classified into hard and soft conflicts.
+Hard conflicts makes a reviewer ineligible to review a project.
+A soft conflict allows a reviewer to review a project, but not as a [project lead](./project-lead.md).
+A reviewer with a soft conflict is required to document the nature of the conflict in the
+security assessment documentation. It is the responsibility of the security reviewer
+to make known his/her own conflict of interests.
+
+For each project, 2 SIG-Security chairs must sign off on the conflicts presented to them that the assessment lead has no conflicts, and reviewers have no hard conflicts. Reasons for accepting and rejecting conflicts should be documented.
+
+Below are classifications of hard/soft conflicts.
+
+Hard conflicts:
+- Reviewer is a maintainer of the project
+- Reviewer is a direct report of/to a maintainer of the project
+- Reviewer is paid to work on the project
+- Reviewer has significant financial interest directly tied to success of the project
+
+Soft conflicts:
+- Reviewer belongs to the same company/organization of the project, but does not work on the project
+- Reviewer uses the project in his/her work
+- Reviewer has contributed to the project.
+- Reviewer has a personal stake in the project (personal relationships, etc.)
