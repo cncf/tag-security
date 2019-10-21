@@ -2,6 +2,12 @@
 
 <img src="https://github.com/cncf/artwork/blob/master/other/sig-security/horizontal/color/sig-security-horizontal-color.svg" width="300">
 
+## Quick Links
+
+- [Meeting Information](#meeting-time)
+- [New Members](#new-members)
+- [Members](#members-list)
+
 ## Objective
 
 SIG-Security facilitates collaboration to discover and produce resources which enable secure access, policy control and safety for operators, administrators, developers, and end-users across the cloud native ecosystem.
@@ -78,8 +84,7 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 * SAFE WG - renamed to CNCF Security SIG
 * [(Proposed) CNCF Policy Working Group](/policy-wg-merging.md) - Merged into SAFE WG
 
-## Members list
-
+## Members List
 
 ### SIG Chairs
 * Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 6/3/2020]
@@ -150,6 +155,6 @@ JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 # Additional Information
 
-## Past events and meetings
+## Past Events and Meetings
 
 For more details on past events and meetings, please see our [past events page](past-events.md)
