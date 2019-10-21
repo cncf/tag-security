@@ -5,6 +5,7 @@
 ## Quick Links
 
 - [Meeting Information](#meeting-time)
+- [Slack Information](#communications)
 - [New Members](#new-members)
 - [Members](#members-list)
 
