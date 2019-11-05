@@ -10,6 +10,6 @@ developer credentials.
 were downloaded at least 700 times during the two week period that the
 compromise spanned.
 
-## Type of Compromise
+## Type of compromise
 
 A typosquat attack does not require compromising any type of infrastructure.

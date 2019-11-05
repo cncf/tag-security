@@ -13,7 +13,7 @@ those security holes to gain unauthorized access to the system.
 More than 34 organizations affected, including Symanted, Northrop Grumman,
 Morgan Stanley, Dow chemical, Yahoo, Rackspace, Adobe and Google.
 
-## Type of Compromise
+## Type of compromise
 
 The attacker was able to compromise different tools used within the
 organizations to target their version control systems and exfiltrate source

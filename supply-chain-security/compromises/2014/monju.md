@@ -12,7 +12,7 @@ The attack affected machines at Monju fast breeder reactor facility in Japan.
 However, it it unclear whether other machines who tried 
 to upate their GOM Player software were infected. 
 
-## Type of Compromise
+## Type of compromise
 
 Attackers could have access to the publishing infrastructure, 
 but did not sign the delivered product.

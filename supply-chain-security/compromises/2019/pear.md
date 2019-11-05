@@ -13,13 +13,8 @@ in a window of 6 months could have been infected.
 Since many web hosting services allow their users to install and run PEAR, 
 this attack might also have impacted a large number of websites and their visitors.
 
-## Type of Compromise
+## Type of compromise
 
 It appears the attackers compromised the publishing infrastructure. Since no
 code-signing was involved, the attacker didn't require to compromise any key,
 but rather just the infrastructure.
-
-
-
-
-

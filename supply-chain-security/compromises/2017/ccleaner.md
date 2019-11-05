@@ -14,7 +14,7 @@ any step right before the product of that step was signed.
 The impact could've been severe as CCleaner had 2 billion downloads as of
 November 2016 with almost 5 million new users per week.
 
-## Type of Compromise
+## Type of compromise
 
 It appears the attackers could've accomplished by either compromising the
 version control system, the packaging or the publishing infrastructure. For the

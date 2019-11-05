@@ -14,7 +14,7 @@ backdoor without having access to MeDoc’s source code.
 
 N/A
 
-## Type of Compromise
+## Type of compromise
 
 The attackers seem to have been able to compromise software publishing
 infrastructure, update servers and probably the version control system for

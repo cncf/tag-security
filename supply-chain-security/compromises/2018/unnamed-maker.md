@@ -11,11 +11,6 @@ would receive full access to the victims' system.
 
 Users who have installed this PDF editor between January and March 2018 have been affected.
 
-## Type of Compromise
+## Type of compromise
 
 This was a counterfeit artifact delivered to developers.
-
-
-
-
-

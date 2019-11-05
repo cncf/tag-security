@@ -14,12 +14,7 @@ located in the range of IP addresses of their target organizations.
 
 N/A
 
-## Type of Compromise
+## Type of compromise
 
 It appears the attackers compromised the publishing infrastructure, 
 as well as signing keys for updates.
-
-
-
-
-

@@ -19,7 +19,7 @@ on at least 600 specific systems whose mac addresses were
 hardcoded to receive a secondary payload.
 
 
-## Type of Compromise
+## Type of compromise
 
 It appears at the very least, the attackers had access to
 the update infrastructure and the code signing key.

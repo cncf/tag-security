@@ -12,7 +12,7 @@ At least 5,904,511 devices were affected, and up to a maximum of 21,101,567, as
 reported on [this technical
 report](https://research.checkpoint.com/expensivewall-dangerous-packed-malware-google-play-will-hit-wallet/)
 
-## Type of Compromise
+## Type of compromise
 
 The attackers were able to compromise the toolchains of the developer machines
 and introduce a backdoor in the resulting apps. As such, developer keys can be

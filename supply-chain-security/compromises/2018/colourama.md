@@ -13,6 +13,6 @@ Colourama was registered early in December 2017. It is not clear how many times
 the malicious package have been downlaoded since then. According to a report by
 Medium, it was downloaded 55 times in October 2018.
 
-## Type of Compromise
+## Type of compromise
 
 A typosquat attack does not require compromising any type of infrastructure.

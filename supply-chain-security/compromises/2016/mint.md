@@ -9,6 +9,6 @@ and pointed users to malicious download links that contained a backdoored versio
 
 The backdoored version of Linux Mint was downloaded by hundreds of users on February 20th, 2016. 
 
-## Type of Compromise
+## Type of compromise
 
 Attackers compromised the publishing infrastructure, but not developer keys.

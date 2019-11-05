@@ -7,7 +7,7 @@ was hacked and many repositories, backups, etc. were deleted by the attacker.
 
 N/A
 
-## Type of Compromise
+## Type of compromise
 
 It appears attackers had access to the source code hosting infrastructure,
 but not to developer keys.

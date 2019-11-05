@@ -12,6 +12,6 @@ use as their primary file download service.
 Users who downloaded Classic Shell and Audacity software packages from FOSSHub 
 in the first week of August 2016, were affected by Fosshub breach.
 
-## Type of Compromise
+## Type of compromise
 
 Attackers compromised the publishing infrastructure.

@@ -10,7 +10,7 @@ if they created new wallets using this malicious software.
 Users who downloaded the compromised wallet during a window of 4.5 days may
 have their private keys compromises.
 
-## Type of Compromise
+## Type of compromise
 
 The attackers seem to have been able to access the version control system but
 not to sign on behalf of developers.

@@ -18,7 +18,7 @@ version) include:
 - 24+ banks and financial institutions
 - 45+ higher educational institutions
 
-## Type of Compromise
+## Type of compromise
 
 The attacker had access to the publishing infrastructure (i.e., the download
 server) and to the signing key of the packager.

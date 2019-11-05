@@ -10,7 +10,7 @@ the second one happened by compromising a pseudorandom number generator.
 
 N/A
 
-## Type of Compromise
+## Type of compromise
 
 It appears attackers had access to a the source code hosting infrastructure,
 but not to developer keys.

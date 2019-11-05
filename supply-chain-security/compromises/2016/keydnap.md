@@ -9,7 +9,7 @@ from the Apple developer program).
 
 N/A
 
-## Type of Compromise
+## Type of compromise
 
 The publishing infrastructure was affected, plus a developer certificate (by
 someone not associated with Transmission) was used to sign and allow for a

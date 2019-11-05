@@ -8,7 +8,7 @@ could gain admin privileges on victims’ systems.
 
 N/A
 
-## Type of Compromise
+## Type of compromise
 
 It appears the attackers compromised the publishing infrastructure. Since no
 code-signing was involved, the attacker didn't require to compromise any key,

@@ -10,6 +10,6 @@ passwords and URLs through the infected apps.
 At least 350 apps, including WeChat, which affected hundreds of millions of
 users alone.
 
-## Type of Compromise
+## Type of compromise
 
 This was a counterfeit artifact delivered to developers.
