@@ -39,3 +39,4 @@ We welcome additions to this catalog by
 | [Monju Incident](compromises/2014/monju.md) | 2014    | Publishing infrastructure| [1](https://www.contextis.com/en/blog/context-threat-intelligence-the-monju-incident)
 | [Operation Aurora](compromises/2010/aurora.md) | 2010 | Watering-hole attack | [1](https://www.wired.com/2010/03/source-code-hacks/) | 
 | [ProFTPD](compromises/2010/proftpd.md) | 2010 | Source Code Repository | [1](https://www.zdnet.com/article/open-source-proftpd-hacked-backdoor-planted-in-source-code/) |
+| [gentoo rsync compromise](compromises/2003/gentoo-rsync.md) | 2003 | Source Code Repository[1](https://archives.gentoo.org/gentoo-announce/message/7b0581416ddd91522c14513cb789f17a) |
