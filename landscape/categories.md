@@ -64,3 +64,13 @@ sub-categories. The remaining text is a description of each sub-category.
     - Threat analytics, auditing
   - _Defense and Monitoring_
     - Intrusion detection, etc
+
+- **Regulatory and Privacy Compliance Capabilities and/or Support**
+  - _Traceability and Auditability_
+  - _Forensic Analysis_
+  - _Incident Reporting_
+  - _Incident Remediation_
+  _ _Audit and full lifecycle of RBAC and other access rules, roles, permissions_
+  - _Crypto Key Lifecycle and Management_
+  - _Specific Benchmarks, eg. CIS_
+  - _NOTE: Privacy/Data Covered above_
