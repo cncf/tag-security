@@ -4,7 +4,7 @@
 
 ## Quick links
 
-- [Meeting Information](#meeting-time)
+- [Meeting Information](#meeting-times)
 - [Slack Information](#communications)
 - [New Members](#new-members)
 - [Members](#members)
