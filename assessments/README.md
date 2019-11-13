@@ -33,7 +33,7 @@ Each project's security assessment shall include a description of:
 
 Due to the nature and timeframe for the analysis, *this review is not meant to subsume the need for a professional security audit of the code*.  Audits of implementation-specific vulnerabilities, improper deployment configuration, etc. are not in scope of a security assessment.  A security assessmet is intended to uncover design and configuration flaws and to obtain a clear, comprehensive articulation of the project's design goals and aspirations while documenting the intended security properties enforced, fulfilled, or executed by said project.
 
-Finalized assessments may be used by the community to assist in contextual evaluation of a  project but are not an endorsement of the security of the project, not a security audit of the project, and do not relieve an individual or organization from performing due diligence and complying with laws, regulations, and polcies.
+Finalized assessments may be used by the community to assist in contextual evaluation of a  project but are not an endorsement of the security of the project, not a security audit of the project, and do not relieve an individual or organization from performing due diligence and complying with laws, regulations, and policies.
 
 Draft assessments contain *unconfirmed* content and are not endorsed as factual until committed to this repository, which requires detailed peer review.  Draft assessments may also contain *speculative* content as the project lead or security reviewer is performing an evaluation.  Draft assessments are *only* for the purpose of preparing final assessment and are **not** to be used in any other capacity by the community.
 
