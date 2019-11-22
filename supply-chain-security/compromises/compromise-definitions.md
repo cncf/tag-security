@@ -1,0 +1,26 @@
+# Types of Supply Chain Compromise
+
+This document serves to provide a consistent set of definitions, recognized by SIG-Security, for the Supply Chain Compromise Catalog.  The types of compromise may be expanded in the future as new or more distinct compromises occur.  When this happens, these definitions will be updated.
+
+
+**Source Code Compromise** - occurs when source code repositories (public or private) is manipulated intentionally by the developer or through a developer or repository credential compromise.  Source Code compromised can also occur when source code in open-source dependencies is manipulated in a manner to make them more useful.
+
+_Reference(s)_:
+- [Mitre: Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)
+
+
+**Publishing Infrastructure** - occurs when the shipment, publishing, or distribution mechanism and infrastructure of the software is manipulated, exploited, or made unavailable.  This can result from a number of attacks that permit access to the infrastructure.
+- _Defeat_ - This kind of compromise can be deterred or defeated by implementing code-signing.  Code-signing requires attackers to perform multiple operations to be successful, making the level of effort higher.
+
+_Reference(s)_:
+- [Mitre: Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)
+
+
+**Negligence** - associated with TypoSquatting attacks, the developer failed to verify the requested package or source code was spelled correctly.  
+
+_Reference(s)_:
+- [Slashdot Article regarding PyPI attackes](https://developers.slashdot.org/story/17/09/16/2030229/pythons-official-repository-included-10-malicious-typo-squatting-modules)
+
+
+
+
