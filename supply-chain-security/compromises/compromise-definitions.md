@@ -22,5 +22,18 @@ _Reference(s)_:
 - [Slashdot Article regarding PyPI attackes](https://developers.slashdot.org/story/17/09/16/2030229/pythons-official-repository-included-10-malicious-typo-squatting-modules)
 
 
+**Dev Tooling** - occurs when the development machine, SDK, toolchains, or build kit have been exploited.  These exploits often result in the introduction of a backdoor by an attacker to own the development environment.
+
+_Reference(s)_:
+- [Mitre: Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)
+
+
+**Trust & Signing** - occurs when the signing key used is compromised, resulting in a breach of trust of the software from the open source community or software vendor.  This kind of compromise results in the legitimate software being replaced with a malicious, modified version.
+
+- _Defeat_ - Follow [best practices](https://www.entrustdatacard.com/knowledgebase/best-practices-for-code-signing-certificates) regarding code signing key protection.  A more indepth explanation can be found from [NIST](https://csrc.nist.gov/CSRC/media/Publications/white-paper/2018/01/26/security-considerations-for-code-signing/final/documents/security-considerations-for-code-signing.pdf)
+
+_Reference(s)_:
+- [Mitre: Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)
+- [Wikipedia Code Signing](https://en.wikipedia.org/wiki/Code_signing)
 
 
