@@ -142,7 +142,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Craig Ingram ([@cji](https://github.com/cji)), Salesforce
 * Roger Klorese ([@qnetter](https://github.com/qnetter)), SUSE
 * John Menerick ([@cloudsriseup](https://github.com/cloudsriseup)), Ford Autonomic
-* Peter Benjamin ([@petermbenjamin](https://github.com/petermbenjamin)), Teradata
+* Peter Benjamin ([@pbnj](https://github.com/pbnj)), Norton LifeLock
 * Emily Fox([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A.
 * Carlos Villavicencio ([@solrac901](https://github.com/solrac901)), Intel
 * Gareth Rushgrove ([@garethr](https://github.com/garethr)), Snyk
