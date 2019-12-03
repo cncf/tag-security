@@ -10,13 +10,17 @@ assessments.
 
 # Authority
 
+Team members are welcome to submit PRs to streamline process when priorities
+are clear based on the criteria below. As needed, specific leaders (identified
+in the [repo root README](../README.md@#security-assessments) will coordinate
+the decision-making process.
+
 * The [Security Assessment
   Facilitator](../governance/roles.md#security-assessment-facilitator) maintains
-  the Assessment queue
+  the Assessment queue.
 * A named chair provides oversight for the Security Assessment initiative. This
   chair can adjust queue, and is also responsible for conveying TOC
-  instructions, when needed. (Sarah Allen is the current named Chair for
-  Security Assessments.)
+  instructions, when needed.
 
 # Pre-conditions
 
@@ -27,17 +31,17 @@ assessments.
 
 # Intake priorities
 
-1. TOC requests SIG-Security review a specific project or adjust priorities a.
-   TOC request will not interrupt an ongoing assessment b. TOC requests may jump
-   the prioritized queue of projects waiting for an assessment
+1. TOC requests SIG-Security review a specific project or adjust priorities.
+    * TOC request will not interrupt an ongoing assessment.
+    * TOC requests may jump the prioritized queue of projects waiting for an assessment.
 2. Projects that have received a CNCF Security Audit will be reviewed within a
    year of audit.
-3. CNCF Projects that request a review (or invited by SIG members). Prioritized
-   by project majority (Graduated projects will be highest priority, then
-   incubated projects, then sandbox.)
-4. Non-CNCF Projects that request a review (or invited by SIG members)
+3. CNCF Projects that request a review (or invited by SIG members), prioritized
+   by project maturity (e.g. graduated projects will be highest priority, then
+   incubated projects, then sandbox).
+4. Non-CNCF Projects that request a review (or invited by SIG members).
 
-## Updates and renewal
+# Updates and renewal
 
 The Security Assessment team will review assessed projects annually, focusing
 primarily on any issues or concerns raised in previous assessments, addressing
