@@ -60,8 +60,6 @@ Dial by your location:
 Meeting ID: 737 567 7271
 Find your local number: https://zoom.us/u/alwlmxlNn
 
-[List of meetings](#meeting-list)
-
 ## In person meetings
 
 Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup. Create a [github issue](https://github.com/cncf/sig-security/issues/new) for an event and add to list below:
@@ -72,7 +70,7 @@ Please let us know if you are going and if you are interested in attending (or h
 
 ## New members
 
-If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and submit a PR to add yourself to the [members list](#members-list).
+If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and submit a PR to add yourself to the [members list](#sig-members).
 
 ## Related groups
 
