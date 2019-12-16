@@ -1,6 +1,6 @@
 # Types of Supply Chain Compromise
 
-This document serves to provide a consistent set of definitions, recognized by SIG-Security, for the Supply Chain Compromise Catalog.  The types of compromise may be expanded in the future as new or more distinct compromises occur.  When this happens, these definitions will be updated.
+This document serves to provide a consistent set of definitions for the Supply Chain Compromise Catalog.  The types of compromise may be expanded in the future as new or more distinct compromises occur.  When this happens, these definitions will be updated.
 
 
 **Source Code Compromise** - occurs when source code repositories (public or private) is manipulated intentionally by the developer or through a developer or repository credential compromise.  Source Code compromised can also occur when source code in open-source dependencies is manipulated in a manner to make them more useful.
