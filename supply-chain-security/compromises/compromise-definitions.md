@@ -9,7 +9,7 @@ _Reference(s)_:
 - [Mitre: Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)
 
 
-**Publishing Infrastructure** - occurs when the shipment, publishing, or distribution mechanism and infrastructure of the software is manipulated, exploited, or made unavailable.  This can result from a number of attacks that permit access to the infrastructure.
+**Publishing Infrastructure** - occurs when the integrity or availability of shipment, publishing, or distribution mechanisms and infrastructure are affected.  This can result from a number of attacks that permit access to the infrastructure.
 - _Defeat_ - This kind of compromise can be deterred or defeated by implementing code-signing.  Code-signing requires attackers to perform multiple operations to be successful, making the level of effort higher.
 
 _Reference(s)_:
