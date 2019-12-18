@@ -12,15 +12,19 @@ assessments.
 
 Team members are welcome to submit PRs to streamline process when priorities
 are clear based on the criteria below. As needed, specific leaders (identified
-in the [repo root README](../README.md@#security-assessments) will coordinate
+in the [repo root README](/README.md@#security-assessments) will coordinate
 the decision-making process.
 
 * The [Security Assessment
-  Facilitator](../governance/roles.md#security-assessment-facilitator) maintains
-  the Assessment queue.
-* A named chair provides oversight for the Security Assessment initiative. This
-  chair can adjust queue, and is also responsible for conveying TOC
-  instructions, when needed.
+  Facilitator](/governance/roles.md#security-assessment-facilitator) is
+  responsible for maintaining the assessment queue and may delegate
+  responsibilities to specific individuals by defining and filling documented
+  roles and/or inviting community participation.
+* A named chair provides oversight for the Security Assessment initiative,
+  responsible for liaising with the TOC: aligning prioritization with TOC needs
+  and goals by finding opportunities to highlight work of Security Assessment
+  team, resolving questions/concerns about prioritization, and serving as an
+  escalation point for projects or SIG members, if needed.
 
 # Pre-conditions
 
@@ -43,7 +47,27 @@ the decision-making process.
 
 # Updates and renewal
 
-The Security Assessment team will review assessed projects annually, focusing
-primarily on any issues or concerns raised in previous assessments, addressing
-new functionality that affects risk profile of the project, and any issue that
-may have been flagged about the project.
+The Security Assessment team will aim to review assessed projects annually,
+focusing primarily on any issues or concerns raised in previous assessments,
+addressing new functionality that affects risk profile of the project,
+and any issue that may have been flagged about the project.
+
+# Managing the assessment queue
+
+Note: this section describes the current process. Anyone is welcome to open a
+github issue or submit a pull request suggesting process improvements
+or clarifying the documentation. Security Assessment Facilitator or any chair
+may take on any of the roles below, updating the queue, as long as the change
+is clearly communicated to the group (typically by adding a note to the
+relevant github issue).
+
+Each assessment is represented as a github issue, where the description field
+follows a [template](/.github/ISSUE_TEMPLATE/security-assessment.md)
+
+The queue is visible through [github project](https://github.com/cncf/sig-security/projects/2)
+
+* Anyone may propose a project for assessment, by opening an [issue](https://github.com/cncf/sig-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
+* Security Assessment Facilitator or their delegate may:
+  * move the order of an assessment in the backlog
+  * close an issue (with an explanation) to remove a project from the queue.
+  * move a project from backlog to in-progress
