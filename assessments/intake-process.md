@@ -39,7 +39,8 @@ the decision-making process.
     * TOC request will not interrupt an ongoing assessment.
     * TOC requests may jump the prioritized queue of projects waiting for an assessment.
 2. Projects that have received a CNCF Security Audit will be reviewed within a
-   year of audit.
+   year of audit. (For future audits, the security assessment will be a
+   pre-condition to the audit.)
 3. CNCF Projects that request a review (or invited by SIG members), prioritized
    by project maturity (e.g. graduated projects will be highest priority, then
    incubated projects, then sandbox).
