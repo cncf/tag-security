@@ -20,7 +20,7 @@ _Reference(s)_:
 
 ## Publishing Infrastructure
 Occurs when the integrity or availability of shipment, publishing, or distribution mechanisms and infrastructure are affected.  This can result from a number of attacks that permit access to the infrastructure.
-- _Defeat_ - This kind of compromise can be deterred or defeated by implementing code-signing.  Code-signing requires attackers to perform multiple operations to be successful, making the level of effort higher.
+- _Mitigation_ - This kind of compromise can be deterred or defeated by implementing code-signing.  Code-signing requires attackers to perform multiple operations to be successful, making the level of effort higher.
 
 _Reference(s)_:
 - [Mitre: Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)
@@ -43,7 +43,7 @@ _Reference(s)_:
 ## Trust and Signing
 Occurs when the signing key used is compromised, resulting in a breach of trust of the software from the open source community or software vendor.  This kind of compromise results in the legitimate software being replaced with a malicious, modified version.
 
-- _Defeat_ - Follow [best practices](https://www.entrustdatacard.com/knowledgebase/best-practices-for-code-signing-certificates) regarding code signing key protection.  A more indepth explanation can be found from [NIST](https://csrc.nist.gov/CSRC/media/Publications/white-paper/2018/01/26/security-considerations-for-code-signing/final/documents/security-considerations-for-code-signing.pdf)
+- _Mitigation_ - Follow [best practices](https://www.entrustdatacard.com/knowledgebase/best-practices-for-code-signing-certificates) regarding code signing key protection.  A more indepth explanation can be found from [NIST](https://csrc.nist.gov/CSRC/media/Publications/white-paper/2018/01/26/security-considerations-for-code-signing/final/documents/security-considerations-for-code-signing.pdf)
 
 _Reference(s)_:
 - [Mitre: Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)
