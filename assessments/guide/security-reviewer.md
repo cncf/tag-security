@@ -25,11 +25,11 @@ Unless approved by SIG-Security chairs, at least one of the reviewers will have 
 
 It is preferred reviewers have previous experience performing formal or informal software or security audits or assessments for a variety of organizations.  An ideal reviewer should also have been the recipient of CNCF project security assessments for a software project they manage.  
 
-Note: it is encouraged to have participation (shadowing) from participants that are not yet qualified in order to provide and assist in gaining necessary skills to be a reviewer in the future.
+Note: it is encouraged to have participation (shadowing) from participants that are not yet qualified in order to provide and assist in gaining the necessary skills to be a reviewer in the future.
 
 ## Time and effort
 
-The level of effort for the reviewers is expected to be 10 hours per review. Correspondance, project availability, and clarification of a project's scope or other details in the ticketed request for project security assessment may require additional time, however analsis is expected to be concluded in a few weeks.  Effort is expected to include and may not be limited to:
+The level of effort for the reviewers is expected to be 10 hours per review. Correspondance, project availability, and clarification of a project's scope or other details in the ticketed request for project security assessment may require additional time, however, analysis is expected to be concluded in a few weeks.  Effort is expected to include and may not be limited to:
 * reviewing existing security documentation
 * reviewing ticketed request for project security assessment
 * analysis of security assertions and assumptions
@@ -45,7 +45,7 @@ participating security reviewers and at least 1 co-chair before merging.
 
 ## Conflict of interest
 
-There is a possibility of conflict of interest that can arise between a security reviewer and
+There is a possibility of a conflict of interest that can arise between a security reviewer and
 the project being reviewed due to the closely-knit nature of the community. Having clear
 guidelines for conflict of interest situations are important to prevent:
 
