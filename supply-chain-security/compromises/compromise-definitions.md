@@ -8,10 +8,10 @@ Index:
 * [Dev Tooling](#dev-tooling)
 * [Negligence](#negligence)
 * [Publishing Infrastructure](#publishing-infrastructure)
-* [Source Code Compromise](#source-code-compromise)
+* [Source Code](#source-code)
 * [Trust and Signing](#trust-and-signing)
 
-## Source Code Compromise
+## Source Code
 Occurs when a source code repository (public or private) is manipulated intentionally by the developer or through a developer or repository credential compromise.  Source Code compromised can also occur when source code in open-source dependencies is manipulated in a manner to make them more useful (more appealing for use in order to guarantee download of malicious content, trojan horse like).
 
 _Reference(s)_:
