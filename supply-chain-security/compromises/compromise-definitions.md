@@ -12,7 +12,7 @@ Index:
 * [Trust and Signing](#trust-and-signing)
 
 ## Source Code
-Occurs when a source code repository (public or private) is manipulated intentionally by the developer or through a developer or repository credential compromise.  Source Code compromised can also occur when source code in open-source dependencies is manipulated in a manner to make them more useful (more appealing for use in order to guarantee download of malicious content, trojan horse like).
+Occurs when a source code repository (public or private) is manipulated intentionally by the developer or through a developer or repository credential compromise.  Source Code compromise can also occur with intentional introduction of securiyt backdoors and bugs in Open Source code contributions by malicious actors.
 
 _Reference(s)_:
 - [Mitre: Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)
