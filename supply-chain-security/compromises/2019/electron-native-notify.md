@@ -12,7 +12,7 @@ application.
 
 Users of the cryptocurrency wallet called Agama lost their funds. The total
 losses are not known yet, although they could have reached $13 million USD had
-npm/Comodo not identified the compromise earlier.
+npm/Komodo not identified the compromise earlier.
 
 ## Type of compromise
 
