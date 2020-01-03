@@ -29,7 +29,7 @@ Note: Participation through shadowing is encouraged from members who are not qua
 
 ## Time and effort
 
-The level of effort for the reviewers is expected to be 10 hours per review. Correspondance, project availability, and clarification of a project's scope or other details in the ticketed request for project security assessment may require additional time, however, analysis is expected to be concluded in a few weeks.  Effort is expected to include and may not be limited to:
+The level of effort for the reviewers is expected to be 10 hours per review. Correspondance, project availability, and clarification of a project's scope or other details in the ticketed request for project security assessment may require additional time. However, analysis is expected to be concluded in a few weeks.  Effort is expected to include and may not be limited to:
 * reviewing existing security documentation
 * reviewing ticketed request for project security assessment
 * analysis of security assertions and assumptions
