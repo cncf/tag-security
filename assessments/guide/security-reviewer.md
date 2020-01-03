@@ -25,7 +25,7 @@ Unless approved by SIG-Security chairs, at least one of the reviewers will have 
 
 It is preferred reviewers have previous experience performing formal or informal software or security audits or assessments for a variety of organizations.  An ideal reviewer should also have been the recipient of CNCF project security assessments for a software project they manage.  
 
-Note: it is encouraged to have participation (shadowing) from participants that are not yet qualified in order to provide and assist in gaining the necessary skills to be a reviewer in the future.
+Note: Participation through shadowing is encouraged from members who are not qualified for security reviews, to facilitate their development of the necessary skills to be a reviewer in the future.
 
 ## Time and effort
 
