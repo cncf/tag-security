@@ -2,6 +2,13 @@
 
 <img src="https://github.com/cncf/artwork/blob/master/other/sig-security/horizontal/color/sig-security-horizontal-color.svg" width="300">
 
+## Quick links
+
+- [Meeting Information](#meeting-times)
+- [Slack Information](#communications)
+- [New Members](#new-members)
+- [Members](#members)
+
 ## Objective
 
 SIG-Security facilitates collaboration to discover and produce resources which enable secure access, policy control and safety for operators, administrators, developers, and end-users across the cloud native ecosystem.
@@ -34,9 +41,9 @@ Anyone is welcome to join our open discussions of SIG-Security projects and shar
 * [Email list](https://lists.cncf.io/g/cncf-sig-security)
 * [CNCF Slack](https://slack.cncf.io/) #sig-security channel
 
-## Meeting Time
+## Meeting times
 
-The Security SIG group meets every Wednesday at 10:00am PT (USA Pacific):
+The Security SIG group meets every Wednesday at 10:00am PT (USA Pacific, see your timezone [here](https://time.is/compare/1000_23_Oct_2019_in_PT)):
 
 * [Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
 * [Meeting Link: zoom.us/my/cncfsigsecurity](https://zoom.us/my/cncfsigsecurity)
@@ -53,21 +60,19 @@ Dial by your location:
 Meeting ID: 737 567 7271
 Find your local number: https://zoom.us/u/alwlmxlNn
 
-[List of meetings](#meeting-list)
-
-## In Person Meetings
+## In person meetings
 
 Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup. Create a [github issue](https://github.com/cncf/sig-security/issues/new) for an event and add to list below:
 
 * KubeCon + CloudNativeCon, San Diego, CA - Nov 18 – 21, 2019 - [issue#128]
 
-[Past Events](past-events.md)
+[Past events](past-events.md)
 
-## New Members
+## New members
 
-If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and submit a PR to add yourself to the [members list](#members-list).
+If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and submit a PR to add yourself to the [members list](#sig-members).
 
-## Related Groups
+## Related groups
 
 * [Kubernetes Policy Working Group](https://github.com/kubernetes/community/tree/master/wg-policy)
 * [Kubernetes SIG-Auth](https://github.com/kubernetes/community/tree/master/sig-auth)
@@ -78,8 +83,7 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 * SAFE WG - renamed to CNCF Security SIG
 * [(Proposed) CNCF Policy Working Group](/policy-wg-merging.md) - Merged into SAFE WG
 
-## Members list
-
+## Members
 
 ### SIG Chairs
 * Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 6/3/2020]
@@ -163,19 +167,20 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Craig Ingram ([@cji](https://github.com/cji)), Salesforce
 * Roger Klorese ([@qnetter](https://github.com/qnetter)), SUSE
 * John Menerick ([@cloudsriseup](https://github.com/cloudsriseup)), Ford Autonomic
-* Peter Benjamin ([@petermbenjamin](https://github.com/petermbenjamin)), Teradata
+* Peter Benjamin ([@pbnj](https://github.com/pbnj)), Norton LifeLock
 * Emily Fox([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A.
 * Carlos Villavicencio ([@solrac901](https://github.com/solrac901)), Intel
 * Gareth Rushgrove ([@garethr](https://github.com/garethr)), Snyk
 * Martin Vrachev ([@MVrachev](https://github.com/MVrachev)), VMware
 * Ricardo Aravena ([@raravena80](https://github.com/raravena80)), Rakuten
 * Lakshmi Manohar Velicheti ([@manohar9999](https://github.com/manohar9999)), Shape Security
+* Andres Vega ([@anvega](https://github.com/anvega)), Scytale.io
 </details>
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 
 
-# Additional Information
+# Additional information
 
 ## Past events and meetings
 
