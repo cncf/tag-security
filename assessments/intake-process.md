@@ -35,6 +35,10 @@ the decision-making process.
 
 # Intake priorities
 
+The following priorities are high-level guidance for how to coordinate the
+work of the group when there are multiple projects that are ready for an
+assessment, exceeding the bandwidth of the group:
+
 1. TOC requests prioritization of a specific project.
     * TOC request will not interrupt an ongoing assessment.
     * TOC requests may jump the prioritized queue of projects waiting for an assessment.
@@ -45,6 +49,13 @@ the decision-making process.
    by project maturity (e.g. graduated projects will be highest priority, then
    incubated projects, then sandbox).
 4. Non-CNCF Projects that request a review (or invited by SIG members).
+
+Security Assessment Facilitator, in collaboration with the named chair,
+has the discretion to adjust priority in order to streamline the process,
+or per their own judgement for other reasons consistent with SIG-Security
+mission and charter.  In all cases, the priority queue will be maintained
+transparently as described below, along with communication via regular
+chair-liaison meetings and SIG-Security reports at TOC meetings.
 
 # Updates and renewal
 
