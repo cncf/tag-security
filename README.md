@@ -90,14 +90,43 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 * Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 6/3/2019 - 6/3/2021]
 * Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 6/3/2019 - 6/3/2021]
 
-### SIG Members
+### On-going projects
+
+#### Policy team
+
+Policy is an essential component of a secure system.
+
+[Bi-weekly meetings](https://docs.google.com/document/d/1ihFfEfgViKlUMbY2NKxaJzBkgHh-Phk5hqKTzK-NEEs/edit?usp=sharing) at 4:00pm PT
+focus on policy concerns and initiatives.
+
+Co-leads
+
+  * Howard Huang ([@hannibalhuang](https://github.com/hannibalhuang)), Huawei [Kubernetes Policy WG co-chair]
+  * Erica von Buelow ([@ericavonb](https://github.com/ericavonb)), Red Hat [Kubernetes Policy WG]
+
+Co-chair representative: @pragashj
+
+
+#### Security assessments
+
+[Security assessments](./assessments) are a collaborative process for the
+benefit of cloud native projects and prospective users by creating a consistent
+overview of the project and its risk profile.
+
+Facilitator: Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)),
+New York University
+
+Co-chair representative: @ultrasaurus
+
+
+
+### SIG members
 Membership governance can be viewed [here](https://github.com/cncf/sig-security/blob/master/governance/roles.md#role-of-members). If you are new, check out the [New Members Page](NEWMEMBERS.md).
 <details><summary>Click to view list</summary>
 
 * Devarajan P Ramaswamy ([@deva](https://github.com/deva26)), PADME
 * Kamil Pawlowski ([@kbpawlowski](https://github.com/kbpawlowski))
 * Geri Jennings ([@izgeri](https://github.com/izgeri)), CyberArk
-* Howard Huang ([@hannibalhuang](https://github.com/hannibalhuang)), Huawei [Kubernetes Policy WG co-chair]
 * Jason Melo ([@jasonmelo](https://github.com/jasonmelo)), NearForm
 * Torin Sandall ([@tsandall](https://github.com/tsandall)), OPA
 * Sree Tummidi ([@sreetummidi](https://github.com/sreetummidi)), Pivotal [Cloud Foundry Project Lead]
@@ -109,7 +138,6 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Liz Rice ([@lizrice](https://github.com/lizrice)), Aqua Security
 * Erik St. Martin ([@erikstmartin](https://github.com/erikstmartin)), Microsoft
 * Cheney Hester ([@quiqie](https://github.com/quiqie)), Fifth Third Bank
-* Erica von Buelow ([@ericavonb](https://github.com/ericavonb)), Red Hat [Kubernetes Policy WG]
 * Mark Underwood ([@knowlengr](https://github.com/knowlengr))
 * Rae Wang ([@rae42](https://github.com/rae42)), Google
 * Rachel Myers ([@rachelmyers](https://github.com/rachelmyers)), Google
@@ -125,7 +153,6 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Alban Crequy ([@alban](https://github.com/alban)), Kinvolk
 * Michael Schubert ([@schu](https://github.com/schu)), Kinvolk
 * Andrei Manea ([@andrei_821](https://github.com/andrei821)), CloudHero
-* Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University [Security Assessment Facilitator]
 * Santiago Torres-Arias ([@SantiagoTorres](https://github.com/SantiagoTorres)), New York University
 * Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
 * Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), OPA
