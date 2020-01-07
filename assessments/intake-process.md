@@ -12,7 +12,7 @@ assessments.
 
 Team members are welcome to submit PRs to streamline process when priorities
 are clear based on the criteria below. As needed, specific leaders (identified
-in the [repo root README](/README.md@#security-assessments) will coordinate
+in the [repo root README](/README.md@#security-assessments)) will coordinate
 the decision-making process.
 
 * The [Security Assessment
@@ -35,7 +35,7 @@ the decision-making process.
 
 # Intake priorities
 
-1. TOC requests SIG-Security review a specific project or adjust priorities.
+1. TOC requests prioritization of a specific project.
     * TOC request will not interrupt an ongoing assessment.
     * TOC requests may jump the prioritized queue of projects waiting for an assessment.
 2. Projects that have received a CNCF Security Audit will be reviewed within a
