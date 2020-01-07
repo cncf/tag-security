@@ -117,10 +117,10 @@ that role for some time informally, then proposed as an on-going role by Pull
 Request which must be approved by a majority of Chairs.  Process clarifications
 are welcome and PRs can be approved by any single Chair.
 
-Members who take on roles are responsible for
-understanding the approval policies related to their role and ensure that
-commits to the repo are reviewed in accordance with our [governance](./)
-and all actions are within roles defined in this document.
+Members fulfilling any Roles in SIG-Security are responsible for understanding
+and abiding the by the [governance](./) and policies defined in this group.
+This commitment and execution of understanding includes not only commits to
+the repo, but also to any approvals or direction required by their Role.
 
 **Write access to the repo**: Where applicable, the following roles define
 specific areas of the repo or actions on issues where changes require write
