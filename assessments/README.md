@@ -54,7 +54,7 @@ Each project's security assessment shall include a description of:
 
 Due to the nature and timeframe for the analysis, *this review is not meant to
 subsume the need for a professional security audit of the code*.  Audits of
-implementation-specific vulnerabilities, improper deployment configuration, etc.
+implementation-specific vulnerabilities, improper deployment configurations, etc.
 are not in scope of a security assessment.  A security assessment is intended to
 uncover design flaws and to obtain a clear, comprehensive
 articulation of the project's design goals and aspirations while documenting the
