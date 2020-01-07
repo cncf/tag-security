@@ -175,6 +175,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Ricardo Aravena ([@raravena80](https://github.com/raravena80)), Rakuten
 * Lakshmi Manohar Velicheti ([@manohar9999](https://github.com/manohar9999)), Shape Security
 * Andres Vega ([@anvega](https://github.com/anvega)), Scytale.io
+* Cameron Seader ([@cseader](https://github.com/cseader)), SUSE 
 </details>
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
