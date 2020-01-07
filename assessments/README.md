@@ -14,9 +14,6 @@ breaches of privacy. This process supports that goal in two ways:
      reduces time to resolve known or suspected vulnerability issues
    * A collaborative evaluation process increases domain expertise within each
      participating project.
-   * Provide potential adopters security-relevant information about a specific cloud native technology,
-   with a focus on the likely security benefits, limitations, situations where use is appropriate, and the
-   general security properties of the implementation.
 
 ### 2) Accelerate adoption of cloud native technologies
 
