@@ -12,7 +12,7 @@ assessments.
 
 Team members are welcome to submit PRs to streamline process when priorities
 are clear based on the criteria below. As needed, specific leaders (identified
-in the [repo root README](/README.md@#security-assessments)) will coordinate
+in the [repo root README](/README.md#security-assessments)) will coordinate
 the decision-making process.
 
 * The [Security Assessment
