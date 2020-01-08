@@ -11,16 +11,8 @@ Index:
 * [Source Code](#source-code)
 * [Trust and Signing](#trust-and-signing)
 
-## Source Code
-Occurs when a source code repository (public or private) is manipulated intentionally by the developer or through a developer or repository credential compromise.  Source Code compromise can also occur with intentional introduction of securiyt backdoors and bugs in Open Source code contributions by malicious actors.
-
-_Reference(s)_:
-- [Mitre: Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)
-
-
-## Publishing Infrastructure
-Occurs when the integrity or availability of shipment, publishing, or distribution mechanisms and infrastructure are affected.  This can result from a number of attacks that permit access to the infrastructure.
-- _Mitigation_ - This kind of compromise can be deterred or defeated by implementing code-signing.  Code-signing requires attackers to perform multiple operations to be successful, making the level of effort higher.
+## Dev Tooling
+Occurs when the development machine, SDK, toolchains, or build kit have been exploited.  These exploits often result in the introduction of a backdoor by an attacker to own the development environment.
 
 _Reference(s)_:
 - [Mitre: Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)
@@ -32,9 +24,16 @@ Associated with TypoSquatting attacks, the developer failed to verify the reques
 _Reference(s)_:
 - [Slashdot Article regarding PyPI attackes](https://developers.slashdot.org/story/17/09/16/2030229/pythons-official-repository-included-10-malicious-typo-squatting-modules)
 
+## Publishing Infrastructure
+Occurs when the integrity or availability of shipment, publishing, or distribution mechanisms and infrastructure are affected.  This can result from a number of attacks that permit access to the infrastructure.
+- _Mitigation_ - This kind of compromise can be deterred or defeated by implementing code-signing.  Code-signing requires attackers to perform multiple operations to be successful, making the level of effort higher.
 
-## Dev Tooling
-Occurs when the development machine, SDK, toolchains, or build kit have been exploited.  These exploits often result in the introduction of a backdoor by an attacker to own the development environment.
+_Reference(s)_:
+- [Mitre: Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)
+
+
+## Source Code
+Occurs when a source code repository (public or private) is manipulated intentionally by the developer or through a developer or repository credential compromise.  Source Code compromise can also occur with intentional introduction of security backdoors and bugs in Open Source code contributions by malicious actors.
 
 _Reference(s)_:
 - [Mitre: Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)
