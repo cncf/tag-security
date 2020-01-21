@@ -96,7 +96,7 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 
 Policy is an essential component of a secure system.
 
-[Bi-weekly meetings](https://docs.google.com/document/d/1ihFfEfgViKlUMbY2NKxaJzBkgHh-Phk5hqKTzK-NEEs/edit?usp=sharing) at 4:00pm PT
+[Bi-weekly meetings](https://docs.google.com/document/d/1ihFfEfgViKlUMbY2NKxaJzBkgHh-Phk5hqKTzK-NEEs/edit?usp=sharing) at 3:00pm PT
 focus on policy concerns and initiatives.
 
 Co-leads
