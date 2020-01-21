@@ -47,8 +47,8 @@ with non-critical issues captured as issues and noted below.
 
 ### Recommendations to CNCF
 
-The following recommendation are where help from the CNCF would assist SPIFFE/SPIRE to
+The following recommendations are where help from the CNCF would assist SPIFFE/SPIRE to
 increase its effectiveness in cloud native security.
 
 * Conduct a format security review/audit for the project as it is critical to security of services that use it.
-* Provide an avenue for education of SPIFFE/SPIRE and advanced SPIFFE/SPIRE topology usecases for end users.
+* Provide an avenue for education of SPIFFE/SPIRE and advanced SPIFFE/SPIRE topology use cases for end users.
