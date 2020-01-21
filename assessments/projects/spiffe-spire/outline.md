@@ -6,7 +6,7 @@ Security reviewers: Brandon Lum, Justin Cappos, Emily Fox
 
 Project security lead: Evan Gilman
 
-Project team: Andres Vega, Andrew Jessup
+Project team: Andres Vega, Andrew Jessup, Tyler Julian, Andrew Harding.
 
 * Source code: [github.com/spiffe/spiffe](https://github.com/spiffe/spiffe), [github.com/spiffe/spire](https://github.com/spiffe/spire)
 * Web site: [spiffe.io](https://spiffe.io/)
@@ -27,10 +27,10 @@ _Maturity_
 
 ## Summary
 
-**Design**: SPIFFE/SPIRE has a streamlined and simple design. Covering many usecases of identity without exposing complexity to the user. The workload-API provides a great way for services and orchestration to integrate with. The ability to have plugins for attestations, key management, databases, etc. allows for easy extensibility.
+**Design**: SPIFFE/SPIRE have a streamlined and simple design. It covers many use cases of identity without exposing unnecesary complexity to the user. The SPIFFE 'Workload API' provides a great way for services and orchestration systems to integrate with. The the pluggable design for attestation, key management, databases, etc... allows for ease of extensibility.
 
-**Analysis**: The project, as a security provider, has done due deligence in security and threat modeling. The security workflow is evident, and the project is in the correct direction to further improve its security process and CI verification. 
-The project fulfills the role of a layer below the orchestration framework, and in order to be effective, consumers of the identities bundles need to have a good understanding of the demarcation of security responsibilities.
+**Analysis**: The project, as a security provider, has done due diligence in security and threat modeling. The security workflow is evident, and the project is in the correct direction to further improve its security process and CI verification. 
+The project fulfills the role of a layer below the orchestration framework, and for its effectiveness, consumers of identitiy bundles need to have a good understanding of the demarcation line of security responsibilities.
 
 All questions from reviewers were addressed in [self-assessment](self-assessment.md)
 with non-critical issues captured as issues and noted below.
@@ -39,16 +39,16 @@ with non-critical issues captured as issues and noted below.
 
 ### Recommendations to the project team
 
-1. ([SPIFFE.IO-103](https://github.com/spiffe/spiffe.io/issues/103)) Make threat modelling materials accessible on the SPIFFE/SPIRE site and documents. There is an existing wealth of information on SPIFFE/SPIRE threat modelling which is not easily viewable. 
+1. ([SPIFFE.IO-103](https://github.com/spiffe/spiffe.io/issues/103)) Make threat modelling materials accessible on the SPIFFE/SPIRE site and documents. There is a wealth of existing information on SPIFFE/SPIRE threat modeling which is not easy to find. 
 
-2. Expand security response team to include participants outside of Scytale
+2. Expand security response team to include participants outside of Scytale.
 
-3. Work towards CII Silver Badge
+3. Work towards CII Silver Badge.
 
 ### Recommendations to CNCF
 
 The following recommendation are where help from the CNCF would assist SPIFFE/SPIRE to
 increase its effectiveness in cloud native security.
 
-* Conduct a format security review/audit for the project as it is critical to security of services that use it
-* Provide an avenue for education of SPIFFE/SPIRE and advanced SPIFFE/SPIRE topology usecases for end users
+* Conduct a format security review/audit for the project as it is critical to security of services that use it.
+* Provide an avenue for education of SPIFFE/SPIRE and advanced SPIFFE/SPIRE topology usecases for end users.
