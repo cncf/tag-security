@@ -1,4 +1,4 @@
-# SPIFFE/SPIRE security self-assessment
+# SPIFFE/SPIRE Security Self-assessment
 
 Jan 22nd 2019
 
