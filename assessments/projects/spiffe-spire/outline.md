@@ -1,6 +1,6 @@
 # SPIFFE/SPIRE Security Assessment
 
-Completed: TBA
+Completed: 7 Feb 2020 (To be finalized)
 
 Security reviewers: Brandon Lum, Justin Cappos, Emily Fox
 
