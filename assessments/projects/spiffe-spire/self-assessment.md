@@ -233,7 +233,7 @@ To minimize exposure from a key being leaked or compromised, all private keys (a
 
 ### SPIRE Architecture 
 
-![](docs/image0.png){width="6.5in" height="4.694444444444445in"}
+![](docs/image0.png)
 
 A SPIRE deployment is composed of one or more SPIRE Servers (replicated with shared datastore) and one or more SPIRE Agents. A server acts as a signing authority for identities issued to a set of workloads via agents. It also maintains a registry of workload identities and the conditions that must be verified in order for those identities to be issued. Agents expose the SPIFFE Workload API locally to workloads, and must be installed on each node on which a workload is running.
 
@@ -303,13 +303,13 @@ A compromise of the SPIRE server database can lead to 1) an attacker registering
 
 With a single server handling the entire cluster, memory and CPU usage tends to grow proportionally with size/load on cluster. To support very large numbers of agents within a given trust domain (tens of thousands or hundreds of thousands of nodes), SPIRE servers can be scaled horizontally. With multiple servers, the load is distributed. In addition to capacity, the use of more than one SPIRE server also eliminates a single point of failure and attains high availability. In a configuration of two or more SPIRE servers, all servers share the same datastore, while each individual server maintains an independent root certificate/key.
 
-![](docs/image1.png){width="6.5in" height="2.888888888888889in"}
+![](docs/image1.png)
 
 With the goal to issue identities from a single Certificate Authority across the board, a common topology design in which to deploy SPIRE is for a trust domain to span regions and clouds. Managing a shared datastore across geographically dispersed locations or across cloud providers may represent a challenge. In such circumstances, a solution is to configure SPIRE servers can be configured in Nested topology.
 
 ### Nested SPIRE
 
-![](docs/image2.png){width="6.5in" height="3.111111111111111in"}
+![](docs/image2.png)
 
 Nested SPIRE allows SPIRE servers to be chained together, and for all servers to still issue identities in the same trust domain. It works by co-locating an agent with downstream servers. Each downstream server loads the CA credentials from the Workload API of the top or global SPIFFE implementation. The downstream node performs both node and workload attestation, which in turn allows automating the bring-up of new downstream servers.
 
@@ -321,7 +321,7 @@ Complimentary to scaling SPIRE servers horizontally to deal with load, a nested 
 
 ### Federated SPIRE
 
-![](docs/image3.png){width="6.5in" height="2.9583333333333335in"}
+![](docs/image3.png)
 
 Many organizations have multiple roots of trust: perhaps because they have different organizational divisions with different administrators, or because they have separate staging and production environments that occasionally need to communicate. A similar use-case is SPIFFE interoperability between organizations, such as between a cloud provider and its customers. Both use-cases require a well-defined, interoperable method for a workload in one trust domain to authenticate a workload in a different trust domain.
 
@@ -407,19 +407,21 @@ In the following diagrams, a grey square represents an attack that is not applic
 
 For reviewers: the source of the following tables is accessible in the below link: [[https://docs.google.com/spreadsheets/d/1M2AgqBQTlZSfCL7La2Kz8KhD1M17rbV\_OJZN\_POQVGg]](https://docs.google.com/spreadsheets/d/1M2AgqBQTlZSfCL7La2Kz8KhD1M17rbV_OJZN_POQVGg/edit?usp=sharing)
 
-#### IDENTITY THEFT![](docs/image4.png){width="6.5in" height="3.861111111111111in"}
+#### IDENTITY THEFT
+
+![](docs/image4.png)
 
 #### MISREPRESENTATION
 
-![](docs/image5.png){width="6.5in" height="5.361111111111111in"}
+![](docs/image5.png)
 
 #### COMPROMISE
 
-![](docs/image6.png){width="6.5in" height="4.972222222222222in"}
+![](docs/image6.png)
 
 #### DoS
 
-![](docs/image7.png){width="6.5in" height="5.736111111111111in"}
+![](docs/image7.png)
 
 ## Secure Development Practices
 
