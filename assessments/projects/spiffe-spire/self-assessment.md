@@ -12,9 +12,9 @@ This document details the design goals and security implications of SPIFFE and S
 
 ## Metadata
 
-| Software | [[https://github.com/spiffe/spiffe]](https://github.com/spiffe/spiffe) |
+| Software | [https://github.com/spiffe/spiffe](https://github.com/spiffe/spiffe) |
 | -------- | ------------------------------------------------------------ |
-|          | [[https://github.com/spiffe/spire]](https://github.com/spiffe/spire) |
+|          | [https://github.com/spiffe/spire](https://github.com/spiffe/spire) |
 | Security Provider | Yes  |
 
 
