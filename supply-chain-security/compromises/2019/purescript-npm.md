@@ -4,9 +4,9 @@ The code was inserted in the packages load-from-cwd-or-npm and rate-map.
 
 
 ## Impact
-Both packages have ~ 1400 downloads weekly.
+The first version with a the backdoor was published on 05.07.2019, 21:00 UTC. On 09.07.2019, 01:00 UTC an updated version, which did no contain the backdoor, was published. The official NPM download
+statistics claim that the packages have ~ 1400 downloads weekly.
 
 
 ## Type of compromise
-The maintainer at that time claims that the malicious code was published by an attacker 
-who gained access to his npm account.
+It appears that the attacker gained access to the npm account of the package maintainer.
