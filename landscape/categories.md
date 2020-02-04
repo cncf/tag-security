@@ -59,8 +59,21 @@ sub-categories. The remaining text is a description of each sub-category.
 
 - **Runtime Observability and Analysis**
   - _Workload Runtime Protection_
+    - Identitfy based Application segmentation & Workload Segmentation
+    - Process monitoring and controls - container process whitelisting, syscall profiling and whitelisting)  
     - Active and passive protection of the container runtime.
   - _Threat Intelligence & Forensics_
     - Threat analytics, auditing
-  - _Defense and Monitoring_
+    - Network based threat intelligence (threat feeds of malicious domains, Subnets/IPs)
+    - Container Image CVE Feeds
+  - _Defense and Monitoring_  
     - Intrusion detection, etc
+  
+- **Orchestration Infrastructure Monitoring and Analysis**
+  - _Monitor Orchestration Prinicpals_
+    - Monitor, profile and detect human users/operators for credentials theft, insider threat, etc
+    - Monitor, profile and detect automated services breached, or pivoted into from application breach. 
+  - _Service Discovery Monitoring_
+    - Detect service dicovery tampering attempts (DNS Poisening)
+    - Detect covert channels exploiting service discovery (DNS tunneling)
+
