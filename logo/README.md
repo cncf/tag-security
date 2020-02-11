@@ -61,7 +61,7 @@
 
 ### Accent colors
 ![Greys](https://github.com/alexcontini/sig-security/blob/alex-update-logo-page/logo/SIG-security-colors-accent.svg)
-&nbsp;&nbsp;&nbsp;&nbsp;#6F6F7F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#474756&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#141419
+&nbsp;&nbsp;&nbsp;&nbsp;#D81637&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#F98903&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#F7C906
 
 
 ## SIG Security Fonts
