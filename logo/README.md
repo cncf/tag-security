@@ -53,8 +53,7 @@
 ## SIG Security Color Scheme
 ### Greys (for text)
 ![Greys](https://github.com/alexcontini/sig-security/blob/alex-update-logo-page/logo/SIG-security-colors-greys.svg)
-
-#404040
+#6F6F7F    #474756    #141419
 
 ## SIG Security Fonts
 
