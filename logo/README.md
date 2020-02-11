@@ -55,6 +55,10 @@
 ![Greys](https://github.com/alexcontini/sig-security/blob/alex-update-logo-page/logo/SIG-security-colors-greys.svg)
 &nbsp;&nbsp;&nbsp;&nbsp;#6F6F7F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#474756&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#141419
 
+### Main colors (buttons, links, etc.)
+![Greys](https://github.com/alexcontini/sig-security/blob/alex-update-logo-page/logo/SIG-security-colors-main.svg)
+&nbsp;&nbsp;&nbsp;&nbsp;#6F6F7F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#474756&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#141419
+
 ## SIG Security Fonts
 
 ![Image description](https://github.com/alexcontini/artwork/blob/master/SIG-security-fonts.svg)
