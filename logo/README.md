@@ -51,13 +51,18 @@
 
 
 ## SIG Security Color Scheme
-### Greys (for text)
+### Greys (text)
 ![Greys](https://github.com/alexcontini/sig-security/blob/alex-update-logo-page/logo/SIG-security-colors-greys.svg)
 &nbsp;&nbsp;&nbsp;&nbsp;#6F6F7F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#474756&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#141419
 
 ### Main colors (buttons, links, etc.)
 ![Greys](https://github.com/alexcontini/sig-security/blob/alex-update-logo-page/logo/SIG-security-colors-main.svg)
 &nbsp;&nbsp;&nbsp;&nbsp;#152356&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#4A6CA4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#389BB2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#85C2D2
+
+### Accent colors
+![Greys](https://github.com/alexcontini/sig-security/blob/alex-update-logo-page/logo/SIG-security-colors-accent.svg)
+&nbsp;&nbsp;&nbsp;&nbsp;#6F6F7F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#474756&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#141419
+
 
 ## SIG Security Fonts
 
