@@ -52,7 +52,7 @@
 
 ## SIG Security Color Scheme
 
-![Image description](https://github.com/alexcontini/artwork/blob/master/SIG-security-colors.svg)
+![Greys](https://github.com/alexcontini/sig-security/blob/alex-update-logo-page/logo/SIG-security-colors-greys.svg)
 
 
 ## SIG Security Fonts
