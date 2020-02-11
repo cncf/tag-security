@@ -64,9 +64,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;#D81637&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#F98903&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#F7C906
 
 
+
 ## SIG Security Fonts
 
-![Image description](https://github.com/alexcontini/artwork/blob/master/SIG-security-fonts.svg)
+### Gotham Regular (for body text)
+### Gotham Bold (for header text)
 
 
 
