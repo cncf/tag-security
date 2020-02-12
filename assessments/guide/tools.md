@@ -1,6 +1,6 @@
 # Tools
 
-This document contains a set of tools that will be useful to security reviewers and project leads.
+This document contains a set of tools that will be useful to security reviewers and project leads. This is not an endorsement of any vendor or open source project, rather a collection of what has been useful to individuals to help share helpful suggestions to others in the group.
 
 ## Document conversion
 
