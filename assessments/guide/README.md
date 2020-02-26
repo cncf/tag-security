@@ -13,8 +13,7 @@ should be evaluated.
 
 Note: Responsible roles for specific items are in **bold**.
 
-### 1. [Create tracking
-issue](https://github.com/cncf/sig-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
+### 1. [Create tracking issue](https://github.com/cncf/sig-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 The tracking issue serves to initiate the security assessment process.  It
 provides an initial set of information to assist SIG-Security prioritze the
 security assessment as well as provide potential reviewers with a central
@@ -44,8 +43,8 @@ format:
 | Reviewer is a currently a maintainer of the project |  |
 | Reviewer is direct report of/to a current maintainer of the project |  |
 | Reviewer is paid to work on the project |  |
-|Reviewer has significant financial interst directly ties to the success of the
-project |  |
+|Reviewer has significant financial interst directly ties to the success of the project |  |
+
 
 | Soft Conflicts | Y/N |
 |: ------------- | :-: |
