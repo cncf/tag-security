@@ -4,6 +4,7 @@ The burden is primarily on the proposing project to demonstrate it is secure in 
 
 The proposing project must provide a written document that describes the project and its security.  The document must contain the following information, at a minimum. Where security considerations do not fit into the outline below, if possible, add a sub-section when possible such that the additional content conforms to the general flow of the review.
 
+Projects are encouraged to cross link additional supporting documents or details from their repo into the self-assessment.
 
 ## Metadata
 
@@ -57,6 +58,7 @@ assume the attacker cannot break AES or SHA256.)
 * Attack Risks and Effects.  A rough estimation of the risk posed by different attacks, and potential negative consequences (e.g., The master Flibble server only communicates with Flibble servers using a minimalistic API that is formally verified and written in Rust.)
 * Security Degradation.  A discussion about the resulting security when various attacks are launched.  Note, that no system is secure in all scenarios, hence it is expected that this will include areas where attacks compromise all meaningful security.  (e.g., If an attacker is able to compromise the “master” Flibble server, they may read, write, or delete any content stored on any system)
 * Compensating Mechanisms.  Additional architectural decisions, configuration settings, options, etc. designed to reduce overall attack vector and success (minimize impact) 
+* Inclusion of a threat model if one exists is encouraged.
 
 ## Secure Development Practices
 
