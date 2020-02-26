@@ -178,6 +178,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Cameron Seader ([@cseader](https://github.com/cseader)), SUSE 
 * Robert Ficcaglia ([@rficcaglia](https://github.com/rficcaglia)), Policy WG
 * Tabitha Sable ([@tabbysable](https://github.com/tabbysable))
+* Steven Hadfield ([@steven-hadfield](https://github.com/steven-hadfield)), FICO
 </details>
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
