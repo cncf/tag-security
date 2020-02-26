@@ -87,4 +87,4 @@ encryption by default.)
 * CII Best Practices. A brief discussion of where the project is at with respect to CII best practices and what it would need to achieve the badge.
 * Case Studies. Provide context for reviewers by detailing 2-3 scenarios of real-world use cases.
 * Related Projects / Vendors. Reflect on times prospective users have asked about the diffeerences between your project and projectX. Reviewers will have
-the same questions.
+the same questions
