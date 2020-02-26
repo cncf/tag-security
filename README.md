@@ -96,7 +96,7 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 
 Policy is an essential component of a secure system.
 
-[Bi-weekly meetings](https://docs.google.com/document/d/1ihFfEfgViKlUMbY2NKxaJzBkgHh-Phk5hqKTzK-NEEs/edit?usp=sharing) at 4:00pm PT
+[Bi-weekly meetings](https://docs.google.com/document/d/1ihFfEfgViKlUMbY2NKxaJzBkgHh-Phk5hqKTzK-NEEs/edit?usp=sharing) at 3:00pm PT
 focus on policy concerns and initiatives.
 
 Co-leads
@@ -176,6 +176,8 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Lakshmi Manohar Velicheti ([@manohar9999](https://github.com/manohar9999)), Shape Security
 * Andres Vega ([@anvega](https://github.com/anvega)), Scytale.io
 * Cameron Seader ([@cseader](https://github.com/cseader)), SUSE 
+* Robert Ficcaglia ([@rficcaglia](https://github.com/rficcaglia)), Policy WG
+* Tabitha Sable ([@tabbysable](https://github.com/tabbysable))
 </details>
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
