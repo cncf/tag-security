@@ -92,9 +92,11 @@ questions and feedback to the reviewers and project.
 ### 7. Final assessment
 The final assessment provides a cursory review of the project, background,
 summarization of self-assessment, and recommendations to the CNCF, the project,
-and other recommendations of note.
-   * **Lead security reviewer** creates a branch labeled WIP and provides branch
-     information to additional reviewers.
+and other recommendations of note.  The final report should also list the
+version or release the assessment covered to better enable tracking for updates
+of the review.
+   * **Lead security reviewer** creates a branch labeled WIP and provides
+     branch information to additional reviewers.
    * **Reviewers** either comment or provide changes (feedback and
      recommendations) to the branch given
    * Either **project lead or reviewers** may request further WG discussion
@@ -104,8 +106,8 @@ and other recommendations of note.
 ## Additional Process Notes
 
 Iteration is expected; however, we expect quick turnaround (at most a week). In
-rare cases unrelated issues can unexpectedly interrupt the process and it may be
-appropriate to address specific concerns rather than continuing with the
+rare cases unrelated issues can unexpectedly interrupt the process and it may
+be appropriate to address specific concerns rather than continuing with the
 assessment. We encourage open communication between project lead and security
 reviewers:
 * At any time, the project lead may request additional time to respond to
