@@ -4,8 +4,8 @@
 
 When SAFE WG was originally proposed, developers from Kubernetes Policy WG
 actively participated the discussions and then proposed CNCF level Policy WG was
-[merged](/policy-wg-merging.md) with SAFE WG to form the current CNCF Security
-SIG, in alignment with the SIG [charter](/governance/charter.md).
+[merged](/policy-wg-merging.md) with SAFE WG to form the current CNCF SIG
+Security, in alignment with the SIG [charter](/governance/charter.md).
 
 ## Team
 
