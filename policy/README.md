@@ -1,4 +1,4 @@
-# CNCF SIG Security Policy Team Introduction
+# CNCF SIG Security policy team introduction
 
 ## Background
 
@@ -14,11 +14,11 @@ forms the [Kubernetes Policy WG](https://github.com/kubernetes/community/tree/ma
 The only difference is the topic coverage (whether it is at Kubernetes level or
 CNCF level).
 
-There are now two active co-leads for Policy Team 
+There are now two active co-leads for policy team 
 [@hannibalhuang](https://github.com/hannibalhuang)
 and [@ericavonb](https://github.com/ericavonb).
 The Policy Team is under the overall [governance](/governance/roles.md) of the
-CNCF Security SIG and should not be viewed as a separate entity. All policy
+CNCF SIG Security and should not be viewed as a separate entity. All policy
 related contributions are welcomed to be made to the sig-security repo if needed
 .
 
@@ -31,5 +31,5 @@ The current top priority development work are
 - [Policy Violation CRD](https://docs.google.com/document/d/1QJWcaJdo8w88tIixiZp9zBMHKghTMrHTyHyk6xcoVhk/edit?usp=sharing)
 
 ## Contact
-The team can be reached via either kubernetess slack channel #wg-policy or
-cncf slack channel #sig-security.
+The team can be reached via either Kubernetess slack channel #wg-policy or
+CNCF slack channel #sig-security.
