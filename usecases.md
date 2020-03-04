@@ -3,8 +3,8 @@ Authors: stummidi@pivotal.io, rayc@google.com, pragashjj@gmail.com, ckemper@goog
 Updated: 9 April 2019
 
 This is a living document, please feel free to add use cases and personas through a PR.
-This initial version was derived from inputs referencd below.  Please add
-references for new use cases, which could included shared documents from other
+This initial version was derived from inputs referenced below.  Please add
+references for new use cases, which could include shared documents from other
 projects, published research or case studies of cloud native technologies in
 real world use.
 
@@ -29,9 +29,10 @@ different people in a large organization.
 * Administrators: Security, Compliance/Audit
 * Developers, including Third Party Security Products
 * End-users
+* Platform Implementers
 
 A project will often have a very focused target audience and not all
-use cases are applicable in every situaton.  The use cases below are a guide
+use cases are applicable in every situation.  The use cases below are a guide
 to consider common needs that often require support from multiple products
 or technologies in order to be fully functional for the target users.
 
@@ -131,7 +132,7 @@ impact of repeated request on the rest of the infrastructure.
 
 * As a security administrator, I can <a href="https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.amocw7z631ri" target="_blank">make exceptions</a>  to rules governing my organization’s cloud resources.
 
-* As a security administrator, I can <a href="https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.7wavwjkp2pz2" target="_blank">exercise the above rights in hybrid and mutli-cloud deployments</a>  without compromising my ability to manage my organizations’ cloud resources.
+* As a security administrator, I can <a href="https://docs.google.com/document/d/19V_Vx0fdz2HOa31FpPswT9CsUphizfJcwvDJv05aWFs/edit#heading=h.7wavwjkp2pz2" target="_blank">exercise the above rights in hybrid and multi-cloud deployments</a>  without compromising my ability to manage my organizations’ cloud resources.
 
 # Developer
 
@@ -160,8 +161,30 @@ impact of repeated request on the rest of the infrastructure.
 
 * As an end user, I can understand the effect of changes to policy that I am making
 
+# Platform Implementer
 
+The recognition of the platform implementer as a distinct role is a relatively recent phenomenon. The goal of the platform
+implementer is to take the business requirements and translate them to the underlying technology or cloud platform to make the 
+organization's **enterprise, network and quota operators** and **security administrators and compliance officers** successful.
 
+One important aspect of this role may be to bridge between the heterogeneous cloud environments that are in use at the
+organization to provide a homogeneous management surface to the administrators and operators. This role is more technical than the roles of the operators and administrators and will often overlap with the role of a developer.
+
+* As a platform implementer I can provide central administration of cloud resources to my **operators and administrators**.
+
+* As a platform implementer I can provide compartmentalization of cloud resources for delegation purposes by **operators and administrators**. 
+
+* As a platform implementer I can allow my **operators and administrators** to delegate administration of resources.
+
+* As a platform implementer I can enable my **security administrators** to constrain the behavior of **developers** by setting guardrails.
+
+* As a platform implementer I can enable my **security administrators and compliance officers** to enforce auditing of access policies. 
+
+* As a platform implementer I can enable my **security administrators and compliance officers** the auditing of resource access.
+
+* As a platform implementer I can enable my **compliance officers** the setting of audit logging policies for my organization's resources
+
+* As a platform implementer I can enable my **compliance officers** to certify the non-violation of my organization's compliance needs.
 
 
 
