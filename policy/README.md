@@ -9,7 +9,7 @@ Security, in alignment with the SIG [charter](/governance/charter.md).
 
 ## Team
 
-The Policy Team in CNCF Security SIG consists of the same set of developers that
+The policy team in CNCF SIG Security consists of the same set of developers that
 forms the [Kubernetes Policy WG](https://github.com/kubernetes/community/tree/master/wg-policy). 
 The only difference is the topic coverage (whether it is at Kubernetes level or
 CNCF level).
