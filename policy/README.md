@@ -14,10 +14,10 @@ forms the [Kubernetes Policy WG](https://github.com/kubernetes/community/tree/ma
 The only difference is the topic coverage (whether it is at Kubernetes level or
 CNCF level).
 
-There are now two active co-leads for policy team 
-[@hannibalhuang](https://github.com/hannibalhuang)
-and [@ericavonb](https://github.com/ericavonb).
-The Policy Team is under the overall [governance](/governance/roles.md) of the
+The team leads are responsible for hosting meetings and manage necessary
+logitics needed for the team development, and identified as part of the sig
+[project team leads](https://github.com/cncf/sig-security#policy-team).
+The policy team is under the overall [governance](/governance/roles.md) of the
 CNCF SIG Security and should not be viewed as a separate entity. All policy
 related contributions are welcomed to be made to the sig-security repo if needed
 .
