@@ -65,11 +65,8 @@ The general list of activities for TL are:
   * Propose agenda items for meetings to ensure that open issues are
   discussed with the group when needed
 
-TLs are elected by the following process:
-  1. One of the Chairs nominates a candidate to be a TL, and creates a PR that
-  adds the TL to the [SIG README](/README.md).
-  1. Members are invited to comment and vote according to the regular voting
-  process described below.
+TLs are assigned by CNCF Technical Oversight Committee
+(see [CNCF TOC SIGs](https://github.com/cncf/toc#sigs)).
 
 ### Role of project leads
 
