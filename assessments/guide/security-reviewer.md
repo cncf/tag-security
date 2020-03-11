@@ -73,7 +73,7 @@ and as part of that before kicking off the assessment must:
 * assert that:
   1. they have reviewed all conflict-of-interest declarations;
   2. there are no hard-conflicts;
-  4. they believe that the review team is able to provide a balanced and fair    assessment
+  3. they believe that the review team is able to provide a balanced and fair assessment
 
 Update the above assertion if a new conflict-of-interest becomes known during
 the course of the assessment.
