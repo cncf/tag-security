@@ -54,7 +54,7 @@ guidelines for conflict of interest situations are important to prevent:
 - Security reviews being stalled while groups belabor on who should be allowed to participate
 
 The conflicts of interest lie on a spectrum, and are classified into hard and soft conflicts:
-* Hard conflicts make a reviewer ineligible to review a project.
+* A hard conflict makes a reviewer ineligible to review a project.
 * A soft conflict allows a reviewer to review a project, but not as a [project lead](./project-lead.md).
 * Soft conflicts are expected for some reviewers, and therefore are fine as long
   as the review team includes enough different perspectives to ensure a
