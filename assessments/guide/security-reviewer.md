@@ -17,13 +17,13 @@ of attacks.
 
 ## Qualifications
 
-### Required 
+### Required
 
 Unless approved by SIG-Security chairs, at least one of the reviewers will have previously performed a CNCF security assessment.  Exemptions to this are reviewed case by case upon established need by the CNCF SIG-Security chairs in order to bootstrap the process as appropriate.
 
 ### Preferred
 
-It is preferred reviewers have previous experience performing formal or informal software or security audits or assessments for a variety of organizations.  An ideal reviewer should also have been the recipient of CNCF project security assessments for a software project they manage.  
+It is preferred that reviewers have prior experience performing formal or informal software or security audits or assessments for a variety of organizations.  An ideal reviewer should also have been the recipient of security assessments or audits for a software project they manage.
 
 Note: Participation through shadowing is encouraged from members who are not qualified for security reviews, to facilitate their development of the necessary skills to be a reviewer in the future.
 
@@ -53,14 +53,37 @@ guidelines for conflict of interest situations are important to prevent:
 - SIG-Security chairs and assessment leads could intentionally or unintentionally limit the participation of an individual unfairly by asserting conflict of interest
 - Security reviews being stalled while groups belabor on who should be allowed to participate
 
-The conflicts of interest lie on a spectrum, and are classified into hard and soft conflicts.
-Hard conflicts makes a reviewer ineligible to review a project.
-A soft conflict allows a reviewer to review a project, but not as a [project lead](./project-lead.md).
-A reviewer with a soft conflict is required to document the nature of the conflict in the
-security assessment documentation. It is the responsibility of the security reviewer
-to make known his/her own conflict of interests.
+The conflicts of interest lie on a spectrum, and are classified into hard and soft conflicts:
+* Hard conflicts make a reviewer ineligible to review a project.
+* A soft conflict allows a reviewer to review a project, but not as a [project lead](./project-lead.md).
+* Soft conflicts are expected for some reviewers, and therefore are fine as long
+  as the review team includes enough different perspectives to ensure a
+  balanced assessment.
 
-For each project, 2 SIG-Security chairs must sign off on the conflicts presented to them that the assessment lead has no conflicts, and reviewers have no hard conflicts. Reasons for accepting and rejecting conflicts should be documented.
+A reviewer with a any conflict or potential conflect is required to document the nature of the conflict when volunteering as a reviewer, or at any time as they
+become aware of a potential conflict. It is the responsibility of the security 
+reviewer to make known his/her own conflict of interests and ensure that
+their declaration has been reviewed and approved by lead security reviewer.
+
+The lead security reviewer has the responsibility of ensuring a balanced review,
+and as part of that before kicking off the assessment must:
+* check that all reviewers have conflict-of-interest declarations
+* make their declaration of any potential conflict-of-interest (or lack thereof)
+* ask clarifying questions, if needed
+* assert that:
+  1. they have reviewed all conflict-of-interest declarations;
+  2. there are no hard-conflicts;
+  4. they believe that the review team is able to provide a balanced and fair    assessment
+
+Update the above assertion if a new conflict-of-interest becomes known during
+the course of the assessment.
+
+The Security Assessment Facilitator or a SIG-Security chair must review the 
+Lead Security Reviewer conflict-of-interest assertion.
+
+If there any conflicts are presented, then 2 SIG-Security chairs must approve
+the security review team. Reasons for accepting and rejecting conflicts should
+be documented.
 
 Below are classifications of hard/soft conflicts.
 
@@ -71,7 +94,8 @@ Hard conflicts:
 - Reviewer has significant financial interest directly tied to success of the project
 
 Soft conflicts:
-- Reviewer belongs to the same company/organization of the project, but does not work on the project
+- Reviewer belongs to the same company/organization of the project,
+  but does not work on the project
 - Reviewer uses the project in his/her work
 - Reviewer has contributed to the project.
 - Reviewer has a personal stake in the project (personal relationships, etc.)
