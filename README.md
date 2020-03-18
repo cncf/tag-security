@@ -176,6 +176,10 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Lakshmi Manohar Velicheti ([@manohar9999](https://github.com/manohar9999)), Shape Security
 * Andres Vega ([@anvega](https://github.com/anvega)), Scytale.io
 * Cameron Seader ([@cseader](https://github.com/cseader)), SUSE 
+* Robert Ficcaglia ([@rficcaglia](https://github.com/rficcaglia)), Policy WG
+* Matthew Giassa ([@iaxes](https://github.com/IAXES))
+* Tabitha Sable ([@tabbysable](https://github.com/tabbysable))
+* Steven Hadfield ([@steven-hadfield](https://github.com/steven-hadfield)), FICO
 </details>
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
