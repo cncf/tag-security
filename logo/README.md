@@ -76,7 +76,15 @@
         <th colspan="3">PNG</th>
         <th colspan="3">SVG</th>
     </tr>
-
+<tr>
+        <th></th>
+        <th>horizontal</th>
+        <th>stacked</th>
+        <th>icon</th>
+        <th>horizontal</th>
+        <th>stacked</th>
+        <th>icon</th>
+    </tr>
     <tr>
         <th>Grays</th>
         <td><img src="https://github.com/alexcontini/sig-security/blob/alex-update-logo-page/logo/SIG-security-colors-greys.svg" width="200"></td>
@@ -86,15 +94,7 @@
         <td><img src="sig-security/stacked/color/sig-security-stacked-color.svg" width="95"></td>
         <td><img src="sig-security/icon/color/sig-security-icon-color.svg" width="95"></td>
     </tr>
-    <tr>
-        <th></th>
-        <th>horizontal</th>
-        <th>stacked</th>
-        <th>icon</th>
-        <th>horizontal</th>
-        <th>stacked</th>
-        <th>icon</th>
-    </tr>
+    
     <tr>
         <th>black</th>
         <td><img src="sig-security/horizontal/black/sig-security-horizontal-black.png" width="200"></td>
