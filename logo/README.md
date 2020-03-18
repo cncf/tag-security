@@ -67,14 +67,54 @@
 ![Greys](https://github.com/alexcontini/sig-security/blob/alex-update-logo-page/logo/SIG-security-colors-accent.svg)
 &nbsp;&nbsp;&nbsp;&nbsp;#D81637&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#F98903&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#F7C906
 
-<span style="background-color: #FFFF00">Marked text</span>
-<h1>My First Heading</h1>
 
-<p>My first paragraph.</p>
+<table>
+    <tr>
+    	<th colspan="7"></th>
+    </tr>
+    <tr>
+        <th></th>
+        <th colspan="3">PNG</th>
+        <th colspan="3">SVG</th>
+    </tr>
 
-</body>
-
-
+    <tr>
+        <th>greys</th>
+        <td><img src="https://github.com/alexcontini/sig-security/blob/alex-update-logo-page/logo/SIG-security-colors-greys.svg" width="100"></td>
+        <td><img src="sig-security/stacked/color/sig-security-stacked-color.png" width="95"></td>
+        <td><img src="sig-security/icon/color/sig-security-icon-color.png" width="95"></td>
+        <td><img src="sig-security/horizontal/color/sig-security-horizontal-color.svg" width="200"></td>
+        <td><img src="sig-security/stacked/color/sig-security-stacked-color.svg" width="95"></td>
+        <td><img src="sig-security/icon/color/sig-security-icon-color.svg" width="95"></td>
+    </tr>
+    <tr>
+        <th></th>
+        <th>#44444</th>
+        <th>stacked</th>
+        <th>icon</th>
+        <th>horizontal</th>
+        <th>stacked</th>
+        <th>icon</th>
+    </tr>
+    <tr>
+        <th>black</th>
+        <td><img src="sig-security/horizontal/black/sig-security-horizontal-black.png" width="200"></td>
+        <td><img src="sig-security/stacked/black/sig-security-stacked-black.png" width="95"></td>
+        <td><img src="sig-security/icon/black/sig-security-icon-black.png" width="95"></td>
+        <td><img src="sig-security/horizontal/black/sig-security-horizontal-black.svg" width="200"></td>
+        <td><img src="sig-security/stacked/black/sig-security-stacked-black.svg" width="95"></td>
+        <td><img src="sig-security/icon/black/sig-security-icon-black.svg" width="95"></td>
+    </tr>
+    <tr>
+        <th>white</th>
+        <td><img src="sig-security/horizontal/white/sig-security-horizontal-white.png" width="200"></td>
+        <td><img src="sig-security/stacked/white/sig-security-stacked-white.png" width="95"></td>
+        <td><img src="sig-security/icon/white/sig-security-icon-white.png" width="95"></td>
+        <td><img src="sig-security/horizontal/white/sig-security-horizontal-white.svg" width="200"></td>
+        <td><img src="sig-security/stacked/white/sig-security-stacked-white.svg" width="95"></td>
+        <td><img src="sig-security/icon/white/sig-security-icon-white.svg" width="95"></td>
+    </tr>
+</table>
 
 ## SIG Security Fonts
 
