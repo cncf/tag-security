@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+<body>
+
 ## SIG Security Logos
 
 *Note: GitHub Flavored Markdown used in the Readme doesn't support background colors. The white logos below are displayed on the light grey of tables.*
@@ -63,10 +67,14 @@
 ![Greys](https://github.com/alexcontini/sig-security/blob/alex-update-logo-page/logo/SIG-security-colors-accent.svg)
 &nbsp;&nbsp;&nbsp;&nbsp;#D81637&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#F98903&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#F7C906
 
-<div>
-<img style="float:right" src="https://github.com/alexcontini/sig-security/blob/alex-update-logo-page/logo/SIG-security-colors-accent.svg" />
+<span style="background-color: #FFFF00">Marked text</span>
+<h1>My First Heading</h1>
 
-</div>
+<p>My first paragraph.</p>
+
+</body>
+
+
 
 ## SIG Security Fonts
 
@@ -81,3 +89,4 @@ Use of any trademark or logo is subject to the trademark policy available at htt
 
 
 Questions? Please email [info@cncf.io](mailto:info@cncf.io).
+</html>
