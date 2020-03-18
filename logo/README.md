@@ -73,8 +73,9 @@
     </tr>
     <tr>
         <th></th>
-        <th colspan="3">Accent Colors</th>
-        <th colspan="3">SVG</th>
+        <th colspan="3">Grays</th>
+        <th colspan="3">Main Colors</th>
+	<th colspan="3">Accent Colors</th>
     </tr>
 <tr>
         <th></th>
@@ -87,7 +88,7 @@
     </tr>
     <tr>
         <th>Grays</th>
-        <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
+        <td><img src="https://github.com/alexcontini/sig-security/blob/alex-update-logo-page/logo/SIG-security-colors-greys.svg" width="200"></td>
         <td><img src="sig-security/stacked/color/sig-security-stacked-color.png" width="95"></td>
         <td><img src="sig-security/icon/color/sig-security-icon-color.png" width="95"></td>
         <td><img src="sig-security/horizontal/color/sig-security-horizontal-color.svg" width="200"></td>
@@ -96,14 +97,14 @@
     </tr>
   <tr>
         <th></th>
-        <th>#6F6F7F</th>
-        <th>#474756</th>
-        <th>#141419</th>
+        <th>horizontal</th>
+        <th>stacked</th>
+        <th>icon</th>
         <th>horizontal</th>
         <th>stacked</th>
         <th>icon</th>
     </tr>  
-
+   
 </table>
 
 
