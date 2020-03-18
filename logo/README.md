@@ -69,11 +69,11 @@
 
 <table>
     <tr>
-    	<th colspan="7"></th>
+    	<th colspan="10"></th>
     </tr>
     <tr>
         <th></th>
-        <th colspan="3">PNG</th>
+        <th colspan="3">Accent Colors</th>
         <th colspan="3">SVG</th>
     </tr>
 <tr>
