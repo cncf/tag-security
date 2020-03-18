@@ -89,10 +89,10 @@
     <tr>
         <th>Grays</th>
         <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
-          <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>        <td><img src="sig-security/icon/color/sig-security-icon-color.png" width="95"></td>
-        <td><img src="sig-security/horizontal/color/sig-security-horizontal-color.svg" width="200"></td>
-        <td><img src="sig-security/stacked/color/sig-security-stacked-color.svg" width="95"></td>
-        <td><img src="sig-security/icon/color/sig-security-icon-color.svg" width="95"></td>
+          <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>       <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
+       <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
+        <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
+        <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
     </tr>
   <tr>
         <th></th>
