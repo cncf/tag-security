@@ -96,14 +96,14 @@
     </tr>
   <tr>
         <th></th>
-        <th>horizontal</th>
-        <th>stacked</th>
-        <th>icon</th>
+        <th>#6F6F7F</th>
+        <th>#474756</th>
+        <th>#141419</th>
         <th>horizontal</th>
         <th>stacked</th>
         <th>icon</th>
     </tr>  
-   
+
 </table>
 
 
