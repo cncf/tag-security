@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
 
 ## SIG Security Logos
 
