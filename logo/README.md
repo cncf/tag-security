@@ -80,7 +80,8 @@
 
 ### Gotham Regular (for body text)
 ### Gotham Bold (for header text)
-(&#x1F535;): blue
+
+&#x1F535; blue
 
 
 
