@@ -94,7 +94,15 @@
         <td><img src="sig-security/stacked/color/sig-security-stacked-color.svg" width="95"></td>
         <td><img src="sig-security/icon/color/sig-security-icon-color.svg" width="95"></td>
     </tr>
-    
+  <tr>
+        <th></th>
+        <th>horizontal</th>
+        <th>stacked</th>
+        <th>icon</th>
+        <th>horizontal</th>
+        <th>stacked</th>
+        <th>icon</th>
+    </tr>  
    
 </table>
 
