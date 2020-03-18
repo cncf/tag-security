@@ -65,6 +65,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;#D81637&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#F98903&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#F7C906
 
 
+
+
 <table>
     <tr>
     	<th colspan="7"></th>
@@ -76,8 +78,8 @@
     </tr>
 
     <tr>
-        <th>greys</th>
-        <td><img src="https://github.com/alexcontini/sig-security/blob/alex-update-logo-page/logo/SIG-security-colors-greys.svg" width="100"></td>
+        <th>Grays</th>
+        <td><img src="https://github.com/alexcontini/sig-security/blob/alex-update-logo-page/logo/SIG-security-colors-greys.svg" width="200"></td>
         <td><img src="sig-security/stacked/color/sig-security-stacked-color.png" width="95"></td>
         <td><img src="sig-security/icon/color/sig-security-icon-color.png" width="95"></td>
         <td><img src="sig-security/horizontal/color/sig-security-horizontal-color.svg" width="200"></td>
@@ -86,7 +88,7 @@
     </tr>
     <tr>
         <th></th>
-        <th>#44444</th>
+        <th>horizontal</th>
         <th>stacked</th>
         <th>icon</th>
         <th>horizontal</th>
@@ -112,6 +114,10 @@
         <td><img src="sig-security/icon/white/sig-security-icon-white.svg" width="95"></td>
     </tr>
 </table>
+
+
+
+
 
 ## SIG Security Fonts
 
