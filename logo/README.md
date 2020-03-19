@@ -73,9 +73,9 @@
 <tr>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%23474756.svg" width="200"></td>       <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%23141419.svg" width="200"></td>
-<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
-<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
-<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
+<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%23152356.svg" width="200"></td>
+<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%234A6CA4.svg" width="200"></td>
+<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%23389BB2.svg" width="200"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
