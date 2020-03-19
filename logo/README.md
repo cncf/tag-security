@@ -65,8 +65,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;#D81637&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#F98903&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#F7C906
 
 
-
-
 <table>
     <tr>
     	<th colspan="10"></th>
@@ -78,19 +76,6 @@
 	<th colspan="3">Accent Colors</th>
  </tr>
 <tr>
-  <tr>
-        <th></th>
-        <th>#6F6F7F</th>
-        <th>#474756</th>
-        <th>#141419</th>
-        <th>#152356</th>
-        <th>#4A6CA4</th>
-        <th>#389BB2</th>
- 	<th>#85C2D2</th>
-        <th>#D81637</th>
-        <th>#F98903</th>
-    </tr> 
-
 <th></th>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>       <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
@@ -100,7 +85,6 @@
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
-
     </tr>
   <tr>
         <th></th>
@@ -115,11 +99,7 @@
         <th>#F98903</th>
     </tr>  
 
-   
 </table>
-
-
-
 
 
 ## SIG Security Fonts
