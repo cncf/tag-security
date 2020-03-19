@@ -92,7 +92,7 @@
   <tr>
         <th></th>
         <th>#6F6F7F</th>
-        <th>#6F6F7F</th>
+        <th>#474756</th>
         <th>#6F6F7F</th>
         <th>#6F6F7F</th>
         <th>#6F6F7F</th>
