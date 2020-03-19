@@ -97,7 +97,11 @@
         <th>#6F6F7F</th>
         <th>#6F6F7F</th>
         <th>#6F6F7F</th>
+ <th>#6F6F7F</th>
+        <th>#6F6F7F</th>
+        <th>#6F6F7F</th>
     </tr>  
+
    
 </table>
 
