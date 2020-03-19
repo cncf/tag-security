@@ -79,7 +79,7 @@
     </tr>
 <tr>
         <th></th>
-        <th>horizontal</th>
+        <th>#6F6F7F</th>
         <th>stacked</th>
         <th>icon</th>
         <th>horizontal</th>
