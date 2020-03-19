@@ -74,7 +74,7 @@
     <tr>
         <th></th>
         <th colspan="3">Grays</th>
-        <th colspan="4">Main Colors</th>
+        <th colspan="3">Main Colors</th>
 	<th colspan="3">Accent Colors</th>
     </tr>
     <tr>
