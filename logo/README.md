@@ -100,12 +100,12 @@
     </tr>
   <tr>
         <th></th>
-        <th>horizontal</th>
-        <th>stacked</th>
-        <th>icon</th>
-        <th>horizontal</th>
-        <th>stacked</th>
-        <th>icon</th>
+        <th>#6F6F7F</th>
+        <th>#6F6F7F</th>
+        <th>#6F6F7F</th>
+        <th>#6F6F7F</th>
+        <th>#6F6F7F</th>
+        <th>#6F6F7F</th>
     </tr>  
    
 </table>
