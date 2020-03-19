@@ -77,15 +77,6 @@
         <th colspan="4">Main Colors</th>
 	<th colspan="3">Accent Colors</th>
     </tr>
-<tr>
-        <th></th>
-        <th>#6F6F7F</th>
-        <th>stacked</th>
-        <th>icon</th>
-        <th>horizontal</th>
-        <th>stacked</th>
-        <th>icon</th>
-    </tr>
     <tr>
         <th></th>
         <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
