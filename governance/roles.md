@@ -66,7 +66,7 @@ The general list of activities for TL are:
   discussed with the group when needed
 
 TLs are assigned by CNCF Technical Oversight Committee
-(see [CNCF TOC SIGs](https://github.com/cncf/toc#sigs)).
+(see [CNCF SIG Tech Lead nomination and election process](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#elections)).
 
 ### Role of project leads
 
