@@ -76,7 +76,7 @@
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%23152356.svg" width="200"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%234A6CA4.svg" width="200"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%23389BB2.svg" width="200"></td>
-<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%23F7C906.svg" width="200"></td>
+<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%23D81637.svg" width="200"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%23F98903.svg" width="200"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%23F7C906.svg" width="200"></td>
     </tr>
