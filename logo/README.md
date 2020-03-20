@@ -53,11 +53,11 @@
 
 
 
-\
-## SIG Security Color Scheme \ 
+  
+## SIG Security Color Scheme 
 
 
-
+ 
 
 <table>
  <tr><th colspan="3">Grays</th>
