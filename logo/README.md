@@ -63,14 +63,14 @@
 	<th colspan="3">Accent Colors</th>
  </tr>
 <tr>
-<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%236F6F7F.svg" width="200"></td>
-<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%23474756.svg" width="200"></td>       <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%23141419.svg" width="200"></td>
-<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%23152356.svg" width="200"></td>
-<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%234A6CA4.svg" width="200"></td>
-<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%23389BB2.svg" width="200"></td>
-<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%23D81637.svg" width="200"></td>
-<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%23F98903.svg" width="200"></td>
-<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/%23F7C906.svg" width="200"></td>
+<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%236F6F7F.svg" width="200"></td>
+<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23474756.svg" width="200"></td>       <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23141419.svg" width="200"></td>
+<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23152356.svg" width="200"></td>
+<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%234A6CA4.svg" width="200"></td>
+<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23389BB2.svg" width="200"></td>
+<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23D81637.svg" width="200"></td>
+<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23F98903.svg" width="200"></td>
+<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23F7C906.svg" width="200"></td>
     </tr>
   <tr>
         <th>#6F6F7F</th>
@@ -93,6 +93,7 @@
 ### Gotham Regular (for body text)
 ### Gotham Bold (for header text)
 
+<br>
 <br>
 
 
