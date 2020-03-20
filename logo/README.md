@@ -51,7 +51,11 @@
 </table>
 
 
+
+
+
 ## SIG Security Color Scheme
+
 
 
 
@@ -72,11 +76,11 @@
     </tr>
   <tr>
         <th>#6F6F7F</th>
-        <th>#6F6F7F</th>
         <th>#474756</th>
         <th>#141419</th>
         <th>#152356</th>
         <th>#4A6CA4</th>
+        <th>#389BB2</th>
         <th>#D81637</th>
  	<th>#F98903</th>
         <th>#F7C906</th>
