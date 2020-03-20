@@ -54,7 +54,7 @@
 
 
 
-## SIG Security Color Scheme
+## SIG Security Color Scheme  
 
 
 
@@ -94,7 +94,6 @@
 ### Gotham Regular (for body text)
 ### Gotham Bold (for header text)
 
-&#x1F535; blue
 
 
 
