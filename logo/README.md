@@ -55,8 +55,6 @@
 <br>
   
 ## SIG Security Color Scheme 
-
-
    
    
 <table>
@@ -88,6 +86,7 @@
 
 </table>
 
+<br>
 
 ## SIG Security Fonts
 
