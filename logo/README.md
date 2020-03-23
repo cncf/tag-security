@@ -55,7 +55,6 @@
 <br>
   
 ## SIG Security Color Scheme 
-   
 <table><tr><th colspan="3">Grays</th>
 <th colspan="4">Main Colors</th></tr>
 
