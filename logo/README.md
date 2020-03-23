@@ -4,6 +4,9 @@
 *Note: GitHub Flavored Markdown used in the Readme doesn't support background colors. The white logos below are displayed on the light grey of tables.*
 
 <table>
+<tr>
+    	<th colspan="7"></th>
+</tr>
 <tr>	
 	<th></th>
         <th colspan="3">PNG</th>
@@ -37,9 +40,6 @@
         <td><img src="sig-security/icon/black/sig-security-icon-black.svg" width="95"></td>
 </tr>
 <tr>
-<tr>
-<th></th>
-</tr>
         <th>white</th>
         <td><img src="sig-security/horizontal/white/sig-security-horizontal-white.png" width="200"></td>
         <td><img src="sig-security/stacked/white/sig-security-stacked-white.png" width="95"></td>
