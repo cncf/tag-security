@@ -61,13 +61,13 @@
 	<th colspan="4">Main Colors</th>
 </tr>
 <tr>
-	<td><br><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%236F6F7F.png"><br><br></td>
-	<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23474756.png" style="width:100px"></td>       
-	<td><img src="colors/%23141419.png" style="width:100px"></td>
-	<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23152356.png" style="width:100px"></td>
-	<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%234A6CA4.png" style="width:100px"></td>
-	<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23389BB2.png" style="width:100px"></td>
-	<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%2385C2D2.png" style="width:100px"></td>
+	<td><br><img src="colors/%236F6F7F.png"><br><br></td>
+	<td><img src="colors/%23474756.png"></td>       
+	<td><img src="colors/%23141419.png"></td>
+	<td><img src="colors/%23152356.png"></td>
+	<td><img src="colors/%234A6CA4.png"></td>
+	<td><img src="colors/%23389BB2.png"></td>
+	<td><img src="colors/%2385C2D2.png"></td>
 </tr>
 <tr>	
 	<th>#6F6F7F</th>
@@ -87,9 +87,9 @@
 	<th colspan="3">Accent Colors</th>
 </tr>
 <tr>
-	<td><br><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23D81637.png"><br><br></td>
-	<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23F98903.png" width="100"></td>
-	<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23F7C906.png" width="100"></td>
+	<td><br><img src="colors/%23D81637.png"><br><br></td>
+	<td><img src="colors/%23F98903.png"></td>
+	<td><img src="colors/%23F7C906.png"></td>
 </tr>
 <tr>
         <th>#D81637</th>
