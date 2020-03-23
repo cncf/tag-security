@@ -38,6 +38,7 @@
 </tr>
 <tr>
 <tr>
+<th></th>
 </tr>
         <th>white</th>
         <td><img src="sig-security/horizontal/white/sig-security-horizontal-white.png" width="200"></td>
