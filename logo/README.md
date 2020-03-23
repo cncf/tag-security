@@ -37,6 +37,8 @@
         <td><img src="sig-security/icon/black/sig-security-icon-black.svg" width="95"></td>
 </tr>
 <tr>
+<tr>
+</tr>
         <th>white</th>
         <td><img src="sig-security/horizontal/white/sig-security-horizontal-white.png" width="200"></td>
         <td><img src="sig-security/stacked/white/sig-security-stacked-white.png" width="95"></td>
