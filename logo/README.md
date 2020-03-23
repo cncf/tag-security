@@ -59,8 +59,10 @@
    
 <table>
  
-<tr><th colspan="3">Grays</th>
-<th colspan="4">Main Colors</th></tr>
+<tr>
+<th colspan="3">Grays</th>
+<th colspan="4">Main Colors</th>
+</tr>
 
 <tr>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%236F6F7F.svg" style="width:100px"></td>
@@ -85,10 +87,12 @@
 
 </table>
 
+
+
 <table>
- <tr>
-	<th colspan="3">Accent Colors</th>
- </tr>
+<tr>
+<th colspan="3">Accent Colors</th>
+</tr>
 <tr>
 
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23D81637.svg" style="width:100px"></td>
@@ -96,7 +100,7 @@
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23F7C906.svg" style="width:100px"></td>
     </tr>
   <tr>
-              <th>#D81637</th>
+        <th>#D81637</th>
  	<th>#F98903</th>
         <th>#F7C906</th>
     </tr>  
