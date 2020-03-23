@@ -69,6 +69,7 @@
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23152356.svg" style="width:100px"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%234A6CA4.svg" style="width:100px"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23389BB2.svg" style="width:100px"></td>
+<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23389BB2.svg" style="width:100px"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23D81637.svg" style="width:100px"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23F98903.svg" style="width:100px"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23F7C906.svg" style="width:100px"></td>
@@ -80,6 +81,7 @@
         <th>#152356</th>
         <th>#4A6CA4</th>
         <th>#389BB2</th>
+	<th>#85C2D2</th>
         <th>#D81637</th>
  	<th>#F98903</th>
         <th>#F7C906</th>
