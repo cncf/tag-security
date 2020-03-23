@@ -1,6 +1,6 @@
 
 
-<style type="text/css" rel="stylesheet">
+<style>
 
 
 .markdown-body table img
@@ -97,7 +97,7 @@
 
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23D81637.png" width="100" style="width:50px;padding-top:7px"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23F98903.png" width="100" style="width:50px"></td>
-<td style="padding:15px" padding="15"><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23F7C906.png" padding-top="7" width="100" style="width:100px"></td>
+<td style="padding:15px" padding="15"><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23F7C906.png" padding="5%" width="100" style="padding:5%;width:100px"></td>
     </tr>
   <tr>
         <th>#D81637</th>
