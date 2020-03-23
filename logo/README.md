@@ -56,12 +56,9 @@
   
 ## SIG Security Color Scheme 
    
-   
 <table>
-<tr><td>
-<th colspan="3">Grays</th>
-<th colspan="4">Main Colors</th>
-</td></tr>
+<tr><th colspan="3">Grays</th>
+<th colspan="4">Main Colors</th></tr>
 
 <tr>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%236F6F7F.svg" style="width:100px"></td>
@@ -71,7 +68,6 @@
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%234A6CA4.svg" style="width:100px"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23389BB2.svg" style="width:100px"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23389BB2.svg" style="width:100px"></td>
-
     </tr>
   <tr>
         <th>#6F6F7F</th>
