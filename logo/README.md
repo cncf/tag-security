@@ -59,8 +59,8 @@
    
 <table>
  <tr><th colspan="3">Grays</th>
-        <th colspan="3">Main Colors</th>
-	<th colspan="3">Accent Colors</th>
+        <th colspan="4">Main Colors</th>
+
  </tr>
 <tr>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%236F6F7F.svg" style="width:100px"></td>
