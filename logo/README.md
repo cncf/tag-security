@@ -1,15 +1,4 @@
 
-
-<style>
-
-
-.markdown-body table img
-{ padding-top:5% !important;
-
-}
-</style>
-
-
 ## SIG Security Logos
 
 *Note: GitHub Flavored Markdown used in the Readme doesn't support background colors. The white logos below are displayed on the light grey of tables.*
@@ -95,9 +84,9 @@
 </tr>
 <tr>
 
-<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23D81637.png" width="100" style="width:50px;padding-top:7px"></td>
-<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23F98903.png" width="100" style="width:50px"></td>
-<td style="padding:5%" padding="15"><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23F7C906.png" padding="5%" width="100" style="padding:5%;width:100px"></td>
+<td><br><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23D81637.png" width="100"><br><br></td>
+<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23F98903.png" width="100"></td>
+<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23F7C906.png" padding="5%" width="100" style="padding:5%;width:100px"></td>
     </tr>
   <tr>
         <th>#D81637</th>
