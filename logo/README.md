@@ -1,4 +1,15 @@
 
+
+<style type="text/css" rel="stylesheet">
+
+
+.markdown-body table img
+{ padding-top:5% !important;
+
+}
+</style>
+
+
 ## SIG Security Logos
 
 *Note: GitHub Flavored Markdown used in the Readme doesn't support background colors. The white logos below are displayed on the light grey of tables.*
