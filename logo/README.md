@@ -8,7 +8,6 @@
     	<th colspan="7"></th>
 </tr>
 <tr>
-        <th></th>
         <th colspan="3">PNG</th>
         <th colspan="3">SVG</th>
 </tr>
@@ -54,7 +53,7 @@
 
   
 ## SIG Security Color Scheme 
-
+<br>
 <table>
 <tr>
 	<th colspan="3">Grays</th>
