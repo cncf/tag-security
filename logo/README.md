@@ -81,14 +81,11 @@
 </table>
 
 
-
-
 <table>
 <tr>
 	<th colspan="3">Accent Colors</th>
 </tr>
 <tr>
-
 	<td><br><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23D81637.png"><br><br></td>
 	<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23F98903.png" width="100"></td>
 	<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23F7C906.png" width="100"></td>
