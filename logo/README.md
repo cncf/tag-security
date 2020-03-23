@@ -4,10 +4,8 @@
 *Note: GitHub Flavored Markdown used in the Readme doesn't support background colors. The white logos below are displayed on the light grey of tables.*
 
 <table>
-<tr>
-    	<th colspan="7"></th>
-</tr>
-<tr>
+<tr>	
+	<th></th>
         <th colspan="3">PNG</th>
         <th colspan="3">SVG</th>
 </tr>
