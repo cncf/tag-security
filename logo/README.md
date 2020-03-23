@@ -69,7 +69,7 @@
 
 <table><tr><th colspan="3">Grays</th><th colspan="4">Main Colors</th></tr>
 <tr>
-<td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%236F6F7F.png" style="width:50px"></td>
+<td>. <br><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%236F6F7F.png" style="width:50px"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23474756.png" style="width:100px"></td>       
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23141419.png" style="width:100px"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23152356.png" style="width:100px"></td>
