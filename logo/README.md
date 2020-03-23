@@ -66,16 +66,13 @@
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23389BB2.svg" style="width:100px"></td>
 <td><img src="https://github.com/alexcontini/sig-security/blob/contini-fix-logo-page/logo/colors/%23389BB2.svg" style="width:100px"></td>
     </tr>
-  <tr>
-        <th>#6F6F7F</th>
+  <tr><th>#6F6F7F</th>
         <th>#474756</th>
         <th>#141419</th>
         <th>#152356</th>
         <th>#4A6CA4</th>
         <th>#389BB2</th>
-	<th>#85C2D2</th>
-        
-    </tr>  
+	<th>#85C2D2</th></tr>  
 
 </table>
 
