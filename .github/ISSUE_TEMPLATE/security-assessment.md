@@ -22,8 +22,9 @@ Security Provider: yes/no (e.g. Is the primary function of the project to suppor
 - [ ] Create slack channel (e.g. #sec-assess-projectname)
 - [ ] Project lead provides draft document - see [outline](https://github.com/cncf/sig-security/blob/master/assessments/guide/outline.md)
 - [ ] "Dumb question phase" Lead Security Reviewer asks clarifying questions 
+- [ ] Assign issue to security reviewers
 - [ ] Initial review
 - [ ] Presentation & discussion
 - [ ] Share draft findings with project
-- [ ] Assessment summary and doc checked into /assessments/projects/project-name
+- [ ] Assessment summary and doc checked into /assessments/projects/project-name (require at least 1 co-chair approval)
 - [ ] CNCF TOC presentation (if requested by TOC)
