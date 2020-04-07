@@ -9,8 +9,8 @@
 # Global code owners: co-chairs
 *       @ultrasaurus @dshaw @pragashj
 
-# Security assessments (TODO: Approval required by PR)
-# /assessments/ @JustinCappos
+# Security assessments
+/assessments/ @JustinCappos
 
 # Policy related (TODO: Approval required by PR)
 # /policy/ @hannibalhuang @ericavonb @rficcaglia
