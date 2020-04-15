@@ -36,6 +36,12 @@ The level of effort for the reviewers is expected to be 10 hours per review. Cor
 * attending project presentation with Q&A
 * discussion via Slack or additional live Q&A sessions
 
+## Expectations
+
+GitHub issues are assigned to security reviewers. Security reviewers are
+expected to conduct an in-depth review described in the [Security Assessment
+Guide](./).
+
 ## Conflict of interest
 
 There is a possibility of a conflict of interest that can arise between a security reviewer and
