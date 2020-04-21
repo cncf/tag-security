@@ -21,7 +21,7 @@ Security Provider: yes/no (e.g. Is the primary function of the project to suppor
    - [ ] Sign off by 2 chairs on reviewer conflicts
 - [ ] Create slack channel (e.g. #sec-assess-projectname)
 - [ ] Project lead provides draft document - see [outline](https://github.com/cncf/sig-security/blob/master/assessments/guide/outline.md)
-- [ ] "Dumb question phase" Lead Security Reviewer asks clarifying questions 
+- [ ] "Naive question phase" Lead Security Reviewer asks clarifying questions 
 - [ ] Assign issue to security reviewers
 - [ ] Initial review
 - [ ] Presentation & discussion
