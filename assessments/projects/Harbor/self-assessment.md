@@ -99,8 +99,12 @@ This document details the design goals and security implications of Harbor to ai
 
 The Harbor project is an enterprise-grade container registry that enables enterprises to assess the security posture of container images and enforce that images are compliant with being free from vulnerabilities as defined in the configured vulnerability databases.
 
+---
+**NOTE**
 
-    Vulnerabilities are only detected in an artifact or container image as the result of static analysis. This static analysis is performed by a scanner like CoreOS’s Clair or Aqua’s Trivy. If the vulnerabilities are already published and the scanner can pick them up, images are being analyzed against those vulnerabilities. In the case of Zero Day CVEs, these take time to be published in [vulnerability databases](https://github.com/quay/clair/blob/master/Documentation/drivers-and-data-sources.md#data-sources-for-the-built-in-drivers) and may take hours or days to be picked up by Trivy or Clair. Each scanner has their own vulnerability databases that they use for scanning.
+Vulnerabilities are only detected in an artifact or container image as the result of static analysis. This static analysis is performed by a scanner like CoreOS’s Clair or Aqua’s Trivy. If the vulnerabilities are already published and the scanner can pick them up, images are being analyzed against those vulnerabilities. In the case of Zero Day CVEs, these take time to be published in [vulnerability databases](https://github.com/quay/clair/blob/master/Documentation/drivers-and-data-sources.md#data-sources-for-the-built-in-drivers) and may take hours or days to be picked up by Trivy or Clair. Each scanner has their own vulnerability databases that they use for scanning.
+
+---
 
 The project was started by a group of VMware engineers in 2014. Since then, it has grown over time into a popular open source container image registry that is able to secure images with role-based access control, scan images for vulnerabilities, and sign images for authenticity and traceability. As a CNCF Incubating project, Harbor delivers compliance, performance, and interoperability to help you consistently and securely manage images across cloud native compute platforms like Kubernetes and Docker.
 
@@ -643,8 +647,12 @@ We have not tested Harbor with a service mesh like Istio. Some of our users view
 
 Harbor does not meet any compliance standards today. However, as we interact with more service providers that are putting Harbor in production (example by OVH Cloud [here](https://www.ovh.com/blog/managing-harbor-at-cloud-scale-the-story-behind-harbor-kubernetes-operator/)) and delivering it as a service, we understand there may be a need to acquire some of these certifications. We will continue exploring this vertical and their needs of Harbor and prioritize any requests. Currently, there haven’t been any regarding compliance certifications.
 
+---
+**NOTE**
 
-    There is only 1 public reference of a service provider today. However we are working privately with a few more service providers that don't want to be named publicly yet. There are also some enterprises that are internally acting as service providers and have the same use cases.
+There is only 1 public reference of a service provider today. However we are working privately with a few more service providers that don't want to be named publicly yet. There are also some enterprises that are internally acting as service providers and have the same use cases.
+
+---
 
 Harbor has achieved the Silver level criteria for CII Best Practices, [https://bestpractices.coreinfrastructure.org/en/projects/2095?criteria_level=1](https://bestpractices.coreinfrastructure.org/en/projects/2095?criteria_level=1). The [silver badge](https://bestpractices.coreinfrastructure.org/en/projects/2095?criteria_level=1) is displayed at [https://github.com/goharbor/harbor/blob/master/README.md](https://github.com/goharbor/harbor/blob/master/README.md), Harbor’s primary repository.
 
