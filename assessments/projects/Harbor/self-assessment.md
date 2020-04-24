@@ -118,9 +118,9 @@ As you are reading this document, please pay specific attention to three very im
 
 
 
-1. [Breakdown of Access, Tokens, and Creds in Harbor]()`todo insert links`
-2. [Blast Radius and Recovery]()
-3. [Compensating Mechanisms]()
+1. [Breakdown of Access, Tokens, and Creds in Harbor](#breakdown-of-access-tokens-and-creds-in-harbor)
+2. [Blast Radius and Recovery](#blast-radius-and-recovery)
+3. [Compensating Mechanisms](#compensating-mechanisms)
 
 ## Background
 
@@ -181,8 +181,8 @@ The Harbor project also plans to integrate, store, or make use of other cloud na
 
 ## History
 
-`todo insert architecture diagram`
-
+**Harbor Through the Years**
+![Harbor History](./docs/Harbor-history.png)
 
 *   In June 2014, Harbor started as a project within VMware's China R&D organization, where it was leveraged for a handful of internal projects to manage container images. To allow more developers in the community to use and contribute to the project, VMware open-sourced Harbor in March of 2016 and it has steadily gained traction since.
 *   Harbor has been integrated into three commercial VMware products; vSphere Integrated Containers (VIC), Pivotal Container Services (aka PKS or VMware Enterprise PKS), and VMware Essential PKS.
@@ -233,8 +233,8 @@ Specific uses cases include:
 
 Harbor consists of a series of core proprietary components as well as several 3rd party open source software (Docker distribution, Clair, Notary, Chartmuseum, Helm etc.) running as containers to stand up a registry instance, capable of running on a wide array of popular Linux distros. You can find a complete listing of all Harbor dependencies [here](https://docs.google.com/document/d/15gX7EeeXQThEvVMGpL-0a1mOwGuByLtMfvXNJaKT0A0/edit#heading=h.ogwp628ik1nb) as well as a summary in the section directly below. Harbor can run as Docker compose as well as a Kubernetes deployment via Helm charts and has recently seen a 3rd release version in the form of an Operator (see our announcement [here](https://github.com/goharbor/harbor-operator/)) This service is exposed to the end user via a web console and a rich set of APIs that allows you to use Docker CLI and other OCI-compatible client tooling to push and pull images. It has namespace management through a construct called ‘project’ and users gain access to their projects through full RBAC support. Policies enforcing image scanning and vulnerabilities (leveraging OSS project Trivy) and image signing (TUF Notary) are applied across these projects to enforce artifacts can only be pulled from the Harbor registry if they meet the policy requirements.
 
-
-`todo add architecture image`
+**Harbor Architecture**
+![Harbor Architecture](./docs/Harbor-architecture.png)
 
 
 
@@ -252,7 +252,7 @@ Harbor supports different modes for authenticating users and managing user accou
 
 RBAC and roles are fully contained within Harbor’s Database regardless of the authentication scheme used. IdP integration tells us reliably who the account is (pure auth) and Harbor will dictate what they are entitled to do. This means that IdP’s only perform authentication. Authorization is always performed by Harbor and the authorization configuration is in the Harbor Database.
 
-For logging and forensics with IdPs, please visit the appropriate `todo insert link`
+For logging and forensics with IdPs, please visit the appropriate [section](#forensics).
 
 
 ### Components & Dependencies
@@ -698,10 +698,8 @@ If a customer has enabled Notary, image provenance is not broken unless in the c
 
 Mandatory reading prior to this section is the “Breakdown of Access, Tokens, and Creds in Harbor” section. You can view an index overview of the blast radius and recovery table below. It is color coded in terms of risk during a successful attack.
 
-
-`insert image here`
-
-
+**Blast Radius Index**
+![Blast Radius Index](./docs/blast-radius-and-recovery.png)
 
 <table>
   <tr>
