@@ -40,8 +40,7 @@ The level of effort for the reviewers is expected to be 10 hours per review. Cor
 
 GitHub issues are assigned to security reviewers. Security reviewers are
 expected to conduct an in-depth review described in the [Security Assessment
-Guide](./). Security reviewers should seek the approval of the other
-participating security reviewers and at least 1 co-chair before merging.
+Guide](./).
 
 ## Conflict of interest
 
