@@ -1,7 +1,7 @@
 # CNCF SIG-Security	Harbor Project Self Assessment
 *March 2020*  
 *Primary Author: Michael Michael, Harbor Maintainer ([@michmike](https://github.com/michmike), [@michmike77](https://twitter.com/michmike77))*  
-*Security Reviewers: Andres Vega, Justin Cappos, Chase Pettet, Vinay Venkataraghavan, Robert Ficaglia, Martin Vrachev.*
+*Security Reviewers: Andres Vega, Justin Cappos, Chase Pettet, Vinay Venkataraghavan, Robert Ficaglia, Martin Vrachev, Payam Tarverdyan Chychi, Cameron Seader.*
 
 This document details the design goals and security implications of Harbor to aid in the security assessment by CNCF SIG-Security.
 
