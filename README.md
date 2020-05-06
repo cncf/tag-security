@@ -180,6 +180,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Matthew Giassa ([@iaxes](https://github.com/IAXES))
 * Tabitha Sable ([@tabbysable](https://github.com/tabbysable))
 * Steven Hadfield ([@steven-hadfield](https://github.com/steven-hadfield)), FICO
+* Payam Tarverdyan Chychi ([@unclepieman](https://github.com/unclepieman)), Infoblox
 </details>
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
