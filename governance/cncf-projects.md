@@ -9,7 +9,7 @@ each project's annual [security assessment](/assessments).
 
 Current list of projects:
 
-* Falco
+* [Falco](https://falco.org/)
 * Open Policy Agent
 * Notary
 * TUF
