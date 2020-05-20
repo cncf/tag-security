@@ -9,6 +9,9 @@
 # Global code owners: co-chairs
 *       @ultrasaurus @dshaw @pragashj
 
+# README.md Owners
+/README.md @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos
+
 # Security assessments
 /assessments/ @JustinCappos @ultrasaurus @dshaw @pragashj
 
