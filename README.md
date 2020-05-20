@@ -181,6 +181,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Tabitha Sable ([@tabbysable](https://github.com/tabbysable))
 * Steven Hadfield ([@steven-hadfield](https://github.com/steven-hadfield)), FICO
 </details>
+* Yeeling Lam ([@yeelinglam](https://github.com/yeelinglam)), AT&T
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 
