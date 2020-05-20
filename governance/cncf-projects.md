@@ -9,9 +9,9 @@ each project's annual [security assessment](/assessments).
 
 Current list of projects:
 
-* [Falco](https://falco.org/)
-* Open Policy Agent
-* Notary
-* TUF
-* SPIFFE
-* SPIRE
+* [Falco: cloud-native runtime security](https://falco.org/)
+* [Notary: Allows anyone to have trust over arbitrary collections of data](https://github.com/theupdateframework/notary)
+* [OPA: Open policy agent](https://www.openpolicyagent.org/)
+* [TUF: The update framework](https://theupdateframework.io/)
+* [SPIFFE: secure production identity framework for everyone](https://github.com/spiffe)
+* [SPIRE: SPIFFE runtime environment](https://github.com/spiffe/spire)
