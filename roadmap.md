@@ -1,15 +1,16 @@
-# SAFE WG Roadmap
+# SIG Security Roadmap
 
 ### Overview
+Note:  SIG-Security was rebranded from SAFE working group. The below roadmap includes SAFE WG and SIG-Security in its timeline.
 
 |     | #2 Discover | #3 Describe | #4 Identify
 | --- | --- | --- | --- |
 | Artifacts | Personas<br/>Use Cases<br/>Categories | Standards<br/>Common Definitions<br/>Block Architecture | Catalog Projects<br/>Fill in Boxes<br/>Identify Gaps
-| Topics | Presentations<br/>WG members & guests | Standards in Practice<br/>Real World Systems Architecture | Platforms & Products<br/>Tools & Libraries
+| Topics | Presentations<br/>SIG members & guests | Standards in Practice<br/>Real World Systems Architecture | Platforms & Products<br/>Tools & Libraries
 
 ### Details
 
-1. **Charter** the working group. Draft vision, process and initial members 
+1. **Charter** the SAFE Working Group. Draft vision, process and initial members 
    (done, see below)
 2. **Discover** (in progress)
    * Explore the problem space of the working group
