@@ -11,6 +11,12 @@ Project Name:
 
 Github URL:
 
+<!-- For project proposals looking to go through SIG-assessment, please indicate the stage for review (sandbox, incubation/graduation and link to the TOC issue, else indicate NA
+
+For example, https://github.com/cncf/toc/issues/368 (incubation)
+-->
+Project proposal stage and issue (NA if not applicable):
+
 Security Provider: yes/no (e.g. Is the primary function of the project to support the security of an integrating system?)
 
 - [ ] Identify team
