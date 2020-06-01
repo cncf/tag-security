@@ -180,12 +180,17 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Matthew Giassa ([@iaxes](https://github.com/IAXES))
 * Tabitha Sable ([@tabbysable](https://github.com/tabbysable))
 * Steven Hadfield ([@steven-hadfield](https://github.com/steven-hadfield)), FICO
+* Yeeling Lam ([@yeelinglam](https://github.com/yeelinglam)), AT&T
 </details>
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 
 
 # Additional information
+
+## CNCF sig assessments
+
+As part of the [CNCF project proposal process](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc), projects should create a new [assessment issue](https://github.com/cncf/sig-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name) with a [self-assessment](https://github.com/cncf/sig-security/blob/master/assessments/guide/outline.md).
 
 ## Past events and meetings
 

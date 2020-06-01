@@ -123,10 +123,20 @@ verified and written in Rust.)
 it is expected that this will include areas where attacks compromise all
 meaningful security.  (e.g., If an attacker is able to compromise the “master”
 Flibble server, they may read, write, or delete any content stored on any
-system)
+system).  This should be stated in terms that are accessible to a reader that does not fully understand the
+system.  Hence, "a compromised master Flibble key lets and attacker push and pull widgets" is less useful 
+than saying " compromised master Flibble key lets an attacker executer arbitrary code on client machines
+using the Flibble server".
 * Compensating Mechanisms.  Additional architectural decisions, configuration
   settings, options, etc. designed to reduce overall attack vector and success
-(minimize impact) 
+(minimize impact).  Particular detail should be paid to mechanisms that contain an attack (separationof
+privilege) and the techniques used to recover from a successful attack.  It is important to have clear
+documentation that explains what types of security incidents are likely to occur and what means should 
+be undertaken to securely recover. I.e., in the case of a Flibble server compromise, a threshold of the 
+offline Flibble keys must be used in order to sign new Flibble metadata to revoke the older server key.
+This new metadata should be distributed to clients using the Flibble widget create operation as soon
+as is feasible as in the interm clients will tryst the compromised server, enabling an attacker to
+serve them outdated widgets that are known to be defective.
 * Inclusion of a threat model if one exists is encouraged.
 
 ## Secure Development Practices
