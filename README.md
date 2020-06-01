@@ -164,7 +164,6 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Tsvi Korren ([@tsvikorren](https://github.com/tsvikorren)), Aqua Security
 * Simarpreet Singh ([@simar7](https://github.com/simar7))
 * Michael Ducy ([@mfdii](https://github.com/mfdii))
-* Craig Ingram ([@cji](https://github.com/cji)), Salesforce
 * Roger Klorese ([@qnetter](https://github.com/qnetter)), SUSE
 * John Menerick ([@cloudsriseup](https://github.com/cloudsriseup)), Ford Autonomic
 * Peter Benjamin ([@pbnj](https://github.com/pbnj)), Norton LifeLock
