@@ -1,0 +1,19 @@
+# CODEOWNERS file indicates code owners for certain files
+#
+# Code owners will automatically be added as a reviewer for PRs that touch
+# the owned files.
+#
+# The master branch will be configured to require at least 1 approval from a 
+# code owner for a PR.
+
+# Global code owners: co-chairs
+*       @ultrasaurus @dshaw @pragashj
+
+# README.md Owners
+/README.md @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos
+
+# Security assessments
+/assessments/ @JustinCappos @ultrasaurus @dshaw @pragashj
+
+# Policy related (TODO: Approval required by PR)
+# /policy/ @hannibalhuang @ericavonb @rficcaglia @ultrasaurus @dshaw @pragashj

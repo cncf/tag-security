@@ -82,6 +82,7 @@ assessment.
         with the project's repo and docs if available
    * **Security reviewers and project lead/pocs** ensure all reviewer
      questions/comments are addressed and finalize the self-assessment
+   * **Lead security reviewer or their designee,** with the assistance of the **security reviewers** create a draft summary document to capture existing comments, feedback, and recommendations prior to the presentation.
 ### 6. Presentation
 The presentation is designed to inform members of SIG Security of the project,
 its intent, what it accomplishes, and provides the opportunity for additional
@@ -97,11 +98,13 @@ version or release the assessment covered to better enable tracking for updates
 of the review.
    * **Lead security reviewer** creates a branch labeled WIP and provides
      branch information to additional reviewers.
+   * **Lead security reviewer** places the draft assessment into branch for finalization
    * **Reviewers** either comment or provide changes (feedback and
      recommendations) to the branch given
    * Either **project lead or reviewers** may request further WG discussion
    * **Project lead** prepares a PR to /assessments/project-docs/project-name/
      when all comments, feedback, and recommendations are incorporated
+   * PR approval of at least 1 **co-chair**, alongside other **reviewers'** approvals, is required before merging
 
 ## Additional Process Notes
 
