@@ -123,7 +123,10 @@ verified and written in Rust.)
 it is expected that this will include areas where attacks compromise all
 meaningful security.  (e.g., If an attacker is able to compromise the “master”
 Flibble server, they may read, write, or delete any content stored on any
-system)
+system).  This should be stated in terms that are accessible to an reader that does not fully understand the
+system.  Hence, "a compromised master Flibble key lets an attacker push and pull widgets" is less useful 
+than saying "a compromised master Flibble key lets an attacker execute arbitrary code on client machines
+using the Flibble server".
 * Compensating Mechanisms.  Additional architectural decisions, configuration
   settings, options, etc. designed to reduce overall attack vector and success
 (minimize impact) 
