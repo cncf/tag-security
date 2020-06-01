@@ -129,7 +129,14 @@ than saying "a compromised master Flibble key lets an attacker execute arbitrary
 using the Flibble server".
 * Compensating Mechanisms.  Additional architectural decisions, configuration
   settings, options, etc. designed to reduce overall attack vector and success
-(minimize impact) 
+(minimize impact).  Particular detail should be paid to mechanisms that contain an attack (separation of
+privilege) and the techniques used to recover from a successful attack.  It is important to have clear 
+documentation that explains what types of security incidents are likely to occur and what means should
+be undertaken to securely recover.  (i.e., in the case of a Flibble server compromise, a threshold of the 
+offline Flibble keys must be used in order to sign new Flibble metadata to revoke the old server key.  
+This new metadata should be distributed to clients using the Flibble widget create operation as soon 
+as is feasible as in the interim clients will trust the compromised server, enabling an attacker to 
+serve them outdated widgets that are known to be defective.) 
 * Inclusion of a threat model if one exists is encouraged.
 
 ## Secure Development Practices
