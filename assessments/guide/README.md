@@ -104,7 +104,8 @@ of the review.
    * Either **project lead or reviewers** may request further WG discussion
    * **Project lead** prepares a PR to /assessments/project-docs/project-name/
      when all comments, feedback, and recommendations are incorporated
-   * PR approval of at least 1 **co-chair**, alongside other **reviewers'** approvals, is required before merging
+   * PR approval of at least 1 **co-chair**, alongside other **reviewers'** approvals, is required before 
+     merging
 
 ## Additional Process Notes
 
