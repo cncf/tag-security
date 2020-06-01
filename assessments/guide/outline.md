@@ -129,7 +129,7 @@ than saying " compromised master Flibble key lets an attacker executer arbitrary
 using the Flibble server".
 * Compensating Mechanisms.  Additional architectural decisions, configuration
   settings, options, etc. designed to reduce overall attack vector and success
-(minimize impact).  Particular detail should be paid to mechanisms that contain an attack (separationof
+(minimize impact).  Particular detail should be paid to mechanisms that contain an attack (separation of
 privilege) and the techniques used to recover from a successful attack.  It is important to have clear
 documentation that explains what types of security incidents are likely to occur and what means should 
 be undertaken to securely recover. I.e., in the case of a Flibble server compromise, a threshold of the 
