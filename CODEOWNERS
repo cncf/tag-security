@@ -6,8 +6,14 @@
 # The master branch will be configured to require at least 1 approval from a 
 # code owner for a PR.
 
-# Global code owners: co-chairs
-*       @ultrasaurus @dshaw @pragashj
+# Global code owners: co-chairs, tech leads
+# Note: Tech leads can perform approval and merging of PRs, with the intent
+# of delegating some responsibilities from co-chairs. 
+#
+# Tech leads should exercise discretion in defering final approval for a PR
+# to a co-chair. This includes major edits or new introductions to the 
+# repository.
+*       @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos
 
 # README.md Owners
 /README.md @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos
