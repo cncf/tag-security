@@ -90,6 +90,11 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 * Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 6/3/2019 - 6/3/2021]
 * Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 6/3/2019 - 6/3/2021]
 
+### Tech Leads
+* Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
+* Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A.
+* Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
+
 ### On-going projects
 
 #### Policy team
