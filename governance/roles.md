@@ -177,14 +177,11 @@ to the [list of people in this role](/.github/settings.yml).
 
 Each meeting must have at a minimal one scribe and preferable with two.
 
-Prerequisites:
-* Prospect and/or active members (this is a good way to contribute initially)
-
 Scribe is expected to perform the following:
 * Review meeting Agenda with facilitator before start of meeting
-* Summarize discussions and capture into meeting notes (not transcribe verbatim) - [SIG-Security Meeting Note](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* Clarifies and annotates actions as discussion progresses with assignee and due dates
-* Partners with Facilitator to capture major occurring items in the meeting
+* Summarize discussions and capture into meeting notes (not transcribe verbatim)
+* Clarify and annotate actions as discussion progresses with assignee and due dates
+* Partner with Facilitator to capture major occurring items in the meeting
 * Add links to issues being discussed if not already in Agenda
 * Open new issues to track action items from meeting
 
