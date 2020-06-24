@@ -90,6 +90,11 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 * Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 6/3/2019 - 6/3/2021]
 * Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 6/3/2019 - 6/3/2021]
 
+### Tech Leads
+* Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
+* Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A.
+* Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
+
 ### On-going projects
 
 #### Policy team
@@ -180,7 +185,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Tabitha Sable ([@tabbysable](https://github.com/tabbysable))
 * Steven Hadfield ([@steven-hadfield](https://github.com/steven-hadfield)), FICO
 * Yeeling Lam ([@yeelinglam](https://github.com/yeelinglam)), AT&T
-* Wayne Haber ([@whaber github](https://github.com/whaber) / ([@whaber gitlab](https://gitlab.com/whaber), GitLab
+* Wayne Haber ([@whaber github](https://github.com/whaber) / [@whaber gitlab](https://gitlab.com/whaber)), GitLab
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
