@@ -65,7 +65,7 @@ they become aware of the potential conflict, so the new conflict may be consulte
 
 The lead security reviewer has the responsibility of ensuring a balanced review,
 and as part of that before kicking off the assessment must:
-* check that all reviewers have conflict-of-interest declarations
+* Check that all reviewers have conflict-of-interest declarations,
 * make their declaration of any potential conflict-of-interest (or lack thereof)
 * ask clarifying questions, if needed
 * assert that:
