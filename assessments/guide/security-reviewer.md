@@ -82,6 +82,11 @@ Lead Security Reviewer conflict-of-interest assertion.
 If there any conflicts are presented, then 2 SIG-Security chairs must approve
 the security review team. Reasons for accepting and rejecting conflicts should
 be documented.
+In most cases, the existence of a hard conflict will prevent a SIG member from participating in the assessment for 
+which their hard conflict exists.  Depending on the circumstances of the particular conflict, the assessment, and the 
+may project, the chairs and the assessment facilitator may determine if the hard conflict may be waived.  Should this 
+occur, the decision's justification will be documented to ensure it clearly depicts the circumstances for granting the 
+waiver.
 
 Below are classifications of hard/soft conflicts.
 
