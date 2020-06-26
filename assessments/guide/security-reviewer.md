@@ -57,10 +57,11 @@ The conflicts of interest lie on a spectrum, and are classified into hard and so
 * A soft conflict allows a reviewer to review a project, but not as a [project lead](./project-lead.md).
 * It is not unusual for reviewers to have soft conflicts. The diversity of reviewers that are familiar with a project and can provide a deeper insight together with a fresh set of eyes is beneficial to the success of a security review.
 
-A reviewer with a any conflict or potential conflect is required to document the nature of the conflict when volunteering as a reviewer, or at any time as they
-become aware of a potential conflict. It is the responsibility of the security 
-reviewer to make known his/her own conflict of interests and ensure that
-their declaration has been reviewed and approved by lead security reviewer.
+All reviewers must provide a conflict declaration to indicate which hard or soft conflicts do, or do not exist 
+when they volunteer to be a reviewer.  This is done by placing a comment on the issue associated with the 
+assessment.
+Should a conflict arise during the time of the assessment, reviewers should notify the lead security reviewer when 
+they become aware of the potential conflict, so the new conflict may be consulted with the facilitator and/or chairs.
 
 The lead security reviewer has the responsibility of ensuring a balanced review,
 and as part of that before kicking off the assessment must:
