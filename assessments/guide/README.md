@@ -17,6 +17,7 @@ To provide the CNCF’s TOC with effective information about the security of dif
 3. Inital review
    * Upon request by the project, security reviewer may do an inital review to verify completeness, ask for clarifications and provide quick feedback
    * Project posts their document to the group mailing list, allowing at least one week for review before presenting to the SIG
+   * Github assessment issue is assigned to security reviewers
 4. Presentation
    * Project lead presents to SIG
    * This will be recorded as part of standard SIG process
@@ -24,6 +25,7 @@ To provide the CNCF’s TOC with effective information about the security of dif
    * Reviewers provide final feedback with recommendations
    * Either project lead or reviewers may request further WG discussion
    * Project lead prepares a PR to /assessments/project-docs/project-name/
+   * PR approval of at least 1 co-chair, alongside other reviewers' approvals, is required before merging
 
 ## Additional Process Notes
 

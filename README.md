@@ -86,9 +86,14 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 ## Members
 
 ### SIG Chairs
-* Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 6/3/2020]
+* Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 9/3/2020]
 * Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 6/3/2019 - 6/3/2021]
 * Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 6/3/2019 - 6/3/2021]
+
+### Tech Leads
+* Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
+* Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A.
+* Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
 
 ### On-going projects
 
@@ -164,7 +169,6 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Tsvi Korren ([@tsvikorren](https://github.com/tsvikorren)), Aqua Security
 * Simarpreet Singh ([@simar7](https://github.com/simar7))
 * Michael Ducy ([@mfdii](https://github.com/mfdii))
-* Craig Ingram ([@cji](https://github.com/cji)), Salesforce
 * Roger Klorese ([@qnetter](https://github.com/qnetter)), SUSE
 * John Menerick ([@cloudsriseup](https://github.com/cloudsriseup)), Ford Autonomic
 * Peter Benjamin ([@pbnj](https://github.com/pbnj)), Norton LifeLock
@@ -177,14 +181,22 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Andres Vega ([@anvega](https://github.com/anvega)), Scytale.io
 * Cameron Seader ([@cseader](https://github.com/cseader)), SUSE 
 * Robert Ficcaglia ([@rficcaglia](https://github.com/rficcaglia)), Policy WG
+* Matthew Giassa ([@iaxes](https://github.com/IAXES))
 * Tabitha Sable ([@tabbysable](https://github.com/tabbysable))
 * Steven Hadfield ([@steven-hadfield](https://github.com/steven-hadfield)), FICO
+* Yeeling Lam ([@yeelinglam](https://github.com/yeelinglam)), AT&T
+* Wayne Haber ([@whaber github](https://github.com/whaber) / [@whaber gitlab](https://gitlab.com/whaber)), GitLab
 </details>
+
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 
 
 # Additional information
+
+## CNCF sig assessments
+
+As part of the [CNCF project proposal process](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc), projects should create a new [assessment issue](https://github.com/cncf/sig-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name) with a [self-assessment](https://github.com/cncf/sig-security/blob/master/assessments/guide/outline.md).
 
 ## Past events and meetings
 
