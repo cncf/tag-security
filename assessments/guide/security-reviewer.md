@@ -79,7 +79,7 @@ the course of the assessment.
 The Security Assessment Facilitator or a SIG-Security chair must review the 
 Lead Security Reviewer conflict-of-interest assertion.
 
-If there any conflicts are presented, then 2 SIG-Security chairs must approve
+If there any hard conflicts, or multiple significant soft conflicts are presented, then 2 SIG-Security chairs must approve
 the security review team. Reasons for accepting and rejecting conflicts should
 be documented.
 In most cases, the existence of a hard conflict will prevent a SIG member from participating in the assessment for 
