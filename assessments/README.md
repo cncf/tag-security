@@ -61,7 +61,7 @@ Finalized assessments may be used by the community to assist in contextual evalu
 
 Draft assessments contain *unconfirmed* content and are not endorsed as factual until committed to this repository, which requires detailed peer review.  Draft assessments may also contain *speculative* content as the project lead or security reviewer is performing an evaluation.  Draft assessments are *only* for the purpose of preparing final assessment and are **not** to be used in any other capacity by the community.
 
-Final slides resulting from a project's security assessment will be stored in the individual project's assessment folder with supporting documentation from the assesment.  These folders can be found under [Assessments/Projects](projects/) and clicking on the project name.
+Final slides resulting from a project's security assessment will be stored in the individual project's assessment folder with supporting documentation from the assessment.  These folders can be found under [assessments/projects](projects/) and clicking on the project name.
 
 ## Process
 
