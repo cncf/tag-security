@@ -51,7 +51,7 @@ format:
 | Reviewer belongs to the same company/organization of the project, but does not work on the project |  |
 | Reviewer uses the project in his/her work |  |
 | Reviewer has contributed to the project |  |
-| Reviwer has a personal stake in the project (personal relationships, etc.) |  |
+| Reviewer has a personal stake in the project (personal relationships, etc.) |  |
    * The **lead security reviewer** will confirm all conflicts are specified and
      escalate any conflict concerns, hard conflicts or multiple soft conflicts,
 to the **security assessment facilitator** for concurrence to proceed or if a
@@ -119,5 +119,4 @@ reviewers:
 * Project lead or lead security reviewer may pause the process where a delay of
   over a week cannot be accomodated by the review team. Simply close the github
 issue with a note to SIG co-chairs.
-
 
