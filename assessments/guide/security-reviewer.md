@@ -18,7 +18,7 @@ Reviewers are expected to ask questions to understand if there are hidden
 assumptions, underestimated risk, or design issues that harm or risk
 the security of the project.
 
-A reviewer my be delegated to perform specific tasks by the lead security reviewer in order to ensure the appropriate experience is leverage in conducting the activity.  This may include but is not limited to the clarifying questions phase.
+A reviewer may be delegated to perform specific tasks by the lead security reviewer in order to ensure the appropriate experience is leverage in conducting the activity.  This may include but is not limited to the clarifying questions phase.
 
 Reviewers are encouraged to reach out to community members to resolve
 some questions, especially involving deployment scenarios and the impact
