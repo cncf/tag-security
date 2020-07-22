@@ -8,4 +8,4 @@ The level of effort for the team providing the information is expected to be aro
 
 ## Conflict of interest
 
-A project lead should not have any [conflict of interest](./security-reviewer#conflict-of-interest) with the project.
+A project lead should not have any [conflict of interest](./security-reviewer.md#conflict-of-interest) with the project.
