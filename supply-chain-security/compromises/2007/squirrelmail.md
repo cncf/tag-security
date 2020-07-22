@@ -8,4 +8,4 @@ Most distributions didn't pick up the tainted release, a superseding release was
 
 ## Type of compromise
 
-Infrastructure compromise with source code access, no signatures/authenticity.
+Source Code - Infrastructure compromise with source code access, no signatures/authenticity.

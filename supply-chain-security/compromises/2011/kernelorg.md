@@ -8,4 +8,4 @@ Clean installs were recommended, checking package signatures, logs, etc., for al
 
 ## Type of compromise
 
-Infrastructure compromise.
+Dev Tooling & Publishing Infrastructure.

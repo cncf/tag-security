@@ -8,4 +8,4 @@ Systems had to be reimaged, passwords rotated, the Confluence and Bugzilla datab
 
 ## Type of compromise
 
-Infrastructure compromise.
+Attack Chaining - multiple compromises.

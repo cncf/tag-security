@@ -8,4 +8,4 @@ Dozens of monthly installs, but packages have been removed.
 
 ## Type of compromise
 
-Typosquatting.
+Negligence - Typosquatting.

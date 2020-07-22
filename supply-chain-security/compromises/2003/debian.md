@@ -1,6 +1,6 @@
 # Rootkit installed in several Debian infrastructure servers
 
-A sniffed password was used to log into a Debian server, escalate via an unpatched kernel exploit and install a rootkit in at least four different Debian machines.
+A sniffed password was used to log into a Debian server, then privileges were escalated and a rootkit installed in at least four different Debian machines.
 
 ## Impact
 
@@ -9,4 +9,4 @@ A sniffed password was used to log into a Debian server, escalate via an unpatch
 
 ## Type of compromise
 
-Infrastructure takeover
+Publishing Infrastructure
