@@ -10,4 +10,4 @@ It was discovered that APT's crypto-based routines to verify binary package auth
 
 ## Type of compromise
 
-Insufficient client-side package authenticity verification
+Negligence - Insufficient client-side package authenticity verification

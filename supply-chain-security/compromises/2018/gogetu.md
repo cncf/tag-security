@@ -8,4 +8,4 @@ Fixed in Go.
 
 ## Type of compromise
 
-Unbounded clients, which could lead to leaked secrets in the build pipeline and other malicious supply chain interference.
+Dev tooling - Unbounded clients, which could lead to leaked secrets in the build pipeline and other malicious supply chain interference.

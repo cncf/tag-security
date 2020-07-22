@@ -4,8 +4,8 @@ GitHub's validation logic for password resets didn't account for a Unicode norma
 
 ## Impact
 
-This was addressed by GitHub and neither GitHub or the original reporter mention any known attacks.
+Unknown.  This was addressed by GitHub and neither GitHub or the original reporter mention any known attacks.
 
 ## Type of compromise
 
-Account takeover in build/SCM infrastructure
+Source Code & Dev Tooling - Account takeover in build/SCM infrastructure

@@ -10,4 +10,4 @@ On 2019-07-06 there was a Canonical owned account on GitHub whose credentials we
 
 ## Type of compromise
 
-Build farm compromise with credentials access to GitHub
+Dev Tooling & Source Code - Build farm compromise with credentials access to GitHub

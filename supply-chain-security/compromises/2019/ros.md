@@ -11,4 +11,4 @@ The machine hosting the ROS 1 build farm was compromised (possibly via a vuln in
 
 ## Type of compromise
 
-Build farm compromise with access to private keys used for repo
+Attack Chaining via Trust & Signing, Publishing Infrastructure and Dev Tooling - Build farm compromise with access to private keys used for repo

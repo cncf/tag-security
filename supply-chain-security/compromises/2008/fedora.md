@@ -4,8 +4,8 @@ In the case of Fedora, an audit determined that "nobody made use of the key whil
 
 ## Impact
 
-New keys were rolled out.
+Several OpenSSH packages relating to RHEL 4 & 5 were signed by an unauthorized entity and available for use.  New keys were rolled out.
 
 ## Type of compromise
 
-Package signing infrastructure.
+Trust and Signing - Package signing infrastructure.
