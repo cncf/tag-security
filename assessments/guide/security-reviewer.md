@@ -67,7 +67,7 @@ security assessment ticket. It is the responsibility of the security reviewer
 to make known his/her own conflict of interests.
 
 ### Reviewing conflict of interest
-For each project, 2 SIG-Security chairs or a SIG-Security Chair and the security assessment facilitator must confirm that the lead reviewer has no conflicts, and any conflicts escalated by the lead reviewer are reviewed and decided upon.  A reviewer may be ineligble to participate in the security assessment if:
+For each project, 2 SIG-Security chairs or a SIG-Security Chair and the security assessment facilitator must confirm that the lead reviewer has no conflicts, and any conflicts escalated by the lead reviewer are reviewed and decided upon.  A reviewer may be ineligible to participate in the security assessment if:
 * Hard conflicts exist
 * Multiple soft conflicts exist
 
