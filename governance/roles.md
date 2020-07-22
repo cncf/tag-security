@@ -173,6 +173,18 @@ One or more of the following:
 Any member who meets the above qualifications is encouraged to add themselves
 to the [list of people in this role](/.github/settings.yml).
 
+### Meeting Scribe(s)
+
+Each meeting must have at a minimal one scribe and preferable with two.
+
+Scribe is expected to perform the following:
+* Plan to coordinate/review meeting Agenda with facilitator via Slack before start of meeting
+* Summarize discussions and capture into meeting notes (not transcribe verbatim)
+* Clarify and annotate actions as discussion progresses with assignee and due dates
+* Partner with Facilitator to capture major occurring items in the meeting
+* Add links to issues being discussed if not already in Agenda
+* Open new issues to track action items from meeting
+
 ### Triage team
 
 All members are expected to review Pull Requests (PRs), comment on issues, and
