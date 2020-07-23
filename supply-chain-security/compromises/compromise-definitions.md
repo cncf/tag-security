@@ -10,6 +10,7 @@ Index:
 * [Publishing Infrastructure](#publishing-infrastructure)
 * [Source Code](#source-code)
 * [Trust and Signing](#trust-and-signing)
+* [Attack Chaining](#attack-chaining)
 
 ## Dev Tooling
 Occurs when the development machine, SDK, toolchains, or build kit have been exploited.  These exploits often result in the introduction of a backdoor by an attacker to own the development environment.
@@ -51,4 +52,5 @@ _Reference(s)_:
 - [Mitre: Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)
 - [Wikipedia Code Signing](https://en.wikipedia.org/wiki/Code_signing)
 
-
+## Attack Chaining
+Many supply chain attacks are a perfect storm of events that allow attacks to occur. They encompass multiple exploits across several areas, which are chained together to enable the final attack. The attack chain may include, or conclude with, other supply chain attacks defined here, but often start with social engineering or a lack of adherence to best practices around securing publically accessible infrastructure components.
