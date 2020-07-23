@@ -129,6 +129,7 @@ Co-chair representative: @ultrasaurus
 Membership governance can be viewed [here](https://github.com/cncf/sig-security/blob/master/governance/roles.md#role-of-members). If you are new, check out the [New Members Page](NEWMEMBERS.md).
 <details><summary>Click to view list</summary>
 
+* Pushkar Joglekar ([@pushkarj](https://github.com/pushkarj)) 
 * Devarajan P Ramaswamy ([@deva](https://github.com/deva26)), PADME
 * Kamil Pawlowski ([@kbpawlowski](https://github.com/kbpawlowski))
 * Geri Jennings ([@izgeri](https://github.com/izgeri)), CyberArk
@@ -187,6 +188,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Payam Tarverdyan Chychi ([@unclepieman](https://github.com/unclepieman)), Infoblox
 * Yeeling Lam ([@yeelinglam](https://github.com/yeelinglam)), AT&T
 * Wayne Haber ([@whaber github](https://github.com/whaber) / [@whaber gitlab](https://gitlab.com/whaber)), GitLab
+* Trishank Karthik Kuppusamy [@trishankatdatadog](https://github.com/trishankatdatadog), CNAB/Datadog/Notary-v2/TUF/in-toto
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
