@@ -22,10 +22,11 @@ _Reference(s)_:
 Associated with TypoSquatting attacks, the developer failed to verify the requested package or source code was spelled correctly.  
 
 _Reference(s)_:
-- [Slashdot Article regarding PyPI attackes](https://developers.slashdot.org/story/17/09/16/2030229/pythons-official-repository-included-10-malicious-typo-squatting-modules)
+- [Slashdot Article Regarding PyPI Attacks](https://developers.slashdot.org/story/17/09/16/2030229/pythons-official-repository-included-10-malicious-typo-squatting-modules)
 
 ## Publishing Infrastructure
 Occurs when the integrity or availability of shipment, publishing, or distribution mechanisms and infrastructure are affected.  This can result from a number of attacks that permit access to the infrastructure.
+
 - _Mitigation_ - This kind of compromise can be deterred or defeated by implementing code-signing.  Code-signing requires attackers to perform multiple operations to be successful, making the level of effort higher.
 
 _Reference(s)_:
