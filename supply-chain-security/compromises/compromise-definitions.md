@@ -22,7 +22,7 @@ _Reference(s)_:
 
 
 ##  Negligence
-Associated with TypoSquatting attacks. Occurs due to a lack of adherence to best practices, when a developer failed to verify the requested dependency name was correct (spelling, name components, glyphs in use, etc).
+Occurs due to a lack of adherence to best practices. TypoSquatting attacks are a common type of attack associated with negligence, such as when a developer fails to verify the requested dependency name was correct (spelling, name components, glyphs in use, etc).
 
 _Reference(s)_:
 - [Slashdot Article Regarding PyPI Attacks](https://developers.slashdot.org/story/17/09/16/2030229/pythons-official-repository-included-10-malicious-typo-squatting-modules)
