@@ -16,8 +16,8 @@ risk.
 # On mitigating vulnerabilities
 
 There is on-going work to establish best practices in this area. The list of
-[Types of Supply Chain Compromises](./comrpomises/compromise-definitions.md)
-in the [Catalog of Supply Chain Compromises](./compromises) suggests some
+[types of supply chain compromises](./compromises/compromise-definitions.md)
+in the [catalog of supply chain compromises](./compromises) suggests some
 mitigation techniques for the more well understood categories.
 
 
