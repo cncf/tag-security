@@ -10,7 +10,8 @@ Index:
 * [Publishing Infrastructure](#publishing-infrastructure)
 * [Source Code](#source-code)
 * [Trust and Signing](#trust-and-signing)
-* [Attack Chaining](#attack-chaining)
+* [Attack Chaining](#technique-attack-chaining)
+
 
 ## Dev Tooling
 Occurs when the development machine, SDK, toolchains, or build kit have been exploited.  These exploits often result in the introduction of a backdoor by an attacker to own the development environment.
@@ -26,6 +27,7 @@ Occurs due to a lack of adherence to best practices. TypoSquatting attacks are a
 
 _Reference(s)_:
 - [Slashdot Article Regarding PyPI Attacks](https://developers.slashdot.org/story/17/09/16/2030229/pythons-official-repository-included-10-malicious-typo-squatting-modules)
+
 
 ## Publishing Infrastructure
 Occurs when the integrity or availability of shipment, publishing, or distribution mechanisms and infrastructure are affected.  This can result from a number of attacks that permit access to the infrastructure.
@@ -52,5 +54,6 @@ _Reference(s)_:
 - [Mitre: Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)
 - [Wikipedia Code Signing](https://en.wikipedia.org/wiki/Code_signing)
 
-## Attack Chaining
-Many supply chain attacks are a perfect storm of events that allow attacks to occur. They encompass multiple exploits across several areas, which are chained together to enable the final attack. The attack chain may include, or conclude with, other supply chain attacks defined here, but often start with social engineering or a lack of adherence to best practices around securing publically accessible infrastructure components.
+
+## Technique: Attack Chaining
+Sometimes a breach may be attributed to multiple lapses, with several compromises chained together to enable the attack. The attack chain may include types of supply chain attacks as defined here. However, catalogued attack chains often include other types of compromise, such as social engineering or a lack of adherence to best practices for securing publicly accessible infrastructure components.
