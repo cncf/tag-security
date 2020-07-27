@@ -15,7 +15,7 @@ Index:
 ## Dev Tooling
 Occurs when the development machine, SDK, toolchains, or build kit have been exploited.  These exploits often result in the introduction of a backdoor by an attacker to own the development environment.
 
-- _Mitigation_ - use of trusted binary repositories; verification of provenance (i.e. signatures) and/or integrity (i.e. checksums) of dev tooling downloads; bootstrapping dev toolchain from a minimal, trusted and auditable seed (ideally source code).
+- _Mitigation_ - Use of trusted binary repositories. Verification of provenance (i.e. signatures) and/or integrity (i.e. checksums) of developer tooling downloads. Bootstrapping development toolchain from a minimal, trusted and auditable seed (ideally source code).
 
 _Reference(s)_:
 - [Mitre: Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)
