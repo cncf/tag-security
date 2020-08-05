@@ -189,6 +189,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Yeeling Lam ([@yeelinglam](https://github.com/yeelinglam)), AT&T
 * Wayne Haber ([@whaber github](https://github.com/whaber) / [@whaber gitlab](https://gitlab.com/whaber)), GitLab
 * Trishank Karthik Kuppusamy [@trishankatdatadog](https://github.com/trishankatdatadog), CNAB/Datadog/Notary-v2/TUF/in-toto
+* Vinay Venkataraghavan ([@vinayvenkat](https://github.com/vinayvenkat), Prisma Cloud (PANW)
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
