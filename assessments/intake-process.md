@@ -10,10 +10,10 @@ assessments.
 
 # Authority
 
-Team members are welcome to submit PRs to streamline process when priorities
-are clear based on the criteria below. As needed, specific leaders (identified
-in the [repo root README](/README.md#security-assessments)) will coordinate
-the decision-making process.
+Team members are welcome to submit PRs to streamline this process when
+priorities are clear based on the criteria below. As needed, specific leaders
+(identified in the [repo root README](/README.md#security-assessments)) will
+coordinate the decision-making process.
 
 * The [Security Assessment
   Facilitator](/governance/roles.md#security-assessment-facilitator) is
@@ -50,12 +50,20 @@ assessment, exceeding the bandwidth of the group:
    incubated projects, then sandbox).
 4. Non-CNCF Projects that request a review (or invited by SIG members).
 
-Security Assessment Facilitator, in collaboration with the named chair,
-has the discretion to adjust priority in order to streamline the process,
-or per their own judgement for other reasons consistent with SIG-Security
-mission and charter.  In all cases, the priority queue will be maintained
-transparently as described below, along with communication via regular
-chair-liaison meetings and SIG-Security reports at TOC meetings.
+The Security Assessment Facilitator, in collaboration with the named chair, has
+the discretion to adjust priority in order to streamline the process, or per
+their own judgement for other reasons consistent with SIG-Security mission and
+charter.  In all cases, the priority queue will be maintained transparently as
+described below, along with communication via regular chair-liaison meetings and
+SIG-Security reports at TOC meetings.
+
+A project may be accepted into the assessment queue, either by the Security Assessment 
+Facilitator with concurrence from one (1) co-chair, or by two (2) co-chairs.  This concurrence 
+is given by commenting on an issue proposing that the project be added to the assessment
+queue.  If at any time, the project requesting review ceases communicating, the
+Security Assessment Facilitator may remove the project from the queue with
+notification to the co-chairs.  The Security Assessment Facilitator will update
+the corresponding issue, prior to closing the project's request.  
 
 # Updates and renewal
 

@@ -10,6 +10,8 @@ each project's annual [security assessment](/assessments).
 Current list of projects:
 
 * Falco
+* Harbor
+* in-toto
 * Open Policy Agent
 * Notary
 * TUF
