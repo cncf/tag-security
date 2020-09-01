@@ -15,6 +15,9 @@ risk.
 
 # On mitigating vulnerabilities
 
-There is on-going work to establish best practices in this area.  
+There is on-going work to establish best practices in this area. The list of
+[types of supply chain compromises](./compromises/compromise-definitions.md)
+in the [catalog of supply chain compromises](./compromises) suggests some
+mitigation techniques for the more well understood categories.
 
 

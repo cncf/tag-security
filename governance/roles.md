@@ -65,11 +65,8 @@ The general list of activities for TL are:
   * Propose agenda items for meetings to ensure that open issues are
   discussed with the group when needed
 
-TLs are elected by the following process:
-  1. One of the Chairs nominates a candidate to be a TL, and creates a PR that
-  adds the TL to the [SIG README](/README.md).
-  1. Members are invited to comment and vote according to the regular voting
-  process described below.
+TLs are assigned by CNCF Technical Oversight Committee
+(see [CNCF SIG Tech Lead nomination and election process](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#elections)).
 
 ### Role of project leads
 
@@ -172,6 +169,18 @@ One or more of the following:
 
 Any member who meets the above qualifications is encouraged to add themselves
 to the [list of people in this role](/.github/settings.yml).
+
+### Meeting Scribe(s)
+
+Each meeting must have at a minimal one scribe and preferable with two.
+
+Scribe is expected to perform the following:
+* Plan to coordinate/review meeting Agenda with facilitator via Slack before start of meeting
+* Summarize discussions and capture into meeting notes (not transcribe verbatim)
+* Clarify and annotate actions as discussion progresses with assignee and due dates
+* Partner with Facilitator to capture major occurring items in the meeting
+* Add links to issues being discussed if not already in Agenda
+* Open new issues to track action items from meeting
 
 ### Triage team
 
