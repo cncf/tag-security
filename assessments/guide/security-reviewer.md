@@ -4,8 +4,7 @@
 The lead reviewer serves as the primary security assessment facilitator, often coordinating 
 responses between the project and reviewers, ensuring communications are performed in a timely 
 fashion as described in the [guide](./).  The lead reviewer also responsible for coordinating 
-and recruiting additional reviewers as appropriate, reviewing and deliberating conflict of 
-interest statements, and managing the documentation updates (self-assessment and final 
+and recruiting additional reviewers as appropriate, and managing the documentation updates (self-assessment and 
 final assessment) to the project's assessment folder.
 
 The lead reviewer is further tasked with performing the clarifying questions phase of the 
