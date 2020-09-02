@@ -6,7 +6,7 @@ responses between the project and reviewers, ensuring communications are perform
 fashion as described in the [guide](./).  The lead reviewer also responsible for coordinating 
 and recruiting additional reviewers as appropriate, reviewing and deliberating conflict of 
 interest statements, and managing the documentation updates (self-assessment and final 
-assessment) to the project's assessment folder.
+final assessment) to the project's assessment folder.
 
 The lead reviewer is further tasked with performing the clarifying questions phase of the 
 security assessment.  The lead reviewer may identify another reviewer to perform this task 
