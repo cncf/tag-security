@@ -60,8 +60,6 @@ Dial by your location:
 Meeting ID: 737 567 7271
 Find your local number: https://zoom.us/u/alwlmxlNn
 
-[List of meetings](#meeting-list)
-
 ## In person meetings
 
 Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup. Create a [github issue](https://github.com/cncf/sig-security/issues/new) for an event and add to list below:
@@ -72,7 +70,7 @@ Please let us know if you are going and if you are interested in attending (or h
 
 ## New members
 
-If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and submit a PR to add yourself to the [members list](#members-list).
+If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and submit a PR to add yourself to the [members list](#sig-members).
 
 ## Related groups
 
@@ -88,18 +86,53 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 ## Members
 
 ### SIG Chairs
-* Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 6/3/2020]
+* Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 9/3/2020]
 * Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 6/3/2019 - 6/3/2021]
 * Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 6/3/2019 - 6/3/2021]
 
-### SIG Members
+### Tech Leads
+* Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
+* Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A.
+* Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
+
+### On-going projects
+
+#### Policy team
+
+Policy is an essential component of a secure system.
+
+[Bi-weekly meetings](https://docs.google.com/document/d/1ihFfEfgViKlUMbY2NKxaJzBkgHh-Phk5hqKTzK-NEEs/edit?usp=sharing) at 3:00pm PT
+focus on policy concerns and initiatives.
+
+Co-leads
+
+  * Howard Huang ([@hannibalhuang](https://github.com/hannibalhuang)), Huawei [Kubernetes Policy WG co-chair]
+  * Erica von Buelow ([@ericavonb](https://github.com/ericavonb)), Red Hat [Kubernetes Policy WG]
+
+Co-chair representative: @pragashj
+
+
+#### Security assessments
+
+[Security assessments](./assessments) are a collaborative process for the
+benefit of cloud native projects and prospective users by creating a consistent
+overview of the project and its risk profile.
+
+Facilitator: Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)),
+New York University
+
+Co-chair representative: @ultrasaurus
+
+
+
+### SIG members
 Membership governance can be viewed [here](https://github.com/cncf/sig-security/blob/master/governance/roles.md#role-of-members). If you are new, check out the [New Members Page](NEWMEMBERS.md).
 <details><summary>Click to view list</summary>
 
+* Pushkar Joglekar ([@pushkarj](https://github.com/pushkarj)) 
 * Devarajan P Ramaswamy ([@deva](https://github.com/deva26)), PADME
 * Kamil Pawlowski ([@kbpawlowski](https://github.com/kbpawlowski))
 * Geri Jennings ([@izgeri](https://github.com/izgeri)), CyberArk
-* Howard Huang ([@hannibalhuang](https://github.com/hannibalhuang)), Huawei [Kubernetes Policy WG co-chair]
 * Jason Melo ([@jasonmelo](https://github.com/jasonmelo)), NearForm
 * Torin Sandall ([@tsandall](https://github.com/tsandall)), OPA
 * Sree Tummidi ([@sreetummidi](https://github.com/sreetummidi)), Pivotal [Cloud Foundry Project Lead]
@@ -111,7 +144,6 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Liz Rice ([@lizrice](https://github.com/lizrice)), Aqua Security
 * Erik St. Martin ([@erikstmartin](https://github.com/erikstmartin)), Microsoft
 * Cheney Hester ([@quiqie](https://github.com/quiqie)), Fifth Third Bank
-* Erica von Buelow ([@ericavonb](https://github.com/ericavonb)), Red Hat [Kubernetes Policy WG]
 * Mark Underwood ([@knowlengr](https://github.com/knowlengr))
 * Rae Wang ([@rae42](https://github.com/rae42)), Google
 * Rachel Myers ([@rachelmyers](https://github.com/rachelmyers)), Google
@@ -127,7 +159,6 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Alban Crequy ([@alban](https://github.com/alban)), Kinvolk
 * Michael Schubert ([@schu](https://github.com/schu)), Kinvolk
 * Andrei Manea ([@andrei_821](https://github.com/andrei821)), CloudHero
-* Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University [Security Assessment Facilitator]
 * Santiago Torres-Arias ([@SantiagoTorres](https://github.com/SantiagoTorres)), New York University
 * Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
 * Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), OPA
@@ -139,22 +170,37 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Tsvi Korren ([@tsvikorren](https://github.com/tsvikorren)), Aqua Security
 * Simarpreet Singh ([@simar7](https://github.com/simar7))
 * Michael Ducy ([@mfdii](https://github.com/mfdii))
-* Craig Ingram ([@cji](https://github.com/cji)), Salesforce
 * Roger Klorese ([@qnetter](https://github.com/qnetter)), SUSE
 * John Menerick ([@cloudsriseup](https://github.com/cloudsriseup)), Ford Autonomic
-* Peter Benjamin ([@petermbenjamin](https://github.com/petermbenjamin)), Teradata
+* Peter Benjamin ([@pbnj](https://github.com/pbnj)), Norton LifeLock
 * Emily Fox([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A.
 * Carlos Villavicencio ([@solrac901](https://github.com/solrac901)), Intel
 * Gareth Rushgrove ([@garethr](https://github.com/garethr)), Snyk
 * Martin Vrachev ([@MVrachev](https://github.com/MVrachev)), VMware
 * Ricardo Aravena ([@raravena80](https://github.com/raravena80)), Rakuten
 * Lakshmi Manohar Velicheti ([@manohar9999](https://github.com/manohar9999)), Shape Security
+* Andres Vega ([@anvega](https://github.com/anvega)), Scytale.io
+* Cameron Seader ([@cseader](https://github.com/cseader)), SUSE 
+* Robert Ficcaglia ([@rficcaglia](https://github.com/rficcaglia)), Policy WG
+* Matthew Giassa ([@iaxes](https://github.com/IAXES))
+* Tabitha Sable ([@tabbysable](https://github.com/tabbysable))
+* Steven Hadfield ([@steven-hadfield](https://github.com/steven-hadfield)), FICO
+* Payam Tarverdyan Chychi ([@unclepieman](https://github.com/unclepieman)), Infoblox
+* Yeeling Lam ([@yeelinglam](https://github.com/yeelinglam)), AT&T
+* Wayne Haber ([@whaber github](https://github.com/whaber) / [@whaber gitlab](https://gitlab.com/whaber)), GitLab
+* Trishank Karthik Kuppusamy [@trishankatdatadog](https://github.com/trishankatdatadog), CNAB/Datadog/Notary-v2/TUF/in-toto
+* Vinay Venkataraghavan ([@vinayvenkat](https://github.com/vinayvenkat), Prisma Cloud (PANW)
 </details>
+
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 
 
 # Additional information
+
+## CNCF sig assessments
+
+As part of the [CNCF project proposal process](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc), projects should create a new [assessment issue](https://github.com/cncf/sig-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name) with a [self-assessment](https://github.com/cncf/sig-security/blob/master/assessments/guide/outline.md).
 
 ## Past events and meetings
 

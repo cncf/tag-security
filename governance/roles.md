@@ -65,11 +65,8 @@ The general list of activities for TL are:
   * Propose agenda items for meetings to ensure that open issues are
   discussed with the group when needed
 
-TLs are elected by the following process:
-  1. One of the Chairs nominates a candidate to be a TL, and creates a PR that
-  adds the TL to the [SIG README](/README.md).
-  1. Members are invited to comment and vote according to the regular voting
-  process described below.
+TLs are assigned by CNCF Technical Oversight Committee
+(see [CNCF SIG Tech Lead nomination and election process](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#elections)).
 
 ### Role of project leads
 
@@ -117,10 +114,10 @@ that role for some time informally, then proposed as an on-going role by Pull
 Request which must be approved by a majority of Chairs.  Process clarifications
 are welcome and PRs can be approved by any single Chair.
 
-Members who take on roles are responsible for
-understanding the approval policies related to their role and ensure that
-commits to the repo are reviewed in accordance with our [governance](./)
-and all actions are within roles defined in this document.
+Members fulfilling any Roles in SIG-Security are responsible for understanding
+and abiding the by the [governance](./) and policies defined in this group.
+This commitment and execution of understanding includes not only commits to
+the repo, but also to any approvals or direction required by their Role.
 
 **Write access to the repo**: Where applicable, the following roles define
 specific areas of the repo or actions on issues where changes require write
@@ -172,6 +169,18 @@ One or more of the following:
 
 Any member who meets the above qualifications is encouraged to add themselves
 to the [list of people in this role](/.github/settings.yml).
+
+### Meeting Scribe(s)
+
+Each meeting must have at a minimal one scribe and preferable with two.
+
+Scribe is expected to perform the following:
+* Plan to coordinate/review meeting Agenda with facilitator via Slack before start of meeting
+* Summarize discussions and capture into meeting notes (not transcribe verbatim)
+* Clarify and annotate actions as discussion progresses with assignee and due dates
+* Partner with Facilitator to capture major occurring items in the meeting
+* Add links to issues being discussed if not already in Agenda
+* Open new issues to track action items from meeting
 
 ### Triage team
 
