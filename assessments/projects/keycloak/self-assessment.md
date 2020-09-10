@@ -126,6 +126,45 @@ It is not intended to be an “all capable” IDM solution supporting every prot
 *   Keycloak doesn’t aim to be a certificate authority, ACME implementation or etc. 
 *   Keycloak doesn’t intend to solve all integrations or problems like high availability on it’s own. Wherever possible and in any given area it rather leverages already available, proven and trusted OpenSource solutions. 
 
+
+### Authentication and OpenID Connect
+
+[Documentation around OpenID Connect](https://www.keycloak.org/docs/latest/server_admin/#_oidc) can be helpful to best understand how Keycloak approaches authentication: 
+
+_“[OpenID Connect](https://openid.net/connect/) (OIDC) is an authentication protocol that is an extension of [OAuth 2.0](https://tools.ietf.org/html/rfc6749). While OAuth 2.0 is only a framework for building authorization protocols and is mainly incomplete, OIDC is a full-fledged authentication and authorization protocol. OIDC also makes heavy use of the [Json Web Token](https://jwt.io/) (JWT) set of standards. These standards define an identity token JSON format and ways to digitally sign and encrypt that data in a compact and web-friendly way._
+
+_There are really two types of use cases when using OIDC. The first is an application that asks the Keycloak server to authenticate a user for them. After a successful login, the application will receive an identity token and an access token. The identity token contains information about the user such as username, email, and other profile information. The access token is digitally signed by the realm and contains access information (like user role mappings) that the application can use to determine what resources the user is allowed to access on the application._
+
+_The second type of use cases is that of a client that wants to gain access to remote services. In this case, the client asks Keycloak to obtain an access token it can use to invoke on other remote services on behalf of the user. Keycloak authenticates the user then asks the user for consent to grant access to the client requesting it. The client then receives the access token. This access token is digitally signed by the realm. The client can make REST invocations on remote services using this access token. The REST service extracts the access token, verifies the signature of the token, then decides based on access information within the token whether or not to process the request.“_
+
+Lifespan of different tokens being used in related OAuth2 flows (access token, refresh token and id token) can be configured. They can also be manually invalidated by the end user or administrator. This allows developers or administrators to adapt authentication schemes to different use cases or needs. Either allowing users to very rarely be required to authenticate again or being able to cut off their access to applications very quickly. In case of backend services very long lived tokens with months or a year long lifespan can be used - usually referred to as “offline tokens” or “service tokens”. 
+
+This is further explained in documentation around [OpenID Connect flows](https://www.keycloak.org/docs/latest/server_admin/#_oidc-auth-flows)
+
+
+### Authorization
+
+While RBAC (Role Based Access Control) and to certain extend ABAC can be achieved using OAuth2/OIDC/SAML by including relevant role or attribute information in OAuth2 claims or SAML assertion, Keycloak also does provide centralized authorization capabilities. 
+
+This includes 
+
+
+
+*   Attribute-based access control (ABAC)
+*   Role-based access control (RBAC)
+*   User-based access control (UBAC)
+*   Context-based access control (CBAC)
+*   Rule-based access control
+    *   Using JavaScript
+*   Time-based access control
+*   Support for custom access control mechanisms (ACMs) through a Policy Provider Service Provider Interface (SPI)
+
+Comprehensive description is available in separate [“Authorization Services Guide”](https://www.keycloak.org/docs/latest/authorization_services/)
+
+Centralized Authorization capabilities are provided in separate layer to Authentication. There is certain level of pluggability by implementing [Custom Policies in JavaScript](https://www.keycloak.org/docs/latest/authorization_services/#_policy_js), [deploying them on the server ](https://www.keycloak.org/docs/latest/server_development/#_script_providers)or providing custom [Policy Evaluation scheme](https://www.keycloak.org/docs/latest/authorization_services/#_policy_evaluation_api)
+
+
+
 ## 
 **Intended Use**
 
