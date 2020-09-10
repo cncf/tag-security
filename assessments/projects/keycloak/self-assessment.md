@@ -205,7 +205,7 @@ Example: Adding new user
 
 
 
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](docs/image1.png "image_tooltip")
 
 
 Example: Registering new application Client:
@@ -213,7 +213,7 @@ Example: Registering new application Client:
 
 
 
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](docs/image2.png "image_tooltip")
 
 
 Example: Configuring audit/logging by administrator based on exposed event types:
@@ -222,7 +222,7 @@ Example: Configuring audit/logging by administrator based on exposed event types
 
 
 
-![alt_text](images/image3.png "image_tooltip")
+![alt_text](docs/image3.png "image_tooltip")
 
 
 Example: User registering new Authenticator:
@@ -231,7 +231,7 @@ Example: User registering new Authenticator:
 
 
 
-![alt_text](images/image4.png "image_tooltip")
+![alt_text](docs/image4.png "image_tooltip")
 
 
 The whole UI of Keycloak is currently undergoing a complete rewrite from Angular to ReactJS incorporating new wireframes. Related discussion including all new Designs and related community discussion is being captured here:
@@ -374,13 +374,13 @@ Realm admin roles:
 Keycloak also allows applying user specific policies for given resources. Policies can be custom, based on attributes (full ABAC), or even custom implemented
 
 
-![alt_text](images/image5.png "image_tooltip")
+![alt_text](docs/image5.png "image_tooltip")
 
 
 As this is based on comprehensive Centralized Authorization based on UMA policies can be evaluated in the UI to troubleshoot permission issues:
 
 
-![alt_text](images/image6.png "image_tooltip")
+![alt_text](docs/image6.png "image_tooltip")
 
 
 
@@ -395,7 +395,7 @@ Keycloak provides Multi Cluster configuration relying on separate Database synch
 
 
 
-![alt_text](images/image7.png "image_tooltip")
+![alt_text](docs/image7.png "image_tooltip")
 
 
 Current architecture is based on requirements of Database and relying on invalidation caches (more in Design section). As part of Keycloak.X effort plan for 2020/21 is to implement a completely new storage layer. Aiming to leverage etcd as OOTB storage when deployed on Kubernetes and not requiring RDBMS at all in such deployments. 
@@ -410,7 +410,7 @@ Current architecture is based on requirements of Database and relying on invalid
 Keycloak follows a modular and layered approach. For security and scalability reasons it chose not to reimplement but reuse existing trusted runtime components. Keycloak also defaults to reuse default libraries and solutions if present in layers below. 
 
 
-![alt_text](images/image8.png "image_tooltip")
+![alt_text](docs/image8.png "image_tooltip")
 
 
 Keycloak is built on top of Java Virtual Machine as a trusted runtime environment. It is maintained by several key industry players and receiving timely security fixes. As a very widely adopted solution it is also highly scrutinized and investigated from a security perspective. 
@@ -428,13 +428,13 @@ Keycloak is highly customizable and pluggable. Provides several SPIs enabling th
 [Operational Aspects section](#heading=h.fvxvw696zrq8) of this document
 
 
-![alt_text](images/image9.png "image_tooltip")
+![alt_text](docs/image9.png "image_tooltip")
 
 
 
 ## Internal Architecture
 
-![alt_text](images/image10.png "image_tooltip")
+![alt_text](docs/image10.png "image_tooltip")
 
 
 Keycloak currently requires a Relational Database to work. It comes with a simple embedded H2 Database for quick prototyping. Or with easy OOTB PostgreSQL integration when provisioned via container based environments. RDBMS is used to persist realm configurations and information about users, roles, clients, consents or mappings of attributes in the token. For future releases, a major redesign is planned to drop this requirement and allow greater pluggability of storage layers. By default when deployed on Kubernetes, Keycloak will attach itself to etcd as primary storage solution. Requiring additional, more scalable solutions for production deployments when storing millions of users is necessary. 
@@ -444,7 +444,7 @@ Data storage layer is designed to rely heavily on invalidation caches to minimiz
 Keycloak supports OpenID Connect and SAML2 out of the box. There number of additional extensions kept outside of the core codebase - like [WS-Federation or CAS](html). 
 
 
-![alt_text](images/image11.png "image_tooltip")
+![alt_text](docs/image11.png "image_tooltip")
 
 
 
