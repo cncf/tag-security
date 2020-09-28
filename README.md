@@ -11,7 +11,7 @@
 
 ## Objective
 
-SIG-Security facilitates collaboration to discover and produce resources that enable secure access, policy control, and safety for operators, administrators, developers, and end-users across the cloud-native ecosystem.
+SIG-Security facilitates collaboration to discover and produce resources that enable secure access, policy control, and safety for operators, administrators, developers, and end-users across the cloud native ecosystem.
 
 ## Background
 
