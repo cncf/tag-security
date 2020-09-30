@@ -46,7 +46,7 @@ Anyone is welcome to join our open discussions of SIG-Security projects and shar
 The Security SIG group meets every Wednesday at 10:00am PT (USA Pacific, see your timezone [here](https://time.is/compare/1000_23_Oct_2019_in_PT)):
 
 * [Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
-* [Meeting Link: zoom.us/my/cncfsigsecurity](https://zoom.us/my/cncfsigsecurity)
+* [Meeting Link: zoom.us/my/cncfsigsecurity (Passcode: 77777)](https://zoom.us/my/cncfsigsecurity?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
 
 One tap mobile:
 * +16465588656,,7375677271# US (New York)
