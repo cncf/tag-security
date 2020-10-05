@@ -85,9 +85,6 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 
 ## Members
 
-### SIG Chairs Emiritus
-* Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 9/3/2020]
-
 ### SIG Chairs
 * Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A. [Chair - term: 9/28/2020 - 9/27/2022]
 * Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 6/3/2019 - 6/3/2021]
@@ -96,6 +93,9 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 ### Tech Leads
 * Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
 * Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
+
+### SIG Chairs Emeritus
+* Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 9/3/2020]
 
 ### On-going projects
 
