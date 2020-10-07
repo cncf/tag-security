@@ -1,6 +1,6 @@
 # SPIFFE/SPIRE Security Self-assessment
 
-Jan 22nd 2019
+Jan 22nd 2020
 
 Authored by: Andres Vega (@anvega)
 
