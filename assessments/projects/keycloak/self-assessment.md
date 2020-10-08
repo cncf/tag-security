@@ -3,9 +3,9 @@
 
 # **Keycloak Project**
 
-Below is a writeup for CNCF Security SIG meant to help with project assessment / review and recommendation for approval into CNCF Sandbox
+The following self-assessment is intended to help with project assessment / review and recommendation for approval into CNCF Sandbox
 
-Keycloak (version 8) received an external Pen Test during fall of 2019 performed by Cure53 (funded by REWE Digital GmbH). [https://cure53.de/pentest-report_keycloak.pdf](https://cure53.de/pentest-report_keycloak.pdf)
+Keycloak (version 8) received an external Penetration Test from Cure53 during fall of 2019. This test was funded by REWE Digital GmbH. [https://cure53.de/pentest-report_keycloak.pdf](https://cure53.de/pentest-report_keycloak.pdf)
 
 “In Cure53’s expert opinion, the results documented in this November 2019 report affirm that Keycloak is a mature and solid project. Even though it cannot be ruled out that some components of the application are suffering from issues similar to the ones described in the tickets - mostly because of the size and complexity of this project, Cure53 is confident about Keycloak moving forward securely. The outcomes show that the developer team at the Keycloak entities designs and proposes features with high awareness about the field of security. Summing up, with absence of serious problems and a generally limited presence of risks, the application makes a stable impression in relation to the core security aspects.”
 
@@ -83,9 +83,9 @@ Keycloak Introduction [32min 11s]
 
 ### Background
 
-Keycloak is an OpenSource Identity and Access Management Solution for Modern Applications, API and Services. It primarily aims to make security easy for developers and covers modern security needs of applications with minimal effort. It also empowers developers, administrators and users by allowing them to leverage modern authentication and authorization standards (ex. OAuth2, OpenID Connect, WebAuthn). Existing security infrastructure like SAML2 based IdPs, LDAP servers, Kerberos/SPNEGO, custom user storage solutions are easy to integrate while making their presence transparent to applications and end users. Keycloak is highly customizable, provides a set of out of the box User Interfaces and integrations and can be made to look like an integral part of a given application. Since its origin, it has aimed to be a self contained, easy to run and lightweight solution. 
+Keycloak is an OpenSource Identity and Access Management Solution for Modern Applications, API and Services. It primarily aims to make security easy for developers and covers modern security needs of applications with minimal effort. It also empowers developers, administrators and users by allowing them to leverage modern authentication and authorization standards (ex. OAuth2, OpenID Connect, WebAuthn). Existing security infrastructure like SAML2 based IdPs, LDAP servers, Kerberos/SPNEGO, custom user storage solutions are easy to integrate while making their presence transparent to applications and end users. Keycloak is highly customizable, provides a set of out of the box User Interfaces and integrations and can be made to look like an integral part of a given application. Since its origin, it has aimed to be a self-contained, easy to run and lightweight solution. 
 
-Quickest way to understand project capabilities is to follow the following two videos 
+The quickest way to understand the Keycloak project's capabilities is by viewing the below videos: 
 
 Keycloak Pitch [1m 42s]
 
@@ -97,39 +97,35 @@ Keycloak Introduction [32min 11s]
 
 
 ### Goals
-
-
-
-*   To provide an implementation for modern security standards specifically OAuth2, OIDC and related specifications. Keycloak implements User Managed Access (UMA2) for authorization purposes which also builds on top of the same standard family. 
-*   Being SAML 2.0 compatible Identity Provider as this is still the most dominant and established standard in the end user authentication space. 
-*   Providing all typically required authentication, authorization and identity management capabilities for applications Out Of The Box without requiring additional coding. This includes all typical security features like login screens, registration, user management, user account self management, password policies, etc.
-*   Mainly focusing on Cloud Native and modern use cases and related modern application types. 
-*   Remaining language agnostic solution. Providing implementation of key standards like OpenID Connect or OAuth2 it can be integrated by any tech stack providing necessary integration libraries. As such it can serve as an IAM solution for any language. Being based on Java is an implementation detail
-*   Highly extendable and customizable. To deliver on this, it [maintains a set of SPIs](https://www.keycloak.org/docs/latest/server_development/index.html#preface) and endorses community developed [extensions and plugins](https://www.keycloak.org/extensions.html). [*Currently this makes some extensions require Java knowledge although long term will be moving to Webhooks/REST/gRPC APIs extension model] 
-*   Highly available and scalable solutions. It aims to allow handling authentication for millions of users and be possible to deploy in a multi cluster environment. 
-*   Provide a solution with a high level of security addressing all typical administrator requirements for IdP. Example being key rotation, Vault support, etc.
+The goals of Keycloak are:
+*   To provide an implementation for modern security standards; specifically OAuth2, OIDC and related specifications. Keycloak implements User Managed Access (UMA2) for authorization purposes which also builds on top of the same standard family. 
+*   To be a SAML 2.0 compatible Identity Provider as this is still the most dominant and established standard in the end user authentication space. 
+*   To provide all required authentication, authorization and identity management capabilities for applications out-of-the-box without requiring additional coding. This includes typical security features like login screens, registration, user management, user account self management, password policies, etc.
+*   To focus on Cloud Native and modern use cases and related modern application types. 
+*   To remain a language agnostic solution. By providing implementation of key standards like OpenID Connect or OAuth2,  Keycloak can be integrated into any technology stack with the necessary integration libraries. As such it can serve as an IAM solution for any language. Keycloak is a Java based solution and its development language is an implementation detail.
+*   To be highly extendable and customizable.  Keycloak [maintains a set of SPIs](https://www.keycloak.org/docs/latest/server_development/index.html#preface) and endorses community developed [extensions and plugins](https://www.keycloak.org/extensions.html). [*Currently this makes some extensions require Java knowledge although long term the project will be moving to Webhooks/REST/gRPC APIs extension model] 
+*   To provide high availability and scalable solutions. Keycloak aims to allow handling authentication for millions of users deployed across a multi-cluster environment. 
+*   To be provide a solution with a high level of security addressing administrator requirements for an IdP. Such as key rotation, Vault support, etc.
 
 
 ### Non-goals
 
-It is an opinionated solution trying to avoid code and function creep. Aiming to remain fairly lightweight, easy to use and quick to adopt. Delivering on 80/20 principle. 
+Keycloak is an opinionated solution that seeks to avoid code and function creep. Keycloak aims to remain fairly lightweight, easy to use and quick to adopt, delivering on the 80/20 principle. 
 
-It is not intended to be an “all capable” IDM solution supporting every protocol and use case. Purposefully preventing feature creep and keeping other technologies (CAS, WS-Fed, etc.) outside of the core codebase and as an ecosystem of additional [extensions](https://www.keycloak.org/extensions).  
-
-
+Keycloak is not intended to be an “all capable” IDM solution supporting every protocol and use case. The Keycloak project purposefully prevents feature creep and keeps other technologies (CAS, WS-Fed, etc.) outside of the core codebase, while maintaining an ecosystem of additional [extensions](https://www.keycloak.org/extensions).  
 
 *   Keycloak doesn’t aim to cover every single authentication or authorization standard. Only most relevant, widely adopted and future facing ones. 
 *   Keycloak doesn’t aim to provide SDKs and integration libraries for all languages. Wherever a given language, framework or technology stack provides decent OpenID Connect integration with proper usability, Keycloak will rather leverage it instead of providing a custom one. 
 *   Keycloak doesn’t provide its own implementation of cryptographic libraries. Relies on proven and pluggable ones from JVM and it’s runtime layers
 *   Keycloak doesn’t aim to be Kerberos server, LDAP or etc.
-*   Keycloak doesn't aim to be an Web Application Firewall, even though we have some protection mechanisms.
+*   Keycloak doesn't aim to be an Web Application Firewall, even though it offers some protection mechanisms.
 *   Keycloak doesn’t aim to be a certificate authority, ACME implementation or etc. 
-*   Keycloak doesn’t intend to solve all integrations or problems like high availability on it’s own. Wherever possible and in any given area it rather leverages already available, proven and trusted OpenSource solutions. 
+*   Keycloak doesn’t intend to solve all integrations or problems like high availability on it’s own. Wherever possible, it leverages already available, proven and trusted OpenSource solutions. 
 
 
 ### Authentication and OpenID Connect
 
-[Documentation around OpenID Connect](https://www.keycloak.org/docs/latest/server_admin/#_oidc) can be helpful to best understand how Keycloak approaches authentication: 
+A review of the [documentation around OpenID Connect](https://www.keycloak.org/docs/latest/server_admin/#_oidc) can be helpful to best understand how Keycloak approaches authentication: 
 
 _“[OpenID Connect](https://openid.net/connect/) (OIDC) is an authentication protocol that is an extension of [OAuth 2.0](https://tools.ietf.org/html/rfc6749). While OAuth 2.0 is only a framework for building authorization protocols and is mainly incomplete, OIDC is a full-fledged authentication and authorization protocol. OIDC also makes heavy use of the [Json Web Token](https://jwt.io/) (JWT) set of standards. These standards define an identity token JSON format and ways to digitally sign and encrypt that data in a compact and web-friendly way._
 
@@ -137,19 +133,16 @@ _There are really two types of use cases when using OIDC. The first is an applic
 
 _The second type of use cases is that of a client that wants to gain access to remote services. In this case, the client asks Keycloak to obtain an access token it can use to invoke on other remote services on behalf of the user. Keycloak authenticates the user then asks the user for consent to grant access to the client requesting it. The client then receives the access token. This access token is digitally signed by the realm. The client can make REST invocations on remote services using this access token. The REST service extracts the access token, verifies the signature of the token, then decides based on access information within the token whether or not to process the request.“_
 
-Lifespan of different tokens being used in related OAuth2 flows (access token, refresh token and id token) can be configured. They can also be manually invalidated by the end user or administrator. This allows developers or administrators to adapt authentication schemes to different use cases or needs. Either allowing users to very rarely be required to authenticate again or being able to cut off their access to applications very quickly. In case of backend services very long lived tokens with months or a year long lifespan can be used - usually referred to as “offline tokens” or “service tokens”. 
+The lifespan of different tokens being used in related OAuth2 flows (access token, refresh token and id token) can be configured. They can also be manually invalidated by the end user or administrator. This allows developers or administrators to adapt authentication schemes to different use cases or needs. Either allowing users to very rarely be required to authenticate again or being able to cut off their access to applications very quickly. In the case of backend services, long lived tokens with months or a year-long lifespan can be used - usually referred to as “offline tokens” or “service tokens”. 
 
-This is further explained in documentation around [OpenID Connect flows](https://www.keycloak.org/docs/latest/server_admin/#_oidc-auth-flows)
+More information can be found in the [OpenID Connect flows](https://www.keycloak.org/docs/latest/server_admin/#_oidc-auth-flows) documentation.
 
 
 ### Authorization
 
-While RBAC (Role Based Access Control) and to certain extend ABAC can be achieved using OAuth2/OIDC/SAML by including relevant role or attribute information in OAuth2 claims or SAML assertion, Keycloak also does provide centralized authorization capabilities. 
+While RBAC (Role Based Access Control), and to a certain extent ABAC, can be achieved using OAuth2/OIDC/SAML by including relevant role or attribute information in OAuth2 claims or SAML assertion, Keycloak does provide centralized authorization capabilities. 
 
 This includes 
-
-
-
 *   Attribute-based access control (ABAC)
 *   Role-based access control (RBAC)
 *   User-based access control (UBAC)
@@ -159,9 +152,9 @@ This includes
 *   Time-based access control
 *   Support for custom access control mechanisms (ACMs) through a Policy Provider Service Provider Interface (SPI)
 
-Comprehensive description is available in separate [“Authorization Services Guide”](https://www.keycloak.org/docs/latest/authorization_services/)
+A comprehensive description is available separately within the [“Authorization Services Guide”](https://www.keycloak.org/docs/latest/authorization_services/).
 
-Centralized Authorization capabilities are provided in separate layer to Authentication. There is certain level of pluggability by implementing [Custom Policies in JavaScript](https://www.keycloak.org/docs/latest/authorization_services/#_policy_js), [deploying them on the server ](https://www.keycloak.org/docs/latest/server_development/#_script_providers)or providing custom [Policy Evaluation scheme](https://www.keycloak.org/docs/latest/authorization_services/#_policy_evaluation_api)
+Centralized Authorization capabilities are provided in separate layer to Authentication. There is certain level of pluggability by implementing [Custom Policies in JavaScript](https://www.keycloak.org/docs/latest/authorization_services/#_policy_js), [deploying them on the server ](https://www.keycloak.org/docs/latest/server_development/#_script_providers)or providing a custom [Policy Evaluation scheme](https://www.keycloak.org/docs/latest/authorization_services/#_policy_evaluation_api)
 
 
 
@@ -169,22 +162,16 @@ Centralized Authorization capabilities are provided in separate layer to Authent
 **Intended Use**
 
 
-Keycloak is an OpenSource Identity and Access Management Solution for Modern Applications, API and Services. Focusing on being easily deployed, providing a complete set of modern lightweight Identity Provider capabilities and allowing Developers to incorporate all relevant security capabilities into their applications with minimal effort. 
+Keycloak is an OpenSource Identity and Access Management Solution for Modern Applications, API and Services. It focuses on ease of deployment, providing a complete set of modern lightweight Identity Provider capabilities and allowing Developers to incorporate all relevant security capabilities into their applications with minimal effort. 
 
 
 ### Target Users
-
-
-
 *   For **Operators and security administrators** to provide IAM/IDM capabilities for modern applications and APIs. Including user and role provisioning, integrating with other parts of infrastructure (other Identity Providers, LDAP Servers, custom user storage), base set of audit and logging capabilities, user session management, enforcing required user actions (eg. password update) or custom authentication flows to adhere to specific company policies, define password policies, manage registered clients applications, etc.
-*   For **Application Developers** to allow providing strong and modern security means into their applications with minimal effort. Leveraging a set of out of the box capabilities like login, registration, user self management or administration and provisioning UIs. Reducing risk of security flaws if such features are separately implemented in applications by developers. Improving application security and maintenance by allowing upgrades and adopting necessary enhancements into application by upgrading IdP without requiring changes into application codebase itself.
+*   For **Application Developers** to allow for strong and modern security in their applications with minimal effort. Developers can leverage a set of out-of-the-box capabilities such as login, registration, user self management or administration and UI provisioning.  Use of Keycloak can reduce risk of security flaws if such features are separately implemented in applications by developers. It further improves application security and maintenance by allowing upgrades and adopting necessary enhancements into the application by upgrading IdP without requiring changes into application codebase itself.
 *   For **Application End Users** to provide them with strong modern authentication means (SCA, MFA, W3C WebAuthn) and advanced user self management capabilities (edit profile, register and manage additional multi factor authentication means, manage their SSO sessions, manage their application consents)
 
 
 ### Use Cases
-
-
-
 *   Standalone Identity Provider (OpenID Connect, SAML 2.0)
 *   Standalone Authorization Server (OAuth 2.0)
 *   Central Authorization solution (User Managed Access - UMA 2.0). 
@@ -213,25 +200,23 @@ Keycloak is an OpenSource Identity and Access Management Solution for Modern App
 
 #### Installation
 
-Keycloak is provided as a Container deployable separately via Docker/Podman or on Kubernetes. As this is a Java based solution there is also a  ZIP based distribution which can be unpacked and run with a single command if JVM is present. 
+Keycloak is provided as a Container deployed separately via Docker/Podman or on Kubernetes. As this is a Java based solution there is also a  ZIP based distribution which can be unpacked and run with a single command if JVM is present. 
 
-Getting started section of website gives the shortest path to try out the project via different means: 
+The getting started section of website gives the shortest path to try out the project via different means: 
 
 [https://www.keycloak.org/getting-started](https://www.keycloak.org/getting-started)
 
 Although in essence it is as simple as:
-
-
 ```
 ${docker/podman} run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin quay.io/keycloak/keycloak:10.0.1
 ```
 
 
-Worth noting that for security reasons it is required to explicitly provide admin password. When using ZIP distribution, administrators can set  a password via CLI or Web UI during the first server boot. Although this is also restricted to be performed via localhost access only.
+It is worth noting that for security reasons, Keycloak is required to explicitly provide an admin password. When using the ZIP distribution, administrators can set a password via CLI or Web UI during the first server boot. Although this is also restricted to be performed via localhost access only.
 
 Additional information is covered in the [Server Installation Guide](https://www.keycloak.org/docs/latest/server_installation/) although it currently mostly focuses on ZIP distribution. Additional documentation related to container image is available [here](https://hub.docker.com/r/jboss/keycloak/). Keycloak also provides a [Kubernetes Operator.](https://operatorhub.io/operator/keycloak-operator)
 
-Keycloak is a highly configurable and customizable solution. Documentation goes into great detail into how to deal with server configuration. Key aspects of dealing with the server are highlighted below:  
+Keycloak is a highly configurable and customizable solution.  The documentation goes into great detail on how to manage server configuration. Key aspects of dealing with the server are highlighted below:  
 
 
 #### Interacting with Keycloak 
@@ -239,45 +224,26 @@ Keycloak is a highly configurable and customizable solution. Documentation goes 
 All operations performed with Keycloak by an administrator or developer are exposed via REST API, Web UIs or CLI (both consuming mentioned REST APIs). All REST APIs are [documented here](https://www.keycloak.org/docs-api/9.0/rest-api/index.html)
 
 Example: Adding new user
-
-
-
-
-
 ![alt_text](docs/image1.png "image_tooltip")
 
 
 Example: Registering new application Client:
-
-
-
-
 ![alt_text](docs/image2.png "image_tooltip")
 
 
 Example: Configuring audit/logging by administrator based on exposed event types:
-
-
-
-
-
 ![alt_text](docs/image3.png "image_tooltip")
 
 
 Example: User registering new Authenticator:
-
-
-
-
-
 ![alt_text](docs/image4.png "image_tooltip")
 
 
-The whole UI of Keycloak is currently undergoing a complete rewrite from Angular to ReactJS incorporating new wireframes. Related discussion including all new Designs and related community discussion is being captured here:
+The whole UI of Keycloak is currently undergoing a complete rewrite from Angular to ReactJS incorporating new wireframes. Discussion of the UI, including all new Designs, and related community discussions are captured here:
 
 [https://www.keycloak.org/keycloak-community/design/admin-console/#/](https://www.keycloak.org/keycloak-community/design/admin-console/#/)
 
-For example new set of planned screenes related to managing clients:
+For example, a new set of planned screens related to managing clients:
 
 [https://www.keycloak.org/keycloak-community/design/admin-console/#/clients/settings](https://www.keycloak.org/keycloak-community/design/admin-console/#/clients/settings)
 
@@ -286,14 +252,11 @@ For example new set of planned screenes related to managing clients:
 
 Keycloak is built in a highly modular manner leveraging SPI for most of the internal components (more about it later in Design section). 
 
-In addition because it provides a set of OOTB screens (login, registration, user self management, administration) it is meant to be customized to look like an integral part of a given application or system. Therefore via templates and themes, administrators can customize every aspect of Keycloak UI. 
+In addition, because it provides a set of OOTB screens (login, registration, user self management, administration) it is meant to be customized to look like an integral part of a given application or system. Therefore, administrators can customize every aspect of Keycloak UI via templates and themes. 
 
-As a highly customizable solution Keycloak provides a whole separate Documentation Guide on [Server Development](https://www.keycloak.org/docs/latest/server_development/) focusing on explaining mentioned themes, templates and SPIs and means to leverage or alter them. 
+As a highly customizable solution Keycloak, provides a separate Guide on [Server Development](https://www.keycloak.org/docs/latest/server_development/), focusing on explaining mentioned themes, templates and SPIs and the means to leverage or alter them. 
 
-Few key SPIs and extension mechanisms worth mentioning cover
-
-
-
+A few key SPIs and extension mechanisms worth mentioning cover:
 *   Authentication - allowing to highly alter authentication flow
     *   IdentityBrokering (federation of identities from external authentication sources - eg. SAML/OIDC IdPs) 
     *   Required Actions - defining different actions users are meant to perform during authentication
@@ -311,9 +274,6 @@ There is a list of community implemented and maintained custom extensions which 
 [https://www.keycloak.org/extensions](https://www.keycloak.org/extensions)
 
 Those custom extensions include:
-
-
-
 *   CAS Login Protocol
 *   Client Authorization
 *   Discord Identity Provider
@@ -338,9 +298,6 @@ Those custom extensions include:
 Keycloak exposes a comprehensive set of [system events](https://www.keycloak.org/docs/latest/server_admin/index.html#auditing-and-events) which can be tracked for audit purposes:
 
 Login events:
-
-
-
 *   Login - A user has logged in.
 *   Register - A user has registered.
 *   Logout - A user has logged out.
@@ -348,9 +305,6 @@ Login events:
 *   Refresh Token - An application/client has refreshed a token.
 
 Account events:
-
-
-
 *   Social Link - An account has been linked to a social provider.
 *   Remove Social Link - A social provider has been removed from an account.
 *   Update Email - The email address for an account has changed.
@@ -367,19 +321,13 @@ For all events there is a corresponding error event.
 
 #### Delegated Administration
 
-Keycloak allows defining administrative users with a subset of management permissions. For example, allowing users to only manage application clients. A comprehensive overview is provided in [here](https://www.keycloak.org/docs/latest/server_admin/index.html#_admin_permissions). This capability is also provided based on the [Authorization Services](https://www.keycloak.org/docs/latest/authorization_services/) part of Keycloak implemented with UMA (User Managed Access). 
+Administrative users of Keycloak can be defined with a subset of management permissions. For example, allowing users to only manage application clients. A comprehensive overview is provided in in the [server admin docs permission section](https://www.keycloak.org/docs/latest/server_admin/index.html#_admin_permissions). This capability is also provided based on the [Authorization Services](https://www.keycloak.org/docs/latest/authorization_services/) part of Keycloak implemented with UMA (User Managed Access). 
 
 Available global roles:
-
-
-
 *   admin - top level realm role
 *   create-realm - allowing realm which serves as namespace for server instance
 
 Realm specific roles:
-
-
-
 *   view-realm
 *   view-users
 *   view-clients
@@ -394,9 +342,6 @@ Realm specific roles:
 *   Impersonation
 
 Realm admin roles:
-
-
-
 *   view-realm
 *   view-users
 *   view-clients
@@ -410,13 +355,13 @@ Realm admin roles:
 *   manage-identity-providers
 *   impersonation
 
-Keycloak also allows applying user specific policies for given resources. Policies can be custom, based on attributes (full ABAC), or even custom implemented
+Keycloak also allows applying user specific policies for given resources. Policies can be custom, based on attributes (full ABAC), or even custom implemented:
 
 
 ![alt_text](docs/image5.png "image_tooltip")
 
 
-As this is based on comprehensive Centralized Authorization based on UMA policies can be evaluated in the UI to troubleshoot permission issues:
+This is based on comprehensive Centralized Authorization UMA policies which can be evaluated in the UI to troubleshoot permission issues:
 
 
 ![alt_text](docs/image6.png "image_tooltip")
@@ -425,11 +370,11 @@ As this is based on comprehensive Centralized Authorization based on UMA policie
 
 #### Highly configurable and Highly Available
 
-Keycloak can be configured to provide High Availability. Both in a local cluster or in multi cluster / multi site scenario and with Load Balancer integration. There is whole dedicated section of the [documentation covering this](https://www.keycloak.org/docs/latest/server_installation/#_clustering)
+Keycloak can be configured to provide High Availability in a local cluster or in multi cluster / multi site scenario and with Load Balancer integration. The [server installation doc covers this in a section for clustering](https://www.keycloak.org/docs/latest/server_installation/#_clustering)
 
-In order to prioritize significant performance gain OOTB in Keycloak, clustering is configured in a way to not propagate user sessions between nodes by default. In the event of node failure such that the authentication session is lost, the user is required to re-authenticate and establish a new session. This is configurable though and sessions can be replicated between cluster nodes making node failure transparent and not impacting users.
+In order to prioritize significant performance gain OOTB in Keycloak, clustering is configured in a way to not propagate user sessions between nodes by default. In the event of node failure, such that the authentication session is lost, the user is required to re-authenticate and establish a new session. This is configurable and sessions can be replicated between cluster nodes making node failure transparent and not impacting users.
 
-Keycloak provides Multi Cluster configuration relying on separate Database synchronization and Cache synchronization solution (to solve the split-brain problem between clusters). 
+Keycloak provides Multi-Cluster configuration which relies on separate Database synchronization and Cache synchronization solutions to solve the split-brain problem between clusters. 
 
 
 
@@ -437,7 +382,7 @@ Keycloak provides Multi Cluster configuration relying on separate Database synch
 ![alt_text](docs/image7.png "image_tooltip")
 
 
-Current architecture is based on requirements of Database and relying on invalidation caches (more in Design section). As part of Keycloak.X effort plan for 2020/21 is to implement a completely new storage layer. Aiming to leverage etcd as OOTB storage when deployed on Kubernetes and not requiring RDBMS at all in such deployments. 
+The current architecture is based on requirements of the Database and relies on invalidation of caches (more in Design section). Part of Keycloak.X's effort plan for 2020/21 is to implement a completely new storage layer, aiming to leverage etcd as OOTB storage when deployed on Kubernetes and not requiring RDBMS at all in such deployments. 
 
 
 ## 
@@ -452,18 +397,17 @@ Keycloak follows a modular and layered approach. For security and scalability re
 ![alt_text](docs/image8.png "image_tooltip")
 
 
-Keycloak is built on top of Java Virtual Machine as a trusted runtime environment. It is maintained by several key industry players and receiving timely security fixes. As a very widely adopted solution it is also highly scrutinized and investigated from a security perspective. 
+Keycloak is built on top of Java Virtual Machine as a trusted runtime environment. It is maintained by several key industry players and receives timely security fixes. As a very widely adopted solution, it is also highly scrutinized and investigated from a security perspective. 
 
 Keycloak is essentially a Java Application running within Application Server  ([WildFly](https://wildfly.org/)) which is an upstream version of widely adopted Red Hat Enterprise Application Platform (former JBoss AS). Keycloak leverages key features around clustering, REST API implementation, SSL, Data Sources, Transaction handling, etc. from Wildfly. This gives several advantages related to using proven technologies. As Keycloak relies on Crypto libraries provided by JVM and WildFly it can be made FIPS compliant by adopting relevant configuration profiles in those. 
 
-Project is currently undergoing complete re-architecture aiming to migrate to [Quarkus.io](https://quarkus.io) as a runtime. This will allow native compiled binaries (natively compiled Java) and very small memory footprint or startup time comparable with GoLang. [This is captured](https://github.com/keycloak/keycloak-community/tree/master/design/keycloak.x) by the [Keycloak.X](https://www.keycloak.org/2019/10/keycloak-x.html) effort. With prototype server distribution being developed [here](https://github.com/keycloak/keycloak/tree/master/distribution/server-x). In the transition period a mixed highly optimized mode but still running within VM will be possible. 
+The Keycloak project is currently undergoing a complete re-architecture designed to migrate to [Quarkus.io](https://quarkus.io) as a runtime. This will allow  for natively compiled binaries (natively compiled Java) and a very small memory footprint or startup time comparable with GoLang. [This is captured](https://github.com/keycloak/keycloak-community/tree/master/design/keycloak.x) by the [Keycloak.X](https://www.keycloak.org/2019/10/keycloak-x.html) effort. With prototype server distribution being developed [here](https://github.com/keycloak/keycloak/tree/master/distribution/server-x). In the transition period, a mixed and highly optimized mode still running within VM will be possible. 
 
 All major design proposals are tracked for review and discussion in this [dedicated Github repository](https://github.com/keycloak/keycloak-community/tree/master/design).
 
 Keycloak architecture is highly modular and pluggable. All Core parts are implemented using Service Provider Interface architecture (SPIs) having a total of 86 of them. This makes it easy to extend the server with custom plugins, and replace default implementations of core components. All key SPIs are documented in the [Server Development Guide](https://www.keycloak.org/docs/latest/server_development/index.html#_providers).
 
-Keycloak is highly customizable and pluggable. Provides several SPIs enabling the extension or alteration of server behavior according to individual needs. Any UI exposed by Keycloak can be customized with custom stylesheets, but also with custom HTML templates. This has already been described in 
-
+Keycloak is highly customizable. It provides several SPIs enabling the extension or alteration of server behavior according to individual needs. Any UI exposed by Keycloak can be customized with custom stylesheets, but also with custom HTML templates. This has already been described in 
 [Operational Aspects section](#heading=h.fvxvw696zrq8) of this document
 
 
@@ -476,9 +420,9 @@ Keycloak is highly customizable and pluggable. Provides several SPIs enabling th
 ![alt_text](docs/image10.png "image_tooltip")
 
 
-Keycloak currently requires a Relational Database to work. It comes with a simple embedded H2 Database for quick prototyping. Or with easy OOTB PostgreSQL integration when provisioned via container based environments. RDBMS is used to persist realm configurations and information about users, roles, clients, consents or mappings of attributes in the token. For future releases, a major redesign is planned to drop this requirement and allow greater pluggability of storage layers. By default when deployed on Kubernetes, Keycloak will attach itself to etcd as primary storage solution. Requiring additional, more scalable solutions for production deployments when storing millions of users is necessary. 
+Keycloak currently requires a Relational Database to work. It comes with a simple embedded H2 Database for quick prototyping or with easy OOTB PostgreSQL integration when provisioned via container based environments. RDBMS is used to persist realm configurations and information about users, roles, clients, consents or mappings of attributes in the token. For future releases, a major redesign is planned to drop this requirement and allow greater pluggability of storage layers. By default when deployed on Kubernetes, Keycloak will attach itself to etcd as primary storage solution. Requiring additional, more scalable solutions for production deployments when storing millions of users is necessary. 
 
-Data storage layer is designed to rely heavily on invalidation caches to minimize Database queries. This also allows for HA deployments with [clustering](https://www.keycloak.org/docs/latest/server_installation/index.html#_clustering) and [Cross Data Center](https://www.keycloak.org/docs/latest/server_installation/index.html#crossdc-mode) replication mode. All ways to interact with the server are integrated via [REST APIs documented here](https://www.keycloak.org/docs-api/7.0/rest-api/index.html). Keycloak relies on OpenID Connect to secure access to those APIs. 
+The data storage layer is designed to rely heavily on invalidation of caches to minimize Database queries. This also allows for HA deployments with [clustering](https://www.keycloak.org/docs/latest/server_installation/index.html#_clustering) and [Cross Data Center](https://www.keycloak.org/docs/latest/server_installation/index.html#crossdc-mode) replication mode. All ways to interact with the server are integrated via [REST APIs documented here](https://www.keycloak.org/docs-api/7.0/rest-api/index.html). Keycloak relies on OpenID Connect to secure access to those APIs. 
 
 Keycloak supports OpenID Connect and SAML2 out of the box. There number of additional extensions kept outside of the core codebase - like [WS-Federation or CAS](html). 
 
@@ -489,36 +433,33 @@ Keycloak supports OpenID Connect and SAML2 out of the box. There number of addit
 
 ## 
 **Configuration and Set-Up**
-
-
-
 *   Default/GettingStarted
-    *   Aggregated getting started for different environments: [https://www.keycloak.org/getting-started](https://www.keycloak.org/getting-started) 
+    *   Aggregated information for getting started in different environments: [https://www.keycloak.org/getting-started](https://www.keycloak.org/getting-started) 
     *   Keycloak Operator for Kubernetes [docs in progress]: [https://github.com/keycloak/keycloak-operator](https://github.com/keycloak/keycloak-operator)
     *   Helm Chart: [https://github.com/codecentric/helm-charts/tree/master/charts/keycloak](https://github.com/codecentric/helm-charts/tree/master/charts/keycloak)
     *   Set of Quickstart applications: [https://github.com/keycloak/keycloak-quickstarts](https://github.com/keycloak/keycloak-quickstarts)
 *   Highlights:
-    *   Follows number of OOTB security best practices listed below:
+    *   Follows a number of OOTB security best practices listed below:
         *   There is no default account/password
         *   Creating initial account is protected by being exposed only via localhost access (for UI) and via direct access to host (command line script) 
         *   Security of OAuth 2.0 based protocol relies heavily on TLS and this is called out in documentation:
             *   [https://www.keycloak.org/docs/latest/server_installation/index.html#setting-up-https-ssl](https://www.keycloak.org/docs/latest/server_installation/index.html#setting-up-https-ssl)
 *   Advanced/Secure setup
     *   Customizable, flexible and pluggable [Authentication flows](https://www.keycloak.org/docs/latest/server_admin/index.html#_authentication-flows)
-    *   There is no explicit hardening guide although configuration guide calls out [number of best practices](https://www.keycloak.org/docs/latest/server_admin/index.html#threat-model-mitigation )
+    *   There is no explicit hardening guide although the configuration guide calls out a [number of best practices](https://www.keycloak.org/docs/latest/server_admin/index.html#threat-model-mitigation )
     *   Server comes with simple [Brute Force detection and mitigation mechanism](https://www.keycloak.org/docs/latest/server_admin/index.html#password-guess-brute-force-attacks)
     *   More Advanced Configuration: [https://www.keycloak.org/docs/latest/server_installation/index.html](https://www.keycloak.org/docs/latest/server_installation/index.html)
     *   Reference Server Administration Guide: [https://www.keycloak.org/docs/latest/server_admin/index.html](https://www.keycloak.org/docs/latest/server_admin/index.html)
-    *   Documentation covers hardening and addressing Threat Model of OAuth2 itself: [https://www.keycloak.org/docs/latest/server_admin/index.html#threat-model-mitigation](https://www.keycloak.org/docs/latest/server_admin/index.html#threat-model-mitigation) 
+    *   The below documentation covers hardening and addressing Threat Model of OAuth2 itself: [https://www.keycloak.org/docs/latest/server_admin/index.html#threat-model-mitigation](https://www.keycloak.org/docs/latest/server_admin/index.html#threat-model-mitigation) 
 
 ## 
 **Project Compliance**
 
-*   There was no specific audit made around mentioned compliance standard
-*   Keycloak is GDPR compatible as user information can be removed on request and purged from the database. Rest depends on particular deployment and processes around it. 
-*   Keycloak provides audit capabilities by event logging. Allowing to aggregate and record into system logger all typical admin and user level operations. 
+*   There was no specific audit for a given compliance standard
+*   Keycloak is GDPR compatible as user information can be removed on request and purged from the database however it depends on the particular deployment and processes around it. 
+*   Keycloak provides audit capabilities by event logging, allowing to aggregate and record into system logger all typical admin and user level operations. 
 *   Keycloak doesn’t provide any additional custom crypto libraries or crypto implementations. It relies on WildFly Application Server and Java Virtual Machine which can be configured to be made FIPS compliant. All crypto providers in Keycloak are also pluggable so FIPS compliance could be achieved by using certified libraries. 
-*   Keycloak aims to certify against OpenID Financial API Specification Profiles. This is still Work in Progress 
+*   Keycloak aims to certify against OpenID Financial API Specification Profiles. This is still a Work in Progress.
     *   [https://github.com/jsoss-sig/keycloak-fapi](https://github.com/jsoss-sig/keycloak-fapi)
     *   [https://github.com/keycloak/keycloak-community/pull/105](https://github.com/keycloak/keycloak-community/pull/105)
     *   [https://github.com/keycloak/keycloak-community/blob/master/design/client-policies.md](https://github.com/keycloak/keycloak-community/blob/master/design/client-policies.md)
@@ -526,66 +467,66 @@ Keycloak supports OpenID Connect and SAML2 out of the box. There number of addit
 ## 
 **Security Analysis**
 
-*   Keycloak (version 8) received an external Pen Test during fall of 2019 performed by Cure53 (funded by REWE Digital GmbH). [https://cure53.de/pentest-report_keycloak.pdf](https://cure53.de/pentest-report_keycloak.pdf)
+*   Keycloak (version 8) received an external Penetration Test during the fall of 2019 performed by Cure53 and funded by REWE Digital GmbH. [https://cure53.de/pentest-report_keycloak.pdf](https://cure53.de/pentest-report_keycloak.pdf)
     *   “In Cure53’s expert opinion, the results documented in this November 2019 report affirm that Keycloak is a mature and solid project. Even though it cannot be ruled out that some components of the application are suffering from issues similar to the ones described in the tickets - mostly because of the size and complexity of this project, Cure53 is confident about Keycloak moving forward securely. The outcomes show that the developer team at the Keycloak entities designs and proposes features with high awareness about the field of security. Summing up, with absence of serious problems and a generally limited presence of risks, the application makes a stable impression in relation to the core security aspects.”
-    *   Keycloak follows a fast paced release cycle of major versions. Although progression between major versions (7->8->9) doesn’t typically introduce major redesigns or breaking changes. Therefore overall and high level findings can be generalized also for Keycloak 9. 
-*   Keycloak has dedicated section in Documentation addressing OAuth 2.0 Threat Model from IETF
+    *   Keycloak follows a fast paced release cycle of major versions, progression between major versions (7->8->9) doesn’t typically introduce major redesigns or breaking changes. Therefore, overall and high level findings can be generalized also for Keycloak 9. 
+*   Keycloak has a dedicated section in Documentation for addressing the OAuth 2.0 Threat Model from IETF:
     *   [https://www.keycloak.org/docs/latest/server_admin/index.html#threat-model-mitigation](https://www.keycloak.org/docs/latest/server_admin/index.html#threat-model-mitigation)
     *   [https://tools.ietf.org/html/rfc6819](https://tools.ietf.org/html/rfc6819)
-*   Attacker Motivations - Keycloak as Identity Provider / Authorization Server and Identity and Access Management solution is a critical piece of infrastructure. Compromising Keycloak deployment would likely allow to compromise the whole deployment. Including taking over users identities, application sessions or stealing password hashes (if backend DB is compromised as well)
+*   Attacker Motivations - Keycloak as Identity Provider / Authorization Server and Identity and Access Management solution is a critical piece of infrastructure. Compromising the Keycloak deployment would likely compromise the whole deployment by permitting a malicious actor to take over users identities, application sessions or stealing password hashes (if the backend DB is compromised as well).
 *   Predisposing Conditions
-    *   CVEs in selected areas of JVM, WildFly Application Server or any library included in those layers or introduced by Keycloak itself. Especially around networking, HTTP(s), object serialization and REST APIs (JOSE specs)
-    *   Lack of SSL/HTTPS. OAuth 2.0 based flows heavily rely on exchanging tokens and information via already secured communication channels. Developers often make shortcuts in dev on production while quickly prototyping. It is essential related configuration is carefully verified before being introduced in production. 
+    *   Existing CVEs in selected areas of JVM, WildFly Application Server or any library included in those layers or introduced by Keycloak itself, especially around networking, HTTP(s), object serialization and REST APIs (JOSE specs)
+    *   Lack of SSL/HTTPS. OAuth 2.0 based flows heavily rely on exchanging tokens and information via already secured communication channels. Developers often make shortcuts during development that are deployed to production while quickly prototyping. It is essential that all related configurations is carefully verified before being introduced in production. 
     *   Not following best practices around OAuth 2.0 - like not properly defined redirect URIs for registered clients or redirection URIs which exposes application to token or session hijacking attacks. 
     *   Not securing the backend properly. Outside access to DB or host or etc.
     *   Not keeping configuration up to date 
         *   For example keeping up with the latest guidelines around strength of hashing algorithms or number of hashing iterations 
     *   Not keeping up with updates. 
-        *   Keycloak container image would include several layers of software stack - OS, JVM, WildFly Application Server, Keycloak itself. 
+        *   The Keycloak container image relies on several layers of the software stack which must be kept up-to-date:  OS, JVM, WildFly Application Server, Keycloak itself.
         *   At each layer there are new weaknesses regularly identified. Most of those have no direct impact on Keycloak although they need to be assessed and fixes incorporated
             *   Ex. XML/JSON parsing libs has remote code execution weaknesses identified. With proper validation they are rarely exploitable in Keycloak although such CVEs happened. 
-        *   Specification is evolving. Certain aspects of initial OAuth2 specification are now considered insecure (to be addressed and incorporated in 2.1 version). Although certain best practices like replacing Implicit Flow with Hybrid Flow or using PKCE are included in Keycloak. Other examples would be updates to recommendations around hashing algorithms. Certain and most key aspects become default option in Keycloak and would be picked as part of software update.
+        *   Specifications are evolving. Certain aspects of the initial OAuth2 specification are now considered insecure (to be addressed and incorporated in 2.1 version). Although certain best practices, like replacing Implicit Flow with Hybrid Flow or using PKCE, are included in Keycloak. Other examples would be updates to recommendations around hashing algorithms. Most key aspects of these changes will become the default option in Keycloak and are to be selected as part of any software update.
 *   Expected Attacker Capabilities
     *   Very good understanding of OAuth 2.0 protocol family flows and capabilities
     *   Very good understanding of all typical Web Application attack vectors (CSRF, XSS, etc.) 
         *   For example, the most common attack vector would be exploiting any weaknesses in input validation of Keycloak APIs if they could lead into remote code execution on the server side. 
-        *   Similarly in this area there were several CVEs identified into jackson-bind components related to XML parsing. This can potentially open up the attack surface by altering SAML tokens and exploiting such CVEs. 
-        *   Good set of examples of CVEs identified in Keycloak is in NVD
+        *   Similarly, in this area there were several CVEs identified in jackson-bind components related to XML parsing. This can potentially open up the attack surface by altering SAML tokens and exploiting such CVEs. 
+        *   Some examples of CVEs identified in Keycloak are available in NVD
             *   [https://nvd.nist.gov/vuln/search/results?form_type=Advanced&cves=on&cpe_version=cpe%3A%2Fa%3Aredhat%3Akeycloak%3A4.3.0](https://nvd.nist.gov/vuln/search/results?form_type=Advanced&cves=on&cpe_version=cpe%3A%2Fa%3Aredhat%3Akeycloak%3A4.3.0)
             *   [https://www.cvedetails.com/product/46161/Redhat-Keycloak.html?vendor_id=25](https://www.cvedetails.com/product/46161/Redhat-Keycloak.html?vendor_id=25)
 *   Attack Risks and Effects
-    *   As this is Identity Provider for Web Applications all typical attack vectors, risk and effects would apply - like 
+    *   As this is an Identity Provider for Web Applications, all typical attack vectors, risk and effects would apply: 
         *   [OWASP Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/)
         *   [OWASP Top 10 API Security Risks](https://owasp.org/www-project-api-security/)
         *   Any other Web Application or API Security related best practices or key standards.
 *   Security Degradation
-    *   It is worth distinguishing compromising Keycloak itself and compromising applications secured with Keycloak (for example by hijacking session token). The latter doesn’t need to lead to the former while being the core goal of the attacker. Resulting in compromising only one client or particular users while not compromising IdP itself.  
+    *   It is worth distinguishing the compromise of Keycloak itself from the compromise of applications secured with Keycloak (for example by hijacking session token). The latter doesn’t need to lead to the former while being the core goal of the attacker, the resulting compromise affects only one client or particular users while not compromising the IdP itself.  
     *   Rendering server unavailable
         *   Potentially easiest attack on the server is DDOS impacting its availability. 
         *   Impact
             *   End users not able to authenticate to applications
-            *   Applications not being able to reach out to server for additional validation calls. At minimum they should still be able to verify already issued tokens using cached public key from the server and make authorization decisions based on existing included claims. Although new refreshed access tokens won’t be possible to issued impacting availability of applications to end users. 
+            *   Applications not being able to reach out to server for additional validation calls. At a minimum they should still be able to verify already issued tokens using the cached public key from the server and make authorization decisions based on existing included claims. Issuing new, refreshed access tokens for applications and end users won’t be possible due to the availability impact. 
         *   Prevention and mitigation mechanisms
             *   Implementing proper HA deployment with Clustering or even Datacenter duplication or distribution
-            *   Fronting Keycloak with proper rate limiting solutions at Load Balancer or Firewall level
+            *   Fronting Keycloak with proper rate limiting solutions at the Load Balancer or Firewall level
     *   Impacting server integrity and sensitive data Exposure
         *   Keycloak as an Identity Provider contains user sensitive data. 
         *   Impact
-            *   At different level of granularity gaining access to data in the server can be very impactful 
+            *   At different levels of granularity, gaining access to data in the server can be very impactful 
             *   User access - leaking profile information and allowing to reset password and take over given user accounts. Although for user triggered password reset email validation can provide necessary mitigation
             *   Session takeover - getting access to user session can allow attacker to take over access to given application and related resources
             *   Gaining administrator access to the master realm is a potentially catastrophic event as it gives countless attack venues to exploit.
         *   Prevention and mitigation mechanisms
-            *   Not leveraging the master realm administrator account. Instead  creating dedicated realms with administrator accounts containing subset of permissions
+            *   Not leveraging the master realm administrator account. Instead  creating dedicated realms with administrator accounts containing a subset of permissions
             *   Server [Key rotation](https://www.keycloak.org/docs/latest/server_admin/#rotating-keys). Ability to introduce new server keys and invalidate old ones in case leak has been detected
             *   User session invalidation and [refresh token revocation policy ](https://www.keycloak.org/docs/latest/server_admin/#_revocation-policy)allowing to not trust refresh tokens issued earlier then given timestamp
-            *   TLS preventing Man in The Middle attacks
-            *   MFA and W3C WebAuthentication - providing Strong Customer Authentication means both for end users and Keycloak administrators. 
+            *   TLS preventing Man-in-the-Middle attacks
+            *   MFA and W3C WebAuthentication - providing Strong Customer Authentication mechanisms for end users and Keycloak administrators. 
             *   [Password Credentials hashing](https://www.keycloak.org/docs/latest/server_admin/#password-database-compromised) with pluggable SPIs to integrate third party vaults
-            *   [Limiting token audience](https://www.keycloak.org/docs/latest/server_admin/#limit-token-audience) allowing to potentially prevent reusing leaked application session.
+            *   [Limiting token audience](https://www.keycloak.org/docs/latest/server_admin/#limit-token-audience) to allow potential reuse prevention of leaked application sessions.
             *   Possibility to introduce database encryption at RDBMs level
             *   [Brute force detection](https://www.keycloak.org/docs/latest/server_admin/#password-guess-brute-force-attacks) - basic mechanism preventing password guessing techniques. 
-            *   Keycloak follows best practice to try to not leak any indicator about which software version given running instance is using. 
+            *   Keycloak follows best practices to try to not leak any indicator about which software version the given running instance is using. 
 *   Compensating Mechanisms
     *   This highly depends on the feature and capability. Each time a new one is designed there is a fairly long discussion with many community members to ensure particular architecture will not lead to compromising security. 
         *   See number of comments in the discussion on MutiFactor and Setup Authentication design proposal: [https://github.com/keycloak/keycloak-community/pull/5](https://github.com/keycloak/keycloak-community/pull/5)
@@ -609,17 +550,17 @@ Keycloak supports OpenID Connect and SAML2 out of the box. There number of addit
         *   _“By default, JavaScript Policies can not be uploaded to the server. You should prefer deploying your JS Policies directly to the server as described in [JavaScript Providers](https://www.keycloak.org/docs/latest/server_development/#_script_providers). If you still want to use the Keycloak Administration Console to manage your JS policies you should enable the ‘Upload Scripts’ feature.”_
         *   This is done to mitigate any issues around handling (escaping/sandboxing) custom JavaScript code for those policies within the browser (within Admin UI).  
 *   User impersonation
-    *   Server provides ability for the administrator with a given set of permissions to [impersonate a particular user](https://www.keycloak.org/docs/latest/server_admin/#impersonation) and act on his behalf. Security of aspects of it can be configured on few different levels
+    *   Server provides ability for the administrator with a given set of permissions to [impersonate a particular user](https://www.keycloak.org/docs/latest/server_admin/#impersonation) and act on their behalf. Security of aspects of this can be configured on few different levels
     *   Impersonation can be [disabled at the server instance level](https://www.keycloak.org/docs/latest/server_installation/#profiles) as part of startup configuration with: “-Dkeycloak.profile.feature.impersonation=disabled” option. This has been introduced deliberately at this level understanding some organizations would prefer not having such powerful capability enabled at all. 
-    *   Impersonation can be [disabled at the realm level ](https://www.keycloak.org/docs/latest/server_admin/#_per_realm_admin_permissions)by removing “Impersonation” role for given admin account
-    *   At the auditing level there is dedicated “Impersonate” and “Impersonate_Error” event to capture such activity for audit purposes
+    *   Impersonation can be [disabled at the realm level ](https://www.keycloak.org/docs/latest/server_admin/#_per_realm_admin_permissions)by removing the “Impersonation” role for given admin account
+    *   At the auditing level there are dedicated “Impersonate” and “Impersonate_Error” events to capture such activity for audit purposes
     *   Impersonated user session[ provide details](https://www.keycloak.org/docs/latest/server_admin/#_protocol-mappers_oidc-user-session-note-mappers) on “Impersonator” - keeping track of who initiated impersonated session on behalf of given user
 *   Typical configuration mistakes to avoid
-    *   Man In the Middle - caution during server provisioning. There are means introduced to ensure that the initial administrator password is not leaked (no defaults, required to be set via localhost, leveraging scripts provided in the server to do so). 
-    *   Lack of TLS - which can lead to Man in the Middle and which presence is required by OAuth2 specification. Establishing TLS for the server during provisioning is a must for production deployment. 
-    *   Setting weak password for admin - there is very flexible and powerful password strength policy validation although it is not enabled by default to enforce initial one for admin account
+    *   Man-In-the Middle - caution during server provisioning. There are means introduced to ensure that the initial administrator password is not leaked (no defaults, required to be set via localhost, leveraging scripts provided in the server to do so). 
+    *   Lack of TLS - which can lead to a Man-in-the-Middle attack.  TLS is required by the OAuth2 specification. Establishing TLS for the server during provisioning is a must for production deployments. 
+    *   Setting a weak password for admin - there is a very flexible and powerful password strength policy validation although it is not enabled by default to enforce initial one for admin account
     *   Using master realm for applications and administrator user within master realm for all provisioning and configuration purposes. This is equivalent to using or running under a “root” account in linux. 
-    *   Setting very long token lifespans for “convenience”. While reducing back and forth communication between application and server it increases the risk of session takeover. 
+    *   Setting very long token lifespans for “convenience”. Although this reduces back and forth communication between the application and the server, it increases the risk of session takeover. 
     *   Convenience. There are a number of shortcuts typically used during trials, debugging or development which if not disabled for production purposes will be a major attack vector. For example
         *   Using public clients for everything - as they don’t require client credentials. 
         *   Using confidential clients for everything - as they do require credentials they shouldn’t be used with purely client side apps (like JS based UIs)
@@ -633,13 +574,13 @@ Keycloak supports OpenID Connect and SAML2 out of the box. There number of addit
 *   OAuth 2.0 and OpenID Connect area is moving ahead. 
     *   [https://aaronparecki.com/2019/12/12/21/its-time-for-oauth-2-dot-1](https://aaronparecki.com/2019/12/12/21/its-time-for-oauth-2-dot-1)
     *   [https://aaronparecki.com/2020/03/11/14/oauth-2-1](https://aaronparecki.com/2020/03/11/14/oauth-2-1)
-    *   Both applications and Keycloak need to be ongoingly monitored and updated to follow current best practices and new additions or recommendations. 
+    *   Both applications and Keycloak need to be monitored and updated on an ongoing basis to follow current best practices and new additions or recommendations. 
 
 ## 
 **Secure Development Practices**
 
 *   Without tests and documentation, any code does not get merged.
-*   PR reviews by senior maintainers and successful CI runs are required for merging. This at times leads to longer [PR merging times and review queue](https://github.com/keycloak/keycloak/pulls). With current project size and adoption in the industry it is a balancing act. 
+*   PR reviews by senior maintainers and successful CI runs are required for merging. This at times leads to longer [PR merging times and  a longer review queue](https://github.com/keycloak/keycloak/pulls). With current project size and adoption in the industry it is a balancing act. 
 *   All key features are required to first get discussed and reviewed in community channels prior to implementation work otherwise PRs won’t get accepted. 
     *   Example of public design proposal for step up and multifactor authentication improvements:  \
 [https://github.com/keycloak/keycloak-community/blob/master/design/multi-factor-admin-and-step-up.md](https://github.com/keycloak/keycloak-community/blob/master/design/multi-factor-admin-and-step-up.md)
@@ -655,10 +596,10 @@ Keycloak supports OpenID Connect and SAML2 out of the box. There number of addit
 *   Community communication channels
     *   [https://www.keycloak.org/community](https://www.keycloak.org/community)
 *   Dedicated security issue reporting process [https://www.keycloak.org/security.html](https://www.keycloak.org/security.html)
-*   Cloud Native ecosystem standardized on OAuth 2.0/OpenID Connect and JWT tokens. There is no other standard currently being utilized for those use cases. OpenID Connect Authorization Service is a critical component of any deployment in Cloud Native space.
-    *   Kubernetes embraces it for API Server security and calls out Keycloak (among other options) in documentation. 
-    *   Istio Service Mesh embraces OpenID Connect for end user authentication. In Keycloak community survey over 60% of claimed deployments were done in Cloud related environments (Kubernetes, OpenShift, Public Cloud, Containers) vs only around 30% were traditional ZIP distribution with JVM. 
-    *   Contributions which are done also indicate it 
+*   Cloud Native ecosystem standardized on OAuth 2.0/OpenID Connect and JWT tokens. There is no other standard currently being utilized for those use cases. OpenID Connect Authorization Service is a critical component of any deployment in the Cloud Native space.
+    *   Kubernetes embraces Keycloak for API Server security and calls out Keycloak (among other options) in it's documentation. 
+    *   Istio Service Mesh embraces OpenID Connect for end user authentication. In Keycloak's community survey, over 60% of claimed deployments were done in Cloud related environments (Kubernetes, OpenShift, Public Cloud, Containers) vs only around 30% were traditional ZIP distribution with JVM. 
+    *   Existing contributions to the project indicate this
         *   Keycloak GateKeeper which is a proxy generic OpenID Connect adapter implemented in GoLang has been created mainly to be deployed in a sidecar on Kubernetes.  
 
 ## 
@@ -702,7 +643,7 @@ Keycloak supports OpenID Connect and SAML2 out of the box. There number of addit
         *   [https://www.slideshare.net/YuichiNakamura10/implementing-security-requirements-for-banking-api-system-using-open-source-software-oss](https://www.slideshare.net/YuichiNakamura10/implementing-security-requirements-for-banking-api-system-using-open-source-software-oss)"
     *   **NTT Communications** : "+1 Yes, Keycloak is very promising and deserves it. It is easy to use, well-documented, and has enough features to be used in cloud native environment."
     *   **Nomura Research Institute, Ltd**. : "We're using keycloak in cloud native environment, including k8s and so on."
-*   Additional real world deployments team is aware of:
+*   Additional real world deployments the Keycloak team is aware of:
     *   AT&T: [https://apimarket.att.com/auth/realms/att/account](https://apimarket.att.com/auth/realms/att/account)
     *   Sonatype: [https://auth.sonatype.com/auth/](https://auth.sonatype.com/auth/)
     *   Hy-Vee: [https://accounts.hy-vee.com/auth/](https://accounts.hy-vee.com/auth/)
@@ -729,5 +670,4 @@ Keycloak supports OpenID Connect and SAML2 out of the box. There number of addit
     *   Comes with UI (Admin UI, User Self Service, Authentication/Login/Registration/Consent screens). All those UIs are thin clients to REST APIs. Therefore for any operation either UI or REST API call or CLI can be used. UIs are thin clients in Angular (slowly being rewritten in ReactJS). Many competing solutions require application developers to implement those UIs.
     *   Little to no code integration. In the majority of other OpenSource solutions you need to implement your own Login/Authentication screens. In Keycloak once you register new OAuth2/OIDC/SAML2 client application you can copy paste piece of JSON and if using one of OOTB adapters (NodeJS, SpringBoot, WildFly) you are done and can enable many features by simply switching configuration in the UI. Essentially if you run it with docker you can provide a high number of typical Access Management features for your application or secure your service in a few minutes. 
     *   Developer and modern token based security for microservices focused. While covering well legacy integrations (custom user store, LDAP, identity brokering from external IdPs) core focus is on easily security Applications, APIs and Services. 
-
 
