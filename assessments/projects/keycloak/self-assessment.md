@@ -155,9 +155,6 @@ This includes
 A comprehensive description is available separately within the [“Authorization Services Guide”](https://www.keycloak.org/docs/latest/authorization_services/).
 
 Centralized Authorization capabilities are provided in separate layer to Authentication. There is certain level of pluggability by implementing [Custom Policies in JavaScript](https://www.keycloak.org/docs/latest/authorization_services/#_policy_js), [deploying them on the server ](https://www.keycloak.org/docs/latest/server_development/#_script_providers)or providing a custom [Policy Evaluation scheme](https://www.keycloak.org/docs/latest/authorization_services/#_policy_evaluation_api)
-
-
-
 ## 
 **Intended Use**
 
@@ -670,4 +667,3 @@ Keycloak supports OpenID Connect and SAML2 out of the box. There number of addit
     *   Comes with UI (Admin UI, User Self Service, Authentication/Login/Registration/Consent screens). All those UIs are thin clients to REST APIs. Therefore for any operation either UI or REST API call or CLI can be used. UIs are thin clients in Angular (slowly being rewritten in ReactJS). Many competing solutions require application developers to implement those UIs.
     *   Little to no code integration. In the majority of other OpenSource solutions you need to implement your own Login/Authentication screens. In Keycloak once you register new OAuth2/OIDC/SAML2 client application you can copy paste piece of JSON and if using one of OOTB adapters (NodeJS, SpringBoot, WildFly) you are done and can enable many features by simply switching configuration in the UI. Essentially if you run it with docker you can provide a high number of typical Access Management features for your application or secure your service in a few minutes. 
     *   Developer and modern token based security for microservices focused. While covering well legacy integrations (custom user store, LDAP, identity brokering from external IdPs) core focus is on easily security Applications, APIs and Services. 
-
