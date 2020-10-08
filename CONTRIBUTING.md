@@ -23,16 +23,79 @@ Anyone interested in contributing should join the mailing list and other
 
 ### Reviewing Pull Requests
 
-If you are new to the group, reviewing pull requests and commenting on issues
-is a great way to get involved!
+If you are new to the group, reviewing pull requests and commenting on issues is
+a great way to get involved!  We strongly encourage and support all our members
+to participate in anyway they can.
 
-Except for urgent or very small grammar or spelling fixes, we leave pull 
-requests open for at least 24 hours, so that others have the chance to 
+Except for urgent or very small grammar or spelling fixes, we leave pull
+requests open for at least 24 hours, so that others have the chance to
 review/comment.   
 
-Anyone who reviews a pull request should leave a note to let others know that 
-someone has looked at it.  Any change should have a +1 from someone else.
-Larger changes should have multiple reviewers.
+#### Favorable review
+
+A favorable review is determined by the contents of the PR complying with the
+contributing guide, the writing style, and agreement the contents align with the
+SIG's goals, objectives, and scope.  It is anticipated that PRs submitted, with
+the exception of spelling and grammar changes, have been discussed with members
+of the SIG.
+
+##### Nits
+
+Nits are minor suggestions and changes that are strongly encouraged to be
+identified and resolved to provide consistency in the repo.  Preferential
+language or language that is a matter of preferred usage are not considered
+nits.  
+
+An example of preferential language:
+> They use cloud technologies with clear understanding of risks and the ability to validate that their security policy decisions are reflected in deployed software.
+
+> ability is a human oriented term, capability is more technical and may be more appropriate
+```suggestion
+They use cloud technologies with clear understanding of risks and the capability to validate their security policy decisions are reflected in deployed software.  
+```
+
+An example of a nit:
+> They use cloud-native technologies with clear understanding of risks and the ability to validate that their security policy decisions are reflected in deployed software.
+
+> per TOC definition of cloud native, it is not hyphenated
+```suggestion
+They use cloud technologies with clear understanding of risks and the ability to validate that their security policy decisions are reflected in deployed software.  
+```
+
+#### Simple changes
+
+Simple changes are defined as:
+* spelling, typo, grammar
+* clarifications, minor pdates
+
+A person without access, other than the PR author, can and _is_ encouraged to
+review a PR and comment/+1 that they have done a review and found it favorable.
+A person with access then may perform the merge.
+
+A person with access, other than the PR author, can both review **and** merge a
+PR if found favorable after review.
+
+[Code owners](CODEOWNERS.md) need to be at least one concurring reviewer or the 
+merging party.
+
+#### Siginificant changes
+
+Significant changes are defined as:
+* major changes to the repo
+* extensive changes to repo contents
+* other items as determined by the Technical Leads and Co-Chairs (to be updated
+  here as they occur)
+
+A person without access, other than the PR author can and _is_ encouraged to
+review a PR and comment/+1 that they have done a review and found it favorable.
+A second person with access, other than the PR Author, must also review the PR
+and provide concurrence prior to merging.
+
+Two persons with access, other than the PR author, must review the PR and
+provide concurrence, the last of which should perform the merge.
+
+[Code owners](CODEOWNERS.md) need to be at least one concurring reviewer or the 
+merging party.
 
 ### Writing style
 
@@ -40,23 +103,20 @@ Consistency creates clarity in communication.
 
 * Common terms
   * When referring to users and use cases, ensure consistency with [use cases](usecases.md)
-  * See [CNCF Style
-  Guide](https://github.com/cncf/foundation/blob/master/style-guide.md) for
-  common terms. Note that the following terms are not hyphenated and all lower
-  case, except for capitalizing the first letter when at the beginning of a
-  sentence:
+  * See [CNCF Style Guide](https://github.com/cncf/foundation/blob/master/style-guide.md) for common terms. Note that the following terms are not hyphenated and all lower case, except for capitalizing the first letter when at the beginning of a
+sentence:
     * open source
     * cloud native
 * Additional Formatting
   * Headlines, page titles, subheads and similar content should follow sentence
     case, and should not include a trailing colon.
   * Paragraphs do not start with leading indent. 
-  * Wrap lines at 80 characters, except where it would break a link. No need to 
-    reformat the whole paragraph to make it perfect -- fewer diffs are easier for
-    reviewers.
+  * Wrap lines at 80 characters, except where it would break a link. No need to
+    reformat the whole paragraph to make it perfect -- fewer diffs are easier
+for reviewers.
 
 If you find yourself correcting for consistency, please propose additional style
-guidelines via pull request to this document. Feel free to add references to 
+guidelines via pull request to this document. Feel free to add references to
 good sources for content guidelines below.
 
 Sources:
