@@ -27,7 +27,7 @@ If you are new to the group, reviewing pull requests and commenting on issues is
 a great way to get involved!  We strongly encourage and support all our members
 to participate in anyway they can.
 
-Except for urgent or very small grammar or spelling fixes, we leave pull
+Except for urgent or very small grammar or spelling fixes, such as simple changes discussed below, we leave pull
 requests open for at least 24 hours, so that others have the chance to
 review/comment.   
 
@@ -97,6 +97,10 @@ provide concurrence, the last of which should perform the merge.
 [Code owners](CODEOWNERS.md) need to be at least one concurring reviewer or the 
 merging party.
 
+### Merging pull requiests
+
+PRs may be merged after at least one review as occurred, dependent on the type of changes reflected in the PR.  The merging party needs to verify a review has occurred, the PR is in alignment with this guide, and is in scope of the SIG.
+
 ### Writing style
 
 Consistency creates clarity in communication. 
@@ -113,7 +117,7 @@ sentence:
   * Paragraphs do not start with leading indent. 
   * Wrap lines at 80 characters, except where it would break a link. No need to
     reformat the whole paragraph to make it perfect -- fewer diffs are easier
-for reviewers.
+    for reviewers.
 
 If you find yourself correcting for consistency, please propose additional style
 guidelines via pull request to this document. Feel free to add references to
