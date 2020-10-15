@@ -194,6 +194,8 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Vinay Venkataraghavan ([@vinayvenkat](https://github.com/vinayvenkat), Prisma Cloud (PANW)
 * Magno Logan ([@magnologan](https://github.com/magnologan/)), Trend Micro
 * Itay Shakury ([@itaysk](https://github.com/itaysk)), Aqua Security
+* Gadi Naor ([@gadinaor](https://github.com/gadinaor)), Alcide
+
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
