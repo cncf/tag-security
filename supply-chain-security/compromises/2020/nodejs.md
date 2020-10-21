@@ -25,7 +25,7 @@ The potential damage such exploits/vulnerabilities could generate is, in general
 
 ## Type of compromise
 
-The first three packages appear to allow a specific attacker to gain remote control over the victim's local machine. The fourth package appears to harvest user data (i.e. files) from the local machine and then upload them to a remote server (presumably controlled by the attacker).
+These malicious packages fall within a development tooling compromise. The first three packages appear to allow a specific attacker to gain remote control over the victim's local machine. The fourth package appears to harvest user data (i.e. files) from the local machine and then upload them to a remote server (presumably controlled by the attacker).
 
 ## References.
 
