@@ -192,6 +192,10 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Wayne Haber ([@whaber github](https://github.com/whaber) / [@whaber gitlab](https://gitlab.com/whaber)), GitLab
 * Trishank Karthik Kuppusamy [@trishankatdatadog](https://github.com/trishankatdatadog), CNAB/Datadog/Notary-v2/TUF/in-toto
 * Vinay Venkataraghavan ([@vinayvenkat](https://github.com/vinayvenkat), Prisma Cloud (PANW)
+* Magno Logan ([@magnologan](https://github.com/magnologan/)), Trend Micro
+* Itay Shakury ([@itaysk](https://github.com/itaysk)), Aqua Security
+* Gadi Naor ([@gadinaor](https://github.com/gadinaor)), Alcide
+
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
