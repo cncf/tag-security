@@ -579,7 +579,7 @@ Service mesh solutions that specifically implement the SPIFFE Workload API shoul
 
 ## References/links:
 
-Cappos, Justin, and, Evan Gilman, Matt Moyer, Enrico Schiattarella. Scrutinizing SPIRE to Sensibly Strengthen SPIFFE Security. 2018. [[https://blog.scytale.io/scrutinizing-spire-security-9c82ba542019]](https://blog.scytale.io/scrutinizing-spire-security-9c82ba542019)
+Cappos, Justin, and, Evan Gilman, Matt Moyer, Enrico Schiattarella. Scrutinizing SPIRE to Sensibly Strengthen SPIFFE Security. 2018. Part 1: [[https://blog.spiffe.io/scrutinizing-spire-security-9c82ba542019]](https://blog.spiffe.io/scrutinizing-spire-security-9c82ba542019) and Part 2: [[https://blog.spiffe.io/scrutinizing-spire-to-sensibly-strengthen-spiffe-security-part-two-b8351ee2ff79]](https://blog.spiffe.io/scrutinizing-spire-to-sensibly-strengthen-spiffe-security-part-two-b8351ee2ff79)
 
 Kubecon NA 2018 - Scrutinizing SPIRE to Sensibly Strengthen SPIFFE Security- Matt Moyer, Heptio & Evan Gilman, Scytale [[https://www.youtube.com/watch?v=-yGWh\_YTUkw]](https://www.youtube.com/watch?v=-yGWh_YTUkw)
 
