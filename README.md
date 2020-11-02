@@ -11,7 +11,7 @@
 
 ## Objective
 
-SIG-Security facilitates collaboration to discover and produce resources which enable secure access, policy control and safety for operators, administrators, developers, and end-users across the cloud native ecosystem.
+SIG-Security facilitates collaboration to discover and produce resources that enable secure access, policy control, and safety for operators, administrators, developers, and end-users across the cloud native ecosystem.
 
 ## Background
 
@@ -46,7 +46,7 @@ Anyone is welcome to join our open discussions of SIG-Security projects and shar
 The Security SIG group meets every Wednesday at 10:00am PT (USA Pacific, see your timezone [here](https://time.is/compare/1000_23_Oct_2019_in_PT)):
 
 * [Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
-* [Meeting Link: zoom.us/my/cncfsigsecurity](https://zoom.us/my/cncfsigsecurity)
+* [Meeting Link: zoom.us/my/cncfsigsecurity (Passcode: 77777)](https://zoom.us/my/cncfsigsecurity?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
 
 One tap mobile:
 * +16465588656,,7375677271# US (New York)
@@ -86,14 +86,16 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 ## Members
 
 ### SIG Chairs
-* Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 9/3/2020]
+* Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A. [Chair - term: 9/28/2020 - 9/27/2022]
 * Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 6/3/2019 - 6/3/2021]
 * Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 6/3/2019 - 6/3/2021]
 
 ### Tech Leads
 * Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
-* Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A.
 * Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
+
+### SIG Chairs Emeritus
+* Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 9/3/2020]
 
 ### On-going projects
 
@@ -190,6 +192,10 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Wayne Haber ([@whaber github](https://github.com/whaber) / [@whaber gitlab](https://gitlab.com/whaber)), GitLab
 * Trishank Karthik Kuppusamy [@trishankatdatadog](https://github.com/trishankatdatadog), CNAB/Datadog/Notary-v2/TUF/in-toto
 * Vinay Venkataraghavan ([@vinayvenkat](https://github.com/vinayvenkat), Prisma Cloud (PANW)
+* Magno Logan ([@magnologan](https://github.com/magnologan/)), Trend Micro
+* Itay Shakury ([@itaysk](https://github.com/itaysk)), Aqua Security
+* Gadi Naor ([@gadinaor](https://github.com/gadinaor)), Alcide
+
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
