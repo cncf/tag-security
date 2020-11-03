@@ -37,7 +37,7 @@ A favorable review is determined by the contents of the PR complying with the
 contributing guide, the writing style, and agreement the contents align with the
 SIG's goals, objectives, and scope.  It is anticipated that PRs submitted, with
 the exception of spelling and grammar changes, have been discussed with members
-of the SIG.
+of the SIG via slack or issues.
 
 ##### Nits
 
@@ -126,4 +126,3 @@ good sources for content guidelines below.
 Sources:
 * [OpenOpps Contribution Guide](https://github.com/openopps/openopps-platform/blob/master/CONTRIBUTING.md)
 * [18F Content Guide](https://content-guide.18f.gov/)
-
