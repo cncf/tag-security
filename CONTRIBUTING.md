@@ -66,7 +66,7 @@ They use cloud technologies with clear understanding of risks and the ability to
 
 Simple changes are defined as:
 * spelling, typo, grammar
-* clarifications, minor pdates
+* clarifications, minor updates
 
 A person without access, other than the PR author, can and _is_ encouraged to
 review a PR and comment/+1 that they have done a review and found it favorable.
