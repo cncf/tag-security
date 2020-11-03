@@ -70,7 +70,7 @@ Simple changes are defined as:
 
 A person without access, other than the PR author, can and _is_ encouraged to
 review a PR and comment/+1 that they have done a review and found it favorable.
-A person with access then may perform the merge.
+A person with access, including the PR author, may then perform the merge.
 
 A person with access, other than the PR author, can both review **and** merge a
 PR if found favorable after review.
