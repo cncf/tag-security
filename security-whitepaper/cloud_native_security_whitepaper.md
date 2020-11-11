@@ -14,112 +14,115 @@ Shared with CNCF Community
 
 ## Index
 
-**[Executive Summary](#_4rwbtb7kf7ky) 4**
-[Purpose](#_b82pd0u5d9lj) 4
-[Problem Analysis](#_36g9h2jucehb) 4
-[Lifecycle Phases](#_4kezxrvajv5s) 5
-[Develop](#_ngvbclr1rmfq) 5
-[Distribute](#_smhwa915dmt4) 5
-[Deploy](#_h3z6pjligo6m) 5
-[Runtime](#_8zqdlpby7nf1) 6
-[Recommendations](#_9dok28o6ovi7) 6
-[Conclusion](#_d1h7k0i0av54) 7
-**[Introduction](#_2xf9283rmqjf) 7**
-[Target Audience](#_52bvsbjwkk9k) 7
-[Cloud Native Goals](#_y9edxfol0niq) 7
-[Assumptions](#_2e8lwg2t6pcv) 8
-**[Cloud Native Layers](#_8bq6m22k1kxr) 9**
-[Lifecycle](#_usi64p8fjdyp) 10
-[Lifecycle Processes](#_845tuwk62p3r) 10
-[Supply Chain](#_5n5pxv7j6lq5) 10
-[Security Benchmarks](#_qjj4m4sq55q2) 11
-[Develop](#_kvoifm18ca9y) 11
-[Security Checks in Development](#_qg01y94v7g2h) 12
-[Development of Tests](#_fv0qbsqlpe2h) 13
-[Code Review](#_n9cz9ctl6k1y) 13
-[Distribute](#_poslf4b0b0ms) 13
-[Build Pipeline](#_p5da9dbie2v2) 14
-[Image Scanning](#_q3p28x9xuyt) 15
-[Image hardening](#_sqx201f79uw9) 15
-[Container Application Manifest Scanning](#_6sg9i5o16cu) 15
-[Container application manifest hardening](#_gc1ze4y9ghmu) 15
-[Testing](#_kmsp56bq41by) 16
-[Static Analysis and Security Testing](#_a3nw171tg64e) 16
-[Dynamic Analysis](#_dtfyywk16sdx) 17
-[Security Tests](#_ekiae56x5qds) 17
-[Artifacts & Images](#_bccb2hj8qim6) 17
-[Registry Staging](#_ihn68km79imi) 17
-[Signing, Trust, and Integrity](#_k42cq8gaunbc) 17
-[Encryption](#_cljsg9wnuazf) 18
-[Deploy](#_7g7efi3t9cy3) 18
-[Pre-Flight Deployment Checks](#_p3erqmf7gimd) 19
-[Observability & Metrics](#_knhsjdvnrloy) 19
-[Response & Investigation](#_2gs92zemavqi) 20
-[Runtime Environment](#_4nrv3qwe3p3s) 20
-[Compute](#_umep9f9530ne) 20
-[Orchestration](#_azlfhpozkg59) 21
-[Security Policies](#_85lyuvdgz9yp) 21
-[Resource Requests and Limits](#_t0icms4a7auf) 22
-[Audit Log Analysis](#_c7643zatd8zi) 22
-[Control Plane Authentication and Certificate Root of Trust](#_k7h8wrp5rp16) 22
-[Secrets Encryption](#_ruzpb2ykwf3) 23
-[Containers](#_z9adfytc9bk1) 23
-[Runtime](#_itu59z4clb2n) 23
-[Microservices and Eliminating Implicit Trust](#_rulgaqn6ykku) 23
-[Image Trust & Content Protection](#_82dwrilmm685) 24
-[Service Mesh](#_8999rr470gwb) 24
-[Detection at Runtime](#_dxzi0uz12u42) 24
-[Functions](#_kaf3n1tu798j) 25
-[Bootstrapping](#_qwqt91xea5o0) 25
-[Storage](#_q41n966h9p9y) 25
-[Storage Stack](#_685bzjxkzb9r) 26
-[Orchestration](#_6isgibupq0br) 26
-[System Topology & Data Protection](#_sf4gr1n4vlyz) 26
-[Caching](#_hy84u0l3ib2c) 27
-[Data Services](#_fonn49p1e3bd) 27
-[Physical or Non-Volatile Layer](#_97oadrt2oxaz) 27
-[Storage Encryption](#_80iv9ygyjm97) 27
-[Persistent Volume Protection](#_h8usn3502vhi) 28
-[Artifact Registries](#_48qnqslbsqhh) 28
-[Access](#_17xxag8sywzb) 28
-[Identity and Access Management](#_eg5mqjosvx7h) 28
-[Credential Management](#_lphzkihsjth) 30
-[Hardware Security Modules (HSM)](#_wontlkle90k4) 30
-[Credential Management Cycle](#_y2e49so3718e) 30
-[Availability](#_hlxm5uxvn2zq) 30
-[Denial of Service (DoS) & Distributed Denial of Service (DDoS)](#_8sxci31xufem) 30
-**[Security Assurance](#_fxf8spniha0n) 31**
-[Threat Modeling](#_kfv0fq48c1bm) 31
-[End-to-end architecture](#_hr0v5jqc0ox7) 31
-[Threat Identification](#_izazv7kquu86) 31
-[Threat Intelligence](#_b9112cq0dyzg) 32
-[Incident Response](#_81bnztyu3y8f) 33
-[Security Stack](#_rjom9rscj9j2) 33
-[Environment](#_gvr0f5moy3o9) 33
-[Pre (Workload) Flight Security Tools](#_4t3whykxgte1) 33
-[Compute & Node Checks](#_rtfromf2yhi8) 33
-[Run Contexts](#_fds5sn8upnvo) 33
-[In-Flight Security Tools](#_6vpfjjb3e4yb) 33
-[Workload & Host Runtime Security](#_2oe35v7j7vb7) 33
-[Zero Trust Architecture](#_qzfozwwwxjd2) 34
-[Least Privilege](#_86090tvs88s) 35
-[Roles and Responsibilities](#_y7liqd9eziih) 36
-**[Compliance](#_98nhxvxhdd5o) 36**
-[Regulatory Audits](#_onoq65iyaof) 37
+**[Executive Summary](#_4rwbtb7kf7ky) 4**  
+[Purpose](#_b82pd0u5d9lj) 4  
+[Problem Analysis](#_36g9h2jucehb) 4  
+[Lifecycle Phases](#_4kezxrvajv5s) 5  
+[Develop](#_ngvbclr1rmfq) 5  
+[Distribute](#_smhwa915dmt4) 5  
+[Deploy](#_h3z6pjligo6m) 5  
+[Runtime](#_8zqdlpby7nf1) 6  
+[Recommendations](#_9dok28o6ovi7) 6  
+[Conclusion](#_d1h7k0i0av54) 7  
+**[Introduction](#_2xf9283rmqjf) 7**  
+[Target Audience](#_52bvsbjwkk9k) 7  
+[Cloud Native Goals](#_y9edxfol0niq) 7  
+[Assumptions](#_2e8lwg2t6pcv) 8  
+**[Cloud Native Layers](#_8bq6m22k1kxr) 9**  
+[Lifecycle](#_usi64p8fjdyp) 10  
+[Lifecycle Processes](#_845tuwk62p3r) 10  
+[Supply Chain](#_5n5pxv7j6lq5) 10  
+[Security Benchmarks](#_qjj4m4sq55q2) 11  
+[Develop](#_kvoifm18ca9y) 11  
+[Security Checks in Development](#_qg01y94v7g2h) 12  
+[Development of Tests](#_fv0qbsqlpe2h) 13  
+[Code Review](#_n9cz9ctl6k1y) 13  
+[Distribute](#_poslf4b0b0ms) 13  
+[Build Pipeline](#_p5da9dbie2v2) 14  
+[Image Scanning](#_q3p28x9xuyt) 15  
+[Image hardening](#_sqx201f79uw9) 15  
+[Container Application Manifest Scanning](#_6sg9i5o16cu) 15  
+[Container application manifest hardening](#_gc1ze4y9ghmu) 15  
+[Testing](#_kmsp56bq41by) 16  
+[Static Analysis and Security Testing](#_a3nw171tg64e) 16  
+[Dynamic Analysis](#_dtfyywk16sdx) 17  
+[Security Tests](#_ekiae56x5qds) 17  
+[Artifacts & Images](#_bccb2hj8qim6) 17  
+[Registry Staging](#_ihn68km79imi) 17  
+[Signing, Trust, and Integrity](#_k42cq8gaunbc) 17  
+[Encryption](#_cljsg9wnuazf) 18  
+[Deploy](#_7g7efi3t9cy3) 18  
+[Pre-Flight Deployment Checks](#_p3erqmf7gimd) 19  
+[Observability & Metrics](#_knhsjdvnrloy) 19  
+[Response & Investigation](#_2gs92zemavqi) 20  
+[Runtime Environment](#_4nrv3qwe3p3s) 20  
+[Compute](#_umep9f9530ne) 20  
+[Orchestration](#_azlfhpozkg59) 21  
+[Security Policies](#_85lyuvdgz9yp) 21  
+[Resource Requests and Limits](#_t0icms4a7auf) 22  
+[Audit Log Analysis](#_c7643zatd8zi) 22  
+[Control Plane Authentication and Certificate Root of Trust](#_k7h8wrp5rp16) 22  
+[Secrets Encryption](#_ruzpb2ykwf3) 23  
+[Containers](#_z9adfytc9bk1) 23  
+[Runtime](#_itu59z4clb2n) 23  
+[Microservices and Eliminating Implicit Trust](#_rulgaqn6ykku) 23  
+[Image Trust & Content Protection](#_82dwrilmm685) 24  
+[Service Mesh](#_8999rr470gwb) 24  
+[Detection at Runtime](#_dxzi0uz12u42) 24  
+[Functions](#_kaf3n1tu798j) 25  
+[Bootstrapping](#_qwqt91xea5o0) 25  
+[Storage](#_q41n966h9p9y) 25  
+[Storage Stack](#_685bzjxkzb9r) 26  
+[Orchestration](#_6isgibupq0br) 26  
+[System Topology & Data Protection](#_sf4gr1n4vlyz) 26  
+[Caching](#_hy84u0l3ib2c) 27  
+[Data Services](#_fonn49p1e3bd) 27  
+[Physical or Non-Volatile Layer](#_97oadrt2oxaz) 27  
+[Storage Encryption](#_80iv9ygyjm97) 27  
+[Persistent Volume Protection](#_h8usn3502vhi) 28  
+[Artifact Registries](#_48qnqslbsqhh) 28  
+[Access](#_17xxag8sywzb) 28  
+[Identity and Access Management](#_eg5mqjosvx7h) 28  
+[Credential Management](#_lphzkihsjth) 30  
+[Hardware Security Modules (HSM)](#_wontlkle90k4) 30  
+[Credential Management Cycle](#_y2e49so3718e) 30  
+[Availability](#_hlxm5uxvn2zq) 30  
+[Denial of Service (DoS) & Distributed Denial of Service (DDoS)](#_8sxci31xufem) 30  
+**[Security Assurance](#_fxf8spniha0n) 31**  
+[Threat Modeling](#_kfv0fq48c1bm) 31  
+[End-to-end architecture](#_hr0v5jqc0ox7) 31  
+[Threat Identification](#_izazv7kquu86) 31  
+[Threat Intelligence](#_b9112cq0dyzg) 32  
+[Incident Response](#_81bnztyu3y8f) 33  
+[Security Stack](#_rjom9rscj9j2) 33  
+[Environment](#_gvr0f5moy3o9) 33  
+[Pre (Workload) Flight Security Tools](#_4t3whykxgte1) 33  
+[Compute & Node Checks](#_rtfromf2yhi8) 33  
+[Run Contexts](#_fds5sn8upnvo) 33  
+[In-Flight Security Tools](#_6vpfjjb3e4yb) 33  
+[Workload & Host Runtime Security](#_2oe35v7j7vb7) 33  
+[Zero Trust Architecture](#_qzfozwwwxjd2) 34  
+[Least Privilege](#_86090tvs88s) 35  
+[Roles and Responsibilities](#_y7liqd9eziih) 36  
+**[Compliance](#_98nhxvxhdd5o) 36**  
+[Regulatory Audits](#_onoq65iyaof) 37  
 **[Personas and Use Cases](#_bmsogi38drt5) 37**
-[Industries](#_2du9aqgc7hsv) 37
-[Enterprise](#_e9br4cq2ptx8) 37
-[Microbusiness](#_udsaj1bl2eb1) 37
-[Finance](#_hnfyiyziji7j) 37
-[Healthcare](#_r8crbsr2tjek) 38
-[Academia and Education](#_w9ruup6w0jc4) 38
-[Public Sector](#_b7t8ls26f494) 38
-**[Evolution of Cloud Native Security](#_glwrs2dwsbnk) 38**
-**[Conclusion](#_rirt95mehilw) 39**
-**[Acronyms and Glossary](#_kuo5npwiee0c) 40**
-**[References](#_i2gz8bcvyj52) 40**
+[Industries](#_2du9aqgc7hsv) 37  
+[Enterprise](#_e9br4cq2ptx8) 37  
+[Microbusiness](#_udsaj1bl2eb1) 37  
+[Finance](#_hnfyiyziji7j) 37  
+[Healthcare](#_r8crbsr2tjek) 38  
+[Academia and Education](#_w9ruup6w0jc4) 38  
+[Public Sector](#_b7t8ls26f494) 38  
+**[Evolution of Cloud Native Security](#_glwrs2dwsbnk) 38**  
+**[Conclusion](#_rirt95mehilw) 39**  
+**[Acronyms and Glossary](#_kuo5npwiee0c) 40**  
+**[References](#_i2gz8bcvyj52) 40**  
 **[Acknowledgements](#_8q9iifbmso35) 41**
 
+###
+
+###
 
 # Executive Summary
 
@@ -223,7 +226,7 @@ Utilization of security benchmarks (e.g. [NIST Application Security Container Gu
 
 The next few sections provide a detailed analysis of the implications, tools, mechanisms and best practices to integrate security throughout the application lifecycle.
 
-## Develop
+## Develop  
 
 ![Figure 2](RackMultipart20201111_figure2.png)
 
