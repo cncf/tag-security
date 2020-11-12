@@ -118,6 +118,10 @@ sentence:
   * Wrap lines at 80 characters, except where it would break a link. No need to
     reformat the whole paragraph to make it perfect -- fewer diffs are easier
     for reviewers.
+* File & directory naming conventions
+  * every directory should have a README.md with useful introductory text
+  * all other file and directory names should be all lower case with dashes
+    to separate words
 
 If you find yourself correcting for consistency, please propose additional style
 guidelines via pull request to this document. Feel free to add references to
