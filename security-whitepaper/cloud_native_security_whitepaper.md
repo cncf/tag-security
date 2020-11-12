@@ -5,7 +5,7 @@ Shared with CNCF Community
 |
 **Work-Group:** SIG-Security **Short self link to working doc:** https://tinyurl.com/CNCF-CNSWP | **Status** : WIP | In Review | **Approved** | Obsolete
 
-**Created** : 2020-FEB-01 **Review By** : 2020-OCT-27 **Release Version:** 0.0.1 **Approvers** : [x] |
+**Created** : 2020-FEB-01 **Reviewed** : 2020-OCT-27  **Published** : 2020-NOV-18 **Release Version:** 1.0 **Approvers** : [x] @lizrice [x] @justincormack  |
 | **Contributors:** [aradhna.chetal@gmail.com](mailto:aradhna.chetal@gmail.com), [themoxiefoxatwork@gmail.com](mailto:themoxiefoxatwork@gmail.com), [jj@tetrate.io](mailto:jj@tetrate.io), gadi@alcide.io @lumjjb, @trishankatdatadog, [@vvenkatara@paloaltonetworks.com](mailto:vvenkatara@paloaltonetworks.com), @pushkarj-v, @whaber, @sublimino, @rowan-baker, [chase.pettet@gmail.com](mailto:chase.pettet@gmail.com), [harsingh@us.ibm.com](mailto:harsingh@us.ibm.com), jeff.lombardo@gmail.com
 |
 | --- |
