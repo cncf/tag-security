@@ -5,125 +5,127 @@ Shared with CNCF Community
 |
 **Work-Group:** SIG-Security **Short self link to working doc:** https://tinyurl.com/CNCF-CNSWP | **Status** : WIP | In Review | **Approved** | Obsolete
 
-**Created** : 2020-FEB-01 **Reviewed** : 2020-OCT-27  **Published** : 2020-NOV-18 **Release Version:** 1.0 **Approvers** : [x] @lizrice [x] @justincormack  |
+**Created** : 2020-FEB-01 **Reviewed** : 2020-OCT-27  **Published** : 2020-NOV-18 **Release Version:** 1.0  
+
+| **Approvers** : [x] @lizrice [x] @justincormack  |
+
 | **Contributors:** [aradhna.chetal@gmail.com](mailto:aradhna.chetal@gmail.com), [themoxiefoxatwork@gmail.com](mailto:themoxiefoxatwork@gmail.com), [jj@tetrate.io](mailto:jj@tetrate.io), gadi@alcide.io @lumjjb, @trishankatdatadog, [@vvenkatara@paloaltonetworks.com](mailto:vvenkatara@paloaltonetworks.com), @pushkarj-v, @whaber, @sublimino, @rowan-baker, [chase.pettet@gmail.com](mailto:chase.pettet@gmail.com), [harsingh@us.ibm.com](mailto:harsingh@us.ibm.com), jeff.lombardo@gmail.com
-|
-| --- |
+|                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------------- |
 | **Reviewers** : @justincappos, @lumjjb, @whaber, @craigbox, @anvega, @magnologan, @magnologan , alok@xenonstack.com, @nyrahul @ranio1 |
-| --- |
-|
+| ---                                                                                                                                   |
+|                                                                                                                                       |
+
+
 
 ## Index
-
-**[Executive Summary](#_4rwbtb7kf7ky) 4**  
-[Purpose](#_b82pd0u5d9lj) 4  
-[Problem Analysis](#_36g9h2jucehb) 4  
-[Lifecycle Phases](#_4kezxrvajv5s) 5  
-[Develop](#_ngvbclr1rmfq) 5  
-[Distribute](#_smhwa915dmt4) 5  
-[Deploy](#_h3z6pjligo6m) 5  
-[Runtime](#_8zqdlpby7nf1) 6  
-[Recommendations](#_9dok28o6ovi7) 6  
-[Conclusion](#_d1h7k0i0av54) 7  
-**[Introduction](#_2xf9283rmqjf) 7**  
-[Target Audience](#_52bvsbjwkk9k) 7  
-[Cloud Native Goals](#_y9edxfol0niq) 7  
-[Assumptions](#_2e8lwg2t6pcv) 8  
-**[Cloud Native Layers](#_8bq6m22k1kxr) 9**  
-[Lifecycle](#_usi64p8fjdyp) 10  
-[Lifecycle Processes](#_845tuwk62p3r) 10  
-[Supply Chain](#_5n5pxv7j6lq5) 10  
-[Security Benchmarks](#_qjj4m4sq55q2) 11  
-[Develop](#_kvoifm18ca9y) 11  
-[Security Checks in Development](#_qg01y94v7g2h) 12  
-[Development of Tests](#_fv0qbsqlpe2h) 13  
-[Code Review](#_n9cz9ctl6k1y) 13  
-[Distribute](#_poslf4b0b0ms) 13  
-[Build Pipeline](#_p5da9dbie2v2) 14  
-[Image Scanning](#_q3p28x9xuyt) 15  
-[Image hardening](#_sqx201f79uw9) 15  
-[Container Application Manifest Scanning](#_6sg9i5o16cu) 15  
-[Container application manifest hardening](#_gc1ze4y9ghmu) 15  
-[Testing](#_kmsp56bq41by) 16  
-[Static Analysis and Security Testing](#_a3nw171tg64e) 16  
-[Dynamic Analysis](#_dtfyywk16sdx) 17  
-[Security Tests](#_ekiae56x5qds) 17  
-[Artifacts & Images](#_bccb2hj8qim6) 17  
-[Registry Staging](#_ihn68km79imi) 17  
-[Signing, Trust, and Integrity](#_k42cq8gaunbc) 17  
-[Encryption](#_cljsg9wnuazf) 18  
-[Deploy](#_7g7efi3t9cy3) 18  
-[Pre-Flight Deployment Checks](#_p3erqmf7gimd) 19  
-[Observability & Metrics](#_knhsjdvnrloy) 19  
-[Response & Investigation](#_2gs92zemavqi) 20  
-[Runtime Environment](#_4nrv3qwe3p3s) 20  
-[Compute](#_umep9f9530ne) 20  
-[Orchestration](#_azlfhpozkg59) 21  
-[Security Policies](#_85lyuvdgz9yp) 21  
-[Resource Requests and Limits](#_t0icms4a7auf) 22  
-[Audit Log Analysis](#_c7643zatd8zi) 22  
-[Control Plane Authentication and Certificate Root of Trust](#_k7h8wrp5rp16) 22  
-[Secrets Encryption](#_ruzpb2ykwf3) 23  
-[Containers](#_z9adfytc9bk1) 23  
-[Runtime](#_itu59z4clb2n) 23  
-[Microservices and Eliminating Implicit Trust](#_rulgaqn6ykku) 23  
-[Image Trust & Content Protection](#_82dwrilmm685) 24  
-[Service Mesh](#_8999rr470gwb) 24  
-[Detection at Runtime](#_dxzi0uz12u42) 24  
-[Functions](#_kaf3n1tu798j) 25  
-[Bootstrapping](#_qwqt91xea5o0) 25  
-[Storage](#_q41n966h9p9y) 25  
-[Storage Stack](#_685bzjxkzb9r) 26  
-[Orchestration](#_6isgibupq0br) 26  
-[System Topology & Data Protection](#_sf4gr1n4vlyz) 26  
-[Caching](#_hy84u0l3ib2c) 27  
-[Data Services](#_fonn49p1e3bd) 27  
-[Physical or Non-Volatile Layer](#_97oadrt2oxaz) 27  
-[Storage Encryption](#_80iv9ygyjm97) 27  
-[Persistent Volume Protection](#_h8usn3502vhi) 28  
-[Artifact Registries](#_48qnqslbsqhh) 28  
-[Access](#_17xxag8sywzb) 28  
-[Identity and Access Management](#_eg5mqjosvx7h) 28  
-[Credential Management](#_lphzkihsjth) 30  
-[Hardware Security Modules (HSM)](#_wontlkle90k4) 30  
-[Credential Management Cycle](#_y2e49so3718e) 30  
-[Availability](#_hlxm5uxvn2zq) 30  
-[Denial of Service (DoS) & Distributed Denial of Service (DDoS)](#_8sxci31xufem) 30  
-**[Security Assurance](#_fxf8spniha0n) 31**  
-[Threat Modeling](#_kfv0fq48c1bm) 31  
-[End-to-end architecture](#_hr0v5jqc0ox7) 31  
-[Threat Identification](#_izazv7kquu86) 31  
-[Threat Intelligence](#_b9112cq0dyzg) 32  
-[Incident Response](#_81bnztyu3y8f) 33  
-[Security Stack](#_rjom9rscj9j2) 33  
-[Environment](#_gvr0f5moy3o9) 33  
-[Pre (Workload) Flight Security Tools](#_4t3whykxgte1) 33  
-[Compute & Node Checks](#_rtfromf2yhi8) 33  
-[Run Contexts](#_fds5sn8upnvo) 33  
-[In-Flight Security Tools](#_6vpfjjb3e4yb) 33  
-[Workload & Host Runtime Security](#_2oe35v7j7vb7) 33  
-[Zero Trust Architecture](#_qzfozwwwxjd2) 34  
-[Least Privilege](#_86090tvs88s) 35  
-[Roles and Responsibilities](#_y7liqd9eziih) 36  
-**[Compliance](#_98nhxvxhdd5o) 36**  
-[Regulatory Audits](#_onoq65iyaof) 37  
-**[Personas and Use Cases](#_bmsogi38drt5) 37**
-[Industries](#_2du9aqgc7hsv) 37  
-[Enterprise](#_e9br4cq2ptx8) 37  
-[Microbusiness](#_udsaj1bl2eb1) 37  
-[Finance](#_hnfyiyziji7j) 37  
-[Healthcare](#_r8crbsr2tjek) 38  
-[Academia and Education](#_w9ruup6w0jc4) 38  
-[Public Sector](#_b7t8ls26f494) 38  
-**[Evolution of Cloud Native Security](#_glwrs2dwsbnk) 38**  
-**[Conclusion](#_rirt95mehilw) 39**  
-**[Acronyms and Glossary](#_kuo5npwiee0c) 40**  
-**[References](#_i2gz8bcvyj52) 40**  
-**[Acknowledgements](#_8q9iifbmso35) 41**
-
-###
-
-###
+- [**Cloud Native Security Whitepaper**](#cloud-native-security-whitepaper)
+  - [Index](#index)
+- [Executive Summary](#executive-summary)
+  - [Purpose](#purpose)
+    - [Problem Analysis](#problem-analysis)
+  - [Lifecycle Phases](#lifecycle-phases)
+    - [Develop](#develop)
+    - [Distribute](#distribute)
+    - [Deploy](#deploy)
+    - [Runtime](#runtime)
+  - [Recommendations](#recommendations)
+  - [Conclusion](#conclusion)
+- [Introduction](#introduction)
+  - [Target Audience](#target-audience)
+  - [Cloud Native Goals](#cloud-native-goals)
+  - [Assumptions](#assumptions)
+- [Cloud Native Layers](#cloud-native-layers)
+  - [Lifecycle](#lifecycle)
+    - [Lifecycle Processes](#lifecycle-processes)
+      - [Supply Chain](#supply-chain)
+      - [Security Benchmarks](#security-benchmarks)
+  - [Develop](#develop-1)
+      - [Security Checks in Development](#security-checks-in-development)
+      - [Development of Tests](#development-of-tests)
+      - [Code Review](#code-review)
+    - [Distribute](#distribute-1)
+      - [Build Pipeline](#build-pipeline)
+      - [Image Scanning](#image-scanning)
+      - [Image hardening](#image-hardening)
+      - [Container Application Manifest Scanning](#container-application-manifest-scanning)
+      - [Container application manifest hardening](#container-application-manifest-hardening)
+      - [Testing](#testing)
+        - [Static Analysis and Security Testing](#static-analysis-and-security-testing)
+        - [Dynamic Analysis](#dynamic-analysis)
+        - [Security Tests](#security-tests)
+      - [Artifacts & Images](#artifacts--images)
+        - [Registry Staging](#registry-staging)
+        - [Signing, Trust, and Integrity](#signing-trust-and-integrity)
+        - [Encryption](#encryption)
+    - [Deploy](#deploy-1)
+      - [Pre-Flight Deployment Checks](#pre-flight-deployment-checks)
+      - [Observability & Metrics](#observability--metrics)
+      - [Response & Investigation](#response--investigation)
+  - [Runtime Environment](#runtime-environment)
+    - [Compute](#compute)
+      - [Orchestration](#orchestration)
+        - [Security Policies](#security-policies)
+        - [Resource Requests and Limits](#resource-requests-and-limits)
+          - [Audit Log Analysis](#audit-log-analysis)
+        - [Control Plane Authentication and Certificate Root of Trust](#control-plane-authentication-and-certificate-root-of-trust)
+        - [Secrets Encryption](#secrets-encryption)
+      - [Containers](#containers)
+        - [Runtime](#runtime-1)
+        - [Microservices and Eliminating Implicit Trust](#microservices-and-eliminating-implicit-trust)
+        - [Image Trust & Content Protection](#image-trust--content-protection)
+      - [Service Mesh](#service-mesh)
+      - [Detection at Runtime](#detection-at-runtime)
+      - [Functions](#functions)
+      - [Bootstrapping](#bootstrapping)
+    - [Storage](#storage)
+        - [Storage Stack](#storage-stack)
+          - [Orchestration](#orchestration-1)
+          - [System Topology & Data Protection](#system-topology--data-protection)
+          - [Caching](#caching)
+          - [Data Services](#data-services)
+          - [Physical or Non-Volatile Layer](#physical-or-non-volatile-layer)
+        - [Storage Encryption](#storage-encryption)
+        - [Persistent Volume Protection](#persistent-volume-protection)
+        - [Artifact Registries](#artifact-registries)
+    - [Access](#access)
+      - [Identity and Access Management](#identity-and-access-management)
+      - [Credential Management](#credential-management)
+        - [Hardware Security Modules (HSM)](#hardware-security-modules-hsm)
+        - [Credential Management Cycle](#credential-management-cycle)
+      - [Availability](#availability)
+        - [Denial of Service (DoS) & Distributed Denial of Service (DDoS)](#denial-of-service-dos--distributed-denial-of-service-ddos)
+    - [Security Assurance](#security-assurance)
+  - [Threat Modeling](#threat-modeling)
+    - [End-to-end architecture](#end-to-end-architecture)
+    - [Threat Identification](#threat-identification)
+  - [Threat Intelligence](#threat-intelligence)
+  - [Incident Response](#incident-response)
+  - [Security Stack](#security-stack)
+    - [Environment](#environment)
+      - [Pre (Workload) Flight Security Tools](#pre-workload-flight-security-tools)
+        - [Compute & Node Checks](#compute--node-checks)
+        - [Run Contexts](#run-contexts)
+      - [In-Flight Security Tools](#in-flight-security-tools)
+        - [Workload & Host Runtime Security](#workload--host-runtime-security)
+    - [Zero Trust Architecture](#zero-trust-architecture)
+    - [Least Privilege](#least-privilege)
+    - [Roles and Responsibilities](#roles-and-responsibilities)
+    - [Compliance](#compliance)
+  - [Regulatory Audits](#regulatory-audits)
+    - [Personas and Use Cases](#personas-and-use-cases)
+  - [Industries](#industries)
+    - [Enterprise](#enterprise)
+    - [Microbusiness](#microbusiness)
+    - [Finance](#finance)
+    - [Healthcare](#healthcare)
+    - [Academia and Education](#academia-and-education)
+    - [Public Sector](#public-sector)
+    - [Evolution of Cloud Native Security](#evolution-of-cloud-native-security)
+    - [Conclusion](#conclusion-1)
+    - [Acronyms and Glossary](#acronyms-and-glossary)
+    - [References](#references)
+    - [Acknowledgements](#acknowledgements)
 
 # Executive Summary
 
@@ -151,13 +153,13 @@ Security integrated throughout the development and distribution phases allows fo
 
 ### Runtime
 
-Cloud native environments are expected to provide policy enforcement and resource restrictive capabilities by design. Runtime resource constraints (e.g. Linux kernel cgroup isolation) for workloads are an example of restrictive and observability primitives integrated into higher levels of the application lifecycle in a cloud native environment. The cloud native runtime environment can itself be broken down into layers of interrelated components with distinct security concerns (e.g. hardware, host, container image runtime, orchestration).
+Cloud native environments are expected to provide policy enforcement and resource restrictive capabilities by design. Runtime resource constraints (e.g. Linux kernel cgroup isolation) for workloads are an example of restrictive and observability primitives integrated into higher levels of the application lifecycle in a cloud native environment. The cloud native runtime environment can itself be broken down into layers of interrelated components with distinct security concerns [^1] (e.g. hardware, host, container image runtime, orchestration).
 
 Within the cloud native runtime environment, the microservice architecture for applications has been adopted by industries and organizations worldwide. Applications are often composed of several independent and single purpose microservices which communicate with each other via service layer abstractions which the container orchestration layer makes possible. Best practices to secure this interrelated component architecture involves ensuring that only sanctioned processes operate within a container namespace, prevention and notification of unauthorized resource access, and network traffic monitoring to detect hostile tooling activity. Service Mesh is another common abstraction that provides consolidated and complementary functionality for orchestrated services without imposing changes on the workload software itself (e.g. logging of API traffic, transport encryption, observability tagging, authentication, and authorization).
 
 ## Recommendations
 
-Cloud native security seeks to ensure the same conditions of diligence, integrity, trust, and threat prevention as traditional security models while integrating modern concepts of ephemerality, distribution, and immutability. In these rapidly changing environments, prone to fail-forward for iteration, automation inline with the development pipeline is required for secure outcomes. Organizations must earnestly analyze and apply these core security concepts to alleviate delay in applying hardening and environmental controls, and need to hold engaged third parties to the same standard while balancing perpetual education and training relevant to the cloud capabilities and security proponents for their own workforce.With additional layers of complexity and a broad mesh of components to care for, protection from unauthorized access must be accomplished by integrating security throughout the lifecycle and into the runtime environment. It is highly recommended organizations evaluate the security defense stack against the relevant attack frameworks3 to achieve clarity about which threats a defense stack covers. Additionally, organizations need to adopt approaches and methodologies that shift security left, amplify DevOps, and reach beyond to the next technology horizon so continued, proper checks of all components before, within, and after the pipeline are verified with any innovation brought into the lifecycle.
+Cloud native security seeks to ensure the same conditions of diligence, integrity, trust, and threat prevention as traditional security models while integrating modern concepts of ephemerality, distribution, and immutability. In these rapidly changing environments, prone to fail-forward for iteration, automation inline with the development pipeline is required for secure outcomes. Organizations must earnestly analyze and apply these core security concepts to alleviate delay in applying hardening and environmental controls, and need to hold engaged third parties to the same standard while balancing perpetual education and training relevant to the cloud capabilities and security proponents for their own workforce.With additional layers of complexity and a broad mesh of components to care for, protection from unauthorized access must be accomplished by integrating security throughout the lifecycle and into the runtime environment. It is highly recommended organizations evaluate the security defense stack against the relevant attack frameworks [^3] to achieve clarity about which threats a defense stack covers. Additionally, organizations need to adopt approaches and methodologies that shift security left [^2], amplify DevOps, and reach beyond to the next technology horizon so continued, proper checks of all components before, within, and after the pipeline are verified with any innovation brought into the lifecycle.
 
 ## Conclusion
 
@@ -173,7 +175,7 @@ Our target audience is the Chief Security Officer (CSO), Chief Information Secur
 
 ## Cloud Native Goals
 
-The adoption and innovation involving containers and microservices architectures have brought with it its fair share of challenges. The need to mitigate cybersecurity vulnerabilities has systematically climbed the priority ladder in modern organizations. As innovation around cloud adoption accelerates, the threat landscape also increases. Security leaders are tasked with protecting assets, both human and non-human, by adopting practices to prevent, detect, and respond to cyber threats while meeting strict compliance requirements. A common historical narrative has been that security implementations impede the speed and agility of DevOps teams. Therefore, security leadership must implement tighter integration and bidirectional understanding to empower DevOps teams to create shared cyber risk ownership.
+The adoption and innovation involving containers and microservices architectures have brought with it its fair share of challenges. The need to mitigate cybersecurity vulnerabilities has systematically climbed the priority ladder in modern organizations. As innovation around cloud adoption accelerates, the threat landscape also increases. Security leaders are tasked with protecting assets, both human [^4] and non-human, by adopting practices to prevent, detect, and respond to cyber threats while meeting strict compliance requirements. A common historical narrative has been that security implementations impede the speed and agility of DevOps teams. Therefore, security leadership must implement tighter integration and bidirectional understanding to empower DevOps teams to create shared cyber risk ownership.
 
 Secure cloud native adoption patterns and architectures that the organizations need to adopt must be shared to ensure that the industry is enforcing security practices with high priority and integrating it throughout the modern application development lifecycle. Most importantly, highlighting the synergies of security architecture with the security leaders and aligning organizations objectives towards security in terms of Vulnerability Management, Zero Trust, Cloud Security, and DevSecOps should be a top priority.
 
@@ -217,7 +219,7 @@ Management of the supply chain and the curation of applicable security benchmark
 
 Organizations are responsible for ensuring that the supply chain for workloads they are developing are subjected to actionable security analysis within the lifecycle process. Supply Chain security can be broken into two parts: the security of the tools and services that provide an environment to create a workload (e.g. developer tooling) and the components that make up the workload itself (e.g. libraries, dependencies, and images). The supply chain needs to be implemented in such a way that the integrity of the supply chain itself is verifiable, and artifacts produced by the software supply chain can therefore be signed for verification of provenance. As such, an organization must exercise caution when using [dependencies](https://research.swtch.com/deps) as upstream dependent packages will inevitably contain security vulnerabilities. Verifying the authenticity and integrity of third-party packages used is essential to ensure that the dependencies are as intended and not compromised.
 
-A primary characteristic of cloud native applications is the reuse of software that is available as open source packages and container images that are built and distributed through open source container registries. Consequently, it is critical for developer, operator, and security personnel to ensure that artifacts and dependencies in their applications do not contain known sources of malware and vulnerabilities. The presence of malware in container images is a significant attack vector in the runtime environment. It is essential to employ on-demand and periodic vulnerability scanning of container images and composite packages in the [CI pipeline](#CI_pipeline) as well as in the container registries.
+A primary characteristic of cloud native applications is the reuse of software that is available as open source packages and container images that are built and distributed through open source container registries. Consequently, it is critical for developer, operator, and security personnel to ensure that artifacts and dependencies in their applications do not contain known sources of malware and vulnerabilities. The presence of malware in container images is a significant attack vector in the runtime environment [^5]. It is essential to employ on-demand and periodic vulnerability scanning of container images and composite packages in the [CI pipeline](#CI_pipeline) as well as in the container registries.
 
 Leveraging these methods permits verifiable, [secure software distribution](#kix.3nqyr7f883rx) and ongoing operation. Incorporating vulnerability scanning in the workload generation pipeline allows an organization to amplify feedback for development teams and has the further potential to block insecure or vulnerable updates from being distributed and deployed. Periodically scanning software will also allow for escalation of newly identified vulnerabilities in existing software.
 
@@ -275,7 +277,7 @@ Scanning container images is a critical component of securing container applicat
 
 Container images constitute the first level of output from the build pipeline. As such, they must include security hardening that takes into consideration the threats to be mitigated while allowing some just-in-time configurations at the runtime phase to fit in a larger part of the ecosystem.
 
-In respect of the [security assurance objectives](#_fxf8spniha0n), the following questions should be evaluated:
+In respect of the [security assurance objectives](#security-assurance), the following questions should be evaluated:
 
 - Should the execution environment be restricted to a specific user?
 - Should the resource's access be limited?
@@ -368,7 +370,7 @@ Prior to deployment, organizations should verify the existence, applicability, a
 
 #### Observability & Metrics
 
-Instituting observability and metrics into cloud native architectures delivers security insights so appropriate stakeholders can resolve and mitigate anomalies appearing in reporting; tools in this area can help collect and visualize this information. Through the use of behavioral and heuristic analysis teams can detect and escalate outliers, suspicious events, and unexplained calls to appropriate stakeholders. Artificial intelligence (AI), [machine learning (ML)](#kix.tlhq6ssgript), or statistical modeling are all mechanisms that are encouraged to assist in behavioral and heuristic analysis development.
+Instituting observability and metrics into cloud native architectures delivers security insights so appropriate stakeholders can resolve and mitigate anomalies appearing in reporting; tools in this area can help collect and visualize this information. Through the use of behavioral and heuristic analysis teams can detect and escalate outliers, suspicious events, and unexplained calls to appropriate stakeholders. Artificial intelligence (AI), [machine learning (ML)](#workload--host-runtime-security), or statistical modeling are all mechanisms that are encouraged to assist in behavioral and heuristic analysis development.
 
 #### Response & Investigation
 
@@ -392,13 +394,13 @@ Considering that containers provide software based virtualization for multi-tena
 
 In order for security to span all layers of container platforms and services, a hardware root of trust based in Trusted Platform Module (TPM) or vTPM can be used. The chain of trust rooted in hardware can be extended to the OS kernel and its components to enable cryptographic verification of trusted boot, system images, container runtimes, and container images, and so on.
 
-Operating systems provide basic system components like crypto libraries used for remote connections and kernel functions that are used for process initiation, management etc. These can have vulnerabilities and, because they provide underlying compute baseline for the containers they can impact all the containers and apps that run on these hosts. At the same time improperly configured containers can impact the host kernel security and hence all the services running in containers running on that host. Refer the details within the [Distribute phase](#_poslf4b0b0ms) for more information.
+Operating systems provide basic system components like crypto libraries used for remote connections and kernel functions that are used for process initiation, management etc. These can have vulnerabilities and, because they provide underlying compute baseline for the containers they can impact all the containers and apps that run on these hosts. At the same time improperly configured containers can impact the host kernel security and hence all the services running in containers running on that host. Refer the details within the [Distribute phase](#distibute-1) for more information.
 
 #### Orchestration
 
 Any orchestrator has several components that are separated into different planes, such as control and data. Sometimes, there is a need to have a higher-level construct of multi-deployment management responsible for maintaining state across several different control planes that co-exist independently of each other.
 
-Any orchestration system has a number of threats that impact the overall security of the deployment and continued security at runtime. Malicious access to an orchestrator's API, unauthorized access and changes to the key-value store, orchestrator dashboard to control clusters, intercept control plane traffic, API misuse, intercepting application traffic, and so on are all potential threat areas. It is important to use best practices and configuration hardening for any orchestrator to prevent exposure to these threats, several exist. It is also important to monitor and detect any changes to the initial configurations made in runtime to ensure the continued security posture of the cluster. Other security best practices such as minimizing administrative access to the control plane, segregation of duties and principle of least privilege should be enforced.
+Any orchestration system has a number of threats that impact the overall security of the deployment and continued security at runtime. Malicious access to an orchestrator's API, unauthorized access and changes to the key-value store, orchestrator dashboard to control clusters, intercept control plane traffic, API misuse, intercepting application traffic, and so on are all potential threat areas. It is important to use best practices and configuration hardening for any orchestrator to prevent exposure to these threats, several exist [^7]. It is also important to monitor and detect any changes to the initial configurations made in runtime to ensure the continued security posture of the cluster. Other security best practices such as minimizing administrative access to the control plane, segregation of duties and principle of least privilege should be enforced.
 
 ##### Security Policies
 
@@ -418,7 +420,7 @@ To have the ability to audit actions of entities using the cluster, it is vital 
 
 ##### Control Plane Authentication and Certificate Root of Trust
 
-The orchestrator administrators should configure all orchestrator control plane components such as controller-manager, scheduler, API server, and kubelet (if applicable) to communicate via mutual authentication and certificate validation with a periodically rotated certificate in addition to existing control plane hardening. The issuing CA can be a default orchestrator CA or an external CA. Particular attention should be given by the administrators to protect the CA's private key. For more information on extending or establishing trust, refer to the [identity portion of this paper](#kix.3f703zlu80we).
+The orchestrator administrators should configure all orchestrator control plane components such as controller-manager, scheduler, API server, and kubelet (if applicable) to communicate via mutual authentication and certificate validation with a periodically rotated certificate in addition to existing control plane hardening. The issuing CA can be a default orchestrator CA or an external CA. Particular attention should be given by the administrators to protect the CA's private key. For more information on extending or establishing trust, refer to the [identity portion of this paper](identity-and-access-management).
 
 ##### Secrets Encryption
 
@@ -441,17 +443,17 @@ The runtime environment of a container needs to be monitored and secured from a 
 
 ##### Microservices and Eliminating Implicit Trust
 
-The perimeter for containerized applications deployed as microservices is the microservice itself. Therefore, it is necessary to define policies that restrict communication only between sanctioned microservice pairs. The inclusion of [zero trust](#kix.kyffcmw3zhk) in the microservice architecture reduces the blast radius by preventing lateral movement should a microservice be compromised. Operators should ensure that they are using capabilities such as network policies to ensure that east-west network communication within the container deployment is limited to only that which is authorized for access. There is some initial work done to provide strategies for microservices security through [NIST SP 800-204](https://csrc.nist.gov/publications/detail/sp/800-204/final) and may serve as a guide for implementing secure microservice architectures.
+The perimeter for containerized applications deployed as microservices is the microservice itself. Therefore, it is necessary to define policies that restrict communication only between sanctioned microservice pairs. The inclusion of [zero trust](#zero-trust-architecture) in the microservice architecture reduces the blast radius by preventing lateral movement should a microservice be compromised. Operators should ensure that they are using capabilities such as network policies to ensure that east-west network communication within the container deployment is limited to only that which is authorized for access. There is some initial work done to provide strategies for microservices security through [NIST SP 800-204](https://csrc.nist.gov/publications/detail/sp/800-204/final) and may serve as a guide for implementing secure microservice architectures.
 
 ##### Image Trust & Content Protection
 
-Utilization of a policy agent to enforce or control authorized, [signed container images](#kix.3nqyr7f883rx) allows organizations to provide assurance of the image provenance for operational workloads. Further, inclusion of [encrypted containers](#kix.ukcqa325efui)allows for the protection of sensitive sources, methods, or data that exist within the container.
+Utilization of a policy agent to enforce or control authorized, [signed container images](#signing-trust-and-integrity) allows organizations to provide assurance of the image provenance for operational workloads. Further, inclusion of [encrypted containers](#encryption) allows for the protection of sensitive sources, methods, or data that exist within the container.
 
 #### Service Mesh
 
-A service mesh provides connectivity between the services that adds additional capabilities like traffic control, service discovery, load balancing, resilience, observability, security, and so on. A service mesh allows microservices to offload these capabilities from application-level libraries and allows developers to focus on differentiating business logic. In order to effectively ensure secure communications between services in cloud native environments, organizations should implement a service mesh to [eliminate implicit trust](#kix.kyffcmw3zhk)within their pods and across workloads, achieved through data-in-motion encryption. Utilization of a service mesh also resolves identity issues where traditional layer 3 and layer 4 identities, IP addresses, no longer cleanly map to workloads. Service mesh provides not only network level isolation and security but also network-level resiliency capabilities such as retry, timeout, and implementing various circuit-breaker capabilities. Streaming platforms can benefit from a service mesh for added security by using workload level authorization to set access rules for topics or brokers.
+A service mesh provides connectivity between the services that adds additional capabilities like traffic control, service discovery, load balancing, resilience, observability, security, and so on. A service mesh allows microservices to offload these capabilities from application-level libraries and allows developers to focus on differentiating business logic. In order to effectively ensure secure communications between services in cloud native environments, organizations should implement a service mesh to [eliminate implicit trust](#zero-trust-architecture) within their pods and across workloads, achieved through data-in-motion encryption. Utilization of a service mesh also resolves identity issues where traditional layer 3 and layer 4 identities, IP addresses, no longer cleanly map to workloads. Service mesh provides not only network level isolation and security but also network-level resiliency capabilities such as retry, timeout, and implementing various circuit-breaker capabilities. Streaming platforms can benefit from a service mesh for added security by using workload level authorization to set access rules for topics or brokers.
 
-It is important to note that implementation of a [service mesh](#_8999rr470gwb) can help reduce the attack surface of a cloud native deployment, and provide a key framework for building [zero trust](#kix.kyffcmw3zhk)application networks.
+It is important to note that implementation of a [service mesh](#service-mesh) can help reduce the attack surface of a cloud native deployment, and provide a key framework for building [zero trust](#zero-trust-architecture) application networks.
 
 #### Detection at Runtime
 
@@ -471,7 +473,7 @@ Serverless functions have a number of threats and controls available for tenants
 
 #### Bootstrapping
 
-[Trust](#kix.kyffcmw3zhk) needs to be bootstrapped in the compute nodes to ensure that workloads and configurations are run on the correct nodes. Bootstrapping ensures that the compute is in the correct physical and logical location and provided with the ability to authenticate itself. These steps are usually part of the cloud provider's provisioning. However, methods are available to verify trust, relying less on a third party.
+[Trust](#zero-trust-architecture) needs to be bootstrapped in the compute nodes to ensure that workloads and configurations are run on the correct nodes. Bootstrapping ensures that the compute is in the correct physical and logical location and provided with the ability to authenticate itself. These steps are usually part of the cloud provider's provisioning. However, methods are available to verify trust, relying less on a third party.
 
 ### Storage
 
@@ -515,9 +517,9 @@ Storage systems can provide methods to ensure confidentiality of data through da
 
 Encryption can have an impact on performance as it implies a compute overhead, but acceleration options are available on many systems which can reduce the overhead. When selecting the kind of encryption for data, consider the data path, size, and frequency of access as well any regulations or additional security protections that may require more secure algorithms to be used. Additionally, teams should not neglect to consider the use of caches when considering encryption requirements for their architectures.
 
-Encryption services can be implemented for data in transit (protecting data in the network) and for data at rest (protecting data on disk). The encryption may be implemented in the storage client or storage server and granularity of the encryption will vary by system (e.g. per volume, per group or global keys). In many systems, data in transit is protected with TLS (which has the added benefit of providing an authentication layer via certificates. Older protocols (such as iscsi) may be harder to secure in transit (although more complex solutions such as IPsec or encrypted VPNs can be used). Data at rest is generally protected using standard symmetric encryption algorithms such as AES, and may be deployed with specific modes of encryption such as XTS for block devices.
+Encryption services can be implemented for data in transit (protecting data in the network) and for data at rest (protecting data on disk). The encryption may be implemented in the storage client or storage server and granularity of the encryption will vary by system (e.g. per volume, per group or global keys). In many systems, data in transit is protected with TLS (which has the added benefit of providing an authentication layer via certificates [^8]. Older protocols (such as iscsi) may be harder to secure in transit (although more complex solutions such as IPsec or encrypted VPNs [^9] can be used). Data at rest is generally protected using standard symmetric encryption algorithms such as AES, and may be deployed with specific modes of encryption such as XTS for block devices.
 
-The encryption function will often depend on integration with a [key management](#_ruzpb2ykwf3)system.
+The encryption function will often depend on integration with a [key management](#secrets-encryption)system.
 
 ##### Persistent Volume Protection
 
@@ -543,7 +545,7 @@ The utilization of identity management services from cloud providers is dependen
 
 For the client and server to bi-directionally verify identity via cryptography, all workloads must leverage mutual/two-way transport authentication.
 
-Authentication and authorization must be determined independently (decision point) and enforced (enforcement point) within and across the environment. Ideally, secure operation for all workloads should be confirmed in real-time, verifying updated access control and file permissions where possible as caching may permit unauthorized access (if access was revoked and never validated). Authorization for workloads are granted based on attributes and roles/permissions for which they have been assigned. It is strongly recommended organizations use both Attribute-Based Access Control (ABAC) and Role-Based Access Control (RBAC) to provide granular authorization enforcement in all environments and throughout their workload lifecycle. Such posture can enable defense-in-depth, where all workloads are able to accept, to consume, and to forward the identity of the end user for contextual or dynamic authorization. This can be achieved through the use of identity documents and tokens. Not enforcing this limits an organization's ability to truly perform [least privilege](#bl312cp5xyv1) access control on system-to-system and service-to-service calls.
+Authentication and authorization must be determined independently (decision point) and enforced (enforcement point) within and across the environment. Ideally, secure operation for all workloads should be confirmed in real-time, verifying updated access control and file permissions where possible as caching may permit unauthorized access (if access was revoked and never validated). Authorization for workloads are granted based on attributes and roles/permissions for which they have been assigned. It is strongly recommended organizations use both Attribute-Based Access Control (ABAC) and Role-Based Access Control (RBAC) to provide granular authorization enforcement in all environments and throughout their workload lifecycle. Such posture can enable defense-in-depth, where all workloads are able to accept, to consume, and to forward the identity of the end user for contextual or dynamic authorization. This can be achieved through the use of identity documents and tokens. Not enforcing this limits an organization's ability to truly perform [least privilege](#least-privilege) access control on system-to-system and service-to-service calls.
 
 It is critical to note, application or service identity is also essential in the context of microservices, where the identities for apps are primarily subject to be spoofed and impersonated by a malicious service. Utilization of a strong identity framework and service mesh can help overcome these issues.
 
@@ -737,7 +739,7 @@ Thus container adoption, and thereby cloud native adoption, will continue to fue
 
 The threat landscape, however, generally remains the same, with top weaknesses consistently being exploited by the same sets of actors. The most significant changes we see are the manner and mechanisms by which attackers target cloud native organizations and applications. Any attacks on container orchestrators and deployments are increasing, as seen with the increase in cryptomining attacks through infiltrated or trojan horse images. As with any innovative technology beginning to reach market saturation, it was only a matter of time for malicious actors to exploit any low hanging fruit.
 
-As these attacks become more prevalent, more intricate, and expand, cloud native security has to evolve to put a more significant focus for enterprises and DevOps teams than where it currently resides. We are seeing an increase in the use of security policies as code but there is a lot of room for evolution and increased automation in security policy enforcement, detection and response. It's evident that immediate and automated security intelligence and responses will be essential to thwart the attacks, and even self-heal from them. Perhaps even adapt and integrate regression proofing as they occur.
+As these attacks become more prevalent, more intricate, and expand, cloud native security has to evolve to put a more significant focus for enterprises and DevOps teams than where it currently resides. We are seeing an increase in the use of security policies as code but there is a lot of room for evolution and increased automation in security policy enforcement, detection and response. It's evident that immediate and automated security intelligence and responses will be essential to thwart the attacks, and even self-heal from them. Perhaps even adapt and integrate § [^9] as they occur.
 
 Container forensics tools and technologies will need to evolve to keep pace with where cloud native is headed. This is particularly critical as the number and complexity of incidents increase in the context of infrastructure-as-a-service and other as-a-service models.
 
@@ -825,22 +827,22 @@ Reviewers:
 - @nyrahul
 - @ranio1
 
-[1](#sdfootnote1anc) Another model to consider is Cloud, Clusters, Containers, and Code: [https://kubernetes.io/docs/concepts/security/overview/](https://kubernetes.io/docs/concepts/security/overview/)
+[1^]: Another model to consider is Cloud, Clusters, Containers, and Code: [https://kubernetes.io/docs/concepts/security/overview/](https://kubernetes.io/docs/concepts/security/overview/)
 
-[2](#sdfootnote2anc)[Shifting security left](https://www.devsecops.org/blog/2016/5/20/-security) often leaves organizations to lapse operational security monitoring. It is important that security exists in all parts of the lifecycle and organizations continually evaluate other aspects of their business and technology processes where they may reach beyond modern security paradigms to embrace security as a culture and habit.
+[2^]: [Shifting security left](https://www.devsecops.org/blog/2016/5/20/-security) often leaves organizations to lapse operational security monitoring. It is important that security exists in all parts of the lifecycle and organizations continually evaluate other aspects of their business and technology processes where they may reach beyond modern security paradigms to embrace security as a culture and habit.
 
-[3] Example - [MITRE ATT&CK Framework for Kubernetes](https://www.darkreading.com/threat-intelligence/microsofts-kubernetes-threat-matrix-heres-whats-missing/a/d-id/1339106)
+[3^]: Example - [MITRE ATT&CK Framework for Kubernetes](https://www.darkreading.com/threat-intelligence/microsofts-kubernetes-threat-matrix-heres-whats-missing/a/d-id/1339106)
 
-[3](#sdfootnote3anc) Human capital is a vital asset necessary to the success of any organization, the corresponding intellectual property and relational capital brought as a result is equally in need of protection.
+[4^]: Human capital is a vital asset necessary to the success of any organization, the corresponding intellectual property and relational capital brought as a result is equally in need of protection.  
 
-[4](#sdfootnote4anc) https://blog.aquasec.com/malicious-container-image-docker-container-host
+[5^] <https://blog.aquasec.com/malicious-container-image-docker-container-host>  
 
-[5](#sdfootnote5anc) According to Applied Software Measurement, Capers Jones, 1996 and adjusting for inflation - 85% of defects are introduced during coding with a cost of $41 to fix compared to a post release fix cost of $26,542.
+[6^]: According to Applied Software Measurement, Capers Jones, 1996 and adjusting for inflation - 85% of defects are introduced during coding with a cost of $41 to fix compared to a post release fix cost of $26,542.
 
-[6](#sdfootnote6anc) CIsecurity.org maintains a listing of benchmarks for hardening
+[7^]: cisecurity.org maintains a listing of benchmarks for hardening
 
-[7](#sdfootnote7anc) It is critical to note that while authentication is available for use, [mutual authentication](#kix.kyffcmw3zhk) is the preferred mechanism to not only verify the client but also the server (outsider versus insider).
+[8^] It is critical to note that while authentication is available for use, [mutual authentication](#zero-trust-architecture) is the preferred mechanism to not only verify the client but also the server (outsider versus insider).
 
-[8](#sdfootnote8anc) Utilization of a VPN does not guarantee encryption.
+[9^]: Utilization of a VPN does not guarantee encryption.
 
-[9](#sdfootnote9anc) The concept of regression proofing is best explained as a facet of antifragile behaviors within technology environments. Instead of remaining resilient and robust against adverse conditions and attacks, technology can proactively adapt and thrive when subjected to them.
+[10^]: The concept of regression proofing is best explained as a facet of antifragile behaviors within technology environments. Instead of remaining resilient and robust against adverse conditions and attacks, technology can proactively adapt and thrive when subjected to them.
