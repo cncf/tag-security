@@ -195,6 +195,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Magno Logan ([@magnologan](https://github.com/magnologan/)), Trend Micro
 * Itay Shakury ([@itaysk](https://github.com/itaysk)), Aqua Security
 * Gadi Naor ([@gadinaor](https://github.com/gadinaor)), Alcide
+* Marco Lancini ([@marco-lancini](https://github.com/marco-lancini)), Thought Machine
 
 </details>
 
