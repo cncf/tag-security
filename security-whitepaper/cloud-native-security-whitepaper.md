@@ -145,7 +145,7 @@ Cloud native tools are meant to introduce security early in the application life
 
 ### Distribute
 
-Software supply chain safety is especially critical in models that enable faster software iteration. Cloud native application lifecycles need to include methods for verifying not only the integrity of the workload itself but also the process for workload creation and means of operation. This challenge is amplified by the necessary, practical, and consistent use of open source software and third party runtime images, including layers of upstream dependencies.Artifacts (e.g container images) present in the lifecycle pipeline require continual automated scanning and updates to ensure safety from vulnerabilities, malware, insecure coding practices, and other malfeasance. Upon completing these checks, it is important to cryptographically sign artifacts to ensure integrity and enforce non-repudiation.
+Software supply chain safety is especially critical in models that enable faster software iteration. Cloud native application lifecycles need to include methods for verifying not only the integrity of the workload itself but also the process for workload creation and means of operation. This challenge is amplified by the necessary, practical, and consistent use of open source software and third party runtime images, including layers of upstream dependencies. Artifacts (e.g container images) present in the lifecycle pipeline require continual automated scanning and updates to ensure safety from vulnerabilities, malware, insecure coding practices, and other malfeasance. Upon completing these checks, it is important to cryptographically sign artifacts to ensure integrity and enforce non-repudiation.
 
 ### Deploy
 
@@ -203,7 +203,7 @@ _Figure 1_
 
 The cloud native stack is composed of the layers of the foundation, lifecycle, and environment. The cloud native stack can be adopted using different deployment models: IaaS, PaaS, CaaS, and FaaS. Each deployment model provides additional abstractions that ease the management and operation of cloud native environments. As some of these models are considered well known and in use for years, we will focus on models specific to cloud native.
 
-The Containers-as-a-Service (CaaS) model allows users to orchestrate and otherwise manage containers, applications and clusters by leveraging a container-based virtualization platform, an application programming interface (API), or a web portal management interface. CaaS helps users construct scalable containerized applications with security policy embedded as code and run them on private cloud, on-premises data centers or public cloud. e.g. Google Anthos, Google Kubernetes Engine (GKE), Amazon Elastic Kubernetes Service (EKS), Azure Kubernetes Service (AKS), etc. CaaS helps streamline the process of building a container. With microservice orchestration and deployments, it helps enterprises release software faster and allows portability between hybrid and multi-cloud environments, thus reducing infrastructure as well as operating costs. The CaaS model is cost saving as it helps enterprises simplify container management while giving them a choice to only pay for the CaaS resources they want and use. CaaS has containers as its fundamental resource, while for IaaS environments, virtual machines (VMs) and bare metal hardware host systems are used.
+The Containers-as-a-Service (CaaS) model allows users to orchestrate and otherwise manage containers, applications and clusters by leveraging a container-based virtualization platform, an application programming interface (API), or a web portal management interface. CaaS helps users construct scalable containerized applications with security policy embedded as code and run them on private cloud, on-premises data centers or public cloud. CaaS helps streamline the process of building a container. With microservice orchestration and deployments, it helps enterprises release software faster and allows portability between hybrid and multi-cloud environments, thus reducing infrastructure as well as operating costs. The CaaS model is cost saving as it helps enterprises simplify container management while giving them a choice to only pay for the CaaS resources they want and use. CaaS has containers as its fundamental resource, while for IaaS environments, virtual machines (VMs) and bare metal hardware host systems are used.
 
 The Functions-as-a-Service (FaaS) is another cloud native deployment model, a type of cloud service that allows enterprise users to execute code in response to events without the complex infrastructure typically associated with building and launching micro-services. Hosting a software application in the cloud usually requires provisioning and managing a virtual environment, managing the operating system and web components, etc. With FaaS, the physical hardware, virtual machine operating system, and web server software management are all handled automatically by the cloud service provider. Thus allowing users to focus on individual functions in the microservices code while paying for resources that are used and taking advantage of the elasticity of resources that the cloud provides.
 
@@ -217,11 +217,11 @@ Management of the supply chain and the curation of applicable security benchmark
 
 #### Supply Chain
 
-Organizations are responsible for ensuring that the supply chain for workloads they are developing are subjected to actionable security analysis within the lifecycle process. Supply Chain security can be broken into two parts: the security of the tools and services that provide an environment to create a workload (e.g. developer tooling) and the components that make up the workload itself (e.g. libraries, dependencies, and images). The supply chain needs to be implemented in such a way that the integrity of the supply chain itself is verifiable, and artifacts produced by the software supply chain can therefore be signed for verification of provenance. As such, an organization must exercise caution when using [dependencies](https://research.swtch.com/deps) as upstream dependent packages will inevitably contain security vulnerabilities. Verifying the authenticity and integrity of third-party packages used is essential to ensure that the dependencies are as intended and not compromised.
+Organizations are responsible for ensuring that the supply chain for workloads they are developing are subjected to actionable security analysis within the lifecycle process. Supply Chain security can be broken into two parts: the security of the tools and services that provide an environment to create a workload (e.g. developer tooling) and the components that make up the workload itself (e.g. libraries, dependencies, and images). The supply chain needs to be implemented in such a way that the integrity of the supply chain itself is verifiable, and artifacts produced by the software supply chain can therefore be signed for verification of provenance. As such, an organization must exercise caution when using dependencies as upstream dependent packages will inevitably contain security vulnerabilities. Verifying the authenticity and integrity of third-party packages used is essential to ensure that the dependencies are as intended and not compromised.
 
 A primary characteristic of cloud native applications is the reuse of software that is available as open source packages and container images that are built and distributed through open source container registries. Consequently, it is critical for developer, operator, and security personnel to ensure that artifacts and dependencies in their applications do not contain known sources of malware and vulnerabilities. The presence of malware in container images is a significant attack vector in the runtime environment [^5]. It is essential to employ on-demand and periodic vulnerability scanning of container images and composite packages in the [CI pipeline](#CI_pipeline) as well as in the container registries.
 
-Leveraging these methods permits verifiable, [secure software distribution](#kix.3nqyr7f883rx) and ongoing operation. Incorporating vulnerability scanning in the workload generation pipeline allows an organization to amplify feedback for development teams and has the further potential to block insecure or vulnerable updates from being distributed and deployed. Periodically scanning software will also allow for escalation of newly identified vulnerabilities in existing software.
+Leveraging these methods permits verifiable, secure software distribution and ongoing operation. Incorporating vulnerability scanning in the workload generation pipeline allows an organization to amplify feedback for development teams and has the further potential to block insecure or vulnerable updates from being distributed and deployed. Periodically scanning software will also allow for escalation of newly identified vulnerabilities in existing software.
 
 #### Security Benchmarks
 
@@ -235,11 +235,11 @@ The next few sections provide a detailed analysis of the implications, tools, me
 
 _Figure 2_
 
-Security for cloud native applications needs to be deployed throughout the entire lifecycle of an application. The "Develop" phase is the first in this cycle, resulting in the creation of the artifacts, such as Infrastructure-as-Code, application and container manifests, etc., that will be used to deploy and configure cloud native applications. Consequently, these artifacts have proven to be the source for numerous attack vectors that can be exploited in the runtime. The next few sections elaborate on the various security tools, processes, and checks that need to be instituted in this phase to dramatically reduce the attack surface of applications deployed in the runtime.
+Security for cloud native applications needs to be deployed throughout the entire lifecycle of an application. The "Develop" phase is the first in this cycle, resulting in the creation of the artifacts, such as Infrastructure as Code, application and container manifests, etc., that will be used to deploy and configure cloud native applications. Consequently, these artifacts have proven to be the source for numerous attack vectors that can be exploited in the runtime. The next few sections elaborate on the various security tools, processes, and checks that need to be instituted in this phase to dramatically reduce the attack surface of applications deployed in the runtime.
 
 #### Security Checks in Development
 
-Security hardening during the development phase forms a critical component in the deployment of applications. This means that security requirements must be introduced early in software development and treated in the same manner as any other requirement. These requirements are typically based on business needs around risk and compliance. Addressing these needs in the early phases prevents redoing work later in the lifecycle which slows down the DevOps pipeline, and increases overall costs. DevOps teams must also leverage purpose built tools to identify security misconfigurations and vulnerabilities prior to the deployment of these applications. Equally important is that these tools integrate seamlessly into existing and familiar tools leveraged by DevOps teams to compliment agility with security and not impede it. For example, tools need to perform the scanning of Infrastructure as Code templates as well as application manifests within the developer IDE or when a Pull Request is made, and provide rich and contextual security information which can be acted upon rapidly, easily, and early in the development pipeline. Adopting these steps ensure the absence of known vulnerabilities or high risk configurations. Cloud native components should be API driven, allowing for complex debugging tools to interact with the deployed primitive workloads that rely on the orchestrator.
+Security hardening during the development phase forms a critical component in the deployment of applications. This means that security requirements must be introduced early in software development and treated in the same manner as any other requirement. These requirements are typically based on business needs around risk and compliance. Addressing these needs in the early phases prevents redoing work later in the lifecycle which slows down the DevOps pipeline, and increases overall costs. DevOps teams must also leverage purpose built tools to identify security misconfigurations and vulnerabilities prior to the deployment of these applications. Equally important is that these tools integrate seamlessly into existing and familiar tools leveraged by DevOps teams to compliment agility with security and not impede it. For example, tools need to perform the scanning of Infrastructure as Code templates as well as application manifests within the developer IDE or when a pull request is made, and provide rich and contextual security information which can be acted upon rapidly, easily, and early in the development pipeline. Adopting these steps ensure the absence of known vulnerabilities or high risk configurations. Cloud native components should be API driven, allowing for complex debugging tools to interact with the deployed primitive workloads that rely on the orchestrator.
 
 Teams should deploy dedicated development, testing, and production environments to provide infrastructure and application developers with an isolated environment to develop, test, and deploy systems and applications, container base images, VM golden images, and non-functional tests. Some organizations may find leveraging canary deployments, blue-green or red-black deployments, and other deployment models to be an added efficiency for fielding dynamic and interactive testing and feasibility.
 
@@ -257,7 +257,7 @@ Minor changes to a workload, or the infrastructure where the workload has been d
 
 _Figure 3_
 
-The "Distribute" phase is responsible for consuming image definitions and specifications to build the next stage of artifacts such as container images, VM images and others. In modern continuous integration and continuous deployment paradigms, the "Distribute" phase consists of systematic application testing to identify bugs and faults in the software. However, the adoption of Open Source and reusable packages results in the incorporation of vulnerabilities and malware into container images. It is, therefore, imperative to incorporate security focused steps such as scanning the image for the aforementioned threat vectors as well as for validating the integrity of the images to protect against tampering. The next paragraphs elaborate on security best practices that help developers and operators to identify and protect container images from threats as well as techniques and tools to secure the entire CI / CD pipeline and infrastructure. Furthermore, organizations may wish to encrypt software artifacts if confidentiality is desired or needed.
+The "Distribute" phase is responsible for consuming image definitions and specifications to build the next stage of artifacts such as container images, VM images and others. In modern continuous integration and continuous deployment paradigms, the "Distribute" phase consists of systematic application testing to identify bugs and faults in the software. However, the adoption of Open Source and reusable packages results in the incorporation of vulnerabilities and malware into container images. It is, therefore, imperative to incorporate security focused steps such as scanning the image for the aforementioned threat vectors as well as for validating the integrity of the images to protect against tampering. The next paragraphs elaborate on security best practices that help developers and operators to identify and protect container images from threats as well as techniques and tools to secure the entire CI/CD pipeline and infrastructure. Furthermore, organizations may wish to encrypt software artifacts if confidentiality is desired or needed.
 
 Should software artifacts become untrusted due to compromise or other incident, teams should revoke signing keys to ensure repudiation.
 
@@ -265,13 +265,13 @@ Should software artifacts become untrusted due to compromise or other incident, 
 
 Continuous Integration (CI) servers should be isolated and restricted to projects of a similar security classification or sensitivity. Infrastructure builds which require elevated privileges should run on separate dedicated CI servers. Build policies should be enforced in the CI pipeline and by the orchestrator's admission controllers.
 
-Supply chain tools can gather and sign build pipeline metadata. Later stages can use admission control to validate that the prerequisite pipeline stages have run.
+Supply chain tools can gather and sign build pipeline metadata. Later stages can then verify the signatures to validate that the prerequisite pipeline stages have run.
 
-The reader should ensure that the CI and Continuous Delivery (CD) infrastructure is as secure as possible. For example, security updates should be prioritized to be installed ASAP, and cryptographic keys should be protected from exfiltration via the use of Hardware Security Modules (HSM) or Credential Managers.
+The reader should ensure that the CI and Continuous Delivery (CD) infrastructure is as secure as possible. For example, security updates should be prioritized to be installed, and cryptographic keys should be protected from exfiltration via the use of Hardware Security Modules (HSM) or Credential Managers.
 
 #### Image Scanning
 
-Scanning container images is a critical component of securing container applications throughout the lifecycle. It is vital to do the scanning in the CI pipeline before deploying the image to production. Incorporating this capability ensures that developers, operators, and security professionals have detailed information on all known vulnerabilities and details such as the severity, the CVSS score, and availability of mitigation/fixes. Incorporating vulnerability scans of container images coupled with pipeline compliance rules ensure that only sufficiently patched applications are deployed to production, reducing the potential attack surface. Scanning of container images also helps to identify the presence of malware in open source software packages or base image layers incorporated from open source image repositories. Use of container image scanning provides teams with fact of vulnerability or malware and does not provide prevention against vulnerabilities or malware. Organizations need to be prudent when choosing to utilize image scanning, placing mechanisms to make fact-of information actionable, as well as enforcing organization compliance rules.
+Scanning container images is a critical component of securing container applications throughout the lifecycle. It is vital to do the scanning in the CI pipeline before deploying the image to production. Incorporating this capability ensures that developers, operators, and security professionals have detailed information on all known vulnerabilities and details such as the severity, the [Common Vulnerability Scoring System (CVSS)](https://nvd.nist.gov/vuln-metrics/cvss) score, and availability of mitigation/fixes. Incorporating vulnerability scans of container images coupled with pipeline compliance rules ensure that only sufficiently patched applications are deployed to production, reducing the potential attack surface. Scanning of container images also helps to identify the presence of malware in open source software packages or base image layers incorporated from open source image repositories. Use of container image scanning provides teams with fact of vulnerability or malware and does not provide prevention against vulnerabilities or malware. Organizations need to be prudent when choosing to utilize image scanning, placing mechanisms to make fact-of information actionable, as well as enforcing organization compliance rules.
 
 #### Image hardening
 
@@ -285,7 +285,7 @@ In respect of the [security assurance objectives](#security-assurance), the foll
 
 #### Container Application Manifest Scanning
 
-Application manifests describe the configurations required for the deployment of containerized applications. As mentioned in the Benchmarks section, guides and recommendations such as the [NIST 800-190](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-190.pdf) publication recommend best practice security practices and configurations for application containers. Consequently, it is vital to use tools to scan these application manifests in the CI/CD pipeline in order to identify configurations that could potentially result in an insecure deployment posture.
+Application manifests describe the configurations required for the deployment of containerized applications. As mentioned in the [Security Benchmarks](#security-benchmarks) section, guides and recommendations such as the [NIST 800-190](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-190.pdf) publication recommend best practice security practices and configurations for application containers. Consequently, it is vital to use tools to scan these application manifests in the CI/CD pipeline in order to identify configurations that could potentially result in an insecure deployment posture.
 
 #### Container application manifest hardening
 
@@ -301,7 +301,7 @@ Cloud native applications should be subjected to the same suite and standard of 
 
 Once a security bug has been identified (e.g. an incorrect firewall or routing rule), if root cause analysis determines that it has a reasonable chance of recurring, the developers should write an automated test to prevent the regression from being repeated. At the test failure, teams received feedback to correct the bug, and with the next merge, the test will pass (assuming it was corrected). Doing so defends against regression from future changes to that code.
 
-Unit testing of infrastructure is preventative control and targets entities and inputs defined in Infrastructure-as-Code (IaC) configuration. Security testing of built infrastructure is a detective control and combines assurance, historical regressions, and unexpected configuration detection (firewall rules open to the world, overprivileged IAM policies, unauthenticated endpoints, etc.)
+Unit testing of infrastructure is preventative control and targets entities and inputs defined in Infrastructure as Code (IaC) configuration. Security testing of built infrastructure is a detective control and combines assurance, historical regressions, and unexpected configuration detection (firewall rules open to the world, overprivileged Identity & Access Management (IAM) policies, unauthenticated endpoints, etc.)
 
 Hardening of infrastructure and workloads should be supported by comprehensive test suites, which allows for incremental hardening as the system matures. Tests to verify hardening has occurred should exist during the build but also be executed at deployment to evaluate any changes or regression that may have occurred throughout the lifecycle.
 
@@ -320,7 +320,7 @@ These templates should be scanned for insecure configurations and other security
 
 ##### Dynamic Analysis
 
-Dynamic analysis of deployed infrastructure may include detecting RBAC and IAM configuration drift, validating the expected network attack surface, and ensuring that a SOC can detect unusual behavior in dedicated test environments to configure alerting for production. Dynamic analysis is considered to be a part of testing however, it is expected to occur in a non-production runtime environment.
+Dynamic analysis of deployed infrastructure may include detecting Role-based Access Control (RBAC) and IAM configuration drift, validating the expected network attack surface, and ensuring that a SOC can detect unusual behavior in dedicated test environments to configure alerting for production. Dynamic analysis is considered to be a part of testing however, it is expected to occur in a non-production runtime environment.
 
 ##### Security Tests
 
@@ -392,7 +392,7 @@ Cloud native compute is a highly complex and continually evolving construct. Wit
 
 Considering that containers provide software based virtualization for multi-tenant applications on a shared host, it is important to use a container specific operating system, which is a read-only OS with other services disabled. This helps in reducing the attack surface. This also provides isolation and resource confinement that enables developers to run isolated applications on a shared host kernel. To allow defense in depth it's also recommended to not allow disparate data sensitive workloads be run on the same OS kernel.
 
-In order for security to span all layers of container platforms and services, a hardware root of trust based in Trusted Platform Module (TPM) or vTPM can be used. The chain of trust rooted in hardware can be extended to the OS kernel and its components to enable cryptographic verification of trusted boot, system images, container runtimes, and container images, and so on.
+In order for security to span all layers of container platforms and services, a hardware root of trust based in a Trusted Platform Module (TPM) or virtual TPM (vTPM) can be used. The chain of trust rooted in hardware can be extended to the OS kernel and its components to enable cryptographic verification of trusted boot, system images, container runtimes, and container images, and so on.
 
 Operating systems provide basic system components like crypto libraries used for remote connections and kernel functions that are used for process initiation, management etc. These can have vulnerabilities and, because they provide underlying compute baseline for the containers they can impact all the containers and apps that run on these hosts. At the same time improperly configured containers can impact the host kernel security and hence all the services running in containers running on that host. Refer the details within the [Distribute phase](#distibute-1) for more information.
 
@@ -404,7 +404,7 @@ Any orchestration system has a number of threats that impact the overall securit
 
 ##### Security Policies
 
-It is essential to consider the security features and various configuration options of your orchestrator to control the security privileges the container runtime can use to spawn containers. The use of higher level policy and governance constructs may enforce[those security guardrails](https://kubernetes.io/docs/concepts/policy/pod-security-policy/).
+It is essential to consider the security features and various configuration options of your orchestrator to control the security privileges the container runtime can use to spawn containers. The use of higher level policy and governance constructs may enforce those security guardrails).
 
 ##### Resource Requests and Limits
 
@@ -420,7 +420,7 @@ To have the ability to audit actions of entities using the cluster, it is vital 
 
 ##### Control Plane Authentication and Certificate Root of Trust
 
-The orchestrator administrators should configure all orchestrator control plane components such as controller-manager, scheduler, API server, and kubelet (if applicable) to communicate via mutual authentication and certificate validation with a periodically rotated certificate in addition to existing control plane hardening. The issuing CA can be a default orchestrator CA or an external CA. Particular attention should be given by the administrators to protect the CA's private key. For more information on extending or establishing trust, refer to the [identity portion of this paper](identity-and-access-management).
+The orchestrator administrators should configure all orchestrator control plane components to communicate via mutual authentication and certificate validation with a periodically rotated certificate in addition to existing control plane hardening. The issuing Certificate Authority (CA) can be a default orchestrator CA or an external CA. Particular attention should be given by the administrators to protect the CA's private key. For more information on extending or establishing trust, refer to the [Identity and Access Management](#identity-and-access-management) section.
 
 ##### Secrets Encryption
 
@@ -428,12 +428,12 @@ It is possible to manage secrets in a container orchestration or deployment envi
 
 - Encryption with an external Key Management Store (KMS)
   - Leveraging a KMS is a secure way to protect secrets in the orchestrator secret store where key encryption in an external KMS encrypts the Data Encryption Key (DEK) that encrypts the secrets stored at rest in etcd. This method does have an option to cache DEKs in memory to reduce the dependency on the availability of the external KMS and faster decryption of secrets during pod creation time.
-- Encryption with the key in a config file
-  - This methodology encrypts the secrets stored in the orchestrator, but storage of the encryption key is available in a configuration file on manager nodes.
+- Encryption fully managed by the orchestrator
+  - This methodology encrypts the secrets stored in the orchestrator, but the encryption key is also managed by the orchestrator (i.e. a config file of the orchestrator)
 - No encryption
   - For example, with some orchestrators, secrets are base64 encoded and stored in clear-text in the key-value store by default
 
-Using an external secrets manager can limit the risks of using unencrypted secrets and ease the complexity of key management. Most of the time those tools are provided as controllers or operators for Kubernetes that can inject secrets at runtime and handle their rotations transparently.
+Using an external secrets manager can limit the risks of using unencrypted secrets and ease the complexity of key management. Most of the time those tools are provided as controllers or operators that can inject secrets at runtime and handle their rotations transparently.
 
 #### Containers
 
@@ -461,7 +461,7 @@ Monitoring deployed workloads should provide teams with validation that the true
 
 While regression testing and security tests can help prevent known, expected issues from moving to production environments, they cannot stop everything. Workloads should be dynamically scanned to detect malicious or insidious behavior for which no known occurrence yet exists. Events such as an extended sleep command that executes data exfiltration from etcd after the workload has been running for X amount of days are not expected in the majority of environments and therefore are not included in security tests. The aspect that workloads can have time or event delayed trojan horses is only detectable by comparing to baseline expected behavior, often discovered during thorough activity and scan monitoring.
 
-Further, workloads will become vulnerable at the time of or after they are deployed. Organizations should continuously scan their environments to detect which workloads are now vulnerable. Understanding the make-up or [bill of materials](https://www.ntia.gov/SBOM) for each workload can help organizations quickly identify where vulnerabilities lie. Additional information about those vulnerabilities, such as exploit maturity, and vulnerable path in use are critical to determining the actual risk to workloads and can help organizations prioritize updates to at-risk applications.
+Further, workloads will become vulnerable at the time of or after they are deployed. Organizations should continuously scan their environments to detect which workloads are now vulnerable. Understanding the make-up or [software bill of materials](https://www.ntia.gov/SBOM) for each workload can help organizations quickly identify where vulnerabilities lie. Additional information about those vulnerabilities, such as exploit maturity, and vulnerable path in use are critical to determining the actual risk to workloads and can help organizations prioritize updates to at-risk applications.
 
 #### Functions
 
@@ -489,7 +489,7 @@ Any storage solution is composed of multiple layers of functionality that define
 
 ###### Orchestration
 
-Most orchestrated systems will implement a variety of abstraction and virtualization layers that may include filesystems (such as bind mounts), volume managers, and the application of permissions at a user or group level based on orchestrator policies. As with many components of containerization and microservice architectures, protecting volumes and storage will always rely on the protections in place from other capabilities. If a user is able to escalate their privileges within the orchestrator or container runtime to root they can wreak havoc within the environment. The implementation of [zero trust](https://docs.google.com/document/d/1aAkuhZMJ6-Xq6xP0gh1wxIM8OhUETqEFLhoRdxYHN5c/edit#bookmark=kix.kyffcmw3zhk), [least privilege](https://docs.google.com/document/d/1aAkuhZMJ6-Xq6xP0gh1wxIM8OhUETqEFLhoRdxYHN5c/edit#bookmark=id.bl312cp5xyv1), and [access control](https://docs.google.com/document/d/1aAkuhZMJ6-Xq6xP0gh1wxIM8OhUETqEFLhoRdxYHN5c/edit#bookmark=kix.3f703zlu80we) and enforcement are linchpins in successfully securing storage in cloud native architectures.
+Most orchestrated systems will implement a variety of abstraction and virtualization layers that may include filesystems (such as bind mounts), volume managers, and the application of permissions at a user or group level based on orchestrator policies. As with many components of containerization and microservice architectures, protecting volumes and storage will always rely on the protections in place from other capabilities. If a user is able to escalate their privileges within the orchestrator or container runtime to root they can wreak havoc within the environment. The implementation of [zero trust](#zero-trust-architecture), [least privilege](#least-privilege), and [access control](#access) and enforcement are linchpins in successfully securing storage in cloud native architectures.
 
 ###### System Topology & Data Protection
 
@@ -549,7 +549,7 @@ Authentication and authorization must be determined independently (decision poin
 
 It is critical to note, application or service identity is also essential in the context of microservices, where the identities for apps are primarily subject to be spoofed and impersonated by a malicious service. Utilization of a strong identity framework and service mesh can help overcome these issues.
 
-All human and non-human cluster and workload operators must be authenticated and all their actions must be evaluated against access control policies that will evaluate the context, purpose, and output of each request. In order to simplify the authentication process, identity federation can be configured to allow usage of enterprise capabilities such as multi-factor authentication. Authorization must then be enforced with an admission controller that can be connected to the same ABAC system described earlier.
+All human and non-human cluster and workload operators must be authenticated and all their actions must be evaluated against access control policies that will evaluate the context, purpose, and output of each request. In order to simplify the authentication process, identity federation can be configured to allow usage of enterprise capabilities such as multi-factor authentication. Authorization must then be enforced with access control mechanisms mentioned in this section.
 
 #### Credential Management
 
@@ -577,7 +577,7 @@ A distributed denial-of-service attack (DDoS attack) typically involves a high v
 
 Security is fundamentally a risk management process that seeks to identify and address risks posed to a system. The iterative and perpetual hardening of systems will mitigate, reduce, or transfer risk depending on component's or organization risk profiles and tolerances. The predisposing concepts of hardening, while legacy at their core, can still be applied to a security forward team by evaluating components and their make up against minimal, yet flexible, functionality. For instance, as teams determine an updated base image, considerations for additional ports, permissions, and packages added with an update should be reviewed and either accepted, altered, or restricted.
 
-In contrast, compliance standards form principles of controls to ascertain or create requirements definitions by which systems are assessed against. The outcomes of the assessment are binary (pass or fail) but may contain Type 1 or Type 2 errors and should be evaluated as the result of tests from a CI/CD pipeline, akin to the results of any testing in a pipeline. Thus, compliance and security assurance are complementary processes but are not interchangeable. A compliant system is not guaranteed to be secure, nor a secure system guaranteed to be compliant.
+In contrast, compliance standards form principles of controls to ascertain or create requirements definitions by which systems are assessed against. The outcomes of the assessment are binary (pass or fail) but may contain Type 1 (false positive) or Type 2 (false negative) errors and should be evaluated as the result of tests from a CI/CD pipeline, akin to the results of any testing in a pipeline. Thus, compliance and security assurance are complementary processes but are not interchangeable. A compliant system is not guaranteed to be secure, nor a secure system guaranteed to be compliant.
 
 ## Threat Modeling
 
@@ -589,7 +589,7 @@ A clear understanding of the organization's or individual's cloud native archite
 
 ### Threat Identification
 
-When considering threats specific to an organization's cloud native capabilities, it is recommended to leverage a mature, well-used model of threats such as STRIDE or OCTAVE. Common threats organizations may wish to consider for their cloud native architectures includes, but is not limited to:
+When considering threats specific to an organization's cloud native capabilities, it is recommended to leverage a mature, well-used model of threats such as [STRIDE](https://en.wikipedia.org/wiki/STRIDE_(security)) or [OCTAVE](https://www.pluralsight.com/guides/cybersecurity-threat-modeling-with-octave). Common threats organizations may wish to consider for their cloud native architectures includes, but is not limited to:
 
 - Spoofing a cluster admin by stealing the authentication credentials via a social engineering attack
 - Tampering of an API server config file or certificate could result in failed API server restart or mutual TLS authentication failures
@@ -642,7 +642,6 @@ Security tools that cover the surface area of pre-workload security hygiene chec
 Runtime security tools can be broken into four key protection surface areas:
 
 - process, container, or system level security
-
 - network security
 - data security
 - application security
@@ -691,7 +690,7 @@ Organizations will need to reevaluate their asset risks as products and services
 
 ### Compliance
 
-Designing a system with the appropriate set of security controls that address regulatory and compliance guidance makes cloud native resources more secure. Doing so may also make certification by relevant regulatory bodies and auditors easier, particularly if the system design and planning is done to allow automated compliance to various regulatory bodies through a plugin model. While compliance often requires utilization of security benchmarks for increased security and configuration management enforcement, such as the Center for Internet Security (CIS) Kubernetes benchmarks, it is important to note that utilization of machine readable compliance control frameworks and languages are recommended.
+Designing a system with the appropriate set of security controls that address regulatory and compliance guidance makes cloud native resources more secure. Doing so may also make certification by relevant regulatory bodies and auditors easier, particularly if the system design and planning is done to allow automated compliance to various regulatory bodies through a plugin model. While compliance often requires utilization of security benchmarks for increased security and configuration management enforcement, such as the Center for Internet Security (CIS) benchmarks, it is important to note that utilization of machine readable compliance control frameworks and languages are recommended.
 
 ## Regulatory Audits
 
@@ -768,7 +767,7 @@ RBAC - Role Based Access Control
 
 SOC - Security Operations Center
 
-IaC - Infrastructure as Code.
+IaC - Infrastructure as Code
 
 CI - Continuous Integration
 
