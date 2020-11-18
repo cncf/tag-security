@@ -123,7 +123,7 @@ issue with a note to SIG co-chairs.
 ## Benefits of a Security Assessment
 
 Having your project security assessed is fundamental for eliminating security risks.
-it allows building and maintaining a secure project over time as an integral part of the system.
+It allows building and maintaining a secure project over time as an integral part of the system.
 Security assessments have many benefits:
 * A measurable security baseline from that point onwards
 * Exposure and analysis of security issues, including the risk they introduce
