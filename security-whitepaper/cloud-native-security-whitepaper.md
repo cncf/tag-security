@@ -10,11 +10,11 @@ Shared with CNCF Community
 | **Approvers** : [x] @lizrice [x] @justincormack  |
 
 | **Contributors:** [aradhna.chetal@gmail.com](mailto:aradhna.chetal@gmail.com), [themoxiefoxatwork@gmail.com](mailto:themoxiefoxatwork@gmail.com), [jj@tetrate.io](mailto:jj@tetrate.io), gadi@alcide.io @lumjjb, @trishankatdatadog, [@vvenkatara@paloaltonetworks.com](mailto:vvenkatara@paloaltonetworks.com), @pushkarj, @whaber, @sublimino, @rowan-baker, [chase.pettet@gmail.com](mailto:chase.pettet@gmail.com), [harsingh@us.ibm.com](mailto:harsingh@us.ibm.com), jeff.lombardo@gmail.com
-|                                                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------------- |
-| **Reviewers** : @justincappos, @lumjjb, @whaber, @craigbox, @anvega, @magnologan, @magnologan , alok@xenonstack.com, @nyrahul @ranio1 |
-| ---                                                                                                                                   |
-|                                                                                                                                       |
+|                                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Reviewers** : @justincappos, @lumjjb, @whaber, @craigbox, @anvega, @magnologan, @magnologan, alok@xenonstack.com, @nyrahul, @ranio1, Itay Shakury (@itaysk) |
+| ---                                                                                                                                                           |
+|                                                                                                                                                               |
 
 
 
