@@ -120,3 +120,12 @@ reviewers:
   over a week cannot be accomodated by the review team. Simply close the github
 issue with a note to SIG co-chairs.
 
+## Benefits of a Security Assessment
+
+Having your project security assessed is fundamental for eliminating security risks.
+It allows one to build security as an integral part of a system and to maintain that security over time.
+Security assessments have many benefits:
+* A measurable security baseline from that point onwards
+* Exposure and analysis of security issues, including the risk they introduce
+* Validation of security awareness and culture among the developers for building secured projects
+* A documented procedure, for future compliance, audit, or internal assessment
