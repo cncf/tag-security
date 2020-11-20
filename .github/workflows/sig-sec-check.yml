@@ -16,6 +16,7 @@ jobs:
           node-version: '12'
       - name: Setup
         run: |
+          set -e
           mkdir tmp
           git fetch origin master:master
           git diff --name-only master $HEAD > tmp/modified
