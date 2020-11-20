@@ -1,0 +1,23 @@
+# top-most EditorConfig file
+root = true
+
+# general rules for all files
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# The specific rules below are switches in case we need to turn something off
+# i.e. trim_trailing_whitespace on markdown files
+# specific rules for yaml or yml files
+[*.y{a,}ml}]
+indent_style = space
+indent_size = 2
+
+# specific rules for markdown
+[*.{md}]
+indent_style = space
+trim_trailing_whitespace = true
