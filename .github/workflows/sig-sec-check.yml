@@ -22,13 +22,12 @@ jobs:
           npm install -g markdownlint-cli cspell markdown-link-check
           echo "these files have changed"
           cat tmp/modified
-      - name: Check Spelling
-        run: |
-          set -e
-          for file_name in $(cat tmp/modified); do cspell $file_name; done
       - name: Check Links
         run: |
-          git diff --name-only $HEAD master > tmp/modified | find . -type f -name '*.md' | xargs -L1 npx markdown-link-check --quiet
+          git diff --name-only $HEAD master > tmp/modified | find . -type f -name '*.md' | xargs -L1 npx markdown-link-check --quiet          
+      - name: Check Spelling
+        run: |
+          for file_name in $(cat tmp/modified); do cspell $file_name; done
       - name: Lint
         run: | 
           for file_name in $(cat tmp/modified); do markdownlint $file_name; done          
