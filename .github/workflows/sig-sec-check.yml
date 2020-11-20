@@ -20,12 +20,14 @@ jobs:
           git fetch origin master:master
           git diff --name-only master $HEAD > tmp/modified
           npm install -g markdownlint-cli cspell markdown-link-check
-      - name: Lint
-        run: | 
-          for file_name in $(cat tmp/modified); do markdownlint $file_name; done
+          echo "these files have changed"
+          cat tmp/modified
       - name: Check Spelling
         run: |
           for file_name in $(cat tmp/modified); do cspell $file_name; done
       - name: Check Links
         run: |
           git diff --name-only $HEAD master > tmp/modified | find . -type f -name '*.md' | xargs -L1 npx markdown-link-check --quiet
+      - name: Lint
+        run: | 
+          for file_name in $(cat tmp/modified); do markdownlint $file_name; done          
