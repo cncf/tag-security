@@ -32,6 +32,7 @@ jobs:
           node-version: '12'
       - name: Lint
         run: | 
+          git fetch origin master:master
           git diff --name-only master $HEAD | xargs -L1 npx markdownlint          
   Spelling:
     runs-on: ubuntu-latest
@@ -43,6 +44,7 @@ jobs:
           node-version: '12'
       - name: Spelling
         run: | 
+          git fetch origin master:master        
           git diff --name-only master $HEAD | xargs -L1 npx cspell    
   Links:
     runs-on: ubuntu-latest
@@ -54,4 +56,5 @@ jobs:
           node-version: '12'
       - name: Links
         run: | 
+          git fetch origin master:master        
           git diff --name-only $HEAD master | grep *.md | xargs -L1 npx markdown-link-check --quiet             
