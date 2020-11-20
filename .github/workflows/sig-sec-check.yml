@@ -17,7 +17,7 @@ jobs:
       - name: Setup
         run: |
           mkdir tmp
-          git diff --name-only $HEAD master > tmp/modified
+          git diff --name-only origin/master $HEAD > tmp/modified
           npm install -g markdownlint-cli cspell markdown-link-check
       - name: Lint
         run: | 
