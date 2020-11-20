@@ -19,7 +19,10 @@ jobs:
           node-version: '12'
       - name: Lint
         run: npm install markdownlint-cli
-        run: markdownlint *         
-      - name: Link Check
+        run: markdownlint *
+      - name: Check Spelling
+        run: npm install cspell
+        run: cspell *      
+      - name: Check Links
         run: npm install markdown-link-check
         run: find . -type f -name '*.md' | xargs -L1 npx markdown-link-check --quiet
