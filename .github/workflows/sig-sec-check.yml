@@ -16,7 +16,6 @@ jobs:
           node-version: '12'
       - name: Setup
         run: |
-          set -e
           mkdir tmp
           git fetch origin master:master
           git diff --name-only master $HEAD > tmp/modified
@@ -25,6 +24,7 @@ jobs:
           cat tmp/modified
       - name: Check Spelling
         run: |
+          set -e
           for file_name in $(cat tmp/modified); do cspell $file_name; done
       - name: Check Links
         run: |
