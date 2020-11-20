@@ -7,7 +7,7 @@ on:
       - master
 
 jobs:
-  Lint:
+  Setup:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -22,12 +22,36 @@ jobs:
           npm install -g markdownlint-cli cspell markdown-link-check
           echo "these files have changed"
           cat tmp/modified
-      - name: Check Links
-        run: |
-          git diff --name-only $HEAD master > tmp/modified | find . -type f -name '*.md' | xargs -L1 npx markdown-link-check --quiet          
-      - name: Check Spelling
-        run: |
-          for file_name in $(cat tmp/modified); do cspell $file_name; done
+  Lint:
+    runs-on: ubuntu-latest
+    needs: Setup      
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12'
       - name: Lint
         run: | 
-          for file_name in $(cat tmp/modified); do markdownlint $file_name; done          
+          for file_name in $(cat tmp/modified); do markdownlint $file_name; done                 
+  Spelling:
+    runs-on: ubuntu-latest
+    needs: Setup      
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - name: Spelling
+        run: | 
+          for file_name in $(cat tmp/modified); do cspell $file_name; done   
+  Links:
+    runs-on: ubuntu-latest
+    needs: Setup      
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - name: Links
+        run: | 
+          git diff --name-only $HEAD master > tmp/modified | find . -type f -name '*.md' | xargs -L1 npx markdown-link-check --quiet             
