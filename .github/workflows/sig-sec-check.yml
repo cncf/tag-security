@@ -2,9 +2,6 @@ name: Super-Linter
 
 # Run this workflow on every PR and push to master
 on:
-  push:
-    branches:
-      - master
   pull_request:
     branches:
       - master
@@ -17,15 +14,17 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '12'
+      - name: Setup
+        run: |
+          mkdir tmp
+          git diff --name-only $HEAD master > tmp/modified
+          npm install -g markdownlint-cli cspell markdown-link-check
       - name: Lint
         run: | 
-          npm install -g markdownlint-cli
-          markdownlint *
+          for file_name in $(cat tmp/modified); do markdownlint $file_name; done
       - name: Check Spelling
         run: |
-          npm install -g cspell
-          cspell *      
+          for file_name in $(cat tmp/modified); do cspell $file_name; done
       - name: Check Links
         run: |
-          npm install -g markdown-link-check
-          find . -type f -name '*.md' | xargs -L1 npx markdown-link-check --quiet
+          git diff --name-only $HEAD master > tmp/modified | find . -type f -name '*.md' | xargs -L1 npx markdown-link-check --quiet
