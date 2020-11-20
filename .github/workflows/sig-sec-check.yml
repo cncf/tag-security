@@ -1,0 +1,25 @@
+name: Super-Linter
+
+# Run this workflow on every PR and push to master
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  Lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+      - name: Lint
+        run: npm install markdownlint-cli
+        run: markdownlint *         
+      - name: Link Check
+        run: npm install markdown-link-check
+        run: find . -type f -name '*.md' | xargs -L1 npx markdown-link-check --quiet
