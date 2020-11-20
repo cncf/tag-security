@@ -18,14 +18,14 @@ jobs:
         with:
           node-version: '12'
       - name: Lint
-        run: 
-          - npm install markdownlint-cli
-          - markdownlint *
+        run: | 
+          npm install markdownlint-cli
+          markdownlint *
       - name: Check Spelling
-        run: 
-          - npm install cspell
-          - cspell *      
+        run: |
+          npm install cspell
+          cspell *      
       - name: Check Links
-        run: 
-          - npm install markdown-link-check
-          - find . -type f -name '*.md' | xargs -L1 npx markdown-link-check --quiet
+        run: |
+          npm install markdown-link-check
+          find . -type f -name '*.md' | xargs -L1 npx markdown-link-check --quiet
