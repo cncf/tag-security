@@ -31,6 +31,7 @@ jobs:
           node-version: '12'
       - name: Lint
         run: | 
+          npm install -g markdownlint-cli
           git fetch origin master:master        
           for file_name in $(git diff --name-only $HEAD master)
             do
@@ -49,6 +50,7 @@ jobs:
           node-version: '12'
       - name: Spelling
         run: | 
+          npm install -g cspell
           git fetch origin master:master        
           git diff --name-only master $HEAD | xargs -L1 npx cspell    
   Links:
@@ -61,6 +63,7 @@ jobs:
           node-version: '12'
       - name: Links
         run: | 
+          npm install -g markdown-link-check
           git fetch origin master:master        
           for file_name in $(git diff --name-only $HEAD master)
             do
