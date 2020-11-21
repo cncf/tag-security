@@ -16,12 +16,11 @@ jobs:
           node-version: '12'
       - name: Setup
         run: |
-          mkdir tmp
           git fetch origin master:master
-          git diff --name-only master $HEAD > tmp/modified
+          git diff --name-only master $HEAD > modified
           npm install -g markdownlint-cli cspell markdown-link-check
           echo "these files have changed"
-          cat tmp/modified
+          cat modified
   Lint:
     runs-on: ubuntu-latest
     needs: Setup      
@@ -32,8 +31,14 @@ jobs:
           node-version: '12'
       - name: Lint
         run: | 
-          git fetch origin master:master
-          git diff --name-only master $HEAD | xargs -L1 npx markdownlint          
+          git fetch origin master:master        
+          for file_name in $(git diff --name-only $HEAD master)
+            do
+              if if [[ $file_name == *".md" ]] 
+              then 
+                markdownlint $file_name
+              fi 
+          done          
   Spelling:
     runs-on: ubuntu-latest
     needs: Setup      
@@ -57,4 +62,10 @@ jobs:
       - name: Links
         run: | 
           git fetch origin master:master        
-          git diff --name-only $HEAD master | grep *.md | xargs -L1 npx markdown-link-check --quiet             
+          for file_name in $(git diff --name-only $HEAD master)
+            do
+              if if [[ $file_name == *".md" ]] 
+              then 
+                npx markdown-link-check $file_name 
+              fi 
+          done
