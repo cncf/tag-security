@@ -34,7 +34,7 @@ jobs:
           git fetch origin master:master        
           for file_name in $(git diff --name-only $HEAD master)
             do
-              if if [[ $file_name == *".md" ]] 
+              if [[ $file_name == *".md" ]] 
               then 
                 markdownlint $file_name
               fi 
@@ -64,7 +64,7 @@ jobs:
           git fetch origin master:master        
           for file_name in $(git diff --name-only $HEAD master)
             do
-              if if [[ $file_name == *".md" ]] 
+              if [[ $file_name == *".md" ]] 
               then 
                 npx markdown-link-check $file_name 
               fi 
