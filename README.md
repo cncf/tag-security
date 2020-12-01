@@ -198,6 +198,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Ron Vider ([@RonVider](https://github.com/RonVider)), Neo Security
 * Marco Lancini ([@marco-lancini](https://github.com/marco-lancini)), Thought Machine
 * Lewis Denham-Parry ([@denhamparry](https://github.com/denhamparry)), ControlPlane
+* Chris Hughes ([@chughes216](https://github.com/chughes216)), Oteemo
 
 </details>
 
