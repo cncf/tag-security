@@ -246,9 +246,9 @@ IaC 越来越受欢迎，在企业中的部署迅速增加，以部署云和容�
 
 #### 加密
 
-对容器镜像进行加密，使其内容可信。容器镜像的内容经过加密，以确保它们从构建时间到运行时都保持可信，以便进行推广。在发行版本受到破解的情况下，镜像存储的内容仍然是加密的，这有助于保护商业机密或其他机密材料等。
+对容器镜像进行加密，从而保证镜像内容的机密性。加密后，以确保它们从构建到运行前都是密文态。当加密镜像分发后受到破解，制品库中存储的镜像仍然是加密的，这有助于保护商业机密或其他保密材料等。
 
-容器镜像加密的另一个常见用途是强制容器镜像授权。当镜像加密与密钥管理证明或授权、证书分发相结合时，可以要求容器镜像只能在特定平台上运行。容器镜像授权对于合规性用例非常有用，例如地理限制或出口控制和数字版权媒体管理。
+容器镜像加密的另一个常见用途是容器镜像授权的增强。当镜像加密与密钥证明管理和/或授权、认证发布等相结合时，可以要求容器镜像只能在特定平台上运行。容器镜像授权也适合保证合规性，例如地理限制、出口管控和数字版权媒体管理。
 
 ## 部署
 
@@ -748,13 +748,13 @@ https://owasp.org/www-community/Application_Threat_Modeling
 
 - Chase Pettet - [Mirantis ](https://www.mirantis.com/)([Chase.Pettet@mirantis.com](mailto:Chase.Pettet@mirantis.com))
 
-- 艾米丽-福克斯--[美国国家安全局 (NSA)](https://www.nsa.gov/)
+- Emily Fox -- [US National Security Agency (NSA)](https://www.nsa.gov/)
 
 - Gadi Naor - [Alcide](http://www.alcide.io)
 
 - Harmeet Singh - [IBM](https://www.ibm.com/)
 
-- 杰夫-伦巴多
+- Jeff Lombardo
 
 - Jeyappragash JJ↓↓↓↓[Tetrate IO](https://www.tetrate.io/)
 
