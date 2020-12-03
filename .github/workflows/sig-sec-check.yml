@@ -1,6 +1,6 @@
-name: Super-Linter
+name: SIG-Security-Linter
 
-# Run this workflow on every PR and push to master
+# Run this workflow on every PR to master
 on:
   pull_request:
     branches:
