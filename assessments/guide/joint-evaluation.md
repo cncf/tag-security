@@ -36,6 +36,7 @@ from their repo into the self-assessment.
 * [Security analysis](#security-analysis)
 * [Secure development practices](#secure-development-practices)
 * [Security issue resolution](#security-issue-resolution)
+  * [Closed security issues and vulnerabilities](#closed-security-issues-and-vulnerabilities)
 * [Hands-on review](#hands-on-review)
 * [Roadmap](#roadmap)
 * [Appendix](#appendix)
@@ -253,6 +254,14 @@ This should be pulled in from the self-assessment.
 ## Security Issue Resolution
 
 This should be pulled in from the self-assessment.
+
+### Closed security issues and vulnerabilities
+
+This should provide links and very brief summary of any closed security issues
+ or fixed vulnerabilities for the project (with or without CVE).  If the 
+project does not have any closed or fixed vulnerabilities use the below text:
+
+> At the time of the joint evaluation, [project] did not have known security issues with a closed state or any known vulnerabilities that were fixed.
 
 ## Hands-on review
 
