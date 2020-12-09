@@ -1,3 +1,4 @@
+---
 name: SIG-Security-Linter
 
 # Run this workflow on every PR to master
@@ -11,63 +12,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '12'
       - name: Setup
-        run: |
-          git fetch origin master:master
-          git diff --name-only master $HEAD > modified
-          echo "these files have changed"
-          cat modified
+        run: make setup
   Lint:
     runs-on: ubuntu-latest
-    needs: Setup      
+    needs: Setup
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '12'
       - name: Lint
-        run: | 
-          npm install -g markdownlint-cli
-          git fetch origin master:master        
-          for file_name in $(git diff --name-only $HEAD master)
-            do
-              if [[ $file_name == *".md" ]] 
-              then 
-                markdownlint $file_name
-              fi 
-          done          
+        run: make lint
   Spelling:
     runs-on: ubuntu-latest
-    needs: Setup      
+    needs: Setup
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '12'
       - name: Spelling
-        run: | 
-          npm install -g cspell
-          git fetch origin master:master        
-          git diff --name-only master $HEAD | xargs -L1 npx cspell
+        run: make spelling
   Links:
     runs-on: ubuntu-latest
-    needs: Setup      
+    needs: Setup
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '12'
       - name: Links
-        run: | 
-          npm install -g markdown-link-check
-          git fetch origin master:master        
-          for file_name in $(git diff --name-only $HEAD master)
-            do
-              if [[ $file_name == *".md" ]] 
-              then 
-                npx markdown-link-check $file_name
-              fi 
-          done
+        run: make links
