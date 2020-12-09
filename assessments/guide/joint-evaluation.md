@@ -36,6 +36,8 @@ from their repo into the self-assessment.
 * [Security analysis](#security-analysis)
 * [Secure development practices](#secure-development-practices)
 * [Security issue resolution](#security-issue-resolution)
+* [Hands-on review](#hands-on-review)
+* [Roadmap](#roadmap)
 * [Appendix](#appendix)
 
 ## Metadata
@@ -251,6 +253,35 @@ This should be pulled in from the self-assessment.
 ## Security Issue Resolution
 
 This should be pulled in from the self-assessment.
+
+## Hands-on review
+
+The hands-review is a lightweight review of the project's internal security
+as well as the current recommendation configuration, deployment, and interaction
+with regard to security.  Hands-on reviews are subject to security reviewer 
+availability and expertise.  They are not intended to serve as an audit or 
+formal assessment and are no gurantee of the actual security of the project.
+
+**[Project] did/did not receive a hands-review from SIG-Security.**
+
+*If a hands-on review was performed, the below format should be used for 
+reporting details*
+
+| | |
+| -- | -- |
+| Date of review | mmddyyyy-mmddyyyy |
+| Hands-on reviewers | name, github handle |
+
+| Finding Number | Finding name | Finding Notes | Reviewer |
+| -- | -- | -- | -- | 
+| | | |
+
+### Hands-on review result
+
+General comments and summary of the hands-on review with any recommendations worth
+ noting.  If nothing found use the below example:
+
+> SIG-Security's hands-on review did not reveal any significant or notable security findings for [project]. This outcome does not indicate that none exist, rather that none were discovered.
 
 ## Roadmap
 
