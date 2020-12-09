@@ -9,17 +9,41 @@ currently in CNCF **incubation**.
 
 ## Table of contents
 
+* [Metadata](#metadata)
+  * [Security links](#security-links)
 * [Overview](#overview)
   * [Background](#background)
   * [Goals](#goals)
   * [Non-goals](#non-goals)
 * [Self-assessment use](#self-assessment-use)
-* [Security links](#security-links)
 * [Security functions and features](#security-functions-and-features)
 * [Project compliance](#project-compliance)
 * [Secure development practices](#secure-development-practices)
 * [Security issue resolution](#security-issue-resolution)
 * [Appendix](#appendix)
+
+## Metadata
+
+A table at the top for quick reference information, later used for indexing.
+
+|   |  |
+| -- | -- |
+| Software | A link to the software’s repository.  |
+| Security Provider | Yes or No. Is the primary function of the project to support the 
+security of an integrating system?  |
+| Languages | languages the project is written in |
+| SBOM | Software bill of materials.  Link to the libraries, packages, versions used by
+ the project, may also include direct dependencies. |
+| | |
+
+### Security links
+
+Provide the list of links to existing security documentation for the project. You may
+use the table below as an example:
+| Doc | url |
+| -- | -- |
+| Security file | https://my.security.file |
+| Default and optional configs | https://my.security.config |
 
 ## Overview
 
@@ -43,8 +67,6 @@ be in scope (e.g., Flibble does not intend to stop a party with a key from stori
 an arbitrarily large amount of data, possibly incurring financial cost or overwhelming
  the servers)
 
-**This project is/is not a security provider.**
-
 ## Self-assessment use
 
 This self-assessment is created by the [project] team to perform a self-evaluation of the
@@ -58,25 +80,17 @@ security, and general overview of [project] security practices, both for develop
 
 This document provides the CNCF SIG-Security with an initial understanding of [project]
 to assist in a joint-evaluation, necessary for projects under incubation.  Taken
-together, this document and the joint-evalution serve as a cornerstone for if and when
+together, this document and the joint-evaluation serve as a cornerstone for if and when
 [project] seeks graduation and is preparing for a security audit.
-
-## Security links
-
-Provide the list of links to existing security documentation for the project. You may
-use the table below as an example:
-Doc | url
--- | --
-Security file | https://my.security.file
-Default and optional configs | https://my.security.config
 
 ## Security functions and features
 
-* Critical.  A listing critical security components of the project with a brief
-  description of their importance.  It is recommended these be used for threat modeling.  These are considered critical design elements that make the product itself secure and
+* Critical.  A listing critical security components of the project with a brief 
+description of their importance.  It is recommended these be used for threat modeling.  
+These are considered critical design elements that make the product itself secure and
 are not configurable.  Projects are encouraged to track these as primary impact items
 for changes to the project.
-* Security Relevant.  A listing of security relevent components of the project with
+* Security Relevant.  A listing of security relevant components of the project with
   brief description.  These are considered important to enhance the overall security of
 the project, such as deployment configurations, settings, etc.  These should also be
 included in threat modeling.
@@ -90,7 +104,7 @@ included in threat modeling.
 
 * Development Pipeline.  A description of the testing and review processes that
   the software undergoes as it is developed and built. Be sure to include specific
-information such as if contributers are required to sign commits, if any container
+information such as if contributors are required to sign commits, if any container
 images immutable and signed, how many reviewers before merging, any automated checks for
 vulnerabilities, etc.
 * Communication Channels. Reference where you document how to reach your team or
@@ -102,7 +116,7 @@ vulnerabilities, etc.
 * Ecosystem. How does your software fit into the cloud native ecosystem?  (e.g.
   Flibber is integrated with both Flocker and Noodles which covers
 virtualization for 80% of cloud users. So, our small number of "users" actually
-represents very wide usage across the ecosytem since every virtual instance uses
+represents very wide usage across the ecosystem since every virtual instance uses
 Flibber encryption by default.)
 
 ## Security issue resolution
@@ -119,7 +133,7 @@ patching/update availability.
 
 ## Appendix
 
-* Known Issues Over Time. List or sumarize statistics of past vulerabilities
+* Known Issues Over Time. List or summarize statistics of past vulnerabilities
   with links. If none have been reported, provide data, if any, about your track
 record in catching issues in code review or automated testing.
 * CII Best Practices. A brief discussion of where the project is at with respect
@@ -127,5 +141,5 @@ record in catching issues in code review or automated testing.
 * Case Studies. Provide context for reviewers by detailing 2-3 scenarios of
   real-world use cases.
 * Related Projects / Vendors. Reflect on times prospective users have asked
-  about the diffeerences between your project and projectX. Reviewers will have
+  about the differences between your project and projectX. Reviewers will have
 the same questions

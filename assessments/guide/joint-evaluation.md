@@ -16,11 +16,12 @@ flow of the review.
 Projects are encouraged to cross link additional supporting documents or details
 from their repo into the self-assessment.
 
-# Joint-evaluation of [Project}
+# Joint-evaluation of [Project]
 
 ## Table of Contents
 
 * [Metadata](#metadata)
+  * [Security links](#security-links)
 * [Overview](#overview)
   * [Background](#background)
   * [Goals](#goals)
@@ -44,8 +45,22 @@ A table at the top for quick reference information, later used for indexing.
 |   |  |
 | -- | -- |
 | Software | A link to the software’s repository.  |
-|Security Provider | Yes or No. Is the primary function of the project to support the security of an integrating system?  |
+| Security Provider | Yes or No. Is the primary function of the project to support the 
+security of an integrating system?  |
+| Languages | languages the project is written in |
+| SBOM | Software bill of materials.  Link to the libraries, packages, versions used by
+ the project, may also included
+irect dependencies. |
 | | |
+
+### Security links
+
+Provide the list of links to existing security documentation for the project. You may
+use the table below as an example:
+| Doc | url |
+| -- | -- |
+| Security file | https://my.security.file |
+| Default and optional configs | https://my.security.config |
 
 ## Overview
 
@@ -114,6 +129,8 @@ follows:
 system.  Include architecture and network (if applicable) information such as
 encryption of traffic between services, access control types (RBAC, etc.) and
 enforcement, or security logging, etc.
+
+* Data flow diagram/Architecture diagram
 
 ### Functions and features
 
@@ -188,7 +205,7 @@ that no system is secure in all scenarios, hence it is expected that this will i
 content stored on any system).  This should be stated in terms that are accessible to 
 a reader that does not fully understand the system.  Hence, "a compromised main Flibble
  key lets and attacker push and pull widgets" is less useful than saying " compromised 
-main Flibble key lets an attacker executer arbitrary code on client machines using the
+main Flibble key lets an attacker execute arbitrary code on client machines using the
  Flibble server".
 
 ### Compensating Mechanisms
@@ -202,7 +219,7 @@ documentation that explains what types of security incidents are likely to occur
  compromise, a threshold of the offline Flibble keys must be used in order to sign new
  Flibble metadata to revoke the older server key.  This new metadata should be 
 distributed to clients using the Flibble widget create operation as soon as is feasible
- as in the interm clients will tryst the compromised server, enabling an attacker to 
+ as in the interim clients will tryst the compromised server, enabling an attacker to 
 serve them outdated widgets that are known to be defective.
 
 ## Threat Model
@@ -223,7 +240,7 @@ has... | Score .11 : Mitigated, node has... | Score .11 : Mitigated, node has...
 
 Use previous table outline
 
-### Denial of Servicer
+### Denial of Service
 
 Use previous table outline
 
@@ -245,11 +262,11 @@ project, including anything that was identified as part of this review.
 
 ## Appendix
 
-* Known Issues Over Time. List or sumarize statistics of past vulerabilities
+* Known Issues Over Time. List or summarize statistics of past vulnerabilities
   with links. If none have been reported, provide data, if any, about your track
 record in catching issues in code review or automated testing.
 * Case Studies. Provide context for reviewers by detailing 2-3 scenarios of
   real-world use cases.
 * Related Projects / Vendors. Reflect on times prospective users have asked
-  about the diffeerences between your project and projectX. Reviewers will have
+  about the differences between your project and projectX. Reviewers will have
 the same questions
