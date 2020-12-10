@@ -17,13 +17,13 @@ should initiate with an [issue](/issues) submitted to the repo and labeled with
 
 ### Markdown 
 
-The living CNSWP is maintained in [markdown](https://github.com/cncf/sig-security/blob/master/security-whitepaper/cloud-native-security-whitepaper.md) and all 
-updates will be made in markdown.  
+The living CNSWP is maintained in [markdown](https://github.com/cncf/sig-security/blob/master/security-whitepaper/cloud-native-security-whitepaper.md) and all updates will be made in
+ markdown.  
 
 ### Contributing updates 
 
 All members of the community are welcome to contribute updates to the CNSWP.
-We ask potential contributers to refer to the original design decisions, 
+We ask potential contributors to refer to the original design decisions, 
 listed below, as guidance when determining the content of their updates.
 
 It is highly recommended that you seek peer review for your updates beyond that
@@ -46,7 +46,17 @@ will be converted to text document and sent to the CNCF technical writers to
 create the PDF.  The PDF will then be published back into the repository
 annotating the new version, updating the links in the README.md accordingly.
 
-## Original design decisions 
+Minor updates to the markdown shall receive a minor version bump indicated in the
+Metadata table of the document and recorded as WIP.  When enough significant
+changes have been recorded, the markdown will be placed "In Review" (via PR) and
+solicited to the CNCF SIG-Security and TOC mailing list for review, at a minimum.
+
+Upon completion of review, the SIG-Security TOC Liaison shall provide final
+approval on the PR.  At which point the markdown state will be changed to
+"Approved" and merged. 
+
+## Original design decisions
+ 
 The CNSWP's creation occurred using the below general design decisions which 
 should be considered when updating the content.  
 * Avoid identifying specific projects and products.  Use general terms
