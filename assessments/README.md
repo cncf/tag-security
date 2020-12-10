@@ -59,6 +59,18 @@ uncover design flaws, enhance the security mindset of the project, and to obtain
 while documenting the intended security properties enforced, fulfilled, or executed
  by said project.
 
+### Benefits of a security evaluation
+
+Having your project under go the security evaluation process is fundamental for
+eliminating security risks.  It allows one to build security as an integral part
+ of a system and to maintain that security over time.
+
+Security assessments have many benefits:
+* A measurable security baseline from that point onward
+* Exposure and analysis of security issues, including the risk they introduce
+* Validation of security awareness and culture among the developers for building secured projects
+* A documented procedure, for future compliance, audit, or internal assessmen
+
 ### Components of the security evaluation package
 
 A complete security evaluation package primarily consists of the following
@@ -104,7 +116,6 @@ Creating the security evaluation package is a collaborative process for the
 benefit of the project and the community, where the primary content is generated 
 by the [project lead](guide/project-lead.md) and revised based on feedback from [security reviewers](guide/security-reviewer.md) 
 and other members of the SIG.
-
 
 * If you are interested in a security evaluation for your project and you are
   willing to volunteer as [project lead](guide/project-lead.md) or you are a
