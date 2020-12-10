@@ -4,13 +4,18 @@ Shared with CNCF Community
 
 ## Metadata
 
-| | | | |
+| **Markdown** | | | |
 | -- | -- | -- | -- |
 | **Version** | **1.1** | 25 NOV 2020 | [Original working doc](https://tinyurl.com/CNCF-CNSWP) |
 | **Status** | **WIP** | In Review | Approved |
-| **Created** | 2020-FEB-01 | **Last Reviewed** | 2020-OCT-27 |
-| **PDF Published** | 2020-NOV-18 | **Release Version** | 1.0 | 
-| **Final PDF Approvers** | [x] @lizrice [x] @justincormack  | | |
+
+| **PDF** | |
+| -- | -- |
+| **Created** | 2020-FEB-01 |
+| **Last Reviewed** | 2020-OCT-27 |
+| **PDF Published** | 2020-NOV-18 |
+| **Release Version** | 1.0 | 
+| **Final PDF Approvers** | [x] @lizrice [x] @justincormack  |
 
 | **Originating Content and Review** | |
 | -- | --|
