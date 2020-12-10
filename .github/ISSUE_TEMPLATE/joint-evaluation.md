@@ -1,7 +1,7 @@
 ---
-name: Security Assessment
-about: To request a security assessment or track progress on active assessment
-title: "[Assessment] Project Name"
+name: Joint evaluation
+about: To request a joint evaluation or track progress on active evaluation
+title: "[Joint Evalution] Project Name"
 labels: assessment
 assignees: ''
 
@@ -11,7 +11,7 @@ Project Name:
 
 Github URL:
 
-<!-- For project proposals looking to go through SIG-assessment, please indicate the stage for review (sandbox, incubation/graduation and link to the TOC issue, else indicate NA
+<!-- For project proposals looking to go through SIG evaluation, please indicate the stage for review (sandbox, incubation/graduation and link to the TOC issue, else indicate NA
 
 For example, https://github.com/cncf/toc/issues/368 (incubation)
 -->
