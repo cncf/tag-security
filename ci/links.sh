@@ -4,6 +4,6 @@ npm install -g markdown-link-check
 git fetch origin master:master
 for file_name in $(git diff --name-only $HEAD master); do
   if [[ $file_name == *".md" ]]; then
-    npx markdown-link-check "$file_name"
+    npx markdown-link-check -c link-check-config.json "$file_name"
   fi
 done
