@@ -10,4 +10,3 @@ review, the documents needs to be converted to markdown so that they can be adde
 List of tools:
 - [Pandoc](https://pandoc.org/)
 - [Google Docs extension: docs-to-markdown](https://chrome.google.com/webstore/detail/docs-to-markdown/igffnbdfnodiaphfmfaiiaegmoljbghf)
-- [Google Docs extension: docs-to-markdown](https://chrome.google.com/webstore/detail/docs-to-markdown/igffnbdfnodiaphfmfaiiaegmoljbghf)
