@@ -131,7 +131,8 @@ Co-chair representative: @ultrasaurus
 Membership governance can be viewed [here](https://github.com/cncf/sig-security/blob/master/governance/roles.md#role-of-members). If you are new, check out the [New Members Page](NEWMEMBERS.md).
 <details><summary>Click to view list</summary>
 
-* Pushkar Joglekar ([@pushkarj](https://github.com/pushkarj)) 
+* Pushkar Joglekar ([@pushkarj](https://github.com/pushkarj))
+* POP ([@danpopsd](https://github.com/danpopsd)), Sysdig
 * Devarajan P Ramaswamy ([@deva](https://github.com/deva26)), PADME
 * Kamil Pawlowski ([@kbpawlowski](https://github.com/kbpawlowski))
 * Geri Jennings ([@izgeri](https://github.com/izgeri)), CyberArk
@@ -198,7 +199,9 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Ron Vider ([@RonVider](https://github.com/RonVider)), Neo Security
 * Marco Lancini ([@marco-lancini](https://github.com/marco-lancini)), Thought Machine
 * Lewis Denham-Parry ([@denhamparry](https://github.com/denhamparry)), ControlPlane
+* John Hillegass ([@JohnHillegass](https://github.com/JohnHillegass)), Capital One
 * Chris Hughes ([@chughes216](https://github.com/chughes216)), Oteemo
+* Aradhna Chetal ([@achetal01](https://github.com/achetal01)), TIAA
 
 </details>
 
