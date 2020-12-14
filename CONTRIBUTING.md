@@ -3,7 +3,6 @@
 We aspire to create a welcoming environment for collaboration on this project
 and ask that all contributors do the same. For more details, see our
 [code of conduct](CODE-OF-CONDUCT.md).
-   blehblel *
 
 This document covers contributions to this git repository. Please review
 [governance](governance) for our mission, charter, and other operations.
