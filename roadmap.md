@@ -1,7 +1,6 @@
 # SIG Security Roadmap
 
 ### Overview
-notaword
 Note:  SIG-Security was rebranded from SAFE working group. The below roadmap includes SAFE WG and SIG-Security in its timeline.
 
 |     | #2 Discover | #3 Describe | #4 Identify
