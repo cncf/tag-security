@@ -41,7 +41,7 @@ Solarwinds customer environment via the Orion monitoring tool.
 
 ## Type of compromise
 
-While the specific details of how initial access occurred, initially it is
+While the specific details of how initial access occurred are unknown, it is
 understood that multiple compromises may have occurred:
 * Dev Tooling. According to article [2] the development tooling in use by
   Solarwinds developers may have been compromised.  The backdoor appears to have
