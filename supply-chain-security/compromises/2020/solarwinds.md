@@ -25,7 +25,7 @@ From article [2]:
 ## Impact
 
 While the overall initial impact is widespread and global, specific industries
-and countries are reported as known impact:
+and regions are reported as known to be impacted:
 * Government
 * Finance
 * Tech
