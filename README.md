@@ -202,6 +202,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * John Hillegass ([@JohnHillegass](https://github.com/JohnHillegass)), Capital One
 * Chris Hughes ([@chughes216](https://github.com/chughes216)), Oteemo
 * Aradhna Chetal ([@achetal01](https://github.com/achetal01)), TIAA
+* Jon Zeolla ([@jonzeolla](https://github.com/jonzeolla)), Seiso
 
 </details>
 
