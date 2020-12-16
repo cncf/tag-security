@@ -15,10 +15,13 @@ We welcome additions to this catalog by
 
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
+| [SOLARBURST](2020/solarburst.md) | 2020 | Unknown/Multiple |
+[1](https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html),
+[2](https://msrc-blog.microsoft.com/2020/12/13/customer-guidance-on-recent-nation-state-cyber-attacks/)
 | [NPM reverse shells and data mining](2020/nodejs.md) | 2020 | Dev Tooling | [1](https://www.bleepingcomputer.com/news/security/npm-nukes-nodejs-malware-opening-windows-linux-reverse-shells/) |
 | [Webmin backdoor](2019/webmin-backdoor.md) | 2019 | Dev Tooling | [1](https://www.zdnet.com/article/backdoor-found-in-webmin-a-popular-web-based-utility-for-managing-unix-servers/), [2](http://www.webmin.com/exploit.html) |
-| [purescript-npm](2019/purescript-npm.md) | 2019 | Source Code Compromise | [1](https://www.npmjs.com/advisories/1082) and [2](https://www.npmjs.com/advisories/1082) |
-| [electron-native-notify](2019/electron-native-notify.md) | 2019 | Source Code Compromise | [1](https://blog.npmjs.org/post/185397814280/plot-to-steal-cryptocurrency-foiled-by-the-npm), [2](https://komodoplatform.com/update-agama-vulnerability/)|
+| [purescript-npm](2019/purescript-npm.md) | 2019 | Source Code | [1](https://www.npmjs.com/advisories/1082) and [2](https://www.npmjs.com/advisories/1082) |
+| [electron-native-notify](2019/electron-native-notify.md) | 2019 | Source Code | [1](https://blog.npmjs.org/post/185397814280/plot-to-steal-cryptocurrency-foiled-by-the-npm), [2](https://komodoplatform.com/update-agama-vulnerability/)|
 | [ShadowHammer](2019/shadowhammer.md) | 2019 | Multiple steps | [1](https://www.csoonline.com/article/3384259/asus-users-fall-victim-to-supply-chain-attack-through-backdoored-update.html), [2](https://securelist.com/operation-shadowhammer/89992/) |
 | [PEAR Breach](2019/pear.md) | 2019 | Publishing Infrastructure | [1](https://blog.dcso.de/php-pear-software-supply-chain-attack/), [2](https://thehackernews.com/2019/01/php-pear-hacked.html) |
 | [Dofoil](2018/dofoil.md) | 2018 | Publishing Infrastructure | [1](https://www.zdnet.com/article/windows-attack-poisoned-bittorrent-client-set-off-huge-dofoil-outbreak-says-microsoft/) |
@@ -43,5 +46,5 @@ We welcome additions to this catalog by
 | [Code Spaces](2014/code-spaces.md) | 2014    | Source Code | [1](https://threatpost.com/hacker-puts-hosting-service-code-spaces-out-of-business/106761/)
 | [Monju Incident](2014/monju.md) | 2014    | Publishing infrastructure| [1](https://www.contextis.com/en/blog/context-threat-intelligence-the-monju-incident)
 | [Operation Aurora](2010/aurora.md) | 2010 | Watering-hole attack | [1](https://www.wired.com/2010/03/source-code-hacks/) | 
-| [ProFTPD](2010/proftpd.md) | 2010 | Source Code Repository | [1](https://www.zdnet.com/article/open-source-proftpd-hacked-backdoor-planted-in-source-code/) |
-| [gentoo rsync compromise](2003/gentoo-rsync.md) | 2003 | Source Code Repository | [1](https://archives.gentoo.org/gentoo-announce/message/7b0581416ddd91522c14513cb789f17a) |
+| [ProFTPD](2010/proftpd.md) | 2010 | Source Code | [1](https://www.zdnet.com/article/open-source-proftpd-hacked-backdoor-planted-in-source-code/) |
+| [gentoo rsync compromise](2003/gentoo-rsync.md) | 2003 | Source Code | [1](https://archives.gentoo.org/gentoo-announce/message/7b0581416ddd91522c14513cb789f17a) |
