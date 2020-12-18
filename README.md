@@ -45,22 +45,10 @@ Anyone is welcome to join our open discussions of SIG-Security projects and shar
 
 ## Meeting times
 
-The Security SIG group meets every Wednesday at 10:00am PT (USA Pacific, see your timezone [here](https://time.is/compare/1000_23_Oct_2019_in_PT)):
+The Security SIG group meets every Wednesday at 10:00am GMT-7 (see your timezone [here](https://time.is/compare/1000_23_Oct_2019_in_PT)):
 
 * [Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
 * [Meeting Link: zoom.us/my/cncfsigsecurity (Passcode: 77777)](https://zoom.us/my/cncfsigsecurity?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
-
-One tap mobile:
-* +16465588656,,7375677271# US (New York)
-* +16699006833,,7375677271# US (San Jose)
-
-Dial by your location:
-* +1 646 558 8656 US (New York)
-* +1 669 900 6833 US (San Jose)
-* 877 369 0926 US Toll-free
-* 855 880 1246 US Toll-free
-Meeting ID: 737 567 7271
-Find your local number: https://zoom.us/u/alwlmxlNn
 
 ## In person meetings
 
