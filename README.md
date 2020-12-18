@@ -17,7 +17,7 @@ SIG-Security facilitates collaboration to discover and produce resources that en
 
 ## Background
 
-“Cloud Native” is open source cloud computing for applications — a complete trusted toolkit for modern architectures (CNCF presentation).  There are multiple projects which address key parts of the problem of providing access controls and addressing safety concerns. Each of these adds value, yet for these technical solutions to be capable of working well together and manageable to operate they will need a minimal shared context of what defines a secure system architecture.
+“Cloud Native” is open source cloud computing for applications — a complete trusted toolkit for modern architectures.  There are multiple projects which address key parts of the problem of providing access controls and addressing safety concerns. Each of these adds value, yet for these technical solutions to be capable of working well together and manageable to operate they will need a minimal shared context of what defines a secure system architecture.
 
 ## Vision
 
