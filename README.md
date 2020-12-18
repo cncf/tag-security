@@ -26,9 +26,9 @@ There is a future where operators, administrators and developers feel confident 
 We envision that there could exist an ecosystem of tools that can simplify the experience of cloud native operators, administrators and developers, including:
 1. System security architecture that understands and accommodates the ever
 growing heterogeneity of systems and provides a framework to protect resources
-and data while servicing their users
+and data while servicing their users.
 2. Common vocabulary and open source libraries that make it easy for developers
-to create and deploy apps that meet system security requirements
+to create and deploy apps that meet system security requirements.
 3. Common libraries and protocols that enable people to reason about the
 security of the system, such as auditing and explainability features.
 
