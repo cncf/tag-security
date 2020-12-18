@@ -50,11 +50,11 @@ The Security SIG group meets every Wednesday at 10:00am GMT-7 (see your timezone
 * [Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
 * [Meeting Link: zoom.us/my/cncfsigsecurity (Passcode: 77777)](https://zoom.us/my/cncfsigsecurity?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
 
-## In person meetings
+## Gatherings
 
-Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup. Create a [github issue](https://github.com/cncf/sig-security/issues/new) for an event and add to list below:
+Please let us know if you are going and if you are interested in attending (or helping to organize!) a gathering. Create a [github issue](https://github.com/cncf/sig-security/issues/new) for an event and add to list below:
 
-* KubeCon + CloudNativeCon, San Diego, CA - Nov 18 – 21, 2019 - [issue#128]
+* KubeCon + CloudNativeCon, EU - May 4 - 7, 2021 - [issue#454]
 
 [Past events](past-events.md)
 
