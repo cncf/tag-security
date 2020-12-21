@@ -1,6 +1,6 @@
 # Purpose
 
-To provide the CNCF’s TOC with effective information about the security of
+To provide the CNCF TOC with effective information about the security of
 different projects, this document outlines the procedure by which a project
 should be evaluated.
 
@@ -15,10 +15,10 @@ Note: Responsible roles for specific items are in **bold**.
 
 ### 1. [Create tracking issue](https://github.com/cncf/sig-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 The tracking issue serves to initiate the security assessment process.  It
-provides an initial set of information to assist SIG-Security prioritze the
+provides an initial set of information to assist SIG-Security prioritize the
 security assessment as well as provide potential reviewers with a central
 location to manage the assessment.
-   * Issue may be a request from **TOC liason** or **project** itself 
+   * Issue may be a request from **TOC liaison** or **project** itself 
 ### 2. Project provides self-assessment & reviewers are assigned 
 The project performs a self-assessment using the [outline](outline.md) to
 provide the reviewers with security relevant information about their project.
@@ -32,8 +32,8 @@ process is kept.
 assigned, and facilitate the process 
 ### 3. Conflict of interest statement and review
 In order to remediate unfair advantage or ethical issues  all reviewers are
-required to provide a statement indicating all hard and soft conflicts they
-maintain prior starting the security assessment.
+required to provide a statement indicating all conflicts of interest they
+maintain prior to starting the security assessment.
    * **Lead security reviewer and additional security reviewers** comment any
      conflict of interest in the project's assessment ticket using the below
 format:
@@ -43,13 +43,13 @@ format:
 | Reviewer is a currently a maintainer of the project |  |
 | Reviewer is direct report of/to a current maintainer of the project |  |
 | Reviewer is paid to work on the project |  |
-|Reviewer has significant financial interst directly ties to the success of the project |  |
+| Reviewer has significant financial interest directly tied to the success of the project |  |
 
 
 | Soft Conflicts | Y/N |
 | :------------- | :-: |
 | Reviewer belongs to the same company/organization of the project, but does not work on the project |  |
-| Reviewer uses the project in his/her work |  |
+| Reviewer uses the project in their work |  |
 | Reviewer has contributed to the project |  |
 | Reviewer has a personal stake in the project (personal relationships, etc.) |  |
    * The **lead security reviewer** will confirm all conflicts are specified and
@@ -62,7 +62,7 @@ reviewer** to ensure it is complete.  They may delegate this task to another
 reviewer. This phase enables security reviewers to focus on the security and
 technical details of the project.  The clarifying question phase is conducted
 prior to the *3 week* timeframe for assessments.
-   * **Lead security reviewer or their designee** will perform inital,
+   * **Lead security reviewer or their designee** will perform initial,
      clarifying review to:
       * Verify completeness
       * Ask for clarifications
@@ -74,22 +74,22 @@ The security review provides time for the security reviewers and the project to
 address security and technical details associated with the project.  Information
 created or received out of the review is leveraged in making the final
 assessment.
-   * **Project** posts their document to the project security assessment
+   * **Project lead** posts their document to the project security assessment
      channel, allowing at least one week for review prior to Q&A
    * **Security reviewers** review the self-assessment document and provide
      comments and questions
       * It is highly recommended that security reviewers familiarize themselves
         with the project's repo and docs if available
-   * **Security reviewers and project lead/pocs** ensure all reviewer
+   * **Security reviewers and project leads/POCs** ensure all reviewer
      questions/comments are addressed and finalize the self-assessment
-   * **Lead security reviewer or their designee,** with the assistance of the **security reviewers** create a draft summary document to capture existing comments, feedback, and recommendations prior to the presentation.
+   * **Lead security reviewer or their designee,** with the assistance of the **security reviewers** create a draft summary document to capture existing comments, feedback, and recommendations prior to the presentation
 ### 6. Presentation
 The presentation is designed to inform members of SIG Security of the project,
 its intent, what it accomplishes, and provides the opportunity for additional
 questions and feedback to the reviewers and project.
    * Project lead presents to SIG during SIG meeting
-   * Presentation is recorded as part of standard SIG process
-   * Presentation slides are linked in the assessments/projects/project-name/
+   * Presentation is recorded as part of standard SIG meeting process
+   * Presentation slides are linked in the assessments/projects/project-name/ directory
 ### 7. Final assessment
 The final assessment provides a cursory review of the project, background,
 summarization of self-assessment, and recommendations to the CNCF, the project,
@@ -117,7 +117,7 @@ reviewers:
 * At any time, the project lead may request additional time to respond to
   feedback from security reviewers
 * Project lead or lead security reviewer may pause the process where a delay of
-  over a week cannot be accomodated by the review team. Simply close the github
+  over a week cannot be accommodated by the review team. In this case simply close the GitHub
 issue with a note to SIG co-chairs.
 
 ## Benefits of a Security Assessment
