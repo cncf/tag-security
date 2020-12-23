@@ -1,28 +1,37 @@
-name: Super-Linter
+---
+name: SIG-Security-Linter
 
-# Run this workflow on every PR and push to master
+# Run this workflow on every PR to master
 on:
-  push:
-    branches:
-      - master
   pull_request:
     branches:
       - master
 
 jobs:
-  Lint:
+  Setup:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '12'
+      - name: Setup
+        run: make setup
+  Lint:
+    runs-on: ubuntu-latest
+    needs: Setup
+    steps:
+      - uses: actions/checkout@v2
       - name: Lint
-        run: npm install markdownlint-cli
-        run: markdownlint *
-      - name: Check Spelling
-        run: npm install cspell
-        run: cspell *      
-      - name: Check Links
-        run: npm install markdown-link-check
-        run: find . -type f -name '*.md' | xargs -L1 npx markdown-link-check --quiet
+        run: make lint
+  Spelling:
+    runs-on: ubuntu-latest
+    needs: Setup
+    steps:
+      - uses: actions/checkout@v2
+      - name: Spelling
+        run: make spelling
+  Links:
+    runs-on: ubuntu-latest
+    needs: Setup
+    steps:
+      - uses: actions/checkout@v2
+      - name: Links
+        run: make links

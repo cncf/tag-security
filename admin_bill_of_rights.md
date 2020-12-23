@@ -12,13 +12,13 @@ Therefore, we hold the following truths to be self-evident.
 
 Administrators have the right to:
 
-1. [Centrally administer](#centrally_admin) their organizations’ cloud resources.
+1. [Centrally administer](#centrally_admi) their organizations’ cloud resources.
 
 2. [Audit](#audit) all accesses and understand all policy grants for their organizations’ cloud resources
 
 3. [Delete](#heading=delete) their organizations’ cloud resources.
 
-4. [Compartmentalize](#compartmentalize) their organizations’ cloud resources.
+4. [Compartmentalize](#compartmentalize) their organizations’ clod resources.
 
 5. [Delegate administration](#delegate_admin) of a compartment of an organization’s cloud resources to another administrator.
 
@@ -52,7 +52,7 @@ Administrators should be able to delete all of the resources within their organi
 
 ## Compartmentalization <a id="compartmentalize"></a>
 
-As the number of resources under their administration increases, administrators need the ability to compartmentalize resources for the purpose of providing common administration for a group of resources. 
+As the number of resources under their administration increases, administrators need the ability to compartmentalize resources for the purpose of providing common administration for a group of resources.
 
 A *compartment* is a collection of resources within an organization or another compartment that have common policies and lifecycle. In Google Cloud Platform, there are three different compartments -- Projects, Folders and Organizations -- which form a hierarchy. This is a key feature to enable administrators to cope with the scale of cloud.
 
