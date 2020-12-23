@@ -1,6 +1,6 @@
 ## Contributing
 
-We aspire to create a welcoming environment for collaboration on this project
+We apire to create a welcoming environment for collaboration on this project
 and ask that all contributors do the same. For more details, see our
 [code of conduct](CODE-OF-CONDUCT.md).
 
@@ -12,7 +12,7 @@ This document covers contributions to this git repository. Please review
 While this repository does not contain open source code, we manage content
 contributions following open source practice, as detailed below.
 
-All contributions to this project will be released under the 
+All contributions to this project will be released under the
 [Apache License](LICENSE) By submitting a pull request (PR), you are agreeing to
 release the PR contents under this license.
 
@@ -29,7 +29,7 @@ to participate in anyway they can.
 
 Except for urgent or very small grammar or spelling fixes, such as simple changes discussed below, we leave pull
 requests open for at least 24 hours, so that others have the chance to
-review/comment.   
+review/comment.
 
 #### Favorable review
 
@@ -44,14 +44,14 @@ of the SIG via slack or issues.
 Nits are minor suggestions and changes that are strongly encouraged to be
 identified and resolved to provide consistency in the repo.  Preferential
 language or language that is a matter of preferred usage are not considered
-nits.  
+nits.
 
 An example of preferential language:
 > They use cloud technologies with clear understanding of risks and the ability to validate that their security policy decisions are reflected in deployed software.
 
 > ability is a human oriented term, capability is more technical and may be more appropriate
 ```suggestion
-They use cloud technologies with clear understanding of risks and the capability to validate their security policy decisions are reflected in deployed software.  
+They use cloud technologies with clear understanding of risks and the capability to validate their security policy decisions are reflected in deployed software.
 ```
 
 An example of a nit:
@@ -59,7 +59,7 @@ An example of a nit:
 
 > per TOC definition of cloud native, it is not hyphenated
 ```suggestion
-They use cloud technologies with clear understanding of risks and the ability to validate that their security policy decisions are reflected in deployed software.  
+They use cloud technologies with clear understanding of risks and the ability to validate that their security policy decisions are reflected in deployed software.
 ```
 
 #### Simple changes
@@ -75,7 +75,7 @@ A person with access, including the PR author, may then perform the merge.
 A person with access, other than the PR author, can both review **and** merge a
 PR if found favorable after review.
 
-[Code owners](CODEOWNERS.md) need to be at least one concurring reviewer or the 
+[Code owners](CODEOWNERS.md) need to be at least one concurring reviewer or the
 merging party.
 
 #### Siginificant changes
@@ -94,7 +94,7 @@ and provide concurrence prior to merging.
 Two persons with access, other than the PR author, must review the PR and
 provide concurrence, the last of which should perform the merge.
 
-[Code owners](CODEOWNERS.md) need to be at least one concurring reviewer or the 
+[Code owners](CODEOWNERS.md) need to be at least one concurring reviewer or the
 merging party.
 
 ### Merging pull requiests
@@ -103,7 +103,7 @@ PRs may be merged after at least one review as occurred, dependent on the type o
 
 ### Writing style
 
-Consistency creates clarity in communication. 
+Consistency creates clarity in communication.
 
 * Common terms
   * When referring to users and use cases, ensure consistency with [use cases](usecases.md)
@@ -114,7 +114,7 @@ sentence:
 * Additional Formatting
   * Headlines, page titles, subheads and similar content should follow sentence
     case, and should not include a trailing colon.
-  * Paragraphs do not start with leading indent. 
+  * Paragraphs do not start with leading indent.
   * Wrap lines at 80 characters, except where it would break a link. No need to
     reformat the whole paragraph to make it perfect -- fewer diffs are easier
     for reviewers.
