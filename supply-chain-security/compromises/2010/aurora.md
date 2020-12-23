@@ -10,8 +10,8 @@ those security holes to gain unauthorized access to the system.
 
 ## Impact
 
-More than 34 organizations affected, including Symanted, Northrop Grumman,
-Morgan Stanley, Dow chemical, Yahoo, Rackspace, Adobe and Google.
+More than 34 organizations affected, including Symantec, Northrop Grumman,
+Morgan Stanley, Dow Chemical, Yahoo, Rackspace, Adobe and Google.
 
 ## Type of compromise
 
