@@ -47,7 +47,7 @@ format:
 
 
 | Soft Conflicts | Y/N |
-|: ------------- | :-: |
+| :------------- | :-: |
 | Reviewer belongs to the same company/organization of the project, but does not work on the project |  |
 | Reviewer uses the project in his/her work |  |
 | Reviewer has contributed to the project |  |
