@@ -307,15 +307,13 @@ Hardening of infrastructure and workloads should be supported by comprehensive t
 
 ##### Static Analysis and Security Testing
 
-Static analysis of IaC, application manifests, and software code may cover linting, identifying misconfigurations and vulnerability scanning. IaC code should be subject to the same pipeline policy controls as are application workloads.
+Static analysis of IaC, application manifests, and software code provides linting and identification of misconfigurations and vulnerabilities. IaC code should be subject to the same pipeline policy controls as are application workloads.
 
-IaC is gaining popularity, and its implementation is rapidly increasing among organizations to deploy cloud and container infrastructure. Consequently, insecure configurations in these templates can result in exposing attack vectors.
-
-These templates should be scanned for insecure configurations and other security controls using automated tools before deploying the application and infrastructure artifacts. Key misconfigurations to keep an eye out for include:
+IaC is an increasingly popular way for organizations to deploy cloud and container infrastructure. Insecure configurations in IaC templates will naturally lead to vulnerabilities in the deployed infrastructure. These templates should therefore be scanned for characteristics that compromise security, using automated tools, before deploying the application and infrastructure artifacts. Key misconfigurations to keep an eye out for include:
 
 - Vulnerabilities contained within images specified in the application manifests
-- Configuration settings, such as containers that can escalate privileges.
-- Identification of the security contexts and system calls, which can compromise a system.
+- Settings that do not respect the principle of least privilege, such as containers that can escalate privileges or overly lax firewall rules
+- Identification of the security contexts and system calls, which can compromise a system
 - Resource limit settings
 
 ##### Dynamic Analysis
