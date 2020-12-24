@@ -267,7 +267,7 @@ Continuous Integration (CI) servers should be isolated and restricted to project
 
 Supply chain tools can gather and sign build pipeline metadata. Later stages can then verify the signatures to validate that the prerequisite pipeline stages have run.
 
-The DevOps team should ensure that the CI and Continuous Delivery (CD) infrastructure is as secure as possible. For example, security updates should be prioritized to be installed, and cryptographic keys should be protected from exfiltration via the use of Hardware Security Modules (HSM) or Credential Managers.
+The reader should ensure that the CI and Continuous Delivery (CD) infrastructure is as secure as possible. For example, security updates should be prioritized to be installed, and cryptographic keys should be protected from exfiltration via the use of Hardware Security Modules (HSM) or Credential Managers.
 
 #### Image Scanning
 
@@ -285,11 +285,11 @@ With respect to the [security assurance objectives](#security-assurance), the fo
 
 #### Container Application Manifest Scanning
 
-Application manifests describe the configurations required for the deployment of containerized applications. As mentioned in the [Security Benchmarks](#security-benchmarks) section, guides such as the [NIST 800-190](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-190.pdf) publication offer recommended security practices and configurations for application containers. It is vital to scan application manifests in order to identify configurations that could potentially result in an insecure deployment posture.
+Application manifests describe the configurations required for the deployment of containerized applications. As mentioned in the [Security Benchmarks](#security-benchmarks) section, guides such as the [NIST 800-190](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-190.pdf) publication offer recommended security practices and configurations for application containers. It is vital to scan application manifests in the CI/CD pipeline in order to identify configurations that could potentially result in an insecure deployment posture.
 
 #### Container application manifest hardening
 
-As for container images, container application manifest hardening can be thought of and be implemented at build- and runtime.
+As for container images, container application manifest hardening can be thought of and be implemented at build- as well as runtime.
 
 With respect to security assurance objectives, the following questions should be evaluated:
 
