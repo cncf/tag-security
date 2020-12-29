@@ -50,6 +50,18 @@ The Security SIG group meets every Wednesday at 10:00am GMT-7 (see your timezone
 * [Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
 * [Meeting Link: zoom.us/my/cncfsigsecurity (Passcode: 77777)](https://zoom.us/my/cncfsigsecurity?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
 
+One tap mobile:
+* +16465588656,,7375677271# US (New York)
+* +16699006833,,7375677271# US (San Jose)
+
+Dial by your location:
+* +1 646 558 8656 US (New York)
+* +1 669 900 6833 US (San Jose)
+* 877 369 0926 US Toll-free
+* 855 880 1246 US Toll-free
+Meeting ID: 737 567 7271
+Find your local number: https://zoom.us/u/alwlmxlNn
+
 ## Gatherings
 
 Please let us know if you are going and if you are interested in attending (or helping to organize!) a gathering. Create a [github issue](https://github.com/cncf/sig-security/issues/new) for an event and add to list below:
