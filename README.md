@@ -205,6 +205,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Chris Hughes ([@chughes216](https://github.com/chughes216)), Oteemo
 * Aradhna Chetal ([@achetal01](https://github.com/achetal01)), TIAA
 * Jon Zeolla ([@jonzeolla](https://github.com/jonzeolla)), Seiso
+* Diego Comas ([@dcomas](https://github.com/dcomas)), MessageBird
 
 </details>
 
