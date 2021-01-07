@@ -1,6 +1,8 @@
-# CNCF Special Interest Group for Security (SIG-Security)
 
-<img src="https://github.com/cncf/artwork/blob/master/other/sig-security/horizontal/color/sig-security-horizontal-color.svg" width="300">
+
+<img src="https://github.com/cncf/artwork/blob/master/other/sig-security/horizontal/color/sig-security-horizontal-color.svg">
+
+# CNCF Special Interest Group for Security (SIG-Security)
 
 ## Quick links
 
@@ -15,7 +17,7 @@ SIG-Security facilitates collaboration to discover and produce resources that en
 
 ## Background
 
-“Cloud Native” is open source cloud computing for applications — a complete trusted toolkit for modern architectures (CNCF presentation).  There are multiple projects which address key parts of the problem of providing access controls and addressing safety concerns. Each of these adds value, yet for these technical solutions to be capable of working well together and manageable to operate they will need a minimal shared context of what defines a secure system architecture.
+“Cloud Native” is open source cloud computing for applications — a complete trusted toolkit for modern architectures.  There are multiple projects which address key parts of the problem of providing access controls and addressing safety concerns. Each of these adds value, yet for these technical solutions to be capable of working well together and manageable to operate they will need a minimal shared context of what defines a secure system architecture.
 
 ## Vision
 
@@ -24,9 +26,9 @@ There is a future where operators, administrators and developers feel confident 
 We envision that there could exist an ecosystem of tools that can simplify the experience of cloud native operators, administrators and developers, including:
 1. System security architecture that understands and accommodates the ever
 growing heterogeneity of systems and provides a framework to protect resources
-and data while servicing their users
+and data while servicing their users.
 2. Common vocabulary and open source libraries that make it easy for developers
-to create and deploy apps that meet system security requirements
+to create and deploy apps that meet system security requirements.
 3. Common libraries and protocols that enable people to reason about the
 security of the system, such as auditing and explainability features.
 
@@ -43,7 +45,7 @@ Anyone is welcome to join our open discussions of SIG-Security projects and shar
 
 ## Meeting times
 
-The Security SIG group meets every Wednesday at 10:00am PT (USA Pacific, see your timezone [here](https://time.is/compare/1000_23_Oct_2019_in_PT)):
+The Security SIG group meets every Wednesday at 10:00am GMT-7 (see your timezone [here](https://time.is/compare/1000_23_Oct_2019_in_PT)):
 
 * [Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
 * [Meeting Link: zoom.us/my/cncfsigsecurity (Passcode: 77777)](https://zoom.us/my/cncfsigsecurity?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
@@ -60,11 +62,11 @@ Dial by your location:
 Meeting ID: 737 567 7271
 Find your local number: https://zoom.us/u/alwlmxlNn
 
-## In person meetings
+## Gatherings
 
-Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup. Create a [github issue](https://github.com/cncf/sig-security/issues/new) for an event and add to list below:
+Please let us know if you are going and if you are interested in attending (or helping to organize!) a gathering. Create a [github issue](https://github.com/cncf/sig-security/issues/new) for an event and add to list below:
 
-* KubeCon + CloudNativeCon, San Diego, CA - Nov 18 – 21, 2019 - [issue#128]
+* KubeCon + CloudNativeCon, EU - May 4 - 7, 2021 - [issue#454]
 
 [Past events](past-events.md)
 
