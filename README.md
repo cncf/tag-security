@@ -158,7 +158,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Maor Goldberg ([@goldberg10](https://github.com/goldberg10))
 * Andrew Martin ([@sublimino](https://github.com/sublimino)), ControlPlane
 * Karthik Gaekwad ([@iteration1](https://github.com/karthequian)), Oracle
-* Chase Pettet ([@chasemp](https://github.com/chasemp)), Wikimedia Foundation
+* Chase Pettet ([@chasemp](https://github.com/chasemp)), Mirantis
 * Jia Xuan ([@xuanjia](https://github.com/xuanjia)), China Mobile
 * John Morello ([@morellonet](https://github.com/morellonet)), Twistlock
 * Alban Crequy ([@alban](https://github.com/alban)), Kinvolk
