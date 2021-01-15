@@ -12,7 +12,7 @@ Therefore, we hold the following truths to be self-evident.
 
 Administrators have the right to:
 
-1. [Centrally administer](#centrally_admin their organizations’ cloud resources.
+1. [Centrally administer](#centrally_admin) their organizations’ cloud resources.
 
 2. [Audit](#audit) all accesses and understand all policy grants for their organizations’ cloud resources
 
