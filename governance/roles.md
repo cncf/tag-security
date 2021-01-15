@@ -1,11 +1,11 @@
 # Roles within the SIG
 
-The SIG consists of several eky roles that are critical to the group's success.
+The SIG consists of several key roles that are critical to the group's success.
 The group will have many members, all serving in varying capacities.  Within
 this document, "member" may refer to a Co-Chair, a Technical Lead, or other
 Member roles.
 
-The below list is the current listing of member roles:
+The following is the current listing of member roles:
 
 * [Three Chairs](#role-of-chairs)
 * [Technical Leads](#role-of-technical-leads)
@@ -15,12 +15,14 @@ The below list is the current listing of member roles:
 * [Facilitation Roles](#facilitation-roles)
 
 All members are identified in the SIG [README](/readme.md), with annotations
-where they hold an additional role.
+where they hold an additional role. 
 
-### Role of members
+## Role of members
 * The primary role of a member is to contribute expertise to the group.
 * To add yourself as a member, submit a Pull Request (PR) adding yourself
 to the list of members.
+
+### Maintaining active members
 * Members *SHOULD* remain active and responsive in their Roles.
 * Members taking an extended leave of 1 or more months *SHOULD* coordinate with
 other members to ensure the role is adequately staffed during the leave.
@@ -32,14 +34,16 @@ month or are not fulfilling their documented responsibilities for more than 1
 month. This may be done through a super-majority vote of members, or if there
 are not enough *active* members to get a super-majority of votes cast, then
 removal may occur through a super-majority vote of the Co-Chairs.
+* Members contribute to projects, according to the standard group
+  [process](process.md).
+
+### Managing membership
 * Membership disagreements may be escalated to the Co-Chairs.  Disagreements
 among the Co-Chairs may be escalated to the TOC Liaison.
 * Members *MAY* decide to step down at anytime and optionally propose a
 replacement.
-* Members contribute to projects, according to the standard group
-  [process](process.md).
 
-### Role of chairs
+## Role of chairs
 
 While CNCF TOC allows for Co-Chairs to serve in purely administrative roles,
 SIG-Security was formed with deeply technical Co-Chairs based on early need
@@ -59,7 +63,7 @@ members who cannot attend a specific meeting time.
   * partnering with technical leads to establish a roadmap and manage ongoing
     projects
 
-### Role of technical leads
+## Role of technical leads
 
 Technical Leads (TLs) expand the bandwidth of the leadership team. Proposals
 must have a TL or Co-Chair working as an active sponsor (as detailed in 
@@ -75,7 +79,7 @@ The general list of activities for TL are:
 TLs are assigned by CNCF Technical Oversight Committee
 (see [CNCF SIG Tech Lead nomination and election process](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#elections)).
 
-### Role of project leads
+## Role of project leads
 
 Project Leads will lead larger streams of work that require sustained
 effort and coordination.  In some cases, these projects remain ongoing.
