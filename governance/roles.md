@@ -1,4 +1,11 @@
-## Working group roles
+# Roles within the SIG
+
+The SIG consists of several eky roles that are critical to the group's success.
+The group will have many members, all serving in varying capacities.  Within
+this document, "member" may refer to a Co-Chair, a Technical Lead, or other
+Member roles.
+
+The below list is the current listing of member roles:
 
 * [Three Chairs](#role-of-chairs)
 * [Technical Leads](#role-of-technical-leads)
@@ -6,8 +13,6 @@
 * [Group Members](#role-of-members)
 * [TOC Liaison](#toc-liaison)
 * [Facilitation Roles](#facilitation-roles)
-
-The group may have many members. Within this document, "member" may refer to a Chair, a Technical Lead, or a Member.
 
 All members are identified in the SIG [README](/readme.md), with annotations
 where they hold an additional role.
@@ -26,9 +31,9 @@ communicated a leave of absence and either cannot be reached for more than 1
 month or are not fulfilling their documented responsibilities for more than 1
 month. This may be done through a super-majority vote of members, or if there
 are not enough *active* members to get a super-majority of votes cast, then
-removal may occur through a super-majority vote of the Chairs.
-* Membership disagreements may be escalated to the Chairs.  Disagreements
-among the Chairs may be escalated to the TOC Liaison.
+removal may occur through a super-majority vote of the Co-Chairs.
+* Membership disagreements may be escalated to the Co-Chairs.  Disagreements
+among the Co-Chairs may be escalated to the TOC Liaison.
 * Members *MAY* decide to step down at anytime and optionally propose a
 replacement.
 * Members contribute to projects, according to the standard group
@@ -36,27 +41,29 @@ replacement.
 
 ### Role of chairs
 
-While CNCF TOC allows for Chairs to serve in purely administrative roles,
-SIG-Security was formed with deeply technical Chairs based on early need
-to navigate a complex security landscape. Until at least two Technical Leads
-are identified, any Chair may act as Technical Lead.
+While CNCF TOC allows for Co-Chairs to serve in purely administrative roles,
+SIG-Security was formed with deeply technical Co-Chairs based on early need
+to navigate a complex security landscape. If the SIG has less than two Technical
+Leads, any Co-Chair may act as Technical Lead.
 
-* Primary role of Chairs is to run operations and the governance of the group.
-* The Chairs are responsible for ensuring that group meetings are planned
+* Primary role of Co-Chairs is to run operations and the governance of the group.
+* The Co-Chairs are responsible for ensuring that group meetings are planned
 and facilitated effectively, while also engaging group members in leadership
 roles. Effective facilitation includes (but is not limited to) the following
 activities:
   * setting the agenda for meetings
   * extending discussion via asynchronous communication to be inclusive of
 members who cannot attend a specific meeting time.
-  * scheduling discussing of proposals that have been submitted
+  * scheduling discussion of proposals that have been submitted
   * asking for new proposals to be made to address an identified need
+  * partnering with technical leads to establish a roadmap and manage ongoing
+    projects
 
 ### Role of technical leads
 
 Technical Leads (TLs) expand the bandwidth of the leadership team. Proposals
-must have a TL or Chair working as an active sponsor
-(as detailed in [SIG process](process.md)).
+must have a TL or Co-Chair working as an active sponsor (as detailed in 
+[SIG process](process.md)).
 
 The general list of activities for TL are:
   * Establish new subprojects
@@ -71,22 +78,24 @@ TLs are assigned by CNCF Technical Oversight Committee
 ### Role of project leads
 
 Project Leads will lead larger streams of work that require sustained
-effort and coordination.
+effort and coordination.  In some cases, these projects remain ongoing.
 
 Project Leads are nominated and approved by the following process:
   1. Project Lead actively participates in the group, making a proposal or
   volunteering to take on a project that has been prioritized by the group
-  1. A Chair or TL nominates a candidate.
-  1. The nomination is communicated via a pull request annotating the list of members in the [SIG README](/README.md) with a link to the issue tracking the project. The nomination is typically open for a week (but may be shorter with
-  LGTM of at least two chairs).
+  1. A Co-Chair or TL nominates a candidate.
+  1. The nomination is communicated via a pull request annotating the list of members in the [SIG README](/README.md) with a link to the issue tracking the project. The nomination is typically open for a week (but may be shorter with LGTM of at least two chairs).
   1. Members are encouraged to review the tracking issue and work together
   to ensure that the Project Lead is set up for success or suggest alternatives.
 
+Depending on the expected length of the project, Project Leads may be assigned
+as OWNERS of the project to help facilitate and moderate new content to the
+project.
 
 ## TOC liaison
 
 The [CNCF SIG](https://github.com/cncf/toc/blob/master/sigs) process identifies
-a TOC Liaison.  The SIG chairs are responsible for establishing effective
+a TOC Liaison.  The SIG co-chairs are responsible for establishing effective
 communication with the TOC liaison, including further communication to the
 wider TOC upon request.
 
@@ -111,8 +120,8 @@ communication and alignment across the wider group.
 
 New roles in this section are typically defined after someone has acted in
 that role for some time informally, then proposed as an on-going role by Pull
-Request which must be approved by a majority of Chairs.  Process clarifications
-are welcome and PRs can be approved by any single Chair.
+Request which must be approved by a majority of Co-Chairs.  Process clarifications
+are welcome and PRs can be approved by any single Co-Chair.
 
 Members fulfilling any Roles in SIG-Security are responsible for understanding
 and abiding the by the [governance](./) and policies defined in this group.
@@ -128,14 +137,14 @@ support the group.
 **Github permissions note**: Facilitation roles are identified in
 [github settings](/.github/settings.yaml) which grants Github permissions.
 Pull Requests to appoint members to new Roles must be approved by at least one
-Chair, along with whatever additional process, if any, is described in this
+Co-Chair, along with whatever additional process, if any, is described in this
 document. When a member has multiple roles, the additional role that does not
 require additional access are noted in a comment. PRs to remove someone from
-a role must be approved by the person themselves or a majority of Chairs.
+a role must be approved by the person themselves or a majority of Co-Chairs.
 
 ### Security assessment facilitator
 
-[Security Assessments](/assessments) are part of the on-going work of the group
+[Security Assessments](/assessments) are part of the ongoing work of the group
 and led by a Security Assessment Facilitator, who will:
 
 * coordinate security review leads for upcoming security assessments.
@@ -159,9 +168,12 @@ goals, the meeting facilitator has the following responsibilities:
 Prerequisites:
 * active member
 * history of regular attendance
-* prior participation as scribe
+
+Preferred prerequisites:
+* prior experience scribing for a meeting
 
 One or more of the following:
+* active member of the SIG
 * served in another facilitator role
 * leader on a project team
 * tech lead
@@ -205,7 +217,7 @@ Each member of the Triage Team will:
 
 ### Project teams
 
-Some on-going projects may have teams where members are identified for
+Some ongoing projects may have teams where members are identified for
 additional roles and may be required to have specific expertise. For visibility,
 these additional project roles are listed below:
 
