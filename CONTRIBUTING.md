@@ -1,6 +1,6 @@
 ## Contributing
 
-We apire to create a welcoming environment for collaboration on this project
+We aspire to create a welcoming environment for collaboration on this project
 and ask that all contributors do the same. For more details, see our
 [code of conduct](CODE-OF-CONDUCT.md).
 
