@@ -12,13 +12,13 @@ Therefore, we hold the following truths to be self-evident.
 
 Administrators have the right to:
 
-1. [Centrally administer](#centrally_admi) their organizations’ cloud resources.
+1. [Centrally administer](#centrally_admin their organizations’ cloud resources.
 
 2. [Audit](#audit) all accesses and understand all policy grants for their organizations’ cloud resources
 
 3. [Delete](#heading=delete) their organizations’ cloud resources.
 
-4. [Compartmentalize](#compartmentalize) their organizations’ clod resources.
+4. [Compartmentalize](#compartmentalize) their organizations’ cloud resources.
 
 5. [Delegate administration](#delegate_admin) of a compartment of an organization’s cloud resources to another administrator.
 
