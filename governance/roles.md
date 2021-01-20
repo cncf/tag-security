@@ -48,7 +48,7 @@ replacement.
 While CNCF TOC allows for Chairs to serve in purely administrative roles,
 SIG-Security was formed with deeply technical Chairs based on early need
 to navigate a complex security landscape. If the SIG has less than two Technical
-Leads, any Co-Chair may act as Technical Lead.
+Leads, any Chair may act as Technical Lead.
 
 * Primary role of Chairs is to run operations and the governance of the group.
 * The Co-Chairs are responsible for ensuring that group meetings are planned
