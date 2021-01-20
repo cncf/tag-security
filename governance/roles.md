@@ -176,7 +176,6 @@ Prerequisites:
 * history of regular attendance
 
 One or more of the following:
-* active member of the SIG
 * served in another facilitator role
 * leader on a project team
 * tech lead
