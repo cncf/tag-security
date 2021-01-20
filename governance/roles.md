@@ -38,7 +38,7 @@ removal may occur through a super-majority vote of the Chairs.
   [process](process.md).
 
 ### Managing membership
-* Membership disagreements may be escalated to the Co-Chairs.  Disagreements
+* Membership disagreements may be escalated to the Chairs.  Disagreements
 among the Chairs may be escalated to a SIG-Security TOC Liaison.
 * Members *MAY* decide to step down at anytime and optionally propose a
 replacement.
