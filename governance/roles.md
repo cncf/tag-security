@@ -141,7 +141,7 @@ support the group.
 **Github permissions note**: Facilitation roles are identified in
 [github settings](/.github/settings.yaml) which grants Github permissions.
 Pull Requests to appoint members to new Roles must be approved by at least one
-Co-Chair, along with whatever additional process, if any, is described in this
+Chair, along with whatever additional process, if any, is described in this
 document. When a member has multiple roles, the additional role that does not
 require additional access are noted in a comment. PRs to remove someone from
 a role must be approved by the person themselves or a majority of Co-Chairs.
