@@ -51,7 +51,7 @@ to navigate a complex security landscape. If the SIG has less than two Technical
 Leads, any Chair may act as Technical Lead.
 
 * Primary role of Chairs is to run operations and the governance of the group.
-* The Co-Chairs are responsible for ensuring that group meetings are planned
+* The Chairs are responsible for ensuring that group meetings are planned
 and facilitated effectively, while also engaging group members in leadership
 roles. Effective facilitation includes (but is not limited to) the following
 activities:
