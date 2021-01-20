@@ -60,7 +60,7 @@ activities:
 members who cannot attend a specific meeting time.
   * scheduling discussion of proposals that have been submitted
   * asking for new proposals to be made to address an identified need
-  * partnering with technical leads to establish a roadmap and manage ongoing
+  * partnering with Technical Leads to establish a roadmap and manage ongoing
     projects
 
 ## Role of technical leads
