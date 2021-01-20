@@ -175,9 +175,6 @@ Prerequisites:
 * active member
 * history of regular attendance
 
-Preferred prerequisites:
-* prior experience scribing for a meeting
-
 One or more of the following:
 * active member of the SIG
 * served in another facilitator role
