@@ -101,7 +101,7 @@ project.
 ## TOC liaison
 
 The [CNCF SIG](https://github.com/cncf/toc/blob/master/sigs) process identifies
-a TOC Liaison.  The SIG co-chairs are responsible for establishing effective
+a TOC Liaison.  The SIG Chairs are responsible for establishing effective
 communication with the TOC liaison, including further communication to the
 wider TOC upon request.
 
