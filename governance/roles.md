@@ -1,6 +1,6 @@
 # Roles within the SIG
 
-The SIG consists of several key roles that are critical to the group's success.
+The SIG includes several key roles that are critical to the group's success.
 The group will have many members, all serving in varying capacities.  Within
 this document, "member" may refer to a Co-Chair, a Technical Lead, or other
 Member roles.
