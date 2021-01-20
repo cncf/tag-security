@@ -126,7 +126,7 @@ communication and alignment across the wider group.
 
 New roles in this section are typically defined after someone has acted in
 that role for some time informally, then proposed as an on-going role by Pull
-Request which must be approved by a majority of Co-Chairs.  Process clarifications
+Request which must be approved by a majority of Chairs.  Process clarifications
 are welcome and PRs can be approved by any single Chair.
 
 Members fulfilling any Roles in SIG-Security are responsible for understanding
