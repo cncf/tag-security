@@ -66,7 +66,7 @@ members who cannot attend a specific meeting time.
 ## Role of technical leads
 
 Technical Leads (TLs) expand the bandwidth of the leadership team. Proposals
-must have a TL or Co-Chair working as an active sponsor (as detailed in 
+must have a TL or Chair working as an active sponsor (as detailed in 
 [SIG process](process.md)).
 
 The general list of activities for TL are:
