@@ -33,7 +33,7 @@ communicated a leave of absence and either cannot be reached for more than 1
 month or are not fulfilling their documented responsibilities for more than 1
 month. This may be done through a super-majority vote of members, or if there
 are not enough *active* members to get a super-majority of votes cast, then
-removal may occur through a super-majority vote of the Co-Chairs.
+removal may occur through a super-majority vote of the Chairs.
 * Members contribute to projects, according to the standard group
   [process](process.md).
 
