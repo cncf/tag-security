@@ -95,7 +95,7 @@ Project Leads are nominated and approved by the following process:
   to ensure that the Project Lead is set up for success or suggest alternatives.
 
 Depending on the expected length of the project, Project Leads may be assigned
-as OWNERS of the project to help facilitate and moderate new content to the
+as OWNERS of the project directory in this repository to help facilitate and moderate new content to the
 project.
 
 ## TOC liaison
