@@ -46,7 +46,7 @@ replacement.
 ## Role of chairs
 
 While CNCF TOC allows for Chairs to serve in purely administrative roles,
-SIG-Security was formed with deeply technical Co-Chairs based on early need
+SIG-Security was formed with deeply technical Chairs based on early need
 to navigate a complex security landscape. If the SIG has less than two Technical
 Leads, any Co-Chair may act as Technical Lead.
 
