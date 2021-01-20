@@ -50,7 +50,7 @@ SIG-Security was formed with deeply technical Co-Chairs based on early need
 to navigate a complex security landscape. If the SIG has less than two Technical
 Leads, any Co-Chair may act as Technical Lead.
 
-* Primary role of Co-Chairs is to run operations and the governance of the group.
+* Primary role of Chairs is to run operations and the governance of the group.
 * The Co-Chairs are responsible for ensuring that group meetings are planned
 and facilitated effectively, while also engaging group members in leadership
 roles. Effective facilitation includes (but is not limited to) the following
