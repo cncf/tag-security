@@ -87,7 +87,7 @@ effort and coordination.  In some cases, these projects remain ongoing.
 Project Leads are nominated and approved by the following process:
   1. Project Lead actively participates in the group, making a proposal or
   volunteering to take on a project that has been prioritized by the group
-  1. A Co-Chair or TL nominates a candidate.
+  1. A Chair or TL nominates a candidate.
   1. The nomination is communicated via a pull request annotating the list of members in the [SIG README](/README.md) with a link to the issue tracking the project. The nomination is typically open for a week (but may be shorter with LGTM of at least two chairs).
   1. Members are encouraged to review the tracking issue and work together
   to ensure that the Project Lead is set up for success or suggest alternatives.
