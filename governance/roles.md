@@ -2,7 +2,7 @@
 
 The SIG includes several key roles that are critical to the group's success.
 The group will have many members, all serving in varying capacities.  Within
-this document, "member" may refer to a Co-Chair, a Technical Lead, or other
+this document, "member" may refer to a Chair, a Technical Lead, or other
 Member roles.
 
 The following is the current listing of member roles:
