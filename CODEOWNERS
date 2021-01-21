@@ -16,10 +16,13 @@
 *       @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos
 
 # README.md Owners
-/README.md @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos
+/README.md @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos @achetal01 @ashutosh-narkar @anvega
 
 # Security assessments
 /assessments/ @JustinCappos @ultrasaurus @pragashj @TheFoxAtWork
+
+# Supply Chain
+/supply-chain-security/ @SantiagoTorres @ultrasaurus @pragashj @TheFoxAtWork
 
 # Policy related (TODO: Approval required by PR)
 # /policy/ @hannibalhuang @ericavonb @rficcaglia @ultrasaurus @pragashj @TheFoxAtWork
