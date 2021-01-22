@@ -95,6 +95,9 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 ### Tech Leads
 * Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
 * Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
+* Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), Styra
+* Andres Vega ([@anvega](https://github.com/anvega), VMWare
+* Aradhana Chetal ([@achetal01](https://github.com/achetal01), TIAA
 
 ### SIG Chairs Emeritus
 * Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 9/3/2020]
