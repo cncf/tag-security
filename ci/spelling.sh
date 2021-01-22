@@ -2,4 +2,4 @@
 
 npm install -g cspell
 git fetch origin master:master
-git diff --name-only master $HEAD | xargs -L1 npx cspell -c ./ci/cspell.json -u
+git diff --name-only master $HEAD | xargs -L1 npx cspell -c ./ci/cspell.json -u -e ci/
