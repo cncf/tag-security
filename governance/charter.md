@@ -59,7 +59,7 @@ system or the privacy of its users,  specifically how to enable secure
 access, policy control and safety for operators, administrators,
 developers, and end-users  across the cloud native ecosystem.
 
-SIG-Security will consider [proposals](proccess.md) from its members or delegated
+SIG-Security will consider [proposals](process.md) from its members or delegated
 tasks from the CNCF TOC that are consistent with the mission, including
 the following activities:
 
