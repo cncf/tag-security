@@ -66,10 +66,9 @@ Dial by your location:
 * 877 369 0926 US Toll-free
 * 855 880 1246 US Toll-free
 * 1800 945 157 Australia Toll-free
+* Find your local number: https://zoom.us/u/alwlmxlNn
 
 Meeting ID: 737 567 7271
-
-Find your local number: https://zoom.us/u/alwlmxlNn
 
 ## Gatherings
 
