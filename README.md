@@ -45,7 +45,10 @@ Anyone is welcome to join our open discussions of SIG-Security projects and shar
 
 ## Meeting times
 
-The Security SIG group meets every Wednesday at 10:00am GMT-7 (see your timezone [here](https://time.is/compare/1000_23_Oct_2019_in_PT)):
+The Security SIG group meets every week.
+
+* US:   Wednesdays at 10:00am GMT-7 (see your timezone [here](https://time.is/compare/1000_27_Jan_2021_in_PT))
+* APAC: Tuesdays at 13:00pm GMT+11 (see your timezone [here](https://time.is/compare/1300_26_Jan_2021_in_AEDT))
 
 * [Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
 * [Meeting Link: zoom.us/my/cncfsigsecurity (Passcode: 77777)](https://zoom.us/my/cncfsigsecurity?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
