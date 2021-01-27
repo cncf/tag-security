@@ -50,8 +50,11 @@ The Security SIG group meets every week.
 * US:   Wednesdays at 10:00am GMT-7 (see your timezone [here](https://time.is/compare/1000_27_Jan_2021_in_PT))
 * APAC: Tuesdays at 13:00pm GMT+11 (see your timezone [here](https://time.is/compare/1300_26_Jan_2021_in_AEDT))
 
-* [Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
-* [Meeting Link: zoom.us/my/cncfsigsecurity (Passcode: 77777)](https://zoom.us/my/cncfsigsecurity?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
+[Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
+
+### Zoom Details
+
+[Meeting Link: zoom.us/my/cncfsigsecurity (Passcode: 77777)](https://zoom.us/my/cncfsigsecurity?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
 
 One tap mobile:
 * +16465588656,,7375677271# US (New York)
@@ -62,7 +65,10 @@ Dial by your location:
 * +1 669 900 6833 US (San Jose)
 * 877 369 0926 US Toll-free
 * 855 880 1246 US Toll-free
+* 1800 945 157 Australia Toll-free
+
 Meeting ID: 737 567 7271
+
 Find your local number: https://zoom.us/u/alwlmxlNn
 
 ## Gatherings
