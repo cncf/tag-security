@@ -1,7 +1,7 @@
 ---
 name: Joint evaluation
 about: To request a joint evaluation or track progress on active evaluation
-title: "[Joint Evalution] Project Name"
+title: "[Joint Evaluation] Project Name"
 labels: assessment
 assignees: ''
 

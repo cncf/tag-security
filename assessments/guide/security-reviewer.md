@@ -50,7 +50,7 @@ the project to understand its inner workings.
 
 If a reviewer performing a hands-on review discovers a weakness or vulnerability
 they are required to adhere to the project's responsible disclosure process.  
-If no process is documented, they must contact the [project lead](project-lead) directly
+If no process is documented, they must contact the [project lead](project-lead.md) directly
 regarding the issue, they may notify the lead security reviewer that they have
 notified the project of an issue as it may impact the content of the joint 
 evaluation or the timeframe for completing the review.
@@ -178,7 +178,7 @@ The Security Evaluation Facilitator or a SIG-Security chair must review the
 Lead Security Reviewer conflict-of-interest assertion.
 
 If any hard conflicts, or multiple significant soft conflicts, are presented,
-then 2 SIG-Security chairs must approve the security review team. Reasons for
+then 1 SIG-Security chair must approve the security review team. Reasons for
  accepting and rejecting conflicts should be documented.
 
 In most cases, the existence of a hard conflict will prevent a SIG member from 

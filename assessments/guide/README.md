@@ -77,7 +77,7 @@ The tracking issue serves to initiate the joint-evaluations.  It provides
 joint evaluation as well as provide potential reviewers with a central
 location to manage the effort.
    * Issue may be a request from **TOC liason** or **project** itself 
-   * **Security evaluation facilitator** with help from the **technical leads**
+   * [**Security evaluation facilitator**](https://github.com/cncf/sig-security/blob/master/governance/roles.md#facilitation-role) with help from the **technical leads**
  and **co-chairs** if appropriate, will determine if the project is ready for
  joint-evaluation.  If ready, a channel will be created to coordinate the
 activities.
@@ -200,7 +200,7 @@ approvals, is required before merging any artifacts.
 The should be completed by the **reviewers**, **project lead**, and other members
 of the evaluation.  Once complete the survey may be shared directly to the
 facilitator, technical leads, and co-chairs or be part of the PR into the
-/assessments/projects/project-name.
+/assessments/projects/project-name folder.
 
 ## Additional Process Notes
 

@@ -11,7 +11,7 @@ the below goals and assumptions.
 The primary goal is to reduce the risk from malicious attacks and accidental
 breaches of privacy. This process supports that goal in two ways:
 
-   * Creating a clear and consistent process for communication increases detection &
+   * A clear and consistent process for communication increases detection &
      reduces time to resolve known or suspected vulnerability issues
    * A collaborative evaluation process increases domain expertise within each
      participating project.
@@ -76,9 +76,7 @@ Security assessments have many benefits:
 A complete security evaluation package primarily consists of the following
 items:
 * [Self-assessment](guide/self-assessment).  An assessment by the project of the project's current
-  security statue.  This artifact is first created while the project is in the
-**sandbox** but may be created as part of **incubation**, if it was not done
-prior.  It is the starting point for projects to consider their security health.
+  security statue. 
 * [Joint-evaluation](guide/joint-evaluation). A joint evaluation by both the [security
   reviewers](guide/security-reviewer) and the project team that includes parts
 of the self-assessment and expands to include a more comprehensive consideration
@@ -89,6 +87,22 @@ provide invaluable information for security auditors as well as end-users.
 * [Evaluation README.md](guide/joint-readme-template). This readme is created at the end of the joint
   evaluation by the security reviewers to provide a high level summary of the
 joint evaluation and is considered when reviewing for due diligence.
+
+### CNCF and TOC process alignment
+
+**Sandbox** The _self-assessment artifact_ is first created while the project is in the
+**sandbox**.  It is the starting point for projects to consider their security health.
+
+**Incubation** If a self-assessment artifact was not created during sandbox, it may be
+ created as part of **incubation**.  It is the starting point for projects to consider 
+their security health.  The _joint-evaluation artifact_ is created during **incubation**.
+It leverages the information from the self-assessment and assists projects in becoming
+more security mature.
+
+**Graduation** If the CNCF or the project chooses to undergo a security audit, the 
+information from the self-assessment and joint-evaluation are incredibly useful for
+auditors.  Both of these artifacts also assist security teams with a comprehensive
+understanding of the threat and risk posture of the project.
 
 ### Use of a completed package
 
