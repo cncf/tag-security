@@ -1,6 +1,8 @@
-# CNCF Special Interest Group for Security (SIG-Security)
 
-<img src="https://github.com/cncf/artwork/blob/master/other/sig-security/horizontal/color/sig-security-horizontal-color.svg" width="300">
+
+<img src="https://github.com/cncf/artwork/blob/master/other/sig-security/horizontal/color/sig-security-horizontal-color.svg">
+
+# CNCF Special Interest Group for Security (SIG-Security)
 
 ## Quick links
 
@@ -15,7 +17,7 @@ SIG-Security facilitates collaboration to discover and produce resources that en
 
 ## Background
 
-“Cloud Native” is open source cloud computing for applications — a complete trusted toolkit for modern architectures (CNCF presentation).  There are multiple projects which address key parts of the problem of providing access controls and addressing safety concerns. Each of these adds value, yet for these technical solutions to be capable of working well together and manageable to operate they will need a minimal shared context of what defines a secure system architecture.
+“Cloud Native” is open source cloud computing for applications — a complete trusted toolkit for modern architectures.  There are multiple projects which address key parts of the problem of providing access controls and addressing safety concerns. Each of these adds value, yet for these technical solutions to be capable of working well together and manageable to operate they will need a minimal shared context of what defines a secure system architecture.
 
 ## Vision
 
@@ -24,9 +26,9 @@ There is a future where operators, administrators and developers feel confident 
 We envision that there could exist an ecosystem of tools that can simplify the experience of cloud native operators, administrators and developers, including:
 1. System security architecture that understands and accommodates the ever
 growing heterogeneity of systems and provides a framework to protect resources
-and data while servicing their users
+and data while servicing their users.
 2. Common vocabulary and open source libraries that make it easy for developers
-to create and deploy apps that meet system security requirements
+to create and deploy apps that meet system security requirements.
 3. Common libraries and protocols that enable people to reason about the
 security of the system, such as auditing and explainability features.
 
@@ -43,10 +45,16 @@ Anyone is welcome to join our open discussions of SIG-Security projects and shar
 
 ## Meeting times
 
-The Security SIG group meets every Wednesday at 10:00am PT (USA Pacific, see your timezone [here](https://time.is/compare/1000_23_Oct_2019_in_PT)):
+The Security SIG group meets every week.
 
-* [Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
-* [Meeting Link: zoom.us/my/cncfsigsecurity (Passcode: 77777)](https://zoom.us/my/cncfsigsecurity?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
+* US:   Wednesdays at 10:00am GMT-7 (see your timezone [here](https://time.is/compare/1000_27_Jan_2021_in_PT))
+* APAC: Tuesdays at 13:00pm GMT+11 (see your timezone [here](https://time.is/compare/1300_26_Jan_2021_in_AEDT))
+
+[Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
+
+### Zoom Details
+
+[Meeting Link: zoom.us/my/cncfsigsecurity (Passcode: 77777)](https://zoom.us/my/cncfsigsecurity?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
 
 One tap mobile:
 * +16465588656,,7375677271# US (New York)
@@ -57,14 +65,16 @@ Dial by your location:
 * +1 669 900 6833 US (San Jose)
 * 877 369 0926 US Toll-free
 * 855 880 1246 US Toll-free
+* 1800 945 157 Australia Toll-free
+* [Find your local number](https://zoom.us/u/alwlmxlNn)
+
 Meeting ID: 737 567 7271
-Find your local number: https://zoom.us/u/alwlmxlNn
 
-## In person meetings
+## Gatherings
 
-Please let us know if you are going and if you are interested in attending (or helping to organize!) an in-person meetup. Create a [github issue](https://github.com/cncf/sig-security/issues/new) for an event and add to list below:
+Please let us know if you are going and if you are interested in attending (or helping to organize!) a gathering. Create a [github issue](https://github.com/cncf/sig-security/issues/new) for an event and add to list below:
 
-* KubeCon + CloudNativeCon, San Diego, CA - Nov 18 – 21, 2019 - [issue#128]
+* KubeCon + CloudNativeCon, EU - May 4 - 7, 2021 - [issue#454]
 
 [Past events](past-events.md)
 
@@ -93,6 +103,9 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 ### Tech Leads
 * Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
 * Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
+* Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), Styra
+* Andres Vega ([@anvega](https://github.com/anvega), VMWare
+* Aradhana Chetal ([@achetal01](https://github.com/achetal01), TIAA
 
 ### SIG Chairs Emeritus
 * Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 9/3/2020]
@@ -131,7 +144,8 @@ Co-chair representative: @ultrasaurus
 Membership governance can be viewed [here](https://github.com/cncf/sig-security/blob/master/governance/roles.md#role-of-members). If you are new, check out the [New Members Page](NEWMEMBERS.md).
 <details><summary>Click to view list</summary>
 
-* Pushkar Joglekar ([@pushkarj](https://github.com/pushkarj)) 
+* Pushkar Joglekar ([@pushkarj](https://github.com/pushkarj))
+* POP ([@danpopsd](https://github.com/danpopsd)), Sysdig
 * Devarajan P Ramaswamy ([@deva](https://github.com/deva26)), PADME
 * Kamil Pawlowski ([@kbpawlowski](https://github.com/kbpawlowski))
 * Geri Jennings ([@izgeri](https://github.com/izgeri)), CyberArk
@@ -155,7 +169,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Maor Goldberg ([@goldberg10](https://github.com/goldberg10))
 * Andrew Martin ([@sublimino](https://github.com/sublimino)), ControlPlane
 * Karthik Gaekwad ([@iteration1](https://github.com/karthequian)), Oracle
-* Chase Pettet ([@chasemp](https://github.com/chasemp)), Wikimedia Foundation
+* Chase Pettet ([@chasemp](https://github.com/chasemp)), Mirantis
 * Jia Xuan ([@xuanjia](https://github.com/xuanjia)), China Mobile
 * John Morello ([@morellonet](https://github.com/morellonet)), Twistlock
 * Alban Crequy ([@alban](https://github.com/alban)), Kinvolk
@@ -200,6 +214,9 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Lewis Denham-Parry ([@denhamparry](https://github.com/denhamparry)), ControlPlane
 * John Hillegass ([@JohnHillegass](https://github.com/JohnHillegass)), Capital One
 * Chris Hughes ([@chughes216](https://github.com/chughes216)), Oteemo
+* Aradhna Chetal ([@achetal01](https://github.com/achetal01)), TIAA
+* Jon Zeolla ([@jonzeolla](https://github.com/jonzeolla)), Seiso
+* Diego Comas ([@dcomas](https://github.com/dcomas)), MessageBird
 
 </details>
 
