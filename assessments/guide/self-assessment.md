@@ -43,7 +43,7 @@ use the table below as an example:
 | Doc | url |
 | -- | -- |
 | Security file | https://my.security.file |
-| Default and optional configs | https://my.security.config |
+| Default and optional configs | https://example.org/config |
 
 ## Overview
 

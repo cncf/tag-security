@@ -164,7 +164,11 @@ selection and trade-offs (link to docs is acceptable).
 
 This can be pulled from the self-assessment
 * Compliance.  List any security standards or sub-sections the project is
-  already documented as meeting (PCI-DSS, COBIT, ISO, GDPR, etc.).
+  already documented as meeting (NIST 800-53, HiTrust, etc.).
+
+### Existing Audits
+
+If any audits already exist, link them here with the appropriate dates.
 
 ## Security Analysis
 
