@@ -19,7 +19,7 @@ From the original article [1]:
 
 ## Type of compromise
 
-Supply Chain Attack: "obtain push access, and write to the repository."
+Dev tooling: "obtain push access, and write to the repository."  Source code repositories are considered part of the developer tooling.
 
 
 ## References.
