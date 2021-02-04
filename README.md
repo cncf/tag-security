@@ -218,11 +218,11 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Jon Zeolla ([@jonzeolla](https://github.com/jonzeolla)), Seiso
 * Diego Comas ([@dcomas](https://github.com/dcomas)), MessageBird
 * Adith Sudhakar ([@asudhak](https://github.com/asudhak)), VMware
+* Muhammad Yuga Nugraha ([@myugan](https://github.com/myugan)), Practical DevSecOps
 
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
-
 
 
 # Additional information
