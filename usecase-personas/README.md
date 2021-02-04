@@ -10,8 +10,8 @@ real world use.
 
 ## References
 
-* SAFE Cloud Foundry Use Cases: https://goo.gl/4pmdqt
-* Administrators Bill of Rights: https://goo.gl/yQCxE8
+* Cloud Foundry Use Cases: https://goo.gl/4pmdqt
+* Google: [Administrators Bill of Rights](references/admin-bill-of-rights.md)
 
 Overview
 ============
