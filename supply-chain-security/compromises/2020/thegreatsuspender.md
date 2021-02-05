@@ -82,9 +82,11 @@ code **without users noticing**.
 The project can no longer be considered as **open source**, since the owner
 refuses to make the source open and available for review.
 
-"The Great Suspender" is still available to download at the time of writing this
-(January 29, 2021) on Microsoft Edge and Chrome web stores and it's possible
-that this saga will continue into the future.
+At the time of writing (February 5-th, 2021), ["The Great Suspender" was taken
+down on the Chrome Webstore](https://9to5google.com/2021/02/04/the-great-suspender-extension-has-been-removed-from-chrome-web-store-for-containing-malware/)
+and Google is actively disabling it for active users, but on the Microsoft Edge
+addons store it's still available to download and it's possible that this saga
+will continue.
 
 
 ## Type of compromise
