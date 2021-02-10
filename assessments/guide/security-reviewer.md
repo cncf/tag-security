@@ -7,11 +7,11 @@ often coordinating responses between the project and reviewers, ensuring
 communications are performed in a timely fashion as described in the
 [guide](./).  The lead reviewer is also responsible for coordinating
 and recruiting additional reviewers as appropriate, and managing the
-documentation updates (joint evaluation and
-final summary) to the project's evaluation folder.
+documentation updates (joint review and
+final summary) to the project's review folder.
 
 The lead reviewer is further tasked with performing the clarifying
-questions phase of the joint evaluation.  The lead reviewer may identify
+questions phase of the joint review.  The lead reviewer may identify
 another reviewer to perform this task  on their behalf; serving as their
 delegate or designee for that task.
 
@@ -53,7 +53,7 @@ they are required to adhere to the project's responsible disclosure process.
 If no process is documented, they must contact the [project lead](project-lead.md) directly
 regarding the issue, they may notify the lead security reviewer that they have
 notified the project of an issue as it may impact the content of the joint 
-evaluation or the timeframe for completing the review.
+review or the timeframe for completing the review.
 
 Engaging in a hands-on review is not an authorization to attack an operational 
 system.  All hands-on testing must be performed locally/within the control 
@@ -64,10 +64,10 @@ of the reviewer and with authorization.
 ### Required 
 
 Unless approved by SIG-Security chairs, the lead reviewer will have previously 
-performed a CNCF security evaluation.  Exemptions to this are reviewed case by 
+performed a CNCF security review.  Exemptions to this are reviewed case by 
 case upon established need by the CNCF SIG-Security chairs in order to bootstrap 
 the process as appropriate.  If a lead reviewer has not previously performed a 
-security evaluation, and the chairs concur with them fulfilling the role, it is 
+security review, and the chairs concur with them fulfilling the role, it is 
 encouraged that at least 1 additional reviewer have experience and be leveraged
 as the delegate or designee by the lead.
 
@@ -76,7 +76,7 @@ as the delegate or designee by the lead.
 It is preferred that reviewers have previous experience performing formal or informal
 software or security audits or assessments for a variety of organizations.  An
 ideal reviewer should also have been the recipient of CNCF project security
-evaluations for a software project they manage.
+reviews for a software project they manage.
 
 Reviewers interested in performing hands-on review should have experience in this
 area.  
@@ -89,12 +89,12 @@ skills to be a reviewer in the future.
 
 The level of effort for the reviewers is expected to be 10 hours per review.
 Correspondence, project availability, and clarification of a project's scope
-or other details in the ticketed request for a project's joint evaluation may
+or other details in the ticketed request for a project's joint review may
 require additional time. However, analysis is expected to be concluded in a
 few weeks -- usually 3 weeks.  Effort is expected to include and may not be
 limited to:
 * reviewing existing security documentation
-* reviewing ticketed request for project evaluation
+* reviewing ticketed request for project review
 * analysis of security assertions and assumptions
 * attending project presentation with Q&A
 * discussion via Slack or additional live Q&A sessions
@@ -102,7 +102,7 @@ limited to:
 ## Expectations
 
 GitHub issues are assigned to security reviewers. Security reviewers are
-expected to conduct an in-depth review described in the [security evaluation guide](./).
+expected to conduct an in-depth review described in the [security review guide](./).
  The lead security reviewer should seek the approval of the other
 participating security reviewers and at least 1 co-chair before merging.
 
@@ -114,7 +114,7 @@ of the community. Having clear guidelines for conflict of interest situations
 are important to prevent:
 - Individuals from intentionally or unintentionally promoting their own
 company's project
-- SIG-Security chairs and evaluation leads intentionally or
+- SIG-Security chairs and review leads intentionally or
 unintentionally limiting the participation of an individual unfairly by
 asserting conflict of interest
 - Security reviews being stalled while groups belabor on who should be allowed
@@ -128,12 +128,12 @@ soft conflicts:
 * It is not unusual for reviewers to have soft conflicts. The diversity of
 reviewers that are familiar with a project can provide a deeper insight
 together with a fresh set of eyes and is beneficial to the success of a security
-evaluation.
+review.
 
 All reviewers must provide a conflict declaration on the tracking issue to 
 indicate which hard or soft conflicts do, or do not exist when they volunteer
 to be a reviewer.  This is done by placing a comment on the issue associated 
-with the joint evaluation using the table provided below.
+with the joint review using the table provided below.
 
 #### Conflict of interest statement template:
 | Hard Conflicts | Y/N |
@@ -182,9 +182,9 @@ then 1 SIG-Security chair must approve the security review team. Reasons for
  accepting and rejecting conflicts should be documented.
 
 In most cases, the existence of a hard conflict will prevent a SIG member from 
-participating in the evaluation for which their hard conflict exists. Depending
- on the circumstances of the particular conflict, the joint evaluation, and the project,
- two chairs and the evaluation facilitator may determine if the hard conflict 
+participating in the review for which their hard conflict exists. Depending
+ on the circumstances of the particular conflict, the joint review, and the project,
+ two chairs and the review facilitator may determine if the hard conflict 
 may be waived.  Should this occur, the decision's justification will be documented
  to ensure it clearly depicts the circumstances for granting the waiver.
 
