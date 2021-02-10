@@ -2,7 +2,7 @@
 The Self-assessment is the initial document for projects to begin thinking about the
 security of the project, determining gaps in their security, and preparing any security
 documentation for their users. This document is ideal for projects currently in the
-CNCF **sandbox** as well as projects that are looking to receive a joint assessment and
+CNCF **sandbox** as well as projects that are looking to receive a joint review and
 currently in CNCF **incubation**.
 
 # Self-Assessment outline
@@ -49,7 +49,7 @@ use the table below as an example:
 
 One or two sentences describing the project -- something memorable and accurate
 that distinguishes your project to quickly orient readers who may be reviewing
-multiple assessments.
+multiple projects.
 
 ### Background
 
@@ -79,8 +79,8 @@ security, and general overview of [project] security practices, both for develop
 [project] as well as security of [project].
 
 This document provides the CNCF SIG-Security with an initial understanding of [project]
-to assist in a joint-evaluation, necessary for projects under incubation.  Taken
-together, this document and the joint-evaluation serve as a cornerstone for if and when
+to assist in a joint-review, necessary for projects under incubation.  Taken
+together, this document and the joint-review serve as a cornerstone for if and when
 [project] seeks graduation and is preparing for a security audit.
 
 ## Security functions and features

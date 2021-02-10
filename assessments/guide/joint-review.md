@@ -1,7 +1,7 @@
-# Joint-evaluation Outline
+# Joint-review Outline
 
-The joint-evaluation is built on top of the [self-assessment](self-assessment.md) to
-collaboratively evaluate the current security state of a project.  
+The joint-review is built on top of the [self-assessment](self-assessment.md) to
+collaboratively review the current security state of a project.  
 
 The burden is primarily on the proposing project to demonstrate it is secure in
 a manner that is understandable to the broader community.  The
@@ -16,7 +16,7 @@ flow of the review.
 Projects are encouraged to cross link additional supporting documents or details
 from their repo into the self-assessment.
 
-# Joint-evaluation of [Project]
+# Joint-review of [Project]
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ from their repo into the self-assessment.
   * [Background](#background)
   * [Goals](#goals)
   * [Non-goals](#non-goals)
-* [Joint-evaluation use](#joint-evaluation-use)
+* [Joint-review use](#joint-review-use)
 * [Intended use](#intended-use)
 * [Project design](#project-design)
   * [Functions and features](#functions-and-features)
@@ -90,19 +90,18 @@ be in scope (e.g., Flibble does not intend to stop a party with a key from stori
 an arbitrarily large amount of data, possibly incurring financial cost or 
 overwhelming the servers)
 
-## Joint-evaluation use
+## Joint-review use
 
-The joint-evaluation is initially created by the project team and then collaboratively
+The joint-review is initially created by the project team and then collaboratively
 developed with the [security reviewers](/security-reviewer.md) as part of the project's
-SIG-Security Evaluation (formerly called security assessment).  Information about the
-SIG-Security Evaluation can be found in the [CNCF SIG-Security Evaluation Process
-Guide](./README.md).
+SIG-Security Review (formerly called security assessment).  Information about the
+SIG-Security Review can be found in the [CNCF SIG-Security Review Process Guide](./README.md).
 
 This document does not intend to provide a security audit of [project] and is not
 intended to be used in lieu of a security audit.  This document provides users of
 [project] with a security focused understanding of [project] and when taken with the
 [self-assessment](self-assessment.md) provide the community with the SIG-Security
-Evaluation of the project.  Both of these documents may be used and references as part
+Review of the project.  Both of these documents may be used and references as part
 of a security audit.
 
 ## Intended Use
@@ -265,7 +264,7 @@ This should provide links and very brief summary of any closed security issues
  or fixed vulnerabilities for the project (with or without CVE).  If the 
 project does not have any closed or fixed vulnerabilities use the below text:
 
-> At the time of the joint evaluation, [project] did not have known security issues with a closed state or any known vulnerabilities that were fixed.
+> At the time of the joint review, [project] did not have known security issues with a closed state or any known vulnerabilities that were fixed.
 
 ## Hands-on review
 

@@ -13,11 +13,11 @@ Project team:  _list name and github handle as appropriate_
 
 ## Background
 
-*Brief synopsys of the project, problem space, how the project solves the problem, can be pulled from the joint evaluation.*
+*Brief synopsys of the project, problem space, how the project solves the problem, can be pulled from the joint review.*
 
 ### Maturity
 
-*Use cases, integrations, etc. bulleted, should be available in the joint evaluation.*
+*Use cases, integrations, etc. bulleted, should be available in the joint review.*
 
 ## Summary
 
@@ -44,4 +44,4 @@ _refer to the existing readmes for other projects, such as [SPIFFE/SPIRE](https:
 * 
 * 
 
-Tracking issue: *link to issue for evaluation*
+Tracking issue: *link to issue for review*
