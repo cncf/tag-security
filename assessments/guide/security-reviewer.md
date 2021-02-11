@@ -7,8 +7,8 @@ often coordinating responses between the project and reviewers, ensuring
 communications are performed in a timely fashion as described in the
 [guide](./).  The lead reviewer is also responsible for coordinating
 and recruiting additional reviewers as appropriate, and managing the
-documentation updates (joint review and
-final summary) to the project's review folder.
+documentation updates (joint review and final summary) to the project's
+ review folder.
 
 The lead reviewer is further tasked with performing the clarifying
 questions phase of the joint review.  The lead reviewer may identify
@@ -160,7 +160,7 @@ so the new conflict may be consulted with the facilitator and/or chairs.
 ## Asserting conflict free readiness
 
 The lead security reviewer has the responsibility of ensuring a balanced review,
-and as part of that before kicking off the assessment must:
+and as part of that before kicking off the review must:
 * Check that all reviewers have conflict-of-interest declarations,
 * Provide their own declaration of any potential conflict-of-interest
 (or lack thereof),
@@ -169,16 +169,16 @@ and as part of that before kicking off the assessment must:
   1. They have reviewed all conflict-of-interest declarations from the reviewers;
   2. There are no hard-conflicts present without a waiver;
   3. They believe that the review team is able to provide a balanced and fair
-  assessment
+  review
 
 Update the above assertion if a new conflict-of-interest becomes known during
-the course of the assessment.
+the course of the review.
 
-The Security Evaluation Facilitator or a SIG-Security chair must review the 
+The Security Review Facilitator or a SIG-Security chair must review the 
 Lead Security Reviewer conflict-of-interest assertion.
 
 If any hard conflicts, or multiple significant soft conflicts, are presented,
-then 1 SIG-Security chair must approve the security review team. Reasons for
+then a SIG-Security chair must approve the security review team. Reasons for
  accepting and rejecting conflicts should be documented.
 
 In most cases, the existence of a hard conflict will prevent a SIG member from 

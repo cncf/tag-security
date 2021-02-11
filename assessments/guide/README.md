@@ -82,7 +82,7 @@ location to manage the effort.
  joint-review.  If ready, a channel will be created to coordinate the
 activities.
 
-#### Project leverages self-assessment to draft [joint review](joint-review)
+#### Project leverages self-assessment to draft [joint review](joint-review.md)
 
 The project uses the self-assessment created from the sandbox phase to draft the
 joint review.  The joint review expands upon content of the
@@ -105,7 +105,7 @@ assigned, and facilitate the process.
 
 In order to remediate unfair advantage or ethical issues all reviewers are
 required to provide a statement indicating all hard and soft conflicts they
-maintain prior starting the security assessment.
+maintain prior starting the security review.
    * **Lead security reviewer and additional security reviewers** comment any
      conflict of interest in the project's review ticket using the below
 format:
@@ -129,7 +129,7 @@ format:
      escalate any conflict concerns, hard conflicts or multiple soft conflicts,
 to the **security review facilitator** for concurrence to proceed or if a
 reviewer is ineligible to participate.  Specific instructions are found on
-the [security reviewer](security-reviewer) page.
+the [security reviewer](security-reviewer.md) page.
 
 #### Clarifying questions phase
 
@@ -164,7 +164,7 @@ review, the hands-on review is included in this step.
    * **Security reviewers and project lead/pocs** ensure all reviewer
      questions, comments, and feedback are addressed and finalize the joint review
    * **Lead security reviewer or their designee,** with the assistance of the 
-**security reviewers** create a [draft summary document](joint-readme-template) to capture existing 
+**security reviewers** create a [draft summary document](joint-readme-template.md) to capture existing 
 comments, feedback, and recommendations prior to the presentation.
 
 #### Presentation
@@ -174,7 +174,7 @@ its intent, what it accomplishes, and provides the opportunity for additional
 questions and feedback to the reviewers and project.
    * Project lead presents to SIG during SIG meeting
    * Presentation is recorded as part of standard SIG process
-   * Presentation slides are linked in the assessments/projects/project-name/
+   * Presentation slides are linked in the /assessments/projects/project-name/
 
 #### Final summary 
 
@@ -214,5 +214,4 @@ reviewers:
 * Project lead or lead security reviewer may pause the process where a delay of
   over a week cannot be accommodated by the review team. Simply close the github
 issue with a note to SIG co-chairs.
-
 
