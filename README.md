@@ -221,6 +221,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Diego Comas ([@dcomas](https://github.com/dcomas)), MessageBird
 * Adith Sudhakar ([@asudhak](https://github.com/asudhak)), VMware
 * Muhammad Yuga Nugraha ([@myugan](https://github.com/myugan)), Practical DevSecOps
+* John Kinsella ([@jlk](https://github.com/jlk)), Accurics
 
 </details>
 
