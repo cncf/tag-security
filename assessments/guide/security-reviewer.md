@@ -154,10 +154,10 @@ with the joint review using the table provided below.
 ### Managing conflicts
 
 Should a conflict arise during the time of the assessment, reviewers should notify
- the lead security reviewer when they become aware of the potential conflict, 
+the lead security reviewer when they become aware of the potential conflict, 
 so the new conflict may be consulted with the facilitator and/or chairs.
 
-## Asserting conflict free readiness
+## Asserting team readiness to conduct a balanced review
 
 The lead security reviewer has the responsibility of ensuring a balanced review,
 and as part of that before kicking off the review must:

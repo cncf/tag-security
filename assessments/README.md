@@ -27,12 +27,12 @@ consuming part of the security review. The CNCF security review, hereafter
 security information & assist in streamlining internal and external security
 reviews in multiple ways:
 
-   * Consistent documentation reduces review time
-   * Established baseline of security-relevant information, reducing Q&A
+   * Consistent documentation reduces review time.
+   * Established baseline of security-relevant information reduced Q&A.
    * Clear rubric for security profile enables organizations to align their risk
      profile with the project’s risk profile and effectively allocate resources
-     (for review and needed project contribution)
-   * Structured metadata allows for navigation, grouping and cross-linking
+     (for review and needed project contribution).
+   * Structured metadata allows for navigation, grouping and cross-linking.
 
 We expect that this process will raise awareness of how specific open source
 projects affect the security of a cloud native system; however, separate
@@ -54,55 +54,57 @@ Due to the nature and time frame for the analysis, *this review is not meant to
 subsume the need for a professional security audit of the code*.  Audits of
 implementation-specific vulnerabilities, improper deployment configurations, etc.
 are not in scope of a security review.  A security review is intended to
-uncover design flaws, enhance the security mindset of the project, and to obtain a
- clear, comprehensive articulation of the project's design goals and aspirations 
-while documenting the intended security properties enforced, fulfilled, or executed
- by said project.
+uncover design flaws, enhance the security mindset of the project, and to obtain
+a clear, comprehensive articulation of the project's design goals and 
+aspirations while documenting the intended security properties enforced,
+fulfilled, or executed by said project.
 
 ### Benefits of a security review
 
-Having your project under go the security review process is fundamental for
+Having your project undergo the security review process is a key step toward
 eliminating security risks.  It allows one to build security as an integral part
- of a system and to maintain that security over time.
+of a system and to maintain that security over time.
 
-Security assessments have many benefits:
-* A measurable security baseline from that point onward
-* Exposure and analysis of security issues, including the risk they introduce
-* Validation of security awareness and culture among the developers for building secured projects
-* A documented procedure, for future compliance, audit, or internal assessmen
+Security reviews have many benefits, creating:
+* a measurable security baseline from that point onward,
+* exposure and analysis of security issues, including the risk they introduce,
+* validation of security awareness and culture among the developers for building secured projects, and
+* a documented procedure, for future compliance, audit, or internal assessment
 
 ### Components of the security review package
 
 A complete security review package primarily consists of the following
 items:
-* [Self-assessment](guide/self-assessment).  An assessment by the project of the project's current
-  security statue. 
+* [Self-assessment](guide/self-assessment).  A written assessment by the project
+of the project's current security statue. 
 * [Joint-review](guide/joint-review). A joint review by both the [security
-  reviewers](guide/security-reviewer) and the project team that includes parts
+reviewers](guide/security-reviewer) and the project team that includes parts
 of the self-assessment and expands to include a more comprehensive consideration
 of the project's security health.  This artifact, coupled with self-assessment
 provide invaluable information for security auditors as well as end-users.
 * Presentation. A security focused presentation of the project by the project
   team,
-* [Evaluation README.md](guide/joint-readme-template). This readme is created at the end of the joint
-  review by the security reviewers to provide a high level summary of the
-joint review and is considered when reviewing for due diligence.
+* [Review README.md](guide/joint-readme-template). This readme is created at the
+end of the joint review by the security reviewers to provide a high level
+summary of the joint review and is considered when reviewing for due diligence.
 
 ### CNCF and TOC process alignment
 
-**Sandbox** The _self-assessment artifact_ is first created while the project is in the
-**sandbox**.  It is the starting point for projects to consider their security health.
+**Sandbox** The _self-assessment artifact_ is first created while the project
+is in the **sandbox**.  It is the starting point for projects to consider their security health.
 
-**Incubation** If a self-assessment artifact was not created during sandbox, it may be
- created as part of **incubation**.  It is the starting point for projects to consider 
-their security health.  The _joint-review artifact_ is created during **incubation**.
-It leverages the information from the self-assessment and assists projects in becoming
-more security mature.
+**Incubation** If a self-assessment artifact was not created during sandbox,
+it may be created as part of **incubation**.  It is the starting point for 
+projects to consider their security health.  The _joint-review artifact_ 
+must be created during **incubation** (if not before).
+It leverages the information from the self-assessment and assists projects in 
+becoming more security mature and increasing awareness of their security
+features across the community.
 
-**Graduation** If the CNCF or the project chooses to undergo a security audit, the 
-information from the self-assessment and joint-review are incredibly useful for
-auditors.  Both of these artifacts also assist security teams with a comprehensive
-understanding of the threat and risk posture of the project.
+**Graduation** When the project undergoes a CNCF security audit,
+the information from the self-assessment and joint-review are incredibly useful
+for auditors.  Both of these artifacts also assist security teams with a
+comprehensive understanding of the threat and risk posture of the project.
 
 ### Use of a completed package
 
@@ -134,7 +136,7 @@ and other members of the SIG.
 * If you are interested in a security review for your project and you are
   willing to volunteer as [project lead](guide/project-lead.md) or you are a
   SIG-Security member and want to recommend a project to review, please [file an
-  issue](https://github.com/cncf/sig-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
+  issue](https://github.com/cncf/sig-security/issues/new?template=joint-review.md)
 
 See [security review guide](guide) for more details.  To understand how we
 prioritize reviews, see [intake process](./intake-process.md).
