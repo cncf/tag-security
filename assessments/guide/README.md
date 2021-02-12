@@ -6,12 +6,12 @@ should be reviewed.
 
 * [Roles](#roles)
 * [Security review package steps](#security-review-package-steps)
-  * [Sandbox projects](#sandbox-projects)
+  * [New projects](#new-projects)
     1. [Self-assessment](#complete-self-assessment)
     2. [Create issue](#create-a-presentation-issue)
     3. [Present](#present-the-project-and-self-assessment)
     4. [Submit PR](#submit-a-PR-to-include-the-self-assessment-in-the-repo)
-  * [Incubating projects](#incubating-projects)
+  * [Growing projects](#growing-projects)
     1. [Create issue](#create-tracking-issue)
     2. [Draft joint review](#project-leverages-self-assessment-to-draft-joint-review)
     3. [Reviewers assigned](#project-provides-the-joint-review-and-reviewers-are-assigned)
@@ -34,7 +34,9 @@ The security review package is developed over time as projects grow in
 maturity and advance through the CNCF.  The below section breaks the creation of
 the package into steps that mirror the [current TOC process stages](https://github.com/cncf/toc/tree/master/process).
 
-### Sandbox projects
+### New projects
+
+New projects are projects generally defined as very early on in their maturity.  They may have an innovators pool of users.
 
 Note: Responsible roles for specific items are in **bold**
 
@@ -64,7 +66,9 @@ After the presentation, the **project lead** or their designee should submit a P
 citing the presentation issue number to add the self-assessment to [assessments/projects](https://github.com/cncf/sig-security/tree/master/assessments/projects) under its 
 own folder.  The ticket may then be closed after merged in.
 
-### Incubating projects
+### Growing projects
+
+Growing projects are likely to have early adopters, having gone beyond innovators as their sole user base.
 
 Note: Responsible roles for specific items are in **bold**. If an incubation
 project did not complete a self-assessment during sandbox, they are recommended
