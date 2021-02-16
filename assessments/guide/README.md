@@ -189,7 +189,7 @@ version or release the joint review covered to better enable tracking for update
 of the review.
    * **Lead security reviewer** creates a branch labeled WIP and provides
      branch information to additional reviewers.
-   * **Lead security reviewer** places the summary into branch for finalization
+   * **Lead security reviewer** places the [summary](joint-readme-template.md) into branch for finalization
    * **Reviewers** either comment or provide changes (feedback and
      recommendations) to the branch given and submit PR
    * Either **project lead or reviewers** may request further WG discussion
@@ -218,4 +218,3 @@ reviewers:
 * Project lead or lead security reviewer may pause the process where a delay of
   over a week cannot be accommodated by the review team. Simply close the github
 issue with a note to SIG co-chairs.
-
