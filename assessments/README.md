@@ -93,7 +93,12 @@ becoming more security mature and increasing awareness of their security
 features across the community.
 
 **Graduation** When the project undergoes a CNCF security audit,
-the information from the self-assessment and joint-review are incredibly useful
-for auditors.  Both of these artifacts also assist security teams with a
-comprehensive understanding of the threat and risk posture of the project.
+the information from the self-assessment and joint-review provide:
+* what security concerns the project addresses and the what extent,
+* security concerns the project does not address,
+* gaps that occur in scope and are planned to be addressed.
 
+Both of these artifacts assist security teams with a comprehensive understanding 
+of the threat and risk posture of the project.  Having this information makes 
+the process of a security audit focussed and provides a meaningful outcome for
+ the project and its success.
