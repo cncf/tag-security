@@ -99,37 +99,37 @@ Shared with CNCF Community
         - [Credential Management Cycle](#credential-management-cycle)
       - [Availability](#availability)
         - [Denial of Service (DoS) & Distributed Denial of Service (DDoS)](#denial-of-service-dos--distributed-denial-of-service-ddos)
-    - [Security Assurance](#security-assurance)
-  - [Threat Modeling](#threat-modeling)
-    - [End-to-end architecture](#end-to-end-architecture)
-    - [Threat Identification](#threat-identification)
-  - [Threat Intelligence](#threat-intelligence)
-  - [Incident Response](#incident-response)
-  - [Security Stack](#security-stack)
-    - [Environment](#environment)
-      - [Pre (Workload) Flight Security Tools](#pre-workload-flight-security-tools)
-        - [Compute & Node Checks](#compute--node-checks)
-        - [Run Contexts](#run-contexts)
-      - [In-Flight Security Tools](#in-flight-security-tools)
-        - [Workload & Host Runtime Security](#workload--host-runtime-security)
-    - [Zero Trust Architecture](#zero-trust-architecture)
-    - [Least Privilege](#least-privilege)
-    - [Roles and Responsibilities](#roles-and-responsibilities)
-    - [Compliance](#compliance)
-  - [Regulatory Audits](#regulatory-audits)
-    - [Personas and Use Cases](#personas-and-use-cases)
-  - [Industries](#industries)
-    - [Enterprise](#enterprise)
-    - [Microbusiness](#microbusiness)
-    - [Finance](#finance)
-    - [Healthcare](#healthcare)
-    - [Academia and Education](#academia-and-education)
-    - [Public Sector](#public-sector)
-    - [Evolution of Cloud Native Security](#evolution-of-cloud-native-security)
-    - [Conclusion](#conclusion-1)
-    - [Acronyms and Glossary](#acronyms-and-glossary)
-    - [References](#references)
-    - [Acknowledgements](#acknowledgements)
+  - [Security Assurance](#security-assurance)
+    - [Threat Modeling](#threat-modeling)
+      - [End-to-end architecture](#end-to-end-architecture)
+      - [Threat Identification](#threat-identification)
+    - [Threat Intelligence](#threat-intelligence)
+    - [Incident Response](#incident-response)
+    - [Security Stack](#security-stack)
+      - [Environment](#environment)
+        - [Pre (Workload) Flight Security Tools](#pre-workload-flight-security-tools)
+          - [Compute & Node Checks](#compute--node-checks)
+          - [Run Contexts](#run-contexts)
+        - [In-Flight Security Tools](#in-flight-security-tools)
+          - [Workload & Host Runtime Security](#workload--host-runtime-security)
+      - [Zero Trust Architecture](#zero-trust-architecture)
+      - [Least Privilege](#least-privilege)
+      - [Roles and Responsibilities](#roles-and-responsibilities)
+  - [Compliance](#compliance)
+    - [Regulatory Audits](#regulatory-audits)
+      - [Personas and Use Cases](#personas-and-use-cases)
+    - [Industries](#industries)
+      - [Enterprise](#enterprise)
+      - [Microbusiness](#microbusiness)
+      - [Finance](#finance)
+      - [Healthcare](#healthcare)
+      - [Academia and Education](#academia-and-education)
+      - [Public Sector](#public-sector)
+      - [Evolution of Cloud Native Security](#evolution-of-cloud-native-security)
+      - [Conclusion](#conclusion-1)
+      - [Acronyms and Glossary](#acronyms-and-glossary)
+- [References](#references)
+- [Acknowledgements](#acknowledgements)
 
 # Executive Summary
 
@@ -702,7 +702,11 @@ Many financial, health, government, and other entities need to comply with a spe
 
 ### Personas and Use Cases
 
-The focus is on security, protection, detection, and auto-response where ever possible. It is not necessarily development tooling alone, but security tooling that integrates transparently into the development process to enforce security policies where fast feedback and most immediate actions to remediate can occur. For specific information on cloud native security use cases refer to the [SIG-Security's use cases listing](https://github.com/cncf/sig-security/blob/master/usecases.md).
+The focus is on security, protection, detection, and auto-response where ever possible. 
+It is not necessarily development tooling alone, but security tooling that integrates 
+transparently into the development process to enforce security policies where fast 
+feedback and most immediate actions to remediate can occur. For specific information
+ on cloud native security use cases refer to the [SIG-Security's use cases listing](https://github.com/cncf/sig-security/usecase-personas/).
 
 ## Industries
 
