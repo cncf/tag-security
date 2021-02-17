@@ -16,7 +16,7 @@ Note:  SIG-Security was rebranded from SAFE working group. The below roadmap inc
    * Explore the problem space of the working group
    * Investigating what is happening in the community today with respect to security for cloud native applications and infrastructure
    * [Presentations](issues?utf8=%E2%9C%93&q=is%3Aclosed+is%3Aissue+label%3Ausecase-presentation+) from members & guests
-   * Describe [personas & use cases](safe_usecases.md)
+   * Describe [personas & use cases](usecase-personas/)
    * Draft a picture or set of categories that will serve as a starting point for an evaluation framework
    * Solicit real world use cases and practices (and compensating controls) for projects
 3. **Describe** the landscape
