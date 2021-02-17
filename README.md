@@ -222,7 +222,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Adith Sudhakar ([@asudhak](https://github.com/asudhak)), VMware
 * Muhammad Yuga Nugraha ([@myugan](https://github.com/myugan)), Practical DevSecOps
 * John Kinsella ([@jlk](https://github.com/jlk)), Accurics
-
+* Matt Jarvis ([@mattj-io](https://github.com/mattj-io)), Snyk
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
