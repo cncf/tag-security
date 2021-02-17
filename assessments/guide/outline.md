@@ -41,7 +41,7 @@ financial cost or overwhelming the servers)
 
 ## Intended Use
 
-* Target Users and Use Cases. Provide a mapping from [standard personas](../../usecases.md)
+* Target Users and Use Cases. Provide a mapping from [standard personas](https://github.com/cncf/sig-security/usecase-personas/)
 to the nomenclature used in your project docs (which you should then use
 consistently for the remainder of this document).  Describe the scenarios in
 which the project is expected to be used. This must be specific enough to
