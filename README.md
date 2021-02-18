@@ -223,6 +223,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Muhammad Yuga Nugraha ([@myugan](https://github.com/myugan)), Practical DevSecOps
 * John Kinsella ([@jlk](https://github.com/jlk)), Accurics
 * Matt Jarvis ([@mattj-io](https://github.com/mattj-io)), Snyk
+* Or Azarzar ([@azarzar15](https://github.com/azarzar15)), Lightspin
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
