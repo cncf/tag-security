@@ -11,6 +11,7 @@ repository:
   homepage: https://cncf.io/projects
   
   # Collaborators: give specific users access to this repository.
+  # Note: changing this file will update the users visible in Github UI 
   # see /governance/roles.md for details on write access policy
   # note that the permissions below may provide wider access than needed for
   # a specific role, and we trust these individuals to act according to their
