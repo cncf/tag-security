@@ -17,6 +17,17 @@ The following is the current listing of member roles:
 All members are identified in the SIG [README](/readme.md), with annotations
 where they hold an additional role. 
 
+Members fulfilling any Roles in SIG-Security are responsible for understanding
+and abiding the by the [governance](./) and policies defined in this group.
+This commitment and execution of understanding includes not only commits to
+the repo, but also to any approvals or direction required by their Role.
+
+**Write access to the repo**: Where applicable, the following roles define
+specific areas of the repo or actions on issues where changes require write
+access. In any case, governance is not enforced by [access permissions](github.md), but
+rather by members who are expected to thoughtfully consider their actions to
+support the group. 
+
 ## Role of members
 * The primary role of a member is to contribute expertise to the group.
 * To add yourself as a member, submit a Pull Request (PR) adding yourself
@@ -128,25 +139,6 @@ New roles in this section are typically defined after someone has acted in
 that role for some time informally, then proposed as an on-going role by Pull
 Request which must be approved by a majority of Chairs.  Process clarifications
 are welcome and PRs can be approved by any single Chair.
-
-Members fulfilling any Roles in SIG-Security are responsible for understanding
-and abiding the by the [governance](./) and policies defined in this group.
-This commitment and execution of understanding includes not only commits to
-the repo, but also to any approvals or direction required by their Role.
-
-**Write access to the repo**: Where applicable, the following roles define
-specific areas of the repo or actions on issues where changes require write
-access. In any case, governance is not enforced by access permissions, but
-rather by members who are expected to thoughtfully consider their actions to
-support the group.
-
-**Github permissions note**: Facilitation roles are identified in
-[github settings](/.github/settings.yaml) which grants Github permissions.
-Pull Requests to appoint members to new Roles must be approved by at least one
-Chair, along with whatever additional process, if any, is described in this
-document. When a member has multiple roles, the additional role that does not
-require additional access are noted in a comment. PRs to remove someone from
-a role must be approved by the person themselves or a majority of Chairs.
 
 ### Security assessment facilitator
 
