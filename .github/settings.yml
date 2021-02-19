@@ -20,25 +20,37 @@ collaborators:
   - username: ultrasaurus
     permission: admin
 
-  - username: dshaw
+  - username: TheFoxAtWork
     permission: admin
 
   - username: pragashj
     permission: admin
 
-    # Triage Team
-    # manage issues (edit labels, occasionally edit)
-  - username: lumjjb
+    # Technical Leads
+  - username: ashutosh-narkar
     permission: push
 
-  - username: hannibalhuang
+  - username: anvega
     permission: push
+    
+  - username: achetal01
+    permission: push
+
+  - username: lumjjb
+    permission: push
+    
+  - username: JustinCappos
+    permission: push
+    
+    # Triage Team
+    # manage issues (edit labels, occasionally edit)
+    # needs "push" permission, even though triage team should not merge PRs
+
     
     # Security Assessment Facilitator
     # merge PRs in /assesssments according to guidelines
     # triage related issues
-  - username: JustinCappos
-    permission: push
+    # JustinCappos
 
     # Security Reviewers
     # issues may be assigned, edited by assignee
