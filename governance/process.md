@@ -1,3 +1,11 @@
+# Proposals, projects, and team
+
+In addition to the TOC driven activities of the SIG, members may propose
+projects or streams work that are of interest and importance to the community.
+These proposals may be converted to a project with a defined set of deliverables
+or a team to focus on a larger stream of work that may involve one or more
+projects and activities.
+
 ## Creating, discussing and accepting proposals
 
 Each proposal is unique and might deviate slightly from the process below. For
@@ -14,28 +22,32 @@ that outlines the problem to be solved. If possible, include:
     * The scope of the work required
 
 1. **Ask the group for collaboration:** Rather than immediately beginning work
-on a solution, bring the issue up for discussion at a meeting, explain it, and
-ask if others are interested in collaborating. This ensures that solutions are
-created with multiple perspectives. The outcome of this conversation will be:
+on a solution, add the issue to a meeting agenda and bring the issue up for 
+discussion at the scheduled meeting, explain it, and ask if others are interested
+ in collaborating. This ensures that solutions are created with multiple 
+perspectives as well as verifies there is community interest in pursuing the
+proposal. The outcome of this conversation will be:
     * The group agrees that this problem is appropriate scope
   Group.
     * Criteria for completion are added to the issue that include a "definition
   of done", ideally with validation by the target audience. Also note in the
-  issue if it will be a time-bounded or on-going project.
-    * At least one person is tasked with creating a solution
-    * Those interested in working on the solution either begin work or set up
-  time or expectations with others to begin work.
-    * A Chair or Technical Lead agrees to act as Representative, which means
+  issue if it will be a time-bounded project with a defined deliverable or and 
+  on-going stream.
+    * At least one person is recommended or nominated as a potential lead.
+    * Those interested in working on the solution comment on the issue so
+      coordination may begin and set up time or expectations with others to 
+    begin work.
+    * A Chair or Technical Lead agrees to act as a "sponsor", which means
     they will take responsibility to ensure that progress is tracked and
     that outcomes are reported to the group or propose closing the
     issue if there is not sufficent activity to sustain the effort.
 
 1. **Accept or close the proposal.** Accepted proposals will be assigned
-to the Representative and the active members working on the project should
-be noted in the issue, along with information about expected duration and
-milestones. If a proposal is closed, it should note the reason and link to
+to the Sponsor and the Project or Team Lead working on the effort, with members
+interested in contributing noted in the issue, along with information about 
+expected duration, milestones, scope, and anticipated deliverables (for
+projects).  If a proposal is closed, it should note the reason and link to
 discussion minutes.
-
 
 ### Active projects
 
@@ -46,7 +58,8 @@ both in the Issue and reported on periodically in meetings.
   another member of the group who can attend the meeting is familiar with
   progress in case questions arise.
     * It's strongly encouraged to include a checklist in the Isssue
-  that shows what has been done and what work remains.
+  that shows what has been done and what work remains and should include a
+retrospective as appropriate.
 
 1. **Pull Requests.** Completed work should result in a Pull Request (PR).
 At minimum, an update to one of the group documents or roadmap indicating that
@@ -69,10 +82,11 @@ from each company should vote. Members will vote by leaving a comment in the
 Pull Request to indicate their vote for or against. Members will have a week
 after the vote begins to leave their vote. Quorum is taken to be 2/3 the number
 of companies who have been active in the past month (via issue comment or 
-meeting attendace as recorded in the public minutes).
+meeting attendance as recorded in the public minutes).
 
-
-1. **Support the project going forward.** Some projects require ongoing
-support. When work is completed, the body of the Pull Request should specify if
-it's expected to require on-going support and if so, who will maintain it.ccept
+1. **Support the project going forward.** Some projects require sustainment and
+   maintenance to ensure continued relevance for the community.  When work is 
+completed, the body of the Pull Request should specify if it's expected to require
+ on-going support and if so, document guidelines for contributions and
+maintenance in the README for the project artifact's folder.  
 
