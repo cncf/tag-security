@@ -13,10 +13,10 @@
 # Tech lead, Chair Emeritus roles should exercise discretion in defering final
 # approval for a PR to a co-chair. 
 # This includes major edits or new introductions to the repository.
-*       @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos
+*       @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos @achetal01 @ashutosh-narkar @anvega
 
 # README.md Owners
-/README.md @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos @achetal01 @ashutosh-narkar @anvega
+/README.md @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos
 
 # Security assessments
 /assessments/ @JustinCappos @ultrasaurus @pragashj @TheFoxAtWork
