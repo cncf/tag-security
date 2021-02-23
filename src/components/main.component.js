@@ -158,14 +158,18 @@ export default class MainPage extends Component {
     return (
       <div>
         <div className="header">
+        
         <h1>Cloud Native Security Map</h1>
-
         <br/>
         <ButtonGroup aria-label="Basic example">
           <Button variant="primary" onClick={this.upCurrent}>Back</Button>
           <Button variant="primary" onClick={()=>this.setCurrent("/root/")}>Top</Button>
         </ButtonGroup>
-        <br/><br/>
+        <br/>
+        <br/>
+        <div>Current Path: {this.state.current.slice("/root".length)}</div>
+        <br/>
+        <br/>
         </div>
 
         <h3>{this.state.title}</h3>
