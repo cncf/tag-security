@@ -5,6 +5,9 @@ import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
+import CardColumns from 'react-bootstrap/CardColumns';
+
+
 import ListGroup from 'react-bootstrap/ListGroup';
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -237,10 +240,9 @@ export default class MainPage extends Component {
 
         <h3>{this.state.title}</h3>
         <p>{this.state.text}</p>
-        <CardDeck>
+        <CardColumns>
         {this.getCategoryTopics()}
-
-        </CardDeck>
+        </CardColumns>
 
       </div>
     )

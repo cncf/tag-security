@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -7,6 +6,7 @@ import MainPage from "./components/main.component";
 
 
 function App() {
+  document.title = "Cloud Native Security Map";
   return (
     <Router>
        <div className="container">
