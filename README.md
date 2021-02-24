@@ -224,6 +224,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * John Kinsella ([@jlk](https://github.com/jlk)), Accurics
 * Matt Jarvis ([@mattj-io](https://github.com/mattj-io)), Snyk
 * Or Azarzar ([@azarzar15](https://github.com/azarzar15)), Lightspin
+* Alex Floyd Marshall ([@apmarshall](https://github.com/apmarshall))
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
