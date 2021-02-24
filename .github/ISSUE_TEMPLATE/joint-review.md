@@ -1,8 +1,8 @@
 ---
-name: Security Assessment
-about: To request a security assessment or track progress on active assessment
-title: "[Assessment] Project Name"
-labels: assessment
+name: Joint security review
+about: To request a joint review or track progress on active review
+title: "[Security Review] Project Name"
+labels: 
 assignees: ''
 
 ---
@@ -11,17 +11,17 @@ Project Name:
 
 Github URL:
 
-<!-- For project proposals looking to go through SIG-assessment, please indicate the stage for review (sandbox, incubation/graduation and link to the TOC issue, else indicate NA
+<!-- For project proposals looking to go through SIG review, please indicate the stage of the project (sandbox, incubation/graduation and link to the TOC issue, else indicate NA
 
 For example, https://github.com/cncf/toc/issues/368 (incubation)
 -->
-Project proposal stage and issue (NA if not applicable):
+CNCF project stage and issue (NA if not applicable):
 
 Security Provider: yes/no (e.g. Is the primary function of the project to support the security of an integrating system?)
 
 - [ ] Identify team
    - [ ] Project security lead
-   - [ ] Lead Security Reviewer
+   - [ ] Lead security reviewer
    - [ ] 1 or more additional reviewer(s)
    - [ ] Every reviewer has read [security reviewer guidelines](https://github.com/cncf/sig-security/blob/master/assessments/guide/security-reviewer.md) and stated declaration of conflict
    - [ ] Sign off by 2 chairs on reviewer conflicts
