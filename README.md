@@ -225,6 +225,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Matt Jarvis ([@mattj-io](https://github.com/mattj-io)), Snyk
 * Or Azarzar ([@azarzar15](https://github.com/azarzar15)), Lightspin
 * Alex Floyd Marshall ([@apmarshall](https://github.com/apmarshall))
+* Alok Raj ([@ak-secops](https://github.com/ak-secops)), XenonStack
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
