@@ -2,12 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 //import { Card, Button, Img } from "bootstrap/dist/css/bootstrap.min.css";
 import Button from 'react-bootstrap/Button';
-import ButtonGroup from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Card from 'react-bootstrap/Card';
-import CardDeck from 'react-bootstrap/CardDeck';
 import CardColumns from 'react-bootstrap/CardColumns';
-
-
 import ListGroup from 'react-bootstrap/ListGroup';
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -19,9 +16,9 @@ const Topic = props =>{
   if (typeof(groups)!=="undefined" && groups.length > 0) {
     listGroup = (
       <ListGroup variant="flush">
-        {groups.map(v => <ListGroup.Item key={v} onClick={()=>props.setCurrent(props.current + props.topic.id+ "/"+ v + "/" )}>
+        {groups.map(v => <ListGroup.Item key={v} onClick={()=>props.setCurrent(props.current + props.topic.id+ "/"+ v + "/" )}><Link to="#">
           {props.topics[v].title}
-          </ListGroup.Item>)}
+          </Link></ListGroup.Item>)}
       </ListGroup>
     )
   }
@@ -30,8 +27,9 @@ const Topic = props =>{
  return (
   <Card name={props.topic.title}>
     <Card.Body >
-      <Card.Title onClick={()=>props.setCurrent(props.current + props.topic.id+ "/")}>{props.topic.title}</Card.Title>
-      
+      <Link to="#">
+        <Card.Title onClick={()=>props.setCurrent(props.current + props.topic.id+ "/")}>{props.topic.title}</Card.Title>
+      </Link>
 
       <Card.Text>
       {props.topic.text}
@@ -227,7 +225,7 @@ export default class MainPage extends Component {
         
         <h1>Cloud Native Security Map</h1>
         <br/>
-        <ButtonGroup aria-label="Basic example">
+        <ButtonGroup>
           <Button variant="primary" onClick={this.upCurrent}>Back</Button>
           <Button variant="primary" onClick={()=>this.setCurrent("/root/")}>Top</Button>
         </ButtonGroup>
