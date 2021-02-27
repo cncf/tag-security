@@ -1,5 +1,7 @@
 # **云原生安全白皮书中文版**
 
+参考文献：[CNCF Security Whitepaper v1.1](https://github.com/cncf/sig-security/blob/017e77ff380e303d80adb78e60a1f262e80df0e8/security-whitepaper/cloud-native-security-whitepaper.md)
+
 ## 索引
 
 [TOC]
