@@ -226,6 +226,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Or Azarzar ([@azarzar15](https://github.com/azarzar15)), Lightspin
 * Alex Floyd Marshall ([@apmarshall](https://github.com/apmarshall))
 * Alok Raj ([@ak-secops](https://github.com/ak-secops)), XenonStack
+* Abhishek Singh ([@araalinetworks](https://github.com/araalinetworks)), Araali Networks
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
