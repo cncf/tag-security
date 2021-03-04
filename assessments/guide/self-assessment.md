@@ -29,11 +29,9 @@ A table at the top for quick reference information, later used for indexing.
 |   |  |
 | -- | -- |
 | Software | A link to the software’s repository.  |
-| Security Provider | Yes or No. Is the primary function of the project to support the 
-security of an integrating system?  |
+| Security Provider | Yes or No. Is the primary function of the project to support the security of an integrating system?  |
 | Languages | languages the project is written in |
-| SBOM | Software bill of materials.  Link to the libraries, packages, versions used by
- the project, may also include direct dependencies. |
+| SBOM | Software bill of materials.  Link to the libraries, packages, versions used by the project, may also include direct dependencies. |
 | | |
 
 ### Security links
@@ -136,8 +134,10 @@ patching/update availability.
 * Known Issues Over Time. List or summarize statistics of past vulnerabilities
   with links. If none have been reported, provide data, if any, about your track
 record in catching issues in code review or automated testing.
-* CII Best Practices. A brief discussion of where the project is at with respect
-  to CII best practices and what it would need to achieve the badge.
+* [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/).
+  Best Practices. A brief discussion of where the project is at
+  with respect to CII best practices and what it would need to
+  achieve the badge.
 * Case Studies. Provide context for reviewers by detailing 2-3 scenarios of
   real-world use cases.
 * Related Projects / Vendors. Reflect on times prospective users have asked
