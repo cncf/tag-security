@@ -5,7 +5,7 @@ which we use for Github admin permissions and managing issues.  Write
 permissions are enabled by the [CODEOWNERS](/CODEOWNERS) file.
 
 There is typically more process for review and collaboration than is controlled
-by access permissions. We expect members to review [governance](governance) 
+by access permissions. We expect members to review [governance](/governance) 
 and ask questions by filing a Github issue and/or submit suggested changes via
 Pull Request if anything is not clear.
 
@@ -15,7 +15,8 @@ control access privileges, not in the Github UI (so they are visible to
 everyone.)  
 
 Note: Members of the CNCF TOC and some CNCF staff also have admin access;
-however, 
+however, SIG Roles will be defined transparently using files described below,
+and will follow SIG processes in making any changes. 
 
 ## Settings file  
 Pull Requests to appoint members to new Roles in
