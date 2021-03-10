@@ -227,6 +227,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Alex Floyd Marshall ([@apmarshall](https://github.com/apmarshall))
 * Alok Raj ([@ak-secops](https://github.com/ak-secops)), XenonStack
 * Abhishek Singh ([@araalinetworks](https://github.com/araalinetworks)), Araali Networks
+* Aeva Black ([@AevaOnline](https://github.com/AevaOnline)), Microsoft
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
