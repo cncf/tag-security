@@ -49,8 +49,8 @@ Note:  SIG-Security was rebranded from SAFE working group. The below roadmap inc
 | Personas & Use cases | 23 Sept 2019 | [issue#246](https://github.com/cncf/sig-security/issues/246)
 | Policy formal verification overview | 10 Sept 2019 | [documentation](https://github.com/cncf/sig-security/pulls/242)
 | First Security Assessment | May 2019 | in-toto - [issue#166](https://github.com/cncf/sig-security/issues/166)  |
-| First cut security audit guidelines  | 2 May 2019 | [guidelines](https://github.com/cncf/sig-security/pull/125) |
 | Updated Charter and Governance ratified by CNCF TOC |  7 May 2019 | [New repo](https://github.com/cncf/sig-security/tree/master/governance) |
+| First cut security audit guidelines  | 2 May 2019 | [guidelines](https://github.com/cncf/sig-security/pull/125) |
 | Moved SAFE WG to CNCF  | 15 Apr 2019 | [Repo rename](https://github.com/cncf/sig-security/pull/148) |
 | CNCF WG proposal | 21 Aug 2018 | [CNCF SIG-Security charter and roles](https://github.com/cncf/toc/pull/146) |
 | Policy WG merged | 10 Aug 2018 | [Merging policy WG](https://github.com/cncf/sig-security/blob/master/policy-wg-merging.md)  |
