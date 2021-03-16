@@ -47,7 +47,7 @@ Note:  SIG-Security was rebranded from SAFE working group. The below roadmap inc
 | First Cloud Native Security Day | 19 Nov 2019 | [issue#209](https://github.com/cncf/sig-security/issues/209) |
 | Software supply chain catalog  | 14 Nov 2019 | [catalog](https://github.com/cncf/sig-security/pull/284) |
 | Personas & Use cases | 23 Sept 2019 | [issue#246](https://github.com/cncf/sig-security/issues/246)
-| Policy formal verification overview | 10 Sept 2019 | [documentation](https://github.com/cncf/sig-security/pulls/242)
+| Policy formal verification overview | 10 Sept 2019 | [documentation](https://github.com/cncf/sig-security/pull/242)
 | First Security Assessment | May 2019 | in-toto - [issue#166](https://github.com/cncf/sig-security/issues/166)  |
 | Updated Charter and Governance ratified by CNCF TOC |  7 May 2019 | [New repo](https://github.com/cncf/sig-security/tree/master/governance) |
 | First cut security audit guidelines  | 2 May 2019 | [guidelines](https://github.com/cncf/sig-security/pull/125) |
