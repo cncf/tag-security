@@ -36,10 +36,10 @@ Note:  SIG-Security was rebranded from SAFE working group. The below roadmap inc
 
 |   Milestone  | Date | Action
 | --- | --- | --- |
-| Tech Leads: @ashutosh-narkar, @achetal01, @anvega | 13 Jan 2021 | [TOC Approval](https://lists.cncf.io/g/cncf-toc/topic/79052801#5599) |
-| APAC meetings start | 1 Feb 2021 | [regular meeting time added to README](https://github.com/cncf/sig-security/pull/518)
 | Chinese Translation of White Paper | 27 Feb 2021 | [PR#471](https://github.com/cncf/sig-security/pull/471) |
 | Security Reviews/Assessments process improvements | 23 Feb 2021 | [security evaluation process - documentation update](https://github.com/cncf/sig-security/pull/488) |
+| APAC meetings start | 1 Feb 2021 | [regular meeting time added to README](https://github.com/cncf/sig-security/pull/518)
+| Tech Leads: @ashutosh-narkar, @achetal01, @anvega | 13 Jan 2021 | [TOC Approval](https://lists.cncf.io/g/cncf-toc/topic/79052801#5599) |
 | Cloud Native Security Whitepaper | 18 Nov 2020 | [issue#452](https://github.com/cncf/sig-security/issues/452) |
 | First five security assessments | 21 Oct 2020 | [issue#167](https://github.com/cncf/sig-security/issues/167) |
 | First Tech Leads  | 25 Feb 2020 | [TOC approval](https://lists.cncf.io/g/cncf-toc/topic/71341283#4198) |
