@@ -43,7 +43,7 @@ Note:  SIG-Security was rebranded from SAFE working group. The below roadmap inc
 | Cloud Native Security Whitepaper | 18 Nov 2020 | [issue#452](https://github.com/cncf/sig-security/issues/452) |
 | First five security assessments | 21 Oct 2020 | [issue#167](https://github.com/cncf/sig-security/issues/167) |
 | First Tech Leads  | 25 Feb 2020 | [TOC approval](https://lists.cncf.io/g/cncf-toc/topic/71341283#4198) |
-| Security Assessment Intake Process | 7 Jan 2020 | [intake process and prioritization](https://github.com/cncf/sig-security/pull/206) |
+| Security Assessment Intake Process | 7 Jan 2020 | [intake process and prioritization](https://github.com/cncf/sig-security/pull/296) |
 | First Cloud Native Security Day | 19 Nov 2019 | [issue#209](https://github.com/cncf/sig-security/issues/209) |
 | Software supply chain catalog  | 14 Nov 2019 | [catalog](https://github.com/cncf/sig-security/pull/284) |
 | Personas & Use cases | 23 Sept 2019 | [issue#246](https://github.com/cncf/sig-security/issues/246)
