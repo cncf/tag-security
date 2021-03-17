@@ -226,6 +226,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Or Azarzar ([@azarzar15](https://github.com/azarzar15)), Lightspin
 * Alex Floyd Marshall ([@apmarshall](https://github.com/apmarshall))
 * Alok Raj ([@ak-secops](https://github.com/ak-secops)), XenonStack
+* Brad McCoy ([@bradmccoydev](https://github.com/bradmccoydev)), Search365
 * Abhishek Singh ([@araalinetworks](https://github.com/araalinetworks)), Araali Networks
 * Aeva Black ([@AevaOnline](https://github.com/AevaOnline)), Microsoft
 * Frederick Fernando ([@freddyfernando](https://github.com/freddyfernando)), InfraCloud
