@@ -36,15 +36,15 @@ Note:  SIG-Security was rebranded from SAFE working group. The below roadmap inc
 
 |   Milestone  | Date | Action
 | --- | --- | --- |
-| Chinese Translation of White Paper | 27 Feb 2021 | [PR#471](https://github.com/cncf/sig-security/pull/471) |
-| Security Reviews/Assessments process improvements | 23 Feb 2021 | [security evaluation process - documentation update](https://github.com/cncf/sig-security/pull/488) |
+| First Community Translation | 27 Feb 2021 | [Chinese Translation of White Paper](https://github.com/cncf/sig-security/pull/471) |
+| Security Assessments => Reviews | 23 Feb 2021 | Retrospective resulted in [process updates](https://github.com/cncf/sig-security/pull/488) |
 | APAC meetings start | 1 Feb 2021 | [regular meeting time added to README](https://github.com/cncf/sig-security/pull/518)
-| Tech Leads: @ashutosh-narkar, @achetal01, @anvega | 13 Jan 2021 | [TOC Approval](https://lists.cncf.io/g/cncf-toc/topic/79052801#5599) |
-| Cloud Native Security Whitepaper | 18 Nov 2020 | [issue#452](https://github.com/cncf/sig-security/issues/452) |
-| First five security assessments | 21 Oct 2020 | [issue#167](https://github.com/cncf/sig-security/issues/167) |
+| Expanded to 5 Tech Leads | 13 Jan 2021 | [TOC Approves](https://lists.cncf.io/g/cncf-toc/topic/79052801#5599) [@ashutosh-narkar](https://github.com/ashutosh-narkar), [@achetal01](https://github.com/achetal01), [@anvega](https://github.com/anvega) |
+| Cloud Native Security Whitepaper v1 | 18 Nov 2020 | [markdown source and images in repo](https://github.com/cncf/sig-security/pull/452) |
+| First five security assessments | 21 Oct 2020 | [in-toto, OPA, SPIFFE/SPIRE, Harbor, Keycloak](https://github.com/cncf/sig-security/issues/167) |
 | First Tech Leads  | 25 Feb 2020 | [TOC approval](https://lists.cncf.io/g/cncf-toc/topic/71341283#4198) |
 | Security Assessment Intake Process | 7 Jan 2020 | [intake process and prioritization](https://github.com/cncf/sig-security/pull/296) |
-| First Cloud Native Security Day | 19 Nov 2019 | [issue#209](https://github.com/cncf/sig-security/issues/209) |
+| First Cloud Native Security Day | 19 Nov 2019 | [event](https://events19.linuxfoundation.org/events/cloud-native-security-day-2019/) organized by [@mfdii and @TheFoxAtWork](https://github.com/cncf/sig-security/issues/209) |
 | Software supply chain catalog  | 14 Nov 2019 | [catalog](https://github.com/cncf/sig-security/pull/284) |
 | Personas & Use cases | 23 Sept 2019 | [issue#246](https://github.com/cncf/sig-security/issues/246)
 | Policy formal verification overview | 10 Sept 2019 | [documentation](https://github.com/cncf/sig-security/pull/242)
