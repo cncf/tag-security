@@ -19,13 +19,13 @@ At the time of the attack, there was no requirement that code being uploaded in
 an npm module should be equivalent to the code stored publicly in a git repository.
 
 The additional code contained a highly targeted attack against users of a crypto
-waller app called [bitpay/copay](https://github.com/bitpay/copay).
+wallet app called [bitpay/copay](https://github.com/bitpay/copay).
 The code did the following:
 1. Decrypt and execute a hidden AES-encrypted payload using the `package.json`
 description as a key.
 2. Search the victim device for "hot wallet" cryptocurrency profile (this could
 have been running in mobile apps as well as your regular browser,
-regardless the device).
+regardless of the device).
 3. Iterate over all crypto wallet IDs and mapping all public keys.
 4. For wallets with significant Bitcoin or Bitcoin Cash balances, send the
 private keys and account data to a server in Kuala Lumpur and most likely
