@@ -42,6 +42,7 @@ Note:  SIG-Security was rebranded from SAFE working group. The below roadmap inc
 | Expanded to 5 Tech Leads | 13 Jan 2021 | [TOC Approves](https://lists.cncf.io/g/cncf-toc/topic/79052801#5599) [@ashutosh-narkar](https://github.com/ashutosh-narkar), [@achetal01](https://github.com/achetal01), [@anvega](https://github.com/anvega) |
 | Cloud Native Security Whitepaper v1 | 18 Nov 2020 | [Markdown source and images in repo](https://github.com/cncf/sig-security/pull/452) |
 | First five security assessments | 21 Oct 2020 | [In-toto, OPA, SPIFFE/SPIRE, Harbor, Keycloak](https://github.com/cncf/sig-security/issues/167) |
+| First chair rotation | 15 Sep 2020 | [TOC approves](https://lists.cncf.io/g/cncf-toc/topic/77001316#5303) [@TheFoxAtWork](https://github.com/TheFoxAtWork) with new [chair proposal process](https://github.com/cncf/sig-security/pull/419/files)
 | DoD Kubernetes/Container Security controls proposed | 26 Jun 2020 | LF collaboration with US DoD [merged to DoD repo](https://repo1.dso.mil/dsawg-devsecops/kubernetes-srg/k8-srg-artifacts/-/tree/master/linuxfoundation) |
 | First Tech Leads  | 25 Feb 2020 | [TOC approves](https://lists.cncf.io/g/cncf-toc/topic/71341283#4198) [@lumjjb](https://github.com/lumjjb) [@TheFoxAtWork](https://github.com/TheFoxAtWork)  [@JustinCappos](https://github.com/JustinCappos) |
 | Security Assessment intake process | 7 Jan 2020 | [Intake process and prioritization](https://github.com/cncf/sig-security/pull/296) |
