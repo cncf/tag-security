@@ -42,6 +42,7 @@ Note:  SIG-Security was rebranded from SAFE working group. The below roadmap inc
 | Expanded to 5 Tech Leads | 13 Jan 2021 | [TOC Approves](https://lists.cncf.io/g/cncf-toc/topic/79052801#5599) [@ashutosh-narkar](https://github.com/ashutosh-narkar), [@achetal01](https://github.com/achetal01), [@anvega](https://github.com/anvega) |
 | Cloud Native Security Whitepaper v1 | 18 Nov 2020 | [markdown source and images in repo](https://github.com/cncf/sig-security/pull/452) |
 | First five security assessments | 21 Oct 2020 | [in-toto, OPA, SPIFFE/SPIRE, Harbor, Keycloak](https://github.com/cncf/sig-security/issues/167) |
+| DoD Kubernetes/Container Security controls proposed | 26 Jun 2020 | LF collaboration with US DoD [merged to DoD repo](https://repo1.dso.mil/dsawg-devsecops/kubernetes-srg/k8-srg-artifacts/-/tree/master/linuxfoundation) |
 | First Tech Leads  | 25 Feb 2020 | [TOC approval](https://lists.cncf.io/g/cncf-toc/topic/71341283#4198) |
 | Security Assessment Intake Process | 7 Jan 2020 | [intake process and prioritization](https://github.com/cncf/sig-security/pull/296) |
 | First Cloud Native Security Day | 19 Nov 2019 | [event](https://events19.linuxfoundation.org/events/cloud-native-security-day-2019/) organized by [@mfdii and @TheFoxAtWork](https://github.com/cncf/sig-security/issues/209) |
