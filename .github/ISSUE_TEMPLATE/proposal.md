@@ -14,6 +14,9 @@ Impact: Describe the customer impact of the problem. Who will this help?  How wi
 Scope: How much effort will this take? ok to provide a range of options if or "not yet determined" for initial proposals.  Feel free to include proposed tasks below or link a Google doc 
 
 TO DO
-- [ ] SIG Representative
-- [ ] Project leader(s)
-- [ ] TBD
+- [ ] SIG Leadership Representative:
+- [ ] Project leader(s):
+- [ ] Project Members:
+- [ ] Project Schedule
+- [ ] Retrospective
+
