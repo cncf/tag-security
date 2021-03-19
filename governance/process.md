@@ -1,7 +1,9 @@
 # Proposals, projects, and team
 
 In addition to the TOC driven activities of the SIG, members may propose
-projects or streams work that are of interest and importance to the community.
+projects or streams work that are in alignment with the charter of the 
+group and of interest and importance to the community.
+
 These proposals may be converted to a project with a defined set of deliverables
 or a team to focus on a larger stream of work that may involve one or more
 projects and activities.
@@ -22,7 +24,9 @@ that outlines the problem to be solved. If possible, include:
     * The scope of the work required
 
 1. **Ask the group for collaboration:** Rather than immediately beginning work
-on a solution, add the issue to a meeting agenda and bring the issue up for 
+on a solution, add the issue to a meeting agenda by placing the link and the POC
+in the ["Planned Meeting" area of the meeting
+notes](https://github.com/cncf/sig-security#meeting-times) and bring the issue up for 
 discussion at the scheduled meeting, explain it, and ask if others are interested
  in collaborating. This ensures that solutions are created with multiple 
 perspectives as well as verifies there is community interest in pursuing the
@@ -59,7 +63,7 @@ both in the Issue and reported on periodically in meetings.
   progress in case questions arise.
     * It's strongly encouraged to include a checklist in the Isssue
   that shows what has been done and what work remains and should include a
-retrospective as appropriate.
+retrospective.
 
 1. **Pull Requests.** Completed work should result in a Pull Request (PR).
 At minimum, an update to one of the group documents or roadmap indicating that
@@ -86,7 +90,8 @@ meeting attendance as recorded in the public minutes).
 
 1. **Support the project going forward.** Some projects require sustainment and
    maintenance to ensure continued relevance for the community.  When work is 
-completed, the body of the Pull Request should specify if it's expected to require
- on-going support and if so, document guidelines for contributions and
-maintenance in the README for the project artifact's folder.  
+completed, a new issue and corresponding pull request should be created and
+describe the expectations, plans, and ideas for on-going work.  It should
+include historical information and guidelines for contributions and maintenance
+ in the README for the project artifact's folder.  
 

@@ -93,8 +93,8 @@ TLs are assigned by CNCF Technical Oversight Committee
 
 ## Role of project leads
 
-Project Leads lead specific projects where a deliverable or set of deliverables
-have been defined within the issue.
+Project Leads lead specific projects where a deliverable has been defined 
+within the issue.
 
 Project Leads are nominated and approved by the following process:
   1. Project Lead actively participates in the group, initiates the proposal or
@@ -102,17 +102,17 @@ Project Leads are nominated and approved by the following process:
   1. A Chair or TL nominates a candidate.
   1. The nomination is communicated on the issue tracking the project 
   The nomination is typically open for a week (but may be shorter with LGTM of at least two Chairs).
-  1. The issue is updated with the assignment of the project lead as "assignee"
-     alongside the SIG Leadership member.
+  1. The issue is updated with the assignment of the project lead as "assignee" alongside the SIG Leadership member.
+  1. Project Leads will be given the OWNER role of the directory or sub-directory for their team's activities in order to empower merge/approve.
 
 Depending on the expected length of the project, Project Leads may be assigned
 as OWNERS of the project directory in this repository to help facilitate and moderate new content to the
 project.
 
-## Role of team leads
+## Role of Team Leads
 
 Team Leads lead larger streams of work that require sustained effort and 
-coordination. In some cases, these remain ongoing.
+coordination and remain ongoing.
 
 Team Leads are nominated and approved by the following process:
   1. Team Lead actively participates in the group, initiates the proposal or
@@ -121,8 +121,9 @@ Team Leads are nominated and approved by the following process:
   1. The nomination is communicated via a pull request annotating the list of members in the
   [SIG README](/README.md) with a link to the issue tracking the stream of work.
   The nomination is typically open for a week (but may be shorter with LGTM of at least two Chairs).
-  1. Members are encouraged to review the tracking issue and work together
-  to ensure that the Team Lead is set up for success or suggest alternatives.
+  1. Members are encouraged to review any existing, relevant issues and work together to ensure the Team Lead is set up for success or suggest alternatives.
+  1. A sub-directory with a README is created with details on how to get involved.
+  1. Team Leads will be given the OWNER role of the directory or sub-directory for their team's activities in order to empower merge/approve.
 
 ## TOC liaison
 
