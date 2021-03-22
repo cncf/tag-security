@@ -2,7 +2,6 @@
 title: "Security Checks in Development"
 date: "2020-10-01"
 category: "Develop"
-slug: "security-checks-in-development"
 ---
 
 The aim at this stage is to surface security issues as early as possible in the SDLC underpinning the concept of shift left. Prefer tools which give developers both security insights and actionable remediation advice directly in their workflows. Leverage IDE plugins and CLI tools, and automate as much as possible through practices like git pre-commit hooks. Build security scanning automation into source code management systems to automatically test incoming PR’s. Ensure you have well defined policies that developers understand across all of these areas eg. no high sev vulns with a fix available, container images should not run as root, only use approved base images.

@@ -2,7 +2,6 @@
 title: "Build an awesome Next.js blog"
 date: "2020-10-01"
 category: "Runtime"
-slug: "awesome"
 ---
 
 ## Step 1
