@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
-import PostTemplate from '../pages/[slug]';
+import ReactMarkdown from 'react-markdown'
 
 function Posts({ data, content }) {
     const [show, setShow] = useState(false);
@@ -20,7 +20,7 @@ function Posts({ data, content }) {
             closeButton><h2>{data.title}</h2>
           </Modal.Header>
           <Modal.Body >
-            <PostTemplate content={content} data={data} ></PostTemplate>
+            <ReactMarkdown source={content} />
           </Modal.Body>
         </Modal>
       </>
