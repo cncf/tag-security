@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReactMarkdown from 'react-markdown'
+import styles from '../styles/Home.module.css'
 
 function Posts({ data, content }) {
     const [show, setShow] = useState(false);
@@ -17,7 +18,7 @@ function Posts({ data, content }) {
   
         <Modal show={show} onHide={handleClose} animation={false} size="lg">
           <Modal.Header
-            closeButton><h2>{data.title}</h2>
+            closeButton className={styles.title}><h2>{data.title}</h2>
           </Modal.Header>
           <Modal.Body >
             <ReactMarkdown source={content} />

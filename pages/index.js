@@ -31,8 +31,11 @@ const Index = ({ data, category }) => {
         <meta name="category" content={category}></meta>
         <title>CNSmap</title>
       </Head>
+      <div className={styles.title}>
+          <h1>Cloud Native Security Map</h1>
+          <hr class="solid"></hr>
+        </div>
       <div className={styles.container}>
-      <h1>Cloud Native Security Map</h1>
         <ul className= {styles.cardContainer}>
           {categoryList.map(([title, elements ]) => <>
             <li className={styles.category} key={title}>
