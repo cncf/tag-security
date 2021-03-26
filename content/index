@@ -1,0 +1,17 @@
+- { "name": "Develop", "slug": "develop"}
+  - { "name": "Security Checks in Development", "slug": "security-checks-in-development"}
+  - { "name": "Development of Tests", "slug": "development-of-tests"}
+  - { "name": "Code Review", "slug": "code-review"}
+- { "name": "Distribute", "slug": "distribute"}
+  - { "name": "Build Pipeline", "slug": "build-pipeline"}
+  - { "name": "Image Scanning", "slug": "image-scanning"}
+  - { "name": "Container Application Manifest", "slug": "container-application-manifest"}
+  - { "name": "Testing" , "slug": "testing"}
+    - { "name": "Static Analysis and Security Testing", "slug": "static-analysis-and-security-testing"}
+    - { "name": "Dynamic Analysis", "slug": "dynamic-analysis"}
+    - { "name": "Security Tests", "slug": "security-tests"}
+  - { "name": "Artifacts and Images", "slug": "artifacts-and-images"}
+    - { "name": "Registry and Staging", "slug": "registry-and-staging"}
+    - { "name": "Signing, Trust and Integrity", "slug": "signing-trust-and-integrity"}
+    - { "name": "Encryption", "slug": "image-encryption"}
+- { "name": "Deploy", "slug": "deploy"}
