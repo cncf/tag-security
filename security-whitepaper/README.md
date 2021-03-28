@@ -12,7 +12,7 @@ The Cloud Native Security Whitepaper (CNSWP) is intended to be a living
 document created and maintained for the community, by its members.  
 
 Updates to the whitepaper, suggestions for updates, or discussion for updates
-should initiate with an [issue](/issues) submitted to the repo and labeled with
+should initiate with an [issue](https://github.com/cncf/sig-security/issues) submitted to the repo and labeled with
 "suggestion" and "whitepaper".
 
 ### Markdown 
