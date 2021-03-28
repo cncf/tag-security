@@ -141,3 +141,34 @@
   list-style: none;
   padding-left: 0;
 }
+
+.ul {
+  list-style: none;
+  padding-left: 0;
+}
+.subtree_ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+.sidenav {
+  width: 20%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidebar_fixed {
+  margin-top: 10px;
+  padding: 5px 18px;
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #337ab7;
+  border-right: 1px solid #ff0;
+  z-index: 1500;
+}
+
+.main_content {
+  margin-left: 200px;
+  padding-left: 1rem;
+}

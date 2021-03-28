@@ -1,19 +1,18 @@
 import React, { Fragment } from "react";
 import Link from 'next/link'
+import styles from '../styles/Home.module.css'
 
 const Subtree = ({subTopicTree}) => {
     return (
       <div>
-        <ul>
+        <ul className={styles.subtree_ul}>
             {subTopicTree.map((topic) =><>
               <li key={topic.name}>
                 <Link href={topic.slug}>
-                    <a>{topic.name}</a>
+                <a>{topic.name}</a>
                 </Link>
               </li>
-              {topic.subTopics &&
-                <Subtree subTopicTree={topic.subTopics}></Subtree>
-              }
+              <Subtree subTopicTree={topic.subTopics}></Subtree>
             </>)}
         </ul>
       </div>
