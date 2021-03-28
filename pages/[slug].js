@@ -2,6 +2,15 @@ import React from 'react'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import styles from '../styles/Home.module.css'
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+
+const CodeBlock = ({ language, value }) => {
+  return (
+    <SyntaxHighlighter showLineNumbers={true} language={language}>
+      {value}
+    </SyntaxHighlighter>
+  );
+};
 
 export default function PostTemplate({ data, content}) {
   console.log(data)
@@ -12,7 +21,11 @@ export default function PostTemplate({ data, content}) {
   return (
     <div className={styles.main_content}>
       <h1>{frontmatter.title}</h1>
-      <ReactMarkdown source={content} />
+      <ReactMarkdown
+        escapeHtml={true}
+        source={content}
+        renderers={{ code: CodeBlock }}
+      />
     </div>
   )
 }
