@@ -1,4 +1,8 @@
 
+@value primary: #152356;
+@value tertiary: #389BB2;
+@value accent: #D81637;
+
 .main {
   padding: 5rem 0;
   flex: 1;
@@ -39,15 +43,15 @@
 }
 
 .title {
+  font-size: 1.5rem;
+  color: primary;
   margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  background: rgb(255, 255, 255);
 }
 
 .title,
 .description {
   text-align: center;
+  color: primary
 }
 
 .description {
@@ -156,19 +160,29 @@
 }
 
 .sidebar_fixed {
-  margin-top: 10px;
+  margin-top: 0px;
   padding: 5px 18px;
   position: fixed;
-  width: 200px;
+  width: 14rem;
   height: 100%;
   top: 0;
   left: 0;
-  background: #337ab7;
-  border-right: 1px solid #ff0;
+  background: #b1b1b181;
   z-index: 1500;
 }
 
 .main_content {
-  margin-left: 200px;
+  margin-left: 14rem;
   padding-left: 1rem;
+  padding-right: 1rem;
 }
+
+.collapsed .submenu {
+  height: 0;
+  overflow: hidden;
+}
+
+.secondary {
+  color: #4A6CA4;
+}
+

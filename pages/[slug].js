@@ -13,8 +13,6 @@ const CodeBlock = ({ language, value }) => {
 };
 
 export default function PostTemplate({ data, content}) {
-  console.log(data)
-
   // This holds the data between `---` from the .md file
   const frontmatter = data
 
