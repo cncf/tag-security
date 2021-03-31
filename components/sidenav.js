@@ -6,7 +6,7 @@ import txt from 'raw-loader!../content/index'
 import styles from '../styles/Sidemenu.module.css'
 import { Accordion} from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useRouter } from "next/router";
+import { useRouter, } from "next/router";
 import Image from 'next/image'
 
 function Sidebar() {
@@ -37,7 +37,7 @@ function Sidebar() {
         src="/sig-security-horizontal-color.png"
         alt="Sig-security-group-logo"
         width={250}
-        height={250}
+        height={150}
     />
       </div>
       
@@ -63,13 +63,25 @@ function Sidebar() {
           </>)}
         </Accordion>
       </div>
-      <div>
-
+      <div className={styles.footer}>
+        <Link href="https://github.com/lumjjb/cnsmap">
+          <a>
+          <Image
+            src="/gh-logo.png"
+            alt="github-logo"
+            width={35}
+            height={35}
+            />
+          </a>
+        
+        </Link>
       </div>
     </div>
     );
 }
 
+/*
+*/
 export default Sidebar;
 
 /* 
