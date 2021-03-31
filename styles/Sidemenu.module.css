@@ -1,0 +1,79 @@
+.panel_wrap {
+    margin-bottom: 5px;
+  }
+  
+  .panel_wrap.active_panel .panel_header {
+    background: #396ea5;
+  }
+  .panel_wrap.active_panel .panel_header button {
+    color: #396ea5;
+  }
+  
+  .active_panel {
+    color:#396ea5;
+    margin-bottom: 5px
+  }
+
+  .panel_header {
+    border: none;
+    font-weight: normal;
+    border-radius: 5px 5px 0px 0px;
+  }
+  
+  .panel_header button {
+    border: none;
+    background: transparent;
+  }
+  .panel_header button:focus {
+    outline: 0px auto -webkit-focus-ring-color;
+  }
+  
+  .panel_body {
+    margin-left: 0.75rem;
+    border-left: 1px solid #4A6CA4;
+    background:transparent;
+    color: #333333;
+    padding: 1px;
+    border-top: none;
+  }
+
+  .sidebar_fixed {
+    margin-top: 1px;
+    padding-top: 1.5rem;
+    padding-left: 0.5rem;
+    position: fixed;
+    width: 18%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #f5f2f0;
+    z-index: 1500;
+  }
+
+  .navlinkActive {
+    color: #389BB2;
+  }
+  
+  .navlink {
+    color: black;
+  }
+
+  .footer {
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid #eaeaea;
+    margin-bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer img {
+    margin-left: 0.5rem;
+  }
+  
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

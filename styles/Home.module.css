@@ -1,4 +1,8 @@
 
+@value primary: #152356;
+@value tertiary: #389BB2;
+@value accent: #D81637;
+
 .main {
   padding: 5rem 0;
   flex: 1;
@@ -39,15 +43,15 @@
 }
 
 .title {
+  font-size: 1.5rem;
+  color: primary;
   margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  background: rgb(255, 255, 255);
 }
 
 .title,
 .description {
   text-align: center;
+  color: primary
 }
 
 .description {
@@ -114,30 +118,7 @@
   }
 }
 
-.cardContainer {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin:-1rem;
-  padding: 0;
-}
-
-.cardContainer >*{margin:1rem}
-
-.container {
-  margin:0 auto;
-  padding-left: 1rem;
-}
-
-.category {
-  margin-top: 2rem;
-  border: 1px solid rgb(148, 180, 192);
-  border-radius: 5px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.content {
-  list-style: none;
-  padding-left: 0;
+.main_content {
+  padding-top: 2rem;
+  margin-left: 18%;
 }

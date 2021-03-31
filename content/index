@@ -15,3 +15,6 @@
     - { "name": "Signing, Trust and Integrity", "slug": "signing-trust-and-integrity"}
     - { "name": "Encryption", "slug": "image-encryption"}
 - { "name": "Deploy", "slug": "deploy"}
+- { "name": "Runtime", "slug": "runtime"}
+- { "name": "Security Assurance", "slug": "security-assurance"}
+- { "name": "Compliance", "slug": "compliance"}
