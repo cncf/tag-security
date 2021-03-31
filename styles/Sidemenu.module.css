@@ -38,8 +38,9 @@
   }
 
   .sidebar_fixed {
-    margin-top: 0px;
-    padding: 5px ;
+    margin-top: 1px;
+    padding-top: 1.5rem;
+    padding-left: 0.5rem;
     position: fixed;
     width: 18%;
     height: 100%;
@@ -50,7 +51,7 @@
   }
 
   .navlinkActive {
-    color: #4A6CA4;
+    color: #389BB2;
   }
   
   .navlink {

@@ -7,6 +7,7 @@ import styles from '../styles/Sidemenu.module.css'
 import { Accordion} from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useRouter } from "next/router";
+import Image from 'next/image'
 
 function Sidebar() {
   const router = useRouter();
@@ -28,16 +29,24 @@ function Sidebar() {
     <div className={styles.sidebar_fixed}>
       <div>
         <Link href="/">
-          <a><h3>{topicTree.name}</h3></a>
+          <a><h4>{topicTree.name}</h4></a>
         </Link>
       </div>
+      <div className={"marginLeft: '10px'"}>
+      <Image
+        src="/sig-security-horizontal-color.png"
+        alt="Sig-security-group-logo"
+        width={250}
+        height={250}
+    />
+      </div>
+      
       <div>
         <Accordion defaultActiveKey={activeId}>
           {topicTree.subTopics.map((topic) =><>
             <div className={activeId === topic.name ? styles.active_panel : styles.panel_wrap}>
               <div className={styles.panel_header}>
                 <Accordion.Toggle onClick={() => toggleActive(topic.name)} className={styles.panel_toggle} variant="link" eventKey={topic.name}>
-                  
                   <Link href={topic.slug}>
                     <div className={router.asPath === "/"+topic.slug ? styles.navlinkActive : styles.navlink}>
                     {topic.name}</div>
