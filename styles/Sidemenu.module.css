@@ -30,7 +30,7 @@
   
   .panel_body {
     margin-left: 0.75rem;
-    border-left: 1px solid #3c97be;
+    border-left: 1px solid #4A6CA4;
     background:transparent;
     color: #333333;
     padding: 1px;
@@ -39,9 +39,9 @@
 
   .sidebar_fixed {
     margin-top: 0px;
-    padding: 5px 18px;
+    padding: 5px ;
     position: fixed;
-    width: 25rem;
+    width: 18%;
     height: 100%;
     top: 0;
     left: 0;
@@ -49,7 +49,10 @@
     z-index: 1500;
   }
 
-  .container {
-     margin-left: 0rm;
-     text-align: left;
+  .navlinkActive {
+    color: #4A6CA4;
+  }
+  
+  .navlink {
+    color: black;
   }

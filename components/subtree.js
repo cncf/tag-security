@@ -3,8 +3,10 @@ import Link from 'next/link'
 import styles from '../styles/Sidemenu.module.css';
 import { Accordion} from 'react-bootstrap'
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useRouter } from "next/router";
 
 const Subtree = ({subTopicTree}) => {
+  const router = useRouter();
   const [activeId, setActiveId] = useState('0')
 
   function toggleActive(id) {
@@ -23,7 +25,8 @@ const Subtree = ({subTopicTree}) => {
               <div className={styles.panel_header}>
                 <Accordion.Toggle onClick={() => toggleActive(topic.name)} className={styles.panel_toggle} variant="link" eventKey={topic.name}>
                   <Link href={topic.slug}>
-                    <a>{topic.name}</a>
+                  <div className={router.asPath === "/"+topic.slug ? styles.navlinkActive : styles.navlink}>
+                    {topic.name}</div>
                   </Link>
                 </Accordion.Toggle>
             </div>
