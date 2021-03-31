@@ -4,8 +4,6 @@ import Head from "next/head";
 import {parseIndexFileToTree} from '../components/topicTree'
 
 const Index = ({ data, topicTree }) => {
-
-  const [visible, setVisibe] = useState(false);
   return (
     <div>
       <Head>
@@ -14,7 +12,25 @@ const Index = ({ data, topicTree }) => {
         <title>CNSmap</title>
       </Head>
       <div>
-        
+       <h2>CNCF Cloud Native Security Map</h2>
+       <p>The Cloud Native Security Map aims to: </p>
+         <ul>
+           <li>
+           provide a mapping of CNCF and open source projects to areas of CN Security whitepaper
+           </li>
+           <li>
+           Identify gaps in CN Security in the ecosystem and make recommendations to TOC
+           </li>
+           <li>
+           Help educate practitioners of what technologies can be used in practice and how they tie into each other
+           </li>
+           <li>
+           Provide practical tips or examples for how to use tools within this category, or why they are important (I.e. example breaches, etc.)
+           </li>
+           <li>
+           Provide a reference for frameworks to utilize when developing CN Security solutions and architectures.
+           </li>
+         </ul>
       </div>
     </div>
   );

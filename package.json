@@ -16,7 +16,8 @@
     "react-bootstrap": "^1.5.2",
     "react-dom": "17.0.1",
     "react-markdown": "^5.0.3",
-    "react-syntax-highlighter": "^15.4.3"
+    "react-syntax-highlighter": "^15.4.3",
+    "styled-components": "^5.2.2"
   },
   "devDependencies": {
     "raw-loader": "^4.0.2"
