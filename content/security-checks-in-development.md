@@ -18,13 +18,6 @@ The aim at this stage is to surface security issues as early as possible in the 
 - [rbac-tool](https://github.com/alcideio/rbac-tool) - Rapid7
 - [Code Ready Dependency Analytics](https://github.com/fabric8-analytics/fabric8-analytics-vscode-extension )
 
-
-## Commercial Projects (optional)
-- [Snyk](https://snyk.io)
-- [Veracode SAST](https://www.veracode.com/products/binary-static-analysis-sast)
-- [sKan](https://github.com/alcideio/skan) - Rapid7
-
-
 ## Examples:
 - Software Composition Analysis for detecting vulnerabilities in open source modules used in applications. 
 - Static Application Security Testing to detect vulnerabilities in homegrown code. New advances such as the use of ML have improved performance to enable its use directly in IDEs in some cases.
