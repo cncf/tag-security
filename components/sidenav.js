@@ -27,11 +27,6 @@ function Sidebar() {
 
   return (
     <div className={styles.sidebar_fixed}>
-      <div>
-        <Link href="/">
-          <div><h4>{topicTree.name}</h4></div>
-        </Link>
-      </div>
       <div className={"marginLeft: '10px'"}>
       <Image
         src="/sig-security-horizontal-color.png"
@@ -40,6 +35,12 @@ function Sidebar() {
         height={150}
     />
       </div>
+      <div>
+        <Link href="/">
+          <div><h4>{topicTree.name}</h4></div>
+        </Link>
+      </div>
+
       
       <div>
         <Accordion defaultActiveKey={activeId}>
