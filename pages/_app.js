@@ -4,12 +4,14 @@ import styles from '../styles/Home.module.css'
 function MyApp({ Component, pageProps }) {
   
   return (
-    <div className="row">
-      <div className="col-md-3">
-        <Sidebar {...pageProps} />
-      </div>
-      <div>
-      <Component {...pageProps} />
+    <div class="container">
+      <div className="row">
+        <div className="col-sm">
+          <Sidebar {...pageProps} />
+        </div>
+        <div className="col-xxl">
+        <Component {...pageProps} />
+        </div>
       </div>
     </div>
   )
