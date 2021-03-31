@@ -29,7 +29,7 @@ function Sidebar() {
     <div className={styles.sidebar_fixed}>
       <div>
         <Link href="/">
-          <a><h4>{topicTree.name}</h4></a>
+          <div><h4>{topicTree.name}</h4></div>
         </Link>
       </div>
       <div className={"marginLeft: '10px'"}>
