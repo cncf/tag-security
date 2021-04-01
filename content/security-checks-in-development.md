@@ -36,7 +36,7 @@ Static analysis of Kubernetes YAML for incorrect security settings eg.
   - Reduce exposure to vulns in base image
   - Software Composition Analysis for detecting vulnerabilities in open source modules used in applications. 
 
-### Other Links/Materials (optional):
+## Links
 - https://wiki.owasp.org/index.php/Appendix_A:_Testing_Tools
 - https://owasp.org/www-community/Source_Code_Analysis_Tools
 - https://snyk.io/blog/10-docker-image-security-best-practices/
