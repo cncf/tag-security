@@ -98,7 +98,7 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 ## Members
 
 ### SIG Chairs
-* Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A. [Chair - term: 9/28/2020 - 9/27/2022]
+* Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), Apple [Chair - term: 9/28/2020 - 9/27/2022]
 * Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 6/3/2019 - 6/3/2021]
 * Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 6/3/2019 - 6/3/2021]
 
@@ -191,7 +191,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Roger Klorese ([@qnetter](https://github.com/qnetter)), SUSE
 * John Menerick ([@cloudsriseup](https://github.com/cloudsriseup)), Ford Autonomic
 * Peter Benjamin ([@pbnj](https://github.com/pbnj)), Norton LifeLock
-* Emily Fox([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A.
+* Emily Fox([@TheFoxAtWork](https://github.com/TheFoxAtWork)), Apple
 * Carlos Villavicencio ([@solrac901](https://github.com/solrac901)), Intel
 * Gareth Rushgrove ([@garethr](https://github.com/garethr)), Snyk
 * Martin Vrachev ([@MVrachev](https://github.com/MVrachev)), VMware
