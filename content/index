@@ -15,6 +15,41 @@
     - { "name": "Signing, Trust and Integrity", "slug": "signing-trust-and-integrity"}
     - { "name": "Encryption", "slug": "image-encryption"}
 - { "name": "Deploy", "slug": "deploy"}
+  - { "name": "Pre-Flight Deployment Checks", "slug": "pre-flight-deployment-checks"}
+  - { "name": "Observability & Metrics", "slug": "observability-and-metrics"}
+  - { "name": "Response & Investigation", "slug": "response-and-investigation"}
 - { "name": "Runtime", "slug": "runtime"}
+  - { "name": "Compute", "slug": "compute"}
+    - { "name": "Orchestration", "slug": "orchestration"}
+      - { "name": "Security Policies", "slug": "security-policies"}
+      - { "name": "Resource Requests and Limits", "slug": "resource-requests-and-limits"}
+      - { "name": "Audit Log Analysis", "slug": "audit-log-analysis"}
+      - { "name": "Control Plane Authentication and Certificate Root of Trust", "slug": "control-plane-authentication-and-certificate-root-of-trust"}
+      - { "name": "Secrets Encryption", "slug": "secrets-encryption"}
+    - { "name": "Containers", "slug": "containers"}
+      - { "name": "Container Runtime", "slug": "container-runtime"}
+      - { "name": "Microservices and Eliminating implicit trust", "slug": "microservices-and-eliminating-implicit-trust"}
+      - { "name": "Image Trust and Content Protection", "slug": "image-trust-and-content-protection"}
+    - { "name": "Service Mesh", "slug": "service-mesh"}
+    - { "name": "Detection at Runtime", "slug": "detection-at-runtime"}
+    - { "name": "Functions", "slug": "functions"}
+    - { "name": "Bootstrapping", "slug": "bootstrapping"}
+  - { "name": "Storage", "slug": "storage"}
+    - { "name": "Storage Stack", "slug": "storage-stack"}
+    - { "name": "Storage Encryption", "slug": "storage-encryption"}
+    - { "name": "Persistent Volume Protection", "slug": "persistent-volume-protection"}
+    - { "name": "Artifact Registries", "slug": "artifact-registries"}
+  - { "name": "Access", "slug": "access"}
+    - { "name": "Identity and Access Management", "slug": "identity-and-access-management"}
+    - { "name": "Credential Management (Hardware Security Modules (HSM) + Credential Management Cycle)", "slug": "credential-management"}
+    - { "name": "Availability (Denial of Service (DoS) & Distributed Denial of Service (DDoS))", "slug": "availability"}
 - { "name": "Security Assurance", "slug": "security-assurance"}
+  - { "name": "Threat Modelling", "slug": "threat-modelling"}
+  - { "name": "Threat Intelligence", "slug": "threat-intelligence"}
+  - { "name": "Incident Response", "slug": "incident-response"}
+  - { "name": "Zero Trust Architecture", "slug": "zero-trust-architecture"}
+  - { "name": "Least Privilege", "slug": "least-privilege"}
+  - { "name": "Roles and Responsibilities", "slug": "roles-and-responsibilities"}
 - { "name": "Compliance", "slug": "compliance"}
+  - { "name": "Regulatory Audit", "slug": "regulatory-audit"}
+  - { "name": "Industries", "slug": "industries"}
