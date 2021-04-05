@@ -20,7 +20,7 @@ export default function PostTemplate({ data, content}) {
     <div className={styles.main_content}>
       <h1>{frontmatter.title}</h1>
       <ReactMarkdown
-        escapeHtml={true}
+        escapeHtml={false}
         source={content}
         renderers={{ code: CodeBlock }}
       />
