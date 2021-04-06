@@ -8,6 +8,7 @@ import { Accordion} from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useRouter, } from "next/router";
 import Image from 'next/image'
+import Posts from '../components/contribution_page'
 
 function Sidebar() {
   const router = useRouter();
@@ -74,33 +75,10 @@ function Sidebar() {
             height={35}
             />
           </a>
-        
         </Link>
+        <Posts></Posts>
       </div>
     </div>
     );
 }
-
-/*
-*/
 export default Sidebar;
-
-/* 
-<div className={styles.sidebar_fixed}>
-      <ul className={styles.subtree_ul}>
-        <li key={topicTree.name}>
-          <Link href={topicTree.slug}>
-            <a>{topicTree.name}</a>
-          </Link>
-        </li>
-        {topicTree.subTopics.map((subTopic) => <>
-        <li>
-        <Link href={subTopic.slug}>
-            <a>{subTopic.name}</a>
-          </Link>
-          <Subtree subTopicTree={subTopic.subTopics}></Subtree>
-        </li>
-        </>)}
-      </ul>
-    </div> 
-    */
