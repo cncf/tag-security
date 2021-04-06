@@ -76,6 +76,7 @@ function Sidebar() {
             />
           </a>
         </Link>
+        {" "} 
         <ContributionPage></ContributionPage>
       </div>
     </div>
