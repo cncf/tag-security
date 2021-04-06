@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import { Button, Container, Modal, Col, Row } from 'react-bootstrap';
-import styles from '../styles/Sidemenu.module.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import contribution_guide from '../content/contribution_guide.md'
 import contributors_list from '../content/contributors.md'
 
-function Posts({ data, content }) {
+function ContributionPage() {
     const contributors= matter(contributors_list)
     const contribute = matter(contribution_guide)
     const [show, setShow] = useState(false);
@@ -53,4 +52,4 @@ function Posts({ data, content }) {
     );
   }
   
-export default Posts
+export default ContributionPage
