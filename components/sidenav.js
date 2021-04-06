@@ -8,7 +8,7 @@ import { Accordion} from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useRouter, } from "next/router";
 import Image from 'next/image'
-import Posts from '../components/contribution_page'
+import ContributionPage from '../components/contribution_page'
 
 function Sidebar() {
   const router = useRouter();
@@ -76,7 +76,7 @@ function Sidebar() {
             />
           </a>
         </Link>
-        <Posts></Posts>
+        <ContributionPage></ContributionPage>
       </div>
     </div>
     );

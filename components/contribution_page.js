@@ -7,7 +7,7 @@ import ReactMarkdown from 'react-markdown'
 import contribution_guide from '../content/contribution_guide.md'
 import contributors_list from '../content/contributors.md'
 
-function Posts({ data, content }) {
+function ContributionPage({ data, content }) {
     const contributors= matter(contributors_list)
     const contribute = matter(contribution_guide)
     const [show, setShow] = useState(false);
@@ -53,4 +53,4 @@ function Posts({ data, content }) {
     );
   }
   
-export default Posts
+export default ContributionPage
