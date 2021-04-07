@@ -26,4 +26,4 @@ date: "2020-10-01"
 - Magno Logan
 - Dimi Tomov
 - Matthew Giassa
-
+- Dan POP
