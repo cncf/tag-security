@@ -14,7 +14,7 @@
     - { "name": "Registry and Staging", "slug": "registry-and-staging"}
     - { "name": "Signing, Trust and Integrity", "slug": "signing-trust-and-integrity"}
     - { "name": "Encryption", "slug": "image-encryption"}
-- { "name": "[UNDER CONSTRUCTION]Deploy", "slug": "deploy"}
+- { "name": "Deploy", "slug": "deploy"}
   - { "name": "Pre-Flight Deployment Checks", "slug": "pre-flight-deployment-checks"}
   - { "name": "Observability & Metrics", "slug": "observability-and-metrics"}
   - { "name": "Response & Investigation", "slug": "response-and-investigation"}

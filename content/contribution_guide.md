@@ -9,7 +9,8 @@ We are looking to find expertise to fill the following topics, we are looking to
 
 You can add to them by creating a PR directly against the repo on the following files (clickable links):
 
-- [Artifact Registries](https://github.com/lumjjb/cnsmap/edit/main/content/artifacts-and-images.md)
+- [Artifacts And Images](https://github.com/lumjjb/cnsmap/edit/main/content/artifacts-and-images.md)
+- [Artifact Registries](https://github.com/lumjjb/cnsmap/edit/main/content/artifact-registries.md)
 - [Availability](https://github.com/lumjjb/cnsmap/edit/main/content/availability.md)
 - [Code Review](https://github.com/lumjjb/cnsmap/edit/main/content/code-review.md)
 - [Control Plane Authentication and Certificate Root of Trust](https://github.com/lumjjb/cnsmap/edit/main/content/control-plane-authentication-and-certificate-root-of-trust.md)
@@ -25,6 +26,5 @@ You can add to them by creating a PR directly against the repo on the following 
 - [Secrets Encryption](https://github.com/lumjjb/cnsmap/edit/main/content/secrets-encryption.md)
 - [Security Policies](https://github.com/lumjjb/cnsmap/edit/main/content/security-policies.md)
 - [Storage Encryption](https://github.com/lumjjb/cnsmap/edit/main/content/storage-encryption.md)
-- [Storage Stack](https://github.com/lumjjb/cnsmap/edit/main/content/storage-stack.md)
 - [Storage Stack](https://github.com/lumjjb/cnsmap/edit/main/content/storage-stack.md)
 - [Threat Modelling](https://github.com/lumjjb/cnsmap/edit/main/content/threat-modelling.md)
