@@ -11,9 +11,24 @@ Scanning container images is a critical component of securing container applicat
 - [Trivy](https://github.com/aquasecurity/trivy)
 - [Anchore](https://github.com/anchore/anchore-engine)
 - [Clair](https://github.com/quay/clair)
-- [Dagda](https://github.com/eliasgranderubio/dagda)
 - [Snyk](https://snyk.io)
 - [Iskan](https://github.com/alcideio/iskan)
+
+
+<!---
+## Commercial Projects
+- [Trend Micro SmartCheck](https://github.com/deep-security/smartcheck-helm)
+- [Sysdig](https://docs.sysdig.com/en/image-scanning.html) 
+- [Aqua](https://www.aquasec.com/use-cases/devops-security/) 
+- [InsightVM](https://docs.rapid7.com/insightvm/container-image-scanner/))
+- [Prisma Cloud](https://docs.paloaltonetworks.com/prisma/prisma-cloud.html) 
+- [Tenable](https://www.tenable.com/) 
+- [Qualys](https://www.qualys.com/) 
+- [Docker scan](https://docs.docker.com/engine/scan/) 
+
+## Misc Projects
+- [Dagda](https://github.com/eliasgranderubio/dagda)
+-->
 
 ## Examples
 

@@ -19,9 +19,9 @@ It is essential to consider the security features and various configuration opti
 - [KubeSec]( https://kubesec.io/)
 
 <!---
-Commercial Projects (optional)
-Styra DAS (www.styra.com)
-Trend Micro Container Security (https://www.trendmicro.com/en_us/business/products/hybrid-cloud/cloud-one-container-image-security.html)
+## Commercial Projects
+- [Styra DAS](www.styra.com)
+- [Trend Micro Container Security](https://www.trendmicro.com/en_us/business/products/hybrid-cloud/cloud-one-container-image-security.html)
 -->
 
 ## Examples

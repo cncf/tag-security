@@ -11,8 +11,17 @@ Application manifests describe the configurations required for the deployment of
 - [OPA](https://www.openpolicyagent.org/)
 - [Checkov](https://www.checkov.io/) 
 - [KubeSec]( https://kubesec.io/ )
-- [Kics](https://kics.io)
+- [Kics](https://github.com/Checkmarx/kics)
+
+<!---
+## Commercial Projects
+- [Commercial Projects](optional)
+- [Snyk]( https://snyk.io )
+
+## Misc Projects
 - [InSpec](https://github.com/bgeesaman/inspec-k8s)
+
+-->
 
 ## Examples
 
