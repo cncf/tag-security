@@ -14,12 +14,20 @@ The reader should ensure that the CI and Continuous Delivery (CD) infrastructure
 - [Jenkins](https://www.jenkins.io/)
 - [TravisCI](https://travis-ci.org/)
 - [CircleCI](https://circleci.com/)
-- [Bamboo](https://www.atlassian.com/software/bamboo)
-- GitLab
-- GitHub Actions
 - [Spinnaker](https://spinnaker.io/)
-- FluxCD
-- ArgoCD 
+- [FluxCD](https://github.com/fluxcd/flux)
+- [ArgoCD](https://github.com/argoproj/argo-cd)
+
+<!---
+## Commercial Projects:
+- [Bamboo](https://www.atlassian.com/software/bamboo)
+- [Armory](https://www.armory.io/)
+- [Snyk](https://snyk.io)
+- [TeamCity](https://www.jetbrains.com/teamcity/)
+- [Bamboo](https://www.atlassian.com/software/bamboo
+- [Github Actions](https://github.com/features/actions)
+- [GitLab](https://docs.gitlab.com/ee/ci/pipelines/)
+-->
 
 ## Examples:
 - Security scans should be automated as a gating step during the software build process. Modern security tooling is designed to allow easy integration with a wide range of continuous integration systems. 

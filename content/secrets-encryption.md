@@ -20,9 +20,9 @@ Using an external secrets manager can limit the risks of using unencrypted secre
 
 <!---
 ## Commercial Projects (optional)
-HashiCorp Vault Enterprise (www.hashicorp.com)
-AWS KMS (https://aws.amazon.com/kms/)
-Aqua Security Enterprise (www.aquasec.com)
+- [HashiCorp Vault Enterprise](www.hashicorp.com)
+- [AWS KMS](https://aws.amazon.com/kms/)
+- [Aqua Security Enterprise](www.aquasec.com)
 -->
 
 ## Examples

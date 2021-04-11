@@ -3,11 +3,11 @@ title: "Credential Management (Hardware Security Modules (HSM) + Credential Mana
 date: "2020-10-01"
 category: "develop"
 ---
-Hardware Security Modules (HSM)
+### Hardware Security Modules (HSM)
 
 Whenever possible, the reader should use technologies such as HSMs to physically protect cryptographic secrets with an Encryption Key that does not leave the HSM. If this is not possible, software-based credential managers should be used.
 
-Credential Management Cycle
+### Credential Management Cycle
 
 Cryptographic secrets should be generated securely within either an HSM or a software-based secrets management system.
 
@@ -20,24 +20,24 @@ In any case, secrets should be injected at runtime within the workloads through 
 - HashiCorp Vault (https://www.vaultproject.io/)
 
 <!---
-## Commercial Projects (Optional):
-HashiCorp Vault (https://www.vaultproject.io/)
-Microsoft Azure Key Vault (https://azure.microsoft.com/en-us/services/key-vault/)
-Amazon ACM (https://aws.amazon.com/certificate-manager/)
-Amazon Secrets Manager (https://aws.amazon.com/secrets-manager/)
-Google Secret Manager (https://cloud.google.com/secret-manager)
-AKEYLESS (https://www.akeyless.io/)
-Pivotal Cloud Foundry CredHub (https://docs.cloudfoundry.org/credhub/)
-Project Name (Link)
-CyberArk PAM (https://www.cyberark.com/)
-CyberArk Conjur (https://www.conjur.org/)
-BeyondTrust (https://www.beyondtrust.com)
-Thales HSMs (https://cpl.thalesgroup.com/encryption/hardware-security-modules)
-Entrust HSMs (https://www.entrust.com/digital-security/hsm)
-Utimaco HSMs (https://hsm.utimaco.com/)
-Azure Dedicated HSM (https://azure.microsoft.com/en-ca/services/azure-dedicated-hsm/) 
-AWS Cloud HSM (https://aws.amazon.com/cloudhsm/)
-Google Cloud HSM (https://cloud.google.com/kms/docs/hsm)
+## Commercial Projects](Optional):
+- [HashiCorp Vault](https://www.vaultproject.io/)
+- [Microsoft Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/)
+- [Amazon ACM](https://aws.amazon.com/certificate-manager/)
+- [Amazon Secrets Manager](https://aws.amazon.com/secrets-manager/)
+- [Google Secret Manager](https://cloud.google.com/secret-manager)
+- [AKEYLESS](https://www.akeyless.io/)
+- [Pivotal Cloud Foundry CredHub](https://docs.cloudfoundry.org/credhub/)
+- [Project Name](Link)
+- [CyberArk PAM](https://www.cyberark.com/)
+- [CyberArk Conjur](https://www.conjur.org/)
+- [BeyondTrust](https://www.beyondtrust.com)
+- [Thales HSMs](https://cpl.thalesgroup.com/encryption/hardware-security-modules)
+- [Entrust HSMs](https://www.entrust.com/digital-security/hsm)
+- [Utimaco HSMs](https://hsm.utimaco.com/)
+- [Azure Dedicated HSM](https://azure.microsoft.com/en-ca/services/azure-dedicated-hsm/) 
+- [AWS Cloud HSM](https://aws.amazon.com/cloudhsm/)
+- [Google Cloud HSM](https://cloud.google.com/kms/docs/hsm)
 -->
 
 ## Examples
