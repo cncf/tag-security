@@ -11,8 +11,9 @@ collaborate.
 
 It is requested that channels include a header for what it is used for.
 
-## Code of conduct
+Additional information may be found in the [CNCF slack guidelines](https://github.com/cncf/foundation/blob/master/slack-guidelines.md).
 
+## Code of conduct
 
 Members of SIG-Security channels are expected to abide by the [code of conduct](https://github.com/cncf/sig-security/blob/master/CODE-OF-CONDUCT.md).
 
