@@ -1,7 +1,9 @@
 .panel_wrap {
     margin-bottom: 5px;
   }
-  
+  .panel_toggle{
+    text-align: start;
+  }  
   .panel_wrap.active_panel .panel_header {
     background: #396ea5;
   }

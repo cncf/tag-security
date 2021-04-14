@@ -43,13 +43,13 @@
     - { "name": "Identity and Access Management", "slug": "identity-and-access-management"}
     - { "name": "Credential Management (Hardware Security Modules (HSM) + Credential Management Cycle)", "slug": "credential-management"}
     - { "name": "Availability (Denial of Service (DoS) & Distributed Denial of Service (DDoS))", "slug": "availability"}
-- { "name": "[UNDER CONSTRUCTION]Security Assurance", "slug": "security-assurance"}
+- { "name": "[UNDER CONSTRUCTION] Security Assurance", "slug": "security-assurance"}
   - { "name": "Threat Modelling", "slug": "threat-modelling"}
   - { "name": "Threat Intelligence", "slug": "threat-intelligence"}
   - { "name": "Incident Response", "slug": "incident-response"}
   - { "name": "Zero Trust Architecture", "slug": "zero-trust-architecture"}
   - { "name": "Least Privilege", "slug": "least-privilege"}
   - { "name": "Roles and Responsibilities", "slug": "roles-and-responsibilities"}
-- { "name": "[UNDER CONSTRUCTION]Compliance", "slug": "compliance"}
+- { "name": "[UNDER CONSTRUCTION] Compliance", "slug": "compliance"}
   - { "name": "Regulatory Audit", "slug": "regulatory-audit"}
   - { "name": "Industries", "slug": "industries"}
