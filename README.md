@@ -232,6 +232,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Frederick Fernando ([@freddyfernando](https://github.com/freddyfernando)), InfraCloud
 * Andreas Spanner ([@aspanner](https://github.com/aspanner)), Red Hat
 * Eli Nesterov ([@elinesterov](https://github.com/elinesterov)), ByteDance
+* Frederick Kautz ([@fkautz](https://github.com/fkautz)), Network Service Mesh Maintainer
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
