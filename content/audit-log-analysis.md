@@ -11,7 +11,7 @@ Non-compliant violations are detected based on a pre-configured set of rules tha
 To have the ability to audit actions of entities using the cluster, it is vital to enable API auditing with a filter for a specific set of API Groups or verbs, either of interest to a security team, cluster administrators, or other teams by field of study. Immediate forwarding of logs to a location inaccessible via cluster-level credentials also defeats an attacker's attempt to cover their tracks by disabling logs or deleting their activity logs. The systems processing alerts should be periodically tuned for false positives to avoid alert flooding, fatigue, and false negatives after security incidents that were not detected by the system.
 
 ## Projects
-- [ELK helm chart](https://github.com/elastic/helm-charts
+- [ELK helm chart](https://github.com/elastic/helm-charts)
 - [SOAR](https://n8n.io/
 - [Falco](https://github.com/falcosecurity/falco
 - [Cortex](https://github.com/TheHive-Project/Cortex
