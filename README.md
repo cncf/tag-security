@@ -98,7 +98,7 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 ## Members
 
 ### SIG Chairs
-* Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A. [Chair - term: 9/28/2020 - 9/27/2022]
+* Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), Apple [Chair - term: 9/28/2020 - 9/27/2022]
 * Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 6/3/2019 - 6/3/2021]
 * Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 6/3/2019 - 6/3/2021]
 
@@ -146,6 +146,8 @@ Co-chair representative: @ultrasaurus
 Membership governance can be viewed [here](https://github.com/cncf/sig-security/blob/master/governance/roles.md#role-of-members). If you are new, check out the [New Members Page](NEWMEMBERS.md).
 <details><summary>Click to view list</summary>
 
+
+* Marlow Weston ([@catblade](https://github.com/catblade)), Intel
 * Pushkar Joglekar ([@pushkarj](https://github.com/pushkarj))
 * POP ([@danpopsd](https://github.com/danpopsd)), Sysdig
 * Devarajan P Ramaswamy ([@deva](https://github.com/deva26)), PADME
@@ -191,7 +193,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Roger Klorese ([@qnetter](https://github.com/qnetter)), SUSE
 * John Menerick ([@cloudsriseup](https://github.com/cloudsriseup)), Ford Autonomic
 * Peter Benjamin ([@pbnj](https://github.com/pbnj)), Norton LifeLock
-* Emily Fox([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A.
+* Emily Fox([@TheFoxAtWork](https://github.com/TheFoxAtWork)), Apple
 * Carlos Villavicencio ([@solrac901](https://github.com/solrac901)), Intel
 * Gareth Rushgrove ([@garethr](https://github.com/garethr)), Snyk
 * Martin Vrachev ([@MVrachev](https://github.com/MVrachev)), VMware
@@ -230,6 +232,10 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Abhishek Singh ([@araalinetworks](https://github.com/araalinetworks)), Araali Networks
 * Aeva Black ([@AevaOnline](https://github.com/AevaOnline)), Microsoft
 * Frederick Fernando ([@freddyfernando](https://github.com/freddyfernando)), InfraCloud
+* Andreas Spanner ([@aspanner](https://github.com/aspanner)), Red Hat
+* Eli Nesterov ([@elinesterov](https://github.com/elinesterov)), ByteDance
+* Matthew Flannery [@matthewflannery](https://github.com/matthewflannery)), Accelera
+* Frederick Kautz ([@fkautz](https://github.com/fkautz)), Network Service Mesh Maintainer
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
