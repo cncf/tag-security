@@ -26,7 +26,7 @@ We welcome additions to this catalog by
 | [electron-native-notify](2019/electron-native-notify.md) | 2019 | Source Code | [1](https://blog.npmjs.org/post/185397814280/plot-to-steal-cryptocurrency-foiled-by-the-npm), [2](https://komodoplatform.com/update-agama-vulnerability/)|
 | [ShadowHammer](2019/shadowhammer.md) | 2019 | Multiple steps | [1](https://www.csoonline.com/article/3384259/asus-users-fall-victim-to-supply-chain-attack-through-backdoored-update.html), [2](https://securelist.com/operation-shadowhammer/89992/) |
 | [PEAR Breach](2019/pear.md) | 2019 | Publishing Infrastructure | [1](https://blog.dcso.de/php-pear-software-supply-chain-attack/), [2](https://thehackernews.com/2019/01/php-pear-hacked.html) |
-| [The event-stream vulnerability](2018/event-stream.md) | 2018 | Malicious Maintainer | [1]((https://medium.com/intrinsic/compromised-npm-package-event-stream-d47d08605502)),[2](https://github.com/dominictarr/event-stream/issues/116) |
+| [The event-stream vulnerability](2018/event_stream.md) | 2018 | Malicious Maintainer | [1]((https://medium.com/intrinsic/compromised-npm-package-event-stream-d47d08605502)),[2](https://github.com/dominictarr/event-stream/issues/116) |
 | [Dofoil](2018/dofoil.md) | 2018 | Publishing Infrastructure | [1](https://www.zdnet.com/article/windows-attack-poisoned-bittorrent-client-set-off-huge-dofoil-outbreak-says-microsoft/) |
 | [Operation Red](2018/operation-red.md) | 2018 | Publishing Infrastructure | [1](https://blog.trendmicro.com/trendlabs-security-intelligence/supply-chain-attack-operation-red-signature-targets-south-korean-organizations/) |
 | [Gentoo Incident](2018/gentoo.md) | 2018    | Source Code | [1](https://wiki.gentoo.org/wiki/Project:Infrastructure/Incident_Reports/2018-06-28_Github)
