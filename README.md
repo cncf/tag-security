@@ -146,7 +146,9 @@ Co-chair representative: @ultrasaurus
 Membership governance can be viewed [here](https://github.com/cncf/sig-security/blob/master/governance/roles.md#role-of-members). If you are new, check out the [New Members Page](NEWMEMBERS.md).
 <details><summary>Click to view list</summary>
 
-* Pushkar Joglekar ([@pushkarj](https://github.com/pushkarj)), VMware
+
+* Marlow Weston ([@catblade](https://github.com/catblade)), Intel
+* Pushkar Joglekar ([@pushkarj](https://github.com/pushkarj))
 * POP ([@danpopsd](https://github.com/danpopsd)), Sysdig
 * Devarajan P Ramaswamy ([@deva](https://github.com/deva26)), PADME
 * Kamil Pawlowski ([@kbpawlowski](https://github.com/kbpawlowski))
@@ -232,6 +234,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Frederick Fernando ([@freddyfernando](https://github.com/freddyfernando)), InfraCloud
 * Andreas Spanner ([@aspanner](https://github.com/aspanner)), Red Hat
 * Eli Nesterov ([@elinesterov](https://github.com/elinesterov)), ByteDance
+* Matthew Flannery [@matthewflannery](https://github.com/matthewflannery)), Accelera
 * Frederick Kautz ([@fkautz](https://github.com/fkautz)), Network Service Mesh Maintainer
 </details>
 
