@@ -82,7 +82,7 @@ is clearly communicated to the group (typically by adding a note to the
 relevant github issue).
 
 Each assessment is represented as a github issue, where the description field
-follows a [template](/.github/ISSUE_TEMPLATE/security-assessment.md)
+follows a [template](/.github/ISSUE_TEMPLATE/joint-review.md)
 
 The queue is visible through [github project](https://github.com/cncf/sig-security/projects/2)
 
