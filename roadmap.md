@@ -1,14 +1,21 @@
 # SIG Security Roadmap
 
-### Overview
-Note:  SIG-Security was rebranded from SAFE working group. The below roadmap includes SAFE WG and SIG-Security in its timeline.
+* [Overview](#overview)
+* [Details](#details)
+* [Upcoming](#upcoming)
+  * [Ongoing efforts](#ongoing-efforts)
+* [Completed](completed)
+
+## Overview
+Note:  SIG-Security was rebranded from SAFE working group. The below roadmap
+includes SAFE WG and SIG-Security in its timeline.
 
 |     | #2 Discover | #3 Describe | #4 Identify
 | --- | --- | --- | --- |
 | Artifacts | Personas<br/>Use Cases<br/>Categories | Standards<br/>Common Definitions<br/>Block Architecture | Catalog Projects<br/>Fill in Boxes<br/>Identify Gaps
 | Topics | Presentations<br/>SIG members & guests | Standards in Practice<br/>Real World Systems Architecture | Platforms & Products<br/>Tools & Libraries
 
-### Details
+## Details
 
 1. **Charter** the SAFE Working Group. Draft vision, process and initial members 
    (done, see below)
@@ -32,7 +39,30 @@ Note:  SIG-Security was rebranded from SAFE working group. The below roadmap inc
    * Continually monitor the viability of the existing projects and update the landscape document
    * Document and disseminate best practices (provide training?)
 
-### Completed
+## Upcoming
+
+SIG-Security strives to perform annual planning and quarterly reviews of our
+roadmap plans.  The Roadmap planning project board for each annum is a live
+board and is continually updated.  Boards may have cards added which indicate
+early concepts or needs for discovery, prior to become proposals or projects.
+
+| Year | Board Link | 
+| --- | --- | 
+| 2021-2022 | [RoadMap Planning Board](https://github.com/cncf/sig-security/projects/4) |
+
+### Ongoing efforts
+
+SIG-Security maintains a few activities as regular business.  Boards tracking
+these items linked below.
+
+| Effort | Board Link | Description |
+| --- | --- | -- |
+| CNCF project security reviews | [Security Review Queue](https://github.com/cncf/sig-security/projects/2) | This board is used to manage upcoming and current security reviews and security review related activities. |
+| SIG-Security Projects | [Project Tracking Board](https://github.com/cncf/sig-security/projects/1) | This board is used to manage upcoming proposals (backlog) and ongoing projects. |
+| Issue Triage | [Triage Board](https://github.com/cncf/sig-security/projects/3) | This board is used to assist the Triage team in managing the queue of issues. |
+
+
+## Completed
 
 |   Milestone  | Date | Action
 | --- | --- | --- |
