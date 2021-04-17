@@ -2,7 +2,7 @@
 name: Presentation
 about: Have something you want to share with the group? Or someone you would like to invite to speak? Propose a presentation for the SIG-Security weekly meetings.
 title: "[Presentation] Presentation Title"
-labels: usecase-presentation
+labels: "usecase-presentation, triage-required"
 assignees: ''
 
 ---
