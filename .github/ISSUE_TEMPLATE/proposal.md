@@ -2,7 +2,7 @@
 name: Proposal
 about: To suggest an idea for a new resource or process that will improve cloud native security that you want to work on (if you have an idea that you don't personally want to work on, make a "suggestion")
 title: "[Proposal] Project Name"
-labels: proposal
+labels: "proposal, triage-required"
 assignees: ''
 
 ---
