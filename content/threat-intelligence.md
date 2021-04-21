@@ -9,7 +9,7 @@ Cloud native applications by design and purpose are a collection of multiple dyn
 ## Projects
 - [MISP](https://www.misp-project.org/)
 - [Medallion - proof of concept](https://github.com/oasis-open/cti-taxii-server)
-- [OpenCTI] (https://www.opencti.io)
+- [OpenCTI](https://www.opencti.io)
 - [OSINT Framework](https://osintframework.com/)
 - [Threatcrowd](https://www.threatcrowd.org/)
 
