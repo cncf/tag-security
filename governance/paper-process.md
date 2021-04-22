@@ -102,7 +102,7 @@ as a single, unified voice. It should ensure:
 * phrasing is similar (caddy corner not mixed in with kitty corner),
 * acronyms are spelled out at their first use and then abbrieviated later,
 * footnotes and citations are consistent and not direct hyperlinks in the text
-* vague terms are defined in a gloassary or otherwise cited to the cloud native security lexicon in the repo
+* vague terms are defined in a glossary or otherwise cited to the cloud native security lexicon in the repo
 
 ### Final group review
 
