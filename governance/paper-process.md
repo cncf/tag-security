@@ -97,7 +97,7 @@ comments, and other discussions should be closed out and finalized at this time.
 
 No more than three contributing individuals should be assigned for narrative
 voice. The narrative voice is a semi-final pass of the paper to ensure it reads
-as a single, unified voice.  It should ensure:
+as a single, unified voice. It should ensure:
 * the language origin is consistent throughout the document (lang_en or lang_us),
 * phrasing is similar (caddy corner not mixed in with kitty corner),
 * acronyms are spelled out at their first use and then abbrieviated later,
