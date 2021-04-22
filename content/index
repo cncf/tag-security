@@ -43,7 +43,7 @@
     - { "name": "Identity and Access Management", "slug": "identity-and-access-management"}
     - { "name": "Credential Management (Hardware Security Modules (HSM) + Credential Management Cycle)", "slug": "credential-management"}
     - { "name": "Availability (Denial of Service (DoS) & Distributed Denial of Service (DDoS))", "slug": "availability"}
-- { "name": "[UNDER CONSTRUCTION] Security Assurance", "slug": "security-assurance"}
+- { "name": "Security Assurance", "slug": "security-assurance"}
   - { "name": "Threat Modelling", "slug": "threat-modelling"}
   - { "name": "Threat Intelligence", "slug": "threat-intelligence"}
   - { "name": "Incident Response", "slug": "incident-response"}

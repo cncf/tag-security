@@ -1,7 +1,7 @@
 ---
 title: "Threat Modeling"
 date: "2020-10-01"
-category: "develop"
+category: "Security Assurance"
 ---
 
 For organizations adopting cloud native, the primary mechanism of identifying risk and resulting controls and mitigations is to perform threat modeling of applications, data flows, and supporting processes and infrastructure. The method by which this is accomplished is minimally different from typical threat modeling. The below guidance is an enhancement of the four step OWASP threat modeling recommended for cloud native capabilities.
@@ -34,10 +34,14 @@ The utilization of pipelines and infrastructure as code (IaC) may provide compen
 As with any cloud native process, it is important to iterate and provide feedback. In the context of threat modeling, this means re-evaluating if the existing measures, mechanisms, and matrices accurately reflect the operational state given the continual changes to the architecture.
 
 ## Projects
-- TODO
+- [OWASP Threat Dragon](https://owasp.org/www-project-threat-dragon/)
+- [Microsoft Threat Modeling Tool](https://docs.microsoft.com/en-gb/azure/security/develop/threat-modeling-tool)
+- [Threatspec](https://github.com/threatspec/threatspec)
 
-## Examples
-- TODO
-
-## Links (optional)
-- TODO
+## Other Links
+- [The Current State of Kubernetes Threat Modeling](https://www.marcolancini.it/2020/blog-kubernetes-threat-modelling/)
+- [Guidance on Kubernetes Threat Modelling](https://www.trendmicro.com/vinfo/us/security/news/virtualization-and-cloud/guidance-on-kubernetes-threat-modeling)
+- [Kubernetes Threat Model by Trail of Bits (June 2019)](https://github.com/kubernetes/community/blob/master/sig-security/security-audit-2019/findings/Kubernetes%20Threat%20Model.pdf)
+- [Risk8s Business: Risk Analysis of Kubernetes Cluster](https://tldrsec.com/guides/kubernetes/)
+- [Securing the 4 Cs of Cloud-Native Systems: Cloud, Cluster, Container, and Code](https://www.trendmicro.com/vinfo/us/security/news/virtualization-and-cloud/securing-the-4-cs-of-cloud-native-systems-cloud-cluster-container-and-code)
+- [K8s Threat Model](https://cloudsecdocs.com/container_security/theory/threats/k8s_threat_model/)
