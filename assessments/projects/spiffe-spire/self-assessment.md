@@ -297,7 +297,7 @@ SPIRE can be extended to work with third party plugins. While third party plugin
 
 If using an upstream Certificate Authority (CA), the compromise of the CA represents a compromise of the entire trust domain. Configure multiple smaller trust domains as opposed to one big large trust domains with different upstream CAs can contain the impact potential compromise of a CA. The blast radius will be isolated to that of a single trust domain.
 
-A compromise of the SPIRE server database can lead to 1) an attacker registering his own workloads, or 2) an attacker publishing his own keys into the trust bundle. Care should be taken to ensure protection of the database.
+A compromise of the SPIRE server database can lead to 1) an attacker registering their own workloads, or 2) an attacker publishing their own keys into the trust bundle. Care should be taken to ensure protection of the database.
 
 ### Scaling SPIRE
 
