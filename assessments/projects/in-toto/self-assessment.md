@@ -194,7 +194,7 @@ to verify the delivered product.
 
 
 Once the software supply chain layout is defined, the project owner will sign
-it with his private key and publish it so clients can use it for verification.
+it with their private key and publish it so clients can use it for verification.
 
 #### Link metadata and Functionaries
 
