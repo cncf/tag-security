@@ -125,7 +125,7 @@ format:
 | Soft Conflicts | Y/N |
 | :------------- | :-: |
 | Reviewer belongs to the same company/organization of the project, but does not work on the project |  |
-| Reviewer uses the project in his/her work |  |
+| Reviewer uses the project in their work |  |
 | Reviewer has contributed to the project |  |
 | Reviewer has a personal stake in the project (personal relationships, etc.) |  |
 

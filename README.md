@@ -236,6 +236,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Eli Nesterov ([@elinesterov](https://github.com/elinesterov)), ByteDance
 * Matthew Flannery [@matthewflannery](https://github.com/matthewflannery)), Accelera
 * Frederick Kautz ([@fkautz](https://github.com/fkautz)), Network Service Mesh Maintainer
+* Sunny Patel ([@sunnythepatel](https://github.com/sunnythepatel)), Monash eResearch Centre, Melbourne Australia
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
