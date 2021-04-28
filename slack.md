@@ -17,7 +17,7 @@ Additional information may be found in the [CNCF slack guidelines](https://githu
 
 Members of SIG-Security channels are expected to abide by the [code of conduct](https://github.com/cncf/sig-security/blob/master/CODE-OF-CONDUCT.md).
 
-## Posting oputside content
+## Posting outside content
 
 The SIG-Security channels are mechanisms for cloud native security discussions.
 It is expected that outside, non-sig created content will be posted; however,
