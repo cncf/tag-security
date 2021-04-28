@@ -3,7 +3,7 @@
 ## Identifying and creating channels
 Just for approved projects, sec-assessment-xxxx exception SIG-Security channels
 are identified with the “sig-security-” prefix.  Except during conferences, the
-CNCF permits slack members to create channels; however, security-related
+CNCF permits slack members to create channels; however, sig-security-related
 channels should only be created by chairs or tech leads, and are typically
 prefixed by sig-security- following hyphenation of the topic/subject.  This
 helps the community find topics of relevance as well as discover areas to
