@@ -23,7 +23,7 @@ The SIG-Security channels are mechanisms for cloud native security discussions.
 It is expected that outside, non-sig created content will be posted; however,
 these should include topics of relevance and interest to the cloud native
 community space, rather than marketing or promotion of a vendor-specific
-product..   
+product.
 
 For example, maintainers and contributors of projects are encouraged to post
 relevant topics, podcasts, and blogs in the channels provided the content is not
