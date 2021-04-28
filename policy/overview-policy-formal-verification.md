@@ -127,7 +127,7 @@ proving (deductive verifcation)<sup>[[15]],[[16]],[[17]],[[18]]</sup>.
 
 Let's consider a hypothetical trivial use case: a Kubernetes operator has an 
 Admission Control policy intent, e.g. don't allow pods with label "foo" in 
-namespace "bar", and wants to reliably verify her encoded policy does that 
+namespace "bar", and wants to reliably verify their encoded policy does that 
 (and also ensure it _does_ allow a "foo" pod to deploy into other namespaces, 
 eg "baz").  
 
