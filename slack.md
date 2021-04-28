@@ -1,7 +1,7 @@
 # SIG-Security channels housekeeping
 
 ## Identifying and creating channels
-Just for approved projects, sec-assessment-xxxx exception SIG-Security channels
+Just for approved projects, "sec-assessment-xxxx" exception SIG-Security channels
 are identified with the “sig-security-” prefix.  Except during conferences, the
 CNCF permits slack members to create channels; however, sig-security-related
 channels should only be created by chairs or tech leads, and are typically
