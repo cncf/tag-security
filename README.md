@@ -45,10 +45,18 @@ Anyone is welcome to join our open discussions of SIG-Security projects and shar
 
 ## Meeting times
 
-The Security SIG group meets every Wednesday at 10:00am GMT-7 (see your timezone [here](https://time.is/compare/1000_23_Oct_2019_in_PT)):
+Group meeting times are listed below:
 
-* [Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
-* [Meeting Link: zoom.us/my/cncfsigsecurity (Passcode: 77777)](https://zoom.us/my/cncfsigsecurity?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
+* US:   Weekly on Wednesdays at 10:00am GMT-7 (see your timezone [here](https://time.is/compare/1000_27_Jan_2021_in_PT))
+* APAC: Bi-weekly on Tuesdays at 1:00pm GMT+11 (see your timezone [here](https://time.is/compare/1300_26_Jan_2021_in_AEDT))
+
+See the  [CNCF Calendar](https://www.cncf.io/calendar/) for calendar invites.
+
+[Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
+
+### Zoom Details
+
+[Meeting Link: zoom.us/my/cncfsigsecurity (Passcode: 77777)](https://zoom.us/my/cncfsigsecurity?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
 
 One tap mobile:
 * +16465588656,,7375677271# US (New York)
@@ -59,8 +67,10 @@ Dial by your location:
 * +1 669 900 6833 US (San Jose)
 * 877 369 0926 US Toll-free
 * 855 880 1246 US Toll-free
+* 1800 945 157 Australia Toll-free
+* [Find your local number](https://zoom.us/u/alwlmxlNn)
+
 Meeting ID: 737 567 7271
-Find your local number: https://zoom.us/u/alwlmxlNn
 
 ## Gatherings
 
@@ -88,13 +98,16 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 ## Members
 
 ### SIG Chairs
-* Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A. [Chair - term: 9/28/2020 - 9/27/2022]
+* Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), Apple [Chair - term: 9/28/2020 - 9/27/2022]
 * Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 6/3/2019 - 6/3/2021]
 * Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 6/3/2019 - 6/3/2021]
 
 ### Tech Leads
 * Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
 * Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
+* Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), Styra
+* Andres Vega ([@anvega](https://github.com/anvega), VMWare
+* Aradhana Chetal ([@achetal01](https://github.com/achetal01), TIAA
 
 ### SIG Chairs Emeritus
 * Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 9/3/2020]
@@ -133,6 +146,8 @@ Co-chair representative: @ultrasaurus
 Membership governance can be viewed [here](https://github.com/cncf/sig-security/blob/master/governance/roles.md#role-of-members). If you are new, check out the [New Members Page](NEWMEMBERS.md).
 <details><summary>Click to view list</summary>
 
+
+* Marlow Weston ([@catblade](https://github.com/catblade)), Intel
 * Pushkar Joglekar ([@pushkarj](https://github.com/pushkarj))
 * POP ([@danpopsd](https://github.com/danpopsd)), Sysdig
 * Devarajan P Ramaswamy ([@deva](https://github.com/deva26)), PADME
@@ -178,7 +193,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Roger Klorese ([@qnetter](https://github.com/qnetter)), SUSE
 * John Menerick ([@cloudsriseup](https://github.com/cloudsriseup)), Ford Autonomic
 * Peter Benjamin ([@pbnj](https://github.com/pbnj)), Norton LifeLock
-* Emily Fox([@TheFoxAtWork](https://github.com/TheFoxAtWork)), National Security Agency, U.S.A.
+* Emily Fox([@TheFoxAtWork](https://github.com/TheFoxAtWork)), Apple
 * Carlos Villavicencio ([@solrac901](https://github.com/solrac901)), Intel
 * Gareth Rushgrove ([@garethr](https://github.com/garethr)), Snyk
 * Martin Vrachev ([@MVrachev](https://github.com/MVrachev)), VMware
@@ -206,11 +221,25 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Aradhna Chetal ([@achetal01](https://github.com/achetal01)), TIAA
 * Jon Zeolla ([@jonzeolla](https://github.com/jonzeolla)), Seiso
 * Diego Comas ([@dcomas](https://github.com/dcomas)), MessageBird
-
+* Adith Sudhakar ([@asudhak](https://github.com/asudhak)), VMware
+* Muhammad Yuga Nugraha ([@myugan](https://github.com/myugan)), Practical DevSecOps
+* John Kinsella ([@jlk](https://github.com/jlk)), Accurics
+* Matt Jarvis ([@mattj-io](https://github.com/mattj-io)), Snyk
+* Or Azarzar ([@azarzar15](https://github.com/azarzar15)), Lightspin
+* Alex Floyd Marshall ([@apmarshall](https://github.com/apmarshall))
+* Alok Raj ([@ak-secops](https://github.com/ak-secops)), XenonStack
+* Brad McCoy ([@bradmccoydev](https://github.com/bradmccoydev)), Search365
+* Abhishek Singh ([@araalinetworks](https://github.com/araalinetworks)), Araali Networks
+* Aeva Black ([@AevaOnline](https://github.com/AevaOnline)), Microsoft
+* Frederick Fernando ([@freddyfernando](https://github.com/freddyfernando)), InfraCloud
+* Andreas Spanner ([@aspanner](https://github.com/aspanner)), Red Hat
+* Eli Nesterov ([@elinesterov](https://github.com/elinesterov)), ByteDance
+* Matthew Flannery [@matthewflannery](https://github.com/matthewflannery)), Accelera
+* Frederick Kautz ([@fkautz](https://github.com/fkautz)), Network Service Mesh Maintainer
+* Sunny Patel ([@sunnythepatel](https://github.com/sunnythepatel)), Monash eResearch Centre, Melbourne Australia
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
-
 
 
 # Additional information

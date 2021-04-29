@@ -2,21 +2,25 @@ Shared with CNCF Community
 
 # **Cloud Native Security Whitepaper**
 
-|
-**Work-Group:** SIG-Security **Short self link to working doc:** https://tinyurl.com/CNCF-CNSWP | **Status** : WIP | In Review | **Approved** | Obsolete
+## Metadata
 
-**Created** : 2020-FEB-01 **Reviewed** : 2020-OCT-27  **Published** : 2020-NOV-18 **Release Version:** 1.0  
+| **Markdown** | | | |
+| -- | -- | -- | -- |
+| **Version** | **1.1** | 25 NOV 2020 | [Original working doc](https://tinyurl.com/CNCF-CNSWP) |
+| **Status** | **WIP** | In Review | Approved |
 
-| **Approvers** : [x] @lizrice [x] @justincormack  |
+| **PDF** | |
+| -- | -- |
+| **Created** | 2020-FEB-01 |
+| **Last Reviewed** | 2020-OCT-27 |
+| **PDF Published** | 2020-NOV-18 |
+| **Release Version** | 1.0 | 
+| **Final PDF Approvers** | [x] @lizrice [x] @justincormack  |
 
-| **Contributors:** [aradhna.chetal@gmail.com](mailto:aradhna.chetal@gmail.com), [themoxiefoxatwork@gmail.com](mailto:themoxiefoxatwork@gmail.com), [jj@tetrate.io](mailto:jj@tetrate.io), gadi@alcide.io @lumjjb, @trishankatdatadog, [@vvenkatara@paloaltonetworks.com](mailto:vvenkatara@paloaltonetworks.com), @pushkarj, @whaber, @sublimino, @rowan-baker, [chase.pettet@gmail.com](mailto:chase.pettet@gmail.com), [harsingh@us.ibm.com](mailto:harsingh@us.ibm.com), jeff.lombardo@gmail.com
-|                                                                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Reviewers** : @justincappos, @lumjjb, @whaber, @craigbox, @anvega, @magnologan, @magnologan, alok@xenonstack.com, @nyrahul, @ranio1, Itay Shakury (@itaysk) |
-| ---                                                                                                                                                           |
-|                                                                                                                                                               |
-
-
+| **Originating Content and Review** | |
+| -- | --|
+| **Contributors** | [aradhna.chetal@gmail.com](mailto:aradhna.chetal@gmail.com), [@theFoxAtWork](mailto:themoxiefoxatwork@gmail.com), [jj@tetrate.io](mailto:jj@tetrate.io), gadi@alcide.io @lumjjb, @trishankatdatadog, [@vvenkatara@paloaltonetworks.com](mailto:vvenkatara@paloaltonetworks.com), @pushkarj, @whaber, @sublimino, @rowan-baker, [chase.pettet@gmail.com](mailto:chase.pettet@gmail.com), [harsingh@us.ibm.com](mailto:harsingh@us.ibm.com), jeff.lombardo@gmail.com |
+| **Reviewers** | @justincappos, @lumjjb, @whaber, @craigbox, @anvega, @magnologan, @magnologan, alok@xenonstack.com, @nyrahul, @ranio1, Itay Shakury (@itaysk) | 
 
 ## Index
 - [**Cloud Native Security Whitepaper**](#cloud-native-security-whitepaper)
@@ -44,7 +48,7 @@ Shared with CNCF Community
       - [Security Checks in Development](#security-checks-in-development)
       - [Development of Tests](#development-of-tests)
       - [Code Review](#code-review)
-    - [Distribute](#distribute-1)
+  - [Distribute](#distribute-1)
       - [Build Pipeline](#build-pipeline)
       - [Image Scanning](#image-scanning)
       - [Image hardening](#image-hardening)
@@ -58,7 +62,7 @@ Shared with CNCF Community
         - [Registry Staging](#registry-staging)
         - [Signing, Trust, and Integrity](#signing-trust-and-integrity)
         - [Encryption](#encryption)
-    - [Deploy](#deploy-1)
+  - [Deploy](#deploy-1)
       - [Pre-Flight Deployment Checks](#pre-flight-deployment-checks)
       - [Observability & Metrics](#observability--metrics)
       - [Response & Investigation](#response--investigation)
@@ -95,37 +99,37 @@ Shared with CNCF Community
         - [Credential Management Cycle](#credential-management-cycle)
       - [Availability](#availability)
         - [Denial of Service (DoS) & Distributed Denial of Service (DDoS)](#denial-of-service-dos--distributed-denial-of-service-ddos)
-    - [Security Assurance](#security-assurance)
-  - [Threat Modeling](#threat-modeling)
-    - [End-to-end architecture](#end-to-end-architecture)
-    - [Threat Identification](#threat-identification)
-  - [Threat Intelligence](#threat-intelligence)
-  - [Incident Response](#incident-response)
-  - [Security Stack](#security-stack)
-    - [Environment](#environment)
-      - [Pre (Workload) Flight Security Tools](#pre-workload-flight-security-tools)
-        - [Compute & Node Checks](#compute--node-checks)
-        - [Run Contexts](#run-contexts)
-      - [In-Flight Security Tools](#in-flight-security-tools)
-        - [Workload & Host Runtime Security](#workload--host-runtime-security)
-    - [Zero Trust Architecture](#zero-trust-architecture)
-    - [Least Privilege](#least-privilege)
-    - [Roles and Responsibilities](#roles-and-responsibilities)
-    - [Compliance](#compliance)
-  - [Regulatory Audits](#regulatory-audits)
-    - [Personas and Use Cases](#personas-and-use-cases)
-  - [Industries](#industries)
-    - [Enterprise](#enterprise)
-    - [Microbusiness](#microbusiness)
-    - [Finance](#finance)
-    - [Healthcare](#healthcare)
-    - [Academia and Education](#academia-and-education)
-    - [Public Sector](#public-sector)
-    - [Evolution of Cloud Native Security](#evolution-of-cloud-native-security)
-    - [Conclusion](#conclusion-1)
-    - [Acronyms and Glossary](#acronyms-and-glossary)
-    - [References](#references)
-    - [Acknowledgements](#acknowledgements)
+  - [Security Assurance](#security-assurance)
+    - [Threat Modeling](#threat-modeling)
+      - [End-to-end architecture](#end-to-end-architecture)
+      - [Threat Identification](#threat-identification)
+    - [Threat Intelligence](#threat-intelligence)
+    - [Incident Response](#incident-response)
+    - [Security Stack](#security-stack)
+      - [Environment](#environment)
+        - [Pre (Workload) Flight Security Tools](#pre-workload-flight-security-tools)
+          - [Compute & Node Checks](#compute--node-checks)
+          - [Run Contexts](#run-contexts)
+        - [In-Flight Security Tools](#in-flight-security-tools)
+          - [Workload & Host Runtime Security](#workload--host-runtime-security)
+      - [Zero Trust Architecture](#zero-trust-architecture)
+      - [Least Privilege](#least-privilege)
+      - [Roles and Responsibilities](#roles-and-responsibilities)
+  - [Compliance](#compliance)
+    - [Regulatory Audits](#regulatory-audits)
+      - [Personas and Use Cases](#personas-and-use-cases)
+    - [Industries](#industries)
+      - [Enterprise](#enterprise)
+      - [Microbusiness](#microbusiness)
+      - [Finance](#finance)
+      - [Healthcare](#healthcare)
+      - [Academia and Education](#academia-and-education)
+      - [Public Sector](#public-sector)
+      - [Evolution of Cloud Native Security](#evolution-of-cloud-native-security)
+      - [Conclusion](#conclusion-1)
+      - [Acronyms and Glossary](#acronyms-and-glossary)
+- [References](#references)
+- [Acknowledgements](#acknowledgements)
 
 # Executive Summary
 
@@ -696,7 +700,11 @@ Many financial, health, government, and other entities need to comply with a spe
 
 ### Personas and Use Cases
 
-The focus is on security, protection, detection, and auto-response where ever possible. It is not necessarily development tooling alone, but security tooling that integrates transparently into the development process to enforce security policies where fast feedback and most immediate actions to remediate can occur. For specific information on cloud native security use cases refer to the [SIG-Security's use cases listing](https://github.com/cncf/sig-security/blob/master/usecases.md).
+The focus is on security, protection, detection, and auto-response where ever possible. 
+It is not necessarily development tooling alone, but security tooling that integrates 
+transparently into the development process to enforce security policies where fast 
+feedback and most immediate actions to remediate can occur. For specific information
+ on cloud native security use cases refer to the [SIG-Security's use cases listing](https://github.com/cncf/sig-security/usecase-personas/).
 
 ## Industries
 
