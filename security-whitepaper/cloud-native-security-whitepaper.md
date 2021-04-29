@@ -309,7 +309,7 @@ Hardening of infrastructure and workloads should be supported by comprehensive t
 
 Static analysis of IaC, application manifests, and software code provide linting, identification of misconfigurations, and vulnerabilities of the specific component and will not include context of the surrounding components in analysis.  It is important to note that individual analysis is important, but should not be the only form of analysis. IaC code should be subject to the same pipeline policy controls as are application workloads.
 
-IaC is an increasingly popular way for organizations to deploy cloud and container infrastructure. Insecure configurations in IaC templates will naturally lead to vulnerabilities in the deployed infrastructure. These templates should therefore be scanned for characteristics that compromise security, using automated tools, before deploying the application and infrastructure artifacts. Key misconfigurations to keep an eye out for include:
+IaC is an increasingly popular way for organizations to deploy cloud and container infrastructure. Insecure configurations in IaC templates will naturally lead to vulnerabilities in the deployed infrastructure. These templates should therefore be scanned for characteristics that compromise security, before deploying the application and infrastructure artifacts. Key misconfigurations to keep an eye out for include:
 
 - Vulnerabilities contained within images specified in the application manifests
 - Settings that do not respect the principle of least privilege, such as containers that can escalate privileges or overly lax firewall rules
