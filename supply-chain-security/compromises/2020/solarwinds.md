@@ -10,17 +10,21 @@ From the original article [1]:
 > component of the Orion software framework that contains a backdoor that
 > communicates via HTTP to third party servers. 
 
-From article [2]:
+The host system used to build the Orion software was infected with malware,
+named SUNSPOT[4], which executed the rest of the attack on the Orion supply
+chain.
 
-> Although we do not know how the backdoor code made it into the library,
-> from the recent campaigns, research indicates that the attackers might 
-> have compromised internal build or distribution systems of SolarWinds,
-> embedding backdoor code into a legitimate SolarWinds library with the 
-> file name SolarWinds.Orion.Core.BusinessLayer.dll. This backdoor can 
-> be distributed via automatic update platforms or systems in target 
-> networks seen globally since March 2020. Microsoft security researchers 
-> have limited information about how they compromised the said platforms
-> at this point.
+The malware watches processes on the infected host to detect when the build
+tool, `MSBuild.exe`, is started. Once detected, the malware inspects the
+MSBuild process to determine whether it is building the Orion software.
+When a build of the Orion software is observed a malicious source file,
+containing the SunBurst/Solarigate backdoor, is then copied into the source
+directory and built into the resulting Orion software.
+
+The malware takes several steps to cover its tracks, including restoring the
+original source file at the end of a build, and using file checksums to prevent
+the malicious source file from being copied when the file in the source code
+that it replaces has been modified.
 
 ## Impact
 
@@ -41,16 +45,9 @@ Solarwinds customer environment via the Orion monitoring tool.
 
 ## Type of compromise
 
-While the specific details of how initial access occurred are unknown, it is
-understood that multiple compromises may have occurred:
-* Dev Tooling. According to article [2] the development tooling in use by
-  Solarwinds developers may have been compromised.  The backdoor appears to have
-come through a class introduced in the SolarWinds.Orion.Core.BusinessLayer.dll
-* Publishing Infrastructure. According to article [2] the compromised class
-  introduced could have been injected during the build and distribution of the
-updated product
-* Trust and Signing. Attackers signed libraries using Solarwinds own
-  certificates, Microsoft removed these certificates from its trusted list
+The publishing infrastructure, namely the system which performs builds of the
+Orion product, was compromised and used to tamper with developer tooling to
+inject the malicious code.
 
 ## References.
 
@@ -59,3 +56,5 @@ updated product
 2. [Microsoft report on Solarwinds compromise](https://msrc-blog.microsoft.com/2020/12/13/customer-guidance-on-recent-nation-state-cyber-attacks/)
 
 3. [ZDNet - Microsoft, FireEye confirm SolarWinds supply chain attack](https://www.zdnet.com/article/microsoft-fireeye-confirm-solarwinds-supply-chain-attack/)
+
+4. [CrowdStrike Blog – SUNSPOT: An Implant in the Build Process](https://www.crowdstrike.com/blog/sunspot-malware-technical-analysis/)
