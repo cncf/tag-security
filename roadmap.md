@@ -10,28 +10,28 @@
 Note:  SIG-Security was rebranded from SAFE working group. The below roadmap
 includes SAFE WG and SIG-Security in its timeline.
 
-|     | #2 Discover | #3 Describe | #4 Identify
+|     | <i> #2 Discover </i>| #3 Describe | #4 Identify
 | --- | --- | --- | --- |
-| Artifacts | Personas<br/>Use Cases<br/>Categories | Standards<br/>Common Definitions<br/>Block Architecture | Catalog Projects<br/>Fill in Boxes<br/>Identify Gaps
-| Topics | Presentations<br/>SIG members & guests | Standards in Practice<br/>Real World Systems Architecture | Platforms & Products<br/>Tools & Libraries
+| Artifacts | <i> Personas<br/>Use Cases<br/>Categories </i> | Standards<br/>Common Definitions<br/>Block Architecture | Catalog Projects<br/>Fill in Boxes<br/>Identify Gaps
+| Topics | <i> Presentations<br/>SIG members & guests </i> | Standards in Practice<br/>Real World Systems Architecture | Platforms & Products<br/>Tools & Libraries
 
 ## Details
 
 1. **Charter** the SAFE Working Group. Draft vision, process and initial members 
    (done, see below)
-2. **Discover** (in progress)
+2. **Discover** (Completed)
    * Explore the problem space of the working group
    * Investigating what is happening in the community today with respect to security for cloud native applications and infrastructure
    * [Presentations](issues?utf8=%E2%9C%93&q=is%3Aclosed+is%3Aissue+label%3Ausecase-presentation+) from members & guests
    * Describe [personas & use cases](usecase-personas/)
    * Draft a picture or set of categories that will serve as a starting point for an evaluation framework
    * Solicit real world use cases and practices (and compensating controls) for projects
-3. **Describe** the landscape
+3. **Describe** (in progress)
    * Define the terminology used in the output documents, and in the community
-   * Describe the current state (landscape) of cloud native security, which might include:
+   * Describe the current state (map) of cloud native security, which might include:
       * existing standards
       * existing open source, and proprietary, solutions
-      * common patterns in use today for system that works for cloud-native apps. For example:
+      * common patterns in use today for system that works for cloud native apps. For example:
         * Extract end-to-end view of secure access, and
         * Common layering or a block architecture
 4. **Identify** existing security components in CNCF and projects in the CNCF landscape and catalog
