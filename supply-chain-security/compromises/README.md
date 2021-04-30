@@ -15,6 +15,7 @@ We welcome additions to this catalog by
 
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
+| [Homebrew](2021/homebrew.md) | 2021 | Dev Tooling | [1](https://brew.sh/2021/04/21/security-incident-disclosure/), [2](https://hackerone.com/reports/1167608) |  |
 | [Codecov](2021/codecov.md) | 2021 | Source Code | [1](https://about.codecov.io/security-update/) |  |
 | [VSCode GitHub](2021/vscode.md) | 2021 | Dev Tooling | [1](https://www.bleepingcomputer.com/news/security/heres-how-a-researcher-broke-into-microsoft-vs-codes-github/) |  |
 | [SUNBURST/SUNSPOT/Solarigate](2020/solarwinds.md) | 2020 | Publishing Infrastructure | [1](https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html), [2](https://msrc-blog.microsoft.com/2020/12/13/customer-guidance-on-recent-nation-state-cyber-attacks/), [3](https://www.crowdstrike.com/blog/sunspot-malware-technical-analysis/) |  |
