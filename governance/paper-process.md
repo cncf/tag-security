@@ -72,7 +72,7 @@ Once task, content can begin rough-in
 ### Content rough-in
 
 Assignees can provide content rough-in in a variety of ways.  They may provide
-raw content in the former of phrases, disjointed paragraphs, bullets on the
+raw content in the form of phrases, disjointed paragraphs, bullets on the
 topic, or they draft content in the form of completed paragraphs.  If leveraging
 draft content, placing this content in quotes helps other reviewers know it is
 'near-complete' and can review it as a wholistic section.
@@ -130,7 +130,7 @@ meeting and decisively resolved.
 
 Decisive resolution is the practice by which the group attempts to immediately
 resolve the comment either as a won't do, out of initial scope, document
-options, or accept as is.  The intent to to expediently discuss (no more than
+options, or accept as is.  The intent to expediently discuss (no more than
 two minutes), identify the remedy, and apply it.  This is done both in the
 interest of time but also in an effort to minimize gold-plating (perfection is
 the enemy of complete).
