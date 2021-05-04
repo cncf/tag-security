@@ -20,4 +20,10 @@ There is on-going work to establish best practices in this area. The list of
 in the [catalog of supply chain compromises](./compromises) suggests some
 mitigation techniques for the more well understood categories.
 
+# Supply Chain Security Whitepaper
 
+SIG-Security has put work into a comprehensive software supply chain whitepaper
+highlighting best practices for high and medium risk environments. Please check 
+out [the whitepaper](./supply-chain-security-whitepaper/software-supply-chain-security-whitepaper.md) and corollary [secure supply chain assessment document](./supply-chain-security-whitepaper/secure-supply-chain-assessment.md) to learn more. 
+For information about contributing to the document or providing feedback, please
+refer to the [README](./supply-chain-security-whitepaper/README.md).
