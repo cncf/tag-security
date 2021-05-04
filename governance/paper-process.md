@@ -41,7 +41,7 @@ explained further in this document.
 | * [ ] | Public comment adjudication | 2 weeks (simultaneous with review) |
 | * [ ] | CNCF publishing engagement | ~2-3 weeks |
 | * [ ] | Addition to the repo | 2 weeks |
-| * [ ] | Blog post and publishing coordination | 1 week |
+| * [ ] | Blog post and publishing coordination | 2-3 weeks |
 
 
 ## Milestones
