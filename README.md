@@ -92,8 +92,8 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 
 ## History
 
-* SAFE WG - renamed to CNCF Security SIG
 * SIG-Security - renamed STAG ([TOC Issue #549](https://github.com/cncf/toc/issues/549))
+* SAFE WG - renamed to CNCF Security SIG
 * [(Proposed) CNCF Policy Working Group](/policy-wg-merging.md) - Merged into SAFE WG
 
 ## Members
