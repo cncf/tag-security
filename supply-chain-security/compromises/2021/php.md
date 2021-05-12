@@ -9,8 +9,8 @@ PHP is a web development language primarily used for creating web applications. 
 
 ## Remediation
 
-* Write access to the repository's source migrated out of a self-built karma system and now restricted only to members of the PHP organization.
-* Membership in the PHP organization now required 2FA-enabled accounts.
+* Membership in the PHP GitHub organization now required 2FA-enabled accounts.
+* Write access to the repository's source migrated out of a self-built karma system and now restricted only to members of the PHP project's GitHub organization.
 * The PHP team has decided to stop maintaining their own infrastructure declared their GitHub PHP project repository as the primary source.
 
 ## Type of Compromise
