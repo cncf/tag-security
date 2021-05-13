@@ -827,7 +827,7 @@ TUF has also been used to bootstrap trust in delivering software supply chain me
 # 
 
 
-# Prior Art / References:
+# Prior Art and References:
 
 **CISQ Tool to Tool Software Bill of Materials Exchange -** https://www.it-cisq.org/software-bill-of-materials/
 
