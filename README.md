@@ -240,6 +240,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Sunny Patel ([@sunnythepatel](https://github.com/sunnythepatel)), Monash eResearch Centre, Melbourne Australia
 * Jeff Rowell ([@jeff-rowell](https://github.com/Jeff-Rowell))
 * Daniel Tobin ([@dant24](https://github.com/dant24)), Cyral
+* Cole Kennedy ([@colek42](https://github.com/colek42)), BoxBoat
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
