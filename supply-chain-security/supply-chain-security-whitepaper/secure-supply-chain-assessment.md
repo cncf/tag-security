@@ -1,11 +1,11 @@
 # Evaluating your supply chain security
 
-## A Framework for Supply Chain Evaluation
+## A framework for supply chain evaluation
 
 So how does your supply chain stack up? Here are some questions to ask
 yourself:
 
-### Verify Source Code
+### Verify source code
 
 -   Do you require signed commits?
 
@@ -26,7 +26,7 @@ yourself:
 
 -   Do you limit the access of automation agents (like CI/CD pipelines) following the principles of least privilege and just-in-time?
 
-### Verify Materials
+### Verify materials
 
 -   Do you verify that dependencies meet your minimum thresholds for quality and reliability?
 
@@ -40,7 +40,7 @@ yourself:
 
 -   Do you create an SBOM of your own artefacts?
 
-### Protecting Build Pipelines
+### Protecting build pipelines
 
 -   Do you use hardened, minimal containers as the foundation for your build workers?
 
@@ -60,7 +60,7 @@ yourself:
 
 -   Do you produce verifiable, reproducible builds?
 
-### Protecting Artefacts and Deployments
+### Protecting artefacts and deployments
 
 -   Is every artefact your produce (including metadata and intermediate artefacts) signed?
 
