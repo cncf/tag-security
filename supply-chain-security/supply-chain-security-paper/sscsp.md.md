@@ -1,4 +1,6 @@
-# **<span style="text-decoration:underline;">Draft</span>**: Software Supply Chain Best Practices
+Shared with the CNCF community
+
+# Software Supply Chain Best Practices
 
 
 # **Schedule tentative (due by dates)**
