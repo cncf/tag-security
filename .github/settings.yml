@@ -5,7 +5,7 @@ repository:
   name: tag-security
 
   # A short description of the repository that will show up on GitHub
-  description: 🔐CNCF Technical Advisory Group on Security (STAG) -- secure access, policy control, privacy, auditing, explainability and more!
+  description: 🔐CNCF Security Technical Advisory Group -- secure access, policy control, privacy, auditing, explainability and more!
 
   # A URL with more information about the repository
   homepage: https://cncf.io/projects
