@@ -20,7 +20,7 @@ There is on-going work to establish best practices in this area. The list of
 in the [catalog of supply chain compromises](./compromises) suggests some
 mitigation techniques for the more well understood categories.
 
-# Supply Chain Security Paper
+# Supply chain security paper
 
 STAG (Security Technical Advisory Group) has put work into a comprehensive software supply chain paper
 highlighting best practices for high and medium risk environments. Please check 

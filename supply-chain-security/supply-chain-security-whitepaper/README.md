@@ -1,4 +1,4 @@
-Software Supply Chain Security Whitepaper
+Software Supply Chain Security Paper
 ==========================================
 
 # About
@@ -14,7 +14,7 @@ document created and maintained for the community, by its members.
 
 Updates to the paper, suggestions for updates, or discussion for updates
 should initiate with an [issue](https://github.com/cncf/sig-security/issues) submitted to the repo and labeled with
-"suggestion" and "whitepaper".
+"suggestion" and "supplychain".
 
 ### Markdown 
 
@@ -59,4 +59,3 @@ approval on the PR.  At which point the markdown state will be changed to
 
 Links:
 * [Managed version in  Markdown](https://github.com/cncf/sig-security/blob/master/supply-chain-security/supply-chain-security-whitepaper/software-supply-chain-security-whitepaper.md)
-

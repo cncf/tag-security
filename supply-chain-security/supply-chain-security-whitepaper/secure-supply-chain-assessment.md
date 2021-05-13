@@ -1,4 +1,4 @@
-# Evaluating your Supply Chain Security
+# Evaluating your supply chain security
 
 ## A Framework for Supply Chain Evaluation
 
@@ -67,4 +67,3 @@ yourself:
 -   Do you distribute metadata in a way that can be verified by downstream consumers of your products?
 
 -   Can your downstream consumers verify/validate any artefact they ingest from you before they use/deploy it?
-
