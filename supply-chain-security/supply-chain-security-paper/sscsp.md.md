@@ -18,21 +18,13 @@ Shared with the CNCF community
 | **Release Version** | 1.0 | 
 | **Final PDF Approvers** | [ ] @lizrice [ ] @justincormack  |
 
-   <td><strong>Original Content Creators</strong>
-   </td>
-   <td>Add github handle here, Andres Vega @anvega, Emily Fox @TheFoxAtWork
-<p>
-Faisal Razzak, @faisalrazzak, @apmarshall, Cole Kennedy @colek42,Mikhail Swift @mikhailswift, Jon Meadows @jonmuk, Aditya Sirish A Yelgundhalli @adityasaky, Nisha Kumar @nishakm, Joshua Lock @joshuagl, Andrew Martin @sublimino, @mnm678 , Vinod Anandan @VinodAnandan, Magno Logan @magnologan, @rjulian @lumjjb @mlieberman85 @garrying
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Original Reviewers</strong>
-   </td>
-   <td>@aspanner @mike-ensor @timfong888 @alexbarbato @voor, Alok Raj @ak-secops
-   </td>
-  </tr>
-</table>
 
+| **Originating Content and Review** | |
+| -- | --|
+| **Contributors** | Andres Vega @anvega, Emily Fox @TheFoxAtWork, Faisal Razzak @faisalrazzak, @apmarshall, Cole Kennedy @colek42,Mikhail Swift @mikhailswift, Jon Meadows @jonmuk, Aditya Sirish A Yelgundhalli @adityasaky, Nisha Kumar @nishakm, Joshua Lock @joshuagl, Andrew Martin @sublimino, @mnm678 , Vinod Anandan @VinodAnandan, Magno Logan @magnologan, @rjulian @lumjjb @mlieberman85 @garrying |
+| **Reviewers** | @aspanner @mike-ensor @timfong888 @alexbarbato @voor, Alok Raj @ak-secops | 
+
+## Index
 
 -  [Executive Summary](#executive-summary)
 -  [Introduction](#introduction)
