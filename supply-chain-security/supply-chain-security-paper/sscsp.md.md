@@ -34,7 +34,36 @@ Faisal Razzak, @faisalrazzak, @apmarshall, Cole Kennedy @colek42,Mikhail Swift @
 </table>
 
 
-**Reviewing**:  If reviewing, be sure to highlight the particular section or line of text with a question, comment, etc. in the google doc via the comment feature.  If the question is more thematic such as organizational layout or consistency drop it in the slack channel  #tag-security-supply-chain-wg
+-  [Executive Summary](#executive-summary)
+-  [Introduction](#introduction)
+  -  [Audience](#audience)
+  -  [Scope](#scope)
+    -  [Non-Goals](#non-goals)
+  -  [Assumptions](#assumptions)
+    -  [Shared Responsibility](#shared-responsibility)
+    -  [Projects and Products](#projects-and-products)
+  -  [Assurance Personas and Risk Appetite](#assurance-personas-and-risk-appetite)
+    -  [Assurance Requirements](#assurance-requirements)
+    -  [Risk Environments](#risk-environments)
+  -  [Securing the Software Supply Chain](#securing-the-software-supply-chain)
+  -  [General Guidance](#general-guidance)
+-  [Securing the Source Code](#securing-the-source-code)
+  - [Secure Authentication](#secure-authentication)
+-  [Securing Materials](#securing-materials)
+  -  [Second and Third-Party Risk Management](#second-and-third-party-risk-management)
+-  [Securing Build Pipelines](#securing-build-pipelines)
+  -  [Build Infrastructure](#build-infrastructure)
+    -  [Build Step and Worker](#build-step-and-worker)
+    -  [Build Pipeline to Create Build Stage Images](#build-pipeline-to-create-build-images)
+    -  [Pipeline Orchestrator](#pipeline-orchestrator)
+    -  [A Sample Build Pipeline](#a-sample-build-pipeline)
+    -  [Recommendations for Reproducible Builds](#recommendations-for-reproducible-builds)
+-  [Securing Artifacts](#securing-artifacts)
+  -  [Encryption](#encryption)
+-  [Securing Deployments](#securing-deployments)
+-  [Prior Art and References](#prior-art-and-references)
+-  [Appendix I](#appendix-i-containers)
+-  [Footnotes](#notes)
 
 
 # Executive Summary
