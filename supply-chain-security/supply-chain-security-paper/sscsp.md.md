@@ -3,54 +3,21 @@ Shared with the CNCF community
 # Software Supply Chain Best Practices
 
 
-# **Schedule tentative (due by dates)**
+## Metadata
 
-**Feb 26 ** - initial content draft in the document for all sections
+| **Markdown** | | | |
+| -- | -- | -- | -- |
+| **Version** | **1.0** | 13 MAY 2021 | [Original working doc](https://docs.google.com/document/d/1VURD9rdEhiuqPdixhEozkHw01Tk6e2AaJVjBK3pK6Zc) |
+| **Status** | WIP | In Review | **Approved** |
 
-**Mar 5 ** - Reviews of all draft content and clearing out commentary
+| **PDF** | |
+| -- | -- |
+| **Created** | TBD |
+| **Last Reviewed** | TBD |
+| **PDF Published** | TBD |
+| **Release Version** | 1.0 | 
+| **Final PDF Approvers** | [ ] @lizrice [ ] @justincormack  |
 
-**Mar 12** - Content finesse
-
-**Mar 19** -** **single voice narrative review
-
-**Apr 9-23** - Community review (2 weeks)
-
-**Apr** **30 - **adjudication of community review  and final group review
-
-
-<table>
-  <tr>
-   <td><strong>Version</strong>
-   </td>
-   <td>.1
-   </td>
-   <td>March 5th 2021
-   </td>
-   <td>Working doc
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Status</strong>
-   </td>
-   <td>WIP
-   </td>
-   <td>In review
-   </td>
-   <td><strong>Approved</strong>
-   </td>
-  </tr>
-</table>
-
-
-
-<table>
-  <tr>
-   <td><strong>Final Approves (TOC Liaisons)</strong>
-   </td>
-   <td>[X] @lizrice  [X] @justincormack
-   </td>
-  </tr>
-  <tr>
    <td><strong>Original Content Creators</strong>
    </td>
    <td>Add github handle here, Andres Vega @anvega, Emily Fox @TheFoxAtWork
