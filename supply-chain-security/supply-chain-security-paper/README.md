@@ -1,4 +1,4 @@
-SSoftware Supply Chain Security Paper
+Software Supply Chain Security Paper
 ==========================================
 
 # About
