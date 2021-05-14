@@ -199,7 +199,7 @@ The term 'workloads' within this document covers any products, projects, applica
 
 # Cloud Native Layers
 
-![Figure 1](RackMultipart20201111_figure1.png)
+![Figure 1](cnswp-images/RackMultipart20201111_figure1.png)
 
 _Figure 1_
 
@@ -235,7 +235,7 @@ The next few sections provide a detailed analysis of the implications, tools, me
 
 ## Develop  
 
-![Figure 2](RackMultipart20201111_figure2.png)
+![Figure 2](cnswp-images/RackMultipart20201111_figure2.png)
 
 _Figure 2_
 
@@ -257,7 +257,7 @@ Minor changes to a workload, or the infrastructure where the workload has been d
 
 ### Distribute
 
-![Figure 3](RackMultipart20201111_figure3.png)
+![Figure 3](cnswp-images/RackMultipart20201111_figure3.png)
 
 _Figure 3_
 
@@ -356,7 +356,7 @@ Another common use of Container Image Encryption is to enforce container image a
 
 ### Deploy
 
-![Figure 4](RackMultipart20201111_figure4.png)
+![Figure 4](cnswp-images/RackMultipart20201111_figure4.png)
 
 _Figure 4_
 
@@ -384,7 +384,7 @@ Forensics capabilities are integral part of any incident response and mitigation
 
 ## Runtime Environment
 
-![Figure 5](RackMultipart20201111_figure5.png)
+![Figure 5](cnswp-images/RackMultipart20201111_figure5.png)
 
 _Figure 5_
 
