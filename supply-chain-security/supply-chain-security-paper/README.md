@@ -18,7 +18,7 @@ should initiate with an [issue](https://github.com/cncf/tag-security/issues) sub
 
 ### Markdown 
 
-The living SSCSP is maintained in [markdown](https://github.com/cncf/tag-security/blob/master/supply-chain-security/sscsp.md) and all updates will be made in
+The living SSCSP is maintained in [markdown](https://github.com/cncf/tag-security/blob/master/supply-chain-security/supply-chain-security-paper/sscsp.md) and all updates will be made in
  markdown.  
 
 ### Contributing updates 
