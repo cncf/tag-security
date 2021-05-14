@@ -26,36 +26,36 @@ Shared with the CNCF community
 
 ## Index
 
--  [Executive Summary](#executive-summary)
--  [Introduction](#introduction)
-  -  [Audience](#audience)
-  -  [Scope](#scope)
-    -  [Non-Goals](#non-goals)
-  -  [Assumptions](#assumptions)
-    -  [Shared Responsibility](#shared-responsibility)
-    -  [Projects and Products](#projects-and-products)
-  -  [Assurance Personas and Risk Appetite](#assurance-personas-and-risk-appetite)
-    -  [Assurance Requirements](#assurance-requirements)
-    -  [Risk Environments](#risk-environments)
-  -  [Securing the Software Supply Chain](#securing-the-software-supply-chain)
-  -  [General Guidance](#general-guidance)
--  [Securing the Source Code](#securing-the-source-code)
+- [Executive Summary](#executive-summary)
+- [Introduction](#introduction)
+  - [Audience](#audience)
+  - [Scope](#scope)
+    - [Non-Goals](#non-goals)
+  - [Assumptions](#assumptions)
+    - [Shared Responsibility](#shared-responsibility)
+    - [Projects and Products](#projects-and-products)
+  - [Assurance Personas and Risk Appetite](#assurance-personas-and-risk-appetite)
+    - [Assurance Requirements](#assurance-requirements)
+    - [Risk Environments](#risk-environments)
+  - [Securing the Software Supply Chain](#securing-the-software-supply-chain)
+  - [General Guidance](#general-guidance)
+- [Securing the Source Code](#securing-the-source-code)
   - [Secure Authentication](#secure-authentication)
--  [Securing Materials](#securing-materials)
-  -  [Second and Third-Party Risk Management](#second-and-third-party-risk-management)
--  [Securing Build Pipelines](#securing-build-pipelines)
-  -  [Build Infrastructure](#build-infrastructure)
-    -  [Build Step and Worker](#build-step-and-worker)
-    -  [Build Pipeline to Create Build Stage Images](#build-pipeline-to-create-build-images)
-    -  [Pipeline Orchestrator](#pipeline-orchestrator)
-    -  [A Sample Build Pipeline](#a-sample-build-pipeline)
-    -  [Recommendations for Reproducible Builds](#recommendations-for-reproducible-builds)
--  [Securing Artifacts](#securing-artifacts)
-  -  [Encryption](#encryption)
--  [Securing Deployments](#securing-deployments)
--  [Prior Art and References](#prior-art-and-references)
--  [Appendix I](#appendix-i-containers)
--  [Footnotes](#notes)
+- [Securing Materials](#securing-materials)
+  - [Second and Third-Party Risk Management](#second-and-third-party-risk-management)
+- [Securing Build Pipelines](#securing-build-pipelines)
+  - [Build Infrastructure](#build-infrastructure)
+    - [Build Step and Worker](#build-step-and-worker)
+    - [Build Pipeline to Create Build Stage Images](#build-pipeline-to-create-build-images)
+    - [Pipeline Orchestrator](#pipeline-orchestrator)
+    - [A Sample Build Pipeline](#a-sample-build-pipeline)
+    - [Recommendations for Reproducible Builds](#recommendations-for-reproducible-builds)
+- [Securing Artifacts](#securing-artifacts)
+  - [Encryption](#encryption)
+- [Securing Deployments](#securing-deployments)
+- [Prior Art and References](#prior-art-and-references)
+- [Appendix I](#appendix-i-containers)
+- [Footnotes](#notes)
 
 
 # Executive Summary
@@ -77,7 +77,6 @@ To operationalize these principles in a secure software factory several stages a
 Additionally, the build pipeline itself must be secured, requiring the "separation of concerns" between individual build steps and workers, each of which are concerned with a separate stage in the build process.  Build Workers should consider hardened inputs, validation, and reproducibility at each build. Finally, the artefacts produced by the supply chain must be accompanied by signed metadata which attests to their contents and can be verified independently, as well as revalidated at consumption and deployment. Each of these stages will be explored in the document that follows, with an overarching introduction to each stage and detailed recommendations for best practices. A detailed evaluation model for these four principles can be found in the CNCF Security TAG’s supply chain repository[^3].
 
 
-# 
 
 
 # Introduction
@@ -161,7 +160,6 @@ Existing research comparing open source or first party products with closed sour
 As with the manufacturing industry’s workflow changes in the 1980s[^12] and technology’s subsequent adoption of this streamlining through Agile and DevOps, technology may once again look to manufacturing supply chain practices to learn and convert existing principles to software lifecycles, cloud and cloud native design, and general software health.  The ‘securing the supply chain’ problem is extensive, thus making it difficult to protect an organization’s supply chain.
 
 
-## 
 ![](fig1.png)
 
 Fig. 1:  [https://blog.convisoappsec.com/en/is-your-software-supply-chain-secure/](https://blog.convisoappsec.com/en/is-your-software-supply-chain-secure/)
@@ -334,7 +332,6 @@ Modern SCM platforms allow the use of randomly generated short lived tokens for 
 For CI/CD pipeline agents, short-lived access tokens should be considered instead of password-based credentials. The use of very short-lived tokens like OAuth 2.0, OpenID Connect, etc., will help to implement more secure access and increase the security assurance. These tokens shouldn't be confused with the long-lived/non-refreshable personal access tokens (PAT) such as those [available on GitHub](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) , as these PATs will have similar security properties as a shared secret/password type credentials. 
 
 
-# 
 
 
 # Securing Materials
@@ -819,8 +816,8 @@ Software delivery systems have been historically prone to several types of attac
 
 _Assurance categories: Moderate to high and risk categories: Moderate to high_
 
-Clients receiving software artefacts from the distribution mechanism must be able to verify the integrity of the downloaded files. It’s also vital that the view a client has of the repository is consistent and up to date so the client sees the latest version of all the files it has access to. This is especially necessary for highly volatile repositories. \
- \
+Clients receiving software artefacts from the distribution mechanism must be able to verify the integrity of the downloaded files. It’s also vital that the view a client has of the repository is consistent and up to date so the client sees the latest version of all the files it has access to. This is especially necessary for highly volatile repositories.
+ 
 Clients must verify the metadata associated with the artefacts. If an SBOM is created, its signatures must be verified, and the associated keys must be validated as belonging to an authorized party. When in-toto metadata is generated, the corresponding verification workflow[^52] must be executed, which, apart from verifying the signatures of each metadata file, also matches the metadata from each step in the pipeline to the layout of the full supply chain. Adopters can use the reference implementations written in Python[^53] or Go[^54] to execute this workflow.
 
 
@@ -845,7 +842,6 @@ Several TUF implementations exist that can be leveraged by new adopters. The ref
 TUF has also been used to bootstrap trust in delivering software supply chain metadata, specifically those pertaining to in-toto. The Datadog model combines TUF and in-toto to provide end-to-end guarantees to the consumer. This model has been documented in a blog post[^60] and two in-toto Enhancements (ITEs), ITE-2[^61] and ITE-3[^62].
 
 
-# 
 
 
 # Prior Art and References:
@@ -1071,14 +1067,12 @@ It is critical to note, however, that organizations are entirely responsible for
      John Allspaw, “How to keep your systems running day after day”: https://youtu.be/xA5U85LSk0M?t=295
 
 [^14]:
-
      https://en.wikipedia.org/wiki/Turtles_all_the_way_down
 
 [^15]:
     [https://en.wikipedia.org/wiki/Software_factory#History](https://en.wikipedia.org/wiki/Software_factory#History)
 
 [^16]:
-
      Distinctions among user and software entities and circumstances of mutual authentication are discussed further in the paper.  Please refer to those sections with more information.
 
 [^17]:
