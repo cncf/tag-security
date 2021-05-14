@@ -142,6 +142,7 @@ As with the manufacturing industry’s workflow changes in the 1980s[^12] and te
 
 ![](sscsp-images/fig1.png)
 
+
 Fig. 1:  [https://blog.convisoappsec.com/en/is-your-software-supply-chain-secure/](https://blog.convisoappsec.com/en/is-your-software-supply-chain-secure/)
 
 The above diagram illustrates how the software supply chain closely mirrors a traditional manufacturing supply chain, with several notable differences:
@@ -443,7 +444,9 @@ Guiding principles for securing the build include:
 
 Build infrastructure should have the same level of security configuration as its generated artefacts’ target runtime environment. This section focuses on the core build infrastructure itself: the build step and its associated worker, and the pipeline orchestrator.
 
+
 ![](sscsp-images/fig2.png)
+
 
 ### Build Step and Worker
 
@@ -484,12 +487,16 @@ For the purposes of our illustration, we assume that we already possess a secure
 
 
 
+
 ![](sscsp-images/fig3.png)
+
 
 Our app has three dependencies, A, B, and C. Dependency A itself has two dependencies, D and E. Dependency C shares the secondary (or “transitive”) dependency of D and also has a dependency F. All of these dependencies have been vetted and approved following the recommendations in the “Securing Materials” section. The source code for all direct and secondary dependencies has been collected in a secure repository, but the source code is not yet built.
 
 
+
 ![](sscsp-images/fig4.png)
+
 
 When a  developer pushes new code to our first party repository it triggers build. Here is how our software factory might progress:
 
@@ -498,31 +505,41 @@ When a  developer pushes new code to our first party repository it triggers buil
 **Step 2: Dependency Linking** The Pipeline Orchestrator now triggers a new Build Step, giving it the appropriate build environment for our application and the necessary tools to install all our dependencies. It then commands the Build Worker for this stage to install/link the dependencies. The assigned Build Worker ingests the dependencies from our secure repository and installs them. It outputs a new build environment with all dependencies installed and linked.
 
 
+
 ![](sscsp-images/fig5.png)
+
 
 
 **Step 3: Build Application** The Pipeline Orchestrator now triggers another new Build Step, using the environment output from the previous stage with all dependencies installed and linked, the first party source code of our application, and the tools necessary to build it. The assigned Build Worker builds our application and outputs a new environment containing the built application.
 
 
+
 ![](sscsp-images/fig6.png)
+
 
 
 **Step 4: Application Testing** For brevity, we are treating several test steps together. An application’s source code and resultant artefacts may be tested in parallel: static security and policy testing (linting and SAST) on source code; unit testing of the application (either outside or inside the built container artefact); and acceptance, composition, and security testing of built container images. Some systems scan a container image at this stage before pushing it to a registry, while others rely on the registry to perform the scan and promote the artefact if it passes. Whether the acceptance testing of the container image will be done in the CI stage depends on the target deployment, and the CD system’s ability to verify details later in the pipeline. The Workers complete these tests and return the environment containing the built application, plus new metadata attesting to the results of the tests performed.
 
 
+
 ![](sscsp-images/fig7.png)
+
 
 
 **Step 5: Artefact Publishing **Upon successful completion of testing, linting, and scanning, the Pipeline Orchestrator triggers a new Build Step, giving it the latest environment containing our built application, the metadata attesting to the results of our testing, and whatever additional tools are needed for publishing the artefact (including generation of  the SBOM). It then commands the assigned Build Worker to publish our application as an artefact (e.g. container image). The Worker publishes the artefact to a secure storage repository.
 
 
+
 ![](sscsp-images/fig8.png)
+
 
 
 **Step 6: Artefact Deployment** Finally, the Pipeline Orchestrator directs yet another Build Step to deploy the artefact to some environment. This may be a testing, staging, or production environment (depending on progression through the process). This stage may be repeated for each of those deployment environments, and in between there may be additional testing stages.
 
 
+
 ![](sscsp-images/fig9.png)
+
 
 
 The above process may contain loops and repetitions (as illustrated in Step 1 regarding sub-dependencies) depending on the particular dependency tree of our application, our testing process, and the methods of packaging the artefact and deployment that we use. 
