@@ -1,4 +1,4 @@
-Software Supply Chain Security Paper
+SSoftware Supply Chain Security Paper
 ==========================================
 
 # About
@@ -58,4 +58,5 @@ approval on the PR.  At which point the markdown state will be changed to
 
 
 Links:
-* [Managed version in  Markdown](https://github.com/cncf/sig-security/blob/master/supply-chain-security/supply-chain-security-whitepaper/software-supply-chain-security-whitepaper.md)
+* [Managed version in  Markdown](https://github.com/cncf/tag-security/blob/master/supply-chain-security/supply-chain-security-paper/software-supply-chain-security-whitepaper.md)
+* [Final PDF](https://github.com/cncf/tag-security/blob/master/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)

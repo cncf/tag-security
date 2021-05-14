@@ -86,7 +86,7 @@
 
 # 云原生层次模型
 
-![Figure 1](RackMultipart20201111_figure1.png)
+![Figure 1](cnswp-images/RackMultipart20201111_figure1.png)
 
 _图一_
 
@@ -122,7 +122,7 @@ FaaS（函数即服务， Functions-as-a-Service ) 是另一种云原生部署�
 
 ## 开发
 
- ![Figure 2](RackMultipart20201111_figure2.png)
+ ![Figure 2](cnswp-images/RackMultipart20201111_figure2.png)
 
 _图二_
 
@@ -144,7 +144,7 @@ _图二_
 
 ## 分发
 
-![Figure 3](RackMultipart20201111_figure3.png)
+![Figure 3](cnswp-images/RackMultipart20201111_figure3.png)
 
 _图三_
 
@@ -252,7 +252,7 @@ IaC 越来越受欢迎，在企业中的部署迅速增加，以部署云和容�
 
 ## 部署
 
-![Figure 4](RackMultipart20201111_figure4.png) 
+![Figure 4](cnswp-images/RackMultipart20201111_figure4.png) 
 
 _图四_
 
@@ -284,7 +284,7 @@ _图四_
 
 ## 运行环境
 
-![Figure 5](RackMultipart20201111_figure5.png) 图_图五_
+![Figure 5](cnswp-images/RackMultipart20201111_figure5.png) 图_图五_
 
 运行阶段包括三个关键领域：计算、访问和存储。虽然运行环境取决于开发、分发和部署阶段的成功完成，但运行的安全性取决于前几个阶段的安全实践的有效性。以下各段将详细介绍这些关键组件的安全要求和影响。
 
