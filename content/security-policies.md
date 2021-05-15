@@ -23,9 +23,3 @@ It is essential to consider the security features and various configuration opti
 - [Styra DAS](www.styra.com)
 - [Trend Micro Container Security](https://www.trendmicro.com/en_us/business/products/hybrid-cloud/cloud-one-container-image-security.html)
 -->
-
-## Examples
-- TODO
-
-## Links (optional)
-- TODO

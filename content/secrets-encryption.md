@@ -26,7 +26,7 @@ Using an external secrets manager can limit the risks of using unencrypted secre
 -->
 
 ## Examples
-- TODO
+- Configure [Kubernetes KMS plugin](https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/) for secrets encryption
 
 ## Links (optional)
 - https://www.cncf.io/announcements/2021/02/23/cncf-provides-insights-into-secrets-management-tools-with-latest-end-user-technology-radar/

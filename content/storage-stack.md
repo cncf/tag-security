@@ -74,13 +74,6 @@ physical location (e.g. to be returned to a vendor after developing a fault).
 - [Zenko](https://github.com/scality/zenko)
 
 
-
-
-
-
 ## Examples
 - Configurations of all layers of storage should be secure, endpoints should be protected and infrastructure and services around them should be hardened
 - Encryption of data that is persisted on disk should be encrypted to protect against storage theft, this includes both persistent data, as well as paged cache information that needs to be written out to disk.
-
-## Links
-- TODO

@@ -7,9 +7,8 @@ category: "Runtime environment"
 The perimeter for containerized applications deployed as microservices is the microservice itself. Therefore, it is necessary to define policies that restrict communication only between sanctioned microservice pairs. The inclusion of zero trust in the microservice architecture reduces the blast radius by preventing lateral movement should a microservice be compromised. Operators should ensure that they are using capabilities such as network policies to ensure that east-west network communication within the container deployment is limited to only that which is authorized for access. There is some initial work done to provide strategies for microservices security through NIST SP 800-204 and may serve as a guide for implementing secure microservice architectures.
 
 ## Projects
-
-- TODO
-
+- [SPIFFE](https://github.com/spiffe/spiffe)
+- [SPIRE](https://github.com/spiffe/spire/)
 <!---
 ## Commercial Projects
 - [Prisma Cloud](https://www.paloaltonetworks.com/prisma/cloud)

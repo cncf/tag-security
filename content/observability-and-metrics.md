@@ -24,8 +24,5 @@ or statistical modeling are all mechanisms that are encouraged to assist in beha
 - ArcSight
 -->
 
-## Examples
-- TODO
-
 ## Links
 - [https://radar.cncf.io/2020-09-observability](https://radar.cncf.io/2020-09-observability)
