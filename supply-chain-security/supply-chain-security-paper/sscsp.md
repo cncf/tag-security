@@ -7,7 +7,7 @@ Shared with the CNCF community
 
 | **Markdown** | | | |
 | -- | -- | -- | -- |
-| **Version** | **1.0** | 13 MAY 2021 | [Original working doc](https://docs.google.com/document/d/1VURD9rdEhiuqPdixhEozkHw01Tk6e2AaJVjBK3pK6Zc) |
+| **Version** | **1.0** (Commit 5c1b842626f6e2bfff70be1a3f96203ce5dfa642) | 13 MAY 2021 | [Original working doc](https://docs.google.com/document/d/1VURD9rdEhiuqPdixhEozkHw01Tk6e2AaJVjBK3pK6Zc) |
 | **Status** | WIP | In Review | **Approved** |
 
 | **PDF** | |
@@ -35,7 +35,7 @@ Shared with the CNCF community
 - [Securing Deployments](#securing-deployments)
 - [Prior Art and References](#prior-art-and-references)
 - [Appendix I](#appendix-i-containers)
-- [Appendix II)(#appendix-ii-software-groups)
+- [Appendix II](#appendix-ii-software-groups)
 
 
 # Executive Summary
