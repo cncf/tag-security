@@ -12,9 +12,9 @@ To have the ability to audit actions of entities using the cluster, it is vital 
 
 ## Projects
 - [ELK helm chart](https://github.com/elastic/helm-charts)
-- [SOAR](https://n8n.io/
-- [Falco](https://github.com/falcosecurity/falco
-- [Cortex](https://github.com/TheHive-Project/Cortex
+- [SOAR](https://n8n.io/)
+- [Falco](https://github.com/falcosecurity/falco)
+- [Cortex](https://github.com/TheHive-Project/Cortex)
 - [Fluentd](https://www.fluentd.org/) 
 <!---
 ## Commercial Projects
