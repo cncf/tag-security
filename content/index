@@ -18,7 +18,7 @@
   - { "name": "Pre-Flight Deployment Checks", "slug": "pre-flight-deployment-checks"}
   - { "name": "Observability & Metrics", "slug": "observability-and-metrics"}
   - { "name": "Response & Investigation", "slug": "response-and-investigation"}
-- { "name": "[UNDER CONSTRUCTION] Runtime", "slug": "runtime"}
+- { "name": "Runtime", "slug": "runtime"}
   - { "name": "Compute", "slug": "compute"}
     - { "name": "Orchestration", "slug": "orchestration"}
       - { "name": "Security Policies", "slug": "security-policies"}
@@ -50,6 +50,6 @@
   - { "name": "Zero Trust Architecture", "slug": "zero-trust-architecture"}
   - { "name": "Least Privilege", "slug": "least-privilege"}
   - { "name": "Roles and Responsibilities", "slug": "roles-and-responsibilities"}
-- { "name": "[UNDER CONSTRUCTION] Compliance", "slug": "compliance"}
+- { "name": "Compliance", "slug": "compliance"}
   - { "name": "Regulatory Audit", "slug": "regulatory-audit"}
   - { "name": "Industries", "slug": "industries"}
