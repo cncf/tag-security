@@ -2,10 +2,10 @@ repository:
   # See https://developer.github.com/v3/repos/#edit for all available settings.
 
   # The name of the repository. Changing this will rename the repository
-  name: sig-security
+  name: tag-security
 
   # A short description of the repository that will show up on GitHub
-  description: 🔐CNCF Special Interest Group on Security -- secure access, policy control, privacy, auditing, explainability and more!
+  description: 🔐CNCF Security Technical Advisory Group -- secure access, policy control, privacy, auditing, explainability and more!
 
   # A URL with more information about the repository
   homepage: https://cncf.io/projects
@@ -61,4 +61,4 @@ collaborators:
     permission: push
 
     # Meeting Facilitators
-    # ultrasaurus, dshaw, pragashj, lumjjb, justincormack, izgeri, JustinCappos
+    # ultrasaurus, dshaw, pragashj, lumjjb, justincormack, izgeri, JustinCappos, magnologan, TheFoxAtWork, anvega, achetal01, ashutosh-narkar
