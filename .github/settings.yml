@@ -2,15 +2,16 @@ repository:
   # See https://developer.github.com/v3/repos/#edit for all available settings.
 
   # The name of the repository. Changing this will rename the repository
-  name: sig-security
+  name: tag-security
 
   # A short description of the repository that will show up on GitHub
-  description: 🔐CNCF Special Interest Group on Security -- secure access, policy control, privacy, auditing, explainability and more!
+  description: 🔐CNCF Security Technical Advisory Group -- secure access, policy control, privacy, auditing, explainability and more!
 
   # A URL with more information about the repository
   homepage: https://cncf.io/projects
   
   # Collaborators: give specific users access to this repository.
+  # Note: changing this file will update the users visible in Github UI 
   # see /governance/roles.md for details on write access policy
   # note that the permissions below may provide wider access than needed for
   # a specific role, and we trust these individuals to act according to their
@@ -20,25 +21,37 @@ collaborators:
   - username: ultrasaurus
     permission: admin
 
-  - username: dshaw
+  - username: TheFoxAtWork
     permission: admin
 
   - username: pragashj
     permission: admin
 
-    # Triage Team
-    # manage issues (edit labels, occasionally edit)
-  - username: lumjjb
+    # Technical Leads
+  - username: ashutosh-narkar
     permission: push
 
-  - username: hannibalhuang
+  - username: anvega
     permission: push
+    
+  - username: achetal01
+    permission: push
+
+  - username: lumjjb
+    permission: push
+    
+  - username: JustinCappos
+    permission: push
+    
+    # Triage Team
+    # manage issues (edit labels, occasionally edit)
+    # needs "push" permission, even though triage team should not merge PRs
+
     
     # Security Assessment Facilitator
     # merge PRs in /assesssments according to guidelines
     # triage related issues
-  - username: JustinCappos
-    permission: push
+    # JustinCappos
 
     # Security Reviewers
     # issues may be assigned, edited by assignee
@@ -48,4 +61,4 @@ collaborators:
     permission: push
 
     # Meeting Facilitators
-    # ultrasaurus, dshaw, pragashj, lumjjb, justincormack, izgeri, JustinCappos
+    # ultrasaurus, dshaw, pragashj, lumjjb, justincormack, izgeri, JustinCappos, magnologan, TheFoxAtWork, anvega, achetal01, ashutosh-narkar

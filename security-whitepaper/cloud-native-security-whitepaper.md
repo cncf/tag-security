@@ -99,37 +99,37 @@ Shared with CNCF Community
         - [Credential Management Cycle](#credential-management-cycle)
       - [Availability](#availability)
         - [Denial of Service (DoS) & Distributed Denial of Service (DDoS)](#denial-of-service-dos--distributed-denial-of-service-ddos)
-    - [Security Assurance](#security-assurance)
-  - [Threat Modeling](#threat-modeling)
-    - [End-to-end architecture](#end-to-end-architecture)
-    - [Threat Identification](#threat-identification)
-  - [Threat Intelligence](#threat-intelligence)
-  - [Incident Response](#incident-response)
-  - [Security Stack](#security-stack)
-    - [Environment](#environment)
-      - [Pre (Workload) Flight Security Tools](#pre-workload-flight-security-tools)
-        - [Compute & Node Checks](#compute--node-checks)
-        - [Run Contexts](#run-contexts)
-      - [In-Flight Security Tools](#in-flight-security-tools)
-        - [Workload & Host Runtime Security](#workload--host-runtime-security)
-    - [Zero Trust Architecture](#zero-trust-architecture)
-    - [Least Privilege](#least-privilege)
-    - [Roles and Responsibilities](#roles-and-responsibilities)
-    - [Compliance](#compliance)
-  - [Regulatory Audits](#regulatory-audits)
-    - [Personas and Use Cases](#personas-and-use-cases)
-  - [Industries](#industries)
-    - [Enterprise](#enterprise)
-    - [Microbusiness](#microbusiness)
-    - [Finance](#finance)
-    - [Healthcare](#healthcare)
-    - [Academia and Education](#academia-and-education)
-    - [Public Sector](#public-sector)
-    - [Evolution of Cloud Native Security](#evolution-of-cloud-native-security)
-    - [Conclusion](#conclusion-1)
-    - [Acronyms and Glossary](#acronyms-and-glossary)
-    - [References](#references)
-    - [Acknowledgements](#acknowledgements)
+  - [Security Assurance](#security-assurance)
+    - [Threat Modeling](#threat-modeling)
+      - [End-to-end architecture](#end-to-end-architecture)
+      - [Threat Identification](#threat-identification)
+    - [Threat Intelligence](#threat-intelligence)
+    - [Incident Response](#incident-response)
+    - [Security Stack](#security-stack)
+      - [Environment](#environment)
+        - [Pre (Workload) Flight Security Tools](#pre-workload-flight-security-tools)
+          - [Compute & Node Checks](#compute--node-checks)
+          - [Run Contexts](#run-contexts)
+        - [In-Flight Security Tools](#in-flight-security-tools)
+          - [Workload & Host Runtime Security](#workload--host-runtime-security)
+      - [Zero Trust Architecture](#zero-trust-architecture)
+      - [Least Privilege](#least-privilege)
+      - [Roles and Responsibilities](#roles-and-responsibilities)
+  - [Compliance](#compliance)
+    - [Regulatory Audits](#regulatory-audits)
+      - [Personas and Use Cases](#personas-and-use-cases)
+    - [Industries](#industries)
+      - [Enterprise](#enterprise)
+      - [Microbusiness](#microbusiness)
+      - [Finance](#finance)
+      - [Healthcare](#healthcare)
+      - [Academia and Education](#academia-and-education)
+      - [Public Sector](#public-sector)
+      - [Evolution of Cloud Native Security](#evolution-of-cloud-native-security)
+      - [Conclusion](#conclusion-1)
+      - [Acronyms and Glossary](#acronyms-and-glossary)
+- [References](#references)
+- [Acknowledgements](#acknowledgements)
 
 # Executive Summary
 
@@ -199,7 +199,7 @@ The term 'workloads' within this document covers any products, projects, applica
 
 # Cloud Native Layers
 
-![Figure 1](RackMultipart20201111_figure1.png)
+![Figure 1](cnswp-images/RackMultipart20201111_figure1.png)
 
 _Figure 1_
 
@@ -235,7 +235,7 @@ The next few sections provide a detailed analysis of the implications, tools, me
 
 ## Develop  
 
-![Figure 2](RackMultipart20201111_figure2.png)
+![Figure 2](cnswp-images/RackMultipart20201111_figure2.png)
 
 _Figure 2_
 
@@ -257,7 +257,7 @@ Minor changes to a workload, or the infrastructure where the workload has been d
 
 ### Distribute
 
-![Figure 3](RackMultipart20201111_figure3.png)
+![Figure 3](cnswp-images/RackMultipart20201111_figure3.png)
 
 _Figure 3_
 
@@ -356,7 +356,7 @@ Another common use of Container Image Encryption is to enforce container image a
 
 ### Deploy
 
-![Figure 4](RackMultipart20201111_figure4.png)
+![Figure 4](cnswp-images/RackMultipart20201111_figure4.png)
 
 _Figure 4_
 
@@ -384,7 +384,7 @@ Forensics capabilities are integral part of any incident response and mitigation
 
 ## Runtime Environment
 
-![Figure 5](RackMultipart20201111_figure5.png)
+![Figure 5](cnswp-images/RackMultipart20201111_figure5.png)
 
 _Figure 5_
 
@@ -702,7 +702,11 @@ Many financial, health, government, and other entities need to comply with a spe
 
 ### Personas and Use Cases
 
-The focus is on security, protection, detection, and auto-response where ever possible. It is not necessarily development tooling alone, but security tooling that integrates transparently into the development process to enforce security policies where fast feedback and most immediate actions to remediate can occur. For specific information on cloud native security use cases refer to the [SIG-Security's use cases listing](https://github.com/cncf/sig-security/blob/master/usecases.md).
+The focus is on security, protection, detection, and auto-response where ever possible. 
+It is not necessarily development tooling alone, but security tooling that integrates 
+transparently into the development process to enforce security policies where fast 
+feedback and most immediate actions to remediate can occur. For specific information
+ on cloud native security use cases refer to the [SIG-Security's use cases listing](https://github.com/cncf/sig-security/usecase-personas/).
 
 ## Industries
 

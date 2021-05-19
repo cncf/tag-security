@@ -106,7 +106,7 @@ PRs may be merged after at least one review as occurred, dependent on the type o
 Consistency creates clarity in communication.
 
 * Common terms
-  * When referring to users and use cases, ensure consistency with [use cases](usecases.md)
+  * When referring to users and use cases, ensure consistency with [use cases](usecase-personas/)
   * See [CNCF Style Guide](https://github.com/cncf/foundation/blob/master/style-guide.md) for common terms. Note that the following terms are not hyphenated and all lower case, except for capitalizing the first letter when at the beginning of a
 sentence:
     * open source
