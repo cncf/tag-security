@@ -17,7 +17,7 @@ includes SAFE WG and SIG-Security in its timeline.
 
 ## Details
 
-1. **Charter** the SAFE Working Group. Draft vision, process and initial members 
+1. **Charter** the SAFE Working Group. Draft vision, process and initial members
    (done, see below)
 2. **Discover** (Completed)
    * Explore the problem space of the working group
