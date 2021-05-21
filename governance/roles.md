@@ -1,6 +1,6 @@
-# Roles within the SIG
+# Roles within the TAG
 
-The SIG includes several key roles that are critical to the group's success.
+The TAG includes several key roles that are critical to the group's success.
 The group will have many members, all serving in varying capacities.  Within
 this document, "member" may refer to a Chair, a Technical Lead, or other
 Member roles.
@@ -14,10 +14,10 @@ The following is the current listing of member roles:
 * [TOC Liaison](#toc-liaison)
 * [Facilitation Roles](#facilitation-roles)
 
-All members are identified in the SIG [README](/readme.md), with annotations
+All members are identified in the TAG [README](/readme.md), with annotations
 where they hold an additional role. 
 
-Members fulfilling any Roles in SIG-Security are responsible for understanding
+Members fulfilling any Roles in Security TAG are responsible for understanding
 and abiding the by the [governance](./) and policies defined in this group.
 This commitment and execution of understanding includes not only commits to
 the repo, but also to any approvals or direction required by their Role.
@@ -50,15 +50,15 @@ removal may occur through a super-majority vote of the Chairs.
 
 ### Managing membership
 * Membership disagreements may be escalated to the Chairs.  Disagreements
-among the Chairs may be escalated to a SIG-Security TOC Liaison.
+among the Chairs may be escalated to a Security TAG TOC Liaison.
 * Members *MAY* decide to step down at anytime and optionally propose a
 replacement.
 
 ## Role of chairs
 
 While CNCF TOC allows for Chairs to serve in purely administrative roles,
-SIG-Security was formed with deeply technical Chairs based on early need
-to navigate a complex security landscape. If the SIG has less than two Technical
+Security TAG was formed with deeply technical Chairs based on early need
+to navigate a complex security landscape. If the TAG has less than two Technical
 Leads, any Chair may act as Technical Lead.
 
 * Primary role of Chairs is to run operations and the governance of the group.
@@ -78,7 +78,7 @@ members who cannot attend a specific meeting time.
 
 Technical Leads (TLs) expand the bandwidth of the leadership team. Proposals
 must have a TL or Chair working as an active sponsor (as detailed in 
-[SIG process](process.md)).
+[TAG process](process.md)).
 
 The general list of activities for TL are:
   * Establish new subprojects
@@ -87,8 +87,7 @@ The general list of activities for TL are:
   * Propose agenda items for meetings to ensure that open issues are
   discussed with the group when needed
 
-TLs are assigned by CNCF Technical Oversight Committee
-(see [CNCF SIG Tech Lead nomination and election process](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#elections)).
+TLs are assigned by CNCF Technical Oversight Committee.
 
 ## Role of project leads
 
@@ -100,7 +99,7 @@ Project Leads are nominated and approved by the following process:
   volunteering to take on a project that has been prioritized by the group
   1. A Chair or TL nominates a candidate.
   1. The nomination is communicated via a pull request annotating the list of members in the 
-  [SIG README](/README.md) with a link to the issue tracking the project. 
+  [TAG README](/README.md) with a link to the issue tracking the project. 
   The nomination is typically open for a week (but may be shorter with LGTM of at least two Chairs).
   1. Members are encouraged to review the tracking issue and work together
   to ensure that the Project Lead is set up for success or suggest alternatives.
@@ -111,12 +110,12 @@ project.
 
 ## TOC liaison
 
-The [CNCF SIG](https://github.com/cncf/toc/blob/master/sigs) process identifies
-a TOC Liaison.  The SIG Chairs are responsible for establishing effective
+The [CNCF TAG](https://github.com/cncf/toc/tree/main/tags) process identifies
+a TOC Liaison.  The TAG Chairs are responsible for establishing effective
 communication with the TOC liaison, including further communication to the
 wider TOC upon request.
 
-The TOC Liaison will occasionally prioritize SIG activities, as needed by the
+The TOC Liaison will occasionally prioritize TAG activities, as needed by the
 TOC, to further the [CNCF mission](https://github.com/cncf/foundation/blob/master/charter.md#1-mission-of-the-cloud-native-computing-foundation).
 
 
