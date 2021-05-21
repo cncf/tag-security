@@ -21,11 +21,13 @@ When considering threats specific to an organization's cloud native capabilities
 - Denial of Service (DoS) resulting from a pod that does not have resource limits applied therefore consumes the entire node level CPU and memory, worker node is then lost
 - Elevation of privilege could happen if a pod is running with unrestricted or higher privileged pod security policy or by modifying the security context of a pod or a container
 
-Threat actors to consider for cloud native security are consistent with existing threat modeling:
+Threat actors to consider for cloud native security are consistent with existing threat modeling practices:
 
-- Malicious insider - An actor with malicious intent and with authorization to perform actions within the modelled system.
-- Uninformed insider - An actor that with authorization to perform actions within the modelled system (assume anyone can be duped).
+- Malicious insider - An actor with malicious intent and with authorization to perform actions within the modeled system.
+- Uninformed insider - An actor that with authorization to perform actions within the modeled system (assume anyone can be duped).
 - Malicious outsider - An actor outside of the system. They could be attacking via the internet, via supply chain, via physical perimeter etc.
+
+There are other actors that may interact with the modeled system (e.g Uninformed outsiders) and that can be included for completeness. It's likely that controls for their actions will be a subset of those for the primary actors listed above.
 
 Organizations are recommended to leverage the existing resources available in the cloud native landscape for additional information on threats to cloud native architecture.
 
