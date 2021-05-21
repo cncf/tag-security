@@ -12,10 +12,9 @@ A clear understanding of the organization's or individual's cloud native archite
 ### Threat Identification
 When considering threats specific to an organization's cloud native capabilities, it is recommended to leverage a mature, well-used model of threats such as STRIDE or OCTAVE. Common threats organizations may wish to consider for their cloud native architectures includes, but is not limited to:
 
-Spoofing a cluster admin by stealing the authentication credentials via a social engineering attack
-Tampering of an API server config file or certificate could result in failed API server restart or mutual TLS authentication failures
-Repudiation of actions of an attacker because of disabled or misconfigured API auditing could result in a lack of evidence of a potential attack
-
+- Spoofing a cluster admin by stealing the authentication credentials via a social engineering attack
+- Tampering of an API server config file or certificate could result in failed API server restart or mutual TLS authentication failures
+- Repudiation of actions of an attacker because of disabled or misconfigured API auditing could result in a lack of evidence of a potential attack
 - Information disclosure is possible if an attacker compromises a running workload and is able to exfiltrate data to an external entity
 - Denial of Service (DoS) resulting from a pod that does not have resource limits applied therefore consumes the entire node level CPU and memory, worker node is then lost
 - Elevation of privilege could happen if a pod is running with unrestricted or higher privileged pod security policy or by modifying the security context of a pod or a container
