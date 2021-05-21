@@ -4,7 +4,9 @@ date: "2020-10-01"
 category: "Security Assurance"
 ---
 
-For organizations adopting cloud native, a primary mechanism for identifying risks, controls and mitigations is to perform threat modeling. This process examines process and data flows; supporting systems and infrastructure. The below guidance is an enhancement of the four step OWASP threat modeling recommended for cloud native capabilities.
+For organizations adopting cloud native, a primary mechanism for identifying risks, controls and mitigations is to perform threat modeling. There are many threat modeling techniques but they share commonalities. All start with building a scoped representation of the architecture of a system. This typically starts with identifying all important processes, data stores and security boundaries. A security boundary is any "dividing line of trust" - this can be physical (e.g a perimeter fence), it can be topological (e.g a network boundary) or it can be logical (e.g an authorization boundary). Once boundaries have been established and the relevant elements of the system partitioned within those boundaries, the next step is to model how these elements of the system interact with special attention being paid to any interactions that cross security boundaries. 
+
+The below guidance is an enhancement of the four step OWASP threat modeling recommended for cloud native capabilities.
 
 ### End-to-end architecture
 A clear understanding of the organization's or individual's cloud native architecture should result in data impact guidance and classifications. This helps teams organize data distribution within the architecture as well as the additional protection mechanisms for it later on. cloud native diagrams and documentation should not only include the core components of the overall system design but should also take into consideration the location of the source code, the buckets and other storage mechanisms in use, and any additional aspects of the software development cycle. These are all areas that must be considered when initiating threat modeling for cloud native.
