@@ -67,7 +67,7 @@ outline.  This allows contributors to focus on a few areas and identify others
 where more contributors is needed.  If using a google doc for the paper,
 assignments may be done through the "assign to me" feature after highlight the
 area or by using the "+foo@bar.com" comment feature for the assignee's email.
-Once task, content can begin rough-in
+Once task assignment is complete, contributors can begin content rough-in.
 
 ### Content rough-in
 
@@ -76,7 +76,13 @@ raw content in the form of phrases, disjointed paragraphs, bullets on the
 topic, or they draft content in the form of completed paragraphs.  If leveraging
 draft content, placing this content in quotes helps other reviewers know it is
 'near-complete' and can review it as a wholistic section.
+#### Opinions
 
+There may be situations where multiple differing views on the subject matter or controls implementation are expressed.  If these cannot be collaboratively resolved it is the duty of the authors to capture the different views and leave the decision up to the reader.
+
+#### References
+
+It is important that any references used to generate paper content be cited appropriate through footnotes and a references section as appropriate.  This ensures the reader may not only dig deep into a specific reference area but also provides source content and is a matter of good practice.
 ### Collaborative review
 
 Contributors now review all content roughed-in and transition raw content into
@@ -155,8 +161,8 @@ in alignment with the original intent:
 * About - covers what the paper was about, a brief summary
 * Updates to the paper - "intended to be a living document created and maintained for the community, by its members."
   * Markdown -  "maintained in markdown and all updates will be made in markdown."
-  * Contributing updates - "All members of the community are welcome to contribute updates.  We ask potential contributors to refer to the original design decisions, listed below, as guidance when determining the content of their updates.  It is highly recommended that you seek peer review for your updates beyond that of the Technical Leads and Co-Chairs of the SIG."
-  * Versioning and publishing - "It is expected that many minor updates will occur, corrections to grammar, spelling, clarification in language, translations, etc. When these occur they are considered minor changes to the overall content and will not warrant the regeneration of the PDF.  When significant changes to the intent, content, or numerous minor changes occur, the contributors will assess and determine if a new major version of the PDF needs published. When this decision is made, the markdown content will be converted to text document and sent to the CNCF technical writers to create the PDF. The PDF will then be published back into the repository annotating the new version, updating the links in the README.md accordingly.  Minor updates to the markdown shall receive a minor version bump indicated in the Metadata table of the document and recorded as WIP. When enough significant changes have been recorded, the markdown will be placed "In Review" (via PR) and solicited to the CNCF SIG-Security and TOC mailing list for review, at a minimum.  Upon completion of review, the SIG-Security TOC Liaison shall provide final approval on the PR. At which point the markdown state will be changed to "Approved" and merged."
+  * Contributing updates - "All members of the community are welcome to contribute updates.  We ask potential contributors to refer to the original design decisions, listed below, as guidance when determining the content of their updates.  It is highly recommended that you seek peer review for your updates beyond that of the Technical Leads and Co-Chairs of the TAG."
+  * Versioning and publishing - "It is expected that many minor updates will occur, corrections to grammar, spelling, clarification in language, translations, etc. When these occur they are considered minor changes to the overall content and will not warrant the regeneration of the PDF.  When significant changes to the intent, content, or numerous minor changes occur, the contributors will assess and determine if a new major version of the PDF needs published. When this decision is made, the markdown content will be converted to text document and sent to the CNCF technical writers to create the PDF. The PDF will then be published back into the repository annotating the new version, updating the links in the README.md accordingly.  Minor updates to the markdown shall receive a minor version bump indicated in the Metadata table of the document and recorded as WIP. When enough significant changes have been recorded, the markdown will be placed "In Review" (via PR) and solicited to the CNCF Security TAG and TOC mailing list for review, at a minimum.  Upon completion of review, the Security TAG's TOC Liaison shall provide final approval on the PR. At which point the markdown state will be changed to "Approved" and merged."
 * Original design decisions - this is important as it is intended to enable the original contributors to not be gateways to content updates and allows both reviewers and future contributors to understand a create content around centralized guidance.
 * Links - include links to the files in the repo
 
@@ -165,5 +171,5 @@ in alignment with the original intent:
 In an effort to increase visibility and awareness of the final product, it is
 strongly recommended the paper lead coordinate with SIG leadership to engage the
 CNCF team for posting a blog to summarize and link to the paper.  As community
-events occur, it is also recommended that the SIG coordinate a submission to
+events occur, it is also recommended that the TAG coordinate a submission to
 community events (presentation) on the paper.
