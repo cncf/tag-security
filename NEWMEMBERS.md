@@ -1,6 +1,6 @@
 ## New Members
 
-The purpose of this plan is to ensure that you become familiar with the team and know how you will contribute. The first step is to get yourself familiar with our mission at [SIG-Security charter](governance/charter.md).
+The purpose of this plan is to ensure that you become familiar with the team and know how you will contribute. The first step is to get yourself familiar with our mission at [Security TAG charter](governance/charter.md).
 
 New members are advised to:
 
