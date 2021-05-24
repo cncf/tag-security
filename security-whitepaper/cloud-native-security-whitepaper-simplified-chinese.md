@@ -1,6 +1,6 @@
 # **云原生安全白皮书中文版**
 
-参考文献：[CNCF Security Whitepaper v1.1](https://github.com/cncf/sig-security/blob/017e77ff380e303d80adb78e60a1f262e80df0e8/security-whitepaper/cloud-native-security-whitepaper.md)
+参考文献：[CNCF Security Whitepaper v1.1](https://github.com/cncf/tag-security/blob/017e77ff380e303d80adb78e60a1f262e80df0e8/security-whitepaper/cloud-native-security-whitepaper.md)
 
 ## 索引
 
@@ -611,7 +611,7 @@ _图四_
 
 ## 角色和用例
 
-重点是安全、保护、检测和尽可能的自动响应。它不一定是独立的开发工具，而是透明地集成到开发流程中的安全工具，使得开发过程中就能够执行安全策略、快速反馈和直接补救。有关云原生安全用例的具体信息，请参考 [SIG-Security 的用例列表](https://github.com/cncf/tag-security/blob/main/usecases.md)。
+重点是安全、保护、检测和尽可能的自动响应。它不一定是独立的开发工具，而是透明地集成到开发流程中的安全工具，使得开发过程中就能够执行安全策略、快速反馈和直接补救。有关云原生安全用例的具体信息，请参考 [SIG-Security 的用例列表](https://github.com/cncf/tag-security/blob/main/usecase-personas)。
 
 ### 行业
 
