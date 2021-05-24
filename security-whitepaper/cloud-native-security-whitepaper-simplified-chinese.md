@@ -274,7 +274,7 @@ _图四_
 
 ### 可观察性和指标
 
-将可观察性和指标纳入云原生架构，可提供对系统安全的洞悉力，从而使相关的负责人能够解决或缓解各种异常情况；这一领域的工具还可用于信息的收集和可视化。通过对使用行为和启发式分析，运维团队可以检测并将异常值、可疑事件和不明原因的调用及时上报给相关的负责人。人工智能 (AI)、[机器学习 (ML)](https://github.com/cncf/sig-security/blob/master/security-whitepaper/cloud-native-security-whitepaper.md#workload--host-runtime-security) 或统计建模都是用于行为和启发式分析开发的常用工具。
+将可观察性和指标纳入云原生架构，可提供对系统安全的洞悉力，从而使相关的负责人能够解决或缓解各种异常情况；这一领域的工具还可用于信息的收集和可视化。通过对使用行为和启发式分析，运维团队可以检测并将异常值、可疑事件和不明原因的调用及时上报给相关的负责人。人工智能 (AI)、[机器学习 (ML)](https://github.com/cncf/tag-security/blob/main/security-whitepaper/cloud-native-security-whitepaper.md#workload--host-runtime-security) 或统计建模都是用于行为和启发式分析开发的常用工具。
 
 ### 响应和调查
 
@@ -611,7 +611,7 @@ _图四_
 
 ## 角色和用例
 
-重点是安全、保护、检测和尽可能的自动响应。它不一定是独立的开发工具，而是透明地集成到开发流程中的安全工具，使得开发过程中就能够执行安全策略、快速反馈和直接补救。有关云原生安全用例的具体信息，请参考 [SIG-Security 的用例列表](https://github.com/cncf/sig-security/blob/master/usecases.md)。
+重点是安全、保护、检测和尽可能的自动响应。它不一定是独立的开发工具，而是透明地集成到开发流程中的安全工具，使得开发过程中就能够执行安全策略、快速反馈和直接补救。有关云原生安全用例的具体信息，请参考 [SIG-Security 的用例列表](https://github.com/cncf/tag-security/blob/main/usecases.md)。
 
 ### 行业
 

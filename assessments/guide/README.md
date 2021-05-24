@@ -63,7 +63,7 @@ updated self-assessment based on feedback and discussion.
 #### Submit a PR to include the self-assessment in the repo
 
 After the presentation, the **project lead** or their designee should submit a PR, 
-citing the presentation issue number to add the self-assessment to [assessments/projects](https://github.com/cncf/sig-security/tree/master/assessments/projects) under its 
+citing the presentation issue number to add the self-assessment to [assessments/projects](https://github.com/cncf/tag-security/tree/main/assessments/projects) under its 
 own folder.  The ticket may then be closed after merged in.
 
 ### Growing projects
@@ -74,14 +74,14 @@ Note: Responsible roles for specific items are in **bold**. If an incubation
 project did not complete a self-assessment during sandbox, they are recommended
 to start with the self-assessment before pursing joint review.
 
-#### [Create tracking issue](https://github.com/cncf/sig-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
+#### [Create tracking issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 
 The tracking issue serves to initiate the joint-reviews.  It provides
  an initial set of information to assist SIG-Security in  prioritizing the
 joint review as well as provide potential reviewers with a central
 location to manage the effort.
    * Issue may be a request from **TOC liason** or **project** itself 
-   * [**Security review facilitator**](https://github.com/cncf/sig-security/blob/master/governance/roles.md#facilitation-roles) with help from the **technical leads**
+   * [**Security review facilitator**](https://github.com/cncf/tag-security/blob/main/governance/roles.md#facilitation-roles) with help from the **technical leads**
  and **co-chairs** if appropriate, will determine if the project is ready for
  joint-review.  If ready, a channel will be created to coordinate the
 activities.

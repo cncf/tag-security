@@ -17,7 +17,7 @@ should initiate with an [issue](https://github.com/cncf/sig-security/issues) sub
 
 ### Markdown 
 
-The living CNSWP is maintained in [markdown](https://github.com/cncf/sig-security/blob/master/security-whitepaper/cloud-native-security-whitepaper.md) and all updates will be made in
+The living CNSWP is maintained in [markdown](https://github.com/cncf/tag-security/blob/main/security-whitepaper/cloud-native-security-whitepaper.md) and all updates will be made in
  markdown.  
 
 ### Contributing updates 
@@ -83,8 +83,8 @@ overview of the paper's contents for those without the immediate time to read
 the length of the document.
 
 Links:
-* [Managed version in  Markdown](https://github.com/cncf/sig-security/blob/master/security-whitepaper/cloud-native-security-whitepaper.md)
-* [Posted PDF first  version](https://github.com/cncf/sig-security/blob/master/security-whitepaper/CNCF_cloud-native-security-whitepaper-Nov2020.pdf)
+* [Managed version in  Markdown](https://github.com/cncf/tag-security/blob/main/security-whitepaper/cloud-native-security-whitepaper.md)
+* [Posted PDF first  version](https://github.com/cncf/tag-security/blob/main/security-whitepaper/CNCF_cloud-native-security-whitepaper-Nov2020.pdf)
 * [CNCF Blog  Post](https://www.cncf.io/blog/2020/11/18/announcing-the-cloud-native-security-white-paper/)
 * [Kubernetes Blog  Post](https://kubernetes.io/blog/2020/11/18/cloud-native-security-for-your-clusters/)
 * [Original Issue](https://github.com/cncf/sig-security/issues/138)
