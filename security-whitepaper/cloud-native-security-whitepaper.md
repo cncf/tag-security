@@ -585,7 +585,9 @@ In contrast, compliance standards form principles of controls to ascertain or cr
 
 ## Threat Modeling
 
-For organizations adopting cloud native, the primary mechanism of identifying risk and resulting controls and mitigations is to perform threat modeling of applications, data flows, and supporting processes and infrastructure. The method by which this is accomplished is minimally different from typical threat modeling. The below guidance is an enhancement of the [four step OWASP threat modeling](https://owasp.org/www-community/Threat_Modeling) recommended for cloud native capabilities.
+For organizations adopting cloud native, a primary mechanism for identifying risks, controls and mitigations is to perform threat modeling. While there are many threat modeling techniques they share several core characteristics. All start with building a scoped representation of a system's architecture. This begins with identifying all important processes, data stores, and [security boundaries](https://www.oreilly.com/library/view/cissp-certified-information/9780470276884/9780470276884_security_boundaries.html#:~:text=A%20security%20boundary%20is%20the,a%20LAN%20and%20the%20Internet.). Once boundaries have been established and the relevant elements of the system partitioned within those boundaries, the next step is to model how these elements interact with special attention paid to any interactions that cross security boundaries. 
+
+The below guidance is an enhancement of the four step OWASP threat modeling recommended for cloud native capabilities.
 
 ### End-to-end architecture
 
@@ -593,7 +595,7 @@ A clear understanding of the organization's or individual's cloud native archite
 
 ### Threat Identification
 
-When considering threats specific to an organization's cloud native capabilities, it is recommended to leverage a mature, well-used model of threats such as [STRIDE](https://en.wikipedia.org/wiki/STRIDE_(security)) or [OCTAVE](https://www.pluralsight.com/guides/cybersecurity-threat-modeling-with-octave). Common threats organizations may wish to consider for their cloud native architectures includes, but is not limited to:
+When considering threats specific to an organization's cloud native capabilities, it is recommended to leverage a mature, well-used model of threats such as STRIDE or OCTAVE. Common threats organizations may wish to consider for their cloud native architectures includes, but is not limited to:
 
 - Spoofing a cluster admin by stealing the authentication credentials via a social engineering attack
 - Tampering of an API server config file or certificate could result in failed API server restart or mutual TLS authentication failures
@@ -602,12 +604,13 @@ When considering threats specific to an organization's cloud native capabilities
 - Denial of Service (DoS) resulting from a pod that does not have resource limits applied therefore consumes the entire node level CPU and memory, worker node is then lost
 - Elevation of privilege could happen if a pod is running with unrestricted or higher privileged pod security policy or by modifying the security context of a pod or a container
 
-Threat actors to consider for cloud native security are consistent with existing threat modeling:
+Threat actors to consider for cloud native security are consistent with existing threat modeling practices:
 
-- Malicious insider
-- Uninformed insider
-- Malicious outsider
-- Uninformed outsider
+- Malicious insider - An actor with malicious intent and with authorization to perform actions within the modeled system.
+- Uninformed insider - An actor that with authorization to perform actions within the modeled system (assume anyone can be duped).
+- Malicious outsider - An actor outside of the system. They could be attacking via the internet, via supply chain, via physical perimeter etc.
+
+There are other actors that may interact with the modeled system (e.g Uninformed outsiders) and that can be included for completeness. It's likely that controls for their actions will be a subset of those for the primary actors listed above.
 
 Organizations are recommended to leverage the existing resources available in the cloud native landscape for additional information on threats to cloud native architecture.
 
