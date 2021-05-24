@@ -230,6 +230,7 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Abhishek Singh ([@araalinetworks](https://github.com/araalinetworks)), Araali Networks
 * Aeva Black ([@AevaOnline](https://github.com/AevaOnline)), Microsoft
 * Frederick Fernando ([@freddyfernando](https://github.com/freddyfernando)), InfraCloud
+* Ragashree M C ([@ragashreeshekar](https://github.com/ragashreeshekar)), Nokia
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
