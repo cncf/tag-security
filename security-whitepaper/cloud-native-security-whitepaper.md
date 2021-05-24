@@ -608,7 +608,7 @@ Threat actors to consider for cloud native security are consistent with existing
 
 - Malicious insider - An actor with malicious intent and with authorization to perform actions within the modeled system.
 - Uninformed insider - An actor with authorization to perform actions within the modeled system (assuming anyone can be duped).
-- Malicious outsider - An actor outside of the system. They could be attacking via the internet, via supply chain, via physical perimeter etc.
+- Malicious outsider - An actor outside of the system with malicious intent, able to launch attacks via the internet, supply chain, physical perimeter etc.
 
 There are other actors that may interact with the modeled system (e.g uninformed outsiders) and they can be included for completeness. It's likely that controls for their actions will be a subset of those for the primary actors listed above.
 
