@@ -14,7 +14,7 @@ A clear understanding of the organization's or individual's cloud native archite
 
 ### Threat Identification
 
-When considering threats specific to an organization's cloud native capabilities, it is recommended to leverage a mature, well-used model of threats such as STRIDE or OCTAVE. Common threats organizations may wish to consider for their cloud native architectures includes, but is not limited to:
+When considering threats specific to an organization's cloud native capabilities, it is recommended to leverage a mature, well-used model of threats such as [STRIDE](https://en.wikipedia.org/wiki/STRIDE_(security)) or [OCTAVE](https://www.pluralsight.com/guides/cybersecurity-threat-modeling-with-octave). Common threats organizations may wish to consider for their cloud native architectures includes, but is not limited to:
 
 - Spoofing a cluster admin by stealing the authentication credentials via a social engineering attack
 - Tampering of an API server config file or certificate could result in failed API server restart or mutual TLS authentication failures
