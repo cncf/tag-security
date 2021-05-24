@@ -27,6 +27,17 @@ In keeping with this commitment, we offer the following guidelines:
      attend meetings.
    * Work performed within this group, either finalized or in draft, is to be used in accordance with the group [Mission and Charter](https://github.com/cncf/tag-security/blob/main/governance/charter.md), the open source license, and to be used for the equal benefit of all members of the community.  Further information on use of work may be found in [Security Assessments: Outcome](https://github.com/cncf/tag-security/tree/main/assessments#outcome)
 
+
+# Incident handling and escalation
+
+If an incident that occurs that you is not in good fair, please follow the guidelines on handling and escalating the issue to TAG leadership:
+
+- If you see content that clearly does not meet the official Code of Conduct, please make it known to a Co-Chair/TL and the creator of the content. (For more details refer to the CNCF Code of Conduct).
+- If you are uncomfortable with a piece of content (but it may not necessarily violate the COC), we suggest sending a private message to the content owner expressing your concerns. If this is not resolved, you may wish to request the help of a Co-Chair/TL to help mediate the situation.
+- Discussions about these issues are important, and there are great avenues to discuss them. This includes bringing up concerns to the CNCF TOC (which can be done through discussion with TAG leadership) or talking to TAG leadership about moderating a post. To help ensure that we can give focus to these issues and not tangle them up with technical discussions, we should keep these discussions separate from channels which are focused around technical exchange.
+- Please seek to understand, in some cases you may not agree with a decision or request, however practicing tolerance and mindfulness is just as important when this occurs
+Thanks for reading through this long post, but tl; dr, be nice, inclusive and welcoming. Misunderstandings, mistakes and oversights happen, and when they do, there are some good ways to go about addressing them with the TAG and CNCF!
+
 # Inspiration
 
 The above guidelines are inspired by and borrowed from other communities:
