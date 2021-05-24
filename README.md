@@ -74,7 +74,7 @@ Meeting ID: 737 567 7271
 
 ## Gatherings
 
-Please let us know if you are going and if you are interested in attending (or helping to organize!) a gathering. Create a [github issue](https://github.com/cncf/sig-security/issues/new) for an event and add to list below:
+Please let us know if you are going and if you are interested in attending (or helping to organize!) a gathering. Create a [github issue](https://github.com/cncf/tag-security/issues/new) for an event and add to list below:
 
 * KubeCon + CloudNativeCon, NA October 12-15 2021
 
@@ -107,8 +107,8 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 * Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
 * Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
 * Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), Styra
-* Andres Vega ([@anvega](https://github.com/anvega), VMWare
-* Aradhana Chetal ([@achetal01](https://github.com/achetal01), TIAA
+* Andres Vega ([@anvega](https://github.com/anvega)), VMWare
+* Aradhana Chetal ([@achetal01](https://github.com/achetal01)), TIAA
 
 ### STAG Chairs Emeritus
 * Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 9/3/2020]
@@ -144,7 +144,7 @@ Co-chair representative: @ultrasaurus
 
 
 ### STAG members
-Membership governance can be viewed [here](https://github.com/cncf/sig-security/blob/master/governance/roles.md#role-of-members). If you are new, check out the [New Members Page](NEWMEMBERS.md).
+Membership governance can be viewed [here](https://github.com/cncf/tag-security/blob/main/governance/roles.md#role-of-members). If you are new, check out the [New Members Page](NEWMEMBERS.md).
 <details><summary>Click to view list</summary>
 
 
@@ -250,7 +250,7 @@ JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## CNCF STAG reviews
 
-As part of the [CNCF project proposal process](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc), projects should create a new [security review issue](https://github.com/cncf/sig-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name) with a [self-assessment](https://github.com/cncf/tag-security/blob/master/assessments/guide/self-assessment.md).
+As part of the [CNCF project proposal process](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc), projects should create a new [security review issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name) with a [self-assessment](https://github.com/cncf/tag-security/blob/main/assessments/guide/self-assessment.md).
 
 ## Past events and meetings
 
