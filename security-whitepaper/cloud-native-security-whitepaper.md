@@ -587,7 +587,7 @@ In contrast, compliance standards form principles of controls to ascertain or cr
 
 For organizations adopting cloud native, a primary mechanism for identifying risks, controls and mitigations is to perform threat modeling. While there are many threat modeling techniques they share several core characteristics. All start with building a scoped representation of a system's architecture. This begins with identifying all important processes, data stores, and [security boundaries](https://www.oreilly.com/library/view/cissp-certified-information/9780470276884/9780470276884_security_boundaries.html). Once boundaries have been established and the relevant elements of the system are partitioned within them, the next step is to model how these elements interact with special attention paid to any interactions that cross security boundaries. 
 
-The below guidance is an enhancement of the four step OWASP threat modeling recommended for cloud native capabilities.
+The below guidance is an enhancement of the four step [OWASP threat modeling](https://owasp.org/www-community/Threat_Modeling) recommended for cloud native capabilities.
 
 ### End-to-end architecture
 
