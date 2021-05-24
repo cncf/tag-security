@@ -4,7 +4,7 @@ date: "2020-10-01"
 category: "Security Assurance"
 ---
 
-For organizations adopting cloud native, a primary mechanism for identifying risks, controls and mitigations is to perform threat modeling. While there are many threat modeling techniques they share several core characteristics. All start with building a scoped representation of a system's architecture. This begins with identifying all important processes, data stores, and [security boundaries](https://www.oreilly.com/library/view/cissp-certified-information/9780470276884/9780470276884_security_boundaries.html#:~:text=A%20security%20boundary%20is%20the,a%20LAN%20and%20the%20Internet.). Once boundaries have been established and the relevant elements of the system partitioned within those boundaries, the next step is to model how these elements interact with special attention paid to any interactions that cross security boundaries. Tools like [OWASP Threat Dragon](https://owasp.org/www-project-threat-dragon/) and [Microsoft Threat Modeling Tool](https://docs.microsoft.com/en-gb/azure/security/develop/threat-modeling-tool) help guide users through this process and can perform analysis of the resulting diagrams to automatically detect some threats.
+For organizations adopting cloud native, a primary mechanism for identifying risks, controls and mitigations is to perform threat modeling. While there are many threat modeling techniques they share several core characteristics. All start with building a scoped representation of a system's architecture. This begins with identifying all important processes, data stores, and [security boundaries](https://www.oreilly.com/library/view/cissp-certified-information/9780470276884/9780470276884_security_boundaries.html#:~:text=A%20security%20boundary%20is%20the,a%20LAN%20and%20the%20Internet.). Once boundaries have been established and the relevant elements of the system partitioned within those boundaries, the next step is to model how these elements interact with special attention paid to any interactions that cross security boundaries. 
 
 The below guidance is an enhancement of the four step OWASP threat modeling recommended for cloud native capabilities.
 
@@ -34,6 +34,9 @@ Organizations are recommended to leverage the existing resources available in th
 The utilization of pipelines and infrastructure as code (IaC) may provide compensating or mitigating controls for some threats or reduce likelihood of their success or occurrence.
 
 As with any cloud native process, it is important to iterate and provide feedback. In the context of threat modeling, this means re-evaluating if the existing measures, mechanisms, and matrices accurately reflect the operational state given the continual changes to the architecture.
+
+## Examples
+Tools like [OWASP Threat Dragon](https://owasp.org/www-project-threat-dragon/) and [Microsoft Threat Modeling Tool](https://docs.microsoft.com/en-gb/azure/security/develop/threat-modeling-tool) are particularly helpful for modelling and exploration of security threats. These types of tools enable users to quickly build data-flow diagrams that show how systems operate at a logical level. They can analyze diagrams and enumerate potential security risks according to rules that have been provided by the tool authors and the broader security community. Both [OWASP Threat Dragon](https://owasp.org/www-project-threat-dragon/) and [Microsoft Threat Modeling Tool](https://docs.microsoft.com/en-gb/azure/security/develop/threat-modeling-tool) can be used by non-experts to generate useful security insights to help engineers make good security choices and improve their cloud-native solutions and designs.
 
 ## Projects
 - [OWASP Threat Dragon](https://owasp.org/www-project-threat-dragon/)
