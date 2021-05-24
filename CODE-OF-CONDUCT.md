@@ -35,7 +35,12 @@ If an incident involving community conduct occurs, please follow the guidelines 
 - If you see content that clearly does not meet the official Code of Conduct, please send an e-mail to the Co-Chair/TL mailing list (cncf-tag-security-leads@lists.cncf.io) and the creator of the content. (For more details refer to the CNCF Code of Conduct).
 - If you are uncomfortable with a piece of content (but it may not necessarily violate the COC), we suggest sending a private message to the content owner expressing your concerns. If this is not resolved, you may wish to request the help of a Co-Chair/TL via cncf-tag-security-leads@lists.cncf.io to help mediate the situation.
 - Discussions about these issues are important, and there are great avenues to discuss them. This includes bringing up concerns to the CNCF TOC (which can be done through discussion with Security TAG leadership) or talking to Security TAG leadership about moderating a post. To help ensure that we can give focus to these issues and not tangle them up with technical discussions, we should keep these discussions separate from channels which are focused around technical exchange.
-- Please seek to understand, in some cases you may not agree with a decision or request, however practicing tolerance and mindfulness is just as important when this occurs
+
+For content creators:
+- If you receive a notice about a piece of content you've created, please seek to understand that in some cases you may not agree with a decision or request. Being able to practice tolerance and mindfulness is just as important to keep the community working towards a common goal. The mediation and resolution system that we have in place aims to handle this with the hope that both content creators and consumers are heard and represented. These situations are not zero sum, and often we aim to reach an agreeable compromise where a discussion of a topic can happen without making members of the community feel uncomfortable.
+- In the event where there is disagreement, we have some guidelines that can help prevent escalation
+  - Do not rationalize the actions you take. We do not expect anyone to understand what everyone else feels towards certain things (e.g. the same gestures in certain cultures are good and bad in others). Understand that something may not be wrong, but it may affect others.
+  - Do not bring the discussion out of context.
 In summary, be nice, inclusive and welcoming. Misunderstandings, mistakes and oversights happen, and when they do, there are some good ways to go about having a conversation with colleagues to make our community inclusive and welcoming to everyone!
 
 # Inspiration
