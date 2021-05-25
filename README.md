@@ -2,7 +2,7 @@
 
 <img src="https://github.com/cncf/artwork/blob/master/other/sig-security/horizontal/color/sig-security-horizontal-color.svg">
 
-# CNCF Special Interest Group for Security (SIG-Security)
+# CNCF Security Technical Advisory Group
 
 ## Quick links
 
@@ -13,9 +13,10 @@
 
 ## Objective
 
-SIG-Security facilitates collaboration to discover and produce resources that
-enable secure access, policy control, and safety for operators, administrators,
+STAG facilitates collaboration to discover and produce resources that enable 
+secure access, policy control, and safety for operators, administrators, 
 developers, and end-users across the cloud native ecosystem.
+
 
 ## Background
 
@@ -45,19 +46,19 @@ security of the system, such as auditing and explainability features.
 
 # Governance
 
-[SIG-Security charter](governance/charter.md) outlines the scope  of our group activities, as part of our 
-[governance process](governance) which details how we
-work.
+[STAG charter](governance/charter.md) outlines the scope  of our group activities, 
+as part of our [governance process](governance) which details how we work.
 
 ## Communications
 
-Anyone is welcome to join our open discussions of SIG-Security projects and
-share news related to the group's mission and charter. Much of the work of the
-group happens outside of SIG-Security meetings and we encourage project teams to
-share progress updates or post questions in these channels:
+Anyone is welcome to join our open discussions of STAG projects and share news 
+related to the group's mission and charter. Much of the work of the group happens 
+outside of Security TAG meetings and we encourage project teams to share progress 
+updates or post questions in these channels:
+
 
 * [Email list](https://lists.cncf.io/g/cncf-sig-security)
-* [CNCF Slack](https://slack.cncf.io/) #sig-security channel
+* [CNCF Slack](https://slack.cncf.io/) #tag-security channel
 
 ### Slack governance
 
@@ -77,7 +78,7 @@ See the  [CNCF Calendar](https://www.cncf.io/calendar/) for calendar invites.
 
 ### Zoom Details
 
-[Meeting Link: zoom.us/my/cncfsigsecurity (Passcode: 77777)](https://zoom.us/my/cncfsigsecurity?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
+[Meeting Link: zoom.us/my/cncftagsecurity (Passcode: 77777)](https://zoom.us/j/7375677271?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
 
 One tap mobile:
 * +16465588656,,7375677271# US (New York)
@@ -95,18 +96,18 @@ Meeting ID: 737 567 7271
 
 ## Gatherings
 
-Please let us know if you are going and if you are interested in attending (or
-helping to organize!) a gathering. Create a [github issue](https://github.com/cncf/sig-security/issues/new) for an event 
-and add to
-list below:
+Please let us know if you are going and if you are interested in attending (or 
+helping to organize!) a gathering. Create a [github issue](https://github.com/cncf/tag-security/issues/new) for an event 
+and add to list below:
 
-* KubeCon + CloudNativeCon, EU - May 4 - 7, 2021 - [issue#454]
+
+* KubeCon + CloudNativeCon, NA October 12-15 2021
 
 [Past events](past-events.md)
 
 ## New members
 
-If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and submit a PR to add yourself to the [members list](#sig-members).
+If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and submit a PR to add yourself to the [members list](#stag-members).
 
 ## Related groups
 
@@ -116,12 +117,13 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 
 ## History
 
+* SIG-Security - renamed STAG ([TOC Issue #549](https://github.com/cncf/toc/issues/549))
 * SAFE WG - renamed to CNCF Security SIG
 * [(Proposed) CNCF Policy Working Group](/policy-wg-merging.md) - Merged into SAFE WG
 
 ## Members
 
-### SIG Chairs
+### STAG Chairs
 * Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), Apple [Chair - term: 9/28/2020 - 9/27/2022]
 * Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 6/3/2019 - 6/3/2021]
 * Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 6/3/2019 - 6/3/2021]
@@ -130,10 +132,10 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 * Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
 * Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
 * Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), Styra
-* Andres Vega ([@anvega](https://github.com/anvega), VMWare
-* Aradhana Chetal ([@achetal01](https://github.com/achetal01), TIAA
+* Andres Vega ([@anvega](https://github.com/anvega)), VMWare
+* Aradhana Chetal ([@achetal01](https://github.com/achetal01)), TIAA
 
-### SIG Chairs Emeritus
+### STAG Chairs Emeritus
 * Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 9/3/2020]
 
 ### On-going projects
@@ -153,9 +155,9 @@ Co-leads
 Co-chair representative: @pragashj
 
 
-#### Security assessments
+#### Security reviews
 
-[Security assessments](./assessments) are a collaborative process for the
+[Security reviews](./assessments) are a collaborative process for the
 benefit of cloud native projects and prospective users by creating a consistent
 overview of the project and its risk profile.
 
@@ -166,8 +168,8 @@ Co-chair representative: @ultrasaurus
 
 
 
-### SIG members
-Membership governance can be viewed [here](https://github.com/cncf/sig-security/blob/master/governance/roles.md#role-of-members). If you are new, check out the [New Members Page](NEWMEMBERS.md).
+### STAG members
+Membership governance can be viewed [here](https://github.com/cncf/tag-security/blob/main/governance/roles.md#role-of-members). If you are new, check out the [New Members Page](NEWMEMBERS.md).
 <details><summary>Click to view list</summary>
 
 
@@ -261,6 +263,9 @@ Membership governance can be viewed [here](https://github.com/cncf/sig-security/
 * Matthew Flannery [@matthewflannery](https://github.com/matthewflannery)), Accelera
 * Frederick Kautz ([@fkautz](https://github.com/fkautz)), Network Service Mesh Maintainer
 * Sunny Patel ([@sunnythepatel](https://github.com/sunnythepatel)), Monash eResearch Centre, Melbourne Australia
+* Jeff Rowell ([@jeff-rowell](https://github.com/Jeff-Rowell))
+* Daniel Tobin ([@dant24](https://github.com/dant24)), Cyral
+* Cole Kennedy ([@colek42](https://github.com/colek42)), BoxBoat
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
@@ -268,9 +273,9 @@ JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 # Additional information
 
-## CNCF sig assessments
+## CNCF STAG reviews
 
-As part of the [CNCF project proposal process](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc), projects should create a new [assessment issue](https://github.com/cncf/sig-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name) with a [self-assessment](https://github.com/cncf/sig-security/blob/master/assessments/guide/outline.md).
+As part of the [CNCF project proposal process](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc), projects should create a new [security review issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name) with a [self-assessment](https://github.com/cncf/tag-security/blob/main/assessments/guide/self-assessment.md).
 
 ## Past events and meetings
 

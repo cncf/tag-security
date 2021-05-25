@@ -1,6 +1,6 @@
 # Governance
 
-SIG-Security is a [CNCF Special Interest Group](https://github.com/cncf/toc/tree/master/sigs).
+Security TAG is a [CNCF Technical Advisory Group](https://github.com/cncf/toc/tree/main/tags).
 
 * [Charter](charter.md) - mission and scope
 * [Roles](roles.md) - the work of the group is facilited by Chairs, Technical Leads, and active group members
