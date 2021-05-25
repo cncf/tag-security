@@ -1,7 +1,6 @@
 # Code of Conduct
 
-We follow the [CNCF Code of
-Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md)
+We follow the [CNCF Code of Conduct][cncf-coc].
 
 As part of our pledge to respect all people, in both live in-person and online
 interactions, we are committed to providing a friendly, safe and welcoming
@@ -29,11 +28,11 @@ In keeping with this commitment, we offer the following guidelines:
        meetings.
    * Work performed within this group, either finalized or in draft, is to be
      used in accordance with the group [Mission and
-     Charter](https://github.com/cncf/tag-security/blob/main/governance/charter.md),
+     Charter][charter],
      the open source license, and to be used for the equal benefit of all
      members of the community.  Further information on use of work may be found
-     in [Security Assessments:
-     Outcome](https://github.com/cncf/tag-security/tree/main/assessments#outcome)
+     in [Security Reviews:
+     Outcome][review-outcome]
 
 
 # Incident handling and escalation
@@ -59,3 +58,7 @@ The above guidelines are inspired by and borrowed from other communities:
 * https://bridgefoundry.org/code-of-conduct
 * https://www.rust-lang.org/policies/code-of-conduct
 * https://golang.org/conduct
+
+[cncf-coc]: https://github.com/cncf/foundation/blob/master/code-of-conduct.md  
+[charter]: https://github.com/cncf/tag-security/blob/main/governance/charter.md
+[review-outcome]: https://github.com/cncf/tag-security/tree/main/assessments#outcome
