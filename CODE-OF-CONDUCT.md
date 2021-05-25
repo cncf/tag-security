@@ -41,6 +41,7 @@ For content creators:
 - In the event where there is disagreement, we have some guidelines that can help prevent escalation
   - Do not rationalize the actions you take. We do not expect anyone to understand what everyone else feels towards certain things (e.g. the same gestures in certain cultures are good and bad in others). Understand that something may not be wrong, but it may affect others.
   - Do not bring the discussion out of context.
+
 In summary, be nice, inclusive and welcoming. Misunderstandings, mistakes and oversights happen, and when they do, there are some good ways to go about having a conversation with colleagues to make our community inclusive and welcoming to everyone!
 
 # Inspiration
