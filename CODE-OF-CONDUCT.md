@@ -39,8 +39,8 @@ If an incident involving community conduct occurs, please follow the guidelines 
 For content creators:
 - If you receive a notice about a piece of content you've created, please seek to understand that in some cases you may not agree with a decision or request. Being able to practice tolerance and mindfulness is just as important to keep the community working towards a common goal. The mediation and resolution system that we have in place aims to handle this with the hope that both content creators and consumers are heard and represented. These situations are not zero sum, and often we aim to reach an agreeable compromise where a discussion of a topic can happen without making members of the community feel uncomfortable.
 - In the event where there is disagreement, we have some guidelines that can help prevent escalation
-  - Do not rationalize the actions you take. We do not expect anyone to understand what everyone else feels towards certain things (e.g. the same gestures in certain cultures are good and bad in others). Understand that something may not be wrong, but it may affect others.
   - Do not bring the discussion out of context.
+  - Do not rationalize the actions you take. We do not expect anyone to understand what everyone else feels towards certain things (e.g. the same gestures in certain cultures are good and bad in others). Understand that something may not be wrong, but it may affect others.
 
 In summary, be nice, inclusive and welcoming. Misunderstandings, mistakes and oversights happen, and when they do, there are some good ways to go about having a conversation with colleagues to make our community inclusive and welcoming to everyone!
 
