@@ -93,7 +93,7 @@ overwhelming the servers)
 ## Joint-review use
 
 The joint-review is initially created by the project team and then collaboratively
-developed with the [security reviewers](/security-reviewer.md) as part of the project's
+developed with the [security reviewers](security-reviewer.md) as part of the project's
 SIG-Security Review (formerly called security assessment).  Information about the
 SIG-Security Review can be found in the [CNCF SIG-Security Review Process Guide](./README.md).
 
@@ -106,7 +106,7 @@ of a security audit.
 
 ## Intended Use
 
-* Target Users and Use Cases. Provide a mapping from [standard personas](../../usecases.md)
+* Target Users and Use Cases. Provide a mapping from [standard personas](../../usecase-personas)
 to the nomenclature used in your project docs (which you should then use
 consistently for the remainder of this document).  Describe the scenarios in
 which the project is expected to be used. This must be specific enough to

@@ -2,7 +2,7 @@
 name: Joint security review
 about: To request a joint review or track progress on active review
 title: "[Security Review] Project Name"
-labels: 
+labels: "triage-required"
 assignees: ''
 
 ---
@@ -23,10 +23,10 @@ Security Provider: yes/no (e.g. Is the primary function of the project to suppor
    - [ ] Project security lead
    - [ ] Lead security reviewer
    - [ ] 1 or more additional reviewer(s)
-   - [ ] Every reviewer has read [security reviewer guidelines](https://github.com/cncf/sig-security/blob/master/assessments/guide/security-reviewer.md) and stated declaration of conflict
+   - [ ] Every reviewer has read [security reviewer guidelines](https://github.com/cncf/tag-security/blob/main/assessments/guide/security-reviewer.md) and stated declaration of conflict
    - [ ] Sign off by 2 chairs on reviewer conflicts
 - [ ] Create slack channel (e.g. #sec-assess-projectname)
-- [ ] Project lead provides draft document - see [outline](https://github.com/cncf/sig-security/blob/master/assessments/guide/outline.md)
+- [ ] Project lead provides draft document - see [outline](https://github.com/cncf/tag-security/blob/main/assessments/guide/joint-review.md)
 - [ ] "Naive question phase" Lead Security Reviewer asks clarifying questions 
 - [ ] Assign issue to security reviewers
 - [ ] Initial review

@@ -75,18 +75,20 @@ Security reviews have many benefits, creating:
 
 A complete security review package primarily consists of the following
 items:
-* [Self-assessment](guide/self-assessment).  A written assessment by the project
+* [Self-assessment](guide/self-assessment.md).  A written assessment by the project
 of the project's current security statue. 
-* [Joint-review](guide/joint-review). A joint review by both the [security
-reviewers](guide/security-reviewer) and the project team that includes parts
+* [Joint-review](guide/joint-review.md). A joint review by both the [security
+reviewers](guide/security-reviewer.md) and the project team that includes parts
 of the self-assessment and expands to include a more comprehensive consideration
 of the project's security health.  This artifact, coupled with self-assessment
 provide invaluable information for security auditors as well as end-users.
 * Presentation. A security focused presentation of the project by the project
   team,
-* [Review README.md](guide/joint-readme-template). This readme is created at the
-end of the joint review by the security reviewers to provide a high level
-summary of the joint review and is considered when reviewing for due diligence.
+* Review the [joint README template](guide/joint-readme-template.md).
+This template is used to create a readme at the end of the joint
+review by the security reviewers to provide a high level summary
+of the joint review and is considered when reviewing for due
+diligence.
 
 ### Use of a completed package
 
