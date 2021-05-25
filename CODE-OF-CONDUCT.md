@@ -37,32 +37,72 @@ In keeping with this commitment, we offer the following guidelines:
 
 # Incident handling and escalation
 
-Content for the purposes of the code of conduct as well as incident is defined not only as published or draft content but also online discourse, such as slack messages or emails, and interactions at in-person events.
-If an incident involving community conduct occurs, please follow the guidelines below on how to handle and report the issue:
+Content for the purposes of the code of conduct as well as incident is defined
+not only as published or draft content but also online discourse, such as slack
+messages or emails, and interactions at in-person events.  If an incident
+involving community conduct occurs, please follow the guidelines below on how to
+handle and report the issue:
 
-- If you see content that clearly does not meet the official Code of Conduct, please send an e-mail to the Co-Chair/TL mailing list (cncf-tag-security-leads@lists.cncf.io) and the creator of the content. (For more details refer to the [CNCF Code of Conduct][cncf-coc]).
-- If you are uncomfortable with a piece of content (but it may not necessarily violate the code of conduct), we suggest sending a private message to the content owner expressing your concerns. If this is not resolved, you may wish to request the help of a Co-Chair/TL via cncf-tag-security-leads@lists.cncf.io to help mediate the situation.
-- Discussions about these issues are important, and there are great avenues to discuss them. This includes bringing up concerns to the [CNCF TOC][cncf-toc] (which can be done through discussion with Security TAG leadership) or talking to Security TAG leadership about moderating a post. To help ensure that we can give focus to these issues and not tangle them up with technical discussions, we should keep these discussions separate from channels which are focused around technical exchange.
+- If you see content that clearly does not meet the official Code of Conduct,
+  please send an e-mail to the Co-Chair/TL mailing list
+  (cncf-tag-security-leads@lists.cncf.io) and the creator of the content. (For
+  more details refer to the [CNCF Code of Conduct][cncf-coc]).
+- If you are uncomfortable with a piece of content (but it may not necessarily
+  violate the code of conduct), we suggest sending a private message to the
+  content owner expressing your concerns. If this is not resolved, you may wish
+  to request the help of a Co-Chair/TL via cncf-tag-security-leads@lists.cncf.io
+  to help mediate the situation.
+- Discussions about these issues are important, and there are great avenues to
+  discuss them. This includes bringing up concerns to the [CNCF TOC][cncf-toc]
+  (which can be done through discussion with Security TAG leadership) or talking
+  to Security TAG leadership about moderating a post. To help ensure that we can
+  give focus to these issues and not tangle them up with technical discussions,
+  we should keep these discussions separate from channels which are focused
+  around technical exchange.
 
 For content creators:
 
-- Content must strive to remain _on-topic_, particularly where video and images are provided.  Use of emojis and gifs as responses are content in and of themselves need to be relevant to the particular post. For examples please refer to the reference section below. 
-- If you receive a notice about a piece of content you've created, please seek to understand that in some cases you may not agree with a decision or request. Being able to practice tolerance and mindfulness is just as important to keep the community working towards a common goal. The mediation and resolution system that we have in place aims to handle this with the hope that both content creators and consumers are heard and represented. These situations are not zero sum, and often we aim to reach an agreeable compromise where a discussion of a topic can happen without making members of the community feel uncomfortable.
-- In the event where there is disagreement, we have some guidelines that can help prevent escalation
+- Content must strive to remain _on-topic_, particularly where video and images
+  are provided.  Use of emojis and gifs as responses are content in and of
+  themselves need to be relevant to the particular post. For examples please
+  refer to the reference section below. 
+- If you receive a notice about a piece of content you've created, please seek
+  to understand that in some cases you may not agree with a decision or request.
+  Being able to practice tolerance and mindfulness is just as important to keep
+  the community working towards a common goal. The mediation and resolution
+  system that we have in place aims to handle this with the hope that both
+  content creators and consumers are heard and represented. These situations are
+  not zero sum, and often we aim to reach an agreeable compromise where a
+  discussion of a topic can happen without making members of the community feel
+  uncomfortable.
+- In the event where there is disagreement, we have some guidelines that can
+  help prevent escalation
   - Do not bring the discussion out of context.
-  - Do not rationalize the actions you take. We do not expect anyone to understand what everyone else feels towards certain things (e.g. the same gestures in certain cultures are good and bad in others). Understand that something may not be wrong, but it may affect others.
+  - Do not rationalize the actions you take. We do not expect anyone to
+    understand what everyone else feels towards certain things (e.g. the same
+    gestures in certain cultures are good and bad in others). Understand that
+    something may not be wrong, but it may affect others.
 
-In summary, be nice, inclusive and welcoming. Misunderstandings, mistakes and oversights happen, and when they do, there are some good ways to go about having a conversation with colleagues to make our community inclusive and welcoming to everyone!
-## Reference
+In summary, be nice, inclusive and welcoming. Misunderstandings, mistakes and
+oversights happen, and when they do, there are some good ways to go about having
+a conversation with colleagues to make our community inclusive and welcoming to
+everyone!  ## Reference
 
-Example of reasonable gif: Group is close to wrapping up deliverable, as part of an update, the lead posts a "nearly done" gif.  
+Example of reasonable gif: Group is close to wrapping up deliverable, as part of
+an update, the lead posts a "nearly done" gif.  
 
-Example of reasonable emoji:  Post in the group uses emojis to break up content and is relevant to the item discussed or used in response to post to signify voting, opinion, acceptance, emotion, etc.  
+Example of reasonable emoji:  Post in the group uses emojis to break up content
+and is relevant to the item discussed or used in response to post to signify
+voting, opinion, acceptance, emotion, etc.  
 
-Example of reasonable image and video:  Posting a picture of a community meetup* or posting a recording to a presentation on cloud native security.
+Example of reasonable image and video:  Posting a picture of a community meetup*
+or posting a recording to a presentation on cloud native security.
 
-*Note: Many events within the community may show alcohol consumption, it is important that when posting photos and videos members consider if the post glorifies alcohol or alcohol is the primary subject of the content (unacceptable) or if the alcohol is happenstance occurrence in the image (acceptable).
-# Inspiration
+*Note: Many events within the community may show alcohol consumption, it is
+important that when posting photos and videos members consider if the post
+glorifies alcohol or alcohol is the primary subject of the content
+(unacceptable) or if the alcohol is happenstance occurrence in the image
+(acceptable).  # Inspiration
 
 The above guidelines are inspired by and borrowed from other communities:
 
