@@ -7,7 +7,7 @@ should be reviewed.
 * [Roles](#roles)
 * [Security review package steps](#security-review-package-steps)
   * [New projects](#new-projects)
-    1. [Self-assessment](#complete-self-assessment)
+    1. [Self-assessment](#complete-a-self-assessment)
     2. [Create issue](#create-a-presentation-issue)
     3. [Present](#present-the-project-and-self-assessment)
     4. [Submit PR](#submit-a-PR-to-include-the-self-assessment-in-the-repo)
@@ -32,7 +32,7 @@ should be reviewed.
 
 The security review package is developed over time as projects grow in
 maturity and advance through the CNCF.  The below section breaks the creation of
-the package into steps that mirror the [current TOC process stages](https://github.com/cncf/toc/tree/master/process).
+the package into steps that mirror the [current TOC process stages](https://github.com/cncf/toc/tree/main/process).
 
 ### New projects
 
@@ -40,7 +40,7 @@ New projects are projects generally defined as very early on in their maturity. 
 
 Note: Responsible roles for specific items are in **bold**
 
-#### Complete a [self-assessment](self-assessment)
+#### Complete a [self-assessment](self-assessment.md)
 
 The self-assessment provides projects with the opportunity to examine the
 existing security provisions of the project.  It can serve as their initial
@@ -63,7 +63,7 @@ updated self-assessment based on feedback and discussion.
 #### Submit a PR to include the self-assessment in the repo
 
 After the presentation, the **project lead** or their designee should submit a PR, 
-citing the presentation issue number to add the self-assessment to [assessments/projects](https://github.com/cncf/sig-security/tree/master/assessments/projects) under its 
+citing the presentation issue number to add the self-assessment to [assessments/projects](https://github.com/cncf/tag-security/tree/main/assessments/projects) under its 
 own folder.  The ticket may then be closed after merged in.
 
 ### Growing projects
@@ -74,14 +74,14 @@ Note: Responsible roles for specific items are in **bold**. If an incubation
 project did not complete a self-assessment during sandbox, they are recommended
 to start with the self-assessment before pursing joint review.
 
-#### [Create tracking issue](https://github.com/cncf/sig-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
+#### [Create tracking issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 
 The tracking issue serves to initiate the joint-reviews.  It provides
  an initial set of information to assist SIG-Security in  prioritizing the
 joint review as well as provide potential reviewers with a central
 location to manage the effort.
    * Issue may be a request from **TOC liason** or **project** itself 
-   * [**Security review facilitator**](https://github.com/cncf/sig-security/blob/master/governance/roles.md#facilitation-role) with help from the **technical leads**
+   * [**Security review facilitator**](https://github.com/cncf/tag-security/blob/main/governance/roles.md#facilitation-roles) with help from the **technical leads**
  and **co-chairs** if appropriate, will determine if the project is ready for
  joint-review.  If ready, a channel will be created to coordinate the
 activities.
@@ -99,9 +99,9 @@ The project provides the reviewers with security relevant information about thei
  project.  The joint review can include links to external documents and sources
  within the project's repository or website to provide additional details or 
 reference where a process is kept.
-   * **[Project lead](project-lead)** responds to the issue with draft
+   * **[Project lead](project-lead.md)** responds to the issue with draft
      document (see [joint review](joint-review.md))
-   * Issue assigned to **lead [security reviewer](security-reviewer)** who
+   * Issue assigned to **lead [security reviewer](security-reviewer.md)** who
      will recruit at least one additional reviewer, if one is not already
 assigned, and facilitate the process.
  
@@ -125,7 +125,7 @@ format:
 | Soft Conflicts | Y/N |
 | :------------- | :-: |
 | Reviewer belongs to the same company/organization of the project, but does not work on the project |  |
-| Reviewer uses the project in his/her work |  |
+| Reviewer uses the project in their work |  |
 | Reviewer has contributed to the project |  |
 | Reviewer has a personal stake in the project (personal relationships, etc.) |  |
 
@@ -199,7 +199,7 @@ joint review and presentation slides.
    * PR approval of at least 1 **co-chair**, alongside other **reviewers'** 
 approvals, is required before merging any artifacts.
 
-#### [Post-review survey](reviews-survey)
+#### [Post-review survey](review-survey.md)
 
 The should be completed by the **reviewers**, **project lead**, and other members
 of the review.  Once complete the survey may be shared directly to the
