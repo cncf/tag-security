@@ -86,7 +86,9 @@ For content creators:
 In summary, be nice, inclusive and welcoming. Misunderstandings, mistakes and
 oversights happen, and when they do, there are some good ways to go about having
 a conversation with colleagues to make our community inclusive and welcoming to
-everyone!  ## Reference
+everyone!  
+
+## Reference
 
 Example of reasonable gif: Group is close to wrapping up deliverable, as part of
 an update, the lead posts a "nearly done" gif.  
@@ -102,7 +104,9 @@ or posting a recording to a presentation on cloud native security.
 important that when posting photos and videos members consider if the post
 glorifies alcohol or alcohol is the primary subject of the content
 (unacceptable) or if the alcohol is happenstance occurrence in the image
-(acceptable).  # Inspiration
+(acceptable).  
+
+# Inspiration
 
 The above guidelines are inspired by and borrowed from other communities:
 
