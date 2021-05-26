@@ -18,7 +18,7 @@ should initiate with an [issue](https://github.com/cncf/tag-security/issues) sub
 
 ### Markdown 
 
-The living SSCSP is maintained in [markdown](https://github.com/cncf/tag-security/blob/master/supply-chain-security/supply-chain-security-paper/sscsp.md) and all updates will be made in
+The living SSCSP is maintained in [markdown](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md) and all updates will be made in
  markdown.  
 
 ### Contributing updates 
@@ -58,5 +58,5 @@ approval on the PR.  At which point the markdown state will be changed to
 
 
 Links:
-* [Managed version in  Markdown](https://github.com/cncf/tag-security/blob/master/supply-chain-security/supply-chain-security-paper/sscsp.md)
-* [Final PDF](https://github.com/cncf/tag-security/blob/master/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)
+* [Managed version in  Markdown](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md)
+* [Final PDF](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)
