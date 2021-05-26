@@ -15,8 +15,8 @@ control access privileges, not in the Github UI (so they are visible to
 everyone.)  
 
 Note: Members of the CNCF TOC and some CNCF staff also have admin access;
-however, SIG Roles will be defined transparently using files described below,
-and will follow SIG processes in making any changes. 
+however, STAG Roles will be defined transparently using files described below,
+and will follow STAG processes in making any changes. 
 
 ## Settings file  
 Pull Requests to appoint members to new Roles in
