@@ -1,6 +1,8 @@
 # Proposals, projects, and team
 
-In addition to the TOC driven activities of the SIG, members may propose
+In addition to the [TOC](https://www.cncf.io/people/technical-oversight-committee/)
+driven activities of the group, members may propose
+``
 projects or streams of work that are in alignment with the charter of the 
 group and of interest and importance to the community.
 
