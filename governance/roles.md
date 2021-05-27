@@ -104,6 +104,10 @@ Project Leads are nominated and approved by the following process:
   The nomination is typically open for a week (but may be shorter with LGTM of at least two Chairs).
   1. The issue is updated with the assignment of the project lead as "assignee" alongside the SIG Leadership member.
   1. Project Leads will be given the OWNER role of the directory or sub-directory for their team's activities in order to empower merge/approve.
+  
+  ### On-going projects
+  
+  On the occasion where a project becomes long term, Project Leads are also given the OWNER role of the directory or sub-directory along with 1 other nominated individual to ensure continuity in review and ongoing support of the project.
 
 Depending on the expected length of the project, Project Leads may be assigned
 as OWNERS of the project directory in this repository to help facilitate and moderate new content to the
@@ -113,6 +117,10 @@ project.
 
 Team Leads lead larger streams of work that require sustained effort and 
 coordination and remain ongoing.
+
+Teams must have a Co-Chair sponsor to maintain visibility in the team's work and to ensure it is progressing.  The Co-Chair sponsor also provides review and approval as part of the process whether be on engagement or deliverable publishing (such as with papers).  
+
+On-going projects may not imply a team and therefore may not require a team lead to sustain and coordinate.
 
 Team Leads are nominated and approved by the following process:
   1. Team Lead actively participates in the group, initiates the proposal or

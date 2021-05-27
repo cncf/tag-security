@@ -26,19 +26,19 @@ that outlines the problem to be solved. If possible, include:
     * The scope of the work required
 
 1. **Ask the group for collaboration:** Rather than immediately beginning work
-on a solution, add the issue to a meeting agenda by placing the link and the POC
+on a solution, add the issue to a meeting agenda by placing the link and the 
+person who will present the proposal
 in the ["Planned Meeting" area of the meeting
-notes](https://github.com/cncf/sig-security#meeting-times) and bring the issue up for 
+notes](https://github.com/cncf/tag-security#meeting-times) and bring the issue up for 
 discussion at the scheduled meeting, explain it, and ask if others are interested
  in collaborating. This ensures that solutions are created with multiple 
 perspectives as well as verifies there is community interest in pursuing the
 proposal. The outcome of this conversation will be:
     * The group agrees that this problem is appropriate scope
-  Group.
     * Criteria for completion are added to the issue that include a "definition
   of done", ideally with validation by the target audience. Also note in the
   issue if it will be a time-bounded project with a defined deliverable or and 
-  on-going stream.
+  on-going stream of work (the latter would typically be proposed only after at least one, usually multiple, projects have been completed.
     * At least one person is recommended or nominated as a potential lead.
     * Those interested in working on the solution comment on the issue so
       coordination may begin and set up time or expectations with others to 

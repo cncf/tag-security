@@ -17,6 +17,6 @@ TO DO
 - [ ] SIG Leadership Representative:
 - [ ] Project leader(s):
 - [ ] Project Members:
+- [ ] _Fill in addition TODO items here so the project team and community can see progress!_
 - [ ] Project Schedule
 - [ ] Retrospective
-
