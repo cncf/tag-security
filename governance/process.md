@@ -1,7 +1,7 @@
 # Proposals, projects, and team
 
 In addition to the TOC driven activities of the SIG, members may propose
-projects or streams work that are in alignment with the charter of the 
+projects or streams of work that are in alignment with the charter of the 
 group and of interest and importance to the community.
 
 These proposals may be converted to a project with a defined set of deliverables
@@ -94,4 +94,3 @@ completed, a new issue and corresponding pull request should be created and
 describe the expectations, plans, and ideas for on-going work.  It should
 include historical information and guidelines for contributions and maintenance
  in the README for the project artifact's folder.  
-
