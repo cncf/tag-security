@@ -1,4 +1,4 @@
-# Call to Action template
+# Call to Action Template
 
 ## Security Enthusiasts!
 CNCF Security Tag is looking to embark on another tech security adventure!  [2 sentences explanation of what the thing is].
@@ -9,6 +9,7 @@ This is where you (yes you!) come in.  We're looking for community members and c
 [what this means for the community]. We hope you can join us on this significant contribution opportunity. [If needed by a specific date, say so here].
 
 ## Ready to dive in?  
-Comment on the issue[relink the issue] (#XXX) and join the [link to the slack channel] Slack channel!
+Comment on the issue [relink the issue] (#XXX) and join the [link to the slack channel] Slack channel!
+
 [Relink everything again here with what it is and the URLs blown out (not embedded)]
  
