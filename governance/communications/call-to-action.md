@@ -11,5 +11,10 @@ This is where you (yes you!) come in.  We're looking for community members and c
 ## Ready to dive in?  
 Comment on the issue [relink the issue] (#XXX) and join the [link to the slack channel] Slack channel!
 
+## References
 [Relink everything again here with what it is and the URLs blown out (not embedded)]
- 
+
+Examples:
+https://lists.cncf.io/g/cncf-tag-security/message/58
+https://lists.cncf.io/g/cncf-tag-security/message/54
+https://lists.cncf.io/g/cncf-tag-security/message/53
