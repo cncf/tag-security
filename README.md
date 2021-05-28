@@ -149,8 +149,7 @@ focus on policy concerns and initiatives.
 
 Co-leads
 
-  * Howard Huang ([@hannibalhuang](https://github.com/hannibalhuang)), Huawei [Kubernetes Policy WG co-chair]
-  * Erica von Buelow ([@ericavonb](https://github.com/ericavonb)), Red Hat [Kubernetes Policy WG]
+  * TBD
 
 Co-chair representative: @pragashj
 
