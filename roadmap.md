@@ -17,7 +17,7 @@ includes SAFE WG and SIG-Security in its timeline.
 
 ## Details
 
-1. **Charter** the SAFE Working Group. Draft vision, process and initial members 
+1. **Charter** the SAFE Working Group. Draft vision, process and initial members
    (done, see below)
 2. **Discover** (Completed)
    * Explore the problem space of the working group
@@ -81,11 +81,11 @@ these items linked below.
 | Updated personas & use cases | 23 Sept 2019 | [Added platform implementer](https://github.com/cncf/sig-security/pull/246)
 | Policy formal verification overview | 10 Sept 2019 | [Documentation](https://github.com/cncf/sig-security/pull/242)
 | First Security Assessment | May 2019 | [In-toto](https://github.com/cncf/sig-security/pull/202)  |
-| Updated Charter and Governance ratified by CNCF TOC |  7 May 2019 | [New repo](https://github.com/cncf/sig-security/tree/master/governance) |
+| Updated Charter and Governance ratified by CNCF TOC |  7 May 2019 | [New repo](https://github.com/cncf/tag-security/tree/main/governance) |
 | First cut security audit guidelines  | 2 May 2019 | [Guidelines](https://github.com/cncf/sig-security/pull/125) |
 | Moved SAFE WG to CNCF  | 15 Apr 2019 | [Repo rename](https://github.com/cncf/sig-security/pull/148) |
 | CNCF WG proposal | 21 Aug 2018 | [CNCF SIG-Security charter and roles](https://github.com/cncf/toc/pull/146) |
-| Policy WG merged | 10 Aug 2018 | [Merging policy WG](https://github.com/cncf/sig-security/blob/master/policy-wg-merging.md)  |
+| Policy WG merged | 10 Aug 2018 | [Merging policy WG](https://github.com/cncf/tag-security/blob/main/policy-wg-merging.md)  |
 | First KubeCon Presentations | 2-4 May 2018 | [Intro](https://kccnceu18.sched.com/event/ENw3/safe-wg-intro-jeyappragash-j-j-padmeio-ray-colline-google-any-skill-level) and [deep dive](https://kccnceu18.sched.com/event/ENw5/safe-wg-deep-dive-ray-colline-google-intermediate-skill-level) |
 | Personas & use cases | 20 Apr 2018 | [Shared doc into repo markdown](https://github.com/cncf/sig-security/pull/16)
 | Initial Commit for SAFE repo | 13 Mar 2018 | [First commit](https://github.com/cncf/sig-security/commit/fe999bd637456ade5e6cc8866d0db4107a0d9778) |
