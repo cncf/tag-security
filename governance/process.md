@@ -68,7 +68,7 @@ members to vote and indicating the time the vote will close. Only one member
 from each company should vote. Members will vote by leaving a comment in the
 Pull Request to indicate their vote for or against. Members will have a week
 after the vote begins to leave their vote. Quorum is taken to be 2/3 the number
-of companies who have been active in the past month (via issue comment or 
+of companies who have been active in the past month (via issue comment or
 meeting attendace as recorded in the public minutes).
 
 

@@ -78,7 +78,7 @@ of their systems to attacks. [KEYCLOAK-15947](https://issues.redhat.com/browse/K
 The following recommendations are where help from the CNCF would assist Keycloak to increase its effectiveness
 in cloud native security.
 
-* Encourage projects looking for an authentication system to integrate with Keycloak. 
+* Encourage projects looking for an authentication system to integrate with Keycloak.
 
 * Help Keycloak in identifying common configuration “gotchas” which could then be used to improve the documentation
 and overall usability of the project.

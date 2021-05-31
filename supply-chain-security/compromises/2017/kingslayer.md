@@ -1,8 +1,8 @@
-# Kingslayer 
+# Kingslayer
 
 Attackers could breach the download server of an application (used by system
 administrators to analyze Windows logs) and replaced the legitimate application
-and updates with a signed malicious version. 
+and updates with a signed malicious version.
 
 ## Impact
 

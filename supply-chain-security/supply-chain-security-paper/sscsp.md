@@ -15,14 +15,14 @@ Shared with the CNCF community
 | **Created** | 14 MAY 2021 |
 | **Last Reviewed** | 14 MAY 2021 |
 | **PDF Published** | 14 MAY 2021 |
-| **Release Version** | 1.0 | 
+| **Release Version** | 1.0 |
 | **Final PDF Approvers** | [ ] @lizrice [X] @justincormack  |
 
 
 | **Originating Content and Review** | |
 | -- | --|
 | **Contributors** | Andres Vega @anvega, Emily Fox @TheFoxAtWork, Faisal Razzak @faisalrazzak, @apmarshall, Cole Kennedy @colek42,Mikhail Swift @mikhailswift, Jon Meadows @jonmuk, Aditya Sirish A Yelgundhalli @adityasaky, Nisha Kumar @nishakm, Joshua Lock @joshuagl, Andrew Martin @sublimino, @mnm678 , Vinod Anandan @VinodAnandan, Magno Logan @magnologan, @rjulian @lumjjb @mlieberman85 @garrying |
-| **Reviewers** | @aspanner @mike-ensor @timfong888 @alexbarbato @voor, Alok Raj @ak-secops | 
+| **Reviewers** | @aspanner @mike-ensor @timfong888 @alexbarbato @voor, Alok Raj @ak-secops |
 
 ## Index
 
@@ -40,13 +40,13 @@ Shared with the CNCF community
 
 # Executive Summary
 
-High-profile SUNBURST supply chain attacks in 2020[^1] grabbed headlines and directed attention to the importance of how software is built, and what vulnerabilities are left open by that process. Supply chains require more than one linked process, and supply chain security relies on the validation and verification of each process. While software supply chains grow increasingly complex, consensus on "best practices" and security has been lacking. This paper aims to offer the community a holistic approach to supply chain security by highlighting the importance of layered defensive practices. It draws recommendations and insights from the collective knowledge and experience of security practitioners in industry, state-of-the-art academic research, and the work of the United States Air Force[^2] (most notably, the “software factory” approach). It provides  a reference on how to design a secure software supply chain, and provides insight into commonly used tooling. 
+High-profile SUNBURST supply chain attacks in 2020[^1] grabbed headlines and directed attention to the importance of how software is built, and what vulnerabilities are left open by that process. Supply chains require more than one linked process, and supply chain security relies on the validation and verification of each process. While software supply chains grow increasingly complex, consensus on "best practices" and security has been lacking. This paper aims to offer the community a holistic approach to supply chain security by highlighting the importance of layered defensive practices. It draws recommendations and insights from the collective knowledge and experience of security practitioners in industry, state-of-the-art academic research, and the work of the United States Air Force[^2] (most notably, the “software factory” approach). It provides  a reference on how to design a secure software supply chain, and provides insight into commonly used tooling.
 
 This paper puts forth four key principles crucial to supply chain security:
 
 First, every step in a supply chain should be "trustworthy" as a result of a combination of cryptographic attestation and verification.  No step in the supply chain should rely on assumptions about the trustworthiness of any previous steps or outputs — trust relationships must be explicitly defined.
 
-Second, automation is critical to supply chain security. Automating as much of the software supply chain as possible can significantly reduce the possibility of human error and configuration drift.  
+Second, automation is critical to supply chain security. Automating as much of the software supply chain as possible can significantly reduce the possibility of human error and configuration drift.
 
 Third, the build environments used in a supply chain should be clearly defined, with limited scope.  The human and machine identities operating in those environments should be granted only the minimum permissions required to complete their assigned tasks.
 
@@ -82,7 +82,7 @@ This paper will not detail tool-specific configurations, but it will refer to ex
 
 This paper will not provide instructions on assessing existing supply chains for security risk.
 
-This paper is not an end-all solution for resolving or stopping supply chain attacks.  The components of this paper must be evaluated by the reader for usability and applicability against their organization’s risk tolerance and environmental requirements.  
+This paper is not an end-all solution for resolving or stopping supply chain attacks.  The components of this paper must be evaluated by the reader for usability and applicability against their organization’s risk tolerance and environmental requirements.
 
 
 ## Assumptions
@@ -102,11 +102,11 @@ Where possible the authors strive to provide the readers with CNCF open source p
 
 ## Assurance Personas and Risk Appetite
 
-Not all software has the same spread or impact. For example some software may be distributed across an enterprise and require root privileges to run, while other software may only be used in a compartmentalised fashion with a low level of access. Software producers and consumers should perform threat modeling of their systems to assess their needs and make conscious decisions about risk appetite and security controls. 
+Not all software has the same spread or impact. For example some software may be distributed across an enterprise and require root privileges to run, while other software may only be used in a compartmentalised fashion with a low level of access. Software producers and consumers should perform threat modeling of their systems to assess their needs and make conscious decisions about risk appetite and security controls.
 
 For consumers of open source software, analysis must be conducted to ensure the level of assurance provided by an open source producer matches the required level of the consumer. As open source software is often implemented by volunteers, they may not share the same assurance level required by the consumer. This will result in a situation where the consumer must work to fill in control or security gaps, such as finding and patching security vulnerabilities.
 
-Throughout the document, references are made to two security levels: moderate, and high. This allows the reader to tailor their implementations based on their own needs and requirements. These security levels can be delineated along two axes: assurance requirements, and risk environments. When determining a suitable pipeline or option, either as accidental raw supplier[^8] or purposeful software producer, the readers should consider their anticipated assurance needs in all target environments. 
+Throughout the document, references are made to two security levels: moderate, and high. This allows the reader to tailor their implementations based on their own needs and requirements. These security levels can be delineated along two axes: assurance requirements, and risk environments. When determining a suitable pipeline or option, either as accidental raw supplier[^8] or purposeful software producer, the readers should consider their anticipated assurance needs in all target environments.
 
 
 ### Assurance Requirements
@@ -124,7 +124,7 @@ The assurance categories provided alongside the recommendations in this paper sh
 
 Exploits of vulnerabilities in low risk environments are inconvenient with minimal or negligible impact to the mission or goals of the organization. We do not consider recommendations relevant to low risk environments in this paper.
 
-Moderate risk environments include those that do not store, process, or transmit personally identifying information or personal health information (PII/PHI) or life threatening information, and are not critical infrastructure (life sustainment systems[^9], financial services, etc.).  Exploits of vulnerabilities in these environments may have a serious impact on part of the business but not its entirety, and allow the core business to continue to function. Exploits to moderate risk environments are deemed serious but not catastrophic. Practices appropriate for a moderate risk environment form the baseline for all recommendations made in this paper. 
+Moderate risk environments include those that do not store, process, or transmit personally identifying information or personal health information (PII/PHI) or life threatening information, and are not critical infrastructure (life sustainment systems[^9], financial services, etc.).  Exploits of vulnerabilities in these environments may have a serious impact on part of the business but not its entirety, and allow the core business to continue to function. Exploits to moderate risk environments are deemed serious but not catastrophic. Practices appropriate for a moderate risk environment form the baseline for all recommendations made in this paper.
 
 High risk environments may deal with national security, life threatening information, critical/national/state/municipal infrastructure, PII/PHI, and financial services. Exploits of vulnerabilities in these environments have the potential to result in loss of life or cause catastrophic impact from which the organization fails to recover.
 
@@ -156,7 +156,7 @@ The above diagram illustrates how the software supply chain closely mirrors a tr
 *   Iterative reuse - one product’s supply chain, is _n_ number of products and _n<sup>n</sup>_ supply chains, an endless supply of turtles all the way down[^14].
 These differences aside, the industry has come to  refer to the discrete set of steps to secure software supply chains as a “Software Factory”.[^15]
 
-Every step of the supply chain diagram above has multiple security risks and impacts. For example, some security breaches start with malicious users accessing the organization’s issue-tracking software either by compromising a vulnerability present on the system or gaining access to a developer’s credential. An additional threat may be a malicious insider taking advantage of sensitive information. 
+Every step of the supply chain diagram above has multiple security risks and impacts. For example, some security breaches start with malicious users accessing the organization’s issue-tracking software either by compromising a vulnerability present on the system or gaining access to a developer’s credential. An additional threat may be a malicious insider taking advantage of sensitive information.
 
 A supply chain’s security is defined by its weakest link. Ignoring the minimalist baseline security best practices, such as strong authentication and authorization mechanisms, preferably with two-factor authentication, means that malicious users can get access to these systems with ease and cause greater damage upon compromise.
 
@@ -171,7 +171,7 @@ Throughout the best practice recommendations provided in this paper, there are a
 *   Automation - Contemporary software development relies on numerous automated processes, such as Continuous Integration/Continuous Delivery (CI/CD) and DevOps pipelines. Leveraging automation helps to ensure that processes are deterministic, bolstering the attestation and verification mechanisms we rely on for supply chain security. Infrastructure and its security controls should be defined as Infrastructure as Code (IaC) and deployed in an automated fashion. IaC allows system changes to be governed by source code management tools that integrate into enterprise identity management solutions. This further reduces the likelihood of varying configurations across environments through “write once, deploy many”.
 *   Authorization in Controlled Environments - To reduce the impact of compromise, the entities (human or software) and environments involved in the software production lifecycle should be clearly defined and limited in scope. Permissions for human or software operators should be granted on a "least privilege" basis to ensure that roles have the minimum permissions required and are periodically re-evaluated. This guidance is valid at all stages of the supply chain from source code identity and access management to the deployment process. \
 
-*   Secure Authentication - Identities are to be determined with certainty.  For interacting at any stage of the supply chain, entities should mutually authenticate their identities prior to interaction[^16]. Such authentication methods should be “hardened” beyond standard password authentication by either (a) a public key infrastructure (ie, public private SSH key pairs), (b) multi-factor authentication (MFA), or (c) explicit limiting of an authentication mechanism to particular activities (i.e. through a secondary “app password” or personal access token). Post authentication, the activities of entities should be monitored to detect suspicious or unauthorized activities. 
+*   Secure Authentication - Identities are to be determined with certainty.  For interacting at any stage of the supply chain, entities should mutually authenticate their identities prior to interaction[^16]. Such authentication methods should be “hardened” beyond standard password authentication by either (a) a public key infrastructure (ie, public private SSH key pairs), (b) multi-factor authentication (MFA), or (c) explicit limiting of an authentication mechanism to particular activities (i.e. through a secondary “app password” or personal access token). Post authentication, the activities of entities should be monitored to detect suspicious or unauthorized activities.
 The software factory creates multiple pipelines configured to build a software artefact. It is composed of individual build stages chained together to retrieve the source code and dependencies, then scan, test, build and deploy the final artefact. The software factory relies heavily upon infrastructure and security-as-code to allow automated instantiation of pipelines, leading to the creation of multiple immutable pipelines. To eliminate the chance of error or misconfiguration there should be no manual configuration in place.  This also leads to a system that is capable of performing a high level of automated security testing to validate its configuration and verify its products.
 
 In this paper, we explore this methodology for securing a software supply chain in five stages:
@@ -184,7 +184,7 @@ In this paper, we explore this methodology for securing a software supply chain 
 *   Securing the Artefacts: attesting the security and trustworthiness of artefacts produced by these build pipelines
 *   Securing Deployments: verifying the attestations during the deployment stage
 
-Each of these stages are designed to complement one another for a comprehensive and holistic approach. Implementing all or portions of these should be evaluated against an organization’s assurance requirements and environment risk appetite[^17].  
+Each of these stages are designed to complement one another for a comprehensive and holistic approach. Implementing all or portions of these should be evaluated against an organization’s assurance requirements and environment risk appetite[^17].
 
 
 # Securing the Source Code
@@ -193,7 +193,7 @@ The foundational construct of any software supply chain is the source code. The 
 
 It is fundamental to the supply chain that the development activity employs software development best practices. Agile methodologies of “continuous improvement” have been embraced in the industry and enabled through CI/CD pipelines and automated testing. These pipelines must be properly configured to access source code on-demand in order to build, deploy, and release artefacts at the cadence the organization needs.
 
-Identity and Access management (IAM) is the biggest attack vector, regardless of platform or vendor, and it is critical to carefully manage IAM policies to provide both developers and agents secure access to source code. Pipeline agents and human developers must have their access and privileges calibrated to their roles within the organization and be given secure means to authenticate to those roles.  
+Identity and Access management (IAM) is the biggest attack vector, regardless of platform or vendor, and it is critical to carefully manage IAM policies to provide both developers and agents secure access to source code. Pipeline agents and human developers must have their access and privileges calibrated to their roles within the organization and be given secure means to authenticate to those roles.
 
 
 ## Verification:
@@ -220,20 +220,20 @@ In high assurance, high risk environments attribution of changes to the source c
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
-Secrets such as credential files, SSH keys and access tokens or API keys should not be committed to the source code repository unless encrypted prior to placement[^21].  Tooling exists to detect secret key leaks, such as trufflehog[^22], which can be implemented using either a client-side hook (pre-commit), server-side hook (pre-receive or update), and as a step in the CI process. 
+Secrets such as credential files, SSH keys and access tokens or API keys should not be committed to the source code repository unless encrypted prior to placement[^21].  Tooling exists to detect secret key leaks, such as trufflehog[^22], which can be implemented using either a client-side hook (pre-commit), server-side hook (pre-receive or update), and as a step in the CI process.
 
-Some DevOps platforms and integrations provide a default list of files which cannot be pushed to the repository[^23]. These base lists of files can be extended to include more domain specific files which may contain sensitive materials. 
+Some DevOps platforms and integrations provide a default list of files which cannot be pushed to the repository[^23]. These base lists of files can be extended to include more domain specific files which may contain sensitive materials.
 
 
 #### Define individuals/teams that are responsible for code in a repository and associated coding conventions
 
 _Assurance category: High and risk category: high_
 
-	
+
 
 Repository administrators should define who has write permissions to a code repository.
 
-In addition, administrators should define the tests and policies for coding conventions and practices. Such policies can then be implemented using a combination of client-side (pre-commit) and server-side hooks (pre-receive or update). In addition project codeowners, templates, .gitignore, .gitattributes and denylist files can help mitigate injection risks and provide higher assurance.  
+In addition, administrators should define the tests and policies for coding conventions and practices. Such policies can then be implemented using a combination of client-side (pre-commit) and server-side hooks (pre-receive or update). In addition project codeowners, templates, .gitignore, .gitattributes and denylist files can help mitigate injection risks and provide higher assurance.
 
 
 #### Automate software security scanning and testing
@@ -242,7 +242,7 @@ _Assurance categories: Moderate to high and risk categories: moderate to high_
 
 Software best practices include the use of unit, functional, and end-to-end testing to identify bugs and errors in the code before release. In addition, security specific scans should be performed, including Static Application Security Tests (SAST) and Dynamic Application Security Tests (DAST). Static scan tooling should be integrated as early in the development process as possible, including integration into the IDE. For more details on application security best practices refer to the OWASP standards and tools[^24].
 
-During the build process the metadata from security tooling such as SAST tooling should be recorded and linked to a hash of the build artefact to provide chain of custody and provenance. Both the coverage and results of these tests should be published as part of the repository information to help downstream consumers of software better assess the stability, reliability, and/or suitability of a product or library. 
+During the build process the metadata from security tooling such as SAST tooling should be recorded and linked to a hash of the build artefact to provide chain of custody and provenance. Both the coverage and results of these tests should be published as part of the repository information to help downstream consumers of software better assess the stability, reliability, and/or suitability of a product or library.
 
 
 ## Controlled Environments:
@@ -259,17 +259,17 @@ Modern SCM platforms allow repository administrators to define configuration opt
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
-Define roles and associated access controls based upon the different personas interacting with the source code repositories. The roles should be assigned least privilege on a need-to-know basis based on their assigned responsibilities. For example,  roles may include Developer, Maintainer, Owner, Reviewer, Approver, and Guest. Each role should then be given fine-grained permissions with regards to repository access control. 
+Define roles and associated access controls based upon the different personas interacting with the source code repositories. The roles should be assigned least privilege on a need-to-know basis based on their assigned responsibilities. For example,  roles may include Developer, Maintainer, Owner, Reviewer, Approver, and Guest. Each role should then be given fine-grained permissions with regards to repository access control.
 
 
-#### Enforce an independent four-eyes principle[^25].  
+#### Enforce an independent four-eyes principle[^25].
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
 The author(s) of a request may not also be the approver of the request.  At least two individuals, of which one should have write access to the branch, that are independent of the request must review and approve the request.  Some organizations may find an engineering manager or a lead engineer, who is an informed security practitioner to be sufficient for this role.  Reviewers should have a similar level of knowledge as the author(s), implying equal or greater expertise to provide informed review.
 
 
-#### Use branch protection rules 
+#### Use branch protection rules
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
@@ -286,18 +286,18 @@ _Assurance categories: Moderate to high and risk categories: moderate to high_
 Multi-factor authentication (MFA) should be mandated and enforced at the source code repository level for any software project. MFA provides an additional layer of security by requiring a soft or physical token in addition to traditional credentials, thus requiring direct credential compromise in addition to a more traditional password/key in order to be successful.
 
 
-#### Use SSH keys to provide developers access to source code repositories 
+#### Use SSH keys to provide developers access to source code repositories
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
- 
+
 
 Developers contributing source code require a non-interactive way to access source code repositories from their development tools. Instead of using password credentials which are prone to common hacking techniques like brute force, password guessing and password spraying, SSH keys[^27] or SSH certificates[^28] should be used. Agents in CI/CD pipelines may also be configured to access repositories using SSH Keys. All modern platforms like Github, Gitlab, BitBucket provide guidance on configuring access using SSH keys[^29].
 
 There are environments where SSH keys may not be a viable authentication mechanism due to network policies. A contested option of varying security concern is frequently rotated Access Tokens, which should be scoped to only the necessary functions for the particular task (i.e. read only for pipelines or write/read for developer work, etc.). It is important to note that the problem with tokens is the required distribution of the secret, exposing credentials to MITM and other classes of attack. Tokens, in this context, should only be used if they are short lived and issued with an out-of-band identity management system such as SPIRE.  More details are discussed further in the document.
 
 
-#### Have a Key Rotation Policy 
+#### Have a Key Rotation Policy
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
@@ -308,25 +308,25 @@ Properly generated SSH keys are secured against common password attacks like bru
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
-Modern SCM platforms allow the use of randomly generated short lived tokens for the access management of machines and services such as CI/CD pipeline agents. The short lived access tokens can be used to authenticate over HTTPS. Short-life credential issuance encourages the use of fine grained permissions and automation in provisioning access tokens. These permissions further restrict the type of operation that can be performed at the repository level. 
+Modern SCM platforms allow the use of randomly generated short lived tokens for the access management of machines and services such as CI/CD pipeline agents. The short lived access tokens can be used to authenticate over HTTPS. Short-life credential issuance encourages the use of fine grained permissions and automation in provisioning access tokens. These permissions further restrict the type of operation that can be performed at the repository level.
 
-For CI/CD pipeline agents, short-lived access tokens should be considered instead of password-based credentials. The use of very short-lived tokens like OAuth 2.0, OpenID Connect, etc., will help to implement more secure access and increase the security assurance. These tokens shouldn't be confused with the long-lived/non-refreshable personal access tokens (PAT) such as those [available on GitHub](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) , as these PATs will have similar security properties as a shared secret/password type credentials. 
+For CI/CD pipeline agents, short-lived access tokens should be considered instead of password-based credentials. The use of very short-lived tokens like OAuth 2.0, OpenID Connect, etc., will help to implement more secure access and increase the security assurance. These tokens shouldn't be confused with the long-lived/non-refreshable personal access tokens (PAT) such as those [available on GitHub](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) , as these PATs will have similar security properties as a shared secret/password type credentials.
 
 
 
 
 # Securing Materials
 
-Overall quality and consistency of any “manufacturing” process is largely dependent on the quality and consistency of the goods used as inputs.  Therefore, care must be taken to validate the quality of these raw materials. For software pipelines this concerns the quality of the dependent libraries, be they direct or transitive dependencies. A key part of the software factory process is to ensure dependencies are drawn from a trusted source and have not been tampered with. Depending upon the required risk profile it may be appropriate to identify trusted repositories and rely directly upon them, in addition to disabling access to all other repositories. 
+Overall quality and consistency of any “manufacturing” process is largely dependent on the quality and consistency of the goods used as inputs.  Therefore, care must be taken to validate the quality of these raw materials. For software pipelines this concerns the quality of the dependent libraries, be they direct or transitive dependencies. A key part of the software factory process is to ensure dependencies are drawn from a trusted source and have not been tampered with. Depending upon the required risk profile it may be appropriate to identify trusted repositories and rely directly upon them, in addition to disabling access to all other repositories.
 
 
 ## Second and Third-Party Risk Management
 
-When making determinations on accepting, limiting, or denying the use of second and third party software, it is imperative organizations leverage risk management processes in order to understand the risk presented by these materials. Not all software an organization may intend to use has the same level of support behind it, which may reflect significant differences in the overall level of quality, security, or responsiveness to issues across dependencies. Particularly from the perspective of security, organizations should consider whether proposed dependencies have mechanisms for managing external reported vulnerabilities. 
+When making determinations on accepting, limiting, or denying the use of second and third party software, it is imperative organizations leverage risk management processes in order to understand the risk presented by these materials. Not all software an organization may intend to use has the same level of support behind it, which may reflect significant differences in the overall level of quality, security, or responsiveness to issues across dependencies. Particularly from the perspective of security, organizations should consider whether proposed dependencies have mechanisms for managing external reported vulnerabilities.
 
-Most foundation or corporate supported open source projects make it standard practice to report Common Vulnerabilities and Exposures (CVEs) and patch affected code.  However, a CVE is a trailing metric. It requires a significant effort to establish and publish a CVE. A series of continual “operational health” metrics should be used to evaluate the true state of security for a project. The Open Source Security Foundation (OSSF) has produced the OSSF scorecard project[^30] aimed at providing a rubric to evaluate the security posture and operational health of open source projects. In addition projects should be evaluated to determine whether they adhere to the best practices documented in this paper. 
+Most foundation or corporate supported open source projects make it standard practice to report Common Vulnerabilities and Exposures (CVEs) and patch affected code.  However, a CVE is a trailing metric. It requires a significant effort to establish and publish a CVE. A series of continual “operational health” metrics should be used to evaluate the true state of security for a project. The Open Source Security Foundation (OSSF) has produced the OSSF scorecard project[^30] aimed at providing a rubric to evaluate the security posture and operational health of open source projects. In addition projects should be evaluated to determine whether they adhere to the best practices documented in this paper.
 
-Additionally, organizations should always monitor changes to second and third party software or services. Your software or service provider should list any changes to their Service Level Agreement (SLA) for the service or changes to the software (for example, maintaining a changelog).  It is incumbent on the organization to review and understand these changes and to analyze how these changes will impact their supply chain. 
+Additionally, organizations should always monitor changes to second and third party software or services. Your software or service provider should list any changes to their Service Level Agreement (SLA) for the service or changes to the software (for example, maintaining a changelog).  It is incumbent on the organization to review and understand these changes and to analyze how these changes will impact their supply chain.
 
 
 ## Verification:
@@ -336,7 +336,7 @@ Additionally, organizations should always monitor changes to second and third pa
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
-Third party artefacts need to be validated using a range of approaches. All third party artefacts, open source libraries and any other dependencies should be verified as part of the continuous integration pipeline by validating their checksums against a known good source and validating any cryptographic signatures. At a very basic level, any software ingested must be scanned using Software Composition Analysis (SCA) tools to detect whether any vulnerable open-source software is used in the final product. If possible, for high assurance categories any 3rd party artefacts should be pen tested to ensure that the software is resistant to standard attacks and no basic security errors or loopholes exist.  
+Third party artefacts need to be validated using a range of approaches. All third party artefacts, open source libraries and any other dependencies should be verified as part of the continuous integration pipeline by validating their checksums against a known good source and validating any cryptographic signatures. At a very basic level, any software ingested must be scanned using Software Composition Analysis (SCA) tools to detect whether any vulnerable open-source software is used in the final product. If possible, for high assurance categories any 3rd party artefacts should be pen tested to ensure that the software is resistant to standard attacks and no basic security errors or loopholes exist.
 
 
 #### Require SBOM from third party supplier
@@ -353,7 +353,7 @@ _Assurance categories: Moderate to high and risk categories: moderate to high_
 A register should be maintained of a project’s open source components, dependencies and vulnerabilities to help trace any deployed artefacts with new vulnerabilities. One of the most popular open source inventory implementations is OWASP Dependency-Track. Generating, receiving, or maintaining a supply chain inventory will help identify the software vendors, suppliers, and sources used in an organization with the associated software and versions. Cataloguing this inventory into a human and machine readable mechanism allows organizations to correlate vulnerabilities as they are published against known in-use or to-be-used software and to ascertain impact.
 
 
-#### Build libraries based upon source code 
+#### Build libraries based upon source code
 
 _Assurance category: High and risk category: high_
 
@@ -368,14 +368,14 @@ _Assurance category: High and risk category: high_
 
 While there are public repositories and package managers that sign packages and provide the means to verify those signatures, high assurance environments should minimize ingesting
 
-from public repositories. Moderate assurance environments should only ingest public packages if they can assess the risk level with techniques such as CVE scanning. High assurance environments may potentially leverage verification by reproducibility[^31]. Organizations should host their own package managers and artefact repositories, and restrict build machines to pull from only those sources. When this is not possible, the organization should employ compensating mechanisms, such as defensive programming[^32], to reduce the potential impact of compromised packages ingested from untrusted repositories. 
+from public repositories. Moderate assurance environments should only ingest public packages if they can assess the risk level with techniques such as CVE scanning. High assurance environments may potentially leverage verification by reproducibility[^31]. Organizations should host their own package managers and artefact repositories, and restrict build machines to pull from only those sources. When this is not possible, the organization should employ compensating mechanisms, such as defensive programming[^32], to reduce the potential impact of compromised packages ingested from untrusted repositories.
 
 
 #### Generate an immutable SBOM of the code
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
-While rebuilding a software artefact, it is best practice to also generate an SBOM[^33] for the software. A generated SBOM provides a clear list of the contents within the final software package. Consumers of the software will then be able to analyse the SBOM, aligning it with vulnerability data to directly identify vulnerabilities based upon the exact package contents. 
+While rebuilding a software artefact, it is best practice to also generate an SBOM[^33] for the software. A generated SBOM provides a clear list of the contents within the final software package. Consumers of the software will then be able to analyse the SBOM, aligning it with vulnerability data to directly identify vulnerabilities based upon the exact package contents.
 
 There are currently two well known SBOM specifications: SPDX[^34] and CycloneDX[^35]. A SBOM is preferably generated during the build process. For third party software, a SBOM can be generated using software composition analysis. The SBOM data generated by using the build time data will be more accurate as the build process has visibility of the dependencies used to generate the software.  A SBOM generated through scanning isn't likely to capture issues such as the toolchain introducing a bug. SBOMs may also be generated manually.
 
@@ -410,7 +410,7 @@ At a minimum a SCA tool should be run against any dependencies used within the p
 
 # Securing Build Pipelines
 
-When thinking of an industrial factory, we often think of the assembly line itself. Similarly, the heart of a software factory is the actual build pipeline. Drawing from the first, second, and third party materials already discussed, the build pipeline "assembles" the completed software artefacts that will be made available to downstream software consumers. 
+When thinking of an industrial factory, we often think of the assembly line itself. Similarly, the heart of a software factory is the actual build pipeline. Drawing from the first, second, and third party materials already discussed, the build pipeline "assembles" the completed software artefacts that will be made available to downstream software consumers.
 
 Securing the build pipelines must be considered as an interconnected system, with defense-in-depth in mind. The following primary components should be secured:
 
@@ -419,11 +419,11 @@ Securing the build pipelines must be considered as an interconnected system, wit
 *   Build steps: The function or task to be performed at any point in the “assembly line.” A build step should have a single responsibility which may be, for example, to retrieve sources, compile an artefact, or run tests.
 *   Build workers: The machinery or infrastructure carrying out the task. Historically, a single server might have completed all the steps, but in a cloud native environment the build worker is typically a container which has a 1:1 correlation with a particular step.
 *   Build tools: Any software dependencies required to generate and ensure the integrity of the final artefact(s).
-*   Pipeline orchestrator: The overall build pipeline managing the CI/CD workflow. Deploys build steps and workers to complete the stages of that pipeline. 
+*   Pipeline orchestrator: The overall build pipeline managing the CI/CD workflow. Deploys build steps and workers to complete the stages of that pipeline.
 
-Additionally, build metadata produced by these components must be signed and recorded externally in order to facilitate out-of-band verification. 
+Additionally, build metadata produced by these components must be signed and recorded externally in order to facilitate out-of-band verification.
 
-The pipeline is created by joining together a series of hardened build steps. Each build step should be implemented through a hardened container image stored within a secured repository, and should be deployed to a hardened orchestration platform such as Kubernetes. As an example, the US Air Force's Platform One is an implementation of this concept, which leverages hardened containers from the Platform One centralized artefact repository called “Iron Bank”. This repository contains signed container images hardened according to the DoD Container Hardening Guide[^37]. 
+The pipeline is created by joining together a series of hardened build steps. Each build step should be implemented through a hardened container image stored within a secured repository, and should be deployed to a hardened orchestration platform such as Kubernetes. As an example, the US Air Force's Platform One is an implementation of this concept, which leverages hardened containers from the Platform One centralized artefact repository called “Iron Bank”. This repository contains signed container images hardened according to the DoD Container Hardening Guide[^37].
 
 By building the pipeline from hardened components, the software factory reduces the likelihood of successful compromise of any build step. The pipeline orchestrator controls exactly what each stage is able to perform, implementing the required build step without additional software, reducing the attack surface of each component in the pipeline. The entire software factory should be designed such that the compromise of an individual build step (or even multiple build steps) is contained and does not compromise the entire pipeline. Out-of-band verification provides defense in depth and mitigates against software factory’s root credential loss.
 
@@ -450,7 +450,7 @@ Build infrastructure should have the same level of security configuration as its
 
 ### Build Step and Worker
 
-A build step is a particular task to be completed in a build pipeline (such as collecting sources, compiling binaries, or running tests). A build worker is the underlying infrastructure on which a build step is run. Historically this has been a shared server with the build tools for multiple projects (e.g. different languages and libraries). In the event of compromise all the shared server’s builds and their secrets are potentially exposed. This legacy model does not encourage resilience or provide security, and is likely to allow myriad complex escalation paths with the various secrets made available to the server’s builds. 
+A build step is a particular task to be completed in a build pipeline (such as collecting sources, compiling binaries, or running tests). A build worker is the underlying infrastructure on which a build step is run. Historically this has been a shared server with the build tools for multiple projects (e.g. different languages and libraries). In the event of compromise all the shared server’s builds and their secrets are potentially exposed. This legacy model does not encourage resilience or provide security, and is likely to allow myriad complex escalation paths with the various secrets made available to the server’s builds.
 
 Running a worker as a container or VM are the most common ways to handle the build. Other options include serverless, sandboxes (such as gVisor and Firecracker), and secure enclaves. For the purposes of this paper, we will only focus on containers. Using containers as build workers allows pipelines to treat them as “microservices,” assigning a unique build worker (container) to each build step. Therefore, at a high level, build workers and build steps may seem interchangeable in a cloud native software factory because they exist in a 1:1 relationship.
 
@@ -461,18 +461,18 @@ The build environment consists of all the content required for the build includi
 
 ### Build Pipeline to Create Build Stage Images
 
-Software factory components should be built from source and applied to a worker base image through a highly secured pipeline. This does present a potential self referential issue as it would be prudent to build the hardened build worker images on a secured software factory. 
+Software factory components should be built from source and applied to a worker base image through a highly secured pipeline. This does present a potential self referential issue as it would be prudent to build the hardened build worker images on a secured software factory.
 
 During the bootstrapping phase of the software factory project the build stage images must be built on secured build infrastructure and hardware. This provides a minimal image that undergoes extensive security validation and testing, before producing an image to be used by the build workers. Build metadata from this process should be examined for compliance.
 
-A hardened Open Container Initiative (OCI) container should descend from a minimal image running with least privilege[^38]. Each added application, configuration, or data file should be configured with least privilege, avoiding obvious impediments to security such as SETUID[^39]/GUID binaries, and any build-specific tooling (such as the shell required to execute RUN commands in a Dockerfile) removed as the final stage of the build. Additionally, tools, such as OpenSCAP, should be used to validate that an image’s contents meet organizational policy or security best practice. 
+A hardened Open Container Initiative (OCI) container should descend from a minimal image running with least privilege[^38]. Each added application, configuration, or data file should be configured with least privilege, avoiding obvious impediments to security such as SETUID[^39]/GUID binaries, and any build-specific tooling (such as the shell required to execute RUN commands in a Dockerfile) removed as the final stage of the build. Additionally, tools, such as OpenSCAP, should be used to validate that an image’s contents meet organizational policy or security best practice.
 
 To secure build stages, their images should only contain the tools and binaries necessary for the specific step of the build or pipeline it is responsible for. This means removing unnecessary binaries from the worker base image that might be included in an image by default, e.g. “vi”, and any shell (often “sh” or “bash”) used to construct the image. A compromised build worker with an expansive set of capabilities could be able to significantly compromise the artefacts it produces, resulting in a fundamentally untrustworthy build.  By restricting what a build can do through its environment and code you can have reasonable guarantees that the only operations it runs are the ones you allow it to run and better detect if it tries to perform operations it’s not permitted to.
 
 
 ### Pipeline Orchestrator
 
-The pipeline orchestrator is the part of the CI/CD pipeline that decides which steps in the pipeline should run and on what infrastructure. Legacy build architectures don’t make much of a distinction between the orchestrator and the build workers but for a secure cloud native pipeline and supply chain the differences must be clear. The orchestrator stands up an immutable** **pipeline leveraging infrastructure-as-code. 
+The pipeline orchestrator is the part of the CI/CD pipeline that decides which steps in the pipeline should run and on what infrastructure. Legacy build architectures don’t make much of a distinction between the orchestrator and the build workers but for a secure cloud native pipeline and supply chain the differences must be clear. The orchestrator stands up an immutable** **pipeline leveraging infrastructure-as-code.
 
 The pipeline orchestrator should never share the same execution environment (for example, the infrastructure or container) as the build worker nor should the pipeline orchestrator build anything itself. Build workers may run arbitrary code and thus are hard to secure. As a result, they should be isolated from other infrastructure and have as least privilege as possible. The pipeline orchestrator requires some privileges (triggering build steps, perhaps collecting artefacts, etc.) but should have no unneeded privileges.
 
@@ -542,7 +542,7 @@ When a  developer pushes new code to our first party repository it triggers buil
 
 
 
-The above process may contain loops and repetitions (as illustrated in Step 1 regarding sub-dependencies) depending on the particular dependency tree of our application, our testing process, and the methods of packaging the artefact and deployment that we use. 
+The above process may contain loops and repetitions (as illustrated in Step 1 regarding sub-dependencies) depending on the particular dependency tree of our application, our testing process, and the methods of packaging the artefact and deployment that we use.
 
 In the sections that follow, you will find numerous best practices for hardening the containers used as the build workers described above, how to architect the relationship between Build Steps, their corresponding Build Workers, and the Orchestration Pipeline, and guidance on how to sign and secure the artefacts produced at each stage in the build process.
 
@@ -575,7 +575,7 @@ Out-of-band verification of runtime environment security, as defined by executio
 
 _Assurance category: High and risk category: high_
 
-A deterministic build produces equivalent outputs when given the same inputs and enables us to detect unintended changes (whether malicious, such as malware and backdoors, or accidental). Verifiably reproducible builds improve on this by enabling us to cryptographically attest that the given inputs produce the same output.  A verifiably reproducible build is a build process where, given a source code commit hash and a set of build instructions, an end user should be able to reproduce the built artefact bit for bit.  We can build on these cryptographic assertions to provide additional security properties, such as artefact flow integrity. Assurance of the build is obtained when multiple builders, on separate infrastructure, achieve consensus of the build artefact signature. 
+A deterministic build produces equivalent outputs when given the same inputs and enables us to detect unintended changes (whether malicious, such as malware and backdoors, or accidental). Verifiably reproducible builds improve on this by enabling us to cryptographically attest that the given inputs produce the same output.  A verifiably reproducible build is a build process where, given a source code commit hash and a set of build instructions, an end user should be able to reproduce the built artefact bit for bit.  We can build on these cryptographic assertions to provide additional security properties, such as artefact flow integrity. Assurance of the build is obtained when multiple builders, on separate infrastructure, achieve consensus of the build artefact signature.
 
 The ability to build software in a verifiably reproducible manner is of growing importance as the software industry sees more attacks on build infrastructure. Building software in a reproducible way is not a trivial task, however, and care needs to be taken to capture the required build environment and remove non-determinism from all aspects of the build process. In what follows we will give several recommendations specific to the production of reproducible builds.[^40]
 
@@ -594,7 +594,7 @@ External resources introduce a source of risk into systems.  Verification by rep
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
-Timestamps, locale differences, and embedded version information are just a few of the things that may affect determinism in the build process.  A compiler may produce different output if source files are passed in differing orders.  Some compilers may embed build information such as build time.  A number of things that may affect determinism in a project’s build vary depending on the tools and compilers being used.  Reproducible-builds.org documents and offers solutions for many of these things. Diffoscope[^41] can be used to dig in and find the cause of differences when tracking down sources of non-determinism. 
+Timestamps, locale differences, and embedded version information are just a few of the things that may affect determinism in the build process.  A compiler may produce different output if source files are passed in differing orders.  Some compilers may embed build information such as build time.  A number of things that may affect determinism in a project’s build vary depending on the tools and compilers being used.  Reproducible-builds.org documents and offers solutions for many of these things. Diffoscope[^41] can be used to dig in and find the cause of differences when tracking down sources of non-determinism.
 
 
 ##### Record The Build Environment
@@ -625,10 +625,10 @@ To detect potential attacks on the build infrastructure an architecture can be d
 
 _Assurance categories: Moderate to high and risk category: Moderate to high_
 
-Steps such as build, linting, scanning, and validation should be clearly defined in code that describes a pipeline. This means that all steps from code checkout, to checksum and signature validation, to building and compilation, to publishing, and eventually to deployment should be automated. The only manual steps during this process should be any code reviews or sign offs. 
+Steps such as build, linting, scanning, and validation should be clearly defined in code that describes a pipeline. This means that all steps from code checkout, to checksum and signature validation, to building and compilation, to publishing, and eventually to deployment should be automated. The only manual steps during this process should be any code reviews or sign offs.
 
 
-#### Standardize pipelines across projects 
+#### Standardize pipelines across projects
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
@@ -658,7 +658,7 @@ Build Workers, the containers which perform the Build Steps, should be single us
 
 _Assurance category: High and risk category: high_
 
-The software factory should have no network connectivity other than to connect to the trusted sources of hardened source code, the dependency repository and code signing infrastructure.The build workers will require a secure shared storage capability to pass data between each worker. This prevents the workers from repeatedly retrieving remote data for the build and thus improves performance. This storage must be encrypted and secured. 
+The software factory should have no network connectivity other than to connect to the trusted sources of hardened source code, the dependency repository and code signing infrastructure.The build workers will require a secure shared storage capability to pass data between each worker. This prevents the workers from repeatedly retrieving remote data for the build and thus improves performance. This storage must be encrypted and secured.
 
 
 #### Segregate the Duties of Each Build Worker
@@ -672,7 +672,7 @@ When planning what the build worker will be responsible for, consider segregatio
 
 _Assurance category: High and risk category: high_
 
-A Build Worker should have a hermetic (e.g. isolated and sealed) environment given to it from the broader pipeline, and no capability to pull in its own environment. This is because a compromised Build Worker can potentially pull in an environment of the attacker’s choosing, including hostile tooling and persistent implants to pivot or retain access. In addition to the build environment, the Build Worker’s commands or actions should be passed in explicitly at worker provisioning. There should be minimal decision logic in the Build Worker itself. One method of doing this might be to use Kubernetes pod or job objects to deploy the Build Workers for each step in your pipeline. The object definitions can be used to specify the environmental variables, commands, and volumes relevant to that particular Build Step, while the base image itself remains minimal[^46]. For environments which do not use Kubernetes as an orchestrator, other methods exist for externally declaring the environment and commands that a container should execute. 
+A Build Worker should have a hermetic (e.g. isolated and sealed) environment given to it from the broader pipeline, and no capability to pull in its own environment. This is because a compromised Build Worker can potentially pull in an environment of the attacker’s choosing, including hostile tooling and persistent implants to pivot or retain access. In addition to the build environment, the Build Worker’s commands or actions should be passed in explicitly at worker provisioning. There should be minimal decision logic in the Build Worker itself. One method of doing this might be to use Kubernetes pod or job objects to deploy the Build Workers for each step in your pipeline. The object definitions can be used to specify the environmental variables, commands, and volumes relevant to that particular Build Step, while the base image itself remains minimal[^46]. For environments which do not use Kubernetes as an orchestrator, other methods exist for externally declaring the environment and commands that a container should execute.
 
 It is best practice to keep the build logic as simple and clear as possible so that it is easier to reason about. A complicated, opaque build process will make it hard to detect a potential compromise. A build command should only consist of a clear command around what it’s building as well as any inputs it needs to validate the signature(s) for its input build environment.
 
@@ -698,7 +698,7 @@ The pipeline configuration should be deployed through the pipeline as code and s
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
-Organizations must define user roles in a software factory which should be used to define permission boundaries.  In high security environments no single user should be able to attest the validity of a software release. For example, Policy Administrators are responsible for ensuring organizational policy is encoded into software pipelines and attestation gates. Developers are the end-users of the software factory.  Factory Administrators are responsible for the maintenance and innovation of a software factory. Inevitably there will be shared responsibilities across these roles. Teams should carefully define the boundaries and delineate expectations around those shared responsibilities, especially when it comes to security concerns. For example: how much responsibility do application developers have for security within the pipeline? What are they not responsible for? 
+Organizations must define user roles in a software factory which should be used to define permission boundaries.  In high security environments no single user should be able to attest the validity of a software release. For example, Policy Administrators are responsible for ensuring organizational policy is encoded into software pipelines and attestation gates. Developers are the end-users of the software factory.  Factory Administrators are responsible for the maintenance and innovation of a software factory. Inevitably there will be shared responsibilities across these roles. Teams should carefully define the boundaries and delineate expectations around those shared responsibilities, especially when it comes to security concerns. For example: how much responsibility do application developers have for security within the pipeline? What are they not responsible for?
 
 
 #### Follow established practices for establishing a root of trust from an offline source
@@ -712,7 +712,7 @@ Root of trust for a software factory must follow standardized methods for establ
 
 _Assurance categories: High and risk categories: High_
 
-Workloads should be issued short lived credentials with automated rotation. The CNCF maintained SPIFFE/SPIRE project provides a robust identity and certificate orchestration system. The publication “[Solving The Bottom Turtle](https://spiffe.io/book/)”[^47] is an excellent resource to consider when designing an organizational identity system. Certificate rotation policy is a decision based on the trade-off of system availability and the security impact of a lost key.  In situations where the use of long-lived certificates is required, a robust certificate revocation system must be implemented. 
+Workloads should be issued short lived credentials with automated rotation. The CNCF maintained SPIFFE/SPIRE project provides a robust identity and certificate orchestration system. The publication “[Solving The Bottom Turtle](https://spiffe.io/book/)”[^47] is an excellent resource to consider when designing an organizational identity system. Certificate rotation policy is a decision based on the trade-off of system availability and the security impact of a lost key.  In situations where the use of long-lived certificates is required, a robust certificate revocation system must be implemented.
 
 
 #### Deploy monitoring tools to software factory to detect malicious behaviour
@@ -721,12 +721,12 @@ _Assurance categories: Moderate to high and risk categories: moderate to high_
 
 Additional security techniques should be integrated into the software factory itself to monitor for suspicious or unexpected activity such as attempts to connect out to suspicious endpoints during the build process. It is especially valuable to provide enhanced monitoring around stages within the pipeline that add to the resulting software artefact (as opposed to stages performing testing on the artefact) as any deviations from their normal process may be a signal of compromise.
 
- 
 
 
-# Securing Artefacts 
 
-An artefact is the output of the build phase. Software artefacts, along with corresponding build metadata, must be hashed and signed by authorized entities. The signing of software artefacts describes the process ensuring the integrity and provenance of the artefact at build time, helping to establish trust. The signing of an artefact is a method of indicating that an artefact has been vetted and approved to be used in a given environment and authorized for use by a trusted authority. Trust is generated through cryptographically generated signatures at build time based on a secure hash of the artefact and, in more complex scenarios, whether the artefact has been signed by another process in the supply chain. For example, consider a scenario where the artefact is signed at build time and the resulting signature is verified before the artefact is scanned for compliance and security. 
+# Securing Artefacts
+
+An artefact is the output of the build phase. Software artefacts, along with corresponding build metadata, must be hashed and signed by authorized entities. The signing of software artefacts describes the process ensuring the integrity and provenance of the artefact at build time, helping to establish trust. The signing of an artefact is a method of indicating that an artefact has been vetted and approved to be used in a given environment and authorized for use by a trusted authority. Trust is generated through cryptographically generated signatures at build time based on a secure hash of the artefact and, in more complex scenarios, whether the artefact has been signed by another process in the supply chain. For example, consider a scenario where the artefact is signed at build time and the resulting signature is verified before the artefact is scanned for compliance and security.
 
 The signing of artefacts should be  performed at each stage of its life cycle, along with the verification of signatures from prior stages, to ensure end-to-end trust. For added protection, encryption can be used to protect the confidentiality of the artefact, and ensure only authorized parties are able to use the artefact.
 
@@ -755,7 +755,7 @@ The integrity and provenance of images, deployment configuration, and applicatio
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
-The CNCF maintains the Notary project, based on TUF, to enable the creation and interaction of trusted collections. Signatures and metadata about artefacts are stored, often adjacent to an OCI registry. Notary makes use of a “root-of-trust” model to delegate trust from a single root to the individual teams or developers who sign artefacts. It uses additional metadata to allow clients to verify the freshness of content in a repository and protect against common attacks on update systems[^48]. Clients can make use of public keys to verify the contents of the repository. 
+The CNCF maintains the Notary project, based on TUF, to enable the creation and interaction of trusted collections. Signatures and metadata about artefacts are stored, often adjacent to an OCI registry. Notary makes use of a “root-of-trust” model to delegate trust from a single root to the individual teams or developers who sign artefacts. It uses additional metadata to allow clients to verify the freshness of content in a repository and protect against common attacks on update systems[^48]. Clients can make use of public keys to verify the contents of the repository.
 
 
 #### Use a store to manage metadata from in-toto
@@ -782,7 +782,7 @@ _Assurance category: High and risk category: high_
 It is insufficient to cryptographically sign components being distributed and assume they’re protected. Instead, the system must be prepared for _when, not if,_ its private keys are compromised. The ability to rotate and revoke private keys must be built into the distribution mechanism. This distribution mechanism must allow users to ensure that they are using a currently trusted set of keys, and not keys that have previously been revoked. This requires a notion of timeliness, similar to the one used by TUF. Additionally, multiple keys must be used, especially for different tasks or roles, and a threshold of keys must be required for important roles. Finally, minimal trust must be placed in high-risk keys like those that are stored online or used in automated roles.
 
 
-#### Use a container registry that supports OCI image-spec images 
+#### Use a container registry that supports OCI image-spec images
 
 _Assurance category: High and risk category: high_
 
@@ -814,7 +814,7 @@ Software delivery systems have been historically prone to several types of attac
 _Assurance categories: Moderate to high and risk categories: Moderate to high_
 
 Clients receiving software artefacts from the distribution mechanism must be able to verify the integrity of the downloaded files. It’s also vital that the view a client has of the repository is consistent and up to date so the client sees the latest version of all the files it has access to. This is especially necessary for highly volatile repositories.
- 
+
 Clients must verify the metadata associated with the artefacts. If an SBOM is created, its signatures must be verified, and the associated keys must be validated as belonging to an authorized party. When in-toto metadata is generated, the corresponding verification workflow[^52] must be executed, which, apart from verifying the signatures of each metadata file, also matches the metadata from each step in the pipeline to the layout of the full supply chain. Adopters can use the reference implementations written in Python[^53] or Go[^54] to execute this workflow.
 
 
@@ -832,9 +832,9 @@ Since software updates are used to deliver bug fixes and security patches, it is
 
 _Assurance categories: High and risk categories: High_
 
-TUF is a specification[^55] for securely delivering software artefacts by combining trust, compromise resilience, integrity, and freshness. It is a graduated CNCF project and has been deployed in various contexts — PyPI, Datadog, Amazon Web Services for Bottlerocket, Notary, Google Fuchsia, and IBM cloud. 
+TUF is a specification[^55] for securely delivering software artefacts by combining trust, compromise resilience, integrity, and freshness. It is a graduated CNCF project and has been deployed in various contexts — PyPI, Datadog, Amazon Web Services for Bottlerocket, Notary, Google Fuchsia, and IBM cloud.
 
-Several TUF implementations exist that can be leveraged by new adopters. The reference implementation[^56] is written in Python, and is maintained by the core TUF team. Notary, another CNCF project, implements TUF for its underlying security framework. Finally, there are implementations written in Go, go-tuf[^57], Rust, tough[^58], and PHP php-tuf[^59]. 
+Several TUF implementations exist that can be leveraged by new adopters. The reference implementation[^56] is written in Python, and is maintained by the core TUF team. Notary, another CNCF project, implements TUF for its underlying security framework. Finally, there are implementations written in Go, go-tuf[^57], Rust, tough[^58], and PHP php-tuf[^59].
 
 TUF has also been used to bootstrap trust in delivering software supply chain metadata, specifically those pertaining to in-toto. The Datadog model combines TUF and in-toto to provide end-to-end guarantees to the consumer. This model has been documented in a blog post[^60] and two in-toto Enhancements (ITEs), ITE-2[^61] and ITE-3[^62].
 
@@ -915,7 +915,7 @@ TUF has also been used to bootstrap trust in delivering software supply chain me
 
 **Security Consideration for Code Signing (Reference for key management aspect)**
 
-[https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.01262018.pdf](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.01262018.pdf) 
+[https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.01262018.pdf](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.01262018.pdf)
 
 **2020 data-breach investigation report**
 
@@ -929,7 +929,7 @@ TUF has also been used to bootstrap trust in delivering software supply chain me
 
 **Infosec Institute security best practices **[https://resources.infosecinstitute.com/topic/security-best-practices-for-git-users/](https://resources.infosecinstitute.com/topic/security-best-practices-for-git-users/)
 
-**DoD Enterprise DevSecOps Reference Design:** [https://dodcio.defense.gov/Portals/0/Documents/DoD%20Enterprise%20DevSecOps%20Reference%20Design%20v1.0_Public%20Release.pdf?ver=2019-09-26-115824-583](https://dodcio.defense.gov/Portals/0/Documents/DoD%20Enterprise%20DevSecOps%20Reference%20Design%20v1.0_Public%20Release.pdf?ver=2019-09-26-115824-583) 
+**DoD Enterprise DevSecOps Reference Design:** [https://dodcio.defense.gov/Portals/0/Documents/DoD%20Enterprise%20DevSecOps%20Reference%20Design%20v1.0_Public%20Release.pdf?ver=2019-09-26-115824-583](https://dodcio.defense.gov/Portals/0/Documents/DoD%20Enterprise%20DevSecOps%20Reference%20Design%20v1.0_Public%20Release.pdf?ver=2019-09-26-115824-583)
 
 
 # Appendix I - Containers
@@ -937,9 +937,9 @@ TUF has also been used to bootstrap trust in delivering software supply chain me
 
 # Base Container Images
 
-A container build starts with a base container image: effectively the filesystem from which a derived container is built (e.g. the “FROM” directive in a Dockerfile). The base container image might also be derived from another container with its own Dockerfile. 
+A container build starts with a base container image: effectively the filesystem from which a derived container is built (e.g. the “FROM” directive in a Dockerfile). The base container image might also be derived from another container with its own Dockerfile.
 
-A base container image is often only a small Linux userspace (a minimal number of binaries, their supporting files, locale information, and public certificate authority keys). Organisations may add their own public keys. Public images are often tuned for particular use cases. For example, the “golang:alpine” image is  an Alpine OS with system dependencies required to build Go applications. Similar container images exist for other languages and many common architectures (for example, LAMP or LEMP). 
+A base container image is often only a small Linux userspace (a minimal number of binaries, their supporting files, locale information, and public certificate authority keys). Organisations may add their own public keys. Public images are often tuned for particular use cases. For example, the “golang:alpine” image is  an Alpine OS with system dependencies required to build Go applications. Similar container images exist for other languages and many common architectures (for example, LAMP or LEMP).
 
 Only signed images (for example, with Notary or cosign) have a guaranteed publisher. Most distributions sign their official Docker Hub images with Notary. Poisoned container images on public repositories are problematic, as intentionally malicious code in the image or the supply chain of a package it installs may not be detected by CVE scanning. These recommendations do not cover the evaluation of the Base OS of a container image, which is typically built as part of a distro supplier’s build and release pipeline. Each distro supplier follows their own standards and processes with regards to build reproducibility and security. The Core Infrastructure Initiative provides guidance and badges (awarded to Linux, Kubernetes, Curl, and OpenSSL) which can increase trust in some components. Development teams should investigate a distro supplier’s processes and uniformly implement a Base OS for all  containers.
 
@@ -1013,9 +1013,9 @@ There is a distinction between direct work product of developers (i.e. the code 
 
 *   1st Party Software - software created in house for internal use.  May be raw materials for consumption by internal software producers, or be the product of internal software producers.  Typically this software is used in house.
 *   2nd Party Software - services and software leveraged from contracted providers.  The configuration, operation, and maintenance of which is controlled by the contracted entity.  The source of this software is often closed, or masqued, indicating a significant level of trust by the consumer on the contracted entity to ensure its security.
-*   3rd Party Software - software purchased or brought in from an independent software entity such as a vendor or community where the configuration, operation, and maintenance is within the control and responsibility of the organization to execute. 
+*   3rd Party Software - software purchased or brought in from an independent software entity such as a vendor or community where the configuration, operation, and maintenance is within the control and responsibility of the organization to execute.
 
-Often, 2nd party and 3rd party software providers leverage and integrate software components and raw materials from other software sources.  This means any consumer of these software products is entirely reliant on the trust and rigor within that provider’s supply chain, or the due diligence to determine such.  
+Often, 2nd party and 3rd party software providers leverage and integrate software components and raw materials from other software sources.  This means any consumer of these software products is entirely reliant on the trust and rigor within that provider’s supply chain, or the due diligence to determine such.
 
 It is critical to note, however, that organizations are entirely responsible for performing their own due diligence, regardless if the source is 1st, 2nd, or 3rd party, to the extent practical and commensurate with the risk appetite of the organization.
 
@@ -1091,12 +1091,12 @@ It is critical to note, however, that organizations are entirely responsible for
      [https://github.com/dxa4481/truffleHog](https://github.com/dxa4481/truffleHog)
 
 [^23]:
-     See, for example: [https://docs.gitlab.com/ee/push_rules/push_rules.html#prevent-pushing-secrets-to-the-repository](https://docs.gitlab.com/ee/push_rules/push_rules.html#prevent-pushing-secrets-to-the-repository) or  
-       [https://github.com/awslabs/git-secrets](https://github.com/awslabs/git-secrets) 
+     See, for example: [https://docs.gitlab.com/ee/push_rules/push_rules.html#prevent-pushing-secrets-to-the-repository](https://docs.gitlab.com/ee/push_rules/push_rules.html#prevent-pushing-secrets-to-the-repository) or
+       [https://github.com/awslabs/git-secrets](https://github.com/awslabs/git-secrets)
 
 [^24]:
      [https://owasp.org/www-project-application-security-verification-standard/](https://owasp.org/www-project-application-security-verification-standard/)
-    <span style="text-decoration:underline;">   [https://owasp.org/www-community/Source_Code_Analysis_Tools](https://owasp.org/www-community/Source_Code_Analysis_Tools)</span> 
+    <span style="text-decoration:underline;">   [https://owasp.org/www-community/Source_Code_Analysis_Tools](https://owasp.org/www-community/Source_Code_Analysis_Tools)</span>
 
 [^25]:
      https://dzone.com/articles/devops-guide-implementing-four-eyes-principle-with
@@ -1111,12 +1111,12 @@ It is critical to note, however, that organizations are entirely responsible for
      https://smallstep.com/blog/use-ssh-certificates/
 
 [^29]:
-     [https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) 
-       [https://docs.gitlab.com/ee/ssh/](https://docs.gitlab.com/ee/ssh/) 
-       [https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/](https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/) 
+     [https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+       [https://docs.gitlab.com/ee/ssh/](https://docs.gitlab.com/ee/ssh/)
+       [https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/](https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/)
 
 [^30]:
-     [https://github.com/ossf/scorecard](https://github.com/ossf/scorecard) 
+     [https://github.com/ossf/scorecard](https://github.com/ossf/scorecard)
 
 [^31]:
      https://salsa.debian.org/reproducible-builds/debian-rebuilder-setup
@@ -1137,7 +1137,7 @@ It is critical to note, however, that organizations are entirely responsible for
      https://compliance.linuxfoundation.org/references/tools/
 
 [^37]:
-    [https://software.af.mil/wp-content/uploads/2020/10/Final-DevSecOps-Enterprise-Container-Hardening-Guide-1.1-Public-Release.pdf](https://software.af.mil/wp-content/uploads/2020/10/Final-DevSecOps-Enterprise-Container-Hardening-Guide-1.1-Public-Release.pdf) 
+    [https://software.af.mil/wp-content/uploads/2020/10/Final-DevSecOps-Enterprise-Container-Hardening-Guide-1.1-Public-Release.pdf](https://software.af.mil/wp-content/uploads/2020/10/Final-DevSecOps-Enterprise-Container-Hardening-Guide-1.1-Public-Release.pdf)
 
 [^38]:
      https://rootlesscontaine.rs
@@ -1149,19 +1149,19 @@ It is critical to note, however, that organizations are entirely responsible for
     For more on this: [Reproducible-builds.org](https://reproducible-builds.org) is a great resource with details on many of the considerations and changes necessary to accomplish reproducible builds. Debian ([https://wiki.debian.org/ReproducibleBuilds](https://wiki.debian.org/ReproducibleBuilds)) and Arch Linux ([https://wiki.archlinux.org/index.php/Reproducible_Builds](https://wiki.archlinux.org/index.php/Reproducible_Builds)) also maintain documentation on how they are working to make every package they maintain reproducible.
 
 [^41]:
-     [https://diffoscope.org/](https://diffoscope.org/) 
+     [https://diffoscope.org/](https://diffoscope.org/)
 
 [^42]:
-     [https://wiki.debian.org/ReproducibleBuilds/BuildinfoFiles](https://wiki.debian.org/ReproducibleBuilds/BuildinfoFiles)   
+     [https://wiki.debian.org/ReproducibleBuilds/BuildinfoFiles](https://wiki.debian.org/ReproducibleBuilds/BuildinfoFiles)
 
 [^43]:
-     [https://www.vagrantup.com/](https://www.vagrantup.com/) 
+     [https://www.vagrantup.com/](https://www.vagrantup.com/)
 
 [^44]:
-     [https://github.com/kpcyrd/rebuilderd](https://github.com/kpcyrd/rebuilderd) 
+     [https://github.com/kpcyrd/rebuilderd](https://github.com/kpcyrd/rebuilderd)
 
 [^45]:
-     https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png 
+     https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png
 
 [^46]:
      Where possible, use immutable Kubernetes objects (ie, immutable ConfigMaps).
@@ -1170,49 +1170,49 @@ It is critical to note, however, that organizations are entirely responsible for
     https://spiffe.io/book/
 
 [^48]:
-     [https://theupdateframework.io/security/](https://theupdateframework.io/security/) 
+     [https://theupdateframework.io/security/](https://theupdateframework.io/security/)
 
 [^49]:
      https://github.com/grafeas/kritis
 
 [^50]:
-     [https://github.com/opencontainers/artifacts/blob/a56aaad3afb5bab321644e3508f76d915031b3da/artifact-manifest/artifact-manifest.md](https://github.com/opencontainers/artifacts/blob/a56aaad3afb5bab321644e3508f76d915031b3da/artifact-manifest/artifact-manifest.md) 
+     [https://github.com/opencontainers/artifacts/blob/a56aaad3afb5bab321644e3508f76d915031b3da/artifact-manifest/artifact-manifest.md](https://github.com/opencontainers/artifacts/blob/a56aaad3afb5bab321644e3508f76d915031b3da/artifact-manifest/artifact-manifest.md)
 
 [^51]:
      [https://theupdateframework.io/security/#attacks-and-weaknesses](https://theupdateframework.io/security/#attacks-and-weaknesses)
 
 [^52]:
-     [https://github.com/in-toto/docs/blob/master/in-toto-spec.md#52-verifying-the-final-product](https://github.com/in-toto/docs/blob/master/in-toto-spec.md#52-verifying-the-final-product) 
+     [https://github.com/in-toto/docs/blob/master/in-toto-spec.md#52-verifying-the-final-product](https://github.com/in-toto/docs/blob/master/in-toto-spec.md#52-verifying-the-final-product)
 
 [^53]:
-     [https://github.com/in-toto/in-toto](https://github.com/in-toto/in-toto) 
+     [https://github.com/in-toto/in-toto](https://github.com/in-toto/in-toto)
 
 [^54]:
-     [https://github.com/in-toto/in-toto-golang](https://github.com/in-toto/in-toto-golang) 
+     [https://github.com/in-toto/in-toto-golang](https://github.com/in-toto/in-toto-golang)
 
 [^55]:
      https://theupdateframework.github.io/specification/latest/index.html
 
 [^56]:
-     [https://github.com/theupdateframework/tuf](https://github.com/theupdateframework/tuf) 
+     [https://github.com/theupdateframework/tuf](https://github.com/theupdateframework/tuf)
 
 [^57]:
-     [https://github.com/theupdateframework/go-tuf](https://github.com/theupdateframework/go-tuf) 
+     [https://github.com/theupdateframework/go-tuf](https://github.com/theupdateframework/go-tuf)
 
 [^58]:
-     [https://github.com/awslabs/tough](https://github.com/awslabs/tough) 
+     [https://github.com/awslabs/tough](https://github.com/awslabs/tough)
 
 [^59]:
-     [https://github.com/php-tuf/php-tuf](https://github.com/php-tuf/php-tuf) 
+     [https://github.com/php-tuf/php-tuf](https://github.com/php-tuf/php-tuf)
 
 [^60]:
-     [https://www.datadoghq.com/blog/engineering/secure-publication-of-datadog-agent-integrations-with-tuf-and-in-toto/](https://www.datadoghq.com/blog/engineering/secure-publication-of-datadog-agent-integrations-with-tuf-and-in-toto/) 
+     [https://www.datadoghq.com/blog/engineering/secure-publication-of-datadog-agent-integrations-with-tuf-and-in-toto/](https://www.datadoghq.com/blog/engineering/secure-publication-of-datadog-agent-integrations-with-tuf-and-in-toto/)
 
 [^61]:
-     [https://github.com/in-toto/ITE/blob/master/ITE/2/README.adoc](https://github.com/in-toto/ITE/blob/master/ITE/2/README.adoc) 
+     [https://github.com/in-toto/ITE/blob/master/ITE/2/README.adoc](https://github.com/in-toto/ITE/blob/master/ITE/2/README.adoc)
 
 [^62]:
-     [https://github.com/in-toto/ITE/blob/master/ITE/3/README.adoc](https://github.com/in-toto/ITE/blob/master/ITE/3/README.adoc) 
+     [https://github.com/in-toto/ITE/blob/master/ITE/3/README.adoc](https://github.com/in-toto/ITE/blob/master/ITE/3/README.adoc)
 
 [^63]:
      Link here: ternhttps://github.com/tern-tools/tern
@@ -1221,10 +1221,10 @@ It is critical to note, however, that organizations are entirely responsible for
      Link here: syfthttps://github.com/anchore/syft
 
 [^65]:
-     [https://docs.docker.com/develop/develop-images/dockerfile_best-practices/](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) 
+     [https://docs.docker.com/develop/develop-images/dockerfile_best-practices/](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 
 [^66]:
-     [https://sysdig.com/blog/dockerfile-best-practices/#4-2](https://sysdig.com/blog/dockerfile-best-practices/#4-2) 
+     [https://sysdig.com/blog/dockerfile-best-practices/#4-2](https://sysdig.com/blog/dockerfile-best-practices/#4-2)
 
 [^67]:
      [https://dockersl.im/](https://dockersl.im/)

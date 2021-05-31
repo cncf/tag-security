@@ -252,7 +252,7 @@ IaC 越来越受欢迎，在企业中的部署迅速增加，以部署云和容�
 
 ## 部署
 
-![Figure 4](cnswp-images/RackMultipart20201111_figure4.png) 
+![Figure 4](cnswp-images/RackMultipart20201111_figure4.png)
 
 _图四_
 

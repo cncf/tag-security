@@ -1,14 +1,14 @@
 # Highly Evasive Attacker Leverages SolarWinds Supply Chain to Compromise Multiple Global Victims With SUNBURST Backdoor
 
 *Although not cloud native, this attack is being included as demonstration of
-the widespread impact of a supply chain compromise from a seemingly innocuous 
+the widespread impact of a supply chain compromise from a seemingly innocuous
 source.*
 
 From the original article [1]:
 
 > SolarWinds.Orion.Core.BusinessLayer.dll is a SolarWinds digitally-signed
 > component of the Orion software framework that contains a backdoor that
-> communicates via HTTP to third party servers. 
+> communicates via HTTP to third party servers.
 
 The host system used to build the Orion software was infected with malware,
 named SUNSPOT[4], which executed the rest of the attack on the Orion supply

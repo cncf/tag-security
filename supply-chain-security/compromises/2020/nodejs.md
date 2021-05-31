@@ -3,15 +3,15 @@
 From the original article [1]:
 
 > NPM has removed multiple packages hosted on its repository this week that established connection to remote servers and exfiltrated user data.
-> 
+>
 > These 4 packages had collected over 1,000 total downloads over the course of the last few months up until being removed by NPM yesterday.
-> 
+>
 > The four packages are:
-> 
->     plutov-slack-client - claims to be a "Node.JS Slack Client" according to the information in the manifest 
+>
+>     plutov-slack-client - claims to be a "Node.JS Slack Client" according to the information in the manifest
 >     nodetest199 - no description
 >     nodetest1010 - no description
->     npmpubman - claims to be "a simple implementation about Linux shell login" according to the information in the manifest 
+>     npmpubman - claims to be "a simple implementation about Linux shell login" according to the information in the manifest
 
 
 ## Impact

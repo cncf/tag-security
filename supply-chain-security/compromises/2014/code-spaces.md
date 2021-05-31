@@ -1,6 +1,6 @@
 # Code Space Incident
 
-Code Spaces, a cloud base service offering project management and code repositories, 
+Code Spaces, a cloud base service offering project management and code repositories,
 was hacked and many repositories, backups, etc. were deleted by the attacker.
 
 ## Impact

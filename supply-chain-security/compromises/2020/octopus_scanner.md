@@ -2,11 +2,11 @@
 
 On March 9, GitHub’s `Security Incident Response Team (SIRT)` received a message from a security researcher informing them
 about a set of GitHub-hosted repositories that were, presumably unintentionally, actively serving malware.
-After a deep-dive analysis of the malware itself, SIRT uncovered something that, according to them, was not seen on GitHub; 
-malware designed to enumerate and backdoor NetBeans projects, and which uses the build process and its resulting artifacts 
+After a deep-dive analysis of the malware itself, SIRT uncovered something that, according to them, was not seen on GitHub;
+malware designed to enumerate and backdoor NetBeans projects, and which uses the build process and its resulting artifacts
 to spread itself.
 
-The malware is capable of identifying the NetBeans project files and embedding a malicious payload both in the project 
+The malware is capable of identifying the NetBeans project files and embedding a malicious payload both in the project
 files and any JAR files it finds in the project directories, which it then uses to spread itself.
 
 ## Impact
@@ -26,7 +26,7 @@ just artifacts built by a compromised Netbeans project, are infected.
 It's unknown how many developers have cloned and built those 26 projects.
 The actual artifacts of these builds may spread even further in a way that is disconnected from the original build process
 and harder to track down after the fact.
-Since the primary-infected users are developers, who have generally have access to additional projects, 
+Since the primary-infected users are developers, who have generally have access to additional projects,
 production environments, database passwords, and other critical assets the potential impact could be great.
 
 

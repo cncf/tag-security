@@ -57,13 +57,13 @@ charter.  In all cases, the priority queue will be maintained transparently as
 described below, along with communication via regular chair-liaison meetings and
 SIG-Security reports at TOC meetings.
 
-A project may be accepted into the assessment queue, either by the Security Assessment 
-Facilitator with concurrence from one (1) co-chair, or by two (2) co-chairs.  This concurrence 
+A project may be accepted into the assessment queue, either by the Security Assessment
+Facilitator with concurrence from one (1) co-chair, or by two (2) co-chairs.  This concurrence
 is given by commenting on an issue proposing that the project be added to the assessment
 queue.  If at any time, the project requesting review ceases communicating, the
 Security Assessment Facilitator may remove the project from the queue with
 notification to the co-chairs.  The Security Assessment Facilitator will update
-the corresponding issue, prior to closing the project's request.  
+the corresponding issue, prior to closing the project's request.
 
 # Updates and renewal
 

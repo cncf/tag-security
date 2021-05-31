@@ -12,5 +12,5 @@ Russia, Turkey, and Ukraine.
 
 ## Type of compromise
 
-The attackers seem to have been able to compromise the 
+The attackers seem to have been able to compromise the
 publishing infrastructure, as well as the signing key of the package.

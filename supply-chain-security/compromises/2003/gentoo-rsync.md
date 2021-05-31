@@ -1,7 +1,7 @@
 # Gentoo Incident
 
 Attackers used a remote exploit to compromise an rsync.gentoo.org machine
-holding a copy of the emerge repository and implant a rootkit 
+holding a copy of the emerge repository and implant a rootkit
 
 ## Impact
 

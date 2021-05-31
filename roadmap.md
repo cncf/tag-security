@@ -46,8 +46,8 @@ roadmap plans.  The Roadmap planning project board for each annum is a live
 board and is continually updated.  Boards may have cards added which indicate
 early concepts or needs for discovery, prior to become proposals or projects.
 
-| Year | Board Link | 
-| --- | --- | 
+| Year | Board Link |
+| --- | --- |
 | 2021-2022 | [RoadMap Planning Board](https://github.com/cncf/sig-security/projects/4) |
 
 ### Ongoing efforts

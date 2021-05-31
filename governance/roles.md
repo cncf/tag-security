@@ -15,7 +15,7 @@ The following is the current listing of member roles:
 * [Facilitation Roles](#facilitation-roles)
 
 All members are identified in the SIG [README](/readme.md), with annotations
-where they hold an additional role. 
+where they hold an additional role.
 
 Members fulfilling any Roles in SIG-Security are responsible for understanding
 and abiding the by the [governance](./) and policies defined in this group.
@@ -26,7 +26,7 @@ the repo, but also to any approvals or direction required by their Role.
 specific areas of the repo or actions on issues where changes require write
 access. In any case, governance is not enforced by [access permissions](github.md), but
 rather by members who are expected to thoughtfully consider their actions to
-support the group. 
+support the group.
 
 ## Role of members
 * The primary role of a member is to contribute expertise to the group.
@@ -77,7 +77,7 @@ members who cannot attend a specific meeting time.
 ## Role of technical leads
 
 Technical Leads (TLs) expand the bandwidth of the leadership team. Proposals
-must have a TL or Chair working as an active sponsor (as detailed in 
+must have a TL or Chair working as an active sponsor (as detailed in
 [SIG process](process.md)).
 
 The general list of activities for TL are:
@@ -99,8 +99,8 @@ Project Leads are nominated and approved by the following process:
   1. Project Lead actively participates in the group, making a proposal or
   volunteering to take on a project that has been prioritized by the group
   1. A Chair or TL nominates a candidate.
-  1. The nomination is communicated via a pull request annotating the list of members in the 
-  [SIG README](/README.md) with a link to the issue tracking the project. 
+  1. The nomination is communicated via a pull request annotating the list of members in the
+  [SIG README](/README.md) with a link to the issue tracking the project.
   The nomination is typically open for a week (but may be shorter with LGTM of at least two Chairs).
   1. Members are encouraged to review the tracking issue and work together
   to ensure that the Project Lead is set up for success or suggest alternatives.
@@ -154,7 +154,7 @@ and led by a Security Assessment Facilitator, who will:
 
 ### Meeting facilitator
 
-The group meetings are an important part of community building and the 
+The group meetings are an important part of community building and the
 facilitator ensures a welcoming and inclusive atmosphere. In keeping with these
 goals, the meeting facilitator has the following responsibilities:
 * prepares the meeting notes with template and agenda

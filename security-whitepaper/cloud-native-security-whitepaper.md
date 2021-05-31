@@ -14,13 +14,13 @@ Shared with CNCF Community
 | **Created** | 2020-FEB-01 |
 | **Last Reviewed** | 2020-OCT-27 |
 | **PDF Published** | 2020-NOV-18 |
-| **Release Version** | 1.0 | 
+| **Release Version** | 1.0 |
 | **Final PDF Approvers** | [x] @lizrice [x] @justincormack  |
 
 | **Originating Content and Review** | |
 | -- | --|
 | **Contributors** | [aradhna.chetal@gmail.com](mailto:aradhna.chetal@gmail.com), [@theFoxAtWork](mailto:themoxiefoxatwork@gmail.com), [jj@tetrate.io](mailto:jj@tetrate.io), gadi@alcide.io @lumjjb, @trishankatdatadog, [@vvenkatara@paloaltonetworks.com](mailto:vvenkatara@paloaltonetworks.com), @pushkarj, @whaber, @sublimino, @rowan-baker, [chase.pettet@gmail.com](mailto:chase.pettet@gmail.com), [harsingh@us.ibm.com](mailto:harsingh@us.ibm.com), jeff.lombardo@gmail.com |
-| **Reviewers** | @justincappos, @lumjjb, @whaber, @craigbox, @anvega, @magnologan, @magnologan, alok@xenonstack.com, @nyrahul, @ranio1, Itay Shakury (@itaysk) | 
+| **Reviewers** | @justincappos, @lumjjb, @whaber, @craigbox, @anvega, @magnologan, @magnologan, alok@xenonstack.com, @nyrahul, @ranio1, Itay Shakury (@itaysk) |
 
 ## Index
 - [**Cloud Native Security Whitepaper**](#cloud-native-security-whitepaper)
@@ -233,7 +233,7 @@ Utilization of security benchmarks (e.g. [NIST Application Container Security Gu
 
 The next few sections provide a detailed analysis of the implications, tools, mechanisms and best practices to integrate security throughout the application lifecycle.
 
-## Develop  
+## Develop
 
 ![Figure 2](cnswp-images/RackMultipart20201111_figure2.png)
 
@@ -702,9 +702,9 @@ Many financial, health, government, and other entities need to comply with a spe
 
 ### Personas and Use Cases
 
-The focus is on security, protection, detection, and auto-response where ever possible. 
-It is not necessarily development tooling alone, but security tooling that integrates 
-transparently into the development process to enforce security policies where fast 
+The focus is on security, protection, detection, and auto-response where ever possible.
+It is not necessarily development tooling alone, but security tooling that integrates
+transparently into the development process to enforce security policies where fast
 feedback and most immediate actions to remediate can occur. For specific information
  on cloud native security use cases refer to the [SIG-Security's use cases listing](https://github.com/cncf/sig-security/usecase-personas/).
 
@@ -833,8 +833,8 @@ Reviewers:
 - Alok Raj - [XenonStack](https://www.xenonstack.com/) ([alok@xenonstack.com](mailto:alok@xenonstack.com))
 - @nyrahul
 - @ranio1
-- @lizrice 
-- @justincormack 
+- @lizrice
+- @justincormack
 
 [1^]: Another model to consider is Cloud, Clusters, Containers, and Code: [https://kubernetes.io/docs/concepts/security/overview/](https://kubernetes.io/docs/concepts/security/overview/)
 
@@ -842,9 +842,9 @@ Reviewers:
 
 [3^]: [Shifting security left](https://www.devsecops.org/blog/2016/5/20/-security) often leaves organizations to lapse operational security monitoring. It is important that security exists in all parts of the lifecycle and organizations continually evaluate other aspects of their business and technology processes where they may reach beyond modern security paradigms to embrace security as a culture and habit.
 
-[4^]: Human capital is a vital asset necessary to the success of any organization, the corresponding intellectual property and relational capital brought as a result is equally in need of protection.  
+[4^]: Human capital is a vital asset necessary to the success of any organization, the corresponding intellectual property and relational capital brought as a result is equally in need of protection.
 
-[5^] <https://blog.aquasec.com/malicious-container-image-docker-container-host>  
+[5^] <https://blog.aquasec.com/malicious-container-image-docker-container-host>
 
 [6^]: According to Applied Software Measurement, Capers Jones, 1996 and adjusting for inflation - 85% of defects are introduced during coding with a cost of $41 to fix compared to a post release fix cost of $26,542.
 

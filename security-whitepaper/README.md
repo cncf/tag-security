@@ -1,29 +1,29 @@
 # Cloud Native Security Whitepaper
 
-## About 
+## About
 
 The Cloud Native Security Whitepaper is a TAG-Security effort to ensure
 the cloud native community has access to information about building,
 distributing, deploying, and running secure cloud native capabilities.
 
-## Updates to the paper 
+## Updates to the paper
 
-The Cloud Native Security Whitepaper (CNSWP) is intended to be a living 
-document created and maintained for the community, by its members.  
+The Cloud Native Security Whitepaper (CNSWP) is intended to be a living
+document created and maintained for the community, by its members.
 
 Updates to the whitepaper, suggestions for updates, or discussion for updates
 should initiate with an [issue](https://github.com/cncf/tag-security/issues) submitted to the repo and labeled with
 "suggestion" and "whitepaper".
 
-### Markdown 
+### Markdown
 
 The living CNSWP is maintained in [markdown](https://github.com/cncf/tag-security/blob/main/security-whitepaper/cloud-native-security-whitepaper.md) and all updates will be made in
- markdown.  
+ markdown.
 
-### Contributing updates 
+### Contributing updates
 
 All members of the community are welcome to contribute updates to the CNSWP.
-We ask potential contributors to refer to the original design decisions, 
+We ask potential contributors to refer to the original design decisions,
 listed below, as guidance when determining the content of their updates.
 
 It is highly recommended that you seek peer review for your updates beyond that
@@ -32,10 +32,10 @@ of the Technical Leads and Co-Chairs of the TAG.
 Once the PR is submitted, please place the link in the CNCF TAG-Security Channel
 for the CNSWP: [#tag-security-whitepaper](https://cloud-native.slack.com/archives/C017K5AN70T) to request a review.
 
-### Versioning and publishing 
+### Versioning and publishing
 
-It is expected that many minor updates will occur, corrections to grammar, 
-spelling, clarification in language, translations, etc.  When these occur 
+It is expected that many minor updates will occur, corrections to grammar,
+spelling, clarification in language, translations, etc.  When these occur
 they are considered minor changes to the overall content and will not warrant
  the regeneration of the PDF.
 
@@ -53,12 +53,12 @@ solicited to the CNCF SIG-Security and TOC mailing list for review, at a minimum
 
 Upon completion of review, the SIG-Security TOC Liaison shall provide final
 approval on the PR.  At which point the markdown state will be changed to
-"Approved" and merged. 
+"Approved" and merged.
 
 ## Original design decisions
- 
-The CNSWP's creation occurred using the below general design decisions which 
-should be considered when updating the content.  
+
+The CNSWP's creation occurred using the below general design decisions which
+should be considered when updating the content.
 * Avoid identifying specific projects and products.  Use general terms
   identifying the capabilities of the projects that meet the content under
 discussion.  Examples include, but are not limited to:

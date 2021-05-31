@@ -1,6 +1,6 @@
-# Past Events 
+# Past Events
 
-## KubeCon + CloudNativeCon, Barcelona, Spain, May 20 – 23, 2019 
+## KubeCon + CloudNativeCon, Barcelona, Spain, May 20 – 23, 2019
 
 [issue#127](https://github.com/cncf/sig-security/issues/127)
 
@@ -68,7 +68,7 @@ https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2018/
 * [2019-04-11 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session
 * [2019-04-05 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Google Open Source Project Onboarding
 * [2019-04-04 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session
-* [2019-03-29 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Revised presentation framework with in-toto (OPA, Kamus, TOC invited) 
+* [2019-03-29 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Revised presentation framework with in-toto (OPA, Kamus, TOC invited)
 * [2019-03-28 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session
 * [2019-03-22 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)
 * [2019-03-22 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - SAFE Whitepaper Working Session

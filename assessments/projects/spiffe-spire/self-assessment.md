@@ -231,7 +231,7 @@ Unlike these other APIs however, the Workload API is platform agnostic, and can 
 
 To minimize exposure from a key being leaked or compromised, all private keys (and corresponding certificates) are short-lived, rotated frequently and automatically. Private keys are never sent "over the wire", instead, keys are generated on-host by the SPIRE Agent and sent to the workload over a unix domain socket. Workloads are provided with new keys and trust bundles from the Workload API before the corresponding key(s) expire.
 
-### SPIRE Architecture 
+### SPIRE Architecture
 
 ![](docs/image0.png)
 

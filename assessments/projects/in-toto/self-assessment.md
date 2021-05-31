@@ -1,8 +1,8 @@
-﻿# in-toto security self-assessment 
+﻿# in-toto security self-assessment
 
 June 5, 2019
 
-*_Authors_*: Santiago Torres-Arias, Justin Cappos 
+*_Authors_*: Santiago Torres-Arias, Justin Cappos
 
 *_Contributors/Reviewers_*: Sarah Allen (@ultrasaurus),  Justin Cormack (@justinCormack),  Brandon Lum (@lumjjb)
 
@@ -13,9 +13,9 @@ it’s security analysis to aid in the security assessment by the CNCF.
 ## Overview
 in-toto, Latin for "as a whole," is a framework that holistically enforces the
 integrity of a software supply chain by gathering cryptographically verifiable
-information about the chain itself.  
+information about the chain itself.
 
-## Background 
+## Background
 
 Modern software is built through a complex series of steps called a _software
 supply chain_. These steps are performed as the software is written, tested,
@@ -68,7 +68,7 @@ These building blocks help to secure an individual step in the process.
 Although the security of each individual step is critical, such efforts can be
 undone if attackers can modify the output of a step before it is fed to the
 next one in the chain. These piecemeal measures by themselves can not stop
-malicious actors because there is no mechanism to verify that: 
+malicious actors because there is no mechanism to verify that:
 
 1. the correct steps were followed, and;
 2. that tampering did not occur in between steps.
@@ -123,12 +123,12 @@ practices were followed to the letter.
 In cases when this is not the case, there may be more urgent requirements
 (e.g., git commit signing) may be pursued first. While in-toto may help improve
 the security standing of any project, the security guarantees provided by
-in-toto are heavily dependent on the deployment’s practices. 
+in-toto are heavily dependent on the deployment’s practices.
 
 
 Required pre-conditions:
 1. CI system or buildserver is in place to package releases
-2. Written process document 
+2. Written process document
 
 
 We also recommend considering the following, as to whether they will be
@@ -138,7 +138,7 @@ required as part of the pipeline:
 2. A secure software update system (e.g., TUF) is used
 3. A mechanism for distributing package metadata to the end user is available
 
-### Target users and use cases 
+### Target users and use cases
 
 In-toto roles map to standard target users as described below. (End-users do
 not directly interact with in-toto.)
@@ -150,8 +150,8 @@ not directly interact with in-toto.)
 
 Use cases
 * Automated Pipelines
-* Source artifact signing 
-* Build 
+* Source artifact signing
+* Build
 * Deploy
 
 
@@ -175,8 +175,8 @@ of this year’s roadmap.
 
 ## Project Design
 
-in-toto consists of two simple elements: 
-1. a metadata format (software supply chain layout & link metadata) and 
+in-toto consists of two simple elements:
+1. a metadata format (software supply chain layout & link metadata) and
 2. roles (who will interact between each other by means of this metadata)
    1. Project Owners: define the supply chain (layout)
    2. Functionaries: sign their work: (producing link metadata)
@@ -242,7 +242,7 @@ Specifically, in-toto cryptographically validates the steps that occur when
 software is built.  This cryptographic validation can detect many attacks,
 including where an attacker adds, removes, or substitutes information at many
 stages in the supply chain. The cryptographic evidence can be used by verifiers
-to ensure strict compliance to the processes laid out. 
+to ensure strict compliance to the processes laid out.
 
 ### Attacker Motivations
 We consider a motivated attacker that intends to subvert the supply chain with
@@ -270,7 +270,7 @@ that can:
   that this can also be a result of an honest mistake.
 * Include outdated or vulnerable elements in the supply chain. For example, an
   attacker could bundle an outdated compression library that has many known
-  exploits.                                                            
+  exploits.
 * Provide a counterfeit version of the delivered product to users.  This
   software product can come from any source and be signed by any keys.
 
@@ -284,7 +284,7 @@ altogether), then we cannot protect in these cases.
 
 A more thorough dataset with taxonomic separation of these attacks can be
 found in our Github repository under
-https://github.com/in-toto/supply-chain-compromises/ 
+https://github.com/in-toto/supply-chain-compromises/
 
 
 
@@ -341,7 +341,7 @@ supply chain integrity:
   tampered or counterfeit delivered product, effectively creating an alternate
   supply chain.
 
-### Functionary key compromise           
+### Functionary key compromise
 
 A compromise on a threshold of keys held for any functionary role will only
 affect a specific step in the supply chain to which that functionary is
@@ -359,7 +359,7 @@ in subsequent steps of the chain. The following table describes the impact of
 these in detail from rows 2 to 5 (row 1 captures the case when the attacker
 does not compromise enough keys to meet the threshold defined for a step). As a
 recommended best practice, we assume there is a `DISALLOW *` rule at the end of
-the rule list for each step.        
+the rule list for each step.
 
 
 | *Impact* | *Type of key compromise* | *Compromised step rule* | *Subsequent step rule* |
@@ -547,11 +547,11 @@ Three in-toto implementations exist for Go, Python and Java. These three impleme
 
 #### Integrations
 
-Three integration projects exist: 
+Three integration projects exist:
 1. a [Jenkins plugin](https://plugins.jenkins.io/in-toto), hosted on their
    official plugin repository
 2. a [kubectl plugin](https://github.com/in-toto/kubectl-in-toto), installable
-   via github, and 
+   via github, and
 3. an [admission controller](https://github.com/in-toto/in-toto-webhook) for
    kubernetes.
 
@@ -634,7 +634,7 @@ efforts that present appropriate benefit for the effort involved.  Notably,
 github does not have good support for hardware tokens as 2FA for users without
 a smartphone.  While all developers sign commits using a key protected by such
 a token, it may not be possible to have github consider this a second form of
-authentication (due to the SMS requirements).   
+authentication (due to the SMS requirements).
 
 ### Case Studies
 
@@ -713,7 +713,7 @@ we developed two in-toto components: a Jenkins plugin and a Kubernetes
 admission controller. These two components, allow us to track all operations
 within a distributed system, both of containers and aggregate in-toto link
 metadata, to verify any container image before it is provisioned. The figure
-below shows a (simplified) graphical depiction of their supply chain.        
+below shows a (simplified) graphical depiction of their supply chain.
 
 This deployment exemplifies an architecture for the supply chains of cloud
 native applications, in which new container images, serverless functions and
@@ -725,11 +725,11 @@ promoted to a cloud environment, a container orchestration system queries an
 in-toto admission controller. This admission controller ensures that every
 operation on this delivered product has been performed by allowed nodes and
 that all the artifacts were acted on according to the specification in the
-in-toto layout.                                                                 
+in-toto layout.
 
 Future work on using configuration-as-code and pipeline languages to also
 service in-toto layouts is ongoing. For example, a request we've received is to
-be able to transpile Jenkinsfile nodes into in-toto layouts.      
+be able to transpile Jenkinsfile nodes into in-toto layouts.
 
 ![staging Cloud-native build setup for kubesec.](kubesec.png)
 
@@ -770,7 +770,7 @@ chain.  The following projects relate to in-toto or interact with it:
 * [SPDX](https://spdx.org) -- describes a metadata format about the creation of
   a piece of software and its resulting properties.  In-toto could provide
   cryptographic validation of this metadata and the SPDX information can be
-  used to enrich in-toto validation. 
+  used to enrich in-toto validation.
 * [SParts](https://github.com/hyperledger-labs/SParts) is a project that allows
   users to register software artifacts in a hyperledger-based supply chain. As
   such, it allows to register artifacts and track their provenance, but there

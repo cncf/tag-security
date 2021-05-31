@@ -1,4 +1,5 @@
-Authors: stummidi@pivotal.io, rayc@google.com, pragashjj@gmail.com, ckemper@google.com
+Authors: stummidi@pivotal.io, rayc@google.com, pragashjj@gmail.com,
+ckemper@google.com
 
 Updated: 9 April 2019
 
@@ -164,7 +165,7 @@ impact of repeated request on the rest of the infrastructure.
 # Platform Implementer
 
 The recognition of the platform implementer as a distinct role is a relatively recent phenomenon. The goal of the platform
-implementer is to take the business requirements and translate them to the underlying technology or cloud platform to make the 
+implementer is to take the business requirements and translate them to the underlying technology or cloud platform to make the
 organization's **enterprise, network and quota operators** and **security administrators and compliance officers** successful.
 
 One important aspect of this role may be to bridge between the heterogeneous cloud environments that are in use at the
@@ -172,13 +173,13 @@ organization to provide a homogeneous management surface to the administrators a
 
 * As a platform implementer I can provide central administration of cloud resources to my **operators and administrators**.
 
-* As a platform implementer I can provide compartmentalization of cloud resources for delegation purposes by **operators and administrators**. 
+* As a platform implementer I can provide compartmentalization of cloud resources for delegation purposes by **operators and administrators**.
 
 * As a platform implementer I can allow my **operators and administrators** to delegate administration of resources.
 
 * As a platform implementer I can enable my **security administrators** to constrain the behavior of **developers** by setting guardrails.
 
-* As a platform implementer I can enable my **security administrators and compliance officers** to enforce auditing of access policies. 
+* As a platform implementer I can enable my **security administrators and compliance officers** to enforce auditing of access policies.
 
 * As a platform implementer I can enable my **security administrators and compliance officers** the auditing of resource access.
 

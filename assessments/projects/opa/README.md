@@ -57,7 +57,7 @@ situations where these problems arise would help to improve user security.
 1. ([OPA-1699](https://github.com/open-policy-agent/opa/issues/1699)) System
 design and deployment guidance to include “gotchas” laying out potential issues
 in a way that is more understandable to users.
-   
+
     a. Common scenarios or design challenges, such as policy loading to handled
 	   race/error conditions, initialization, and queries that require state
 

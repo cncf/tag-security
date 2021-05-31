@@ -1,5 +1,5 @@
 # Malicious code in purescript npm installer dependencies
-Malicious code was inserted in dependencies of the purescript npm installer. 
+Malicious code was inserted in dependencies of the purescript npm installer.
 The code was inserted in the packages load-from-cwd-or-npm and rate-map.
 
 

@@ -1,4 +1,5 @@
-The Policy WG merged with SAFE WG on Aug 10, 2018, and together submitted SAFE WG proposal to CNCF TOC
+The Policy WG merged with SAFE WG on Aug 10, 2018, and together submitted SAFE
+WG proposal to CNCF TOC
 
 This document illustrates the proposed CNCF Policy WG's key objects and deliverables, and the way to forge ahead with SAFE WG as a unified CNCF level WG to avoid unnecessary overlap and concentrate resources.
 

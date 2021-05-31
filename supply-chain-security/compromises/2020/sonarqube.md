@@ -28,4 +28,4 @@ Supply Chain Attack: "pivot to the connected source code repositories, and then 
 
 1. "FBI: Hackers stole source code from US government agencies and private companies",  Catalin Cimpanu, `<https://www.zdnet.com/article/fbi-hackers-stole-source-code-from-us-government-agencies-and-private-companies/>`, last accessed 2021-01-19.
 
-2. "Cyber Actors Target Misconfigured SonarQube Instances to Access Proprietary Source Code of US Government Agencies and Businesses", FBI `<https://www.ic3.gov/Media/News/2020/201103-3.pdf>`, last accessed 2021-01-19. 
+2. "Cyber Actors Target Misconfigured SonarQube Instances to Access Proprietary Source Code of US Government Agencies and Businesses", FBI `<https://www.ic3.gov/Media/News/2020/201103-3.pdf>`, last accessed 2021-01-19.

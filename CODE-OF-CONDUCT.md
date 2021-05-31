@@ -42,6 +42,6 @@ The above guidelines are inspired by and borrowed from other communities:
 * https://www.rust-lang.org/policies/code-of-conduct
 * https://golang.org/conduct
 
-[cncf-coc]: https://github.com/cncf/foundation/blob/master/code-of-conduct.md  
+[cncf-coc]: https://github.com/cncf/foundation/blob/master/code-of-conduct.md
 [charter]: https://github.com/cncf/tag-security/blob/main/governance/charter.md
 [review-outcome]: https://github.com/cncf/tag-security/tree/main/assessments#outcome
