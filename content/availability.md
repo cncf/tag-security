@@ -10,10 +10,5 @@ A denial-of-service attack (DoS attack) in the context of cloud native applicati
 A distributed denial-of-service attack (DDoS attack) typically involves a high volume of incoming traffic flooding the cloud native application services or the upstream networks to which they depend. Typically the attack is mounted from many different sources. Volumetric attacks are mitigated by detecting and deflecting the attacks before they reach the cloud native application.
 
 ## Projects
-- TODO
-
-## Examples
-- TODO
-
-## Links (optional)
-- TODO
+- [Curiefense](https://github.com/curiefense/curiefense)
+- [Crowdsec](https://github.com/crowdsecurity/crowdsec)

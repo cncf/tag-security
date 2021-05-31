@@ -16,10 +16,16 @@ continuous integration (CI) feedback loops. System test suites should be made av
 well as within a shared testing environment.
 
 ## Projects
-- TODO
-
-## Examples
-- TODO
+- [Static Analysis Testing](../static-analysis-and-security-testing.md)
+- [Dynamic Analysis Testing](../dynamic-analysis.md)
+- [Container Manifest Testing](../container-application-manifest.md)
+- [Threat Modelling](../threat-modelling.md)
 
 ## Links
-- TODO
+- [Software Testing](https://en.wikipedia.org/wiki/Software_testing)
+- [List of unit testing frameworks](https://en.wikipedia.org/wiki/List_of_unit_testing_frameworks)
+- [Behaviour Driven Development(BDD) and Functional Testing](https://medium.com/javascript-scene/behavior-driven-development-bdd-and-functional-testing-62084ad7f1f2)
+- [Threat Modelling: Securing Kubernetes Infrastructure & Deployments](https://www.youtube.com/watch?v=_T-5QhZieH8)
+- [Security Architecture Review Of A Cloud Native Environment](https://notsosecure.com/security-architecture-review-of-a-cloud-native-environment/)
+- [Using Spinnaker for automated canary analysis](https://spinnaker.io/guides/user/canary/)
+- [OWASP Threat Modeling Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html)
