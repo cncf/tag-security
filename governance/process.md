@@ -21,39 +21,80 @@ line with the [mission and charter](charter.md).
 
 1. **Raise an Issue:**
 [Create an issue](https://github.com/cncf/sig-security/issues/new)
-that outlines the problem to be solved. If possible, include:
+that outlines the problem to be solved. Use the proposal template if you
+are interested in leading the work, or suggestion template if you would like
+someone else to lead the effort. If possible, include:
     * The customer impact of the problem
     * The scope of the work required
 
 1. **Ask the group for collaboration:** Rather than immediately beginning work
-on a solution, add the issue to a meeting agenda by placing the link and the 
-person who will present the proposal
-in the ["Planned Meeting" area of the meeting
-notes](https://github.com/cncf/tag-security#meeting-times) and bring the issue up for 
-discussion at the scheduled meeting, explain it, and ask if others are interested
- in collaborating. This ensures that solutions are created with multiple 
-perspectives as well as verifies there is community interest in pursuing the
-proposal. The outcome of this conversation will be:
-    * The group agrees that this problem is appropriate scope
+on a solution, bring the issue up for discussion. The following guidance shows
+common steps, though communication often happens in different sequence. The
+key outcome is that there is opportunity for input across different channels,
+with thoughtfulness to accessibility across timezone and communication medium.
+We also encourage outreach outside of the group, when there are experts who
+might share insights (via invited presentation) or wish to get involved.
+
+   A) On slack, share the issue link and ask whether others are interested in
+   the problem and have feedback on your proposed solution or activity.
+
+   B) Choose an upcoming meeting where you or another group member who is
+   interested in working on the project is able to attend, then add the issue
+   to the meeting agenda: include a link and the name of the person who will
+   present the proposal in the "Planned Meeting" area of the
+   [meeting notes][https://github.com/cncf/tag-security#meeting-times].
+   Then at the meeting:
+   * The presenter should screen share the github issue (or ask the meeting
+   facilitator ahead of time to do so) and explain the motivation, expected
+   outcome, ideas that they have for how it might happen,
+   and ask if others have ideas or questions.
+   * After a short discussion, people should be invited to chime in on the
+   github issue and also mention of they
+   are interested in collaborating. This ensures that solutions are created
+   with multiple perspectives as well as verifies there is community interest
+   and energy to work on the proposal.
+
+   C) Discussion continues in the github issue for at least one week, usually
+   over multiple weeks or sometimes months.
+
+   The outcome of this conversation will be:
+    * Scope may be refined (or questions from the group may need follow-up
+    in order to define the scope)
     * Criteria for completion are added to the issue that include a "definition
-  of done", ideally with validation by the target audience. Also note in the
-  issue if it will be a time-bounded project with a defined deliverable or and 
-  on-going stream of work (the latter would typically be proposed only after at least one, usually multiple, projects have been completed.
+    of done", ideally with validation by the target audience. Also note in the
+    issue if it will be a time-bounded project with a defined deliverable or
+    and on-going stream of work -- the latter would typically be proposed only
+    after at least one, usually multiple, projects have been completed.
     * At least one person is recommended or nominated as a potential lead.
     * Those interested in working on the solution comment on the issue so
-      coordination may begin and set up time or expectations with others to 
+    coordination may begin and set up time or expectations with others to
     begin work.
-    * A Chair or Technical Lead agrees to act as a "sponsor", which means
-    they will take responsibility to ensure that progress is tracked and
-    that outcomes are reported to the group or propose closing the
-    issue if there is not sufficent activity to sustain the effort.
+    * A Chair or Technical Lead proposes this as a roadmap proposal or
+    agrees to act as a "sponsor."
+      * Sponsor: takes responsibility to ensure that progress
+      is tracked and that outcomes are reported to the group, including
+      proposing to close the issue if there is not sufficient activity to
+      sustain the effort.
+      * Roadmap: determine there is interest and strong roadmap alignment,
+      but that there is not enough bandwidth to be confident that this work
+      can be driven to completion.
 
-1. **Accept or close the proposal.** Accepted proposals will be assigned
-to the Sponsor and the Project or Team Lead working on the effort, with members
-interested in contributing noted in the issue, along with information about 
-expected duration, milestones, scope, and anticipated deliverables (for
-projects).  If a proposal is closed, it should note the reason and link to
-discussion minutes.
+1. **Accept or close the proposal.**
+
+   A) **Accept**: assign to the Sponsor and the Project Lead(s) working on the
+   effort, with members interested in contributing noted in the issue
+   descriptions, along with information about expected duration, milestones,
+   scope, and anticipated deliverables. An accepted
+   proposal becomes an active project (see below) and the "proposal" label
+   is removed, the "project" label is added and it is added to the backlog.
+
+   B) **Close**: a github comment on the issue should note the reason and
+    link to discussion minutes (when decision is reached at a group meeting)
+    or at least two members of the leadership team should be noted
+    in agreement (which may include the person who closes the issue).
+
+   C) **Roadmap**: the issue will remain a proposal and be placed on a
+   roadmap project board. The roadmap is reviewed quarterly.
 
 ### Active projects
 
@@ -95,4 +136,4 @@ meeting attendance as recorded in the public minutes).
 completed, a new issue and corresponding pull request should be created and
 describe the expectations, plans, and ideas for on-going work.  It should
 include historical information and guidelines for contributions and maintenance
- in the README for the project artifact's folder.  
+ in the README for the project artifact's folder.
