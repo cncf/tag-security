@@ -1,8 +1,10 @@
 ## Proposed Security Landscape Structure
-In this section of the document, we outline our proposal for the structure of the Security Landscape.
+In this section of the document, we outline our proposal for the structure of
+the Security Landscape.
 
-The bullets in **bold** are the primary categories in the Security Landscape and the bullets in _italics_ are the
-sub-categories. The remaining text is a description of each sub-category.
+The bullets in **bold** are the primary categories in the Security Landscape and
+the bullets in _italics_ are the sub-categories. The remaining text is a
+description of each sub-category.
 
 - **App definition and development**
   - _Static Code Analysis_
@@ -10,37 +12,43 @@ sub-categories. The remaining text is a description of each sub-category.
   - _Dynamic Analysis_
     - Checking application in runtime for various vulnerabilities
   - _Dependency analysis_
-    - Checking OS for vulnerabilities (updates available? Reports from https://www.us-cert.gov/ etc), image scanning
+    - Checking OS for vulnerabilities (updates available? Reports from
+      https://www.us-cert.gov/ etc), image scanning
     - Check for vulnerabilities in dependent libraries
-    - Check for maintenance of dependent projects => increased potential for vulnerabilities
+    - Check for maintenance of dependent projects => increased potential for
+      vulnerabilities
   - _Functional testing_
-    - Tools that facilitate automated security testing in pipelines;
-    eg for functional security tests of authn and authz,
-      tests of known potential weaknesses or misconfigurations
+    - Tools that facilitate automated security testing in pipelines; eg for
+      functional security tests of authn and authz, tests of known potential
+      weaknesses or misconfigurations
   - _Pipelines_
-    - Tools that ensure a secure pipeline or workflow, for example,
-    as applied to devops (CI/CD), supply chain, etc.
+    - Tools that ensure a secure pipeline or workflow, for example, as applied
+      to devops (CI/CD), supply chain, etc.
   - _Secret Management_
-    - Tools that help to manage, encrypt or distribute secrets and other sensitive information.
+    - Tools that help to manage, encrypt or distribute secrets and other
+      sensitive information.
 
 - **Identity & Access Control**
   - _Identity_
     - SPIFFE, identity providers, OpenID, LDAP, Okta
   - _Access Controls_
-    - Controls within the orchestration layer to provide minimum required access to orchestrator resources.
+    - Controls within the orchestration layer to provide minimum required access
+      to orchestrator resources.
     - Authentication / Authorization
       - OAuth, IAM
     - Privilege & Access Management
-      - Managing privileges in the platform for humans and machines, access controls, audit logging, privilege revocation,
-        etc
+      - Managing privileges in the platform for humans and machines, access
+        controls, audit logging, privilege revocation, etc
     - Network Policy & Protection
       - Firewalls, network segmentation, network policy
   - _Service access_
     - Service admittance & admission controllers
-      - Allowing new service instances to join existing services, and preventing insecure application instances from running.
+      - Allowing new service instances to join existing services, and preventing
+        insecure application instances from running.
     - Storage access
   - _Key and Certificate Management_
-    - Provisioning of access to required services for application instances, service accounts, orchestrator access to shared components, etc
+    - Provisioning of access to required services for application instances,
+      service accounts, orchestrator access to shared components, etc
     - Provisioning of SSL certs for application instances
 
 - **Privacy**
@@ -52,7 +60,8 @@ sub-categories. The remaining text is a description of each sub-category.
 
 - **Provisioning**
   - _Automation & Configuration Compliance_
-    - Compliance checkers, check platform configurations, verify private resources are not unexpectedly publicly accessible (eg S3 buckets), etc
+    - Compliance checkers, check platform configurations, verify private
+      resources are not unexpectedly publicly accessible (eg S3 buckets), etc
   - _Trusted Compute_
     - Secure container registries
     - Self-hosted package repositories

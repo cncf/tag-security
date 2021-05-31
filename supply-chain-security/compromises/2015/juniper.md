@@ -12,5 +12,5 @@ N/A
 
 ## Type of compromise
 
-It appears attackers had access to a the source code hosting infrastructure,
-but not to developer keys.
+It appears attackers had access to a the source code hosting infrastructure, but
+not to developer keys.

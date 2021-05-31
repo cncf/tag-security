@@ -1,9 +1,9 @@
 # Self-assessment
-The Self-assessment is the initial document for projects to begin thinking about the
-security of the project, determining gaps in their security, and preparing any security
-documentation for their users. This document is ideal for projects currently in the
-CNCF **sandbox** as well as projects that are looking to receive a joint review and
-currently in CNCF **incubation**.
+The Self-assessment is the initial document for projects to begin thinking about
+the security of the project, determining gaps in their security, and preparing
+any security documentation for their users. This document is ideal for projects
+currently in the CNCF **sandbox** as well as projects that are looking to
+receive a joint review and currently in CNCF **incubation**.
 
 # Self-assessment outline
 
@@ -36,12 +36,11 @@ A table at the top for quick reference information, later used for indexing.
 
 ### Security links
 
-Provide the list of links to existing security documentation for the project. You may
-use the table below as an example:
-| Doc | url |
+Provide the list of links to existing security documentation for the project.
+You may use the table below as an example: | Doc | url |
 | -- | -- |
-| Security file | https://my.security.file |
-| Default and optional configs | https://example.org/config |
+| Security file | https://my.security.file | | Default and optional configs |
+https://example.org/config |
 
 ## Overview
 
@@ -57,41 +56,42 @@ domain or problem area.
 ### Goal
 The intended goal of the projects including the security guarantees the  project
  is meant to provide (e.g., Flibble only allows parties with an authorization
-key to change data it stores).
+ key to change data it stores).
 
 ### Non-goals
 Non-goals that a reasonable reader of the project’s literature could believe may
-be in scope (e.g., Flibble does not intend to stop a party with a key from storing
-an arbitrarily large amount of data, possibly incurring financial cost or overwhelming
- the servers)
+be in scope (e.g., Flibble does not intend to stop a party with a key from
+storing an arbitrarily large amount of data, possibly incurring financial cost
+or overwhelming the servers)
 
 ## Self-assessment use
 
-This self-assessment is created by the [project] team to perform an internal analysis of the
-project's security.  It is not intended to provide a security audit of [project], or
-function as an independent assessment or attestation of [project]'s security health.
+This self-assessment is created by the [project] team to perform an internal
+analysis of the project's security.  It is not intended to provide a security
+audit of [project], or function as an independent assessment or attestation of
+[project]'s security health.
 
 This document serves to provide [project] users with an initial understanding of
-[project]'s security, where to find existing security documentation, [project] plans for
-security, and general overview of [project] security practices, both for development of
-[project] as well as security of [project].
+[project]'s security, where to find existing security documentation, [project]
+plans for security, and general overview of [project] security practices, both
+for development of [project] as well as security of [project].
 
-This document provides the CNCF TAG-Security with an initial understanding of [project]
-to assist in a joint-review, necessary for projects under incubation.  Taken
-together, this document and the joint-review serve as a cornerstone for if and when
-[project] seeks graduation and is preparing for a security audit.
+This document provides the CNCF TAG-Security with an initial understanding of
+[project] to assist in a joint-review, necessary for projects under incubation.
+Taken together, this document and the joint-review serve as a cornerstone for if
+and when [project] seeks graduation and is preparing for a security audit.
 
 ## Security functions and features
 
 * Critical.  A listing critical security components of the project with a brief
-description of their importance.  It is recommended these be used for threat modeling.
-These are considered critical design elements that make the product itself secure and
-are not configurable.  Projects are encouraged to track these as primary impact items
-for changes to the project.
-* Security Relevant.  A listing of security relevant components of the project with
-  brief description.  These are considered important to enhance the overall security of
-the project, such as deployment configurations, settings, etc.  These should also be
-included in threat modeling.
+  description of their importance.  It is recommended these be used for threat
+  modeling. These are considered critical design elements that make the product
+  itself secure and are not configurable.  Projects are encouraged to track
+  these as primary impact items for changes to the project.
+* Security Relevant.  A listing of security relevant components of the project
+  with brief description.  These are considered important to enhance the overall
+  security of the project, such as deployment configurations, settings, etc.
+  These should also be included in threat modeling.
 
 ## Project compliance
 
@@ -101,10 +101,10 @@ included in threat modeling.
 ## Secure development practices
 
 * Development Pipeline.  A description of the testing and review processes that
-  the software undergoes as it is developed and built. Be sure to include specific
-information such as if contributors are required to sign commits, if any container
-images immutable and signed, how many reviewers before merging, any automated checks for
-vulnerabilities, etc.
+  the software undergoes as it is developed and built. Be sure to include
+  specific information such as if contributors are required to sign commits, if
+  any container images immutable and signed, how many reviewers before merging,
+  any automated checks for vulnerabilities, etc.
 * Communication Channels. Reference where you document how to reach your team or
   describe in corresponding section.
   * Internal. How do team members communicate with each other?
@@ -113,33 +113,33 @@ vulnerabilities, etc.
     mailing list)
 * Ecosystem. How does your software fit into the cloud native ecosystem?  (e.g.
   Flibber is integrated with both Flocker and Noodles which covers
-virtualization for 80% of cloud users. So, our small number of "users" actually
-represents very wide usage across the ecosystem since every virtual instance uses
-Flibber encryption by default.)
+  virtualization for 80% of cloud users. So, our small number of "users"
+  actually represents very wide usage across the ecosystem since every virtual
+  instance uses Flibber encryption by default.)
 
 ## Security issue resolution
 
 * Responsible Disclosures Process. A outline of the project's responsible
   disclosures process should suspected security issues, incidents, or
-vulnerabilities be discovered both external and internal to the project. The
-outline should discuss communication methods/strategies.
+  vulnerabilities be discovered both external and internal to the project. The
+  outline should discuss communication methods/strategies.
   * Vulnerability Response Process. Who is responsible for responding to a
     report. What is the reporting process? How would you respond?
 * Incident Response. A description of the defined procedures for triage,
   confirmation, notification of vulnerability or security incident, and
-patching/update availability.
+  patching/update availability.
 
 ## Appendix
 
 * Known Issues Over Time. List or summarize statistics of past vulnerabilities
   with links. If none have been reported, provide data, if any, about your track
-record in catching issues in code review or automated testing.
-* [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/).
-  Best Practices. A brief discussion of where the project is at
-  with respect to CII best practices and what it would need to
-  achieve the badge.
+  record in catching issues in code review or automated testing.
+* [CII Best
+  Practices](https://www.coreinfrastructure.org/programs/best-practices-program/).
+  Best Practices. A brief discussion of where the project is at with respect to
+  CII best practices and what it would need to achieve the badge.
 * Case Studies. Provide context for reviewers by detailing 2-3 scenarios of
   real-world use cases.
 * Related Projects / Vendors. Reflect on times prospective users have asked
   about the differences between your project and projectX. Reviewers will have
-the same question.
+  the same question.

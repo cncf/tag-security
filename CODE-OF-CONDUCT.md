@@ -27,12 +27,10 @@ In keeping with this commitment, we offer the following guidelines:
      * Participate in online forums to be inclusive of those who cannot attend
        meetings.
    * Work performed within this group, either finalized or in draft, is to be
-     used in accordance with the group [Mission and
-     Charter][charter],
-     the open source license, and to be used for the equal benefit of all
-     members of the community.  Further information on use of work may be found
-     in [Security Reviews:
-     Outcome][review-outcome]
+     used in accordance with the group [Mission and Charter][charter], the open
+     source license, and to be used for the equal benefit of all members of the
+     community.  Further information on use of work may be found in [Security
+     Reviews: Outcome][review-outcome]
 
 # Inspiration
 
@@ -44,4 +42,5 @@ The above guidelines are inspired by and borrowed from other communities:
 
 [cncf-coc]: https://github.com/cncf/foundation/blob/master/code-of-conduct.md
 [charter]: https://github.com/cncf/tag-security/blob/main/governance/charter.md
-[review-outcome]: https://github.com/cncf/tag-security/tree/main/assessments#outcome
+[review-outcome]:
+https://github.com/cncf/tag-security/tree/main/assessments#outcome

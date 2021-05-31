@@ -1,6 +1,7 @@
 
 
-<img src="https://github.com/cncf/artwork/blob/master/other/tag-security/horizontal/color/tag-security-horizontal-color.svg">
+<img
+src="https://github.com/cncf/artwork/blob/master/other/tag-security/horizontal/color/tag-security-horizontal-color.svg">
 
 # CNCF Security Technical Advisory Group
 
@@ -37,24 +38,25 @@ decisions are reflected in deployed software.
 We envision that there could exist an ecosystem of tools that can simplify the
 experience of cloud native operators, administrators and developers, including:
 1. System security architecture that understands and accommodates the ever
-growing heterogeneity of systems and provides a framework to protect resources
-and data while servicing their users.
+   growing heterogeneity of systems and provides a framework to protect
+   resources and data while servicing their users.
 2. Common vocabulary and open source libraries that make it easy for developers
-to create and deploy apps that meet system security requirements.
+   to create and deploy apps that meet system security requirements.
 3. Common libraries and protocols that enable people to reason about the
-security of the system, such as auditing and explainability features.
+   security of the system, such as auditing and explainability features.
 
 # Governance
 
-[STAG charter](governance/charter.md) outlines the scope  of our group activities,
-as part of our [governance process](governance) which details how we work.
+[STAG charter](governance/charter.md) outlines the scope  of our group
+activities, as part of our [governance process](governance) which details how we
+work.
 
 ## Communications
 
 Anyone is welcome to join our open discussions of STAG projects and share news
-related to the group's mission and charter. Much of the work of the group happens
-outside of Security TAG meetings and we encourage project teams to share progress
-updates or post questions in these channels:
+related to the group's mission and charter. Much of the work of the group
+happens outside of Security TAG meetings and we encourage project teams to share
+progress updates or post questions in these channels:
 
 
 * [Email list](https://lists.cncf.io/g/cncf-tag-security)
@@ -62,23 +64,27 @@ updates or post questions in these channels:
 
 ### Slack governance
 
-Refer to the [slack governance document](slack.md) for details on slack channels and posting
-to the channels.
+Refer to the [slack governance document](slack.md) for details on slack channels
+and posting to the channels.
 
 ## Meeting times
 
 Group meeting times are listed below:
 
-* US:   Weekly on Wednesdays at 10:00am GMT-7 (see your timezone [here](https://time.is/compare/1000_27_Jan_2021_in_PT))
-* APAC: Bi-weekly on Tuesdays at 1:00pm GMT+11 (see your timezone [here](https://time.is/compare/1300_26_Jan_2021_in_AEDT))
+* US:   Weekly on Wednesdays at 10:00am GMT-7 (see your timezone
+  [here](https://time.is/compare/1000_27_Jan_2021_in_PT))
+* APAC: Bi-weekly on Tuesdays at 1:00pm GMT+11 (see your timezone
+  [here](https://time.is/compare/1300_26_Jan_2021_in_AEDT))
 
 See the  [CNCF Calendar](https://www.cncf.io/calendar/) for calendar invites.
 
-[Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
+[Meeting minutes and
+agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
 
 ### Zoom Details
 
-[Meeting Link: zoom.us/my/cncftagsecurity (Passcode: 77777)](https://zoom.us/j/7375677271?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
+[Meeting Link: zoom.us/my/cncftagsecurity (Passcode:
+77777)](https://zoom.us/j/7375677271?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
 
 One tap mobile:
 * +16465588656,,7375677271# US (New York)
@@ -97,8 +103,9 @@ Meeting ID: 737 567 7271
 ## Gatherings
 
 Please let us know if you are going and if you are interested in attending (or
-helping to organize!) a gathering. Create a [github issue](https://github.com/cncf/tag-security/issues/new) for an event
-and add to list below:
+helping to organize!) a gathering. Create a [github
+issue](https://github.com/cncf/tag-security/issues/new) for an event and add to
+list below:
 
 
 * KubeCon + CloudNativeCon, NA October 12-15 2021
@@ -107,36 +114,46 @@ and add to list below:
 
 ## New members
 
-If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and submit a PR to add yourself to the [members list](#stag-members).
+If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
+submit a PR to add yourself to the [members list](#stag-members).
 
 ## Related groups
 
-* [Kubernetes Policy Working Group](https://github.com/kubernetes/community/tree/master/wg-policy)
-* [Kubernetes TAG-Auth](https://github.com/kubernetes/community/tree/master/tag-auth)
+* [Kubernetes Policy Working
+  Group](https://github.com/kubernetes/community/tree/master/wg-policy)
+* [Kubernetes
+  TAG-Auth](https://github.com/kubernetes/community/tree/master/tag-auth)
 * [NIST Big Data WG](https://bigdatawg.nist.gov/)
 
 ## History
 
-* TAG-Security - renamed STAG ([TOC Issue #549](https://github.com/cncf/toc/issues/549))
+* TAG-Security - renamed STAG ([TOC Issue
+  #549](https://github.com/cncf/toc/issues/549))
 * SAFE WG - renamed to CNCF Security SIG
-* [(Proposed) CNCF Policy Working Group](/policy-wg-merging.md) - Merged into SAFE WG
+* [(Proposed) CNCF Policy Working Group](/policy-wg-merging.md) - Merged into
+  SAFE WG
 
 ## Members
 
 ### STAG Chairs
-* Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), Apple [Chair - term: 9/28/2020 - 9/27/2022]
-* Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 6/3/2019 - 6/3/2021]
-* Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 6/3/2019 - 6/3/2021]
+* Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), Apple [Chair -
+  term: 9/28/2020 - 9/27/2022]
+* Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term:
+  6/3/2019 - 6/3/2021]
+* Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair
+  - term: 6/3/2019 - 6/3/2021]
 
 ### Tech Leads
 * Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
-* Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
+* Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York
+  University
 * Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), Styra
 * Andres Vega ([@anvega](https://github.com/anvega)), VMWare
 * Aradhana Chetal ([@achetal01](https://github.com/achetal01)), TIAA
 
 ### STAG Chairs Emeritus
-* Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 9/3/2020]
+* Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019
+  - 9/3/2020]
 
 ### On-going projects
 
@@ -144,8 +161,9 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 
 Policy is an essential component of a secure system.
 
-[Bi-weekly meetings](https://docs.google.com/document/d/1ihFfEfgViKlUMbY2NKxaJzBkgHh-Phk5hqKTzK-NEEs/edit?usp=sharing) at 3:00pm PT
-focus on policy concerns and initiatives.
+[Bi-weekly
+meetings](https://docs.google.com/document/d/1ihFfEfgViKlUMbY2NKxaJzBkgHh-Phk5hqKTzK-NEEs/edit?usp=sharing)
+at 3:00pm PT focus on policy concerns and initiatives.
 
 Co-leads
 
@@ -156,9 +174,9 @@ Co-chair representative: @pragashj
 
 #### Security reviews
 
-[Security reviews](./assessments) are a collaborative process for the
-benefit of cloud native projects and prospective users by creating a consistent
-overview of the project and its risk profile.
+[Security reviews](./assessments) are a collaborative process for the benefit of
+cloud native projects and prospective users by creating a consistent overview of
+the project and its risk profile.
 
 Facilitator: Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)),
 New York University
@@ -168,7 +186,9 @@ Co-chair representative: @ultrasaurus
 
 
 ### STAG members
-Membership governance can be viewed [here](https://github.com/cncf/tag-security/blob/main/governance/roles.md#role-of-members). If you are new, check out the [New Members Page](NEWMEMBERS.md).
+Membership governance can be viewed
+[here](https://github.com/cncf/tag-security/blob/main/governance/roles.md#role-of-members).
+If you are new, check out the [New Members Page](NEWMEMBERS.md).
 <details><summary>Click to view list</summary>
 
 
@@ -180,7 +200,8 @@ Membership governance can be viewed [here](https://github.com/cncf/tag-security/
 * Geri Jennings ([@izgeri](https://github.com/izgeri)), CyberArk
 * Jason Melo ([@jasonmelo](https://github.com/jasonmelo)), NearForm
 * Torin Sandall ([@tsandall](https://github.com/tsandall)), OPA
-* Sree Tummidi ([@sreetummidi](https://github.com/sreetummidi)), Pivotal [Cloud Foundry Project Lead]
+* Sree Tummidi ([@sreetummidi](https://github.com/sreetummidi)), Pivotal [Cloud
+  Foundry Project Lead]
 * Christian Kemper ([@ckemper67](https://github.com/ckemper67)), Google
 * Ray Colline ([@rcolline](https://github.com/rcolline)), Google
 * Doug Davis ([@duglin](https://github.com/duglin)), IBM
@@ -204,11 +225,14 @@ Membership governance can be viewed [here](https://github.com/cncf/tag-security/
 * Alban Crequy ([@alban](https://github.com/alban)), Kinvolk
 * Michael Schubert ([@schu](https://github.com/schu)), Kinvolk
 * Andrei Manea ([@andrei_821](https://github.com/andrei821)), CloudHero
-* Santiago Torres-Arias ([@SantiagoTorres](https://github.com/SantiagoTorres)), New York University
+* Santiago Torres-Arias ([@SantiagoTorres](https://github.com/SantiagoTorres)),
+  New York University
 * Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
 * Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), OPA
-* Lorenzo Fontana ([@fntlnz](https://github.com/fntlnz)), Sysdig [Falco Maintainer]
-* Leonardo Di Donato ([@leodido](https://github.com/leodido)), Sysdig [Falco Maintainer]
+* Lorenzo Fontana ([@fntlnz](https://github.com/fntlnz)), Sysdig [Falco
+  Maintainer]
+* Leonardo Di Donato ([@leodido](https://github.com/leodido)), Sysdig [Falco
+  Maintainer]
 * Daniel Iziourov ([@danmx](https://github.com/danmx)), Adevinta
 * Michael Hausenblas ([@mhausenblas](https://github.com/mhausenblas), AWS
 * Zach Arnold ([@zparnold](https://github.com/zparnold)), Ygrene Energy Fund
@@ -216,57 +240,73 @@ Membership governance can be viewed [here](https://github.com/cncf/tag-security/
 * Simarpreet Singh ([@simar7](https://github.com/simar7))
 * Michael Ducy ([@mfdii](https://github.com/mfdii))
 * Roger Klorese ([@qnetter](https://github.com/qnetter)), SUSE
-* John Menerick ([@cloudsriseup](https://github.com/cloudsriseup)), Ford Autonomic
+* John Menerick ([@cloudsriseup](https://github.com/cloudsriseup)), Ford
+  Autonomic
 * Peter Benjamin ([@pbnj](https://github.com/pbnj)), Norton LifeLock
 * Emily Fox([@TheFoxAtWork](https://github.com/TheFoxAtWork)), Apple
 * Carlos Villavicencio ([@solrac901](https://github.com/solrac901)), Intel
 * Gareth Rushgrove ([@garethr](https://github.com/garethr)), Snyk
 * Martin Vrachev ([@MVrachev](https://github.com/MVrachev)), VMware
 * Ricardo Aravena ([@raravena80](https://github.com/raravena80)), Rakuten
-* Lakshmi Manohar Velicheti ([@manohar9999](https://github.com/manohar9999)), Shape Security
+* Lakshmi Manohar Velicheti ([@manohar9999](https://github.com/manohar9999)),
+  Shape Security
 * Andres Vega ([@anvega](https://github.com/anvega)), Scytale.io
 * Cameron Seader ([@cseader](https://github.com/cseader)), SUSE
 * Robert Ficcaglia ([@rficcaglia](https://github.com/rficcaglia)), Policy WG
 * Matthew Giassa ([@iaxes](https://github.com/IAXES))
 * Tabitha Sable ([@tabbysable](https://github.com/tabbysable))
 * Steven Hadfield ([@steven-hadfield](https://github.com/steven-hadfield)), FICO
-* Payam Tarverdyan Chychi ([@unclepieman](https://github.com/unclepieman)), Infoblox
+* Payam Tarverdyan Chychi ([@unclepieman](https://github.com/unclepieman)),
+  Infoblox
 * Yeeling Lam ([@yeelinglam](https://github.com/yeelinglam)), AT&T
-* Wayne Haber ([@whaber github](https://github.com/whaber) / [@whaber gitlab](https://gitlab.com/whaber)), GitLab
-* Trishank Karthik Kuppusamy [@trishankatdatadog](https://github.com/trishankatdatadog), CNAB/Datadog/Notary-v2/TUF/in-toto
-* Vinay Venkataraghavan ([@vinayvenkat](https://github.com/vinayvenkat), Prisma Cloud (PANW)
+* Wayne Haber ([@whaber github](https://github.com/whaber) / [@whaber
+  gitlab](https://gitlab.com/whaber)), GitLab
+* Trishank Karthik Kuppusamy
+  [@trishankatdatadog](https://github.com/trishankatdatadog),
+  CNAB/Datadog/Notary-v2/TUF/in-toto
+* Vinay Venkataraghavan ([@vinayvenkat](https://github.com/vinayvenkat), Prisma
+  Cloud (PANW)
 * Magno Logan ([@magnologan](https://github.com/magnologan/)), Trend Micro
 * Itay Shakury ([@itaysk](https://github.com/itaysk)), Aqua Security
 * Gadi Naor ([@gadinaor](https://github.com/gadinaor)), Alcide
 * Ron Vider ([@RonVider](https://github.com/RonVider)), Neo Security
-* Marco Lancini ([@marco-lancini](https://github.com/marco-lancini)), Thought Machine
-* Lewis Denham-Parry ([@denhamparry](https://github.com/denhamparry)), ControlPlane
-* John Hillegass ([@JohnHillegass](https://github.com/JohnHillegass)), Capital One
+* Marco Lancini ([@marco-lancini](https://github.com/marco-lancini)), Thought
+  Machine
+* Lewis Denham-Parry ([@denhamparry](https://github.com/denhamparry)),
+  ControlPlane
+* John Hillegass ([@JohnHillegass](https://github.com/JohnHillegass)), Capital
+  One
 * Chris Hughes ([@chughes216](https://github.com/chughes216)), Oteemo
 * Aradhna Chetal ([@achetal01](https://github.com/achetal01)), TIAA
 * Jon Zeolla ([@jonzeolla](https://github.com/jonzeolla)), Seiso
 * Diego Comas ([@dcomas](https://github.com/dcomas)), MessageBird
 * Adith Sudhakar ([@asudhak](https://github.com/asudhak)), VMware
-* Muhammad Yuga Nugraha ([@myugan](https://github.com/myugan)), Practical DevSecOps
+* Muhammad Yuga Nugraha ([@myugan](https://github.com/myugan)), Practical
+  DevSecOps
 * John Kinsella ([@jlk](https://github.com/jlk)), Accurics
 * Matt Jarvis ([@mattj-io](https://github.com/mattj-io)), Snyk
 * Or Azarzar ([@azarzar15](https://github.com/azarzar15)), Lightspin
 * Alex Floyd Marshall ([@apmarshall](https://github.com/apmarshall))
 * Alok Raj ([@ak-secops](https://github.com/ak-secops)), XenonStack
 * Brad McCoy ([@bradmccoydev](https://github.com/bradmccoydev)), Search365
-* Abhishek Singh ([@araalinetworks](https://github.com/araalinetworks)), Araali Networks
+* Abhishek Singh ([@araalinetworks](https://github.com/araalinetworks)), Araali
+  Networks
 * Aeva Black ([@AevaOnline](https://github.com/AevaOnline)), Microsoft
-* Frederick Fernando ([@freddyfernando](https://github.com/freddyfernando)), InfraCloud
+* Frederick Fernando ([@freddyfernando](https://github.com/freddyfernando)),
+  InfraCloud
 * Ragashree M C ([@ragashreeshekar](https://github.com/ragashreeshekar)), Nokia
 * Andreas Spanner ([@aspanner](https://github.com/aspanner)), Red Hat
 * Eli Nesterov ([@elinesterov](https://github.com/elinesterov)), ByteDance
-* Matthew Flannery [@matthewflannery](https://github.com/matthewflannery)), Accelera
-* Frederick Kautz ([@fkautz](https://github.com/fkautz)), Network Service Mesh Maintainer
-* Sunny Patel ([@sunnythepatel](https://github.com/sunnythepatel)), Monash eResearch Centre, Melbourne Australia
+* Matthew Flannery [@matthewflannery](https://github.com/matthewflannery)),
+  Accelera
+* Frederick Kautz ([@fkautz](https://github.com/fkautz)), Network Service Mesh
+  Maintainer
+* Sunny Patel ([@sunnythepatel](https://github.com/sunnythepatel)), Monash
+  eResearch Centre, Melbourne Australia
 * Jeff Rowell ([@jeff-rowell](https://github.com/Jeff-Rowell))
 * Daniel Tobin ([@dant24](https://github.com/dant24)), Cyral
 * Cole Kennedy ([@colek42](https://github.com/colek42)), BoxBoat
-</details>
+  </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
@@ -275,8 +315,14 @@ JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## CNCF STAG reviews
 
-As part of the [CNCF project proposal process](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc), projects should create a new [security review issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name) with a [self-assessment](https://github.com/cncf/tag-security/blob/main/assessments/guide/self-assessment.md).
+As part of the [CNCF project proposal
+process](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc),
+projects should create a new [security review
+issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
+with a
+[self-assessment](https://github.com/cncf/tag-security/blob/main/assessments/guide/self-assessment.md).
 
 ## Past events and meetings
 
-For more details on past events and meetings, please see our [past events page](past-events.md)
+For more details on past events and meetings, please see our [past events
+page](past-events.md)

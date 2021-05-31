@@ -1,10 +1,10 @@
 # Approach to the landscape
 
 ## Goal
-Our goal is the help organizations practice better security by providing a
-map to cloud-native tools that require security considerations at each stage
-of the software development lifecycle (SDLC), as well as tools that are focused
-on specific cross-cutting security concerns.
+Our goal is the help organizations practice better security by providing a map
+to cloud-native tools that require security considerations at each stage of the
+software development lifecycle (SDLC), as well as tools that are focused on
+specific cross-cutting security concerns.
 
 ## How does this relate to the CNCF landscape?
 
@@ -25,7 +25,8 @@ In particular, it contains the following categories:
 
 In addition to the categories above, there is a separate “Serverless” category.
 
-Among these categories there are few sub-categories with a security focus. Notably there are:
+Among these categories there are few sub-categories with a security focus.
+Notably there are:
 
 - Provisioning - Security and Compliance
 - Provisioning - Key Management
@@ -55,10 +56,9 @@ We do not yet have plans for precisely how projects will be mapped into the
 Security Landscape. If we were to follow the model of the current CNCF landscape
 we would require each project to be placed in exactly one security landscape
 sub-category, but this forces tools with multiple common uses to artificially
-choose a “most common” use case as its sub-category. A possible alternative
-will be to define a list of key features, map the key features into the
-landscape sub-categories, and then list the key features of each tool.
-In this flow, individual tools may appear in multiple sub-categories.
-Deciding precisely how to map tools into the security landscape sub-categories
-is future work and will occur after gathering feedback from the community on the
-preferred solution.
+choose a “most common” use case as its sub-category. A possible alternative will
+be to define a list of key features, map the key features into the landscape
+sub-categories, and then list the key features of each tool. In this flow,
+individual tools may appear in multiple sub-categories. Deciding precisely how
+to map tools into the security landscape sub-categories is future work and will
+occur after gathering feedback from the community on the preferred solution.

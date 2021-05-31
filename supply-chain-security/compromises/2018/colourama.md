@@ -1,11 +1,11 @@
 # Colourama
 
 Colourama used typosquatting to register a package that had similar name to
-Colorama, one of is one of the top 20 most downloaded legitimate modules
-in the PyPI registry with 1 million downloads on a daily basis. The colourama
-package contains a malware which targets Windows machines to implement a
-cryptocurrency clipboard hijacker. As a result, was able to divert any
-Bitcoin payment from victim machines to the attacker's bitcoin address.
+Colorama, one of is one of the top 20 most downloaded legitimate modules in the
+PyPI registry with 1 million downloads on a daily basis. The colourama package
+contains a malware which targets Windows machines to implement a cryptocurrency
+clipboard hijacker. As a result, was able to divert any Bitcoin payment from
+victim machines to the attacker's bitcoin address.
 
 ## Impact
 

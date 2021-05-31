@@ -1,9 +1,9 @@
 # Keydnap
 
 The download server of the torrent client Transmission was hacked and a
-malicious version of the client was uploaded. The malicious copy of the
-software was signed using a legitimate certificate (which appears to be stolen
-from the Apple developer program).
+malicious version of the client was uploaded. The malicious copy of the software
+was signed using a legitimate certificate (which appears to be stolen from the
+Apple developer program).
 
 ## Impact
 

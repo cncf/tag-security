@@ -7,8 +7,8 @@ if they created new wallets using this malicious software.
 
 ## Impact
 
-Users who downloaded the compromised wallet during a window of 4.5 days may
-have their private keys compromises.
+Users who downloaded the compromised wallet during a window of 4.5 days may have
+their private keys compromises.
 
 ## Type of compromise
 

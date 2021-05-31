@@ -22,14 +22,14 @@ In-toto ensures the integrity of the supply chain itself, specifically:
 
 _Maturity_
 * 1 public company case study: [Datadog Agent full
-pipeline](https://www.datadoghq.com/blog/engineering/secure-publication-of-datadog-agent-integrations-with-tuf-and-in-toto/)
+  pipeline](https://www.datadoghq.com/blog/engineering/secure-publication-of-datadog-agent-integrations-with-tuf-and-in-toto/)
 * Multiple integrations: [Debian apt
-get](https://github.com/in-toto/apt-transport-in-toto) ([3 Debian
-contributors](https://salsa.debian.org/reproducible-builds/debian-rebuilder-setup/graphs/master)),
-[Jenkins plug-in](https://plugins.jenkins.io/in-toto) ([+1
-contributor](https://github.com/jenkinsci/in-toto-plugin/graphs/contributors)),
-[K8s admission controller](https://github.com/in-toto/in-toto-webhook) ([+1
-contributor](https://github.com/in-toto/in-toto-webhook/graphs/contributors))
+  get](https://github.com/in-toto/apt-transport-in-toto) ([3 Debian
+  contributors](https://salsa.debian.org/reproducible-builds/debian-rebuilder-setup/graphs/master)),
+  [Jenkins plug-in](https://plugins.jenkins.io/in-toto) ([+1
+  contributor](https://github.com/jenkinsci/in-toto-plugin/graphs/contributors)),
+  [K8s admission controller](https://github.com/in-toto/in-toto-webhook) ([+1
+  contributor](https://github.com/in-toto/in-toto-webhook/graphs/contributors))
 
 
 ## Summary
@@ -57,8 +57,8 @@ they will need to adopt or formalize effective policies and procedures.
 * Identify UX Researcher to engage 2-3 companies or projects to evaluate the
   time and effort required to integrate in-toto and recommend improvements
 * TAG-Security collaboration to document common supply chain threats and
-  complementary solutions that would cover security of all inputs
-  (see [issues#224](https://github.com/cncf/tag-security/issues/224))
+  complementary solutions that would cover security of all inputs (see
+  [issues#224](https://github.com/cncf/tag-security/issues/224))
 
 ### Project recommendations
 
@@ -76,16 +76,15 @@ they will need to adopt or formalize effective policies and procedures.
     & [roadmap](https://github.com/in-toto/in-toto/blob/develop/ROADMAP.md).
     Just a few open items, listed below:
     * Projects MUST monitor or periodically check their external dependencies
-    (including convenience copies) to detect known vulnerabilities, and fix
-    exploitable vulnerabilities or verify them as unexploitable.
-    * The project MUST implement secure design principles, where
-    applicable.
-    * The project MUST provide an assurance case that
-    justifies why its security requirements are met. The assurance case MUST
-    include: a description of the threat model, clear identification of trust
-    boundaries, an argument that secure design principles have been applied, and
-    an argument that common implementation security weaknesses have been
-    countered. (This assessment should be able to provide reference, if needed.)
+      (including convenience copies) to detect known vulnerabilities, and fix
+      exploitable vulnerabilities or verify them as unexploitable.
+    * The project MUST implement secure design principles, where applicable.
+    * The project MUST provide an assurance case that justifies why its security
+      requirements are met. The assurance case MUST include: a description of
+      the threat model, clear identification of trust boundaries, an argument
+      that secure design principles have been applied, and an argument that
+      common implementation security weaknesses have been countered. (This
+      assessment should be able to provide reference, if needed.)
 
 
 ### Additional recommendations

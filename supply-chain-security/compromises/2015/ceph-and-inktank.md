@@ -1,7 +1,7 @@
 # Ceph and Inktank
 
-Malicious applications on RedHat servers were signed by a compromised key on
-the Ceph infrastructure and it's public-facing counterpart Inktank
+Malicious applications on RedHat servers were signed by a compromised key on the
+Ceph infrastructure and it's public-facing counterpart Inktank
 
 ## Impact
 

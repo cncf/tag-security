@@ -23,9 +23,9 @@ Anyone interested in contributing should join the mailing list and other
 
 ### Reviewing Pull Requests
 
-If you are new to the group, reviewing pull requests and commenting on issues
-is a great way to get involved!  We strongly encourage and support all our
-members to participate in anyway they can.
+If you are new to the group, reviewing pull requests and commenting on issues is
+a great way to get involved!  We strongly encourage and support all our members
+to participate in anyway they can.
 
 Except for urgent or very small grammar or spelling fixes, such as simple
 changes discussed below, we leave pull requests open for at least 24 hours, so

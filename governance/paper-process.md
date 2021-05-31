@@ -54,10 +54,13 @@ content:
 * What positions do they hold?
 * Why are we writing this paper?
 * What problem are we intending to resolve?
-* What assumptions are we making about the audience or the expected content of the paper?
-    * Note - these are documented then in the "Introduction > Assumptions" section of the paper
+* What assumptions are we making about the audience or the expected content of
+  the paper?
+    * Note - these are documented then in the "Introduction > Assumptions"
+      section of the paper
 * What are our Goals and Non-Goals?
-    * Note - these are documented then in the "Introduction > Scope > Goals" and "Introduction > Scope > Non-Goals"
+    * Note - these are documented then in the "Introduction > Scope > Goals" and
+      "Introduction > Scope > Non-Goals"
 * Is the scope in the issue still representative of what we intend to cover?
 
 ### Tasking assignment
@@ -72,17 +75,23 @@ Once task assignment is complete, contributors can begin content rough-in.
 ### Content rough-in
 
 Assignees can provide content rough-in in a variety of ways.  They may provide
-raw content in the form of phrases, disjointed paragraphs, bullets on the
-topic, or they draft content in the form of completed paragraphs.  If leveraging
-draft content, placing this content in quotes helps other reviewers know it is
+raw content in the form of phrases, disjointed paragraphs, bullets on the topic,
+or they draft content in the form of completed paragraphs.  If leveraging draft
+content, placing this content in quotes helps other reviewers know it is
 'near-complete' and can review it as a wholistic section.
 #### Opinions
 
-There may be situations where multiple differing views on the subject matter or controls implementation are expressed.  If these cannot be collaboratively resolved it is the duty of the authors to capture the different views and leave the decision up to the reader.
+There may be situations where multiple differing views on the subject matter or
+controls implementation are expressed.  If these cannot be collaboratively
+resolved it is the duty of the authors to capture the different views and leave
+the decision up to the reader.
 
 #### References
 
-It is important that any references used to generate paper content be cited appropriate through footnotes and a references section as appropriate.  This ensures the reader may not only dig deep into a specific reference area but also provides source content and is a matter of good practice.
+It is important that any references used to generate paper content be cited
+appropriate through footnotes and a references section as appropriate.  This
+ensures the reader may not only dig deep into a specific reference area but also
+provides source content and is a matter of good practice.
 ### Collaborative review
 
 Contributors now review all content roughed-in and transition raw content into
@@ -104,11 +113,13 @@ comments, and other discussions should be closed out and finalized at this time.
 No more than three contributing individuals should be assigned for narrative
 voice. The narrative voice is a semi-final pass of the paper to ensure it reads
 as a single, unified voice. It should ensure:
-* the language origin is consistent throughout the document (lang_en or lang_us),
+* the language origin is consistent throughout the document (lang_en or
+  lang_us),
 * phrasing is similar (caddy corner not mixed in with kitty corner),
 * acronyms are spelled out at their first use and then abbrieviated later,
 * footnotes and citations are consistent and not direct hyperlinks in the text
-* vague terms are defined in a glossary or otherwise cited to the cloud native security lexicon in the repo
+* vague terms are defined in a glossary or otherwise cited to the cloud native
+  security lexicon in the repo
 
 ### Final group review
 
@@ -136,10 +147,10 @@ meeting and decisively resolved.
 
 Decisive resolution is the practice by which the group attempts to immediately
 resolve the comment either as a won't do, out of initial scope, document
-options, or accept as is.  The intent to expediently discuss (no more than
-two minutes), identify the remedy, and apply it.  This is done both in the
-interest of time but also in an effort to minimize gold-plating (perfection is
-the enemy of complete).
+options, or accept as is.  The intent to expediently discuss (no more than two
+minutes), identify the remedy, and apply it.  This is done both in the interest
+of time but also in an effort to minimize gold-plating (perfection is the enemy
+of complete).
 
 ### CNCF publishing engagement
 
@@ -159,11 +170,36 @@ in alignment with the original intent:
 
 * Title
 * About - covers what the paper was about, a brief summary
-* Updates to the paper - "intended to be a living document created and maintained for the community, by its members."
-  * Markdown -  "maintained in markdown and all updates will be made in markdown."
-  * Contributing updates - "All members of the community are welcome to contribute updates.  We ask potential contributors to refer to the original design decisions, listed below, as guidance when determining the content of their updates.  It is highly recommended that you seek peer review for your updates beyond that of the Technical Leads and Co-Chairs of the TAG."
-  * Versioning and publishing - "It is expected that many minor updates will occur, corrections to grammar, spelling, clarification in language, translations, etc. When these occur they are considered minor changes to the overall content and will not warrant the regeneration of the PDF.  When significant changes to the intent, content, or numerous minor changes occur, the contributors will assess and determine if a new major version of the PDF needs published. When this decision is made, the markdown content will be converted to text document and sent to the CNCF technical writers to create the PDF. The PDF will then be published back into the repository annotating the new version, updating the links in the README.md accordingly.  Minor updates to the markdown shall receive a minor version bump indicated in the Metadata table of the document and recorded as WIP. When enough significant changes have been recorded, the markdown will be placed "In Review" (via PR) and solicited to the CNCF Security TAG and TOC mailing list for review, at a minimum.  Upon completion of review, the Security TAG's TOC Liaison shall provide final approval on the PR. At which point the markdown state will be changed to "Approved" and merged."
-* Original design decisions - this is important as it is intended to enable the original contributors to not be gateways to content updates and allows both reviewers and future contributors to understand a create content around centralized guidance.
+* Updates to the paper - "intended to be a living document created and
+  maintained for the community, by its members."
+  * Markdown -  "maintained in markdown and all updates will be made in
+    markdown."
+  * Contributing updates - "All members of the community are welcome to
+    contribute updates.  We ask potential contributors to refer to the original
+    design decisions, listed below, as guidance when determining the content of
+    their updates.  It is highly recommended that you seek peer review for your
+    updates beyond that of the Technical Leads and Co-Chairs of the TAG."
+  * Versioning and publishing - "It is expected that many minor updates will
+    occur, corrections to grammar, spelling, clarification in language,
+    translations, etc. When these occur they are considered minor changes to the
+    overall content and will not warrant the regeneration of the PDF.  When
+    significant changes to the intent, content, or numerous minor changes occur,
+    the contributors will assess and determine if a new major version of the PDF
+    needs published. When this decision is made, the markdown content will be
+    converted to text document and sent to the CNCF technical writers to create
+    the PDF. The PDF will then be published back into the repository annotating
+    the new version, updating the links in the README.md accordingly.  Minor
+    updates to the markdown shall receive a minor version bump indicated in the
+    Metadata table of the document and recorded as WIP. When enough significant
+    changes have been recorded, the markdown will be placed "In Review" (via PR)
+    and solicited to the CNCF Security TAG and TOC mailing list for review, at a
+    minimum.  Upon completion of review, the Security TAG's TOC Liaison shall
+    provide final approval on the PR. At which point the markdown state will be
+    changed to "Approved" and merged."
+* Original design decisions - this is important as it is intended to enable the
+  original contributors to not be gateways to content updates and allows both
+  reviewers and future contributors to understand a create content around
+  centralized guidance.
 * Links - include links to the files in the repo
 
 ### Blog publishing and coordination

@@ -6,8 +6,8 @@ delivered to the users by the legitimate CCleaner download servers.
 
 As the affected version of CCleaner was signed by a valid signature, there are
 some possibilities. The signing process of the development, build or packaging
-step might have being compromised. Also it could be a malicious insertion in
-any step right before the product of that step was signed.
+step might have being compromised. Also it could be a malicious insertion in any
+step right before the product of that step was signed.
 
 ## Effect
 

@@ -35,13 +35,14 @@ coordinate the decision-making process.
 
 # Intake priorities
 
-The following priorities are high-level guidance for how to coordinate the
-work of the group when there are multiple projects that are ready for an
-assessment, exceeding the bandwidth of the group:
+The following priorities are high-level guidance for how to coordinate the work
+of the group when there are multiple projects that are ready for an assessment,
+exceeding the bandwidth of the group:
 
 1. TOC requests prioritization of a specific project.
     * TOC request will not interrupt an ongoing assessment.
-    * TOC requests may jump the prioritized queue of projects waiting for an assessment.
+    * TOC requests may jump the prioritized queue of projects waiting for an
+      assessment.
 2. Projects that have received a CNCF Security Audit will be reviewed within a
    year of audit. (For future audits, the security assessment will be a
    pre-condition to the audit.)
@@ -57,36 +58,39 @@ charter.  In all cases, the priority queue will be maintained transparently as
 described below, along with communication via regular chair-liaison meetings and
 TAG-Security reports at TOC meetings.
 
-A project may be accepted into the assessment queue, either by the Security Assessment
-Facilitator with concurrence from one (1) co-chair, or by two (2) co-chairs.  This concurrence
-is given by commenting on an issue proposing that the project be added to the assessment
-queue.  If at any time, the project requesting review ceases communicating, the
-Security Assessment Facilitator may remove the project from the queue with
-notification to the co-chairs.  The Security Assessment Facilitator will update
-the corresponding issue, prior to closing the project's request.
+A project may be accepted into the assessment queue, either by the Security
+Assessment Facilitator with concurrence from one (1) co-chair, or by two (2)
+co-chairs.  This concurrence is given by commenting on an issue proposing that
+the project be added to the assessment queue.  If at any time, the project
+requesting review ceases communicating, the Security Assessment Facilitator may
+remove the project from the queue with notification to the co-chairs.  The
+Security Assessment Facilitator will update the corresponding issue, prior to
+closing the project's request.
 
 # Updates and renewal
 
 The Security Assessment team will aim to review assessed projects annually,
 focusing primarily on any issues or concerns raised in previous assessments,
-addressing new functionality that affects risk profile of the project,
-and any issue that may have been flagged about the project.
+addressing new functionality that affects risk profile of the project, and any
+issue that may have been flagged about the project.
 
 # Managing the assessment queue
 
 Note: this section describes the current process. Anyone is welcome to open a
-github issue or submit a pull request suggesting process improvements
-or clarifying the documentation. Security Assessment Facilitator or any chair
-may take on any of the roles below, updating the queue, as long as the change
-is clearly communicated to the group (typically by adding a note to the
-relevant github issue).
+github issue or submit a pull request suggesting process improvements or
+clarifying the documentation. Security Assessment Facilitator or any chair may
+take on any of the roles below, updating the queue, as long as the change is
+clearly communicated to the group (typically by adding a note to the relevant
+github issue).
 
 Each assessment is represented as a github issue, where the description field
 follows a [template](/.github/ISSUE_TEMPLATE/joint-review.md)
 
-The queue is visible through [github project](https://github.com/cncf/tag-security/projects/2)
+The queue is visible through [github
+project](https://github.com/cncf/tag-security/projects/2)
 
-* Anyone may propose a project for assessment, by opening an [issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
+* Anyone may propose a project for assessment, by opening an
+  [issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 * Security Assessment Facilitator or their delegate may:
   * move the order of an assessment in the backlog
   * close an issue (with an explanation) to remove a project from the queue.
