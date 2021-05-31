@@ -706,7 +706,7 @@ The focus is on security, protection, detection, and auto-response where ever po
 It is not necessarily development tooling alone, but security tooling that integrates
 transparently into the development process to enforce security policies where fast
 feedback and most immediate actions to remediate can occur. For specific information
- on cloud native security use cases refer to the [SIG-Security's use cases listing](https://github.com/cncf/sig-security/usecase-personas/).
+ on cloud native security use cases refer to the [TAG-Security's use cases listing](https://github.com/cncf/tag-security/usecase-personas/).
 
 ## Industries
 

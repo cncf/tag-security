@@ -17,7 +17,7 @@ The following is the current listing of member roles:
 All members are identified in the SIG [README](/readme.md), with annotations
 where they hold an additional role.
 
-Members fulfilling any Roles in SIG-Security are responsible for understanding
+Members fulfilling any Roles in TAG-Security are responsible for understanding
 and abiding the by the [governance](./) and policies defined in this group.
 This commitment and execution of understanding includes not only commits to
 the repo, but also to any approvals or direction required by their Role.
@@ -50,14 +50,14 @@ removal may occur through a super-majority vote of the Chairs.
 
 ### Managing membership
 * Membership disagreements may be escalated to the Chairs.  Disagreements
-among the Chairs may be escalated to a SIG-Security TOC Liaison.
+among the Chairs may be escalated to a TAG-Security TOC Liaison.
 * Members *MAY* decide to step down at anytime and optionally propose a
 replacement.
 
 ## Role of chairs
 
 While CNCF TOC allows for Chairs to serve in purely administrative roles,
-SIG-Security was formed with deeply technical Chairs based on early need
+TAG-Security was formed with deeply technical Chairs based on early need
 to navigate a complex security landscape. If the SIG has less than two Technical
 Leads, any Chair may act as Technical Lead.
 
@@ -195,7 +195,7 @@ provide meaningful feedback or helpful references.
 
 Members who have contributed regularly, including discussion on multiple
 PRs and submitting PRs themselves, can volunteer to participate as a member
-of the Triage Team.  Interested members should first join ` #sig-security-triage`
+of the Triage Team.  Interested members should first join ` #tag-security-triage`
 on Slack and flag issues that need attention, ask questions and volunteer
 to take on process improvement PRs that may arise.
 
@@ -207,7 +207,7 @@ Each member of the Triage Team will:
 * assign labels to issues.
 * comment where issues need more detail.
 * recommend proposals or suggestions for discussion at working session meetings.
-* participate on #sig-security-triage slack channel.
+* participate on #tag-security-triage slack channel.
 
 ### Project teams
 

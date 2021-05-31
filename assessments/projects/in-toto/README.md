@@ -56,9 +56,9 @@ they will need to adopt or formalize effective policies and procedures.
 
 * Identify UX Researcher to engage 2-3 companies or projects to evaluate the
   time and effort required to integrate in-toto and recommend improvements
-* SIG-Security collaboration to document common supply chain threats and
+* TAG-Security collaboration to document common supply chain threats and
   complementary solutions that would cover security of all inputs
-  (see [issues#224](https://github.com/cncf/sig-security/issues/224))
+  (see [issues#224](https://github.com/cncf/tag-security/issues/224))
 
 ### Project recommendations
 
@@ -96,4 +96,4 @@ they will need to adopt or formalize effective policies and procedures.
 * Consider integrations with other CI/CD projects
 
 
-Tracking issue: https://github.com/cncf/sig-security/issues/166
+Tracking issue: https://github.com/cncf/tag-security/issues/166

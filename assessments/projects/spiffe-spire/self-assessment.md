@@ -8,7 +8,7 @@ Contributors: Evan Gilman (@evan2645), Andrew Jessup, Tyler Julian (@apty), Andr
 
 Security Reviewers: Brandon Lum (@lumjjb), Emily Fox (@TheFoxAtWork), Justin Cappos (@JustinCappos)
 
-This document details the design goals and security implications of SPIFFE and SPIRE to aid in the security assessment by CNCF SIG-Security.
+This document details the design goals and security implications of SPIFFE and SPIRE to aid in the security assessment by CNCF TAG-Security.
 
 ## Metadata
 

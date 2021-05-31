@@ -8,7 +8,7 @@ April 24th 2019
 Robert Ficcaglia (@rficcaglia), Sarah Allen (@ultrasaurus)
 
 This document elaborates and explores the design goals for the Open Policy Agent (OPA)
-as well as its security analysis to aid in the security assessment by CNCF SIG-Security.
+as well as its security analysis to aid in the security assessment by CNCF TAG-Security.
 
 ## Overview
 

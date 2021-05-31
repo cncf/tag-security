@@ -46,9 +46,9 @@ The self-assessment provides projects with the opportunity to examine the
 existing security provisions of the project.  It can serve as their initial
 security documentation for users.
 
-#### Create a [presentation issue](https://github.com/cncf/sig-security/issues/new?assignees=&labels=usecase-presentation&template=presentation.md&title=%5BPresentation%5D+Presentation+Title)
+#### Create a [presentation issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=usecase-presentation&template=presentation.md&title=%5BPresentation%5D+Presentation+Title)
 
-This presentation should go over the self-assessment and provide SIG-Security
+This presentation should go over the self-assessment and provide TAG-Security
 with an initial understanding of the project.  It is recommended the **project
 lead** submit the issue as the primary point of contact (POC).
 
@@ -77,7 +77,7 @@ to start with the self-assessment before pursing joint review.
 #### [Create tracking issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 
 The tracking issue serves to initiate the joint-reviews.  It provides
- an initial set of information to assist SIG-Security in  prioritizing the
+ an initial set of information to assist TAG-Security in  prioritizing the
 joint review as well as provide potential reviewers with a central
 location to manage the effort.
    * Issue may be a request from **TOC liason** or **project** itself

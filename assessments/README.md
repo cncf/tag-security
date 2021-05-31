@@ -119,8 +119,8 @@ and other members of the SIG.
 
 * If you are interested in a security review for your project and you are
   willing to volunteer as [project lead](guide/project-lead.md) or you are a
-  SIG-Security member and want to recommend a project to review, please [file an
-  issue](https://github.com/cncf/sig-security/issues/new?template=joint-review.md)
+  TAG-Security member and want to recommend a project to review, please [file an
+  issue](https://github.com/cncf/tag-security/issues/new?template=joint-review.md)
 
 See [security review guide](guide) for more details.  To understand how we
 prioritize reviews, see [intake process](./intake-process.md).

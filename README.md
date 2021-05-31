@@ -1,6 +1,6 @@
 
 
-<img src="https://github.com/cncf/artwork/blob/master/other/sig-security/horizontal/color/sig-security-horizontal-color.svg">
+<img src="https://github.com/cncf/artwork/blob/master/other/tag-security/horizontal/color/tag-security-horizontal-color.svg">
 
 # CNCF Security Technical Advisory Group
 
@@ -57,7 +57,7 @@ outside of Security TAG meetings and we encourage project teams to share progres
 updates or post questions in these channels:
 
 
-* [Email list](https://lists.cncf.io/g/cncf-sig-security)
+* [Email list](https://lists.cncf.io/g/cncf-tag-security)
 * [CNCF Slack](https://slack.cncf.io/) #tag-security channel
 
 ### Slack governance
@@ -112,12 +112,12 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 ## Related groups
 
 * [Kubernetes Policy Working Group](https://github.com/kubernetes/community/tree/master/wg-policy)
-* [Kubernetes SIG-Auth](https://github.com/kubernetes/community/tree/master/sig-auth)
+* [Kubernetes TAG-Auth](https://github.com/kubernetes/community/tree/master/tag-auth)
 * [NIST Big Data WG](https://bigdatawg.nist.gov/)
 
 ## History
 
-* SIG-Security - renamed STAG ([TOC Issue #549](https://github.com/cncf/toc/issues/549))
+* TAG-Security - renamed STAG ([TOC Issue #549](https://github.com/cncf/toc/issues/549))
 * SAFE WG - renamed to CNCF Security SIG
 * [(Proposed) CNCF Policy Working Group](/policy-wg-merging.md) - Merged into SAFE WG
 

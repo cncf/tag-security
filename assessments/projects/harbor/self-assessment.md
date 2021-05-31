@@ -1,12 +1,12 @@
-# CNCF SIG-Security  Harbor Project Self Assessment
+# CNCF TAG-Security  Harbor Project Self Assessment
 *March 2020*
 *Primary Author: Michael Michael, Harbor Maintainer ([@michmike](https://github.com/michmike), [@michmike77](https://twitter.com/michmike77))*
 *Security Reviewers: Andres Vega, Justin Cappos, Chase Pettet, Vinay Venkataraghavan, Robert Ficaglia, Martin Vrachev, Payam Tarverdyan Chychi, Cameron Seader.*
 
-This document details the design goals and security implications of Harbor to aid in the security assessment by CNCF SIG-Security.
+This document details the design goals and security implications of Harbor to aid in the security assessment by CNCF TAG-Security.
 
 <!-- TOC START min:1 max:3 link:true asterisk:false update:true -->
-- [CNCF SIG-Security	Harbor Project Self Assessment](#cncf-sig-securityharbor-project-self-assessment)
+- [CNCF TAG-Security	Harbor Project Self Assessment](#cncf-tag-securityharbor-project-self-assessment)
 - [Metadata](#metadata)
 - [Overview](#overview)
   - [Background](#background)
@@ -80,15 +80,15 @@ This document details the design goals and security implications of Harbor to ai
    <td>
 <ul>
 
-<li><a href="https://github.com/cncf/sig-security/issues/369">SIG-Security Assessment Issue</a>
+<li><a href="https://github.com/cncf/tag-security/issues/369">TAG-Security Assessment Issue</a>
 
 <li><a href="https://github.com/cncf/toc/pull/311">TOC Graduation PR</a>
 
 <li><a href="https://docs.google.com/presentation/d/12B5dGc8lMxKeKBFS8pGoldBtZaIWBtDYUFSNcG0mnCc/edit?ts=5d9f4ab2#slide=id.g5d0c4feb44_0_0">TOC Presentation Slides</a>
 
-<li><a href="https://vmware.zoom.us/rec/share/tMxPcZqu_0dLUreQ2m_xf6QKN6DEeaa81XQW8vUExBv13NRq4mJSY6p9EjctgJcv">SIG-Security Live Discussion 4/13/2020</a> (pwd l3%#\*x4Y)
+<li><a href="https://vmware.zoom.us/rec/share/tMxPcZqu_0dLUreQ2m_xf6QKN6DEeaa81XQW8vUExBv13NRq4mJSY6p9EjctgJcv">TAG-Security Live Discussion 4/13/2020</a> (pwd l3%#\*x4Y)
 
-<li><a href="https://docs.google.com/presentation/d/1MT2x_8j7OqI1t1EnEqCCrb4h5lqR9wiDNYDDT34t4_Q/edit?usp=sharing">Harbor Assessment by SIG-Security 4/22/2020</a>
+<li><a href="https://docs.google.com/presentation/d/1MT2x_8j7OqI1t1EnEqCCrb4h5lqR9wiDNYDDT34t4_Q/edit?usp=sharing">Harbor Assessment by TAG-Security 4/22/2020</a>
 </li>
 </ul>
    </td>

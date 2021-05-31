@@ -63,9 +63,9 @@ of the reviewer and with authorization.
 
 ### Required
 
-Unless approved by SIG-Security chairs, the lead reviewer will have previously
+Unless approved by TAG-Security chairs, the lead reviewer will have previously
 performed a CNCF security review.  Exemptions to this are reviewed case by
-case upon established need by the CNCF SIG-Security chairs in order to bootstrap
+case upon established need by the CNCF TAG-Security chairs in order to bootstrap
 the process as appropriate.  If a lead reviewer has not previously performed a
 security review, and the chairs concur with them fulfilling the role, it is
 encouraged that at least 1 additional reviewer have experience and be leveraged
@@ -114,7 +114,7 @@ of the community. Having clear guidelines for conflict of interest situations
 are important to prevent:
 - Individuals from intentionally or unintentionally promoting their own
 company's project
-- SIG-Security chairs and review leads intentionally or
+- TAG-Security chairs and review leads intentionally or
 unintentionally limiting the participation of an individual unfairly by
 asserting conflict of interest
 - Security reviews being stalled while groups belabor on who should be allowed
@@ -174,11 +174,11 @@ and as part of that before kicking off the review must:
 Update the above assertion if a new conflict-of-interest becomes known during
 the course of the review.
 
-The Security Review Facilitator or a SIG-Security chair must review the
+The Security Review Facilitator or a TAG-Security chair must review the
 Lead Security Reviewer conflict-of-interest assertion.
 
 If any hard conflicts, or multiple significant soft conflicts, are presented,
-then a SIG-Security chair must approve the security review team. Reasons for
+then a TAG-Security chair must approve the security review team. Reasons for
  accepting and rejecting conflicts should be documented.
 
 In most cases, the existence of a hard conflict will prevent a SIG member from

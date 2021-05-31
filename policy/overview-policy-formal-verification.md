@@ -341,7 +341,7 @@ solvers?
 
 This started with a Policy-WG call on 6/5/2019 where we discussed how/if
 policies might be formally verified, and then subsequent comment and
-discussion on https://github.com/cncf/sig-security/issues/196 .
+discussion on https://github.com/cncf/tag-security/issues/196 .
 
 ### Post-Script
 Since the start of this discussion, the [CapitalOne data loss incident](https://news.ycombinator.com/item?id=20565014)

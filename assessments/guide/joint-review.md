@@ -94,13 +94,13 @@ overwhelming the servers)
 
 The joint-review is initially created by the project team and then collaboratively
 developed with the [security reviewers](security-reviewer.md) as part of the project's
-SIG-Security Review (formerly called security assessment).  Information about the
-SIG-Security Review can be found in the [CNCF SIG-Security Review Process Guide](./README.md).
+TAG-Security Review (formerly called security assessment).  Information about the
+TAG-Security Review can be found in the [CNCF TAG-Security Review Process Guide](./README.md).
 
 This document does not intend to provide a security audit of [project] and is not
 intended to be used in lieu of a security audit.  This document provides users of
 [project] with a security focused understanding of [project] and when taken with the
-[self-assessment](self-assessment.md) provide the community with the SIG-Security
+[self-assessment](self-assessment.md) provide the community with the TAG-Security
 Review of the project.  Both of these documents may be used and references as part
 of a security audit.
 
@@ -274,7 +274,7 @@ with regard to security.  Hands-on reviews are subject to security reviewer
 availability and expertise.  They are not intended to serve as an audit or
 formal assessment and are no gurantee of the actual security of the project.
 
-**[Project] did/did not receive a hands-review from SIG-Security.**
+**[Project] did/did not receive a hands-review from TAG-Security.**
 
 *If a hands-on review was performed, the below format should be used for
 reporting details*
@@ -293,7 +293,7 @@ reporting details*
 General comments and summary of the hands-on review with any recommendations worth
  noting.  If nothing found use the below example:
 
-> SIG-Security's hands-on review did not reveal any significant or notable security findings for [project]. This outcome does not indicate that none exist, rather that none were discovered.
+> TAG-Security's hands-on review did not reveal any significant or notable security findings for [project]. This outcome does not indicate that none exist, rather that none were discovered.
 
 ## Roadmap
 

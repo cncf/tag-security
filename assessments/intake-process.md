@@ -1,7 +1,7 @@
 # Security Assessment Priorities & Pipeline Intake Process
 
-SIG-Security has a volunteer team of subject matter experts and industry
-professionals dedicated to helping SIG-Security members, the TOC, and the larger
+TAG-Security has a volunteer team of subject matter experts and industry
+professionals dedicated to helping TAG-Security members, the TOC, and the larger
 CNCF community maintain an understanding of the current state of security in the
 cloud native ecosystem and helping cloud native projects succeed.
 
@@ -52,10 +52,10 @@ assessment, exceeding the bandwidth of the group:
 
 The Security Assessment Facilitator, in collaboration with the named chair, has
 the discretion to adjust priority in order to streamline the process, or per
-their own judgement for other reasons consistent with SIG-Security mission and
+their own judgement for other reasons consistent with TAG-Security mission and
 charter.  In all cases, the priority queue will be maintained transparently as
 described below, along with communication via regular chair-liaison meetings and
-SIG-Security reports at TOC meetings.
+TAG-Security reports at TOC meetings.
 
 A project may be accepted into the assessment queue, either by the Security Assessment
 Facilitator with concurrence from one (1) co-chair, or by two (2) co-chairs.  This concurrence
@@ -84,9 +84,9 @@ relevant github issue).
 Each assessment is represented as a github issue, where the description field
 follows a [template](/.github/ISSUE_TEMPLATE/joint-review.md)
 
-The queue is visible through [github project](https://github.com/cncf/sig-security/projects/2)
+The queue is visible through [github project](https://github.com/cncf/tag-security/projects/2)
 
-* Anyone may propose a project for assessment, by opening an [issue](https://github.com/cncf/sig-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
+* Anyone may propose a project for assessment, by opening an [issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 * Security Assessment Facilitator or their delegate may:
   * move the order of an assessment in the backlog
   * close an issue (with an explanation) to remove a project from the queue.

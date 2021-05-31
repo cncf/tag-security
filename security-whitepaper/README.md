@@ -49,9 +49,9 @@ annotating the new version, updating the links in the README.md accordingly.
 Minor updates to the markdown shall receive a minor version bump indicated in the
 Metadata table of the document and recorded as WIP.  When enough significant
 changes have been recorded, the markdown will be placed "In Review" (via PR) and
-solicited to the CNCF SIG-Security and TOC mailing list for review, at a minimum.
+solicited to the CNCF TAG-Security and TOC mailing list for review, at a minimum.
 
-Upon completion of review, the SIG-Security TOC Liaison shall provide final
+Upon completion of review, the TAG-Security TOC Liaison shall provide final
 approval on the PR.  At which point the markdown state will be changed to
 "Approved" and merged.
 

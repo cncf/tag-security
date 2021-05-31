@@ -123,7 +123,7 @@ the Adjudicators (see below).  It should be made public with the permission
 settings such that suggestions and comments are permitted.  The lead will then
 provide a brief write up of a call to action with a link to the document and the
 due by date for comments.  This write up and corresponding links and details
-will be emailed to the CNCF SIG-Security mailing list, at which point we
+will be emailed to the CNCF TAG-Security mailing list, at which point we
 actively solicit public comment.
 
 ### Public comment adjudication

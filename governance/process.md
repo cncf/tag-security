@@ -8,7 +8,7 @@ line with the [mission and charter](charter.md).
 ### Proposal process
 
 1. **Raise an Issue:**
-[Create an issue](https://github.com/cncf/sig-security/issues/new)
+[Create an issue](https://github.com/cncf/tag-security/issues/new)
 that outlines the problem to be solved. If possible, include:
     * The customer impact of the problem
     * The scope of the work required
