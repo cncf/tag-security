@@ -1,12 +1,13 @@
 # Proposals, projects, and team
 
-In addition to the [TOC](https://www.cncf.io/people/technical-oversight-committee/)
-driven activities of the group, members may propose
-``
-projects or streams of work that are in alignment with the charter of the 
-group and of interest and importance to the community.
+In addition to the activities driven by the
+[CNCF Technical Oversight Committee][TOC], the work of the group often
+originates from group members with ideas on how to reduce risk in cloud native
+applications in alignment with the charter of the group and of interest and
+importance to the community.
 
-These proposals may be converted to a project with a defined set of deliverables
+This document explains how we transform ideas from our community into
+projects with a defined set of deliverables
 or a team to focus on a larger stream of work that may involve one or more
 projects and activities.
 
@@ -136,4 +137,8 @@ meeting attendance as recorded in the public minutes).
 completed, a new issue and corresponding pull request should be created and
 describe the expectations, plans, and ideas for on-going work.  It should
 include historical information and guidelines for contributions and maintenance
- in the README for the project artifact's folder.
+
+ in the README for the project artifact's folder.  
+
+[TOC]: https://www.cncf.io/people/technical-oversight-committee/
+
