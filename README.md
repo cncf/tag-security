@@ -123,14 +123,6 @@ list below:
 If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 submit a PR to add yourself to the [members list](#stag-members).
 
-## Related groups
-
-- [Kubernetes Policy Working
-  Group](https://github.com/kubernetes/community/tree/master/wg-policy)
-- [Kubernetes
-  SIG-Auth](https://github.com/kubernetes/community/tree/master/sig-auth)
-- [NIST Big Data WG](https://bigdatawg.nist.gov/)
-
 ## History
 
 - TAG-Security - renamed STAG ([TOC Issue
