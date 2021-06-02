@@ -1,5 +1,8 @@
 ## Updating an existing group
-We welcome PRs regarding updates to an existing group when the name of the group, the link to group or the charter of the group changes or if the group is retired
+We welcome PRs regarding updates to an existing group when:
+1. The name of the group changes
+2. The web hosting link, or the charter of the group changes
+3. When the group is retired
 
 ## Adding a new group
 
@@ -11,6 +14,6 @@ We welcome PRs regarding addition of new groups, when:
 
 ## Naming convention
 
-1. Groups names in alphabetical order by type
+1. Group names in alphabetical order by type
 2. When the name is not self-explanatory, it is recommended to add a short blurb about the group
-3. Use [title case](https://titlecaseconverter.com/) for the group name
+3. Use [Title Case](https://titlecaseconverter.com/) for the group name
