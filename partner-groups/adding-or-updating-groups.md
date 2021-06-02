@@ -12,5 +12,5 @@ We welcome PRs regarding addition of new groups, when:
 ## Naming convention
 
 1. Groups names in alphabetical order by type
-2. When the name is not self-explanatory it is recommended to add a short blurb about the group
+2. When the name is not self-explanatory, it is recommended to add a short blurb about the group
 3. Use [title case](https://titlecaseconverter.com/) for the group name
