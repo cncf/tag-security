@@ -52,7 +52,7 @@ handle and report the issue:
   content owner expressing your concerns. If this is not resolved, you may wish
   to request the help of a Co-Chair/TL via cncf-tag-security-leads@lists.cncf.io
   to help mediate the situation.
-- Discussions about these issues are important, and there are great avenues to
+- Discussions about these potential code of conduct violations and concerns are important, and there are great avenues to
   discuss them. This includes bringing up concerns to the [CNCF TOC][cncf-toc]
   (which can be done through discussion with Security TAG leadership) or talking
   to Security TAG leadership about moderating a post. To help ensure that we can
@@ -100,7 +100,8 @@ voting, opinion, acceptance, emotion, etc.
 Example of reasonable image and video:  Posting a picture of a community meetup*
 or posting a recording to a presentation on cloud native security.
 
-*Note: Many events within the community may show alcohol consumption, it is
+*Note: Many events within the community may include content which is only acceptable depending on the context it is used in.
+An example of this is alcohol consumption. It is
 important that when posting photos and videos members consider if the post
 glorifies alcohol or alcohol is the primary subject of the content
 (unacceptable) or if the alcohol is happenstance occurrence in the image
