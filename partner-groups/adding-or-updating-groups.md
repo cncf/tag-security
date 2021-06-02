@@ -13,4 +13,4 @@ We welcome PRs regarding addition of new groups, when:
 
 1. Groups names in alphabetical order by type
 2. When the name is not self-explanatory it is recommended to add a short blurb about the group
-3. Use [Title case](https://titlecaseconverter.com/) for the group name
+3. Use [title case](https://titlecaseconverter.com/) for the group name
