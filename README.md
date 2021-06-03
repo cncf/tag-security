@@ -266,6 +266,8 @@ Membership governance can be viewed [here](https://github.com/cncf/tag-security/
 * Jeff Rowell ([@jeff-rowell](https://github.com/Jeff-Rowell))
 * Daniel Tobin ([@dant24](https://github.com/dant24)), Cyral
 * Cole Kennedy ([@colek42](https://github.com/colek42)), BoxBoat
+* Alex Barbato ([@alexbarbato](https://github.com/alexbarbato)), VMware
+* Robert Clark ([@hyakuhei](https://github.com/hyakuhei)), AWS
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
