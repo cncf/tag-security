@@ -1,9 +1,13 @@
 # CNCF TAG-Security Kyverno Security Self Assessment
 
 **Completed**: *tbd*
+
 **Security reviewers**: *tbd*
+
 **Project security lead**: Jim Bugwadia
+
 **Source code**: https://github.com/kyverno/kyverno
+
 **Web site**: https://kyverno.io/
 
 
@@ -130,7 +134,7 @@ Kyverno installs with the roles defined at: https://github.com/kyverno/kyverno/b
 
 Below is a description of each role:
 
-* kyverno:admin-policies
+#### kyverno:admin-policies
 
 ```sh
 kubectl describe clusterrole kyverno:admin-policies
@@ -145,7 +149,7 @@ PolicyRule:
   policies.kyverno.io         []                 []              [*]
 ```
 
-* kyverno:admin-policyreport
+#### kyverno:admin-policyreport
 
 ```sh
 kubectl describe clusterrole kyverno:admin-policyreport
@@ -161,7 +165,7 @@ PolicyRule:
 
 ```
 
-* kyverno:admin-reportchangerequest
+#### kyverno:admin-reportchangerequest
 
 ```sh
 kubectl describe clusterrole kyverno:admin-reportchangerequest
@@ -177,7 +181,7 @@ PolicyRule:
 
 ```
 
-* kyverno:customresources
+#### kyverno:customresources
 
 ```sh
 kubectl describe clusterrole kyverno:customresources
@@ -207,7 +211,7 @@ PolicyRule:
 ```
 
 
-* kyverno:generatecontroller
+#### kyverno:generatecontroller
 
 ```sh
 kubectl describe clusterrole kyverno:generatecontroller
@@ -227,7 +231,7 @@ PolicyRule:
 ```
 
 
-* kyverno:policycontroller
+#### kyverno:policycontroller
 
 
 ```sh
@@ -243,7 +247,7 @@ PolicyRule:
 
 ```
 
-* kyverno:userinfo
+#### kyverno:userinfo
 
 ```sh
 kubectl describe clusterrole kyverno:userinfo
@@ -263,7 +267,7 @@ PolicyRule:
 ```
 
 
-* kyverno:webhook
+#### kyverno:webhook
 
 ```sh
 kubectl describe clusterrole kyverno:webhook
