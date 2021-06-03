@@ -1,6 +1,6 @@
 
 
-<img src="https://github.com/cncf/artwork/blob/master/other/sig-security/horizontal/color/sig-security-horizontal-color.svg">
+![Cloud Native Security logo](design/logo/cloud-native-security-horizontal-color.svg)
 
 # CNCF Security Technical Advisory Group
 
