@@ -51,14 +51,14 @@ removal may occur through a super-majority vote of the Chairs.
 
 ### Managing membership
 * Membership disagreements may be escalated to the Chairs.  Disagreements
-among the Chairs may be escalated to a TAG-Security TOC Liaison.
+among the Chairs may be escalated to a Security TAG TOC Liaison.
 * Members *MAY* decide to step down at anytime and optionally propose a
 replacement.
 
 ## Role of chairs
 
 While CNCF TOC allows for Chairs to serve in purely administrative roles,
-TAG-Security was formed with deeply technical Chairs based on early need
+The Security TAG was formed with deeply technical Chairs based on early need
 to navigate a complex security landscape. If the TAG has less than two Technical
 Leads, any Chair may act as Technical Lead.
 
