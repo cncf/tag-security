@@ -114,6 +114,7 @@ The diagram below shows the Kyverno physical architecture:
 
 ![Kyverno Physical Architecture](images/kyverno-physical-architecture.png)
 
+**NOTE:** Currently Kyverno runs as one multi-instance (HA) `Pod` managaed by a single `Deployment`. In the future the different controllers may be packaged in separate deployments to allow flexibility in scaling and tuning each component.
 
 ## Security functions and features
 
