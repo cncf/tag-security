@@ -38,22 +38,22 @@ use the table below as an example:
 
 ## Overview
 
-Kyverno secures and automates Kubernetes configurations using declarative policies defined as Kubernetes resources.
+Kyverno secures and automates Kubernetes configurations using policies defined as Kubernetes custom resources.
 
 ### Background
 
-Kubernetes has a powerful declarative configuration management system that allows users to specify the desired state of resources that Kubernetes controllers reconcile with the current state. For flexibility and to address a wide set of use cases, Kubernetes provides several configuration options for each resource. This creates a few challenges for users:
+Kubernetes has a declarative configuration management system that allows users to specify the desired state of resources which Kubernetes controllers continiously reconcile with the current system state. For flexibility, and to address a wide set of use cases, Kubernetes provides several configuration options for each resource. While this is powerful, it also creates a few challenges:
 1. Only a small subset of configuration options are commonly used. 
-2. Kubernetes is not secure by default, and security best practices need to be configured for workloads.
-3. Chances of misconfigurations, or lack of proper configuration, increase as its not clear whether developers or operators are responsible for other `advanced` settings.
+2. Kubernetes is not secure by default. Security and best practices need to be configured for workloads.
+3. Configurations are shared across roles and chances of misconfigurations, or lack of proper configuration, increase as its not obvious whether developers or operators are responsible for `advanced` configuration settings.
 
 ### Goal
 
-The goal of the Kyverno project is to simplify Kubernetes configuration security and automate configuration processes that otherwise require manual handoffs and coordination across Kubernetes cluster operators and developers.
+The goal of the Kyverno project is to simplify Kubernetes configuration security and automate processes that otherwise require manual handoffs and coordination across Kubernetes cluster operators and developers.
 
 ### Non-goals
 
-Kyverno is not a general purpose policy engine, but is designed for Kubernetes.
+Kyverno is not a general purpose policy engine.
 
 ## Self-assessment use
 
@@ -86,7 +86,7 @@ The `Webhook` also creates and updates `GenerateRequest` and `PolicyChangeReques
 
 ### Webhook Monitor
 
-On startup, Kyverno's `Webhook Monitor` component generates a self-signed certificate, or uses a user-provided certificate, and auto-creates the webhook configurations required to register Kyverno as an admission webhook. The component also periodically monitors if Kyverno is receiving webhook events and recreates the certificate and webhook registration if needed.
+On startup, Kyverno's `Webhook Monitor` component generates a self-signed certificate (or uses a user-provided certificate) and auto-creates the webhook configurations required to register Kyverno as an admission webhook. The component also periodically monitors if Kyverno is receiving webhook events and recreates the certificate and webhook configurations if needed.
 
 ### Generate Controller
 
@@ -94,8 +94,7 @@ The `Generate Controller` watches `GenerateRequest` resources and creates, updat
 
 ### Policy Controller
 
-The `Policy Controller` watches `ReportChangeRequest` resources and creates, updates, and delete Kyverno [Policy Report](https://kyverno.io/docs/policy-reports/) resources. The `Generate Controller` also watches for changes in policies definitions to update generated resources.
-
+The `Policy Controller` performs periodic background scans on existing configurations and creates or updates policy reports based on changes and background scans. The `Policy Controller` watches `ReportChangeRequest` resources and creates, updates, and delete Kyverno [Policy Report](https://kyverno.io/docs/policy-reports/) resources. The `Policy Controller` also watches for changes in policies definitions to update policy reports.
 
 ## Physical Architecture
 
@@ -107,6 +106,7 @@ The Kyverno application consists of a:
 3. Roles
 4. Role Bindings
 5. Custom Resource Definitions
+6. Service account
 
 When Kyverno runs, it will check for a named `Secret` with a certifcate to use for webhook registration. If the secret does not exist, Kyverno will generate a self-signed certificate and store it in the secret. Kyverno will then generate or update the mutating and validating webhook configurations.
 
@@ -116,6 +116,8 @@ The diagram below shows the Kyverno physical architecture:
 
 
 ## Security functions and features
+
+TBD.
 
 * Critical.  A listing critical security components of the project with a brief 
 description of their importance.  It is recommended these be used for threat modeling.  
@@ -292,21 +294,33 @@ PolicyRule:
 
 ### Threat Modeling
 
-| Threats | Risk | Solution |
-| -- | -- | -- |
-| Bad policies | Temporary Denial of Service | ?? |
-| Kyverno image is compromised | ?? | ?? |
+TBD.
+
+#### Bad Policy
+
+#### Bad Kyverno image
 
 
 ## Project compliance
 
 Kyverno does not currently document meeting particular compliance standards.
 
+
 ## Secure development practices
 
 ### Development Pipeline
 
+The Kyverno project follows established CNCF best practices for code development and delivery.
+
 All code is mantained in Git, and changes must be reviewed by maintainers and must pass all unit and e2e tests. Code changes are submitted via Pull Requests (PRs) and must be signed. Commits to `main` are not allowed.
+
+### Artifacts
+
+The [Kyverno container images]((https://github.com/orgs/kyverno/packages)) are hosted in GitHub Container Registry (GHCR).
+
+The [Kyverno Helm chart](https://artifacthub.io/packages/helm/kyverno/kyverno) is hosted in ArtifactHub.
+
+The [Kyverno installation YAMLs](https://github.com/kyverno/kyverno/blob/main/definitions/install.yaml) are hosted in the GitHub repository.
 
 ### Communication Channels. 
 
@@ -318,32 +332,36 @@ All code is mantained in Git, and changes must be reviewed by maintainers and mu
 
 ## Security issue resolution
 
-* Responsible Disclosures Process. A outline of the project's responsible
-  disclosures process should suspected security issues, incidents, or
-vulnerabilities be discovered both external and internal to the project. The
-outline should discuss communication methods/strategies.
+### Responsible Disclosures Process
 
-  * Vulnerability Response Process. Who is responsible for responding to a
-    report. What is the reporting process? How would you respond?
+*A outline of the project's responsible disclosures process should suspected security issues, incidents, or
+vulnerabilities be discovered both external and internal to the project. The outline should discuss communication methods/strategies.*
 
-* Incident Response. A description of the defined procedures for triage,
-  confirmation, notification of vulnerability or security incident, and
-patching/update availability.
+### Vulnerability Response Process
+
+*Who is responsible for responding to a report. What is the reporting process? How would you respond?*
+
+### Incident Response 
+
+*A description of the defined procedures for triage, confirmation, notification of vulnerability or security incident, and patching/update availability.*
 
 ## Appendix
 
-* Known Issues Over Time. List or summarize statistics of past vulnerabilities
-  with links. If none have been reported, provide data, if any, about your track
-record in catching issues in code review or automated testing.
+### Known Issues Over Time
 
-* [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/).
-  Best Practices. A brief discussion of where the project is at
-  with respect to CII best practices and what it would need to
-  achieve the badge.
+*List or summarize statistics of past vulnerabilities with links. If none have been reported, provide data, if any, about your track record in catching issues in code review or automated testing.*
 
-* Case Studies. Provide context for reviewers by detailing 2-3 scenarios of
-  real-world use cases.
+### [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/)
 
-* Related Projects / Vendors. Reflect on times prospective users have asked
-  about the differences between your project and projectX. Reviewers will have
-the same question.
+*Best Practices. A brief discussion of where the project is at with respect to CII best practices and what it would need to achieve the badge.*
+
+### Case Studies
+
+*Provide context for reviewers by detailing 2-3 scenarios of real-world use cases.*
+
+### Related Projects / Vendors
+
+[OPA/Gatekeeper](https://github.com/open-policy-agent/gatekeeper) is another CNCF project that acts as an admission controller and supports policy management. It used [Rego](https://www.openpolicyagent.org/docs/latest/policy-language/) as its policy language. 
+
+A detailed comparison is available at: https://neonmirrors.net/post/2021-02/kubernetes-policy-comparison-opa-gatekeeper-vs-kyverno/.
+
