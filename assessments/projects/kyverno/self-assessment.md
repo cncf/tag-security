@@ -80,7 +80,7 @@ The following diagram shows the logical architecture for Kyverno. Each major com
 
 ### Webhook
 
-The `Webhook` componnent registers as a validating and mutating admission webhook and receives `AdmissionReview` requests from the API server to validate and mutate configuration changes, based on policies. Users can configure which namespaces and resources the webhooks will receive via command line options or the ConfigMap.
+The `Webhook` component registers as a validating and mutating admission webhook and receives `AdmissionReview` requests from the API server to validate and mutate configuration changes, based on policies. Users can configure which namespaces and resources the webhooks will receive via command line options or the ConfigMap.
 
 The `Webhook` also creates and updates `GenerateRequest` and `PolicyChangeRequest` resources to trigger updates via other Kyverno controllers.
 
@@ -108,7 +108,7 @@ The Kyverno application consists of a:
 5. Custom Resource Definitions
 6. Service account
 
-When Kyverno runs, it will check for a named `Secret` with a certifcate to use for webhook registration. If the secret does not exist, Kyverno will generate a self-signed certificate and store it in the secret. Kyverno will then generate or update the mutating and validating webhook configurations.
+When Kyverno runs, it will check for a named `Secret` with a certificate to use for webhook registration. If the secret does not exist, Kyverno will generate a self-signed certificate and store it in the secret. Kyverno will then generate or update the mutating and validating webhook configurations.
 
 The diagram below shows the Kyverno physical architecture:
 
