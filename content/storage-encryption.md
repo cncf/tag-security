@@ -44,4 +44,4 @@ Encryptonize (https://github.com/cyber-crypt-com/encryptonize-core)
 ## Examples
 - Ensure that storage services force the use of TLS/mTLS
 - Enable block storage encryption on the disk level (i.e. through dm-crypt)
-- Enable encryption encryption options of storage of filesystems and block storage solutions used, and when available, integrate the use of key management systems to manage keys
+- Enable encryption options of storage of filesystems and block storage solutions used, and when available, integrate the use of key management systems to manage keys
