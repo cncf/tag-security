@@ -31,9 +31,3 @@ Dynamic analysis of deployed infrastructure may include detecting Role-based Acc
 - [Qualys](https://www.qualys.com/)
 - [Aqua DTA](https://www.aquasec.com/products/container-analysis/) 
 -->
-
-## Examples
-- TODO
-
-## Links (optional)
-- TODO

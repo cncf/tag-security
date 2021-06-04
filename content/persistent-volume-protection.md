@@ -16,10 +16,9 @@ authorization and does not perform validation. It is critical to consider where 
 and whether validation of that action exists when implementing protections.
 
 ## Projects
-- TODO
+- [Kubernetes](https://kubernetes.io/)
+- [Open Policy Agent](https://www.openpolicyagent.org/)
 
 ## Examples
-- TODO
-
-## Links
-- TODO
+- Ensure that access controls and policies are set appropriately such that only the necessary workloads have access to the volumes.
+- Ensure that only trusted code is run in privileged containers, or ensure that such workloads are not co-located on volumes with data protection requirements. Usage of node taints and tolerations in kubernetes can help provide this effect.

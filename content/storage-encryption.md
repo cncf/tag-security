@@ -25,14 +25,23 @@ and may be deployed with specific modes of encryption such as XTS for block devi
 The encryption function will often depend on integration with a [key management](#secrets-encryption) system.
 
 ## Projects
-- TODO
-
+- [Rook](https://github.com/rook/rook)
+- [Ceph](https://github.com/ceph/ceph)
+- [ChubaoFS](https://github.com/chubaofs/chubaofs)
+- [Gluster](https://github.com/gluster/glusterfs)
+- [Longhorn](https://github.com/longhorn/longhorn)
+- [Minio](https://github.com/minio/minio)
+- [MooseFS](https://github.com/moosefs/moosefs)
+- [OpenEBS](https://github.com/openebs/openebs)
+- [OpenIO](https://github.com/open-io/oio-sds)
+- [Manta](https://github.com/joyent/manta)
+- [Velero](https://github.com/vmware-tanzu/velero)
+- [Swift](https://github.com/openstack/swift)
 <!---
 Encryptonize (https://github.com/cyber-crypt-com/encryptonize-core)
 -->
 
 ## Examples
-- TODO
-
-## Links
-- TODO
+- Ensure that storage services force the use of TLS/mTLS
+- Enable block storage encryption on the disk level (i.e. through dm-crypt)
+- Enable encryption options of storage of filesystems and block storage solutions used, and when available, integrate the use of key management systems to manage keys

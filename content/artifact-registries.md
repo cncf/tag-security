@@ -19,9 +19,3 @@ provides additional background on the concepts, terminology, usage patterns and 
 - Sonatype Nexus Repository Pro (https://www.sonatype.com/)
 - Artifactory (https://jfrog.com/artifactory/)
 -->
-
-## Examples
-- TODO
-
-## Links
-- TODO
