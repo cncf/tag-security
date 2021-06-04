@@ -317,7 +317,7 @@ All code is mantained in Git, and changes must be reviewed by maintainers and mu
 
 ### Artifacts
 
-The [Kyverno container images]((https://github.com/orgs/kyverno/packages)) are hosted in GitHub Container Registry (GHCR).
+The [Kyverno container images](https://github.com/orgs/kyverno/packages) are hosted in GitHub Container Registry (GHCR).
 
 The [Kyverno Helm chart](https://artifacthub.io/packages/helm/kyverno/kyverno) is hosted in ArtifactHub.
 
