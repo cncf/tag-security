@@ -125,18 +125,18 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 
 ### STAG Chairs
 * Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), Apple [Chair - term: 9/28/2020 - 9/27/2022]
-* Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 6/3/2019 - 6/3/2021]
-* Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 6/3/2019 - 6/3/2021]
+* Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM [Chair - term: 6/3/2021 - 6/3/2023]
+* Aradhana Chetal ([@achetal01](https://github.com/achetal01)), TIAA [Chair - term: 6/3/2021 - 6/3/2023]
 
 ### Tech Leads
-* Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
 * Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
 * Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), Styra
 * Andres Vega ([@anvega](https://github.com/anvega)), VMWare
-* Aradhana Chetal ([@achetal01](https://github.com/achetal01)), TIAA
 
 ### STAG Chairs Emeritus
 * Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 9/3/2020]
+* Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 6/3/2019 - 6/3/2021]
+* Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 6/3/2019 - 6/3/2021]
 
 ### On-going projects
 
@@ -151,7 +151,7 @@ Co-leads
 
   * TBD
 
-Co-chair representative: @pragashj
+Co-chair representative: @achetal01
 
 
 #### Security reviews
@@ -163,7 +163,7 @@ overview of the project and its risk profile.
 Facilitator: Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)),
 New York University
 
-Co-chair representative: @ultrasaurus
+Co-chair representative: @lumjjb
 
 
 
