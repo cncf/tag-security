@@ -56,9 +56,14 @@ related to the group's mission and charter. Much of the work of the group happen
 outside of Security TAG meetings and we encourage project teams to share progress 
 updates or post questions in these channels:
 
-
-* [Email list](https://lists.cncf.io/g/cncf-sig-security)
+Group communication:
+* [Email list](https://lists.cncf.io/g/cncf-tag-security)
 * [CNCF Slack](https://slack.cncf.io/) #tag-security channel
+
+Leadership:
+* To reach the leadership team (chairs & tech leads), email
+cncf-tag-security-leads@lists.cncf.io
+* To reach the chairs, email cncf-tag-security-chairs@lists.cncf.io
 
 ### Slack governance
 
