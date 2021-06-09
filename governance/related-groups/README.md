@@ -1,4 +1,4 @@
-# Partner Groups
+# Related Groups
 
 **CNCF**
 * [CNCF TAGs](https://github.com/cncf/toc#technical-advisory-groups): Technical Advisory Groups
@@ -26,11 +26,13 @@
 * [IEEE P1915.1](https://standards.ieee.org/develop/project/1915.1.html): Standard for Software Defined Networking and Network Function Virtualization Security
   * Security TAG members:
 * [IEEE P7000](https://standards.ieee.org/develop/project/7000.html): Series of interrelated standards in development, including privacy, transparency, etc. related to ethical concerns in autonomous systems
+  * Security TAG members:
 * [NIST Computer Security Resource Center](https://csrc.nist.gov/)
   * Security TAG members:
 * [NIST Big Data WG](https://bigdatawg.nist.gov/)
   * Security TAG members:
 
-## Don't see a group mentioned that would be a great partner?
+## Don't see a group mentioned or notice a group that needs an update ?
 
-Please consider adding the group using the following [guide](adding-or-updating-groups.md)
+Please consider adding or updating the group using the following [guide](adding-or-updating-groups.md)
+
