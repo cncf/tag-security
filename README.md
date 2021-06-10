@@ -273,6 +273,7 @@ Membership governance can be viewed [here](https://github.com/cncf/tag-security/
 * Cole Kennedy ([@colek42](https://github.com/colek42)), BoxBoat
 * Alex Barbato ([@alexbarbato](https://github.com/alexbarbato)), VMware
 * Robert Clark ([@hyakuhei](https://github.com/hyakuhei)), AWS
+* Sunil Ravipati([@ai2017](https://github.com/ai2017)), Anthem AI
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
