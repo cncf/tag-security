@@ -4,9 +4,9 @@
     "retryCount": 3,
     "fallbackRetryDelay": "5s",
     "replacementPatterns": [
-        {
-          "pattern": "^(?!https:)(/.*.md)",
-          "replacement": "https://github.com/cncf/tag-security/blob/main$1"
-        }
+      {
+        "pattern": "^/",
+        "replacement": "{{BASEURL}}/"
+      }
     ]    
 }

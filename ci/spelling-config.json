@@ -1,6 +1,9 @@
 {
     "version": "0.1",
     "language": "en",
+    "ignorePaths": [
+        "**/.github/**"
+    ],    
     "words": [
         "CNCF",
         "OWASP",
