@@ -1,4 +1,4 @@
-# SIG Security Roadmap
+# Security TAG Roadmap
 
 * [Overview](#overview)
 * [Details](#details)
@@ -58,7 +58,7 @@ these items linked below.
 | Effort | Board Link | Description |
 | --- | --- | -- |
 | CNCF project security reviews | [Security Review Queue](https://github.com/cncf/sig-security/projects/2) | This board is used to manage upcoming and current security reviews and security review related activities. |
-| SIG-Security Projects | [Project Tracking Board](https://github.com/cncf/sig-security/projects/1) | This board is used to manage upcoming proposals (backlog) and ongoing projects. |
+| TAG-Security Projects | [Project Tracking Board](https://github.com/cncf/sig-security/projects/1) | This board is used to manage upcoming proposals (backlog) and ongoing projects. |
 | Issue Triage | [Triage Board](https://github.com/cncf/sig-security/projects/3) | This board is used to assist the Triage team in managing the queue of issues. |
 
 
