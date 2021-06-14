@@ -18,5 +18,11 @@ TO DO
 - [ ] Project leader(s):
 - [ ] Project Members:
 - [ ] _Fill in addition TODO items here so the project team and community can see progress!_
+- [ ] Scope 
+- [ ] Deliverable(s)
 - [ ] Project Schedule
+- [ ] Slack Channel (as needed)
+- [ ] Meeting Time & Day:
+- [ ] Meeting Notes (link)
+- [ ] Meeting Details (zoom or hangouts link)
 - [ ] Retrospective
