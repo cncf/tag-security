@@ -3,7 +3,7 @@
 SIG-Security has a volunteer team of subject matter experts and industry
 professionals dedicated to helping SIG-Security members, the TOC, and the larger
 CNCF community maintain an understanding of the current state of security in the
-cloud native ecosystem and helping cloud native projects succeed.
+cloud native ecosystem and helping cloud native projects succeed. Test.
 
 The following process describes how projects are prioritized for security
 assessments.
