@@ -46,7 +46,9 @@ handle and report the issue:
 - If you see content that clearly does not meet the official Code of Conduct,
   please send an e-mail to the Co-Chair/TL mailing list
   (cncf-tag-security-leads@lists.cncf.io) and the creator of the content. (For
-  more details refer to the [CNCF Code of Conduct][cncf-coc]).
+  more details refer to the [CNCF Code of Conduct][cncf-coc]).  If it is regarding a 
+  co-chair, reach out to the two other chairs directly if you are uncomfortable using
+  the mailing list.
 - If you are uncomfortable with a piece of content (but it may not necessarily
   violate the code of conduct), we suggest sending a private message to the
   content owner expressing your concerns. If this is not resolved, you may wish
