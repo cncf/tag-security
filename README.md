@@ -15,7 +15,7 @@
 
 STAG facilitates collaboration to discover and produce resources that enable
 secure access, policy control, and safety for operators, administrators,
-developers, and end-users across the cloud native ecosystem.
+developers, and end-users across the cloud native ecosystem. gaurantee architechture
 
 
 ## Background
