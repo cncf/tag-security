@@ -116,7 +116,7 @@ focus on a particular technology (such as Kubernetes SIGs) or have a broader
 mandate (such as government organizations).
 
 As a guide to visitors, we maintain the list of groups in the TAG
-[README](https://github.com/cncf/sig-security#related-groups).
+[README](https://github.com/cncf/tag-security#related-groups).
 
 Co-chairs are responsible to ensure periodic cross-group knowledge sharing,
 which is accomplished by cross-group membership, invitation to present at
