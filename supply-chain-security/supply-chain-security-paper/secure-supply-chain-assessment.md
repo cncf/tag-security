@@ -62,7 +62,7 @@ yourself:
 
 ### Protecting artefacts and deployments
 
--   Is every artefact your produce (including metadata and intermediate artefacts) signed?
+-   Is every artefact you produce (including metadata and intermediate artefacts) signed?
 
 -   Do you distribute metadata in a way that can be verified by downstream consumers of your products?
 

@@ -41,24 +41,24 @@ higher-level tooling.
 **Analysis**: focused approach to mitigating risks in supply chain which are
 underserved by other tech. Threats are well-understood and mitigated, including
 a reasonable degradation approach. Solid code processes; resiliency would
-benefit from additional participants.  
+benefit from additional participants.
 
 All questions from reviewers were addressed in
 [self-assessment](self-assessment.md) with non-critical issues captured as
-issues and noted below. 
+issues and noted below.
 
 ## Recommendations
 
 To address supply chain vulnerabilities, companies need more than technology,
-they will need to adopt or formalize effective policies and procedures. 
+they will need to adopt or formalize effective policies and procedures.
 
 ### CNCF recommendations
 
 * Identify UX Researcher to engage 2-3 companies or projects to evaluate the
   time and effort required to integrate in-toto and recommend improvements
-* SIG-Security collaboration to document common supply chain threats and
+* TAG-Security collaboration to document common supply chain threats and
   complementary solutions that would cover security of all inputs
-  (see [issues#224](https://github.com/cncf/sig-security/issues/224))
+  (see [issues#224](https://github.com/cncf/tag-security/issues/224))
 
 ### Project recommendations
 
@@ -73,11 +73,11 @@ they will need to adopt or formalize effective policies and procedures.
     [issue#287](https://github.com/in-toto/in-toto/issues/287))
 *   Proceed with [CII silver
     badge](https://bestpractices.coreinfrastructure.org/en/projects/1523?criteria_level=1)
-    & [roadmap](https://github.com/in-toto/in-toto/blob/develop/ROADMAP.md). 
+    & [roadmap](https://github.com/in-toto/in-toto/blob/develop/ROADMAP.md).
     Just a few open items, listed below:
     * Projects MUST monitor or periodically check their external dependencies
     (including convenience copies) to detect known vulnerabilities, and fix
-    exploitable vulnerabilities or verify them as unexploitable. 
+    exploitable vulnerabilities or verify them as unexploitable.
     * The project MUST implement secure design principles, where
     applicable.
     * The project MUST provide an assurance case that
@@ -96,4 +96,4 @@ they will need to adopt or formalize effective policies and procedures.
 * Consider integrations with other CI/CD projects
 
 
-Tracking issue: https://github.com/cncf/sig-security/issues/166
+Tracking issue: https://github.com/cncf/tag-security/issues/166
