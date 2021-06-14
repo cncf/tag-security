@@ -23,3 +23,8 @@ Sysdig Secure 3.0 https://sysdig.com/blog/sysdig-secure-3-0/
 Rapid7 (InsightIDR, DivvyCloud kAudit)
 Trend Micro Workload Security (https://www.trendmicro.com/en_ca/business/products/hybrid-cloud/cloud-one-workload-security.html)
 -->
+
+
+## Globe Traveller / World Traveller / Jump Ahead / Further Exploration / Next Stop (TBD)
+
+- [Container Application Manifest](./container-application-manifest)

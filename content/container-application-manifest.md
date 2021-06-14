@@ -33,3 +33,7 @@ Application manifests describe the configurations required for the deployment of
   - Ensure all containers specify cpu and memory limits
   - Require all ingresses to have TLS configured
   - Prevent services from creating external load balancers
+
+## Globe Traveller / World Traveller / Jump Ahead / Further Exploration / Next Stop (TBD)
+
+- [Pre-Flight Deployment Checks](./pre-flight-deployment-checks)
