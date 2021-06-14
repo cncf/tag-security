@@ -117,7 +117,7 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 ## Related groups
 
 * [Kubernetes Policy Working Group](https://github.com/kubernetes/community/tree/master/wg-policy)
-* [Kubernetes TAG-Auth](https://github.com/kubernetes/community/tree/master/tag-auth)
+* [Kubernetes SIG-Auth](https://github.com/kubernetes/community/tree/master/sig-auth)
 * [NIST Big Data WG](https://bigdatawg.nist.gov/)
 
 ## History
