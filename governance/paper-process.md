@@ -12,14 +12,14 @@ If a proposal is made that includes a paper as a deliverable, the proposal needs
 to ensure that there is a clearly idenitified lead and a well defined paper
 scope.
 
-The paper scope and topic should be raised in at least one SIG meeting to
+The paper scope and topic should be raised in at least one TAG meeting to
 solicit more volunteers (ideally 4).  Interested parties should meet at least
 once to describe the intent of the paper, & propose a very rough outline to
-present to SIG leadership for planning and scheduling as a project.
+present to TAG leadership for planning and scheduling as a project.
 
 ## Project
 
-Once a SIG Leadership sponsor is assigned to the project, the group should meet
+Once a TAG Leadership sponsor is assigned to the project, the group should meet
 to and agree on a tentative schedule.
 
 ### Tentative schedule milestones
@@ -123,7 +123,7 @@ the Adjudicators (see below).  It should be made public with the permission
 settings such that suggestions and comments are permitted.  The lead will then
 provide a brief write up of a call to action with a link to the document and the
 due by date for comments.  This write up and corresponding links and details
-will be emailed to the CNCF SIG-Security mailing list, at which point we
+will be emailed to the CNCF TAG-Security mailing list, at which point we
 actively solicit public comment.
 
 ### Public comment adjudication
@@ -144,10 +144,10 @@ the enemy of complete).
 ### CNCF publishing engagement
 
 Once the comments on the paper are adjudicated the paper is ready for
-publishing.  The SIG Leadership sponsor will work with the CNCF gather resources
+publishing.  The TAG Leadership sponsor will work with the CNCF gather resources
 to assist in final edits and conversion to PDF and graphics inclusion (if
 needed).  They can also assist with the conversion to markdown.  The paper lead
-will work with the SIG Leadership sponsor to review publishing drafts prior to
+will work with the TAG Leadership sponsor to review publishing drafts prior to
 final versioned copy and inclusion in the repo.
 
 ### Addition to the repo
@@ -169,7 +169,7 @@ in alignment with the original intent:
 ### Blog publishing and coordination
 
 In an effort to increase visibility and awareness of the final product, it is
-strongly recommended the paper lead coordinate with SIG leadership to engage the
+strongly recommended the paper lead coordinate with TAG leadership to engage the
 CNCF team for posting a blog to summarize and link to the paper.  As community
 events occur, it is also recommended that the TAG coordinate a submission to
 community events (presentation) on the paper.

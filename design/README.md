@@ -1,4 +1,4 @@
-## SIG Security Logos
+## TAG Security Logos
 
 *Note: GitHub Flavored Markdown used in the Readme doesn't support background colors. The white logos below are displayed on the light grey of tables.*
 
@@ -6,7 +6,7 @@
 <tr>
     	<th colspan="7"></th>
 </tr>
-<tr>	
+<tr>
 	<th></th>
         <th colspan="3">PNG</th>
         <th colspan="3">SVG</th>
@@ -51,8 +51,8 @@
 
 <br>
 
-  
-## SIG Security Color Scheme 
+
+## TAG Security Color Scheme
 <br>
 <table>
 <tr>
@@ -61,14 +61,14 @@
 </tr>
 <tr>
 	<td><br><img src="colors/%236F6F7F.png"><br><br></td>
-	<td><img src="colors/%23474756.png"></td>       
+	<td><img src="colors/%23474756.png"></td>
 	<td><img src="colors/%23141419.png"></td>
 	<td><img src="colors/%23152356.png"></td>
 	<td><img src="colors/%234A6CA4.png"></td>
 	<td><img src="colors/%23389BB2.png"></td>
 	<td><img src="colors/%2385C2D2.png"></td>
 </tr>
-<tr>	
+<tr>
 	<th>#6F6F7F</th>
         <th>#474756</th>
         <th>#141419</th>
@@ -76,7 +76,7 @@
         <th>#4A6CA4</th>
         <th>#389BB2</th>
 	<th>#85C2D2</th>
-</tr>  
+</tr>
 </table>
 
 <br>
@@ -94,13 +94,13 @@
         <th>#D81637</th>
  	<th>#F98903</th>
         <th>#F7C906</th>
-</tr>  
+</tr>
 </table>
 
 <br>
 
 
-## SIG Security Fonts
+## TAG Security Fonts
 
 ### Gotham Regular (for body text)
 ### Gotham Bold (for header text)
