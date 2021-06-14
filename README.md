@@ -13,8 +13,8 @@
 
 ## Objective
 
-STAG facilitates collaboration to discover and produce resources that enable 
-secure access, policy control, and safety for operators, administrators, 
+STAG facilitates collaboration to discover and produce resources that enable
+secure access, policy control, and safety for operators, administrators,
 developers, and end-users across the cloud native ecosystem.
 
 
@@ -46,14 +46,14 @@ security of the system, such as auditing and explainability features.
 
 # Governance
 
-[STAG charter](governance/charter.md) outlines the scope  of our group activities, 
+[STAG charter](governance/charter.md) outlines the scope  of our group activities,
 as part of our [governance process](governance) which details how we work.
 
 ## Communications
 
-Anyone is welcome to join our open discussions of STAG projects and share news 
-related to the group's mission and charter. Much of the work of the group happens 
-outside of Security TAG meetings and we encourage project teams to share progress 
+Anyone is welcome to join our open discussions of STAG projects and share news
+related to the group's mission and charter. Much of the work of the group happens
+outside of Security TAG meetings and we encourage project teams to share progress
 updates or post questions in these channels:
 
 Group communication:
@@ -101,8 +101,8 @@ Meeting ID: 737 567 7271
 
 ## Gatherings
 
-Please let us know if you are going and if you are interested in attending (or 
-helping to organize!) a gathering. Create a [github issue](https://github.com/cncf/tag-security/issues/new) for an event 
+Please let us know if you are going and if you are interested in attending (or
+helping to organize!) a gathering. Create a [github issue](https://github.com/cncf/tag-security/issues/new) for an event
 and add to list below:
 
 
@@ -117,13 +117,13 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 ## Related groups
 
 * [Kubernetes Policy Working Group](https://github.com/kubernetes/community/tree/master/wg-policy)
-* [Kubernetes SIG-Auth](https://github.com/kubernetes/community/tree/master/sig-auth)
+* [Kubernetes TAG-Auth](https://github.com/kubernetes/community/tree/master/tag-auth)
 * [NIST Big Data WG](https://bigdatawg.nist.gov/)
 
 ## History
 
-* SIG-Security - renamed STAG ([TOC Issue #549](https://github.com/cncf/toc/issues/549))
-* SAFE WG - renamed to CNCF Security SIG
+* TAG-Security - renamed STAG ([TOC Issue #549](https://github.com/cncf/toc/issues/549))
+* SAFE WG - renamed to CNCF Security TAG
 * [(Proposed) CNCF Policy Working Group](/policy-wg-merging.md) - Merged into SAFE WG
 
 ## Members
@@ -230,7 +230,7 @@ Membership governance can be viewed [here](https://github.com/cncf/tag-security/
 * Ricardo Aravena ([@raravena80](https://github.com/raravena80)), Rakuten
 * Lakshmi Manohar Velicheti ([@manohar9999](https://github.com/manohar9999)), Shape Security
 * Andres Vega ([@anvega](https://github.com/anvega)), Scytale.io
-* Cameron Seader ([@cseader](https://github.com/cseader)), SUSE 
+* Cameron Seader ([@cseader](https://github.com/cseader)), SUSE
 * Robert Ficcaglia ([@rficcaglia](https://github.com/rficcaglia)), Policy WG
 * Matthew Giassa ([@iaxes](https://github.com/IAXES))
 * Tabitha Sable ([@tabbysable](https://github.com/tabbysable))

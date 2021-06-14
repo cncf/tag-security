@@ -7,13 +7,13 @@ assignees: ''
 
 ---
 
-Description: what's your idea? 
+Description: what's your idea?
 
 Impact: Describe the customer impact of the problem. Who will this help?  How will it help them?
 
-Scope: How much effort will this take? ok to provide a range of options if or "not yet determined" for initial proposals.  Feel free to include proposed tasks below or link a Google doc 
+Scope: How much effort will this take? ok to provide a range of options if or "not yet determined" for initial proposals.  Feel free to include proposed tasks below or link a Google doc
 
 TO DO
-- [ ] SIG Representative
+- [ ] TAG Representative
 - [ ] Project leader(s)
 - [ ] TBD

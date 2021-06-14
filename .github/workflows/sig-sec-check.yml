@@ -1,5 +1,5 @@
 ---
-name: SIG-Security-Linter
+name: TAG-Security-Linter
 
 # Run this workflow on every PR to master
 on:
