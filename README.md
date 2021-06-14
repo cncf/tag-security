@@ -1,6 +1,6 @@
 
 
-<img src="https://github.com/cncf/artwork/blob/master/other/sig-security/horizontal/color/sig-security-horizontal-color.svg">
+![Cloud Native Security logo](design/logo/cloud-native-security-horizontal-color.svg)
 
 # CNCF Security Technical Advisory Group
 
@@ -56,9 +56,14 @@ related to the group's mission and charter. Much of the work of the group happen
 outside of Security TAG meetings and we encourage project teams to share progress 
 updates or post questions in these channels:
 
-
-* [Email list](https://lists.cncf.io/g/cncf-sig-security)
+Group communication:
+* [Email list](https://lists.cncf.io/g/cncf-tag-security)
 * [CNCF Slack](https://slack.cncf.io/) #tag-security channel
+
+Leadership:
+* To reach the leadership team (chairs & tech leads), email
+cncf-tag-security-leads@lists.cncf.io
+* To reach the chairs, email cncf-tag-security-chairs@lists.cncf.io
 
 ### Slack governance
 
@@ -125,18 +130,18 @@ If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 
 ### STAG Chairs
 * Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), Apple [Chair - term: 9/28/2020 - 9/27/2022]
-* Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 6/3/2019 - 6/3/2021]
-* Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 6/3/2019 - 6/3/2021]
+* Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM [Chair - term: 6/3/2021 - 6/3/2023]
+* Aradhana Chetal ([@achetal01](https://github.com/achetal01)), TIAA [Chair - term: 6/3/2021 - 6/3/2023]
 
 ### Tech Leads
-* Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
 * Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
 * Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), Styra
 * Andres Vega ([@anvega](https://github.com/anvega)), VMWare
-* Aradhana Chetal ([@achetal01](https://github.com/achetal01)), TIAA
 
-### STAG Chairs Emeritus
+### STAG Chair Emeriti
 * Dan Shaw ([@dshaw](https://github.com/dshaw)), PayPal [Chair - term: 6/3/2019 - 9/3/2020]
+* Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair - term: 6/3/2019 - 6/3/2021]
+* Jeyappragash JJ ([@pragashj](https://github.com/pragashj)), Tetrate.io [Chair - term: 6/3/2019 - 6/3/2021]
 
 ### On-going projects
 
@@ -151,7 +156,7 @@ Co-leads
 
   * TBD
 
-Co-chair representative: @pragashj
+Co-chair representative: @achetal01
 
 
 #### Security reviews
@@ -163,7 +168,7 @@ overview of the project and its risk profile.
 Facilitator: Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)),
 New York University
 
-Co-chair representative: @ultrasaurus
+Co-chair representative: @lumjjb
 
 
 
@@ -266,6 +271,9 @@ Membership governance can be viewed [here](https://github.com/cncf/tag-security/
 * Jeff Rowell ([@jeff-rowell](https://github.com/Jeff-Rowell))
 * Daniel Tobin ([@dant24](https://github.com/dant24)), Cyral
 * Cole Kennedy ([@colek42](https://github.com/colek42)), BoxBoat
+* Alex Barbato ([@alexbarbato](https://github.com/alexbarbato)), VMware
+* Robert Clark ([@hyakuhei](https://github.com/hyakuhei)), AWS
+* Sunil Ravipati([@ai2017](https://github.com/ai2017)), Anthem AI
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
