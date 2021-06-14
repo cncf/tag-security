@@ -14,13 +14,13 @@ Shared with CNCF Community
 | **Created** | 2020-FEB-01 |
 | **Last Reviewed** | 2020-OCT-27 |
 | **PDF Published** | 2020-NOV-18 |
-| **Release Version** | 1.0 | 
+| **Release Version** | 1.0 |
 | **Final PDF Approvers** | [x] @lizrice [x] @justincormack  |
 
 | **Originating Content and Review** | |
 | -- | --|
 | **Contributors** | [aradhna.chetal@gmail.com](mailto:aradhna.chetal@gmail.com), [@theFoxAtWork](mailto:themoxiefoxatwork@gmail.com), [jj@tetrate.io](mailto:jj@tetrate.io), gadi@alcide.io @lumjjb, @trishankatdatadog, [@vvenkatara@paloaltonetworks.com](mailto:vvenkatara@paloaltonetworks.com), @pushkarj, @whaber, @sublimino, @rowan-baker, [chase.pettet@gmail.com](mailto:chase.pettet@gmail.com), [harsingh@us.ibm.com](mailto:harsingh@us.ibm.com), jeff.lombardo@gmail.com |
-| **Reviewers** | @justincappos, @lumjjb, @whaber, @craigbox, @anvega, @magnologan, @magnologan, alok@xenonstack.com, @nyrahul, @ranio1, Itay Shakury (@itaysk) | 
+| **Reviewers** | @justincappos, @lumjjb, @whaber, @craigbox, @anvega, @magnologan, @magnologan, alok@xenonstack.com, @nyrahul, @ranio1, Itay Shakury (@itaysk) |
 
 ## Index
 - [**Cloud Native Security Whitepaper**](#cloud-native-security-whitepaper)
@@ -233,7 +233,7 @@ Utilization of security benchmarks (e.g. [NIST Application Container Security Gu
 
 The next few sections provide a detailed analysis of the implications, tools, mechanisms and best practices to integrate security throughout the application lifecycle.
 
-## Develop  
+## Develop
 
 ![Figure 2](cnswp-images/RackMultipart20201111_figure2.png)
 
@@ -585,7 +585,9 @@ In contrast, compliance standards form principles of controls to ascertain or cr
 
 ## Threat Modeling
 
-For organizations adopting cloud native, the primary mechanism of identifying risk and resulting controls and mitigations is to perform threat modeling of applications, data flows, and supporting processes and infrastructure. The method by which this is accomplished is minimally different from typical threat modeling. The below guidance is an enhancement of the [four step OWASP threat modeling](https://owasp.org/www-community/Threat_Modeling) recommended for cloud native capabilities.
+For organizations adopting cloud native, a primary mechanism for identifying risks, controls and mitigations is to perform threat modeling. While there are many threat modeling techniques they share several core characteristics. All start with building a scoped representation of a system's architecture. This begins with identifying all important processes, data stores, and [security boundaries](https://www.oreilly.com/library/view/cissp-certified-information/9780470276884/9780470276884_security_boundaries.html). Once boundaries have been established and the relevant elements of the system are partitioned within them, the next step is to model how these elements interact with special attention paid to any interactions that cross security boundaries.
+
+The below guidance is an enhancement of the four step [OWASP threat modeling](https://owasp.org/www-community/Threat_Modeling) recommended for cloud native capabilities.
 
 ### End-to-end architecture
 
@@ -602,12 +604,13 @@ When considering threats specific to an organization's cloud native capabilities
 - Denial of Service (DoS) resulting from a pod that does not have resource limits applied therefore consumes the entire node level CPU and memory, worker node is then lost
 - Elevation of privilege could happen if a pod is running with unrestricted or higher privileged pod security policy or by modifying the security context of a pod or a container
 
-Threat actors to consider for cloud native security are consistent with existing threat modeling:
+Threat actors to consider for cloud native security are consistent with existing threat modeling practices:
 
-- Malicious insider
-- Uninformed insider
-- Malicious outsider
-- Uninformed outsider
+- Malicious insider - An actor with malicious intent and with authorization to perform actions within the modeled system.
+- Uninformed insider - An actor with authorization to perform actions within the modeled system (assuming anyone can be duped).
+- Malicious outsider - An actor with malicious intent and outside of the system, able to launch attacks via the internet, supply chain, physical perimeter etc. without explicit authorization to perform actions within the modeled system.
+
+There are other actors that may interact with the modeled system (e.g uninformed outsiders) and they can be included for completeness. It's likely that controls for their actions will be a subset of those for the primary actors listed above.
 
 Organizations are recommended to leverage the existing resources available in the cloud native landscape for additional information on threats to cloud native architecture.
 
@@ -702,11 +705,11 @@ Many financial, health, government, and other entities need to comply with a spe
 
 ### Personas and Use Cases
 
-The focus is on security, protection, detection, and auto-response where ever possible. 
-It is not necessarily development tooling alone, but security tooling that integrates 
-transparently into the development process to enforce security policies where fast 
+The focus is on security, protection, detection, and auto-response where ever possible.
+It is not necessarily development tooling alone, but security tooling that integrates
+transparently into the development process to enforce security policies where fast
 feedback and most immediate actions to remediate can occur. For specific information
- on cloud native security use cases refer to the [SIG-Security's use cases listing](https://github.com/cncf/sig-security/usecase-personas/).
+ on cloud native security use cases refer to the [TAG-Security's use cases listing](https://github.com/cncf/tag-security/usecase-personas/).
 
 ## Industries
 
@@ -801,7 +804,7 @@ https://www.cisecurity.org/benchmark/Kubernetes/
 
 ### Acknowledgements
 
-This white paper is a community effort driven by the members of the CNCF Security-SIG. Thank you to everyone for their outstanding contributions. Special thanks to Emily Fox and Jeyappragash JJ.
+This white paper is a community effort driven by the members of the CNCF Security-TAG. Thank you to everyone for their outstanding contributions. Special thanks to Emily Fox and Jeyappragash JJ.
 
 Contributors:
 
@@ -833,8 +836,8 @@ Reviewers:
 - Alok Raj - [XenonStack](https://www.xenonstack.com/) ([alok@xenonstack.com](mailto:alok@xenonstack.com))
 - @nyrahul
 - @ranio1
-- @lizrice 
-- @justincormack 
+- @lizrice
+- @justincormack
 
 [1^]: Another model to consider is Cloud, Clusters, Containers, and Code: [https://kubernetes.io/docs/concepts/security/overview/](https://kubernetes.io/docs/concepts/security/overview/)
 
@@ -842,9 +845,9 @@ Reviewers:
 
 [3^]: [Shifting security left](https://www.devsecops.org/blog/2016/5/20/-security) often leaves organizations to lapse operational security monitoring. It is important that security exists in all parts of the lifecycle and organizations continually evaluate other aspects of their business and technology processes where they may reach beyond modern security paradigms to embrace security as a culture and habit.
 
-[4^]: Human capital is a vital asset necessary to the success of any organization, the corresponding intellectual property and relational capital brought as a result is equally in need of protection.  
+[4^]: Human capital is a vital asset necessary to the success of any organization, the corresponding intellectual property and relational capital brought as a result is equally in need of protection.
 
-[5^] <https://blog.aquasec.com/malicious-container-image-docker-container-host>  
+[5^] <https://blog.aquasec.com/malicious-container-image-docker-container-host>
 
 [6^]: According to Applied Software Measurement, Capers Jones, 1996 and adjusting for inflation - 85% of defects are introduced during coding with a cost of $41 to fix compared to a post release fix cost of $26,542.
 

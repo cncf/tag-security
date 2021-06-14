@@ -21,7 +21,8 @@ line with the [mission and charter](charter.md).
 ### Proposal process
 
 1. **Raise an Issue:**
-[Create an issue](https://github.com/cncf/sig-security/issues/new)
+
+[Create an issue](https://github.com/cncf/tag-security/issues/new)
 that outlines the problem to be solved. Use the proposal template if you
 are interested in leading the work, or suggestion template if you would like
 someone else to lead the effort. If possible, include:
@@ -137,7 +138,6 @@ meeting attendance as recorded in the public minutes).
 completed, a new issue and corresponding pull request should be created and
 describe the expectations, plans, and ideas for on-going work.  It should
 include historical information and guidelines for contributions and maintenance
-
  in the README for the project artifact's folder.  
 
 [TOC]: https://www.cncf.io/people/technical-oversight-committee/

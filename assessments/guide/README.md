@@ -46,9 +46,9 @@ The self-assessment provides projects with the opportunity to examine the
 existing security provisions of the project.  It can serve as their initial
 security documentation for users.
 
-#### Create a [presentation issue](https://github.com/cncf/sig-security/issues/new?assignees=&labels=usecase-presentation&template=presentation.md&title=%5BPresentation%5D+Presentation+Title)
+#### Create a [presentation issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=usecase-presentation&template=presentation.md&title=%5BPresentation%5D+Presentation+Title)
 
-This presentation should go over the self-assessment and provide SIG-Security
+This presentation should go over the self-assessment and provide TAG-Security
 with an initial understanding of the project.  It is recommended the **project
 lead** submit the issue as the primary point of contact (POC).
 
@@ -62,8 +62,8 @@ updated self-assessment based on feedback and discussion.
 
 #### Submit a PR to include the self-assessment in the repo
 
-After the presentation, the **project lead** or their designee should submit a PR, 
-citing the presentation issue number to add the self-assessment to [assessments/projects](https://github.com/cncf/tag-security/tree/main/assessments/projects) under its 
+After the presentation, the **project lead** or their designee should submit a PR,
+citing the presentation issue number to add the self-assessment to [assessments/projects](https://github.com/cncf/tag-security/tree/main/assessments/projects) under its
 own folder.  The ticket may then be closed after merged in.
 
 ### Growing projects
@@ -77,10 +77,10 @@ to start with the self-assessment before pursing joint review.
 #### [Create tracking issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 
 The tracking issue serves to initiate the joint-reviews.  It provides
- an initial set of information to assist SIG-Security in  prioritizing the
+ an initial set of information to assist TAG-Security in  prioritizing the
 joint review as well as provide potential reviewers with a central
 location to manage the effort.
-   * Issue may be a request from **TOC liason** or **project** itself 
+   * Issue may be a request from **TOC liason** or **project** itself
    * [**Security review facilitator**](https://github.com/cncf/tag-security/blob/main/governance/roles.md#facilitation-roles) with help from the **technical leads**
  and **co-chairs** if appropriate, will determine if the project is ready for
  joint-review.  If ready, a channel will be created to coordinate the
@@ -93,18 +93,18 @@ joint review.  The joint review expands upon content of the
 self-assessment and provides the **reviewers** with a central starting point in
 reviewing the current security stature of the project.
 
-#### Project provides the joint review and reviewers are assigned 
+#### Project provides the joint review and reviewers are assigned
 
 The project provides the reviewers with security relevant information about their
  project.  The joint review can include links to external documents and sources
- within the project's repository or website to provide additional details or 
+ within the project's repository or website to provide additional details or
 reference where a process is kept.
    * **[Project lead](project-lead.md)** responds to the issue with draft
      document (see [joint review](joint-review.md))
    * Issue assigned to **lead [security reviewer](security-reviewer.md)** who
      will recruit at least one additional reviewer, if one is not already
 assigned, and facilitate the process.
- 
+
 #### Conflict of interest statement and review
 
 In order to remediate unfair advantage or ethical issues all reviewers are
@@ -148,7 +148,7 @@ prior to the *3 week* timeframe for reviews.
       * Ask for clarifications
       * Ensure terms are defined
       * Ensure concepts introduced are explained with context
-      * Provide quick feedback 
+      * Provide quick feedback
 
 #### Security review with optional hands-on review
 
@@ -167,20 +167,20 @@ review, the hands-on review is included in this step.
         with the project's repo and docs if available
    * **Security reviewers and project lead/pocs** ensure all reviewer
      questions, comments, and feedback are addressed and finalize the joint review
-   * **Lead security reviewer or their designee,** with the assistance of the 
-**security reviewers** create a [draft summary document](joint-readme-template.md) to capture existing 
+   * **Lead security reviewer or their designee,** with the assistance of the
+**security reviewers** create a [draft summary document](joint-readme-template.md) to capture existing
 comments, feedback, and recommendations prior to the presentation.
 
 #### Presentation
 
-The presentation is designed to inform members of SIG Security of the project,
+The presentation is designed to inform members of TAG Security of the project,
 its intent, what it accomplishes, and provides the opportunity for additional
 questions and feedback to the reviewers and project.
-   * Project lead presents to SIG during SIG meeting
-   * Presentation is recorded as part of standard SIG process
+   * Project lead presents to TAG during TAG meeting
+   * Presentation is recorded as part of standard TAG process
    * Presentation slides are linked in the /assessments/projects/project-name/
 
-#### Final summary 
+#### Final summary
 
 The final summary provides a cursory review of the project, background,
 summary of the joint review, and recommendations to the CNCF, the project,
@@ -196,7 +196,7 @@ of the review.
    * **Project lead** prepares a PR to /assessments/projects/project-name/
      when all comments, feedback, and recommendations are incorporated for the
 joint review and presentation slides.
-   * PR approval of at least 1 **co-chair**, alongside other **reviewers'** 
+   * PR approval of at least 1 **co-chair**, alongside other **reviewers'**
 approvals, is required before merging any artifacts.
 
 #### [Post-review survey](review-survey.md)
@@ -217,4 +217,4 @@ reviewers:
   feedback from security reviewers
 * Project lead or lead security reviewer may pause the process where a delay of
   over a week cannot be accommodated by the review team. Simply close the github
-issue with a note to SIG co-chairs.
+issue with a note to TAG co-chairs.

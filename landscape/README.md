@@ -13,7 +13,7 @@ good security practices, as well as drawing on the experience of the SAFE WG.
 ## Landscape Process
 
 - [X] Draft [categories](categories.md)
-- [ ] Review / Revise categories after whitepaper draft - [issue#138](https://github.com/cncf/sig-security/issues/138)
+- [ ] Review / Revise categories after whitepaper draft - [issue#138](https://github.com/cncf/tag-security/issues/138)
 - [ ] Determine [approach to category mapping](approach.md#mapping)
 - [ ] Map cloud-native tools into categories (adjusting categories as needed)
 - [ ] Validate categories and landscape with review by makers and users of

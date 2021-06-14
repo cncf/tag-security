@@ -1,6 +1,6 @@
-# Roles within the SIG
+# Roles within the TAG
 
-The SIG includes several key roles that are critical to the group's success.
+The TAG includes several key roles that are critical to the group's success.
 The group will have many members, all serving in varying capacities.  Within
 this document, "member" may refer to a Chair, a Technical Lead, or other
 Member roles.
@@ -9,16 +9,17 @@ The following is the current listing of member roles:
 
 * [Three Chairs](#role-of-chairs)
 * [Technical Leads](#role-of-technical-leads)
+* [Chair Emeriti](#role-of-chair-emeriti)
 * [Project Leads](#role-of-project-leads)
 * [Team leads](#role-of-team-leads)
 * [Group Members](#role-of-members)
 * [TOC Liaison](#toc-liaison)
 * [Facilitation Roles](#facilitation-roles)
 
-All members are identified in the SIG [README](/readme.md), with annotations
-where they hold an additional role. 
+All members are identified in the TAG [README](/readme.md), with annotations
+where they hold an additional role.
 
-Members fulfilling any Roles in SIG-Security are responsible for understanding
+Members fulfilling any Roles in Security TAG are responsible for understanding
 and abiding the by the [governance](./) and policies defined in this group.
 This commitment and execution of understanding includes not only commits to
 the repo, but also to any approvals or direction required by their Role.
@@ -27,7 +28,7 @@ the repo, but also to any approvals or direction required by their Role.
 specific areas of the repo or actions on issues where changes require write
 access. In any case, governance is not enforced by [access permissions](github.md), but
 rather by members who are expected to thoughtfully consider their actions to
-support the group. 
+support the group.
 
 ## Role of members
 * The primary role of a member is to contribute expertise to the group.
@@ -51,15 +52,15 @@ removal may occur through a super-majority vote of the Chairs.
 
 ### Managing membership
 * Membership disagreements may be escalated to the Chairs.  Disagreements
-among the Chairs may be escalated to a SIG-Security TOC Liaison.
+among the Chairs may be escalated to a Security TAG TOC Liaison.
 * Members *MAY* decide to step down at anytime and optionally propose a
 replacement.
 
 ## Role of chairs
 
 While CNCF TOC allows for Chairs to serve in purely administrative roles,
-SIG-Security was formed with deeply technical Chairs based on early need
-to navigate a complex security landscape. If the SIG has less than two Technical
+The Security TAG was formed with deeply technical Chairs based on early need
+to navigate a complex security landscape. If the TAG has less than two Technical
 Leads, any Chair may act as Technical Lead.
 
 * Primary role of Chairs is to run operations and the governance of the group.
@@ -78,8 +79,8 @@ members who cannot attend a specific meeting time.
 ## Role of technical leads
 
 Technical Leads (TLs) expand the bandwidth of the leadership team. Proposals
-must have a TL or Chair working as an active sponsor (as detailed in 
-[SIG process](process.md)).
+must have a TL or Chair working as an active sponsor (as detailed in
+[TAG process](process.md)).
 
 The general list of activities for TL are:
   * Establish new subprojects
@@ -89,7 +90,17 @@ The general list of activities for TL are:
   discussed with the group when needed
 
 TLs are assigned by CNCF Technical Oversight Committee
-(see [CNCF SIG Tech Lead nomination and election process](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#elections)).
+(see [CNCF TAG Tech Lead nomination and election process](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#elections)).
+
+## Role of chair emeriti
+
+After a [Chair](#role-of-chairs) finishes their term, they transition into a role
+of Chair Emeritus. This allows previous Chairs to continue to chime in and provide
+valuable context and contributions to the TAG. A Chair Emeritus can assume a role
+of a [technical lead](#roles-of-technical-leads), but in doing so, must be active
+in communicating with the co-chairs and technical leads (i.e. participating in the
+chair/TL slack and meetings). A Chair Emeritus has the same permissions/access as
+technical leads.
 
 ## Role of project leads
 
@@ -99,10 +110,11 @@ within the issue.
 Project Leads are nominated and approved by the following process:
   1. Project Lead actively participates in the group, initiates the proposal or
   volunteers to take on a project that has been prioritized by the group
-  1. A Chair or TL nominates a candidate.
-  1. The nomination is communicated on the issue tracking the project 
+  1. A Chair or TL nominates a candidate, or requests the community to nominate in a slack thread
+  1. The nomination is communicated via a pull request annotating the list of members in the
+  [TAG README](/README.md) with a link to the issue tracking the project or on the issue tracking the project if a README is not yet made.
   The nomination is typically open for a week (but may be shorter with LGTM of at least two Chairs).
-  1. The issue is updated with the assignment of the project lead as "assignee" alongside the SIG Leadership member.
+  1. The issue is updated with the assignment of the project lead as "assignee" alongside the TAG Leadership member.
   1. Project Leads will be given the OWNER role of the directory or sub-directory for their team's activities in order to empower merge/approve.
   
   ### On-going projects
@@ -127,7 +139,7 @@ Team Leads are nominated and approved by the following process:
   volunteers to lead a stream that has been prioritized by the group
   1. A Chair or TL nominates a candidate.
   1. The nomination is communicated via a pull request annotating the list of members in the
-  [SIG README](/README.md) with a link to the issue tracking the stream of work.
+  [TAG README](/README.md) with a link to the issue tracking the stream of work.
   The nomination is typically open for a week (but may be shorter with LGTM of at least two Chairs).
   1. Members are encouraged to review any existing, relevant issues and work together to ensure the Team Lead is set up for success or suggest alternatives.
   1. A sub-directory with a README is created with details on how to get involved.
@@ -135,12 +147,12 @@ Team Leads are nominated and approved by the following process:
 
 ## TOC liaison
 
-The [CNCF SIG](https://github.com/cncf/toc/blob/master/sigs) process identifies
-a TOC Liaison.  The SIG Chairs are responsible for establishing effective
+The [CNCF TAG](https://github.com/cncf/toc/blob/master/sigs) process identifies
+a TOC Liaison.  The TAG Chairs are responsible for establishing effective
 communication with the TOC liaison, including further communication to the
 wider TOC upon request.
 
-The TOC Liaison will occasionally prioritize SIG activities, as needed by the
+The TOC Liaison will occasionally prioritize TAG activities, as needed by the
 TOC, to further the [CNCF mission](https://github.com/cncf/foundation/blob/master/charter.md#1-mission-of-the-cloud-native-computing-foundation).
 
 
@@ -164,9 +176,9 @@ that role for some time informally, then proposed as an on-going role by Pull
 Request which must be approved by a majority of Chairs.  Process clarifications
 are welcome and PRs can be approved by any single Chair.
 
-### Security assessment facilitator
+### Security review facilitator
 
-[Security Assessments](/assessments) are part of the ongoing work of the group
+[Security Reviews](/assessments) are part of the ongoing work of the group
 and led by a Security Assessment Facilitator, who will:
 
 * coordinate security review leads for upcoming security assessments.
@@ -178,7 +190,7 @@ and led by a Security Assessment Facilitator, who will:
 
 ### Meeting facilitator
 
-The group meetings are an important part of community building and the 
+The group meetings are an important part of community building and the
 facilitator ensures a welcoming and inclusive atmosphere. In keeping with these
 goals, the meeting facilitator has the following responsibilities:
 * prepares the meeting notes with template and agenda
@@ -219,7 +231,7 @@ provide meaningful feedback or helpful references.
 
 Members who have contributed regularly, including discussion on multiple
 PRs and submitting PRs themselves, can volunteer to participate as a member
-of the Triage Team.  Interested members should first join ` #sig-security-triage`
+of the Triage Team.  Interested members should first join ` #tag-security-triage`
 on Slack and flag issues that need attention, ask questions and volunteer
 to take on process improvement PRs that may arise.
 
@@ -231,7 +243,7 @@ Each member of the Triage Team will:
 * assign labels to issues.
 * comment where issues need more detail.
 * recommend proposals or suggestions for discussion at working session meetings.
-* participate on #sig-security-triage slack channel.
+* participate on #tag-security-triage slack channel.
 
 ### Project teams
 
