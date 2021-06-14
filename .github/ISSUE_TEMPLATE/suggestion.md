@@ -2,7 +2,7 @@
 name: Suggestion
 about: You have an idea for a new resource or process that will improve cloud native security and you aren't sure if you are the person to work on it or want to get feedback from others to refine the idea
 title: "[Suggestion] some descriptive title"
-labels: suggestion
+labels: "suggestion, triage-required"
 assignees: ''
 
 ---
