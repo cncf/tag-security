@@ -132,7 +132,7 @@ coordination and remain ongoing.
 
 Teams must have a Co-Chair sponsor to maintain visibility in the team's work and to ensure it is progressing.  The Co-Chair sponsor also provides review and approval as part of the process whether be on engagement or deliverable publishing (such as with papers).  
 
-On-going projects may not imply a team and therefore may not require a team lead to sustain and coordinate.
+On-going projects may not imply a team, and in such case the leadership role described below to sustain and coordinate.  The on-going project leadership position may have an alternate title, such as our initial "Security Assessment  Facilitator."
 
 Team Leads are nominated and approved by the following process:
   1. Team Lead actively participates in the group, initiates the proposal or
