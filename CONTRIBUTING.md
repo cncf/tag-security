@@ -35,9 +35,9 @@ review/comment.
 
 A favorable review is determined by the contents of the PR complying with the
 contributing guide, the writing style, and agreement the contents align with the
-SIG's goals, objectives, and scope.  It is anticipated that PRs submitted, with
+TAG's goals, objectives, and scope.  It is anticipated that PRs submitted, with
 the exception of spelling and grammar changes, have been discussed with members
-of the SIG via slack or issues.
+of the TAG via slack or issues.
 
 ##### Nits
 
@@ -99,7 +99,7 @@ merging party.
 
 ### Merging pull requiests
 
-PRs may be merged after at least one review as occurred, dependent on the type of changes reflected in the PR.  The merging party needs to verify a review has occurred, the PR is in alignment with this guide, and is in scope of the SIG.
+PRs may be merged after at least one review as occurred, dependent on the type of changes reflected in the PR.  The merging party needs to verify a review has occurred, the PR is in alignment with this guide, and is in scope of the TAG.
 
 ### Writing style
 

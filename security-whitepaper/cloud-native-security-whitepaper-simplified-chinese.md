@@ -252,7 +252,7 @@ IaC 越来越受欢迎，在企业中的部署迅速增加，以部署云和容�
 
 ## 部署
 
-![Figure 4](cnswp-images/RackMultipart20201111_figure4.png) 
+![Figure 4](cnswp-images/RackMultipart20201111_figure4.png)
 
 _图四_
 
@@ -611,7 +611,7 @@ _图四_
 
 ## 角色和用例
 
-重点是安全、保护、检测和尽可能的自动响应。它不一定是独立的开发工具，而是透明地集成到开发流程中的安全工具，使得开发过程中就能够执行安全策略、快速反馈和直接补救。有关云原生安全用例的具体信息，请参考 [SIG-Security 的用例列表](https://github.com/cncf/tag-security/blob/main/usecase-personas)。
+重点是安全、保护、检测和尽可能的自动响应。它不一定是独立的开发工具，而是透明地集成到开发流程中的安全工具，使得开发过程中就能够执行安全策略、快速反馈和直接补救。有关云原生安全用例的具体信息，请参考 [TAG-Security 的用例列表](https://github.com/cncf/tag-security/blob/main/usecase-personas)。
 
 ### 行业
 
@@ -712,7 +712,7 @@ https://owasp.org/www-community/Application_Threat_Modeling
 
 # **鸣谢**
 
-本白皮书是由 CNCF Security-SIG 成员推动的社区工作。感谢大家的杰出贡献。特别感谢 Emily Fox 和 Jeyappragash JJ。
+本白皮书是由 CNCF Security-TAG 成员推动的社区工作。感谢大家的杰出贡献。特别感谢 Emily Fox 和 Jeyappragash JJ。
 
 原版撰稿人：
 
