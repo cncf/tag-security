@@ -234,7 +234,7 @@ provide meaningful feedback or helpful references.
 
 Members who have contributed regularly, including discussion on multiple
 PRs and submitting PRs themselves, can volunteer to participate as a member
-of the Triage Team.  Interested members should first join ` #tag-security-triage`
+of the Triage Team.  Interested members should first join `#tag-security-triage`
 on Slack and flag issues that need attention, ask questions and volunteer
 to take on process improvement PRs that may arise.
 
