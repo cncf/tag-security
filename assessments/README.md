@@ -55,7 +55,7 @@ subsume the need for a professional security audit of the code*.  Audits of
 implementation-specific vulnerabilities, improper deployment configurations, etc.
 are not in scope of a security review.  A security review is intended to
 uncover design flaws, enhance the security mindset of the project, and to obtain
-a clear, comprehensive articulation of the project's design goals and 
+a clear, comprehensive articulation of the project's design goals and
 aspirations while documenting the intended security properties enforced,
 fulfilled, or executed by said project.
 
@@ -76,7 +76,7 @@ Security reviews have many benefits, creating:
 A complete security review package primarily consists of the following
 items:
 * [Self-assessment](guide/self-assessment.md).  A written assessment by the project
-of the project's current security statue. 
+of the project's current security statue.
 * [Joint-review](guide/joint-review.md). A joint review by both the [security
 reviewers](guide/security-reviewer.md) and the project team that includes parts
 of the self-assessment and expands to include a more comprehensive consideration
@@ -98,29 +98,29 @@ security of the project, not a security audit of the project, and do not relieve
 an individual or organization from performing their own due diligence and
 complying with laws, regulations, and policies.
 
-Draft assessments contain *unconfirmed* content and are not endorsed as factual 
-until committed to this repository, which requires detailed peer review.  Draft 
-reviews may also contain *speculative* content as the project lead or security 
-reviewer is performing a review.  Draft reviews are *only* for the purpose 
-of preparing final artifact and are **not** to be used in any other capacity by 
+Draft assessments contain *unconfirmed* content and are not endorsed as factual
+until committed to this repository, which requires detailed peer review.  Draft
+reviews may also contain *speculative* content as the project lead or security
+reviewer is performing a review.  Draft reviews are *only* for the purpose
+of preparing final artifact and are **not** to be used in any other capacity by
 the community.
 
-Final slides resulting from the presentation and the project's joint review 
-will be stored in the individual project's review folder with supporting 
+Final slides resulting from the presentation and the project's joint review
+will be stored in the individual project's review folder with supporting
 documentation and artifacts from the review.  These folders can be found under
  [assessments/projects](projects/) and clicking on the project name.
 
 ## Process
 
-Creating the security review package is a collaborative process for the 
-benefit of the project and the community, where the primary content is generated 
-by the [project lead](guide/project-lead.md) and revised based on feedback from [security reviewers](guide/security-reviewer.md) 
-and other members of the SIG.
+Creating the security review package is a collaborative process for the
+benefit of the project and the community, where the primary content is generated
+by the [project lead](guide/project-lead.md) and revised based on feedback from [security reviewers](guide/security-reviewer.md)
+and other members of the TAG.
 
 * If you are interested in a security review for your project and you are
   willing to volunteer as [project lead](guide/project-lead.md) or you are a
-  SIG-Security member and want to recommend a project to review, please [file an
-  issue](https://github.com/cncf/sig-security/issues/new?template=joint-review.md)
+  TAG-Security member and want to recommend a project to review, please [file an
+  issue](https://github.com/cncf/tag-security/issues/new?template=joint-review.md)
 
 See [security review guide](guide) for more details.  To understand how we
 prioritize reviews, see [intake process](./intake-process.md).

@@ -1,7 +1,7 @@
 # Security Assessment Priorities & Pipeline Intake Process
 
-SIG-Security has a volunteer team of subject matter experts and industry
-professionals dedicated to helping SIG-Security members, the TOC, and the larger
+TAG-Security has a volunteer team of subject matter experts and industry
+professionals dedicated to helping TAG-Security members, the TOC, and the larger
 CNCF community maintain an understanding of the current state of security in the
 cloud native ecosystem and helping cloud native projects succeed.
 
@@ -24,7 +24,7 @@ coordinate the decision-making process.
   responsible for liaising with the TOC: aligning prioritization with TOC needs
   and goals by finding opportunities to highlight work of Security Assessment
   team, resolving questions/concerns about prioritization, and serving as an
-  escalation point for projects or SIG members, if needed.
+  escalation point for projects or TAG members, if needed.
 
 # Pre-conditions
 
@@ -45,25 +45,25 @@ assessment, exceeding the bandwidth of the group:
 2. Projects that have received a CNCF Security Audit will be reviewed within a
    year of audit. (For future audits, the security assessment will be a
    pre-condition to the audit.)
-3. CNCF Projects that request a review (or invited by SIG members), prioritized
+3. CNCF Projects that request a review (or invited by TAG members), prioritized
    by project maturity (e.g. graduated projects will be highest priority, then
    incubated projects, then sandbox).
-4. Non-CNCF Projects that request a review (or invited by SIG members).
+4. Non-CNCF Projects that request a review (or invited by TAG members).
 
 The Security Assessment Facilitator, in collaboration with the named chair, has
 the discretion to adjust priority in order to streamline the process, or per
-their own judgement for other reasons consistent with SIG-Security mission and
+their own judgement for other reasons consistent with TAG-Security mission and
 charter.  In all cases, the priority queue will be maintained transparently as
 described below, along with communication via regular chair-liaison meetings and
-SIG-Security reports at TOC meetings.
+TAG-Security reports at TOC meetings.
 
-A project may be accepted into the assessment queue, either by the Security Assessment 
-Facilitator with concurrence from one (1) co-chair, or by two (2) co-chairs.  This concurrence 
+A project may be accepted into the assessment queue, either by the Security Assessment
+Facilitator with concurrence from one (1) co-chair, or by two (2) co-chairs.  This concurrence
 is given by commenting on an issue proposing that the project be added to the assessment
 queue.  If at any time, the project requesting review ceases communicating, the
 Security Assessment Facilitator may remove the project from the queue with
 notification to the co-chairs.  The Security Assessment Facilitator will update
-the corresponding issue, prior to closing the project's request.  
+the corresponding issue, prior to closing the project's request.
 
 # Updates and renewal
 
@@ -84,9 +84,9 @@ relevant github issue).
 Each assessment is represented as a github issue, where the description field
 follows a [template](/.github/ISSUE_TEMPLATE/joint-review.md)
 
-The queue is visible through [github project](https://github.com/cncf/sig-security/projects/2)
+The queue is visible through [github project](https://github.com/cncf/tag-security/projects/2)
 
-* Anyone may propose a project for assessment, by opening an [issue](https://github.com/cncf/sig-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
+* Anyone may propose a project for assessment, by opening an [issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 * Security Assessment Facilitator or their delegate may:
   * move the order of an assessment in the backlog
   * close an issue (with an explanation) to remove a project from the queue.

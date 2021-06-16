@@ -1,11 +1,11 @@
 ---
-name: SIG-Security-Linter
+name: TAG-Security-Linter
 
-# Run this workflow on every PR to master
+# Run this workflow on every PR to main
 on:
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   Setup:
