@@ -62,6 +62,7 @@ approval on the PR.  At which point the markdown state will be changed to
 
 The CNSWP's creation occurred using the below general design decisions which
 should be considered when updating the content.
+
 * Avoid identifying specific projects and products.  Use general terms
   identifying the capabilities of the projects that meet the content under
   discussion.  Examples include, but are not limited to:
