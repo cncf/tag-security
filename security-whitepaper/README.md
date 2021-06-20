@@ -87,6 +87,7 @@ should be considered when updating the content.
   the length of the document.
 
 Links:
+
 * [Managed version in markdown][whitepaper-md]
 * [Posted PDF first version][whitepaper-pdf-v1]
 * [CNCF blog post][v1-blog-post]
