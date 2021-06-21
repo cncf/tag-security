@@ -2,9 +2,9 @@
 
 ## About
 
-The Cloud Native Security Whitepaper is a TAG-Security effort to ensure the
-cloud native community has access to information about building, distributing,
-deploying, and running secure cloud native capabilities.
+The Cloud Native Security Whitepaper (CNSWP) is a TAG-Security effort to ensure
+the cloud native community has access to information about building,
+distributing, deploying, and running secure cloud native capabilities.
 
 ## Updates to the paper
 
@@ -17,9 +17,8 @@ submitted to the repo and labeled with "suggestion" and "whitepaper".
 
 ### Markdown
 
-The living CNSWP is maintained in
-[markdown](https://github.com/cncf/tag-security/blob/main/security-whitepaper/cloud-native-security-whitepaper.md)
-and all updates will be made in markdown.
+The living CNSWP is maintained in [markdown][whitepaper-md] and all updates will
+be made in markdown.
 
 ### Cloud Native Security Map
 
@@ -30,7 +29,7 @@ context and lists of cloud native projects.
 
 ### Contributing updates
 
-All members of the community are welcome to contribute updates to the CNSWP.  We
+All members of the community are welcome to contribute updates to the CNSWP. We
 ask potential contributors to refer to the original design decisions, listed
 below, as guidance when determining the content of their updates.
 
@@ -39,8 +38,8 @@ of the Technical Leads and Co-Chairs of the TAG.
 
 Once the PR is submitted, please place the link in the CNCF TAG-Security Channel
 for the CNSWP:
-    [#tag-security-whitepaper](https://cloud-native.slack.com/archives/C017K5AN70T)
-    to request a review.
+[#tag-security-whitepaper](https://cloud-native.slack.com/archives/C017K5AN70T)
+to request a review.
 
 ### Versioning and publishing
 
@@ -97,12 +96,14 @@ should be considered when updating the content.
 
 Links:
 
-* [Managed version in
-  Markdown](https://github.com/cncf/tag-security/blob/main/security-whitepaper/cloud-native-security-whitepaper.md)
-* [Posted PDF first
-  version](https://github.com/cncf/tag-security/blob/main/security-whitepaper/CNCF_cloud-native-security-whitepaper-Nov2020.pdf)
-* [CNCF Blog
-  Post](https://www.cncf.io/blog/2020/11/18/announcing-the-cloud-native-security-white-paper/)
-* [Kubernetes Blog
-  Post](https://kubernetes.io/blog/2020/11/18/cloud-native-security-for-your-clusters/)
+* [Managed version in markdown][whitepaper-md]
+* [Posted PDF first version][whitepaper-pdf-v1]
+* [CNCF blog post][v1-blog-post]
 * [Original Issue](https://github.com/cncf/tag-security/issues/138)
+
+[whitepaper-md]:
+https://github.com/cncf/tag-security/blob/main/security-whitepaper/cloud-native-security-whitepaper.md
+[whitepaper-pdf-v1]:
+https://github.com/cncf/tag-security/blob/main/security-whitepaper/CNCF_cloud-native-security-whitepaper-Nov2020.pdf
+[v1-blog-post]:
+https://www.cncf.io/blog/2020/11/18/announcing-the-cloud-native-security-white-paper/
