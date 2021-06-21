@@ -90,7 +90,7 @@ The general list of activities for TL are:
   discussed with the group when needed
 
 TLs are assigned by CNCF Technical Oversight Committee
-(see [CNCF TAG Tech Lead nomination and election process](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#elections)).
+(see [CNCF TAG Tech Lead nomination and election process](https://github.com/cncf/toc/blob/master/tags/cncf-tags.md#elections)).
 
 ## Role of chair emeriti
 
@@ -150,7 +150,7 @@ Team Leads are nominated and approved by the following process:
 
 ## TOC liaison
 
-The [CNCF TAG](https://github.com/cncf/toc/blob/master/sigs) process identifies
+The [CNCF TAG](https://github.com/cncf/toc/blob/master/tags) process identifies
 a TOC Liaison.  The TAG Chairs are responsible for establishing effective
 communication with the TOC liaison, including further communication to the
 wider TOC upon request.
@@ -220,6 +220,7 @@ to the [list of people in this role](/.github/settings.yml).
 Each meeting must have at a minimal one scribe and preferable with two.
 
 Scribe is expected to perform the following:
+
 * Plan to coordinate/review meeting Agenda with facilitator via Slack before start of meeting
 * Summarize discussions and capture into meeting notes (not transcribe verbatim)
 * Clarify and annotate actions as discussion progresses with assignee and due dates
