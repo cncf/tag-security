@@ -31,11 +31,13 @@ rather by members who are expected to thoughtfully consider their actions to
 support the group.
 
 ## Role of members
+
 * The primary role of a member is to contribute expertise to the group.
 * To add yourself as a member, submit a Pull Request (PR) adding yourself
 to the list of members.
 
 ### Maintaining active members
+
 * Members *SHOULD* remain active and responsive in their Roles.
 * Members taking an extended leave of 1 or more months *SHOULD* coordinate with
 other members to ensure the role is adequately staffed during the leave.
@@ -51,6 +53,7 @@ removal may occur through a super-majority vote of the Chairs.
   [process](process.md).
 
 ### Managing membership
+
 * Membership disagreements may be escalated to the Chairs.  Disagreements
 among the Chairs may be escalated to a Security TAG TOC Liaison.
 * Members *MAY* decide to step down at anytime and optionally propose a
@@ -83,10 +86,11 @@ must have a TL or Chair working as an active sponsor (as detailed in
 [TAG process](process.md)).
 
 The general list of activities for TL are:
-  * Establish new subprojects
-  * Decommission existing subprojects
-  * Resolve cross-subproject technical issues and decisions
-  * Propose agenda items for meetings to ensure that open issues are
+
+* Establish new subprojects
+* Decommission existing subprojects
+* Resolve cross-subproject technical issues and decisions
+* Propose agenda items for meetings to ensure that open issues are
   discussed with the group when needed
 
 TLs are assigned by CNCF Technical Oversight Committee
@@ -104,10 +108,11 @@ technical leads.
 
 ## Role of project leads
 
-Project Leads lead specific projects where a deliverable has been defined 
+Project Leads lead specific projects where a deliverable has been defined
 within the issue.
 
 Project Leads are nominated and approved by the following process:
+
   1. Project Lead actively participates in the group, initiates the proposal or
   volunteers to take on a project that has been prioritized by the group
   1. A Chair or TL nominates a candidate, or requests the community to nominate in a slack thread
@@ -117,7 +122,7 @@ Project Leads are nominated and approved by the following process:
   1. The issue is updated with the assignment of the project lead as "assignee" alongside the TAG Leadership member.
   1. Project Leads will be given the OWNER role of the directory or sub-directory for their team's activities in order to empower merge/approve.
   
-  ### On-going projects
+### On-going projects
   
   On the occasion where a project becomes long term, Project Leads are also given the OWNER role of the directory or sub-directory along with 1 other nominated individual to ensure continuity in review and ongoing support of the project.
 
@@ -127,7 +132,7 @@ project.
 
 ## Role of Team Leads
 
-Team Leads lead larger streams of work that require sustained effort and 
+Team Leads lead larger streams of work that require sustained effort and
 coordination and remain ongoing.
 
 Teams must have a Chair sponsor to maintain visibility in the team's work
@@ -138,6 +143,7 @@ publishing (such as with papers).
 On-going projects may not imply a team, and in such case the leadership role described below to sustain and coordinate.  The on-going project leadership position may have an alternate title, such as our initial "Security Assessment  Facilitator."
 
 Team Leads are nominated and approved by the following process:
+
   1. Team Lead actively participates in the group, initiates the proposal or
   volunteers to lead a stream that has been prioritized by the group
   1. A Chair or TL nominates a candidate.
@@ -157,7 +163,6 @@ wider TOC upon request.
 
 The TOC Liaison will occasionally prioritize TAG activities, as needed by the
 TOC, to further the [CNCF mission](https://github.com/cncf/foundation/blob/master/charter.md#1-mission-of-the-cloud-native-computing-foundation).
-
 
 ## Facilitation roles
 
@@ -196,6 +201,7 @@ and led by a Security Assessment Facilitator, who will:
 The group meetings are an important part of community building and the
 facilitator ensures a welcoming and inclusive atmosphere. In keeping with these
 goals, the meeting facilitator has the following responsibilities:
+
 * prepares the meeting notes with template and agenda
 * coordinates with presenter, if applicable
 * ensures there are scribes
@@ -203,10 +209,12 @@ goals, the meeting facilitator has the following responsibilities:
 * leads the meeting through the agenda
 
 Prerequisites:
+
 * active member
 * history of regular attendance
 
 One or more of the following:
+
 * served in another facilitator role
 * leader on a project team
 * tech lead
