@@ -130,15 +130,14 @@ members to vote and indicating the time the vote will close. Only one member
 from each company should vote. Members will vote by leaving a comment in the
 Pull Request to indicate their vote for or against. Members will have a week
 after the vote begins to leave their vote. Quorum is taken to be 2/3 the number
-of companies who have been active in the past month (via issue comment or 
+of companies who have been active in the past month (via issue comment or
 meeting attendance as recorded in the public minutes).
 
 1. **Support the project going forward.** Some projects require sustainment and
-   maintenance to ensure continued relevance for the community.  When work is 
+   maintenance to ensure continued relevance for the community.  When work is
 completed, a new issue and corresponding pull request should be created and
 describe the expectations, plans, and ideas for on-going work.  It should
 include historical information and guidelines for contributions and maintenance
  in the README for the project artifact's folder.  
 
 [TOC]: https://www.cncf.io/people/technical-oversight-committee/
-

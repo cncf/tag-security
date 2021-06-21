@@ -16,7 +16,7 @@ The following is the current listing of member roles:
 * [TOC Liaison](#toc-liaison)
 * [Facilitation Roles](#facilitation-roles)
 
-All members are identified in the TAG [README](/readme.md), with annotations
+All members are identified in the TAG [README](/README.md), with annotations
 where they hold an additional role.
 
 Members fulfilling any Roles in Security TAG are responsible for understanding
@@ -115,7 +115,7 @@ Project Leads are nominated and approved by the following process:
 
   1. Project Lead actively participates in the group, initiates the proposal or
   volunteers to take on a project that has been prioritized by the group
-  1. A Chair or TL nominates a candidate, or requests the community to 
+  1. A Chair or TL nominates a candidate, or requests the community to
   nominate in a slack thread
   1. The nomination is communicated via a pull request annotating the list
    of members in the [TAG README](/README.md) with a link to the issue tracking
@@ -158,8 +158,8 @@ Team Leads are nominated and approved by the following process:
   1. Team Lead actively participates in the group, initiates the proposal or
   volunteers to lead a stream that has been prioritized by the group
   1. A Chair or TL nominates a candidate.
-  1. The nomination is communicated via a pull request annotating the list of 
-  members in the [TAG README](/README.md) with a link to the issue tracking 
+  1. The nomination is communicated via a pull request annotating the list of
+  members in the [TAG README](/README.md) with a link to the issue tracking
   the stream of work.
   The nomination is typically open for a week (but may be shorter with LGTM of at
   least two Chairs).
