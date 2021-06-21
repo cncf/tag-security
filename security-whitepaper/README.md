@@ -94,7 +94,6 @@ Links:
 * [CNCF blog post][v1-blog-post]
 * [Original Issue](https://github.com/cncf/tag-security/issues/138)
 
-
 [whitepaper-md]:
 https://github.com/cncf/tag-security/blob/main/security-whitepaper/cloud-native-security-whitepaper.md
 [whitepaper-pdf-v1]:
