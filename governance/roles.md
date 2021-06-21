@@ -26,9 +26,9 @@ the repo, but also to any approvals or direction required by their Role.
 
 **Write access to the repo**: Where applicable, the following roles define
 specific areas of the repo or actions on issues where changes require write
-access. In any case, governance is not enforced by [access permissions](github.md), but
-rather by members who are expected to thoughtfully consider their actions to
-support the group.
+access. In any case, governance is not enforced by [access permissions](github.md),
+but rather by members who are expected to thoughtfully consider their actions
+to support the group.
 
 ## Role of members
 

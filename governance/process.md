@@ -26,6 +26,7 @@ line with the [mission and charter](charter.md).
 that outlines the problem to be solved. Use the proposal template if you
 are interested in leading the work, or suggestion template if you would like
 someone else to lead the effort. If possible, include:
+
     * The customer impact of the problem
     * The scope of the work required
 
