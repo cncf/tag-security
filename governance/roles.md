@@ -115,20 +115,28 @@ Project Leads are nominated and approved by the following process:
 
   1. Project Lead actively participates in the group, initiates the proposal or
   volunteers to take on a project that has been prioritized by the group
-  1. A Chair or TL nominates a candidate, or requests the community to nominate in a slack thread
-  1. The nomination is communicated via a pull request annotating the list of members in the
-  [TAG README](/README.md) with a link to the issue tracking the project or on the issue tracking the project if a README is not yet made.
-  The nomination is typically open for a week (but may be shorter with LGTM of at least two Chairs).
-  1. The issue is updated with the assignment of the project lead as "assignee" alongside the TAG Leadership member.
-  1. Project Leads will be given the OWNER role of the directory or sub-directory for their team's activities in order to empower merge/approve.
+  1. A Chair or TL nominates a candidate, or requests the community to 
+  nominate in a slack thread
+  1. The nomination is communicated via a pull request annotating the list
+   of members in the [TAG README](/README.md) with a link to the issue tracking
+   the project or on the issue tracking the project if a README is not yet made.
+  The nomination is typically open for a week (but may be shorter with LGTM
+  of at least two Chairs).
+  1. The issue is updated with the assignment of the project lead as "assignee"
+  alongside the TAG Leadership member.
+  1. Project Leads will be given the OWNER role of the directory or sub-directory
+  for their team's activities in order to empower merge/approve.
   
 ### On-going projects
   
-  On the occasion where a project becomes long term, Project Leads are also given the OWNER role of the directory or sub-directory along with 1 other nominated individual to ensure continuity in review and ongoing support of the project.
+  On the occasion where a project becomes long term, Project Leads are also
+  given the OWNER role of the directory or sub-directory along with 1 other
+  nominated individual to ensure continuity in review and ongoing support of
+  the project.
 
 Depending on the expected length of the project, Project Leads may be assigned
-as OWNERS of the project directory in this repository to help facilitate and moderate new content to the
-project.
+as OWNERS of the project directory in this repository to help facilitate and
+ moderate new content to the project.
 
 ## Role of Team Leads
 
@@ -140,19 +148,26 @@ and to ensure it is progressing.  The Chair sponsor also provides review
 and approval as part of the process whether be on engagement or deliverable
 publishing (such as with papers).  
 
-On-going projects may not imply a team, and in such case the leadership role described below to sustain and coordinate.  The on-going project leadership position may have an alternate title, such as our initial "Security Assessment  Facilitator."
+On-going projects may not imply a team, and in such case the leadership role
+described below to sustain and coordinate.  The on-going project leadership
+ position may have an alternate title, such as our initial "Security Assessment
+  Facilitator."
 
 Team Leads are nominated and approved by the following process:
 
   1. Team Lead actively participates in the group, initiates the proposal or
   volunteers to lead a stream that has been prioritized by the group
   1. A Chair or TL nominates a candidate.
-  1. The nomination is communicated via a pull request annotating the list of members in the
-  [TAG README](/README.md) with a link to the issue tracking the stream of work.
-  The nomination is typically open for a week (but may be shorter with LGTM of at least two Chairs).
-  1. Members are encouraged to review any existing, relevant issues and work together to ensure the Team Lead is set up for success or suggest alternatives.
+  1. The nomination is communicated via a pull request annotating the list of 
+  members in the [TAG README](/README.md) with a link to the issue tracking 
+  the stream of work.
+  The nomination is typically open for a week (but may be shorter with LGTM of at
+  least two Chairs).
+  1. Members are encouraged to review any existing, relevant issues and work together
+  to ensure the Team Lead is set up for success or suggest alternatives.
   1. A sub-directory with a README is created with details on how to get involved.
-  1. Team Leads will be given the OWNER role of the directory or sub-directory for their team's activities in order to empower merge/approve.
+  1. Team Leads will be given the OWNER role of the directory or sub-directory for
+  their team's activities in order to empower merge/approve.
 
 ## TOC liaison
 
@@ -229,9 +244,11 @@ Each meeting must have at a minimal one scribe and preferable with two.
 
 Scribe is expected to perform the following:
 
-* Plan to coordinate/review meeting Agenda with facilitator via Slack before start of meeting
+* Plan to coordinate/review meeting Agenda with facilitator via Slack before
+start of meeting
 * Summarize discussions and capture into meeting notes (not transcribe verbatim)
-* Clarify and annotate actions as discussion progresses with assignee and due dates
+* Clarify and annotate actions as discussion progresses with assignee and due
+dates
 * Partner with Facilitator to capture major occurring items in the meeting
 * Add links to issues being discussed if not already in Agenda
 * Open new issues to track action items from meeting
