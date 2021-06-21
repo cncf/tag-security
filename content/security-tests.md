@@ -15,5 +15,4 @@ Automated security testing of applications and infrastructure should be an integ
 
 ## Examples
 - Security assessment tools should be implemented in an automated capability where possible. In addition to manual security assessments to provide assurance, product and feature teams can gain rapid feedback from DAST and VA within a CI/CD pipeline. Along with the ability to implement quality gates in CI/CD pipelines preventing a release to be deployed under certain conditions, or similarly with the concept ChatOps can provide rapid feedback to teams if a security assessment is performed against a live product and an issue is detected.
-  - Nuclei is one example of such a tool, built with simplicity in mind, with the community backed templates by hundreds of security researchers, it allows you to stay updated with latest security threats using continuous Nuclei scanning on the hosts. It is designed to be easily integrated into regression tests cycle, to verify the fixes and eliminate vulnerabilities from occurring in future.
 

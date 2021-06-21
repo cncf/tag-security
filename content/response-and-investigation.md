@@ -28,9 +28,3 @@ evidence, decrease the time to determine root cause, and minimize exposure to a 
 - [Suricata](https://github.com/OISF/suricata)
 - [Zeek](https://github.com/zeek/zeek)
 - [Osquery](https://github.com/osquery/osquery)
-
-## Examples
-- TODO
-
-## Links
-- TODO

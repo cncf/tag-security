@@ -57,10 +57,23 @@ rapid/secure erasure functions. Secure erasure is important when devices that co
 physical location (e.g. to be returned to a vendor after developing a fault).
 
 ## Projects
-- TODO
+- [Rook](https://github.com/rook/rook)
+- [Container Storage Interface](https://github.com/container-storage-interface)
+- [Ceph](https://github.com/ceph/ceph)
+- [ChubaoFS](https://github.com/chubaofs/chubaofs)
+- [Gluster](https://github.com/gluster/glusterfs)
+- [LINSTOR](https://github.com/LINBIT/linstor-server)
+- [Longhorn](https://github.com/longhorn/longhorn)
+- [Minio](https://github.com/minio/minio)
+- [MooseFS](https://github.com/moosefs/moosefs)
+- [OpenEBS](https://github.com/openebs/openebs)
+- [OpenIO](https://github.com/open-io/oio-sds)
+- [Manta](https://github.com/joyent/manta)
+- [Velero](https://github.com/vmware-tanzu/velero)
+- [Swift](https://github.com/openstack/swift)
+- [Zenko](https://github.com/scality/zenko)
+
 
 ## Examples
-- TODO
-
-## Links
-- TODO
+- Configurations of all layers of storage should be secure, endpoints should be protected and infrastructure and services around them should be hardened
+- Encryption of data that is persisted on disk should be encrypted to protect against storage theft, this includes both persistent data, as well as paged cache information that needs to be written out to disk.
