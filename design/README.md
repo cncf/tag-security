@@ -30,22 +30,13 @@
         <td><img src="logo/cloud-native-security-icon-color.svg" width="95"></td>
 </tr>
 <tr>
-        <th>black</th>
-        <td><img src="logo/cloud-native-security-horizontal-black.png" width="200"></td>
-        <td><img src="logo/cloud-native-security-stacked-black.png" width="95"></td>
-        <td><img src="logo/cloud-native-security-icon-black.png" width="95"></td>
-        <td><img src="logo/cloud-native-security-horizontal-black.svg" width="200"></td>
-        <td><img src="logo/cloud-native-security-stacked-black.svg" width="95"></td>
-        <td><img src="logo/cloud-native-security-icon-black.svg" width="95"></td>
-</tr>
-<tr>
         <th>white</th>
-        <td><img src="logo/cloud-native-security-horizontal-white.png" width="200"></td>
-        <td><img src="logo/cloud-native-security-stacked-white.png" width="95"></td>
-        <td><img src="logo/cloud-native-security-icon-white.png" width="95"></td>
+        <td><img src="logo/Cloud-Native-Security-Horizontal-White.png" width="200"></td>
+        <td><img src="logo/Cloud-Native-Security-Stacked-White.png" width="95"></td>
+        <td><img src="logo/Cloud-Native-Security-Icon-White.png" width="95"></td>
         <td><img src="logo/cloud-native-security-horizontal-white.svg" width="200"></td>
-        <td><img src="logo/cloud-native-security-stacked-white.svg" width="95"></td>
-        <td><img src="logo/cloud-native-security-icon-white.svg" width="95"></td>
+        <td><img src="logo/Cloud-Native-Security-Stacked-white.svg" width="95"></td>
+        <td><img src="logo/Cloud-Native-Security-Icon-White.svg" width="95"></td>
 </tr>
 </table>
 
