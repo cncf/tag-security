@@ -34,7 +34,7 @@ the security of the project.
 
 A reviewer may be delegated to perform specific tasks by the lead security
 reviewer in order to ensure the appropriate experience is leveraged in conducting
-the activity.  This may include but is not limited to the clarifying 
+the activity.  This may include but is not limited to the clarifying
 questions phase.
 
 Reviewers are encouraged to reach out to community members to resolve
@@ -43,31 +43,31 @@ of attacks.
 
 ### Hands-on reviews
 
-If the reviewers have the skills and interest, they may perform a 
-lightweight hands-on review of the project. Reviewers wishing to do this in 
+If the reviewers have the skills and interest, they may perform a
+lightweight hands-on review of the project. Reviewers wishing to do this in
 addition to their normal reviewing requirements should locally poke and explore
-the project to understand its inner workings.  
+the project to understand its inner workings.
 
 If a reviewer performing a hands-on review discovers a weakness or vulnerability
-they are required to adhere to the project's responsible disclosure process.  
+they are required to adhere to the project's responsible disclosure process.
 If no process is documented, they must contact the [project lead](project-lead.md) directly
 regarding the issue, they may notify the lead security reviewer that they have
-notified the project of an issue as it may impact the content of the joint 
+notified the project of an issue as it may impact the content of the joint
 review or the timeframe for completing the review.
 
-Engaging in a hands-on review is not an authorization to attack an operational 
-system.  All hands-on testing must be performed locally/within the control 
+Engaging in a hands-on review is not an authorization to attack an operational
+system.  All hands-on testing must be performed locally/within the control
 of the reviewer and with authorization.
 
 ## Qualifications
 
-### Required 
+### Required
 
-Unless approved by SIG-Security chairs, the lead reviewer will have previously 
-performed a CNCF security review.  Exemptions to this are reviewed case by 
-case upon established need by the CNCF SIG-Security chairs in order to bootstrap 
-the process as appropriate.  If a lead reviewer has not previously performed a 
-security review, and the chairs concur with them fulfilling the role, it is 
+Unless approved by TAG-Security chairs, the lead reviewer will have previously
+performed a CNCF security review.  Exemptions to this are reviewed case by
+case upon established need by the CNCF TAG-Security chairs in order to bootstrap
+the process as appropriate.  If a lead reviewer has not previously performed a
+security review, and the chairs concur with them fulfilling the role, it is
 encouraged that at least 1 additional reviewer have experience and be leveraged
 as the delegate or designee by the lead.
 
@@ -79,7 +79,7 @@ ideal reviewer should also have been the recipient of CNCF project security
 reviews for a software project they manage.
 
 Reviewers interested in performing hands-on review should have experience in this
-area.  
+area.
 
 Note: Participation through shadowing is encouraged from members who are not
 qualified for security reviews, to facilitate their development of the necessary
@@ -114,13 +114,13 @@ of the community. Having clear guidelines for conflict of interest situations
 are important to prevent:
 - Individuals from intentionally or unintentionally promoting their own
 company's project
-- SIG-Security chairs and review leads intentionally or
+- TAG-Security chairs and review leads intentionally or
 unintentionally limiting the participation of an individual unfairly by
 asserting conflict of interest
 - Security reviews being stalled while groups belabor on who should be allowed
 to participate
 
-The conflicts of interest lie on a spectrum, and are classified into hard and 
+The conflicts of interest lie on a spectrum, and are classified into hard and
 soft conflicts:
 * A hard conflict makes a reviewer ineligible to review a project.
 * A soft conflict allows a reviewer to review a project, but not as a
@@ -130,9 +130,9 @@ reviewers that are familiar with a project can provide a deeper insight
 together with a fresh set of eyes and is beneficial to the success of a security
 review.
 
-All reviewers must provide a conflict declaration on the tracking issue to 
+All reviewers must provide a conflict declaration on the tracking issue to
 indicate which hard or soft conflicts do, or do not exist when they volunteer
-to be a reviewer.  This is done by placing a comment on the issue associated 
+to be a reviewer.  This is done by placing a comment on the issue associated
 with the joint review using the table provided below.
 
 #### Conflict of interest statement template:
@@ -154,7 +154,7 @@ with the joint review using the table provided below.
 ### Managing conflicts
 
 Should a conflict arise during the time of the assessment, reviewers should notify
-the lead security reviewer when they become aware of the potential conflict, 
+the lead security reviewer when they become aware of the potential conflict,
 so the new conflict may be consulted with the facilitator and/or chairs.
 
 ## Asserting team readiness to conduct a balanced review
@@ -174,17 +174,17 @@ and as part of that before kicking off the review must:
 Update the above assertion if a new conflict-of-interest becomes known during
 the course of the review.
 
-The Security Review Facilitator or a SIG-Security chair must review the 
+The Security Review Facilitator or a TAG-Security chair must review the
 Lead Security Reviewer conflict-of-interest assertion.
 
 If any hard conflicts, or multiple significant soft conflicts, are presented,
-then a SIG-Security chair must approve the security review team. Reasons for
+then a TAG-Security chair must approve the security review team. Reasons for
  accepting and rejecting conflicts should be documented.
 
-In most cases, the existence of a hard conflict will prevent a SIG member from 
+In most cases, the existence of a hard conflict will prevent a TAG member from
 participating in the review for which their hard conflict exists. Depending
  on the circumstances of the particular conflict, the joint review, and the project,
- two chairs and the review facilitator may determine if the hard conflict 
+ two chairs and the review facilitator may determine if the hard conflict
 may be waived.  Should this occur, the decision's justification will be documented
  to ensure it clearly depicts the circumstances for granting the waiver.
 
