@@ -51,17 +51,17 @@ multiple projects.
 
 ### Background
 
-Provide information for reviewers who may not be familiar with your project's 
+Provide information for reviewers who may not be familiar with your project's
 domain or problem area.
 
 ### Goal
 The intended goal of the projects including the security guarantees the  project
- is meant to provide (e.g., Flibble only allows parties with an authorization 
+ is meant to provide (e.g., Flibble only allows parties with an authorization
 key to change data it stores).
 
 ### Non-goals
-Non-goals that a reasonable reader of the project’s literature could believe may 
-be in scope (e.g., Flibble does not intend to stop a party with a key from storing 
+Non-goals that a reasonable reader of the project’s literature could believe may
+be in scope (e.g., Flibble does not intend to stop a party with a key from storing
 an arbitrarily large amount of data, possibly incurring financial cost or overwhelming
  the servers)
 
@@ -76,15 +76,15 @@ This document serves to provide [project] users with an initial understanding of
 security, and general overview of [project] security practices, both for development of
 [project] as well as security of [project].
 
-This document provides the CNCF SIG-Security with an initial understanding of [project]
+This document provides the CNCF TAG-Security with an initial understanding of [project]
 to assist in a joint-review, necessary for projects under incubation.  Taken
 together, this document and the joint-review serve as a cornerstone for if and when
 [project] seeks graduation and is preparing for a security audit.
 
 ## Security functions and features
 
-* Critical.  A listing critical security components of the project with a brief 
-description of their importance.  It is recommended these be used for threat modeling.  
+* Critical.  A listing critical security components of the project with a brief
+description of their importance.  It is recommended these be used for threat modeling.
 These are considered critical design elements that make the product itself secure and
 are not configurable.  Projects are encouraged to track these as primary impact items
 for changes to the project.
