@@ -7,11 +7,11 @@ assignees: ''
 
 ---
 
-Project Name: 
+Project Name:
 
 Github URL:
 
-<!-- For project proposals looking to go through SIG review, please indicate the stage of the project (sandbox, incubation/graduation and link to the TOC issue, else indicate NA
+<!-- For project proposals looking to go through TAG review, please indicate the stage of the project (sandbox, incubation/graduation and link to the TOC issue, else indicate NA
 
 For example, https://github.com/cncf/toc/issues/368 (incubation)
 -->
@@ -23,11 +23,11 @@ Security Provider: yes/no (e.g. Is the primary function of the project to suppor
    - [ ] Project security lead
    - [ ] Lead security reviewer
    - [ ] 1 or more additional reviewer(s)
-   - [ ] Every reviewer has read [security reviewer guidelines](https://github.com/cncf/sig-security/blob/master/assessments/guide/security-reviewer.md) and stated declaration of conflict
+   - [ ] Every reviewer has read [security reviewer guidelines](https://github.com/cncf/tag-security/blob/main/assessments/guide/security-reviewer.md) and stated declaration of conflict
    - [ ] Sign off by 2 chairs on reviewer conflicts
 - [ ] Create slack channel (e.g. #sec-assess-projectname)
-- [ ] Project lead provides draft document - see [outline](https://github.com/cncf/sig-security/blob/master/assessments/guide/outline.md)
-- [ ] "Naive question phase" Lead Security Reviewer asks clarifying questions 
+- [ ] Project lead provides draft document - see [outline](https://github.com/cncf/tag-security/blob/main/assessments/guide/joint-review.md)
+- [ ] "Naive question phase" Lead Security Reviewer asks clarifying questions
 - [ ] Assign issue to security reviewers
 - [ ] Initial review
 - [ ] Presentation & discussion
