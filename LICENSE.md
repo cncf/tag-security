@@ -1,0 +1,2 @@
+Code in this repository is licensed under [Apache License Version 2.0](LICENSE-code) (SPDX-License-Identifier: Apache-2.0).
+Documentation in this repository is licensed under [Creative Common Attribution 4.0 International License](LICENSE-document) (SPDX-License-Identifier: CC-BY-4.0)
