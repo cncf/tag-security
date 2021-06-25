@@ -1,6 +1,5 @@
 # Catalog of Supply Chain Compromises
 
-
 This repository contains links to articles of software supply chain
 compromises. The goal is not to catalog every known supply chain attack, but
 rather to capture many examples of different kinds of attack, so that we
@@ -11,7 +10,6 @@ For definitions of each compromise type, please check out our [compromise defini
 We welcome additions to this catalog by
 [filing an issue](https://github.com/cncf/tag-security/issues/new/choose) or
 [github pull request](https://github.com/cncf/tag-security)
-
 
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
