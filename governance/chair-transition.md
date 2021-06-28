@@ -4,7 +4,7 @@ This checklist should be copied into a new issue for when a new chair(s) is need
 
 ## Nomination
 
-This serves to augement the [Security TAG Chair proposal
+This serves to augment the [Security TAG Chair proposal
 process](chair-proposal-process.md) with specific items that must be completed.
 
 * [ ] Nomination
@@ -14,14 +14,13 @@ process](chair-proposal-process.md) with specific items that must be completed.
   * [ ] TOC email list official nomination
   * [ ] #tag-security slack message with a link to the email nomination
   * [ ] TOC meeting presentation
-
 * [ ] Vote - official count recorded and posted
 
 ## Transfer
 
-* [ ] Transfer Logisitics
+* [ ] Transfer Logistics
   * [ ] #tag-chairs slack channel - add new chair(s)
-  * [ ] tag-chairs mailing list - add new chair(s) 
+  * [ ] tag-chairs mailing list - add new chair(s)
   * [ ] #tag-security-cochairs channel - add new chair(s)
   * [ ] #tag-security-cochairs-emeritus - add outgoing chair(s)
   * [ ] #tag-security-toc-liaison - add new chair(s)
@@ -34,7 +33,7 @@ process](chair-proposal-process.md) with specific items that must be completed.
   * [ ] TOC Liaison meeting
     * [ ] Check if the time still works for new chair(s)
     * [ ] Transfer calender ownership if needed
-    * [ ] Add new co-chair(s) to calendar invitiation
+    * [ ] Add new co-chair(s) to calendar invitation
     * [ ] Share meeting notes doc
   * [ ] Choose new chair representative for Security TAG [on-going
     projects](https://github.com/cncf/tag-security#on-going-projects) if needed.
@@ -59,5 +58,3 @@ process](chair-proposal-process.md) with specific items that must be completed.
   * [ ] #tag-security slack message
   * [ ] email message to the tag-security list
   * [ ] Security TAG meeting Announcement for each region
-
-
