@@ -123,6 +123,12 @@ list below:
 If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
 submit a PR to add yourself to the [members list](#stag-members).
 
+## Related groups
+
+There are several groups that are affiliated to or do work and cover topics relevant
+ to the work of Security TAG. These can be seen [here](governance/related-groups/)
+
+
 ## History
 
 - TAG-Security - renamed STAG ([TOC Issue
