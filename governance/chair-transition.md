@@ -26,10 +26,11 @@ process](chair-proposal-process.md) with specific items that must be completed.
   * [ ] #tag-security-cochairs-emeritus - add outgoing chair(s)
   * [ ] #tag-security-toc-liaison - add new chair(s)
   * [ ] Co-chair meeting - add new co-chairs and add doc sharing
-  * [ ] If applicable - transfer ownership of co-chair meeting calendar invite
-    and tech lead calendar invite
+  * [ ] transfer ownership of co-chair meeting calendar invite
+    and tech lead calendar invite - if applicable
     * [ ] New meeting link will need created by new calendar owner if using
-      Google meet.  meet.new will create this, just copy into invite.
+      Google meet.  meet.new will create this, just copy into invite or
+      transition to Zoom
   * [ ] TOC Liaison meeting
     * [ ] Check if the time still works for new chair(s)
     * [ ] Transfer calender ownership if needed
@@ -45,7 +46,7 @@ process](chair-proposal-process.md) with specific items that must be completed.
   * [ ] [Service Desk Access](https://cncfservicedesk.atlassian.net/servicedesk/customer/portal/1)
   * [ ] Update email lists
     * [ ] update email list membership
-    * [ ] chairs shoul dhave moderator role
+    * [ ] chairs should have moderator role
     * [ ] remove old chairs from chairs list
   * [ ] Verify new chairs have zoom credentials
   * [ ] YouTube Channel
