@@ -125,11 +125,9 @@ submit a PR to add yourself to the [members list](#stag-members).
 
 ## Related groups
 
-- [Kubernetes Policy Working
-  Group](https://github.com/kubernetes/community/tree/master/wg-policy)
-- [Kubernetes
-  SIG-Auth](https://github.com/kubernetes/community/tree/master/sig-auth)
-- [NIST Big Data WG](https://bigdatawg.nist.gov/)
+There are several groups that are affiliated to or do work and cover topics relevant
+ to the work of Security TAG. These can be seen [here](governance/related-groups/)
+
 
 ## History
 
