@@ -12,9 +12,9 @@ This document covers contributions to this git repository. Please review
 While this repository does not contain open source code, we manage content
 contributions following open source practice, as detailed below.
 
-All contributions to this project will be released under the [Apache
-License](LICENSE) By submitting a pull request (PR), you are agreeing to release
-the PR contents under this license.
+All contributions to this project will be released under open source license as
+described in [LICENSE.md](LICENSE.md). By submitting a pull request (PR),
+you are agreeing to release the PR contents under this license.
 
 ## Communication
 
@@ -83,10 +83,10 @@ A person with access, including the PR author, may then perform the merge.
 A person with access, other than the PR author, can both review **and** merge a
 PR if found favorable after review.
 
-[Code owners](CODEOWNERS.md) need to be at least one concurring reviewer or the
+[Code owners](CODEOWNERS) need to be at least one concurring reviewer or the
 merging party.
 
-#### Siginificant changes
+#### Significant changes
 
 Significant changes are defined as:
 * major changes to the repo
@@ -105,7 +105,7 @@ provide concurrence, the last of which should perform the merge.
 [Code owners](CODEOWNERS.md) need to be at least one concurring reviewer or the
 merging party.
 
-### Merging pull requiests
+### Merging pull requests
 
 PRs may be merged after at least one review as occurred, dependent on the type
 of changes reflected in the PR.  The merging party needs to verify a review has
@@ -116,8 +116,8 @@ occurred, the PR is in alignment with this guide, and is in scope of the TAG.
 Consistency creates clarity in communication.
 
 * Common terms
-  * When referring to users and use cases, ensure consistency with [use
-    cases](usecase-personas/)
+  * When referring to users and use cases, ensure consistency with
+    [use cases](usecase-personas/)
   * See [CNCF Style Guide][cncf-style] for common terms. Note that the following
     terms are not hyphenated and all lower case, except for capitalizing the
     first letter when at the beginning of a sentence:
