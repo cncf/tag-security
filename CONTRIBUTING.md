@@ -59,7 +59,6 @@ Suggestion:
 > capability to validate their security policy decisions are reflected in
 > deployed software.
 
-
 An example of a nit:
 > They use cloud-native technologies with clear understanding of risks and the
 > ability to validate that their security policy decisions are reflected in
