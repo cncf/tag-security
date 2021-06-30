@@ -103,7 +103,7 @@ and provide concurrence prior to merging.
 Two persons with access, other than the PR author, must review the PR and
 provide concurrence, the last of which should perform the merge.
 
-[Code owners](CODEOWNERS.md) need to be at least one concurring reviewer or the
+[Code owners](CODEOWNERS) need to be at least one concurring reviewer or the
 merging party.
 
 ### Merging pull requests
