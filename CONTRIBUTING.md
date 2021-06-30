@@ -1,4 +1,4 @@
-## Contributing
+# Contributing
 
 We aspire to create a welcoming environment for collaboration on this project
 and ask that all contributors do the same. For more details, see our [code of
@@ -7,7 +7,7 @@ conduct](CODE-OF-CONDUCT.md).
 This document covers contributions to this git repository. Please review
 [governance](governance) for our mission, charter, and other operations.
 
-### Open source
+## Open source
 
 While this repository does not contain open source code, we manage content
 contributions following open source practice, as detailed below.
@@ -73,6 +73,7 @@ correction:
 #### Simple changes
 
 Simple changes are defined as:
+
 * spelling, typo, grammar
 * clarifications, minor updates
 
@@ -89,6 +90,7 @@ merging party.
 #### Significant changes
 
 Significant changes are defined as:
+
 * major changes to the repo
 * extensive changes to repo contents
 * other items as determined by the Technical Leads and Co-Chairs (to be updated
@@ -140,6 +142,7 @@ guidelines via pull request to this document. Feel free to add references to
 good sources for content guidelines below.
 
 Sources:
+
 * [OpenOpps Contribution Guide][openopps-style]
 * [18F Content Guide](https://content-guide.18f.gov/)
 
