@@ -1,8 +1,8 @@
 ## Contributing
 
 We aspire to create a welcoming environment for collaboration on this project
-and ask that all contributors do the same. For more details, see our
-[code of conduct](CODE-OF-CONDUCT.md).
+and ask that all contributors do the same. For more details, see our [code of
+conduct](CODE-OF-CONDUCT.md).
 
 This document covers contributions to this git repository. Please review
 [governance](governance) for our mission, charter, and other operations.
@@ -12,9 +12,9 @@ This document covers contributions to this git repository. Please review
 While this repository does not contain open source code, we manage content
 contributions following open source practice, as detailed below.
 
-All contributions to this project will be released under the
-[Apache License](LICENSE) By submitting a pull request (PR), you are agreeing to
-release the PR contents under this license.
+All contributions to this project will be released under the [Apache
+License](LICENSE) By submitting a pull request (PR), you are agreeing to release
+the PR contents under this license.
 
 ## Communication
 
@@ -27,9 +27,9 @@ If you are new to the group, reviewing pull requests and commenting on issues is
 a great way to get involved!  We strongly encourage and support all our members
 to participate in anyway they can.
 
-Except for urgent or very small grammar or spelling fixes, such as simple changes discussed below, we leave pull
-requests open for at least 24 hours, so that others have the chance to
-review/comment.
+Except for urgent or very small grammar or spelling fixes, such as simple
+changes discussed below, we leave pull requests open for at least 24 hours, so
+that others have the chance to review/comment.
 
 #### Favorable review
 
@@ -47,20 +47,28 @@ language or language that is a matter of preferred usage are not considered
 nits.
 
 An example of preferential language:
-> They use cloud technologies with clear understanding of risks and the ability to validate that their security policy decisions are reflected in deployed software.
+> They use cloud technologies with clear understanding of risks and the ability
+> to validate that their security policy decisions are reflected in deployed
+> software.
 
-> ability is a human oriented term, capability is more technical and may be more appropriate
-```suggestion
-They use cloud technologies with clear understanding of risks and the capability to validate their security policy decisions are reflected in deployed software.
-```
+"Ability" is a human oriented term, "capability" is more technical and may be
+more appropriate.
+
+Suggestion:
+> They use cloud technologies with clear understanding of risks and the
+> capability to validate their security policy decisions are reflected in
+> deployed software.
+
 
 An example of a nit:
-> They use cloud-native technologies with clear understanding of risks and the ability to validate that their security policy decisions are reflected in deployed software.
+> They use cloud-native technologies with clear understanding of risks and the
+> ability to validate that their security policy decisions are reflected in
+> deployed software.
 
-> per TOC definition of cloud native, it is not hyphenated
-```suggestion
-They use cloud technologies with clear understanding of risks and the ability to validate that their security policy decisions are reflected in deployed software.
-```
+Per TOC definition of cloud native, it is not hyphenated.
+
+correction:
+> They use cloud native technologies...
 
 #### Simple changes
 
@@ -99,16 +107,20 @@ merging party.
 
 ### Merging pull requiests
 
-PRs may be merged after at least one review as occurred, dependent on the type of changes reflected in the PR.  The merging party needs to verify a review has occurred, the PR is in alignment with this guide, and is in scope of the TAG.
+PRs may be merged after at least one review as occurred, dependent on the type
+of changes reflected in the PR.  The merging party needs to verify a review has
+occurred, the PR is in alignment with this guide, and is in scope of the TAG.
 
 ### Writing style
 
 Consistency creates clarity in communication.
 
 * Common terms
-  * When referring to users and use cases, ensure consistency with [use cases](usecase-personas/)
-  * See [CNCF Style Guide](https://github.com/cncf/foundation/blob/master/style-guide.md) for common terms. Note that the following terms are not hyphenated and all lower case, except for capitalizing the first letter when at the beginning of a
-sentence:
+  * When referring to users and use cases, ensure consistency with [use
+    cases](usecase-personas/)
+  * See [CNCF Style Guide][cncf-style] for common terms. Note that the following
+    terms are not hyphenated and all lower case, except for capitalizing the
+    first letter when at the beginning of a sentence:
     * open source
     * cloud native
 * Additional Formatting
@@ -120,13 +132,16 @@ sentence:
     for reviewers.
 * File & directory naming conventions
   * every directory should have a README.md with useful introductory text
-  * all other file and directory names should be all lower case with dashes
-    to separate words
+  * all other file and directory names should be all lower case with dashes to
+    separate words
 
 If you find yourself correcting for consistency, please propose additional style
 guidelines via pull request to this document. Feel free to add references to
 good sources for content guidelines below.
 
 Sources:
-* [OpenOpps Contribution Guide](https://github.com/openopps/openopps-platform/blob/master/CONTRIBUTING.md)
+* [OpenOpps Contribution Guide][openopps-style]
 * [18F Content Guide](https://content-guide.18f.gov/)
+
+[cncf-style]: https://github.com/cncf/foundation/blob/master/style-guide.md
+[openopps-style]: https://github.com/openopps/openopps-platform/blob/master/CONTRIBUTING.md
