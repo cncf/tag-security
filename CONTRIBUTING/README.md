@@ -21,7 +21,7 @@ you are agreeing to release the PR contents under this license.
 Anyone interested in contributing should join the mailing list and other
 [communication channels](/README.md#Communications)
 
-We strongly encourage and support all our members to participate in anyway 
+We strongly encourage and support all our members to participate in anyway
 they can. Not everyone can participate in the regularly scheduled live meetings,
 so we strive to make our processes friendly for people to be active contributors
 through asynchronous communication and contributions to our documentation
@@ -30,4 +30,4 @@ in this repository.
 ## Github pull requests and issues
 
 If you are new to the group, [reviewing pull requests](pull-request-review.md)
-and commenting on [issues](/issues) is a great way to get involved!  
+and commenting on issues is a great way to get involved!
