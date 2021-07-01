@@ -118,8 +118,8 @@ occurred, the PR is in alignment with this guide, and is in scope of the TAG.
 
 Consistency creates clarity in communication.
 
-* Common terms
 <!-- cSpell:ignore usecase --->
+* Common terms
   * When referring to users and use cases, ensure consistency with
     [use cases](usecase-personas/)
   * See [CNCF Style Guide][cncf-style] for common terms. Note that the following
@@ -127,7 +127,6 @@ Consistency creates clarity in communication.
     first letter when at the beginning of a sentence:
     * open source
     * cloud native
-
 * Additional formatting
   * Headlines, page titles, subheads and similar content should follow sentence
     case, and should not include a trailing colon.
@@ -135,7 +134,6 @@ Consistency creates clarity in communication.
   * Wrap lines at 80 characters, except where it would break a link. No need to
     reformat the whole paragraph to make it perfect -- fewer diffs are easier
     for reviewers.
-
 * File & directory naming conventions
   * Every directory should have a README.md with useful introductory text.
   * All other file and directory names should be all lower case with dashes to
