@@ -1,6 +1,3 @@
----
-# cSpell:ignore Opps,usecase
----
 # Contributing
 
 We aspire to create a welcoming environment for collaboration on this project
@@ -120,6 +117,7 @@ occurred, the PR is in alignment with this guide, and is in scope of the TAG.
 Consistency creates clarity in communication.
 
 * Common terms
+<!-- cSpell:ignore usecase --->
   * When referring to users and use cases, ensure consistency with
     [use cases](usecase-personas/)
   * See [CNCF Style Guide][cncf-style] for common terms. Note that the following
@@ -127,7 +125,7 @@ Consistency creates clarity in communication.
     first letter when at the beginning of a sentence:
     * open source
     * cloud native
-* Additional Formatting
+* Additional formatting
   * Headlines, page titles, subheads and similar content should follow sentence
     case, and should not include a trailing colon.
   * Paragraphs do not start with leading indent.
@@ -135,9 +133,9 @@ Consistency creates clarity in communication.
     reformat the whole paragraph to make it perfect -- fewer diffs are easier
     for reviewers.
 * File & directory naming conventions
-  * every directory should have a README.md with useful introductory text
-  * all other file and directory names should be all lower case with dashes to
-    separate words
+  * Every directory should have a README.md with useful introductory text.
+  * All other file and directory names should be all lower case with dashes to
+    separate words.
 
 If you find yourself correcting for consistency, please propose additional style
 guidelines via pull request to this document. Feel free to add references to
@@ -145,6 +143,7 @@ good sources for content guidelines below.
 
 Sources:
 
+<!-- cSpell:ignore Opps --->
 * [OpenOpps Contribution Guide][openopps-style]
 * [18F Content Guide](https://content-guide.18f.gov/)
 
