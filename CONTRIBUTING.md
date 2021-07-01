@@ -1,3 +1,6 @@
+---
+# cSpell:ignore Opps,usecase
+---
 # Contributing
 
 We aspire to create a welcoming environment for collaboration on this project
