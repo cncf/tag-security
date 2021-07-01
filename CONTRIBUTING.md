@@ -116,8 +116,8 @@ occurred, the PR is in alignment with this guide, and is in scope of the TAG.
 
 Consistency creates clarity in communication.
 
-* Common terms
 <!-- cSpell:ignore usecase --->
+* Common terms
   * When referring to users and use cases, ensure consistency with
     [use cases](usecase-personas/)
   * See [CNCF Style Guide][cncf-style] for common terms. Note that the following
