@@ -21,7 +21,7 @@ you are agreeing to release the PR contents under this license.
 Anyone interested in contributing should join the mailing list and other
 [communication channels](README.md#Communications)
 
-### Reviewing Pull Requests
+## Reviewing Pull Requests
 
 If you are new to the group, reviewing pull requests and commenting on issues is
 a great way to get involved!  We strongly encourage and support all our members
@@ -31,7 +31,7 @@ Except for urgent or very small grammar or spelling fixes, such as simple
 changes discussed below, we leave pull requests open for at least 24 hours, so
 that others have the chance to review/comment.
 
-#### Favorable review
+### Favorable review
 
 A favorable review is determined by the contents of the PR complying with the
 contributing guide, the writing style, and agreement the contents align with the
@@ -39,14 +39,15 @@ TAG's goals, objectives, and scope.  It is anticipated that PRs submitted, with
 the exception of spelling and grammar changes, have been discussed with members
 of the TAG via slack or issues.
 
-##### Nits
+#### Nits
 
 Nits are minor suggestions and changes that are strongly encouraged to be
 identified and resolved to provide consistency in the repo.  Preferential
 language or language that is a matter of preferred usage are not considered
 nits.
 
-An example of preferential language:
+##### Example of preferential language
+
 > They use cloud technologies with clear understanding of risks and the ability
 > to validate that their security policy decisions are reflected in deployed
 > software.
@@ -59,7 +60,8 @@ Suggestion:
 > capability to validate their security policy decisions are reflected in
 > deployed software.
 
-An example of a nit:
+##### Example of a nit
+
 > They use cloud-native technologies with clear understanding of risks and the
 > ability to validate that their security policy decisions are reflected in
 > deployed software.
@@ -116,8 +118,8 @@ occurred, the PR is in alignment with this guide, and is in scope of the TAG.
 
 Consistency creates clarity in communication.
 
-<!-- cSpell:ignore usecase --->
 * Common terms
+<!-- cSpell:ignore usecase --->
   * When referring to users and use cases, ensure consistency with
     [use cases](usecase-personas/)
   * See [CNCF Style Guide][cncf-style] for common terms. Note that the following
@@ -125,6 +127,7 @@ Consistency creates clarity in communication.
     first letter when at the beginning of a sentence:
     * open source
     * cloud native
+
 * Additional formatting
   * Headlines, page titles, subheads and similar content should follow sentence
     case, and should not include a trailing colon.
@@ -132,6 +135,7 @@ Consistency creates clarity in communication.
   * Wrap lines at 80 characters, except where it would break a link. No need to
     reformat the whole paragraph to make it perfect -- fewer diffs are easier
     for reviewers.
+
 * File & directory naming conventions
   * Every directory should have a README.md with useful introductory text.
   * All other file and directory names should be all lower case with dashes to
