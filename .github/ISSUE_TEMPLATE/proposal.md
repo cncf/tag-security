@@ -13,6 +13,17 @@ Impact: Describe the customer impact of the problem. Who will this help?  How wi
 
 Scope: How much effort will this take? ok to provide a range of options if or "not yet determined" for initial proposals.  Feel free to include proposed tasks below or link a Google doc
 
+Intent to lead:
+* [ ] **I intend to be a project lead on this proposal if the community is interested in pursing this work.** This statement of intent does not preclude others from co-leading or becoming lead in my stead.
+
+Proposal to Project:
+* [ ] Asked to have issue assigned
+* [ ] Added to the planned meeting template for _mm dd_
+* [ ] Raised in a Security TAG meeting to determine interest - _mm dd_
+* [ ] Collaborators comment on issue for determine interest and nominate project lead
+* [ ] Scoping meeting scheduled and scope determined _mm dd_
+* [ ] Scope presented to Security TAG leadership and Sponsor is assigned
+
 TO DO
 - [ ] Security TAG Leadership Representative:
 - [ ] Project leader(s):
