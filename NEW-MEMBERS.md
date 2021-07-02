@@ -13,7 +13,7 @@ New members are advised to:
     * [README.md](https://github.com/cncf/tag-security/blob/main/README.md)
     * [CODE-OF-CONDUCT.md][coc]
     * [Use cases and personas][use-cases]
-* Regularly join one of the [Zoom meetings][meeting-time] at least for the first
+* Regularly join one of the [Zoom meetings][meeting-times] at least for the first
   couple of months to get yourself up to speed.
 * Here are multiple ways to get involved:
     * Join the meeting as advised above and express your area of interests or if
@@ -23,7 +23,7 @@ New members are advised to:
       needed](https://github.com/cncf/tag-security/labels/help%20wanted) and
       comment on it expressing interest.
 
-[meeting-time]: https://github.com/cncf/tag-security/blob/main/README.md#meeting-time
+[meeting-times]: https://github.com/cncf/tag-security/blob/main/README.md#meeting-times
 [coc]: https://github.com/cncf/tag-security/blob/main/CODE-OF-CONDUCT.md
 <!-- cSpell:ignore usecase --->
 [use-cases]: https://github.com/cncf/tag-security/tree/main/usecase-personas
