@@ -87,9 +87,9 @@ process](process.md)).
 
 The general list of activities for TL are:
 
-* Establish new subprojects
-* Decommission existing subprojects
-* Resolve cross-subproject technical issues and decisions
+* Establish new sub-projects
+* Decommission existing sub-projects
+* Resolve cross-sub-project technical issues and decisions
 * Propose agenda items for meetings to ensure that open issues are discussed
   with the group when needed
 
@@ -124,7 +124,7 @@ individual to ensure continuity in review and ongoing support of the project.
 Depending on the expected length of the project, Project Leads may be assigned
 as OWNERS of the project directory or sub-directory in this repository to help
 facilitate and moderate new content to the project. The sponsor of the project
-or their delgate initiates the PR to create the new directory and update the
+or their delegate initiates the PR to create the new directory and update the
 OWNERS file.
 
 ## Role of Team Leads
