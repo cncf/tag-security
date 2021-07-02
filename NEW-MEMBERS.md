@@ -10,7 +10,7 @@ New members are advised to:
   [#tag-security](https://cloud-native.slack.com/messages/CDJ7MLT8S) channel and
   introduce yourself.
 * Initially go through the following documents in the repository:
-    * [README.md](https://github.com/cncf/tag-security/blob/main/README.md)
+    * [README.md](README.md)
     * [CODE-OF-CONDUCT.md][coc]
     * [Use cases and personas][use-cases]
 * Regularly join one of the [Zoom meetings][meeting-times] at least for the first
@@ -23,7 +23,7 @@ New members are advised to:
       needed](https://github.com/cncf/tag-security/labels/help%20wanted) and
       comment on it expressing interest.
 
-[meeting-times]: https://github.com/cncf/tag-security/blob/main/README.md#meeting-times
-[coc]: https://github.com/cncf/tag-security/blob/main/CODE-OF-CONDUCT.md
+[meeting-times]: README.md#meeting-times
+[coc]: CODE-OF-CONDUCT.md
 <!-- cSpell:ignore usecase --->
-[use-cases]: https://github.com/cncf/tag-security/tree/main/usecase-personas
+[use-cases]: usecase-personas
