@@ -87,8 +87,10 @@ agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4m
 
 ### Zoom Details
 
-[Meeting Link: zoom.us/my/cncftagsecurity (Passcode:
-77777)](https://zoom.us/j/7375677271?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
+<!-- cSpell:ignore cncftagsecurity -->
+Meeting Link: 
+[zoom.us/my/cncftagsecurity (Password: 77777)]
+(https://zoom.us/j/7375677271?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
 
 One tap mobile:
 
@@ -119,16 +121,14 @@ list below:
 
 ## New members
 
-If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
+If you are new to the group, check out our [New Members Page](NEW-MEMBERS.md) and
 submit a PR to add yourself to the [members list](#stag-members).
 
 ## Related groups
 
-- [Kubernetes Policy Working
-  Group](https://github.com/kubernetes/community/tree/master/wg-policy)
-- [Kubernetes
-  SIG-Auth](https://github.com/kubernetes/community/tree/master/sig-auth)
-- [NIST Big Data WG](https://bigdatawg.nist.gov/)
+There are several groups that are affiliated to or do work and cover topics relevant
+ to the work of Security TAG. These can be seen [here](governance/related-groups/)
+
 
 ## History
 
@@ -139,6 +139,7 @@ submit a PR to add yourself to the [members list](#stag-members).
   SAFE WG
 
 ## Members
+<!-- cSpell:disable -->
 
 ### STAG Chairs
 
@@ -196,7 +197,7 @@ Co-chair representative: @lumjjb
 
 Membership governance can be viewed
 [here](https://github.com/cncf/tag-security/blob/main/governance/roles.md#role-of-members).
-If you are new, check out the [New Members Page](NEWMEMBERS.md).
+If you are new, check out the [New Members Page](/NEW-MEMBERS.md).
 
 <!-- markdownlint-disable MD033 -->
 <details><summary>Click to view list</summary>
