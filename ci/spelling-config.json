@@ -2,7 +2,7 @@
     "version": "0.1",
     "language": "en",
     "ignorePaths": [
-        "**/.github/**",
+        "**/.github/workflows/**",
         "**/ci/**"
     ],
     "words": [
