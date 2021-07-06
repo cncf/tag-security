@@ -90,7 +90,8 @@ agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4m
 
 <!-- cSpell:ignore cncftagsecurity -->
 Meeting Link:
-[zoom.us/my/cncftagsecurity](https://zoom.us/j/7375677271?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09) (Password: 77777)
+[zoom.us/my/cncftagsecurity](https://zoom.us/j/7375677271?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
+(Password: 77777)
 
 One tap mobile:
 
