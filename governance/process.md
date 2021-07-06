@@ -28,8 +28,8 @@ important that any content presented to the group must adhere to our
 
 Suggestions are an easy way for someone to suggest something to the group for
 which you do not intend to be the project lead of. It is important that you bear
-in mind when submitting suggestions that if the group does not nominate a lead
-for the suggestion, the work may not be done. Mentoring and co-leading are
+in mind when submitting suggestions that if there is no volunteer to lead
+the work will not happen. Mentoring and co-leading are
 available to anyone unsure or interested in becoming a project lead, often
 suggestions have a limited scope of work and are ideal for individuals looking
 to stretch their professional skills.
@@ -37,7 +37,7 @@ to stretch their professional skills.
 ### Proposals
 
 Proposals are ideas that are intended to become projects, where the submitter
-intends to be the project lead. If a proposal is submitted that does not have a
+explicitly volunteers to be the project lead. If a proposal is submitted that does not have a
 project lead intent checked, it will be converted to a suggestion during triage.
 
 
@@ -55,7 +55,7 @@ line with the [mission and charter](charter.md).
    already exist. If an issue already exists that is marked as a suggestion but
    you are interested in leading, comment on the issue and reach out in the
    [#tag-security-triage](https://cloud-native.slack.com/archives/CJX8EBF1D)
-   channel to bring attention to it. Skip to the 3rd step.
+   channel to bring attention to it. Skip to ask for collaboration.
 
 1. **Raise an Issue:** [Create an
    issue](https://github.com/cncf/tag-security/issues/new) that outlines the
@@ -65,7 +65,7 @@ line with the [mission and charter](charter.md).
    effort. Try to complete the template as much as possible.
 
 1. **Ask the group for collaboration:** Rather than immediately beginning work
-   on a solution, bring the issue up for discussion in a Security TAG meeting.
+   on a solution, bring the issue up for discussion.
    The following guidance shows common steps, though communication often happens
    in different sequence. The key outcome is that there is opportunity for input
    across different channels, with thoughtfulness to accessibility across
@@ -74,12 +74,12 @@ line with the [mission and charter](charter.md).
    presentation) or wish to get involved.
 
    A) On slack, share the issue link and ask whether others are interested in
-   the problem, if so, let them know to join the planned meeting (see below)
+   the problem, if so, refer them to the issue which has content on discussions/meetings
    where the issue will be introduced or where to stay tuned for more
    information. provide the issue link and encourage any feedback on your
    proposed solution or activity.
 
-   B) Choose an upcoming meeting in **_either region_** where you or another
+   B) Choose an upcoming meeting where you or another
    group member who is interested in working on the project is able to attend,
    then add the issue to the meeting agenda: include a link and the name of the
    person who will present the proposal in the "Planned Meeting" area of the
