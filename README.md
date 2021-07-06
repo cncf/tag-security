@@ -76,10 +76,10 @@ and posting to the channels.
 
 Group meeting times are listed below:
 
-- US:   Weekly on Wednesdays at 10:00am GMT-7 (see your timezone
-  [here](https://time.is/compare/1000_27_Jan_2021_in_PT))
-- APAC: Bi-weekly on Tuesdays at 1:00pm GMT+11 (see your timezone
-  [here](https://time.is/compare/1300_26_Jan_2021_in_AEDT))
+- US:   Weekly on Wednesdays at 10:00am UTC-7 (see your timezone
+  [here](https://time.is/1000_today_in_PT?CNCF_Security_TAG_Meeting))
+- APAC: Bi-weekly on Tuesdays at 1:00pm UTC+11 (see your timezone
+  [here](https://time.is/1300_today_in_AEDT?CNCF_Security_TAG_Meeting))
 
 See the  [CNCF Calendar](https://www.cncf.io/calendar/) for calendar invites.
 
