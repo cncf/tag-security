@@ -135,7 +135,6 @@ submit a PR to add yourself to the [members list](#stag-members).
 There are several groups that are affiliated to or do work and cover topics relevant
  to the work of Security TAG. These can be seen [here](governance/related-groups/)
 
-
 ## History
 
 - TAG-Security - renamed STAG ([TOC Issue
