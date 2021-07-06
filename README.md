@@ -86,26 +86,31 @@ See the  [CNCF Calendar](https://www.cncf.io/calendar/) for calendar invites.
 [Meeting minutes and
 agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
 
-### Zoom Details
+### Zoom Meeting Details
 
 <!-- cSpell:ignore cncftagsecurity -->
-Meeting Link: 
-[zoom.us/my/cncftagsecurity (Password: 77777)]
-(https://zoom.us/j/7375677271?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
+Meeting Link:
+[zoom.us/my/cncftagsecurity](https://zoom.us/j/7375677271?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
+(Password: 77777)
 
 One tap mobile:
 
-- +16465588656,,7375677271# US (New York)
-- +16699006833,,7375677271# US (San Jose)
+| Location | Number |
+| --- | --- |
+| US - New York | +16465588656,,7375677271# |
+| US - San Jose | +16699006833,,7375677271# |
 
 Dial by your location:
 
-- +1 646 558 8656 US (New York)
-- +1 669 900 6833 US (San Jose)
-- 877 369 0926 US Toll-free
-- 855 880 1246 US Toll-free
-- 1800 945 157 Australia Toll-free
-- [Find your local number](https://zoom.us/u/alwlmxlNn)
+| Location | Number |
+| --- | --- |
+| US - New York | +1 646 558 8656 |
+| US - San Jose | +1 669 900 6833|
+| US - Toll-free | 877 369 0926 |
+| US - Toll-free | 855 880 1246 |
+| Australia - Toll-free | 1800 945 157 |
+
+Or [find your local number](https://zoom.us/u/alwlmxlNn).
 
 Meeting ID: 737 567 7271
 
@@ -129,7 +134,6 @@ submit a PR to add yourself to the [members list](#stag-members).
 
 There are several groups that are affiliated to or do work and cover topics relevant
  to the work of Security TAG. These can be seen [here](governance/related-groups/)
-
 
 ## History
 
