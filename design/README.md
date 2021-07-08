@@ -1,17 +1,18 @@
-## TAG Security Logos
+## Security TAG Logos
 
-*Note: GitHub Flavored Markdown used in the Readme doesn't support background colors. The white logos below are displayed on the light grey of tables.*
+*Note: GitHub Flavored Markdown used in the Readme doesn't support background colors. The white logos below are displayed on the medium grey (#474756) in its row.*
 
 <table>
-<tr>
+<tr style="background-color:#FFFFFF">
     	<th colspan="7"></th>
 </tr>
-<tr>
+<tr style="background-color:#FFFFFF">
 	<th></th>
         <th colspan="3">PNG</th>
         <th colspan="3">SVG</th>
 </tr>
 <tr>
+<tr style="background-color:#FFFFFF">
         <th></th>
         <th>horizontal</th>
         <th>stacked</th>
@@ -20,7 +21,7 @@
         <th>stacked</th>
         <th>icon</th>
 </tr>
-<tr>
+<tr style="background-color:#FFFFFF">
         <th>color</th>
         <td><img src="logo/cloud-native-security-horizontal-color.png" width="200"></td>
         <td><img src="logo/cloud-native-security-stacked-color.png" width="95"></td>
@@ -29,28 +30,27 @@
         <td><img src="logo/cloud-native-security-stacked-color.svg" width="95"></td>
         <td><img src="logo/cloud-native-security-icon-color.svg" width="95"></td>
 </tr>
-<tr>
-        <th>white</th>
-        <td><img src="logo/Cloud-Native-Security-Horizontal-White.png" width="200"></td>
-        <td><img src="logo/Cloud-Native-Security-Stacked-White.png" width="95"></td>
-        <td><img src="logo/Cloud-Native-Security-Icon-White.png" width="95"></td>
+<tr style="background-color:#474756">
+        <th style="color:#FFFFFF">white</th>
+        <td><img src="logo/cloud-native-security-horizontal-white.png" width="200"></td>
+        <td><img src="logo/cloud-native-security-stacked-white.png" width="95"></td>
+        <td><img src="logo/cloud-native-security-icon-white.png" width="95"></td>
         <td><img src="logo/cloud-native-security-horizontal-white.svg" width="200"></td>
-        <td><img src="logo/Cloud-Native-Security-Stacked-white.svg" width="95"></td>
-        <td><img src="logo/Cloud-Native-Security-Icon-White.svg" width="95"></td>
+        <td><img src="logo/cloud-native-security-stacked-white.svg" width="95"></td>
+        <td><img src="logo/cloud-native-security-icon-white.svg" width="95"></td>
 </tr>
 </table>
 
 <br>
 
-
 ## TAG Security Color Scheme
 <br>
 <table>
-<tr>
+<tr style="background-color:#FFFFFF">
 	<th colspan="3">Grays</th>
 	<th colspan="4">Main Colors</th>
 </tr>
-<tr>
+<tr style:"background-color:#FFFFFF">
 	<td><br><img src="colors/%236F6F7F.png"><br><br></td>
 	<td><img src="colors/%23474756.png"></td>
 	<td><img src="colors/%23141419.png"></td>
@@ -59,7 +59,7 @@
 	<td><img src="colors/%23389BB2.png"></td>
 	<td><img src="colors/%2385C2D2.png"></td>
 </tr>
-<tr>
+<tr style:"background-color:#FFFFFF">
 	<th>#6F6F7F</th>
         <th>#474756</th>
         <th>#141419</th>
@@ -73,15 +73,15 @@
 <br>
 
 <table>
-<tr>
+<tr style="background-color:#FFFFFF">
 	<th colspan="3">Accent Colors</th>
 </tr>
-<tr>
+<tr style="background-color:#FFFFFF">
 	<td><br><img src="colors/%23D81637.png"><br><br></td>
 	<td><img src="colors/%23F98903.png"></td>
 	<td><img src="colors/%23F7C906.png"></td>
 </tr>
-<tr>
+<tr style="background-color:#FFFFFF">
         <th>#D81637</th>
  	<th>#F98903</th>
         <th>#F7C906</th>
