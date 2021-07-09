@@ -4,7 +4,7 @@
     "ignorePaths": [
         "**/.github/**",
         "**/ci/**"
-    ],    
+    ],
     "words": [
         "CNCF",
         "OWASP",
@@ -12,20 +12,15 @@
         "Kubernetes",
         "kubecon",
         "Kamus",
-        "SPIFFE",
-        "Istio",
-        "Sysdig",
-        "Falco",
         "RBAC",
         "Roadmap",
-        "ultrasaurus",
-        "Jeyappragash",
-        "pragashj",
-        "dshaw",
-        "lumjjb",
-        "Cappos",
-        "ericavonb",
         "HIPAA",
-        "CODEOWNERS"
+        "CODEOWNERS",
+        "explainability",
+        "APAC",
+        "spiffe",
+        "SPIFFE",
+        "keycloak",
+        "Keycloak"
     ]
 }

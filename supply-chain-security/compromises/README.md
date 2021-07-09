@@ -1,20 +1,20 @@
 # Catalog of Supply Chain Compromises
 
-
 This repository contains links to articles of software supply chain
-compromises. The goal is not to catalog every known supply chain attack, but
+compromises. The goal is not to catalog every known supply chain attack,but
 rather to capture many examples of different kinds of attack, so that we
 can better understand the patterns and develop best practices and tools.
 
-For definitions of each compromise type, please check out our [compromise definitions page](/supply-chain-security/compromises/compromise-definitions.md)
+For definitions of each compromise type, please check out our
+[compromise definitions page](/supply-chain-security/compromises/compromise-definitions.md)
 
 We welcome additions to this catalog by
 [filing an issue](https://github.com/cncf/tag-security/issues/new/choose) or
 [github pull request](https://github.com/cncf/tag-security)
 
-
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
+| [PHP self-hosted git server](2021/php.md) | 2021 | Dev Tooling | [1](https://news-web.php.net/php.internals/113838) |
 | [Homebrew](2021/homebrew.md) | 2021 | Dev Tooling | [1](https://brew.sh/2021/04/21/security-incident-disclosure/), [2](https://hackerone.com/reports/1167608) |  |
 | [Codecov](2021/codecov.md) | 2021 | Source Code | [1](https://about.codecov.io/security-update/) |  |
 | [VSCode GitHub](2021/vscode.md) | 2021 | Dev Tooling | [1](https://www.bleepingcomputer.com/news/security/heres-how-a-researcher-broke-into-microsoft-vs-codes-github/) |  |
@@ -25,10 +25,10 @@ We welcome additions to this catalog by
 | [NPM reverse shells and data mining](2020/nodejs.md) | 2020 | Dev Tooling | [1](https://www.bleepingcomputer.com/news/security/npm-nukes-nodejs-malware-opening-windows-linux-reverse-shells/) |
 | [Webmin backdoor](2019/webmin-backdoor.md) | 2019 | Dev Tooling | [1](https://www.zdnet.com/article/backdoor-found-in-webmin-a-popular-web-based-utility-for-managing-unix-servers/), [2](http://www.webmin.com/exploit.html) |
 | [purescript-npm](2019/purescript-npm.md) | 2019 | Source Code | [1](https://www.npmjs.com/advisories/1082), [2](https://www.npmjs.com/advisories/1082) |
-| [electron-native-notify](2019/electron-native-notify.md) | 2019 | Source Code | [1](https://blog.npmjs.org/post/185397814280/plot-to-steal-cryptocurrency-foiled-by-the-npm), [2](https://komodoplatform.com/update-agama-vulnerability/)|
+| [electron-native-notify](2019/electron-native-notify.md) | 2019 | Source Code | [1](https://blog.npmjs.org/post/185397814280/plot-to-steal-cryptocurrency-foiled-by-the-npm) |
 | [ShadowHammer](2019/shadowhammer.md) | 2019 | Multiple steps | [1](https://www.csoonline.com/article/3384259/asus-users-fall-victim-to-supply-chain-attack-through-backdoored-update.html), [2](https://securelist.com/operation-shadowhammer/89992/) |
-| [PEAR Breach](2019/pear.md) | 2019 | Publishing Infrastructure | [1](https://blog.dcso.de/php-pear-software-supply-chain-attack/), [2](https://thehackernews.com/2019/01/php-pear-hacked.html) |
-| [The event-stream vulnerability](2018/event_stream.md) | 2018 | Malicious Maintainer | [1]((https://medium.com/intrinsic/compromised-npm-package-event-stream-d47d08605502)),[2](https://github.com/dominictarr/event-stream/issues/116) |
+| [PEAR Breach](2019/pear.md) | 2019 | Publishing Infrastructure | [1](https://thehackernews.com/2019/01/php-pear-hacked.html) |
+| [The event-stream vulnerability](2018/event_stream.md) | 2018 | Malicious Maintainer | [1](https://medium.com/intrinsic/compromised-npm-package-event-stream-d47d08605502),[2](https://github.com/dominictarr/event-stream/issues/116) |
 | [Dofoil](2018/dofoil.md) | 2018 | Publishing Infrastructure | [1](https://www.zdnet.com/article/windows-attack-poisoned-bittorrent-client-set-off-huge-dofoil-outbreak-says-microsoft/) |
 | [Operation Red](2018/operation-red.md) | 2018 | Publishing Infrastructure | [1](https://blog.trendmicro.com/trendlabs-security-intelligence/supply-chain-attack-operation-red-signature-targets-south-korean-organizations/) |
 | [Gentoo Incident](2018/gentoo.md) | 2018    | Source Code | [1](https://wiki.gentoo.org/wiki/Project:Infrastructure/Incident_Reports/2018-06-28_Github)
