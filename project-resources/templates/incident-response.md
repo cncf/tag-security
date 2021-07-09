@@ -9,7 +9,7 @@ as well as patch/release.
 ### Identify the issue
 
 Triaging issues allows maintainers to focus resources on the most critically
-impacting problems. Potential security issues should be evaulated against the
+impacting problems. Potential security issues should be evaluated against the
 following information:
 
 * Which component(s) of the project is impacted?
