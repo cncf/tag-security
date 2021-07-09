@@ -17,6 +17,10 @@
         "HIPAA",
         "CODEOWNERS",
         "explainability",
-        "APAC"
+        "APAC",
+        "spiffe",
+        "SPIFFE",
+        "keycloak",
+        "Keycloak"
     ]
 }
