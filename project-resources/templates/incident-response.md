@@ -28,7 +28,7 @@ following information:
 * Does an exploit exist?
 
 Any potential issue that has an exploit, permits privilege escalation, is
-simple, and does not require user interaction should be evaulated immediately.
+simple, and does not require user interaction should be evaluated immediately.
 [CVSS Version 3.1](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator) can be
 a helpful tool in evaluating the criticality of reported issues.
 
@@ -37,7 +37,7 @@ a helpful tool in evaluating the criticality of reported issues.
 Respond to the reporter and notify them you have received the issue and have
 begun reviewing it. Remind them of the embargo policy, and provide them
 information on who to contact/follow-up with if they have questions. Estimate a
-timeframe that they can expect to recieve an update on the issue. Create a
+time frame that they can expect to receive an update on the issue. Create a
 calendar reminder to contact them again by that date to provide an update.
 
 ### Replicate the issue
@@ -48,7 +48,7 @@ insufficient, contact the reporter and ask for more information.
 If the issue cannot be replicated, re-engage the reporter, let them know it
 cannot be replicated, and work them to find a remediation.
 
-If the issue can be replicated, re-evaulate the criticality of the issue, and
+If the issue can be replicated, re-evaluate the criticality of the issue, and
 begin working on a remediation. Begin a draft security advisory.
 
 Notify the reporter you were able to replicate the issue and have begun working

@@ -21,6 +21,9 @@
         "spiffe",
         "SPIFFE",
         "keycloak",
-        "Keycloak"
+        "Keycloak",
+        "triage",
+        "Triage",
+        "exfiltration"
     ]
 }
