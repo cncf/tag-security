@@ -76,34 +76,41 @@ and posting to the channels.
 
 Group meeting times are listed below:
 
-- US:   Weekly on Wednesdays at 10:00am GMT-7 (see your timezone
-  [here](https://time.is/compare/1000_27_Jan_2021_in_PT))
-- APAC: Bi-weekly on Tuesdays at 1:00pm GMT+11 (see your timezone
-  [here](https://time.is/compare/1300_26_Jan_2021_in_AEDT))
+- US:   Weekly on Wednesdays at 10:00am UTC-7 (see your timezone
+  [here](https://time.is/1000_today_in_PT?CNCF_Security_TAG_Meeting))
+- APAC: Bi-weekly on Tuesdays at 1:00pm UTC+11 (see your timezone
+  [here](https://time.is/1300_today_in_AEDT?CNCF_Security_TAG_Meeting))
 
 See the  [CNCF Calendar](https://www.cncf.io/calendar/) for calendar invites.
 
 [Meeting minutes and
 agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
 
-### Zoom Details
+### Zoom Meeting Details
 
-[Meeting Link: zoom.us/my/cncftagsecurity (Passcode:
-77777)](https://zoom.us/j/7375677271?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
+<!-- cSpell:ignore cncftagsecurity -->
+Meeting Link:
+[zoom.us/my/cncftagsecurity](https://zoom.us/j/7375677271?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
+(Password: 77777)
 
 One tap mobile:
 
-- +16465588656,,7375677271# US (New York)
-- +16699006833,,7375677271# US (San Jose)
+| Location | Number |
+| --- | --- |
+| US - New York | +16465588656,,7375677271# |
+| US - San Jose | +16699006833,,7375677271# |
 
 Dial by your location:
 
-- +1 646 558 8656 US (New York)
-- +1 669 900 6833 US (San Jose)
-- 877 369 0926 US Toll-free
-- 855 880 1246 US Toll-free
-- 1800 945 157 Australia Toll-free
-- [Find your local number](https://zoom.us/u/alwlmxlNn)
+| Location | Number |
+| --- | --- |
+| US - New York | +1 646 558 8656 |
+| US - San Jose | +1 669 900 6833|
+| US - Toll-free | 877 369 0926 |
+| US - Toll-free | 855 880 1246 |
+| Australia - Toll-free | 1800 945 157 |
+
+Or [find your local number](https://zoom.us/u/alwlmxlNn).
 
 Meeting ID: 737 567 7271
 
@@ -120,14 +127,13 @@ list below:
 
 ## New members
 
-If you are new to the group, check out our [New Members Page](NEWMEMBERS.md) and
+If you are new to the group, check out our [New Members Page](NEW-MEMBERS.md) and
 submit a PR to add yourself to the [members list](#stag-members).
 
 ## Related groups
 
 There are several groups that are affiliated to or do work and cover topics relevant
  to the work of Security TAG. These can be seen [here](governance/related-groups/)
-
 
 ## History
 
@@ -138,6 +144,7 @@ There are several groups that are affiliated to or do work and cover topics rele
   SAFE WG
 
 ## Members
+<!-- cSpell:disable -->
 
 ### STAG Chairs
 
@@ -195,7 +202,7 @@ Co-chair representative: @lumjjb
 
 Membership governance can be viewed
 [here](https://github.com/cncf/tag-security/blob/main/governance/roles.md#role-of-members).
-If you are new, check out the [New Members Page](NEWMEMBERS.md).
+If you are new, check out the [New Members Page](/NEW-MEMBERS.md).
 
 <!-- markdownlint-disable MD033 -->
 <details><summary>Click to view list</summary>
