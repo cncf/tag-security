@@ -25,6 +25,6 @@ replacement of you from this list or the Security Contacts.
 ## Disclosure Timeline
 
 This project sustains a **X day disclosure timeline** to ensure we provide a
-quality, tested release. On some occassions, we may need to extend this timeline
+quality, tested release. On some occasions, we may need to extend this timeline
 due to complexity of the issue, lack of expertise available, or other reasons.
 Submitters of issues will be notified if an extension occurs.

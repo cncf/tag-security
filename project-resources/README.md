@@ -1,7 +1,7 @@
 # Security resources for projects
 
 This directory is intended to provide CNCF and other open source projects with
-resources and templates to assist in kickstarting their security practices.  The
+resources and templates to assist in kick-starting their security practices.  The
 templates, guides, and other documents herein assist projects in completion of
 the [self-assessment](assessments/guide/self-assessment.md) as well as a few
 items in the [CII badging](https://bestpractices.coreinfrastructure.org/en).
@@ -25,7 +25,7 @@ content was built on.
       confirm vulnerabilities, leverage security advisories, and push a
       patch/release.
 * [embargo-policy.md](embargo-policy.md)
-  * a draft embargo policy that outlines the timeframe and conditions
+  * a draft embargo policy that outlines the time frame and conditions
       surrounding disclosures.
 * [embargo.md](embargo.md)
   * a draft embargo notification that details the contents a notification should

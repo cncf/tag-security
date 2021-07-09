@@ -4,8 +4,8 @@
 
 For information regarding the security of this project please join:
 
-* $SLACKCHANNEL
-* $EMAILLIST
+* $SLACK-CHANNEL
+* $EMAIL-LIST
 
 You may also subscribe to an RSS feed of the above using $LINK.
 
@@ -42,7 +42,7 @@ policy $LINK for more information.
 ## Supported Versions
 
 Information regarding supported versions of this project can be found on
-$NAMEOFPAGELINK located on the $WEBSITE  and in the below table:
+$LINK located on the $WEBSITE  and in the below table:
 
 | Version | Supported |
 | --- | --- |

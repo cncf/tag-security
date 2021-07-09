@@ -24,6 +24,9 @@
         "Keycloak",
         "triage",
         "Triage",
-        "exfiltration"
+        "triaging",
+        "triaged",
+        "exfiltration",
+        "mitigations"
     ]
 }

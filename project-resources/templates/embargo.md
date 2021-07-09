@@ -4,7 +4,7 @@ This is an embargoed notification that a vulnerability has been discovered in
 $PROJECT. This notice has been sent to subscribed distributors and service
 providers in order to allow for timely patching. You are receiving this
 notification as you have agreed to abide by the embargo policy ($LINK) on this
-project. Do not forward this information to other parties without adhereing to
+project. Do not forward this information to other parties without complying with
 the instructions of the embargo policy.
 
 ## Summary
@@ -15,7 +15,7 @@ the vulnerability is about.*
 
 ### CVE
 
-#### $CVENUMBER
+#### $CVE-NUMBER
 
 ### Versions
 
