@@ -1,0 +1,15 @@
+# Security Contacts
+
+Defined below are the security persons of contact for this project. If you have
+wuestions regarding the triaging and handling of incoming issues, they may be
+contacted.
+
+The following security contacts have agreed to abide by the Embargo Policy $LINK
+and will be removed and replaced if found to be in violation of that agreement.
+
+DO NOT REPOERT SECURITY VULNERABILITIES DIRECTLY TO THESE NAMES, USE THE
+INSTRUCTIONS AT $LINK
+
+Security Contacts:
+
+* $NAME, $SLACK-EMAIL
