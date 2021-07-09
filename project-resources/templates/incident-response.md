@@ -58,10 +58,13 @@ within the project's specified window).
 
 #### Request a CVE number
 
-[Request a CVE number](https://cveform.mitre.org/) for the issue if one has not
-already been requested. Provide all required information and as much optional
-information as we can. The CVE number is shown as reserved with no further
-details until notified it has been published.
+If a CVE has already been provided, be sure to include it on the advisory. If
+one has not yet been created, [GitHub functions as a
+CNA](https://docs.github.com/en/code-security/security-advisories/about-github-security-advisories#cve-identification-numbers)
+and allows you to request one as part of the security advisory process. Provide
+all required information and as much optional information as we can. The CVE
+number is shown as reserved with no further details until notified it has been
+published.
 
 ## Notification
 
