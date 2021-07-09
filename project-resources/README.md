@@ -31,6 +31,14 @@ content was built on.
   * a draft embargo notification that details the contents a notification should
     contain.
 
+## Dependabot Configuration
+
+All public repositories have dependabot graphs and alerts enabled. Projects are
+encouraged to also *[enable Dependabot security
+updates](https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/configuring-dependabot-security-updates)*
+and *create a [custom configuration for their
+project](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/enabling-and-disabling-version-updates)*.
+
 ## CNCF project templates
 
 In addition to the security resources provided here, [CNCF's TAG Contributor
@@ -38,3 +46,15 @@ Strategy](https://github.com/cncf/tag-contributor-strategy/blob/main/README.md)
 has put together an [initial project template
 collection](https://github.com/cncf/project-template) with information on
 getting started.
+
+
+## Updates to this directory
+
+The project-resources directory is intended to be a living directory to include a lot of resources and templates projects and the community finds useful for making projects more secure in a simple and easy-to-adopt fashion.  Updates, suggestions for updates, or discussions for updates should initiate with an [issue](https://github.com/cncf/tag-security/issues) and labeled with "suggestion".
+
+### Contributing updates
+
+All members of the community and projects are welcome to contribute updates to this directory. We ask potential contributors to refer to the existing content and discussions as guidance when determining the content of their updates.
+
+It is highly recommended that you seek peer review for your updates beyond that of the Technical Leads and Chairs.
+
