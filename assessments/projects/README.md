@@ -2,7 +2,7 @@
 
 This directory contains the artifacts of Security TAG's various assessments and
 reviews of projects. Information on the processes to by which these artifacts
-are produced can be found in [guide](/assessments/).
+are produced can be found in [guide](/assessments/guide).
 
 ## Project reviews and assessments
 
