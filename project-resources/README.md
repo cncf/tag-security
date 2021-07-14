@@ -31,6 +31,13 @@ content was built on.
   * a draft embargo notification that details the contents a notification should
     contain.
 
+Disclaimer: These resources are designed to be helpful to projects and
+organizations, they require customization and configuration by the project
+intending to use them. It does not prevent security issues from being found on a
+project, will not automatically resolve them, and does not place CNCF Security
+TAG as the responsible party. If changes are made to these templates, projects
+are not required to pull in a new update.
+
 ## Dependabot Configuration
 
 All public repositories have dependabot graphs and alerts enabled. Projects are
@@ -50,11 +57,19 @@ getting started.
 
 ## Updates to this directory
 
-The project-resources directory is intended to be a living directory to include a lot of resources and templates projects and the community finds useful for making projects more secure in a simple and easy-to-adopt fashion.  Updates, suggestions for updates, or discussions for updates should initiate with an [issue](https://github.com/cncf/tag-security/issues) and labeled with "suggestion".
+The project-resources directory is intended to be a living directory to include
+a lot of resources and templates projects and the community finds useful for
+making projects more secure in a simple and easy-to-adopt fashion.  Updates,
+suggestions for updates, or discussions for updates should initiate with an
+[issue](https://github.com/cncf/tag-security/issues) and labeled with
+"suggestion".
 
 ### Contributing updates
 
-All members of the community and projects are welcome to contribute updates to this directory. We ask potential contributors to refer to the existing content and discussions as guidance when determining the content of their updates.
+All members of the community and projects are welcome to contribute updates to
+this directory. We ask potential contributors to refer to the existing content
+and discussions as guidance when determining the content of their updates.
 
-It is highly recommended that you seek peer review for your updates beyond that of the Technical Leads and Chairs.
+It is highly recommended that you seek peer review for your updates beyond that
+of the Technical Leads and Chairs.
 
