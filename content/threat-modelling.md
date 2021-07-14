@@ -4,9 +4,9 @@ date: "2020-10-01"
 category: "Security Assurance"
 ---
 
-For organizations adopting cloud native, a primary mechanism for identifying risks, controls and mitigations is to perform threat modeling. While there are many threat modeling techniques they share several core characteristics. All start with building a scoped representation of a system's architecture. This begins with identifying all important processes, data stores, and [security boundaries](https://www.oreilly.com/library/view/cissp-certified-information/9780470276884/9780470276884_security_boundaries.html#:~:text=A%20security%20boundary%20is%20the,a%20LAN%20and%20the%20Internet.). Once boundaries have been established and the relevant elements of the system partitioned within those boundaries, the next step is to model how these elements interact with special attention paid to any interactions that cross security boundaries. 
+For organizations adopting cloud native, a primary mechanism for identifying risks, controls and mitigations is to perform threat modeling. While there are many threat modeling techniques they share several core characteristics. All start with building a scoped representation of a system's architecture. This begins with identifying all important processes, data stores, and [security boundaries](https://www.oreilly.com/library/view/cissp-certified-information/9780470276884/9780470276884_security_boundaries.html). Once boundaries have been established and the relevant elements of the system are partitioned within them, the next step is to model how these elements interact with special attention paid to any interactions that cross security boundaries. 
 
-The below guidance is an enhancement of the four step OWASP threat modeling recommended for cloud native capabilities.
+The below guidance is an enhancement of the four step [OWASP threat modeling](https://owasp.org/www-community/Threat_Modeling) recommended for cloud native capabilities.
 
 ### End-to-end architecture
 
@@ -26,8 +26,8 @@ When considering threats specific to an organization's cloud native capabilities
 Threat actors to consider for cloud native security are consistent with existing threat modeling practices:
 
 - Malicious insider - An actor with malicious intent and with authorization to perform actions within the modeled system.
-- Uninformed insider - An actor that with authorization to perform actions within the modeled system (assume anyone can be duped).
-- Malicious outsider - An actor outside of the system. They could be attacking via the internet, via supply chain, via physical perimeter etc.
+- Uninformed insider - An actor with authorization to perform actions within the modeled system (assuming anyone can be duped).
+- Malicious outsider - An actor with malicious intent and outside of the system, able to launch attacks via the internet, supply chain, physical perimeter etc. without explicit authorization to perform actions within the modeled system.
 
 There are other actors that may interact with the modeled system (e.g Uninformed outsiders) and that can be included for completeness. It's likely that controls for their actions will be a subset of those for the primary actors listed above.
 
