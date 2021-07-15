@@ -31,3 +31,7 @@ in this repository.
 
 If you are new to the group, [reviewing pull requests](pull-request-review.md)
 and commenting on issues is a great way to get involved!
+
+When creating or reviewing pull requests, please refer to the
+[writing style guide](writing-style.md) to help maintain consistency across
+all of our documents.
