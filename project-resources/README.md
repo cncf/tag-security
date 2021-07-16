@@ -59,7 +59,7 @@ getting started.
 
 The project-resources directory is intended to be a living directory to include
 a lot of resources and templates any project or community may find useful as
-well as making those projects more security aware throughsimple and
+well as making those projects more security aware through simple and
 easy-to-adopt documentation. Updates, suggestions for updates, or discussions
 for updates should initiate with an
 [issue](https://github.com/cncf/tag-security/issues) and labeled with
