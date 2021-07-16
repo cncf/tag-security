@@ -29,7 +29,7 @@ Use details gathered from the triage.*
 ### Proof of Concept
 
 *Provide exact code or command lines in order to offer usable, precise, and
-repeatable methods for a subscriber to reproduce the issue and test fixes and
+repeatable methods for a subscriber to reproduce the problem and test fixes and
 mitigations.*
 
 ### Remediation and Mitigation
@@ -51,7 +51,7 @@ when it will be available or links to where the patch will be available.*
 
 **Do not:**
 
-* make this issue public,
+* make this problem public,
 * issue communications hinting at or regarding this,
 * share with this with others,
 * issue public patches before the disclosure date

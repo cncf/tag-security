@@ -6,54 +6,56 @@ as well as patch/release.
 
 ## Triage
 
-### Identify the issue
+### Identify the problem
 
-Triaging issues allows maintainers to focus resources on the most critically
-impacting problems. Potential security issues should be evaluated against the
+Triaging problems allows maintainers to focus resources on the most critically
+impacting problems. Potential security problems should be evaluated against the
 following information:
 
 * Which component(s) of the project is impacted?
-* What kind of issue is this?
+* What kind of problem is this?
   * privilege escalation
   * credential access
   * code execution
   * exfiltration
   * lateral movement
-* How complex is the issue?
+  * $CONTEXT_SPECIFIC_ISSUE
+* How complex is the problem?
 * Is user interaction required?
-* What privileges are required for this issue to occur?
+* What privileges are required for this problem to occur?
   * admin
   * general
-* What is the potential impact or consequence of the issue?
+  * $CONTEXT_SPECIFIC_PRIVILEGE
+* What is the potential impact or consequence of the problem?
 * Does an exploit exist?
 
-Any potential issue that has an exploit, permits privilege escalation, is
+Any potential problem that has an exploit, permits privilege escalation, is
 simple, and does not require user interaction should be evaluated immediately.
 [CVSS Version 3.1](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator) can be
-a helpful tool in evaluating the criticality of reported issues.
+a helpful tool in evaluating the criticality of reported problems.
 
-### Acknowledge receipt of the issue
+### Acknowledge receipt of the problem
 
-Respond to the reporter and notify them you have received the issue and have
+Respond to the reporter and notify them you have received the problem and have
 begun reviewing it. Remind them of the embargo policy, and provide them
 information on who to contact/follow-up with if they have questions. Estimate a
-time frame that they can expect to receive an update on the issue. Create a
+time frame that they can expect to receive an update on the problem. Create a
 calendar reminder to contact them again by that date to provide an update.
 
-### Replicate the issue
+### Replicate the problem
 
-Follow the instructions relayed in the issue. If the instructions are
+Follow the instructions relayed in the problem. If the instructions are
 insufficient, contact the reporter and ask for more information.
 
-If the issue cannot be replicated, re-engage the reporter, let them know it
+If the problem cannot be replicated, re-engage the reporter, let them know it
 cannot be replicated, and work them to find a remediation.
 
-If the issue can be replicated, re-evaluate the criticality of the issue, and
+If the problem can be replicated, re-evaluate the criticality of the problem, and
 begin working on a remediation. Begin a draft security advisory.
 
-Notify the reporter you were able to replicate the issue and have begun working
+Notify the reporter you were able to replicate the problem and have begun working
 on a fix. Reminder them of the embargo policy. If necessary, notify them of an
-extension (only for very complex issues where remediation cannot be issued
+extension (only for very complex problems where remediation cannot be issued
 within the project's specified window).
 
 #### Request a CVE number
@@ -68,7 +70,7 @@ published.
 
 ## Notification
 
-Once the issue has been replicated and a remediation is in place, notify
+Once the problem has been replicated and a remediation is in place, notify
 subscribed parties with a security bulletin and the expected publishing date.
 
 ## Publish and release
@@ -77,7 +79,7 @@ Once a CVE number has been assigned, publish and release the updated
 version/patch. Be sure to notify the CVE group when published so the CVE details
 are searchable. Be sure to give credit to the reporter by *[editing the security
 advisory](https://docs.github.com/en/github/managing-security-vulnerabilities/editing-a-security-advisory#about-credits-for-security-advisories)*
-they took the time to notify and work with you on the issue!
+they took the time to notify and work with you on the problem!
 
 ### Issue a security advisory
 

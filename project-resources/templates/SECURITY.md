@@ -17,32 +17,34 @@ Email:
 
 1. Email the **$NAME**: **$ALIAS**
     * Emails should contain:
-        * description of the issue
+        * description of the problem
         * precise and detailed steps (include screenshots) that created the
-          issue
+          problem
         * the affected version(s)
         * any possible mitigations, if known
-1. You will receive a reply from one of the maintainers within **X days**
+1. You will receive a reply from one of the maintainers within **$X days**
    acknowledging receipt of the email.
-1. You may be contacted by a **$PERSON** to further discuss the issue. Please
-   bear with us as we seek to understand the breadth and scope of the issue,
-   recreate it, and confirm if there is an issue present.
+1. You may be contacted by a **$PERSON** to further discuss the reported item.
+   Please bear with us as we seek to understand the breadth and scope of the
+   reported problem, recreate it, and confirm if there is a vulnerability
+   present.
 
 Web Form:
 
 1. Please visit **$LINK**
    * You will receive a confirmation email upon submission
-1. You may be contacted by a **$PERSON** to further discuss the issue within **X
-   days**. Please bear with us as we seek to understand the breadth and scope of
-   the issue, recreate it, and confirm if there is an issue present.
+1. You may be contacted by a **$PERSON** to further discuss the reported item
+   within **$X days**. Please bear with us as we seek to understand the breadth
+   and scope of the reported problem, recreate it, and confirm if there is an
+   vulnerability present.
 
-This project follows a **X day disclosure timeline**. Refer to our embargo
-policy $LINK for more information.
+This project follows a **$X day disclosure timeline**. Refer to our embargo
+policy **$LINK** for more information.
 
 ## Supported Versions
 
 Information regarding supported versions of this project can be found on
-$LINK located on the $WEBSITE  and in the below table:
+**$LINK** located on the **$WEBSITE**  and in the below table:
 
 | Version | Supported |
 | --- | --- |
