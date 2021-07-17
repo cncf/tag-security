@@ -10,8 +10,8 @@ Shared with CNCF Community
 
 | **Originating Content and Review** |                                                                                                                                                                                                                                                                                                                                                                                             |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Contributors**                   | [Adam Morris](mailto:adam.morris@couchbase.com), [Alex Floyd Marshall](mailto:alex@soren.tech), Andreas, [Aradhna Chetal](mailto:aradhna.chetal@gmail.com), [Brad McCoy](mailto:bradmccoydev@gmail.com), [Emily Fox](mailto:themoxiefoxatwork@gmail.com), [Martin Vrachev](mailto:martin.vrachev@gmail.com), Matthew Flannery, [Pushkar Joglekar](mailto:pushkarj.at.work@gmail.com), [Ragashree M C](mailto:ragashreemc@gmail.com), Roger Klorese |
-| **Reviewers**                      | [Aradhna Chetal](mailto:aradhna.chetal@gmail.com), [Emily Fox](mailto:themoxiefoxatwork@gmail.com), [Ragashree M C](mailto:ragashreeshekar@gmail.com)                                                                                                                                                                                                                                                                                          |
+| **Contributors**                   | <!-- cspell:disable -->[Adam Morris](mailto:adam.morris@couchbase.com), <!-- cspell:disable -->[Alex Floyd Marshall](mailto:alex@soren.tech), <!-- cspell:disable -->Andreas, <!-- cspell:disable -->[Aradhna Chetal](mailto:aradhna.chetal@gmail.com), <!-- cspell:disable -->[Brad McCoy](mailto:bradmccoydev@gmail.com), <!-- cspell:disable -->[Emily Fox](mailto:themoxiefoxatwork@gmail.com), <!-- cspell:disable -->[Martin Vrachev](mailto:martin.vrachev@gmail.com), <!-- cspell:disable -->Matthew Flannery, <!-- cspell:disable -->[Pushkar Joglekar](mailto:pushkarj.at.work@gmail.com), <!-- cspell:disable -->[Ragashree M C](mailto:ragashreemc@gmail.com), <!-- cspell:disable -->Roger Klorese |
+| **Reviewers**                      | <!-- cspell:disable -->[Aradhna Chetal](mailto:aradhna.chetal@gmail.com), <!-- cspell:disable -->[Emily Fox](mailto:themoxiefoxatwork@gmail.com), <!-- cspell:disable -->[Ragashree M C](mailto:ragashreeshekar@gmail.com)                                                                                                                                                                                                                                                                                          |
 | **Approvers**                      | Justin Cormack, Liz Rice                                                                                                                                                                                                                                                                                                                                                                    |
 
 ## Index
@@ -48,9 +48,9 @@ Shared with CNCF Community
             <li><a href="#container-image-scanning">Container/Image Scanning </a></li>
             <li><a href="#infrastructure-as-code-security">Infrastructure-as-Code Security</a></li>
             <li><a href="#software-composition-analysis">Software Composition Analysis</a></li>
-            <li><a href="#sast">Static Analysis Security Testing (SAST)</a></li>
-            <li><a href="#dast">Dynamic Analysis Security Testing (DAST)</a></li>
-            <li><a href="#iast">Interactive Analysis Security Testing (IAST) </a></li>
+            <!-- cspell:disable --> <li><a href="#sast">Static Analysis Security Testing (SAST)</a></li>
+            <!-- cspell:disable --> <li><a href="#dast">Dynamic Analysis Security Testing (DAST)</a></li>
+            <!-- cspell:disable --> <li><a href="#iast">Interactive Analysis Security Testing (IAST) </a></li>
             <li><a href="#authentication-authorization-access-control">Authentication vs. Authorization vs. Access control</a></li>
             <li><a href="#cryptographic-signing-encrypting-verifying-validating">Cryptographic signing vs. Encrypting vs. Verifying/Validating</a></li>
             <li><a href="#root-of-trust">Root of Trust</a></li>
@@ -62,7 +62,7 @@ Shared with CNCF Community
             <li><a href="#certificate-root-of-trust">Certificate root of trust</a></li>
             <li><a href="#key-management-store">Key Management Store</a></li>
             <li><a href="#mutual-authentication">Mutual Authentication</a></li>
-            <li><a href="#abac-rbac-mac">ABAC, RBAC, and MAC</a></li>
+            <!-- cspell:disable --> <li><a href="#abac-rbac-mac">ABAC, RBAC, and MAC</a></li>
             <li><a href="#least-privilege">Least Privilege</a></li>
             <li><a href="#immutability">Immutability</a></li>
             <li><a href="#audit-logging-security-logging-monitoring">Audit logging vs security logging vs monitoring</a></li>
@@ -86,7 +86,7 @@ Cloud Native Ecosystem is growing, the number of cloud native projects is huge. 
 
 # Purpose
 
-Standardization of terminologies specific to Cloud Native Security to bring about clarity to Cloud native security practitioners, Developers, and Operators regarding the right set of security terminologies to be used in the right context throughout the SDLC as well as their operational environments
+Standardization of terminologies specific to Cloud Native Security to bring about clarity to Cloud native security practitioners, Developers, and Operators regarding the right set of security terminologies to be used in the right context throughout the <!-- cspell:disable -->SDLC as well as their operational environments
 
 # Lexicon
 
@@ -255,7 +255,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 </tr>
 <tr>
         <th >Definition</th>
-        <td> A token is a string generated to grant access, provide proof of identity, or request access. Tokens can also be used as a means of representing claims to be transferred between two parties. Identity Token is a signed artifact and possibly encrypted, which provides Identity & security assertion issued by the authoritative trusted identity & credential management service, consumed by a service provider to authenticate, and then provide access subsequently. Tokens can be of different formats viz. SAML, OAuth2.0, JWT, XACML tokens etc. etc. <br/> <br/> These Identity Tokens must be signed and encrypted hereby providing authenticity, Integrity & non-repudiation assurance and confidentiality as well. </td>
+        <td> A token is a string generated to grant access, provide proof of identity, or request access. Tokens can also be used as a means of representing claims to be transferred between two parties. Identity Token is a signed artifact and possibly encrypted, which provides Identity & security assertion issued by the authoritative trusted identity & credential management service, consumed by a service provider to authenticate, and then provide access subsequently. Tokens can be of different formats viz. SAML, OAuth2.0, JWT, <!-- cspell:disable -->XACML tokens etc. etc. <br/> <br/> These Identity Tokens must be signed and encrypted hereby providing authenticity, Integrity & non-repudiation assurance and confidentiality as well. </td>
 </tr>
 <tr>
         <th >Terms</th>
@@ -304,7 +304,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 </tr>
 <tr>
         <th >Organizational Use</th>
-        <td> Claims can be used for a variety of checks that may further scope access or define the valid timespan an identity is valid. </td>
+        <td> Claims can be used for a variety of checks that may further scope access or define the valid time span an identity is valid. </td>
 </tr>
 <tr>
         <th >References</th>
@@ -530,7 +530,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 </tr>
 <tr>
         <th >Definition</th>
-        <td> Container/Image Scanning is the process of analysing the container or image components and the build process in order to detect security vulnerabilities or bad practices. This usually involves tools utilizing vulnerability databases containing known vulnerabilities (CVE-s) to give information about the security posture of the container/image.
+        <td> Container/Image Scanning is the process of analyzing the container or image components and the build process in order to detect security vulnerabilities or bad practices. This usually involves tools utilizing vulnerability databases containing known vulnerabilities (CVE-s) to give information about the security posture of the container/image.
         </td>
 </tr>
 <tr>
@@ -597,11 +597,11 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 <br/>
 <table style="width:100%">
 <tr>
-	<th colspan="2" id="sast">Static Analysis Security Testing (SAST)</th>
+	<th colspan="2" id="<!-- cspell:disable -->sast">Static Analysis Security Testing (<!-- cspell:disable -->SAST)</th>
 </tr>
 <tr>
         <th >Definition</th>
-        <td> Static application security testing (SAST), or static analysis, is a testing methodology that analyses source code to find security vulnerabilities that make your organization’s applications susceptible to attack. SAST scans an application before the code is compiled and doesn’t require a working application. It’s also known as white box testing.
+        <td> Static application security testing (<!-- cspell:disable -->SAST), or static analysis, is a testing methodology that analyses source code to find security vulnerabilities that make your organization’s applications susceptible to attack. SAST scans an application before the code is compiled and doesn’t require a working application. It’s also known as white box testing.
         </td>
 </tr>
 <tr>
@@ -621,11 +621,11 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 <br/>
 <table style="width:100%">
 <tr>
-	<th colspan="2" id="dast">Dynamic Analysis Security Testing (DAST)</th>
+	<th colspan="2" id="<!-- cspell:disable -->dast">Dynamic Analysis Security Testing (<!-- cspell:disable -->DAST)</th>
 </tr>
 <tr>
         <th >Definition</th>
-        <td> Dynamic application security testing (DAST) is a type of security testing in which tests are performed by attacking an application from the outside. It looks for security vulnerabilities by simulating external attacks on an application while the application is running. Unlike static application security testing tools, DAST tools do not have access or need access to the source code. </td>
+        <td> Dynamic application security testing (<!-- cspell:disable -->DAST) is a type of security testing in which tests are performed by attacking an application from the outside. It looks for security vulnerabilities by simulating external attacks on an application while the application is running. Unlike static application security testing tools, DAST tools do not have access or need access to the source code. </td>
 </tr>
 <tr>
         <th >Terms</th>
@@ -643,13 +643,13 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 <br/>
 <table style="width:100%">
 <tr>
-	<th colspan="2" id="iast">Interactive Analysis Security Testing (IAST)
+	<th colspan="2" id="<!-- cspell:disable -->iast">Interactive Analysis Security Testing (<!-- cspell:disable -->IAST)
     </th>
 </tr>
 <tr>
         <th >Definition</th>
-        <td> IAST (interactive application security testing) analyses code for security vulnerabilities while the app is run by an automated test, human tester, or any activity “interacting” with the application functionality. This technology reports vulnerabilities in real-time.
-            <br/><br/> IAST works inside the application, which makes it different from both static analysis (SAST) and dynamic analysis (DAST). This type of testing also doesn’t test the entire application or codebase, but only whatever is exercised by the functional test
+        <td> <!-- cspell:disable -->IAST (interactive application security testing) analyses code for security vulnerabilities while the app is run by an automated test, human tester, or any activity “interacting” with the application functionality. This technology reports vulnerabilities in real-time.
+            <br/><br/> <!-- cspell:disable -->IAST works inside the application, which makes it different from both static analysis (<!-- cspell:disable -->SAST) and dynamic analysis (<!-- cspell:disable -->DAST). This type of testing also doesn’t test the entire application or codebase, but only whatever is exercised by the functional test
              </td>
 </tr>
 <tr>
@@ -797,14 +797,14 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
         <th >Definition</th>
         <td>
             TPM: Trusted Platform Module (TPM, also known as ISO/IEC 11889) is an international standard for a secure
-            cryptoprocessor, a dedicated microcontroller designed to secure hardware through integrated cryptographic
+            <!-- cspell:disable -->cryptoprocessor, a dedicated <!-- cspell:disable -->microcontroller designed to secure hardware through integrated cryptographic
             keys.
             <br /><br />
             Trusted Platform Module provides <br />
             <ol>
                 <li>A hardware random number generator[5][6]</li>
                 <li>Facilities for the secure generation of cryptographic keys for limited uses.</li>
-                <li>Remote attestation: Creates a nearly unforgeable hash key summary of the hardware and software
+                <li>Remote attestation: Creates a nearly <!-- cspell:disable -->unforgeable hash key summary of the hardware and software
                     configuration. The software in charge of hashing the configuration data determines the extent of the
                     summary. This allows a third party to verify that the software has not been changed.</li>
                 <li>Binding: Encrypts data using the TPM bind key, a unique RSA key descended from a storage
@@ -890,13 +890,13 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
             A hardware security module (HSM) is a security device you can add to a system to manage, generate, and
             securely store cryptographic keys.
             <br /><br />
-            High performance HSMs are external devices connected to a network using TCP/IP. Smaller HSMs come as
+            High performance HSMs are external devices connected to a network using <!-- cspell:disable -->TCP/IP. Smaller HSMs come as
             expansion cards you install within a server, or as devices you plug into computer ports. Recommendation is
-            to use HSM’s which are FIPS 140-2 compliant.
+            to use HSM’s which are <!-- cspell:disable -->FIPS 140-2 compliant.
             <br /><br />
             One of the noteworthy differences between the two is that HSMs are removable or external devices. In
             comparison, a TPM is a chip embedded into the motherboard. You can easily add an HSM to a system or a
-            network, but if a system didn’t ship with a TPM, it’s not feasible to add one later. Both provide secure
+            network, but if a system didn’t ship with a <!-- cspell:disable -->TPM, it’s not feasible to add one later. Both provide secure
             encryption capabilities by storing and using RSA keys.
         </td>
     </tr>
@@ -1013,22 +1013,22 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 <br />
 <table style="width:100%">
     <tr>
-        <th colspan="2" id="abac-rbac-mac">ABAC, RBAC, and MAC</th>
+        <!-- cspell:disable --><th colspan="2" id="abac-rbac-mac"><!-- cspell:disable -->ABAC, <!-- cspell:disable -->RBAC, and <!-- cspell:disable -->MAC</th>
     </tr>
     <tr>
         <th >Definition</th>
         <td>
             <ul>
-                <li>RBAC: Role-based access control (RBAC) is a method of regulating access to computer or network
+                <li><!-- cspell:disable -->RBAC: Role-based access control (<!-- cspell:disable -->RBAC) is a method of regulating access to computer or network
                     resources based on the roles of individual users within your organization. The users are grouped
                     into Roles based on their access needs and after the authentication process the user granted access
                     to services based on the role assigned e.g. a user may be in the role of end user then they may be
                     only be able to access the application and read the data relevant to their access, whereas on the
-                    same system a DBA maybe able to go read, write, and update data as well. The roles have to be defined
+                    same system a <!-- cspell:disable -->DBA maybe able to go read, write, and update data as well. The roles have to be defined
                     by the application owner that align to the specific needs of the organization.
                 </li>
                 <li>
-                    ABAC: Attribute-based access control (ABAC) defines an access control paradigm whereby access rights
+                    <!-- cspell:disable -->ABAC: Attribute-based access control (<!-- cspell:disable -->ABAC) defines an access control paradigm whereby access rights
                     are granted to users Access to entities (devices, users, applications) is granted dynamically based
                     on the attributes. Depending on the dynamic attributes a decision engine makes a decision based on
                     predefined policies which are based on the attributes and the decision is then communicated to the
@@ -1141,10 +1141,10 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
                     Audit logging - An audit log, also called an audit trail, is essentially a record of events and changes. IT devices across your network create logs based on events. Audit logs are records of these event logs, typically regarding a sequence of activities or a specific activity. The process of collection of these logs, processing, storage, and management of these logs is known as Audit logging
                 </li>
                 <li>
-                    Monitoring involves collecting and analysing information (Logs, Metrics and so on) to detect any deviation from the default behaviour and defining which types of behaviour should trigger alerts, and taking action on alerts as needed
+                    Monitoring involves collecting and analysing information (Logs, Metrics and so on) to detect any deviation from the default <!-- cspell:disable -->behaviour and defining which types of <!-- cspell:disable -->behaviour should trigger alerts, and taking action on alerts as needed
                 </li>
                 <li>
-                    A security log is essentially a subset of the audit logs, which records the events and changes important from the security point of view, such as intrusion detection logging, firewall logs, antispyware logs, access attempts, privilege escalation, etc. The process of collection of these logs, processing, storage, and management of these logs is known as Security logging. Typically, security logs are forwarded to the Security Incident and Event management for the visibility, tracking and managing security incidents. SIEM provides organizations with next-generation detection, analytics, and response
+                    A security log is essentially a subset of the audit logs, which records the events and changes important from the security point of view, such as intrusion detection logging, firewall logs, <!-- cspell:disable -->anti-spyware logs, access attempts, privilege escalation, etc. The process of collection of these logs, processing, storage, and management of these logs is known as Security logging. Typically, security logs are forwarded to the Security Incident and Event management for the visibility, tracking and managing security incidents. <!-- cspell:disable -->SIEM provides organizations with next-generation detection, analytics, and response
                 </li>
             </ul>
         </td>
@@ -1171,7 +1171,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 <tr>
         <th >Definition</th>
         <td>
-        Compliance from the standpoint of IT security means making sure your business meets the regulatory and legal requirements for the data or intended use that are applicable to your industry or vertical. For example, there are differing IT security compliance standards for payment card processors (PCI), healthcare organizations (HIPAA) and firms doing business in the EU (GDPR). By achieving compliance, you can avoid fines and sanctions, as well as avoid the financial and reputational damage associated with data breaches.
+        Compliance from the standpoint of IT security means making sure your business meets the regulatory and legal requirements for the data or intended use that are applicable to your industry or vertical. For example, there are differing IT security compliance standards for payment card processors (PCI), healthcare organizations (HIPAA) and firms doing business in the EU (GDPR). By achieving compliance, you can avoid fines and sanctions, as well as avoid the financial and <!-- cspell:disable -->reputational damage associated with data breaches.
             <br/><br/>
             Violations of certain regulatory compliance requirements may result in legal punishment, including federal fines. E.g. PCI compliance, HIPAA, SOX, GDPR etc. Some of these regulations are put in place to protect the consumers, hence service providers are required to demonstrate compliance with the appropriate requirements on a continuous basis and non-compliances can lead to heavy fines. 
             <br/><br/>
@@ -1238,7 +1238,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
         <td> 
             RASP is a technology that runs on a server which is designed to detect attacks on an application in real time. RASP incorporates security into a running application wherever it resides on a server.
             <br/><br/>
-            When an application begins to run, RASP can protect it from malicious input or behaviour by analysing both the app's behaviour and the context of that behaviour. By using the app to continuously monitor its own behaviour, attacks can be identified and mitigated immediately without human intervention.
+            When an application begins to run, RASP can protect it from malicious input or <!-- cspell:disable -->behaviour by analysing both the app's <!-- cspell:disable -->behaviour and the context of that <!-- cspell:disable -->behaviour. By using the app to continuously monitor its own <!-- cspell:disable -->behaviour, attacks can be identified and mitigated immediately without human intervention.
         </td>
 </tr>
 <tr>
@@ -1292,7 +1292,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 </tr>
 <tr>
         <th >Organizational Use</th>
-        <td> Tools such as Open Policy Agent or platforms such as Istio provide flexible policy definition and enforcement mechanisms that support the practice of security policy as code.
+        <td> Tools such as Open Policy Agent or platforms such as <!-- cspell:disable -->Istio provide flexible policy definition and enforcement mechanisms that support the practice of security policy as code.
         </td>
 </tr>
 <tr>
@@ -1304,27 +1304,27 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 # Acknowledgements
 This white paper is a community effort driven by the members of the CNCF TAG-Security. Thank you to everyone for their outstanding contributions. 
 
-Special thanks to Emily Fox and Ragashree M C.
+Special thanks to Emily Fox and <!-- cspell:disable -->Ragashree M C.
 
 Contributors:
 
-* Adam Morris
-* Alex Floyd Marshall - Soren Technology
-* Andreas
-* Anoop Chandra B N - Hewlett Packard Enterprise
-* Aradhna Chetal - TIAA
-* Brad McCoy - Moula
-* Emily Fox - Apple
-* Martin Vrachev - VMware
-* Matthew Flannery - Ayenem
-* Pushkar Joglekar - VMware Tanzu
-* Ragashree M C - Nokia
-* Roger Klorese - VMware Tanzu
+* <!-- cspell:disable -->Adam Morris
+* <!-- cspell:disable -->Alex Floyd Marshall - Soren Technology
+* <!-- cspell:disable -->Andreas
+* <!-- cspell:disable -->Anoop Chandra B N - Hewlett Packard Enterprise
+* <!-- cspell:disable -->Aradhna Chetal - TIAA
+* <!-- cspell:disable -->Brad McCoy - Moula
+* <!-- cspell:disable -->Emily Fox - Apple
+* <!-- cspell:disable -->Martin Vrachev - VMware
+* <!-- cspell:disable -->Matthew Flannery - Ayenem
+* <!-- cspell:disable -->Pushkar Joglekar - VMware Tanzu
+* <!-- cspell:disable -->Ragashree M C - Nokia
+* <!-- cspell:disable -->Roger Klorese - VMware Tanzu
 
 Reviewers:
 
-* @lizrice
-* @justincormack
-* @TheFoxAtWork
-* @achetal01
-* @ragashreeshekar
+* <!-- cspell:disable -->@lizrice
+* <!-- cspell:disable -->@justincormack
+* <!-- cspell:disable -->@TheFoxAtWork
+* <!-- cspell:disable -->@achetal01
+* <!-- cspell:disable -->@ragashreeshekar
