@@ -10,7 +10,7 @@ Shared with CNCF Community
 
 | **Originating Content and Review** |                                                                                                                                                                                                                                                                                                                                                                                             |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Contributors**                   | [Adam Morris](mailto:adam.morris@couchbase.com), [Alex Floyd Marshall](mailto:alex@soren.tech), Andreas, [Aradhna Chetal](mailto:aradhna.chetal@gmail.com), [Brad McCoy](mailto:bradmccoydev@gmail.com), [Emily Fox](mailto:themoxiefoxatwork@gmail.com), [Martin Vrachev](mailto:martin.vrachev@gmail.com), Matthew Flannery, [Ragashree M C](mailto:ragashreemc@gmail.com), Roger Klorese |
+| **Contributors**                   | [Adam Morris](mailto:adam.morris@couchbase.com), [Alex Floyd Marshall](mailto:alex@soren.tech), Andreas, [Aradhna Chetal](mailto:aradhna.chetal@gmail.com), [Brad McCoy](mailto:bradmccoydev@gmail.com), [Emily Fox](mailto:themoxiefoxatwork@gmail.com), [Martin Vrachev](mailto:martin.vrachev@gmail.com), Matthew Flannery, [Pushkar Joglekar](mailto:pushkarj.at.work@gmail.com), [Ragashree M C](mailto:ragashreemc@gmail.com), Roger Klorese |
 | **Reviewers**                      | [Aradhna Chetal](mailto:aradhna.chetal@gmail.com), [Emily Fox](mailto:themoxiefoxatwork@gmail.com), [Ragashree M C](mailto:ragashreeshekar@gmail.com)                                                                                                                                                                                                                                                                                          |
 | **Approvers**                      | Justin Cormack, Liz Rice                                                                                                                                                                                                                                                                                                                                                                    |
 
@@ -21,7 +21,7 @@ Shared with CNCF Community
         <a href="#cloud-native-security-lexicon-1">Cloud Native Security Lexicon</a>
     </li>
     <li>
-        <a href="#executive-summar">Executive Summary</a>
+        <a href="#executive-summary">Executive Summary</a>
     </li>
     <li>
         <a href="#purpose">Purpose</a>
@@ -45,7 +45,7 @@ Shared with CNCF Community
             <li><a href="#security-requirements">Security Requirements</a></li>
             <li><a href="#configuration-management-orchestrator">Configuration management vs orchestrator</a></li>
             <li><a href="#vulnerability-scanning">Vulnerability Scanning</a></li>
-            <li><a href="#container-image-scanning ">Container/Image Scanning </a></li>
+            <li><a href="#container-image-scanning">Container/Image Scanning </a></li>
             <li><a href="#infrastructure-as-code-security">Infrastructure-as-Code Security</a></li>
             <li><a href="#software-composition-analysis">Software Composition Analysis</a></li>
             <li><a href="#sast">Static Analysis Security Testing (SAST)</a></li>
@@ -108,7 +108,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 </tr>
 <tr>
         <th >References</th>
-        <td> null  </td>
+        <td> https://csrc.nist.gov/glossary/term/identity  </td>
 </table>
 <br/>
 <br/>
@@ -130,7 +130,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 </tr>
 <tr>
         <th >References</th>
-        <td> null  </td>
+        <td> https://csrc.nist.gov/glossary/term/user_id  </td>
 </table>
 <br/>
 <br/>
@@ -152,7 +152,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 </tr>
 <tr>
         <th >References</th>
-        <td> null  </td>
+        <td> https://iam.harvard.edu/glossary  </td>
 </table>
 <br/>
 <br/>
@@ -330,7 +330,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 </tr>
 <tr>
         <th >References</th>
-        <td> null  </td>
+        <td> https://csrc.nist.gov/glossary/term/certificate  </td>
 </table>
 <br />
 <br />
@@ -365,7 +365,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
     </tr>
     <tr>
         <th >References</th>
-        <td> null </td>
+        <td> https://csrc.nist.gov/glossary/term/attack_surface </td>
 </table>
 <br/>
 <br/>
@@ -526,7 +526,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 <br/>
 <table style="width:100%">
 <tr>
-	<th colspan="2" id="conatiner-image-scanning">Container/Image Scanning    </th>
+	<th colspan="2" id="container-image-scanning">Container/Image Scanning    </th>
 </tr>
 <tr>
         <th >Definition</th>
@@ -543,7 +543,10 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 </tr>
 <tr>
         <th >References</th>
-        <td> null  </td>
+        <td> <ul>
+            <li>https://csrc.nist.gov/glossary/term/container </li>
+            <li>https://csrc.nist.gov/glossary/term/scanning </li>
+        </ul> </td>
 </table>
 <br/>
 <br/>
@@ -634,7 +637,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 </tr>
 <tr>
         <th >References</th>
-        <td> null  </td>
+        <td> https://csrc.nist.gov/glossary/term/dynamic_analysis  </td>
 </table>
 <br/>
 <br/>
@@ -684,7 +687,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 </tr>
 <tr>
         <th >References</th>
-        <td> null  </td>
+        <td> https://csrc.nist.gov/glossary/term/aaa  </td>
 </table>
 <br/>
 <br/>
@@ -711,7 +714,11 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 </tr>
 <tr>
         <th >References</th>
-        <td> null  </td>
+        <td><ul>
+            <li>https://csrc.nist.gov/glossary/term/encryption</li>    
+            <li>https://csrc.nist.gov/glossary/term/signature_verification </li>
+            <li>https://csrc.nist.gov/glossary/term/verification </li>
+        </ul>   </td>
 </table>
 <br/>
 <br/>
@@ -778,7 +785,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 </tr>
 <tr>
         <th >References</th>
-        <td> null  </td>
+        <td> https://csrc.nist.gov/glossary/term/roots_of_trust  </td>
 </table>
 <br />
 <br />
@@ -824,6 +831,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
             <ul>
                 <li>https://en.wikipedia.org/wiki/Trusted_Platform_Module
                 </li>
+                <li>https://csrc.nist.gov/glossary/term/trusted_platform_module</li>
                 <li>
                     https://blogs.vmware.com/vsphere/2018/05/vsphere-6-7-virtual-trusted-platform-modules.html
                 </li>
@@ -860,7 +868,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 </tr>
 <tr>
         <th >References</th>
-        <td> https://en.wikipedia.org/wiki/Hardware_security_module  </td>
+        <td> https://csrc.nist.gov/glossary/term/hardware_security_module_hsm  </td>
 </table>
 <br />
 <br />
@@ -977,7 +985,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 </tr>
 <tr>
         <th >References</th>
-        <td> null  </td>
+        <td> https://csrc.nist.gov/glossary/term/key_management_system  </td>
 </table>
 <br/>
 <br/>
@@ -1266,7 +1274,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 </tr>
 <tr>
         <th >References</th>
-        <td> null  </td>
+        <td> https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.04232020.pdf  </td>
 </table>
 <br/>
 <br/>
@@ -1309,6 +1317,7 @@ Contributors:
 * Emily Fox - Apple
 * Martin Vrachev - VMware
 * Matthew Flannery - Ayenem
+* Pushkar Joglekar - VMware Tanzu
 * Ragashree M C - Nokia
 * Roger Klorese - VMware Tanzu
 
