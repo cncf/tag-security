@@ -715,9 +715,9 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 <tr>
         <th >References</th>
         <td><ul>
-            <li>https://csrc.nist.gov/glossary/term/encryption</li>    
             <li>https://csrc.nist.gov/glossary/term/signature_verification </li>
             <li>https://csrc.nist.gov/glossary/term/verification </li>
+            <li>https://csrc.nist.gov/glossary/term/encryption</li>
         </ul>   </td>
 </table>
 <br/>
