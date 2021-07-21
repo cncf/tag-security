@@ -428,8 +428,8 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
         <th >References</th>
         <td> 
             <ul>
-                <li>https://en.wikipedia.org/wiki/Threat_(computer)</li>
                 <li>https://www.rapid7.com/fundamentals/vulnerabilities-exploits-threats</li>
+                <li>https://en.wikipedia.org/wiki/Threat_(computer)</li>
                 <li>https://www.trendmicro.com/vinfo/us/security/definition/exploit</li>
             </ul>
         </td>
