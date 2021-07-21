@@ -414,8 +414,8 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
         <th >Terms</th>
         <td> 
             <ul>
-                <li>Threat vectors, Threat landscape, Threat actor</li>
                 <li>Vulnerability scanning, Vulnerability analysis, Zero-day vulnerability, vulnerability database</li>
+                <li>Threat vectors, Threat landscape, Threat actor</li>
                 <li>Known exploits, Zero-day exploits, Exploit Kits</li>
             </ul> 
         </td>
