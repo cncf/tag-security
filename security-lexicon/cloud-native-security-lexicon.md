@@ -36,9 +36,11 @@ Shared with CNCF Community
             <li><a href="#keys">Keys</a></li>
             <li><a href="#api-key">API Key</a></li>
             <li><a href="#credentials">Credentials</a></li>
-            <li><a href="#token">Token </a></li>
             <li><a href="#claim">Claim</a></li>
+            <li><a href="#token">Token </a></li>
             <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#certificate-authority">Certificate authority</a></li>
+            <li><a href="#certificate-root-of-trust">Certificate root of trust</a></li>                
             <li><a href="#attack-surface">Attack Surface</a></li>
             <li><a href="#attack-vector">Attack vector</a></li>
             <li><a href="#threat-vulnerability-exploit">Threat, vs vulnerability vs exploit</a></li>
@@ -58,8 +60,6 @@ Shared with CNCF Community
             <li><a href="#tpm">Trusted Platform Module (TPM/vTPM)</a></li>
             <li><a href="#hsm">Hardware Security Module </a></li>
             <li><a href="#hsm-tpm">HSM vs TPM</a></li>
-            <li><a href="#certificate-authority">Certificate authority</a></li>
-            <li><a href="#certificate-root-of-trust">Certificate root of trust</a></li>
             <li><a href="#key-management-store">Key Management Store</a></li>
             <li><a href="#mutual-authentication">Mutual Authentication</a></li>
             <!-- cspell:disable --> <li><a href="#abac-rbac-mac">ABAC, RBAC, and MAC</a></li>
@@ -251,6 +251,29 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 <br/>
 <table style="width:100%">
 <tr>
+	<th colspan="2" id="claim">Claim</th>
+</tr>
+<tr>
+        <th >Definition</th>
+        <td> A statement a subject asserts about itself or another subject. Commonly appearing as a name/value pair, claims must be validated during authentication and authorization. </td>
+</tr>
+<tr>
+        <th >Terms</th>
+        <td> Reserved Claims, Custom Claims, claims-based identity
+        </td>
+</tr>
+<tr>
+        <th >Organizational Use</th>
+        <td> Claims can be used for a variety of checks that may further scope access or define the valid time span an identity is valid. </td>
+</tr>
+<tr>
+        <th >References</th>
+        <td> https://docs.microsoft.com/en-us/sharepoint/dev/general-development/claims-based-identity-term-definitions   </td>
+</table>
+<br/>
+<br/>
+<table style="width:100%">
+<tr>
 	<th colspan="2" id="token">Token</th>
 </tr>
 <tr>
@@ -288,29 +311,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
         <td>https://tools.ietf.org/html/rfc7519 </td>
 </table>
 <br/>
-<br/>
-<table style="width:100%">
-<tr>
-	<th colspan="2" id="claim">Claim</th>
-</tr>
-<tr>
-        <th >Definition</th>
-        <td> A statement a subject asserts about itself or another subject. Commonly appearing as a name/value pair, claims must be validated during authentication and authorization. </td>
-</tr>
-<tr>
-        <th >Terms</th>
-        <td> Reserved Claims, Custom Claims, claims-based identity
-        </td>
-</tr>
-<tr>
-        <th >Organizational Use</th>
-        <td> Claims can be used for a variety of checks that may further scope access or define the valid time span an identity is valid. </td>
-</tr>
-<tr>
-        <th >References</th>
-        <td> https://docs.microsoft.com/en-us/sharepoint/dev/general-development/claims-based-identity-term-definitions   </td>
-</table>
-<br/>
+
 <br/>
 <table style="width:100%">
 <tr>
@@ -333,6 +334,57 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
         <td> https://csrc.nist.gov/glossary/term/certificate  </td>
 </table>
 <br />
+<br/>
+<table style="width:100%">
+<tr>
+	<th colspan="2" id="certificate-authority">Certificate authority </th>
+</tr>
+<tr>
+        <th >Definition</th>
+        <td> In cryptography, a certificate authority or certification authority (CA) is an entity that issues digital certificates. A digital certificate certifies the ownership of a public key by the named subject of the certificate. This allows others (relying parties) to rely upon signatures or on assertions made about the private key that corresponds to the certified public key. A CA acts as a trusted third party—trusted both by the subject (owner) of the certificate and by the party relying upon the certificate. The format of these certificates is specified by the X.509 or EMV standard.
+        </td>
+</tr>
+<tr>
+        <th >Terms</th>
+        <td> CA </td>
+</tr>
+<tr>
+        <th >Organizational Use</th>
+        <td> One particularly common use for certificate authorities is to sign certificates used in HTTPS, the secure browsing protocol for the World Wide Web. Another common use is in issuing identity cards by national governments for use in electronically signing documents. </td>
+</tr>
+<tr>
+        <th >References</th>
+        <td> https://en.wikipedia.org/wiki/Certificate_authority   </td>
+</table>
+<br/>
+<br/>
+<table style="width:100%">
+<tr>
+	<th colspan="2" id="certificate-root-of-trust">Certificate root of trust</th>
+</tr>
+<tr>
+        <th >Definition</th>
+        <td> 
+        The SSL/TLS internet security standard is based on a trust relationship model, also called "certificate chain of trust." x.509 digital certificates validate the identity of a website, organization, or server and provide a trusty platform for the user to connect and share information securely.
+            <br/><br/>
+            SSL/TLS Internet-based Public Key Infrastructure (PKI) allows users to exchange data using public and private key pairs, obtained, and exchanged by a trusted certificate authority (CA). This reputable entity is responsible for issuing, retaining, and revoking public key certificates over insecure networks.
+            <br/><br/>
+            When you visit a website via a secure connection, the site sends a digital certificate to your browser. Your Internet browser compares the issuer with a list of trusted Certificate Authorities (Root CA). If a match can’t be found, the client browser checks to see whether a trusted Root CA signs the issuing CA certificate. The browser's chaining engine continues verifying the issuer of each certificate until it finds a trusted root or upon reaching the end of the trust chain.
+             </td>
+</tr>
+<tr>
+        <th >Terms</th>
+        <td> null </td>
+</tr>
+<tr>
+        <th >Organizational Use</th>
+        <td> null </td>
+</tr>
+<tr>
+        <th >References</th>
+        <td> https://blog.keyfactor.com/certificate-chain-of-trust  </td>
+</table>
+<br/>
 <br />
 <table style="width:100%">
     <tr>
@@ -913,57 +965,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
         <td> https://blogs.getcertifiedgetahead.com/tpm-hsm-hardware-encryption-devices/ </td>
 </table>
 <br/>
-<br/>
-<table style="width:100%">
-<tr>
-	<th colspan="2" id="certificate-authority">Certificate authority </th>
-</tr>
-<tr>
-        <th >Definition</th>
-        <td> In cryptography, a certificate authority or certification authority (CA) is an entity that issues digital certificates. A digital certificate certifies the ownership of a public key by the named subject of the certificate. This allows others (relying parties) to rely upon signatures or on assertions made about the private key that corresponds to the certified public key. A CA acts as a trusted third party—trusted both by the subject (owner) of the certificate and by the party relying upon the certificate. The format of these certificates is specified by the X.509 or EMV standard.
-        </td>
-</tr>
-<tr>
-        <th >Terms</th>
-        <td> CA </td>
-</tr>
-<tr>
-        <th >Organizational Use</th>
-        <td> One particularly common use for certificate authorities is to sign certificates used in HTTPS, the secure browsing protocol for the World Wide Web. Another common use is in issuing identity cards by national governments for use in electronically signing documents. </td>
-</tr>
-<tr>
-        <th >References</th>
-        <td> https://en.wikipedia.org/wiki/Certificate_authority   </td>
-</table>
-<br/>
-<br/>
-<table style="width:100%">
-<tr>
-	<th colspan="2" id="certificate-root-of-trust">Certificate root of trust</th>
-</tr>
-<tr>
-        <th >Definition</th>
-        <td> 
-        The SSL/TLS internet security standard is based on a trust relationship model, also called "certificate chain of trust." x.509 digital certificates validate the identity of a website, organization, or server and provide a trusty platform for the user to connect and share information securely.
-            <br/><br/>
-            SSL/TLS Internet-based Public Key Infrastructure (PKI) allows users to exchange data using public and private key pairs, obtained, and exchanged by a trusted certificate authority (CA). This reputable entity is responsible for issuing, retaining, and revoking public key certificates over insecure networks.
-            <br/><br/>
-            When you visit a website via a secure connection, the site sends a digital certificate to your browser. Your Internet browser compares the issuer with a list of trusted Certificate Authorities (Root CA). If a match can’t be found, the client browser checks to see whether a trusted Root CA signs the issuing CA certificate. The browser's chaining engine continues verifying the issuer of each certificate until it finds a trusted root or upon reaching the end of the trust chain.
-             </td>
-</tr>
-<tr>
-        <th >Terms</th>
-        <td> null </td>
-</tr>
-<tr>
-        <th >Organizational Use</th>
-        <td> null </td>
-</tr>
-<tr>
-        <th >References</th>
-        <td> https://blog.keyfactor.com/certificate-chain-of-trust  </td>
-</table>
-<br/>
+
 <br/>
 <table style="width:100%">
 <tr>
