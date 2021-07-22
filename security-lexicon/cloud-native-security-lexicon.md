@@ -38,6 +38,7 @@ Shared with CNCF Community
             <li><a href="#credentials">Credentials</a></li>
             <li><a href="#claim">Claim</a></li>
             <li><a href="#token">Token </a></li>
+            <li><a href="#root-of-trust">Root of Trust</a></li>                
             <li><a href="#certificates">Certificates</a></li>
             <li><a href="#certificate-authority">Certificate authority</a></li>
             <li><a href="#certificate-root-of-trust">Certificate root of trust</a></li>                
@@ -55,7 +56,6 @@ Shared with CNCF Community
             <!-- cspell:disable --> <li><a href="#iast">Interactive Analysis Security Testing (IAST) </a></li>
             <li><a href="#authentication-authorization-access-control">Authentication vs. Authorization vs. Access control</a></li>
             <li><a href="#cryptographic-signing-encrypting-verifying-validating">Cryptographic signing vs. Encrypting vs. Verifying/Validating</a></li>
-            <li><a href="#root-of-trust">Root of Trust</a></li>
             <li><a href="#hardware-root-of-trust">Hardware Root of Trust</a></li>
             <li><a href="#tpm">Trusted Platform Module (TPM/vTPM)</a></li>
             <li><a href="#hsm">Hardware Security Module </a></li>
@@ -311,7 +311,41 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
         <td>https://tools.ietf.org/html/rfc7519 </td>
 </table>
 <br/>
-
+<br/>
+<table style="width:100%">
+<tr>
+	<th colspan="2" id="root-of-trust">Root of Trust</th>
+</tr>
+<tr>
+        <th >Definition</th>
+        <td> Root of Trust (RoT) is a set of functions in the trusted computing module that is always trusted by the computer’s operating system (OS). The RoT serves as a separate compute engine controlling the trusted computing platform cryptographic processor on the PC or mobile device it is embedded in.
+            <br/><br/>
+            Roots of trust are highly reliable hardware, firmware, and software components that perform specific, critical security functions. Because roots of trust are inherently trusted, they must be secure by design. As such, many roots of trust are implemented in hardware so that malware cannot tamper with the functions they provide.  (Reference- NIST). Roots of trust provide a firm foundation from which to build security and trust. Ideally Hardware based RoT is most desirable but vTPM’s and their use is also accepted. (Ref NIST SP 800-190 )
+            <br/><br/>
+            The RoT provides the functionality behind trusted computing features including
+            <br/>
+            <ul>
+                <li>On the fly drive encryption.</li>
+                <li>Detection and reporting of unauthorized changes to the operating system or programs.</li>
+                <li>Detection of rootkits.</li>
+                <li>Memory curtaining to prevent programs from inappropriately reading from or writing to another program's memory.</li>
+                <li>Hardware-based digital rights management (DRM) support.</li>
+            </ul>
+            </td>
+</tr>
+<tr>
+        <th >Terms</th>
+        <td> Hardware root of trust, certificate root of trust </td>
+</tr>
+<tr>
+        <th >Organizational Use</th>
+        <td> null </td>
+</tr>
+<tr>
+        <th >References</th>
+        <td> https://whatis.techtarget.com/definition/Roots-of-Trust-RoT   </td>
+</table>
+<br/>
 <br/>
 <table style="width:100%">
 <tr>
@@ -773,41 +807,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
         </ul>   </td>
 </table>
 <br/>
-<br/>
-<table style="width:100%">
-<tr>
-	<th colspan="2" id="root-of-trust">Root of Trust</th>
-</tr>
-<tr>
-        <th >Definition</th>
-        <td> Root of Trust (RoT) is a set of functions in the trusted computing module that is always trusted by the computer’s operating system (OS). The RoT serves as a separate compute engine controlling the trusted computing platform cryptographic processor on the PC or mobile device it is embedded in.
-            <br/><br/>
-            Roots of trust are highly reliable hardware, firmware, and software components that perform specific, critical security functions. Because roots of trust are inherently trusted, they must be secure by design. As such, many roots of trust are implemented in hardware so that malware cannot tamper with the functions they provide.  (Reference- NIST). Roots of trust provide a firm foundation from which to build security and trust. Ideally Hardware based RoT is most desirable but vTPM’s and their use is also accepted. (Ref NIST SP 800-190 )
-            <br/><br/>
-            The RoT provides the functionality behind trusted computing features including
-            <br/>
-            <ul>
-                <li>On the fly drive encryption.</li>
-                <li>Detection and reporting of unauthorized changes to the operating system or programs.</li>
-                <li>Detection of rootkits.</li>
-                <li>Memory curtaining to prevent programs from inappropriately reading from or writing to another program's memory.</li>
-                <li>Hardware-based digital rights management (DRM) support.</li>
-            </ul>
-            </td>
-</tr>
-<tr>
-        <th >Terms</th>
-        <td> Hardware root of trust, certificate root of trust </td>
-</tr>
-<tr>
-        <th >Organizational Use</th>
-        <td> null </td>
-</tr>
-<tr>
-        <th >References</th>
-        <td> https://whatis.techtarget.com/definition/Roots-of-Trust-RoT   </td>
-</table>
-<br/>
+
 <br/>
 <table style="width:100%">
 <tr>
