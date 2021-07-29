@@ -53,7 +53,7 @@ when it will be available or links to where the patch will be available.*
 
 * make this problem public,
 * issue communications hinting at or regarding this,
-* share with this with others,
+* share this with others,
 * issue public patches before the disclosure date
 
 This list will be notified immediately if the disclosure date is at risk or

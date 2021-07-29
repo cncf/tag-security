@@ -79,7 +79,7 @@ Once a CVE number has been assigned, publish and release the updated
 version/patch. Be sure to notify the CVE group when published so the CVE details
 are searchable. Be sure to give credit to the reporter by *[editing the security
 advisory](https://docs.github.com/en/github/managing-security-vulnerabilities/editing-a-security-advisory#about-credits-for-security-advisories)*
-they took the time to notify and work with you on the problem!
+as they took the time to notify and work with you on the problem!
 
 ### Issue a security advisory
 
