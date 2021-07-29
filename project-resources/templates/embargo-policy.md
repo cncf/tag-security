@@ -15,7 +15,7 @@ Except with the list's explicit approval. This holds true until the public
 disclosure date/time that was agreed upon by the list.
 
 If information is inadvertently shared beyond what is allowed by this policy,
-you are REQUIRED to inform the Security Contacts $LINK of exactly what
+you are REQUIRED to inform the security contacts $LINK of exactly what
 information leaked and to whom. A retrospective will take place after the leak
 so we can assess how to not make this mistake in the future.
 

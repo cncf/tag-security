@@ -48,13 +48,13 @@ Follow the instructions relayed in the problem. If the instructions are
 insufficient, contact the reporter and ask for more information.
 
 If the problem cannot be replicated, re-engage the reporter, let them know it
-cannot be replicated, and work them to find a remediation.
+cannot be replicated, and work with them to find a remediation.
 
 If the problem can be replicated, re-evaluate the criticality of the problem, and
 begin working on a remediation. Begin a draft security advisory.
 
 Notify the reporter you were able to replicate the problem and have begun working
-on a fix. Reminder them of the embargo policy. If necessary, notify them of an
+on a fix. Remind them of the embargo policy. If necessary, notify them of an
 extension (only for very complex problems where remediation cannot be issued
 within the project's specified window).
 

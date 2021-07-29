@@ -19,7 +19,7 @@ content was built on.
   * a draft security contacts file to allow potential issue submitters to know
       who they can expect to hear from or how to follow up on issues.
 * [ISSUE_TEMPLATE.md](templates/ISSUE_TEMPLATE.md)
-  * a draft issue template to reminder issue submitters that potential
+  * a draft issue template to remind issue submitters that potential
       vulnerabilities **do not** get submitted as issues.
 * [incident-response.md](templates/incident-response.md)
   * a draft, detailed incident response plan that covers how to triage issues,

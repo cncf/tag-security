@@ -12,4 +12,4 @@ INSTRUCTIONS AT $LINK
 
 Security Contacts:
 
-* $NAME, $SLACK-EMAIL
+* $NAME: $ALIAS
