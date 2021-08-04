@@ -19,8 +19,11 @@
         "explainability",
         "APAC",
         "spiffe",
-        "SPIFFE",
         "keycloak",
-        "Keycloak"
+        "triage",
+        "triaging",
+        "triaged",
+        "exfiltration",
+        "mitigations"
     ]
 }
