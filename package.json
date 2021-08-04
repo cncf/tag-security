@@ -9,9 +9,10 @@
     "export": "next export"
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "^3.8.0",
     "bootstrap": "^4.6.0",
     "gray-matter": "^4.0.2",
-    "next": "10.0.9",
+    "next": "^10.0.9",
     "react": "17.0.1",
     "react-bootstrap": "^1.5.2",
     "react-dom": "17.0.1",
