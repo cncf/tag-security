@@ -144,7 +144,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 | Definition | Least privilege is the concept of only allowing the minimal amount of access necessary to perform a given function for the shortest duration possible, revoking permissions as necessary. Least privilege may be executed through short-lived credentials, narrowly scoped permissions, RBAC, and several other fine-granularity controls. Least privilege often requires multiple layers of explicit permissions that may be granted as functions require and only for expected duration of the function execution. It is designed to prevent and reduce the likelihood that an attacker could gain enough privileges to move vertically or laterally through a given host, container, network, or environment. |
 | Terms | Rootless, just-in-time access, |
 | Organizational Use | null |
-| References | - <https://us-cert.cisa.gov/bsi/articles/knowledge/principles/least-privilege> <br /> - <https://rootlesscontaine.rs> <br /> - <https://developers.redhat.com/blog/2020/09/25/rootless-containers-with-podman-the-basics#why\_rootless\_containers_> |
+| References | - <https://us-cert.cisa.gov/bsi/articles/knowledge/principles/least-privilege> <br /> - <https://rootlesscontaine.rs> <br /> - <https://developers.redhat.com/blog/2020/09/25/rootless-containers-with-podman-the-basics#why_rootless_containers_> |
 |  | [Go to Table of Content](#index)  |
 
 ### Immutability
@@ -154,7 +154,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 | Definition | Immutable means that a container, infrastructure, image, host, etc. won't be modified during its life: no updates, no patches, no configuration changes. If it must be updated (as is expected to sustain secure posture), then it must be rebuilt and redeployed. Immutability makes deployments predictable, repeatable, and safe. If you need to roll back, you simply redeploy the old image. This approach allows you to deploy the same object to every environment, making them as identical and reducing the potential or likelihood of drift. |
 | Terms | null |
 | Organizational Use | null |
-| References | <https://cloud.google.com/architecture/best-practices-for-operating-containers#ensure\_that\_your\_containers\_are\_stateless\_and_immutable> |
+| References | <https://cloud.google.com/architecture/best-practices-for-operating-containers#ensure_that_your_containers_are_stateless_and_immutable> |
 |  | [Go to Table of Content](#index)  |
 
 ### Compliance and Security
@@ -174,7 +174,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 | Definition | - Vulnerability - A Vulnerability is a weakness, flaw, or error found within a system, network, or application that has the potential to be leveraged by a threat agent in order to compromise an individual or an organization.<br> - Threat - In computer security, a threat is a potential negative action or event facilitated by a vulnerability that results in an unwanted impact to a computer system or application.  <br>      <br>    A threat can be either a negative "intentional" event (i.e. hacking: an individual cracker or a criminal organization) or an "accidental" negative event (e.g. the possibility of a computer malfunctioning, or the possibility of a natural disaster event such as an earthquake, a fire, or a tornado) or otherwise a circumstance, capability, action, or event.  <br>      <br>    A threat agent is an entity that may act out a threat.<br> - An exploit is code that takes advantage of a vulnerability or security flaw. It is written either by security researchers as a proof-of-concept threat or by malicious actors for use in their operations. When used, exploits allow an intruder to access the target (network, hardware devices and so on) and gain elevated privileges, or move deeper into the target environment.  <br>      <br>    In some cases, an exploit can be used as part of a multi-component attack. Instead of using a malicious file, the exploit may instead drop another malware, which can include backdoor Trojans and spyware that can steal user information from the infected systems. |
 | Terms | - [Vulnerability Scanning](#vulnerability-scanning), Vulnerability analysis, Zero-day vulnerability, vulnerability database<br> - Threat vectors, Threat landscape, Threat actor<br> - Known exploits, Zero-day exploits, Exploit Kits |
 | Organizational Use | Vulnerabilities and threats are used to assist organizations in defining their risk tolerance. It enables them to apply mitigating and compensating mechanisms to reduce, transfer, or accept the risk presented by a threat or vulnerability. |
-| References | - <https://www.rapid7.com/fundamentals/vulnerabilities-exploits-threats><br> - <https://en.wikipedia.org/wiki/Threat_(computer>)<br> - <https://www.trendmicro.com/vinfo/us/security/definition/exploit> |
+| References | - <https://www.rapid7.com/fundamentals/vulnerabilities-exploits-threats><br> - <https://en.wikipedia.org/wiki/Threat_(computer)><br> - <https://www.trendmicro.com/vinfo/us/security/definition/exploit> |
 |  | [Go to Table of Content](#index)  |
 
 ### Authentication vs. Authorization vs. Access control
@@ -377,7 +377,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 | Definition | - RBAC: Role-based access control ( RBAC) is a method of regulating access to computer or network resources based on the roles of individual users within your organization. The users are grouped into Roles based on their access needs and after the authentication process the user granted access to services based on the role assigned e.g. a user may be in the role of end user then they may be only be able to access the application and read the data relevant to their access, whereas on the same system a DBA maybe able to go read, write, and update data as well. The roles have to be defined by the application owner that align to the specific needs of the organization.<br> - <!-- cspell:disable -->ABAC: Attribute-based access control ( <!-- cspell:disable -->ABAC) defines an access control paradigm whereby access rights are granted to users Access to entities (devices, users, applications) is granted dynamically based on the attributes. Depending on the dynamic attributes a decision engine makes a decision based on predefined policies which are based on the attributes and the decision is then communicated to the policy enforcement point to enforce, grant, or block access or in some cases ask for step up or provide additional attributes to make the access decision.  <br>      <br>    E.g. If a user is on a corporate laptop and is on a corporate network then those attributes provide them access to certain assets, whereas the same user on the same device logged in from a public Wi-Fi network and a different location could block access depending on the policies established by the enterprise.<br> - MAC: In computer security, mandatory access control (MAC) refers to a type of access control by which the operating system or database constrains the ability of a subject or initiator to access or generally, perform some sort of operation on an object or target.  <br>      <br>    With mandatory access control, security policy is centrally controlled by a security policy administrator: users do not have the ability to override the policy and, for example, grant access to files that would otherwise be restricted. By contrast, discretionary access control (DAC), which also governs the ability of subjects to access objects, allows users the ability to make policy decisions and/or assign security attributes. (The traditional Unix system of users, groups, and read-write-execute permissions is an example of DAC.) MAC-enabled systems allow policy administrators to implement organization-wide security policies. Under MAC (and unlike DAC), users cannot override or modify this policy, either accidentally or intentionally. This allows security administrators to define a central policy that is guaranteed (in principle) to be enforced for all users. |
 | Terms | null |
 | Organizational Use | null |
-| References | - <https://kubernetes.io/docs/reference/access-authn-authz/rbac/> <br> - <https://kubernetes.io/docs/reference/access-authn-authz/> <!-- cspell:disable -->ABAC/<br> - <https://en.wikipedia.org/wiki/Mandatory\_access\_control> |
+| References | - <https://kubernetes.io/docs/reference/access-authn-authz/rbac/> <br> - <https://kubernetes.io/docs/reference/access-authn-authz/> <!-- cspell:disable -->ABAC/<br> - <https://en.wikipedia.org/wiki/Mandatory_access_control> |
 |  | [Go to Table of Content](#index)  |
 
 ## Hardware
@@ -389,7 +389,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 | Definition | TPM: Trusted Platform Module (TPM, also known as ISO/IEC 11889) is an international standard for a secure cryptoprocessor, a dedicated microcontroller designed to secure hardware through integrated cryptographic keys.  <br>  <br>Trusted Platform Module provides  <br><br>1.  A hardware random number generator\[5\]\[6\]<br>2.  Facilities for the secure generation of cryptographic keys for limited uses.<br>3.  Remote attestation: Creates a nearly unforgeable hash key summary of the hardware and software configuration. The software in charge of hashing the configuration data determines the extent of the summary. This allows a third party to verify that the software has not been changed.<br>4.  Binding: Encrypts data using the TPM bind key, a unique RSA key descended from a storage key\[clarification needed\].\[7\]<br>5.  Sealing: Similar to binding, but in addition, specifies the TPM state\[8\] for the data to be decrypted (unsealed).\[9\]<br>6.  Other Trusted Computing functions for the data to be decrypted (unsealed).\[10\]<br><br>vTPM: A vTPM, or “virtual Trusted Platform Module 2.0”, performs the same functions as a physical TPM 2.0 device, but it performs cryptographic coprocessor capabilities in software. |
 | Terms | null |
 | Organizational Use | null |
-| References | - <https://en.wikipedia.org/wiki/Trusted\_Platform\_Module> <br> - <https://csrc.nist.gov/glossary/term/trusted\_platform\_module> <br> - <https://blogs.vmware.com/vsphere/2018/05/vsphere-6-7-virtual-trusted-platform-modules.html> |
+| References | - <https://en.wikipedia.org/wiki/Trusted_Platform_Module> <br> - <https://csrc.nist.gov/glossary/term/trusted_platform_module> <br> - <https://blogs.vmware.com/vsphere/2018/05/vsphere-6-7-virtual-trusted-platform-modules.html> |
 |  | [Go to Table of Content](#index)  |
 
 ### Hardware Security Module
@@ -399,7 +399,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 | Definition | A hardware security module (HSM) is a physical computing device that safeguards and manages digital keys, performs encryption and decryption functions for digital signatures, strong authentication, and other cryptographic functions. These modules traditionally come in the form of a plug-in card or an external device that attaches directly to a computer or network server. A hardware security module contains one or more secure cryptoprocessor chips. |
 | Terms | null |
 | Organizational Use | A hardware security module can be employed in any application that uses digital keys. Typically, the keys would be of high value - meaning there would be a significant, negative impact to the owner of the key if it were compromised.  <br>  <br>The functions of an HSM are:  <br><br>1.  onboard secure cryptographic key generation<br>2.  onboard secure cryptographic key storage, at least for the top level and most sensitive keys, which are often called master keys<br>3.  key management<br>4.  use of cryptographic and sensitive data material, for example, performing encryption or digital signature functions<br>5.  offloading application servers for complete asymmetric and symmetric cryptography. |
-| References | <https://csrc.nist.gov/glossary/term/hardware\_security\_module_hsm> |
+| References | <https://csrc.nist.gov/glossary/term/hardware_security_module_hsm> |
 |  | [Go to Table of Content](#index)  |
 
 ### HSM vs TPM
@@ -429,7 +429,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 | Definition | Roots of trust are highly reliable hardware, firmware, and software components that perform specific, critical security functions. Because roots of trust are inherently trusted, they must be secure by design. As such, many roots of trust are implemented in hardware so that malware cannot tamper with the functions they provide. (Reference- NIST). Roots of trust provide a firm foundation from which to build security and trust.  <br>  <br>A hardware Root of Trust can be defined by the four basic building blocks:  <br><br>1.  The protective hardware provides a trusted execution environment (TEE) for the privileged software to run.<br>2.  At a minimum, it must perform one or more proven cryptographic functions like AES based.<br>3.  A form of tamper protection must be present and available for the entire runtime.<br>4.  A flexible, yet simple user interface that the host can interact with, through either the host CPU and/or a host controller toggling GPIOs. |
 | Terms | null |
 | Organizational Use | null |
-| References | <https://csrc.nist.gov/glossary/term/roots\_of\_trust> |
+| References | <https://csrc.nist.gov/glossary/term/roots_of_trust> |
 |  | [Go to Table of Content](#index)  |
 
 ### Key Management Store
@@ -439,7 +439,7 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 | Definition | A key management store is a system or application used to securely store and retrieve cryptographic keys. In some cases, key management stores also provide secrets management services to store both keys and sensitive secrets. |
 | Terms | null |
 | Organizational Use | A key management store enables organizations to securely store and retrieve keys. It reduces the likelihood of key compromise on hosts. |
-| References | <https://csrc.nist.gov/glossary/term/key\_management\_system> |
+| References | <https://csrc.nist.gov/glossary/term/key_management_system> |
 |  | [Go to Table of Content](#index)  |
 
 ## Tooling
