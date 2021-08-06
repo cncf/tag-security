@@ -82,7 +82,7 @@ repo may be found in the [contributing file](../CONTRIBUTING.md).
 #### New templates & updating contribute.cncf.io
 
 The templates within this folder are linked for availability on the
-contribut.cncf.io site. Should new templates be added to this folder or
+contribute.cncf.io site. Should new templates be added to this folder or
 additional security insights and instructions for maintainers be added, the
 contribute.cncf.io site should be updated. There are two core areas that updates
 need to occur:
