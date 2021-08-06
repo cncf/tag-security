@@ -24,7 +24,7 @@ replacement of you from this list or the Security Contacts.
 
 ## Disclosure Timeline
 
-This project sustains a <!-- TODO: **$X day disclosure timeline** --> to ensure we provide a
+This project sustains a **<!-- TODO: $X day  --> disclosure timeline** to ensure we provide a
 quality, tested release. On some occasions, we may need to extend this timeline
 due to complexity of the problem, lack of expertise available, or other reasons.
 Submitters will be notified if an extension occurs.

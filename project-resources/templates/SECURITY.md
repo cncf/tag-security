@@ -38,7 +38,7 @@ Web Form:
    and scope of the reported problem, recreate it, and confirm if there is an
    vulnerability present.
 
-This project follows a **<!-- TODO: $X day disclosure timeline -->**. Refer to our embargo
+This project follows a **<!-- TODO: $X day --> disclosure timeline**. Refer to our embargo
 policy **<!-- TODO: $LINK -->** for more information.
 
 ## Supported Versions

@@ -8,7 +8,7 @@ items in the [CII badging](https://bestpractices.coreinfrastructure.org/en)
 process.
 
 We use `<!-- TODO: ... -->` to indicate where action is required but
-you won't see those comments when viewing hte markdown file in GitHub unless you
+you won't see those comments when viewing the markdown file in GitHub unless you
 view the raw text.
 
 A special thank you to [Google's OSS vulnerability guide
