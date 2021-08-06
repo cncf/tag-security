@@ -77,4 +77,17 @@ and discussions as guidance when determining the content of their updates.
 
 It is highly recommended that you seek peer review for your updates beyond that
 of the Technical Leads and Chairs. More information on contributions to this
-repo may be found in the [contributing file](../CONTRIBUTING.md)
+repo may be found in the [contributing file](../CONTRIBUTING.md).
+
+#### New templates & updating contribute.cncf.io
+
+The templates within this folder are linked for availability on the
+contribut.cncf.io site. Should new templates be added to this folder or
+additional security insights and instructions for maintainers be added, the
+contribute.cncf.io site should be updated. There are two core areas that updates
+need to occur:
+* maintainers > github > templates for new templates
+* maintainers > community > project-health for general security guidance on
+  keeping the project secure
+
+To make updates to contribute.cncf.io, please refer to their [contributing guide](https://cncf-contribute.netlify.app/about/contributing/).
