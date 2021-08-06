@@ -1,21 +1,25 @@
 # Security resources for projects
 
 This directory is intended to provide CNCF and other open source projects with
-resources and templates to assist in kick-starting their security practices.  The
-templates, guides, and other documents herein assist projects in completion of
-the [self-assessment](assessments/guide/self-assessment.md) as well as a few
+resources and templates to assist in kick-starting their security practices.
+The templates, guides, and other documents herein assist projects in completion
+of the [self-assessment](assessments/guide/self-assessment.md) as well as a few
 items in the [CII badging](https://bestpractices.coreinfrastructure.org/en)
 process.
+
+We use `<!-- TODO: ... -->` to indicate where action is required but
+you won't see those comments when viewing hte markdown file in GitHub unless you
+view the raw text.
 
 A special thank you to [Google's OSS vulnerability guide
 folks](https://github.com/google/oss-vulnerability-guide) for making the
 Security TAG aware of this collection of resources upon which much of this
 content was built on.
 
-* [SECURITY.md](templates/SECURITY)
+* [SECURITY.md](templates/SECURITY.md)
   * draft security file that outlines subscribing to security bulletins, how
       to report issues, and supported versions.
-* [SECURITY_CONTACTS.md](templates/SECURITY_CONTACTS)
+* [SECURITY_CONTACTS.md](templates/SECURITY_CONTACTS.md)
   * a draft security contacts file to allow potential issue submitters to know
       who they can expect to hear from or how to follow up on issues.
 * [ISSUE_TEMPLATE.md](templates/ISSUE_TEMPLATE.md)
