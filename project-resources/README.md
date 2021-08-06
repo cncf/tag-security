@@ -77,7 +77,7 @@ and discussions as guidance when determining the content of their updates.
 
 It is highly recommended that you seek peer review for your updates beyond that
 of the Technical Leads and Chairs. More information on contributions to this
-repo may be found in the [contributing file](../CONTRIBUTING.md).
+repo may be found in the [contributing file](../CONTRIBUTING/README.md).
 
 #### New templates & updating contribute.cncf.io
 
