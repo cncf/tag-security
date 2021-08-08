@@ -1,5 +1,5 @@
 <!--
-For Security vulnerabilities, please refer to our security page $LINK
+For Security vulnerabilities, please refer to our security page <!-- TODO: $LINK -->
 -->
 # Title
 
