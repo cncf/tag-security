@@ -77,11 +77,20 @@ SPDX-License-Identifier: CC-BY-4.0
 
 # Executive Summary
 
-Cloud Native Ecosystem is growing, the number of cloud native projects is huge. Many of the cloud native projects perform multiple functions. Many Security terminologies are rather overused, used as Catch-all umbrella terms, or incorrectly presented. This paper aims to ensure all community members have the same terms & definitions as well as an understanding of where they fit in their software development lifecycle and beyond.
+Cloud Native Ecosystem is growing, the number of cloud native projects is huge.
+Many of the cloud native projects perform multiple functions. Many Security
+terminologies are rather overused, used as Catch-all umbrella terms, or
+incorrectly presented. This paper aims to ensure all community members have the
+same terms & definitions as well as an understanding of where they fit in their
+software development lifecycle and beyond.
 
 # Purpose
 
-Standardization of terminologies specific to Cloud Native Security to bring about clarity to Cloud native security practitioners, Developers, and Operators regarding the right set of security terminologies to be used in the right context throughout the <!-- cspell:disable -->SDLC as well as their operational environments
+Standardization of terminologies specific to Cloud Native Security to bring
+about clarity to Cloud native security practitioners, Developers, and Operators
+regarding the right set of security terminologies to be used in the right
+context throughout the <!-- cspell:disable -->SDLC as well as their operational
+environments
 
 # Lexicon
 
@@ -516,7 +525,8 @@ Standardization of terminologies specific to Cloud Native Security to bring abou
 
 # Acknowledgements
 
-This white paper is a community effort driven by the members of the <!-- cspell:disable -->CNCF TAG-Security. Thank you to everyone for their outstanding contributions.
+This white paper is a community effort driven by the members of the CNCF
+TAG-Security. Thank you to everyone for their outstanding contributions.
 
 Special thanks to Emily Fox and <!-- cspell:disable -->Ragashree M C.
 
