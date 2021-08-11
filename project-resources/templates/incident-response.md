@@ -19,13 +19,13 @@ following information:
   * code execution
   * exfiltration
   * lateral movement
-  * $CONTEXT_SPECIFIC_ISSUE
+  * <!-- TODO: $CONTEXT_SPECIFIC_ISSUE -->
 * How complex is the problem?
 * Is user interaction required?
 * What privileges are required for this problem to occur?
   * admin
   * general
-  * $CONTEXT_SPECIFIC_PRIVILEGE
+  * <!-- TODO: $CONTEXT_SPECIFIC_PRIVILEGE -->
 * What is the potential impact or consequence of the problem?
 * Does an exploit exist?
 
