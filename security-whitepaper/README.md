@@ -60,7 +60,7 @@ approval on the PR.  At which point the markdown state will be changed to
 
 ### Retrospective
 
-Release of the whitepaper, triggers a retrospective process that will assess
+Release of the whitepaper triggers a retrospective process that will assess
 what worked well, what we should do more and opportunities where we
 can improve.  The first retrospective led to creation of a survey to gauge
 the success of the whitepaper through answers to questions regarding the
