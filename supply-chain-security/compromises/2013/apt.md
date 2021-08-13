@@ -1,6 +1,7 @@
 # APT didn't enforce signature validation for source packages
 
-It was discovered that APT's crypto-based routines to verify binary package authenticity wasn't being used for source packages.
+It was discovered that APT's crypto-based routines to verify binary package
+authenticity wasn't being used for source packages.
 
 ## Impact
 
