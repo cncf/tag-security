@@ -10,22 +10,28 @@ Index:
 * [Publishing Infrastructure](#publishing-infrastructure)
 * [Source Code](#source-code)
 * [Trust and Signing](#trust-and-signing)
+* [Attack Chaining](#technique-attack-chaining)
+
 
 ## Dev Tooling
 Occurs when the development machine, SDK, toolchains, or build kit have been exploited.  These exploits often result in the introduction of a backdoor by an attacker to own the development environment.
+
+- _Mitigation_ - Use of trusted binary repositories. Verification of provenance (i.e. signatures) and/or integrity (i.e. checksums) of developer tooling downloads. Bootstrapping development toolchain from a minimal, trusted and auditable seed (ideally source code).
 
 _Reference(s)_:
 - [Mitre: Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)
 
 
 ##  Negligence
-Associated with TypoSquatting attacks, the developer failed to verify the requested package or source code was spelled correctly.  
+Occurs due to a lack of adherence to best practices. TypoSquatting attacks are a common type of attack associated with negligence, such as when a developer fails to verify the requested dependency name was correct (spelling, name components, glyphs in use, etc).
 
 _Reference(s)_:
-- [Slashdot Article regarding PyPI attackes](https://developers.slashdot.org/story/17/09/16/2030229/pythons-official-repository-included-10-malicious-typo-squatting-modules)
+- [Slashdot Article Regarding PyPI Attacks](https://developers.slashdot.org/story/17/09/16/2030229/pythons-official-repository-included-10-malicious-typo-squatting-modules)
+
 
 ## Publishing Infrastructure
 Occurs when the integrity or availability of shipment, publishing, or distribution mechanisms and infrastructure are affected.  This can result from a number of attacks that permit access to the infrastructure.
+
 - _Mitigation_ - This kind of compromise can be deterred or defeated by implementing code-signing.  Code-signing requires attackers to perform multiple operations to be successful, making the level of effort higher.
 
 _Reference(s)_:
@@ -49,3 +55,19 @@ _Reference(s)_:
 - [Wikipedia Code Signing](https://en.wikipedia.org/wiki/Code_signing)
 
 
+## Malicious Maintainer
+Occurs when a maintainer, or an entity posing as a maintainer, deliberately
+injects a vulnerability somewhere in the supply chain or in the source code.
+This kind of compromise could have great consequences because usually
+the individual executing the attack is considered trustworthy by many.
+This category includes attacks from experienced maintainers going rogue,
+account compromise, and new personas performing an attack soon after they have
+acquired responsibilities.
+
+
+_Reference(s)_:
+- [Mitre: Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)
+
+
+## Technique: Attack Chaining
+Sometimes a breach may be attributed to multiple lapses, with several compromises chained together to enable the attack. The attack chain may include types of supply chain attacks as defined here. However, catalogued attack chains often include other types of compromise, such as social engineering or a lack of adherence to best practices for securing publicly accessible infrastructure components.

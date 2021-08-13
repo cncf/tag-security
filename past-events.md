@@ -1,13 +1,35 @@
-# Past Events 
+# Past Events
 
-## KubeCon + CloudNativeCon, Barcelona, Spain, May 20 – 23, 2019 
+## KubeCon + CloudNativeCon, Barcelona, Spain, May 20 – 23, 2019
 
-[issue#127](https://github.com/cncf/sig-security/issues/127)
+[issue#127](https://github.com/cncf/tag-security/issues/127)
 
-### SIG talks
-- [CNCF SIG-Security Intro](https://kccnceu19.sched.com/event/OB0K/intro-cncf-security-sig-sarah-allen-jeyappragash-jeyakeerthi-tetrateio) -  [slides](https://docs.google.com/presentation/d/1KE2tDDOeEOXQLF6hSrAuQLn4z25O_jeHIeAVE4CB-VI/edit#slide=id.gc6fa3c898_0_70) | [video](https://www.youtube.com/watch?v=XD89-v3oWPE)
-- [CNCF SIG-Security Deep Dive](https://kccnceu19.sched.com/event/Oscd/deep-dive-cncf-security-sig-justin-cappos-new-york-university-zhipeng-huang-huawei) - [slides](https://docs.google.com/presentation/d/18nzXspPuRDRKfGUSI1ogFHmUOP_XHS78nz-0uTG9Ogs/edit?usp=sharing) | [video](https://www.youtube.com/watch?v=EF3nl80kpm4)
+## KubeCon + CloudNativeCon + Open Source Summit, Shanghai, Jun 24-26, 2019
+
+[issue#200](https://github.com/cncf/tag-security/issues/200)
+
+## DockerCon, San Francisco, CA, Apr 30 - May 2, 2019
+[issue#151](https://github.com/cncf/tag-security/issues/151)
+
+## KubeCon + CloudNativeCon, North America, Dec 11-13, 2018
+
+[issue#29](https://github.com/cncf/tag-security/issues/29)
+
+## KubeCon + CloudNativeCon, Shanghai, Nov 14-15, 2018
+ [issue#28](https://github.com/cncf/tag-security/issues/28)
+
+## KubeConEU May 2-4, 2018 in Copenhagen, Denmark
+
+https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2018/
+
+[notes](safe_kubecon.md)
+
+### TAG talks
+- [CNCF TAG-Security Intro](https://kccnceu19.sched.com/event/OB0K/intro-cncf-security-tag-sarah-allen-jeyappragash-jeyakeerthi-tetrateio) -  [slides](https://docs.google.com/presentation/d/1KE2tDDOeEOXQLF6hSrAuQLn4z25O_jeHIeAVE4CB-VI/edit#slide=id.gc6fa3c898_0_70) | [video](https://www.youtube.com/watch?v=XD89-v3oWPE)
+- [CNCF TAG-Security Deep Dive](https://kccnceu19.sched.com/event/Oscd/deep-dive-cncf-security-tag-justin-cappos-new-york-university-zhipeng-huang-huawei) - [slides](https://docs.google.com/presentation/d/18nzXspPuRDRKfGUSI1ogFHmUOP_XHS78nz-0uTG9Ogs/edit?usp=sharing) | [video](https://www.youtube.com/watch?v=EF3nl80kpm4)
 - [Inside CNCF Project Security Reviews](https://kccnceu19.sched.com/event/MPdf/inside-the-cncf-project-security-reviews-justin-cormack-docker) - [video](https://www.youtube.com/watch?v=0BkKpsrUo5k)
+
+### Misc security-related talks
 - [Intro: TUF/Notary](https://docs.google.com/presentation/d/1Mp4pSMEvZIv0qo6wBWm-4vM6CZ-0IXimpq8zD3iTH0Q/edit#slide=id.g5a645bebe8_0_921) - [video](https://www.youtube.com/watch?v=gIFRQObHbZk)
 - [Deep Dive: TUF/Notary](https://kccnceu19.sched.com/event/MPkF/deep-dive-tuf-notary-justin-cappos-lukas-puehringer-nyu) - [video](https://www.youtube.com/watch?v=PSujE86JvBk)
 - [Intro: SPIFFE](https://kccnceu19.sched.com/event/MPib/intro-spiffe-emiliano-bernbaum-scott-emmons-scytale) - [video](https://www.youtube.com/watch?v=Rx6PMptyEtg)
@@ -19,56 +41,36 @@
 - [Securing Kubernetes with Trusted Platform Module (TPM)](https://kccnceu19.sched.com/event/MPdN/securing-kubernetes-with-trusted-platform-module-tpm-alex-tcherniakhovski-andrew-lytvynov-google) - [slides](https://static.sched.com/hosted_files/kccnceu19/a9/Securing%20Kubernetes%20with%20Trusted%20Platform%20Module.pdf) | [video](https://www.youtube.com/watch?v=_kxmkI8Kc8Y)
 - [Uber x Security: Why and How We Built Our Workload Identity Platform](https://kccnceu19.sched.com/event/MPe6) - [slides](https://static.sched.com/hosted_files/kccnceu19/bf/slides-julian-feldman.pdf) | [video](https://www.youtube.com/watch?v=JKkq60DvPBw)
 
-## KubeCon + CloudNativeCon + Open Source Summit, Shanghai, Jun 24-26, 2019
-
-[issue#200](https://github.com/cncf/sig-security/issues/200)
-
-## DockerCon, San Francisco, CA, Apr 30 - May 2, 2019
-[issue#151](https://github.com/cncf/sig-security/issues/151)
-
-## KubeCon + CloudNativeCon, North America, Dec 11-13, 2018
-
-[issue#29](https://github.com/cncf/sig-security/issues/29)
-
-## KubeCon + CloudNativeCon, Shanghai, Nov 14-15, 2018
- [issue#28](https://github.com/cncf/sig-security/issues/28)
-
-## KubeConEU May 2-4, 2018 in Copenhagen, Denmark
-
-https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2018/
-
-[notes](safe_kubecon.md)
-
 # Past Meetings
 
 <details><summary>Click to view list</summary>
 
-* [2019-09-25 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* [2019-09-18 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* [2019-09-11 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* [2019-09-04 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* [2019-08-28 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* [2019-08-21 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* [2019-08-14 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* [2019-08-07 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* [2019-07-31 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* [2019-07-24 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* [2019-07-17 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* [2019-07-10 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* [2019-07-03 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* [2019-06-26 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* [2019-06-19 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* [2019-06-12 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* [2019-06-05 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* [2019-05-29 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
-* 2019-05-22 CNCF SIG-Security Meeting - No Meeting due to KubeCon Europe
-* [2019-05-15 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)  - OPA with SAFE Presentation Framework
-* [2019-05-08 CNCF SIG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-09-25 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-09-18 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-09-11 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-09-04 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-08-28 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-08-21 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-08-14 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-08-07 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-07-31 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-07-24 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-07-17 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-07-10 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-07-03 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-06-26 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-06-19 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-06-12 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-06-05 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* [2019-05-29 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
+* 2019-05-22 CNCF TAG-Security Meeting - No Meeting due to KubeCon Europe
+* [2019-05-15 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)  - OPA with SAFE Presentation Framework
+* [2019-05-08 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
 * [2019-04-12 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)
 * [2019-04-11 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session
 * [2019-04-05 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Google Open Source Project Onboarding
 * [2019-04-04 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session
-* [2019-03-29 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Revised presentation framework with in-toto (OPA, Kamus, TOC invited) 
+* [2019-03-29 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Revised presentation framework with in-toto (OPA, Kamus, TOC invited)
 * [2019-03-28 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - Working Session
 * [2019-03-22 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit)
 * [2019-03-22 SAFE Meeting](https://docs.google.com/document/d/1WLnEErqODywjkQVTAESpwK8pgIbxsNDp6SqOtw3kjlk/edit) - SAFE Whitepaper Working Session
