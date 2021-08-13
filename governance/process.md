@@ -190,7 +190,7 @@ line with the [mission and charter](charter.md).
    answer questions.
 
 1. **Vote, if required.** In some cases, there's consensus to accept a PR, and a
-   vote is not required. If there’s not consensus among the group, a formal vote
+   vote is not required. If there’s no consensus among the group, a formal vote
    is required. A comment will be left on the PR prompting members to vote and
    indicating the time the vote will close. Only one member from each company
    should vote. Members will vote by leaving a comment in the Pull Request to
