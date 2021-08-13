@@ -14,7 +14,7 @@ Project team: Andres Vega, Andrew Jessup, Tyler Julian, Andrew Harding.
 
 ## Background
 
-Secure Protection Identity Framework for Everyone (SPIFFE) are a set of APIs with SPIRE as the production-ready implementation and associated tooling that provide a uniform language for describing service identity in a wide range of workloads (including orchestration systems), verifying that identity, and providing a workload with documents that serve as proof of that identity. 
+Secure Production Identity Framework for Everyone (SPIFFE) are a set of APIs with SPIRE as the production-ready implementation and associated tooling that provide a uniform language for describing service identity in a wide range of workloads (including orchestration systems), verifying that identity, and providing a workload with documents that serve as proof of that identity. 
 
 _Maturity_
 

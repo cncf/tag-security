@@ -1,4 +1,4 @@
-# Fosshub Breah
+# Fosshub Breach
 
 Hackers compromised FOSSHub, a popular file hosting service, 
 and replaced the legitimate installer of several applications with malicious copies.
