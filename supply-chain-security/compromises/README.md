@@ -1,3 +1,4 @@
+<!-- cSpell:ignore markdownlint -->
 <!-- markdownlint-disable MD033 -->
 
 # Catalog of Supply Chain Compromises
@@ -44,7 +45,7 @@ of compromise needs added, please include that as well.
 | [PyPI typosquatting](2019/pypi.md) | 2019 | Negligence | [1](https://blog.reversinglabs.com/blog/suppy-chain-malware-detecting-malware-in-package-manager-repositories) |
 | [ROS build farm compromise](2019/ros.md) | 2019 | Trust and Signing <br>Publishing Infrastructure</br> | [1](https://discourse.ros.org/t/security-issue-on-ros-build-farm/9342/8), [2](https://discourse.ros.org/t/new-gpg-keys-deployed-for-packages-ros-org/9454) |
 | [ShadowHammer](2019/shadowhammer.md) | 2019 | Attack Chaining | [1](https://www.csoonline.com/article/3384259/asus-users-fall-victim-to-supply-chain-attack-through-backdoored-update.html), [2](https://securelist.com/operation-shadowhammer/89992/) |
-| [PEAR Breach](2019/pear.md) | 2019 | Publishing Infrastructure | [1](https://blog.dcso.de/php-pear-software-supply-chain-attack/), [2](https://thehackernews.com/2019/01/php-pear-hacked.html) |
+| [PEAR Breach](2019/pear.md) | 2019 | Publishing Infrastructure | [1](https://blog.cpanel.com/when-php-went-pear-shaped-the-php-pear-compromise/), [2](https://thehackernews.com/2019/01/php-pear-hacked.html) |
 | [Canonical's GitHub org compromised](2019/canonical-github.md) | 2019 | Dev Tooling <br> Source Code </br> <br> Publishing infrastructure </br> | [1](https://www.zdnet.com/article/canonical-github-account-hacked-ubuntu-source-code-safe/) |
 | [The event-stream vulnerability](2018/event_stream.md) | 2018 | Malicious Maintainer | [1](https://medium.com/intrinsic/compromised-npm-package-event-stream-d47d08605502),[2](https://github.com/dominictarr/event-stream/issues/116) |
 | [Dofoil](2018/dofoil.md) | 2018 | Publishing Infrastructure | [1](https://www.zdnet.com/article/windows-attack-poisoned-bittorrent-client-set-off-huge-dofoil-outbreak-says-microsoft/) |
@@ -74,7 +75,7 @@ of compromise needs added, please include that as well.
 | [APT lack of validation for source packages](2013/apt.md) | 2013 | Negligence | [1](https://lwn.net/Articles/602461/) |
 | [kernel.org compromise](2011/kernelorg.md) | 2011 | Publishing infrastructure | [1](https://lwn.net/Articles/461237/), [2](https://lwn.net/Articles/461552/) |
 | [apache.org incident](2010/apache.md) | 2010 | Attack Chaining | [1](https://blogs.apache.org/infra/entry/apache_org_04_09_2010) |
-| [Operation Aurora](2010/aurora.md) | 2010 | Watering-hole attack | [1](https://www.wired.com/2010/03/source-code-hacks/) | 
+| [Operation Aurora](2010/aurora.md) | 2010 | Watering-hole attack | [1](https://www.wired.com/2010/03/source-code-hacks/) |
 | [ProFTPD](2010/proftpd.md) | 2010 | Source Code | [1](https://www.zdnet.com/article/open-source-proftpd-hacked-backdoor-planted-in-source-code/) |
 | [WordPress backdoor](2007/wordpress.md) | 2007 | Source Code <br> Publishing Infrastructure </br> | [1](https://lwn.net/Articles/224997/) |
 | [SquirrelMail backdoor](2007/squirrelmail.md) | 2007 | Source Code | [1](https://lwn.net/Articles/262688/) |
