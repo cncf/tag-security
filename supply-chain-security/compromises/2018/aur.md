@@ -1,6 +1,9 @@
+<!-- cSpell:ignore acroread -->
 # `acroread` package compromised in AUR
 
-An attacker took over maintenance for the orphaned `acroread` package in Arch Linux's AUR and added code designed to fetch malware from the public internet in user's systems.
+An attacker took over maintenance for the orphaned `acroread` package in Arch
+Linux's AUR and added code designed to fetch malware from the public internet in
+user's systems.
 
 ## Impact
 
@@ -9,4 +12,4 @@ An attacker took over maintenance for the orphaned `acroread` package in Arch Li
 
 ## Type of compromise
 
-Orphan package takeover, a type of naming attack.
+Malicious adoption
