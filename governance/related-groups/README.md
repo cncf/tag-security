@@ -60,6 +60,9 @@ the work of Security TAG
 * [NIST Computer Security Resource Center](https://csrc.nist.gov/)
   * Security TAG members:
 
+* [OpenSSF SLSA Maintainers](https://slsa.dev/)
+  * Security TAG members: @mlieberman85
+
 ## Don't see a group mentioned or notice a group that needs an update ?
 
 Please consider adding or updating the group using the following
