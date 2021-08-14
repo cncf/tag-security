@@ -101,7 +101,7 @@ process](https://github.com/cncf/toc/blob/master/tags/cncf-tags.md#elections)).
 
 After a [Chair](#role-of-chairs) finishes their term, they transition into a
 role of [Chair Emeritus](#role-of-chair-emeriti). This allows previous Chairs to continue to chime in and
-provide valuable context and contributions to the TAG. A Chair Emeritus can
+provide valuable context and contributions to the TAG. A [Chair Emeritus](#role-of-chair-emeriti) can
 assume a role of a [technical lead](#roles-of-technical-leads), but in doing so,
 must be active in communicating with the co-chairs and technical leads (i.e.
 participating in the chair/TL slack and meetings). A Chair Emeritus has the same
