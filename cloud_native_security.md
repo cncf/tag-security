@@ -1,3 +1,5 @@
+<!— cSpell:ignore cnsecurityday —>
+
 # Cloud native security day
 One of the things we do as a community is Cloud Native Security day, designed 
 to bring together the cloud native security community together to discuss 
