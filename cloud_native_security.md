@@ -12,8 +12,7 @@ others that are passionate about security. Learn from practitioners about pitfal
 hurdles to jump, and how to integrate security into your cloud native project, architecture, 
 and enhance team awareness on security.
 
-## Here are references to some of the past events & some of the issues that 
-## has details of organization/planning of these events: 
+## References to past events & related issues that have details of planning: 
 
 ### 2019
 
