@@ -26,6 +26,7 @@
         "exfiltration",
         "mitigations",
         "CNSWP",
-        "CNSWP's"
+        "CNSWP's",
+        "SLSA"
     ]
 }
