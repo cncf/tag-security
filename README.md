@@ -325,7 +325,8 @@ If you are new, check out the [New Members Page](/NEW-MEMBERS.md).
 - Alex Barbato ([@alexbarbato](https://github.com/alexbarbato)), VMware
 - Robert Clark ([@hyakuhei](https://github.com/hyakuhei)), AWS
 - Sunil Ravipati([@ai2017](https://github.com/ai2017)), Anthem AI
-
+- Ashish Rajan ([@hashishrajan](https://github.com/hashishrajan)), Cloud Security Podcast
+  
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
