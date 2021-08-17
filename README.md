@@ -1,7 +1,7 @@
 # CNCF Security Technical Advisory Group
 
-![Cloud Native Security
-logo](design/logo/cloud-native-security-horizontal-color.svg)
+<!-- cspell:disable-next-line -->
+<img src="design/logo/cloud-native-security-horizontal-darkmodesafe.svg" alt="Cloud Native Security logo" width="400"/>
 
 ## Quick links
 
