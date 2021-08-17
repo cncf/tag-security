@@ -24,6 +24,6 @@ mitigation techniques for the more well understood categories.
 
 STAG (Security Technical Advisory Group) has put work into a comprehensive software supply chain paper
 highlighting best practices for high and medium risk environments. Please check 
-out [the paper](./supply-chain-security-paper/software-supply-chain-security-paper.md) and corollary [secure supply chain assessment document](./supply-chain-security-paper/secure-supply-chain-assessment.md) to learn more. 
+out [the paper](./supply-chain-security-paper/sscsp.md) and corollary [secure supply chain assessment document](./supply-chain-security-paper/secure-supply-chain-assessment.md) to learn more. 
 For information about contributing to the document or providing feedback, please
 refer to the [README](./supply-chain-security-paper/README.md).

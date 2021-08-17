@@ -8,7 +8,7 @@ Contributors: Evan Gilman (@evan2645), Andrew Jessup, Tyler Julian (@apty), Andr
 
 Security Reviewers: Brandon Lum (@lumjjb), Emily Fox (@TheFoxAtWork), Justin Cappos (@JustinCappos)
 
-This document details the design goals and security implications of SPIFFE and SPIRE to aid in the security assessment by CNCF SIG-Security.
+This document details the design goals and security implications of SPIFFE and SPIRE to aid in the security assessment by CNCF TAG-Security.
 
 ## Metadata
 
@@ -231,7 +231,7 @@ Unlike these other APIs however, the Workload API is platform agnostic, and can 
 
 To minimize exposure from a key being leaked or compromised, all private keys (and corresponding certificates) are short-lived, rotated frequently and automatically. Private keys are never sent "over the wire", instead, keys are generated on-host by the SPIRE Agent and sent to the workload over a unix domain socket. Workloads are provided with new keys and trust bundles from the Workload API before the corresponding key(s) expire.
 
-### SPIRE Architecture 
+### SPIRE Architecture
 
 ![](docs/image0.png)
 
@@ -465,7 +465,7 @@ Both new and experienced SPIRE users have multiple options to interact with the 
 
 -   Meetings:
 
-    -   The SPIFFE Spec SIG meets every Thursday. [[Meetings Notes]](https://docs.google.com/document/d/1p2BbRWN_7z6nkBMj-h1mAJAJxxKqNeFiV4IplZ_wU4c)
+    -   The SPIFFE Spec TAG meets every Thursday. [[Meetings Notes]](https://docs.google.com/document/d/1p2BbRWN_7z6nkBMj-h1mAJAJxxKqNeFiV4IplZ_wU4c)
 
     -   The SPIFFE Technical Steering Committee (TSC) meets the first Wednesday of each month. [[Meeting Notes]](https://docs.google.com/document/d/14Kttz1g-S-DdK0i_0JTjr8LDEImlSvCPT2qRSf6zGSY/edit)
 
@@ -515,7 +515,7 @@ The SPIFFE and SPIRE roadmap are published and maintained at [[https://github.co
 
 ## Prior Security Assessment
 
-A security assessment was performed by SIG Security at the request of the CNCF TOC. The information presented in the Security Analysis section of this document is almost in its entirety based on the prior assessment.
+A security assessment was performed by TAG Security at the request of the CNCF TOC. The information presented in the Security Analysis section of this document is almost in its entirety based on the prior assessment.
 
 ## Case Studies/User Stories
 

@@ -8,7 +8,7 @@ April 24th 2019
 Robert Ficcaglia (@rficcaglia), Sarah Allen (@ultrasaurus)
 
 This document elaborates and explores the design goals for the Open Policy Agent (OPA)
-as well as its security analysis to aid in the security assessment by CNCF SIG-Security.
+as well as its security analysis to aid in the security assessment by CNCF TAG-Security.
 
 ## Overview
 
@@ -32,7 +32,7 @@ required business logic in the underlying software. This practice:
 
 * complicates the release process
 
-* makes software policy compliance difficult to audit 
+* makes software policy compliance difficult to audit
 
 * makes it difficult to modify policies
 
@@ -116,7 +116,7 @@ Examples of common use cases for OPA:
 	about to make before it makes them
 
 * Access control for data in Ceph, Kafka, Minio, SQL, Elasticsearch
-    
+
     * OPA provides fine-grained access control over Kafka topics
 
 * OPA enables authoring of custom security policies to protect data stored in
@@ -496,15 +496,15 @@ API that serves salary data. In English, the policy says that
 *employees can see their own salary and the salary of any of their reports*.
 
 ```ruby
-allow { 
-input.method = "GET" 
-input.path = ["salary", employee_id] 
-input.user = employee_id 
-}
- 
 allow {
-input.method = "GET" 
-input.path = ["salary", employee_id] 
+input.method = "GET"
+input.path = ["salary", employee_id]
+input.user = employee_id
+}
+
+allow {
+input.method = "GET"
+input.path = ["salary", employee_id]
 input.user = data.management_chain[employee_id][_]
 }
 ```
