@@ -1,5 +1,5 @@
 <!-- cspell:disable -->
-<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD001 MD009 MD010 MD012 MD013 MD024 MD026 MD030 MD033 MD034 MD036 MD037 MD041 MD045 -->
 
 Shared with the CNCF community
 
@@ -227,8 +227,6 @@ Some DevOps platforms and integrations provide a default list of files which can
 #### Define individuals/teams that are responsible for code in a repository and associated coding conventions
 
 _Assurance category: High and risk category: high_
-
-	
 
 Repository administrators should define who has write permissions to a code repository.
 
@@ -1018,7 +1016,7 @@ It is critical to note, however, that organizations are entirely responsible for
      The CNCF and Cloud Native Security provide no endorsement of the United States Air Force, the US Department of Defense, or its partner organizations. The reference of the USAFSoftware Factory is from the perspective of good security implemented in a base framework, and the intent is to build on top of this work.
 
 [^3]:
-     https://github.com/cncf/tag-security/supply-chain-security/supply-chain-security-whitepaper/secure-supply-chain-assessment.md
+     https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/secure-supply-chain-assessment.md
 
 [^4]:
      https://www.wired.com/story/notpetya-cyberattack-ukraine-russia-code-crashed-the-world/
@@ -1027,7 +1025,7 @@ It is critical to note, however, that organizations are entirely responsible for
      https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html
 
 [^6]:
-     [https://github.com/cncf/tag-security/tree/main/supply-chain-security/compromises](https://github.com/cncf/tag-security/tree/main/supply-chain-security/compromises)
+     https://github.com/cncf/tag-security/tree/main/supply-chain-security/compromises
 
 [^7]:
      See, for example: https://www.atlanticcouncil.org/in-depth-research-reports/report/breaking-trust-shades-of-crisis-across-an-insecure-software-supply-chain/
@@ -1055,7 +1053,7 @@ It is critical to note, however, that organizations are entirely responsible for
      https://en.wikipedia.org/wiki/Turtles_all_the_way_down
 
 [^15]:
-    [https://en.wikipedia.org/wiki/Software_factory#History](https://en.wikipedia.org/wiki/Software_factory#History)
+     https://en.wikipedia.org/wiki/Software_factory#History
 
 [^16]:
      Distinctions among user and software entities and circumstances of mutual authentication are discussed further in the paper.  Please refer to those sections with more information.
@@ -1076,14 +1074,13 @@ It is critical to note, however, that organizations are entirely responsible for
      Tooling includes sealed secrets [https://github.com/bitnami-labs/sealed-secrets](https://github.com/bitnami-labs/sealed-secrets) and https://github.com/mozilla/sops
 
 [^22]:
-     [https://github.com/dxa4481/truffleHog](https://github.com/dxa4481/truffleHog)
+     https://github.com/dxa4481/truffleHog
 
 [^23]:
      See, for example: [https://docs.gitlab.com/ee/push_rules/push_rules.html#prevent-pushing-secrets-to-the-repository](https://docs.gitlab.com/ee/push_rules/push_rules.html#prevent-pushing-secrets-to-the-repository) or [https://github.com/awslabs/git-secrets](https://github.com/awslabs/git-secrets)
 
 [^24]:
-     [https://owasp.org/www-project-application-security-verification-standard/](https://owasp.org/www-project-application-security-verification-standard/)
-    <span style="text-decoration:underline;">   [https://owasp.org/www-community/Source_Code_Analysis_Tools](https://owasp.org/www-community/Source_Code_Analysis_Tools)</span>
+     https://owasp.org/www-project-application-security-verification-standard/ and https://owasp.org/www-community/Source_Code_Analysis_Tools
 
 [^25]:
      https://dzone.com/articles/devops-guide-implementing-four-eyes-principle-with
@@ -1098,18 +1095,18 @@ It is critical to note, however, that organizations are entirely responsible for
      https://smallstep.com/blog/use-ssh-certificates/
 
 [^29]:
-     [https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
-       [https://docs.gitlab.com/ee/ssh/](https://docs.gitlab.com/ee/ssh/)
-       [https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/](https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/)
+     https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
+     https://docs.gitlab.com/ee/ssh/
+     https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/
 
 [^30]:
-     [https://github.com/ossf/scorecard](https://github.com/ossf/scorecard)
+     https://github.com/ossf/scorecard
 
 [^31]:
      https://salsa.debian.org/reproducible-builds/debian-rebuilder-setup
 
 [^32]:
-     [https://www.cs.cornell.edu/courses/cs3110/2019sp/textbook/basics/defensive.html](https://www.cs.cornell.edu/courses/cs3110/2019sp/textbook/basics/defensive.html) or [https://github.com/tc39/proposal-compartments](https://github.com/tc39/proposal-compartments) or [https://levelup.gitconnected.com/javascript-best-practices-defensive-programming-9592a9329787](https://levelup.gitconnected.com/javascript-best-practices-defensive-programming-9592a9329787) as a few examples of this practice
+     https://www.cs.cornell.edu/courses/cs3110/2019sp/textbook/basics/defensive.html or https://github.com/tc39/proposal-compartments or https://levelup.gitconnected.com/javascript-best-practices-defensive-programming-9592a9329787 as a few examples of this practice
 
 [^33]:
      https://www.ntia.gov/SBOM
@@ -1124,7 +1121,7 @@ It is critical to note, however, that organizations are entirely responsible for
      https://compliance.linuxfoundation.org/references/tools/
 
 [^37]:
-    [https://software.af.mil/wp-content/uploads/2020/10/Final-DevSecOps-Enterprise-Container-Hardening-Guide-1.1-Public-Release.pdf](https://software.af.mil/wp-content/uploads/2020/10/Final-DevSecOps-Enterprise-Container-Hardening-Guide-1.1-Public-Release.pdf)
+    https://software.af.mil/wp-content/uploads/2020/10/Final-DevSecOps-Enterprise-Container-Hardening-Guide-1.1-Public-Release.pdf
 
 [^38]:
      https://rootlesscontaine.rs
