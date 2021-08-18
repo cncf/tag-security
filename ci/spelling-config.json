@@ -1,0 +1,31 @@
+{
+    "version": "0.1",
+    "language": "en",
+    "ignorePaths": [
+        "**/.github/**",
+        "**/ci/**"
+    ],
+    "words": [
+        "CNCF",
+        "OWASP",
+        "Kube",
+        "Kubernetes",
+        "kubecon",
+        "Kamus",
+        "RBAC",
+        "Roadmap",
+        "HIPAA",
+        "CODEOWNERS",
+        "explainability",
+        "APAC",
+        "spiffe",
+        "keycloak",
+        "triage",
+        "triaging",
+        "triaged",
+        "exfiltration",
+        "mitigations",
+        "CNSWP",
+        "CNSWP's"
+    ]
+}
