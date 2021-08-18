@@ -326,6 +326,7 @@ If you are new, check out the [New Members Page](/NEW-MEMBERS.md).
 - Robert Clark ([@hyakuhei](https://github.com/hyakuhei)), AWS
 - Sunil Ravipati([@ai2017](https://github.com/ai2017)), Anthem AI
 - Ashish Rajan ([@hashishrajan](https://github.com/hashishrajan)), Cloud Security Podcast
+- Sayantani Saha ([@sayantani11](https://github.com/sayantani11))
   
 </details>
 
