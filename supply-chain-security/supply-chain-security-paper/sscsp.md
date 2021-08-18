@@ -1,3 +1,6 @@
+<!-- cspell:disable -->
+<!-- markdownlint-disable MD033 -->
+
 Shared with the CNCF community
 
 # Software Supply Chain Best Practices
