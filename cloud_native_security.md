@@ -1,4 +1,4 @@
-<!— cSpell:ignore cnsecurityday —>
+<!—- cSpell:ignore cnsecurityday-—>
 
 # Cloud native security day
 
@@ -20,6 +20,7 @@ project, architecture,and enhance team awareness on security.
 ### 2019
 
 [Cloud Native Security Day NA](https://events19.linuxfoundation.org/events/cloud-native-security-day-2019/)
+
 - San Diego, USA
 - November 18, 2019
 - Planning the event =>
