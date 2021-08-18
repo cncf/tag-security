@@ -1,7 +1,7 @@
 # CNCF Security Technical Advisory Group
 
-![Cloud Native Security
-logo](design/logo/cloud-native-security-horizontal-color.svg)
+<!-- cspell:disable-next-line -->
+<img src="design/logo/cloud-native-security-horizontal-darkmodesafe.svg" alt="Cloud Native Security logo" width="400"/>
 
 ## Quick links
 
@@ -325,7 +325,8 @@ If you are new, check out the [New Members Page](/NEW-MEMBERS.md).
 - Alex Barbato ([@alexbarbato](https://github.com/alexbarbato)), VMware
 - Robert Clark ([@hyakuhei](https://github.com/hyakuhei)), AWS
 - Sunil Ravipati([@ai2017](https://github.com/ai2017)), Anthem AI
-
+- Ashish Rajan ([@hashishrajan](https://github.com/hashishrajan)), Cloud Security Podcast
+  
 </details>
 
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
