@@ -16,35 +16,36 @@ the work of Security TAG
     - [Storage](https://github.com/cncf/tag-app-delivery) -
 
 * [CNCF TOC](https://github.com/cncf/toc): Technical Oversight Committee
-<!-- cSpell:ignore justincormack, lizrice-->
+<!-- cSpell:ignore justincormack lizrice -->
 * Security TAG members: @justincormack , @lizrice
 
 ## Kubernetes
 
 * [Kubernetes Policy Working Group](https://github.com/kubernetes/community/tree/master/wg-policy)
-<!-- cSpell:ignore rficcaglia-->
+<!-- cSpell:ignore rficcaglia -->
 * Security TAG members: @rficcaglia
 
 * [Kubernetes SIG-Auth](https://github.com/kubernetes/community/tree/master/sig-auth)
   * Security TAG members:
 
 * [Kubernetes SIG-Security](https://github.com/kubernetes/community/tree/master/sig-security)
-<!-- cSpell:ignore pushkarj-->
+<!-- cSpell:ignore pushkarj -->
 * Security TAG members: @pushkarj
 
 ## Industry
 
 * [Cloud Security Alliance Working Groups](https://cloudsecurityalliance.org/research/working-groups/)
-<!-- cSpell:ignore achetal01-->
+<!-- cSpell:ignore achetal01 -->
 * Security TAG members: @achetal01
 
 * [IEEE 7009](https://standards.ieee.org/develop/project/7009.html): Standard
   for Fail-Safe Design of Autonomous and Semi-Autonomous Systems Working Group
   * Security TAG members:
 
-* [IEEE P1915.1](https://web.archive.org/web/20180729062624/https://standards.ieee.org/develop/project/1915.1.html) (Warning: Archive Link):
-  Standard for Software Defined Networking and Network Function Virtualization
-  Security
+* [IEEE
+  P1915.1](https://web.archive.org/web/20180729062624/https://standards.ieee.org/develop/project/1915.1.html)
+  (Warning: Archive Link): Standard for Software Defined Networking and Network
+  Function Virtualization Security
   * Security TAG members:
 
 * [IEEE P2675 DevOps Security](https://standards.ieee.org/develop/project/2675.html)
@@ -65,7 +66,7 @@ the work of Security TAG
   * Security TAG members:
 
 * [OpenSSF SLSA Maintainers](https://slsa.dev/)
-<!-- cSpell:ignore mlieberman85-->
+<!-- cSpell:ignore mlieberman85 -->
 * Security TAG members: @mlieberman85
 
 ## Don't see a group mentioned or notice a group that needs an update ?
