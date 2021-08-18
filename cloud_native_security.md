@@ -1,4 +1,4 @@
-<!—- cSpell:ignore cnsecurityday-—>
+<!-- cSpell:ignore cnsecurityday -—>
 
 # Cloud native security day
 
