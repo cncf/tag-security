@@ -20,36 +20,39 @@ project, architecture,and enhance team awareness on security.
 
 [Cloud Native Security Day NA](https://events19.linuxfoundation.org/events/cloud-native-security-day-2019/)
 
- - San Diego, USA 
- - November 18, 2019 
- - Planning the event => [Issue#209](https://github.com/cncf/tag-security/issues/209) 
-
+  - San Diego, USA
+  - November 18, 2019
+  - Planning the event =>
+    [Issue#209](https://github.com/cncf/tag-security/issues/209)
 
 ### 2020
 
 [Cloud Native Security Day EU](https://events.linuxfoundation.org/archive/2020/cloud-native-security-day/)
 
- - Virtual 
- - August 17, 2020 
- - Planning the event => [Issue#305](https://github.com/cncf/tag-security/issues/305) 
+  - Virtual
+  - August 17, 2020
+  - Planning the event =>
+    [Issue#305](https://github.com/cncf/tag-security/issues/305)
 
 [Cloud Native Security Day NA](https://events.linuxfoundation.org/cloud-native-security-day-north-america/)
 
- - Virtual 
- - November 17, 2020 
- - Planning the event => [Issue#416](https://github.com/cncf/tag-security/issues/416) 
-
+  - Virtual
+  - November 17, 2020
+  - Planning the event =>
+    [Issue#416](https://github.com/cncf/tag-security/issues/416)
 
 ### 2021
 
 [Cloud Native Security Day EU](https://events.linuxfoundation.org/cloud-native-security-day-europe/)
 
- - Virtual 
- - May 4, 2021 
- - Planning the event => [Issue#454](https://github.com/cncf/tag-security/issues/454) 
+  - Virtual
+  - May 4, 2021
+  - Planning the event =>
+    [Issue#454](https://github.com/cncf/tag-security/issues/454)
 
 [Cloud Native Security Con NA](https://kccncna2021.sched.com/event/leYD?iframe=no)
 
- - Los Angeles, California + Virtual 
- - October 12, 2021 
- - Planning the event => [Issue#667](https://github.com/cncf/tag-security/issues/667) 
+  - Los Angeles, California + Virtual
+  - October 12, 2021
+  - Planning the event =>
+    [Issue#667](https://github.com/cncf/tag-security/issues/667)
