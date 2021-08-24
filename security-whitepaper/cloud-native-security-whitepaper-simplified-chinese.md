@@ -1,3 +1,5 @@
+<!-- markdownlint-ignore MD013 MD012 MD019 MD024 MD025 MD036 -->
+
 # **云原生安全白皮书中文版**
 
 参考文献：[CNCF Security Whitepaper v1.1](https://github.com/cncf/tag-security/blob/017e77ff380e303d80adb78e60a1f262e80df0e8/security-whitepaper/cloud-native-security-whitepaper.md)
@@ -704,7 +706,7 @@ https://www.cisecurity.org/benchmark/Kubernetes/
 
 [威胁建模。12 种可用方法](https://insights.sei.cmu.edu/sei_blog/2018/12/threat-modeling-12-available-methods.html)
 
-https://owasp.org/www-community/Application_Threat_Modeling
+https://owasp.org/www-community/Threat_Modeling
 
 [NIST 应用安全容器指南](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-190.pdf)、[互联网安全中心 (CIS)](https://www.cisecurity.org/)、[NIST 微服务安全策略](https://csrc.nist.gov/publications/detail/sp/800-204/final) 和 [OpenSCAP](https://www.open-scap.org/) 基准存在于 [Docker](https://www.cisecurity.org/benchmark/docker/)、[Kubernetes](https://www.cisecurity.org/benchmark/kubernetes/) 和几个托管 Kubernetes 发行版。
 
@@ -712,6 +714,7 @@ https://owasp.org/www-community/Application_Threat_Modeling
 
 # **鸣谢**
 
+<!-- cSpell:disable -->
 本白皮书是由 CNCF Security-TAG 成员推动的社区工作。感谢大家的杰出贡献。特别感谢 Emily Fox 和 Jeyappragash JJ。
 
 原版撰稿人：
@@ -781,7 +784,7 @@ https://owasp.org/www-community/Application_Threat_Modeling
 - [@gtb-togerther](https://github.com/gtb-togerther)
 - [@dwctua](https://github.com/dwctua)
 
-
+<!-- cSpell:enable -->
 
 # 注释
 
