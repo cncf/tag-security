@@ -2,12 +2,12 @@
 
 ## About the Cloud Native Security Map
 
-The Cloud Native Security Map(cnsmap) is a interactive medium for the
+The Cloud Native Security Map (CNSMAP) is a interactive medium for the
 consumption of the security whitepaper. In addition to the content of the
 whitepaper, the cloud native security map also provides additional practitioner
 context and lists of cloud native projects.
 
-The cnsmap is hosted at: <https://https://cnsmap.netlify.app/>
+The CNSMAP is hosted at: <https://cnsmap.netlify.app/>
 
 ### Goals and Non-goals
 
@@ -35,35 +35,54 @@ Non-goals:
 
 ### Project listings
 
-In order to have more useful information and stability, there are some guidelines by which projects are selected to be listed in the CNSMAP. These are used as guiding principles and projects listed generally meet most of these properties.
-- Number of contributors: Ideally at least 3 maintainers/contributors to be able to continue supporting the project if some contributors are not able to keep working on the project. This is common practice for having good continuity criteria.
-- Lifetime of the project: The project should be more than 6 months older, this helps to have more confidence in the project potentially due to initial bug fixes discovered in the first few public versions.
-- Backing by a foundation and strong governance: Projects that are part of the CNCF, Linux Foundation, or other type of open source foundation is an indication that there is stronger and open governance of the project.
-- Multi-organization governance: Projects that have maintainers that are from multiple organizations are favored to prevent an organization single point of failure or control for the project.
-- Security tab available for the project on the github or codehost platform: People have the opportunity to communicate security flaws but also identify how the security policy is defined for that project. This shows maturity of security process of the project.
-- Contributions in the last 12 months: There is activity and the project should not be abandoned, the contributions are meaningful.
-- Releases in the last 12 months: The maintainers/contributors are updating the project and new versions are released within the last year of the project to be included in the listing.
-- Issues closed within 6 months: Issues reported by users or contributors are closed in a reasonable time.
+In order to have more useful information and stability, there are some
+guidelines by which projects are selected to be listed in the CNSMAP. These are
+used as guiding principles and projects listed generally meet most of these
+properties.
+
+- Number of contributors: Ideally at least 3 maintainers/contributors to be able
+  to continue supporting the project if some contributors are not able to keep
+  working on the project. This is common practice for having good continuity
+  criteria.
+- Lifetime of the project: The project should be more than 6 months older, this
+  helps to have more confidence in the project potentially due to initial bug
+  fixes discovered in the first few public versions.
+- Backing by a foundation and strong governance: Projects that are part of the
+  CNCF, Linux Foundation, or other type of open source foundation is an
+  indication that there is stronger and open governance of the project.
+- Multi-organization governance: Projects that have maintainers that are from
+  multiple organizations are favored to prevent an organization single point of
+  failure or control for the project.
+- Security tab available for the project on the github or code hosting platform:
+  People have the opportunity to communicate security flaws but also identify
+  how the security policy is defined for that project. This shows maturity of
+  security process of the project.
+- Contributions in the last 12 months: There is activity and the project should
+  not be abandoned, the contributions are meaningful.
+- Releases in the last 12 months: The maintainers/contributors are updating the
+  project and new versions are released within the last year of the project to
+  be included in the listing.
+- Issues closed within 6 months: Issues reported by users or contributors are
+  closed in a reasonable time.
 
 ## Logistics
 
 ### Code and content
 
-The Cloud Native Security Map content and code is located in the [cnsmap
+The Cloud Native Security Map content and code is located in the [CNSMAP
 branch](https://github.com/cncf/tag-security/tree/cnsmap). All content is
 maintained within the [content
 subfolder](https://github.com/cncf/tag-security/tree/cnsmap/content).
 
 ### Community
 
-To contribute, you may open a PR against the [cnsmap
+To contribute, you may open a PR against the [CNSMAP
 branch](https://github.com/cncf/tag-security/tree/cnsmap). Also join the
 [#tag-security-whitepaper-map](https://cloud-native.slack.com/archives/C01NT4P84AK)
 to join the discussions.
 
 ### Hosting
 
-The current cnsmap is hosted on [Netlify](https://netlify.com/), as part of the
+The current CNSMAP is hosted on [Netlify](https://netlify.com/), as part of the
 CNCF account for account `cncf-sig-security` (not yet updated to TAG). The site
-tracks the cnsmap branch and deploys on new commits.
-
+tracks the CNSMAP branch and deploys on new commits.
