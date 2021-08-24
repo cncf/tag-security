@@ -45,8 +45,8 @@ properties.
   working on the project. This is common practice for having good continuity
   criteria.
 - Lifetime of the project: The project should be 6 months old or more, this
-  helps provides confidence in the project through remediation or tracking of initial bug
-  fixes discovered in the first few public versions.
+  helps provides confidence in the project through remediation or tracking of initial
+  bug fixes discovered in the first few public versions.
 - Backing by a foundation and strong governance: Projects that are part of the
   CNCF, Linux Foundation, or other type of open source foundation is an
   indication that there is strong and open governance of the project.
