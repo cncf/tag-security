@@ -30,8 +30,8 @@ function Sidebar() {
     <div className={styles.sidebar_fixed}>
       <div className={"marginLeft: '10px'"}>
       <Image
-        src="/sig-security-horizontal-color.png"
-        alt="Sig-security-group-logo"
+        src="/cloud-native-security-horizontal-color.png"
+        alt="TAG-security-group-logo"
         width={250}
         height={150}
     />
