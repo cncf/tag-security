@@ -76,7 +76,6 @@ subfolder](https://github.com/cncf/tag-security/tree/cnsmap/content).
 
 ### Community
 
-
 #### Questions
 
 Join the
@@ -90,7 +89,7 @@ be updated to meet the current landscape of projects that
 adhere to the goals set forth in this document.
 
 To contribute, you may open a PR against the [CNSMAP
-branch](https://github.com/cncf/tag-security/tree/cnsmap). 
+branch](https://github.com/cncf/tag-security/tree/cnsmap).
 
 ### Hosting
 
