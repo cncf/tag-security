@@ -25,7 +25,7 @@ be made in markdown.
 The [Cloud Native Security Map](cnsmap/README.md) is a interactive medium for
 the consumption of the security whitepaper. In addition to the content of the
 whitepaper, the cloud native security map also provides additional practitioner
-context and lists of cloud native projects.
+context and corresponding cloud native projects.
 
 ### Contributing updates
 

@@ -5,7 +5,7 @@
 The Cloud Native Security Map (CNSMAP) is a interactive medium for the
 consumption of the security whitepaper. In addition to the content of the
 whitepaper, the cloud native security map also provides additional practitioner
-context and lists of cloud native projects.
+context and corresponding cloud native projects.
 
 The CNSMAP is hosted at: <https://cnsmap.netlify.app/>
 
@@ -17,7 +17,7 @@ Goals
   whitepaper
 - Provide a practical viewpoint and information on topics in the CN Security
   whitepaper
-- Identify gaps in CN Security in the ecosystem and make recommendations to TOC
+- Identify gaps in CN Security ecosystem and provide recommendations to TOC
 - Help educate practitioners of what technologies can be used in practice and
   how they tie into each other
 - Provide practical tips or examples for how to use tools within this category,
@@ -44,26 +44,26 @@ properties.
   to continue supporting the project if some contributors are not able to keep
   working on the project. This is common practice for having good continuity
   criteria.
-- Lifetime of the project: The project should be more than 6 months older, this
-  helps to have more confidence in the project potentially due to initial bug
+- Lifetime of the project: The project should be 6 months old or more, this
+  helps provides confidence in the project through remediation or tracking of initial bug
   fixes discovered in the first few public versions.
 - Backing by a foundation and strong governance: Projects that are part of the
   CNCF, Linux Foundation, or other type of open source foundation is an
-  indication that there is stronger and open governance of the project.
+  indication that there is strong and open governance of the project.
 - Multi-organization governance: Projects that have maintainers that are from
-  multiple organizations are favored to prevent an organization single point of
+  multiple organizations are favored to prevent organizational single point of
   failure or control for the project.
 - Security tab available for the project on the github or code hosting platform:
   People have the opportunity to communicate security flaws but also identify
   how the security policy is defined for that project. This shows maturity of
   security process of the project.
-- Contributions in the last 12 months: There is activity and the project should
-  not be abandoned, the contributions are meaningful.
+- Contributions in the last 12 months: There is activity and the project does not
+  appear to be abandoned, the contributions are meaningful.
 - Releases in the last 12 months: The maintainers/contributors are updating the
   project and new versions are released within the last year of the project to
   be included in the listing.
 - Issues closed within 6 months: Issues reported by users or contributors are
-  closed in a reasonable time.
+  closed in a reasonable amount of time.
 
 ## Logistics
 
