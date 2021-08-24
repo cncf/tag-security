@@ -1,4 +1,4 @@
-<!-- markdownlint-ignore MD013 MD012 MD019 MD024 MD025 MD036 -->
+<!-- markdownlint-disable MD013 MD012 MD019 MD024 MD025 MD036 -->
 
 # **云原生安全白皮书中文版**
 
