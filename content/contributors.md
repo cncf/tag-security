@@ -3,8 +3,8 @@ title: "Contributors"
 date: "2020-10-01"
 ---
 
-- [Brandon Lum](https://github.com/lumjjb) (SIG TL)
-- [Ash Narkar](https://github.com/ashutosh-narkar) (SIG TL)
+- [Brandon Lum](https://github.com/lumjjb) (TAG Chair)
+- [Ash Narkar](https://github.com/ashutosh-narkar) (TAG TL)
 - [Diego Comas](https://github.com/dcomas)
 - [Vinay Venkataraghavan](https://github.com/vinayvenkat)
 - Matt Flannery
