@@ -7,7 +7,7 @@ consumption of the security whitepaper. In addition to the content of the
 whitepaper, the cloud native security map also provides additional practitioner
 context and lists of cloud native projects.
 
-The cnsmap mirror is hosted at: <https://cnsmap.vercel.app/>
+The cnsmap is hosted at: <https://https://cnsmap.netlify.app/>
 
 ### Goals and Non-goals
 
@@ -63,7 +63,7 @@ to join the discussions.
 
 ### Hosting
 
-The current mirror is hosted on [Vercel](https://vercel.com/). However, because
-of organizational restrictions on Vercel accounts, the code is currently hosted
-from [lumjjb/cnsmap](https://github.com/lumjjb/cnsmap) which tracks the upstream
-branch with eventual consistency.
+The current cnsmap is hosted on [Netlify](https://netlify.com/), as part of the
+CNCF account for account `cncf-sig-security` (not yet updated to TAG). The site
+tracks the cnsmap branch and deploys on new commits.
+
