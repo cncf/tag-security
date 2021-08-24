@@ -76,10 +76,21 @@ subfolder](https://github.com/cncf/tag-security/tree/cnsmap/content).
 
 ### Community
 
-To contribute, you may open a PR against the [CNSMAP
-branch](https://github.com/cncf/tag-security/tree/cnsmap). Also join the
+
+#### Questions
+
+Join the
 [#tag-security-whitepaper-map](https://cloud-native.slack.com/archives/C01NT4P84AK)
-to join the discussions.
+slack channel to join the discussions.
+
+#### Contributing to the CNSMAP
+
+The CNSMAP is a live document and needs to be continuously
+be updated to meet the current landscape of projects that
+adhere to the goals set forth in this document.
+
+To contribute, you may open a PR against the [CNSMAP
+branch](https://github.com/cncf/tag-security/tree/cnsmap). 
 
 ### Hosting
 
