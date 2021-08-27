@@ -48,5 +48,4 @@ given project's responsible security disclosures process should an potential
 issue be discovered.
 
 For more information on please refer to details on [use of a completed
-package](assessments/README.md#use-of-a-completed-package).
-
+package](../assessments/README.md#use-of-a-completed-package).
