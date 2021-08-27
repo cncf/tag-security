@@ -1,7 +1,9 @@
 # CNCF Security Technical Advisory Group
 
-![Cloud Native Security
-logo](design/logo/cloud-native-security-horizontal-color.svg)
+<!-- cspell:disable -->
+<!-- markdownlint-disable-next-line MD033 MD013 -->
+<img src="design/logo/cloud-native-security-horizontal-darkmodesafe.svg" alt="Cloud Native Security logo" width="400"/>
+<!-- cSpell:enable -->
 
 ## Quick links
 
@@ -204,9 +206,9 @@ Membership governance can be viewed
 [here](https://github.com/cncf/tag-security/blob/main/governance/roles.md#role-of-members).
 If you are new, check out the [New Members Page](/NEW-MEMBERS.md).
 
-<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable-next-line MD033 -->
 <details><summary>Click to view list</summary>
-<!-- markdownlint-enable MD033 -->
+<!-- markdownlint-disable MD013 -->
 
 - Marlow Weston ([@catblade](https://github.com/catblade)), Intel
 - Pushkar Joglekar ([@pushkarj](https://github.com/pushkarj))
@@ -325,9 +327,11 @@ If you are new, check out the [New Members Page](/NEW-MEMBERS.md).
 - Alex Barbato ([@alexbarbato](https://github.com/alexbarbato)), VMware
 - Robert Clark ([@hyakuhei](https://github.com/hyakuhei)), AWS
 - Sunil Ravipati([@ai2017](https://github.com/ai2017)), Anthem AI
-
+- Ashish Rajan ([@hashishrajan](https://github.com/hashishrajan)), Cloud Security Podcast
+- Sayantani Saha ([@sayantani11](https://github.com/sayantani11))
+  
 </details>
-
+<!-- markdownlint-enable MD013 -->
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Additional information
