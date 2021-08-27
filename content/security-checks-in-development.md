@@ -17,6 +17,7 @@ severity vulnerabilities with a fix available, container images should not run a
 - [Trivy](https://github.com/aquasecurity/trivy)
 - [DevSkim](https://github.com/microsoft/DevSkim)
 - [KubeSec](https://kubesec.io)
+- [Terrascan](https://github.com/accurics/terrascan)
 - [Checkov](https://www.checkov.io)
 - [Iskan](https://github.com/alcideio/iskan)
 - [Dependency Analytics](https://github.com/fabric8-analytics/fabric8-analytics-vscode-extension)
