@@ -35,3 +35,14 @@ and commenting on issues is a great way to get involved!
 When creating or reviewing pull requests, please refer to the
 [writing style guide](writing-style.md) to help maintain consistency across
 all of our documents.
+
+## Security Issues
+
+This group engages in [security reviews](../assessments/README) of projects to
+assist in improving their overall security posture. As part of those reviews,
+members may find or discuss potential issues. These findings and discussions
+(verbal, slack, or draft doc) are not regarded as a verified vulnerability and
+must adhere to the project's security reporting process. It is critical that
+contributions from security reviews remain close held to ensure adherence to a
+given project's responsible security disclosures process should an potential
+issue be discovered.
