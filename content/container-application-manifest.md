@@ -12,6 +12,7 @@ Application manifests describe the configurations required for the deployment of
 - [Checkov](https://www.checkov.io/) 
 - [KubeSec]( https://kubesec.io/ )
 - [Kics](https://github.com/Checkmarx/kics)
+- [Kyverno CLI](https://kyverno.io)
 
 <!---
 ## Commercial Projects

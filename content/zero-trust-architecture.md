@@ -24,6 +24,7 @@ Zero trust also requires secure communication between entities. While network se
 - [HyperLedger](https://www.hyperledger.org/)
 - [HashiCorp Vault](https://github.com/hashicorp/vault)
 - [Keylime](https://keylime.dev/)
+- [Kyverno](https://kyverno.io)
 
 <!--
 Commercial Projects (optional)
@@ -43,7 +44,7 @@ SysDig (https://sysdig.com/)
 - De-centralized identity management using technologies such as trust engines and threat scores can be used to handle authentication, and can be further supplemented via additional technologies (e.g. blockchain) to supplement trust-engine based means of user/device authentication. 
 - Dynamic secrets and routine certificate rotation can be handled via certificate management systems (e.g. HashiCorp Vault), along with revocation of compromised certificates.
 - Remote hardware attestation (e.g. Keylime) can be used to verify the integrity of individual nodes (i.e. bootloader, kernel, PCR values, etc.), and related technologies (e.g. SecureBoot, measured boot) can potentially prevent compromised hosts from fully booting (preventing attempts to even join the private network).
-- “Validating” admission controllers (e.g. OPA) can ensure individual applications (i.e. in the form of pods) meet specific security requirements before allowing the application to launch, while “mutating” admission controllers can modify the runtime parameters (e.g. environment variables, network ingress/egress policy, RBAC-related configuration, etc.) so that any/all applications executed in the cluster have been sanitized as per cluster security policy before any container code can be executed. “Init containers” can also be injected as an additional run-time prerequisite.
+- “Validating” admission controllers (e.g. OPA, Kyverno, etc.) can ensure individual applications (i.e. in the form of pods) meet specific security requirements before allowing the application to launch, while “mutating” admission controllers can modify the runtime parameters (e.g. environment variables, network ingress/egress policy, RBAC-related configuration, etc.) so that any/all applications executed in the cluster have been sanitized as per cluster security policy before any container code can be executed. “Init containers” can also be injected as an additional run-time prerequisite.
 - Private PKI (e.g. via Vault) is preferred over public PKI, but public PKI is preferred over no PKI (Gilman, Barth). Certificate management solutions that are 100% controlled by the cluster owner are preferred over any alternatives.
 
 
