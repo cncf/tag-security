@@ -20,6 +20,8 @@ severity vulnerabilities with a fix available, container images should not run a
 - [Checkov](https://www.checkov.io)
 - [Iskan](https://github.com/alcideio/iskan)
 - [Dependency Analytics](https://github.com/fabric8-analytics/fabric8-analytics-vscode-extension)
+- [Conftest](https://www.conftest.dev/)
+- [Kyverno CLI](https://kyverno.io)
 
 <!---
 ## Commercial Projects
