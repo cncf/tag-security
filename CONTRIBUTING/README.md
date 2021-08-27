@@ -38,7 +38,7 @@ all of our documents.
 
 ## Security Issues
 
-This group engages in [security reviews](assessments/README.md) of projects to
+This group engages in [security reviews](../assessments/README.md) of projects to
 assist in improving their overall security posture. As part of those reviews,
 members may find or discuss potential issues. These findings and discussions
 (verbal, slack, or draft doc) are not regarded as a verified vulnerability and
