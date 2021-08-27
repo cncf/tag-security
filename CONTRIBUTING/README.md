@@ -47,5 +47,11 @@ contributions from security reviews remain close held to ensure adherence to a
 given project's responsible security disclosures process should an potential
 issue be discovered.
 
-For more information on please refer to details on [use of a completed
-package](../assessments/README.md#use-of-a-completed-package).
+Presentations on security issues prior or during active engagement with projects
+is not permitted as these may be under embargo. If you are interested in
+presenting on a potential security issues we request you contact the project and
+get concurrence _prior_ to submitting a presentation issue to our repo. If you
+are interested in presenting on security issues discovered as a result of a
+security review, please refer to [use of a completed
+package](../assessments/README.md#use-of-a-completed-package) for how that
+content may be used.
