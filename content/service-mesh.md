@@ -7,7 +7,6 @@ category: "runtime"
 
 ## Projects
 
-- [Trivy](https://github.com/aquasecurity/trivy)
 - [Kuma](https://kuma.io) 
 - [Linkerd](https://linkerd.io/)
 - [Istio](https://istio.io/)
