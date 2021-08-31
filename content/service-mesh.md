@@ -7,11 +7,11 @@ category: "runtime"
 
 ## Projects
 
-- [Trivy](https://github.com/aquasecurity/trivy)
 - [Kuma](https://kuma.io) 
 - [Linkerd](https://linkerd.io/)
 - [Istio](https://istio.io/)
-- [Service Mesh Interfacei](https://smi-spec.io)
+- [Service Mesh Interface (SMI)](https://smi-spec.io)
+- [Open Service Mesh (OSM)](https://openservicemesh.io/)
 
 
 <!---
@@ -26,7 +26,7 @@ category: "runtime"
 -->
 
 ## Examples
-- Firstly service mesh provides security functions such as Mutual TLS, Authentication, Authorization, Observability and Logging and Micro-segmentation and Traffic Management  
+- Firstly service mesh provides security functions such as Mutual TLS, Authentication, Authorization, Observability and Logging and Micro-segmentation and Traffic Management.
 - Additionally, service mesh provides these capabilities without any change to the application. In other words applications can leverage these capabilities without making any changes to the application itself. 
 - Policies can be applied uniformly using a single control plane, while being pushed and enforced in a decentralized manner. 
 
