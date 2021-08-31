@@ -40,19 +40,3 @@ public interest. In the public sector, it is essential to maintain harmony and t
 entities. Additionally, timeliness of deployments and features may also be a strong consideration. The adoption of
 cloud native, along with modern methodologies, can increase organizational velocity, which is critical to many areas of
 the public sector.
-
-## Projects
-- [Project Calico](https://www.projectcalico.org/)
-- [SPIFFE/SPIRE](https://github.com/spiffe)
-- [OPA](https://github.com/open-policy-agent/opa)
-- [Istio](https://github.com/istio/istio)
-- [Linkerd](https://github.com/linkerd)
-- [HyperLedger](https://www.hyperledger.org/)
-- [HashiCorp Vault](https://github.com/hashicorp/vault)
-- [Keylime](https://keylime.dev/)
-- [Kyverno](https://github.com/kyverno/kyverno)
-- [Keycloak](https://github.com/keycloak/keycloak)
-
-## Examples
-- Adopt a Zero trust architecture with least-privilege security policies. See [this](zero-trust-architecture#examples)
-  for more examples.

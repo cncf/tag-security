@@ -38,7 +38,7 @@ SysDig (https://sysdig.com/)
 -->
 
 ## Examples
-- Enforced secure communication between nodes/endpoints independent of the pods/applications involved, either via service meshes, CNI-specific features, or other means (i.e. don’t trust individual applications to necessarily handle their own secure communications). Blob of text
+- Enforced secure communication between nodes/endpoints independent of the pods/applications involved, either via service meshes, CNI-specific features, or other means (i.e. don’t trust individual applications to necessarily handle their own secure communications).
 - Protocols may be enhanced (e.g. additional endpoint verification, such as remote hardware attestation in addition to transport security), but never downgraded below the mandated baseline.
 - Network policies (e.g. including the implementations already inherent to Kubernetes) can supplement additional tools/technologies via ingress and egress rules to explicitly define permitted connections between pods via rules and relationships.
 - De-centralized identity management using technologies such as trust engines and threat scores can be used to handle authentication, and can be further supplemented via additional technologies (e.g. blockchain) to supplement trust-engine based means of user/device authentication. 

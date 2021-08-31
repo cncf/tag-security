@@ -28,5 +28,5 @@ Aqua Vulnerability Database (https://avd.aquasec.com/)
 - Tactics, Techniques and Procedures (TTPs) are behaviors, actions, and common methods used by threat actors to achieve an objective.
 
 ## Other Links/Materials:
-[TAXII/STIX](https://oasis-open.github.io/cti-documentation/)
-[MITRE ATT&CK](https://attack.mitre.org/)
+- [TAXII/STIX](https://oasis-open.github.io/cti-documentation/)
+- [MITRE ATT&CK](https://attack.mitre.org/)

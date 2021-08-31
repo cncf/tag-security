@@ -16,6 +16,8 @@ Utilization of a policy agent to enforce or control authorized, signed container
 - [Red Hat Simple Signing](https://www.redhat.com/en/blog/container-image-signing)  / Buildah (https://buildah.io/)
 - [In toto](https://github.com/in-toto) 
 - [Open Policy Agent](https://www.openpolicyagent.org/) 
+- [sigstore](https://www.sigstore.dev/) / [Cosign](https://github.com/sigstore/cosign) 
+- [Connaisseur](https://sse-secure-systems.github.io/connaisseur/v2.1.2/)
 
 <!---]## Commercial Projects
 - [Prisma Cloud](https://www.paloaltonetworks.com/prisma/cloud)
