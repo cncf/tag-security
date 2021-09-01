@@ -526,3 +526,12 @@ _Recommended CNCF Requests_
 
 The review team recommends that CNCF continue to offer fuzzing resources, and hopes the project avails itself of these.  We also recommend a broader set of projects review and deploy c7n to document more open source use cases.  Finally, we hope that CNCF will fund a formal code audit and lab setup assessment which can subject c7n to real world attacks in a Kubernetes environment, once the project is ready for this with full Kubernetes support.
  
+## Appendix
+
+### Case Studies
+ 
+TODO: 2-3 scenarios of real-world use cases.
+
+### Related Projects / Vendors
+ 
+In some sense OPA conftest could be used for some of the same checks.  For kubernetes kube-bench is the obvious choice.  The primary alternative is the native cloud tooling, eg AWS Config.  c7n attempts to be cloud agnostic and/or multi-cloud which makes this more attractive to larger organizations who use multiple clouds.  However, lack of robust Kubernetes support may be seen as a problem by those same organizations.
