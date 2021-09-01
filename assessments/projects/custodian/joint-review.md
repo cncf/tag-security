@@ -497,6 +497,32 @@ Total: 32 (UNKNOWN: 0, LOW: 2, MEDIUM: 20, HIGH: 10, CRITICAL: 0)
 +----------------------+------------------+----------+--------------------------+---------------+--------------------------------+
 ```
  
+## Hands-on review
 
+Although some of the reviewes have previously used c7n in AWS, both as cli and in Lambda, Cloud Custodian did not receive a join hands-on review from TAG-Security.
+
+## Roadmap
+The [project roadmap](https://github.com/cloud-custodian/cloud-custodian/projects) is broken out into core roadmap, as well as for individual infrastructure providers using GitHub projects. However the maintenance of this roadmap board seems a bit stale since the only In Progress item was last updated Jan 22, 2020.
+
+_Recommended Project Next Steps_
+
+* Project should consider appointing a qualified security lead or security reviewer responsible for reviewing all PRs and the github repo and release processes. This would mitigate some of the risks the project has concerning code or repo compromise. As c7n increases its footprint across enterprises, it becomes a very attractive target for nation state actors.
  
+* Project should consider increasing fuzzing efforts, utilizing resources available from CNCF. 
+ 
+* Documentation improvements should be made to advise and assist operators on how to explicitly lock down the execution environment, even if it is seen as an inherited responsibility. Specific least-privilege examples should be given and examples of dangerous IAM roles and yaml policies discussed.
+ 
+* The default IAM policies recommended/documented should render c7n minimally operable or even inoperable, and require thoughtful addition of least privilege permissions.  A linter or IAM generator script would be a possible enhancement, or links to community examples of such tools.
+ 
+* The docker image, python environment, all custodian commits, and distributed python and yaml files should be controlled using cryptographic mechanisms for integrity. As this is an area of active research in the community, there are many possible tools to address the supply chain and distribution of the c7n tool and docker image.
+ 
+* The c7n code should itself implement some sort of yaml policy integrity and, possibly, efficacy/safety check(s). This may prevent casual tampering of yaml policies once deployed in an organization.
+ 
+* The project should determine if operators can run separate instances of c7n for detection vs. remediation, and document how to best deploy under segregation of duties principles. This may minimize "blast radius" in the event that a detective c7n environment is compromised.  Presumably the remediation environment, and policies, could be more tightly controlled, and more meticulously scrutinized and tested and monitored.
+ 
+* Finally, the review team suggests that Kubernetes should receive more attention in the project roadmap, as well as support for other CNCF projects, as well as non-CNCF open source, cloud native frameworks (e.g. Istio).
+
+_Recommended CNCF Requests_ 
+
+The review team recommends that CNCF continue to offer fuzzing resources, and hopes the project avails itself of these.  We also recommend a broader set of projects review and deploy c7n to document more open source use cases.  Finally, we hope that CNCF will fund a formal code audit and lab setup assessment which can subject c7n to real world attacks in a Kubernetes environment, once the project is ready for this with full Kubernetes support.
  
