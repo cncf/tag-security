@@ -241,3 +241,262 @@ TTPs Considered include:
 * [Data from Cloud Storage Object](https://attack.mitre.org/techniques/T1530/) - as noted above, logs or outputs from c7n may be sensitive and should be controlled or purged appropriately
 * [Resource Hijacking](https://attack.mitre.org/techniques/T1496/) - if c7n code is modified or a false package distributed, a seemingly legitimate c7n task could run that performed other actions, like crypto mining or other resource abuses.  As a trusted security tool, c7n activity may go unnoticed or casually inspected.
 
+### Predisposing Conditions
+
+Custodian is intended to run in a trusted compute execution node with trusted inputs (policy YAML) and minimized cloud credentials. The dependencies of the python code, the python interpreter, and the python code comprising custodian itself must also be trusted.
+
+Custodian typically requires broad read access across an environment to inspect infrastructure configuration. Additionally, when evaluating a policy specifying remediation actions, credentials with write access are necessary.
+
+A variety of potential attackers exist when Cloud Custodian is in use. Given Cloud Custodians monitoring and enforcement nature, malicious actors may be interested in leveraging the reporting of Cloud Custodian to understand the architecture of an environment it is deployed within as well as potentially disabling or negatively modifying the policy enforcement within the environment.
+
+### Expected Attacker Capabilities
+
+Per the principles of Zero Trust environments, we assume:
+
+* An attacker is already present within an organization’s cloud compute environments
+* An attacker potentially has access to cloud credentials
+* The Cloud Custodian execution environment has already been exploited
+
+Attackers could be insiders who already maintain regular privileged access to the environment and have reasonable familiarity with their organization’s deployment of Cloud Custodian. As such, it is expected these attackers will be intimately aware of the Cloud Custodian configuration, policies, deployment, serverless usage, and reporting integration. It is also assumed they also may retain ownership permissions to the repository where the configurations for the Cloud Custodian deployment are kept.
+
+Since c7n does not run as a daemon exposed to the internet (or any network), a comprehensive analysis of an external attack is not covered within this document. By definition, a successful external attacker who gains access to the c7n execution environment will likely take advantage of the same attack paths as an insider.
+
+### Attack Risks and Effects
+
+Cloud Custodian’s serverless capabilities enable broad access to affect both the availability and confidentiality of the environment it is deployed within. Explicit control and review over Cloud Custodian yaml is an absolute necessity to reduce the success of attack by a malicious insider or opportunistic external intruder.
+
+As a result of the elevated permissions Cloud Custodian requires in order to execute within a given cloud environment, Organizations which fail to appropriately secure the identity and access management of their cloud environment may negate any security value Cloud Custodian can provide them. 
+
+Likewise, improper understanding and configuration of Cloud Custodian may restrict any organization’s successful use of c7n. It is essential organizations and operators of Cloud Custodian understand their environment’s unique needs and tailor policies for those use cases, else they may inflict self-denial-of-service.
+
+Both internal and external scenarios vary for different cloud providers.  Many of the conceptual components of a threat scenario are shared between the clouds, but their manifestations differ based on their specific implementations. 
+
+While external attackers are also possible - especially if custodian is running in a persistent node (e.g. EC2 instance running cron), or even if it is running in a docker container that pulls the latest code from the project which was compromised - a comprehensive analysis of an external attack is not covered within this document. A successful external attack will gain access to the environment and take advantage of the same attack paths as an insider, with a notable exception that they may not also have access to the policy code repository. That being said, if an external attacker were to successfully have improper configurations and policies merged into the source code of the organization’s Cloud Custodian deployment repository, they may grant themselves broader access into an environment and therefore fully replicate insider attack possibilities.
+
+_Example Attack Scenarios_
+
+* Denial of Service, Tampering: Use lambda:PutFunctionConcurrency  to set a Lambda Function's concurrency setting to 0 which would disable event based compliance checking
+* Information Disclosure: Redirecting Cloud Custodian log output (logs:CreateLogStream, logs:PutLogEvents, logs:CreateLogGroup) to a misconfigured or non-compliant S3 bucket (CLI: custodian run --output-dir s3://<my-bucket>/<my-prefix> <policyfile>.yml), revealing to an attacker detailed metadata about the cloud environment as well as positive Cloud Custodian findings on how it is non-compliant (i.e. vulnerable)
+* Spoofing, Elevation of Privileges: Use lambda:CreateFunction and lambda:InvokeFunction, thereby allowing for arbitrary code to be introduced and executed when triggered
+* Alternatively, use lambda:UpdateFunctionCode to update code for an existing Lambda Function which would bypass the need for iam:PassRole. Then use lambda:InvokeFunction to invoke whatever code that you want using the IAM role that the Lambda Function is already attached to.  The iam:PassRole permissions are only checked at function creation, not when the function is updated
+* Attacker uses a Cloud Custodian Lambda function to leverage (iam:PassRole) to change Ports on NACLs and Security Groups of PCI Cat 1 applications (potentially leading to Information Disclosure)
+* Repudiation: User creates a Cloud Custodian Lambda function that assumes IAM roles from Cloud Custodian to gain keys from the key management service
+* Denial of Service: User creates two Cloud Custodian policies that run in CloudTrail Mode (AWS lambdas are triggered by cloudtrail events to terminate things). Example one policy that terminates instances with encryption turned on and another that kills instances without encryption. 
+
+ ### Security Degradation
+
+The project itself is a key target. With a small community, and even smaller approver and project review team, the likelihood that malicious policy content or code or dependencies will be released is non-zero.  This would significantly compromise users of custodian who regularly update from the project git repository or use their python package distribution.
+
+The policy content maintained by the organization is a secondary target.  Except at very large organizations, it is likely 1 or 2 users would maintain the entire policy repository with little to no oversight. It is unrealistic to expect smaller organizations to effectively review every policy change.
+
+The cloud permissions granted to Custodian are broad. Neither a secure default policy, nor policy generation or checker/linter tool, nor even adequate documentation exists to guide the new user on how to effectively lock down their policy to the absolute minimum.  Even then, the mixing of broad read and write permissions in one policy is itself a risk.  Attackers are likely to use custodian once inside, via other attacks, to move laterally and cover their tracks.
+
+Probably the largest impact of an attack would be to allow attackers to effectively disable custodian and prevent detection or remediation of their other attacks, potentially even providing a false sense of compliance if no custodian alerts are reported.
+
+### Compensating Mechanisms
+
+There are few compensating mechanisms in place today.  The distribution package, commits, or policies are not cryptographically controlled and the python environment itself is difficult to place under a trusted computing base.  The project does use Github dependabot for CVE identification and PR generation, but only 3 PRs have been committed, the last in June 2021 at the time of this writing. Github actions are enabled for linting and SAST scans. It is unclear of any committers are dedicated to reviewing these results regularly. 
+ 
+In terms of Custodian’s runtime decision processing, Custodian does not use the cloud API source event as a sole basis for decisions. Instead, it will resolve any resources within the event by ID via the cloud control plane, obtaining the source of truth of the current state of the resource before evaluating the policy filters to ensure the resource matches. If all checks pass, Custodian then proceeds with actions. This does open up a TOCTOU attack, however.
+ 
+### STRIDE Evaluation
+
+*STRIDE Classification Considered* 
+
+Denial of Service
+Spoofing
+Elevation of Privilege
+Tampering
+Information Disclosure
+Repudiation
+
+*Control Recommendation (SEVERITY: Medium)*
+ 
+New policies should require a GitHub merge and a code review by a second developer who is not also the author, requiring collusion for success.
+ 
+*Control Recommendation (SEVERITY: Medium)*
+
+Never allow Cloud Custodian to have more than Poll mode access to prevent a Denial of Service attack.
+ 
+## Threat Model
+
+In addition to the components table above, the MITRE ATT&CK TTPS considered above, and the STRIDE evaluation above, below is an overview of key attack boundaries and data flows:
+ 
+<<INSERT IMAGE>>
+ 
+# Secure Development Practices
+ 
+The Review Team examined c7n's [CII badge attestations](https://bestpractices.coreinfrastructure.org/en/projects/3402) and github actions source code.
+The review team suggests further review of using the OSSF Security Scorecard and/or AllStars initiative, and perhap look at Muse.dev.
+ 
+Code fuzzing should be a project priority, and the review team discussed this with the project team and LinuxFoundation/CNCF leadership, who generously made fuzzing resources available to the c7n project.  A PR is currently open as of September 2021: https://github.com/cloud-custodian/cloud-custodian/pull/6832 
+
+Subsequent followup is recommended.
+
+Specific development practices and contact mechanisms are documented in the project's self-assessment (linked above).
+ 
+## Security Issue Resolution
+
+Mailing list: security@cloudcustodian.io
+ 
+Currently five(5) members made up of maintainers; Two members tasked with full time response as part of their job
+ 
+It is unclear if there is an embargo policy and what disclosure timelines are. The self-assessment does indicate "Emails are addressed within three business days" and that "A public disclosure date is then negotiated by the Cloud Custodian Security Team". Further clarity and following CNCF guidelines would be recommended.
+ 
+### Currently Open security issues and vulnerabilities
+ 
+As of September 2021, there are no published CVEs per: https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=%22custodian%22
+There are also no open dependabot PRs: https://github.com/cloud-custodian/cloud-custodian/pulls?q=is%3Apr+is%3Aopen+dependabot
+
+For the docker image the following was reported by the github action run: https://github.com/cloud-custodian/cloud-custodian/runs/3476474527
+ 
+ cloudcustodian/c7n:dev (ubuntu 20.04)
+=====================================
+Total: 32 (UNKNOWN: 0, LOW: 2, MEDIUM: 20, HIGH: 10, CRITICAL: 0)
+```
++----------------------+------------------+----------+--------------------------+---------------+--------------------------------+
+|       LIBRARY        | VULNERABILITY ID | SEVERITY |    INSTALLED VERSION     | FIXED VERSION |             TITLE              |
++----------------------+------------------+----------+--------------------------+---------------+--------------------------------+
+| bash                 | CVE-2019-18276   | HIGH     | 5.0-6ubuntu1.1           |               | bash: when effective UID is    |
+|                      |                  |          |                          |               | not equal to its real UID      |
+|                      |                  |          |                          |               | the...                         |
++----------------------+------------------+----------+--------------------------+---------------+--------------------------------+
+| coreutils            | CVE-2016-2781    | MEDIUM   | 8.30-3ubuntu2            |               | coreutils: Non-privileged      |
+|                      |                  |          |                          |               | session can escape to the      |
+|                      |                  |          |                          |               | parent session in chroot       |
++----------------------+------------------+----------+--------------------------+---------------+--------------------------------+
+| libc-bin             | CVE-2020-6096    | HIGH     | 2.31-0ubuntu9.2          |               | glibc: signed comparison       |
+|                      |                  |          |                          |               | vulnerability in the ARMv7     |
+|                      |                  |          |                          |               | memcpy function                |
++                      +------------------+          +                          +---------------+--------------------------------+
+|                      | CVE-2021-3326    |          |                          |               | glibc: Assertion failure       |
+|                      |                  |          |                          |               | in ISO-2022-JP-3 gconv         |
+|                      |                  |          |                          |               | module related to combining    |
+|                      |                  |          |                          |               | characters                     |
++                      +------------------+----------+                          +---------------+--------------------------------+
+|                      | CVE-2016-10228   | MEDIUM   |                          |               | glibc: iconv program can       |
+|                      |                  |          |                          |               | hang when invoked with the -c  |
+|                      |                  |          |                          |               | option                         |
++                      +------------------+          +                          +---------------+--------------------------------+
+|                      | CVE-2019-25013   |          |                          |               | glibc: buffer over-read in     |
+|                      |                  |          |                          |               | iconv when processing invalid  |
+|                      |                  |          |                          |               | multi-byte input sequences     |
+|                      |                  |          |                          |               | in...                          |
++                      +------------------+          +                          +---------------+--------------------------------+
+|                      | CVE-2020-27618   |          |                          |               | glibc: iconv when processing   |
+|                      |                  |          |                          |               | invalid multi-byte input       |
+|                      |                  |          |                          |               | sequences fails to advance     |
+|                      |                  |          |                          |               | the...                         |
++                      +------------------+          +                          +---------------+--------------------------------+
+|                      | CVE-2020-29562   |          |                          |               | glibc: assertion failure in    |
+|                      |                  |          |                          |               | iconv when converting invalid  |
+|                      |                  |          |                          |               | UCS4                           |
++                      +------------------+----------+                          +---------------+--------------------------------+
+|                      | CVE-2021-27645   | LOW      |                          |               | glibc: Use-after-free in       |
+|                      |                  |          |                          |               | addgetnetgrentX function in    |
+|                      |                  |          |                          |               | netgroupcache.c                |
++----------------------+------------------+----------+                          +---------------+--------------------------------+
+| libc6                | CVE-2020-6096    | HIGH     |                          |               | glibc: signed comparison       |
+|                      |                  |          |                          |               | vulnerability in the ARMv7     |
+|                      |                  |          |                          |               | memcpy function                |
++                      +------------------+          +                          +---------------+--------------------------------+
+|                      | CVE-2021-3326    |          |                          |               | glibc: Assertion failure       |
+|                      |                  |          |                          |               | in ISO-2022-JP-3 gconv         |
+|                      |                  |          |                          |               | module related to combining    |
+|                      |                  |          |                          |               | characters                     |
++                      +------------------+----------+                          +---------------+--------------------------------+
+|                      | CVE-2016-10228   | MEDIUM   |                          |               | glibc: iconv program can       |
+|                      |                  |          |                          |               | hang when invoked with the -c  |
+|                      |                  |          |                          |               | option                         |
++                      +------------------+          +                          +---------------+--------------------------------+
+|                      | CVE-2019-25013   |          |                          |               | glibc: buffer over-read in     |
+|                      |                  |          |                          |               | iconv when processing invalid  |
+|                      |                  |          |                          |               | multi-byte input sequences     |
+|                      |                  |          |                          |               | in...                          |
++                      +------------------+          +                          +---------------+--------------------------------+
+|                      | CVE-2020-27618   |          |                          |               | glibc: iconv when processing   |
+|                      |                  |          |                          |               | invalid multi-byte input       |
+|                      |                  |          |                          |               | sequences fails to advance     |
+|                      |                  |          |                          |               | the...                         |
++                      +------------------+          +                          +---------------+--------------------------------+
+|                      | CVE-2020-29562   |          |                          |               | glibc: assertion failure in    |
+|                      |                  |          |                          |               | iconv when converting invalid  |
+|                      |                  |          |                          |               | UCS4                           |
++                      +------------------+----------+                          +---------------+--------------------------------+
+|                      | CVE-2021-27645   | LOW      |                          |               | glibc: Use-after-free in       |
+|                      |                  |          |                          |               | addgetnetgrentX function in    |
+|                      |                  |          |                          |               | netgroupcache.c                |
++----------------------+------------------+----------+--------------------------+---------------+--------------------------------+
+| libgcrypt20          | CVE-2021-33560   | HIGH     | 1.8.5-5ubuntu1           |               | libgcrypt: mishandles ElGamal  |
+|                      |                  |          |                          |               | encryption because it lacks    |
+|                      |                  |          |                          |               | exponent blinding to address   |
+|                      |                  |          |                          |               | a...                           |
++----------------------+------------------+          +--------------------------+---------------+--------------------------------+
+| libpcre3             | CVE-2017-11164   |          | 2:8.39-12build1          |               | pcre: OP_KETRMAX feature       |
+|                      |                  |          |                          |               | in the match function in       |
+|                      |                  |          |                          |               | pcre_exec.c                    |
++                      +------------------+          +                          +---------------+--------------------------------+
+|                      | CVE-2019-20838   |          |                          |               | pcre: buffer over-read in JIT  |
+|                      |                  |          |                          |               | when UTF is disabled           |
++                      +------------------+----------+                          +---------------+--------------------------------+
+|                      | CVE-2020-14155   | MEDIUM   |                          |               | pcre: integer overflow in      |
+|                      |                  |          |                          |               | libpcre                        |
++----------------------+------------------+          +--------------------------+---------------+--------------------------------+
+| libpython3.8-minimal | CVE-2021-23336   |          | 3.8.10-0ubuntu1~20.04    |               | python: Web cache poisoning    |
+|                      |                  |          |                          |               | via urllib.parse.parse_qsl and |
+|                      |                  |          |                          |               | urllib.parse.parse_qs by using |
+|                      |                  |          |                          |               | a semicolon...                 |
++----------------------+                  +          +                          +---------------+                                +
+| libpython3.8-stdlib  |                  |          |                          |               |                                |
+|                      |                  |          |                          |               |                                |
+|                      |                  |          |                          |               |                                |
+|                      |                  |          |                          |               |                                |
++----------------------+------------------+----------+--------------------------+---------------+--------------------------------+
+| libsqlite3-0         | CVE-2020-9794    | HIGH     | 3.31.1-4ubuntu0.2        |               | An out-of-bounds read was      |
+|                      |                  |          |                          |               | addressed with improved bounds |
+|                      |                  |          |                          |               | checking. This issue is...     |
++                      +------------------+          +                          +---------------+--------------------------------+
+|                      | CVE-2020-9991    |          |                          |               | This issue was addressed with  |
+|                      |                  |          |                          |               | improved checks. This issue is |
+|                      |                  |          |                          |               | fixed in...                    |
++                      +------------------+----------+                          +---------------+--------------------------------+
+|                      | CVE-2020-9849    | MEDIUM   |                          |               | An information disclosure      |
+|                      |                  |          |                          |               | issue was addressed with       |
+|                      |                  |          |                          |               | improved state management.     |
+|                      |                  |          |                          |               | This issue...                  |
++----------------------+------------------+          +--------------------------+---------------+--------------------------------+
+| libtasn1-6           | CVE-2018-1000654 |          | 4.16.0-2                 |               | libtasn1: Infinite loop in     |
+|                      |                  |          |                          |               | _asn1_expand_object_id(ptree)  |
+|                      |                  |          |                          |               | leads to memory exhaustion     |
++----------------------+------------------+          +--------------------------+---------------+--------------------------------+
+| login                | CVE-2013-4235    |          | 1:4.8.1-1ubuntu5.20.04.1 |               | shadow-utils: TOCTOU race      |
+|                      |                  |          |                          |               | conditions by copying and      |
+|                      |                  |          |                          |               | removing directory trees       |
++----------------------+                  +          +                          +---------------+                                +
+| passwd               |                  |          |                          |               |                                |
+|                      |                  |          |                          |               |                                |
+|                      |                  |          |                          |               |                                |
++----------------------+------------------+          +--------------------------+---------------+--------------------------------+
+| python-pip-whl       | CVE-2020-26137   |          | 20.0.2-5ubuntu1.6        |               | python-urllib3: CRLF injection |
+|                      |                  |          |                          |               | via HTTP request method        |
++----------------------+------------------+          +--------------------------+---------------+--------------------------------+
+| python3.8            | CVE-2021-23336   |          | 3.8.10-0ubuntu1~20.04    |               | python: Web cache poisoning    |
+|                      |                  |          |                          |               | via urllib.parse.parse_qsl and |
+|                      |                  |          |                          |               | urllib.parse.parse_qs by using |
+|                      |                  |          |                          |               | a semicolon...                 |
++----------------------+                  +          +                          +---------------+                                +
+| python3.8-minimal    |                  |          |                          |               |                                |
+|                      |                  |          |                          |               |                                |
+|                      |                  |          |                          |               |                                |
+|                      |                  |          |                          |               |                                |
++----------------------+                  +          +                          +---------------+                                +
+| python3.8-venv       |                  |          |                          |               |                                |
+|                      |                  |          |                          |               |                                |
+|                      |                  |          |                          |               |                                |
+|                      |                  |          |                          |               |                                |
++----------------------+------------------+----------+--------------------------+---------------+--------------------------------+
+```
+ 
+
+ 
+ 
