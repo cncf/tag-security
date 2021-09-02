@@ -84,7 +84,7 @@ line with the [mission and charter](charter.md).
    present the proposal in the "Planned Meeting" area of the [meeting
    notes][https://github.com/cncf/tag-security#meeting-times]. Then at the
    meeting:
-   
+
    * The presenter should screen share the github issue (or ask the meeting
      facilitator ahead of time to do so) and explain the motivation, expected
      outcome, ideas that they have for how it might happen, and ask if others
@@ -120,6 +120,7 @@ line with the [mission and charter](charter.md).
    Once the scope is defined and a definition of done is described, the
    nominated lead(s) needs to seek out a Chair or Technical Lead to sponsor the
    proposal.
+<!-- markdownlint-disable MD005 -->
     * The sponsor reviews the scope and definition of done, determines if it is
       in scope of the roadmap, and updates the issue with the scope and
       definition of done.
@@ -132,7 +133,7 @@ line with the [mission and charter](charter.md).
         determine the workload of the group and existing bandwidth to ensure it
         is driven to completion. If the proposal does not fit in the roadmap, it
         does _not_ mean that it cannot be worked.
-
+<!-- markdownlint-enable MD005 -->
 1. **Accept or close the proposal.**
 
    A) **Accept**: The sponsor will confirm the project lead(s)and assign
