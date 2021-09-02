@@ -36,7 +36,7 @@ When creating or reviewing pull requests, please refer to the
 [writing style guide](writing-style.md) to help maintain consistency across
 all of our documents.
 
-## Security Issues
+## Reporting Security Issues
 
 This group engages in [security reviews](../assessments/README.md) of projects to
 assist in improving their overall security posture. As part of those reviews,
