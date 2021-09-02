@@ -14,6 +14,7 @@ It is essential to consider the security features and various configuration opti
 - [Kubernetes Pod Security Policy (PSP)](https://kubernetes.io/docs/concepts/policy/pod-security-policy/) 
 - [Kube Hunter](https://github.com/aquasecurity/kube-hunter)
 - [Kube Bench](https://github.com/aquasecurity/kube-bench)
+- [Terrascan](https://github.com/accurics/terrascan)
 - [Checkov](https://www.checkov.io/)
 - [KubeAudit]( https://github.com/Shopify/kubeaudit) 
 - [KubeSec]( https://kubesec.io/)
