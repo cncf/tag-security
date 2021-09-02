@@ -40,7 +40,6 @@ explicitly volunteers to be the project lead. If a proposal is submitted that
 does not have a project lead intent checked, it will be converted to a
 suggestion during triage.
 
-
 #### Creating, discussing and accepting proposals
 
 Each proposal is unique and might deviate slightly from the process below. For
@@ -120,16 +119,16 @@ line with the [mission and charter](charter.md).
 
    Once the scope is defined and a definition of done is described, the
    nominated lead(s) needs to seek out a Chair or Technical Lead to sponsor the
-   proposal. 
-   * The sponsor reviews the scope and definition of done, determines if it is
-     in scope of the roadmap, and updates the issue with the scope and
-     definition of done. 
-    * Sponsor: takes responsibility to ensure that progress is tracked and that
-      outcomes are reported to the group, including proposing to close the issue
-      if there is not sufficient activity to sustain the effort.
+   proposal.
+    * The sponsor reviews the scope and definition of done, determines if it is
+      in scope of the roadmap, and updates the issue with the scope and
+      definition of done.
+     * Sponsor: takes responsibility to ensure that progress is tracked and that
+       outcomes are reported to the group, including proposing to close the
+       issue if there is not sufficient activity to sustain the effort.
     * The sponsor presents the proposal for discussion at the next leadership
       meeting to determine roadmap concurrence and group workload.
-      * Roadmap: determine there is interest and strong roadmap alignment,
+     * Roadmap: determine there is interest and strong roadmap alignment,
         determine the workload of the group and existing bandwidth to ensure it
         is driven to completion. If the proposal does not fit in the roadmap, it
         does _not_ mean that it cannot be worked.

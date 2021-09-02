@@ -78,6 +78,21 @@ Leads, any Chair may act as Technical Lead.
   * asking for new proposals to be made to address an identified need
   * partnering with Technical Leads to establish a roadmap and manage ongoing
     projects
+  * serving as Security TAG leadership representative to ensure the project and
+    project lead(s) is successful
+    * check in with the project lead regularly to discuss progress, blockers,
+      and updates
+    * provide mentorship to project lead(s)
+    * ensure the schedule set by the project lead(s) is adhered to
+    * verify the scope and proposed deliverables of the project are in alignment
+      with the [Charter](charter.md) prior to recommendation of becoming a
+      project
+    * provide the TOC and others on the leadership team with updates
+    * keep the issue up to date for the project lead(s) if they don't have write
+      access to do so
+    * enforce and encourage company diversity on a given project where possible
+    * provide guardrails and guidance to the project and project lead(s) as
+      appropriate
 
 ## Role of technical leads
 
@@ -92,6 +107,21 @@ The general list of activities for TL are:
 * Resolve cross-sub-project technical issues and decisions
 * Propose agenda items for meetings to ensure that open issues are discussed
   with the group when needed
+* serving as Security TAG leadership representative to ensure the project and
+  project lead(s) is successful
+  * check in with the project lead regularly to discuss progress, blockers, and
+    updates
+    * provide mentorship to project lead(s)
+    * ensure the schedule set by the project lead(s) is adhered to
+    * verify the scope and proposed deliverables of the project are in alignment
+      with the [Charter](charter.md) prior to recommendation of becoming a
+      project
+    * provide the Chairs and others on the leadership team with updates
+    * keep the issue up to date for the project lead(s) if they don't have write
+      access to do so
+    * enforce and encourage company diversity on a given project where possible
+    * provide guardrails and guidance to the project and project lead(s) as
+      appropriate
 
 TLs are assigned by CNCF Technical Oversight Committee (see [CNCF TAG Tech Lead
 nomination and election
@@ -114,6 +144,21 @@ the issue.
 
 Project Leads are nominated and approved by the process defined within our
 [governance process](process.md).
+
+Project leads are expected to"
+* set the meetings for the project
+* drive the agenda of the project meetings
+* lead meetings and coordinate for a prepared back up prior to meetings if they
+  cannot make a meeting
+* provide technical direction unique to the project
+* establish the project schedule
+* modify the schedule
+* garner participation
+* keep the project moving forward
+* establish documents and correct permissions for contributions to occur
+* contribute content
+* provide the Security TAG leadership representative assigned or their
+  designated back up with updates, progress, and blocker on the project
   
 ### On-going projects
 
