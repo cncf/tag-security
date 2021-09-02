@@ -130,12 +130,13 @@ process](https://github.com/cncf/toc/blob/master/tags/cncf-tags.md#elections)).
 ## Role of chair emeriti
 
 After a [Chair](#role-of-chairs) finishes their term, they transition into a
-role of [Chair Emeritus](#role-of-chair-emeriti). This allows previous Chairs to continue to chime in and
-provide valuable context and contributions to the TAG. A [Chair Emeritus](#role-of-chair-emeriti) can
-assume a role of a [technical lead](#roles-of-technical-leads), but in doing so,
-must be active in communicating with the co-chairs and technical leads (i.e.
-participating in the chair/TL slack and meetings). A Chair Emeritus has the same
-permissions/access as technical leads.
+role of [Chair Emeritus](#role-of-chair-emeriti). This allows previous Chairs to
+continue to chime in and provide valuable context and contributions to the TAG.
+A [Chair Emeritus](#role-of-chair-emeriti) can assume a role of a [technical
+lead](#roles-of-technical-leads), but in doing so, must be active in
+communicating with the co-chairs and technical leads (i.e. participating in the
+chair/TL slack and meetings). A Chair Emeritus has the same permissions/access
+as technical leads.
 
 ## Role of project leads
 
@@ -145,7 +146,8 @@ the issue.
 Project Leads are nominated and approved by the process defined within our
 [governance process](process.md).
 
-Project leads are expected to"
+Project leads are expected to:
+
 * set the meetings for the project
 * drive the agenda of the project meetings
 * lead meetings and coordinate for a prepared back up prior to meetings if they
