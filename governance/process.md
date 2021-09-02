@@ -22,23 +22,23 @@ We love to have presentations about various efforts our members and the greater
 community are working on. They allow us to gain insights into new challenges,
 upcoming trends, and often inspire our group to take on new projects. It is
 important that any content presented to the group must adhere to our
-[guidelines](presentations.md). 
+[guidelines](presentations.md).
 
 ### Suggestions
 
 Suggestions are an easy way for someone to suggest something to the group for
 which you do not intend to be the project lead of. It is important that you bear
-in mind when submitting suggestions that if there is no volunteer to lead
-the work will not happen. Mentoring and co-leading are
-available to anyone unsure or interested in becoming a project lead, often
-suggestions have a limited scope of work and are ideal for individuals looking
-to stretch their professional skills.
+in mind when submitting suggestions that if there is no volunteer to lead the
+work will not happen. Mentoring and co-leading are available to anyone unsure or
+interested in becoming a project lead, often suggestions have a limited scope of
+work and are ideal for individuals looking to stretch their professional skills.
 
 ### Proposals
 
 Proposals are ideas that are intended to become projects, where the submitter
-explicitly volunteers to be the project lead. If a proposal is submitted that does not have a
-project lead intent checked, it will be converted to a suggestion during triage.
+explicitly volunteers to be the project lead. If a proposal is submitted that
+does not have a project lead intent checked, it will be converted to a
+suggestion during triage.
 
 
 #### Creating, discussing and accepting proposals
@@ -65,26 +65,27 @@ line with the [mission and charter](charter.md).
    effort. Try to complete the template as much as possible.
 
 1. **Ask the group for collaboration:** Rather than immediately beginning work
-   on a solution, bring the issue up for discussion.
-   The following guidance shows common steps, though communication often happens
-   in different sequence. The key outcome is that there is opportunity for input
-   across different channels, with thoughtfulness to accessibility across
-   timezone and communication medium. We also encourage outreach outside of the
-   group, when there are experts who might share insights (via invited
-   presentation) or wish to get involved.
+   on a solution, bring the issue up for discussion. The following guidance
+   shows common steps, though communication often happens in different sequence.
+   The key outcome is that there is opportunity for input across different
+   channels, with thoughtfulness to accessibility across timezone and
+   communication medium. We also encourage outreach outside of the group, when
+   there are experts who might share insights (via invited presentation) or wish
+   to get involved.
 
    A) On slack, share the issue link and ask whether others are interested in
-   the problem, if so, refer them to the issue which has content on discussions/meetings
-   where the issue will be introduced or where to stay tuned for more
-   information. provide the issue link and encourage any feedback on your
-   proposed solution or activity.
+   the problem, if so, refer them to the issue which has content on
+   discussions/meetings where the issue will be introduced or where to stay
+   tuned for more information. provide the issue link and encourage any feedback
+   on your proposed solution or activity.
 
-   B) Choose an upcoming meeting where you or another
-   group member who is interested in working on the project is able to attend,
-   then add the issue to the meeting agenda: include a link and the name of the
-   person who will present the proposal in the "Planned Meeting" area of the
-   [meeting notes][https://github.com/cncf/tag-security#meeting-times]. Then at
-   the meeting:
+   B) Choose an upcoming meeting where you or another group member who is
+   interested in working on the project is able to attend, then add the issue to
+   the meeting agenda: include a link and the name of the person who will
+   present the proposal in the "Planned Meeting" area of the [meeting
+   notes][https://github.com/cncf/tag-security#meeting-times]. Then at the
+   meeting:
+   
    * The presenter should screen share the github issue (or ask the meeting
      facilitator ahead of time to do so) and explain the motivation, expected
      outcome, ideas that they have for how it might happen, and ask if others
@@ -123,9 +124,9 @@ line with the [mission and charter](charter.md).
    * The sponsor reviews the scope and definition of done, determines if it is
      in scope of the roadmap, and updates the issue with the scope and
      definition of done. 
-      * Sponsor: takes responsibility to ensure that progress is tracked and
-        that outcomes are reported to the group, including proposing to close
-        the issue if there is not sufficient activity to sustain the effort.
+    * Sponsor: takes responsibility to ensure that progress is tracked and that
+      outcomes are reported to the group, including proposing to close the issue
+      if there is not sufficient activity to sustain the effort.
     * The sponsor presents the proposal for discussion at the next leadership
       meeting to determine roadmap concurrence and group workload.
       * Roadmap: determine there is interest and strong roadmap alignment,
