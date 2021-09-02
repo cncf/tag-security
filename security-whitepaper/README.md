@@ -20,6 +20,13 @@ submitted to the repo and labeled with "suggestion" and "whitepaper".
 The living CNSWP is maintained in [markdown][whitepaper-md] and all updates will
 be made in markdown.
 
+### Cloud Native Security Map
+
+The [Cloud Native Security Map](cnsmap/README.md) is a interactive medium for
+the consumption of the security whitepaper. In addition to the content of the
+whitepaper, the cloud native security map also provides additional practitioner
+context and corresponding cloud native projects.
+
 ### Contributing updates
 
 All members of the community are welcome to contribute updates to the CNSWP. We
