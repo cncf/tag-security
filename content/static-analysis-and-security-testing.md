@@ -29,7 +29,9 @@ These templates should be scanned for insecure configurations and other security
 - [SonarQube](https://www.sonarsource.com/)
 - [CodeQL](https://securitylab.github.com/tools/codeql)
 - [Semgrep](https://semgrep.dev/)
-- [Infrastructure as a Code: Ansible, Terraform etc: Kics](https://www.kics.io/)
+- Infrastructure as a Code: Ansible, Terraform etc 
+    - [Terrascan](https://github.com/accurics/terrascan)
+    - [kics](https://www.kics.io/)
 - [Dagda](https://github.com/eliasgranderubio/dagda)
 
 
