@@ -9,6 +9,7 @@ Application manifests describe the configurations required for the deployment of
 ## Projects
 - [Conftest](https://www.conftest.dev/)
 - [OPA](https://www.openpolicyagent.org/)
+- [Terrascan](https://github.com/accurics/terrascan)
 - [Checkov](https://www.checkov.io/) 
 - [KubeSec]( https://kubesec.io/ )
 - [Kics](https://github.com/Checkmarx/kics)
