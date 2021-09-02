@@ -1,7 +1,7 @@
 # Cloud Custodian Joint-review 
 
 This joint-review relied heavily on the [self-assessment](https://docs.google.com/document/d/1s88ifDtFJzGX1O_ve6HM6_vbTkpsWDKWRDuxt9RHdcs) 
-provided by the Cloud Custodian (c7n) project. The TAG volunteers collaborated with the project volunteers to review the self-assessment, and discussed the
+provided by the Cloud Custodian (c7n) project. The Security TAG volunteers collaborated with the project volunteers to review the self-assessment, and discussed the
 operational scenarios pertinent to a typical c7n user.
 
 The general opinion of the volunteer review team is that the c7n project clearly demonstrates a commitment to security, and a willingness to improve security for the 
@@ -71,12 +71,13 @@ Cloud Custodian’s policy-as-code:
 
 Cloud Custodian is a YAML DSL-based stateless rules engine operated via a CLI, easily triggered from a cloud-resident cron task or containerized workload. 
 It supports the practice of policy-as-code — policy being expressed as rules that the CLI uses to check cloud configurations.  
-The code artifacts serve as documentation of the configuration policies in effect in a given environment. NOTE: Humans must map written compliance or security 
-documented policies to specific Custodian YAML first.
+The code artifacts serve as documentation of the configuration policies in effect in a given environment.
+
+NOTE: Humans must map written compliance or security documented policies to specific Custodian YAML first.
 
 At the moment, Cloud Custodian supports the most common public cloud providers: AWS, Azure, and GCP. Executed against these environments, 
-with the corresponding YAML rules, Cloud Custodian can check cloud settings via the clouds’ APIs for encryption and access requirements, 
-tagging policies, cost management, removal of abandoned resources, and automated scheduling of resources during off-hours.
+with the corresponding YAML rules, Cloud Custodian can check cloud settings via cloud APIs for encryption and access requirements, 
+tagging policies, cost management, removal of abandoned resources, and automated management of resources during off-hours.
 
 Custodian currently has [prototyped Kubernetes cluster support as documented here](https://github.com/cloud-custodian/cloud-custodian/pull/2760).
 
@@ -97,11 +98,11 @@ CIS Benchmark policy, or define remediation policies for policy violations.
 While it can be used as a security tool, the project itself has asserted it is useful for cost optimization and other non-security purposes. It might
 be more accurately described as a configuration checking tool, where security is just one type of configuration it can check. 
 
-It is left to the user to understand how to map security policy (in human terms) to configuration checks (c7n yaml policies).
+It is left to the user to understand how to map security policy in human terms to configuration checks in machine terms (c7n yaml policies).
 
-## Joint-review Use
+## Joint-Review Use
 
-This joint-review relied heavily on materials, primarily a [Google Doc](https://docs.google.com/document/d/1s88ifDtFJzGX1O_ve6HM6_vbTkpsWDKWRDuxt9RHdcs) 
+This joint-review relied heavily on materials, primarily a [Google Doc](https://docs.google.com/document/d/1s88ifDtFJzGX1O_ve6HM6_vbTkpsWDKWRDuxt9RHdcs), 
 created by the project team. This document does not intend to provide a security audit of c7n and is not intended to be used in lieu of a security audit. 
 This document provides users of c7n with a risk and threat overview of c7n. When taken with the self-assessment, this joint-review may provide the community 
 with context and a starting point as part of a formal security audit.
@@ -109,15 +110,16 @@ with context and a starting point as part of a formal security audit.
 ## Intended Use Case
 
 The intended use of Cloud Custodian is cloud management. In particular, Cloud Custodian allows users to audit, monitor, and operationalize configuration checks.
+
 Rules can be defined in the c7n yaml that define remediation actions when a rule is triggered based on configuration checks.
 
 ## Target Users
 
-Per the sig-security user personas, Cloud Custodian serves the needs of:
+Per the Security TAG user personas, Cloud Custodian serves the needs of:
 
 * Enterprise Operator: Cloud Custodian provides reporting and unified metrics that can be consumed by a variety of dashboard platforms, allowing an enterprise operator to not only survey and manage resources, but use the monitoring tools of their choice. This allows an Enterprise Operator to make administrative decisions and take action according to an organization’s policies.     
 * Quota Operator: Because Cloud Custodian leverages the simplicity of YAML and a CLI, a Quota Operator with more of a financial background than an engineering background can still use it. The same Custodian outputs the Enterprise Operator can use to produce a centralized survey of an organization’s resources and resource activity, a Quota Operator can use to determine resource boundaries from the same reports and metrics. When a resource exceeds its quota, Cloud Custodian can be configured to notify a Quota Operator of it.  
-* Third Party Security Product/System: Cloud Custodian’s YAML configuration file enables resource tagging based on filters, and depending on the policy, these tags can be configured to trigger specific actions. 
+* Third-Party Security Product/System: Cloud Custodian’s YAML configuration file enables resource tagging based on filters, and depending on the policy, these tags can be configured to trigger specific actions. 
 * Platform Implementer: Since Cloud Custodian enables event-based real-time policy enforcement, a Platform Implementer can use the CLI to serve the intersecting needs of the Enterprise Operator, Quota Operator, Security and Compliance Administrators, and Developers. Event-based and real-time Cloud Custodian policies can output reports and metrics for monitoring, respond to policy changes and tag affected resources, enforce compliance, and prevent development from unintentionally harming an organization’s cloud. 
 
 ### Target Capabilities and How Custodian Impacts. 
@@ -152,7 +154,7 @@ Per the sig-security user personas, Cloud Custodian serves the needs of:
 ## Operation
 
 Cloud Custodian can be bound to serverless event streams across multiple cloud providers that maps to security, operations, and governance use cases. 
-Custodian adheres to a compliance as code principle, so you can validate, dry-run, and review changes to your policies.
+Custodian adheres to a compliance-as-code principle, to allow validation, dry-run, and change control to policies.
 
 ## Project Design
 
@@ -183,13 +185,13 @@ Custodian adheres to a compliance as code principle, so you can validate, dry-ru
 | Cloud Functions     | “Serverless Computing is a compute service that lets you run code without provisioning or managing servers. Functions execute your code only when needed and scales automatically, from a few requests per day to thousands per second. You pay only for the compute time you consume - there is no charge when your code is not running. With AWS Lambda, you can run code for virtually any type of application or backend service - all with zero administration.”|
 | Configuration Rules | “Using Configurations, you can assess your resource configurations and resource changes for compliance against the built-in or custom rules.Create your own custom rules in functions as a service that define your internal best practices and guidelines for resource configurations.”|
 
-#### Security functions and features
+#### Security Functions and Features
 
 The project makes the following assumptions regarding mature operational practices when using Custodian in order to limit the attack surface: 
 
 * Hardened compute execution environment with minimal additional software components running and minimal inbound access.
 * Custodian requires cloud credentials (role, service account/principal) with elevated permissions for introspection and remediation. Access to those credentials should be restricted to the Custodian compute execution environment.
-* Custodian cloud credentials should be limited in scope to what is necessary for custodian policy execution, i.e., minimized access.
+* Custodian cloud credentials should be limited in scope to what is necessary for custodian policy execution, i.e. minimized access.
 * As the policy files are considered trusted inputs -- and per IaaC best practices -- an audit trail is implemented to validate the assurance of the supply chain through rigorous version and change control mechanisms.
 
 At a project level, to mitigate primary threats to the project and code, the project uses GitHub’s security alerts (dependabot) scanning for CVEs on the dependency graph. Additionally, PRs are reviewed by a growing number of committers to prevent malicious code to be accepted into the code base.
@@ -243,7 +245,7 @@ TTPs Considered include:
 
 ### Predisposing Conditions
 
-Custodian is intended to run in a trusted compute execution node with trusted inputs (policy YAML) and minimized cloud credentials. The dependencies of the python code, the python interpreter, and the python code comprising custodian itself must also be trusted.
+Custodian is intended to run in a trusted compute execution node with trusted inputs (policy YAML) and minimized cloud credentials. The dependencies of the python code and the python interpreter themselves must also be trusted.
 
 Custodian typically requires broad read access across an environment to inspect infrastructure configuration. Additionally, when evaluating a policy specifying remediation actions, credentials with write access are necessary.
 
@@ -251,13 +253,13 @@ A variety of potential attackers exist when Cloud Custodian is in use. Given Clo
 
 ### Expected Attacker Capabilities
 
-Per the principles of Zero Trust environments, we assume:
+Assumptions based on Zero Trust environments:
 
 * An attacker is already present within an organization’s cloud compute environments
 * An attacker potentially has access to cloud credentials
 * The Cloud Custodian execution environment has already been exploited
 
-Attackers could be insiders who already maintain regular privileged access to the environment and have reasonable familiarity with their organization’s deployment of Cloud Custodian. As such, it is expected these attackers will be intimately aware of the Cloud Custodian configuration, policies, deployment, serverless usage, and reporting integration. It is also assumed they also may retain ownership permissions to the repository where the configurations for the Cloud Custodian deployment are kept.
+Attackers could be insiders who already maintain regular privileged access to the environment and have reasonable familiarity with their organization’s deployment of Cloud Custodian. As such, it is expected these attackers will be intimately aware of the Cloud Custodian configuration, policies, deployment, serverless usage, and reporting integration. It is also assumed they may retain ownership permissions to the repository where the configurations for the Cloud Custodian deployment is kept.
 
 Since c7n does not run as a daemon exposed to the internet (or any network), a comprehensive analysis of an external attack is not covered within this document. By definition, a successful external attacker who gains access to the c7n execution environment will likely take advantage of the same attack paths as an insider.
 
@@ -285,7 +287,7 @@ _Example Attack Scenarios_
 
  ### Security Degradation
 
-The project itself is a key target. With a small community, and even smaller approver and project review team, the likelihood that malicious policy content or code or dependencies will be released is non-zero.  This would significantly compromise users of custodian who regularly update from the project git repository or use their python package distribution.
+The project itself is a key target. With a small community, and even smaller approver and project review team, the likelihood that malicious policy content or code or dependencies will be released is non-zero.  This would significantly compromise users of Custodian who regularly update from the project git repository or use their python package distribution.
 
 The policy content maintained by the organization is a secondary target.  Except at very large organizations, it is likely 1 or 2 users would maintain the entire policy repository with little to no oversight. It is unrealistic to expect smaller organizations to effectively review every policy change.
 
@@ -295,7 +297,7 @@ Probably the largest impact of an attack would be to allow attackers to effectiv
 
 ### Compensating Mechanisms
 
-There are few compensating mechanisms in place today.  The distribution package, commits, or policies are not cryptographically controlled and the python environment itself is difficult to place under a trusted computing base.  The project does use Github dependabot for CVE identification and PR generation, but only 3 PRs have been committed, the last in June 2021 at the time of this writing. Github actions are enabled for linting and SAST scans. It is unclear of any committers are dedicated to reviewing these results regularly. 
+The distribution package, commits, or policies are not cryptographically controlled and the python environment itself is difficult to place under a trusted computing base.  The project does use Github dependabot for CVE identification and PR generation, but only 3 PRs have been committed, the last in June 2021 at the time of this writing. Github actions are enabled for linting and SAST scans. It is unclear of any committers are dedicated to reviewing these results regularly. 
  
 In terms of Custodian’s runtime decision processing, Custodian does not use the cloud API source event as a sole basis for decisions. Instead, it will resolve any resources within the event by ID via the cloud control plane, obtaining the source of truth of the current state of the resource before evaluating the policy filters to ensure the resource matches. If all checks pass, Custodian then proceeds with actions. This does open up a TOCTOU attack, however.
  
@@ -339,11 +341,11 @@ Specific development practices and contact mechanisms are documented in the proj
 
 Mailing list: security@cloudcustodian.io
  
-Currently five(5) members made up of maintainers; Two members tasked with full time response as part of their job
+Currently, there are five total maintainers with two members tasked with full-time response as part of their job
  
 It is unclear if there is an embargo policy and what disclosure timelines are. The self-assessment does indicate "Emails are addressed within three business days" and that "A public disclosure date is then negotiated by the Cloud Custodian Security Team". Further clarity and following CNCF guidelines would be recommended.
  
-### Currently Open security issues and vulnerabilities
+### Currently Open Security Issues and Vulnerabilities
  
 As of September 2021, there are no published CVEs per: https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=%22custodian%22
 There are also no open dependabot PRs: https://github.com/cloud-custodian/cloud-custodian/pulls?q=is%3Apr+is%3Aopen+dependabot
@@ -497,12 +499,12 @@ Total: 32 (UNKNOWN: 0, LOW: 2, MEDIUM: 20, HIGH: 10, CRITICAL: 0)
 +----------------------+------------------+----------+--------------------------+---------------+--------------------------------+
 ```
  
-## Hands-on review
+## Hands-on Review
 
 Although some of the reviewes have previously used c7n in AWS, both as cli and in Lambda, Cloud Custodian did not receive a join hands-on review from TAG-Security.
 
 ## Roadmap
-The [project roadmap](https://github.com/cloud-custodian/cloud-custodian/projects) is broken out into core roadmap, as well as for individual infrastructure providers using GitHub projects. However the maintenance of this roadmap board seems a bit stale since the only In Progress item was last updated Jan 22, 2020.
+The [project roadmap](https://github.com/cloud-custodian/cloud-custodian/projects) is broken out into core roadmap, as well as for individual infrastructure providers using GitHub projects. However, the maintenance of this roadmap board seems a bit stale since the only In Progress item was last updated Jan 22, 2020.
 
 _Recommended Project Next Steps_
 
