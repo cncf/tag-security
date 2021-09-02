@@ -28,6 +28,7 @@
         "CNSWP",
         "CNSWP's",
         "SLSA",
-        "CNSMAP"
+        "CNSMAP",
+        "markdownlint"
     ]
 }
