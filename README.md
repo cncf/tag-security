@@ -329,6 +329,7 @@ If you are new, check out the [New Members Page](/NEW-MEMBERS.md).
 - Sunil Ravipati([@ai2017](https://github.com/ai2017)), Anthem AI
 - Ashish Rajan ([@hashishrajan](https://github.com/hashishrajan)), Cloud Security Podcast
 - Sayantani Saha ([@sayantani11](https://github.com/sayantani11))
+- Chetan Vyas ([@ChetanVyas](https://github.com/ChetanVyas))
   
 </details>
 <!-- markdownlint-enable MD013 -->
