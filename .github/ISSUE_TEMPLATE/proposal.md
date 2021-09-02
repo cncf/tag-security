@@ -26,7 +26,8 @@ Proposal to Project:
 
 * [ ] Added to the planned meeting template for _mm dd_
 * [ ] Raised in a Security TAG meeting to determine interest - _mm dd_
-* [ ] Collaborators comment on issue for determine interest and nominate project lead
+* [ ] Collaborators comment on issue for determine interest and nominate project
+  lead
 * [ ] Scope determined via meeting _mm dd_ and/or shared document *add link*
    with call for participation in #tag-security slack channel thread *add link*
    and mailing list email *add link*
@@ -37,7 +38,7 @@ TO DO
 - [ ] Security TAG Leadership Representative:
 - [ ] Project leader(s):
 - [ ] Issue is assigned to project leaders and Security TAG Leadership
-  Representative 
+  Representative
 - [ ] Project Members:
 - [ ] _Fill in addition TODO items here so the project team and community can
   see progress!_
