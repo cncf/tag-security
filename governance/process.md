@@ -183,7 +183,7 @@ line with the [mission and charter](charter.md).
 1. **Discuss the work at a meeting.** If an objection to a PR is made either in
    a comment of the PR or during a meeting, the person making the objection and
    the person making the proposal will be given time to present their view at
-   the next meeting. If there are not objections, or if all concerns have been
+   the next meeting. If there are no objections, or if all concerns have been
    addressed, and the Pull Request has been stable for 24 hours, a Chair will
    add it to the agenda for an upcoming meeting. Ideally, members who
    contributed to the project will attend that meeting to present their work or
