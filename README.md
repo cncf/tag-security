@@ -330,6 +330,7 @@ If you are new, check out the [New Members Page](/NEW-MEMBERS.md).
 - Ashish Rajan ([@hashishrajan](https://github.com/hashishrajan)), Cloud Security Podcast
 - Sayantani Saha ([@sayantani11](https://github.com/sayantani11))
 - Chetan Vyas ([@ChetanVyas](https://github.com/ChetanVyas))
+- axel simon ([@axelsimon](https://github.com/axelsimon)), Red Hat
   
 </details>
 <!-- markdownlint-enable MD013 -->
