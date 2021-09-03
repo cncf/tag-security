@@ -1,42 +1,46 @@
+<!-- if you edit this file, please add your name to the list below, so the
+cSpell spell checker won't try to correct them -->
+<!-- cSpell:ignore justincormack lizrice rficcaglia pushkarj achetal01 mlieberman85 -->
 # Related groups
 
 These are groups that are affiliated to or do work and cover topics relevant to
-the work of Security TAG
+the work of Security TAG.
 
 ## CNCF
 
 * [CNCF TAGs](https://github.com/cncf/toc#technical-advisory-groups):
   Technical Advisory Groups
-  * Security TAG members:
-    - [App-Delivery](https://github.com/cncf/tag-app-delivery) -
-    - [Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) -
-    - [Network](https://github.com/cncf/tag-network) -
-    - [Observability](https://github.com/cncf/tag-observability) -
-    - [Runtime](https://github.com/cncf/tag-runtime) -
-    - [Storage](https://github.com/cncf/tag-app-delivery) -
+  * [App-Delivery](https://github.com/cncf/tag-app-delivery)
+    * Security TAG members:
+  * [Contributor Strategy](https://github.com/cncf/tag-contributor-strategy)
+    * Security TAG members:
+  * [Network](https://github.com/cncf/tag-network)
+    * Security TAG members:
+  * [Observability](https://github.com/cncf/tag-observability)
+    * Security TAG members:
+  * [Runtime](https://github.com/cncf/tag-runtime)
+    * Security TAG members:
+  * [Storage](https://github.com/cncf/tag-app-delivery)
+    * Security TAG members:
 
 * [CNCF TOC](https://github.com/cncf/toc): Technical Oversight Committee
-<!-- cSpell:ignore justincormack lizrice -->
-* Security TAG members: @justincormack , @lizrice
+  * Security TAG members: @justincormack, @lizrice
 
 ## Kubernetes
 
 * [Kubernetes Policy Working Group](https://github.com/kubernetes/community/tree/master/wg-policy)
-<!-- cSpell:ignore rficcaglia -->
-* Security TAG members: @rficcaglia
+  * Security TAG members: @rficcaglia
 
 * [Kubernetes SIG-Auth](https://github.com/kubernetes/community/tree/master/sig-auth)
   * Security TAG members:
 
 * [Kubernetes SIG-Security](https://github.com/kubernetes/community/tree/master/sig-security)
-<!-- cSpell:ignore pushkarj -->
-* Security TAG members: @pushkarj
+  * Security TAG members: @pushkarj
 
 ## Industry
 
 * [Cloud Security Alliance Working Groups](https://cloudsecurityalliance.org/research/working-groups/)
-<!-- cSpell:ignore achetal01 -->
-* Security TAG members: @achetal01
+  * Security TAG members: @achetal01
 
 * [IEEE 7009](https://standards.ieee.org/develop/project/7009.html): Standard
   for Fail-Safe Design of Autonomous and Semi-Autonomous Systems Working Group
@@ -66,8 +70,7 @@ the work of Security TAG
   * Security TAG members:
 
 * [OpenSSF SLSA Maintainers](https://slsa.dev/)
-<!-- cSpell:ignore mlieberman85 -->
-* Security TAG members: @mlieberman85
+  * Security TAG members: @mlieberman85
 
 ## Don't see a group mentioned or notice a group that needs an update ?
 
