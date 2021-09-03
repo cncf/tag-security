@@ -181,7 +181,7 @@ Policy is an essential component of a secure system.
 
 [Bi-weekly
 meetings](https://docs.google.com/document/d/1ihFfEfgViKlUMbY2NKxaJzBkgHh-Phk5hqKTzK-NEEs/edit?usp=sharing)
-at 3:00pm PT focus on policy concerns and initiatives.
+at 3:00 PM PT focus on policy concerns and initiatives.
 
 Co-leads
 
@@ -199,6 +199,19 @@ Facilitator: Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)),
 New York University
 
 Co-chair representative: @lumjjb
+
+#### Software Supply Chain Security
+
+Software [Supply Chain attacks have come to the wider community's attention
+following recent high-profile attack, but have been an ongoing threat for a long
+time. With the ever growing importance of free and open source software,
+software [supply chain security](./supply-chain-security) is crucial,
+particularly in cloud native environments where everything is software-defined.
+
+Weekly meetings at 8:00 AM PT (50 min) (see your timezone [here](https://time.is/0800_today_in_PT?CNCF_Security_TAG_Supply_Chain_WG_Meeting))
+See [CNCF calendar](https://www.cncf.io/calendar/) for invite.
+
+Facilitator: Brandon Lum, IBM
 
 ### STAG members
 
