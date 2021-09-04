@@ -322,7 +322,24 @@ Never allow Cloud Custodian to have more than Poll mode access to prevent a Deni
 
 In addition to the components table above, the MITRE ATT&CK TTPS considered above, and the STRIDE evaluation above, below is an overview of key attack boundaries and data flows:
  
-<<INSERT IMAGE>>
+![attack paths](c7n_attacks.png)
+ 
+ Interesting sequences may include:
+ 
+ - A->G
+ - A->H
+ - B->G
+ - B->D (->G see below)
+ - B->E (->F see below)
+ - B->E (->G see below)
+ - B->F
+ - B->G->B
+ - (C | D)->G
+ - (C | D)->H
+ - E->F
+ - E->G
+ - E->H
+ - G->E (ie modify the sls image or code fork)
  
 # Secure Development Practices
  
