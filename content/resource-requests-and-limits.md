@@ -12,6 +12,7 @@ autoscaling to exhaust compute resources) issue.
 ## Projects
 - [Conftest](https://www.conftest.dev/)
 - [OPA](https://www.openpolicyagent.org/)
+- [Terrascan](https://github.com/accurics/terrascan)
 - [Checkov](https://www.checkov.io/)
 - [KubeSec]( https://kubesec.io/ )
 - [Kics](https://github.com/Checkmarx/kics)
