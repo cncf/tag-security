@@ -1133,16 +1133,16 @@ It is critical to note, however, that organizations are entirely responsible for
     For more on this: [Reproducible-builds.org](https://reproducible-builds.org) is a great resource with details on many of the considerations and changes necessary to accomplish reproducible builds. Debian ([https://wiki.debian.org/ReproducibleBuilds](https://wiki.debian.org/ReproducibleBuilds)) and Arch Linux ([https://wiki.archlinux.org/index.php/Reproducible_Builds](https://wiki.archlinux.org/index.php/Reproducible_Builds)) also maintain documentation on how they are working to make every package they maintain reproducible.
 
 [^41]:
-     [https://diffoscope.org/](https://diffoscope.org/)
+     https://diffoscope.org/
 
 [^42]:
-     [https://wiki.debian.org/ReproducibleBuilds/BuildinfoFiles](https://wiki.debian.org/ReproducibleBuilds/BuildinfoFiles)
+     https://wiki.debian.org/ReproducibleBuilds/BuildinfoFiles
 
 [^43]:
-     [https://www.vagrantup.com/](https://www.vagrantup.com/)
+     https://www.vagrantup.com/
 
 [^44]:
-     [https://github.com/kpcyrd/rebuilderd](https://github.com/kpcyrd/rebuilderd)
+     https://github.com/kpcyrd/rebuilderd
 
 [^45]:
      https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png
@@ -1154,67 +1154,67 @@ It is critical to note, however, that organizations are entirely responsible for
     https://spiffe.io/book/
 
 [^48]:
-     [https://theupdateframework.io/security/](https://theupdateframework.io/security/)
+     https://theupdateframework.io/security/
 
 [^49]:
      https://github.com/grafeas/kritis
 
 [^50]:
-     [https://github.com/opencontainers/artifacts/blob/a56aaad3afb5bab321644e3508f76d915031b3da/artifact-manifest/artifact-manifest.md](https://github.com/opencontainers/artifacts/blob/a56aaad3afb5bab321644e3508f76d915031b3da/artifact-manifest/artifact-manifest.md)
+     https://github.com/opencontainers/artifacts/blob/a56aaad3afb5bab321644e3508f76d915031b3da/artifact-manifest/artifact-manifest.md
 
 [^51]:
-     [https://theupdateframework.io/security/#attacks-and-weaknesses](https://theupdateframework.io/security/#attacks-and-weaknesses)
+     https://theupdateframework.io/security/#attacks-and-weaknesses
 
 [^52]:
-     [https://github.com/in-toto/docs/blob/master/in-toto-spec.md#52-verifying-the-final-product](https://github.com/in-toto/docs/blob/master/in-toto-spec.md#52-verifying-the-final-product)
+     https://github.com/in-toto/docs/blob/master/in-toto-spec.md#52-verifying-the-final-product
 
 [^53]:
-     [https://github.com/in-toto/in-toto](https://github.com/in-toto/in-toto)
+     https://github.com/in-toto/in-toto
 
 [^54]:
-     [https://github.com/in-toto/in-toto-golang](https://github.com/in-toto/in-toto-golang)
+     https://github.com/in-toto/in-toto-golang
 
 [^55]:
      https://theupdateframework.github.io/specification/latest/index.html
 
 [^56]:
-     [https://github.com/theupdateframework/tuf](https://github.com/theupdateframework/tuf)
+     https://github.com/theupdateframework/tuf
 
 [^57]:
-     [https://github.com/theupdateframework/go-tuf](https://github.com/theupdateframework/go-tuf)
+     https://github.com/theupdateframework/go-tuf
 
 [^58]:
-     [https://github.com/awslabs/tough](https://github.com/awslabs/tough)
+     https://github.com/awslabs/tough
 
 [^59]:
-     [https://github.com/php-tuf/php-tuf](https://github.com/php-tuf/php-tuf)
+     https://github.com/php-tuf/php-tuf
 
 [^60]:
-     [https://www.datadoghq.com/blog/engineering/secure-publication-of-datadog-agent-integrations-with-tuf-and-in-toto/](https://www.datadoghq.com/blog/engineering/secure-publication-of-datadog-agent-integrations-with-tuf-and-in-toto/)
+     https://www.datadoghq.com/blog/engineering/secure-publication-of-datadog-agent-integrations-with-tuf-and-in-toto/
 
 [^61]:
-     [https://github.com/in-toto/ITE/blob/master/ITE/2/README.adoc](https://github.com/in-toto/ITE/blob/master/ITE/2/README.adoc)
+     https://github.com/in-toto/ITE/blob/master/ITE/2/README.adoc
 
 [^62]:
-     [https://github.com/in-toto/ITE/blob/master/ITE/3/README.adoc](https://github.com/in-toto/ITE/blob/master/ITE/3/README.adoc)
+     https://github.com/in-toto/ITE/blob/master/ITE/3/README.adoc
 
 [^63]:
-     Link here: ternhttps://github.com/tern-tools/tern
+     https://github.com/tern-tools/tern
 
 [^64]:
-     Link here: syfthttps://github.com/anchore/syft
+     https://github.com/anchore/syft
 
 [^65]:
-     [https://docs.docker.com/develop/develop-images/dockerfile_best-practices/](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+     https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
 
 [^66]:
-     [https://sysdig.com/blog/dockerfile-best-practices/#4-2](https://sysdig.com/blog/dockerfile-best-practices/#4-2)
+     https://sysdig.com/blog/dockerfile-best-practices/#4-2
 
 [^67]:
-     [https://dockersl.im/](https://dockersl.im/)
+     https://dockersl.im/
 
 [^68]:
-     [https://github.com/grycap/minicon](https://github.com/grycap/minicon)
+     https://github.com/grycap/minicon
 
 [^69]:
      Scanning results may be impacted if information is stripped and therefore difficult to replicate container image scanning.
