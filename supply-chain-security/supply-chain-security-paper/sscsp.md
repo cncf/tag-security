@@ -877,7 +877,7 @@ TUF has also been used to bootstrap trust in delivering software supply chain me
 
 **What is sigstore?**
 
-[https://sigstore.dev/what_is_sigstore/](https://sigstore.dev/what_is_sigstore/)
+[https://docs.sigstore.dev/](https://docs.sigstore.dev/)
 
 **Google Binary Authorization/SLSA**
 
