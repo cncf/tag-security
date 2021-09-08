@@ -158,7 +158,7 @@ More detailed security considerations are addressed in the specification:
 
     <ins>When CNB tooling is improperly configured or the tooling itself is compromised</ins>, we assume that an attacker may be able to compromise any number of applications on the registry, build infrastructure that is exposed to untrusted code, and supply chains involving compromised images. 
 
-* **_Attack Risks and Effects**
+* **Attack Risks and Effects**
 
     Supply-chain attacks are incredibly risky. Many enterprises rate them as potential company-ending-events. Not only could they lead to complete compromise of any data or infrastructure systems that application code has access to, but they could lead to compromise of customer systems when compromised products are distributed to customers in the form of pre-built images.
 
@@ -168,7 +168,7 @@ More detailed security considerations are addressed in the specification:
 
     Build system vulnerabilities could lead to risky supply-chain attacks, but they could also lead to less risky scenarios such as denial of service or improper use of resources.
 
-* **_Security Degradation**
+* **Security Degradation**
 
     If an attacker is able to obtain registry credentials, then all applications on the registry may be compromised. However, build infrastructure would not necessarily be compromised unless it executes images on the registry with privileges.
 
