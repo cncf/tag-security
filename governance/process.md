@@ -75,7 +75,7 @@ line with the [mission and charter](charter.md).
    A) On slack, share the issue link and ask whether others are interested in
    the problem, if so, refer them to the issue which has content on
    discussions/meetings where the issue will be introduced or where to stay
-   tuned for more information. provide the issue link and encourage any feedback
+   tuned for more information. Provide the issue link and encourage any feedback
    on your proposed solution or activity.
 
    B) Choose an upcoming meeting where you or another group member who is
@@ -90,7 +90,7 @@ line with the [mission and charter](charter.md).
      outcome, ideas that they have for how it might happen, and ask if others
      have ideas or questions.
    * After a short discussion, people should be invited to chime in on the
-     github issue and also mention of they are interested in collaborating. This
+     github issue and also mention if they are interested in collaborating. This
      ensures that solutions are created with multiple perspectives as well as
      verifies there is community interest and energy to work on the proposal.
 
