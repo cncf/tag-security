@@ -8,11 +8,12 @@ are produced can be found in the [guide](/assessments/guide).
 
 | Project | Type | dtd |
 | ------- | ---- | --- |
-| in-toto | [Joint Review](in-toto) | 2019 MAY |
-| OPA | [Joint Review](opa) | 2019 SEPTEMBER |
-| SPIFFE/SPIRE | [Joint Review](spiffe-spire) | 2020 FEBRUARY 26 |
-| Harbor | [Joint Review](harbor) | 2020 APRIL 28 |
-| Keycloak | [Joint Review](keycloak) | 2020 OCTOBER |
+| Cloud Native Buildpacks | [Joint Review](buildpacks) | 2021 September |
+| Harbor | [Joint Review](harbor) | 2020 April |
+| in-toto | [Joint Review](in-toto) | 2019 May |
+| Keycloak | [Joint Review](keycloak) | 2020  |
+| Open Policy Agent | [Joint Review](opa) | 2019 September |
+| SPIFFE/SPIRE | [Joint Review](spiffe-spire) | 2020 February |
 
 ## CNCF project audits
 
