@@ -1,11 +1,10 @@
-# Cloud Custodian Joint-review 
+# Cloud Custodian Joint-review
 
-This joint-review relied heavily on the [self-assessment](https://docs.google.com/document/d/1s88ifDtFJzGX1O_ve6HM6_vbTkpsWDKWRDuxt9RHdcs) 
-provided by the Cloud Custodian (c7n) project. The Security TAG volunteers collaborated with the project volunteers to review the self-assessment, and discussed the
-operational scenarios pertinent to a typical c7n user.
+This joint-review relied heavily on the [self-assessment](https://docs.google.com/document/d/1s88ifDtFJzGX1O_ve6HM6_vbTkpsWDKWRDuxt9RHdcs)
+provided by the Cloud Custodian (c7n) project. The Security TAG volunteers collaborated with the project volunteers to review the self-assessment, 
+and discussed the operational scenarios pertinent to a typical c7n user.
 
-The general opinion of the volunteer review team is that the c7n project clearly demonstrates a commitment to security, and a willingness to improve security for the 
-benefit of the user community.  That said, the project volunteers could use additional security volunteers to assist in ongoing reviews, security control 
+The general opinion of the volunteer review team is that the c7n project clearly demonstrates a commitment to security, and a willingness to improve security for the benefit of the user community.  That said, the project volunteers could use additional security volunteers to assist in ongoing reviews, security control 
 enhancements, and when needed to debug and fix security flaws.  As a utility tool, the review team feels the primary threat to the project is compromise of the code
 itself, and packaging and distribution of the tool or its dependencies - rather than an attack on individual c7n deployments. A secondary concern would the disabling
 or DoS of a deployment by an internal or external actor - thus giving the user a false sense of security when c7n is disabled. A tertiary concern is the
@@ -211,6 +210,9 @@ As of September 2021 there is no external audit or compliance report available t
 [A threat model was constructed previously by the project](https://docs.google.com/document/d/1S9zQZaT6G1TA3IAx6YNL0f7G938xaFZ-bziszhuxMZg/).
 
 ## Security Analysis
+
+![threat overview](c7n_threat_assessment.png)
+
 
 ### Attacker Motivations
 
