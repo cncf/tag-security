@@ -21,7 +21,7 @@ Project Web site: [buildpacks.io](https://buildpacks.io/)
 
 The Cloud Native Buildpacks project provides tooling to transform source code into container images using modular, reusable build functions called _buildpacks_. The project takes advantage of advanced features in the OCI image standard that are underutilized in the Dockerfile model.
 
-The project’s advanced maturity and adoption is showcased by its maintainers adherence to secure software development best practices as well as its security issue resolution. 
+The project’s advanced maturity and adoption is showcased by its maintainers adherence to secure software development best practices.
 
 ## Maturity and ecosystem adoption
 
@@ -45,7 +45,7 @@ All questions from reviewers were addressed in [self-assessment](self-assessment
 
 ### Recommendations to the project team
 
-Work towards the next level (silver) Core Infrastructure Best Practices badge.
+Continue to work towards the next level (silver) Core Infrastructure Best Practices badge.
 
 ### Recommendations to the CNCF
 
