@@ -43,6 +43,18 @@ from their repo into the self-assessment.
 
 ## Metadata
 
+### The review
+
+A table with specific information concerning the review of the project
+|  |  |
+| -- | -- |
+| Project Security Lead | $GITHUBHANDLE |
+| Security TAG Lead Reviewer | $GITHUBHANDLE |
+| Additional Reviewers | $GITHUBHANDLE, $GITHUBHANDLE, etc. |
+| Date of Review Closure | $DATE review was submitted for PR | 
+
+### The project
+
 A table at the top for quick reference information, later used for indexing.
 
 |   |  |
