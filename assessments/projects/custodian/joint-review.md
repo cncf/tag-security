@@ -32,6 +32,7 @@ pursuing this as a follow up with appropriate CNCF support and guidance.
 * [Cloud Custodian Joint-review](#cloud-custodian-joint-review)
    * [Table of Contents](#table-of-contents)
    * [Metadata](#metadata)
+   * [Reviewers and Participants](#reviewers-and-participants)
       * [Security links](#security-links)
    * [Overview](#overview)
       * [Background](#background)
@@ -71,8 +72,6 @@ pursuing this as a follow up with appropriate CNCF support and guidance.
       * [Recommended CNCF Requests](#recommended-cncf-requests)
    * [Appendix](#appendix)
       * [Case Studies](#case-studies)
-      * [Related Projects / Vendors](#related-projects--vendors)
-
 
 
 ## Metadata
@@ -85,6 +84,18 @@ pursuing this as a follow up with appropriate CNCF support and guidance.
 | TAG-Security Assessment Request | https://github.com/cncf/tag-security/issues/307 |
 | Self-Assessment Document        | https://docs.google.com/document/d/1s88ifDtFJzGX1O_ve6HM6_vbTkpsWDKWRDuxt9RHdcs/ |
 | SBOM                            | [poetry configuration in pyproject.toml](https://github.com/cloud-custodian/cloud-custodian/blob/master/pyproject.toml), [poetry lock file](https://github.com/cloud-custodian/cloud-custodian/blob/master/poetry.lock), [pip requirements file](https://github.com/cloud-custodian/cloud-custodian/blob/master/requirements.txt), [release process](https://cloudcustodian.io/docs/developer/packaging.html) |
+
+## Reviewers and Participants
+
+* Security Review Lead:
+* Security Co-Lead:
+* Security Co-Lead:
+* Security Reviewer:
+* Security Reviewer:
+* Project Lead:
+* Project Member:
+* Project Member:
+
 
 ### Security links
 
