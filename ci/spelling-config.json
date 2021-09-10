@@ -32,6 +32,7 @@
         "SBOM",
         "Flibble",
         "minimalistic",
-        "usecase"
+        "usecase",
+        "markdownlint"
     ]
 }
