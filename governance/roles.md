@@ -93,8 +93,11 @@ The general list of activities for TL are:
 * Propose agenda items for meetings to ensure that open issues are
   discussed with the group when needed
 
-TLs are assigned by CNCF Technical Oversight Committee
-(see [CNCF TAG Tech Lead nomination and election process](https://github.com/cncf/toc/blob/master/tags/cncf-tags.md#elections)).
+TLs are assigned by CNCF Technical Oversight Committee (see [CNCF TAG Tech Lead
+nomination and election
+process](https://github.com/cncf/toc/blob/master/tags/cncf-tags.md#elections))
+following the [Security TAG's TL nomination
+process](tech-lead-proposal-processd.md).
 
 ## Role of chair emeriti
 
