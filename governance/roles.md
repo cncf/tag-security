@@ -87,9 +87,9 @@ must have a TL or Chair working as an active sponsor (as detailed in
 
 The general list of activities for TL are:
 
-* Establish new subprojects
-* Decommission existing subprojects
-* Resolve cross-subproject technical issues and decisions
+* Establish new sub-projects
+* Decommission existing sub-projects
+* Resolve cross-sub-project technical issues and decisions
 * Propose agenda items for meetings to ensure that open issues are
   discussed with the group when needed
 
@@ -97,7 +97,7 @@ TLs are assigned by CNCF Technical Oversight Committee (see [CNCF TAG Tech Lead
 nomination and election
 process](https://github.com/cncf/toc/blob/master/tags/cncf-tags.md#elections))
 following the [Security TAG's TL nomination
-process](tech-lead-proposal-processd.md).
+process](tech-lead-proposal-process.md).
 
 ## Role of chair emeriti
 

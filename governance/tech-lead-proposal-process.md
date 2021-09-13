@@ -1,3 +1,4 @@
+<!-- cSpell:ignore chairpersonship -->
 # Security TAG Technical Lead Proposal Process
 
 Security Technical Leads operate as a team alongside the Co-Chairs. The Co-Chair
@@ -10,7 +11,8 @@ successful.
 ## Caveats of Technical Leads
 
 * The position of a technical lead does not guarantee future co-chairpersonship
-* The position of a technical lead is not a paid position (co-chairs are also not paid positions)
+* The position of a technical lead is not a paid position (co-chairs are also
+  not paid positions)
 * Technical leads [have responsibilities](roles.md) to the Security TAG, the
   leadership team, and the TOC
 * Nominations by the community (with co-chair endorsement) or co-chairs still
@@ -31,7 +33,7 @@ process](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md#elections).
 ### Nominees by community
 
 Community nominees should adhere to the technical lead nomination requirements
-described below. 
+described below.
 
 The co-chairs' reserve the right to endorse a nominee by the community based on:
 
@@ -39,7 +41,7 @@ The co-chairs' reserve the right to endorse a nominee by the community based on:
 * Company diversity
 * Geo diversity
 * Amount of nominations from different companies, people, regions for a single
-  individual 
+  individual
 * Existing body of work
 * Justification provided during nomination
 
@@ -52,17 +54,17 @@ within the next month in order conform to the TOC process.
 ### Nominees by co-chairs
 
 Nominees by co-chairs adhere to the technical lead requirements described below.
-Co-chairs are responsibile for documenting statistic information of all nominee
+Co-chairs are responsible for documenting statistic information of all nominee
 types for endorsement and presentation to the TOC.
 
-####  Endorsement of community nominees
+#### Endorsement of community nominees
 
 Co-chairs are responsible for providing endorsement of a community nominee to
-show concurrence and support. 
+show concurrence and support.
 
 If no nominees are submitted by the community either as a result of lack of
 participation, lack of requirements, or from co-chair specific selection
-(non-community nomination process), the co-chairs must endevour to nominate an
+(non-community nomination process), the co-chairs must endeavor to nominate an
 individual(s) that meet as many of the requirements as exist.
 
 ## Technical Lead nomination requirements
@@ -76,6 +78,7 @@ review the nomination and justification to determine if enough intent and
 commitment is present to move forward with an endorsement.
 
 Nominees must:
+<!--markdownlint-disable MD005 MD007 -->
 
 * have been project or review lead on at least one project or security assessment/review
 * be the author of at least one pull request against the Security TAG repository
@@ -85,6 +88,7 @@ Nominees must:
  * commenting on PRs and issues to drive suggestions to proposals, define scope,
    resolve clarity issues, etc.
 * agree to the nomination
+<!-- markdownlint-enable MD005 MD007 -->
 
 Nominations must:
 
@@ -96,8 +100,8 @@ Nominations must:
 To ensure nominations are thoughtful and supported, in addition to the above
 requirements, a justification must enumerate on the nominee's:
 
-* STAG Community involvement, 
-* leadership skills, 
+* STAG Community involvement,
+* leadership skills,
 * conflict resolution (technical and non-technical),
-* mentorship, willingness to learn and expand existing technical knowledge, 
+* mentorship, willingness to learn and expand existing technical knowledge,
 * and any known affiliations or group memberships (if applicable)
