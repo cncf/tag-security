@@ -10,7 +10,7 @@ successful.
 
 ## Caveats of Technical Leads
 
-* The position of a technical lead does not guarantee future co-chairpersonship
+* The position of a technical lead does not guarantee future co-chair nomination
 * The position of a technical lead is not a paid position (co-chairs are also
   not paid positions)
 * Technical leads [have responsibilities](roles.md) to the Security TAG, the
@@ -33,9 +33,10 @@ process](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md#elections).
 ### Nominees by community
 
 Community nominees should adhere to the technical lead nomination requirements
-described below.
+described below. Any individual who is a member of the Security TAG list or the
+tag-security slack channel may nominate another individual.
 
-The co-chairs' reserve the right to endorse a nominee by the community based on:
+The co-chairs reserve the right to endorse a nominee by the community based on:
 
 * Gender diversity
 * Company diversity
@@ -51,11 +52,14 @@ Community nominations will to run for at least 1 month with a maximum up to 2
 months. Upon close of nominations a decision will be made by the co-chairs
 within the next month in order conform to the TOC process.
 
-### Nominees by co-chairs
+#### Submitting a nomination
 
-Nominees by co-chairs adhere to the technical lead requirements described below.
-Co-chairs are responsible for documenting statistic information of all nominee
-types for endorsement and presentation to the TOC.
+Nominations are to be submitted to [Security TAG Co-Chairs email alias](mailto:cncf-tag-security-chairs@lists.cncf.io) with the details:
+
+* Subject "Technical Lead nomination: $NAME-OF-NOMINEE"
+* CC the nominee
+* TL requirements with examples (described below)
+* Justification
 
 #### Endorsement of community nominees
 
@@ -66,6 +70,12 @@ If no nominees are submitted by the community either as a result of lack of
 participation, lack of requirements, or from co-chair specific selection
 (non-community nomination process), the co-chairs must endeavor to nominate an
 individual(s) that meet as many of the requirements as exist.
+
+### Nominees by co-chairs
+
+Nominees by co-chairs adhere to the technical lead requirements described below.
+Co-chairs are responsible for documenting statistic information of all nominee
+types for endorsement and presentation to the TOC.
 
 ## Technical Lead nomination requirements
 
@@ -100,8 +110,16 @@ Nominations must:
 To ensure nominations are thoughtful and supported, in addition to the above
 requirements, a justification must enumerate on the nominee's:
 
-* STAG Community involvement,
-* leadership skills,
-* conflict resolution (technical and non-technical),
-* mentorship, willingness to learn and expand existing technical knowledge,
+* STAG Community involvement
+* leadership skills
+* conflict resolution (technical and non-technical)
+* mentorship
+* willingness to learn and expand existing technical knowledge
 * and any known affiliations or group memberships (if applicable)
+
+## Announcing nomination results
+
+The co-chairs will release aggregate information about the nominees at the end
+of the nomination process once the Technical Leads have been put forward for
+approval by the TOC. Aggregate information will not include who nominated
+someone.
