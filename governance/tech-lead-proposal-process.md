@@ -1,4 +1,4 @@
-<!-- cSpell:ignore chairpersonship markdownlint-->
+<!-- cSpell:ignore chairpersonship markdownlint -->
 # Security TAG Technical Lead Proposal Process
 
 Security Technical Leads operate as a team alongside the Co-Chairs. The Co-Chair
