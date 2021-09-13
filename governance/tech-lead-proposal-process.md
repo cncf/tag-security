@@ -54,7 +54,8 @@ within the next month in order conform to the TOC process.
 
 #### Submitting a nomination
 
-Nominations are to be submitted to [Security TAG Co-Chairs email alias](mailto:cncf-tag-security-chairs@lists.cncf.io) with the details:
+Nominations are to be submitted to [Security TAG Co-Chairs email
+alias](mailto:cncf-tag-security-chairs@lists.cncf.io) with the details:
 
 * Subject "Technical Lead nomination: $NAME-OF-NOMINEE"
 * CC the nominee
