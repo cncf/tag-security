@@ -48,9 +48,9 @@ The co-chairs reserve the right to endorse a nominee by the community based on:
 
 #### Community timeline
 
-Community nominations will to run for at least 1 month with a maximum up to 2
+Community nominations will run for at least 1 month with a maximum up to 2
 months. Upon close of nominations a decision will be made by the co-chairs
-within the next month in order conform to the TOC process.
+within the next month in order to conform to the TOC process.
 
 #### Submitting a nomination
 
