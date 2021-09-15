@@ -534,7 +534,7 @@ possibilities.
   and executed when triggered.
 * Alternatively, use lambda:UpdateFunctionCode to update code for an existing
   Lambda Function which would bypass the need for iam:PassRole. Then use
-  lambda:InvokeFunction to invoke whatever code that you want using the IAM role
+  `lambda:InvokeFunction` to invoke whatever code that you want using the IAM role
   that the Lambda Function is already attached to.  The `iam:PassRole` permissions
   are only checked at function creation, not when the function is updated.
 * Attacker uses a Cloud Custodian Lambda function to leverage (`iam:PassRole`) to
