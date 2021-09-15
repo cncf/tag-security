@@ -522,7 +522,7 @@ possibilities.
   Lambda Function's concurrency setting to `0` which would disable event based
   compliance checking.
 * Information Disclosure: Redirecting Cloud Custodian log output
-  (logs:CreateLogStream, logs:PutLogEvents, logs:CreateLogGroup) to a
+  (`logs:CreateLogStream`, `logs:PutLogEvents`, `logs:CreateLogGroup`) to a
   misconfigured or non-compliant S3 bucket (CLI: `custodian run --output-dir
   s3://<my-bucket>/<my-prefix> <policyfile>.yml`), revealing to an attacker
   detailed metadata about the cloud environment as well as positive Cloud
