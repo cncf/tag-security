@@ -87,15 +87,13 @@ pursuing this as a follow up with appropriate CNCF support and guidance.
 
 ## Reviewers and Participants
 
-* Security Review Lead:
-* Security Co-Lead:
-* Security Co-Lead:
-* Security Reviewer:
-* Security Reviewer:
-* Project Lead:
-* Project Member:
-* Project Member:
+|  |  |
+| -- | -- |
+| Project Security Lead | @kapilt |
+| Security TAG Lead Reviewer | @rficcaglia |
+| Additional Reviewers | @iaxes, @chasemp, @itaysk, @ultrasaurus |
 
+(Date of review closure can/should be determined directly from Git commit timestamps.)
 
 ### Security links
 
