@@ -529,7 +529,7 @@ possibilities.
   s3://<my-bucket>/<my-prefix> <policyfile>.yml`), revealing to an attacker
   detailed metadata about the cloud environment as well as positive Cloud
   Custodian findings on how it is non-compliant (i.e. vulnerable).
-* Spoofing, Elevation of Privileges: Use lambda:CreateFunction and
+* Spoofing, Elevation of Privileges: Use `lambda:CreateFunction` and
   lambda:InvokeFunction, thereby allowing for arbitrary code to be introduced
   and executed when triggered.
 * Alternatively, use lambda:UpdateFunctionCode to update code for an existing
