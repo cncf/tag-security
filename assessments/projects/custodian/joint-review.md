@@ -91,7 +91,7 @@ pursuing this as a follow up with appropriate CNCF support and guidance.
 | -- | -- |
 | Project Security Lead | @kapilt |
 | Security TAG Lead Reviewer | @rficcaglia |
-| Additional Reviewers | @iaxes, @chasemp, @itaysk, @ultrasaurus |
+| Additional Reviewers | @iaxes, @chasemp, @itaysk, @ultrasaurus, @TheFoxAtWork |
 
 (Date of review closure can/should be determined directly from Git commit timestamps.)
 
