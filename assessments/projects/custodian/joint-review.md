@@ -104,7 +104,7 @@ pursuing this as a follow up with appropriate CNCF support and guidance.
 
 ## Overview
 
-Cloud Custodian is a YAML DSL-based stateless rules engine for cloud auditing,
+Cloud Custodian is a YAML domain specific language (DSL)-based stateless rules engine for cloud auditing,
 management, and governance.
 
 Cloud Custodian’s policy-as-code:
@@ -145,7 +145,7 @@ Cloud Custodian integrates with the cloud APIs of each provider to provide
 checks for enforcement of resource provisioning and configuration policy goals.
 It can be run as a simple cron job on a server to execute against existing
 resources.  Cloud Custodian is essentially a rules engine for managing public
-cloud accounts and resources. It allows users to define custom yaml policies as
+cloud accounts and resources. It allows users to define custom YAML policies as
 code.  It fills a gap where someone needs rules to constrain resource
 deployment and needs to detect and/or remediate unexpected or unauthorized
 resource configuration changes, both in a single cloud or multi-cloud
@@ -165,7 +165,7 @@ accurately described as a configuration checking tool, where security is just
 one type of configuration it can check.
 
 It is left to the user to understand how to map security policy in human terms
-to configuration checks in machine terms (c7n yaml policies).
+to configuration checks in machine terms (c7n YAML policies).
 
 ## Joint-Review Use
 
@@ -183,7 +183,7 @@ The intended use of Cloud Custodian is cloud management. In particular, Cloud
 Cloud Custodian allows users to audit, monitor, and operationalize configuration
 checks.
 
-Rules can be defined in the c7n yaml that define remediation actions when a
+Rules can be defined in the c7n YAML that define remediation actions when a
 rule is triggered based on configuration checks.
 
 ## Target Users
@@ -309,7 +309,7 @@ Architecture (ZTA).
 
 Cloud Custodian requires a cloud provider IAM policy to access the resources
 (via API) that it needs to check.  In remediation cases, it will need write
-access.  Cloud Custodian needs a policy yaml available to it from the shell.
+access.  Cloud Custodian needs a policy YAML available to it from the shell.
 Logs may be created (via stdout or specific cloud logging mechanisms) and these
 need to be configured and provisioned accordingly (including the filtering of
 any sensitive data based on logging verbosity.)  The sensitivity of the
@@ -380,7 +380,7 @@ TTPs Considered include:
   Modification](https://attack.mitre.org/techniques/T1484/) - certainly if c7n
   is running with an IAM/AD/LDAP role with write permissions to access control
   services, c7n itself could be used for privilege elevation attacks, simply by
-  manipulating the c7n policy yaml. See Valid Accounts item below.
+  manipulating the c7n policy YAML. See Valid Accounts item below.
 * [Implant Internal Image](https://attack.mitre.org/techniques/T1525/) - it is
   plausible that a docker or other container distribution of c7n could become
   available which is malicious.  Inspection of running containers could be
@@ -397,11 +397,11 @@ TTPs Considered include:
   to resources and other accounts and security services.
 * [Impair Defenses](https://attack.mitre.org/techniques/T1562/) - certainly
   attackers may attempt to disable or impede c7n, either by preventing
-  execution, or by tampering with the yaml file content, or to prevent alerting
+  execution, or by tampering with the YAML file content, or to prevent alerting
   or remediation mechanisms, or to DoS the resources running c7n.  Worse, if
   write permissions are granted to c7n's service/user role, c7n itself could be
   used to disable or impede other security services.  Even innocuous additions
-  to policy yaml could be perceived as legitimate attempts to increase security,
+  to policy YAML could be perceived as legitimate attempts to increase security,
   but could be abused to increase noise-to-signal and lull DevSecOps into
   ignoring "false alarms" or induce alert fatigue. There should be a thoughtful
   balance of actively monitoring c7n alerts to ensure proper controls and
@@ -412,7 +412,7 @@ TTPs Considered include:
   Destruction](https://attack.mitre.org/techniques/T1485/) - as with Account
   Manipulation, if c7n is running with an IAM/AD/LDAP role with write
   permissions to IaaS or PaaS services, c7n itself could be used for
-  infrastructure attacks, simply by manipulating the c7n policy yaml. This
+  infrastructure attacks, simply by manipulating the c7n policy YAML. This
   includes creating temporary resources for staging exfiltration, or deleting
   data storage resources.
 * [Unused Cloud Regions](https://attack.mitre.org/techniques/T1535/) -
@@ -425,7 +425,7 @@ TTPs Considered include:
   credentials in scripts or repos, exposing potentially expansive permissions.
 * [Discovery](https://attack.mitre.org/tactics/TA0007/) - broadly speaking, all
   of the techniques enumerated under the Discovery tactic are exposed by a
-  malicious c7n user, or by use of tampered c7n code or yaml. This is c7n's
+  malicious c7n user, or by use of tampered c7n code or YAML. This is c7n's
   intended purpose so in the hands of a sloppy operator or successful threat
   actor, c7n itself becomes a potent discovery and monitoring tool. Simply
   intercepting or cc:ing oneself to the alerts or logs could allow for effective
@@ -483,7 +483,7 @@ as an insider.
 
 Cloud Custodian’s serverless capabilities enable broad access to affect both
 the availability and confidentiality of the environment it is deployed within.
-Explicit control and review over Cloud Custodian yaml is an absolute necessity
+Explicit control and review over Cloud Custodian YAML is an absolute necessity
 to reduce the success of attack by a malicious insider or opportunistic
 external intruder.
 
@@ -849,18 +849,18 @@ stale since the only In Progress item was last updated Jan 22, 2020.
 * Documentation improvements should be made to advise and assist operators on
   how to explicitly lock down the execution environment, even if it is seen as
   an inherited responsibility. Specific least-privilege examples should be given
-  and examples of dangerous IAM roles and yaml policies discussed.
+  and examples of dangerous IAM roles and YAML policies discussed.
 * The default IAM policies recommended/documented should render c7n minimally
   operable or even inoperable, and require thoughtful addition of least
   privilege permissions.  A linter or IAM generator script would be a possible
   enhancement, or links to community examples of such tools.
 * The docker image, python environment, all Custodian commits, and distributed
-  python and yaml files should be controlled using cryptographic mechanisms for
+  python and YAML files should be controlled using cryptographic mechanisms for
   integrity. As this is an area of active research in the community, there are
   many possible tools to address the supply chain and distribution of the c7n
   tool and docker image.
-* The c7n code should itself implement some sort of yaml policy integrity and,
-  possibly, efficacy/safety check(s). This may prevent casual tampering of yaml
+* The c7n code should itself implement some sort of YAML policy integrity and,
+  possibly, efficacy/safety check(s). This may prevent casual tampering of YAML
   policies once deployed in an organization.
 * The project should determine if operators can run separate instances of c7n
   for detection vs. remediation, and document how to best deploy under
