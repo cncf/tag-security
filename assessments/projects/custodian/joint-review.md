@@ -518,7 +518,7 @@ possibilities.
 
 ### Example Attack Scenarios
 
-* Denial of Service, Tampering: Use lambda:PutFunctionConcurrency  to set a
+* Denial of Service, Tampering: Use `lambda:PutFunctionConcurrency` to set a
   Lambda Function's concurrency setting to `0` which would disable event based
   compliance checking.
 * Information Disclosure: Redirecting Cloud Custodian log output
