@@ -537,7 +537,7 @@ possibilities.
   lambda:InvokeFunction to invoke whatever code that you want using the IAM role
   that the Lambda Function is already attached to.  The iam:PassRole permissions
   are only checked at function creation, not when the function is updated.
-* Attacker uses a Cloud Custodian Lambda function to leverage (iam:PassRole) to
+* Attacker uses a Cloud Custodian Lambda function to leverage (`iam:PassRole`) to
   change Ports on NACLs and Security Groups of PCI Cat 1 applications
   (potentially leading to Information Disclosure).
 * Repudiation: User creates a Cloud Custodian Lambda function that assumes IAM
