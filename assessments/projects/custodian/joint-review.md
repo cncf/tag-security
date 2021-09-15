@@ -215,7 +215,7 @@ Per the Security TAG user personas, Cloud Custodian serves the needs of:
   policy changes and tag affected resources, enforce compliance, and prevent
   development from unintentionally harming an organization’s cloud.
 
-### Target Capabilities and How Custodian Impacts.
+### Target Capabilities and How Custodian Impacts
 
 | Competency Title                              | Competency Type | Competency Description |
 |-----------------------------------------------|-----------------|------------------------|
