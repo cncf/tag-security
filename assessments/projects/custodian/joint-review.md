@@ -17,7 +17,7 @@ the tool or its dependencies - rather than an attack on individual c7n
 deployments. A secondary concern would be the disabling or DoS of a deployment by
 an internal or external actor - thus giving the user a false sense of security
 when c7n is disabled. A tertiary concern is the provisioning of too permissive
-a policy within the cloud environment for c7n; this would make it an attrative
+a policy within the cloud environment for c7n; this would make it an attractive
 target for lateral movement and other activities for an attacker who had gained
 access via some other means. Finally, comprehensive support for Kubernetes is
 not currently available; the review team would like to see more active support
