@@ -290,7 +290,7 @@ The project makes the following assumptions regarding mature operational practic
   credentials should be restricted to the Custodian compute execution
   environment.
 * Custodian cloud credentials should be limited in scope to what is necessary
-  for custodian policy execution, i.e. minimized access.
+  for Custodian policy execution, i.e. minimized access.
 * As the policy files are considered trusted inputs -- and per IaaC best
   practices -- an audit trail is implemented to validate the assurance of the
   supply chain through rigorous version and change control mechanisms.
@@ -342,7 +342,7 @@ to review.
 | External Attacker       | An attacker who is external to the cloud provider environment in which Cloud Custodian is hosted in and is unauthenticated. |
 | Administrator           | An actual administrator of an account in a given cloud provider environment, tasked with operating and maintaining Cloud Custodian as a whole.     |
 | Policy Developer        | A developer who is deploying changes to Cloud Custodian policies, either directly or via source code repositories. |
-| Project Developer       | A developer who is deploying changes to Cloud Custodian itself, either directly via custodian’s source code repositories, or by injecting malicious dependency code into the build/packaging/distribution.                                 |
+| Project Developer       | A developer who is deploying changes to Cloud Custodian itself, either directly via Custodian’s source code repositories, or by injecting malicious dependency code into the build/packaging/distribution.                                 |
 | End User                | An external user of Cloud Custodian. |
 
 ### MITRE ATT&CK Review
@@ -354,7 +354,7 @@ TTPs Considered include:
 * [Drive-by Compromise](https://attack.mitre.org/techniques/T1189/) - it is
   easy to imagine a wateringhole attack on c7n users to update to a new version
   or apply a c7n security patch which leads to distribution of a malicious
-  custodian package.
+  Custodian package.
 * [Phishing](https://attack.mitre.org/techniques/T1566/), [Internal
   Spearphishing](https://attack.mitre.org/techniques/T1534/) - an attacker may
   use widespread knowledge of an organization's use of c7n as a means to target
@@ -503,7 +503,7 @@ of the conceptual components of a threat scenario are shared between the
 clouds, but their manifestations differ based on their specific
 implementations.
 
-While external attackers are also possible - especially if custodian is running
+While external attackers are also possible - especially if Custodian is running
 in a persistent node (e.g. EC2 instance running cron), or even if it is running
 in a docker container that pulls the latest code from the project which was
 compromised - a comprehensive analysis of an external attack is not covered
@@ -563,13 +563,13 @@ policy, nor policy generation or checker/linter tool, nor even adequate
 documentation exists to guide the new user on how to effectively lock down
 their policy to the absolute minimum.  Even then, the mixing of broad read and
 write permissions in one policy is itself a risk.  Attackers are likely to use
-custodian once inside, via other attacks, to move laterally and cover their
+Custodian once inside, via other attacks, to move laterally and cover their
 tracks.
 
 Probably the largest impact of an attack would be to allow attackers to
-effectively disable custodian and prevent detection or remediation of their
+effectively disable Custodian and prevent detection or remediation of their
 other attacks, potentially even providing a false sense of compliance if no
-custodian alerts are reported.
+Custodian alerts are reported.
 
 ### Compensating Mechanisms
 
@@ -854,7 +854,7 @@ stale since the only In Progress item was last updated Jan 22, 2020.
   operable or even inoperable, and require thoughtful addition of least
   privilege permissions.  A linter or IAM generator script would be a possible
   enhancement, or links to community examples of such tools.
-* The docker image, python environment, all custodian commits, and distributed
+* The docker image, python environment, all Custodian commits, and distributed
   python and yaml files should be controlled using cryptographic mechanisms for
   integrity. As this is an area of active research in the community, there are
   many possible tools to address the supply chain and distribution of the c7n
