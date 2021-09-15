@@ -877,8 +877,12 @@ stale since the only In Progress item was last updated Jan 22, 2020.
 ### Recommended CNCF Requests
 
 The review team recommends that CNCF continue to offer fuzzing resources, and
-hopes the project avails itself of these.  We also recommend a broader set of
-projects review and deploy c7n to document more open source use cases.
+hopes the project avails itself of these.  
+
+The team also recommends an internship funded to create adding a secure default 
+policy, and/or linter/checker, and additional documentation be created to guide 
+new users on locking down their policies.
+
 Finally, we hope that CNCF will fund a formal code audit and lab setup
 assessment which can subject c7n to real world attacks in a Kubernetes
 environment, once the project is ready for this with full Kubernetes support.
