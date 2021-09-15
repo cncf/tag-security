@@ -347,7 +347,7 @@ to review.
 
 ### MITRE ATT&CK Review
 
-Please see: https://attack.mitre.org/matrices/enterprise/cloud/
+Please refer to the [Mitre ATT&CK matrix for Enterprise Cloud](https://attack.mitre.org/matrices/enterprise/cloud/)
 
 TTPs Considered include:
 
