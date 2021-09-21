@@ -26,7 +26,7 @@ Once a presentation issue is submitted a Security TAG representative will be
 assigned to or review the issue to triage the request. Once triaged, the
 Security TAG representative will perform due diligence on the issue to ensure it
 adhere's to our requirements for presentation content. If the [requirements are
-met](presentations.md), the Security TAG representativec will then add the
+met](presentations.md), the Security TAG representative will then add the
 topic, link the issue, and provide the point of contact and themselves on the
 Agenda.
 
@@ -168,7 +168,7 @@ someone else to lead the effort. If possible, include:
       questions. In case of absence, ensure that github issues is updated and
       another member of the group who can attend the meeting is familiar with
       progress in case questions arise.
-    * It's strongly encouraged to include a checklist in the Isssue that shows
+    * It's strongly encouraged to include a checklist in the Issue that shows
       what has been done and what work remains and should include a
       retrospective.
 
