@@ -92,6 +92,9 @@ with the main meetings and working groups.
 - See the [CNCF Calendar](https://www.cncf.io/calendar/) for a list of all CNCF calendar
 invites.
 
+Got something to bring up or share? Review how to get a topic or presentation
+added to the Agenda on our [process](governance/process.md) page.
+
 ### Zoom Meeting Details
 
 <!-- cSpell:ignore cncftagsecurity -->
