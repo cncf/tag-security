@@ -275,7 +275,7 @@ More detailed security considerations are addressed in the specification:
     When CNB tooling is improperly configured or the tooling itself is
     compromised, we assume that an attacker may be able to compromise any
     number of applications on the registry, build infrastructure that is exposed
-    to untrusted code, and supply chains involving compromised images. 
+    to untrusted code, and supply chains involving compromised images.
 
 * **Attack Risks and Effects**
 
