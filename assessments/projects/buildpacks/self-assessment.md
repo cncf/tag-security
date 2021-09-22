@@ -1,7 +1,7 @@
-# Cloud Native Buildpacks Security Assessment 
-<!-- markdownlint-disable MD034 MD010 MD036 MD007 -->
-<!-- cSpell:ignore Buildpacks buildpacks buildpack SBOM rebasable Flibble untrusted DISA STIG Paketo gosec codeql Tanzu kpack Roadmaps Dokku Skaffold Kaniko Firekube Dockerfiles userspace podman namespacing mindshare -->
+# Cloud Native Buildpacks Security Assessment
+<!-- cSpell:ignore Buildpacks buildpacks buildpack SBOM rebasable Flibble untrusted DISA STIG Paketo gosec codeql Tanzu kpack Roadmaps Dokku Skaffold Kaniko Firekube Dockerfiles userspace podman namespacing mindshare runtimes Buildah -->
 <!-- cSpell:disable -->
+<!-- markdownlint-disable MD034 MD010 MD036 MD007 -->
 
 Security reviewers: Andres Vega, Adith Sudhakar, Cole Kennedy, Daniel Papandrea,
 Daniel Tobin, Magno Logan, Matthew Giasa, Matt Jarvis.
@@ -42,7 +42,7 @@ underutilized by the Dockerfile model.
 
     The original buildpack concept was conceived by Heroku in 2011. The Cloud
     Native Buildpacks project was initiated by Pivotal (now VMware) and Heroku
-    in January 2018 and joined the[ Cloud Native Sandbox](https://www.cncf.io/)
+    in January 2018 and joined the [Cloud Native Sandbox](https://www.cncf.io/)
     in October 2018. The project aims to unify the buildpack ecosystems with a[
     platform-to-buildpack
     contract](https://github.com/buildpacks/spec/blob/main/buildpack.md) that is
@@ -59,7 +59,6 @@ underutilized by the Dockerfile model.
     The goal of the Cloud Native Buildpacks (CNB) project is to transform source
     code into container images with a focus on developer productivity, container
     security, and day-2 operations involving container images at scale.
-
 
     The security guarantees imparted to users are:
 
@@ -91,7 +90,7 @@ underutilized by the Dockerfile model.
     2. All containers that may execute buildpack or app code must additionally
        run as a non-root user.
     3. Infrastructure credentials, such as VCS and registry credentials, must
-       not be present in containers that execute buildpack or app code. 
+       not be present in containers that execute buildpack or app code.
     4. CNB tooling must allow buildpacks to generate images without egress
        network traffic, i.e., buildpacks must be allowed to bundle
        language-specific runtimes and other dependencies so that egress traffic
@@ -266,15 +265,15 @@ More detailed security considerations are addressed in the specification:
        addressed.](https://github.com/buildpacks/rfcs/blob/master/text/0025-dont-trust-builders.md)
 * **Expected Attacker Capabilities**
 
-    <ins>When unmodified CNB tooling is properly configured by a platform
-    maintainer</ins>, we assume that an attacker may be able to compromise an
+    When unmodified CNB tooling is properly configured by a platform
+    maintainer, we assume that an attacker may be able to compromise an
     application by providing malicious buildpacks, stacks, or application
     extensions or by taking advantage of those bits when they are vulnerable or
     improperly configured. However, we assume that an attacker is unable to
     attain registry credentials to compromise other images.
 
-    <ins>When CNB tooling is improperly configured or the tooling itself is
-    compromised</ins>, we assume that an attacker may be able to compromise any
+    When CNB tooling is improperly configured or the tooling itself is
+    compromised, we assume that an attacker may be able to compromise any
     number of applications on the registry, build infrastructure that is exposed
     to untrusted code, and supply chains involving compromised images. 
 
@@ -305,7 +304,7 @@ More detailed security considerations are addressed in the specification:
     If an attacker is able to provide malicious buildpacks or stack images, then
     all applications built using those artifacts may be compromised. However,
     build infrastructure would not necessarily be compromised unless it executes
-    those images with privileges. 
+    those images with privileges.
 
     If an attacker is able to compromise build infrastructure (e.g., via a
     container escape executed by malicious buildpacks, stack images, or
@@ -376,7 +375,7 @@ Native Ecosystem:
 * [Azure Spring Cloud - CNB via kpack](https://content.pivotal.io/blog/azure-spring-cloud-a-new-way-to-run-spring-boot-apps-atop-kubernetes)
 * [Project Riff - CNB via kpack](https://github.com/projectriff/riff/issues/1348)
 * [Cloud Foundry on K8s - CNB via kpack](https://github.com/cloudfoundry/cf-for-k8s/blob/master/README.md#purpose)
-* [Azure Container Registry - CNB](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-tasks-pack-build) 
+* [Azure Container Registry - CNB](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-tasks-pack-build)
 * [Salesforce Evergreen - CNB](https://developer.salesforce.com/blogs/2019/11/introducing-salesforce-evergreen.html)
 * [Google Cloud Run Button - CNB](https://cloud.google.com/blog/products/serverless/introducing-cloud-run-button-click-to-deploy-your-git-repos-to-google-cloud)
 * [Google kf - CNB](https://github.com/google/kf/blob/master/docs/kf.dev/content/en/docs/operators/customizing-buildpacks/_index.md)
@@ -407,7 +406,7 @@ Native Ecosystem:
 
 * **Project Next Steps**
 
-    Roadmaps for 2020, 2021: 
+    Roadmaps for 2020, 2021:
 
     * [https://medium.com/buildpacks/cloud-native-buildpacks-2020-roadmap-b7e43876473a](https://medium.com/buildpacks/cloud-native-buildpacks-2020-roadmap-b7e43876473a)
     * [https://medium.com/buildpacks/cloud-native-buildpacks-2021-roadmap-e5ece588fc0](https://medium.com/buildpacks/cloud-native-buildpacks-2021-roadmap-e5ece588fc0)
@@ -422,7 +421,9 @@ Native Ecosystem:
 
     * [Always use project-provided image for analysis/export.](https://github.com/buildpacks/rfcs/blob/master/text/0025-dont-trust-builders.md)
     * [Recommend separate build-time and run-time user IDs](https://github.com/buildpacks/rfcs/pull/146)
-    * [Registry is implemented as a git-based index](https://github.com/buildpacks/rfcs/blob/main/text/0022-client-side-buildpack-registry.md) (+[spec](https://github.com/buildpacks/spec/blob/main/extensions/buildpack-registry.md))
+    * [Registry is implemented as a git-based
+      index](https://github.com/buildpacks/rfcs/blob/main/text/0022-client-side-buildpack-registry.md)
+      (+[spec](https://github.com/buildpacks/spec/blob/main/extensions/buildpack-registry.md))
     * Additional work on image reproducibility
 * **CNCF Requests**
 
@@ -433,10 +434,11 @@ Native Ecosystem:
 * **Known Issues Over Time**
 
 Security-related design issues come up occasionally and are addressed:
+
 * Example: [Always use project-provided image for
   analysis/export](https://github.com/buildpacks/rfcs/blob/master/text/0025-dont-trust-builders.md)
 
-Automated testing is employed extensively. 
+Automated testing is employed extensively.
 
 Given that CNB is developer tooling, many common classes of security
 vulnerability (such that those applicable to a service) do not apply.
