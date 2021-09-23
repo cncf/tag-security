@@ -1,7 +1,9 @@
 # CNCF Security Technical Advisory Group
 
-<!-- cspell:disable-next-line -->
+<!-- cspell:disable -->
+<!-- markdownlint-disable-next-line MD033 MD013 -->
 <img src="design/logo/cloud-native-security-horizontal-darkmodesafe.svg" alt="Cloud Native Security logo" width="400"/>
+<!-- cSpell:enable -->
 
 ## Quick links
 
@@ -179,7 +181,7 @@ Policy is an essential component of a secure system.
 
 [Bi-weekly
 meetings](https://docs.google.com/document/d/1ihFfEfgViKlUMbY2NKxaJzBkgHh-Phk5hqKTzK-NEEs/edit?usp=sharing)
-at 3:00pm PT focus on policy concerns and initiatives.
+at 3:00 PM PT focus on policy concerns and initiatives.
 
 Co-leads
 
@@ -198,15 +200,28 @@ New York University
 
 Co-chair representative: @lumjjb
 
+#### Software Supply Chain Security
+
+Software [Supply Chain attacks have come to the wider community's attention
+following recent high-profile attack, but have been an ongoing threat for a long
+time. With the ever growing importance of free and open source software,
+software [supply chain security](./supply-chain-security) is crucial,
+particularly in cloud native environments where everything is software-defined.
+
+Weekly meetings at 8:00 AM PT (50 min) (see your timezone [here](https://time.is/0800_today_in_PT?CNCF_Security_TAG_Supply_Chain_WG_Meeting))
+See [CNCF calendar](https://www.cncf.io/calendar/) for invite.
+
+Facilitator for current deliverables is listed on the [issue](https://github.com/cncf/tag-security/issues/679)
+
 ### STAG members
 
 Membership governance can be viewed
 [here](https://github.com/cncf/tag-security/blob/main/governance/roles.md#role-of-members).
 If you are new, check out the [New Members Page](/NEW-MEMBERS.md).
 
-<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable-next-line MD033 -->
 <details><summary>Click to view list</summary>
-<!-- markdownlint-enable MD033 -->
+<!-- markdownlint-disable MD013 -->
 
 - Marlow Weston ([@catblade](https://github.com/catblade)), Intel
 - Pushkar Joglekar ([@pushkarj](https://github.com/pushkarj))
@@ -326,9 +341,12 @@ If you are new, check out the [New Members Page](/NEW-MEMBERS.md).
 - Robert Clark ([@hyakuhei](https://github.com/hyakuhei)), AWS
 - Sunil Ravipati([@ai2017](https://github.com/ai2017)), Anthem AI
 - Ashish Rajan ([@hashishrajan](https://github.com/hashishrajan)), Cloud Security Podcast
+- Sayantani Saha ([@sayantani11](https://github.com/sayantani11))
+- Chetan Vyas ([@ChetanVyas](https://github.com/ChetanVyas))
+- axel simon ([@axelsimon](https://github.com/axelsimon)), Red Hat
   
 </details>
-
+<!-- markdownlint-enable MD013 -->
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
 
 ## Additional information
