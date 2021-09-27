@@ -40,7 +40,7 @@ In any case, secrets should be injected at runtime within the workloads through 
 - [Google Cloud HSM](https://cloud.google.com/kms/docs/hsm)
 -->
 
-## Links (optional)
+## Links
 - https://www.beyondtrust.com/blog/entry/secrets-management-overview-7-best-practices
 - https://csrc.nist.gov/projects/cryptographic-module-validation-program
 - https://www.cryptomathic.com/news-events/blog/key-management-and-use-cases-for-hsms
