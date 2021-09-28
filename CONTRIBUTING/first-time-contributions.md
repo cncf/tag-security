@@ -37,6 +37,9 @@ for your understanding:
 - [How to submit contributions](https://opensource.guide/how-to-contribute/#how-to-submit-a-contribution)
 - [Collaborating with pull requests](https://docs.github.com/en/github/collaborating-with-pull-requests)
 
+Our PR also follows a particular writing
+style. Checkout the [style guide](https://github.com/cncf/tag-security/blob/main/CONTRIBUTING/writing-style.md).
+
 ## Other ways of communication
 
 If have additional questions or
