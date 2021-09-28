@@ -63,11 +63,9 @@ A table at the top for quick reference information, later used for indexing.
 |   |  |
 | -- | -- |
 | Software | A link to the software’s repository.  |
-| Security Provider | Yes or No. Is the primary function of the project to support the
-security of an integrating system?  | | Languages | languages the project is
-written in | | SBOM | Software bill of materials.  Link to the libraries,
-packages, versions used by the project, may also included direct dependencies. |
-| | |
+| Security Provider | Yes or No. Is the primary function of the project to support the security of an integrating system?  |
+| Languages | languages the project is written in |
+| SBOM | Software bill of materials.  Link to the libraries, packages, versions used by the project, may also included direct dependencies. | | | |
 
 ### Security links
 
@@ -124,7 +122,7 @@ references as part of a security audit.
 ## Intended Use
 
 * Target Users and Use Cases. Provide a mapping from [standard
-  personas](../../usecase-personas) to the nomenclature used in your project
+  personas](/usecase-personas) to the nomenclature used in your project
   docs (which you should then use consistently for the remainder of this
   document).  Describe the scenarios in which the project is expected to be
   used. This must be specific enough to provide context for analysis. For
