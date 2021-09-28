@@ -59,4 +59,3 @@ process](chair-proposal-process.md) with specific items that must be completed.
   * [ ] #tag-security slack message
   * [ ] email message to the tag-security list
   * [ ] Security TAG meeting Announcement for each region
-  
