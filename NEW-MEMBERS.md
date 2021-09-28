@@ -1,4 +1,4 @@
-# New Members
+# New members
 
 The purpose of this plan is to ensure that you become familiar with the team and
 know how you will contribute. The first step is to get yourself familiar with
@@ -26,6 +26,6 @@ New members are advised to:
 
 [meeting-times]: README.md#meeting-times
 [coc]: CODE-OF-CONDUCT.md
-[first-time-contributions]: ./CONTRIBUTING/first-time-contributions.md
+[first-time-contributions]: CONTRIBUTING/first-time-contributions.md
 <!-- cSpell:ignore usecase --->
 [use-cases]: usecase-personas
