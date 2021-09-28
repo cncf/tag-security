@@ -19,7 +19,7 @@ Don't worry! We got you.
 In the interest of getting more new people
 involved, we have issues marked as
 [good-first-issues](https://github.com/cncf/tag-security/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
-These are issues that have asmaller scope,
+These are issues that have a smaller scope,
 and are great to start with.
 
 The good-first-issues should also provide
@@ -53,7 +53,7 @@ You can also reach out on our slack [#tag-security-governance](https://cloud-nat
 Our members list can be found
 [here].(https://github.com/cncf/tag-security#members)
 
-## After succesful PR merge
+## After PR merge
 
 Once you have successfully get your
 first PR merged, you can add your name
