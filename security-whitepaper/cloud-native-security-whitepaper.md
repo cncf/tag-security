@@ -1,5 +1,6 @@
 # **Cloud Native Security Whitepaper**
-<!-- markdownlint-ignore MD036 -->
+<!-- cSpell:ignore markdownlint Microservices microservices ddos Microbusiness microbusiness CISO lifecycles hotspots untrusted SAST DAST toolset cgroups runtimes unencrypted untampered cryptomining iscsi hyperconverged ABAC intercompatible antifragile exfiltrate seccomp cisecurity -->
+<!-- markdownlint-ignore MD036 MD025 MD024 MD036 -->
 
 Shared with CNCF Community
 
@@ -10,6 +11,7 @@ Shared with CNCF Community
 | **Version** | **1.1** | 25 NOV 2020 | [Original working doc](https://tinyurl.com/CNCF-CNSWP) |
 | **Status** | **WIP** | In Review | Approved |
 
+<!-- cSpell:disable -->
 | **PDF** | |
 | -- | -- |
 | **Created** | 2020-FEB-01 |
@@ -23,6 +25,8 @@ Shared with CNCF Community
 | **Contributors** | [aradhna.chetal@gmail.com](mailto:aradhna.chetal@gmail.com), [@theFoxAtWork](mailto:themoxiefoxatwork@gmail.com), [jj@tetrate.io](mailto:jj@tetrate.io), gadi@alcide.io @lumjjb, @trishankatdatadog, [@vvenkatara@paloaltonetworks.com](mailto:vvenkatara@paloaltonetworks.com), @pushkarj, @whaber, @sublimino, @rowan-baker, [chase.pettet@gmail.com](mailto:chase.pettet@gmail.com), [harsingh@us.ibm.com](mailto:harsingh@us.ibm.com), jeff.lombardo@gmail.com |
 | **Reviewers** | @justincappos, @lumjjb, @whaber, @craigbox, @anvega, @magnologan, @magnologan, alok@xenonstack.com, @nyrahul, @ranio1, Itay Shakury (@itaysk) |
 
+<!-- cSpell:enable -->
+<!-- markdownlint-disable MD007 -->
 ## Index
 
 - [**Cloud Native Security Whitepaper**](#cloud-native-security-whitepaper)
@@ -133,6 +137,7 @@ Shared with CNCF Community
 - [References](#references)
 - [Acknowledgements](#acknowledgements)
 
+<!-- markdownlint-enable MD007 -->
 # Executive Summary
 
 ## Purpose
@@ -651,7 +656,7 @@ Unit testing of infrastructure is a preventative control, and targets entities
 and inputs defined in Infrastructure as Code (IaC) configuration. Security
 testing of built infrastructure is a detective control and combines assurance,
 historical regressions, and unexpected configuration detection (firewall rules
-open to the world, overprivileged Identity & Access Management (IAM) policies,
+open to the world, over-privileged Identity & Access Management (IAM) policies,
 unauthenticated endpoints, etc.)
 
 Hardening of infrastructure and workloads should be supported by comprehensive
@@ -855,7 +860,7 @@ underlying compute baseline for the containers they can impact all the
 containers and apps that run on these hosts. At the same time improperly
 configured containers can impact the host kernel security and hence all the
 services running in containers running on that host. Refer the details within
-the [Distribute phase](#distibute-1) for more information.
+the [Distribute phase](#distribute-1) for more information.
 
 #### Orchestration
 
@@ -1084,7 +1089,7 @@ available to verify trust, relying less on a third party.
 
 Cloud Native Storage covers a broad set of technologies that are bucketed into
 presented storage and accessed storage. Presented storage is storage made
-available to workloads such as volumes and includes block stores, filesystems
+available to workloads such as volumes and includes block stores, file systems
 and shared file systems. Access storage is storage that is accessed via an
 application API, and includes object stores, key value stores, and databases.
 
@@ -1098,7 +1103,7 @@ typically an API protected by authentication and TLS, although finer grained
 access may be available. In general the control interface is only accessed via a
 service account by an orchestrator or service broker.
 
-##### Storage Stack
+#### Storage Stack
 
 Any storage solution is composed of multiple layers of functionality that define
 how data is stored, retrieved, protected and interacts with an application,
@@ -1108,10 +1113,10 @@ a filesystem that persists files or blocks to an object store. It is equally
 important to protect every layer in the topology, and not just the top layer
 where data is accessed.
 
-###### Orchestration
+##### Orchestration
 
 Most orchestrated systems will implement a variety of abstraction and
-virtualization layers that may include filesystems (such as bind mounts), volume
+virtualization layers that may include file systems (such as bind mounts), volume
 managers, and the application of permissions at a user or group level based on
 orchestrator policies. As with many components of containerization and
 microservice architectures, protecting volumes and storage will always rely on
@@ -1122,7 +1127,7 @@ trust](#zero-trust-architecture), [least privilege](#least-privilege), and
 [access control](#access) and enforcement are linchpins in successfully securing
 storage in cloud native architectures.
 
-###### System Topology & Data Protection
+##### System Topology & Data Protection
 
 Understanding a system's storage topology is key in order to secure both the
 data access path to the storage system and the intra-node communication in
@@ -1144,15 +1149,15 @@ integrity, in which storage systems will add hashing and checksums to blocks,
 objects or files primarily designed to detect and recover from corrupted data,
 but can also add a layer of protection against the tampering of data.
 
-###### Caching
+##### Caching
 
 Caching layers, often fully fledged separate systems, are implemented to improve
-the performance of storage systems, especially filesystems, objects and
+the performance of storage systems, especially file systems, objects and
 databases. The appropriate access controls and security policies need to be
 applied to the caching layer as the cache will be fronting the access to the
 actual storage back-end.
 
-###### Data Services
+##### Data Services
 
 Storage systems often implement a number of data services which complement the
 core storage function by providing additional functionality that may be
@@ -1162,7 +1167,7 @@ copies of data to remote locations, and it is important to ensure that the same
 access controls and security policies are applied to the data at the remote
 location.
 
-###### Physical or Non-Volatile Layer
+##### Physical or Non-Volatile Layer
 
 Cloud native storage security is not restricted to virtual cloud native
 architectures as cloud native capabilities can be deployed on-prem, and even
@@ -1175,7 +1180,7 @@ standards, and rapid/secure erasure functions. Secure erasure is important when
 devices that contain data need to leave a secure physical location (e.g. to be
 returned to a vendor after developing a fault).
 
-##### Storage Encryption
+#### Storage Encryption
 
 Storage systems can provide methods to ensure confidentiality of data through
 data encryption. Data encryption can be implemented for data in transit or data
@@ -1205,7 +1210,7 @@ devices.
 The encryption function will often depend on integration with a [key
 management](#secrets-encryption)system.
 
-##### Persistent Volume Protection
+#### Persistent Volume Protection
 
 Protecting access to volumes is critical to ensure only authorized containers
 and workloads may leverage volumes provided. It is imperative to define trust
@@ -1223,7 +1228,7 @@ authorization and does not perform validation. It is critical to consider where
 authentication and authorization occur and whether validation of that action
 exists when implementing protections.
 
-##### Artifact Registries
+#### Artifact Registries
 
 Registries should accommodate technologies to sign and verify OCI artifacts. It
 is also important to ensure that the caching and distribution tools also provide
@@ -1683,7 +1688,7 @@ that integrates transparently into the development process to enforce security
 policies where fast feedback and most immediate actions to remediate can occur.
 For specific information on cloud native security use cases refer to the
 [TAG-Security's use cases
-listing](https://github.com/cncf/tag-security/usecase-personas/README.md).
+listing](usecase-personas/README.md).
 
 ### Industries
 
@@ -1852,16 +1857,26 @@ NIST 800-190 Application Container Security Guide
 
 [CIS Kubernetes Benchmark](https://www.cisecurity.org/benchmark/Kubernetes/)
 
-[Threat Modeling: 12 Available Methods](https://insights.sei.cmu.edu/sei_blog/2018/12/threat-modeling-12-available-methods.html)
+[Threat Modeling: 12 Available
+Methods](https://insights.sei.cmu.edu/sei_blog/2018/12/threat-modeling-12-available-methods.html)
 
 [https://owasp.org/www-community/Application_Threat_Modeling](https://owasp.org/www-community/Application_Threat_Modeling)
 
-[NIST Application Security Container Guide](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-190.pdf), [Center for Internet Security (CIS)](https://www.cisecurity.org/), [NIST Security Strategies for microservices](https://csrc.nist.gov/publications/detail/sp/800-204/final) and [OpenSCAP](https://www.open-scap.org/) benchmarks exist for [Docker](https://www.cisecurity.org/benchmark/docker/), [Kubernetes](https://www.cisecurity.org/benchmark/kubernetes/), and several managed Kubernetes distributions.
+[NIST Application Security Container
+Guide](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-190.pdf),
+[Center for Internet Security (CIS)](https://www.cisecurity.org/), [NIST
+Security Strategies for
+microservices](https://csrc.nist.gov/publications/detail/sp/800-204/final) and
+[OpenSCAP](https://www.open-scap.org/) benchmarks exist for
+[Docker](https://www.cisecurity.org/benchmark/docker/),
+[Kubernetes](https://www.cisecurity.org/benchmark/kubernetes/), and several
+managed Kubernetes distributions.
 
 [MITRE ATT&CK Matrix For Kubernetes](https://www.darkreading.com/threat-intelligence/microsofts-kubernetes-threat-matrix-heres-whats-missing/a/d-id/1339106)
 
 ### Acknowledgements
 
+<!-- cSpell:ignore Jeyappragash JJ -->
 This white paper is a community effort driven by the members of the CNCF
 Security-TAG. Thank you to everyone for their outstanding contributions. Special
 thanks to Emily Fox and Jeyappragash JJ.
