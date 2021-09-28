@@ -37,6 +37,7 @@ process](chair-proposal-process.md) with specific items that must be completed.
     * [ ] Share meeting notes doc
   * [ ] Choose new chair representative for Security TAG [on-going
     projects](https://github.com/cncf/tag-security#on-going-projects) if needed.
+  * [ ] add chair to [github team](https://github.com/orgs/cncf/teams/sig-security/)
   * [ ] tag-security repo PR:
     * [ ] Update codeowners, github settings, README (TOC Liaisons and chairs
       have admin access, tech leads have push access).
@@ -58,4 +59,3 @@ process](chair-proposal-process.md) with specific items that must be completed.
   * [ ] #tag-security slack message
   * [ ] email message to the tag-security list
   * [ ] Security TAG meeting Announcement for each region
-  
