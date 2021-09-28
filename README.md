@@ -93,7 +93,7 @@ with the main meetings and working groups.
 invites.
 
 Got something to bring up or share? Review how to get a topic or presentation
-added to the Agenda on our [process](governance/process.md) page.
+added to the Agenda on our [process](governance/process.md#getting-on-the-agenda) page.
 
 ### Zoom Meeting Details
 

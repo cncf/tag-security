@@ -9,11 +9,16 @@ This document explains how we transform ideas from our community into projects
 with a defined set of deliverables or a team to focus on a larger stream of work
 that may involve one or more projects and activities.
 
-## Getting on the Agenda
+## Getting on the agenda
 
 In order to better plan and facilitate meetings, Security TAG has **three** ways
 in which a topic may be added to the [Agenda for planned
-meetings](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit#heading=h.q3539ohya47f)
+meetings](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit#heading=h.q3539ohya47f).
+
+In order to best manage the group's time, consider your topic and the audience,
+and select accordingly. If you are unsure, reach out in the
+[#tag-security-governance](https://cloud-native.slack.com/archives/C0230RW8V2T)
+channel.
 
 ### Presentations
 
@@ -55,22 +60,23 @@ but, as part of a working session is:
 
 please add it to the Agenda for a WORKING SESSION with a `[PENDING]` prefix on
 the topic, put your name next to it, and let us know by dropping note in the
-[#tag-security-governance](https://cloud-native.slack.com/archives/C0230RW8V2T) channel.
-We will provide feedback if necessary.
+[#tag-security-governance](https://cloud-native.slack.com/archives/C0230RW8V2T)
+channel. We will provide feedback if necessary and a member of the leadership
+team will help add it to the agenda and remove the `[PENDING]` prefix.
+
+Example: `[PENDING] Security discussion on why R.Raccoon should be friends with
+Phippy — R. Raccoon`
 
 We want to foster ad hoc discussions during working sessions, but also recognize
 some discussions may take slightly more time than a general question or
-informative note. In order to best manage the groups time, consider your topic
-and the audience, and select accordingly. If you are unsure, reach out in the
-[#tag-security-governance](https://cloud-native.slack.com/archives/C0230RW8V2T)
-channel.
+informative note.
 
 ### Raising an Issue
 
 Anyone is welcome to raise an issue either as a suggestion or as a proposal.
-These will follow the process described below.
+These will follow the process described in [proposals and suggestions](#proposals-and-suggestions).
 
-## Creating, discussing and accepting proposals
+## Proposals and suggestions
 
 Each proposal is unique and might deviate slightly from the process below. For
 example, a small addition may not require completion criteria. In general, we
