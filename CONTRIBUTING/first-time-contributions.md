@@ -54,7 +54,7 @@ You can also reach out on our slack [#tag-security-governance](https://cloud-nat
 ### You can reach out to our members
 
 Our members list can be found
-[here].(https://github.com/cncf/tag-security#members)
+[here](https://github.com/cncf/tag-security#members).
 
 ## After PR merge
 
