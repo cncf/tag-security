@@ -20,6 +20,13 @@ submitted to the repo and labeled with "suggestion" and "whitepaper".
 The living CNSWP is maintained in [markdown][whitepaper-md] and all updates will
 be made in markdown.
 
+### Cloud Native Security Map
+
+The [Cloud Native Security Map](cnsmap/README.md) is a interactive medium for
+the consumption of the security whitepaper. In addition to the content of the
+whitepaper, the cloud native security map also provides additional practitioner
+context and corresponding cloud native projects.
+
 ### Contributing updates
 
 All members of the community are welcome to contribute updates to the CNSWP. We
@@ -57,6 +64,21 @@ minimum.
 Upon completion of review, the TAG-Security TOC Liaison shall provide final
 approval on the PR.  At which point the markdown state will be changed to
 "Approved" and merged.
+
+### Retrospective
+
+Release of the whitepaper triggers a retrospective process that will assess
+what worked well, what we should do more and opportunities where we
+can improve.  The first retrospective led to creation of a survey to gauge
+the success of the whitepaper through answers to questions regarding the
+content, engagement, usefulness, relevance, reach, and distribution of the paper.
+
+A quick summary, raw data and feedback of the survey is documented under
+[cncf/surveys/security](https://github.com/cncf/surveys/blob/master/security/README.md)
+
+For future versions, we may include a link to the survey or feedback form
+within the paper as part of a continuous feedback loop into end user
+engagement with the paper.
 
 ## Original design decisions
 
