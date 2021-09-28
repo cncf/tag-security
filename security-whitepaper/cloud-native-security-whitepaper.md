@@ -1,6 +1,6 @@
 # **Cloud Native Security Whitepaper**
-<!-- cSpell:ignore markdownlint Microservices microservices ddos Microbusiness microbusiness CISO lifecycles hotspots untrusted SAST DAST toolset cgroups runtimes unencrypted untampered cryptomining iscsi hyperconverged ABAC intercompatible antifragile exfiltrate seccomp cisecurity -->
-<!-- markdownlint-ignore MD036 MD025 MD024 MD036 -->
+<!-- cSpell:ignore markdownlint Microservices microservices ddos Microbusiness microbusiness CISO lifecycles hotspots untrusted SAST DAST toolset cgroups runtimes unencrypted untampered cryptomining iscsi hyperconverged ABAC intercompatible antifragile exfiltrate seccomp cisecurity syscall DAAS usecase -->
+<!-- markdownlint-disable MD036 MD025 MD024 -->
 
 Shared with CNCF Community
 
@@ -1688,7 +1688,7 @@ that integrates transparently into the development process to enforce security
 policies where fast feedback and most immediate actions to remediate can occur.
 For specific information on cloud native security use cases refer to the
 [TAG-Security's use cases
-listing](usecase-personas/README.md).
+listing](../usecase-personas/README.md).
 
 ### Industries
 
