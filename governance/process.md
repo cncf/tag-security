@@ -63,8 +63,9 @@ the topic, put your name next to it, and let us know by dropping note in the
 [#tag-security-governance](https://cloud-native.slack.com/archives/C0230RW8V2T)
 channel. We will provide feedback if necessary and a member of the leadership
 team will help add it to the agenda and remove the `[PENDING]` prefix.
+<!-- cSpell:ignore Phippy -->
 
-Example: `[PENDING] Security discussion on why R.Raccoon should be friends with
+Example: `[PENDING] Security discussion on why R. Raccoon should be friends with
 Phippy — R. Raccoon`
 
 We want to foster ad hoc discussions during working sessions, but also recognize
