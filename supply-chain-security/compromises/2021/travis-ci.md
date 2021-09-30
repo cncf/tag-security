@@ -21,6 +21,7 @@ configuration were leaked and available to CI runs in publicly forked repositori
 ## Type of Compromise
 
 Environment variables.
+
 ## References
 
 1. Travis CI Security Bulletin, `<https://travis-ci.community/t/security-bulletin/12081>`.
