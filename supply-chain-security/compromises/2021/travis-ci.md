@@ -7,7 +7,6 @@ of their service, who had sensitive information in public repositories, and
 of which these were forked, had leaked these secrets in the build
 infrastructure logs were the CI service was ran.
 
-
 ## Impact
 
 * All public repositories that observed forks during the period of September 3rd
