@@ -11,7 +11,7 @@ infrastructure logs were the CI service was ran.
 ## Impact
 
 * All public repositories that observed forks during the period of September 3rd
-and September 10th
+and September 10th 2021
 * Any environment variables that were used as protected secrets in the project's
 configuration were leaked and available to CI runs in publicly forked repositories.
 
