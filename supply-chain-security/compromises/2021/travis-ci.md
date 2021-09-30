@@ -1,4 +1,4 @@
-# Secrets leak and other sensitive information due to a bug in Travis CI 
+# Secrets leak and other sensitive information due to a bug in Travis CI
 
 Travis CI is a popular continuous integration (CI) and build service,
 originally forked from the Jenkins project, and later spun-off as a paid
