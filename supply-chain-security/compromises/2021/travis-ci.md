@@ -20,7 +20,7 @@ configuration were leaked and available to CI runs in publicly forked repositori
 
 ## Type of Compromise
 
-Environment variables.
+Dev Tooling
 
 ## References
 
