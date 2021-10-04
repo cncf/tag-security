@@ -490,7 +490,7 @@ introduced early in software development and treated in the same manner as any
 other requirement. These requirements are typically based on business needs
 around risk and compliance. Addressing these needs in the early phases prevents
 redoing work later in the lifecycle which slows down the DevOps pipeline, and
-increases overall costs. DevOps teams must also leverage purpose-built tools to
+increases overall costs [^6]. DevOps teams must also leverage purpose-built tools to
 identify security misconfigurations and vulnerabilities prior to the deployment
 of these applications. Equally important is that these tools integrate
 seamlessly into existing and familiar tools leveraged by DevOps teams to
