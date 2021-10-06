@@ -66,7 +66,7 @@ function Sidebar() {
         </Accordion>
       </div>
       <div className={styles.footer}>
-        <Link href="https://github.com/lumjjb/cnsmap">
+        <Link href="https://github.com/cncf/tag-security/tree/cnsmap">
           <a>
           <Image
             src="/gh-logo.png"
