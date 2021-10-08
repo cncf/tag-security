@@ -344,6 +344,7 @@ If you are new, check out the [New Members Page](/NEW-MEMBERS.md).
 - Sayantani Saha ([@sayantani11](https://github.com/sayantani11))
 - Chetan Vyas ([@ChetanVyas](https://github.com/ChetanVyas))
 - axel simon ([@axelsimon](https://github.com/axelsimon)), Red Hat
+- Mayo Cream ([@mayocream](https://github.com/mayocream))
   
 </details>
 <!-- markdownlint-enable MD013 -->
