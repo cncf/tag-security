@@ -491,17 +491,17 @@ other requirement. These requirements are typically based on business needs
 around risk and compliance. Addressing these needs in the early phases prevents
 redoing work later in the lifecycle which slows down the DevOps pipeline, and
 increases overall costs [^6]. DevOps teams must also leverage purpose-built
-tools to identify security misconfigurations and vulnerabilities prior to 
+tools to identify security misconfigurations and vulnerabilities prior to
 the deployment of these applications. Equally important is that these tools
 integrate seamlessly into existing and familiar tools leveraged by DevOps teams
 to compliment agility with security and not impede it. For example, tools need
-to perform the scanning of Infrastructure as Code templates as well as 
+to perform the scanning of Infrastructure as Code templates as well as
 application manifests within the developer IDE or when a pull request is made,
 and provide rich and contextual security information which can be acted upon
 rapidly, easily, and early in the development pipeline. Adopting these steps
-ensures the absence of known vulnerabilities or high-risk configurations. 
+ensures the absence of known vulnerabilities or high-risk configurations.
 Cloud native components should be API driven, allowing for complex debugging
-tools to interact with the deployed primitive workloads that rely on the 
+tools to interact with the deployed primitive workloads that rely on the
 orchestrator.
 
 Teams should deploy dedicated development, testing, and production environments
