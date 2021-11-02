@@ -233,7 +233,7 @@ typically via attending the weekly general meetings or announcing to the
 community [via the `#tag-security`
 channel](https://cloud-native.slack.com/archives/CDJ7MLT8S)), and issue a
 call/request for reviewers (i.e. a single security assessment lead, and at least
-one additional security assessor), and ensuring all reviewers [read the conlict
+one additional security assessor), and ensuring all reviewers [read the conflict
 of interest disclosure](../assessments/guide/security-reviewer.md) and sign-off
 on it in the GitHub ticket itself. The sign-off is a simple form that can be
 easily copy/pasted into a new reply in the GitHub issue/ticket associated with
