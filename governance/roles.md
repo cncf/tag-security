@@ -8,21 +8,21 @@ Member roles.
 The various roles are listed as follows:
 
 * [Role of Members](#role-of-members)
-    * [Maintaining Active Members](#maintaining-active-members)
-    * [Managing Membership](#managing-membership)
+  * [Maintaining Active Members](#maintaining-active-members)
+  * [Managing Membership](#managing-membership)
 * [Role of Chairs](#role-of-chairs)
 * [Role of technical leads](#role-of-technical-leads)
 * [Role of Chair Emeriti](#role-of-chair-emeriti)
 * [Role of Project Leads](#role-of-project-leads)
-    * [Ongoing Projects](#ongoing-projects)
+  * [Ongoing Projects](#ongoing-projects)
 * [Role of Team Leads](#role-of-team-leads)
 * [TOC Liaison](#toc-liaison)
 * [Facilitation Roles](#facilitation-roles)
-    * [Security Assessment Facilitator](#security-assessment-facilitator)
-    * [Meeting Facilitator](#meeting-facilitator)
-    * [Meeting Scribe(s)](#meeting-scribe(s))
-    * [Triage Team](#triage-team)
-    * [Project Teams](#project-teams)
+  * [Security Assessment Facilitator](#security-assessment-facilitator)
+  * [Meeting Facilitator](#meeting-facilitator)
+  * [Meeting Scribe(s)](#meeting-scribe(s))
+  * [Triage Team](#triage-team)
+  * [Project Teams](#project-teams)
 
 All members are identified in the TAG [README](/README.md), with annotations
 where they hold an additional role.
@@ -79,13 +79,13 @@ Leads, any Chair may act as Technical Lead.
   and facilitated effectively, while also engaging group members in leadership
   roles. Effective facilitation includes (but is not limited to) the following
   activities:
-    * Setting the agenda for meetings.
-    * Extending discussion via asynchronous communication to be inclusive of
-      members who cannot attend a specific meeting time.
-    * Scheduling discussion of proposals that have been submitted.
-    * Asking for new proposals to be made to address an identified need.
-    * Partnering with Technical Leads to establish a roadmap and manage ongoing
-      projects.
+  * Setting the agenda for meetings.
+  * Extending discussion via asynchronous communication to be inclusive of
+    members who cannot attend a specific meeting time.
+  * Scheduling discussion of proposals that have been submitted.
+  * Asking for new proposals to be made to address an identified need.
+  * Partnering with Technical Leads to establish a roadmap and manage ongoing
+    projects.
 
 ## Role of technical leads
 
@@ -234,13 +234,13 @@ community [via the `#tag-security`
 channel](https://cloud-native.slack.com/archives/CDJ7MLT8S)), and issue a
 call/request for reviewers (i.e. a single security assessment lead, and at least
 one additional security assessor), and ensuring all reviewers [read the conlict
-of interest disclosure](assessments/guide/security-reviewer.md) and sign-off on
-it in the GitHub ticket itself. The sign-off is a simple form that can be easily
-copy/pasted into a new reply in the GitHub issue/ticket associated with the
-assessment (and the individual replaces the `???` literal text with their
+of interest disclosure](../assessments/guide/security-reviewer.md) and sign-off
+on it in the GitHub ticket itself. The sign-off is a simple form that can be
+easily copy/pasted into a new reply in the GitHub issue/ticket associated with
+the assessment (and the individual replaces the `???` literal text with their
 response), e.g.:
 
-```
+```txt
 Hard conflicts:
 Reviewer is a maintainer of the project - ???
 Reviewer is a direct report of/to a maintainer of the project - ???
@@ -355,4 +355,3 @@ additional roles and may be required to have specific expertise. For visibility,
 these additional project roles are listed below:
 
 * [Security Reviewers](../assessments/guide/security-reviewer.md/)
-
