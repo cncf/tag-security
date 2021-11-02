@@ -46,13 +46,7 @@
 
 # Table of Contents
 
-
-[TOC]
-
-
-
 # Metadata
-
 
 <table>
   <tr>
