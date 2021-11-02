@@ -179,10 +179,7 @@ At a high level, Cloud Custodian is designed to operate on the aforementioned YA
 
 Cloud Custodian can operate in pull, periodic, or event-based modes. Regardless of the mode, Cloud Custodian itself is stateless. This stateless design allows the Cloud Custodian rules engine to determine policy adherence using the provider control panel.
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
+![architecture](https://user-images.githubusercontent.com/1264109/139880490-e45dd30a-79eb-4216-aa5f-110c7b38221e.png)
 
 ## The YAML File
 
@@ -499,13 +496,9 @@ Additionally, Azure functions have a myriad of deployment options (i.e., premium
 
 Furthermore, Azure supports a myriad of options to configure identity for a function: from embedding credentials into a function source to managed service identity, i.e., per function identities and customer assigned identity. Custodian supports each of the platform’s native capabilities for users to assign service principal credentials.
 
+![azure](https://user-images.githubusercontent.com/1264109/139880726-51983e88-2110-4890-ac75-1cc63fb1fc44.png)
 
-### 
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)GCP {#gcp}
+### GCP
 
 In GCP, a Cloud Custodian policy executing in event execution mode will result in Custodian provisioning an audit log sink connected to a pub/sub topic and a cloud function. An attacker trying to inject an event could do so by introducing malicious events into the pub/sub topic.
 
@@ -513,13 +506,7 @@ Custodian does not use the event as a sole basis for decisions. Instead, it will
 
 The service accounts and cloud functions can be protected in leaf/target decentralized deployments by using GCP IAM Policies conditions. Alternatively, the cloud infrastructure used for Custodian can also be centralized within a GCP project with restricted access. This mitigates attempts to use the service account role or modifying functions and injecting events.
 
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
+![gcp](https://user-images.githubusercontent.com/1264109/139880901-a2e90603-2403-4d35-b526-7e25b8e73a49.png)
 
 ---
 
