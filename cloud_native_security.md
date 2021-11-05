@@ -8,12 +8,12 @@ together to discuss and share current challenges and solutions
 in cloud native security to get together in a vendor neutral space.
 
 Cloud Native Security Day (#cnsecurityday) is intended to
-drive collaboration, discussion,and knowledge sharing of
+drive collaboration, discussion, and knowledge sharing of
 cloud native security accomplishments and roadblocks. Get
 connected with others that are passionate about security.
-Learn from practitioners about pitfalls to avoid,hurdles to
+Learn from practitioners about pitfalls to avoid, hurdles to
 jump, and how to integrate security into your cloud native
-project, architecture,and enhance team awareness on security.
+project, architecture, and enhance team awareness on security.
 
 ## References to past events & related issues that have details of planning
 
