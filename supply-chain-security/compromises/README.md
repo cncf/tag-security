@@ -30,6 +30,7 @@ of compromise needs added, please include that as well.
 <!-- cSpell:disable -->
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
+| [Compromise of NP packages coa and rc](2021/coa-rc.md) | 2021 | Malicious Maintainer | [1](https://blog.sonatype.com/npm-hijackers-at-it-again-popular-coa-and-rc-open-source-libraries-taken-over-to-spread-malware) |
 | [Compromise of ua-parser-js](2021/ua-parser-js.md) | 2021 | Malicious Maintainer | [1](https://github.com/faisalman/ua-parser-js/issues/536) |
 | [The klow / klown / okhsa incident](2021/klow-klown-okhsa.md) | 2021 |  | [1](https://blog.sonatype.com/newly-found-npm-malware-mines-cryptocurrency-on-windows-linux-macos-devices) |
 | [PHP self-hosted git server](2021/php.md) | 2021 | Dev Tooling | [1](https://news-web.php.net/php.internals/113838) |
