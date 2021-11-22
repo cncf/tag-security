@@ -173,3 +173,22 @@ strongly recommended the paper lead coordinate with TAG leadership to engage the
 CNCF team for posting a blog to summarize and link to the paper.  As community
 events occur, it is also recommended that the TAG coordinate a submission to
 community events (presentation) on the paper.
+
+#### Authorship, attribution and acknowledgements
+
+Papers and other resources created from TAG-Security efforts are under the
+authorship of TAG-Security, and all members who have made contributions to
+the document (through writing, editing, creating illustrations, etc.) are
+considered "Contributors". Members of the public or TAG-Security who have
+commented and given feedback during the Request for Comment (RFC) period of
+during the creation of the document are considered "Reviewers" of the project.
+
+
+Individuals/groups who have made huge contributions/impact on the work can
+be acknowledged in an "Acknowledgements" section. This is to highlight stellar
+contributions and commitments to individuals that have went above and beyond
+to contribute to the project.
+
+Each document should contain a "Contributors", "Reviewers" and "Acknowledgements"
+section where appropriate.
+appropriate.
