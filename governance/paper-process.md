@@ -56,10 +56,10 @@ content:
 * What problem are we intending to resolve?
 * What assumptions are we making about the audience or the expected content of
   the paper?
-  * Note - these are documented then in the "Introduction > Assumptions"
+  * Note - these are documented in the "Introduction > Assumptions"
       section of the paper
 * What are our Goals and Non-Goals?
-  * Note - these are documented then in the "Introduction > Scope > Goals" and
+  * Note - these are documented in the "Introduction > Scope > Goals" and
       "Introduction > Scope > Non-Goals"
 * Is the scope in the issue still representative of what we intend to cover?
 
@@ -76,16 +76,19 @@ Once task assignment is complete, contributors can begin content rough-in.
 
 Assignees can provide content rough-in in a variety of ways.  They may provide
 raw content in the form of phrases, disjointed paragraphs, bullets on the topic,
-or they draft content in the form of completed paragraphs.  If leveraging draft
+or draft content in the form of completed paragraphs.  If leveraging draft
 content, placing this content in quotes helps other reviewers know it is
-'near-complete' and can review it as a holistic section.  
+'near-complete' and it should be reviewed as a holistic section.  
 
 #### Opinions
 
 There may be situations where multiple differing views on the subject matter or
-controls implementation are expressed.  If these cannot be collaboratively
-resolved it is the duty of the authors to capture the different views and leave
-the decision up to the reader.
+controls implementation are expressed.  Authors should make every effort to 
+discover the industry standard or practice and document it. If none exists 
+and the suggested content cannot be collaboratively resolved, it is the duty 
+of the authors to capture the different views with references, benefits, and 
+drawbacks or contingencies in order to provide the reader with enough 
+information to leave the decision up to the reader.
 
 #### References
 
