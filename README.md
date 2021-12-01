@@ -152,7 +152,7 @@ There are several groups that are affiliated to or do work and cover topics rele
 
 - Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), Apple [Chair
   term: 9/28/2020 - 9/27/2022]
-- Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM [Chair term:
+- Brandon Lum ([@lumjjb](https://github.com/lumjjb)), TBD [Chair term:
   6/3/2021 - 6/3/2023]
 - Aradhana Chetal ([@achetal01](https://github.com/achetal01)), TIAA [Chair
   term: 6/3/2021 - 6/3/2023]
