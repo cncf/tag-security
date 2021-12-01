@@ -228,4 +228,4 @@ contributions and commitments to individuals that have went above and beyond to
 contribute to the project.
 
 Each document should contain a "Contributors", "Reviewers" and
-"Acknowledgements" section where appropriate. 
+"Acknowledgements" section where appropriate.
