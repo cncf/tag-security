@@ -95,7 +95,6 @@ ensures the reader may not only dig deep into a specific reference area but also
 provides source content and is a matter of good practice.  
 
 ### Collaborative
-review
 
 Contributors now review all content roughed-in and transition raw content into
 draft content.  They may begin commenting on sections, expanding ideas, refining
