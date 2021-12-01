@@ -78,7 +78,9 @@ Assignees can provide content rough-in in a variety of ways.  They may provide
 raw content in the form of phrases, disjointed paragraphs, bullets on the topic,
 or they draft content in the form of completed paragraphs.  If leveraging draft
 content, placing this content in quotes helps other reviewers know it is
-'near-complete' and can review it as a wholistic section.  #### Opinions
+'near-complete' and can review it as a holistic section.  
+
+#### Opinions
 
 There may be situations where multiple differing views on the subject matter or
 controls implementation are expressed.  If these cannot be collaboratively
@@ -90,7 +92,9 @@ the decision up to the reader.
 It is important that any references used to generate paper content be cited
 appropriate through footnotes and a references section as appropriate.  This
 ensures the reader may not only dig deep into a specific reference area but also
-provides source content and is a matter of good practice.  ### Collaborative
+provides source content and is a matter of good practice.  
+
+### Collaborative
 review
 
 Contributors now review all content roughed-in and transition raw content into
@@ -225,4 +229,4 @@ contributions and commitments to individuals that have went above and beyond to
 contribute to the project.
 
 Each document should contain a "Contributors", "Reviewers" and
-"Acknowledgements" section where appropriate.  appropriate.
+"Acknowledgements" section where appropriate. 
