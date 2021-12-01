@@ -1,28 +1,9 @@
 # Past Events
 
-## KubeCon + CloudNativeCon, Barcelona, Spain, May 20 – 23, 2019
-
-[issue#127](https://github.com/cncf/tag-security/issues/127)
-
-## KubeCon + CloudNativeCon + Open Source Summit, Shanghai, Jun 24-26, 2019
-
-[issue#200](https://github.com/cncf/tag-security/issues/200)
+A list of past KubeCon/Cloud Native Security Day events an be found [here](cloud_native_security.md)
 
 ## DockerCon, San Francisco, CA, Apr 30 - May 2, 2019
 [issue#151](https://github.com/cncf/tag-security/issues/151)
-
-## KubeCon + CloudNativeCon, North America, Dec 11-13, 2018
-
-[issue#29](https://github.com/cncf/tag-security/issues/29)
-
-## KubeCon + CloudNativeCon, Shanghai, Nov 14-15, 2018
- [issue#28](https://github.com/cncf/tag-security/issues/28)
-
-## KubeConEU May 2-4, 2018 in Copenhagen, Denmark
-
-https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2018/
-
-[notes](safe_kubecon.md)
 
 ### TAG talks
 - [CNCF TAG-Security Intro](https://kccnceu19.sched.com/event/OB0K/intro-cncf-security-tag-sarah-allen-jeyappragash-jeyakeerthi-tetrateio) -  [slides](https://docs.google.com/presentation/d/1KE2tDDOeEOXQLF6hSrAuQLn4z25O_jeHIeAVE4CB-VI/edit#slide=id.gc6fa3c898_0_70) | [video](https://www.youtube.com/watch?v=XD89-v3oWPE)

@@ -123,7 +123,7 @@ helping to organize!) a gathering. Create a [github
 issue](https://github.com/cncf/tag-security/issues/new) for an event and add to
 list below:
 
-- KubeCon + CloudNativeCon, NA October 12-15 2021
+- KubeCon + CloudNativeCon, Europe May 16-20 2022
 
 [Past events](past-events.md)
 
