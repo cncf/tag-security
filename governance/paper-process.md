@@ -88,13 +88,13 @@ discover the industry standard or practice and document it. If none exists
 and the suggested content cannot be collaboratively resolved, it is the duty 
 of the authors to capture the different views with references, benefits, and 
 drawbacks or contingencies in order to provide the reader with enough 
-information to leave the decision up to the reader.
+information to reach their own conclusion.
 
 #### References
 
 It is important that any references used to generate paper content be cited
-appropriate through footnotes and a references section as appropriate.  This
-ensures the reader may not only dig deep into a specific reference area but also
+appropriately through footnotes and within the references section.  This
+permits the reader to not only dig deep into a specific reference area but also
 provides source content and is a matter of good practice.  
 
 ### Collaborative
@@ -149,7 +149,7 @@ Prior to opening the paper for community review, the group should select no more
 than 3 Adjudicators.  These individuals are tasked with accepting/rejecting
 suggestions, and resolving comments from the community.  Any comments or
 suggestions that require larger discussion should be brought up in a group
-meeting and decisively resolved.
+meeting and decisively resolved. These should be clearly documented with justification in the notes.
 
 Decisive resolution is the practice by which the group attempts to immediately
 resolve the comment either as a won't do, out of initial scope, document
@@ -227,7 +227,7 @@ creation of the document are considered "Reviewers" of the project.
 
 Individuals/groups who have made huge contributions/impact on the work can be
 acknowledged in an "Acknowledgements" section. This is to highlight stellar
-contributions and commitments to individuals that have went above and beyond to
+contributions and commitments by individuals that have went above and beyond to
 contribute to the project.
 
 Each document should contain a "Contributors", "Reviewers" and
