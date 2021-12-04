@@ -358,4 +358,5 @@ Some ongoing projects may have teams where members are identified for
 additional roles and may be required to have specific expertise. For visibility,
 these additional project roles are listed below:
 
-* [Security Reviewers](../assessments/guide/security-reviewer.md/)
+* [Security Reviewers](../assessments/guide/security-reviewer.md)
+
