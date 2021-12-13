@@ -211,7 +211,9 @@ particularly in cloud native environments where everything is software-defined.
 Weekly meetings at 8:00 AM PT (50 min) (see your timezone [here](https://time.is/0800_today_in_PT?CNCF_Security_TAG_Supply_Chain_WG_Meeting))
 See [CNCF calendar](https://www.cncf.io/calendar/) for invite.
 
-Facilitator for current deliverables is listed on the [issue](https://github.com/cncf/tag-security/issues/679)
+Project leaders: @mlieberman85
+Security TAG TL: @anvega
+Co-chair representative: @lumjjb
 
 ### STAG members
 
