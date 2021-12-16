@@ -18,26 +18,30 @@ repository:
   # role. If there are questions, please contact one of the chairs.
 collaborators:
   # Chairs
-  - username: ultrasaurus
+  - username: achetal01
     permission: admin
 
+  - username: lumjjb
+    permission: admin
+    
   - username: TheFoxAtWork
     permission: admin
-
+    
+  # Chairs Emeriti
+  - username: ultrasaurus
+    permission: push
+    
   - username: pragashj
-    permission: admin
+    permission: push
+    
+  - username: dshaw
+    permission: push
 
-    # Technical Leads
+  # Technical Leads
   - username: ashutosh-narkar
     permission: push
 
   - username: anvega
-    permission: push
-    
-  - username: achetal01
-    permission: push
-
-  - username: lumjjb
     permission: push
     
   - username: JustinCappos
@@ -61,4 +65,4 @@ collaborators:
     permission: push
 
     # Meeting Facilitators
-    # ultrasaurus, dshaw, pragashj, lumjjb, justincormack, izgeri, JustinCappos
+    # ultrasaurus, dshaw, pragashj, lumjjb, justincormack, izgeri, JustinCappos, magnologan, TheFoxAtWork, anvega, achetal01, ashutosh-narkar, chasemp, pushkarj

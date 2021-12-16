@@ -1,0 +1,13 @@
+{
+    "aliveStatusCodes": [200,206,402],
+    "fallbackRetryDelay": "5s",
+    "replacementPatterns": [
+      {
+        "pattern": "^/",
+        "replacement": "{{BASEURL}}/"
+      }
+    ],
+    "retryCount": 3,
+    "retryOn429": true,
+    "timeout": "20s"
+}
