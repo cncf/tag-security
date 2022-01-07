@@ -4,7 +4,7 @@
 # Catalog of Supply Chain Compromises
 
 This repository contains links to articles of software supply chain compromises.
-The goal is not to catalog every known supply chain attack,but rather to capture
+The goal is not to catalog every known supply chain attack, but rather to capture
 many examples of different kinds of attack, so that we can better understand the
 patterns and develop best practices and tools.
 
@@ -46,7 +46,7 @@ of compromise needs added, please include that as well.
 | [ROS build farm compromise](2019/ros.md) | 2019 | Trust and Signing <br>Publishing Infrastructure</br> | [1](https://discourse.ros.org/t/security-issue-on-ros-build-farm/9342/8), [2](https://discourse.ros.org/t/new-gpg-keys-deployed-for-packages-ros-org/9454) |
 | [ShadowHammer](2019/shadowhammer.md) | 2019 | Attack Chaining | [1](https://www.csoonline.com/article/3384259/asus-users-fall-victim-to-supply-chain-attack-through-backdoored-update.html), [2](https://securelist.com/operation-shadowhammer/89992/) |
 | [PEAR Breach](2019/pear.md) | 2019 | Publishing Infrastructure | [1](https://blog.cpanel.com/when-php-went-pear-shaped-the-php-pear-compromise/), [2](https://thehackernews.com/2019/01/php-pear-hacked.html) |
-| [Canonical's GitHub org compromised](2019/canonical-github.md) | 2019 | Dev Tooling <br> Source Code </br> <br> Publishing infrastructure </br> | [1](https://www.zdnet.com/article/canonical-github-account-hacked-ubuntu-source-code-safe/) |
+| [Canonical's GitHub org compromised](2019/canonical-github.md) | 2019 | Dev Tooling <br> Source Code <br> Publishing infrastructure </br> | [1](https://www.zdnet.com/article/canonical-github-account-hacked-ubuntu-source-code-safe/) |
 | [The event-stream vulnerability](2018/event_stream.md) | 2018 | Malicious Maintainer | [1](https://medium.com/intrinsic/compromised-npm-package-event-stream-d47d08605502),[2](https://github.com/dominictarr/event-stream/issues/116) |
 | [Dofoil](2018/dofoil.md) | 2018 | Publishing Infrastructure | [1](https://www.zdnet.com/article/windows-attack-poisoned-bittorrent-client-set-off-huge-dofoil-outbreak-says-microsoft/) |
 | [Operation Red](2018/operation-red.md) | 2018 | Publishing Infrastructure | [1](https://blog.trendmicro.com/trendlabs-security-intelligence/supply-chain-attack-operation-red-signature-targets-south-korean-organizations/) |
