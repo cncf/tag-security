@@ -123,7 +123,7 @@ helping to organize!) a gathering. Create a [github
 issue](https://github.com/cncf/tag-security/issues/new) for an event and add to
 list below:
 
-- KubeCon + CloudNativeCon, NA October 12-15 2021
+- KubeCon + CloudNativeCon, Europe May 16-20 2022
 
 [Past events](past-events.md)
 
@@ -225,7 +225,7 @@ If you are new, check out the [New Members Page](/NEW-MEMBERS.md).
 
 - Marlow Weston ([@catblade](https://github.com/catblade)), Intel
 - Pushkar Joglekar ([@pushkarj](https://github.com/pushkarj))
-- POP ([@danpopsd](https://github.com/danpopsd)), Sysdig
+- POP ([@danpopnyc](https://github.com/danpopnyc)), Sysdig
 - Devarajan P Ramaswamy ([@deva](https://github.com/deva26)), PADME
 - Kamil Pawlowski ([@kbpawlowski](https://github.com/kbpawlowski))
 - Geri Jennings ([@izgeri](https://github.com/izgeri)), CyberArk
