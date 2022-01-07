@@ -2,7 +2,7 @@
 
 **Completed**: *tbd*
 
-**Security reviewers**: *tbd*
+**Security reviewers**: John Kinsella
 
 **Project security lead**: Jim Bugwadia
 
@@ -33,19 +33,21 @@ Provide the list of links to existing security documentation for the project. Yo
 use the table below as an example:
 | Doc | url |
 | -- | -- |
-| Default and optional configs | https://kyverno.io/docs/installation/#configuring-kyverno |
+| Kyverno Security Documentation | https://main.kyverno.io/docs/security/ |
 
 
 ## Overview
 
-Kyverno secures and automates Kubernetes configurations using policies defined as Kubernetes custom resources.
+Kyverno helps secure and automates Kubernetes configurations using policies defined as Kubernetes custom resources. It operates as an Kubernetes admission controller and a command-line for off-cluster use.
 
 ### Background
 
-Kubernetes has a declarative configuration management system that allows users to specify the desired state of resources which Kubernetes controllers continiously reconcile with the current system state. For flexibility, and to address a wide set of use cases, Kubernetes provides several configuration options for each resource. While this is powerful, it also creates a few challenges:
+Kubernetes has a declarative configuration management system that allows users to specify the desired state of resources which Kubernetes controllers continiously reconcile with the current system state. For flexibility, and to address a wide set of use cases, Kubernetes provides several configuration options for each resource. 
+
+While this is powerful, it also creates a few challenges:
 1. Only a small subset of configuration options are commonly used. 
-2. Kubernetes is not secure by default. Security and best practices need to be configured for workloads.
-3. Configurations are shared across roles and chances of misconfigurations, or lack of proper configuration, increase as its not obvious whether developers or operators are responsible for `advanced` configuration settings.
+2. Kubernetes configurations are not secure by default. Security and best practices need to be configured for workloads.
+3. A resource's configurations is shared across organizational roles (dev-sec-ops) and chances of misconfigurations, or lack of proper configuration, increase as there is no clear ownership. It may not be obvious whether developers, operators, or security engineers are responsible for more `advanced` configuration settings.
 
 ### Goal
 
@@ -53,7 +55,7 @@ The goal of the Kyverno project is to simplify Kubernetes configuration security
 
 ### Non-goals
 
-Kyverno is not a general purpose policy engine.
+Kyverno is not a general purpose policy engine i.e. it is not intended for use outside of Kubernetes.
 
 ## Self-assessment use
 
@@ -118,251 +120,77 @@ The diagram below shows the Kyverno physical architecture:
 
 ## Security functions and features
 
-TBD.
-
-* Critical.  A listing critical security components of the project with a brief 
-description of their importance.  It is recommended these be used for threat modeling.  
-These are considered critical design elements that make the product itself secure and
-are not configurable.  Projects are encouraged to track these as primary impact items
-for changes to the project.
-
-* Security Relevant.  A listing of security relevant components of the project with
-  brief description.  These are considered important to enhance the overall security of
-the project, such as deployment configurations, settings, etc.  These should also be
-included in threat modeling.
-
-### Kyverno Roles 
-
-Kyverno installs with the roles defined at: https://github.com/kyverno/kyverno/blob/main/definitions/k8s-resource/clusterroles.yaml.
-
-Below is a description of each role:
-
-#### kyverno:admin-policies
-
-```sh
-kubectl describe clusterrole kyverno:admin-policies
-
-Name:         kyverno:admin-policies
-Labels:       rbac.authorization.k8s.io/aggregate-to-admin=true
-Annotations:  <none>
-PolicyRule:
-  Resources                   Non-Resource URLs  Resource Names  Verbs
-  ---------                   -----------------  --------------  -----
-  clusterpolicies.kyverno.io  []                 []              [*]
-  policies.kyverno.io         []                 []              [*]
-```
-
-#### kyverno:admin-policyreport
-
-```sh
-kubectl describe clusterrole kyverno:admin-policyreport
-
-Name:         kyverno:admin-policyreport
-Labels:       rbac.authorization.k8s.io/aggregate-to-admin=true
-Annotations:  <none>
-PolicyRule:
-  Resources                                     Non-Resource URLs  Resource Names  Verbs
-  ---------                                     -----------------  --------------  -----
-  clusterpolicyreports.wgpolicyk8s.io/v1alpha1  []                 []              [*]
-  policyreports.wgpolicyk8s.io/v1alpha1         []                 []              [*]
-
-```
-
-#### kyverno:admin-reportchangerequest
-
-```sh
-kubectl describe clusterrole kyverno:admin-reportchangerequest
-
-Name:         kyverno:admin-reportchangerequest
-Labels:       rbac.authorization.k8s.io/aggregate-to-admin=true
-Annotations:  <none>
-PolicyRule:
-  Resources                               Non-Resource URLs  Resource Names  Verbs
-  ---------                               -----------------  --------------  -----
-  clusterreportchangerequests.kyverno.io  []                 []              [*]
-  reportchangerequests.kyverno.io         []                 []              [*]
-
-```
-
-#### kyverno:customresources
-
-```sh
-kubectl describe clusterrole kyverno:customresources
-
-Name:         kyverno:customresources
-Labels:       <none>
-Annotations:  <none>
-PolicyRule:
-  Resources                                       Non-Resource URLs  Resource Names  Verbs
-  ---------                                       -----------------  --------------  -----
-  clusterpolicies.*/status                        []                 []              [create delete get list patch update watch]
-  clusterpolicies.*                               []                 []              [create delete get list patch update watch]
-  clusterpolicyreports.*/status                   []                 []              [create delete get list patch update watch]
-  clusterpolicyreports.*                          []                 []              [create delete get list patch update watch]
-  clusterreportchangerequests.*/status            []                 []              [create delete get list patch update watch]
-  clusterreportchangerequests.*                   []                 []              [create delete get list patch update watch]
-  generaterequests.*/status                       []                 []              [create delete get list patch update watch]
-  generaterequests.*                              []                 []              [create delete get list patch update watch]
-  policies.*/status                               []                 []              [create delete get list patch update watch]
-  policies.*                                      []                 []              [create delete get list patch update watch]
-  policyreports.*/status                          []                 []              [create delete get list patch update watch]
-  policyreports.*                                 []                 []              [create delete get list patch update watch]
-  reportchangerequests.*/status                   []                 []              [create delete get list patch update watch]
-  reportchangerequests.*                          []                 []              [create delete get list patch update watch]
-  customresourcedefinitions.apiextensions.k8s.io  []                 []              [delete]
-
-```
-
-
-#### kyverno:generatecontroller
-
-```sh
-kubectl describe clusterrole kyverno:generatecontroller
-
-Name:         kyverno:generatecontroller
-Labels:       <none>
-Annotations:  <none>
-PolicyRule:
-  Resources          Non-Resource URLs  Resource Names  Verbs
-  ---------          -----------------  --------------  -----
-  namespaces.*       []                 []              [create update delete list get watch]
-  configmaps.*       []                 []              [create update delete list get]
-  limitranges.*      []                 []              [create update delete list get]
-  networkpolicies.*  []                 []              [create update delete list get]
-  resourcequotas.*   []                 []              [create update delete list get]
-  secrets.*          []                 []              [create update delete list get]
-```
-
-
-#### kyverno:policycontroller
-
-
-```sh
-kubectl describe clusterrole kyverno:policycontroller
-
-Name:         kyverno:policycontroller
-Labels:       <none>
-Annotations:  <none>
-PolicyRule:
-  Resources  Non-Resource URLs  Resource Names  Verbs
-  ---------  -----------------  --------------  -----
-  *.*        []                 []              [get list update watch]
-
-```
-
-#### kyverno:userinfo
-
-```sh
-kubectl describe clusterrole kyverno:userinfo
-
-Name:         kyverno:userinfo
-Labels:       <none>
-Annotations:  <none>
-PolicyRule:
-  Resources              Non-Resource URLs  Resource Names  Verbs
-  ---------              -----------------  --------------  -----
-  clusterrolebindings.*  []                 []              [watch list]
-  clusterroles.*         []                 []              [watch list]
-  configmaps.*           []                 []              [watch list]
-  namespaces.*           []                 []              [watch list]
-  rolebindings.*         []                 []              [watch list]
-  roles.*                []                 []              [watch list]
-```
-
-
-#### kyverno:webhook
-
-```sh
-kubectl describe clusterrole kyverno:webhook
-
-Name:         kyverno:webhook
-Labels:       <none>
-Annotations:  <none>
-PolicyRule:
-  Resources                                                Non-Resource URLs  Resource Names                  Verbs
-  ---------                                                -----------------  --------------                  -----
-  signers.certificates.k8s.io                              []                 [kubernetes.io/legacy-unknown]  [approve]
-  certificatesigningrequests.*/approval                    []                 []                              [create delete get list patch update watch]
-  certificatesigningrequests.*                             []                 []                              [create delete get list patch update watch]
-  events.*                                                 []                 []                              [create delete get list patch update watch]
-  mutatingwebhookconfigurations.*                          []                 []                              [create delete get list patch update watch]
-  validatingwebhookconfigurations.*                        []                 []                              [create delete get list patch update watch]
-  certificatesigningrequests.certificates.k8s.io/approval  []                 [kubernetes.io/legacy-unknown]  [create delete get update watch]
-  certificatesigningrequests.certificates.k8s.io/status    []                 [kubernetes.io/legacy-unknown]  [create delete get update watch]
-  certificatesigningrequests.certificates.k8s.io           []                 [kubernetes.io/legacy-unknown]  [create delete get update watch]
-```
-
+Kyverno operates as an webhook admission controller. 
 
 ### Threat Modeling
 
-TBD.
+A threat model for admission controllers was created by Rory McCune and the Kubernetes SIG Security:
 
-#### Bad Policy
+   * [Kubernetes Admission Controller Threat Model](https://github.com/raesene/sig-security/blob/main/sig-security-docs/papers/admission-control/kubernetes-admission-control-threat-model.md)
 
-#### Bad Kyverno image
+  * [Blog post](https://github.com/raesene/website/blob/main/content/en/blog/_posts/Securing-Admission-Controllers.md)
 
+  NOTE: PRs and final locations are pending.
+
+The Kyverno security document references this threat model and discusses mitigations and best practices:
+
+   https://main.kyverno.io/docs/security/#threat-model
 
 ## Project compliance
 
 Kyverno does not currently document meeting particular compliance standards.
 
-
 ## Secure development practices
+
+The Kyverno project follows established CNCF and OSS best practices for code development and delivery:
 
 ### Development Pipeline
 
-The Kyverno project follows established CNCF best practices for code development and delivery.
-
-All code is mantained in Git, and changes must be reviewed by maintainers and must pass all unit and e2e tests. Code changes are submitted via Pull Requests (PRs) and must be signed. Commits to `main` are not allowed.
+All code is mantained in [Git](https://github.com/kyverno/kyverno/) and changes must be reviewed by maintainers and must pass all unit and e2e tests. Code changes are submitted via Pull Requests (PRs) and must be signed. Commits to `main` are not allowed.
 
 ### Artifacts
 
-The [Kyverno container images](https://github.com/orgs/kyverno/packages) are hosted in GitHub Container Registry (GHCR).
+The [Kyverno container images](https://github.com/orgs/kyverno/packages) are hosted in GitHub Container Registry (GHCR). Container images are signed using Sigstore Cosign (https://main.kyverno.io/docs/security/#verifying-kyverno-container-images.)
 
-The [Kyverno Helm chart](https://artifacthub.io/packages/helm/kyverno/kyverno) is hosted in ArtifactHub.
+The [Kyverno Helm chart](https://artifacthub.io/packages/helm/kyverno/kyverno) is hosted in ArtifactHub. There is a pending issue to to sign the Helm Chart using Sigstore Cosign (https://github.com/kyverno/kyverno/issues/2758).
 
 The [Kyverno installation YAMLs](https://github.com/kyverno/kyverno/blob/main/definitions/install.yaml) are hosted in the GitHub repository.
+
+A Software Bill of Materials (SBOM) is produced and made available for each release (https://main.kyverno.io/docs/security/#fetching-the-sbom-for-kyverno).
 
 ### Communication Channels. 
 
   * Internal: [GitHub Discussions](https://github.com/kyverno/kyverno/discussions)
   * Inbound: [#kyverno slack channel](https://kubernetes.slack.com/archives/CLGR9BJU9), [mailing list](https://groups.google.com/g/kyverno)
   * Outbound: [#kyverno slack channel](https://kubernetes.slack.com/archives/CLGR9BJU9), [mailing list](https://groups.google.com/g/kyverno)
+  * Security email group: [kyverno-security@googlegroups.com](mailto:kyverno-security@@googlegroups.com)
 
-### Ecosystem
 
-## Security issue resolution
+## Security processes
 
-### Responsible Disclosures Process
+Kyverno's processes for security issue resolution, responsible disclosure, vulnerability response, and incident response are documented at:
 
-*A outline of the project's responsible disclosures process should suspected security issues, incidents, or
-vulnerabilities be discovered both external and internal to the project. The outline should discuss communication methods/strategies.*
+   https://main.kyverno.io/docs/security/
 
-### Vulnerability Response Process
+A security email alias [kyverno-security@googlegroups.com](mailto:kyverno-security@@googlegroups.com) is available for security disclosures and related communications.
 
-*Who is responsible for responding to a report. What is the reporting process? How would you respond?*
-
-### Incident Response 
-
-*A description of the defined procedures for triage, confirmation, notification of vulnerability or security incident, and patching/update availability.*
 
 ## Appendix
 
 ### Known Issues Over Time
 
-*List or summarize statistics of past vulnerabilities with links. If none have been reported, provide data, if any, about your track record in catching issues in code review or automated testing.*
+All Kyverno security related issues (both fixes and enhancements) are labeled with "security" and can be queried using:
+
+  https://github.com/kyverno/kyverno/labels/security
+
 
 ### [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/)
 
-*Best Practices. A brief discussion of where the project is at with respect to CII best practices and what it would need to achieve the badge.*
-
-### Case Studies
-
-*Provide context for reviewers by detailing 2-3 scenarios of real-world use cases.*
+The Kyverno project has adopted the OSSF/Scorecard and is tracking progress in [issue #2617](https://github.com/kyverno/kyverno/issues/2617).
 
 ### Related Projects / Vendors
 
-[OPA/Gatekeeper](https://github.com/open-policy-agent/gatekeeper) is another CNCF project that acts as an admission controller and supports policy management. It used [Rego](https://www.openpolicyagent.org/docs/latest/policy-language/) as its policy language. 
+[OPA/Gatekeeper](https://github.com/open-policy-agent/gatekeeper) is another CNCF project that acts as an admission controller and supports policy management. It uses [Rego](https://www.openpolicyagent.org/docs/latest/policy-language/) as its policy language. 
 
 A detailed comparison is available at: https://neonmirrors.net/post/2021-02/kubernetes-policy-comparison-opa-gatekeeper-vs-kyverno/.
 
