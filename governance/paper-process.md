@@ -83,11 +83,11 @@ content, placing this content in quotes helps other reviewers know it is
 #### Opinions
 
 There may be situations where multiple differing views on the subject matter or
-controls implementation are expressed.  Authors should make every effort to 
-discover the industry standard or practice and document it. If none exists 
-and the suggested content cannot be collaboratively resolved, it is the duty 
-of the authors to capture the different views with references, benefits, and 
-drawbacks or contingencies in order to provide the reader with enough 
+controls implementation are expressed.  Authors should make every effort to
+discover the industry standard or practice and document it. If none exists
+and the suggested content cannot be collaboratively resolved, it is the duty
+of the authors to capture the different views with references, benefits, and
+drawbacks or contingencies in order to provide the reader with enough
 information to reach their own conclusion.
 
 #### References
