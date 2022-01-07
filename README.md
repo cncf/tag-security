@@ -225,7 +225,7 @@ If you are new, check out the [New Members Page](/NEW-MEMBERS.md).
 
 - Marlow Weston ([@catblade](https://github.com/catblade)), Intel
 - Pushkar Joglekar ([@pushkarj](https://github.com/pushkarj))
-- POP ([@danpopsd](https://github.com/danpopsd)), Sysdig
+- POP ([@danpopnyc](https://github.com/danpopnyc)), Sysdig
 - Devarajan P Ramaswamy ([@deva](https://github.com/deva26)), PADME
 - Kamil Pawlowski ([@kbpawlowski](https://github.com/kbpawlowski))
 - Geri Jennings ([@izgeri](https://github.com/izgeri)), CyberArk

@@ -50,7 +50,7 @@ A list of past KubeCon/Cloud Native Security Day events an be found [here](cloud
 | [video](https://www.youtube.com/watch?v=JKkq60DvPBw)
 
 ## Past Meetings
-
+<!-- markdownlint-disable-next-line -->
 <details><summary>Click to view list</summary>
 
 * [2019-09-25 CNCF TAG-Security Meeting](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit)
@@ -190,7 +190,7 @@ A list of past KubeCon/Cloud Native Security Day events an be found [here](cloud
 * [2018-03-16 SAFE Meeting](https://docs.google.com/document/d/1nYN3cy7jrKQbEziT43447w8ZValOuioxEKYE0D4vkPU/edit)
 * 2018-03-09 - no meeting
 * [2018-03-02 SAFE Meeting](https://docs.google.com/document/d/1vZfDHLh2jy0uH_U_qLpbp64Xy64gu0SrgVLJov4kuMw/edit)
-\- GCP Administrators Bill of Rights with [@raycolline](https://github.com/raycolline)
+\- GCP Administrators Bill of Rights with @raycolline
 * [2018-02-23 SAFE Meeting](https://docs.google.com/document/d/1U4x1wynL-JlojF1Qidus97t8bJve3XJWTpc07hHCAxU/edit)
 \- Open Policy Agent (OPA) Use Case with [@tsandall](https://github.com/tsandall)
 and [@timothyhinrichs](https://github.com/timothyhinrichs)
