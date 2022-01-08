@@ -347,6 +347,7 @@ If you are new, check out the [New Members Page](/NEW-MEMBERS.md).
 - Mayo Cream ([@mayocream](https://github.com/mayocream))
 - Thomas Underhiill ([@captainarcher](https://github.com/captainarcher)), VMware
 - Anand Gautam ([@anandg112](https://github.com/anandg112)), Prodigy Education
+- Boby Chaudhary ([@bobychaudhary](https://github.com/bobychaudhary))
   
 </details>
 <!-- markdownlint-enable MD013 -->
