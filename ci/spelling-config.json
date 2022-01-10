@@ -88,6 +88,7 @@
         "ptree",
         "venv",
         "Istio",
+        "ATT&CK",
         "conftest"
     ]
 }
