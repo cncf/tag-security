@@ -66,7 +66,7 @@ of compromise needs added, please include that as well.
 | [Bitcoin Gold](2017/bitcoingold.md) | 2017 | Source Code | [1](https://bitcoingold.org/critical-warning-nov-26/) |
 | [ExpensiveWall](2017/expensivewall.md) | 2017 | Dev Tooling | [1](https://blog.checkpoint.com/2017/09/14/expensivewall-dangerous-packed-malware-google-play-will-hit-wallet/), [2](https://research.checkpoint.com/expensivewall-dangerous-packed-malware-google-play-will-hit-wallet/)
 | [OSX Elmedia player](2017/elmedia.md) | 2017 | Publishing infrastructure | [1](https://www.hackread.com/hackers-infect-mac-users-proton-malware-using-elmedia-player/) |
-| [GitHub password recovery issues](2016/gh-unicode.md) | 2016 | Dev Tool <br> Source Code </br> | [1](https://bounty.github.com/researchers/jagracey.html), [2](https://eng.getwisdom.io/hacking-github-with-unicode-dotless-i/) |
+| [GitHub password recovery issues](2016/gh-unicode.md) | 2016 | Dev Tool <br> Source Code </br> | [1](https://bounty.github.com/researchers/jagracey.html), [2](https://dev.to/jagracey/hacking-github-s-auth-with-unicode-s-turkish-dotless-i-460n) |
 | [keydnap](2016/keydnap.md) | 2016 | Publishing infrastructure | [1](https://blog.malwarebytes.com/threat-analysis/2016/09/transmission-hijacked-again-to-spread-malware), [2](https://www.welivesecurity.com/2016/08/30/osxkeydnap-spreads-via-signed-transmission-application/) |
 | [Fosshub Breach](2016/fosshub.md) | 2016 | Publishing infrastructure | [1](https://www.ghacks.net/2016/08/03/attention-fosshub-downloads-compromised/), [2](https://www.theregister.co.uk/2016/08/04/classicshell_audicity_infection/) |
 | [Linux Mint](2016/mint.md) | 2016 | Publishing infrastructure | [1](https://www.zdnet.com/article/linux-mint-website-hacked-malicious-backdoor-version/) |
