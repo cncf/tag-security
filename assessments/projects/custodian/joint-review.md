@@ -87,13 +87,13 @@ pursuing this as a follow up with appropriate CNCF support and guidance.
 
 <!-- markdownlint-enable MD034 -->
 ## Reviewers and Participants
-
+<!-- cSpell:disable -->
 |  |  |
 | -- | -- |
 | Project Security Lead | @kapilt |
 | Security TAG Lead Reviewer | @rficcaglia |
 | Additional Reviewers | @iaxes, @chasemp, @itaysk, @ultrasaurus, @TheFoxAtWork |
-
+<!-- cSpell:enable -->
 (Date of review closure can/should be determined directly from Git commit timestamps.)
 
 ### Security links
