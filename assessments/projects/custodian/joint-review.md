@@ -101,7 +101,7 @@ pursuing this as a follow up with appropriate CNCF support and guidance.
 | Item | Ref or URL |
 | -- | -- |
 | Security Mailing List  | security@cloudcustodian.io |
-| Threat Model (2019) | https://docs.google.com/document/d/1S9zQZaT6G1TA3IAx6YNL0f7G938xaFZ-bziszhuxMZg |
+| Threat Model (2019) | [Google Doc Linked Here](https://docs.google.com/document/d/1S9zQZaT6G1TA3IAx6YNL0f7G938xaFZ-bziszhuxMZg) |
 
 ## Overview
 
@@ -256,18 +256,18 @@ dry-run, and change control to policies.
 
 ### Features
 
-- Support for public cloud services and resources with a library of actions and
+* Support for public cloud services and resources with a library of actions and
   filters to build policies with.
-- Supports filtering on resources with nested boolean conditions.
-- Dry run any policy to see what it would do.
-- Automatically provisions serverless functions and event sources (AWS
+* Supports filtering on resources with nested boolean conditions.
+* Dry run any policy to see what it would do.
+* Automatically provisions serverless functions and event sources (AWS
   CloudWatchEvents, AWS Config Rules, Azure EventGrid, GCP AuditLog & Pub/Sub,
   etc).
-- Cloud provider native metrics outputs on resources that matched a policy.
-- Structured outputs into cloud native object storage of which resources
+* Cloud provider native metrics outputs on resources that matched a policy.
+* Structured outputs into cloud native object storage of which resources
   matched a policy.
-- Cache usage to minimize api calls.
-- Supports multi-account/subscription/project usage.
+* Cache usage to minimize api calls.
+* Supports multi-account/subscription/project usage.
 
 ### Components
 
@@ -675,7 +675,7 @@ be recommended.
 
 As of September 2021, [there are no published CVEs.](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=%22custodian%22)
 
-There are also [(]no open dependabot PRs](https://github.com/cloud-custodian/cloud-custodian/pulls?q=is%3Apr+is%3Aopen+dependabot)
+There are also [no open dependabot PRs](https://github.com/cloud-custodian/cloud-custodian/pulls?q=is%3Apr+is%3Aopen+dependabot)
 <!-- markdownlint-disable MD034 -->
 For the docker image the following was reported by the github action run:
 https://github.com/cloud-custodian/cloud-custodian/runs/3476474527
