@@ -60,4 +60,4 @@ Our members list can be found
 
 Once you have successfully get your
 first PR merged, you can add your name
-to our Members section in [README.md](README.md).
+to our Members section in [README.md](https://github.com/cncf/tag-security#members).
