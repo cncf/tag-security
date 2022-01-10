@@ -1,3 +1,4 @@
+<!-- cSpell:ignore klow klown Sonatype okhsa cryptominert -->
 # The klow / klown / okhsa incident
 
 On October 20, 2021, Sonatype reported that their automated malware detection systems detected multiple malicious packages on NPM. They were klow, klown, and okhsa which introduced a dependency on klown. THe incident was reported to NPM on October 15, and the packages were taken down the same day.
