@@ -4,7 +4,7 @@
 # Catalog of Supply Chain Compromises
 
 This repository contains links to articles of software supply chain compromises.
-The goal is not to catalog every known supply chain attack,but rather to capture
+The goal is not to catalog every known supply chain attack, but rather to capture
 many examples of different kinds of attack, so that we can better understand the
 patterns and develop best practices and tools.
 
@@ -30,6 +30,9 @@ of compromise needs added, please include that as well.
 <!-- cSpell:disable -->
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
+| [Compromise of NP packages coa and rc](2021/coa-rc.md) | 2021 | Malicious Maintainer | [1](https://blog.sonatype.com/npm-hijackers-at-it-again-popular-coa-and-rc-open-source-libraries-taken-over-to-spread-malware) |
+| [Compromise of ua-parser-js](2021/ua-parser-js.md) | 2021 | Malicious Maintainer | [1](https://github.com/faisalman/ua-parser-js/issues/536) |
+| [The klow / klown / okhsa incident](2021/klow-klown-okhsa.md) | 2021 | Negligence | [1](https://blog.sonatype.com/newly-found-npm-malware-mines-cryptocurrency-on-windows-linux-macos-devices) |
 | [PHP self-hosted git server](2021/php.md) | 2021 | Dev Tooling | [1](https://news-web.php.net/php.internals/113838) |
 | [Homebrew](2021/homebrew.md) | 2021 | Dev Tooling | [1](https://brew.sh/2021/04/21/security-incident-disclosure/), [2](https://hackerone.com/reports/1167608) |  |
 | [Codecov](2021/codecov.md) | 2021 | Source Code | [1](https://about.codecov.io/security-update/) |  |
@@ -46,7 +49,7 @@ of compromise needs added, please include that as well.
 | [ROS build farm compromise](2019/ros.md) | 2019 | Trust and Signing <br>Publishing Infrastructure</br> | [1](https://discourse.ros.org/t/security-issue-on-ros-build-farm/9342/8), [2](https://discourse.ros.org/t/new-gpg-keys-deployed-for-packages-ros-org/9454) |
 | [ShadowHammer](2019/shadowhammer.md) | 2019 | Attack Chaining | [1](https://www.csoonline.com/article/3384259/asus-users-fall-victim-to-supply-chain-attack-through-backdoored-update.html), [2](https://securelist.com/operation-shadowhammer/89992/) |
 | [PEAR Breach](2019/pear.md) | 2019 | Publishing Infrastructure | [1](https://blog.cpanel.com/when-php-went-pear-shaped-the-php-pear-compromise/), [2](https://thehackernews.com/2019/01/php-pear-hacked.html) |
-| [Canonical's GitHub org compromised](2019/canonical-github.md) | 2019 | Dev Tooling <br> Source Code </br> <br> Publishing infrastructure </br> | [1](https://www.zdnet.com/article/canonical-github-account-hacked-ubuntu-source-code-safe/) |
+| [Canonical's GitHub org compromised](2019/canonical-github.md) | 2019 | Dev Tooling <br> Source Code <br> Publishing infrastructure </br> | [1](https://www.zdnet.com/article/canonical-github-account-hacked-ubuntu-source-code-safe/) |
 | [The event-stream vulnerability](2018/event_stream.md) | 2018 | Malicious Maintainer | [1](https://medium.com/intrinsic/compromised-npm-package-event-stream-d47d08605502),[2](https://github.com/dominictarr/event-stream/issues/116) |
 | [Dofoil](2018/dofoil.md) | 2018 | Publishing Infrastructure | [1](https://www.zdnet.com/article/windows-attack-poisoned-bittorrent-client-set-off-huge-dofoil-outbreak-says-microsoft/) |
 | [Operation Red](2018/operation-red.md) | 2018 | Publishing Infrastructure | [1](https://blog.trendmicro.com/trendlabs-security-intelligence/supply-chain-attack-operation-red-signature-targets-south-korean-organizations/) |
@@ -63,7 +66,7 @@ of compromise needs added, please include that as well.
 | [Bitcoin Gold](2017/bitcoingold.md) | 2017 | Source Code | [1](https://bitcoingold.org/critical-warning-nov-26/) |
 | [ExpensiveWall](2017/expensivewall.md) | 2017 | Dev Tooling | [1](https://blog.checkpoint.com/2017/09/14/expensivewall-dangerous-packed-malware-google-play-will-hit-wallet/), [2](https://research.checkpoint.com/expensivewall-dangerous-packed-malware-google-play-will-hit-wallet/)
 | [OSX Elmedia player](2017/elmedia.md) | 2017 | Publishing infrastructure | [1](https://www.hackread.com/hackers-infect-mac-users-proton-malware-using-elmedia-player/) |
-| [GitHub password recovery issues](2016/gh-unicode.md) | 2016 | Dev Tool <br> Source Code </br> | [1](https://bounty.github.com/researchers/jagracey.html), [2](https://eng.getwisdom.io/hacking-github-with-unicode-dotless-i/) |
+| [GitHub password recovery issues](2016/gh-unicode.md) | 2016 | Dev Tool <br> Source Code </br> | [1](https://bounty.github.com/researchers/jagracey.html), [2](https://dev.to/jagracey/hacking-github-s-auth-with-unicode-s-turkish-dotless-i-460n) |
 | [keydnap](2016/keydnap.md) | 2016 | Publishing infrastructure | [1](https://blog.malwarebytes.com/threat-analysis/2016/09/transmission-hijacked-again-to-spread-malware), [2](https://www.welivesecurity.com/2016/08/30/osxkeydnap-spreads-via-signed-transmission-application/) |
 | [Fosshub Breach](2016/fosshub.md) | 2016 | Publishing infrastructure | [1](https://www.ghacks.net/2016/08/03/attention-fosshub-downloads-compromised/), [2](https://www.theregister.co.uk/2016/08/04/classicshell_audicity_infection/) |
 | [Linux Mint](2016/mint.md) | 2016 | Publishing infrastructure | [1](https://www.zdnet.com/article/linux-mint-website-hacked-malicious-backdoor-version/) |
