@@ -1,3 +1,4 @@
+<!-- cSpell:ignore klow klown Sonatype okhsa cryptominer -->
 # Compromise of NPM package ua-parser-js
 
 On October 22, 2021, the developer of popular NPM package ua-parser-js (over 7 million weekly downloads) reported that their account was hijacked, allowing attackers to publish malicious versions that included malware. The developer noticed because of a flurry of spam emails that (they suspect) were sent to mask the NPM emails, and quickly deprecated the malicious versions and put out a notice that stated their NPM account was hijacked.
