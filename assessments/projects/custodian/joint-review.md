@@ -28,7 +28,7 @@ review, code fuzzing, or code audit.  The review team strongly recommends
 pursuing this as a follow up with appropriate CNCF support and guidance.
 
 ## Table of Contents
-
+<!-- markdownlint-disable -->
 * [Cloud Custodian Joint-review](#cloud-custodian-joint-review)
    * [Table of Contents](#table-of-contents)
    * [Metadata](#metadata)
@@ -72,10 +72,10 @@ pursuing this as a follow up with appropriate CNCF support and guidance.
       * [Recommended CNCF Requests](#recommended-cncf-requests)
    * [Appendix](#appendix)
       * [Case Studies](#case-studies)
-
+<!-- markdownlint-enable -->
 
 ## Metadata
-
+<!-- markdownlint-disable MD034 -->
 | Project Home                    | https://github.com/cloud-custodian                                                                               |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------|
 | Security Provider               | Yes, however many users implement Cloud Custodian for non security purposes, i.e., cost optimization, governance |
@@ -85,6 +85,7 @@ pursuing this as a follow up with appropriate CNCF support and guidance.
 | Self-Assessment Document        | https://docs.google.com/document/d/1s88ifDtFJzGX1O_ve6HM6_vbTkpsWDKWRDuxt9RHdcs/ |
 | SBOM                            | [poetry configuration in pyproject.toml](https://github.com/cloud-custodian/cloud-custodian/blob/master/pyproject.toml), [poetry lock file](https://github.com/cloud-custodian/cloud-custodian/blob/master/poetry.lock), [pip requirements file](https://github.com/cloud-custodian/cloud-custodian/blob/master/requirements.txt), [release process](https://cloudcustodian.io/docs/developer/packaging.html) |
 
+<!-- markdownlint-enable MD034 -->
 ## Reviewers and Participants
 
 |  |  |
@@ -104,8 +105,8 @@ pursuing this as a follow up with appropriate CNCF support and guidance.
 
 ## Overview
 
-Cloud Custodian is a YAML domain specific language (DSL)-based stateless rules engine for cloud auditing,
-management, and governance.
+Cloud Custodian is a YAML domain specific language (DSL)-based stateless rules
+engine for cloud auditing, management, and governance.
 
 Cloud Custodian’s policy-as-code:
 
@@ -281,7 +282,8 @@ dry-run, and change control to policies.
 
 #### Security Functions and Features
 
-The project makes the following assumptions regarding mature operational practices when using Custodian in order to limit the attack surface:
+The project makes the following assumptions regarding mature operational
+practices when using Custodian in order to limit the attack surface:
 
 * Hardened compute execution environment with minimal additional software
   components running and minimal inbound access.
@@ -331,7 +333,6 @@ to review.
 ## Security Analysis
 
 ![threat overview](c7n_threat_assessment.png)
-
 
 ### Attacker Motivations
 
@@ -517,7 +518,7 @@ broader access into an environment and therefore fully replicate insider attack
 possibilities.
 
 ### Example Attack Scenarios
-
+<!-- markdownlint-disable MD033 -->
 * Denial of Service, Tampering: Use `lambda:PutFunctionConcurrency` to set a
   Lambda Function's concurrency setting to `0` which would disable event based
   compliance checking.
@@ -528,7 +529,7 @@ possibilities.
   detailed metadata about the cloud environment as well as positive Cloud
   Custodian findings on how it is non-compliant (i.e. vulnerable).
 * Spoofing, Elevation of Privileges: Use `lambda:CreateFunction` and
-  lambda:InvokeFunction, thereby allowing for arbitrary code to be introduced
+  `lambda:InvokeFunction`, thereby allowing for arbitrary code to be introduced
   and executed when triggered.
 * Alternatively, use `lambda:UpdateFunctionCode` to update code for an existing
   Lambda Function which would bypass the need for `iam:PassRole`. Then use
@@ -544,6 +545,7 @@ possibilities.
   CloudTrail Mode (AWS lambdas are triggered by cloudtrail events to terminate
   things). Example one policy that terminates instances with encryption turned
   on and another that kills instances without encryption.
+<!-- markdownlint-enable MD033 -->
 
 ### Security Degradation
 
@@ -589,6 +591,7 @@ policy filters to ensure the resource matches. If all checks pass, Custodian
 then proceeds with actions. This does open up a TOCTOU attack, however.
 
 ### STRIDE Evaluation
+<!-- markdownlint-disable MD024 -->
 
 #### STRIDE Classification Considered
 
@@ -608,6 +611,7 @@ developer who is not also the author, requiring collusion for success.
 
 Never allow Cloud Custodian to have more than Poll mode access to prevent a
 Denial of Service attack.
+<!-- markdownlint-enable MD024 -->
 
 ## Threat Model
 
@@ -634,7 +638,9 @@ Interesting sequences may include:
 * `E->H`
 * `G->E` (ie modify the sls image or code fork)
 
+<!-- markdownlint-disable MD025 -->
 # Secure Development Practices
+<!-- markdownlint-enable MD025 -->
 
 The Review Team examined c7n's [CII badge
 attestations](https://bestpractices.coreinfrastructure.org/en/projects/3402)
@@ -644,8 +650,8 @@ at Muse.dev.
 
 Code fuzzing should be a project priority, and the review team discussed this
 with the project team and LinuxFoundation/CNCF leadership, who generously made
-fuzzing resources available to the c7n project.  A PR is currently open as of
-September 2021: https://github.com/cloud-custodian/cloud-custodian/pull/6832
+fuzzing resources available to the c7n project.  [PR 6832 addresses
+this](https://github.com/cloud-custodian/cloud-custodian/pull/6832).
 
 Subsequent followup is recommended.
 
@@ -667,16 +673,14 @@ be recommended.
 
 ### Currently Open Security Issues and Vulnerabilities
 
-As of September 2021, there are no published CVEs per:
-https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=%22custodian%22
+As of September 2021, [there are no published CVEs.](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=%22custodian%22)
 
-There are also no open dependabot PRs:
-https://github.com/cloud-custodian/cloud-custodian/pulls?q=is%3Apr+is%3Aopen+dependabot
-
+There are also [(]no open dependabot PRs](https://github.com/cloud-custodian/cloud-custodian/pulls?q=is%3Apr+is%3Aopen+dependabot)
+<!-- markdownlint-disable MD034 -->
 For the docker image the following was reported by the github action run:
 https://github.com/cloud-custodian/cloud-custodian/runs/3476474527
-
-```
+<!-- markdownlint-enable MD034 -->
+```bash
 cloudcustodian/c7n:dev (ubuntu 20.04)
 =====================================
 Total: 32 (UNKNOWN: 0, LOW: 2, MEDIUM: 20, HIGH: 10, CRITICAL: 0)
@@ -875,10 +879,10 @@ stale since the only In Progress item was last updated Jan 22, 2020.
 ### Recommended CNCF Requests
 
 The review team recommends that CNCF continue to offer fuzzing resources, and
-hopes the project avails itself of these.  
+hopes the project avails itself of these.
 
-The team also recommends an internship funded to create adding a secure default 
-policy, and/or linter/checker, and additional documentation be created to guide 
+The team also recommends an internship funded to create adding a secure default
+policy, and/or linter/checker, and additional documentation be created to guide
 new users on locking down their policies.
 
 Finally, we hope that CNCF will fund a formal code audit and lab setup
@@ -899,4 +903,3 @@ native cloud tooling, eg AWS Config.  c7n attempts to be cloud agnostic and/or
 multi-cloud which makes this more attractive to larger organizations who use
 multiple clouds.  However, lack of robust Kubernetes support may be seen as a
 problem by those same organizations.
-
