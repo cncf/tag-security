@@ -1,4 +1,5 @@
-# Cloud Custodian Joint-review
+<!-- cSpell:ignore attck addgetnetgrent -->
+ # Cloud Custodian Joint-review
 
 This joint-review relied heavily on the
 [self-assessment](https://docs.google.com/document/d/1s88ifDtFJzGX1O_ve6HM6_vbTkpsWDKWRDuxt9RHdcs)
@@ -221,11 +222,11 @@ Per the Security TAG user personas, Cloud Custodian serves the needs of:
 | Competency Title                              | Competency Type | Competency Description |
 |-----------------------------------------------|-----------------|------------------------|
 | Asset and Inventory Management                | Organizational  | Cloud Custodian adds capabilities related to the process of identifying, developing, operating, maintaining, upgrading, and disposing of cloud native resources. |
-| Business Continuity                           | Organizational  | Cloud Custodian adds capabilities related to business continuity planning and continuity of operations to help ensure an organization can prevent and overcome serious incidents or disasters and quickly resume normal operations within a reasonable timeframe. |
+| Business Continuity                           | Organizational  | Cloud Custodian adds capabilities related to business continuity planning and continuity of operations to help ensure an organization can prevent and overcome serious incidents or disasters and quickly resume normal operations within a reasonable time frame. |
 | Collection Operations                         | Technical       | Cloud Custodian adds capabilities related to executing the collection of cybersecurity information to develop intelligence using appropriate strategies. |
 | Data Management                               | Organizational  | Cloud Custodian adds capabilities related to the development and execution of data management plans, programs, practices, processes, architectures, and tools across all stages of the data lifecycle. Includes processes around the creation, storage, archiving, discovery, access, disposal, enhancement, and reuse of data and information assets. |
 | Data Privacy                                  | Organizational  | Cloud Custodian adds capabilities related to the proper handling of data to protect individuals’ privacy, including addressing whether and how data is shared and with whom; how data is collected and stored; and legal and regulatory compliance. |
-| Data Security                                 | Technical       | Cloud Custodian adds capabilities related to the methods and procedures that protect data and information systems by ensuring their confidentialty, integrity, and availability. |
+| Data Security                                 | Technical       | Cloud Custodian adds capabilities related to the methods and procedures that protect data and information systems by ensuring their confidentiality, integrity, and availability. |
 | Digital Forensics                             | Technical       | Cloud Custodian adds capabilities related to the application of tools and techniques used in data recovery and preservation of electronic evidence. Includes the collection, processing, preservation, analysis, and presentation of computer-related evidence in support of network vulnerability mitigation and criminal, fraud, counterintelligence, or law enforcement investigations. |
 | Encryption                                    | Technical       | Cloud Custodian adds capabilities related to the cryptographic process of transforming data to ensure that it can only be read by the person who is authorized to access it; specifically by helping ensure configuration is configured correctly. |
 | Enterprise Architecture                       | Technical       | Cloud Custodian adds capabilities in support of the principles, concepts, and methods of enterprise architecture to align technology strategy, plans, and systems with the mission, goals, structure, and processes of the organization. |
@@ -318,7 +319,7 @@ any sensitive data based on logging verbosity.)  The sensitivity of the
 resultant output (including logging to stdout) depends on the use case and may
 need to be appropriately restricted.
 
-Since Cloud Custodian delegates all security resposibilities to the user and
+Since Cloud Custodian delegates all security responsibilities to the user and
 their cloud IAM and execution environment, there is little documentation about
 potential security risks/trade-offs of the default IAM policy or other cloud
 environment configuration.
@@ -353,7 +354,7 @@ Please refer to the [Mitre ATT&CK matrix for Enterprise Cloud](https://attack.mi
 TTPs Considered include:
 
 * [Drive-by Compromise](https://attack.mitre.org/techniques/T1189/) - it is
-  easy to imagine a wateringhole attack on c7n users to update to a new version
+  easy to imagine a watering hole attack on c7n users to update to a new version
   or apply a c7n security patch which leads to distribution of a malicious
   Custodian package.
 * [Phishing](https://attack.mitre.org/techniques/T1566/), [Internal
@@ -373,7 +374,7 @@ TTPs Considered include:
 * [User Execution](https://attack.mitre.org/techniques/T1204) - certainly the
   users (or service accounts) allowed to execute c7n, and the frequency and
   modality (ie cli vs serverless task) should be explicitly defined and ideally
-  enforced by some automated means; unusal users executing c7n, or at an
+  enforced by some automated means; unusual users executing c7n, or at an
   increased frequency should raise alarms; not running c7n for a prolonged
   period could indicate a DoS or other tampering.
 * [Account Manipulation](https://attack.mitre.org/techniques/T1098/), [Create
@@ -392,7 +393,7 @@ TTPs Considered include:
   most likely organizational risk using c7n.  Since c7n itself does not provide
   a tool or documentation on using a least privilege, minimal permission policy,
   this is left as an exercise to the user.  Users who casually grant expansive
-  permissions to c7n risk attackers exploiting this privleged access.  Worse, if
+  permissions to c7n risk attackers exploiting this privileged access.  Worse, if
   users do not separate read only c7n actions from remedial write actions, then
   any abuse of the permissions - even accidental misuse - could increase risks
   to resources and other accounts and security services.
@@ -406,7 +407,7 @@ TTPs Considered include:
   but could be abused to increase noise-to-signal and lull DevSecOps into
   ignoring "false alarms" or induce alert fatigue. There should be a thoughtful
   balance of actively monitoring c7n alerts to ensure proper controls and
-  operation, but not so much that subtle anomoalies are missed.
+  operation, but not so much that subtle anomalies are missed.
 * [Modify Cloud Compute
   Infrastructure](https://attack.mitre.org/techniques/T1578/), [Data
   Staging](https://attack.mitre.org/techniques/T1074/), [Data
@@ -645,7 +646,7 @@ Interesting sequences may include:
 The Review Team examined c7n's [CII badge
 attestations](https://bestpractices.coreinfrastructure.org/en/projects/3402)
 and github actions source code.  The review team suggests further review of
-using the OSSF Security Scorecard and/or AllStars initiative, and perhap look
+using the OSSF Security Scorecard and/or AllStars initiative, and perhaps look
 at Muse.dev.
 
 Code fuzzing should be a project priority, and the review team discussed this
