@@ -1,5 +1,5 @@
 <!-- cSpell:ignore attck addgetnetgrent -->
- # Cloud Custodian Joint-review
+# Cloud Custodian Joint-review
 
 This joint-review relied heavily on the
 [self-assessment](https://docs.google.com/document/d/1s88ifDtFJzGX1O_ve6HM6_vbTkpsWDKWRDuxt9RHdcs)
