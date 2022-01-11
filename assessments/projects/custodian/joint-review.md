@@ -490,7 +490,7 @@ to reduce the success of attack by a malicious insider or opportunistic
 external intruder.
 
 As a result of the elevated permissions Cloud Custodian requires in order to
-execute within a given cloud environment, Organizations which fail to
+execute within a given cloud environment, organizations which fail to
 appropriately secure the identity and access management of their cloud
 environment may negate any security value Cloud Custodian can provide them.
 
