@@ -894,21 +894,24 @@ environment, once the project is ready for this with full Kubernetes support.
 
 ### Case Studies
 
-Cloud Custodian is used by thousands of organizations to enforce a fleet of 
-policies that control cloud costs, avoid potential breaches, and meet 
-regulatory requirements across an ever-increasing number of cloud services 
-and providers. Here are a few case studies: 
+Cloud Custodian is used by thousands of organizations to enforce a fleet of
+policies that control cloud costs, avoid potential breaches, and meet
+regulatory requirements across an ever-increasing number of cloud services
+and providers. Here are a few case studies:
 
-* HBO Max uses Cloud Custodian ([Video](https://www.youtube.com/watch?v=fomDROZ2T-o))
-  to speed their security development and automate and enforce hundreds of security 
-  rules and policies across multiple cloud accounts and regions. 
-* JPMC uses Cloud Custodian ([Video](https://www.youtube.com/watch?v=ITwqLY3YfCk)) 
-  as standard governance as a code tool for their cloud environments across various 
-  technology groups. 
-* Zapier uses Cloud Custodian ([Video](https://www.youtube.com/watch?v=NB5GnHmgsa0)) 
-  to track, alert,  and take actions on security misconfiguration.
-* Code42 uses Cloud Custodian to [automate enforcement](https://www.code42.com/blog/tips-from-the-trenches-cloud-custodian-automating-aws-security-cost-and-compliance/) 
-  of various AWS cost, security, and compliance policies. 
+* HBO Max uses Cloud Custodian
+  ([Video](https://www.youtube.com/watch?v=fomDROZ2T-o)) to speed their security
+  development and automate and enforce hundreds of security rules and policies
+  across multiple cloud accounts and regions.
+* JPMC uses Cloud Custodian
+  ([Video](https://www.youtube.com/watch?v=ITwqLY3YfCk)) as standard governance
+  as a code tool for their cloud environments across various technology groups.
+* Zapier uses Cloud Custodian
+  ([Video](https://www.youtube.com/watch?v=NB5GnHmgsa0)) to track, alert,  and
+  take actions on security misconfiguration.
+* Code42 uses Cloud Custodian to [automate
+  enforcement](https://www.code42.com/blog/tips-from-the-trenches-cloud-custodian-automating-aws-security-cost-and-compliance/)
+  of various AWS cost, security, and compliance policies.
   
 ### Related Projects / Vendors
 
