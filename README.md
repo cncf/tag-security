@@ -163,6 +163,7 @@ There are several groups that are affiliated to or do work and cover topics rele
   University
 - Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), Styra
 - Andres Vega ([@anvega](https://github.com/anvega)), VMWare
+- Pushkar Joglekar ([@PushkarJ](https://github.com/PushkarJ)), VMWare
 
 ### STAG Chair Emeriti
 
