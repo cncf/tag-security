@@ -16,16 +16,16 @@
 # Tech lead, Chair Emeritus roles should exercise discretion in defering final
 # approval for a PR to a co-chair. 
 # This includes major edits or new introductions to the repository.
-*       @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos @achetal01 @ashutosh-narkar @anvega
+*       @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos @achetal01 @ashutosh-narkar @anvega @PushkarJ
 
 # README.md Owners
-/README.md @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos @achetal01 @ashutosh-narkar @anvega
+/README.md @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos @achetal01 @ashutosh-narkar @anvega @PushkarJ
 
 # Security assessments
-/assessments/ @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos @achetal01 @ashutosh-narkar @anvega 
+/assessments/ @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos @achetal01 @ashutosh-narkar @anvega  @PushkarJ
 
 # Supply Chain
-/supply-chain-security/ @SantiagoTorres @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos @achetal01 @ashutosh-narkar @anvega
+/supply-chain-security/ @SantiagoTorres @ultrasaurus @dshaw @pragashj @lumjjb @TheFoxAtWork @JustinCappos @achetal01 @ashutosh-narkar @anvega @PushkarJ
 
 # Policy related (TODO: Approval required by PR)
 # /policy/ @hannibalhuang @ericavonb @rficcaglia @ultrasaurus @pragashj @TheFoxAtWork
