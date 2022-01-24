@@ -152,7 +152,7 @@ There are several groups that are affiliated to or do work and cover topics rele
 
 - Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)), Apple [Chair
   term: 9/28/2020 - 9/27/2022]
-- Brandon Lum ([@lumjjb](https://github.com/lumjjb)) [Chair term:
+- Brandon Lum ([@lumjjb](https://github.com/lumjjb)), Google [Chair term:
   6/3/2021 - 6/3/2023]
 - Aradhana Chetal ([@achetal01](https://github.com/achetal01)), TIAA [Chair
   term: 6/3/2021 - 6/3/2023]
@@ -258,7 +258,7 @@ If you are new, check out the [New Members Page](/NEW-MEMBERS.md).
 - Andrei Manea ([@andrei_821](https://github.com/andrei821)), CloudHero
 - Santiago Torres-Arias ([@SantiagoTorres](https://github.com/SantiagoTorres)),
   New York University
-- Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
+- Brandon Lum ([@lumjjb](https://github.com/lumjjb)), Google
 - Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), OPA
 - Lorenzo Fontana ([@fntlnz](https://github.com/fntlnz)), Sysdig [Falco
   Maintainer]
