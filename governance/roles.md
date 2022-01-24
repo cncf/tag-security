@@ -159,11 +159,11 @@ when required
 ## Role of STAG representatives
 
 STAG representatives are leadership executive sponsors of a project. The
-STAG representative acts as a point of liason with the STAG leadership team
+STAG representative acts as a point of liaison with the STAG leadership team
 and takes on a role of mentorship for the project lead(s).
 
 STAG representatives are required to be part of the STAG leadership team.
-This includes co-chairs, technical leads and co-chair emiritus roles.
+This includes co-chairs, technical leads and co-chair emeritus roles.
 A STAG representative may be of capacity of an individual contributor but
 cannot be the project lead of the same project they are representing.
 
@@ -172,7 +172,7 @@ STAG representatives are appointed through the following process:
 - A member of the leadership indicates that they would like to be a STAG
 representative on a project by:
   - editing the issue's "STAG Representative" field to their github ID.
-  - setting the issue milestone to the corresponding mileston created for
+  - setting the issue milestone to the corresponding milestone created for
   their github ID.
 - STAG representatives may change based on discretion of co-chairs.
 
