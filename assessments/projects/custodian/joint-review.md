@@ -831,7 +831,7 @@ Total: 32 (UNKNOWN: 0, LOW: 2, MEDIUM: 20, HIGH: 10, CRITICAL: 0)
 ## Hands-on Review
 
 Although some of the reviews have previously used c7n in AWS, both as cli and
-in Lambda, Cloud Custodian did not receive a join hands-on review from
+in Lambda, Cloud Custodian did not receive a joint hands-on review from
 TAG-Security.
 
 ## Roadmap
