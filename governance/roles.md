@@ -141,10 +141,10 @@ Project Leads are nominated and approved by the following process:
 Depending on the expected length of the project, Project Leads may be assigned
 as OWNERS of the project directory in this repository to help facilitate and
  moderate new content to the project.
- 
 ### Duties of a project lead
 
 Project leads are responsible for the following:
+
 - Adhering to the [project process](https://github.com/cncf/tag-security/blob/main/governance/process.md)
 - Proposing and refining the project scope, goal and schedule
 - Ensure smooth day-to-day operations of the project. This includes:
@@ -156,7 +156,6 @@ representative of the project
 when required
 - Outreach and recruitment for the project
 - Provide retrospective of a project to the STAG
- 
 ## Role of STAG representatives
 
 STAG representatives are leadership executive sponsors of a project. The
