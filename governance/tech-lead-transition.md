@@ -10,7 +10,7 @@ For nomination process please refer to [tech-lead-proposal-process](./tech-lead-
 
 * [ ] Transfer Logistics
   * [ ] #tag-security-chairs-and-tech-leads channel - add new TL(s)
-  * [ ] [tag-leadership mailing list](https://lists.cncf.io/g/cncf-tag-security-leads) - add new TL(s)
+  * [ ] tag-leadership mailing list - add new TL(s)
   * [ ] add TL to chairs/leads meeting
   * [ ] add TL to [github team](https://github.com/orgs/cncf/teams/tag-security/)
   * [ ] tag-security repo PR:
