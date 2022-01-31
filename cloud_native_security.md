@@ -17,7 +17,36 @@ project, architecture, and enhance team awareness on security.
 
 ## References to past events & related issues that have details of planning
 
+### 2018
+
+[KubeCon EU 2018](https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2018/)
+
+- Copenhagen, Denmark
+- May 2-4, 2018
+- [notes](safe_kubecon.md)
+
+[KubeCon + CloudNativeCon, Shanghai](https://events19.linuxfoundation.cn/events/kubecon-cloudnativecon-china-2018/)
+
+- Shanghai, China
+- Nov 14-15, 2018
+- Planning the event =>
+  [issue#28](https://github.com/cncf/tag-security/issues/28)
+
+[KubeCon + CloudNativeCon, North America](https://events19.linuxfoundation.org/events/kubecon-cloudnativecon-north-america-2018/)
+
+- Seattle, USA
+- December 11-13, 2018
+- Planning the event =>
+  [issue#29](https://github.com/cncf/tag-security/issues/29)
+
 ### 2019
+
+[KubeCon + CloudNativeCon + Open Source Summit](https://events19.linuxfoundation.cn/events/kubecon-cloudnativecon-china-2019/)
+
+- Shanghai, China
+- June 24-26, 2019
+- Planning the event =>
+  [issue#200](https://github.com/cncf/tag-security/issues/200)
 
 [Cloud Native Security Day NA](https://events19.linuxfoundation.org/events/cloud-native-security-day-2019/)
 
