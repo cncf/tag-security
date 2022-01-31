@@ -155,7 +155,7 @@ A Software Bill of Materials (SBOM) is produced and made available for each rele
   * Internal: [GitHub Discussions](https://github.com/kyverno/kyverno/discussions)
   * Inbound: [#kyverno slack channel](https://kubernetes.slack.com/archives/CLGR9BJU9), [mailing list](https://groups.google.com/g/kyverno)
   * Outbound: [#kyverno slack channel](https://kubernetes.slack.com/archives/CLGR9BJU9), [mailing list](https://groups.google.com/g/kyverno)
-  * Security email group: [kyverno-security](mailto:kyverno-security@@googlegroups.com)
+  * Security email group: [kyverno-security](mailto:kyverno-security@googlegroups.com)
 
 
 ## Security processes
@@ -164,7 +164,7 @@ Kyverno's processes for security issue resolution, responsible disclosure, vulne
 
    https://main.kyverno.io/docs/security/
 
-A security email alias [kyverno-security](mailto:kyverno-security@@googlegroups.com) is available for security disclosures and related communications.
+A security email alias [kyverno-security](mailto:kyverno-security@googlegroups.com) is available for security disclosures and related communications.
 
 
 ## Appendix
