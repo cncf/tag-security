@@ -37,7 +37,7 @@ Kyverno helps secure and automates Kubernetes configurations using policies defi
 
 ### Background
 
-Kubernetes has a declarative configuration management system that allows users to specify the desired state of resources which Kubernetes controllers continiously reconcile with the current system state. For flexibility, and to address a wide set of use cases, Kubernetes provides several configuration options for each resource. 
+Kubernetes has a declarative configuration management system that allows users to specify the desired state of resources which Kubernetes controllers continuously reconcile with the current system state. For flexibility, and to address a wide set of use cases, Kubernetes provides several configuration options for each resource. 
 
 While this is powerful, it also creates a few challenges:
 1. Only a small subset of configuration options are commonly used. 
@@ -111,7 +111,7 @@ The diagram below shows the Kyverno physical architecture:
 
 ![Kyverno Physical Architecture](images/kyverno-physical-architecture.png)
 
-**NOTE:** Currently Kyverno runs as one multi-instance (HA) `Pod` managaed by a single `Deployment`. In the future the different controllers may be packaged in separate deployments to allow flexibility in scaling and tuning each component.
+**NOTE:** Currently Kyverno runs as one multi-instance (HA) `Pod` managed by a single `Deployment`. In the future the different controllers may be packaged in separate deployments to allow flexibility in scaling and tuning each component.
 
 ## Security functions and features
 
@@ -138,7 +138,7 @@ The Kyverno project follows established CNCF and OSS best practices for code dev
 
 ### Development Pipeline
 
-All code is mantained in [Git](https://github.com/kyverno/kyverno/) and changes must be reviewed by maintainers and must pass all unit and e2e tests. Code changes are submitted via Pull Requests (PRs) and must be signed. Commits to the `main` branch are not allowed.
+All code is maintained in [Git](https://github.com/kyverno/kyverno/) and changes must be reviewed by maintainers and must pass all unit and e2e tests. Code changes are submitted via Pull Requests (PRs) and must be signed. Commits to the `main` branch are not allowed.
 
 ### Artifacts
 
@@ -155,7 +155,7 @@ A Software Bill of Materials (SBOM) is produced and made available for each rele
   * Internal: [GitHub Discussions](https://github.com/kyverno/kyverno/discussions)
   * Inbound: [#kyverno slack channel](https://kubernetes.slack.com/archives/CLGR9BJU9), [mailing list](https://groups.google.com/g/kyverno)
   * Outbound: [#kyverno slack channel](https://kubernetes.slack.com/archives/CLGR9BJU9), [mailing list](https://groups.google.com/g/kyverno)
-  * Security email group: [kyverno-security@googlegroups.com](mailto:kyverno-security@@googlegroups.com)
+  * Security email group: [kyverno-security](mailto:kyverno-security@@googlegroups.com)
 
 
 ## Security processes
@@ -164,7 +164,7 @@ Kyverno's processes for security issue resolution, responsible disclosure, vulne
 
    https://main.kyverno.io/docs/security/
 
-A security email alias [kyverno-security@googlegroups.com](mailto:kyverno-security@@googlegroups.com) is available for security disclosures and related communications.
+A security email alias [kyverno-security](mailto:kyverno-security@@googlegroups.com) is available for security disclosures and related communications.
 
 
 ## Appendix

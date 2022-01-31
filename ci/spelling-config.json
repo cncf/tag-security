@@ -89,6 +89,9 @@
         "venv",
         "Istio",
         "ATT&CK",
-        "conftest"
+        "conftest",
+        "Kyverno",
+        "Rego",
+        "Sigstore"
     ]
 }
