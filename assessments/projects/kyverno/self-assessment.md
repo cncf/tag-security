@@ -1,15 +1,12 @@
 # CNCF TAG-Security Kyverno Security Self Assessment
 
-**Completed**: *tbd*
 
-**Security reviewers**: John Kinsella
-
-**Project security lead**: Jim Bugwadia
-
-**Source code**: https://github.com/kyverno/kyverno
-
-**Web site**: https://kyverno.io/
-
+|**Completed**:               | *tbd*                              |
+|-----------------------------|------------------------------------|
+|**Security reviewer(s)**:    | John Kinsella                      |
+|**Project security lead**:   | Jim Bugwadia                       |
+| **Source code**:            | https://github.com/kyverno/kyverno |
+| **Web site**:               | https://kyverno.io/                |
 
 # Table of contents
 
@@ -29,8 +26,6 @@
 
 ### Security links
 
-Provide the list of links to existing security documentation for the project. You may
-use the table below as an example:
 | Doc | url |
 | -- | -- |
 | Kyverno Security Documentation | https://main.kyverno.io/docs/security/ |
@@ -47,7 +42,7 @@ Kubernetes has a declarative configuration management system that allows users t
 While this is powerful, it also creates a few challenges:
 1. Only a small subset of configuration options are commonly used. 
 2. Kubernetes configurations are not secure by default. Security and best practices need to be configured for workloads.
-3. A resource's configurations is shared across organizational roles (dev-sec-ops) and chances of misconfigurations, or lack of proper configuration, increase as there is no clear ownership. It may not be obvious whether developers, operators, or security engineers are responsible for more `advanced` configuration settings.
+3. A resource's configurations is shared across organizational roles (dev-sec-ops) and chances of misconfigurations, or lack of proper configuration, increase as there is no clear ownership. Whether developers, operators, or security engineers are responsible for more `advanced` configuration settings may not be obvious.
 
 ### Goal
 
@@ -55,7 +50,7 @@ The goal of the Kyverno project is to simplify Kubernetes configuration security
 
 ### Non-goals
 
-Kyverno is not a general purpose policy engine i.e. it is not intended for use outside of Kubernetes.
+Kyverno is not a general purpose policy engine i.e. it is not designed for use outside of Kubernetes.
 
 ## Self-assessment use
 
@@ -124,13 +119,10 @@ Kyverno operates as an webhook admission controller.
 
 ### Threat Modeling
 
-A threat model for admission controllers was created by Rory McCune and the Kubernetes SIG Security:
+A threat model for admission controllers is published and maintained by the Kubernetes SIG Security:
+  * [Kubernetes Admission Controller Threat Model](https://github.com/kubernetes/sig-security/blob/main/sig-security-docs/papers/admission-control/kubernetes-admission-control-threat-model.md)
+  * [Blog post](https://kubernetes.io/blog/2022/01/19/secure-your-admission-controllers-and-webhooks/)
 
-   * [Kubernetes Admission Controller Threat Model](https://github.com/raesene/sig-security/blob/main/sig-security-docs/papers/admission-control/kubernetes-admission-control-threat-model.md)
-
-  * [Blog post](https://github.com/raesene/website/blob/main/content/en/blog/_posts/Securing-Admission-Controllers.md)
-
-  NOTE: PRs and final locations are pending.
 
 The Kyverno security document references this threat model and discusses mitigations and best practices:
 
@@ -146,7 +138,7 @@ The Kyverno project follows established CNCF and OSS best practices for code dev
 
 ### Development Pipeline
 
-All code is mantained in [Git](https://github.com/kyverno/kyverno/) and changes must be reviewed by maintainers and must pass all unit and e2e tests. Code changes are submitted via Pull Requests (PRs) and must be signed. Commits to `main` are not allowed.
+All code is mantained in [Git](https://github.com/kyverno/kyverno/) and changes must be reviewed by maintainers and must pass all unit and e2e tests. Code changes are submitted via Pull Requests (PRs) and must be signed. Commits to the `main` branch are not allowed.
 
 ### Artifacts
 
