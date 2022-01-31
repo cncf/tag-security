@@ -1,12 +1,12 @@
 # CNCF TAG-Security Kyverno Security Self Assessment
 
 
-|**Completed**:               | *tbd*                              |
-|-----------------------------|------------------------------------|
-|**Security reviewer(s)**:    | John Kinsella                      |
-|**Project security lead**:   | Jim Bugwadia                       |
-| **Source code**:            | https://github.com/kyverno/kyverno |
-| **Web site**:               | https://kyverno.io/                |
+|**Completed**:               | *tbd*                                 |
+|-----------------------------|---------------------------------------|
+|**Security reviewer(s)**:    | <!-- cspell:disable --> John Kinsella |
+|**Project security lead**:   | <!-- cspell:disable --> Jim Bugwadia  |
+| **Source code**:            | https://github.com/kyverno/kyverno    |
+| **Web site**:               | https://kyverno.io/                   |
 
 # Table of contents
 
