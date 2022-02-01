@@ -11,6 +11,7 @@ The following is the current listing of member roles:
 * [Technical Leads](#role-of-technical-leads)
 * [Chair Emeriti](#role-of-chair-emeriti)
 * [Project Leads](#role-of-project-leads)
+* [STAG Representatives](#role-of-stag-representatives)
 * [Team leads](#role-of-team-leads)
 * [Group Members](#role-of-members)
 * [TOC Liaison](#toc-liaison)
@@ -140,6 +141,61 @@ Project Leads are nominated and approved by the following process:
 Depending on the expected length of the project, Project Leads may be assigned
 as OWNERS of the project directory in this repository to help facilitate and
  moderate new content to the project.
+
+### Duties of a project lead
+
+Project leads are responsible for the following:
+
+- Adhering to the [project process](https://github.com/cncf/tag-security/blob/main/governance/process.md)
+- Proposing and refining the project scope, goal and schedule
+- Ensure smooth day-to-day operations of the project. This includes:
+  - Ensuring meetings are scheduled, announced and recorded
+  - Facilitation of meetings, ensuring minutes are recorded
+- Ensure progress and status reports are communicated to the STAG
+representative of the project
+- Resolving conflict within the project and escalating to leadership
+when required
+- Outreach and recruitment for the project
+- Provide retrospective of a project to the STAG
+
+## Role of STAG representatives
+
+STAG representatives are leadership executive sponsors of a project. The
+STAG representative acts as a point of liaison with the STAG leadership team
+and takes on a role of mentorship for the project lead(s).
+
+STAG representatives are required to be part of the STAG leadership team.
+This includes co-chairs, technical leads and co-chair emeritus roles.
+A STAG representative may be of capacity of an individual contributor but
+cannot be the project lead of the same project they are representing.
+
+STAG representatives are appointed through the following process:
+
+- A member of the leadership indicates that they would like to be a STAG
+representative on a project by:
+  - editing the issue's "STAG Representative" field to their github ID.
+  - setting the issue milestone to the corresponding milestone created for
+  their github ID.
+- STAG representatives may change based on discretion of co-chairs.
+
+### Duties of a STAG representative
+
+STAG representatives are responsible for the following:
+
+- Reporting back to the leadership on the status of the project, indicating
+when the project requires external governance help. For example, these
+include:
+  - Project is understaffed or suffers from rampant scope creep.
+  - Project is inactive and needs to be discontinued.
+  - Inter-personal issues within leads and/or members causing disruption.
+- Provide feedback to project lead to whether the current scope and operation
+of a project is in line with the vision and governance of the STAG.
+- Mentorship of project leads on matters of leadership and governance process.
+- Provide privilege facilities that a project lead does not have access to.
+Examples are:
+  - Creating a ServiceNow ticket with the CNCF for design help
+  - Uploading of meeting recordings to youtube
+  - Approval of messages to STAG mailing list
 
 ## Role of Team Leads
 
@@ -283,4 +339,4 @@ Some ongoing projects may have teams where members are identified for
 additional roles and may be required to have specific expertise. For visibility,
 these additional project roles are listed below:
 
-* [Security Reviewers](../assessments/guide/security-reviewer.md/)
+* [Security Reviewers](../assessments/guide/security-reviewer.md)
