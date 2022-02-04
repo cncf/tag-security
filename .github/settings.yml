@@ -24,9 +24,6 @@ collaborators:
   - username: lumjjb
     permission: admin
     
-  - username: TheFoxAtWork
-    permission: admin
-    
   # Chairs Emeriti
   - username: ultrasaurus
     permission: push
@@ -35,6 +32,9 @@ collaborators:
     permission: push
     
   - username: dshaw
+    permission: push
+
+  - username: TheFoxAtWork
     permission: push
 
   # Technical Leads
