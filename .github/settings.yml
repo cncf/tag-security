@@ -46,6 +46,9 @@ collaborators:
     
   - username: JustinCappos
     permission: push
+  
+  - username: PushkarJ
+    permission: push
     
     # Triage Team
     # manage issues (edit labels, occasionally edit)
