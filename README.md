@@ -129,7 +129,7 @@ list below:
 
 ## New members
 
-If you are new to the group, we encourage you to check out our [New Members Page](NEW-MEMBERS.md.)
+If you are new to the group, we encourage you to check out our [New Members Page](NEW-MEMBERS.md)
 
 ## Related groups
 
