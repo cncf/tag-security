@@ -1,6 +1,6 @@
 # Cloud Native Security Lexicon
 
-[The lexicon can be found here.](cloud-native-security-lexicon)
+[The lexicon can be found here.](cloud-native-security-lexicon.md)
 
 ## About
 
