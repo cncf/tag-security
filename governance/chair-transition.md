@@ -53,6 +53,19 @@ process](chair-proposal-process.md) with specific items that must be completed.
     * [ ] invite new chairs (if needed)
     * [ ] give "owners" permission
 
+## De-provisioning
+
+Reverse all above transfer steps to TL level, and in addition:
+
+* [ ] Transfer ownership of all documents
+  * [ ] Co-Chairs meeting notes
+  * [ ] Leadership meeting notes,
+  * [ ] TOC Liaison meeting notes
+  * [ ] Credentials doc
+* [ ] Transfer ownership of calendar invites
+  * [ ] Co-chairs meeting
+  * [ ] Leadership meeting
+
 ## Announce
 
 * [ ] Announce the vote
