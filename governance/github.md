@@ -45,4 +45,4 @@ After an succesfull merge the branch will be deleted.
 Next contributions shall be in another fresh branch. 
 This way we keep the repository clean and allows a faster acceptance as it's clear what exactly is addressed.
 
-So on the repository cncf/tag-security there shall be only unmerged branches co-exist next to main.
+So on the repository cncf/tag-security there shall be only unmerged branches co-existing next to main.
