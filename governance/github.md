@@ -41,8 +41,8 @@ The "master" branch is "protected" (even for admins), with these requirements:
 ## Housekeeping
 To maintain the 'main' branch in a feasible way the Pull Requests shall come from forked repositories from tag-security. After which an unique name should be assigned to identify what will be changed in the forked repository by utilizing branches. 
 
-After an succesfull merge the branch will be deleted from tag-security as an branch as the contribution can now be found in main.
-
-Next contributions shall be in another fresh 'branch'. This way we keep the repository clean and allows a faster acceptance as it's clear what 'problems' are addressed.
+After an succesfull merge the branch will be deleted.
+Next contributions shall be in another fresh 'branch'. 
+This way we keep the repository clean and allows a faster acceptance as it's clear what 'problems' are addressed.
 
 So on the repository cncf/tag-security there shall be only unmerged branches co-exist next to main.
