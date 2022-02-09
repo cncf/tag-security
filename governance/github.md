@@ -39,7 +39,7 @@ The "master" branch is "protected" (even for admins), with these requirements:
   - title must not indicate work in progress ([WIP](https://github.com/apps/wip))
 
 ## Housekeeping
-To maintain the 'main' branch in a feasible way the Pull Requests shall come from forked repositories from tag-security. After which an unique name should be assigned to identify what will be changed in the forked repository by utilizing branches. 
+To maintain the main branch in a feasible way the Pull Requests shall come from forked repositories from tag-security. After which an unique name should be assigned to identify what will be changed in the forked repository by utilizing branches. 
 
 After an succesfull merge the branch will be deleted.
 Next contributions shall be in another fresh branch. 
