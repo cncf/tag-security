@@ -44,5 +44,4 @@ To maintain the main branch in a feasible way the Pull Requests shall come from 
 After being merged the branch will be deleted.
 Next contributions shall be in another fresh branch. 
 This way we keep the repository clean and allows a faster acceptance as it's clear what exactly is addressed.
-
-So on the repository cncf/tag-security there shall be only unmerged branches co-existing next to main.
+This highly limits the amount of branches and stops having branches around for longer then needed.
