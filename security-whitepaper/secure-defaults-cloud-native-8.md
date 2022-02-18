@@ -1,11 +1,13 @@
-# **Secure Defaults: Cloud Native 8**
+# Secure Defaults: Cloud Native 8
 
+<!-- cspell:disable -->
 **Author**: Pushkar Joglekar
 
 **Contributors** (alphabetical order): Andres Vega, Emily Fox, Faraz Angabini,
 Robert Clark, Robert Van Voorhees
+<!-- cspell:enable -->
 
-## **1. Make security a design requirement**
+## 1. Make security a design requirement
 
 **Rationale**: Security should be the fourth pillar in designing a cloud native
 system in conjunction with consistency, availability and partition tolerance.
@@ -23,7 +25,7 @@ pipeline.
 linux capabilities and runs on a local unix socket by default which reduces the
 attack surface area at kernel and network layer.
 
-## **2. Applying secure configuration has the best user experience**
+## 2. Applying secure configuration has the best user experience
 
 **Rationale**: Secure defaults should be part of the initial configuration in
 setup and are transparent to the operator. It must be the easiest option to get
@@ -43,7 +45,7 @@ installation.
 between control plane components, has the best user experience because of
 built-in certificate management capability.
 
-## **3. Selecting insecure configuration is a conscious decision**
+## 3. Selecting insecure configuration is a conscious decision
 
 **Rationale**: Sometimes, insecure configuration is applied to drive business
 outcomes with increased risk. In that case, this selection should be easy to
@@ -59,7 +61,7 @@ guidance.
 addition of privileged: true in the security context of a pod specification thus
 making the user choose to run a pod as privileged.
 
-## **4. Transition from insecure to secure state is possible**
+## 4. Transition from insecure to secure state is possible
 
 **Rationale**: When security is not considered as a design requirement and the
 project gains wider adoption, moving to more secure defaults may get traction
@@ -78,7 +80,7 @@ to audit for syscall failures gives users a way to transition to this secure
 default one cluster at a time. In an event this transition fails, it is possible
 to revert the cluster and namespace to an earlier default state.
 
-## **5. Secure defaults are inherited**
+## 5. Secure defaults are inherited**
 
 **Rationale**: Secure defaults of an underlying system can be inherited by a
 system that runs on top of that system. This allows higher level abstractions
@@ -96,7 +98,7 @@ that utilize TLS to inherit the security properties of TLS protocol and its
 implementation without worrying about secure key exchange, in-transit data
 protection and two party authentication.
 
-## **6. Exception lists have first class support**
+## 6. Exception lists have first class support
 
 **Rationale**: Secure defaults can be too restrictive for certain workflows. In
 those cases, exceptions should be allowed, logged and tracked by a policy
@@ -113,7 +115,7 @@ Admission (PSP replacement) have built-in support to add a list of namespaces
 where the pod security policies are not enforced to allow running privileged
 workloads in those namespaces.
 
-## **7. Secure defaults protect against pervasive vulnerability exploits**
+## 7. Secure defaults protect against pervasive vulnerability exploits
 
 **Rationale**: Secure defaults should create value for the user of a system by
 protecting them from pervasive and common vulnerability exploits that have an
@@ -129,7 +131,7 @@ findings prior to release.
 allowed protection against several vulnerabilities detected in container
 runtimes and Kubernetes.
 
-## **8. Security limitations of a system are explainable**
+## 8. Security limitations of a system are explainable
 
 **Rationale**: In spite of the best intentions of a system designer, some
 security controls can not be applied to a system without fundamentally changing
@@ -151,7 +153,7 @@ manage workloads like a container are documented.
 **Note**: Please keep examples limited to open source projects, that are related
 to cloud native ecosystem
 
-## **Notes**
+## Notes
 
 * Message sent to CNCF TAG
   Security: [https://lists.cncf.io/g/cncf-tag-security/message/71](https://lists.cncf.io/g/cncf-tag-security/message/71)
