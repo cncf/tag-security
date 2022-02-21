@@ -16,5 +16,5 @@ GitHub repository.
 List of tools:
 
 - [Pandoc](https://pandoc.org/demos.html): Check example in this link to convert
-`docx` to `markdown` 
+`docx` to `markdown`
 - [Google Docs extension: docs-to-markdown](https://workspace.google.com/marketplace/app/docs_to_markdown/700168918607)
