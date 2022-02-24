@@ -5,6 +5,14 @@
 So how does your supply chain stack up? Here are some questions to ask
 yourself:
 
+### Access to source code
+
+-   Do you review the permissions to source code by users and limit their permissions to least-privilege?
+
+-   Do you review inactive users and remove them from the organization?
+
+-   Do you identify abnormal code clones/fetches for each user?
+
 ### Verify source code
 
 -   Do you require signed commits?
@@ -20,7 +28,9 @@ yourself:
 
 -   Do you enforce review and approval of contributions prior to merging?
 
--   Are branch protection rules in place?
+-   Are branch protection rules in place and enforced?
+
+-   Are pull requests rubber stamped before code is pushed to protected branches? 
 
 -   Do you enforce MFA and SSH keys for human-entities? Do you have a plan in place for rotating SSH keys at regular intervals or following a key leak?
 
