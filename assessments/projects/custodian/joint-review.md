@@ -842,15 +842,14 @@ out into core roadmap, as well as for individual infrastructure providers using
 GitHub projects. However, the maintenance of this roadmap board seems a bit
 stale since the only In Progress item was last updated Jan 22, 2020.
 
-### Recommended Project Next Steps
+### TAG Recommendation
 
-* Project should consider appointing a qualified security lead or security
-  reviewer responsible for reviewing all PRs and the github repo and release
-  processes. This would mitigate some of the risks the project has concerning
+* Project should consider recruiting a security lead or security
+  reviewer from the TAG or broader community responsible for reviewing all 
+  PRs and the security of the repo over time. 
+  This would mitigate some of the risks the project has concerning
   code or repo compromise. As c7n increases its footprint across enterprises, it
   becomes a very attractive target for nation state actors.
-* Project should consider increasing fuzzing efforts, utilizing resources
-  available from CNCF.
 * Documentation improvements should be made to advise and assist operators on
   how to explicitly lock down the execution environment, even if it is seen as
   an inherited responsibility. Specific least-privilege examples should be given
@@ -859,14 +858,15 @@ stale since the only In Progress item was last updated Jan 22, 2020.
   operable or even inoperable, and require thoughtful addition of least
   privilege permissions.  A linter or IAM generator script would be a possible
   enhancement, or links to community examples of such tools.
-* The docker image, python environment, all Custodian commits, and distributed
+* The docker image, python environment, all Custodian commits, and external
   python and YAML files should be controlled using cryptographic mechanisms for
   integrity. As this is an area of active research in the community, there are
   many possible tools to address the supply chain and distribution of the c7n
-  tool and docker image.
+  tool and docker image securely.
 * The c7n code should itself implement some sort of YAML policy integrity and,
   possibly, efficacy/safety check(s). This may prevent casual tampering of YAML
-  policies once deployed in an organization.
+  policies once deployed in an organization. For example signing and signature
+  check with cosign/sigstore or [JWT](https://github.com/open-policy-agent/opa/issues/1757).
 * The project should determine if operators can run separate instances of c7n
   for detection vs. remediation, and document how to best deploy under
   segregation of duties principles. This may minimize "blast radius" in the
