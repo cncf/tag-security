@@ -845,8 +845,8 @@ stale since the only In Progress item was last updated Jan 22, 2020.
 ### TAG Recommendation
 
 * Project should consider recruiting a security lead or security
-  reviewer from the TAG or broader community responsible for reviewing all 
-  PRs and the security of the repo over time. 
+  reviewer from the TAG or broader community responsible for reviewing all
+  PRs and the security of the repo over time.
   This would mitigate some of the risks the project has concerning
   code or repo compromise. As c7n increases its footprint across enterprises, it
   becomes a very attractive target for nation state actors.
