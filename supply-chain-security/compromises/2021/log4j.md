@@ -1,5 +1,5 @@
 # Remote code injection in Log4j
-<!-- cSpell:ignore composability codeql cldrn -->
+<!-- cSpell:ignore composability codeql cldrn hotpatch hotpatching -->
 A popular logging tool used by a large number of projects exhibited a vulnerability allowing remote code execution. A second vulnerability came later.
 
 ## Impact
