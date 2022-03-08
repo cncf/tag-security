@@ -1,5 +1,5 @@
 # GCP Golang Buildpacks Old Compiler Injection
-
+<!-- cSpell:ignore Buildpacks buildpacks -->
 Previously, GCP Build Pipelines defaulted to pulling the `go` compiler supplied in `go.mod`, which could point to insecure versions.
 
 ## Impact

@@ -1,5 +1,5 @@
 # WordPress theme publisher compromised, backdoor introduced in several products
-
+<!-- cSpell:ignore webshell -->
 A popular plugin and theme publisher for WordPress was reportedly compromised during the second half of 2021. While the WordPress codebase itself appears unaffected, a webshell was injected, published and distributed in dozens of themes and plugins.
 
 ## Impact
