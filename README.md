@@ -202,7 +202,7 @@ Co-chair representative: @lumjjb
 
 #### Software Supply Chain Security
 
-Software [Supply Chain attacks have come to the wider community's attention
+Software Supply Chain attacks have come to the wider community's attention
 following recent high-profile attack, but have been an ongoing threat for a long
 time. With the ever growing importance of free and open source software,
 software [supply chain security](./supply-chain-security) is crucial,
