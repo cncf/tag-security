@@ -30,6 +30,10 @@ of compromise needs added, please include that as well.
 <!-- cSpell:disable -->
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
+| [npm Libraries ‘colors’ and ‘faker’ Sabotaged in Protest by their Maintainer](2022/js-faker-colors.md) | 2022 | Malicious Maintainer | [1](https://www.revenera.com/blog/software-composition-analysis/the-story-behind-colors-js-and-faker-js/)|
+| [GCP Golang Buildpacks Old Compiler Injection](2022/golang-buildpacks-compiler.md) | 2022 | Source Code | [1](https://zt.dev/posts/gcp-buildpacks-old-compiler/)|
+| [WordPress theme publisher compromised](2022/wp-apthemes.md) | 2022 | Source Code | [1](https://jetpack.com/2022/01/18/backdoor-found-in-themes-and-plugins-from-accesspress-themes/), [2](https://blog.sucuri.net/2022/01/accesspress-themes-hit-with-targeted-supply-chain-attack.html)|
+| [Remote code injection in Log4j](2021/log4j.md) | 2021 | Source code | [1](https://security.googleblog.com/2021/12/understanding-impact-of-apache-log4j.html) |
 | [Compromise of NP packages coa and rc](2021/coa-rc.md) | 2021 | Malicious Maintainer | [1](https://blog.sonatype.com/npm-hijackers-at-it-again-popular-coa-and-rc-open-source-libraries-taken-over-to-spread-malware) |
 | [Compromise of ua-parser-js](2021/ua-parser-js.md) | 2021 | Malicious Maintainer | [1](https://github.com/faisalman/ua-parser-js/issues/536) |
 | [The klow / klown / okhsa incident](2021/klow-klown-okhsa.md) | 2021 | Negligence | [1](https://blog.sonatype.com/newly-found-npm-malware-mines-cryptocurrency-on-windows-linux-macos-devices) |
