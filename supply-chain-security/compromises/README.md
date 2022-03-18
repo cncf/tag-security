@@ -30,6 +30,7 @@ of compromise needs added, please include that as well.
 <!-- cSpell:disable -->
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
+| [npm Library ‘node-ipc’ Sabotaged with npm Library ‘peacenotwar’ in Protest by their Maintainer](2022/node-ipc-peacenotwar.md) | 2022 | Malicious Maintainer | [1](https://snyk.io/blog/peacenotwar-malicious-npm-node-ipc-package-vulnerability/)|
 | [npm Libraries ‘colors’ and ‘faker’ Sabotaged in Protest by their Maintainer](2022/js-faker-colors.md) | 2022 | Malicious Maintainer | [1](https://www.revenera.com/blog/software-composition-analysis/the-story-behind-colors-js-and-faker-js/)|
 | [GCP Golang Buildpacks Old Compiler Injection](2022/golang-buildpacks-compiler.md) | 2022 | Source Code | [1](https://zt.dev/posts/gcp-buildpacks-old-compiler/)|
 | [WordPress theme publisher compromised](2022/wp-apthemes.md) | 2022 | Source Code | [1](https://jetpack.com/2022/01/18/backdoor-found-in-themes-and-plugins-from-accesspress-themes/), [2](https://blog.sucuri.net/2022/01/accesspress-themes-hit-with-targeted-supply-chain-attack.html)|
