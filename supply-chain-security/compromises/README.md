@@ -65,7 +65,7 @@ of compromise needs added, please include that as well.
 | [Colourama](2018/colourama.md) | 2018 | Negligence | [1](https://medium.com/@bertusk/cryptocurrency-clipboard-hijacker-discovered-in-pypi-repository-b66b8a534a8), [2](https://arstechnica.com/information-technology/2018/10/two-new-supply-chain-attacks-come-to-light-in-less-than-a-week/) |
 | [Foxif/CCleaner](2017/ccleaner.md) | 2017 | Publishing Infrastructure | [1](https://blog.talosintelligence.com/2017/09/avast-distributes-malware.html) |
 | [HandBrake](2017/handbrake.md) | 2017 | Publishing Infrastructure | [1](https://blog.malwarebytes.com/threat-analysis/mac-threat-analysis/2017/05/handbrake-hacked-to-drop-new-variant-of-proton-malware/) |
-| [Kingslayer](2017/kingslayer.md) | 2017 | Publishing Infrastructure | [1](https://www.rsa.com/content/dam/premium/en/white-paper/kingslayer-a-supply-chain-attack.pdf) |
+| [Kingslayer](2017/kingslayer.md) | 2017 | Publishing Infrastructure | [1](https://comsecglobal.com/kingslayer-a-supply-chain-attack/) |
 | [HackTask](2017/hacktask.md) | 2017 | Negligence | [1](https://securityintelligence.com/news/typosquatting-attack-puts-developers-at-risk-from-infected-javascript-packages/) |
 | [NotPetya](2017/notpetya.md) | 2017 | Attack Chaining | [1](https://www.welivesecurity.com/2017/07/04/analysis-of-telebots-cunning-backdoor/) |
 | [Bitcoin Gold](2017/bitcoingold.md) | 2017 | Source Code | [1](https://bitcoingold.org/critical-warning-nov-26/) |
