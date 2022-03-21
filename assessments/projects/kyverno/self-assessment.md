@@ -31,7 +31,7 @@
 | Software | https://github.com/kyverno/kyverno  |
 | Security Provider | Yes  |
 | Languages | Go |
-| SBOM | https://gist.github.com/wryonik/1f920693a5f942a9d521124e5b7f2224 |
+| SBOM | To download and verify the SBOM for a specific version, visit https://kyverno.io/docs/security/#fetching-the-sbom-for-kyverno |
 | Compatibility | https://kyverno.io/docs/installation/#compatibility-matrix |
 | | |
 
