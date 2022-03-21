@@ -24,6 +24,17 @@
 * [Appendix](#appendix)
 
 
+## Metadata
+
+|   |  |
+| -- | -- |
+| Software | https://github.com/kyverno/kyverno  |
+| Security Provider | Yes  |
+| Languages | Go |
+| SBOM | To download and verify the SBOM for a specific version, visit https://kyverno.io/docs/security/#fetching-the-sbom-for-kyverno |
+| Compatibility | https://kyverno.io/docs/installation/#compatibility-matrix |
+| | |
+
 ### Security links
 
 | Doc | url |
