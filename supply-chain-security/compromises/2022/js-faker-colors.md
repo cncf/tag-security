@@ -12,7 +12,7 @@ A few weeks after this incident, it was announced that the [Top-100 npm package 
 
 ## Type of Compromise
 
-This incident fits the [malicious maintainer](compromise-definitions.md#malicious-maintainer) definition.
+This incident fits the [malicious maintainer](../compromise-definitions.md#malicious-maintainer) definition.
 
 ## References
 
