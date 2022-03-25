@@ -3,7 +3,7 @@
 
 |**Completed**:               | *tbd*                                 |
 |-----------------------------|---------------------------------------|
-|**Security reviewer(s)**:    | <!-- cspell:disable --> John Kinsella |
+|**Security reviewer(s)**:    | <!-- cspell:disable --> John Kinsella, Wesley Steehouwer (@dutchshark) |
 |**Project security lead**:   | <!-- cspell:disable --> Jim Bugwadia  |
 | **Source code**:            | https://github.com/kyverno/kyverno    |
 | **Web site**:               | https://kyverno.io/                   |
