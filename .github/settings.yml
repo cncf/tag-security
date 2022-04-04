@@ -24,6 +24,9 @@ collaborators:
   - username: lumjjb
     permission: admin
     
+  - username: sublimino
+    permission: admin
+    
   # Chairs Emeriti
   - username: ultrasaurus
     permission: push
