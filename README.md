@@ -80,8 +80,6 @@ Group meeting times are listed below:
 
 - US:   Weekly on Wednesdays at 10:00am UTC-7 (see your timezone
   [here](https://time.is/1000_today_in_PT?CNCF_Security_TAG_Meeting))
-- APAC: Bi-weekly on Tuesdays at 1:00pm UTC+11 (see your timezone
-  [here](https://time.is/1300_today_in_AEDT?CNCF_Security_TAG_Meeting))
 
 See the  [CNCF Calendar](https://www.cncf.io/calendar/) for calendar invites.
 
