@@ -80,7 +80,7 @@ to audit for syscall failures gives users a way to transition to this secure
 default one cluster at a time. In an event this transition fails, it is possible
 to revert the cluster and namespace to an earlier default state.
 
-## 5. Secure defaults are inherited**
+## 5. Secure defaults are inherited
 
 **Rationale**: Secure defaults of an underlying system can be inherited by a
 system that runs on top of that system. This allows higher level abstractions
