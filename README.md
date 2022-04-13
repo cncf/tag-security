@@ -220,7 +220,7 @@ Facilitator for current deliverables is listed on the [issue](https://github.com
 ### CNCF STAG reviews
 
 As part of the [CNCF project proposal
-process](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc),
+process](https://github.com/cncf/toc/blob/main/process/project_proposals.md)
 projects should create a new [security review
 issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 with a
