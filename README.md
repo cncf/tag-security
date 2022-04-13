@@ -153,6 +153,8 @@ There are several groups that are affiliated to or do work and cover topics rele
   6/3/2021 - 6/3/2023]
 - Aradhana Chetal ([@achetal01](https://github.com/achetal01)), TIAA [Chair
   term: 6/3/2021 - 6/3/2023]
+- Andrew Martin ([@sublimino](https://github.com/sublimino)), Control 
+  Plane [Chair term: 3/17/2022 - 3/17/2024]
 
 ### Tech Leads
 
