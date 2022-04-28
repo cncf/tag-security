@@ -109,16 +109,31 @@ should be considered when updating the content.
   overview of the paper's contents for those without the immediate time to read
   the length of the document.
 
-Links:
+## Links
 
-* [Managed version in markdown][whitepaper-md]
+### Version 1
+* [Managed version in markdown][whitepaper-v1-md]
 * [Posted PDF first version][whitepaper-pdf-v1]
 * [CNCF blog post][v1-blog-post]
 * [Original Issue](https://github.com/cncf/tag-security/issues/138)
 
-[whitepaper-md]:
-https://github.com/cncf/tag-security/blob/main/security-whitepaper/cloud-native-security-whitepaper.md
+[whitepaper-v1-md]:
+https://github.com/cncf/tag-security/blob/main/security-whitepaper/v1/cloud-native-security-whitepaper.md
 [whitepaper-pdf-v1]:
-https://github.com/cncf/tag-security/blob/main/security-whitepaper/CNCF_cloud-native-security-whitepaper-Nov2020.pdf
+https://github.com/cncf/tag-security/blob/main/security-whitepaper/v1/CNCF_cloud-native-security-whitepaper-Nov2020.pdf
 [v1-blog-post]:
 https://www.cncf.io/blog/2020/11/18/announcing-the-cloud-native-security-white-paper/
+
+### Version 2
+
+* [Managed version in markdown][whitepaper-v2-md]
+* [Posted PDF first version][whitepaper-pdf-v2]
+* [CNCF blog post][v2-blog-post]
+* [Original Issue](https://github.com/cncf/tag-security/issues/747)
+
+[whitepaper-v2-md]:
+https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md
+[whitepaper-pdf-v2]:
+https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/CNCF_cloud-native-security-whitepaper-May2022-v2.pdf
+[v2-blog-post]:
+<TODO>

@@ -93,6 +93,19 @@
         "conftest",
         "Kyverno",
         "Rego",
-        "Sigstore"
+        "Sigstore",
+        "sandboxed",
+        "sandboxing",
+        "BYOK",
+        "cybercriminals",
+        "FIPS",
+        "Cyberattack",
+        "DFIR",
+        "MSSP",
+        "SWID",
+        "backdoors",
+        "EIOPA",
+        "ESMA",
+        "SSDF"
     ]
 }
