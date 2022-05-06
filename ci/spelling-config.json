@@ -93,6 +93,14 @@
         "conftest",
         "Kyverno",
         "Rego",
-        "Sigstore"
+        "Sigstore",
+        "SSCP",
+        "SSCP",
+        "OSCAL",
+        "SSDF",
+        "HITRUST",
+        "CMMC",
+        "Sarbanes",
+        "Oxley"
     ]
 }
