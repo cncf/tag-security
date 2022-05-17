@@ -100,6 +100,19 @@
         "HITRUST",
         "CMMC",
         "Sarbanes",
-        "Oxley"
+        "Oxley",
+        "sandboxed",
+        "sandboxing",
+        "BYOK",
+        "cybercriminals",
+        "FIPS",
+        "Cyberattack",
+        "DFIR",
+        "MSSP",
+        "SWID",
+        "backdoors",
+        "EIOPA",
+        "ESMA",
+        "SSDF"
     ]
 }
