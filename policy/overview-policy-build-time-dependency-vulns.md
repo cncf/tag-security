@@ -57,9 +57,8 @@ OpenSSF.
 
 Disclosure of vulnerabilities should generally be done in a standardized fashion
 to allow downstream users to identify issues automatically regardless of how far
-the library is on the dependency chain. The [OpenSSF
-guide](policy/overview-policy-build-time-dependency-vulns.md) mentioned
-previously also provides a thorough discussion of disclosure policies.
+the library is on the dependency chain. The OpenSSF guide mentioned previously
+also provides a thorough discussion of disclosure policies.
 
 This is one of the few cases in which an industry-wide solution exists: issuing
 a [Common Vulnerabilities and Exposures (CVE)](https://cve.mitre.org/) report,
