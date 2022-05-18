@@ -1,5 +1,9 @@
 # Cloud Native Security Whitepaper
 
+> :sunflower: **Click
+> _[here](v2/CNCF_cloud-native-security-whitepaper-May2022-v2.pdf)_ for
+> _version 2_ (refreshed) whitepaper**
+
 ## About
 
 The Cloud Native Security Whitepaper (CNSWP) is a TAG-Security effort to ensure
@@ -112,6 +116,7 @@ should be considered when updating the content.
 ## Links
 
 ### Version 1
+
 * [Managed version in markdown][whitepaper-v1-md]
 * [Posted PDF first version][whitepaper-pdf-v1]
 * [CNCF blog post][v1-blog-post]
@@ -136,4 +141,4 @@ https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-nati
 [whitepaper-pdf-v2]:
 https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/CNCF_cloud-native-security-whitepaper-May2022-v2.pdf
 [v2-blog-post]:
-<TODO>
+https://www.cncf.io/blog/2022/05/18/announcing-the-refreshed-cloud-native-security-whitepaper
