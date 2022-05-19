@@ -132,7 +132,7 @@ https://www.cncf.io/blog/2020/11/18/announcing-the-cloud-native-security-white-p
 ### Version 2
 
 * [Managed version in markdown][whitepaper-v2-md]
-* [Posted PDF first version][whitepaper-pdf-v2]
+* [Posted PDF second version][whitepaper-pdf-v2]
 * [CNCF blog post][v2-blog-post]
 * [Original Issue](https://github.com/cncf/tag-security/issues/747)
 
