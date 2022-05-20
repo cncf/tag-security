@@ -684,7 +684,7 @@ Muitas entidades financeiras, de saúde, governamentais dentre outras precisam c
 
 # Personas e Casos de Uso
 
-O foco está na segurança, proteção, detecção e auto-resposta sempre que possível. Não é necessariamente um conjunto de ferramentas de desenvolvimento por si só, mas um conjunto de ferramentas de segurança que se integram de forma transparente no processo de desenvolvimento para reforçar as políticas de segurança onde o feedback rápido e remediação imediata podem ocorrer. Para informações específicas sobre casos de uso de segurança Cloud Native, consulte a [lista de casos de uso da SIG-Security](https://github.com/cncf/sig-security/blob/master/usecases.md).
+O foco está na segurança, proteção, detecção e auto-resposta sempre que possível. Não é necessariamente um conjunto de ferramentas de desenvolvimento por si só, mas um conjunto de ferramentas de segurança que se integram de forma transparente no processo de desenvolvimento para reforçar as políticas de segurança onde o feedback rápido e remediação imediata podem ocorrer. Para informações específicas sobre casos de uso de segurança Cloud Native, consulte a [lista de casos de uso da SIG-Security](https://github.com/cncf/tag-security/tree/main/usecase-personas).
 
 
 ## Indústrias
@@ -803,7 +803,7 @@ Contribuidores:
 * Brandon Lum - [IBM](https://www.ibm.com/)
 * Chase Pettet - [Mirantis](https://www.mirantis.com/) (Chase.Pettet@mirantis.com)
 * Emily Fox - [US National Security Agency (NSA)](https://www.nsa.gov/)
-* Gadi Naor - [Alcide](http://www.alcide.io)
+* Gadi Naor - [Alcide] [Alcide link is broken]: # (http://www.alcide.io)
 * Harmeet Singh - [IBM](https://www.ibm.com/)
 * Jeff Lombardo - Independent
 * Jeyappragash JJ - [Tetrate IO](https://www.tetrate.io/)
@@ -840,7 +840,7 @@ Revisores:
     De acordo com a Applied Software Measurement, Capers Jones, 1996 e ajustado para a inflação - 85% das falhas são introduzidas durante o código com um custo de $41 para a resolução comparado com uma resolução de $26.542 para um código já publicado.
 
 [^3]:
-     It is critical to note that while authentication is available for use, [mutual authentication](#bookmark=kix.kyffcmw3zhk) is the preferred mechanism to not only verify the client but also the server (outsider versus insider).
+     It is critical to note that while authentication is available for use, [mutual authentication](#arquitetura-zero-trust) is the preferred mechanism to not only verify the client but also the server (outsider versus insider).
 
 [^4]:
      Utilization of a VPN does not guarantee encryption.
