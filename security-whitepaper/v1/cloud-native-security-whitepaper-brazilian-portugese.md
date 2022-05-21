@@ -1,4 +1,5 @@
 <!-- markdownlint-disable MD013 MD012 MD019 MD024 MD025 MD036 MD041 -->
+<!-- cspell:disable -->
 
 ## Compartilhado com a comunidade da CNCF  
 
@@ -803,7 +804,7 @@ Contribuidores:
 * Brandon Lum - [IBM](https://www.ibm.com/)
 * Chase Pettet - [Mirantis](https://www.mirantis.com/) (Chase.Pettet@mirantis.com)
 * Emily Fox - [US National Security Agency (NSA)](https://www.nsa.gov/)
-* Gadi Naor - [Alcide] [Alcide link is broken]: # (http://www.alcide.io)
+* Gadi Naor - Alcide
 * Harmeet Singh - [IBM](https://www.ibm.com/)
 * Jeff Lombardo - Independent
 * Jeyappragash JJ - [Tetrate IO](https://www.tetrate.io/)
