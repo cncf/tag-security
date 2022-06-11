@@ -161,7 +161,7 @@ There are several groups that are affiliated to or do work and cover topics rele
 - Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), Styra
 - Andres Vega ([@anvega](https://github.com/anvega)), VMWare
 - Pushkar Joglekar ([@PushkarJ](https://github.com/PushkarJ)), VMWare
-- Ragashree ([@ragashreeshekar](https://github.com/ragashreeshekar)), TBD
+- Ragashree Shekar ([@ragashreeshekar](https://github.com/ragashreeshekar)), TBD
 - Michael Lieberman ([@mlieberman85](https://github.com/mlieberman85)), TBD
 - Marina Moore ([@mnm678](https://github.com/mnm678)), NYU
 
