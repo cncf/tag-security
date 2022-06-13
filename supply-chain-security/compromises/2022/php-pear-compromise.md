@@ -16,8 +16,12 @@ PEAR is a PHP package manger that has been superseded by Packagist,
 but still a relevant part of the PHP developer ecosystem.
 
 What happened:
-1. A password reset flaw allowed access release new versions of existing packages.
-2. The above, Combined with a vulnerable third-party dependency allowed attackers to compromise the server that was running `pearweb`.
+
+1. A password reset flaw allowed access release new versions of
+   existing packages.
+2. The above, Combined with a vulnerable third-party dependency
+   allowed attackers to compromise the server that was running
+   `pearweb`.
 
 ## Impact
 
