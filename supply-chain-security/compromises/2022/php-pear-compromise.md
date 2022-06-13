@@ -1,6 +1,6 @@
 # PEAR PHP Package Manager compromise
 
-A case of flawed password reset logic and unpacthed known CVE of
+A case of flawed password reset logic and unpatched known CVE of
 a third-party dependency allowed PEAR's package manager compromise.
 
 PEAR is a PHP package manger that has been superseded by Packagist,
