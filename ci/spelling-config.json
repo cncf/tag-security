@@ -113,6 +113,15 @@
         "backdoors",
         "EIOPA",
         "ESMA",
-        "SSDF"
+        "SSDF",
+        "CVE",
+        "PEAR",
+        "PHP",
+        "TAR",
+        "unpacthed",
+        "superseded",
+        "Packagist",
+        "pearweb",
+        "archives"
     ]
 }
