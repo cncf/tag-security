@@ -1,12 +1,3 @@
-<!-- cspell:ignore CVE -->
-<!-- cspell:ignore PEAR -->
-<!-- cspell:ignore PHP -->
-<!-- cspell:ignore TAR -->
-<!-- cspell:ignore unpacthed -->
-<!-- cspell:ignore superseded -->
-<!-- cspell:ignore Packagist -->
-<!-- cspell:ignore pearweb -->
-<!-- cspell:ignore archives -->
 # PEAR PHP Package Manager compromise
 
 A case of flawed password reset logic and unpacthed known CVE of
