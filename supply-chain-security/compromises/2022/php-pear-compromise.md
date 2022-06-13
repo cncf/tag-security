@@ -15,11 +15,9 @@ a third-party dependency allowed PEAR's package manager compromise.
 PEAR is a PHP package manger that has been superseded by Packagist,
 but still a relevant part of the PHP developer ecosystem.
 
-A code security flaw found in the source code of the package manager's
-password reset logic, along with the detection of an unpacthed publicly
-known vulnerable third-party dependency to manage TAR file archive
-allowed attackers to compromise PEAR's package manager registry and
-gain access to the server.
+What happened:
+1. A password reset flaw allowed access release new versions of existing packages.
+2. The above, Combined with a vulnerable third-party dependency allowed attackers to compromise the server that was running `pearweb`.
 
 ## Impact
 
