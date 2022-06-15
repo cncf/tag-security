@@ -600,16 +600,20 @@ Encryption with an external KMS
   external KMS encrypts the Data Encryption Key (DEK) that encrypts the secrets stored at rest. This method does have an
   option to cache DEKs in memory to reduce the dependency on the availability of the external KMS and faster decryption
   of secrets during workload creation time.
-* Encryption fully managed by the orchestrator
+
+Encryption fully managed by the orchestrator
+
 * This methodology encrypts the secrets stored in the orchestrator, but the encryption key is also managed by the
   orchestrator (i.e. a config file of the orchestrator)
-* No encryption
+
+No encryption
+
 * For example, with some orchestrators, secrets are base64 encoded and stored in clear-text in the key-value store by
   default
 
 Using an external secrets manager can limit the risks of using unencrypted secrets and ease the complexity of key
 management. Typically tools are provided as controllers, drivers or operators that can inject secrets at runtime and
-handle their rotations transparently
+handle their rotations transparently.
 
 ##### Runtime
 
