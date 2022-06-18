@@ -1,5 +1,5 @@
 # Cloud Native Security Whitepaper
-
+<!-- markdownlint-disable MD001 MD009 MD010 MD012 MD013 MD022 MD024 MD026 MD030 MD033 MD034 MD036 MD037 MD041 MD045 -->
 <!-- cspell:disable -->
 **Version**: 2.0 **Created**: 12 Jan 2022 **Status**: WIP | In Review | **Approved**
 
@@ -20,17 +20,17 @@
 
 **Version 1 (Nov 2020)**
 
-* **Contributors**: Aradhna Chetal -[ TIAA](http://tiaa.org/), Brandon Lum -[ IBM](https://www.ibm.com/) , Chase Pettet
-  -[ Mirantis](https://www.mirantis.com/) (Chase.Pettet@mirantis.com), Emily Fox
-  -[ US National Security Agency (NSA)](https://www.nsa.gov/), Gadi Naor -[ Alcide](http://www.alcide.io/), Harmeet
-  Singh -[ IBM](https://www.ibm.com/), Jeff Lombardo - Independent, Jeyappragash JJ
-  -[ Tetrate IO](https://www.tetrate.io/), Pushkar Joglekar -[ Visa](https://visa.com/), Rowan Baker & Andrew Martin
-  -[ ControlPlane](https://control-plane.io/), Trishank Karthik Kuppusamy -[ Datadog](https://www.datadoghq.com/), Vinay
-  Venkataraghavan -[ Prisma Cloud (Palo Alto Networks)](https://www.paloaltonetworks.com/prisma/cloud), Wayne Haber
-  -[ GitLab](https://about.gitlab.com/), Mark Bower, Alex Chircop - StorageOS
+* **Contributors**: Aradhna Chetal - [TIAA](http://tiaa.org/), Brandon Lum - [IBM](https://www.ibm.com/) , Chase Pettet
+  - [Mirantis](https://www.mirantis.com/) (Chase.Pettet@mirantis.com), Emily Fox
+  - [US National Security Agency (NSA)](https://www.nsa.gov/), Gadi Naor -(Alcide), Harmeet
+  Singh - [IBM](https://www.ibm.com/), Jeff Lombardo - Independent, Jeyappragash JJ
+  - [Tetrate IO](https://www.tetrate.io/), Pushkar Joglekar - [Visa](https://visa.com/), Rowan Baker & Andrew Martin
+  - [ControlPlane](https://control-plane.io/), Trishank Karthik Kuppusamy - [Datadog](https://www.datadoghq.com/), Vinay
+  Venkataraghavan - [Prisma Cloud (Palo Alto Networks)](https://www.paloaltonetworks.com/prisma/cloud), Wayne Haber
+  - [GitLab](https://about.gitlab.com/), Mark Bower, Alex Chircop - StorageOS
 
 * **Reviewers**: @justincappos, @lumjjb, @whaber, @craigbox, @anvega, @magnologan, Alok Raj
-  -[ XenonStack](https://www.xenonstack.com/) (alok@xenonstack.com), @nyrahul(Accuknox), @ranio1, @lizrice,
+  - [XenonStack](https://www.xenonstack.com/) (alok@xenonstack.com), @nyrahul(Accuknox), @ranio1, @lizrice,
   @justincormack
 
 <!-- cspell:enable -->
@@ -70,7 +70,7 @@ identify compliance violations and misconfigurations early to create short and a
 improvement. This approach enables security failures to follow familiar workflows raised for other issues in the
 pipeline (e.g., bug fixes or continuous integration failures), which already require resolution before moving software
 further in the pipeline. The modern security lifecycle for this model revolves around the development of code that
-adheres to recommended design patterns (e.g.,[ 12-factor](https://12factor.net/)<sup>1</sup>) and ensures the integrity
+adheres to recommended design patterns (e.g., [12-factor](https://12factor.net/)<sup>1</sup>) and ensures the integrity
 of the development environment.
 
 #### Distribute
@@ -180,13 +180,13 @@ matters.
 ### Assumptions
 
 All terms, concepts, and mechanisms used are defined as per
-the[ Cloud Native Security Lexicon](https://github.com/cncf/tag-security/blob/main/security-lexicon/cloud-native-security-lexicon.md)
-and[ Cloud Native Glossary](https://glossary.cncf.io/). This paper does not seek to change these definitions or expand
+the [Cloud Native Security Lexicon](https://github.com/cncf/tag-security/blob/main/security-lexicon/cloud-native-security-lexicon.md)
+and [Cloud Native Glossary](https://glossary.cncf.io/). This paper does not seek to change these definitions or expand
 upon it.
 
 As cloud native adoption and modern software development methodologies continue to evolve, the technologies that
 comprise an effective cloud native stack will continue to shift over time. Representations of this shifting stack are
-included in the all encompassing[ CNCF landscape](https://landscape.cncf.io/).
+included in the all encompassing [CNCF landscape](https://landscape.cncf.io/).
 
 ## Cloud Native Layers
 ![Figure 1](cnswp-images/cnswp-v2-figure1.png)
@@ -312,7 +312,7 @@ vital to do the scanning in the CI pipeline before deploying the image to produc
 of images of running containers is equally important to identify newly found vulnerabilities. Incorporating this
 capability ensures that developers, operators, and security professionals have detailed information on all known
 vulnerabilities and details such as the severity,
-the[ Common Vulnerability Scoring System (CVSS)](https://nvd.nist.gov/vuln-metrics/cvss) score, and availability of
+the [Common Vulnerability Scoring System (CVSS)](https://nvd.nist.gov/vuln-metrics/cvss) score, and availability of
 mitigation/fixes. Coupling vulnerability scans of container images with pipeline compliance rules ensures that only
 sufficiently patched applications are deployed to production, reducing the potential attack surface. Scanning of
 container images also helps to identify the presence of malware in open source software packages or base image layers
@@ -347,7 +347,7 @@ runtime execution ecosystem comply with?_
 #### Testing
 Cloud native applications should be subjected to the same suite and standard of quality testing as traditional
 applications. These include the concepts of clean code, adherence to
-the[ Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html), application security scanning and
+the [Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html), application security scanning and
 linting through static application security testing (SAST), dependency analysis and scanning, dynamic application
 security testing (DAST), application instrumentation, and full infrastructure with tests available to developers in
 local workflows. Automated test results should map back to requirements for dual attestation (developer and tool) for
@@ -600,16 +600,20 @@ Encryption with an external KMS
   external KMS encrypts the Data Encryption Key (DEK) that encrypts the secrets stored at rest. This method does have an
   option to cache DEKs in memory to reduce the dependency on the availability of the external KMS and faster decryption
   of secrets during workload creation time.
-* Encryption fully managed by the orchestrator
+
+Encryption fully managed by the orchestrator
+
 * This methodology encrypts the secrets stored in the orchestrator, but the encryption key is also managed by the
   orchestrator (i.e. a config file of the orchestrator)
-* No encryption
+
+No encryption
+
 * For example, with some orchestrators, secrets are base64 encoded and stored in clear-text in the key-value store by
   default
 
 Using an external secrets manager can limit the risks of using unencrypted secrets and ease the complexity of key
 management. Typically tools are provided as controllers, drivers or operators that can inject secrets at runtime and
-handle their rotations transparently
+handle their rotations transparently.
 
 ##### Runtime
 
@@ -633,7 +637,7 @@ zero trust in the microservice architecture reduces the blast radius by preventi
 compromised. Operators should ensure that they are using capabilities such as network policies to ensure that east-west
 network communication within the container deployment is limited to only that which is authorized for access. There is
 some initial work done to provide strategies for microservices security
-through[ NIST SP 800-204](https://csrc.nist.gov/publications/detail/sp/800-204/final) and may serve as a guide for
+through [NIST SP 800-204](https://csrc.nist.gov/publications/detail/sp/800-204/final) and may serve as a guide for
 implementing secure microservice architectures.
 
 ##### Image Trust & Content Protection
@@ -676,7 +680,7 @@ activity and scan monitoring.
 
 Further, workloads will become vulnerable at the time of, or after they are deployed. Organizations should continuously
 scan their environments to detect which workloads are now vulnerable. Understanding the make-up
-or[ software bill of materials](https://www.ntia.gov/SBOM) for each workload can help organizations quickly identify
+or [software bill of materials](https://www.ntia.gov/SBOM) for each workload can help organizations quickly identify
 where vulnerabilities lie. Additional information about those vulnerabilities, such as exploit maturity, and vulnerable
 path in use are critical to determining the actual risk to workloads and can help organizations prioritize updates to
 at-risk applications.
@@ -769,7 +773,7 @@ Cloud native storage security is not restricted to virtual cloud native architec
 be deployed on-premises, and even virtual offerings have a physical presence. It is essential to remember that storage
 systems will ultimately persist data on some form of physical storage medium which is generally non-volatile. Modern
 physical storage such as SSDs often support security functions such as self encryption, as per
-the[ OPAL](https://trustedcomputinggroup.org/wp-content/uploads/TCG_Storage-Opal_SSC_v2.01_rev1.00.pdf) standards, and
+the [OPAL](https://trustedcomputinggroup.org/wp-content/uploads/TCG_Storage-Opal_SSC_v2.01_rev1.00.pdf) standards, and
 rapid/secure erasure functions. Secure erasure is important when devices that contain data need to leave a secure
 physical location (e.g. to be returned to a vendor after developing a fault).
 
@@ -816,7 +820,7 @@ Registries should accommodate technologies to sign and verify OCI artifacts. It 
 caching and distribution tools also provide the capability to sign, encrypt and provide checksums to ensure that the
 caching layer can detect tampering or attempts to poison the dataset.
 
-The[ CNCF Storage Whitepaper](https://bit.ly/cncf-storage-whitepaperV2) provides additional background on the concepts,
+The [CNCF Storage Whitepaper](https://bit.ly/cncf-storage-whitepaperV2) provides additional background on the concepts,
 terminology, usage patterns and technology classes of cloud native storage.
 
 #### Access
@@ -919,13 +923,13 @@ For organizations adopting cloud native, a primary mechanism for identifying ris
 perform threat modeling. While there are many threat modeling techniques, they share several core characteristics. All
 start with building a scoped representation of a system’s architecture. This begins with identifying all important
 processes, data stores,
-and[ security boundaries](https://www.oreilly.com/library/view/cissp-certified-information/9780470276884/9780470276884_security_boundaries.html)
+and [security boundaries](https://www.oreilly.com/library/view/cissp-certified-information/9780470276884/9780470276884_security_boundaries.html)
 . Once boundaries have been established and the relevant elements of the system are partitioned within them, the next
 step is to model how these elements interact, with special attention paid to any interactions that cross security
 boundaries.
 
 The below guidance is an enhancement of the
-four-step[ OWASP threat modeling](https://owasp.org/www-community/Threat_Modeling) recommended for cloud native
+four-step [OWASP threat modeling](https://owasp.org/www-community/Threat_Modeling) recommended for cloud native
 capabilities.
 
 ##### End-to-end architecture
@@ -940,8 +944,8 @@ initiating threat modeling for cloud native.
 ##### Threat Identification
 
 When considering threats specific to an organization’s cloud native capabilities, it is recommended to leverage a
-mature, well-used model of threats such as[ STRIDE](https://en.wikipedia.org/wiki/STRIDE_(security))
-or[ OCTAVE](https://www.pluralsight.com/guides/cybersecurity-threat-modeling-with-octave). Common threats organizations
+mature, well-used model of threats such as [STRIDE](https://en.wikipedia.org/wiki/STRIDE_(security))
+or [OCTAVE](https://www.pluralsight.com/guides/cybersecurity-threat-modeling-with-octave). Common threats organizations
 may wish to consider for their cloud native architectures includes, but is not limited to:
 
 * **Spoofing** a cluster admin by stealing the authentication credentials via a social engineering attack
@@ -989,7 +993,7 @@ components. Cyber threat intelligence is information about threats and threat ac
 Threat intelligence in cloud native systems would make use of indicators observed on a network or host such as IP
 addresses, domain names, URLs, and file hashes which can be used to assist in the identification of threats. Behavioral
 indicators, such as threat actor tactics, techniques, and procedures can also be used to identify threat actor activity
-in cloud native components. The[ MITRE ATT&CK framework](https://attack.mitre.org/matrices/enterprise/cloud/) can be
+in cloud native components. The [MITRE ATT&CK framework](https://attack.mitre.org/matrices/enterprise/cloud/) can be
 leveraged as a starting point for establishing and validating threat activity.
 
 ###### Threat Matrix for Containers<sup><em>(New in v2)</em></sup>
@@ -1133,7 +1137,7 @@ organization harder to compromise and more able to recover from attack, it is no
 guarantees.
 
 ##### Ransomware Incident Response
-As per[ NIST Incident Response Guide,](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-61r2.pdf) these
+As per [NIST Incident Response Guide,](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-61r2.pdf) these
 steps are involved in managing a ransomware incident:
 
 ###### Preparation
@@ -1205,7 +1209,7 @@ towards such a system involves following these guidelines in cloud native contex
 8. Security limitations of a system are explainable
 
 For more details on these guidelines, please refer to this
-page:[ Secure Defaults: Cloud Native 8](https://github.com/cncf/tag-security/blob/main/security-whitepaper/secure-defaults-cloud-native-8.md)
+page: [Secure Defaults: Cloud Native 8](https://github.com/cncf/tag-security/blob/main/security-whitepaper/secure-defaults-cloud-native-8.md)
 
 ##### Least Privilege
 
@@ -1309,7 +1313,7 @@ deny providing a necessary cryptographic workload identity, effectively quaranti
 Zero-Trust environments.
 
 The CNCF has produced
-the[ Software Supply Chain Best Practices White Paper](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)
+the [Software Supply Chain Best Practices White Paper](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)
 to assist you with designing a secure supply chain process. This whitepaper provides more details about securing the
 software supply chain and discusses relevant CNCF projects that developers and operators can use to secure various
 stages of the supply chain.
@@ -1401,7 +1405,7 @@ zero trust concepts is available widely online.
 
 #### Security Stack<sup><em>(New in v2)</em></sup>
 Implementation of these security assurances across the four lifecycle phases are explored in depth in Cloud native
-security map that can be found here: ​​[https://cnsmap.netlify.app](https://cnsmap.netlify.app) . The one side effect of
+security map that can be found here: [https://cnsmap.netlify.app](https://cnsmap.netlify.app) . The one side effect of
 security implemented through these tools across the stack is that they help in compliance needs of a cloud native
 environment.
 
@@ -1411,10 +1415,10 @@ Designing a system with the appropriate set of security controls that address re
 cloud native resources more secure. Doing so may also make certification by relevant regulatory bodies and auditors
 easier, particularly if the system design and planning is done to allow automated compliance to various regulatory
 bodies through a plugin model. While compliance often requires utilization of security benchmarks (
-e.g. [NIST Application Container Security Guide](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-190.pdf),[
-Center for Internet Security (CIS)](https://www.cisecurity.org/),[ NIST Security Strategies for Microservices-based
+e.g. [NIST Application Container Security Guide](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-190.pdf), [
+Center for Internet Security (CIS)](https://www.cisecurity.org/), [NIST Security Strategies for Microservices-based
 Application Systems](https://csrc.nist.gov/publications/detail/sp/800-204/final),
-and[ OpenSCAP](https://www.open-scap.org/)) it is important to note that utilization of machine-readable compliance
+and [OpenSCAP](https://www.open-scap.org/)) it is important to note that utilization of machine-readable compliance
 control frameworks and languages are recommended.
 
 Adoption and implementation of these benchmarks enable teams to test for a hardened baseline and deploy
@@ -1435,7 +1439,7 @@ The focus is on security, protection, detection, and auto-response wherever poss
 tooling alone, but security tooling that integrates transparently into the development process to enforce security
 policies where fast feedback and most immediate actions to remediate can occur. For specific information on cloud native
 security use cases, refer to the
-[TAG-Security’s use cases listing](https://github.com/cncf/tag-security/blob/main/usecase-personas/README.md).
+ [TAG-Security’s use cases listing](https://github.com/cncf/tag-security/blob/main/usecase-personas/README.md).
 
 #### Industries
 ##### Enterprise
@@ -1487,7 +1491,7 @@ innovation, delivering more value to their customers with dramatically less effo
 for regulated sectors such as finance due to the complexity of their legacy systems, and compliance challenges including
 concerns raised by regulatory institutions. Let’s look at three main authorities in case of European Union:
 
-* [EBA](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf)
+* [EBA](https://www.eba.europa.eu/sites/default/documents/files/documents/10180/2170121/5fa5cdde-3219-4e95-946d-0c0d05494362/Final%20draft%20Recommendations%20on%20Cloud%20Outsourcing%20%28EBA-Rec-2017-03%29.pdf?retry=1)
   - The “European Banking Authority” is an independent authority that works to ensure effective and consistent
     prudential regulation and supervision across the EU banking sector.
 * [EIOPA](https://www.eiopa.europa.eu/sites/default/files/publications/eiopa_guidelines/guidelines_on_outsourcing_to_cloud_service_providers_en.pdf)
@@ -1610,7 +1614,7 @@ version retrospective was addressed throughout the paper.
 
 #### Have Feedback For Us?<sup><em>(New in v2)</em></sup>
 If you have feedback for us please open an issue
-here:[ https://github.com/cncf/tag-security/issues/new?assignees=&labels=suggestion%2C+triage-required&template=suggestion.md&title=%5BSuggestion%5D+some+descriptive+title](https://github.com/cncf/tag-security/issues/new?assignees=&labels=suggestion%2C+triage-required&template=suggestion.md&title=%5BSuggestion%5D+some+descriptive+title)
+here: [https://github.com/cncf/tag-security/issues/new?assignees=&labels=suggestion%2C+triage-required&template=suggestion.md&title=%5BSuggestion%5D+some+descriptive+title](https://github.com/cncf/tag-security/issues/new?assignees=&labels=suggestion%2C+triage-required&template=suggestion.md&title=%5BSuggestion%5D+some+descriptive+title)
 . Don’t forget to mention the name of the whitepaper and its version number.
 
 #### SSDF v1.1 Mapping<sup><em>(New in v2)</em></sup>
@@ -1833,8 +1837,8 @@ Runtime
 29. [Center for Internet Security (CIS)](https://www.cisecurity.org/)
 30. [OpenSCAP](https://www.open-scap.org/)
 31. [TAG-Security’s use cases listing](https://github.com/cncf/tag-security/blob/main/usecase-personas/README.md)
-32. European Banking Authority - [https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf)
-33. [European Insurance and Occupational Pensions Authority - Guidelines on outsourcing to cloud service providers ](https://www.eiopa.europa.eu/sites/default/files/publications/eiopa_guidelines/guidelines_on_outsourcing_to_cloud_service_providers_en.pdf)
+32. European Banking Authority - [https://www.eba.europa.eu/regulation-and-policy/internal-governance/recommendations-on-outsourcing-to-cloud-service-providers)
+33. [European Insurance and Occupational Pensions Authority - Guidelines on outsourcing to cloud service providers](https://www.eiopa.europa.eu/sites/default/files/publications/eiopa_guidelines/guidelines_on_outsourcing_to_cloud_service_providers_en.pdf)
 34. [European Securities and Markets Authority -  CLOUD OUTSOURCING GUIDELINES](https://www.esma.europa.eu/press-news/esma-news/esma-publishes-cloud-outsourcing-guidelines)
 35. [github.com/cncf/surveys/security](https://github.com/cncf/surveys/blob/master/security/README.md)
 36. [Feedback](https://github.com/cncf/tag-security/issues/new?assignees=&labels=suggestion%2C+triage-required&template=suggestion.md&title=%5BSuggestion%5D+some+descriptive+title)
