@@ -1459,7 +1459,7 @@ footprint to solve the challenges.
 
 Core areas of concern for financial and insurance industries that are essential to successful cloud native adoption are
 legal framework compliance, data localization requirements, immutable audit logging, unauthorized disclosure of
-information, and fraud detection.. Fraud, being somewhat unique to the sector, can have a direct impact on fund
+information, and fraud detection. Fraud, being somewhat unique to the sector, can have a direct impact on fund
 availability, making the integrity of financial transactions of paramount importance.
 
 ##### Healthcare
