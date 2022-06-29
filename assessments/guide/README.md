@@ -74,7 +74,7 @@ Note: Responsible roles for specific items are in **bold**. If an incubation
 project did not complete a self-assessment during sandbox, they are recommended
 to start with the self-assessment before pursing joint review.
 
-#### [Create tracking issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
+#### [Create tracking issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=triage-required&template=joint-review.md&title=%5BSecurity+Review%5D+Project+Name)
 
 The tracking issue serves to initiate the joint-reviews.  It provides
  an initial set of information to assist TAG-Security in  prioritizing the
