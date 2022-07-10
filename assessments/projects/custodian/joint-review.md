@@ -866,7 +866,7 @@ stale since the only In Progress item was last updated Jan 22, 2020.
 * The c7n code should itself implement some sort of YAML policy integrity and,
   possibly, efficacy/safety check(s). This may prevent casual tampering of YAML
   policies once deployed in an organization. For example signing and signature
-  check with cosign/sigstore or [JWT](https://github.com/open-policy-agent/opa/issues/1757).
+  check with Cosign/Sigstore or [JWT](https://github.com/open-policy-agent/opa/issues/1757).
 * The project should determine if operators can run separate instances of c7n
   for detection vs. remediation, and document how to best deploy under
   segregation of duties principles. This may minimize "blast radius" in the
