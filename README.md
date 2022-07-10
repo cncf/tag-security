@@ -87,8 +87,8 @@ Group meeting times are listed below:
 
 - Here is a [TAG-Security curated calendar](https://calendar.google.com/calendar/u/0?cid=MGI4dTVlbDh0YTRzOTN0MmNtNzJ0dXZoaGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
 with the main meetings and working groups.
-- See the [CNCF Calendar](https://www.cncf.io/calendar/) for a list of all CNCF calendar invites.
-
+- See the [CNCF Calendar](https://www.cncf.io/calendar/) for a list of all CNCF calendar
+invites.
 
 ### Zoom Meeting Details
 
