@@ -46,7 +46,7 @@ requirements:
 To maintain the main branch in a feasible way the Pull Requests shall come
 from forked repositories from tag-security. After which an unique name
 should be assigned to identify what will be changed in the forked
-repository by utilizing branches. 
+repository by utilizing branches.
 
 After being merged the branch will be deleted.
 Next contributions shall be in another fresh branch. 
