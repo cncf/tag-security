@@ -31,7 +31,7 @@ majority of Chairs.
 ## Writing to the main branch
 
 The following settings are controlled in the Github UI by those with admin
-access. The "master" branch is "protected" (even for admins), with these
+access. The "main" branch is "protected" (even for admins), with these
 requirements:
 
 - can't be deleted
@@ -41,3 +41,16 @@ requirements:
   - must be up to date with master
   - title must not indicate work in
     progress ([WIP](https://github.com/apps/wip))
+
+## Housekeeping
+
+To maintain the main branch in a feasible way the Pull Requests shall come
+from forked repositories from tag-security. After which an unique name
+should be assigned to identify what will be changed in the forked
+repository by utilizing branches.
+
+After being merged the branch will be deleted.
+Next contributions shall be in another fresh branch.
+This way we keep the repository clean and allows a faster acceptance as
+it's clear what exactly is addressed. This highly limits the amount of
+branches and stops having branches around for longer then needed.
