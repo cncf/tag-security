@@ -6,6 +6,7 @@
         "**/ci/**"
     ],
     "words": [
+        "EMEA",
         "CNCF",
         "OWASP",
         "Kube",
