@@ -80,7 +80,7 @@ Group meeting times are listed below:
 
 - US:   Bi-weekly on Wednesdays at 10:00am UTC-7 (see your timezone
   [here](https://time.is/1000_today_in_PT?CNCF_Security_TAG_US_Meeting))
-- EMEA: Bi-weekly on Wednesdsays at 01:00pm BST (see your timezone
+- EMEA: Bi-weekly on Wednesdays at 01:00pm BST (see your timezone
   [here](https://time.is/1300_today_in_BST?CNCF_Security_TAG_EMEA_Meeting))
 
 [Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
