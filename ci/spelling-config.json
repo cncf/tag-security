@@ -123,6 +123,8 @@
         "superseded",
         "Packagist",
         "pearweb",
-        "archives"
+        "archives",
+        "supplychain",
+        "SSCSP"
     ]
 }
