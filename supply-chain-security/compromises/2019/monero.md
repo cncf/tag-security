@@ -12,7 +12,7 @@ to have lost funds worth $7000.
 
 ## Type of Compromise
 
-This incident fits the [Trust and Signing](../compromise-definitions.md#trust-and-signing) definition.
+This incident fits the [Publishing Infrastructure](../compromise-definitions.md#publishing-infrastructure) definition.
 
 ## References
 
