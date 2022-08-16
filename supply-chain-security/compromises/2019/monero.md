@@ -1,4 +1,5 @@
 <!-- cspell:ignore monero -->
+<!-- cspell:ignore getmonero -->
 # Binaries of the CLI for `monero` compromised
 
 The binaries of the CLI wallet had been compromised and a malicious version
