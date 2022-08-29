@@ -2,7 +2,7 @@
 
 Facilitation roles are identified in [github settings](/.github/settings.yml)
 which we use for Github admin permissions and managing issues. Write permissions
-are enabled by the [CODEOWNERS](/CODEOWNERS) file.
+are enabled by the [GitHub Settings](/.github/settings.yml) file.
 
 There is typically more process for review and collaboration than is controlled
 by access permissions. We expect members to review [governance](/governance)
@@ -37,8 +37,8 @@ requirements:
 - can't be deleted
 - no direct commits (including no "force push"), also
   - at least one reviewer must approve
-  - must be approved by someone listed in [CODEOWNERS](/CODEOWNERS) file
-  - must be up to date with master
+  - must be approved by someone listed as a `collaborator` with
+    `push` or `admin` access
   - title must not indicate work in
     progress ([WIP](https://github.com/apps/wip))
 
