@@ -125,6 +125,7 @@
         "pearweb",
         "archives",
         "supplychain",
-        "SSCSP"
+        "SSCSP",
+        "sscsp"
     ]
 }
