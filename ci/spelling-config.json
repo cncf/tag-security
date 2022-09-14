@@ -126,6 +126,26 @@
         "archives",
         "supplychain",
         "SSCSP",
-        "sscsp"
+        "sscsp",
+        "RAISECOM",
+        "Xinghai",
+        "Containerd",
+        "kubeedge",
+        "MOSQUITTO",
+        "Tiansuan",
+        "Shenzhen",
+        "BUPT",
+        "Spacety",
+        "Zhuhai",
+        "LingDing",
+        "JiuZhou",
+        "MAXUS",
+        "MIFA",
+        "Akri",
+        "Qing",
+        "QKCP",
+        "EMQX",
+        "Inspur",
+        "Inovex"
     ]
 }
