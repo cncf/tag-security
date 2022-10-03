@@ -251,7 +251,7 @@ Infrastructure as Code templates as well as application manifests within the dev
 made. They must provide rich and contextual security information which can be acted upon rapidly, easily, and early in
 the development pipeline by the owner of the code or application component. Adopting these steps ensures the absence of
 known vulnerabilities or high-risk configurations. Cloud native components should be API-driven, allowing for complex
-debugging tools to interact with the deployed primitive workloads that rely on the orchestrator.
+debugging tools to interact with the deployed primitive workloads that rely on the orchestrator (e.g: a tool interacting with the Kubernetes control plane or a network sidecar proxy like envoy).
 
 Teams should deploy dedicated development, testing, and production environments to provide infrastructure and
 application developers with isolated environments to develop, test, and deploy systems and applications, container base
