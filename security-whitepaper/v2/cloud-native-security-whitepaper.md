@@ -20,14 +20,7 @@
 
 **Version 1 (Nov 2020)**
 
-* **Contributors**: Aradhna Chetal - [TIAA](http://tiaa.org/), Brandon Lum - [IBM](https://www.ibm.com/) , Chase Pettet
-  - [Mirantis](https://www.mirantis.com/) (Chase.Pettet@mirantis.com), Emily Fox
-  - [US National Security Agency (NSA)](https://www.nsa.gov/), Gadi Naor -(Alcide), Harmeet
-  Singh - [IBM](https://www.ibm.com/), Jeff Lombardo - Independent, Jeyappragash JJ
-  - [Tetrate IO](https://www.tetrate.io/), Pushkar Joglekar - [Visa](https://visa.com/), Rowan Baker & Andrew Martin
-  - [ControlPlane](https://control-plane.io/), Trishank Karthik Kuppusamy - [Datadog](https://www.datadoghq.com/), Vinay
-  Venkataraghavan - [Prisma Cloud (Palo Alto Networks)](https://www.paloaltonetworks.com/prisma/cloud), Wayne Haber
-  - [GitLab](https://about.gitlab.com/), Mark Bower, Alex Chircop - StorageOS
+* **Contributors**: Aradhna Chetal ([TIAA](http://tiaa.org/)), Brandon Lum ([IBM](https://www.ibm.com/)) , Chase Pettet ([Mirantis](https://www.mirantis.com/) (Chase.Pettet@mirantis.com)), Emily Fox ([US National Security Agency (NSA)](https://www.nsa.gov/)), Gadi Naor (Alcide), Harmeet Singh ([IBM](https://www.ibm.com/)), Jeff Lombardo (Independent), Jeyappragash JJ ([Tetrate IO](https://www.tetrate.io/)), Pushkar Joglekar ([Visa](https://visa.com/)), Rowan Baker & Andrew Martin ([ControlPlane](https://control-plane.io/)), Trishank Karthik Kuppusamy ([Datadog](https://www.datadoghq.com/)), Vinay Venkataraghavan ([Prisma Cloud (Palo Alto Networks)](https://www.paloaltonetworks.com/prisma/cloud)), Wayne Haber ([GitLab](https://about.gitlab.com/)), Mark Bower, Alex Chircop (StorageOS)
 
 * **Reviewers**: @justincappos, @lumjjb, @whaber, @craigbox, @anvega, @magnologan, Alok Raj
   - [XenonStack](https://www.xenonstack.com/) (alok@xenonstack.com), @nyrahul(Accuknox), @ranio1, @lizrice,
