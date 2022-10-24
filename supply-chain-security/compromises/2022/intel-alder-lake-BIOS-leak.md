@@ -1,11 +1,4 @@
-<!-- cspell:ignore pyg-modules -->
-<!-- cspell:ignore pygrata -->
-<!-- cspell:ignore pygrata-utils -->
-<!-- cspell:ignore loglib -->
-<!-- cspell:ignore loglib-modules -->
-<!-- cspell:ignore hkg-sol-utils -->
-<!-- cspell:ignore hxxp -->
-<!-- cspell:ignore Backdoored -->
+<!-- cspell:ignore UEFI -->
 
 # Intel's Alder Lake BIOS leaked
 
