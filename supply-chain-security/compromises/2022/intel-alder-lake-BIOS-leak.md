@@ -17,7 +17,7 @@ Statement from Intel:
 
 ## Impact
 
-"Now that the BIOS/UEFI code is in the wild and Intel has confirmed it as legitimate, both nefarious actors and security researchers alike will undoubtedly probe it to search for potential backdoors and security vulnerabilities."
+"Now that the BIOS/UEFI code is in the wild and Intel has confirmed it as legitimate, both nefarious actors and security researchers alike will undoubtedly probe it to search for potential backdoors and security vulnerabilities." 
 
 "...Security researcher Mark Ermolov has already been hard at work analyzing the code. His early reports indicate that he has found secret MSRs (Model Specific Registers) that are typically reserved for privileged code and thus can present a security problem, along with the private signing key used for Intel's Boot Guard, thus potentially invalidating the feature. In addition, there are also signs of ACMs (Authenticated Code Modules) for BootGuard and TXT (Trusted Execution Technology), portending potential future issues with the root of trust."
 
