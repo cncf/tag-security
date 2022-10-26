@@ -1,4 +1,5 @@
 <!-- cspell:ignore UEFI -->
+<!-- cspell:ignore Ermolov -->
 
 # Intel's Alder Lake BIOS leaked
 
