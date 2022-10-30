@@ -1,6 +1,6 @@
 # Audio Editing Process Overview:
 
-Process used by @apmarshall for creating the audio versions for the White Paper v1.
+Process used for creating the audio versions for the White Paper v1.
 
 ## Starting with the raw recordings uploaded by speakers
 
@@ -17,7 +17,7 @@ Process used by @apmarshall for creating the audio versions for the White Paper 
     4. If the audio sounds a bit empty, you can add a very light bit of reverb to "fill it in" a bit.
     5. Export from GarageBand as a .wav
 
-## To create the final recordings:
+## To create the final recordings
 
 1. Create a new GarageBand project
 2. Drag and drop the edited recordings in, using separate tracks for each speaker
