@@ -1,13 +1,13 @@
-<!-- cSpell:ignore cnsecurityday -->
 
-# Cloud native security day
+# Cloud Native SecurityCon (Formerly "Cloud Native Security Day")
 
-One of the things we do as a community is Cloud Native Security day,
-designed to bring together the cloud native security community
+One of the things we do as a community is Cloud Native SecurityCon
+(previously called Security Day before it was expanded to cover two days).
+It is designed to bring together the cloud native security community
 together to discuss and share current challenges and solutions
 in cloud native security to get together in a vendor neutral space.
 
-Cloud Native Security Day (#cnsecurityday) is intended to
+Cloud Native SecurityCon is intended to
 drive collaboration, discussion, and knowledge sharing of
 cloud native security accomplishments and roadblocks. Get
 connected with others that are passionate about security.
@@ -86,3 +86,19 @@ project, architecture, and enhance team awareness on security.
 - October 12, 2021
 - Planning the event =>
   [Issue#667](https://github.com/cncf/tag-security/issues/667)
+
+### 2022
+
+[Cloud Native SecurityCon Europe](https://events.linuxfoundation.org/cloud-native-securitycon-europe/)
+
+- Valencia, Spain
+- May 16-17, 2022
+- Planning the event =>
+  [Issue#811](https://github.com/cncf/tag-security/issues/811)
+
+[Cloud Native SecurityCon North America](https://events.linuxfoundation.org/cloud-native-securitycon-north-america/)
+
+- Detroit, Michigan
+- October 24-25, 2022
+- Planning the event =>
+  [Issue#939](https://github.com/cncf/tag-security/issues/939)
