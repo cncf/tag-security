@@ -22,4 +22,4 @@ definition.
 
 ## References
 
-- [Intel Confirms Alder Lake BIOS Source Code Leak](https://www.tomshardware.com/news/intel-confirms-6gb-alder-lake-bios-source-code-leak-new-details-emerge)#
+- [Intel Confirms Alder Lake BIOS Source Code Leak](https://www.tomshardware.com/news/intel-confirms-6gb-alder-lake-bios-source-code-leak-new-details-emerge)
