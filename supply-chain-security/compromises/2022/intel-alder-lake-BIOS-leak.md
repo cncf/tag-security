@@ -17,7 +17,7 @@ Statement from Intel:
 
 ## Type of Compromise
 
-This incident fits the [Source Code](../compromise-definitions.md#dev-tooling)
+This incident fits the [Source Code](../compromise-definitions.md#source-code)
 definition.
 
 ## References
