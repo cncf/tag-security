@@ -9,5 +9,13 @@
     ],
     "retryCount": 3,
     "retryOn429": true,
-    "timeout": "20s"
+    "timeout": "20s",
+    "httpHeaders": [
+      {
+        "urls": ["https://docs.github.com/"],
+        "headers": {
+          "Accept-Encoding": "zstd, br, gzip, deflate"
+        }
+      }
+    ]
 }
