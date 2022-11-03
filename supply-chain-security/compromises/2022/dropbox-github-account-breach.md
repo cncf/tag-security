@@ -7,13 +7,13 @@ Dropbox employees were targeted by a phishing attack that gave the attacker acce
 
 ## Impact
 
-According to Dropbox, "These repositories included our own copies of third-party libraries slightly modified for use by Dropbox, internal prototypes, and some tools and configuration files used by the security team..."  Data lost included "...code and the data around it also included a few thousand names and email addresses belonging to Dropbox employees, current and past customers, sales leads, and vendors"
+According to Dropbox, "These repositories included our own copies of third-party libraries slightly modified for use by Dropbox, internal prototypes, and some tools and configuration files used by the security team..."  The data lost included "...code and the data around it also included a few thousand names and email addresses belonging to Dropbox employees, current and past customers, sales leads, and vendors"
 
 Dropbox added that the attackers never had access to customers' accounts, passwords, or payment information, and its core apps and infrastructure were not affected as a result of this breach.
 
 ## Type of Compromise
 
-This incident fits the [Source Code](../compromise-definitions.md#source-code) definition.
+This incident fits the [Attack Chaining](../compromise-definitions.md#technique-attack-chaining) definition.
 
 ## References
 
