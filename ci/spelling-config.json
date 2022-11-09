@@ -126,6 +126,8 @@
         "archives",
         "supplychain",
         "SSCSP",
-        "sscsp"
+        "sscsp",
+        "CrowdStrike",
+        "trojanized"
     ]
 }
