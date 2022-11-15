@@ -127,6 +127,7 @@ helping to organize!) a gathering. Create
 a [github issue](https://github.com/cncf/tag-security/issues/new) for an event
 and add to list below:
 
+<!-- markdownlint-disable-next-line MD013 -->
 - [Cloud Native SecurityCon](https://events.linuxfoundation.org/cloudnativesecuritycon-north-america/) North America, Feb. 1-2 2023
 
 [Past events](past-events.md)
@@ -207,6 +208,8 @@ the project and its risk profile.
 
 Facilitator: Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)),
 New York University
+
+Facilitator: Matthew Giassa ([@Iaxes](https://github.com/iaxes)), Cisco
 
 Co-chair representative: @lumjjb
 
