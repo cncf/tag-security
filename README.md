@@ -198,6 +198,8 @@ the project and its risk profile.
 Facilitator: Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)),
 New York University
 
+Facilitator: Matthew Giassa ([@Iaxes](https://github.com/iaxes)), Cisco
+
 Co-chair representative: @lumjjb
 
 #### Software Supply Chain Security
@@ -346,7 +348,7 @@ If you are new, check out the [New Members Page](/NEW-MEMBERS.md).
 - axel simon ([@axelsimon](https://github.com/axelsimon)), Red Hat
 - Mayo Cream ([@mayocream](https://github.com/mayocream))
 - Thomas Underhiill ([@captainarcher](https://github.com/captainarcher)), VMware
-  
+
 </details>
 <!-- markdownlint-enable MD013 -->
 JOIN OUR MEETINGS REGULARLY, THEN ADD YOURSELF VIA PULL REQUEST
