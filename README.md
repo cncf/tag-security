@@ -208,6 +208,8 @@ the project and its risk profile.
 Facilitator: Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)),
 New York University
 
+Facilitator: Matthew Giassa ([@Iaxes](https://github.com/iaxes)), Cisco
+
 Co-chair representative: @lumjjb
 
 #### Software Supply Chain Security
