@@ -3,11 +3,11 @@
 
 # Intel's Alder Lake BIOS leaked
 
-Intel's Alder Lake BIOS source code had been leaked to 4chan and Github, with the 6GB file containing tools and code for building and optimizing BIOS/UEFI images
+Intel's Alder Lake BIOS source code had been leaked on 4chan and Github, with the 6GB file containing the code and supporting tools for building and optimizing BIOS/UEFI images.
 
 Statement from Intel:
 
-"Our proprietary UEFI code appears to have been leaked by a third party. We do not believe this exposes any new security vulnerabilities as we do not rely on obfuscation of information as a security measure. This code is covered under our bug bounty program within the Project Circuit Breaker campaign, and we encourage any researchers who may identify potential vulnerabilities to bring them our attention through this program. We are reaching out to both customers and the security research community to keep them informed of this situation." — Intel spokesperson. 
+"Our proprietary UEFI code appears to have been leaked by a third party. We do not believe this exposes any new security vulnerabilities as we do not rely on obfuscation of information as a security measure. This code is covered under our bug bounty program within the Project Circuit Breaker campaign, and we encourage any researchers who may identify potential vulnerabilities to bring them our attention through this program. We are reaching out to both customers and the security research community to keep them informed of this situation." 
 
 ## Impact
 
@@ -17,8 +17,7 @@ Statement from Intel:
 
 ## Type of Compromise
 
-This incident fits the [Source Code](../compromise-definitions.md#source-code)
-definition.
+This incident fits the [Source Code](../compromise-definitions.md#source-code) definition.
 
 ## References
 
