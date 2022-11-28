@@ -30,6 +30,7 @@ of compromise needs added, please include that as well.
 <!-- cSpell:disable -->
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
+| [Docker Hub malicious containers](2022/docker-hub-malicious-containers.md) | 2022 | Publishing Infrastructure | [1](https://www.bleepingcomputer.com/news/security/docker-hub-repositories-hide-over-1-650-malicious-containers/)
 | [Chat100 live chat trojan](2022/Comm100-live-chat-trojan.md) | 2022 | Publishing Infrastructure | [1](https://www.securityweek.com/supply-chain-attack-targets-customer-engagement-firm-comm100)
 | [Dropbox GitHub compromise](2022/dropbox-github-account-breach.md) | 2022 | Attack Chaining | [1](https://www.bleepingcomputer.com/news/security/dropbox-discloses-breach-after-hacker-stole-130-github-repositories/)
 | [Intel Alder Lake BIOS leak](2022/intel-alder-lake-BIOS-leak.md) | 2022 | Source Code | [1](https://www.tomshardware.com/news/intel-confirms-6gb-alder-lake-bios-source-code-leak-new-details-emerge)
