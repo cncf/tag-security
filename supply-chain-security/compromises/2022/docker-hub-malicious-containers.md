@@ -18,4 +18,4 @@ This incident fits the [Publishing Infrastructure](../compromise-definitions.md#
 
 ## References
 
-- [Docker Hub repositories hide over 1,650 malicious containers](https://www.bleepingcomputer.com/news/security/docker-hub-repositories-hide-over-1-650-malicious-containers/?utm_medium=email&utm_source=Eloqua&ref=GBSNewsletterEmail)
+- [Docker Hub repositories hide over 1,650 malicious containers](https://www.bleepingcomputer.com/news/security/docker-hub-repositories-hide-over-1-650-malicious-containers/)
