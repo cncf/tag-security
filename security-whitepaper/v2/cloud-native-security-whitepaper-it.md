@@ -1138,7 +1138,7 @@ Runtime
 
 [^7]: cisecurity.org maintains a listing of benchmarks for hardening
 
-[^8] È fondamentale notare che mentre l'autenticazione è disponibile per l'uso, la [mutual authentication](https://github.com/PushkarJ/tag-security/blob/cnswpv2/security-whitepaper/v1/cloud-native-security-whitepaper.md#zero-trust-architecture) è il meccanismo preferito non solo per verificare il client ma anche il server (outsider contro insider).
+[^8]: È fondamentale notare che mentre l'autenticazione è disponibile per l'uso, la [mutual authentication](https://github.com/PushkarJ/tag-security/blob/cnswpv2/security-whitepaper/v1/cloud-native-security-whitepaper.md#zero-trust-architecture) è il meccanismo preferito non solo per verificare il client ma anche il server (outsider contro insider).
 
 [^9]: L'utilizzo di una VPN non garantisce la crittografia.
 
