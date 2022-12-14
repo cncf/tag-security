@@ -1132,7 +1132,7 @@ Runtime
 
 [^4]: Il capitale umano è un asset vitale e necessario per il successo di qualsiasi organizzazione, la corrispondente proprietà intellettuale e il capitale relazionale devono essere protetti.
 
-[^5] [https://blog.aquasec.com/malicious-container-image-docker-container-host](https://blog.aquasec.com/malicious-container-image-docker-container-host)
+[^5]: [https://blog.aquasec.com/malicious-container-image-docker-container-host](https://blog.aquasec.com/malicious-container-image-docker-container-host)
 
 [^6]: Secondo Applied Software Measurement, Capers Jones, 1996 e tenendo conto dell'inflazione, l'85% dei difetti viene introdotto durante la scrittura del codice con un costo di correzione di $ 41 rispetto a un costo di correzione post rilascio di $ 26.542.
 
