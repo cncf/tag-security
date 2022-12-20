@@ -61,7 +61,7 @@ These are the individual parts of your system that interact to provide the
 desired functionality.  Actors only need to be separate, if they are isolated
 in some way.  For example, if a service has a database and a front-end API, but
 if a vulnerability in either one would compromise the other, then the distinction
-between the database and front-end are not relevant.
+between the database and front-end is not relevant.
 
 The means by which actors are isolated should also be described, as this is often
 what prevents an attacker from moving laterally after a compromise.
