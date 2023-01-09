@@ -30,6 +30,10 @@ of compromise needs added, please include that as well.
 <!-- cSpell:disable -->
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
+| [Docker Hub malicious containers](2022/docker-hub-malicious-containers.md) | 2022 | Publishing Infrastructure | [1](https://www.bleepingcomputer.com/news/security/docker-hub-repositories-hide-over-1-650-malicious-containers/)
+| [Chat100 live chat trojan](2022/Comm100-live-chat-trojan.md) | 2022 | Publishing Infrastructure | [1](https://www.securityweek.com/supply-chain-attack-targets-customer-engagement-firm-comm100)
+| [Dropbox GitHub compromise](2022/dropbox-github-account-breach.md) | 2022 | Attack Chaining | [1](https://www.bleepingcomputer.com/news/security/dropbox-discloses-breach-after-hacker-stole-130-github-repositories/)
+| [Intel Alder Lake BIOS leak](2022/intel-alder-lake-BIOS-leak.md) | 2022 | Source Code | [1](https://www.tomshardware.com/news/intel-confirms-6gb-alder-lake-bios-source-code-leak-new-details-emerge)
 | [PEAR PHP Package Manager compromise](2022/php-pear-compromise.md) | 2022 | Dev Tooling | [1](https://blog.sonarsource.com/php-supply-chain-attack-on-pear/)
 | [npm Library ‘node-ipc’ Sabotaged with npm Library ‘peacenotwar’ in Protest by their Maintainer](2022/node-ipc-peacenotwar.md) | 2022 | Malicious Maintainer | [1](https://snyk.io/blog/peacenotwar-malicious-npm-node-ipc-package-vulnerability/)|
 | [npm Libraries ‘colors’ and ‘faker’ Sabotaged in Protest by their Maintainer](2022/js-faker-colors.md) | 2022 | Malicious Maintainer | [1](https://www.revenera.com/blog/software-composition-analysis/the-story-behind-colors-js-and-faker-js/)|
@@ -48,6 +52,7 @@ of compromise needs added, please include that as well.
 | [Abusing misconfigured SonarQube applications](2020/sonarqube.md) | 2020 | Dev Tooling | [1](https://www.zdnet.com/article/fbi-hackers-stole-source-code-from-us-government-agencies-and-private-companies/), [2](https://www.ic3.gov/Media/News/2020/201103-3.pdf) |
 | [Octopus Scanner](2020/octopus_scanner.md) | 2020 | Dev Tooling | [1](https://securitylab.github.com/research/octopus-scanner-malware-open-source-supply-chain),[2](https://threatpost.com/octopus-scanner-tentacles-github-repositories/156204/) |
 | [NPM reverse shells and data mining](2020/nodejs.md) | 2020 | Dev Tooling | [1](https://www.bleepingcomputer.com/news/security/npm-nukes-nodejs-malware-opening-windows-linux-reverse-shells/) |
+| [Binaries of the CLI for `monero` compromised](2019/monero.md) | 2019 | Publishing Infrastructure | [1](https://web.getmonero.org/2019/11/19/warning-compromised-binaries.html), [2](https://github.com/monero-project/monero/issues/6151), [3](https://old.reddit.com/r/Monero/comments/dyfozs/security_warning_cli_binaries_available_on/) |
 | [Webmin backdoor](2019/webmin-backdoor.md) | 2019 | Dev Tooling | [1](https://www.zdnet.com/article/backdoor-found-in-webmin-a-popular-web-based-utility-for-managing-unix-servers/), [2](http://www.webmin.com/exploit.html) |
 | [purescript-npm](2019/purescript-npm.md) | 2019 | Source Code | [1](https://www.npmjs.com/advisories/1082) and [2](https://www.npmjs.com/advisories/1082) |
 | [electron-native-notify](2019/electron-native-notify.md) | 2019 | Source Code | [1](https://blog.npmjs.org/post/185397814280/plot-to-steal-cryptocurrency-foiled-by-the-npm), [2](https://komodoplatform.com/update-agama-vulnerability/)|
