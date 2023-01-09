@@ -125,6 +125,9 @@
         "pearweb",
         "archives",
         "supplychain",
-        "SSCSP"
+        "SSCSP",
+        "sscsp",
+        "CrowdStrike",
+        "trojanized"
     ]
 }

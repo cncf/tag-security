@@ -45,6 +45,9 @@ from their repo into the self-assessment.
 
 A table at the top for quick reference information, later used for indexing.
 
+<!-- n.b the below table is line wrapped by the linter on this repo, which is mutually
+exclusive with markdown table syntax -->
+
 |   |  |
 | -- | -- |
 | Software | A link to the software’s repository.  |

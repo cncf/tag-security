@@ -12,6 +12,8 @@ currently in CNCF **incubation**.
 * [Metadata](#metadata)
   * [Security links](#security-links)
 * [Overview](#overview)
+  * [Actors](#actors)
+  * [Actions](#actions)
   * [Background](#background)
   * [Goals](#goals)
   * [Non-goals](#non-goals)
@@ -54,8 +56,30 @@ multiple projects.
 Provide information for reviewers who may not be familiar with your project's
 domain or problem area.
 
-### Goal
-The intended goal of the projects including the security guarantees the  project
+### Actors
+These are the individual parts of your system that interact to provide the 
+desired functionality.  Actors only need to be separate, if they are isolated
+in some way.  For example, if a service has a database and a front-end API, but
+if a vulnerability in either one would compromise the other, then the distinction
+between the database and front-end is not relevant.
+
+The means by which actors are isolated should also be described, as this is often
+what prevents an attacker from moving laterally after a compromise.
+
+### Actions
+These are the steps that a project performs in order to provide some service
+or functionality.  These steps are performed by different actors in the system.
+Note, that an action need not be overly descriptive at the function call level.  
+It is sufficient to focus on the security checks performed, use of sensitive 
+data, and interactions between actors to perform an action.  
+
+For example, the access server receives the client request, checks the format, 
+validates that the request corresponds to a file the client is authorized to 
+access, and then returns a token to the client.  The client then transmits that 
+token to the file server, which, after confirming its validity, returns the file.
+
+### Goals
+The intended goals of the projects including the security guarantees the project
  is meant to provide (e.g., Flibble only allows parties with an authorization
 key to change data it stores).
 
