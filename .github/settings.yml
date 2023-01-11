@@ -61,11 +61,12 @@ collaborators:
   
   - username: ragashreeshekar
     permission: push
-    
-    # Triage Team
-    # manage issues (edit labels, occasionally edit)
-    # needs "push" permission, even though triage team should not merge PRs
 
+
+  # Contributing Reviewers
+  # Submit Reviews to PRs based on this grouping: https://github.com/cncf/tag-security/blob/main/.github/auto_request_review.yml
+  - username: lirantal
+    permission: read
     
     # Security Assessment Facilitator
     # merge PRs in /assesssments according to guidelines
