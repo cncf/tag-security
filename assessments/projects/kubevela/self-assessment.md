@@ -38,6 +38,7 @@ it’s security analysis to aid in the security assessment by the CNCF.
       - [Vendors and products](#vendors-and-products)
 
 ## Metadata
+
 |                   |                                                                                                                                                                                                                                                                                                                               |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Software          | [https://github.com/kubevela/kubevela](https://github.com/kubevela/kubevela)                                                                                                                                                                                                                                                  |
@@ -48,6 +49,7 @@ it’s security analysis to aid in the security assessment by the CNCF.
 
 
 ### Security links
+
 | Doc                          | url                                                                                                                                                                  |
 | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Security file                | [https://github.com/kubevela/kubevela/blob/master/SECURITY.md](https://github.com/kubevela/kubevela/blob/master/SECURITY.md)                                         |
@@ -83,12 +85,15 @@ The following diagram shows the logical architecture for KubeVela:
 ![undefined](./asserts/vela-arch.png) 
 
 #### Webhook
+
 The Webhook component registers as a validating and mutating admission webhook and receives requests from the API server to validate and mutate Application changes. If the users request the API server with user information, the mutating webhook will carry the identity with the Application for authentication.
 
 #### Application Controller
+
 The Application Controller watches Applications and creates, updates, and deletes Kubernetes resources based on KubeVela Application. The Application Controller requests the Kube APIServer with impersonation, so that the APIServer authorizes the identity carried by the Application with Role and RoleBinding, and then dispatch the resources with the right permissions.
 
 #### Cluster Gateway
+
 If the Application tries to dispatch resources in multiple clusters, the Application Controller will request Cluster Gateway with impersonation. The Cluster Gateway will then redirect the request to the managed clusters, so that the permissions will be verified in the managed cluster.
 
 
@@ -128,6 +133,7 @@ Apart from the above efforts, KubeVela is still evolving itself to make fit for 
 - Every parameter in the KubeVela Application will be checked with the pre-defined definitions to make sure the security of the inputs.
 
 ## Project compliance
+
 Not applicable.
 
 ## Secure development practices
@@ -216,7 +222,7 @@ More comparisons and frequently asked questions can be found [here](https://kube
 
 #### Vendors and products
 
-- [Alibaba Cloud Distributed Cloud Container Platform (ACK One)](https://www.alibabacloud.com/product/ack-one) is a cloud-native platform based on KubeVela. It is developed for enterprises that require hybrid cloud environments, multi-cluster management, and distributed computing. KubeVlea helps ACK One to manage Kubernetes clusters deployed in different regions and maintain computing resources in a centralized manner.
+- [Alibaba Cloud Distributed Cloud Container Platform (ACK One)](https://www.alibabacloud.com/product/ack-one) is a cloud-native platform based on KubeVela. It is developed for enterprises that require hybrid cloud environments, multi-cluster management, and distributed computing. KubeVela helps ACK One to manage Kubernetes clusters deployed in different regions and maintain computing resources in a centralized manner.
 - [Serverless Application Engine (SAE)](https://www.aliyun.com/product/sae) is a fully managed, O&M-free, and highly elastic PaaS platform. SAE uses KubeVela to help its users with application delivery. KubeVela orchestrates the capabilities in SAE so that it provides enhanced capabilities for the users.
 - [Harmony Cloud](https://harmonycloud.cn/) uses KubeVela to build application model. With KubeVela, it can help the HarmonyCloud PaaS product (HC-PaaS) achieve the standardization of the system environment, automate basic resource management, application release and operation, standardize the delivery process, and decouple applications and operating environments.
 - [Napptive Cloud](https://napptive.com/) uses KubeVela to offer a cloud native application platform focused on providing a simplified method to operate on Kubernetes clusters and deploy complex applications without needing to work with low-level Kubernetes entities. 
