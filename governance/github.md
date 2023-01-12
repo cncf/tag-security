@@ -49,7 +49,8 @@ requirements:
 To maintain the main branch in a feasible way, all Pull Requests shall come
 from repositories forked from tag-security. A unique branch name
 should be assigned to identify what will be changed in the forked
-repository. If the PR is resolving an issue, please include the issue number in the branch name or mention it in the commit message.
+repository. If the PR is resolving an issue, please include the issue number
+in the branch name or mention it in the commit message.
 After being merged the branch will be deleted.
 Future contributions shall be in a newly created branch.
 This way we can keep the repository clean and allow faster acceptance, as
