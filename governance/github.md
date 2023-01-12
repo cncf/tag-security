@@ -44,13 +44,23 @@ requirements:
 
 ## Housekeeping
 
-To maintain the main branch in a feasible way the Pull Requests shall come
-from forked repositories from tag-security. After which an unique name
-should be assigned to identify what will be changed in the forked
-repository by utilizing branches.
+### Main branch
 
+To maintain the main branch in a feasible way, all Pull Requests shall come
+from repositories forked from tag-security. A unique branch name
+should be assigned to identify what will be changed in the forked
+repository.
 After being merged the branch will be deleted.
-Next contributions shall be in another fresh branch.
-This way we keep the repository clean and allows a faster acceptance as
-it's clear what exactly is addressed. This highly limits the amount of
-branches and stops having branches around for longer then needed.
+Future contributions shall be in a newly created branch.
+This way we can keep the repository clean and allow faster acceptance, as
+it's clear what exactly is addressed. This also keeps the number of branches
+low and prevents proliferation of stale branches.
+
+### Collaboration on pull requests
+
+Sometimes someone may submit a pull request and then be unavailable or unreachable
+to respond to change requests. In that case, the pull request may be modified by
+another member and then merged, provided that:
+
+- There have been attempts to reach out to the submitter without success, and
+- The PR has opted in to "Allow edits by maintainers"
