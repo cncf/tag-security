@@ -64,3 +64,4 @@ another member and then merged, provided that:
 
 - There have been attempts to reach out to the submitter without success, and
 - The PR has opted in to "Allow edits by maintainers"
+- The submitter has signed off on the commit
