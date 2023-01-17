@@ -1125,8 +1125,8 @@ is essential to establish encrypted tunnel network policies and provision next-g
 malicious attacks.
 
 Ideally, steps taken to prevent a ransomware attack work as expected, in keeping an organization away from being a
-victim of a successful attack. However, these measures take time to implement though, and while they should make an
-organization harder to compromise and more able to recover from attack, it is not full proof and there are never any
+victim of a successful attack. However, these measures take time to implement, and while they should make an
+organization harder to compromise and more able to recover from attack, it is not foolproof and there are never any
 guarantees.
 
 ##### Ransomware Incident Response
@@ -1147,7 +1147,7 @@ can investigate the incident to find artifacts that will provide crucial informa
 your IT infrastructure/cloud environment. You will also want to know if they moved laterally throughout the environment
 and what data the threat actor gained access to.
 
-Through this stage, you will also if you do not already have an Endpoint Detection and Response solution in place, you
+Through this stage, if you do not already have an Endpoint Detection and Response solution in place, you
 will want to deploy one as quickly as possible. This will give you visibility to your endpoints to detect, quarantine,
 or kill any suspicious or malicious activity. This way, you can start working on containing the active threats.
 
@@ -1160,8 +1160,8 @@ Next is to eradicate the active threat and confirm the Threat Actor is no longer
 because Threat Actors are known to hold organizations hostage and request greater demands when they realize they still
 have control of the environment.
 
-As soon as you feel comfortable that you have contained the active threat, it appears to be eradicated from your
-IT/Cloud environment. You will now start working on recovery. This next point is crucial to responding to a Ransomware
+As soon as you feel comfortable that you have contained the active threat and it appears to be eradicated from your
+IT/Cloud environment, you will now start working on recovery. This next point is crucial to responding to a Ransomware
 attack and could save you millions of dollars.
 
 It is essential to have a backup program that has been tested and protects your backups. It is recommended that you have
