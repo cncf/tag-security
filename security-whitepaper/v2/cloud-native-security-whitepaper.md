@@ -673,7 +673,7 @@ activity and scan monitoring.
 
 Further, workloads will become vulnerable at the time of, or after they are deployed. Organizations should continuously
 scan their environments to detect which workloads are now vulnerable. Understanding the make-up
-or [software bill of materials](https://www.ntia.gov/SBOM) for each workload can help organizations quickly identify
+or [software bill of materials](https://ntia.gov/page/software-bill-materials) for each workload can help organizations quickly identify
 where vulnerabilities lie. Additional information about those vulnerabilities, such as exploit maturity, and vulnerable
 path in use are critical to determining the actual risk to workloads and can help organizations prioritize updates to
 at-risk applications.
@@ -1815,7 +1815,7 @@ Runtime
 14. [Four eyes principle](https://www.unido.org/overview/member-states/change-management/faq/what-four-eyes-principle)
 15. [Common Vulnerability Scoring System](https://nvd.nist.gov/vuln-metrics/cvss)
 16. [Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)
-17. [software bill of materials](https://www.ntia.gov/SBOM)
+17. [software bill of materials](https://ntia.gov/page/software-bill-materials)
 18. OPAL - [https://trustedcomputinggroup.org/wp-content/uploads/TCG_Storage-Opal_SSC_v2.01_rev1.00.pdf](https://trustedcomputinggroup.org/wp-content/uploads/TCG_Storage-Opal_SSC_v2.01_rev1.00.pdf)
 19. [CNCF Storage Whitepaper](https://bit.ly/cncf-storage-whitepaperV2)
 20. security boundaries - [https://www.oreilly.com/library/view/cissp-certified-information/9780470276884/9780470276884_security_boundaries.html](https://www.oreilly.com/library/view/cissp-certified-information/9780470276884/9780470276884_security_boundaries.html)
