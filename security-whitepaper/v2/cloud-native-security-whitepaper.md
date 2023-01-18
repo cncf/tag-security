@@ -1313,20 +1313,20 @@ stages of the supply chain.
 
 ##### GitOps<sup>(New in v2)</sup>
 
-GitOps is code-based infrastructure and operational procedure that rely on Git as a source control system. It is an
+GitOps is a code-based infrastructure and operational procedure that relies on Git as a source control system. It is an
 evolution of Infrastructure as Code (IaC) and a DevOps best practice that leverages Git as the single source of truth,
 and centralized control management for creating, updating, and deleting IT system architecture. GitOps allows separating
-deployments from development and use full advantage of the immutable declarative infrastructure. Every element of the
-environment can be deployed as often as needed with the same result, instances are redeployed instead of restoring from
-multiple unique configurations and versions.
+deployments from development and takes full advantage of it's immutable declarative infrastructure. Every element of the
+environment can be deployed as often as needed with the same result, and instances are redeployed instead of restoring
+from multiple unique configurations and versions.
 
-Traditional processes mostly rely on human operational knowledge, expertise, and actions performed manually but in case
-of GitOps all changes are made as interaction with Git repository. Therefore, the Git repository and GitOps process
-become crucial to secure and should be secure by design. Immutability of infrastructure protects from making changes
-from outside the main deployment process and easier to detect and reverse environment changes based on the declarative
-state in the Git repository.
+Traditional processes mostly rely on human operational knowledge, expertise, and actions performed manually but in the
+case of GitOps all changes are made as interactions with a Git repository. Therefore, the Git repository and GitOps
+process become crucial for security and should be secure by design. Immutability of infrastructure protects from
+making changes from outside the main deployment process and makes it easier to detect and reverse environment changes
+based on the declarative state in the Git repository.
 
-Usage of IaC and GitOps increase the overall security of the infrastructure itself by limiting manual operations,
+Usage of IaC and GitOps increases the overall security of the infrastructure itself by limiting manual operations,
 providing an audit of all changes, a declarative single source of truth, policy enforcement via the necessary controls
 and gates on processes to ensure that security requirements are met. Using GitOps tools and technologies, organizations
 can mitigate different vectors of attacks, i.e. by reducing the number of people and machines that have access to the
@@ -1334,31 +1334,23 @@ target system.
 
 GitOps processes are responsible to deliver changes to the production environment and if that process is compromised,
 then the adversary may open infrastructure backdoors or may introduce harmful software to production environments. Some
-noteworthy guidelines to follow based on least privilege principle and separation of duties are:
+noteworthy guidelines to follow based on the least privilege principle and separation of duties are:
 
 * Restrict access to repository and branches
 
-
 * Never store unencrypted credentials or secrets in the Git repository and block sensitive data being pushed to Git
-
 
 * Enforce strong identity with GPG Signed Commits, to give accountability and traceability
 
-
 * Require linear history and maintain a commit history by disallowing force pushes
 
-
-* Enforce branching policy, especially protect the main branch and require code review before merging
-
+* Enforce branching policy. Especially protect the main branch and require code review before merging
 
 * Monitor for vulnerabilities, and keep Git and GitOps tools up to date
 
-
 * Rotate SSH keys and Personal Access Tokens, block unauthorized access to Git repositories
 
-
 * Utilize a dedicated non-user technical account for access where credentials are frequently rotated and short-lived
-
 
 * Limit users who can elevate permissions to remove security features to cover their tracks via deletion of audit trails
   and silencing of alerts
