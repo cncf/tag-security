@@ -37,6 +37,12 @@ A reference architecture for securing the software supply chain
 - [Markdown](https://github.com/cncf/tag-security/blob/main/supply-chain-security/secure-software-factory/secure-software-factory.md)
 - [PDF](https://github.com/cncf/tag-security/raw/main/supply-chain-security/secure-software-factory/Secure_Software_Factory_Whitepaper.pdf)
 
+### Catalog of Supply Chain Compromises
+
+A catalog of supply chain compromises and links to relevant articles discussing them
+
+- [Markdown](https://github.com/cncf/tag-security/tree/main/supply-chain-security/compromises)
+
 ## Cloud Native Security Lexicon
 
 Standardization of terminologies specific to Cloud Native Security
