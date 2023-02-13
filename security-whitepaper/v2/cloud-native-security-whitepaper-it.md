@@ -17,7 +17,7 @@
 
 **Version 2 in Italian (December 2022)**
 
-- **Translators and reviewers**: Paolo Mainardi (SparkFabrik, TAG Security), Daniele Monti (SparkFabrik), Andrea Panisson (SparkFabrik), Giuseppe Arancio (SparkFabrik), Filippo Merante Caparrotta (SparkFabrik), Marcello Testi (SparkFabrik, Cartografos), Annalisa Gennaro (SparkFabrik, Glossary, Cartografos, KCD), Luca Bandini (SIGHUP), Matteo Bisi (SIGHUP), Edoardo Vacchieri (SIGHUP)
+- **Translators and reviewers**: Paolo Mainardi (SparkFabrik, TAG Security), Daniele Monti (SparkFabrik), Andrea Panisson (SparkFabrik), Giuseppe Arancio (SparkFabrik), Filippo Merante Caparrotta (SparkFabrik), Marcello Testi (SparkFabrik, Cartografos), Annalisa Gennaro (SparkFabrik, Glossary, Cartografos, KCD), Luca Bandini (SIGHUP), Matteo Bisi (SIGHUP), Edoardo Vacchieri (SIGHUP), Marco De Benedictis (ControlPlane)
 
 <!-- cspell:enable -->
 
