@@ -21,13 +21,13 @@ Those four principles are in turn applied and organised around five functional a
 When thinking about how to secure those entities, there are two broad ways of organising security controls:
 
 1. Around three critical concerns:
-    1. **Provenance verification**: assurance that existing evidence assumptions of where and how an artifact originates from are true and that the artifact or its accompanying metadata have not been tampered with during the build or delivery processes. 
-    2. **Trustworthiness**: assurance that a given artifact and its contents can be trusted to do what it is purported to do (ie, is suitable for a purpose). This involves judgement on whether the code is safe to execute and making an informed decision about accepting the risk that executing the code presents. 
+    1. **Provenance verification**: assurance that existing evidence assumptions of where and how an artifact originates from are true and that the artifact or its accompanying metadata have not been tampered with during the build or delivery processes.
+    2. **Trustworthiness**: assurance that a given artifact and its contents can be trusted to do what it is purported to do (ie, is suitable for a purpose). This involves judgement on whether the code is safe to execute and making an informed decision about accepting the risk that executing the code presents.
     3. **Dependencies**: recursive checking of an artifact’s dependency tree for trustworthiness and provenance of the artifacts it uses.
 2. By stages of activity (see diagram):
     4. **Pre-Build**: principally concerned with development and handling of the source code and with the collection and storage of dependencies.
     5. **Build**: the process of building, testing, and packaging an artifact according to its build specifications.
-    6. **Post-Build**: principally concerned with the storage, delivery, deployment, continuous verification~~.~~
+    6. **Post-Build**: principally concerned with the storage, delivery, deployment, continuous verification.
 
 ![alt_text](images/image3.png "image_tooltip")
 
