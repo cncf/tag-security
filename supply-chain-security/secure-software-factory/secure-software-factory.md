@@ -13,7 +13,7 @@ The practices that the “Software Supply Chain Best Practices” whitepaper cap
 
 * Defence in depth (Layered end-to-end security controls)
 * Signing and Verification
-* Artefact Metadata Analytics
+* Artifact Metadata Analytics
 * Automation
 
 Those four principles are in turn applied and organised around five functional areas deemed as the entities in a software factory:
@@ -21,12 +21,12 @@ Those four principles are in turn applied and organised around five functional a
 When thinking about how to secure those entities, there are two broad ways of organising security controls:
 
 1. Around three critical concerns:
-    1. **Provenance verification**: assurance that existing evidence assumptions of where and how an artefact originates from are true and that the artefact or its accompanying metadata have not been tampered with during the build or delivery processes. 
-    2. **Trustworthiness**: assurance that a given artefact and its contents can be trusted to do what it is purported to do (ie, is suitable for a purpose). This involves judgement on whether the code is safe to execute and making an informed decision about accepting the risk that executing the code presents. 
-    3. **Dependencies**: recursive checking of an artefact’s dependency tree for trustworthiness and provenance of the artefacts it uses.
+    1. **Provenance verification**: assurance that existing evidence assumptions of where and how an artifact originates from are true and that the artifact or its accompanying metadata have not been tampered with during the build or delivery processes. 
+    2. **Trustworthiness**: assurance that a given artifact and its contents can be trusted to do what it is purported to do (ie, is suitable for a purpose). This involves judgement on whether the code is safe to execute and making an informed decision about accepting the risk that executing the code presents. 
+    3. **Dependencies**: recursive checking of an artifact’s dependency tree for trustworthiness and provenance of the artifacts it uses.
 2. By stages of activity (see diagram):
     4. **Pre-Build**: principally concerned with development and handling of the source code and with the collection and storage of dependencies.
-    5. **Build**: the process of building, testing, and packaging an artefact according to its build specifications.
+    5. **Build**: the process of building, testing, and packaging an artifact according to its build specifications.
     6. **Post-Build**: principally concerned with the storage, delivery, deployment, continuous verification~~.~~
 
 ![alt_text](images/image3.png "image_tooltip")
@@ -63,16 +63,16 @@ In the matrix below, we attempt to overlay these entities, concerns, and activit
 
 <li><strong>Build Pipelines: </strong>Components performing the build
 
-<li><strong>Artefacts: </strong>As outputs
+<li><strong>Artifacts: </strong>As outputs
 </li>
 </ul>
    </td>
    <td>
 <ul>
 
-<li><strong>Artefacts: </strong>Storage and Verification
+<li><strong>Artifacts: </strong>Storage and Verification
 
-<li><strong>Deployments:</strong> Verification of artefacts
+<li><strong>Deployments:</strong> Verification of artifacts
 </li>
 </ul>
    </td>
@@ -94,7 +94,7 @@ In the matrix below, we attempt to overlay these entities, concerns, and activit
    <td>
 <ul>
 
-<li><strong>Provenance: </strong>Integrity of the build, collection of metadata and attestations, signing of artefacts
+<li><strong>Provenance: </strong>Integrity of the build, collection of metadata and attestations, signing of artifacts
 </li>
 </ul>
    </td>
@@ -103,7 +103,7 @@ In the matrix below, we attempt to overlay these entities, concerns, and activit
 
 <li><strong>Provenance: </strong>Verification of Attested Metadata
 
-<li><strong>Trustworthiness:</strong> Consumer judgement of artefact’s worth
+<li><strong>Trustworthiness:</strong> Consumer judgement of artifact’s worth
 
 <li><strong>Dependencies: </strong>Recursive analysis of both Provenance and Trustworthiness by consumers
 </li>
@@ -114,7 +114,7 @@ In the matrix below, we attempt to overlay these entities, concerns, and activit
 
 This reference architecture focuses specifically on the critical concern of provenance and primarily on the activity stage of the “build.” There are numerous other publications and guides which address issues around trustworthiness, including practices like SAST/DAST scanning, code signing, etc, including the [CNCF Software Supply Chain Best Practices Paper](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf). We direct readers to these documents for more information on those facets of supply chain security.
 
-Our decision to emphasize provenance and the build pipeline in this paper is based on the foundational role provenance verification plays in other supply chain security concerns. Provenance provides the evidence, for example, that SAST/DAST scanning was completed as claimed. If you are relying on the results of SAST/DAST scans of a software artefact to inform your decision on its trustworthiness, you need to know that those claims are accurate. Provenance provides that assurance. It also provides assurance that an artefact which claims to be the product of a specific codebase and a specific build process is in fact the product it claims to be or that the artefact downloaded from a remote source is the same one you expected to receive. All of these claims are foundational to being able to make informed decisions about an artefact's trustworthiness: you must be able to trust the evidence presented about an artefact’s trustworthiness is valid evidence before you can trust the claims that evidence makes about the artefact.
+Our decision to emphasize provenance and the build pipeline in this paper is based on the foundational role provenance verification plays in other supply chain security concerns. Provenance provides the evidence, for example, that SAST/DAST scanning was completed as claimed. If you are relying on the results of SAST/DAST scans of a software artifact to inform your decision on its trustworthiness, you need to know that those claims are accurate. Provenance provides that assurance. It also provides assurance that an artifact which claims to be the product of a specific codebase and a specific build process is in fact the product it claims to be or that the artifact downloaded from a remote source is the same one you expected to receive. All of these claims are foundational to being able to make informed decisions about an artifact's trustworthiness: you must be able to trust the evidence presented about an artifact’s trustworthiness is valid evidence before you can trust the claims that evidence makes about the artifact.
 
 
 ## How to read this document
@@ -141,7 +141,7 @@ The subsequent sections detail how a Secure Software Factory ought to be structu
 
 ![alt_text](images/image4.png "image_tooltip")
 
-The Secure Software Factory sits in a larger System Delivery Lifecycle process. Within that process, the SSF has both upstream and downstream dependencies. Upstream, the SSF depends on Identity and Access Management for both human users and other software services. During a pipeline run the SSF relies on Source Code Control for fetching the code to be built and on Artefact Storage for dependencies required for the build. Downstream, the SSF is depended on for providing attestations and signatures regarding artefacts which can be used by production systems to determine artefact provenance and make policy decisions about artefact deployment.
+The Secure Software Factory sits in a larger System Delivery Lifecycle process. Within that process, the SSF has both upstream and downstream dependencies. Upstream, the SSF depends on Identity and Access Management for both human users and other software services. During a pipeline run the SSF relies on Source Code Control for fetching the code to be built and on Artifact Storage for dependencies required for the build. Downstream, the SSF is depended on for providing attestations and signatures regarding artifacts which can be used by production systems to determine artifact provenance and make policy decisions about artifact deployment.
 
 ### Secure Software Factory Components/Elements
 
@@ -164,7 +164,7 @@ Not every task will provide attestation or additional metadata, but those that d
 
 ## Components of the SSF
 
-The SSF that manufactures secure software can be broken down into several categories of components, like that of a regular factory. These are the core components, the management components and the distribution components. The core components are responsible for the central task of the Secure Software Factory: taking the inputs of the factory and processing them to create the output artefacts. The management components ensure that the factory runs in accordance with policy. It ensures that the processes of the factory are validated in the right way, and provides evidence and documentation of the outputs of the factory. The distribution components are in charge of moving the products of the factory to where they can be made available for usage, as well as to provide guidance and tools to ensure that outputs of the factory are consumed safely.
+The SSF that manufactures secure software can be broken down into several categories of components, like that of a regular factory. These are the core components, the management components and the distribution components. The core components are responsible for the central task of the Secure Software Factory: taking the inputs of the factory and processing them to create the output artifacts. The management components ensure that the factory runs in accordance with policy. It ensures that the processes of the factory are validated in the right way, and provides evidence and documentation of the outputs of the factory. The distribution components are in charge of moving the products of the factory to where they can be made available for usage, as well as to provide guidance and tools to ensure that outputs of the factory are consumed safely.
 
 ### The “Core” Components
 
@@ -178,13 +178,13 @@ See &lt;kubernetes hardening guide> for best security practises for Kubernetes. 
 
 #### Pipeline Framework and Tooling
 
-Pipelines are a core part of the SSF as they encode the concrete workflow for building  the software artefacts. This typically follows a Continuous Integration (CI) workflow, i.e. repeatable sets of tasks intended to download, build, and test code. In a cloud native context, the pipeline tooling can use the scheduling and orchestration platform to run each task in a container. For the prototype, we are using Tekton Pipelines to fill this role, which leverages Kubernetes as its scheduling platform
+Pipelines are a core part of the SSF as they encode the concrete workflow for building  the software artifacts. This typically follows a Continuous Integration (CI) workflow, i.e. repeatable sets of tasks intended to download, build, and test code. In a cloud native context, the pipeline tooling can use the scheduling and orchestration platform to run each task in a container. For the prototype, we are using Tekton Pipelines to fill this role, which leverages Kubernetes as its scheduling platform
 
 Given that the pipeline is running on the scheduling and orchestration platform, it should be considered/treated as any other workload the platform manages, including being subject to the same security requirements and measures. At minimum, all container images used in the pipeline should be subject to signature verification and scanned for any known vulnerabilities.
 
 #### Build Environments
 
-The build environment is the actual container(s) or worker(s) where the source code is turned into a machine-usable software product, which we refer to as an artefact. Existing CI frameworks typically follow ephemeral execution patterns, wherein they create a new instance for every execution job. This pattern may even be extended to create a new instance of the scheduling platform to host every new build pipeline. The build environment should generate evidence and an automated attestation about the input parameters, actions and tools used during the build, such that they can be independently validated to provide assurance for build security.
+The build environment is the actual container(s) or worker(s) where the source code is turned into a machine-usable software product, which we refer to as an artifact. Existing CI frameworks typically follow ephemeral execution patterns, wherein they create a new instance for every execution job. This pattern may even be extended to create a new instance of the scheduling platform to host every new build pipeline. The build environment should generate evidence and an automated attestation about the input parameters, actions and tools used during the build, such that they can be independently validated to provide assurance for build security.
 
 ### The “Management” Components
 
@@ -206,28 +206,28 @@ There are three basic components of the SSF which monitor or attest to policy ad
 * Workload Attestors, which certify the identity of workload processes
 * Pipeline Observers, which capture the verifiable metadata from pipeline processes.
 
-Node attestors and workload attestors work in conjunction to ensure the node selected for running the work is authorised to host that workload and it is not compromised. Pipeline observers then build upon this evidence by generating additional metadata about individual tasks executed in the pipeline to provide comprehensive assurance across the build process. This synthesis allows later steps to validate that previous steps were completed as expected and a level of guarantee around the provenance and legitimacy of the final artefacts from the SSF.
+Node attestors and workload attestors work in conjunction to ensure the node selected for running the work is authorised to host that workload and it is not compromised. Pipeline observers then build upon this evidence by generating additional metadata about individual tasks executed in the pipeline to provide comprehensive assurance across the build process. This synthesis allows later steps to validate that previous steps were completed as expected and a level of guarantee around the provenance and legitimacy of the final artifacts from the SSF.
 
 All metadata from Node Attestors, Workload Attestors and the Pipeline Observer should be signed and included as part of the metadata documents output from the SSF.
 
 ### The “Distribution” Components
 
-Upon completion of a pipeline run, the SSF outputs several artefacts. Artefacts must be available to downstream consumers and securely stored. Signatures for artefacts should also be stored such that they can easily be found and verified. These signatures can be stored alongside the artefact for convenient discoverability and distribution or in a separate location.
+Upon completion of a pipeline run, the SSF outputs several artifacts. Artifacts must be available to downstream consumers and securely stored. Signatures for artifacts should also be stored such that they can easily be found and verified. These signatures can be stored alongside the artifact for convenient discoverability and distribution or in a separate location.
 
-#### Artefact Repository
+#### Artifact Repository
 
-The Artefact Repository stores artefacts the SSF outputs. This repository should be accessible from both the build and deploy environments. The stored artefacts may include container images, Helm charts, SBoMs, and their corresponding signatures. In some cases, the artefact repository can also serve as the storage location for metadata, such as SBoMs, attestations, and signatures. In other cases, users may prefer to store these items separately or in multiple locations.
+The Artifact Repository stores artifacts the SSF outputs. This repository should be accessible from both the build and deploy environments. The stored artifacts may include container images, Helm charts, SBoMs, and their corresponding signatures. In some cases, the artifact repository can also serve as the storage location for metadata, such as SBoMs, attestations, and signatures. In other cases, users may prefer to store these items separately or in multiple locations.
 
 
 #### Admission Controller
 
-An Admission Controller in the SSF limits what artefacts can be deployed on a Scheduling and Orchestration Platform. “Admission control”, in a general sense, is the act of enforcing policies around the consumption of components in a system.
+An Admission Controller in the SSF limits what artifacts can be deployed on a Scheduling and Orchestration Platform. “Admission control”, in a general sense, is the act of enforcing policies around the consumption of components in a system.
 
 In the SSF, there are multiple levels at which admission control must occur:
 
 
 
-* **Enforcing policies on the sources and packages pulled into a build**, including “intermediate artefacts” passed between steps in the build pipeline. For example, evaluating whether these objects have been properly signed or came from a known and trusted party.
+* **Enforcing policies on the sources and packages pulled into a build**, including “intermediate artifacts” passed between steps in the build pipeline. For example, evaluating whether these objects have been properly signed or came from a known and trusted party.
 * **Enforcing policies around the components of the factory itself.** The scheduling and orchestration platform should perform admission checks to ensure all such components are trusted and verifiable.
 
 **Enforcing policies on the build steps.** This typically includes verifying pipeline definitions and all the referenced images to be used during execution..
@@ -239,7 +239,7 @@ In order of execution, admission control proceeds as follows:
 1. When admitting the build request, the Admissions Controller validates that steps satisfy defined policies.
 2. When steps that fetch dependencies are executed, the Admission Controller must enforce policies on the dependencies that are sourced into the environment (e.g. source, binary dependencies, base images).
 3. When steps execute user-provided code, the Admission Controller uses a network jail to enforce an “admit nothing” policy because we do not trust that code to self-regulate.
-4. When steps that publish artefacts are executed, they must produce attestations to satisfy the Admission Controllers that may be encountered downstream.
+4. When steps that publish artifacts are executed, they must produce attestations to satisfy the Admission Controllers that may be encountered downstream.
 
 Outside of simple build execution, relevant areas to admission control include:
 
@@ -262,7 +262,7 @@ In addition to the above inputs, it is assumed that the following checks are bei
 8. Signing check as a label that could be used by a workload attestor to grant access to signing keys.
 
 
-Note: Artefact signatures should be verified against the associated public keys before deployment. Any generated provenance information should also be verified.
+Note: Artifact signatures should be verified against the associated public keys before deployment. Any generated provenance information should also be verified.
 
 
 ## The variables - Inputs and Outputs to and from the SSF
@@ -310,7 +310,7 @@ All cryptographic material must conform and comply with standards for their type
 
 CI/CD pipelines define the steps in the application build process. The specific implementation of a pipeline will vary from organization to organization. However, all pipeline definitions should follow security best-practices that include:
 
-1. **Persistence & Source Control:** Pipeline definitions should be defined as “code” (Pipeline-as-Code) in a declarative fashion, and as such, should meet all the security expectations for source code defined above. Additionally, pipeline definitions should be managed through a source control process (ie, git)  that limits changes to only authorized users following standard protocols (ie, submitting changes via a pull request) and code reviews which include at least one security engineer who is experienced in Continuous Integration (CI) security best practices along with the particular tools being used. Once your pipeline assembly is complete, make sure to persist all relevant artefacts.
+1. **Persistence & Source Control:** Pipeline definitions should be defined as “code” (Pipeline-as-Code) in a declarative fashion, and as such, should meet all the security expectations for source code defined above. Additionally, pipeline definitions should be managed through a source control process (ie, git)  that limits changes to only authorized users following standard protocols (ie, submitting changes via a pull request) and code reviews which include at least one security engineer who is experienced in Continuous Integration (CI) security best practices along with the particular tools being used. Once your pipeline assembly is complete, make sure to persist all relevant artifacts.
 2. **Sign Pipeline Definitions:** Sign your pipeline definitions to ensure non-repudiation. During signing, sign pipeline specifications including all the images used for execution.
 3. **Pipeline Audit:** Perform regular audits of your pipeline definitions to ensure the integrity of the pipeline is maintained.
 4. **Static Scan:** Pipelines typically need access to various user credentials that are provided to the pipeline at runtime (e.g. git-token, OCI-registry-token, etc.). Make sure these credentials are not hard-coded in the definitions. In general, limit the use of hard-coded configurations in the definitions.
@@ -319,14 +319,14 @@ CI/CD pipelines define the steps in the application build process. The specific 
 ### <span style="text-decoration:underline;">Outputs</span>
 
 
-#### Artefacts
+#### Artifacts
 
-A software artefact is the principal output of the Secure Software Factory. Artefacts may include binaries, software packages, container images, signatures, and attestations. They are what will be consumed by downstream users. Artefacts should be accompanied by the appropriate metadata to demonstrate their provenance (described below), stored in a secure artefact repository, and distributed through secured and well understood mechanisms. The exact nature of the artefact itself and the implementation of these requirements will vary depending on factors like language, package type, and target platform(s). Therefore, these implementation details are beyond the scope of the Secure Software Factory.
+A software artifact is the principal output of the Secure Software Factory. Artifacts may include binaries, software packages, container images, signatures, and attestations. They are what will be consumed by downstream users. Artifacts should be accompanied by the appropriate metadata to demonstrate their provenance (described below), stored in a secure artifact repository, and distributed through secured and well understood mechanisms. The exact nature of the artifact itself and the implementation of these requirements will vary depending on factors like language, package type, and target platform(s). Therefore, these implementation details are beyond the scope of the Secure Software Factory.
 
 
 #### Public Signing Keys
 
-In order to verify the signatures included in a software factory’s metadata, downstream consumers will need the public keys associated with those signatures.[^2] The root certificates may be included as an output from the SSF, but they should be distributed separately from the artefact and the metadata itself to allow additional verification of the certificate authenticity. Certificate chains linking the signing key to a root certificate should be included as an output from the SSF, and they should be distributed with the artefact being signed, allowing verifiers to validate a signature is trusted by an approved root certificate. As these keys should be identical to the cryptographic material used as an input to the pipeline, the security considerations already discussed for cryptographic material as inputs apply.
+In order to verify the signatures included in a software factory’s metadata, downstream consumers will need the public keys associated with those signatures.[^2] The root certificates may be included as an output from the SSF, but they should be distributed separately from the artifact and the metadata itself to allow additional verification of the certificate authenticity. Certificate chains linking the signing key to a root certificate should be included as an output from the SSF, and they should be distributed with the artifact being signed, allowing verifiers to validate a signature is trusted by an approved root certificate. As these keys should be identical to the cryptographic material used as an input to the pipeline, the security considerations already discussed for cryptographic material as inputs apply.
 
 
 #### Metadata Documents
@@ -339,7 +339,7 @@ Throughout execution of the pipeline, a number of metadata documents are generat
 
 
 2. **Persistence**: Make sure when stored that documents are immutable, version controlled and signed.
-3. **Metadata Links**: Link all metadata documents to the final deliverable artefact. For example, for a microservice application build pipeline, link the test, vulnerability, and SBOM record to the particular container image they are generated from.
+3. **Metadata Links**: Link all metadata documents to the final deliverable artifact. For example, for a microservice application build pipeline, link the test, vulnerability, and SBOM record to the particular container image they are generated from.
 
 
 ## Secure Software Factory Functionality
@@ -360,7 +360,7 @@ Actors:
 * Workload Attestor
 * Metadata Storage
 
-It is important to call out this sub-action as it happens in most other actions of the SSF. This is the key piece of the SSF in establishing and tracing provenance from source code to artefact of a given project. This provenance can then be used in conjunction with other tooling and auditing to better make claims on the veracity of software.
+It is important to call out this sub-action as it happens in most other actions of the SSF. This is the key piece of the SSF in establishing and tracing provenance from source code to artifact of a given project. This provenance can then be used in conjunction with other tooling and auditing to better make claims on the veracity of software.
 
 In general the following is how the action works though there might be a few caveats specified in the other actions:
 
@@ -388,13 +388,13 @@ Actors:
 * Workload Attestor
 * Metadata Storage
 * Admission Controller
-* Artefact Storage
+* Artifact Storage
 
-As noted in the discussion of the Admissions Controller above, both build workers (the containers performing pipeline steps) and intermediate artefacts (the outputs of previous steps passed along to the next steps in a build) should be verified before they are admitted into the SSF. This should be part of every stage in the pipeline.
+As noted in the discussion of the Admissions Controller above, both build workers (the containers performing pipeline steps) and intermediate artifacts (the outputs of previous steps passed along to the next steps in a build) should be verified before they are admitted into the SSF. This should be part of every stage in the pipeline.
 
 ### Stage 1: Secure the data flow in the pipeline
 
-As tasks execute inside a pipeline, they typically produce some new artefacts like an image, binary or evidence report. These artefacts are then consumed by subsequent tasks to perform their respective functions. Such sharing of artefacts between tasks normally achieved through shared storage resources. It is important to regulate access to these shared resources across tasks.
+As tasks execute inside a pipeline, they typically produce some new artifacts like an image, binary or evidence report. These artifacts are then consumed by subsequent tasks to perform their respective functions. Such sharing of artifacts between tasks normally achieved through shared storage resources. It is important to regulate access to these shared resources across tasks.
 
 To achieve this objective, avoid using a single storage workspace across all tasks in the pipeline. Create multiple storage workspaces that are exclusively shared between the tasks that need to communicate some data/results. For instance, for a simple pipeline shown below, avoid using a single shared storage for all tasks and use exclusive storage sharing. And when possible set access-policies (RW, RO) while mounting these storage in the tasks.
 
@@ -412,7 +412,7 @@ Actors:
 
 The primary component configured as part of normal operation of the SSF is the Pipeline. Both creation of a new Pipeline as well as modification of an existing Pipeline have similar modes of operation and so this section represents both.
 
-The secure software factory expects that you store pipeline configuration as code and that the code is stored in a secure source code repository with adequate controls.See  both “Source Code” and “Pipeline Definitions” in the inputs section above for more information about the SSF’s expectations regarding both of these types of inputs. The goal of these controls is to make sure that the pipeline definition itself has trustworthy provenance. In a cloud native context, these components are often deployed as containers and treated as artefacts in their own right. Ensuring we have adequate provenance for those components increases our assurance about the provenance of the artefacts they build.
+The secure software factory expects that you store pipeline configuration as code and that the code is stored in a secure source code repository with adequate controls.See  both “Source Code” and “Pipeline Definitions” in the inputs section above for more information about the SSF’s expectations regarding both of these types of inputs. The goal of these controls is to make sure that the pipeline definition itself has trustworthy provenance. In a cloud native context, these components are often deployed as containers and treated as artifacts in their own right. Ensuring we have adequate provenance for those components increases our assurance about the provenance of the artifacts they build.
 
 When configuring and designing the pipeline, there consider that:
 
@@ -435,7 +435,7 @@ Actors:
 
 The first step in the SSF is that something triggers a build. This can be a manual, event-driven, or timed trigger. Common triggers are web hooks and manual triggering through an API call or dashboard.
 
-The SSF secures this by capturing and validating the inputs and other metadata like timestamps through the Pipeline Observer. This is then signed by a key or certificate provided by the Workload Attestor that is associated with the identity of the workload. The Workload Attestor then has its  identity attested to by the Node Attestor. This signed metadata is then pushed to Metadata Storage where it becomes a supply chain link that other parts of the SSF can link to and can later be used to validate and audit veracity of the artefact(s) built in the SSF.
+The SSF secures this by capturing and validating the inputs and other metadata like timestamps through the Pipeline Observer. This is then signed by a key or certificate provided by the Workload Attestor that is associated with the identity of the workload. The Workload Attestor then has its  identity attested to by the Node Attestor. This signed metadata is then pushed to Metadata Storage where it becomes a supply chain link that other parts of the SSF can link to and can later be used to validate and audit veracity of the artifact(s) built in the SSF.
 
 ### Stage 4: Ingest Source for Project
 
@@ -463,7 +463,7 @@ Actors:
 * Metadata Storage
 * Internal/External dependency repos
 
-After ingesting source code, the next step is to download the dependencies for the artefact you are building. This is a separate step from the ingestion of the source for a couple of reasons. In line with the build best practices in this document(reference here) and the CNCF Supply Chain Security whitepaper, the pipeline steps should be kept as minimal and atomic as possible. In the case of this step it allows you to download the source and sign it as a single atomic action. Then you can validate after downloading dependencies that the source code wasn’t changed by a compromised dependency install. Some package managers can run arbitrary execution actions on the system without adequate controls.
+After ingesting source code, the next step is to download the dependencies for the artifact you are building. This is a separate step from the ingestion of the source for a couple of reasons. In line with the build best practices in this document(reference here) and the CNCF Supply Chain Security whitepaper, the pipeline steps should be kept as minimal and atomic as possible. In the case of this step it allows you to download the source and sign it as a single atomic action. Then you can validate after downloading dependencies that the source code wasn’t changed by a compromised dependency install. Some package managers can run arbitrary execution actions on the system without adequate controls.
 
 Once dependencies are installed on shared storage they are hashed and that metadata is signed and pushed to Metadata Storage.
 
@@ -478,15 +478,15 @@ Actors:
 * Workload Attestor
 * Metadata Storage
 
-This is arguably the most critical step of the Pipeline. This step is the one that performs common “build” actions to generate an artefact such as compilation, building an image, etc. The build is a common attack vector in supply chain attacks, therefore it is crucial to keep this step atomic, minimal and, most importantly, hermetic. When available you should strive for reproducible builds.
+This is arguably the most critical step of the Pipeline. This step is the one that performs common “build” actions to generate an artifact such as compilation, building an image, etc. The build is a common attack vector in supply chain attacks, therefore it is crucial to keep this step atomic, minimal and, most importantly, hermetic. When available you should strive for reproducible builds.
 
 The build process performs code compilation or transformation (e.g. source code to byte code for compiled languages). Leverage pipeline observers to record the command, options and parameters used during compilation.
 
-Given the need for the build to be hermetic the task running the build should have no network or most other external capabilities and have build parameters pushed at the task level. (Cite build best practice from white paper that explains that the more branching the logic of your build script has the harder it is to reason about what your build is doing.) The only external access the task should have is to shared storage containing the source and dependencies required.The build must write the artefact to new shared storage explicitly for the artefact
+Given the need for the build to be hermetic the task running the build should have no network or most other external capabilities and have build parameters pushed at the task level. (Cite build best practice from white paper that explains that the more branching the logic of your build script has the harder it is to reason about what your build is doing.) The only external access the task should have is to shared storage containing the source and dependencies required.The build must write the artifact to new shared storage explicitly for the artifact
 
-After the operation of the build the metadata associated with the build, e.g. input parameters, hash of produced artefact, etc. are signed and pushed to Metadata Storage.
+After the operation of the build the metadata associated with the build, e.g. input parameters, hash of produced artifact, etc. are signed and pushed to Metadata Storage.
 
-### Stage 7: Publish Artefact
+### Stage 7: Publish Artifact
 
 Actors:
 
@@ -496,11 +496,11 @@ Actors:
 * Node Attestor
 * Workload Attestor
 * Metadata Storage
-* Artefact Storage
+* Artifact Storage
 
-In the final build stage, compiled artefacts are packaged into appropriate distribution format (container image, rpm, tar.gz, etc.). As these new artefacts are produced, they should be signed. 
+In the final build stage, compiled artifacts are packaged into appropriate distribution format (container image, rpm, tar.gz, etc.). As these new artifacts are produced, they should be signed. 
 
-Signed artefacts are  published to an artefact store, external from the SSF. They are then hashed and signed along with any applicable metadata that can be pulled from the artefact. That signed metadata is then stored in Metadata Storage.
+Signed artifacts are  published to an artifact store, external from the SSF. They are then hashed and signed along with any applicable metadata that can be pulled from the artifact. That signed metadata is then stored in Metadata Storage.
 
 # Appendix A: Inputs and Outputs Summary
 
@@ -673,7 +673,7 @@ Signed artefacts are  published to an artefact store, external from the SSF. The
    </td>
   </tr>
   <tr>
-   <td>Artefacts
+   <td>Artifacts
 <p>
 (Requires addition)
    </td>
@@ -998,7 +998,7 @@ and associated coding conventions
    </td>
    <td>Verification:
 <p>
-Verify third party artefacts and open source libraries
+Verify third party artifacts and open source libraries
    </td>
    <td><strong>Assurance</strong>: Moderate to high
 <p>
@@ -1144,7 +1144,7 @@ Scan software for vulnerabilities
   <tr>
    <td>
    </td>
-   <td>Verification: Validate Build artefacts through verifiably reproducible builds
+   <td>Verification: Validate Build artifacts through verifiably reproducible builds
    </td>
    <td><strong>Assurance</strong>: High
 <p>
@@ -1364,7 +1364,7 @@ an offline source
    </td>
   </tr>
   <tr>
-   <td><strong>Securing the Artefacts</strong>
+   <td><strong>Securing the Artifacts</strong>
    </td>
    <td>Verification:
 <p>
@@ -1394,7 +1394,7 @@ Sign Every Step in the Build Process
    </td>
    <td>Automation:
 <p>
-Use TUF/Notary to manage signing of artefacts
+Use TUF/Notary to manage signing of artifacts
    </td>
    <td><strong>Assurance</strong>: Moderate to high
 <p>
@@ -1420,7 +1420,7 @@ Use TUF/Notary to manage signing of artefacts
    </td>
    <td>Controlled Environments:
 <p>
-Limit which artefacts any given party is authorized to certify
+Limit which artifacts any given party is authorized to certify
    </td>
    <td><strong>Assurance</strong>: High
 <p>
@@ -1458,7 +1458,7 @@ Limit which artefacts any given party is authorized to certify
    </td>
    <td>Encryption:
 <p>
-Encrypt artefacts before distribution & ensure only authorized platforms
+Encrypt artifacts before distribution & ensure only authorized platforms
 <p>
 have decryption capabilities
    </td>
@@ -1474,7 +1474,7 @@ have decryption capabilities
    </td>
    <td>Verification:
 <p>
-Ensure clients can perform Verification of Artefacts and
+Ensure clients can perform Verification of Artifacts and
 <p>
 associated metadata
    </td>

@@ -38,7 +38,7 @@ yourself:
 
 - Do you build dependencies yourself instead of relying on public package managers?
 
-- Do you create an SBOM of your own artefacts?
+- Do you create an SBOM of your own artifacts?
 
 ### Protecting build pipelines
 
@@ -60,10 +60,10 @@ yourself:
 
 - Do you produce verifiable, reproducible builds?
 
-### Protecting artefacts and deployments
+### Protecting artifacts and deployments
 
-- Is every artefact you produce (including metadata and intermediate artefacts) signed?
+- Is every artifact you produce (including metadata and intermediate artifacts) signed?
 
 - Do you distribute metadata in a way that can be verified by downstream consumers of your products?
 
-- Can your downstream consumers verify/validate any artefact they ingest from you before they use/deploy it?
+- Can your downstream consumers verify/validate any artifact they ingest from you before they use/deploy it?

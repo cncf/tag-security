@@ -34,7 +34,7 @@ Shared with the CNCF community
 - [Securing the Source Code](#securing-the-source-code)
 - [Securing Materials](#securing-materials)
 - [Securing Build Pipelines](#securing-build-pipelines)
-- [Securing Artefacts](#securing-artefacts)
+- [Securing Artifacts](#securing-artifacts)
 - [Securing Deployments](#securing-deployments)
 - [Prior Art and References](#prior-art-and-references)
 - [Appendix I - Containers](#appendix-i---containers)
@@ -57,7 +57,7 @@ Fourth, all entities operating in the supply chain environment must be required 
 
 To operationalize these principles in a secure software factory several stages are needed. The software factory must ensure that internal, first party source code repositories and the entities associated with them are protected and secured through commit signing, vulnerability scanning, contribution rules, and policy enforcement. Then it must critically examine all ingested second and third party materials, verify their contents, scan them for security issues, evaluate material trustworthiness, and material immutability. The validated materials should then be stored in a secure, internal repository from which all dependencies in the build process will be drawn.  To further harden these materials for high assurance systems it is suggested they should be built directly from source.
 
-Additionally, the build pipeline itself must be secured, requiring the "separation of concerns" between individual build steps and workers, each of which are concerned with a separate stage in the build process.  Build Workers should consider hardened inputs, validation, and reproducibility at each build. Finally, the artefacts produced by the supply chain must be accompanied by signed metadata which attests to their contents and can be verified independently, as well as revalidated at consumption and deployment. Each of these stages will be explored in the document that follows, with an overarching introduction to each stage and detailed recommendations for best practices. A detailed evaluation model for these four principles can be found in the CNCF Security TAG's supply chain repository[^3].
+Additionally, the build pipeline itself must be secured, requiring the "separation of concerns" between individual build steps and workers, each of which are concerned with a separate stage in the build process.  Build Workers should consider hardened inputs, validation, and reproducibility at each build. Finally, the artifacts produced by the supply chain must be accompanied by signed metadata which attests to their contents and can be verified independently, as well as revalidated at consumption and deployment. Each of these stages will be explored in the document that follows, with an overarching introduction to each stage and detailed recommendations for best practices. A detailed evaluation model for these four principles can be found in the CNCF Security TAG's supply chain repository[^3].
 
 
 
@@ -171,7 +171,7 @@ Throughout the best practice recommendations provided in this paper, there are a
 - Automation - Contemporary software development relies on numerous automated processes, such as Continuous Integration/Continuous Delivery (CI/CD) and DevOps pipelines. Leveraging automation helps to ensure that processes are deterministic, bolstering the attestation and verification mechanisms we rely on for supply chain security. Infrastructure and its security controls should be defined as Infrastructure as Code (IaC) and deployed in an automated fashion. IaC allows system changes to be governed by source code management tools that integrate into enterprise identity management solutions. This further reduces the likelihood of varying configurations across environments through "write once, deploy many".
 - Authorization in Controlled Environments - To reduce the impact of compromise, the entities (human or software) and environments involved in the software production lifecycle should be clearly defined and limited in scope. Permissions for human or software operators should be granted on a "least privilege" basis to ensure that roles have the minimum permissions required and are periodically re-evaluated. This guidance is valid at all stages of the supply chain from source code identity and access management to the deployment process.
 - Secure Authentication - Identities are to be determined with certainty.  For interacting at any stage of the supply chain, entities should mutually authenticate their identities prior to interaction[^16]. Such authentication methods should be "hardened" beyond standard password authentication by either (a) a public key infrastructure (ie, public private SSH key pairs), (b) multi-factor authentication (MFA), or (c) explicit limiting of an authentication mechanism to particular activities (i.e. through a secondary "app password" or personal access token). Post authentication, the activities of entities should be monitored to detect suspicious or unauthorized activities.
-The software factory creates multiple pipelines configured to build a software artefact. It is composed of individual build stages chained together to retrieve the source code and dependencies, then scan, test, build and deploy the final artefact. The software factory relies heavily upon infrastructure and security-as-code to allow automated instantiation of pipelines, leading to the creation of multiple immutable pipelines. To eliminate the chance of error or misconfiguration there should be no manual configuration in place.  This also leads to a system that is capable of performing a high level of automated security testing to validate its configuration and verify its products.
+The software factory creates multiple pipelines configured to build a software artifact. It is composed of individual build stages chained together to retrieve the source code and dependencies, then scan, test, build and deploy the final artifact. The software factory relies heavily upon infrastructure and security-as-code to allow automated instantiation of pipelines, leading to the creation of multiple immutable pipelines. To eliminate the chance of error or misconfiguration there should be no manual configuration in place.  This also leads to a system that is capable of performing a high level of automated security testing to validate its configuration and verify its products.
 
 In this paper, we explore this methodology for securing a software supply chain in five stages:
 
@@ -180,7 +180,7 @@ In this paper, we explore this methodology for securing a software supply chain 
 - Securing the Source Code: securing code produced by software producers (the internal or first party code)
 - Securing the Materials: hardening the "raw materials" of second and third party code incorporated in builds,
 - Securing the Build Pipelines: securing the build and infrastructure
-- Securing the Artefacts: attesting the security and trustworthiness of artefacts produced by these build pipelines
+- Securing the Artifacts: attesting the security and trustworthiness of artifacts produced by these build pipelines
 - Securing Deployments: verifying the attestations during the deployment stage
 
 Each of these stages are designed to complement one another for a comprehensive and holistic approach. Implementing all or portions of these should be evaluated against an organization's assurance requirements and environment risk appetite[^17].
@@ -190,7 +190,7 @@ Each of these stages are designed to complement one another for a comprehensive 
 
 The foundational construct of any software supply chain is the source code. The initial step in securing a supply chain is establishing and ensuring the integrity of the source code. "Integrity" in this context means that the source code and tags found in the repository have not changed or altered from the code created by the developer. This includes potential malicious changes introduced by a local compromise on the developers machine. To maintain integrity, organizations must take steps to verify the source of the code added to their first party products and libraries.
 
-It is fundamental to the supply chain that the development activity employs software development best practices. Agile methodologies of "continuous improvement" have been embraced in the industry and enabled through CI/CD pipelines and automated testing. These pipelines must be properly configured to access source code on-demand in order to build, deploy, and release artefacts at the cadence the organization needs.
+It is fundamental to the supply chain that the development activity employs software development best practices. Agile methodologies of "continuous improvement" have been embraced in the industry and enabled through CI/CD pipelines and automated testing. These pipelines must be properly configured to access source code on-demand in order to build, deploy, and release artifacts at the cadence the organization needs.
 
 Identity and Access management (IAM) is the biggest attack vector, regardless of platform or vendor, and it is critical to carefully manage IAM policies to provide both developers and agents secure access to source code. Pipeline agents and human developers must have their access and privileges calibrated to their roles within the organization and be given secure means to authenticate to those roles.
 
@@ -239,7 +239,7 @@ _Assurance categories: Moderate to high and risk categories: moderate to high_
 
 Software best practices include the use of unit, functional, and end-to-end testing to identify bugs and errors in the code before release. In addition, security specific scans should be performed, including Static Application Security Tests (SAST) and Dynamic Application Security Tests (DAST). Static scan tooling should be integrated as early in the development process as possible, including integration into the IDE. For more details on application security best practices refer to the OWASP standards and tools[^24].
 
-During the build process the metadata from security tooling such as SAST tooling should be recorded and linked to a hash of the build artefact to provide chain of custody and provenance. Both the coverage and results of these tests should be published as part of the repository information to help downstream consumers of software better assess the stability, reliability, and/or suitability of a product or library.
+During the build process the metadata from security tooling such as SAST tooling should be recorded and linked to a hash of the build artifact to provide chain of custody and provenance. Both the coverage and results of these tests should be published as part of the repository information to help downstream consumers of software better assess the stability, reliability, and/or suitability of a product or library.
 
 
 ## Controlled Environments:
@@ -329,11 +329,11 @@ Additionally, organizations should always monitor changes to second and third pa
 ## Verification:
 
 
-#### Verify third party artefacts and open source libraries
+#### Verify third party artifacts and open source libraries
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
-Third party artefacts need to be validated using a range of approaches. All third party artefacts, open source libraries and any other dependencies should be verified as part of the continuous integration pipeline by validating their checksums against a known good source and validating any cryptographic signatures. At a very basic level, any software ingested must be scanned using Software Composition Analysis (SCA) tools to detect whether any vulnerable open-source software is used in the final product. If possible, for high assurance categories any 3rd party artefacts should be pen tested to ensure that the software is resistant to standard attacks and no basic security errors or loopholes exist.
+Third party artifacts need to be validated using a range of approaches. All third party artifacts, open source libraries and any other dependencies should be verified as part of the continuous integration pipeline by validating their checksums against a known good source and validating any cryptographic signatures. At a very basic level, any software ingested must be scanned using Software Composition Analysis (SCA) tools to detect whether any vulnerable open-source software is used in the final product. If possible, for high assurance categories any 3rd party artifacts should be pen tested to ensure that the software is resistant to standard attacks and no basic security errors or loopholes exist.
 
 
 #### Require SBOM from third party supplier
@@ -347,7 +347,7 @@ Where possible, vendors should be required to provide Software Bills of Material
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
-A register should be maintained of a project's open source components, dependencies and vulnerabilities to help trace any deployed artefacts with new vulnerabilities. One of the most popular open source inventory implementations is OWASP Dependency-Track. Generating, receiving, or maintaining a supply chain inventory will help identify the software vendors, suppliers, and sources used in an organization with the associated software and versions. Cataloguing this inventory into a human and machine readable mechanism allows organizations to correlate vulnerabilities as they are published against known in-use or to-be-used software and to ascertain impact.
+A register should be maintained of a project's open source components, dependencies and vulnerabilities to help trace any deployed artifacts with new vulnerabilities. One of the most popular open source inventory implementations is OWASP Dependency-Track. Generating, receiving, or maintaining a supply chain inventory will help identify the software vendors, suppliers, and sources used in an organization with the associated software and versions. Cataloguing this inventory into a human and machine readable mechanism allows organizations to correlate vulnerabilities as they are published against known in-use or to-be-used software and to ascertain impact.
 
 
 #### Build libraries based upon source code
@@ -365,14 +365,14 @@ _Assurance category: High and risk category: high_
 
 While there are public repositories and package managers that sign packages and provide the means to verify those signatures, high assurance environments should minimize ingesting
 
-from public repositories. Moderate assurance environments should only ingest public packages if they can assess the risk level with techniques such as CVE scanning. High assurance environments may potentially leverage verification by reproducibility[^31]. Organizations should host their own package managers and artefact repositories, and restrict build machines to pull from only those sources. When this is not possible, the organization should employ compensating mechanisms, such as defensive programming[^32], to reduce the potential impact of compromised packages ingested from untrusted repositories.
+from public repositories. Moderate assurance environments should only ingest public packages if they can assess the risk level with techniques such as CVE scanning. High assurance environments may potentially leverage verification by reproducibility[^31]. Organizations should host their own package managers and artifact repositories, and restrict build machines to pull from only those sources. When this is not possible, the organization should employ compensating mechanisms, such as defensive programming[^32], to reduce the potential impact of compromised packages ingested from untrusted repositories.
 
 
 #### Generate an immutable SBOM of the code
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
-While rebuilding a software artefact, it is best practice to also generate an SBOM[^33] for the software. A generated SBOM provides a clear list of the contents within the final software package. Consumers of the software will then be able to analyse the SBOM, aligning it with vulnerability data to directly identify vulnerabilities based upon the exact package contents.
+While rebuilding a software artifact, it is best practice to also generate an SBOM[^33] for the software. A generated SBOM provides a clear list of the contents within the final software package. Consumers of the software will then be able to analyse the SBOM, aligning it with vulnerability data to directly identify vulnerabilities based upon the exact package contents.
 
 There are currently two well known SBOM specifications: SPDX[^34] and CycloneDX[^35]. A SBOM is preferably generated during the build process. For third party software, a SBOM can be generated using software composition analysis. The SBOM data generated by using the build time data will be more accurate as the build process has visibility of the dependencies used to generate the software.  A SBOM generated through scanning isn't likely to capture issues such as the toolchain introducing a bug. SBOMs may also be generated manually.
 
@@ -393,7 +393,7 @@ It should be noted that instances may exist where the specific usage of the soft
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
-Licensing obligations must also be factored into the ingestion process.  The Linux Foundation maintains the Open Compliance Program[^36] which hosts several tools to ensure released software meets legal and regulatory compliance requirements.  Licensing metadata should be recorded during the build process and distributed with the artefact SBOM.
+Licensing obligations must also be factored into the ingestion process.  The Linux Foundation maintains the Open Compliance Program[^36] which hosts several tools to ensure released software meets legal and regulatory compliance requirements.  Licensing metadata should be recorded during the build process and distributed with the artifact SBOM.
 
 
 #### Run software composition analysis on ingested software
@@ -407,28 +407,28 @@ At a minimum a SCA tool should be run against any dependencies used within the p
 
 # Securing Build Pipelines
 
-When thinking of an industrial factory, we often think of the assembly line itself. Similarly, the heart of a software factory is the actual build pipeline. Drawing from the first, second, and third party materials already discussed, the build pipeline "assembles" the completed software artefacts that will be made available to downstream software consumers.
+When thinking of an industrial factory, we often think of the assembly line itself. Similarly, the heart of a software factory is the actual build pipeline. Drawing from the first, second, and third party materials already discussed, the build pipeline "assembles" the completed software artifacts that will be made available to downstream software consumers.
 
 Securing the build pipelines must be considered as an interconnected system, with defense-in-depth in mind. The following primary components should be secured:
 
 
 
-- Build steps: The function or task to be performed at any point in the "assembly line." A build step should have a single responsibility which may be, for example, to retrieve sources, compile an artefact, or run tests.
+- Build steps: The function or task to be performed at any point in the "assembly line." A build step should have a single responsibility which may be, for example, to retrieve sources, compile an artifact, or run tests.
 - Build workers: The machinery or infrastructure carrying out the task. Historically, a single server might have completed all the steps, but in a cloud native environment the build worker is typically a container which has a 1:1 correlation with a particular step.
-- Build tools: Any software dependencies required to generate and ensure the integrity of the final artefact(s).
+- Build tools: Any software dependencies required to generate and ensure the integrity of the final artifact(s).
 - Pipeline orchestrator: The overall build pipeline managing the CI/CD workflow. Deploys build steps and workers to complete the stages of that pipeline.
 
 Additionally, build metadata produced by these components must be signed and recorded externally in order to facilitate out-of-band verification.
 
-The pipeline is created by joining together a series of hardened build steps. Each build step should be implemented through a hardened container image stored within a secured repository, and should be deployed to a hardened orchestration platform such as Kubernetes. As an example, the US Air Force's Platform One is an implementation of this concept, which leverages hardened containers from the Platform One centralized artefact repository called "Iron Bank". This repository contains signed container images hardened according to the DoD Container Hardening Guide[^37].
+The pipeline is created by joining together a series of hardened build steps. Each build step should be implemented through a hardened container image stored within a secured repository, and should be deployed to a hardened orchestration platform such as Kubernetes. As an example, the US Air Force's Platform One is an implementation of this concept, which leverages hardened containers from the Platform One centralized artifact repository called "Iron Bank". This repository contains signed container images hardened according to the DoD Container Hardening Guide[^37].
 
 By building the pipeline from hardened components, the software factory reduces the likelihood of successful compromise of any build step. The pipeline orchestrator controls exactly what each stage is able to perform, implementing the required build step without additional software, reducing the attack surface of each component in the pipeline. The entire software factory should be designed such that the compromise of an individual build step (or even multiple build steps) is contained and does not compromise the entire pipeline. Out-of-band verification provides defense in depth and mitigates against software factory's root credential loss.
 
 Guiding principles for securing the build include:
 
 - Each component in the build, from infrastructure to code, should have a single responsibility. This division of labour must support least privilege authorisation.
-- Steps should have clearly defined build stage inputs and outputs (artefacts) to allow greater control over data flow.
-- Clearly defined output parameters enable signing of data to provide non-repudiation of artefacts and metadata.
+- Steps should have clearly defined build stage inputs and outputs (artifacts) to allow greater control over data flow.
+- Clearly defined output parameters enable signing of data to provide non-repudiation of artifacts and metadata.
 - All aspects of the pipeline infrastructure and configuration must be immutable.
 - Pipeline steps themselves should be subject to automated testing to validate the efficacy of the security controls within the pipeline.
 - Pipeline steps should produce a signed SBOM for out-of-band verification of the build process.
@@ -436,7 +436,7 @@ Guiding principles for securing the build include:
 
 ## Build Infrastructure
 
-Build infrastructure should have the same level of security configuration as its generated artefacts' target runtime environment. This section focuses on the core build infrastructure itself: the build step and its associated worker, and the pipeline orchestrator.
+Build infrastructure should have the same level of security configuration as its generated artifacts' target runtime environment. This section focuses on the core build infrastructure itself: the build step and its associated worker, and the pipeline orchestrator.
 
 
 ![](sscsp-images/fig2.png)
@@ -448,7 +448,7 @@ A build step is a particular task to be completed in a build pipeline (such as c
 
 Running a worker as a container or VM are the most common ways to handle the build. Other options include serverless, sandboxes (such as gVisor and Firecracker), and secure enclaves. For the purposes of this paper, we will only focus on containers. Using containers as build workers allows pipelines to treat them as "microservices," assigning a unique build worker (container) to each build step. Therefore, at a high level, build workers and build steps may seem interchangeable in a cloud native software factory because they exist in a 1:1 relationship.
 
-Build steps and workers take, as inputs, (1) a worker base image" (the base container image on which the build worker is based), (2) a build environment consisting of sources and dependencies, and (3) a build command. The worker should verify its inputs, run its designated build command, and generate output consisting of an artefact and any metadata. That artefact may be a binary, test evidence, or an input to a subsequent stage, and should include separate, signed metadata (hashes, signatures, or build evidence).
+Build steps and workers take, as inputs, (1) a worker base image" (the base container image on which the build worker is based), (2) a build environment consisting of sources and dependencies, and (3) a build command. The worker should verify its inputs, run its designated build command, and generate output consisting of an artifact and any metadata. That artifact may be a binary, test evidence, or an input to a subsequent stage, and should include separate, signed metadata (hashes, signatures, or build evidence).
 
 The build environment consists of all the content required for the build including the sources for the build and any of its dependencies, excluding any tooling provided by the worker base image as this tooling is not part of the end product being built. It is imperative that no other source material is fetched at build time outside of the provided parameters. The build environment is a temporary storage capability which is encrypted and secured.
 
@@ -461,16 +461,16 @@ During the bootstrapping phase of the software factory project the build stage i
 
 A hardened Open Container Initiative (OCI) container should descend from a minimal image running with least privilege[^38]. Each added application, configuration, or data file should be configured with least privilege, avoiding obvious impediments to security such as SETUID[^39]/GUID binaries, and any build-specific tooling (such as the shell required to execute RUN commands in a Dockerfile) removed as the final stage of the build. Additionally, tools, such as OpenSCAP, should be used to validate that an image's contents meet organizational policy or security best practice.
 
-To secure build stages, their images should only contain the tools and binaries necessary for the specific step of the build or pipeline it is responsible for. This means removing unnecessary binaries from the worker base image that might be included in an image by default, e.g. "vi", and any shell (often "sh" or "bash") used to construct the image. A compromised build worker with an expansive set of capabilities could be able to significantly compromise the artefacts it produces, resulting in a fundamentally untrustworthy build.  By restricting what a build can do through its environment and code you can have reasonable guarantees that the only operations it runs are the ones you allow it to run and better detect if it tries to perform operations it's not permitted to.
+To secure build stages, their images should only contain the tools and binaries necessary for the specific step of the build or pipeline it is responsible for. This means removing unnecessary binaries from the worker base image that might be included in an image by default, e.g. "vi", and any shell (often "sh" or "bash") used to construct the image. A compromised build worker with an expansive set of capabilities could be able to significantly compromise the artifacts it produces, resulting in a fundamentally untrustworthy build.  By restricting what a build can do through its environment and code you can have reasonable guarantees that the only operations it runs are the ones you allow it to run and better detect if it tries to perform operations it's not permitted to.
 
 
 ### Pipeline Orchestrator
 
 The pipeline orchestrator is the part of the CI/CD pipeline that decides which steps in the pipeline should run and on what infrastructure. Legacy build architectures don't make much of a distinction between the orchestrator and the build workers but for a secure cloud native pipeline and supply chain the differences must be clear. The orchestrator stands up an immutable** **pipeline leveraging infrastructure-as-code.
 
-The pipeline orchestrator should never share the same execution environment (for example, the infrastructure or container) as the build worker nor should the pipeline orchestrator build anything itself. Build workers may run arbitrary code and thus are hard to secure. As a result, they should be isolated from other infrastructure and have as least privilege as possible. The pipeline orchestrator requires some privileges (triggering build steps, perhaps collecting artefacts, etc.) but should have no unneeded privileges.
+The pipeline orchestrator should never share the same execution environment (for example, the infrastructure or container) as the build worker nor should the pipeline orchestrator build anything itself. Build workers may run arbitrary code and thus are hard to secure. As a result, they should be isolated from other infrastructure and have as least privilege as possible. The pipeline orchestrator requires some privileges (triggering build steps, perhaps collecting artifacts, etc.) but should have no unneeded privileges.
 
-The orchestrator will need to integrate with other components of the pipeline and supply chain. However, the orchestrator should not integrate with these components arbitrarily. These integrations must be defined in code and validated. The orchestrator should operate with the minimum privileges needed to perform the required actions on other components of the infrastructure. For example, this means pipeline steps that require fetching or pushing of artefacts or code should be limited in scope to just the repositories and projects necessary.
+The orchestrator will need to integrate with other components of the pipeline and supply chain. However, the orchestrator should not integrate with these components arbitrarily. These integrations must be defined in code and validated. The orchestrator should operate with the minimum privileges needed to perform the required actions on other components of the infrastructure. For example, this means pipeline steps that require fetching or pushing of artifacts or code should be limited in scope to just the repositories and projects necessary.
 
 
 ### A Sample Build Pipeline
@@ -494,7 +494,7 @@ Our app has three dependencies, A, B, and C. Dependency A itself has two depende
 
 When a  developer pushes new code to our first party repository it triggers build. Here is how our software factory might progress:
 
-**Step 1: Dependency Building** For each dependency in the application, the pipeline orchestrator will create a pipeline to build the dependent artefact. This small pipeline will consist of a Build Step to clone the code and store it in a secure temporary location. Subsequent stages will run static security scans over the source code before the third step would build the code. The assigned Build Workers build the dependencies and output the compiled binaries or libraries into a secure storage facility. These stages are completed first for dependencies B, D, E, and F, then repeated for dependencies A and C, ingesting their respective sub-dependencies from the secure storage facility.
+**Step 1: Dependency Building** For each dependency in the application, the pipeline orchestrator will create a pipeline to build the dependent artifact. This small pipeline will consist of a Build Step to clone the code and store it in a secure temporary location. Subsequent stages will run static security scans over the source code before the third step would build the code. The assigned Build Workers build the dependencies and output the compiled binaries or libraries into a secure storage facility. These stages are completed first for dependencies B, D, E, and F, then repeated for dependencies A and C, ingesting their respective sub-dependencies from the secure storage facility.
 
 **Step 2: Dependency Linking** The Pipeline Orchestrator now triggers a new Build Step, giving it the appropriate build environment for our application and the necessary tools to install all our dependencies. It then commands the Build Worker for this stage to install/link the dependencies. The assigned Build Worker ingests the dependencies from our secure repository and installs them. It outputs a new build environment with all dependencies installed and linked.
 
@@ -512,7 +512,7 @@ When a  developer pushes new code to our first party repository it triggers buil
 
 
 
-**Step 4: Application Testing** For brevity, we are treating several test steps together. An application's source code and resultant artefacts may be tested in parallel: static security and policy testing (linting and SAST) on source code; unit testing of the application (either outside or inside the built container artefact); and acceptance, composition, and security testing of built container images. Some systems scan a container image at this stage before pushing it to a registry, while others rely on the registry to perform the scan and promote the artefact if it passes. Whether the acceptance testing of the container image will be done in the CI stage depends on the target deployment, and the CD system's ability to verify details later in the pipeline. The Workers complete these tests and return the environment containing the built application, plus new metadata attesting to the results of the tests performed.
+**Step 4: Application Testing** For brevity, we are treating several test steps together. An application's source code and resultant artifacts may be tested in parallel: static security and policy testing (linting and SAST) on source code; unit testing of the application (either outside or inside the built container artifact); and acceptance, composition, and security testing of built container images. Some systems scan a container image at this stage before pushing it to a registry, while others rely on the registry to perform the scan and promote the artifact if it passes. Whether the acceptance testing of the container image will be done in the CI stage depends on the target deployment, and the CD system's ability to verify details later in the pipeline. The Workers complete these tests and return the environment containing the built application, plus new metadata attesting to the results of the tests performed.
 
 
 
@@ -520,7 +520,7 @@ When a  developer pushes new code to our first party repository it triggers buil
 
 
 
-**Step 5: Artefact Publishing** Upon successful completion of testing, linting, and scanning, the Pipeline Orchestrator triggers a new Build Step, giving it the latest environment containing our built application, the metadata attesting to the results of our testing, and whatever additional tools are needed for publishing the artefact (including generation of  the SBOM). It then commands the assigned Build Worker to publish our application as an artefact (e.g. container image). The Worker publishes the artefact to a secure storage repository.
+**Step 5: Artifact Publishing** Upon successful completion of testing, linting, and scanning, the Pipeline Orchestrator triggers a new Build Step, giving it the latest environment containing our built application, the metadata attesting to the results of our testing, and whatever additional tools are needed for publishing the artifact (including generation of  the SBOM). It then commands the assigned Build Worker to publish our application as an artifact (e.g. container image). The Worker publishes the artifact to a secure storage repository.
 
 
 
@@ -528,7 +528,7 @@ When a  developer pushes new code to our first party repository it triggers buil
 
 
 
-**Step 6: Artefact Deployment** Finally, the Pipeline Orchestrator directs yet another Build Step to deploy the artefact to some environment. This may be a testing, staging, or production environment (depending on progression through the process). This stage may be repeated for each of those deployment environments, and in between there may be additional testing stages.
+**Step 6: Artifact Deployment** Finally, the Pipeline Orchestrator directs yet another Build Step to deploy the artifact to some environment. This may be a testing, staging, or production environment (depending on progression through the process). This stage may be repeated for each of those deployment environments, and in between there may be additional testing stages.
 
 
 
@@ -536,9 +536,9 @@ When a  developer pushes new code to our first party repository it triggers buil
 
 
 
-The above process may contain loops and repetitions (as illustrated in Step 1 regarding sub-dependencies) depending on the particular dependency tree of our application, our testing process, and the methods of packaging the artefact and deployment that we use.
+The above process may contain loops and repetitions (as illustrated in Step 1 regarding sub-dependencies) depending on the particular dependency tree of our application, our testing process, and the methods of packaging the artifact and deployment that we use.
 
-In the sections that follow, you will find numerous best practices for hardening the containers used as the build workers described above, how to architect the relationship between Build Steps, their corresponding Build Workers, and the Orchestration Pipeline, and guidance on how to sign and secure the artefacts produced at each stage in the build process.
+In the sections that follow, you will find numerous best practices for hardening the containers used as the build workers described above, how to architect the relationship between Build Steps, their corresponding Build Workers, and the Orchestration Pipeline, and guidance on how to sign and secure the artifacts produced at each stage in the build process.
 
 
 ## Verification:
@@ -565,11 +565,11 @@ _Assurance categories: Moderate to high and risk categories: moderate to high_
 Out-of-band verification of runtime environment security, as defined by execution of policies using tools such as seccomp, AppArmor, and SELinux, provides defense in depth against attacks on build infrastructure.  Policy rule sets should be created and applied to build infrastructure. High privilege kernel capabilities such as debugger, device, and network attachments should be restricted and monitored.  Findings should be forwarded to organizational Security Information and Event Management (SIEM) systems for remediation.
 
 
-#### Validate Build artefacts through verifiably reproducible builds
+#### Validate Build artifacts through verifiably reproducible builds
 
 _Assurance category: High and risk category: high_
 
-A deterministic build produces equivalent outputs when given the same inputs and enables us to detect unintended changes (whether malicious, such as malware and backdoors, or accidental). Verifiably reproducible builds improve on this by enabling us to cryptographically attest that the given inputs produce the same output.  A verifiably reproducible build is a build process where, given a source code commit hash and a set of build instructions, an end user should be able to reproduce the built artefact bit for bit.  We can build on these cryptographic assertions to provide additional security properties, such as artefact flow integrity. Assurance of the build is obtained when multiple builders, on separate infrastructure, achieve consensus of the build artefact signature.
+A deterministic build produces equivalent outputs when given the same inputs and enables us to detect unintended changes (whether malicious, such as malware and backdoors, or accidental). Verifiably reproducible builds improve on this by enabling us to cryptographically attest that the given inputs produce the same output.  A verifiably reproducible build is a build process where, given a source code commit hash and a set of build instructions, an end user should be able to reproduce the built artifact bit for bit.  We can build on these cryptographic assertions to provide additional security properties, such as artifact flow integrity. Assurance of the build is obtained when multiple builders, on separate infrastructure, achieve consensus of the build artifact signature.
 
 The ability to build software in a verifiably reproducible manner is of growing importance as the software industry sees more attacks on build infrastructure. Building software in a reproducible way is not a trivial task, however, and care needs to be taken to capture the required build environment and remove non-determinism from all aspects of the build process. In what follows we will give several recommendations specific to the production of reproducible builds.[^40]
 
@@ -659,7 +659,7 @@ The software factory should have no network connectivity other than to connect t
 
 _Assurance category: High and risk category: high_
 
-When planning what the build worker will be responsible for, consider segregation of duties within the domain of a particular build. It is generally better to have specific build workers handle specific parts of a build as opposed to having a single worker handle all steps in a build, e.g. lint, compile, submit for remote scanning, push artefact etc. Splitting the build between workers allows users to attest each step of the build process.
+When planning what the build worker will be responsible for, consider segregation of duties within the domain of a particular build. It is generally better to have specific build workers handle specific parts of a build as opposed to having a single worker handle all steps in a build, e.g. lint, compile, submit for remote scanning, push artifact etc. Splitting the build between workers allows users to attest each step of the build process.
 
 
 #### Pass in Build Worker Environment and Commands
@@ -675,7 +675,7 @@ It is best practice to keep the build logic as simple and clear as possible so t
 
 _Assurance category: High and risk category: high_
 
-The output artefacts of Build Workers require similar security considerations as the inputs and working environment. The output artefact should be written to a separate shared storage from the inputs. A process separate from the Build Worker should then upload that artefact to an appropriate repository.
+The output artifacts of Build Workers require similar security considerations as the inputs and working environment. The output artifact should be written to a separate shared storage from the inputs. A process separate from the Build Worker should then upload that artifact to an appropriate repository.
 
 
 ## Secure Authentication/Access:
@@ -713,16 +713,16 @@ Workloads should be issued short lived credentials with automated rotation. The 
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
-Additional security techniques should be integrated into the software factory itself to monitor for suspicious or unexpected activity such as attempts to connect out to suspicious endpoints during the build process. It is especially valuable to provide enhanced monitoring around stages within the pipeline that add to the resulting software artefact (as opposed to stages performing testing on the artefact) as any deviations from their normal process may be a signal of compromise.
+Additional security techniques should be integrated into the software factory itself to monitor for suspicious or unexpected activity such as attempts to connect out to suspicious endpoints during the build process. It is especially valuable to provide enhanced monitoring around stages within the pipeline that add to the resulting software artifact (as opposed to stages performing testing on the artifact) as any deviations from their normal process may be a signal of compromise.
 
 
 
 
-# Securing Artefacts
+# Securing Artifacts
 
-An artefact is the output of the build phase. Software artefacts, along with corresponding build metadata, must be hashed and signed by authorized entities. The signing of software artefacts describes the process ensuring the integrity and provenance of the artefact at build time, helping to establish trust. The signing of an artefact is a method of indicating that an artefact has been vetted and approved to be used in a given environment and authorized for use by a trusted authority. Trust is generated through cryptographically generated signatures at build time based on a secure hash of the artefact and, in more complex scenarios, whether the artefact has been signed by another process in the supply chain. For example, consider a scenario where the artefact is signed at build time and the resulting signature is verified before the artefact is scanned for compliance and security.
+An artifact is the output of the build phase. Software artifacts, along with corresponding build metadata, must be hashed and signed by authorized entities. The signing of software artifacts describes the process ensuring the integrity and provenance of the artifact at build time, helping to establish trust. The signing of an artifact is a method of indicating that an artifact has been vetted and approved to be used in a given environment and authorized for use by a trusted authority. Trust is generated through cryptographically generated signatures at build time based on a secure hash of the artifact and, in more complex scenarios, whether the artifact has been signed by another process in the supply chain. For example, consider a scenario where the artifact is signed at build time and the resulting signature is verified before the artifact is scanned for compliance and security.
 
-The signing of artefacts should be  performed at each stage of its life cycle, along with the verification of signatures from prior stages, to ensure end-to-end trust. For added protection, encryption can be used to protect the confidentiality of the artefact, and ensure only authorized parties are able to use the artefact.
+The signing of artifacts should be  performed at each stage of its life cycle, along with the verification of signatures from prior stages, to ensure end-to-end trust. For added protection, encryption can be used to protect the confidentiality of the artifact, and ensure only authorized parties are able to use the artifact.
 
 
 ## Verification:
@@ -732,41 +732,41 @@ The signing of artefacts should be  performed at each stage of its life cycle, a
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
-Individual steps in the build process should be attested for process integrity.  As discussed in the "Securing Build Pipelines" section, build step inputs, outputs, and process traces should be collected and evaluated as part of the software release and distribution process. The final artefact bundle should include these collective signatures and itself be signed to give integrity to the completed artefact and all its associated metadata. The CNCF sponsors in-toto, The Update Framework (TUF), and the SPIFFE/SPIRE projects, each of which support the framework for such an attestation/control system.
+Individual steps in the build process should be attested for process integrity.  As discussed in the "Securing Build Pipelines" section, build step inputs, outputs, and process traces should be collected and evaluated as part of the software release and distribution process. The final artifact bundle should include these collective signatures and itself be signed to give integrity to the completed artifact and all its associated metadata. The CNCF sponsors in-toto, The Update Framework (TUF), and the SPIFFE/SPIRE projects, each of which support the framework for such an attestation/control system.
 
 
 #### Validate the Signatures Generated at Each Step
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
-The integrity and provenance of images, deployment configuration, and application packages included in artefacts should all be validated using the signatures generated by each step in its build process to ensure compliance with the organization's requirements. Additionally, software metadata, such as SBOMs, should have validated signatures to ensure objects in an artefact's manifest or dependency metadata store have not been tampered with between build and runtime.
+The integrity and provenance of images, deployment configuration, and application packages included in artifacts should all be validated using the signatures generated by each step in its build process to ensure compliance with the organization's requirements. Additionally, software metadata, such as SBOMs, should have validated signatures to ensure objects in an artifact's manifest or dependency metadata store have not been tampered with between build and runtime.
 
 
 ## Automation:
 
 
-#### Use TUF/Notary to manage signing of artefacts
+#### Use TUF/Notary to manage signing of artifacts
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
-The CNCF maintains the Notary project, based on TUF, to enable the creation and interaction of trusted collections. Signatures and metadata about artefacts are stored, often adjacent to an OCI registry. Notary makes use of a "root-of-trust" model to delegate trust from a single root to the individual teams or developers who sign artefacts. It uses additional metadata to allow clients to verify the freshness of content in a repository and protect against common attacks on update systems[^48]. Clients can make use of public keys to verify the contents of the repository.
+The CNCF maintains the Notary project, based on TUF, to enable the creation and interaction of trusted collections. Signatures and metadata about artifacts are stored, often adjacent to an OCI registry. Notary makes use of a "root-of-trust" model to delegate trust from a single root to the individual teams or developers who sign artifacts. It uses additional metadata to allow clients to verify the freshness of content in a repository and protect against common attacks on update systems[^48]. Clients can make use of public keys to verify the contents of the repository.
 
 
 #### Use a store to manage metadata from in-toto
 
 _Assurance categories: Moderate to high and risk categories: moderate to high_
 
-Organizations that generate in-toto metadata need a way to track and store this metadata. This may be a database or a dedicated solution such as Grafeas. Grafeas is an open source artefact metadata API supporting in-toto link attestations as a type, and has a supporting Kubernetes admission controller called Kritis[^49].
+Organizations that generate in-toto metadata need a way to track and store this metadata. This may be a database or a dedicated solution such as Grafeas. Grafeas is an open source artifact metadata API supporting in-toto link attestations as a type, and has a supporting Kubernetes admission controller called Kritis[^49].
 
 
 ## Controlled Environments:
 
 
-#### Limit which artefacts any given party is authorized to certify
+#### Limit which artifacts any given party is authorized to certify
 
 _Assurance category: High and risk category: high_
 
-It is important that a software delivery and update system must not grant trust universally or indefinitely. The system must make it clear which artefacts or metadata a given party is trusted to certify using selective trust delegations. Trust must expire at predefined intervals, unless renewed. Finally, the idea of trust must be compartmentalized -- a party must only be trusted to perform the tasks assigned to it.
+It is important that a software delivery and update system must not grant trust universally or indefinitely. The system must make it clear which artifacts or metadata a given party is trusted to certify using selective trust delegations. Trust must expire at predefined intervals, unless renewed. Finally, the idea of trust must be compartmentalized -- a party must only be trusted to perform the tasks assigned to it.
 
 
 #### Build in a system for rotating and revoking private keys
@@ -780,36 +780,36 @@ It is insufficient to cryptographically sign components being distributed and as
 
 _Assurance category: High and risk category: high_
 
-An internal image registry should be deployed and configured to support internal artefact distribution with the security properties described in this section. This might be accomplished by distributing metadata using the proposed OCI artefact manifest[^50].
+An internal image registry should be deployed and configured to support internal artifact distribution with the security properties described in this section. This might be accomplished by distributing metadata using the proposed OCI artifact manifest[^50].
 
 
 ## Encryption:
 
 
-#### Encrypt artefacts before distribution & ensure only authorized platforms have decryption capabilities
+#### Encrypt artifacts before distribution & ensure only authorized platforms have decryption capabilities
 
 _Assurance category:  High and risk category: high_
 
-The confidentiality of the image and its contents can be protected by encrypting it. This ensures that the contents of the artefact remain confidential in transit and at rest, until it is consumed. These artefacts can be encrypted so that they are accessible by authorized parties, such as the clusters, vulnerability scanners, etc. OCI image encryption is implemented via the ocicrypt library, supported by CNCF projects containerd and cri-o runtimes, as well as build tools such as buildah and skopeo.
+The confidentiality of the image and its contents can be protected by encrypting it. This ensures that the contents of the artifact remain confidential in transit and at rest, until it is consumed. These artifacts can be encrypted so that they are accessible by authorized parties, such as the clusters, vulnerability scanners, etc. OCI image encryption is implemented via the ocicrypt library, supported by CNCF projects containerd and cri-o runtimes, as well as build tools such as buildah and skopeo.
 
-Encrypting artefacts allows its view or use to be tied to a key relying less on the trust of the distribution infrastructure (e.g. registries). It is recommended organizations use key management and distribution systems with identity and attestation mechanisms (e.g. SPIFFE/SPIRE) to accomplish this.
+Encrypting artifacts allows its view or use to be tied to a key relying less on the trust of the distribution infrastructure (e.g. registries). It is recommended organizations use key management and distribution systems with identity and attestation mechanisms (e.g. SPIFFE/SPIRE) to accomplish this.
 
 
 # Securing Deployments
 
-Software delivery systems have been historically prone to several types of attacks. The Update Framework (TUF)[^51] has been designed to be resistant to these attacks. Therefore, any system designed to distribute software artefacts and their corresponding metadata must have several properties that enable them to counter the attacks defined in the TUF spec: Trust, Compromise Resilience, Integrity, and Freshness. In addition the system must contain preventive and detective capabilities to monitor its security posture and report if attempts to compromise are discovered.
+Software delivery systems have been historically prone to several types of attacks. The Update Framework (TUF)[^51] has been designed to be resistant to these attacks. Therefore, any system designed to distribute software artifacts and their corresponding metadata must have several properties that enable them to counter the attacks defined in the TUF spec: Trust, Compromise Resilience, Integrity, and Freshness. In addition the system must contain preventive and detective capabilities to monitor its security posture and report if attempts to compromise are discovered.
 
 
 ## Verification:
 
 
-#### Ensure clients can perform Verification of Artefacts and associated metadata
+#### Ensure clients can perform Verification of Artifacts and associated metadata
 
 _Assurance categories: Moderate to high and risk categories: Moderate to high_
 
-Clients receiving software artefacts from the distribution mechanism must be able to verify the integrity of the downloaded files. It's also vital that the view a client has of the repository is consistent and up to date so the client sees the latest version of all the files it has access to. This is especially necessary for highly volatile repositories.
+Clients receiving software artifacts from the distribution mechanism must be able to verify the integrity of the downloaded files. It's also vital that the view a client has of the repository is consistent and up to date so the client sees the latest version of all the files it has access to. This is especially necessary for highly volatile repositories.
 
-Clients must verify the metadata associated with the artefacts. If an SBOM is created, its signatures must be verified, and the associated keys must be validated as belonging to an authorized party. When in-toto metadata is generated, the corresponding verification workflow[^52] must be executed, which, apart from verifying the signatures of each metadata file, also matches the metadata from each step in the pipeline to the layout of the full supply chain. Adopters can use the reference implementations written in Python[^53] or Go[^54] to execute this workflow.
+Clients must verify the metadata associated with the artifacts. If an SBOM is created, its signatures must be verified, and the associated keys must be validated as belonging to an authorized party. When in-toto metadata is generated, the corresponding verification workflow[^52] must be executed, which, apart from verifying the signatures of each metadata file, also matches the metadata from each step in the pipeline to the layout of the full supply chain. Adopters can use the reference implementations written in Python[^53] or Go[^54] to execute this workflow.
 
 
 #### Ensure clients can verify the "freshness" of files
@@ -826,7 +826,7 @@ Since software updates are used to deliver bug fixes and security patches, it is
 
 _Assurance categories: High and risk categories: High_
 
-TUF is a specification[^55] for securely delivering software artefacts by combining trust, compromise resilience, integrity, and freshness. It is a graduated CNCF project and has been deployed in various contexts — PyPI, Datadog, Amazon Web Services for Bottlerocket, Notary, Google Fuchsia, and IBM cloud.
+TUF is a specification[^55] for securely delivering software artifacts by combining trust, compromise resilience, integrity, and freshness. It is a graduated CNCF project and has been deployed in various contexts — PyPI, Datadog, Amazon Web Services for Bottlerocket, Notary, Google Fuchsia, and IBM cloud.
 
 Several TUF implementations exist that can be leveraged by new adopters. The reference implementation[^56] is written in Python, and is maintained by the core TUF team. Notary, another CNCF project, implements TUF for its underlying security framework. Finally, there are implementations written in Go, go-tuf[^57], Rust, tough[^58], and PHP php-tuf[^59].
 
@@ -939,7 +939,7 @@ Only signed images (for example, with Notary or cosign) have a guaranteed publis
 
 Developer teams should evaluate any additional dependencies that may be installed into a container using the system and language package manager, binaries downloaded from the internet or from a personal repository, and dependencies copied from the host machine. Be skeptical of unknown binaries in pre-existing container images that are not accounted for by the supplier. Tools like tern[^63] and syft[^64] can be used to identify the Base OS of the image and the dependencies installed on top of them.
 
-Never pull from the "latest" tag and do not assume that a versioned tag will be patched. Only container SHA hashes and notary-signed tags are cryptographically guaranteed to be the same artefact. To maintain build repeatability throughout the container build pipeline, pull only by digest. There is currently no way of polling a container registry to see if an update has shown up. In lieu of this, a pre-evaluation step can be used to inspect a certain tag for a new digest before the container image gets promoted to be used further down the pipeline.
+Never pull from the "latest" tag and do not assume that a versioned tag will be patched. Only container SHA hashes and notary-signed tags are cryptographically guaranteed to be the same artifact. To maintain build repeatability throughout the container build pipeline, pull only by digest. There is currently no way of polling a container registry to see if an update has shown up. In lieu of this, a pre-evaluation step can be used to inspect a certain tag for a new digest before the container image gets promoted to be used further down the pipeline.
 
 
 ## Containers as Build Workers
@@ -956,7 +956,7 @@ Dockerfiles are easy to write, but the current development guidelines[^65] do no
 
 - FROM lines should have the image name and its digest.
 - Do not run an OS upgrade (like apt-get upgrade) as it will change the state of the base OS, making it harder to reason about. Pull a newer image instead.
-- When using COPY, record metadata for users of the deployed image, for example, git repo and commit, artefact name and download location, roles and signatures, and other build pipeline information. Never put secrets in an image's label or Dockerfile.
+- When using COPY, record metadata for users of the deployed image, for example, git repo and commit, artifact name and download location, roles and signatures, and other build pipeline information. Never put secrets in an image's label or Dockerfile.
 - Do not pass immutable build metadata via docker build arguments. Record them in container image labels instead. Immutable metadata can be a version number, a hash, or build numbers. If you must pass build metadata via build arguments, record them in the container image label.
 - Be cognizant of build caching. By default, Docker will cache image layers created by the RUN instruction if the RUN instruction itself does not change. For example, if the RUN instruction is "apk add --no-cache", even though the intention is to not use the package manager's  cache when installing a package, Docker will just retrieve the data from it's image layer cache. To avoid using stale data, run docker build --no-cache.
 
@@ -975,7 +975,7 @@ Open Source tools like DockerSlim[^67] and MiniCon[^68] can be used to limit the
 
 ## Configuration Files and Build Scripts
 
-Many projects rely on pre-existing container images to build software. It may look like you are just invoking an install script, but the script itself may invoke a container build command as a build environment. Kubernetes deployments and Helm charts also use pre-existing container images that may be deployed and maintained by third parties. Before building artefacts from this source code, inspect the source code for these patterns:
+Many projects rely on pre-existing container images to build software. It may look like you are just invoking an install script, but the script itself may invoke a container build command as a build environment. Kubernetes deployments and Helm charts also use pre-existing container images that may be deployed and maintained by third parties. Before building artifacts from this source code, inspect the source code for these patterns:
 
 - Makefiles and install scripts containing docker commands to pull and build container images. Evaluate Makefiles and install scripts for software build and installation before invoking them.
 - Configuration files (frequently a part of Infrastructure as Code) often point to pre-existing container images. These configuration files should be source controlled and updated with container images pointing to the most updated digest. Do not use mutable tags to refer to images.
@@ -1160,7 +1160,7 @@ It is critical to note, however, that organizations are entirely responsible for
      https://github.com/grafeas/kritis
 
 [^50]:
-     https://github.com/opencontainers/artefacts/blob/a56aaad3afb5bab321644e3508f76d915031b3da/artefact-manifest/artefact-manifest.md
+     https://github.com/opencontainers/artifacts/blob/a56aaad3afb5bab321644e3508f76d915031b3da/artifact-manifest/artifact-manifest.md
 
 [^51]:
      https://theupdateframework.io/security/#attacks-and-weaknesses
