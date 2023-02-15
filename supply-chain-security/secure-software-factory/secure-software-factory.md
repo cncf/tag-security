@@ -1,30 +1,24 @@
 
-# Introduction 
+# Introduction
 
 A software supply chain is the series of steps performed when writing, testing, packaging, and distributing application software to end consumers. Given the increased prominence of software supply chain exploits and attacks, the [Cloud Native Computing Foundation (CNCF) Technical Advisory Group for Security](https://github.com/cncf/tag-security) published a whitepaper titled [“Software Supply Chain Best Practices”](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf), which captures over 50 recommended practices to securing the software supply chain. That document is considered a prerequisite for the content described in this reference architecture.
 
 This publication is a follow-up to that paper, targeted at system architects, developers, operators, and engineers in the areas of software development, security and compliance. This reference architecture adopts the “Software Factory” model[^1] for designing a secure software supply chain.
 
-This reference architecture and accompanying prototype have been produced after a thorough evaluation of available tooling as of early 2022. The components selected  are open source, cloud native, and prioritise security. 
-
+This reference architecture and accompanying prototype have been produced after a thorough evaluation of available tooling as of early 2022. The components selected  are open source, cloud native, and prioritise security.
 
 ## Problem Scope: Software Supply Chain Security
 
-The practices that the “Software Supply Chain Best Practices” whitepaper captures are predicated on four overarching principles: 
-
-
+The practices that the “Software Supply Chain Best Practices” whitepaper captures are predicated on four overarching principles:
 
 * Defence in depth (Layered end-to-end security controls)
-* Signing and Verification 
-* Artefact Metadata Analytics 
-* Automation 
+* Signing and Verification
+* Artefact Metadata Analytics
+* Automation
 
-Those four principles are in turn applied and organised around five functional areas deemed as the entities in a software factory: 
-
+Those four principles are in turn applied and organised around five functional areas deemed as the entities in a software factory:
 
 When thinking about how to secure those entities, there are two broad ways of organising security controls:
-
-
 
 1. Around three critical concerns:
     1. **Provenance verification**: assurance that existing evidence assumptions of where and how an artefact originates from are true and that the artefact or its accompanying metadata have not been tampered with during the build or delivery processes. 
@@ -35,14 +29,9 @@ When thinking about how to secure those entities, there are two broad ways of or
     5. **Build**: the process of building, testing, and packaging an artefact according to its build specifications.
     6. **Post-Build**: principally concerned with the storage, delivery, deployment, continuous verification~~.~~
 
-
-
-
 ![alt_text](images/image3.png "image_tooltip")
 
-
 In the matrix below, we attempt to overlay these entities, concerns, and activity stages with one another:
-
 
 <table>
   <tr>
@@ -123,7 +112,6 @@ In the matrix below, we attempt to overlay these entities, concerns, and activit
   </tr>
 </table>
 
-
 This reference architecture focuses specifically on the critical concern of provenance and primarily on the activity stage of the “build.” There are numerous other publications and guides which address issues around trustworthiness, including practices like SAST/DAST scanning, code signing, etc, including the [CNCF Software Supply Chain Best Practices Paper](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf). We direct readers to these documents for more information on those facets of supply chain security.
 
 Our decision to emphasize provenance and the build pipeline in this paper is based on the foundational role provenance verification plays in other supply chain security concerns. Provenance provides the evidence, for example, that SAST/DAST scanning was completed as claimed. If you are relying on the results of SAST/DAST scans of a software artefact to inform your decision on its trustworthiness, you need to know that those claims are accurate. Provenance provides that assurance. It also provides assurance that an artefact which claims to be the product of a specific codebase and a specific build process is in fact the product it claims to be or that the artefact downloaded from a remote source is the same one you expected to receive. All of these claims are foundational to being able to make informed decisions about an artefact's trustworthiness: you must be able to trust the evidence presented about an artefact’s trustworthiness is valid evidence before you can trust the claims that evidence makes about the artefact.
@@ -135,97 +123,72 @@ This paper offers a  high level treatment of a secure software factory. This is 
 
 As the tools we recommend are all under active development, the reader must keep in mind that these details are valid only as of the time of publication, MM/YYYY. We provide versioning information for your reference. Upon implementation, consult the official documentation for each tool for the appropriate version to make use of.
 
-
 ### A Word About the Prototype
 
 The CNCF Security TAG supply chain working group is working on a prototype of the architecture as presented in this document. This prototype acts as a proof of concept to help illustrate the architecture put forward and to exercise the several integration points of the secure software factory.
 
 The source can be found here: [https://github.com/thesecuresoftwarefactory/](https://github.com/thesecuresoftwarefactory/ssf)
 
+# The Secure Software Factory
 
-# The Secure Software Factory 
-
-_“Architects look at thousands of buildings during their training, and study critiques of those buildings written by masters. In contrast, most software developers only ever get to know a handful of large programs well—usually programs they wrote themselves—and never study the great programs of history. As a result, they repeat one another's mistakes rather than building on one another's successes.” _- The Architecture of Open Source Applications
+“_Architects look at thousands of buildings during their training, and study critiques of those buildings written by masters. In contrast, most software developers only ever get to know a handful of large programs well—usually programs they wrote themselves—and never study the great programs of history. As a result, they repeat one another's mistakes rather than building on one another's successes._” - The Architecture of Open Source Applications
 
 The subsequent sections detail how a Secure Software Factory ought to be structured and how its different parts interact.
 
-
-### Key Diagrams
-
+## Key Diagrams
 
 ### Secure Software Factory Landscape
 
-
-
 ![alt_text](images/image4.png "image_tooltip")
-
 
 The Secure Software Factory sits in a larger System Delivery Lifecycle process. Within that process, the SSF has both upstream and downstream dependencies. Upstream, the SSF depends on Identity and Access Management for both human users and other software services. During a pipeline run the SSF relies on Source Code Control for fetching the code to be built and on Artefact Storage for dependencies required for the build. Downstream, the SSF is depended on for providing attestations and signatures regarding artefacts which can be used by production systems to determine artefact provenance and make policy decisions about artefact deployment.
 
-
 ### Secure Software Factory Components/Elements
-
-
-
 
 ![alt_text](images/image5.png "image_tooltip")
 
-
 The above diagram shows how the various services running inside of the Secure Software Factory interact with each other, and a portion of the external services they depend on. The diagram is simplified, and doesn’t show every interaction between each tool. For example, in a real environment, Runtime Visibility monitors more than just the Build Environment. The remainder of this document illustrates how the services interact and function in further detail. 
-
 
 ### Pipeline Run Example
 
-
-
 ![alt_text](images/image6.png "image_tooltip")
-
 
 This diagram is intended to show an example Pipeline Run inside the SSF. Some tasks might interact with other external services outside the scope of the SSF. The exact number of tasks depends on the requirements of your project.
 
 There are a few important takeaways from the above diagram.
-
-
 
 * The Pipeline Observer records what Tasks occur in what order.
 * The Tasks interact with some type of Runtime Build Storage during normal operation. The storage in some cases might be shared between tasks, while in other cases it might not. Other areas of this architecture document go into further detail on shared storage.
 
 Not every task will provide attestation or additional metadata, but those that do support this capability should be signed and securely stored in a source of truth.
 
-
 ## Components of the SSF
 
 The SSF that manufactures secure software can be broken down into several categories of components, like that of a regular factory. These are the core components, the management components and the distribution components. The core components are responsible for the central task of the Secure Software Factory: taking the inputs of the factory and processing them to create the output artefacts. The management components ensure that the factory runs in accordance with policy. It ensures that the processes of the factory are validated in the right way, and provides evidence and documentation of the outputs of the factory. The distribution components are in charge of moving the products of the factory to where they can be made available for usage, as well as to provide guidance and tools to ensure that outputs of the factory are consumed safely.
-
 
 ### The “Core” Components
 
 The core components can further be classified into 3 stages: the Scheduling and Orchestration Platform, which runs all the other components, the Pipeline Framework, which details the basic layout of the build pipeline, and the Build Environments, which perform the actions defined in the pipeline.
 
-
 #### Scheduling and Orchestration Platform
 
-A Secure Software Factory seeks to run its components in the most minimal and isolated way possible. All other components of the SSF leverage this platform to schedule their jobs to perform their respective actions. The prototype relies on Kubernetes as its Scheduling and Orchestration platform. 
+A Secure Software Factory seeks to run its components in the most minimal and isolated way possible. All other components of the SSF leverage this platform to schedule their jobs to perform their respective actions. The prototype relies on Kubernetes as its Scheduling and Orchestration platform.
 
 See &lt;kubernetes hardening guide> for best security practises for Kubernetes. Follow similar guides for a different scheduling and orchestration platform.
-
 
 #### Pipeline Framework and Tooling
 
 Pipelines are a core part of the SSF as they encode the concrete workflow for building  the software artefacts. This typically follows a Continuous Integration (CI) workflow, i.e. repeatable sets of tasks intended to download, build, and test code. In a cloud native context, the pipeline tooling can use the scheduling and orchestration platform to run each task in a container. For the prototype, we are using Tekton Pipelines to fill this role, which leverages Kubernetes as its scheduling platform
 
-Given that the pipeline is running on the scheduling and orchestration platform, it should be considered/treated as any other workload the platform manages, including being subject to the same security requirements and measures. At minimum, all container images used in the pipeline should be subject to signature verification and scanned for any known vulnerabilities. 
-
+Given that the pipeline is running on the scheduling and orchestration platform, it should be considered/treated as any other workload the platform manages, including being subject to the same security requirements and measures. At minimum, all container images used in the pipeline should be subject to signature verification and scanned for any known vulnerabilities.
 
 #### Build Environments
 
-The build environment is the actual container(s) or worker(s) where the source code is turned into a machine-usable software product, which we refer to as an artefact. Existing CI frameworks typically follow ephemeral execution patterns, wherein they create a new instance for every execution job. This pattern may even be extended to create a new instance of the scheduling platform to host every new build pipeline. The build environment should generate evidence and an automated attestation about the input parameters, actions and tools used during the build, such that they can be independently validated to provide assurance for build security. 
-
+The build environment is the actual container(s) or worker(s) where the source code is turned into a machine-usable software product, which we refer to as an artefact. Existing CI frameworks typically follow ephemeral execution patterns, wherein they create a new instance for every execution job. This pattern may even be extended to create a new instance of the scheduling platform to host every new build pipeline. The build environment should generate evidence and an automated attestation about the input parameters, actions and tools used during the build, such that they can be independently validated to provide assurance for build security.
 
 ### The “Management” Components
 
 A SSF will use a Policy Management Framework to enforce various controls and gates. This may include policies around identities of users who may invoke the pipeline, worker nodes where pipeline should be executed and container images that can be used in the pipeline. It will then utilise a series of monitoring components to verify conformity with these policies: Node Attestors, Workload Attestors, and Pipeline Observers.
-
 
 #### Policy Management Framework
 
@@ -235,12 +198,9 @@ Policies should follow cloud native and supply chain security best practises: &l
 
 For more information on Policy Management see: [https://github.com/kubernetes/sig-security/blob/main/sig-security-docs/papers/policy/CNCF_Kubernetes_Policy_Management_WhitePaper_v1.pdf](https://github.com/kubernetes/sig-security/blob/main/sig-security-docs/papers/policy/CNCF_Kubernetes_Policy_Management_WhitePaper_v1.pdf)
 
-
 #### Attestors and Observers
 
 There are three basic components of the SSF which monitor or attest to policy adherence:
-
-
 
 * Node Attestors, which certify the identity of nodes
 * Workload Attestors, which certify the identity of workload processes
@@ -250,11 +210,9 @@ Node attestors and workload attestors work in conjunction to ensure the node sel
 
 All metadata from Node Attestors, Workload Attestors and the Pipeline Observer should be signed and included as part of the metadata documents output from the SSF.
 
-
 ### The “Distribution” Components
 
-Upon completion of a pipeline run, the SSF outputs several artefacts. Artefacts must be available to downstream consumers and securely stored. Signatures for artefacts should also be stored such that they can easily be found and verified. These signatures can be stored alongside the artefact for convenient discoverability and distribution or in a separate location. 
-
+Upon completion of a pipeline run, the SSF outputs several artefacts. Artefacts must be available to downstream consumers and securely stored. Signatures for artefacts should also be stored such that they can easily be found and verified. These signatures can be stored alongside the artefact for convenient discoverability and distribution or in a separate location.
 
 #### Artefact Repository
 
@@ -270,9 +228,9 @@ In the SSF, there are multiple levels at which admission control must occur:
 
 
 * **Enforcing policies on the sources and packages pulled into a build**, including “intermediate artefacts” passed between steps in the build pipeline. For example, evaluating whether these objects have been properly signed or came from a known and trusted party.
-* **Enforcing policies around the components of the factory itself.** The scheduling and orchestration platform should perform admission checks to ensure all such components are trusted and verifiable. 
+* **Enforcing policies around the components of the factory itself.** The scheduling and orchestration platform should perform admission checks to ensure all such components are trusted and verifiable.
 
-**Enforcing policies on the build steps.** This typically includes verifying pipeline definitions and all the referenced images to be used during execution.  
+**Enforcing policies on the build steps.** This typically includes verifying pipeline definitions and all the referenced images to be used during execution..
 
 In order of execution, admission control proceeds as follows:
 
@@ -338,26 +296,24 @@ Cryptographic material input into the SSF fall into two categories:
 
 
 
-1. Materials used for identification of a particular entity. 
+1. Materials used for identification of a particular entity.
 2. Materials used for attestation/verification of a particular activity.
 
 The first category includes certificates, tokens, and keys used for authenticating nodes, scheduling and orchestration platforms, workloads, services, and users. It might also include certificates corresponding with recognized Certificate Authorities and trust bundles for validating and cross-authenticating all of these materials.
 
 The second category includes material such as signing keys deployed by users or services to attest to the work they have performed. Unlike traditional signing architectures, the modern software factory doesn’t directly use a single signing key. Multiple signing keys  have trust delegated to specific domain, processes/users/services.
 
-All cryptographic material must conform and comply with standards for their type and purpose and are generated in a cryptographically secure manner. We assume that they are securely distributed to the necessary entities and are properly configured for use by those entities. The specific mechanisms for producing, signing, and distributing these certificates will be left to the user to implement. 
+All cryptographic material must conform and comply with standards for their type and purpose and are generated in a cryptographically secure manner. We assume that they are securely distributed to the necessary entities and are properly configured for use by those entities. The specific mechanisms for producing, signing, and distributing these certificates will be left to the user to implement.
 
 
 #### Pipeline Definitions
 
 CI/CD pipelines define the steps in the application build process. The specific implementation of a pipeline will vary from organization to organization. However, all pipeline definitions should follow security best-practices that include:
 
-
-
-1. **Persistence & Source Control:** Pipeline definitions should be defined as “code” (Pipeline-as-Code) in a declarative fashion, and as such, should meet all the security expectations for source code defined above. Additionally, pipeline definitions should be managed through a source control process (ie, git)  that limits changes to only authorized users following standard protocols (ie, submitting changes via a pull request) and code reviews which include at least one security engineer who is experienced in Continuous Integration (CI) security best practices along with the particular tools being used. Once your pipeline assembly is complete, make sure to persist all relevant artefacts. 
-2. **Sign Pipeline Definitions: **Sign your pipeline definitions to ensure non-repudiation. During signing, sign pipeline specifications including all the images used for execution.
-3. **Pipeline Audit: **Perform regular audits of your pipeline definitions to ensure the integrity of the pipeline is maintained.
-4. **Static Scan: **Pipelines typically need access to various user credentials that are provided to the pipeline at runtime (e.g. git-token, OCI-registry-token, etc.). Make sure these credentials are not hard-coded in the definitions. In general, limit the use of hard-coded configurations in the definitions. 
+1. **Persistence & Source Control:** Pipeline definitions should be defined as “code” (Pipeline-as-Code) in a declarative fashion, and as such, should meet all the security expectations for source code defined above. Additionally, pipeline definitions should be managed through a source control process (ie, git)  that limits changes to only authorized users following standard protocols (ie, submitting changes via a pull request) and code reviews which include at least one security engineer who is experienced in Continuous Integration (CI) security best practices along with the particular tools being used. Once your pipeline assembly is complete, make sure to persist all relevant artefacts.
+2. **Sign Pipeline Definitions:** Sign your pipeline definitions to ensure non-repudiation. During signing, sign pipeline specifications including all the images used for execution.
+3. **Pipeline Audit:** Perform regular audits of your pipeline definitions to ensure the integrity of the pipeline is maintained.
+4. **Static Scan:** Pipelines typically need access to various user credentials that are provided to the pipeline at runtime (e.g. git-token, OCI-registry-token, etc.). Make sure these credentials are not hard-coded in the definitions. In general, limit the use of hard-coded configurations in the definitions.
 
 
 ### <span style="text-decoration:underline;">Outputs</span>
@@ -379,7 +335,7 @@ Throughout execution of the pipeline, a number of metadata documents are generat
 
 
 
-1. **Timestamp inclusion**: Always explicitly include a timestamp associated with the document.[^3] 
+1. **Timestamp inclusion**: Always explicitly include a timestamp associated with the document.[^3.
 
 
 2. **Persistence**: Make sure when stored that documents are immutable, version controlled and signed.
@@ -410,14 +366,10 @@ In general the following is how the action works though there might be a few cav
 
 Initial Setup:
 
-
-
 1. Spin up a node
 2. Node Attestor establishes identity of node.
 
 Action Steps:
-
-
 
 1. Pipeline or Pipeline task is triggered/orchestrated
 2. Workload Attestor establishes identity of Pipeline or task
@@ -425,12 +377,9 @@ Action Steps:
     1. This includes inputs, timestamps, outputs, as well as other metadata
 4. Pipeline Observer signs metadata with key or cert based on identity provided by Workload Attestor
 
-
 ### All Stages: Admissions Control for the SSF itself
 
 Actors:
-
-
 
 * Scheduling and Orchestration Platform
 * Pipeline
@@ -441,25 +390,19 @@ Actors:
 * Admission Controller
 * Artefact Storage
 
-As noted in the discussion of the Admissions Controller above, both build workers (the containers performing pipeline steps) and intermediate artefacts (the outputs of previous steps passed along to the next steps in a build) should be verified before they are admitted into the SSF. This should be part of every stage in the pipeline. 
-
+As noted in the discussion of the Admissions Controller above, both build workers (the containers performing pipeline steps) and intermediate artefacts (the outputs of previous steps passed along to the next steps in a build) should be verified before they are admitted into the SSF. This should be part of every stage in the pipeline.
 
 ### Stage 1: Secure the data flow in the pipeline
 
-As tasks execute inside a pipeline, they typically produce some new artefacts like an image, binary or evidence report. These artefacts are then consumed by subsequent tasks to perform their respective functions. Such sharing of artefacts between tasks normally achieved through shared storage resources. It is important to regulate access to these shared resources across tasks. 
+As tasks execute inside a pipeline, they typically produce some new artefacts like an image, binary or evidence report. These artefacts are then consumed by subsequent tasks to perform their respective functions. Such sharing of artefacts between tasks normally achieved through shared storage resources. It is important to regulate access to these shared resources across tasks.
 
 To achieve this objective, avoid using a single storage workspace across all tasks in the pipeline. Create multiple storage workspaces that are exclusively shared between the tasks that need to communicate some data/results. For instance, for a simple pipeline shown below, avoid using a single shared storage for all tasks and use exclusive storage sharing. And when possible set access-policies (RW, RO) while mounting these storage in the tasks.
 
-
 ![alt_text](images/image7.png "image_tooltip")
-
-
 
 ### Stage 2: Configuration of Pipeline
 
 Actors:
-
-
 
 * Developer
 * Tech Lead
@@ -471,19 +414,16 @@ The primary component configured as part of normal operation of the SSF is the P
 
 The secure software factory expects that you store pipeline configuration as code and that the code is stored in a secure source code repository with adequate controls.See  both “Source Code” and “Pipeline Definitions” in the inputs section above for more information about the SSF’s expectations regarding both of these types of inputs. The goal of these controls is to make sure that the pipeline definition itself has trustworthy provenance. In a cloud native context, these components are often deployed as containers and treated as artefacts in their own right. Ensuring we have adequate provenance for those components increases our assurance about the provenance of the artefacts they build.
 
-When configuring and designing the pipeline, there consider that: 
+When configuring and designing the pipeline, there consider that:
 
 
 
 * Individual tasks and steps should have limited in scope and are well defined. sing templates and linting rules during the development of the pipeline itself aids this.
 * Configuring the pipeline to respond automatically to well-defined triggers in the Software Development Life Cycle.
 
-
 ### Stage 3: Trigger Pipeline
 
 Actors:
-
-
 
 * Developer
 * Scheduling and Orchestration Platform
@@ -497,12 +437,9 @@ The first step in the SSF is that something triggers a build. This can be a manu
 
 The SSF secures this by capturing and validating the inputs and other metadata like timestamps through the Pipeline Observer. This is then signed by a key or certificate provided by the Workload Attestor that is associated with the identity of the workload. The Workload Attestor then has its  identity attested to by the Node Attestor. This signed metadata is then pushed to Metadata Storage where it becomes a supply chain link that other parts of the SSF can link to and can later be used to validate and audit veracity of the artefact(s) built in the SSF.
 
-
 ### Stage 4: Ingest Source for Project
 
 Actors:
-
-
 
 * Scheduling and Orchestration Platform
 * Pipeline Platform
@@ -514,12 +451,9 @@ Actors:
 
 After a build is triggered, the next step is ingesting the code for the project. This is usually something like a call to a source code control system to pull down a specific commit. It then hands the code over to downstream pipeline tasks via shared storage for things like the build stage.
 
-
 ### Stage 5: Ingest Dependencies for Project
 
 Actors:
-
-
 
 * Scheduling and Orchestration Platform
 * Pipeline Platform
@@ -533,12 +467,9 @@ After ingesting source code, the next step is to download the dependencies for t
 
 Once dependencies are installed on shared storage they are hashed and that metadata is signed and pushed to Metadata Storage.
 
-
 ### Stage 6: Run Build for Project
 
 Actors:
-
-
 
 * Scheduling and Orchestration Platform
 * Pipeline Platform
@@ -551,18 +482,13 @@ This is arguably the most critical step of the Pipeline. This step is the one th
 
 The build process performs code compilation or transformation (e.g. source code to byte code for compiled languages). Leverage pipeline observers to record the command, options and parameters used during compilation.
 
- 
-
 Given the need for the build to be hermetic the task running the build should have no network or most other external capabilities and have build parameters pushed at the task level. (Cite build best practice from white paper that explains that the more branching the logic of your build script has the harder it is to reason about what your build is doing.) The only external access the task should have is to shared storage containing the source and dependencies required.The build must write the artefact to new shared storage explicitly for the artefact
 
 After the operation of the build the metadata associated with the build, e.g. input parameters, hash of produced artefact, etc. are signed and pushed to Metadata Storage.
 
-
 ### Stage 7: Publish Artefact
 
 Actors:
-
-
 
 * Scheduling and Orchestration Platform
 * Pipeline Platform
@@ -576,15 +502,9 @@ In the final build stage, compiled artefacts are packaged into appropriate distr
 
 Signed artefacts are  published to an artefact store, external from the SSF. They are then hashed and signed along with any applicable metadata that can be pulled from the artefact. That signed metadata is then stored in Metadata Storage.
 
-
-# 
-
-
 # Appendix A: Inputs and Outputs Summary
 
-
 ## Inputs
-
 
 <table>
   <tr>
@@ -814,15 +734,9 @@ Signed artefacts are  published to an artefact store, external from the SSF. The
   </tr>
 </table>
 
-
-
-## 
-
-
 # Appendix B: Mapping of entities to projects/technologies
 
 In accordance with CNCF guidelines, we prioritize our recommendations as follows: first, CNCF tools when they fit the need and are of sufficient maturity; second, well known and mature open source tools; and finally, in the absence of either CNCF or open source options, commercial offerings. In the event that we name commercial offerings, the reader should understand that this does not reflect an endorsement by CNCF. Instead, these offerings should be taken merely as an example and point of reference so that you can see potential paths for real world implementation.
-
 
 <table>
   <tr>

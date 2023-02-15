@@ -152,9 +152,9 @@ The above diagram illustrates how the software supply chain closely mirrors a tr
 
 
 
-*   Intangible - the software supply chain is an intangible object made up of a series of virtual and digital components that make it extremely difficult to count, discover, and understand their operation end-to-end.[^13]
-*   Mercurial - as more teams reduce their time to market, it is reasonable to expect the shape and structure of a software supply chain to continue to change.
-*   Iterative reuse - one product's supply chain, is _n_ number of products and _n<sup>n</sup>_ supply chains, an endless supply of turtles all the way down[^14].
+- Intangible - the software supply chain is an intangible object made up of a series of virtual and digital components that make it extremely difficult to count, discover, and understand their operation end-to-end.[^13]
+- Mercurial - as more teams reduce their time to market, it is reasonable to expect the shape and structure of a software supply chain to continue to change.
+- Iterative reuse - one product's supply chain, is _n_ number of products and _n<sup>n</sup>_ supply chains, an endless supply of turtles all the way down[^14].
 
 These differences aside, the industry has come to  refer to the discrete set of steps to secure software supply chains as a "Software Factory".[^15]
 
@@ -167,21 +167,21 @@ A supply chain's security is defined by its weakest link. Ignoring the minimalis
 
 Throughout the best practice recommendations provided in this paper, there are a number of themes that are repeated:
 
-*   Verification - This is the heart of the software factory methodology outlined in this paper. Confidence in the software production process should result in verification at each stage in that process. Metadata from each stage of the build process should be attested. During the deployment or distribution stage of the process the build metadata must be verified.
-*   Automation - Contemporary software development relies on numerous automated processes, such as Continuous Integration/Continuous Delivery (CI/CD) and DevOps pipelines. Leveraging automation helps to ensure that processes are deterministic, bolstering the attestation and verification mechanisms we rely on for supply chain security. Infrastructure and its security controls should be defined as Infrastructure as Code (IaC) and deployed in an automated fashion. IaC allows system changes to be governed by source code management tools that integrate into enterprise identity management solutions. This further reduces the likelihood of varying configurations across environments through "write once, deploy many".
-*   Authorization in Controlled Environments - To reduce the impact of compromise, the entities (human or software) and environments involved in the software production lifecycle should be clearly defined and limited in scope. Permissions for human or software operators should be granted on a "least privilege" basis to ensure that roles have the minimum permissions required and are periodically re-evaluated. This guidance is valid at all stages of the supply chain from source code identity and access management to the deployment process.
-*   Secure Authentication - Identities are to be determined with certainty.  For interacting at any stage of the supply chain, entities should mutually authenticate their identities prior to interaction[^16]. Such authentication methods should be "hardened" beyond standard password authentication by either (a) a public key infrastructure (ie, public private SSH key pairs), (b) multi-factor authentication (MFA), or (c) explicit limiting of an authentication mechanism to particular activities (i.e. through a secondary "app password" or personal access token). Post authentication, the activities of entities should be monitored to detect suspicious or unauthorized activities.
+- Verification - This is the heart of the software factory methodology outlined in this paper. Confidence in the software production process should result in verification at each stage in that process. Metadata from each stage of the build process should be attested. During the deployment or distribution stage of the process the build metadata must be verified.
+- Automation - Contemporary software development relies on numerous automated processes, such as Continuous Integration/Continuous Delivery (CI/CD) and DevOps pipelines. Leveraging automation helps to ensure that processes are deterministic, bolstering the attestation and verification mechanisms we rely on for supply chain security. Infrastructure and its security controls should be defined as Infrastructure as Code (IaC) and deployed in an automated fashion. IaC allows system changes to be governed by source code management tools that integrate into enterprise identity management solutions. This further reduces the likelihood of varying configurations across environments through "write once, deploy many".
+- Authorization in Controlled Environments - To reduce the impact of compromise, the entities (human or software) and environments involved in the software production lifecycle should be clearly defined and limited in scope. Permissions for human or software operators should be granted on a "least privilege" basis to ensure that roles have the minimum permissions required and are periodically re-evaluated. This guidance is valid at all stages of the supply chain from source code identity and access management to the deployment process.
+- Secure Authentication - Identities are to be determined with certainty.  For interacting at any stage of the supply chain, entities should mutually authenticate their identities prior to interaction[^16]. Such authentication methods should be "hardened" beyond standard password authentication by either (a) a public key infrastructure (ie, public private SSH key pairs), (b) multi-factor authentication (MFA), or (c) explicit limiting of an authentication mechanism to particular activities (i.e. through a secondary "app password" or personal access token). Post authentication, the activities of entities should be monitored to detect suspicious or unauthorized activities.
 The software factory creates multiple pipelines configured to build a software artefact. It is composed of individual build stages chained together to retrieve the source code and dependencies, then scan, test, build and deploy the final artefact. The software factory relies heavily upon infrastructure and security-as-code to allow automated instantiation of pipelines, leading to the creation of multiple immutable pipelines. To eliminate the chance of error or misconfiguration there should be no manual configuration in place.  This also leads to a system that is capable of performing a high level of automated security testing to validate its configuration and verify its products.
 
 In this paper, we explore this methodology for securing a software supply chain in five stages:
 
 
 
-*   Securing the Source Code: securing code produced by software producers (the internal or first party code)
-*   Securing the Materials: hardening the "raw materials" of second and third party code incorporated in builds,
-*   Securing the Build Pipelines: securing the build and infrastructure
-*   Securing the Artefacts: attesting the security and trustworthiness of artefacts produced by these build pipelines
-*   Securing Deployments: verifying the attestations during the deployment stage
+- Securing the Source Code: securing code produced by software producers (the internal or first party code)
+- Securing the Materials: hardening the "raw materials" of second and third party code incorporated in builds,
+- Securing the Build Pipelines: securing the build and infrastructure
+- Securing the Artefacts: attesting the security and trustworthiness of artefacts produced by these build pipelines
+- Securing Deployments: verifying the attestations during the deployment stage
 
 Each of these stages are designed to complement one another for a comprehensive and holistic approach. Implementing all or portions of these should be evaluated against an organization's assurance requirements and environment risk appetite[^17].
 
@@ -413,10 +413,10 @@ Securing the build pipelines must be considered as an interconnected system, wit
 
 
 
-*   Build steps: The function or task to be performed at any point in the "assembly line." A build step should have a single responsibility which may be, for example, to retrieve sources, compile an artefact, or run tests.
-*   Build workers: The machinery or infrastructure carrying out the task. Historically, a single server might have completed all the steps, but in a cloud native environment the build worker is typically a container which has a 1:1 correlation with a particular step.
-*   Build tools: Any software dependencies required to generate and ensure the integrity of the final artefact(s).
-*   Pipeline orchestrator: The overall build pipeline managing the CI/CD workflow. Deploys build steps and workers to complete the stages of that pipeline.
+- Build steps: The function or task to be performed at any point in the "assembly line." A build step should have a single responsibility which may be, for example, to retrieve sources, compile an artefact, or run tests.
+- Build workers: The machinery or infrastructure carrying out the task. Historically, a single server might have completed all the steps, but in a cloud native environment the build worker is typically a container which has a 1:1 correlation with a particular step.
+- Build tools: Any software dependencies required to generate and ensure the integrity of the final artefact(s).
+- Pipeline orchestrator: The overall build pipeline managing the CI/CD workflow. Deploys build steps and workers to complete the stages of that pipeline.
 
 Additionally, build metadata produced by these components must be signed and recorded externally in order to facilitate out-of-band verification.
 
@@ -426,12 +426,12 @@ By building the pipeline from hardened components, the software factory reduces 
 
 Guiding principles for securing the build include:
 
-*   Each component in the build, from infrastructure to code, should have a single responsibility. This division of labour must support least privilege authorisation.
-*   Steps should have clearly defined build stage inputs and outputs (artefacts) to allow greater control over data flow.
-*   Clearly defined output parameters enable signing of data to provide non-repudiation of artefacts and metadata.
-*   All aspects of the pipeline infrastructure and configuration must be immutable.
-*   Pipeline steps themselves should be subject to automated testing to validate the efficacy of the security controls within the pipeline.
-*   Pipeline steps should produce a signed SBOM for out-of-band verification of the build process.
+- Each component in the build, from infrastructure to code, should have a single responsibility. This division of labour must support least privilege authorisation.
+- Steps should have clearly defined build stage inputs and outputs (artefacts) to allow greater control over data flow.
+- Clearly defined output parameters enable signing of data to provide non-repudiation of artefacts and metadata.
+- All aspects of the pipeline infrastructure and configuration must be immutable.
+- Pipeline steps themselves should be subject to automated testing to validate the efficacy of the security controls within the pipeline.
+- Pipeline steps should produce a signed SBOM for out-of-band verification of the build process.
 
 
 ## Build Infrastructure
@@ -946,19 +946,19 @@ Never pull from the "latest" tag and do not assume that a versioned tag will be 
 
 
 
-*   Containers are ubiquitously used as build workers in CI/CD pipelines and Kubernetes environments. Cloud Native Buildpacks use build "stacks" which are made of the "build image" and a "run image". Consider container images as controlled environments and  ensure that all worker base images are derived from trusted sources, ending with a signed container or scratch filesystem. Container build tools can take build arguments and introduce them as environment variables into the build. When doing so, make sure to record these environment variables either in a file or in the deployed container's label or both.
-*   Build worker hosts should also be controlled and audited following this whitepaper's recommendations on controlled environments. This avoids malicious files on the host from being introduced into the container filesystem.
+- Containers are ubiquitously used as build workers in CI/CD pipelines and Kubernetes environments. Cloud Native Buildpacks use build "stacks" which are made of the "build image" and a "run image". Consider container images as controlled environments and  ensure that all worker base images are derived from trusted sources, ending with a signed container or scratch filesystem. Container build tools can take build arguments and introduce them as environment variables into the build. When doing so, make sure to record these environment variables either in a file or in the deployed container's label or both.
+- Build worker hosts should also be controlled and audited following this whitepaper's recommendations on controlled environments. This avoids malicious files on the host from being introduced into the container filesystem.
 
 
 ## Dockerfiles
 
 Dockerfiles are easy to write, but the current development guidelines[^65] do not produce containers that are repeatable and hardened. The following recommendations show how  to write Dockerfiles that will produce container images that are easier to reason about.
 
-*   FROM lines should have the image name and its digest.
-*   Do not run an OS upgrade (like apt-get upgrade) as it will change the state of the base OS, making it harder to reason about. Pull a newer image instead.
-*   When using COPY, record metadata for users of the deployed image, for example, git repo and commit, artefact name and download location, roles and signatures, and other build pipeline information. Never put secrets in an image's label or Dockerfile.
-*   Do not pass immutable build metadata via docker build arguments. Record them in container image labels instead. Immutable metadata can be a version number, a hash, or build numbers. If you must pass build metadata via build arguments, record them in the container image label.
-*   Be cognizant of build caching. By default, Docker will cache image layers created by the RUN instruction if the RUN instruction itself does not change. For example, if the RUN instruction is "apk add --no-cache", even though the intention is to not use the package manager's  cache when installing a package, Docker will just retrieve the data from it's image layer cache. To avoid using stale data, run docker build --no-cache.
+- FROM lines should have the image name and its digest.
+- Do not run an OS upgrade (like apt-get upgrade) as it will change the state of the base OS, making it harder to reason about. Pull a newer image instead.
+- When using COPY, record metadata for users of the deployed image, for example, git repo and commit, artefact name and download location, roles and signatures, and other build pipeline information. Never put secrets in an image's label or Dockerfile.
+- Do not pass immutable build metadata via docker build arguments. Record them in container image labels instead. Immutable metadata can be a version number, a hash, or build numbers. If you must pass build metadata via build arguments, record them in the container image label.
+- Be cognizant of build caching. By default, Docker will cache image layers created by the RUN instruction if the RUN instruction itself does not change. For example, if the RUN instruction is "apk add --no-cache", even though the intention is to not use the package manager's  cache when installing a package, Docker will just retrieve the data from it's image layer cache. To avoid using stale data, run docker build --no-cache.
 
 
 ### Multistage Docker Builds
@@ -977,8 +977,8 @@ Open Source tools like DockerSlim[^67] and MiniCon[^68] can be used to limit the
 
 Many projects rely on pre-existing container images to build software. It may look like you are just invoking an install script, but the script itself may invoke a container build command as a build environment. Kubernetes deployments and Helm charts also use pre-existing container images that may be deployed and maintained by third parties. Before building artefacts from this source code, inspect the source code for these patterns:
 
-*   Makefiles and install scripts containing docker commands to pull and build container images. Evaluate Makefiles and install scripts for software build and installation before invoking them.
-*   Configuration files (frequently a part of Infrastructure as Code) often point to pre-existing container images. These configuration files should be source controlled and updated with container images pointing to the most updated digest. Do not use mutable tags to refer to images.
+- Makefiles and install scripts containing docker commands to pull and build container images. Evaluate Makefiles and install scripts for software build and installation before invoking them.
+- Configuration files (frequently a part of Infrastructure as Code) often point to pre-existing container images. These configuration files should be source controlled and updated with container images pointing to the most updated digest. Do not use mutable tags to refer to images.
 
 
 # Appendix II - Software Groups
@@ -988,18 +988,18 @@ Many projects rely on pre-existing container images to build software. It may lo
 
 For the purposes of this paper the following lexicon is used to establish a common understanding of key concepts.
 
-*   Raw Supplier - developer or development team which creates a raw ‘material' (core library) used in the manufacturing of other software by Software Makers. Effectively the start of the supply chain.
-*   Software Producer - developer or development team which uses materials from Raw Suppliers and other Software Makers to a software product or service
-*   Software Consumer - end consumer of software from the supply chain. Effectively the end of the supply chain.
+- Raw Supplier - developer or development team which creates a raw ‘material' (core library) used in the manufacturing of other software by Software Makers. Effectively the start of the supply chain.
+- Software Producer - developer or development team which uses materials from Raw Suppliers and other Software Makers to a software product or service
+- Software Consumer - end consumer of software from the supply chain. Effectively the end of the supply chain.
 
 
 ## Software Groups
 
 There is a distinction between direct work product of developers (i.e. the code they produce as software producers) and the dependencies they leverage (i.e. open source from raw suppliers) as they build products. This can be further broken down into identifying groups of software based on the level of implicit trust, or lack thereof, established through employment, contracts, or license-for-use.
 
-*   1st Party Software - software created in house for internal use.  May be raw materials for consumption by internal software producers, or be the product of internal software producers.  Typically this software is used in house.
-*   2nd Party Software - services and software leveraged from contracted providers.  The configuration, operation, and maintenance of which is controlled by the contracted entity.  The source of this software is often closed, or masqued, indicating a significant level of trust by the consumer on the contracted entity to ensure its security.
-*   3rd Party Software - software purchased or brought in from an independent software entity such as a vendor or community where the configuration, operation, and maintenance is within the control and responsibility of the organization to execute.
+- 1st Party Software - software created in house for internal use.  May be raw materials for consumption by internal software producers, or be the product of internal software producers.  Typically this software is used in house.
+- 2nd Party Software - services and software leveraged from contracted providers.  The configuration, operation, and maintenance of which is controlled by the contracted entity.  The source of this software is often closed, or masqued, indicating a significant level of trust by the consumer on the contracted entity to ensure its security.
+- 3rd Party Software - software purchased or brought in from an independent software entity such as a vendor or community where the configuration, operation, and maintenance is within the control and responsibility of the organization to execute.
 
 Often, 2nd party and 3rd party software providers leverage and integrate software components and raw materials from other software sources.  This means any consumer of these software products is entirely reliant on the trust and rigor within that provider's supply chain, or the due diligence to determine such.
 
@@ -1160,7 +1160,7 @@ It is critical to note, however, that organizations are entirely responsible for
      https://github.com/grafeas/kritis
 
 [^50]:
-     https://github.com/opencontainers/artifacts/blob/a56aaad3afb5bab321644e3508f76d915031b3da/artifact-manifest/artifact-manifest.md
+     https://github.com/opencontainers/artefacts/blob/a56aaad3afb5bab321644e3508f76d915031b3da/artefact-manifest/artefact-manifest.md
 
 [^51]:
      https://theupdateframework.io/security/#attacks-and-weaknesses
