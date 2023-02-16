@@ -1,5 +1,9 @@
 # **Cloud Native Security Whitepaper**
-<!-- cSpell:ignore markdownlint Microservices microservices ddos Microbusiness microbusiness CISO lifecycles hotspots untrusted SAST DAST toolset cgroups runtimes unencrypted untampered cryptomining iscsi hyperconverged ABAC intercompatible antifragile exfiltrate seccomp cisecurity syscall DAAS usecase -->
+<!-- cSpell:ignore markdownlint Microservices microservices ddos Microbusiness
+microbusiness CISO lifecycles hotspots untrusted SAST DAST toolset cgroups
+runtimes unencrypted untampered cryptomining iscsi hyperconverged ABAC
+intercompatible antifragile exfiltrate seccomp cisecurity syscall DAAS usecase
+-->
 <!-- markdownlint-disable MD036 MD025 MD024 -->
 
 Shared with CNCF Community
@@ -438,7 +442,7 @@ artifacts and dependencies in their applications do not contain known sources of
 malware and vulnerabilities. The presence of malware in container images is a
 significant attack vector in the runtime environment [^5]. It is essential to
 employ on-demand and periodic vulnerability scanning of container images and
-composite packages in the [CI pipeline](#CI_pipeline) as well as in the
+composite packages in the [CI pipeline](#build-pipeline) as well as in the
 container registries.
 
 Leveraging these methods permits verifiable, secure software distribution and
@@ -1689,7 +1693,7 @@ that integrates transparently into the development process to enforce security
 policies where fast feedback and most immediate actions to remediate can occur.
 For specific information on cloud native security use cases refer to the
 [TAG-Security's use cases
-listing](../usecase-personas/README.md).
+listing](../../usecase-personas/README.md).
 
 ### Industries
 
