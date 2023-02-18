@@ -80,7 +80,7 @@ project, architecture, and enhance team awareness on security.
 - Planning the event =>
   [Issue#454](https://github.com/cncf/tag-security/issues/454)
 
-[Cloud Native Security Con NA](https://kccncna2021.sched.com/event/leYD?iframe=no)
+[Cloud Native Security Con NA](https://cloudnativesecurityconna21.sched.com/)
 
 - Los Angeles, California + Virtual
 - October 12, 2021
