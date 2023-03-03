@@ -45,6 +45,11 @@ experience of cloud native operators, administrators and developers, including:
 3. Common libraries and protocols that enable people to reason about the
    security of the system, such as auditing and explainability features.
 
+## Publications
+
+TAG Security has published several resources for the community, which can be
+found in the [publications](PUBLICATIONS.md) document.
+
 ## Governance
 
 [STAG charter](governance/charter.md) outlines the scope of our group
