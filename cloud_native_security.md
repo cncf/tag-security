@@ -102,3 +102,10 @@ project, architecture, and enhance team awareness on security.
 - October 24-25, 2022
 - Planning the event =>
   [Issue#939](https://github.com/cncf/tag-security/issues/939)
+
+### 2023
+
+[Cloud Native SecurityCon North America](https://cloudnativesecurityconna23.sched.com/)
+
+- Seattle, WA
+- February 1-2, 2023
