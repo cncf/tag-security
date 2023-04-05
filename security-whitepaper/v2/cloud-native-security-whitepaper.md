@@ -1834,25 +1834,25 @@ Runtime
 
 #### Citations
 
-[1^]: Another model to consider is Cloud, Clusters, Containers, and Code: [https://kubernetes.io/docs/concepts/security/overview/](https://kubernetes.io/docs/concepts/security/overview/)
+[^1]: Another model to consider is Cloud, Clusters, Containers, and Code: [https://kubernetes.io/docs/concepts/security/overview/](https://kubernetes.io/docs/concepts/security/overview/)
 
-[2^]: Example - [MITRE ATT&CK Framework for Kubernetes](https://www.darkreading.com/threat-intelligence/microsofts-kubernetes-threat-matrix-heres-whats-missing/a/d-id/1339106)
+[^2]: Example - [MITRE ATT&CK Framework for Kubernetes](https://www.darkreading.com/threat-intelligence/microsofts-kubernetes-threat-matrix-heres-whats-missing/a/d-id/1339106)
 
-[3^]: [Shifting security left](https://www.devsecops.org/blog/2016/5/20/-security) often leaves organizations to lapse operational security monitoring. It is important that security exists in all parts of the lifecycle and organizations continually evaluate other aspects of their business and technology processes where they may reach beyond modern security paradigms to embrace security as a culture and habit.
+[^3]: [Shifting security left](https://www.devsecops.org/blog/2016/5/20/-security) often leaves organizations to lapse operational security monitoring. It is important that security exists in all parts of the lifecycle and organizations continually evaluate other aspects of their business and technology processes where they may reach beyond modern security paradigms to embrace security as a culture and habit.
 
-[4^]: Human capital is a vital asset necessary to the success of any organization, the corresponding intellectual property and relational capital brought as a result is equally in need of protection.
+[^4]: Human capital is a vital asset necessary to the success of any organization, the corresponding intellectual property and relational capital brought as a result is equally in need of protection.
 
-[5^] [https://blog.aquasec.com/malicious-container-image-docker-container-host](https://blog.aquasec.com/malicious-container-image-docker-container-host)
+[^5] [https://blog.aquasec.com/malicious-container-image-docker-container-host](https://blog.aquasec.com/malicious-container-image-docker-container-host)
 
-[6^]: According to Applied Software Measurement, Capers Jones, 1996 and adjusting for inflation - 85% of defects are introduced during coding with a cost of $41 to fix compared to a post release fix cost of $26,542.
+[^6]: According to Applied Software Measurement, Capers Jones, 1996 and adjusting for inflation - 85% of defects are introduced during coding with a cost of $41 to fix compared to a post release fix cost of $26,542.
 
-[7^]: cisecurity.org maintains a listing of benchmarks for hardening
+[^7]: cisecurity.org maintains a listing of benchmarks for hardening
 
-[8^] It is critical to note that while authentication is available for use, [mutual authentication](https://github.com/PushkarJ/tag-security/blob/cnswpv2/security-whitepaper/v1/cloud-native-security-whitepaper.md#zero-trust-architecture) is the preferred mechanism to not only verify the client but also the server (outsider versus insider).
+[^8] It is critical to note that while authentication is available for use, [mutual authentication](https://github.com/PushkarJ/tag-security/blob/cnswpv2/security-whitepaper/v1/cloud-native-security-whitepaper.md#zero-trust-architecture) is the preferred mechanism to not only verify the client but also the server (outsider versus insider).
 
-[9^]: Utilization of a VPN does not guarantee encryption.
+[^8]: Utilization of a VPN does not guarantee encryption.
 
-[10^]: The concept of regression proofing is best explained as a facet of antifragile behaviors within technology environments. Instead of remaining resilient and robust against adverse conditions and attacks, technology can proactively adapt and thrive when subjected to them.
+[^10]: The concept of regression proofing is best explained as a facet of antifragile behaviors within technology environments. Instead of remaining resilient and robust against adverse conditions and attacks, technology can proactively adapt and thrive when subjected to them.
 
 #### Acknowledgements
 <!-- cspell:disable -->

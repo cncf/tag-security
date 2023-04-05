@@ -40,7 +40,7 @@ of compromise needs added, please include that as well.
 | [GCP Golang Buildpacks Old Compiler Injection](2022/golang-buildpacks-compiler.md) | 2022 | Source Code | [1](https://zt.dev/posts/gcp-buildpacks-old-compiler/)|
 | [WordPress theme publisher compromised](2022/wp-apthemes.md) | 2022 | Source Code | [1](https://jetpack.com/2022/01/18/backdoor-found-in-themes-and-plugins-from-accesspress-themes/), [2](https://blog.sucuri.net/2022/01/accesspress-themes-hit-with-targeted-supply-chain-attack.html)|
 | [Remote code injection in Log4j](2021/log4j.md) | 2021 | Source code | [1](https://security.googleblog.com/2021/12/understanding-impact-of-apache-log4j.html) |
-| [Compromise of NP packages coa and rc](2021/coa-rc.md) | 2021 | Malicious Maintainer | [1](https://blog.sonatype.com/npm-hijackers-at-it-again-popular-coa-and-rc-open-source-libraries-taken-over-to-spread-malware) |
+| [Compromise of npm packages coa and rc](2021/coa-rc.md) | 2021 | Malicious Maintainer | [1](https://blog.sonatype.com/npm-hijackers-at-it-again-popular-coa-and-rc-open-source-libraries-taken-over-to-spread-malware) |
 | [Compromise of ua-parser-js](2021/ua-parser-js.md) | 2021 | Malicious Maintainer | [1](https://github.com/faisalman/ua-parser-js/issues/536) |
 | [The klow / klown / okhsa incident](2021/klow-klown-okhsa.md) | 2021 | Negligence | [1](https://blog.sonatype.com/newly-found-npm-malware-mines-cryptocurrency-on-windows-linux-macos-devices) |
 | [PHP self-hosted git server](2021/php.md) | 2021 | Dev Tooling | [1](https://news-web.php.net/php.internals/113838) |
@@ -95,3 +95,4 @@ of compromise needs added, please include that as well.
 | [SquirrelMail backdoor](2007/squirrelmail.md) | 2007 | Source Code | [1](https://lwn.net/Articles/262688/) |
 | [gentoo rsync compromise](2003/gentoo-rsync.md) | 2003 | Source Code Repository | [1](https://archives.gentoo.org/gentoo-announce/message/7b0581416ddd91522c14513cb789f17a) |
 | [Debian infra compromise](2003/debian.md) | 2003 | Publishing infrastructure | [1](https://www.debian.org/News/2003/20031202) |
+| [Unix Support Group login backdoor](1984/login-bell.md) | <1984 | Dev Tooling | [1](https://niconiconi.neocities.org/posts/ken-thompson-really-did-launch-his-trusting-trust-trojan-attack-in-real-life/) |
