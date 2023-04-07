@@ -1,18 +1,16 @@
 ---
-title: "CNCF TAG App Delivery"
+title: "CNCF TAG Security"
 toc_hide: true
 ---
 
 <div class="row mt-5 mb-3">
     <div class="col-lg-6">
         <div class="lead">
-        TAG App Delivery supports projects and initiatives related to delivering
-        cloud-native applications, including building, packaging, deploying,
-        managing, and operating them.
+        TAG Security facilitates collaboration to discover and produce resources that enable secure access, policy control, and safety for operators, administrators, developers, and end-users across the cloud native ecosystem.
         </div>
     </div>
     <div class="col-lg-6">
-        <img src="/images/tag-app-delivery-horizontal-color.svg" alt="Tag App Delivery logo" style="max-width: 300px;">
+        <img src="/images/sig-security-icon-color.svg" alt="Tag Security logo" style="max-width: 200px;">
     </div>
 </div>
 
