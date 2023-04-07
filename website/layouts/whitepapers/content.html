@@ -1,0 +1,16 @@
+<div class="td-content">
+	<h1>{{ .Title }}</h1>
+	<div class="td-byline mb-5">
+		{{ with .Params.pdf }}
+		<div class="mb-3">
+			<i class="fas fa-file-pdf"></i> <a href="{{ . }}" target="_blank">Download PDF</a>
+		</div>
+		{{ end}}
+		{{ with .Params.version_info }}
+		<div>
+			<i class="fas fa-info"></i> <a href="{{ . }}" target="_blank">Version info</a>
+		</div>
+		{{ end}}
+	</div>
+	{{ .Content }}
+</div>
