@@ -1,0 +1,59 @@
+// footer.
+footer {
+	min-height: unset;
+	overflow: unset;
+	background-color: $black;
+	color: #eee;
+	padding: 4rem 0 3rem;
+	a {
+		color: $primary;
+		font-weight: 600;
+		&:hover {
+			color: $primary;
+			text-decoration: none;
+		}
+	}
+	.brand img {
+		width: 210px;
+		height: 40px;
+	}
+	small a {
+		color: #eee;
+	}
+}
+
+// social links.
+.social-links {
+	text-align: center;
+	@media (min-width: 992px) {
+		text-align: right;
+	}
+	a {
+		padding: 10px;
+		display: block;
+	}
+	svg {
+		fill: $white;
+		color: $white;
+		height: 25px;
+		max-width: 30px;
+		&:hover {
+			color: $link-color;
+			fill: $link-color;
+		}
+	}
+}
+
+.horizontal-rule {
+	background-color: $white;
+	height: 1px;
+	width: 100%;
+	margin: 1rem 0;
+}
+
+.copyright {
+	text-align: center;
+	@media (min-width: 992px) {
+		text-align: left;
+	}
+}

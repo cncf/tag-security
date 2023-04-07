@@ -1,0 +1,16 @@
+.article-teaser {
+	h3 {
+		margin-top: 34px;
+		a {
+			color: $black;
+		}
+	}
+}
+
+.articles-of-tag hr {
+	background: linear-gradient(180deg, #c4c4c4, hsla(0, 0%, 77%, 0));
+	border-bottom: 0;
+	height: 10px;
+	opacity: 0.15;
+	width: 100%;
+}
