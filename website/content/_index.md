@@ -9,7 +9,7 @@ toc_hide: true
         TAG Security facilitates collaboration to discover and produce resources that enable secure access, policy control, and safety for operators, administrators, developers, and end-users across the cloud native ecosystem.
         </div>
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-6 text-center">
         <img src="/images/sig-security-icon-color.svg" alt="Tag Security logo" style="max-width: 200px;">
     </div>
 </div>
