@@ -1,5 +1,6 @@
 ---
 title: Assessments
+list_pages: true
 menu:
   main:
     weight: 20
