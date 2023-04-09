@@ -93,7 +93,7 @@ version = "0.0"
 url_latest_version = "https://security.cncf.io"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "406382b9737f24d05"
+gcs_engine_id = "94caa124b871f4944"
 
 # Enable Algolia DocSearch
 algolia_docsearch = false
