@@ -156,7 +156,7 @@ Compartido con la Comunidad CNCF
 
 ## Propósito
 
-La industria de la tecnología ha cambiado hacia patrones de desarrollo e implementación que se consideran "nativos para la nube". Al mismo tiempo, el ecosistema de tecnologías, productos, estándares y soluciones se está expandiendo, desafiando a los tomadores de decisiones a mantenerse al tanto de diseños complejos. El rol de CISO en particular, tiene la responsabilidad evolutiva de resaltar las propuestas de valor empresarial en este ámbito dinámico. Mientras tanto, los patrones nativos para la nube también han fomentado cambios en los modelos de consumo y la adopción de flujos de trabajo modernos (por ejemplo, metodologías ágiles y procesos DevOps) que requieren prácticas de seguridad integradas.
+La industria de la tecnología ha cambiado hacia patrones de desarrollo e implementación que se consideran "nativos para la nube". Al mismo tiempo, el ecosistema de tecnologías, productos, estándares y soluciones se está expandiendo, desafiando a los que toman las decisiones a mantenerse al tanto de diseños complejos. El rol de CISO en particular, tiene la responsabilidad evolutiva de resaltar las propuestas de valor empresarial en este ámbito dinámico. Mientras tanto, los patrones nativos para la nube también han fomentado cambios en los modelos de consumo y la adopción de flujos de trabajo modernos (por ejemplo, metodologías ágiles y procesos DevOps) que requieren prácticas de seguridad integradas.
 
 ### Análisis del problema
 
