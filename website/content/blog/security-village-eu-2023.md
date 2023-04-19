@@ -9,3 +9,24 @@ Are you disappointed there won’t be a 0-day event for Security? Don’t be! In
 ## Unconference Schedule
 
 If you are at the conference, submit topics you would like to participate in each morning via our [Google form](https://docs.google.com/forms/d/e/1FAIpQLSezTTuwRLEwxkqkQls_SxJaZNu4fKXp_kstoZUeF1jisVfeCg/viewform?usp=sf_link). At lunchtime, we will list a schedule of topics here.
+
+### Wednesday schedule
+
+**14:30 - 14:55: What is your SBOM? Why every vendor gives me a different SBOM? Why are there differences and what is the correct answer?**
+submitted by Rotem Bar
+
+
+**15:00 - 15:25: Kubernetes Security Testing Learning**
+submitted by Jimmy
+
+
+**15:30 - 15:55: Kubernetes Goat**
+submitted by Jhon
+
+
+**16:30 - 16:55: Security Best Practices configs**
+submitted by Akash Karar
+
+
+**17:00 - 17:25: Key to Cloud Security**
+submitted by Mithun Arunan
