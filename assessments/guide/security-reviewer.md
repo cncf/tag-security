@@ -7,11 +7,11 @@ often coordinating responses between the project and reviewers, ensuring
 communications are performed in a timely fashion as described in the
 [guide](./).  The lead reviewer is also responsible for coordinating
 and recruiting additional reviewers as appropriate, and managing the
-documentation updates (joint review and final summary) to the project's
- review folder.
+documentation updates (joint assessment and final summary) to the project's
+assessment folder.
 
 The lead reviewer is further tasked with performing the clarifying
-questions phase of the joint review.  The lead reviewer may identify
+questions phase of the joint assessment.  The lead reviewer may identify
 another reviewer to perform this task  on their behalf; serving as their
 delegate or designee for that task.
 
@@ -41,21 +41,21 @@ Reviewers are encouraged to reach out to community members to resolve
 some questions, especially involving deployment scenarios and the impact
 of attacks.
 
-### Hands-on reviews
+### Hands-on assessments
 
 If the reviewers have the skills and interest, they may perform a
-lightweight hands-on review of the project. Reviewers wishing to do this in
-addition to their normal reviewing requirements should locally poke and explore
+lightweight hands-on assessment of the project. Reviewers wishing to do this in
+addition to their normal assessment requirements should locally poke and explore
 the project to understand its inner workings.
 
-If a reviewer performing a hands-on review discovers a weakness or vulnerability
+If a reviewer performing a hands-on assessment discovers a weakness or vulnerability
 they are required to adhere to the project's responsible disclosure process.
 If no process is documented, they must contact the [project lead](project-lead.md) directly
 regarding the issue, they may notify the lead security reviewer that they have
 notified the project of an issue as it may impact the content of the joint
-review or the timeframe for completing the review.
+assessment or the timeframe for completing the assessment.
 
-Engaging in a hands-on review is not an authorization to attack an operational
+Engaging in a hands-on assessment is not an authorization to attack an operational
 system.  All hands-on testing must be performed locally/within the control
 of the reviewer and with authorization.
 
@@ -75,26 +75,26 @@ as the delegate or designee by the lead.
 
 It is preferred that reviewers have previous experience performing formal or informal
 software or security audits or assessments for a variety of organizations.  An
-ideal reviewer should also have been the recipient of CNCF project security
-reviews for a software project they manage.
+ideal reviewer should also have been the recipient of a TAG-Security Security
+Assessment for a software project they manage.
 
-Reviewers interested in performing hands-on review should have experience in this
+Reviewers interested in performing hands-on assessment should have experience in this
 area.
 
 Note: Participation through shadowing is encouraged from members who are not
-qualified for security reviews, to facilitate their development of the necessary
+qualified for security assessment, to facilitate their development of the necessary
 skills to be a reviewer in the future.
 
 ## Time and effort
 
-The level of effort for the reviewers is expected to be 10 hours per review.
+The level of effort for the reviewers is expected to be 10 hours per assessment.
 Correspondence, project availability, and clarification of a project's scope
-or other details in the ticketed request for a project's joint review may
+or other details in the ticketed request for a project's joint assessment may
 require additional time. However, analysis is expected to be concluded in a
 few weeks -- usually 3 weeks.  Effort is expected to include and may not be
 limited to:
 * reviewing existing security documentation
-* reviewing ticketed request for project review
+* reviewing ticketed request for project assessment
 * analysis of security assertions and assumptions
 * attending project presentation with Q&A
 * discussion via Slack or additional live Q&A sessions
@@ -102,14 +102,14 @@ limited to:
 ## Expectations
 
 GitHub issues are assigned to security reviewers. Security reviewers are
-expected to conduct an in-depth review described in the [security review guide](./).
+expected to conduct an in-depth assessment described in the [TAG-Security Security Assessment Guide](./).
  The lead security reviewer should seek the approval of the other
 participating security reviewers and at least 1 co-chair before merging.
 
 ## Conflict of interest
 
 There is a possibility of a conflict of interest that can arise between a
-security reviewer and the project being reviewed due to the closely-knit nature
+security reviewer and the project being assessed due to the closely-knit nature
 of the community. Having clear guidelines for conflict of interest situations
 are important to prevent:
 - Individuals from intentionally or unintentionally promoting their own
@@ -122,18 +122,18 @@ to participate
 
 The conflicts of interest lie on a spectrum, and are classified into hard and
 soft conflicts:
-* A hard conflict makes a reviewer ineligible to review a project.
-* A soft conflict allows a reviewer to review a project, but not as a
+* A hard conflict makes a reviewer ineligible to assess a project.
+* A soft conflict allows a reviewer to assess a project, but not as a
 [project lead](./project-lead.md).
 * It is not unusual for reviewers to have soft conflicts. The diversity of
 reviewers that are familiar with a project can provide a deeper insight
-together with a fresh set of eyes and is beneficial to the success of a security
-review.
+together with a fresh set of eyes and is beneficial to the success of a 
+TAG-Security Security Assessment.
 
 All reviewers must provide a conflict declaration on the tracking issue to
 indicate which hard or soft conflicts do, or do not exist when they volunteer
 to be a reviewer.  This is done by placing a comment on the issue associated
-with the joint review using the table provided below.
+with the joint assessment using the table provided below.
 
 #### Conflict of interest statement template:
 | Hard Conflicts | Y/N |
@@ -155,12 +155,13 @@ with the joint review using the table provided below.
 
 Should a conflict arise during the time of the assessment, reviewers should notify
 the lead security reviewer when they become aware of the potential conflict,
-so the new conflict may be consulted with the facilitator and/or chairs.
+so the new conflict may be consulted with the Security Assessment Facilitator 
+and/or chairs.
 
-## Asserting team readiness to conduct a balanced review
+## Asserting team readiness to conduct a balanced assessment
 
-The lead security reviewer has the responsibility of ensuring a balanced review,
-and as part of that before kicking off the review must:
+The lead security reviewer has the responsibility of ensuring a balanced assessment,
+and as part of that before kicking off the assessment must:
 * Check that all reviewers have conflict-of-interest declarations,
 * Provide their own declaration of any potential conflict-of-interest
 (or lack thereof),
@@ -169,12 +170,12 @@ and as part of that before kicking off the review must:
   1. They have reviewed all conflict-of-interest declarations from the reviewers;
   2. There are no hard-conflicts present without a waiver;
   3. They believe that the review team is able to provide a balanced and fair
-  review
+  assessment
 
 Update the above assertion if a new conflict-of-interest becomes known during
-the course of the review.
+the course of the assessment.
 
-The Security Review Facilitator or a TAG-Security chair must review the
+The Security Assessment Facilitator or a TAG-Security chair must review the
 Lead Security Reviewer conflict-of-interest assertion.
 
 If any hard conflicts, or multiple significant soft conflicts, are presented,
@@ -182,9 +183,9 @@ then a TAG-Security chair must approve the security review team. Reasons for
  accepting and rejecting conflicts should be documented.
 
 In most cases, the existence of a hard conflict will prevent a TAG member from
-participating in the review for which their hard conflict exists. Depending
- on the circumstances of the particular conflict, the joint review, and the project,
- two chairs and the review facilitator may determine if the hard conflict
+participating in the assessment for which their hard conflict exists. Depending
+ on the circumstances of the particular conflict, the joint assessment, and the project,
+ two chairs and the Security Assessment Facilitator may determine if the hard conflict
 may be waived.  Should this occur, the decision's justification will be documented
  to ensure it clearly depicts the circumstances for granting the waiver.
 

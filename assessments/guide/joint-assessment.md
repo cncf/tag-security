@@ -1,7 +1,7 @@
-# Joint-review Outline
+# Joint-assessment Outline
 
-The joint-review is built on top of the [self-assessment](self-assessment.md) to
-collaboratively review the current security state of a project.
+The joint-assessment is built on top of the [self-assessment](self-assessment.md) to
+collaboratively assess the current security state of a project.
 
 The burden is primarily on the proposing project to demonstrate it is secure in
 a manner that is understandable to the broader community.  The
@@ -11,12 +11,12 @@ The proposing project must provide a written document that describes the project
 and its security.  The document must contain the following information, at a
 minimum. Where security considerations do not fit into the outline below, if
 possible, add a sub-section such that the additional content conforms to the
-general flow of the review.
+general flow of the joint assessment.
 
 Projects are encouraged to cross link additional supporting documents or details
 from their repo into the self-assessment.
 
-## Joint-review of [Project]
+## Joint-assessment of [Project]
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ from their repo into the self-assessment.
   * [Background](#background)
   * [Goals](#goal)
   * [Non-goals](#non-goals)
-* [Joint-review use](#joint-review-use)
+* [Joint-assessment use](#joint-assessment-use)
 * [Intended use](#intended-use)
 * [Project design](#project-design)
   * [Functions and features](#functions-and-features)
@@ -38,7 +38,7 @@ from their repo into the self-assessment.
 * [Security issue resolution](#security-issue-resolution)
   * [Closed security issues and
     vulnerabilities](#closed-security-issues-and-vulnerabilities)
-* [Hands-on review](#hands-on-review)
+* [Hands-on assessment](#hands-on-assessment)
 * [Roadmap](#roadmap)
 * [Appendix](#appendix)
 
@@ -94,11 +94,11 @@ may be in scope (e.g., Flibble does not intend to stop a party with a key from
 storing an arbitrarily large amount of data, possibly incurring financial cost
 or overwhelming the servers)
 
-## Joint-review use
+## Joint-assessment use
 
-The joint-review is initially created by the project team and then
+The joint-assessment is initially created by the project team and then
 collaboratively developed with the [security reviewers](security-reviewer.md) as
-part of the project's TAG-Security Review (formerly called security assessment).
+part of the project's TAG-Security Security Assessment (TSSA) Process.
 Information about the TAG-Security Review can be found in the [CNCF TAG-Security
 Review Process Guide](./README.md).
 
@@ -273,37 +273,37 @@ This should provide links and very brief summary of any closed security issues
  or fixed vulnerabilities for the project (with or without CVE).  If the project
 does not have any closed or fixed vulnerabilities use the below text:
 
-> At the time of the joint review, [project] did not have known security issues
+> At the time of the joint assessment, [project] did not have known security issues
 with a closed state or any known vulnerabilities that were fixed.
 
-## Hands-on review
+## Hands-on assessment
 
-The hands-review is a lightweight review of the project's internal security as
+The hands-on assessment is a lightweight review of the project's internal security as
 well as the current recommendation configuration, deployment, and interaction
-with regard to security.  Hands-on reviews are subject to security reviewer
+with regard to security.  Hands-on assessments are subject to security reviewer
 availability and expertise.  They are not intended to serve as an audit or
 formal assessment and are no guarantee of the actual security of the project.
 
-**[Project] did/did not receive a hands-review from TAG-Security.**
+**[Project] did/did not receive a hands-assessment from TAG-Security.**
 
-*If a hands-on review was performed, the below format should be used for
+*If a hands-on assessment was performed, the below format should be used for
 reporting details*
 
 | | |
 | -- | -- |
-| Date of review | mmddyyyy-mmddyyyy |
+| Date of assessment | mmddyyyy-mmddyyyy |
 | Hands-on reviewers | name, github handle |
 
 | Finding Number | Finding name | Finding Notes | Reviewer |
 | -- | -- | -- | -- |
 | | | |
 
-### Hands-on review result
+### Hands-on assessment result
 
-General comments and summary of the hands-on review with any recommendations
+General comments and summary of the hands-on assessment with any recommendations
 worth noting.  If nothing found use the below example:
 
-> TAG-Security's hands-on review did not reveal any significant or notable
+> TAG-Security's hands-on assessment did not reveal any significant or notable
 security findings for [project]. This outcome does not indicate that none exist,
 rather that none were discovered.
 
@@ -311,7 +311,7 @@ rather that none were discovered.
 
 * Project Next Steps. Link to your general roadmap, if available, then list
   prioritized next steps that may have an impact on the risk profile of your
-project, including anything that was identified as part of this review.
+project, including anything that was identified as part of this assessment.
 * CNCF Requests. In the initial draft, please include whatever you believe the
   CNCF could assist with that would increase security of the ecosystem.
 
