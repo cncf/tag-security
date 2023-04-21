@@ -10,6 +10,17 @@ Are you disappointed there won’t be a 0-day event for Security? Don’t be! In
 
 If you are at the conference, submit topics you would like to participate in each morning via our [Google form](https://docs.google.com/forms/d/e/1FAIpQLSezTTuwRLEwxkqkQls_SxJaZNu4fKXp_kstoZUeF1jisVfeCg/viewform?usp=sf_link). At lunchtime, we will list a schedule of topics here.
 
+### Friday schedule
+
+**14:30 - 14:55: With all great tools, how do you combine the security information and analyze this? Single-pane of glass.**
+submitted by Gilles
+
+**15:00 - 15:25: K8S Security, where are the security people?**
+submitted by Thomas Fricke
+
+**15:30 - 15:55: ZeroTrust usecases**
+submitted by Sunil Ravipati 
+
 ### Thursday schedule
 
 **14:30 - 14:55: How to prioritize security work? Should be a Security Champion model, collective responsiblity, a dedicated budget for security work or what?**
