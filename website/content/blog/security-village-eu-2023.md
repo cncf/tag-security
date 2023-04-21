@@ -19,7 +19,10 @@ submitted by Gilles
 submitted by Thomas Fricke
 
 **15:30 - 15:55: ZeroTrust usecases**
-submitted by Sunil Ravipati 
+submitted by Sunil Ravipati
+
+**16:30 - 16:55: Where are the decdevops 2 people**
+submitted by Adina Radulescu
 
 ### Thursday schedule
 
