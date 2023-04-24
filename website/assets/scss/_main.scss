@@ -2,6 +2,11 @@ body {
 	background-color: #fdfdfd;
 }
 
+html .row {
+	margin-right: unset;
+	margin-left: unset;
+}
+	
 // Stops links pushing out container.
 // Experimental usage on P tag.
 // Due to Archived project github link.
