@@ -10,6 +10,37 @@ Are you disappointed there won’t be a 0-day event for Security? Don’t be! In
 
 If you are at the conference, submit topics you would like to participate in each morning via our [Google form](https://docs.google.com/forms/d/e/1FAIpQLSezTTuwRLEwxkqkQls_SxJaZNu4fKXp_kstoZUeF1jisVfeCg/viewform?usp=sf_link). At lunchtime, we will list a schedule of topics here.
 
+### Friday schedule
+
+**14:30 - 14:55: With all great tools, how do you combine the security information and analyze this? Single-pane of glass.**
+submitted by Gilles
+
+**15:00 - 15:25: K8S Security, where are the security people?**
+submitted by Thomas Fricke
+
+**15:30 - 15:55: ZeroTrust usecases**
+submitted by Sunil Ravipati
+
+**16:30 - 16:55: Where are the decdevops 2 people**
+submitted by Adina Radulescu
+
+### Thursday schedule
+
+**14:30 - 14:55: How to prioritize security work? Should be a Security Champion model, collective responsiblity, a dedicated budget for security work or what?**
+submitted by Jarno Virtanen
+
+**15:00 - 15:25: How would you protect non-cloud-native workloads in the cloud? IAAS?**
+submitted by Gilles
+
+**15:30 - 15:55: CIA versus DIE, which one should be prevalent? and Why?**
+submitted by Gilles
+
+**16:30 - 16:55: When to use confidential computing in the public cloud (Azure)**
+submitted by Igor van Haren
+
+**17:00 - 17:25: Cloud Native Infra Security as Code**
+submitted by Mihir Shah
+
 ### Wednesday schedule
 
 **14:30 - 14:55: What is your SBOM? Why every vendor gives me a different SBOM? Why are there differences and what is the correct answer?**
