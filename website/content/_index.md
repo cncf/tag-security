@@ -21,7 +21,7 @@ technical domains.
 
 - [TAG Charter](https://github.com/cncf/toc/blob/main/tags/app-delivery.md)
 - [Community events](https://community.cncf.io/tag-app-delivery/)
-- Slack channel: [#tag-app-delivery](https://cloud-native.slack.com/messages/CL3SL0CP5)
+- Slack channel: [#tag-security](https://cloud-native.slack.com/archives/CDJ7MLT8S)
     - [Invite yourself to the CNCF Slack](https://slack.cncf.io/)
 - [Mailing list](https://lists.cncf.io/g/cncf-tag-app-delivery/topics)
 
