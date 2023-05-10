@@ -19,11 +19,11 @@ The TAG produces guidance for and gathers feedback from cloud app users and
 developers and provides guidance and coordination to CNCF projects in the TAG's
 technical domains.
 
-- [TAG Charter](https://github.com/cncf/toc/blob/main/tags/app-delivery.md)
+- [TAG Charter](https://github.com/cncf/toc/blob/main/tags/security.md)
 - [Community events](https://community.cncf.io/tag-app-delivery/)
-- Slack channel: [#tag-app-delivery](https://cloud-native.slack.com/messages/CL3SL0CP5)
+- Slack channel: [#tag-security](https://cloud-native.slack.com/archives/CDJ7MLT8S)
     - [Invite yourself to the CNCF Slack](https://slack.cncf.io/)
-- [Mailing list](https://lists.cncf.io/g/cncf-tag-app-delivery/topics)
+- [Mailing list](https://lists.cncf.io/g/cncf-tag-security/topics)
 
 <p class="mt-5"><img src="/images/man-using-laptop.jpg" alt="Man working on computer"></p>
 
