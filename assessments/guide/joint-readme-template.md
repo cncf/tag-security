@@ -1,4 +1,4 @@
-# [Project Name] Security Review
+# [Project Name] TAG-Security Security Assessment
 
 Completed:  dd MMM yyyy
 
@@ -13,11 +13,11 @@ Project team:  _list name and github handle as appropriate_
 
 ## Background
 
-*Brief synopsys of the project, problem space, how the project solves the problem, can be pulled from the joint review.*
+*Brief synopsys of the project, problem space, how the project solves the problem, can be pulled from the joint assessment.*
 
 ### Maturity
 
-*Use cases, integrations, etc. bulleted, should be available in the joint review.*
+*Use cases, integrations, etc. bulleted, should be available in the joint assessment.*
 
 ## Summary
 
@@ -44,4 +44,4 @@ _refer to the existing readmes for other projects, such as [SPIFFE/SPIRE](https:
 * 
 * 
 
-Tracking issue: *link to issue for review*
+Tracking issue: *link to issue for assessment*
