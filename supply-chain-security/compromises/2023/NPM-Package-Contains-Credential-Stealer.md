@@ -12,7 +12,7 @@ the repository for the source code that powers `pear.php.net`
 
 ## Type of Compromise
 
-This incident fits the [Dev Tooling](../compromise-definitions.md#dev-tooling)
+This incident fits the [Negligence](../compromise-definitions.md#Negligence)
 definition.
 
 ## References
