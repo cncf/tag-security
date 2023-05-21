@@ -30,6 +30,7 @@ of compromise needs added, please include that as well.
 <!-- cSpell:disable -->
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
+| [RubyGems Package Overwrite Flaw](2022/rubygems-override.md) | 2022 | Publishing Infrastructure | [1](https://www.bleepingcomputer.com/news/security/check-your-gems-rubygems-fixes-unauthorized-package-takeover-bug/)
 | [Docker Hub malicious containers](2022/docker-hub-malicious-containers.md) | 2022 | Publishing Infrastructure | [1](https://www.bleepingcomputer.com/news/security/docker-hub-repositories-hide-over-1-650-malicious-containers/)
 | [Chat100 live chat trojan](2022/Comm100-live-chat-trojan.md) | 2022 | Publishing Infrastructure | [1](https://www.securityweek.com/supply-chain-attack-targets-customer-engagement-firm-comm100)
 | [Dropbox GitHub compromise](2022/dropbox-github-account-breach.md) | 2022 | Attack Chaining | [1](https://www.bleepingcomputer.com/news/security/dropbox-discloses-breach-after-hacker-stole-130-github-repositories/)
