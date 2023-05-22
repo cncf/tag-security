@@ -2,7 +2,7 @@
 The Self-assessment is the initial document for projects to begin thinking about the
 security of the project, determining gaps in their security, and preparing any security
 documentation for their users. This document is ideal for projects currently in the
-CNCF **sandbox** as well as projects that are looking to receive a joint review and
+CNCF **sandbox** as well as projects that are looking to receive a joint assessment and
 currently in CNCF **incubation**.
 
 # Self-assessment outline
@@ -48,7 +48,7 @@ use the table below as an example:
 ## Overview
 
 One or two sentences describing the project -- something memorable and accurate
-that distinguishes your project to quickly orient readers who may be reviewing
+that distinguishes your project to quickly orient readers who may be assessing
 multiple projects.
 
 ### Background
@@ -101,8 +101,8 @@ security, and general overview of [project] security practices, both for develop
 [project] as well as security of [project].
 
 This document provides the CNCF TAG-Security with an initial understanding of [project]
-to assist in a joint-review, necessary for projects under incubation.  Taken
-together, this document and the joint-review serve as a cornerstone for if and when
+to assist in a joint-assessment, necessary for projects under incubation.  Taken
+together, this document and the joint-assessment serve as a cornerstone for if and when
 [project] seeks graduation and is preparing for a security audit.
 
 ## Security functions and features
@@ -124,7 +124,7 @@ included in threat modeling.
 
 ## Secure development practices
 
-* Development Pipeline.  A description of the testing and review processes that
+* Development Pipeline.  A description of the testing and assessment processes that
   the software undergoes as it is developed and built. Be sure to include specific
 information such as if contributors are required to sign commits, if any container
 images immutable and signed, how many reviewers before merging, any automated checks for
