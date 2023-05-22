@@ -1,0 +1,78 @@
+// General Styling.
+
+// Links
+a {
+	font-weight: 700;
+	&.tree-root:hover {
+		color: $primary;
+		text-decoration: none;
+	}
+}
+
+h1 {
+	&.thin {
+		font-weight: 400;
+	}
+	@media (min-width: 768px) {
+		font-size: 2.5rem;
+		max-width: 90%;
+	}
+}
+
+h2 {
+	@media (max-width: 374px) {
+		font-size: 1.5rem;
+	}
+	&.feedback--title {
+		margin-top: 5rem;
+	}
+}
+
+// Main page content styling.
+.td-content {
+	> h1 {
+		margin-bottom: 2.1rem;
+	}
+	> h1:not(:first-child) {
+		margin-top: 3rem;
+	}
+	> h2:not(:first-child) {
+		margin-top: 4rem;
+	}
+	> h2 {
+		margin-bottom: 2.1rem;
+	}
+	p {
+		line-height: 170%;
+	}
+}
+
+.lead {
+	font-size: 1.5rem;
+}
+
+// Add some extra padding to large Ps in H4 (see About).
+.h4 {
+	p + p {
+		margin-top: 20px;
+		@media (min-width: 1000px) {
+			margin-top: 30px;
+		}
+	}
+}
+
+.fas {
+	font-size: 1.5rem;
+	margin-right: 5px;
+}
+
+.text-muted {
+	color: #747474 !important;
+}
+
+@media (min-width: 992px) {
+.td-max-width-on-larger-screens, .td-content > pre, .td-content > .highlight, .td-content > .lead, .td-content > h1, .td-content > h2, .td-content > ul, .td-content > ol, .td-content > p, .td-content > blockquote, .td-content > dl dd, .td-content .footnotes, .td-content > .alert,
+div.media-body, .section-index, table {
+    max-width: 90%;
+}
+}
