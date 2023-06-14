@@ -1,0 +1,12 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ $col_id := .Get "color" | default .Ordinal }}
+{{ $height := .Get "height" | default "auto"  }}
+{{ $type   := .Get "type" | default "" }}
+<!-- Section Block  -->
+<section id="td-block-{{ .Ordinal }}" class="section-block row td-box td-box--{{ $col_id }} td-box--gradient td-box--height-{{ $height }} td-offset-anchor">
+	<div class="col">
+		<div class="row {{ $type }}">
+			{{ .Inner | markdownify}}
+		</div>
+	</div>
+</section>

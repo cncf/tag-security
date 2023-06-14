@@ -1,0 +1,6 @@
+node_modules
+resources
+public/
+go.local.mod
+go.sum
+.DS_Store
