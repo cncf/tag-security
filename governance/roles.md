@@ -236,41 +236,24 @@ channel](https://cloud-native.slack.com/archives/CDJ7MLT8S)), and issue a
 call/request for reviewers (i.e. a single security assessment lead, and at
 least two additional security reviewers), and ensuring all reviewers [read the
 conflict of interest disclosure](../assessments/guide/security-reviewer.md) and
-sign-off on it in the GitHub ticket itself. The sign-off is a simple form that
-can be easily copy/pasted into a new reply in the GitHub issue/ticket
-associated with the assessment (and the individual replaces the `???` literal
-text with their response), e.g.:
+sign-off on it in the GitHub ticket itself. 
 
-```txt
-Hard conflicts:
-Reviewer is a maintainer of the project - ???
-Reviewer is a direct report of/to a maintainer of the project - ???
-Reviewer is paid to work on the project - ???
-Reviewer has significant financial interest directly tied to success of the project - ???
-
-Soft conflicts:
-Reviewer belongs to the same company/organization of the project, but does not work on the project - ???
-Reviewer uses the project in his/her work - ???
-Reviewer has contributed to the project. - ???
-Reviewer has a personal stake in the project (personal relationships, etc.) - ???
-```
-
-From this point forward, the security assessment lead will be the primary
+From this point forward, the security assessment lead is the primary
 individual most responsible for driving the security assessment alongside the
 security reviewers, as well as the project owners. The security assessment
-facilitator will act as a point-of-contact for escalation, and will be
+facilitator will act as a point of contact for escalation, and will be
 responsible for conducting regular check-ins with the team to ensure that the
 assessment is on-track.
 
-Near the conclusion of the assessment (i.e. drafts of the self assessment
+Near the conclusion of the assessment (i.e. drafts of the self-assessment
 document and the joint review document are published via a pull request against
 the TAG-Security GitHub repository), the facilitator will take part in the
 review/feedback process alongside the security assessment lead and security
 reviewers.
 
 At the conclusion of the assessment (i.e. satisfactory completion of the
-final/canonical revisions of the self assessment document and the joint review
-document, chair approval, etc.), the facilitator is responsible for merging the
+final/canonical revisions of the self-assessment document and the joint review
+the document, chair approval, etc.), the facilitator is responsible for merging the
 pull request(s) associated with the assessment into the `main` branch of the
 TAG-Security GitHub repository.
 
