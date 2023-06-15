@@ -11,7 +11,7 @@ The various roles are listed as follows:
   * [Maintaining Active Members](#maintaining-active-members)
   * [Managing Membership](#managing-membership)
 * [Role of Chairs](#role-of-chairs)
-* [Role of technical leads](#role-of-technical-leads)
+* [Role of Technical Leads](#role-of-technical-leads)
 * [Role of Chair Emeriti](#role-of-chair-emeriti)
 * [Role of Project Leads](#role-of-project-leads)
   * [Ongoing Projects](#ongoing-projects)
