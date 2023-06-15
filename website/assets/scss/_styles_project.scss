@@ -1,0 +1,25 @@
+/**
+* Project Styles
+*
+* This theme is used to overide the variables in themes/docsy/assets/scss/_styles_project.scss
+*
+* It's loaded AFTER all other styles.
+*
+*/
+
+@import 'hamburger';
+@import 'reset';
+@import 'archive';
+@import 'buttons';
+@import 'footer';
+@import 'header';
+@import 'main';
+@import 'search';
+@import 'sidebar-left';
+@import 'cookie-banner';
+@import 'sidebar-toc';
+@import 'taxonomy';
+@import 'typography';
+@import 'about';
+@import 'video';
+@import 'projects';
