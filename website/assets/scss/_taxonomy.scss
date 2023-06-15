@@ -1,0 +1,45 @@
+// Container for Taxonomy items.
+.article-meta {
+	margin-bottom: 3rem;
+}
+
+.tax-term {
+	background-color: $link-color;
+	border-radius: 50px;
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 140%;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: $white;
+	padding: 5px 12px;
+	margin-right: 8px;
+	&:hover {
+		color: $white;
+		text-decoration: none;
+		background-color: $primary-300;
+	}
+}
+
+.taxonomy-terms {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tax-terms {
+	list-style: none;
+	margin: 60px 0;
+	padding: 0;
+	li {
+		margin: 20px 0;
+	}
+}
+
+.taxonomy-count {
+	padding-left: 0;
+	margin-left: 0;
+}

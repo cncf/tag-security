@@ -31,13 +31,17 @@ of compromise needs added, please include that as well.
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
 | [Legitimate software update mechanism abused to deliver wiper malware](2022/fantasy.md) | 2022 | Publishing Infrastructure | [1](https://www.welivesecurity.com/2022/12/07/fantasy-new-agrius-wiper-supply-chain-attack/)|
+| [Docker Hub malicious containers](2022/docker-hub-malicious-containers.md) | 2022 | Publishing Infrastructure | [1](https://www.bleepingcomputer.com/news/security/docker-hub-repositories-hide-over-1-650-malicious-containers/)
+| [Chat100 live chat trojan](2022/Comm100-live-chat-trojan.md) | 2022 | Publishing Infrastructure | [1](https://www.securityweek.com/supply-chain-attack-targets-customer-engagement-firm-comm100)
+| [Dropbox GitHub compromise](2022/dropbox-github-account-breach.md) | 2022 | Attack Chaining | [1](https://www.bleepingcomputer.com/news/security/dropbox-discloses-breach-after-hacker-stole-130-github-repositories/)
+| [Intel Alder Lake BIOS leak](2022/intel-alder-lake-BIOS-leak.md) | 2022 | Source Code | [1](https://www.tomshardware.com/news/intel-confirms-6gb-alder-lake-bios-source-code-leak-new-details-emerge)
 | [PEAR PHP Package Manager compromise](2022/php-pear-compromise.md) | 2022 | Dev Tooling | [1](https://blog.sonarsource.com/php-supply-chain-attack-on-pear/)
 | [npm Library ‘node-ipc’ Sabotaged with npm Library ‘peacenotwar’ in Protest by their Maintainer](2022/node-ipc-peacenotwar.md) | 2022 | Malicious Maintainer | [1](https://snyk.io/blog/peacenotwar-malicious-npm-node-ipc-package-vulnerability/)|
 | [npm Libraries ‘colors’ and ‘faker’ Sabotaged in Protest by their Maintainer](2022/js-faker-colors.md) | 2022 | Malicious Maintainer | [1](https://www.revenera.com/blog/software-composition-analysis/the-story-behind-colors-js-and-faker-js/)|
 | [GCP Golang Buildpacks Old Compiler Injection](2022/golang-buildpacks-compiler.md) | 2022 | Source Code | [1](https://zt.dev/posts/gcp-buildpacks-old-compiler/)|
 | [WordPress theme publisher compromised](2022/wp-apthemes.md) | 2022 | Source Code | [1](https://jetpack.com/2022/01/18/backdoor-found-in-themes-and-plugins-from-accesspress-themes/), [2](https://blog.sucuri.net/2022/01/accesspress-themes-hit-with-targeted-supply-chain-attack.html)|
 | [Remote code injection in Log4j](2021/log4j.md) | 2021 | Source code | [1](https://security.googleblog.com/2021/12/understanding-impact-of-apache-log4j.html) |
-| [Compromise of NP packages coa and rc](2021/coa-rc.md) | 2021 | Malicious Maintainer | [1](https://blog.sonatype.com/npm-hijackers-at-it-again-popular-coa-and-rc-open-source-libraries-taken-over-to-spread-malware) |
+| [Compromise of npm packages coa and rc](2021/coa-rc.md) | 2021 | Malicious Maintainer | [1](https://blog.sonatype.com/npm-hijackers-at-it-again-popular-coa-and-rc-open-source-libraries-taken-over-to-spread-malware) |
 | [Compromise of ua-parser-js](2021/ua-parser-js.md) | 2021 | Malicious Maintainer | [1](https://github.com/faisalman/ua-parser-js/issues/536) |
 | [The klow / klown / okhsa incident](2021/klow-klown-okhsa.md) | 2021 | Negligence | [1](https://blog.sonatype.com/newly-found-npm-malware-mines-cryptocurrency-on-windows-linux-macos-devices) |
 | [PHP self-hosted git server](2021/php.md) | 2021 | Dev Tooling | [1](https://news-web.php.net/php.internals/113838) |
@@ -92,3 +96,4 @@ of compromise needs added, please include that as well.
 | [SquirrelMail backdoor](2007/squirrelmail.md) | 2007 | Source Code | [1](https://lwn.net/Articles/262688/) |
 | [gentoo rsync compromise](2003/gentoo-rsync.md) | 2003 | Source Code Repository | [1](https://archives.gentoo.org/gentoo-announce/message/7b0581416ddd91522c14513cb789f17a) |
 | [Debian infra compromise](2003/debian.md) | 2003 | Publishing infrastructure | [1](https://www.debian.org/News/2003/20031202) |
+| [Unix Support Group login backdoor](1984/login-bell.md) | <1984 | Dev Tooling | [1](https://niconiconi.neocities.org/posts/ken-thompson-really-did-launch-his-trusting-trust-trojan-attack-in-real-life/) |
