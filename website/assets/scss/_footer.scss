@@ -1,0 +1,128 @@
+// footer.
+footer {
+	min-height: unset;
+	overflow: unset;
+	background-color: $black;
+	color: #eee;
+	padding: 4rem 0 3rem;
+	a {
+		color: $primary;
+		font-weight: 600;
+		&:hover {
+			color: $primary;
+			text-decoration: none;
+		}
+	}
+	.logo-and-hub {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		width: 100%;
+		@media (min-width: 992px) {
+			gap: 35px;
+			width: unset;
+			flex-direction: row;
+			align-items: center;
+		}
+		.logo {
+			height: 40px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.hub-button {
+			font-size: 16px;
+			line-height: 16px;
+			font-weight: 700;
+			border-radius: 3px;
+			border: 1px solid $white;
+			text-transform: none;
+			text-decoration: none;
+			text-align: center;
+			letter-spacing: 0.02em;
+			background-color: unset;
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-top: 11px;
+			padding-bottom: 11px;
+			transition: all 0.25s ease-out;
+			margin-bottom: calc(35px - 15px);
+			width: 100%;
+			max-width: calc(614px - 15px - 15px); // social-links
+			margin-left: auto;
+			margin-right: auto;
+			@media (min-width: 992px) {
+				width: unset;
+				margin-bottom: 0px;
+				padding-top: 9px;
+				padding-bottom: 9px;
+			}
+			&:hover {
+				border: 1px solid $link-color;
+				background-color: $link-color;
+			}
+		}
+	}
+	small a {
+		color: #eee;
+	}
+}
+
+// social link icons.
+.social-links {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 0;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	list-style: none;
+	column-gap: calc(43px - 15px - 15px);
+	row-gap: 0;
+	margin-left: auto;
+	margin-right: auto;
+	@media (min-width: 992px) {
+		text-align: right;
+		gap: 0;
+		margin-bottom: 0;
+		margin-right: unset;
+	}
+	li {
+		display: inline-block;
+	}
+	a {
+		display: block;
+		padding: 10px;
+		@media (min-width: 372px) {
+			padding: 15px;
+		}
+		@media (min-width: 992px) {
+			padding: 10px;
+		}
+		@media (min-width: 1200px) {
+			padding: 17px;
+		}
+	}
+	svg {
+		fill: $white;
+		color: $white;
+		height: 25px;
+		max-width: 30px;
+		&:hover {
+			color: $link-color;
+			fill: $link-color;
+		}
+	}
+}
+
+.horizontal-rule {
+	background-color: $white;
+	height: 1px;
+	width: 100%;
+}
+
+.copyright {
+	text-align: center;
+	@media (min-width: 992px) {
+		text-align: left;
+	}
+}
