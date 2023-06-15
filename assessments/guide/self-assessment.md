@@ -2,7 +2,7 @@
 The Self-assessment is the initial document for projects to begin thinking about the
 security of the project, determining gaps in their security, and preparing any security
 documentation for their users. This document is ideal for projects currently in the
-CNCF **sandbox** as well as projects that are looking to receive a joint review and
+CNCF **sandbox** as well as projects that are looking to receive a joint assessment and
 currently in CNCF **incubation**.
 
 # Self-assessment outline
@@ -12,6 +12,8 @@ currently in CNCF **incubation**.
 * [Metadata](#metadata)
   * [Security links](#security-links)
 * [Overview](#overview)
+  * [Actors](#actors)
+  * [Actions](#actions)
   * [Background](#background)
   * [Goals](#goals)
   * [Non-goals](#non-goals)
@@ -46,7 +48,7 @@ use the table below as an example:
 ## Overview
 
 One or two sentences describing the project -- something memorable and accurate
-that distinguishes your project to quickly orient readers who may be reviewing
+that distinguishes your project to quickly orient readers who may be assessing
 multiple projects.
 
 ### Background
@@ -54,8 +56,30 @@ multiple projects.
 Provide information for reviewers who may not be familiar with your project's
 domain or problem area.
 
-### Goal
-The intended goal of the projects including the security guarantees the  project
+### Actors
+These are the individual parts of your system that interact to provide the 
+desired functionality.  Actors only need to be separate, if they are isolated
+in some way.  For example, if a service has a database and a front-end API, but
+if a vulnerability in either one would compromise the other, then the distinction
+between the database and front-end is not relevant.
+
+The means by which actors are isolated should also be described, as this is often
+what prevents an attacker from moving laterally after a compromise.
+
+### Actions
+These are the steps that a project performs in order to provide some service
+or functionality.  These steps are performed by different actors in the system.
+Note, that an action need not be overly descriptive at the function call level.  
+It is sufficient to focus on the security checks performed, use of sensitive 
+data, and interactions between actors to perform an action.  
+
+For example, the access server receives the client request, checks the format, 
+validates that the request corresponds to a file the client is authorized to 
+access, and then returns a token to the client.  The client then transmits that 
+token to the file server, which, after confirming its validity, returns the file.
+
+### Goals
+The intended goals of the projects including the security guarantees the project
  is meant to provide (e.g., Flibble only allows parties with an authorization
 key to change data it stores).
 
@@ -77,8 +101,8 @@ security, and general overview of [project] security practices, both for develop
 [project] as well as security of [project].
 
 This document provides the CNCF TAG-Security with an initial understanding of [project]
-to assist in a joint-review, necessary for projects under incubation.  Taken
-together, this document and the joint-review serve as a cornerstone for if and when
+to assist in a joint-assessment, necessary for projects under incubation.  Taken
+together, this document and the joint-assessment serve as a cornerstone for if and when
 [project] seeks graduation and is preparing for a security audit.
 
 ## Security functions and features
@@ -100,7 +124,7 @@ included in threat modeling.
 
 ## Secure development practices
 
-* Development Pipeline.  A description of the testing and review processes that
+* Development Pipeline.  A description of the testing and assessment processes that
   the software undergoes as it is developed and built. Be sure to include specific
 information such as if contributors are required to sign commits, if any container
 images immutable and signed, how many reviewers before merging, any automated checks for

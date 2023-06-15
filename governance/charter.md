@@ -1,12 +1,15 @@
 # Security TAG Charter
 
-This charter describes operations as a [CNCF TAG](https://github.com/cncf/toc/tree/main/tags). The [Focus](#focus) section below describes what is in and out of scope,
-and [Governance](#governance) section describes how our operations are consistent with CNCF policies with links to more detailed documents.
+This charter describes operations as a [CNCF TAG](https://github.com/cncf/toc/tree/main/tags).
+The [Focus](#focus) section below describes what is in and out of scope,
+and [Governance](#governance) section describes how our operations are consistent
+with CNCF policies with links to more detailed documents.
 
 **Mission:** to reduce risk that cloud native
 applications expose end user data or allow other unauthorized access.
 
 ## Motivation
+
 Security has been an area in which open source can flourish and sometimes
 has done so; however, with cloud native platforms and applications, security
 has received less attention than other areas of the cloud native landscape.
@@ -29,7 +32,7 @@ cause issues with evaluation of security software and designs.
 
 Distributed deployments across heterogeneous infrastructure are increasingly
 common for cloud native applications.
-Without common ways to programatically ensure consistent policy,
+Without common ways to programmatically ensure consistent policy,
 it is increasingly difficult to evaluate system architecture security at scale.
 Emerging common architectural patterns offer the opportunity
 improve overall security in cloud native systems.
@@ -38,12 +41,12 @@ improve overall security in cloud native systems.
 
 In addition to the [CNCF security-related projects](cncf-projects.md), there
 are three key focus areas:
+
 * Protection of heterogeneous, distributed and fast changing systems, while
 providing needed access
 * Common understanding and common tooling to help developers meet security
 requirements
 * Common tooling for audit and reasoning about system properties.
-
 
 ### In scope
 
@@ -64,19 +67,24 @@ tasks from the CNCF TOC that are consistent with the mission, including
 the following activities:
 
 * Publish educational resources on cloud native security
-  * Videos and/or slides from invited presentations by security providers and use cases
-  * Answer the following questions (referring to already existing resources where possible):
-      * What is different about cloud security? (including hybrid and multi-cloud)
-      * What are effective practices for implementing policy controls?
-      * How can we test, validate, explain, audit our systems?
-      * What additional measures are needed, specific to cloud, in highly regulated environments?
+  * Videos and/or slides from invited presentations by security providers and
+    use cases
+  * Answer the following questions (referring to already existing resources
+    where possible):
+    * What is different about cloud security? (including hybrid and multi-cloud)
+    * What are effective practices for implementing policy controls?
+    * How can we test, validate, explain, audit our systems?
+    * What additional measures are needed, specific to cloud, in highly
+      regulated environments?
   * Personas and use cases
   * Common vocabulary to talk about and understand cloud native security
   * CNCF project ecosystem & landscape
-  * Define security scenarios (e.g. network configuration, application security, service orchestration)
+  * Define security scenarios (e.g. network configuration, application security,
+    service orchestration)
   * Block architecture(s) for secure access
   * Highlight trade-offs (e.g. Expressibility vs Explainability)
-  * Best practices and anti-patterns (potentially highlighting where there is disagreement on these)
+  * Best practices and anti-patterns (potentially highlighting where there is
+    disagreement on these)
 * Security assessments of specific proposals or projects
 * Identify projects for consideration for CNCF
 * Cross-pollinate knowledge by participating and inviting people from other projects and TAGs to share security practices
@@ -87,6 +95,7 @@ may be queued according to the bandwidth of the group. The co-chairs will
 facilitate prioritization under the guidance of the Security TAG TOC liaison.
 
 ### Out of scope
+
 * Not a standards body: We won't be creating standards.
 * Not an umbrella organization: We interact with other groups for knowledge
   sharing, not decision-making.
@@ -110,6 +119,7 @@ ecosystem, so the group seeks to encourage participation and membership across
 a wide range of roles, from diverse companies and organizations.
 
 ### Cross-group relationships
+
 To focus our efforts, we avoid duplication by developing relationships with
 other groups that
 focus on a particular technology (such as Kubernetes SIGs) or have a broader
@@ -123,6 +133,7 @@ which is accomplished by cross-group membership, invitation to present at
 a TAG meeting and/or offering to present to the related group.
 
 ## Operations
+
 Security TAG operations are consistent with standard TAG operating guidelines
 provided by the CNCF Technical Oversight Committee
 [TOC](https://github.com/cncf/toc).
