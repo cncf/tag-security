@@ -1,0 +1,19 @@
+{{ $card := "summary_large_image" }}
+{{ with $.Params.youtubeID }}
+{{ $card = "player" }}
+{{ end }}
+
+<!-- Twitter -->
+<meta name="twitter:card" content="{{ $card }}">
+<meta name="twitter:title" content="{{ .Params.linkTitle | default .Title }}">
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+{{ if eq $card "player" }}
+<meta name="twitter:player" content="https://www.youtube.com/embed/{{ .Params.youtubeID}}">
+<meta name="twitter:player:width" content="320">
+<meta name="twitter:player:height" content="180">
+<meta name="twitter:image" content="https://i.ytimg.com/vi/{{ .Params.youtubeID}}/mqdefault.jpg">
+{{ else }}
+{{ $img := cond (isset $.Params "image") $.Params.image $.Site.Params.image }}
+<meta name="twitter:image" content="{{ $img | absURL }}">
+{{ end }}

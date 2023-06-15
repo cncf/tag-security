@@ -80,7 +80,7 @@ project, architecture, and enhance team awareness on security.
 - Planning the event =>
   [Issue#454](https://github.com/cncf/tag-security/issues/454)
 
-[Cloud Native Security Con NA](https://kccncna2021.sched.com/event/leYD?iframe=no)
+[Cloud Native Security Con NA](https://cloudnativesecurityconna21.sched.com/)
 
 - Los Angeles, California + Virtual
 - October 12, 2021
@@ -102,3 +102,10 @@ project, architecture, and enhance team awareness on security.
 - October 24-25, 2022
 - Planning the event =>
   [Issue#939](https://github.com/cncf/tag-security/issues/939)
+
+### 2023
+
+[Cloud Native SecurityCon North America](https://cloudnativesecurityconna23.sched.com/)
+
+- Seattle, WA
+- February 1-2, 2023

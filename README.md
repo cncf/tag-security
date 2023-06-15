@@ -45,6 +45,11 @@ experience of cloud native operators, administrators and developers, including:
 3. Common libraries and protocols that enable people to reason about the
    security of the system, such as auditing and explainability features.
 
+## Publications
+
+TAG Security has published several resources for the community, which can be
+found in the [publications](PUBLICATIONS.md) document.
+
 ## Governance
 
 [STAG charter](governance/charter.md) outlines the scope of our group
@@ -80,8 +85,8 @@ Group meeting times are listed below:
 
 - US:   Bi-weekly on Wednesdays at 10:00am UTC-7 (see your timezone
   [here](https://time.is/1000_today_in_PT?CNCF_Security_TAG_US_Meeting))
-- EMEA: Bi-weekly on Wednesdays at 01:00pm BST (see your timezone
-  [here](https://time.is/1300_today_in_BST?CNCF_Security_TAG_EMEA_Meeting))
+- EMEA: Bi-weekly on Wednesdays at 01:00pm London (see your timezone
+  [here](https://time.is/1300_today_in_London?CNCF_Security_TAG_EMEA_Meeting))
 
 [Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
 
@@ -91,6 +96,9 @@ Group meeting times are listed below:
 with the main meetings and working groups.
 - See the [CNCF Calendar](https://www.cncf.io/calendar/) for a list of all CNCF calendar
 invites.
+
+Got something to bring up or share? Review how to get a topic or presentation
+added to the Agenda on our [process](governance/process.md#getting-on-the-agenda) page.
 
 ### Zoom Meeting Details
 
@@ -127,6 +135,7 @@ helping to organize!) a gathering. Create
 a [github issue](https://github.com/cncf/tag-security/issues/new) for an event
 and add to list below:
 
+<!-- markdownlint-disable-next-line MD013 -->
 - [Cloud Native SecurityCon](https://events.linuxfoundation.org/cloudnativesecuritycon-north-america/) North America, Feb. 1-2 2023
 
 [Past events](past-events.md)
@@ -207,6 +216,8 @@ the project and its risk profile.
 
 Facilitator: Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)),
 New York University
+
+Facilitator: Matthew Giassa ([@Iaxes](https://github.com/iaxes)), Cisco
 
 Co-chair representative: @lumjjb
 
