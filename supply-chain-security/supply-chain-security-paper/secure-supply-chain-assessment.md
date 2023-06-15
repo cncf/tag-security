@@ -28,7 +28,7 @@ yourself:
 
 -   Do you enforce review and approval of contributions prior to merging?
 
--   Are branch protection rules in place and enforced?
+-   Are branch protection rules in enforced?
 
 -   Are pull requests rubber stamped before code is pushed to protected branches? 
 
