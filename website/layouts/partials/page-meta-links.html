@@ -1,0 +1,37 @@
+{{ $path := "" }}
+{{ with .File }}
+  {{ $path = .Path }}
+{{ else }}
+  {{ $path = .Path }}
+{{ end }}
+{{ $pathFormatted := replace $path "\\" "/" }}
+{{- $prefix := index (split $path "/") 0 -}}
+{{- $github := index ($.Site.Param "github") $prefix -}}
+{{ if not $github }}{{- $github = ($.Site.Param "github") -}}{{ end }}
+{{ if $github }}
+{{ $gh_repo := index $github "repo" }}
+{{ $gh_subdir := index $github "subdir" }}
+{{ $gh_project_repo := index $github "project_repo" }}
+{{ $gh_branch := (default "main" (index $github "branch")) }}
+{{ if $gh_repo }}
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+{{ $gh_repo_path := printf "%s/content/%s" $gh_branch $pathFormatted }}
+{{ if $gh_subdir }}
+{{ $gh_repo_path = printf "%s/%s/content/%s" $gh_branch $gh_subdir $pathFormatted }}
+{{ end }}
+{{ $editURL := printf "%s/edit/%s" $gh_repo $gh_repo_path }}
+{{ $createURL := printf "%s/edit/%s" $gh_repo $gh_repo_path }}
+{{ $issuesURL := printf "%s/issues/new?title=%s" $gh_repo (htmlEscape $.Title )}}
+{{ $newPageStub := resources.Get "stubs/new-page-template.md" }}
+{{ $newPageQS := querify "value" $newPageStub.Content "filename" "change-me.md" | safeURL }}
+{{ $newPageURL := printf "%s/new/%s?%s"  $gh_repo $gh_repo_path $newPageQS }}
+
+<a href="{{ $editURL }}" target="_blank"><i class="fa fa-edit fa-fw"></i> {{ T "post_edit_this" }}</a>
+<a href="{{ $issuesURL }}" target="_blank"><i class="fab fa-github fa-fw"></i> {{ T "post_create_issue" }}</a>
+{{ if $gh_project_repo }}
+{{ $project_issueURL := printf "%s/issues/new" $gh_project_repo }}
+<a href="{{ $project_issueURL }}" target="_blank"><i class="fas fa-tasks fa-fw"></i> {{ T "post_create_project_issue" }}</a>
+{{ end }}
+</div>
+{{ end }}
+{{ end }}

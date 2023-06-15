@@ -42,13 +42,13 @@ assessment, exceeding the bandwidth of the group:
 1. TOC requests prioritization of a specific project.
     * TOC request will not interrupt an ongoing assessment.
     * TOC requests may jump the prioritized queue of projects waiting for an assessment.
-2. Projects that have received a CNCF Security Audit will be reviewed within a
+2. Projects that have received a CNCF Security Audit will be assessed within a
    year of audit. (For future audits, the security assessment will be a
    pre-condition to the audit.)
-3. CNCF Projects that request a review (or invited by TAG members), prioritized
+3. CNCF Projects that request a TSSA (or invited by TAG members), prioritized
    by project maturity (e.g. graduated projects will be highest priority, then
    incubated projects, then sandbox).
-4. Non-CNCF Projects that request a review (or invited by TAG members).
+4. Non-CNCF Projects that request a TSSA (or invited by TAG members).
 
 The Security Assessment Facilitator, in collaboration with the named chair, has
 the discretion to adjust priority in order to streamline the process, or per
@@ -60,7 +60,7 @@ TAG-Security reports at TOC meetings.
 A project may be accepted into the assessment queue, either by the Security Assessment
 Facilitator with concurrence from one (1) co-chair, or by two (2) co-chairs.  This concurrence
 is given by commenting on an issue proposing that the project be added to the assessment
-queue.  If at any time, the project requesting review ceases communicating, the
+queue.  If at any time, the project requesting assessment ceases communicating, the
 Security Assessment Facilitator may remove the project from the queue with
 notification to the co-chairs.  The Security Assessment Facilitator will update
 the corresponding issue, prior to closing the project's request.
@@ -82,7 +82,7 @@ is clearly communicated to the group (typically by adding a note to the
 relevant github issue).
 
 Each assessment is represented as a github issue, where the description field
-follows a [template](/.github/ISSUE_TEMPLATE/joint-review.md)
+follows a [template](/.github/ISSUE_TEMPLATE/joint-assessment.md)
 
 The queue is visible through [github project](https://github.com/cncf/tag-security/projects/2)
 

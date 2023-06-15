@@ -1,0 +1,37 @@
+// buttons.
+.button-reset {
+	background: none;
+	border: none;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: block;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+	width: unset;
+}
+
+.cncf-button {
+	color: $white;
+	background-color: $black;
+	border: 0;
+	border-radius: 3px;
+	box-shadow: none;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	line-height: 105%;
+	margin: 0;
+	max-width: 100%;
+	padding: 12px 40px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.25s ease-out;
+	word-break: break-word;
+	&:hover {
+		background-color: $gray-700;
+	}
+}

@@ -1,0 +1,28 @@
+<div class="section-index mt-5">
+    {{ $pages := (where .Site.Pages "Section" .Section).ByWeight }}
+    {{ $parent := .Page }}
+    {{ if not $parent.Params.list_pages }}
+    {{/* If list_pages is not true we don't show a list of subpages */}}
+    {{ else if $parent.Params.simple_list }}
+    {{/* If simple_list is true we show a bulleted list of subpages */}}
+        <ul>
+            {{ range $pages }}
+                {{ if eq .Parent $parent }}
+                    <li><a href="{{ .RelPermalink }}">{{- .Title -}}</a></li>
+                {{ end }}
+            {{ end }}
+        </ul>
+    {{ else }}
+    {{/* Otherwise we show a nice formatted list of subpages with page descriptions */}}
+        {{ range $pages }}
+            {{ if eq .Parent $parent }}
+                <div class="mt-4">
+                    <h4 class="mb-3">
+                        <a href="{{ .RelPermalink }}">{{- .Title -}}</a>
+                    </h4>
+                    <p class="mb-5">{{ .Description | markdownify }}</p>
+                </div>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+</div>
