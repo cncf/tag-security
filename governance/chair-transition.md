@@ -42,7 +42,7 @@ process](chair-proposal-process.md) with specific items that must be completed.
     * [ ] Update codeowners, github settings, README (TOC Liaisons and chairs
       have admin access, tech leads have push access).
     * [ ] Link to official vote email list message in PR descriptions
-  * [ ] [TOC Repo update](https://github.com/cncf/toc/tree/main/tags) - submit PR
+  * [ ] [TOC Repo update](https://github.com/cncf/toc/blob/main/tags/security.md)
   * [ ] [Service Desk Access](https://cncfservicedesk.atlassian.net/servicedesk/customer/portal/1)
   * [ ] Update email lists
     * [ ] update email list membership
@@ -52,6 +52,19 @@ process](chair-proposal-process.md) with specific items that must be completed.
   * [ ] YouTube Channel
     * [ ] invite new chairs (if needed)
     * [ ] give "owners" permission
+
+## De-provisioning
+
+Reverse all above transfer steps to TL level, and in addition:
+
+* [ ] Transfer ownership of all documents
+  * [ ] Co-Chairs meeting notes
+  * [ ] Leadership meeting notes,
+  * [ ] TOC Liaison meeting notes
+  * [ ] Credentials doc
+* [ ] Transfer ownership of calendar invites
+  * [ ] Co-chairs meeting
+  * [ ] Leadership meeting
 
 ## Announce
 

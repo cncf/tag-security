@@ -1,0 +1,105 @@
+/**
+* Project Variables
+*
+* This theme is used to overide the variables in themes/docsy/assets/scss/_variables.scss
+*
+* It's loaded BEFORE all other styles.
+*
+* Custom theme styles should be placed in assets/scss/_styles_project.scss - not in this file.
+*
+*/
+
+$primary: #fff;
+$pink: #d62293;
+$black: #000;
+$primary-300: #c53490;
+$link-color: $pink;
+$link-hover-color: $pink;
+$gray-700: #747474;
+$gray-900: #464646;
+$body-color: #000;
+$td-sidebar-tree-root-color: $primary;
+$td-sidebar-bg-color: #f4f4f4;
+$navbar-dark-color: $black;
+$navbar-dark-active-color: $black;
+$navbar-dark-disabled-color: $black;
+$navbar-dark-hover-color: $gray-900;
+$headings-font-weight: 700;
+$link-hover-decoration: underline;
+$td-enable-google-fonts: false;
+
+// font-stack.
+$font-family-base: 'Clarity City', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, Roboto,
+	Ubuntu, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+@font-face {
+	font-family: 'Clarity City';
+	font-weight: 100;
+	font-style: normal;
+	src: local('ClarityCity-Thin'), local('Clarity City'), url('/fonts/ClarityCity-100.woff2') format('woff2'),
+		url('/fonts/ClarityCity-100.woff') format('woff'), url('/fonts/ClarityCity-100.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Clarity City';
+	font-weight: 200;
+	font-style: normal;
+	src: local('ClarityCity-ExtraLight'), local('Clarity City'), url('/fonts/ClarityCity-200.woff2') format('woff2'),
+		url('/fonts/ClarityCity-200.woff') format('woff'), url('/fonts/ClarityCity-200.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Clarity City';
+	font-weight: 300;
+	font-style: normal;
+	src: local('ClarityCity-Light'), local('Clarity City'), url('/fonts/ClarityCity-300.woff2') format('woff2'),
+		url('/fonts/ClarityCity-300.woff') format('woff'), url('/fonts/ClarityCity-300.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Clarity City';
+	font-weight: 400;
+	font-style: normal;
+	src: local('ClarityCity-Regular'), local('Clarity City'), url('/fonts/ClarityCity-400.woff2') format('woff2'),
+		url('/fonts/ClarityCity-400.woff') format('woff'), url('/fonts/ClarityCity-400.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Clarity City';
+	font-weight: 500;
+	font-style: normal;
+	src: local('ClarityCity-Medium'), local('Clarity City'), url('/fonts/ClarityCity-500.woff2') format('woff2'),
+		url('/fonts/ClarityCity-500.woff') format('woff'), url('/fonts/ClarityCity-500.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Clarity City';
+	font-weight: 600;
+	font-style: normal;
+	src: local('ClarityCity-SemiBold'), local('Clarity City'), url('/fonts/ClarityCity-600.woff2') format('woff2'),
+		url('/fonts/ClarityCity-600.woff') format('woff'), url('/fonts/ClarityCity-600.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Clarity City';
+	font-weight: 700;
+	font-style: normal;
+	src: local('ClarityCity-Bold'), local('Clarity City'), url('/fonts/ClarityCity-700.woff2') format('woff2'),
+		url('/fonts/ClarityCity-700.woff') format('woff'), url('/fonts/ClarityCity-700.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Clarity City';
+	font-weight: 800;
+	font-style: normal;
+	src: local('ClarityCity-ExtraBold'), local('Clarity City'), url('/fonts/ClarityCity-800.woff2') format('woff2'),
+		url('/fonts/ClarityCity-800.woff') format('woff'), url('/fonts/ClarityCity-800.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Clarity City';
+	font-weight: 900;
+	font-style: normal;
+	src: local('ClarityCity-Black'), local('Clarity City'), url('/fonts/ClarityCity-900.woff2') format('woff2'),
+		url('/fonts/ClarityCity-900.woff') format('woff'), url('/fonts/ClarityCity-900.ttf') format('ttf');
+}

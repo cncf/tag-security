@@ -112,7 +112,7 @@ process](tech-lead-proposal-process.md).
 After a [Chair](#role-of-chairs) finishes their term, they transition into a role
 of Chair Emeritus. This allows previous Chairs to continue to chime in and provide
 valuable context and contributions to the TAG. A Chair Emeritus can assume a role
-of a [technical lead](#roles-of-technical-leads), but in doing so, must be active
+of a [technical lead](#role-of-technical-leads), but in doing so, must be active
 in communicating with the co-chairs and technical leads (i.e. participating in the
 chair/TL slack and meetings). A Chair Emeritus has the same permissions/access as
 technical leads.
@@ -126,16 +126,16 @@ Project Leads are nominated and approved by the following process:
 
 1. Project Lead actively participates in the group, initiates the proposal or
    volunteers to take on a project that has been prioritized by the group.
-1. A Chair or TL nominates a candidate, or requests the community to
+2. A Chair or TL nominates a candidate, or requests the community to
    nominate in a slack thread.
-1. The nomination is communicated via a pull request annotating the list
+3. The nomination is communicated via a pull request annotating the list
    of members in the [TAG README](/README.md) with a link to the issue tracking
    the project or on the issue tracking the project if a README is not yet made.
    The nomination is typically open for a week (but may be shorter with LGTM
    of at least two Chairs).
-1. The issue is updated with the assignment of the project lead as "assignee"
+4. The issue is updated with the assignment of the project lead as "assignee"
    alongside the TAG Leadership member.
-1. Project Leads will be given the OWNER role of the directory or sub-directory
+5. Project Leads will be given the OWNER role of the directory or sub-directory
    for their team's activities in order to empower merge/approve.
 
 ### Ongoing projects
@@ -145,11 +145,76 @@ given the OWNER role of the directory or sub-directory along with 1 other
 nominated individual to ensure continuity in review and ongoing support of
 the project.
 
+  The nomination is typically open for a week (but may be shorter with LGTM
+  of at least two Chairs).
+  1. The issue is updated with the assignment of the project lead as "assignee"
+  alongside the TAG Leadership member.
+  1. Project Leads will be given the OWNER role of the directory or sub-directory
+  for their team's activities in order to empower merge/approve.
+
+This role may be subject to [lead rotations](#lead-rotations).
+
 Depending on the expected length of the project, Project Leads may be assigned
 as OWNERS of the project directory in this repository to help facilitate and
 moderate new content to the project.
 
-## Role of team leads
+### Duties of a project lead
+
+Project leads are responsible for the following:
+
+- Adhering to the [project process](https://github.com/cncf/tag-security/blob/main/governance/process.md)
+- Proposing and refining the project scope, goal and schedule
+- Ensure smooth day-to-day operations of the project. This includes:
+  - Ensuring meetings are scheduled, announced and recorded
+  - Facilitation of meetings, ensuring minutes are recorded
+- Ensure progress and status reports are communicated to the STAG
+representative of the project
+- Resolving conflict within the project and escalating to leadership
+when required
+- Outreach and recruitment for the project
+- Provide retrospective of a project to the STAG
+
+## Role of STAG representatives
+
+STAG representatives are leadership executive sponsors of a project. The
+STAG representative acts as a point of liaison with the STAG leadership team
+and takes on a role of mentorship for the project lead(s).
+
+STAG representatives are required to be part of the STAG leadership team.
+This includes co-chairs, technical leads and co-chair emeritus roles.
+A STAG representative may be of capacity of an individual contributor but
+cannot be the project lead of the same project they are representing.
+
+STAG representatives are appointed through the following process:
+
+- A member of the leadership indicates that they would like to be a STAG
+representative on a project by:
+  - editing the issue's "STAG Representative" field to their github ID.
+  - setting the issue milestone to the corresponding milestone created for
+  their github ID.
+- STAG representatives may change based on discretion of co-chairs.
+
+### Duties of a STAG representative
+
+STAG representatives are responsible for the following:
+
+- Reporting back to the leadership on the status of the project, indicating
+when the project requires external governance help. For example, these
+include:
+  - Project is understaffed or suffers from rampant scope creep.
+  - Project is inactive and needs to be discontinued.
+  - Inter-personal issues within leads and/or members causing disruption.
+- Provide feedback to project lead to whether the current scope and operation
+of a project is in line with the vision and governance of the STAG.
+- Mentorship of project leads on matters of leadership and governance process.
+- Provide privilege facilities that a project lead does not have access to.
+Examples are:
+  - Creating a ServiceNow ticket with the CNCF for design help
+  - Uploading of meeting recordings to youtube
+  - Approval of messages to STAG mailing list
+
+## Role of Team Leads
+
 
 Team Leads lead larger streams of work that require sustained effort and
 coordination and remain ongoing.
@@ -178,6 +243,8 @@ Team Leads are nominated and approved by the following process:
 1. A sub-directory with a README is created with details on how to get involved.
 1. Team Leads will be given the OWNER role of the directory or sub-directory for
    their team's activities in order to empower merge/approve.
+
+This role may be subject to [lead rotations](#lead-rotations).
 
 ## TOC liaison
 
@@ -208,6 +275,7 @@ New roles in this section are typically defined after someone has acted in
 that role for some time informally, then proposed as an on-going role by Pull
 Request which must be approved by a majority of Chairs.  Process clarifications
 are welcome and PRs can be approved by any single Chair.
+
 
 ### Security assessment facilitator
 
@@ -342,3 +410,40 @@ additional roles and may be required to have specific expertise. For visibility,
 these additional project roles are listed below:
 
 * [Security Reviewers](../assessments/guide/security-reviewer.md)
+
+## Lead rotations
+
+For certain facilitator roles, teams and projects that are ongoing, leadership
+rotations should be carried out every 6 months. This is to:
+
+* Ensure leadership continuity of projects and passing on of tribal knowledge
+* Ensure diverse perspective/breadth of knowledge
+* Prevention of commitment bias in projects
+* Provide more leadership opportunities for more community members
+
+A facilitator role/project lead position should be a candidate for rotation if the
+project/facilitation task:
+
+* Exists for more than 6 months
+* Involves more than 1 person
+
+### Rotation process
+
+The rotation process should start at least 2 weeks before a rotation is due.
+
+1. STAG representative will get feedback on potential candidates from current
+   leads and through nominations from the STAG leadership
+1. Leads should recommend a number of potential candidates based on the
+   current number of lead positions
+1. Based on the nominations, STAG leadership will decide on the next lead
+   rotation
+1. STAG representative will reach out to nominated leads for acceptance of new
+   role
+1. In the event that no rotation candidates are available, due to lack of
+   nominations or unavailability of nominees, the current rotation cycle will be
+   skipped. However, reconsideration/restructuring of the project or work will
+   be raised and discussed between STAG co-chairs.
+1. Validation that proper transition has happened will be done by STAG representative.
+1. If there are multiple leads on a project, STAG leadership will work with
+   current leads to decide how many leads should be rotated.
+
