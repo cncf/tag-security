@@ -31,12 +31,15 @@ reviewers:
       - anvega
       - lumjjb
       - SantiagoTorres
+      - lirantal
     whitepaper-reviewers:
       - PushkarJ
       - ragashreeshekar
       - TheFoxAtWork
       - achetal01
       - ashutosh-narkar
+    controls-reviewers:
+      - JonZeolla
 
 files:
   # Keys are glob expressions.
@@ -49,6 +52,8 @@ files:
     - whitepaper-reviewers #group
   'supply-chain-security/**':
     - supply-chain-security-reviewers #group
+  'cloud-native-controls/**':
+    - controls-reviewers #group
 
 options:
   ignore_draft: true #draft PRs are ignored

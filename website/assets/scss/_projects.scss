@@ -1,0 +1,34 @@
+// project social links
+ul.project-links {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 1rem;
+	margin-bottom: 4rem;
+	@media (min-width: 1000px) {
+		margin-bottom: 4rem;
+	}
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100% !important;
+	li {
+		margin-bottom: 1em;
+		&:not(:last-child) {
+			margin-right: 1em;
+		}
+	}
+
+	img {
+		color: #000;
+		height: 32px;
+		width: auto;
+		margin-right: 1em;
+	}
+}
+
+img.project-logo {
+	max-height: 110px;
+	max-width: 110px;
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
