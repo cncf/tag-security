@@ -1,0 +1,10 @@
+{{ partial "page-meta-links.html" . }}
+
+{{ if not .Params.notoc }}
+{{ with .TableOfContents }}
+{{ if ge (len .) 200 }}
+<div class="ml-2 mt-4 mb-2 toc-header">Page Contents</div>
+{{ . }}
+{{ end }}
+{{ end }}
+{{ end }}
