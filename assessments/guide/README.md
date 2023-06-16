@@ -2,10 +2,10 @@
 
 To provide the CNCF’s TOC with effective information about the security of
 different projects, this document outlines the procedure by which a project
-should be reviewed.
+should be assessed during a TAG-Security Security Assessment (TSSA).
 
 * [Roles](#roles)
-* [Security review package steps](#security-review-package-steps)
+* [TSSA package steps](#TSSA-package-steps)
   * [New projects](#new-projects)
     1. [Self-assessment](#complete-a-self-assessment)
     2. [Create issue](#create-a-presentation-issue)
@@ -14,15 +14,15 @@ should be reviewed.
   * [Growing projects](#growing-projects)
     1. [Create issue](#create-tracking-issue)
     2. [Draft joint
-       review](#project-leverages-self-assessment-to-draft-joint-review)
+       assessment](#project-leverages-self-assessment-to-draft-joint-assessment)
     3. [Reviewers
-       assigned](#project-provides-the-joint-review-and-reviewers-are-assigned)
+       assigned](#project-provides-the-joint-assessment-and-reviewers-are-assigned)
     4. [Conflict of interest](#conflict-of-interest-statement-and-review)
     5. [Clarifying questions](#clarifying-questions-phase)
-    6. [Review](#security-review-with-optional-hands-on-review)
+    6. [Assessment](#security-assessment-with-optional-hands-on-assessment)
     7. [Presentation](#presentation)
     8. [Final summary](#final-summary)
-    9. [Survey](#post-review-survey)
+    9. [Survey](#post-assessment-survey)
 * [Additional process notes](#additional-process-notes)
 
 ## Roles
@@ -30,9 +30,9 @@ should be reviewed.
 * [project lead](project-lead.md)
 * [security reviewers](security-reviewer.md)
 
-## Security review package steps
+## TSSA package steps
 
-The security review package is developed over time as projects grow in maturity
+The TSSA package is developed over time as projects grow in maturity
 and advance through the CNCF.  The below section breaks the creation of the
 package into steps that mirror the [current TOC process
 stages](https://github.com/cncf/toc/tree/main/process).
@@ -78,38 +78,38 @@ innovators as their sole user base.
 
 Note: Responsible roles for specific items are in **bold**. If an incubation
 project did not complete a self-assessment during sandbox, they are recommended
-to start with the self-assessment before pursing joint review.
+to start with the self-assessment before pursing joint assessment.
 
-#### [Create tracking issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=triage-required&template=joint-review.md&title=%5BSecurity+Review%5D+Project+Name)
+#### [Create tracking issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=triage-required&template=joint-assessment.md&title=%5BTSSA%5D+Project+Name)
 
-The tracking issue serves to initiate the joint-reviews.  It provides an initial
- set of information to assist TAG-Security in  prioritizing the joint review as
+The tracking issue serves to initiate the joint-assessments.  It provides an initial
+ set of information to assist TAG-Security in  prioritizing the joint assessment as
 well as provide potential reviewers with a central location to manage the
 effort.
 
 * Issue may be a request from **TOC liaison** or **project** itself
-* [**Security review
- facilitator**](https://github.com/cncf/tag-security/blob/main/governance/roles.md#facilitation-roles)
+* [**Security Assessment
+Facilitator**](https://github.com/cncf/tag-security/blob/main/governance/roles.md#facilitation-roles)
  with help from the **technical leads** and **co-chairs** if appropriate, will
-determine if the project is ready for joint-review.  If ready, a channel will be
+determine if the project is ready for joint-assessment.  If ready, a channel will be
 created to coordinate the activities.
 
-#### Project leverages self-assessment to draft [joint review](joint-review.md)
+#### Project leverages self-assessment to draft [joint assessment](joint-assessment.md)
 
 The project uses the self-assessment created from the sandbox phase to draft the
-joint review.  The joint review expands upon content of the self-assessment and
-provides the **reviewers** with a central starting point in reviewing the
+joint assessment.  The joint assessment expands upon content of the self-assessment and
+provides the **reviewers** with a central starting point in assessing the
 current security stature of the project.
 
-#### Project provides the joint review and reviewers are assigned
+#### Project provides the joint assessment and reviewers are assigned
 
 The project provides the reviewers with security relevant information about
- their project.  The joint review can include links to external documents and
+ their project.  The joint assessment can include links to external documents and
  sources within the project's repository or website to provide additional
 details or reference where a process is kept.
 
 * **[Project lead](project-lead.md)** responds to the issue with draft document
-     (see [joint review](joint-review.md))
+     (see [joint assessment](joint-assessment.md))
 * Issue assigned to **lead [security reviewer](security-reviewer.md)** who will
      recruit at least one additional reviewer, if one is not already assigned,
 and facilitate the process.
@@ -121,7 +121,7 @@ required to provide a statement indicating all hard and soft conflicts they
 maintain prior starting the security review.
 
 * **Lead security reviewer and additional security reviewers** comment any
-     conflict of interest in the project's review ticket using the below format:
+     conflict of interest in the project's assessment ticket using the below format:
 
 | Hard Conflicts | Y/N |
 | :------------- | :-: |
@@ -139,7 +139,7 @@ maintain prior starting the security review.
 
 * The **lead security reviewer** will confirm all conflicts are specified and
      escalate any conflict concerns, hard conflicts or multiple soft conflicts,
-to the **security review facilitator** for concurrence to proceed or if a
+to the **Security Assessment Facilitator** for concurrence to proceed or if a
 reviewer is ineligible to participate.  Specific instructions are found on the
 [security reviewer](security-reviewer.md) page.
 
@@ -149,34 +149,34 @@ The clarifying questions phase is the responsibility of the **Lead security
 reviewer** to ensure it is complete.  They may delegate this task to another
 reviewer. This phase enables security reviewers to focus on the security and
 technical details of the project.  The clarifying question phase is conducted
-prior to the *3 week* time frame for reviews.
+prior to the *3 week* time frame for a TSSA.
 
-* **Lead security reviewer or their designee** will perform initial, clarifying
-     review to:
+* **Lead security reviewer or their designee** will perform an initial, clarifying
+     assessment to:
   * Verify completeness
   * Ask for clarifications
   * Ensure terms are defined
   * Ensure concepts introduced are explained with context
   * Provide quick feedback
 
-#### Security review with optional hands-on review
+#### Security assessment with optional hands-on assessment
 
-The security review provides time for the security reviewers and the project to
+The TSSA process provides time for the security reviewers and the project to
 address security and technical details associated with the project.  Information
-created or received out of the review is leveraged in finalizing the joint
-review and creating the project's security review README file.
+created or received out of the assessment is leveraged in finalizing the joint
+assessment and creating the project's TSSA package in the README file.
 
 If the security reviewers include individuals capable of performing a hands-on
-review, the hands-on review is included in this step.
+assessment, the hands-on assessment is included in this step.
 
-* **Project** posts their document to the project security review channel,
+* **Project** posts their document to the project security assessment channel,
      allowing at least one week for review prior to Q&A
-* **Security reviewers** review the joint-review document, links, and other
+* **Security reviewers** review the joint-assessment document, links, and other
      materials provided by the project and provide  comments and questions
   * It is highly recommended that security reviewers familiarize themselves with
         the project's repo and docs if available
 * **Security reviewers and project lead/POCs** ensure all reviewer questions,
-     comments, and feedback are addressed and finalize the joint review
+     comments, and feedback are addressed and finalize the joint assessment 
 * **Lead security reviewer or their designee,** with the assistance of the
 **security reviewers** create a [draft summary
      document](joint-readme-template.md) to capture existing comments, feedback,
@@ -194,11 +194,11 @@ questions and feedback to the reviewers and project.
 
 #### Final summary
 
-The final summary provides a cursory review of the project, background, summary
-of the joint review, and recommendations to the CNCF, the project, and other
+The final summary provides a cursory assessment of the project, background, summary
+of the joint assessment, and recommendations to the CNCF, the project, and other
 recommendations of note.  The final summary should also list the version or
-release the joint review covered to better enable tracking for updates of the
-review.
+release the joint assessment covered to better enable tracking for updates of the
+TSSA package.
 
 * **Lead security reviewer** creates a branch labeled WIP and provides branch
      information to additional reviewers.
@@ -209,22 +209,22 @@ review.
 * Either **project lead or reviewers** may request further WG discussion
 * **Project lead** prepares a PR to /assessments/projects/project-name/ when all
      comments, feedback, and recommendations are incorporated for the joint
-review and presentation slides.
+assessment and presentation slides.
 * PR approval of at least 1 **co-chair**, alongside other **reviewers'**
 approvals, is required before merging any artifacts.
 
-#### [Post-review survey](review-survey.md)
+#### [Post-assessment survey](assessment-survey.md)
 
 The should be completed by the **reviewers**, **project lead**, and other
-members of the review.  Once complete the survey may be shared directly to the
-facilitator, technical leads, and co-chairs or be part of the PR into the
+members of the TSSA.  Once complete the survey may be shared directly to the
+Security Assessment Facilitator, technical leads, and co-chairs or be part of the PR into the
 /assessments/projects/project-name folder.
 
 ## Additional Process Notes
 
 Iteration is expected; however, we expect quick turnaround (at most a week). In
 rare cases unrelated issues can unexpectedly interrupt the process and it may be
-appropriate to address specific concerns rather than continuing with the review.
+appropriate to address specific concerns rather than continuing with the TSSA.
 We encourage open communication between project lead and security reviewers:
 
 * At any time, the project lead may request additional time to respond to
