@@ -35,7 +35,7 @@ you to go through the below resources
 for your understanding:
 
 - [How to submit contributions](https://opensource.guide/how-to-contribute/#how-to-submit-a-contribution)
-- [Collaborating with pull requests](https://docs.github.com/en/github/collaborating-with-pull-requests)
+- [Collaborating with pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests)
 
 Our PR also follows a particular writing
 style. Checkout the [style guide](https://github.com/cncf/tag-security/blob/main/CONTRIBUTING/writing-style.md).
@@ -54,10 +54,7 @@ You can also reach out on our slack [#tag-security-governance](https://cloud-nat
 ### You can reach out to our members
 
 Our members list can be found
-[here](https://github.com/cncf/tag-security#members).
-
-## After PR merge
-
-Once you have successfully get your
-first PR merged, you can add your name
-to our Members section in [README.md](https://github.com/cncf/tag-security#members).
+[here](https://github.com/cncf/tag-security#members). It contains only chairs
+and technical leads. To see a list of all contributors, see the
+[Insights](https://github.com/cncf/tag-security/graphs/contributors) tab
+on GitHub.

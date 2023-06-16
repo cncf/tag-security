@@ -1,0 +1,134 @@
+// Header navigation bar.
+.td-navbar {
+	background: hsla(0, 0%, 99%, 0.98);
+	padding-left: 0;
+	padding-right: 0;
+	@media (min-width: 768px) {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		min-height: 5rem;
+		padding: 0 2rem 0 0;
+	}
+
+	@media (max-width: 500px) {
+		padding-bottom: 0;
+	}
+	&:after {
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), transparent);
+		content: '';
+		height: 20px;
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		z-index: 1;
+	}
+	// Logo area.
+	.navbar-brand {
+		@media (min-width: 768px) {
+			padding-top: 0;
+			padding-bottom: 0rem;
+			margin-left: 2rem;
+		}
+		.navbar-logo {
+			display: block;
+			svg {
+				height: 40px;
+			}
+		}
+	}
+
+	// Main nav bar.
+	.td-navbar-nav-scroll {
+		margin-top: 0;
+		@media (min-width: 500px) {
+			overflow: visible;
+		}
+		.navbar-nav {
+			padding-bottom: 0;
+			display: flex;
+			align-items: center;
+			align-content: center;
+			@media (max-width: 500px) {
+				padding-bottom: 0;
+				line-height: 3;
+				background-image: linear-gradient(to right, hsla(0, 0%, 99%, 0.98), hsla(0, 0%, 99%, 0.98)),
+					linear-gradient(to right, hsla(0, 0%, 99%, 0.98), hsla(0, 0%, 99%, 0.98)),
+					linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0)),
+					linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0));
+				background-position: left center, right center, left center, right center;
+				background-repeat: no-repeat;
+				background-color: hsla(0, 0%, 99%, 0.98);
+				background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
+				background-attachment: local, local, scroll, scroll;
+			}
+
+			@media (min-width: 500px) {
+				overflow: visible;
+			}
+
+			.nav-item {
+				.nav-link {
+					font-weight: 600;
+					padding-right: 0.3rem;
+					padding-left: 0.3rem;
+					@media (max-width: 500px) {
+						padding: 0 !important;
+					}
+					@media (min-width: 768px) {
+						letter-spacing: 0.02em;
+					}
+					span {
+						position: relative;
+						@media (min-width: 501px) {
+							padding-left: 6px;
+							padding-right: 6px;
+						}
+						&:after {
+							content: '';
+							position: absolute;
+							left: 0;
+							right: 0;
+							bottom: -32px;
+							@media (max-width: 991px) {
+								bottom: -35px;
+							}
+							@media (max-width: 767px) {
+								bottom: -23px;
+							}
+							@media (max-width: 500px) {
+								bottom: -12px;
+							}
+							height: 4px;
+							display: block;
+							width: 100%;
+							background-color: transparent;
+						}
+					}
+					&.active span:after {
+						background-color: #00c3a0a6;
+					}
+				}
+				// Topnav dropdown.
+				&.dropdown {
+					margin-left: 1rem;
+					.dropdown-item {
+						font-weight: 600;
+						&:hover,
+						&:focus {
+							color: $black;
+							text-decoration: none;
+						}
+					}
+				}
+				// Adds some spacing to the end of the mobile menu when it overflows.
+				@media (max-width: 500px) {
+					&:last-child {
+						.nav-link span {
+							margin-right: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

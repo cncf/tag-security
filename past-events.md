@@ -1,11 +1,11 @@
 # Past Events
 
-<!— cSpell:ignore raycolline —>
-<!— cSpell:ignore tsandall —>
-<!— cSpell:ignore timothyhinrichs —>
-<!— cSpell:ignore sreetummidi —>
+<!-- cSpell:ignore raycolline -->
+<!-- cSpell:ignore tsandall -->
+<!-- cSpell:ignore timothyhinrichs -->
+<!-- cSpell:ignore sreetummidi -->
 
-A list of past KubeCon/Cloud Native Security Day events an be found [here](cloud_native_security.md)
+A list of past KubeCon/Cloud Native SecurityCon events an be found [here](cloud_native_security.md)
 
 ## DockerCon, San Francisco, CA, Apr 30 - May 2, 2019
 

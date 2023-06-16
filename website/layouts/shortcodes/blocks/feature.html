@@ -1,0 +1,11 @@
+{{ $icon := .Get "icon" | default "fa-lightbulb" }}
+{{ $url_text := .Get "url_text" }}
+<!-- Feature Block  -->
+<div class="feature-block col-lg-6 text-center">
+  <div class="mb-3 h1">
+    <i class="{{ if not (or (hasPrefix $icon "fas ") (hasPrefix $icon "fab ")) }}fas {{ end }}{{ $icon }}"></i>
+  </div>
+  <h4 class="h3">{{ .Get "title" | markdownify }}</h4>
+  <p class="mb-0">{{ .Inner }}</p>
+  {{ with .Get "url" }}<p><a href="{{ . }}">{{ with $url_text }}{{ $url_text }}{{ else }}{{ T "ui_read_more" }}…{{ end }}</a></p>{{ end }}
+</div>

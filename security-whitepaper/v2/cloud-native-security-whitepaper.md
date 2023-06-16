@@ -20,14 +20,7 @@
 
 **Version 1 (Nov 2020)**
 
-* **Contributors**: Aradhna Chetal - [TIAA](http://tiaa.org/), Brandon Lum - [IBM](https://www.ibm.com/) , Chase Pettet
-  - [Mirantis](https://www.mirantis.com/) (Chase.Pettet@mirantis.com), Emily Fox
-  - [US National Security Agency (NSA)](https://www.nsa.gov/), Gadi Naor -(Alcide), Harmeet
-  Singh - [IBM](https://www.ibm.com/), Jeff Lombardo - Independent, Jeyappragash JJ
-  - [Tetrate IO](https://www.tetrate.io/), Pushkar Joglekar - [Visa](https://visa.com/), Rowan Baker & Andrew Martin
-  - [ControlPlane](https://control-plane.io/), Trishank Karthik Kuppusamy - [Datadog](https://www.datadoghq.com/), Vinay
-  Venkataraghavan - [Prisma Cloud (Palo Alto Networks)](https://www.paloaltonetworks.com/prisma/cloud), Wayne Haber
-  - [GitLab](https://about.gitlab.com/), Mark Bower, Alex Chircop - StorageOS
+* **Contributors**: Aradhna Chetal ([TIAA](http://tiaa.org/)), Brandon Lum ([IBM](https://www.ibm.com/)) , Chase Pettet ([Mirantis](https://www.mirantis.com/) (Chase.Pettet@mirantis.com)), Emily Fox ([US National Security Agency (NSA)](https://www.nsa.gov/)), Gadi Naor (Alcide), Harmeet Singh ([IBM](https://www.ibm.com/)), Jeff Lombardo (Independent), Jeyappragash JJ ([Tetrate IO](https://www.tetrate.io/)), Pushkar Joglekar ([Visa](https://visa.com/)), Rowan Baker & Andrew Martin ([ControlPlane](https://control-plane.io/)), Trishank Karthik Kuppusamy ([Datadog](https://www.datadoghq.com/)), Vinay Venkataraghavan ([Prisma Cloud (Palo Alto Networks)](https://www.paloaltonetworks.com/prisma/cloud)), Wayne Haber ([GitLab](https://about.gitlab.com/)), Mark Bower, Alex Chircop (StorageOS)
 
 * **Reviewers**: @justincappos, @lumjjb, @whaber, @craigbox, @anvega, @magnologan, Alok Raj
   - [XenonStack](https://www.xenonstack.com/) (alok@xenonstack.com), @nyrahul(Accuknox), @ranio1, @lizrice,
@@ -680,7 +673,7 @@ activity and scan monitoring.
 
 Further, workloads will become vulnerable at the time of, or after they are deployed. Organizations should continuously
 scan their environments to detect which workloads are now vulnerable. Understanding the make-up
-or [software bill of materials](https://www.ntia.gov/SBOM) for each workload can help organizations quickly identify
+or [software bill of materials](https://ntia.gov/page/software-bill-materials) for each workload can help organizations quickly identify
 where vulnerabilities lie. Additional information about those vulnerabilities, such as exploit maturity, and vulnerable
 path in use are critical to determining the actual risk to workloads and can help organizations prioritize updates to
 at-risk applications.
@@ -1132,8 +1125,8 @@ is essential to establish encrypted tunnel network policies and provision next-g
 malicious attacks.
 
 Ideally, steps taken to prevent a ransomware attack work as expected, in keeping an organization away from being a
-victim of a successful attack. However, these measures take time to implement though, and while they should make an
-organization harder to compromise and more able to recover from attack, it is not full proof and there are never any
+victim of a successful attack. However, these measures take time to implement, and while they should make an
+organization harder to compromise and more able to recover from attack, it is not foolproof and there are never any
 guarantees.
 
 ##### Ransomware Incident Response
@@ -1154,7 +1147,7 @@ can investigate the incident to find artifacts that will provide crucial informa
 your IT infrastructure/cloud environment. You will also want to know if they moved laterally throughout the environment
 and what data the threat actor gained access to.
 
-Through this stage, you will also if you do not already have an Endpoint Detection and Response solution in place, you
+Through this stage, if you do not already have an Endpoint Detection and Response solution in place, you
 will want to deploy one as quickly as possible. This will give you visibility to your endpoints to detect, quarantine,
 or kill any suspicious or malicious activity. This way, you can start working on containing the active threats.
 
@@ -1167,8 +1160,8 @@ Next is to eradicate the active threat and confirm the Threat Actor is no longer
 because Threat Actors are known to hold organizations hostage and request greater demands when they realize they still
 have control of the environment.
 
-As soon as you feel comfortable that you have contained the active threat, it appears to be eradicated from your
-IT/Cloud environment. You will now start working on recovery. This next point is crucial to responding to a Ransomware
+As soon as you feel comfortable that you have contained the active threat and it appears to be eradicated from your
+IT/Cloud environment, you will now start working on recovery. This next point is crucial to responding to a Ransomware
 attack and could save you millions of dollars.
 
 It is essential to have a backup program that has been tested and protects your backups. It is recommended that you have
@@ -1320,20 +1313,20 @@ stages of the supply chain.
 
 ##### GitOps<sup>(New in v2)</sup>
 
-GitOps is code-based infrastructure and operational procedure that rely on Git as a source control system. It is an
+GitOps is a code-based infrastructure and operational procedure that relies on Git as a source control system. It is an
 evolution of Infrastructure as Code (IaC) and a DevOps best practice that leverages Git as the single source of truth,
 and centralized control management for creating, updating, and deleting IT system architecture. GitOps allows separating
-deployments from development and use full advantage of the immutable declarative infrastructure. Every element of the
-environment can be deployed as often as needed with the same result, instances are redeployed instead of restoring from
-multiple unique configurations and versions.
+deployments from development and takes full advantage of it's immutable declarative infrastructure. Every element of the
+environment can be deployed as often as needed with the same result, and instances are redeployed instead of restoring
+from multiple unique configurations and versions.
 
-Traditional processes mostly rely on human operational knowledge, expertise, and actions performed manually but in case
-of GitOps all changes are made as interaction with Git repository. Therefore, the Git repository and GitOps process
-become crucial to secure and should be secure by design. Immutability of infrastructure protects from making changes
-from outside the main deployment process and easier to detect and reverse environment changes based on the declarative
-state in the Git repository.
+Traditional processes mostly rely on human operational knowledge, expertise, and actions performed manually but in the
+case of GitOps all changes are made as interactions with a Git repository. Therefore, the Git repository and GitOps
+process become crucial for security and should be secure by design. Immutability of infrastructure protects from
+making changes from outside the main deployment process and makes it easier to detect and reverse environment changes
+based on the declarative state in the Git repository.
 
-Usage of IaC and GitOps increase the overall security of the infrastructure itself by limiting manual operations,
+Usage of IaC and GitOps increases the overall security of the infrastructure itself by limiting manual operations,
 providing an audit of all changes, a declarative single source of truth, policy enforcement via the necessary controls
 and gates on processes to ensure that security requirements are met. Using GitOps tools and technologies, organizations
 can mitigate different vectors of attacks, i.e. by reducing the number of people and machines that have access to the
@@ -1341,31 +1334,23 @@ target system.
 
 GitOps processes are responsible to deliver changes to the production environment and if that process is compromised,
 then the adversary may open infrastructure backdoors or may introduce harmful software to production environments. Some
-noteworthy guidelines to follow based on least privilege principle and separation of duties are:
+noteworthy guidelines to follow based on the least privilege principle and separation of duties are:
 
 * Restrict access to repository and branches
 
-
 * Never store unencrypted credentials or secrets in the Git repository and block sensitive data being pushed to Git
-
 
 * Enforce strong identity with GPG Signed Commits, to give accountability and traceability
 
-
 * Require linear history and maintain a commit history by disallowing force pushes
 
-
-* Enforce branching policy, especially protect the main branch and require code review before merging
-
+* Enforce branching policy. Especially protect the main branch and require code review before merging
 
 * Monitor for vulnerabilities, and keep Git and GitOps tools up to date
 
-
 * Rotate SSH keys and Personal Access Tokens, block unauthorized access to Git repositories
 
-
 * Utilize a dedicated non-user technical account for access where credentials are frequently rotated and short-lived
-
 
 * Limit users who can elevate permissions to remove security features to cover their tracks via deletion of audit trails
   and silencing of alerts
@@ -1822,7 +1807,7 @@ Runtime
 14. [Four eyes principle](https://www.unido.org/overview/member-states/change-management/faq/what-four-eyes-principle)
 15. [Common Vulnerability Scoring System](https://nvd.nist.gov/vuln-metrics/cvss)
 16. [Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)
-17. [software bill of materials](https://www.ntia.gov/SBOM)
+17. [software bill of materials](https://ntia.gov/page/software-bill-materials)
 18. OPAL - [https://trustedcomputinggroup.org/wp-content/uploads/TCG_Storage-Opal_SSC_v2.01_rev1.00.pdf](https://trustedcomputinggroup.org/wp-content/uploads/TCG_Storage-Opal_SSC_v2.01_rev1.00.pdf)
 19. [CNCF Storage Whitepaper](https://bit.ly/cncf-storage-whitepaperV2)
 20. security boundaries - [https://www.oreilly.com/library/view/cissp-certified-information/9780470276884/9780470276884_security_boundaries.html](https://www.oreilly.com/library/view/cissp-certified-information/9780470276884/9780470276884_security_boundaries.html)
@@ -1849,25 +1834,25 @@ Runtime
 
 #### Citations
 
-[1^]: Another model to consider is Cloud, Clusters, Containers, and Code: [https://kubernetes.io/docs/concepts/security/overview/](https://kubernetes.io/docs/concepts/security/overview/)
+[^1]: Another model to consider is Cloud, Clusters, Containers, and Code: [https://kubernetes.io/docs/concepts/security/overview/](https://kubernetes.io/docs/concepts/security/overview/)
 
-[2^]: Example - [MITRE ATT&CK Framework for Kubernetes](https://www.darkreading.com/threat-intelligence/microsofts-kubernetes-threat-matrix-heres-whats-missing/a/d-id/1339106)
+[^2]: Example - [MITRE ATT&CK Framework for Kubernetes](https://www.darkreading.com/threat-intelligence/microsofts-kubernetes-threat-matrix-heres-whats-missing/a/d-id/1339106)
 
-[3^]: [Shifting security left](https://www.devsecops.org/blog/2016/5/20/-security) often leaves organizations to lapse operational security monitoring. It is important that security exists in all parts of the lifecycle and organizations continually evaluate other aspects of their business and technology processes where they may reach beyond modern security paradigms to embrace security as a culture and habit.
+[^3]: [Shifting security left](https://www.devsecops.org/blog/2016/5/20/-security) often leaves organizations to lapse operational security monitoring. It is important that security exists in all parts of the lifecycle and organizations continually evaluate other aspects of their business and technology processes where they may reach beyond modern security paradigms to embrace security as a culture and habit.
 
-[4^]: Human capital is a vital asset necessary to the success of any organization, the corresponding intellectual property and relational capital brought as a result is equally in need of protection.
+[^4]: Human capital is a vital asset necessary to the success of any organization, the corresponding intellectual property and relational capital brought as a result is equally in need of protection.
 
-[5^] [https://blog.aquasec.com/malicious-container-image-docker-container-host](https://blog.aquasec.com/malicious-container-image-docker-container-host)
+[^5] [https://blog.aquasec.com/malicious-container-image-docker-container-host](https://blog.aquasec.com/malicious-container-image-docker-container-host)
 
-[6^]: According to Applied Software Measurement, Capers Jones, 1996 and adjusting for inflation - 85% of defects are introduced during coding with a cost of $41 to fix compared to a post release fix cost of $26,542.
+[^6]: According to Applied Software Measurement, Capers Jones, 1996 and adjusting for inflation - 85% of defects are introduced during coding with a cost of $41 to fix compared to a post release fix cost of $26,542.
 
-[7^]: cisecurity.org maintains a listing of benchmarks for hardening
+[^7]: cisecurity.org maintains a listing of benchmarks for hardening
 
-[8^] It is critical to note that while authentication is available for use, [mutual authentication](https://github.com/PushkarJ/tag-security/blob/cnswpv2/security-whitepaper/v1/cloud-native-security-whitepaper.md#zero-trust-architecture) is the preferred mechanism to not only verify the client but also the server (outsider versus insider).
+[^8] It is critical to note that while authentication is available for use, [mutual authentication](https://github.com/PushkarJ/tag-security/blob/cnswpv2/security-whitepaper/v1/cloud-native-security-whitepaper.md#zero-trust-architecture) is the preferred mechanism to not only verify the client but also the server (outsider versus insider).
 
-[9^]: Utilization of a VPN does not guarantee encryption.
+[^8]: Utilization of a VPN does not guarantee encryption.
 
-[10^]: The concept of regression proofing is best explained as a facet of antifragile behaviors within technology environments. Instead of remaining resilient and robust against adverse conditions and attacks, technology can proactively adapt and thrive when subjected to them.
+[^10]: The concept of regression proofing is best explained as a facet of antifragile behaviors within technology environments. Instead of remaining resilient and robust against adverse conditions and attacks, technology can proactively adapt and thrive when subjected to them.
 
 #### Acknowledgements
 <!-- cspell:disable -->
