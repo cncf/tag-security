@@ -87,10 +87,8 @@ the following activities:
     disagreement on these)
 * Security assessments of specific proposals or projects
 * Identify projects for consideration for CNCF
-* Cross-pollinate knowledge by participating and inviting people from other
-  projects and TAGs to share security practices
-* Integrate relevant external standards, such as from CII or NIST, as part of
-  educational resources and/or TAG processes
+* Cross-pollinate knowledge by participating and inviting people from other projects and TAGs to share security practices
+* Integrate relevant external standards, such as from OpenSSF or NIST, as part of educational resources and/or TAG processes
 
 Given that the group is comprised of volunteers, specific requests from the TOC
 may be queued according to the bandwidth of the group. The co-chairs will
