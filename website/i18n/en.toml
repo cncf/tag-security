@@ -1,0 +1,8 @@
+# UI strings. Buttons and similar.
+
+# Footer text
+[footer_all_rights_reserved]
+other = " | Documentation Distributed under CC-BY-4.0"
+
+[post_create_issue]
+other = "Create issue"

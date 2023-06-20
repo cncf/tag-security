@@ -1,0 +1,92 @@
+/**
+ * Hamburger Menu
+ * Based on https://github.com/jonsuh/hamburgers
+ *
+ */
+
+// Setup variables for the hamburger.
+$hamburger-active-layer-color: $black;
+$hamburger-layer-color: $black;
+$hamburger-padding-x: 12px;
+$hamburger-padding-y: 0px;
+$hamburger-layer-width: 28px;
+$hamburger-layer-height: 4px;
+$hamburger-layer-spacing: 4px;
+$hamburger-hover-opacity: 1;
+$hamburger-active-hover-opacity: 1;
+
+// Output the hamburger CSS
+.hamburger {
+	padding: $hamburger-padding-y $hamburger-padding-x;
+	cursor: pointer;
+
+	transition-property: opacity, filter;
+	transition-duration: 0.15s;
+	transition-timing-function: linear;
+
+	// Normalize the <button>
+	font: inherit;
+	color: inherit;
+	text-transform: none;
+	background-color: transparent;
+	border: 0;
+	margin: 0;
+	overflow: visible;
+
+	margin-left: 20px;
+
+	&:hover {
+		opacity: $hamburger-hover-opacity;
+	}
+
+	// Hide Hamburger on Desktop up.
+	@media (min-width: 768px) {
+		display: none;
+	}
+}
+
+.hamburger-box {
+	width: $hamburger-layer-width;
+	height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
+	display: inline-block;
+	position: relative;
+	perspective: $hamburger-layer-width * 2;
+}
+
+.hamburger-inner {
+	display: block;
+	top: 50%;
+	margin-top: calc($hamburger-layer-height / -2);
+	transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1),
+		background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+	&,
+	&::before,
+	&::after {
+		width: $hamburger-layer-width;
+		height: 3px;
+		background-color: $hamburger-layer-color;
+		position: absolute;
+		transition-property: transform;
+		transition-duration: 0.15s;
+		transition-timing-function: ease;
+	}
+
+	&::before,
+	&::after {
+		content: '';
+		display: block;
+		transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+	}
+
+	&::before {
+		top: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
+	}
+
+	&::after {
+		bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
+	}
+	@media (prefers-reduced-motion: reduce) {
+		transition: none !important;
+	}
+}
