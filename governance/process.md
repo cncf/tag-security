@@ -1,4 +1,4 @@
-# Proposals, projects, and team
+# Agenda, proposals, projects, and teams
 
 In addition to the activities driven by the [CNCF Technical Oversight
 Committee][TOC], the work of the group often originates from group members with
@@ -8,6 +8,56 @@ charter of the group and of interest and importance to the community.
 This document explains how we transform ideas from our community into projects
 with a defined set of deliverables or a team to focus on a larger stream of work
 that may involve one or more projects and activities.
+
+## Getting on the agenda
+
+In order to better plan and facilitate meetings, Security TAG has **three** ways
+in which a topic may be added to the [Agenda for planned
+meetings](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit#heading=h.q3539ohya47f).
+
+In order to best manage the group's time, consider your topic and the audience,
+and select accordingly. If you are unsure, reach out in the
+[#tag-security-governance](https://cloud-native.slack.com/archives/C0230RW8V2T)
+channel.
+
+### Topics and updates
+
+We expect our members working on projects and members of groups to periodically
+provide updates to the TAG as part of our longstanding meeting format. If you
+are currently working on a project or a member of a group, your updates are
+already embedded in the format. If they are not, reach out to
+[#tag-security-governance](https://cloud-native.slack.com/archives/C0230RW8V2T)
+to have them added.
+
+If you have a topic or point of discussion you which to raise which is not:
+
+* already part of an update
+* not a proposal or suggestion
+
+but, as part of a working session is:
+
+* seeking input
+* probably no more than 15 minutes of discussion
+* adhere's to our governance and code of conduct
+
+please add it to the Agenda for a WORKING SESSION with a `[PENDING]` prefix on
+the topic, put your name next to it, and let us know by dropping note in the
+[#tag-security-governance](https://cloud-native.slack.com/archives/C0230RW8V2T)
+channel. We will provide feedback if necessary and a member of the leadership
+team will help add it to the agenda and remove the `[PENDING]` prefix.
+<!-- cSpell:ignore Phippy -->
+
+Example: `[PENDING] Security discussion on why R. Raccoon should be friends with
+Phippy — R. Raccoon`
+
+We want to foster ad hoc discussions during working sessions, but also recognize
+some discussions may take slightly more time than a general question or
+informative note.
+
+### Raising an Issue
+
+Anyone is welcome to raise an issue either as a suggestion or as a proposal.
+These will follow the process described in [proposals and suggestions](#proposals-and-suggestions).
 
 ## Suggestions, proposals, & presentations
 
@@ -23,6 +73,22 @@ community are working on. They allow us to gain insights into new challenges,
 upcoming trends, and often inspire our group to take on new projects. It is
 important that any content presented to the group must adhere to our
 [guidelines](presentations.md).
+
+Presentations require a [presentation
+issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=usecase-presentation%2C+triage-required&template=presentation.md&title=%5BPresentation%5D+Presentation+Title)
+to be created.  Please fill this in as completely and accurately as you can,
+providing multiple dates for presentations is ideal.
+
+Once a presentation issue is submitted a Security TAG representative will be
+assigned to or review the issue to triage the request. Once triaged, the
+Security TAG representative will perform due diligence on the issue to ensure it
+adhere's to our requirements for presentation content. If the [requirements are
+met](presentations.md), the Security TAG representative will then add the
+topic, link the issue, and provide the point of contact and themselves on the
+Agenda.
+
+We strive to have no more than two presentations in a given meeting, but prefer
+only one to ensure we have ample time for lively discussions.
 
 ### Suggestions
 
@@ -79,18 +145,18 @@ line with the [mission and charter](charter.md).
    on your proposed solution or activity.
 
    B) Choose an upcoming meeting where you or another group member who is
-   interested in working on the project is able to attend, then add the issue to
-   the meeting agenda: include a link and the name of the person who will
-   present the proposal in the "Planned Meeting" area of the [meeting
-   notes][https://github.com/cncf/tag-security#meeting-times]. Then at the
-   meeting:
+   interested in working on the project is able to attend, then add the issue
+   to the meeting agenda: include a link and the name of the person who will
+   present the proposal in the "Planned Meeting" area of the
+   [meeting notes][https://github.com/cncf/tag-security#meeting-times].
+   Then at the meeting:
 
    * The presenter should screen share the github issue (or ask the meeting
      facilitator ahead of time to do so) and explain the motivation, expected
      outcome, ideas that they have for how it might happen, and ask if others
      have ideas or questions.
    * After a short discussion, people should be invited to chime in on the
-     github issue and also mention if they are interested in collaborating. This
+     github issue and also mention of they are interested in collaborating. This
      ensures that solutions are created with multiple perspectives as well as
      verifies there is community interest and energy to work on the proposal.
 
@@ -184,7 +250,7 @@ line with the [mission and charter](charter.md).
 1. **Discuss the work at a meeting.** If an objection to a PR is made either in
    a comment of the PR or during a meeting, the person making the objection and
    the person making the proposal will be given time to present their view at
-   the next meeting. If there are no objections, or if all concerns have been
+   the next meeting. If there are not objections, or if all concerns have been
    addressed, and the Pull Request has been stable for 24 hours, a Chair will
    add it to the agenda for an upcoming meeting. Ideally, members who
    contributed to the project will attend that meeting to present their work or

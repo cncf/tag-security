@@ -53,10 +53,23 @@ collaborators:
   - username: PushkarJ
     permission: push
     
-    # Triage Team
-    # manage issues (edit labels, occasionally edit)
-    # needs "push" permission, even though triage team should not merge PRs
+  - username: mnm678
+    permission: push
+    
+  - username: mlieberman85
+    permission: push
+  
+  - username: ragashreeshekar
+    permission: push
 
+  # Contributing Reviewers
+  # Submit Reviews to PRs based on this grouping: https://github.com/cncf/tag-security/blob/main/.github/auto_request_review.yml
+  - username: lirantal
+    permission: read
+    
+    # Leading the policy project #987
+  - username: jkjell
+    permission: push
     
     # Security Assessment Facilitator
     # merge PRs in /assesssments according to guidelines
@@ -69,6 +82,8 @@ collaborators:
     # JustinCappos, ultrasaurus, lumjjb
   - username: JustinCormack
     permission: push
+    
 
     # Meeting Facilitators
-    # ultrasaurus, dshaw, pragashj, lumjjb, justincormack, izgeri, JustinCappos, magnologan, TheFoxAtWork, anvega, achetal01, ashutosh-narkar, chasemp, pushkarj
+    # ultrasaurus, dshaw, pragashj, lumjjb, justincormack, izgeri, JustinCappos, magnologan, TheFoxAtWork, anvega, achetal01, ashutosh-narkar,
+    # chasemp, pushkarj, jonzeolla

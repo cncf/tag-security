@@ -261,6 +261,8 @@ Team Leads are nominated and approved by the following process:
   1. Team Leads will be given the OWNER role of the directory or sub-directory
      for their team's activities in order to empower merge/approve.
 
+This role may be subject to [lead rotations](#lead-rotations).
+
 ## TOC liaison
 
 The [CNCF TAG](https://github.com/cncf/toc/blob/master/tags) process identifies
@@ -290,6 +292,8 @@ New roles in this section are typically defined after someone has acted in that
 role for some time informally, then proposed as an on-going role by Pull Request
 which must be approved by a majority of Chairs.  Process clarifications are
 welcome and PRs can be approved by any single Chair.
+
+This role may be subject to [lead rotations](#lead-rotations).
 
 ### Security review facilitator
 
@@ -373,3 +377,39 @@ roles and may be required to have specific expertise. For visibility, these
 additional project roles are listed below:
 
 * [Security Reviewers](../assessments/guide/security-reviewer.md)
+
+## Lead rotations
+
+For certain facilitator roles, teams and projects that are ongoing, leadership
+rotations should be carried out every 6 months. This is to:
+
+* Ensure leadership continuity of projects and passing on of tribal knowledge
+* Ensure diverse perspective/breadth of knowledge
+* Prevention of commitment bias in projects
+* Provide more leadership opportunities for more community members
+
+A facilitator role/project lead position should be a candidate for rotation if the
+project/facilitation task:
+
+* Exists for more than 6 months
+* Involves more than 1 person
+
+### Rotation process
+
+The rotation process should start at least 2 weeks before a rotation is due.
+
+1. STAG representative will get feedback on potential candidates from current
+   leads and through nominations from the STAG leadership
+1. Leads should recommend a number of potential candidates based on the
+   current number of lead positions
+1. Based on the nominations, STAG leadership will decide on the next lead
+   rotation
+1. STAG representative will reach out to nominated leads for acceptance of new
+   role
+1. In the event that no rotation candidates are available, due to lack of
+   nominations or unavailability of nominees, the current rotation cycle will be
+   skipped. However, reconsideration/restructuring of the project or work will
+   be raised and discussed between STAG co-chairs.
+1. Validation that proper transition has happened will be done by STAG representative.
+1. If there are multiple leads on a project, STAG leadership will work with
+   current leads to decide how many leads should be rotated.
