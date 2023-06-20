@@ -7,22 +7,22 @@ Member roles.
 
 The various roles are listed as follows:
 
-* [Role of Members](#role-of-members)
-  * [Maintaining Active Members](#maintaining-active-members)
-  * [Managing Membership](#managing-membership)
-* [Role of Chairs](#role-of-chairs)
-* [Role of Technical Leads](#role-of-technical-leads)
-* [Role of Chair Emeriti](#role-of-chair-emeriti)
-* [Role of Project Leads](#role-of-project-leads)
-  * [Ongoing Projects](#ongoing-projects)
-* [Role of Team Leads](#role-of-team-leads)
-* [TOC Liaison](#toc-liaison)
-* [Facilitation Roles](#facilitation-roles)
-  * [Security Assessment Facilitator](#security-assessment-facilitator)
-  * [Meeting Facilitator](#meeting-facilitator)
-  * [Meeting Scribe(s)](#meeting-scribe(s))
-  * [Triage Team](#triage-team)
-  * [Project Teams](#project-teams)
+* [Role of members](#role-of-members)
+  * [Maintaining active members](#maintaining-active-members)
+  * [Managing membership](#managing-membership)
+* [Role of chairs](#role-of-chairs)
+* [Role of technical leads](#role-of-technical-leads)
+* [Role of chair emeriti](#role-of-chair-emeriti)
+* [Role of project leads](#role-of-project-leads)
+  * [Ongoing projects](#ongoing-projects)
+* [Role of team leads](#role-of-team-leads)
+* [TOC liaison](#toc-liaison)
+* [Facilitation roles](#facilitation-roles)
+  * [Security assessment facilitator](#security-assessment-facilitator)
+  * [Meeting facilitator](#meeting-facilitator)
+  * [Meeting scribe(s)](#meeting-scribe(s))
+  * [Triage team](#triage-team)
+  * [Project teams](#project-teams)
 
 All members are identified in the TAG [README](/README.md), with annotations
 where they hold an additional role.
@@ -307,11 +307,11 @@ conflict of interest disclosure](../assessments/guide/security-reviewer.md) and
 sign-off on it in the GitHub ticket itself. 
 
 From this point forward, the security assessment lead is the primary
-individual most responsible for driving the security assessment alongside the
-security reviewers, as well as the project owners. The security assessment
-facilitator will act as a point of contact for escalation, and will be
+individual responsible for driving progress in the assessment process with support from
+the security reviewers, as well as the project owners. The security assessment
+facilitator will act as a point of contact for escalations and will be
 responsible for conducting regular check-ins with the team to ensure that the
-assessment is on-track.
+assessment moves forward.
 
 Near the conclusion of the assessment (i.e. drafts of the self-assessment
 document and the joint review document are published via a pull request against
