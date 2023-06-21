@@ -148,7 +148,7 @@ seen [here](governance/related-groups/)
   University
 - Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), Styra
 - Andres Vega ([@anvega](https://github.com/anvega)), ControlPlane
-- Ragashree Shekar ([@ragashreeshekar](https://github.com/ragashreeshekar)), Carnegie Mellon
+- Ragashree Shekar ([@ragashreeshekar](https://github.com/ragashreeshekar)), Carnegie Mellon University
 - Michael Lieberman ([@mlieberman85](https://github.com/mlieberman85)), Kusari
 - Marina Moore ([@mnm678](https://github.com/mnm678)), NYU
 
