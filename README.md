@@ -45,7 +45,7 @@ found in the [publications](PUBLICATIONS.md) document.
 
 ## Governance
 
-[Ssecurity TAG charter](governance/charter.md) outlines the scope of our group
+[Security TAG charter](governance/charter.md) outlines the scope of our group
 activities, as part of our [governance process](governance) which details how we
 work.
 
