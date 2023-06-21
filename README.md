@@ -191,7 +191,7 @@ New York University
 
 Facilitator: Andres Vega ([@anvega](https://github.com/anvega)), ControlPlane
 
-Co-chair representative: @sublimino
+Co-chair representatives: @sublimino @PushkarJ
 
 #### Software Supply Chain Security
 
