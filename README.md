@@ -14,33 +14,26 @@
 
 ## Objective
 
-STAG facilitates collaboration to discover and produce resources that enable
+The CNCF Security Technical Advisory Group facilitates collaboration to discover and produce resources that enable
 secure access, policy control, and safety for operators, administrators,
 developers, and end-users across the cloud native ecosystem.
 
 ## Background
 
-“Cloud Native” is open source cloud computing for applications — a complete
-trusted toolkit for modern architectures. There are multiple projects which
-address key parts of the problem of providing access controls and addressing
-safety concerns. Each of these adds value, yet for these technical solutions to
-be capable of working well together and manageable to operate they will need a
-minimal shared context of what defines a secure system architecture.
+Cloud Native describes the building, deploying, and operating of modern applications in cloud computing environments, typically using open source. This complex ecosystem composed of different open source projects presents an increasingly complicated technology risk landscape. While there are several projects in the cloud native ecosystem that address trust, safety, and security in the dynamic interplay between the different layers of infrastructure and application services, the technological shift demands application and information security be rethought through the lens of developer experience as close to applying software engineering to design for security considerations in the effort to safeguard an integrated cloud native ecosystem as a whole.
+
 
 ## Vision
 
-There is a future where operators, administrators and developers feel confident
-creating new cloud native applications. They use cloud technologies with clear
-understanding of risks and the ability to validate that their security policy
-decisions are reflected in deployed software.
+We believe in a future where the probability and impact of attacks, breaches, and compromises are significantly reduced. Where the most common risks of today are not just mitigated but made implausible. We believe developers and operators can be empowered to understand better and be reassured by the posture of the systems they build and run through the informed use of cloud technologies with clear
+understanding of responsibility and risks and the unlocked ability to validate that their architectural intent meets compliance and regulatory objectives.
 
-We envision that there could exist an ecosystem of tools that can simplify the
-experience of cloud native operators, administrators and developers, including:
+There is a growing ecosystem of tools that promises to unlock developer productivity and operational efficiency. We strive to fulfill the human side of the sociotechnical equation to acceleration and attain that promise including:
 
-1. System security architecture that understands and accommodates the ever
+1. Consumable system security architectures that account for the ever
    growing heterogeneity of systems and provides a framework to protect
    resources and data while servicing their users.
-2. Common vocabulary and open source libraries that make it easy for developers
+2. Common lexicon and open source libraries that make it easy for developers
    to create and deploy apps that meet system security requirements.
 3. Common libraries and protocols that enable people to reason about the
    security of the system, such as auditing and explainability features.
@@ -52,13 +45,13 @@ found in the [publications](PUBLICATIONS.md) document.
 
 ## Governance
 
-[STAG charter](governance/charter.md) outlines the scope of our group
+[Ssecurity TAG charter](governance/charter.md) outlines the scope of our group
 activities, as part of our [governance process](governance) which details how we
 work.
 
 ## Communications
 
-Anyone is welcome to join our open discussions of STAG projects and share news
+Anyone is welcome to join our open discussions of Security TAG projects and share news
 related to the group's mission and charter. Much of the work of the group
 happens outside of Security TAG meetings and we encourage project teams to share
 progress updates or post questions in these channels:
@@ -107,25 +100,6 @@ Meeting Link:
 [zoom.us/my/cncftagsecurity](https://zoom.us/j/7375677271?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
 (Password: 77777)
 
-One tap mobile:
-
-| Location | Number |
-| --- | --- |
-| US - New York | +16465588656,,7375677271# |
-| US - San Jose | +16699006833,,7375677271# |
-
-Dial by your location:
-
-| Location | Number |
-| --- | --- |
-| US - New York | +1 646 558 8656 |
-| US - San Jose | +1 669 900 6833|
-| US - Toll-free | 877 369 0926 |
-| US - Toll-free | 855 880 1246 |
-| Australia - Toll-free | 1800 945 157 |
-
-Or [find your local number](https://zoom.us/u/alwlmxlNn).
-
 Meeting ID: 737 567 7271
 
 ## Gatherings
@@ -153,7 +127,7 @@ seen [here](governance/related-groups/)
 
 ## History
 
-- TAG-Security - renamed STAG ([TOC Issue 549](https://github.com/cncf/toc/issues/549))
+- TAG-Security - renamed Security TAG ([TOC Issue 549](https://github.com/cncf/toc/issues/549))
 - SAFE WG - renamed to CNCF Security TAG
 - [(Proposed) CNCF Policy Working Group](/policy-wg-merging.md) - Merged into
   SAFE WG
@@ -162,27 +136,24 @@ seen [here](governance/related-groups/)
 
 <!-- cSpell:disable -->
 
-### STAG Chairs
+### Security TAG Chairs
 
-- Brandon Lum ([@lumjjb](https://github.com/lumjjb)), Google [Chair term:
-  6/3/2021 - 6/3/2023]
 - Aradhana Chetal ([@achetal01](https://github.com/achetal01)),
-  TIAA [Chair term: 6/3/2021 - 6/3/2023]
-- Andrew Martin ([@sublimino](https://github.com/sublimino)), Control
-  Plane [Chair term: 3/17/2022 - 3/17/2024]
-
+  TIAA [Chair term: 6/3/2021 - 9/3/2023]
+- Andrew Martin ([@sublimino](https://github.com/sublimino)), ControlPlane [Chair term: 3/17/2022 - 3/17/2024]
+- Pushkar Joglekar ([@PushkarJ](https://github.com/PushkarJ)), Credit Karma [Chair term: 6/3/2023 - 6/3/2025]
+- 
 ### Tech Leads
 
 - Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York
   University
 - Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), Styra
-- Andres Vega ([@anvega](https://github.com/anvega)), VMWare
-- Pushkar Joglekar ([@PushkarJ](https://github.com/PushkarJ)), VMWare
-- Ragashree Shekar ([@ragashreeshekar](https://github.com/ragashreeshekar)), TBD
-- Michael Lieberman ([@mlieberman85](https://github.com/mlieberman85)), TBD
+- Andres Vega ([@anvega](https://github.com/anvega)), ControlPlane
+- Ragashree Shekar ([@ragashreeshekar](https://github.com/ragashreeshekar)), Carnegie Mellon
+- Michael Lieberman ([@mlieberman85](https://github.com/mlieberman85)), Kusari
 - Marina Moore ([@mnm678](https://github.com/mnm678)), NYU
 
-### STAG Chair Emeriti
+### Security TAG Chair Emeriti
 
 - Dan Shaw ([@dshaw](https://github.com/dshaw)),
   PayPal [Chair term: 6/3/2019 - 9/3/2020]
@@ -192,6 +163,8 @@ seen [here](governance/related-groups/)
   Tetrate.io [Chair term: 6/3/2019 - 6/3/2021]
 - Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)),
   Apple [Chair term: 9/28/2020 - 2/4/2022]
+- Brandon Lum ([@lumjjb](https://github.com/lumjjb)), Google [Chair term:
+  6/3/2021 - 6/3/2023]
 
 ### On-going projects
 
@@ -217,9 +190,9 @@ the project and its risk profile.
 Facilitator: Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)),
 New York University
 
-Facilitator: Matthew Giassa ([@Iaxes](https://github.com/iaxes)), Cisco
+Facilitator: Andres Vega ([@anvega](https://github.com/anvega)), ControlPlane
 
-Co-chair representative: @lumjjb
+Co-chair representative: @sublimino
 
 #### Software Supply Chain Security
 
@@ -238,7 +211,7 @@ the [issue](https://github.com/cncf/tag-security/issues/679)
 
 ## Additional information
 
-### CNCF STAG reviews
+### CNCF Security TAG reviews
 
 As part of
 the [CNCF project proposal process](https://github.com/cncf/toc/blob/main/process/project_proposals.md)
