@@ -140,7 +140,7 @@ seen [here](governance/related-groups/)
 
 - Aradhana Chetal ([@achetal01](https://github.com/achetal01)), TIAA [Chair term: 6/3/2021 - 9/3/2023]
 - Andrew Martin ([@sublimino](https://github.com/sublimino)), ControlPlane [Chair term: 3/17/2022 - 3/17/2024]
-- Pushkar Joglekar ([@PushkarJ](https://github.com/PushkarJ)), Credit Karma [Chair term: 6/3/2023 - 6/3/2025]
+- Pushkar Joglekar ([@PushkarJ](https://github.com/PushkarJ)), Independent [Chair term: 6/3/2023 - 6/3/2025]
   
 ### Tech Leads
 
