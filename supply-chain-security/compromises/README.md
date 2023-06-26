@@ -48,6 +48,7 @@ of compromise needs added, please include that as well.
 | [PHP self-hosted git server](2021/php.md) | 2021 | Dev Tooling | [1](https://news-web.php.net/php.internals/113838) |
 | [Homebrew](2021/homebrew.md) | 2021 | Dev Tooling | [1](https://brew.sh/2021/04/21/security-incident-disclosure/), [2](https://hackerone.com/reports/1167608) |  |
 | [Codecov](2021/codecov.md) | 2021 | Source Code | [1](https://about.codecov.io/security-update/) |  |
+| [Repojacking exposed private repositories through supply-chain compromise](2021/repojacking.md) | 2021 | Negligence | [1](https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610) |
 | [VSCode GitHub](2021/vscode.md) | 2021 | Dev Tooling | [1](https://www.bleepingcomputer.com/news/security/heres-how-a-researcher-broke-into-microsoft-vs-codes-github/) |  |
 | [SUNBURST/SUNSPOT/Solarigate](2020/solarwinds.md) | 2020 | Publishing Infrastructure | [1](https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html), [2](https://msrc-blog.microsoft.com/2020/12/13/customer-guidance-on-recent-nation-state-cyber-attacks/), [3](https://www.crowdstrike.com/blog/sunspot-malware-technical-analysis/) |  |
 | [The Great Suspender](2020/thegreatsuspender.md) | 2020 | Malicious Maintainer | [1](https://github.com/greatsuspender/thegreatsuspender/issues/1263),[2](https://lifehacker.com/ditch-the-great-suspender-before-it-becomes-a-security-1845989664) |
