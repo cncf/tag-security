@@ -63,7 +63,7 @@ identify compliance violations and misconfigurations early to create short and a
 improvement. This approach enables security failures to follow familiar workflows raised for other issues in the
 pipeline (e.g., bug fixes or continuous integration failures), which already require resolution before moving software
 further in the pipeline. The modern security lifecycle for this model revolves around the development of code that
-adheres to recommended design patterns (e.g., [12-factor](https://12factor.net/)<sup>1</sup>) and ensures the integrity
+adheres to recommended design patterns (e.g., [12-factor](https://12factor.net/)) and ensures the integrity
 of the development environment.
 
 #### Distribute
@@ -1476,11 +1476,9 @@ innovation, delivering more value to their customers with dramatically less effo
 for regulated sectors such as finance due to the complexity of their legacy systems, and compliance challenges including
 concerns raised by regulatory institutions. Let’s look at three main authorities in case of European Union:
 
-* [EBA](https://www.eba.europa.eu/sites/default/documents/files/documents/10180/2170121/5fa5cdde-3219-4e95-946d-0c0d05494362/Final%20draft%20Recommendations%20on%20Cloud%20Outsourcing%20%28EBA-Rec-2017-03%29.pdf?retry=1)
-  - The “European Banking Authority” is an independent authority that works to ensure effective and consistent
+* [EBA](https://www.eba.europa.eu/sites/default/documents/files/documents/10180/2170121/5fa5cdde-3219-4e95-946d-0c0d05494362/Final%20draft%20Recommendations%20on%20Cloud%20Outsourcing%20%28EBA-Rec-2017-03%29.pdf?retry=1) - The “European Banking Authority” is an independent authority that works to ensure effective and consistent
     prudential regulation and supervision across the EU banking sector.
-* [EIOPA](https://www.eiopa.europa.eu/sites/default/files/publications/eiopa_guidelines/guidelines_on_outsourcing_to_cloud_service_providers_en.pdf)
-  - The “European Insurance and Occupational Pensions Authority” is a European Union financial regulatory institution.
+* [EIOPA](https://www.eiopa.europa.eu/sites/default/files/publications/eiopa_guidelines/guidelines_on_outsourcing_to_cloud_service_providers_en.pdf) - The “European Insurance and Occupational Pensions Authority” is a European Union financial regulatory institution.
 * [ESMA](https://www.esma.europa.eu/press-news/esma-news/esma-publishes-cloud-outsourcing-guidelines) - The “European
   Securities and Markets Authority” works in the field of securities legislation and regulation to improve the
   functioning of financial markets in Europe, strengthening investor protection and cooperation between national
