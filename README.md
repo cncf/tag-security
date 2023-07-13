@@ -76,7 +76,7 @@ and posting to the channels.
 
 Group meeting times are listed below:
 
-- US:   Bi-weekly on Wednesdays at 10:00am UTC-7 (see your timezone
+- US:   Weekly on Wednesdays at 10:00am UTC-7 (see your timezone
   [here](https://time.is/1000_today_in_PT?CNCF_Security_TAG_US_Meeting))
 - EMEA: Bi-weekly on Wednesdays at 01:00pm London (see your timezone
   [here](https://time.is/1300_today_in_London?CNCF_Security_TAG_EMEA_Meeting))
