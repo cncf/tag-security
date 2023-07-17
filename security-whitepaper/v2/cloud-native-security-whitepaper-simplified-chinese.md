@@ -870,15 +870,19 @@ GitOps 流程负责向生产环境提供更改，如果该流程受到危害，�
 本白皮书是由 CNCF Security-TAG 成员推动的社区工作。感谢大家的杰出贡献。特别感谢 Emily Fox 和 Jeyappragash JJ。
 <!-- cspell:enable -->
 
-中文译者：
+中文译者（按字母顺序排列）：
 
-- [@rootsongjc](https://github.com/rootsongjc)
-- [@N3erox0](https://github.com/N3erox0)
-- [@cafra](https://github.com/cafra)
 - [@aiaicaow](https://github.com/aiaicaow)
-- [@hbrls](https://github.com/hbrls)
-- [@losery](https://github.com/losery)
-- [@knwng](https://github.com/knwng)
 - [@babysor](https://github.com/babysor)
-- [@gtb-togerther](https://github.com/gtb-togerther)
+- [@cafra](https://github.com/cafra)
 - [@dwctua](https://github.com/dwctua)
+- [@gtb-togerther](https://github.com/gtb-togerther)
+- [@hbrls](https://github.com/hbrls)
+- [@jinjia](https://github.com/jinjiakarl)
+- [@knwng](https://github.com/knwng)
+- [@losery](https://github.com/losery)
+- [@lovepoem](https://github.com/lovepoem)
+- [@n3erox0](https://github.com/n3erox0)
+- [@rootsongjc](https://github.com/rootsongjc)
+- [@victorjunlu](https://github.com/victorjunlu)
+- [@yzyunzhang](https://github.com/yzyunzhang)
