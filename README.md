@@ -147,7 +147,7 @@ seen [here](governance/related-groups/)
 - Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York
   University
 - Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), Styra
-- Andres Vega ([@anvega](https://github.com/anvega)), ControlPlane
+- Andres Vega ([@anvega](https://github.com/anvega))
 - Ragashree Shekar ([@ragashreeshekar](https://github.com/ragashreeshekar)), Independent
 - Michael Lieberman ([@mlieberman85](https://github.com/mlieberman85)), Kusari
 - Marina Moore ([@mnm678](https://github.com/mnm678)), NYU
