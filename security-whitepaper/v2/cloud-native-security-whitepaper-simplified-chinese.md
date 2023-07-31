@@ -770,6 +770,62 @@ GitOps 流程负责向生产环境提供更改，如果该流程受到危害，�
 - 服务、工具和内容的可用性 - 通过云原生架构的分布式特性提供弹性和冗余。
 - 审计和问责 - 确保检测违规操作，并能跟踪经授权的变更。
 
+# 缩略语和词汇表
+
+- ABAC: Attribute-Based Access Control（基于属性的访问控制）
+- AES: Advanced Encryption Standard（高级加密标准）
+- AI: Artificial Intelligence（人工智能）
+- API: Appliation Programming Interface（应用程序编程接口）
+- BYOK: Bring Your Own Key（自带密钥）
+- CA: Certificate Authority（证书颁发机构）
+- CaaS: Containers-as-a-Service（容器即服务）
+- CD: Continuous Delivery（持续交付）
+- CI: Continuous Integration（持续集成）
+- CIS: Center for Internet Security（网络安全中心）
+- CISO: Chief (Information) Security Officer（首席信息安全官）
+- CMK: Customer Master Key（客户主密钥）
+- CNCF: Cloud Native Computing Foundation（云原生计算基金会）
+- CTO: Chief Technology Officer（首席技术官）
+- CVE: Common Vulnerabilities and Exposures（公共漏洞和曝光）
+- CVSS: Common Vulnerability Scoring System（通用漏洞评分系统）
+- DAAS: data, assets, applications, and services（数据、资产、应用和服务）
+- DAST: Dynamic Application Security Testing（动态应用程序安全测试）
+- DDoS: Distributed Denial of Service（分布式拒绝服务攻击）
+- DEK: Data Encryption Key（数据加密密钥）
+- DoS: Denial of Service（拒绝服务攻击）
+- EBA: European Banking Authority（欧洲银行管理局）
+- EIOPA: European Insurance and Occupational Pensions Authority（欧洲保险和职业养老金管理局）
+- ESMA: European Securities and Markets Authority（欧洲证券和市场管理局）
+- Faas: Functions-as-a-Service（函数即服务）
+- GID: Group identifier（组标识符）
+- HSM: Hardware Security Modules（硬件安全模块）
+- IaaS: Infrastructure as a Service（基础设施即服务）
+- IaC: Infrastructure as Code（基础设施即代码）
+- IAM: Identity and Access Management（身份和访问管理）
+- IDE: Integrated Development Environment（集成开发环境）
+- KMS: Key Management System（密钥管理系统）
+- MAC: Mandatory Access Control（强制访问控制）
+- ML: Machine Learning（机器学习）
+- NFS: Network File System（网络文件系统）
+- OCI: Open Container Initiative（开放容器倡议）
+- OPAL: Opal Storage Specification（Opal存储规范）
+- OWASP: Open Web Application Security Project（开放Web应用程序安全项目）
+- PaaS: Platform as a Service（平台即服务）
+- RBAC: Role-based Access Control（基于角色的访问控制）
+- ROI: Return On Investment（投资回报率）
+- SAST: Static Application Security Testing（静态应用程序安全测试）
+- SBOMs: Software Bill of Materials（软件材料清单）
+- SOC: System On Chip（片上系统）
+- SoD: Separation of duties（职责分离）
+- SSD: Solid-State Drive（固态硬盘）
+- TEE: Trusted Execution Environments（可信执行环境）
+- TLS: Transport Layer Security（传输层安全）
+- TPM: Trusted Platform Module（可信平台模块）
+- UID: Unique Identifier（唯一标识符）
+- VEX: Vulnerability Exploitability eXchange（漏洞可利用性交换）
+- VM: Virtual Machine（虚拟机）
+- VPN: Virtual Private Network（虚拟专用网络）
+
 ### 附录
 
 #### 版本一总结<sup>v2 新增</sup>
