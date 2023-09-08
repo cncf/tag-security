@@ -76,7 +76,7 @@ and posting to the channels.
 
 Group meeting times are listed below:
 
-- US:   Weekly on Wednesdays at 10:00am UTC-7 (see your timezone
+- US and Western Hemisphere:   Weekly on Wednesdays at 10:00am UTC-7 (see your timezone
   [here](https://time.is/1000_today_in_PT?CNCF_Security_TAG_US_Meeting))
 - EMEA: Bi-weekly on Wednesdays at 01:00pm London (see your timezone
   [here](https://time.is/1300_today_in_London?CNCF_Security_TAG_EMEA_Meeting))
@@ -96,9 +96,13 @@ added to the Agenda on our [process](governance/process.md#getting-on-the-agenda
 ### Zoom Meeting Details
 
 <!-- cSpell:ignore cncftagsecurity -->
-Meeting Link:
-[zoom.us/my/cncftagsecurity](https://zoom.us/j/7375677271?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
-(Password: 77777)
+US and Western Hemisphere Weekly Meeting Link:
+[zoom.us/my/cncftagsecurity](https://zoom.us/j/99809474566) The meeting requires signing in to Zoom to join.
+Meeting ID: 998 0947 4566
+
+Eastern Hemisphere Bi-weekly meeting:
+
+Meeting Link: zoom.us/my/cncftagsecurity (Password: 77777)
 
 Meeting ID: 737 567 7271
 
