@@ -2,7 +2,7 @@
 
 <!-- cspell:disable -->
 <!-- markdownlint-disable-next-line MD033 MD013 -->
-<img src="design/logo/cloud-native-security-horizontal-darkmodesafe.svg" alt="Cloud Native Security logo" width="400"/>
+<img src="design/logo/cloud-native-security-horizontal-darkmodesafe.svg" alt="Cloud Native Security logo" />
 <!-- cSpell:enable -->
 
 ## Quick links
