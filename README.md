@@ -95,12 +95,11 @@ added to the Agenda on our [process](governance/process.md#getting-on-the-agenda
 
 ### Zoom Meeting Details
 
-<!-- cSpell:ignore cncftagsecurity -->
-Meeting Link:
-[zoom.us/my/cncftagsecurity](https://zoom.us/j/7375677271?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
-(Password: 77777)
+Meeting Link: https://zoom.us/my/cncftagsecurity?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09
 
-Meeting ID: 737 567 7271
+Meeting ID: 998 0947 4566
+
+Password: 77777
 
 ## Gatherings
 
@@ -141,7 +140,7 @@ seen [here](governance/related-groups/)
 - Aradhana Chetal ([@achetal01](https://github.com/achetal01)), TIAA [Chair term: 6/3/2021 - 9/3/2023]
 - Andrew Martin ([@sublimino](https://github.com/sublimino)), ControlPlane [Chair term: 3/17/2022 - 3/17/2024]
 - Pushkar Joglekar ([@PushkarJ](https://github.com/PushkarJ)), Independent [Chair term: 6/3/2023 - 6/3/2025]
-  
+
 ### Tech Leads
 
 - Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York
