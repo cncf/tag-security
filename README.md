@@ -95,11 +95,17 @@ added to the Agenda on our [process](governance/process.md#getting-on-the-agenda
 
 ### Zoom Meeting Details
 
-Meeting Link: https://zoom.us/my/cncftagsecurity?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09
+#### [North America] CNCF TAG-Security Weekly Meeting
+
+https://zoom.us/j/99809474566
 
 Meeting ID: 998 0947 4566
 
-Password: 77777
+#### [EMEA] CNCF TAG-Security Weekly Meeting
+
+https://zoom.us/j/99917523142
+
+Meeting ID: 999 1752 3142
 
 ## Gatherings
 
@@ -109,7 +115,7 @@ a [github issue](https://github.com/cncf/tag-security/issues/new) for an event
 and add to list below:
 
 <!-- markdownlint-disable-next-line MD013 -->
-- [Cloud Native SecurityCon](https://events.linuxfoundation.org/cloudnativesecuritycon-north-america/) North America, Feb. 1-2 2023
+- [Cloud Native SecurityCon 24](https://events.linuxfoundation.org/cloudnativesecuritycon-north-america/) June 26-27, 2024 in Seattle, Washington
 
 [Past events](past-events.md)
 
