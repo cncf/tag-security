@@ -5,6 +5,10 @@ documentation for their users. This document is ideal for projects currently in 
 CNCF **sandbox** as well as projects that are looking to receive a joint assessment and
 currently in CNCF **incubation**.
 
+For a detailed guide with step-by-step discussion and examples, check out the free 
+Express Learning course provided by Linux Foundation Training & Certification: 
+[Security Assessments for Open Source Projects](https://training.linuxfoundation.org/express-learning/security-self-assessments-for-open-source-projects-lfel1005/).
+
 # Self-assessment outline
 
 ## Table of contents
