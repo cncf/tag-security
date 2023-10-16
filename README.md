@@ -2,7 +2,7 @@
 
 <!-- cspell:disable -->
 <!-- markdownlint-disable-next-line MD033 MD013 -->
-<img src="design/logo/cloud-native-security-horizontal-darkmodesafe.svg" alt="Cloud Native Security logo" width="400"/>
+<img src="design/logo/cloud-native-security-horizontal-darkmodesafe.svg" alt="Cloud Native Security logo" />
 <!-- cSpell:enable -->
 
 ## Quick links
@@ -76,10 +76,10 @@ and posting to the channels.
 
 Group meeting times are listed below:
 
-- US:   Weekly on Wednesdays at 10:00am UTC-7 (see your timezone
+- US:   Weekly on Wednesdays at 10 am UTC-7 (see your timezone
   [here](https://time.is/1000_today_in_PT?CNCF_Security_TAG_US_Meeting))
-- EMEA: Bi-weekly on Wednesdays at 01:00pm London (see your timezone
-  [here](https://time.is/1300_today_in_London?CNCF_Security_TAG_EMEA_Meeting))
+- EMEA: Bi-weekly on Wednesdays at 1 pm UTC+0 (UTC+1 while observing daylight savings) (see your timezone
+  [here](https://time.is/UTC?CNCF_Security_TAG_EMEA_Meeting))
 
 [Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
 
@@ -95,12 +95,17 @@ added to the Agenda on our [process](governance/process.md#getting-on-the-agenda
 
 ### Zoom Meeting Details
 
-<!-- cSpell:ignore cncftagsecurity -->
-Meeting Link:
-[zoom.us/my/cncftagsecurity](https://zoom.us/j/7375677271?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
-(Password: 77777)
+#### [North America] CNCF TAG-Security Weekly Meeting
 
-Meeting ID: 737 567 7271
+https://zoom.us/j/99809474566
+
+Meeting ID: 998 0947 4566
+
+#### [EMEA] CNCF TAG-Security Weekly Meeting
+
+https://zoom.us/j/99917523142
+
+Meeting ID: 999 1752 3142
 
 ## Gatherings
 
@@ -110,7 +115,7 @@ a [github issue](https://github.com/cncf/tag-security/issues/new) for an event
 and add to list below:
 
 <!-- markdownlint-disable-next-line MD013 -->
-- [Cloud Native SecurityCon](https://events.linuxfoundation.org/cloudnativesecuritycon-north-america/) North America, Feb. 1-2 2023
+- [Cloud Native SecurityCon 24](https://events.linuxfoundation.org/cloudnativesecuritycon-north-america/) June 26-27, 2024 in Seattle, Washington
 
 [Past events](past-events.md)
 
@@ -141,7 +146,7 @@ seen [here](governance/related-groups/)
 - Aradhana Chetal ([@achetal01](https://github.com/achetal01)), TIAA [Chair term: 6/3/2021 - 9/3/2023]
 - Andrew Martin ([@sublimino](https://github.com/sublimino)), ControlPlane [Chair term: 3/17/2022 - 3/17/2024]
 - Pushkar Joglekar ([@PushkarJ](https://github.com/PushkarJ)), Independent [Chair term: 6/3/2023 - 6/3/2025]
-  
+
 ### Tech Leads
 
 - Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York
