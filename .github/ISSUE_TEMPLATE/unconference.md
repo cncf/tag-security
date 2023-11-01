@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 Description: What's your topic?
-Benefits to Ecosystem: what will attendees learn from the talk that will help them in their cloud native journey?
+Benefits to Ecosystem: Why is this talk or discussion important to cloud native security?
 Additional info:
 - Reference to supporting material
 - Feel free to delete this section if you don't have more info
