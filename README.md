@@ -143,9 +143,9 @@ seen [here](governance/related-groups/)
 
 ### Security TAG Chairs
 
-- Aradhana Chetal ([@achetal01](https://github.com/achetal01)), TIAA [Chair term: 6/3/2021 - 9/3/2023]
 - Andrew Martin ([@sublimino](https://github.com/sublimino)), ControlPlane [Chair term: 3/17/2022 - 3/17/2024]
 - Pushkar Joglekar ([@PushkarJ](https://github.com/PushkarJ)), Independent [Chair term: 6/3/2023 - 6/3/2025]
+- Marina Moore ([@mnm678](https://github.com/mnm678)), NYU [Chair term: 10/3/2023 - 10/3/2025]
 
 ### Tech Leads
 
@@ -155,7 +155,6 @@ seen [here](governance/related-groups/)
 - Andres Vega ([@anvega](https://github.com/anvega))
 - Ragashree Shekar ([@ragashreeshekar](https://github.com/ragashreeshekar)), Independent
 - Michael Lieberman ([@mlieberman85](https://github.com/mlieberman85)), Kusari
-- Marina Moore ([@mnm678](https://github.com/mnm678)), NYU
 
 ### Security TAG Chair Emeriti
 
@@ -169,6 +168,7 @@ seen [here](governance/related-groups/)
   Apple [Chair term: 9/28/2020 - 2/4/2022]
 - Brandon Lum ([@lumjjb](https://github.com/lumjjb)), Google [Chair term:
   6/3/2021 - 6/3/2023]
+- Aradhana Chetal ([@achetal01](https://github.com/achetal01)), TIAA [Chair term: 6/3/2021 - 9/3/2023]
 
 ### On-going projects
 
