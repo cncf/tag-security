@@ -6,7 +6,7 @@ toc_hide: true
 <div class="row mt-5 mb-3">
     <div class="col-lg-6">
         <div class="lead">
-TAG Security champions collaborative initiatives to discover and produce resources that bolster security protocols, access management, and policy enforcement, thereby ensuring the safety of stakeholders ranging from open source project maintainers to end user organization personnel, such as operators, administrators, and developers within the cloud native ecosystem.
+TAG Security champions collaborative initiatives to discover and produce resources that bolster security protocols, access management, and policy enforcement, thereby catering to security practioners ranging from open source project maintainers to end user organization personnel, such as operators, administrators, and developers within the cloud native ecosystem.
         </div>
     </div>
     <div class="col-lg-6 text-center">
