@@ -6,7 +6,7 @@ toc_hide: true
 <div class="row mt-5 mb-3">
     <div class="col-lg-6">
         <div class="lead">
-        TAG Security facilitates collaboration to discover and produce resources that enable secure access, policy control, and safety for operators, administrators, developers, and end-users across the cloud native ecosystem.
+TAG Security champions collaborative initiatives to discover and produce resources that bolster security protocols, access management, and policy enforcement, thereby ensuring the safety of stakeholders ranging from open source project maintainers to end user organization personnel, such as operators, administrators, and developers within the cloud native ecosystem.
         </div>
     </div>
     <div class="col-lg-6 text-center">
@@ -15,13 +15,12 @@ toc_hide: true
 </div>
 
 
-The TAG produces guidance for and gathers feedback from cloud app users and
+The TAG produces guidance for and gathers feedback from security engineering and
 developers and provides guidance and coordination to CNCF projects in the TAG's
 technical domains.
 
 - [TAG Charter](https://github.com/cncf/toc/blob/main/tags/security.md)
-- [Community events](https://community.cncf.io/tag-app-delivery/)
-- Slack channel: [#tag-security](https://cloud-native.slack.com/archives/CDJ7MLT8S)
+- [Calendar of Meetings and Events](https://calendar.google.com/calendar/u/0?cid=MGI4dTVlbDh0YTRzOTN0MmNtNzJ0dXZoaGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ))
     - [Invite yourself to the CNCF Slack](https://slack.cncf.io/)
 - [Mailing list](https://lists.cncf.io/g/cncf-tag-security/topics)
 
@@ -30,21 +29,22 @@ technical domains.
 
 ## Meetings
 
-1st and 3rd Wednesday of each month at 16:00 UTC ([convert to your local
-time](https://dateful.com/convert/utc?t=16)).
+Given the global spread of our TAG members, we conduct two series of regular meetings to accommodate the various time zones and ensure the inclusion of our entire global community. We have carefully scheduled our meetings to cater to various time zones.
 
-Meetings are listed on the [main CNCF calendar](https://www.cncf.io/calendar/)
-as well as the [CNCF Community Calendar](https://community.cncf.io/tag-app-delivery/).
+For our members in North and South America, we host weekly sessions each Wednesday at 10 am (UTC-7). To participate, simply use the following Zoom link: https://zoom.us/j/99809474566. The meeting ID is 998 0947 4566. Meanwhile, participants from Europe, the Middle East, and Africa (EMEA) can join bi-weekly meetings on Wednesdays at 1 pm UTC+0, which adjusts to UTC+1 when daylight saving time is in effect. Join us through this Zoom link: https://zoom.us/j/99917523142, with the meeting ID: 999 1752 3142. To find the corresponding time in your local area, please see your timezone [here]([url](https://time.is/)). This dual schedule ensures that no matter where you are, you'll have a place in our conversations.
 
-* [Agenda and Notes](https://docs.google.com/document/d/1OykvqvhSG4AxEdmDMXilrupsX2n1qCSJUWwTc3I7AOs/edit#)
-* [Zoom Meeting](https://zoom.us/j/7276783015) (Passcode: 77777)
-* [Recordings of previous meetings](https://www.youtube.com/playlist?list=PLj6h78yzYM2OHd1Ht3jiZuucWzvouAAci)
+We invite you to mark your calendars and join the dialogue. For your convenience, all meetings are listed on the main [CNCF calendar](https://www.cncf.io/calendar/) as well as the [TAG Security Calendar](https://calendar.google.com/calendar/u/0?cid=MGI4dTVlbDh0YTRzOTN0MmNtNzJ0dXZoaGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ). These calendars are updated regularly to ensure that you stay informed of all upcoming meetings and events.
+
 
 ## Leads
 
-- [Alois Reitbauer](https://github.com/AloisReitbauer) (Chair)
-- [Jennifer Strejevitch](https://github.com/jenniferstrej) (Chair)
-- [Hongchao Deng](https://github.com/hongchaodeng) (Chair)
-- [Alex Jones](https://github.com/alexsjones) (TL)
-- [Thomas Schuetz](https://github.com/thschue) (TL)
-- [Josh Gavant](https://github.com/joshgav) (TL)
+- [Justin Cappos](https://github.com/JustinCappos) (Technical Leader)
+- [Pushkar Joglekar](https://github.com/PushkarJ) (Chair)
+- [Michael Lieberman](https://github.com/mlieberman85) (Technical Leader)
+- [Andrew Martin](https://github.com/sublimino) (Chair)
+- [Marina Moore](https://github.com/mnm678) (Chair)
+- [Ash Narkar](https://github.com/ashutosh-narkar) (Technical Leader)
+- [Ragashree Shekar](https://github.com/ragashreeshekar) (Technical Leader)
+- [Andrés Vega](https://github.com/anvega) (Technical Leader)
+
+
