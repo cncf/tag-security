@@ -1,4 +1,4 @@
-# Self-assessment
+# OpenKruise Self-assessment
 
 The Self-assessment is the initial document for projects to begin thinking
 about the security of the project, determining gaps in their security, and
@@ -32,13 +32,13 @@ For a detailed guide with step-by-step discussion and examples, check out the fr
 
 A table at the top for quick reference information, later used for indexing.
 
-|                   |                                                                                                                                  |
-|-------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Software          | A link to the software's repository.                                                                                             |
-| Security Provider | Yes or No. Is the primary function of the project to support the security of an integrating system?                              |
-| Languages         | languages the project is written in                                                                                              |
-| SBOM              | Software bill of materials. Link to the libraries, packages, versions used by the project, may also include direct dependencies. |
-|                   |                                                                                                                                  |
+|                   |                                                                                                                                                                              |
+|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Software          | https://github.com/openkruise/kruise                                                                                                                                         |
+| Security Provider | No. OpenKruise is an extended component suite for Kubernetes, which mainly focuses on application automations, such as deployment, upgrade, ops and availability protection. |
+| Languages         | [Go](https://go.dev/)                                                                                                                                                        |
+| SBOM              | Software bill of materials. https://github.com/openkruise/kruise/blob/master/go.mod, https://github.com/openkruise/kruise/blob/master/tools/src/kind/go.mod                  |
+|                   |                                                                                                                                                                              |
 
 ### Security links
 
