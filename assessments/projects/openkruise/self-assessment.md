@@ -44,10 +44,11 @@ A table at the top for quick reference information, later used for indexing.
 
 Provide the list of links to existing security documentation for the project.
 You may use the table below as an example:
-\| Doc \| url \|
-\| -- \| -- \|
-\| Security file \| https://my.security.file \|
-\| Default and optional configs \| https://example.org/config \|
+
+| Doc           | url                         |
+|---------------|-----------------------------|
+| Official site | https://openkruise.io/      |
+| Documentation | https://openkruise.io/docs/ |
 
 ## Overview
 
