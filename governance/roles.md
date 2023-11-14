@@ -332,7 +332,7 @@ needed (depending on the nature of the issue). The most important aspect to this
 responsibility is to provide visibility into the underlying issue so that it can
 be identified and remedied as early as possible.
 
-Lastly, the facilitator is expected to, based on their experiences while working
+Lastly, the facilitator is expected, based on their experiences while working
 with security assessments, to identify any recurring issues or processes (i.e.
 "pain points") that impede reviews, and provide recommendations to the
 TAG-Security co-chairs on how to remedy or prevent said issues (i.e. does a
