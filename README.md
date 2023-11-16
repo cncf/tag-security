@@ -173,7 +173,7 @@ the project and its risk profile.
 Facilitator: Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)),
 New York University
 
-Facilitator: Andres Vega ([@anvega](https://github.com/anvega)), ControlPlane
+Facilitator: Andrés Vega ([@anvega](https://github.com/anvega))
 
 Co-chair representatives: @sublimino @PushkarJ
 
