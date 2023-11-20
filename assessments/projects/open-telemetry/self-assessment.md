@@ -64,7 +64,7 @@
 
 ## Overview
 
-Pixie is an observability tool to get instant, baseline visibility into your Kubernetes applications without any manual instrumentation.
+OpenTelementry is an observability framework and toolkit that helps developers understand application behavior by instrumenting, generating, and exporting telemetry data for applications using OpenTelementry.
 
 
 ### Background
