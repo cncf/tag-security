@@ -64,7 +64,7 @@
 
 ## Overview
 
-OpenTelementry is an observability framework and toolkit that helps developers understand application behavior by instrumenting, generating, and exporting telemetry data for applications using OpenTelementry.
+OpenTelemetry is an observability framework and toolkit that helps developers understand application behavior by instrumenting, generating, and exporting telemetry data for applications using OpenTelemetry.
 
 
 ### Background
