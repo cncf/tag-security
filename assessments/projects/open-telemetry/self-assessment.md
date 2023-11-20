@@ -30,7 +30,7 @@
   <tr>
    <td>SBOM
    </td>
-   <td><a href="https://github.com/open-telemetry/opentelemetry.io/blob/main/package.json"></a>
+   <td><a href="https://github.com/open-telemetry/opentelemetry.io/blob/main/package.json">https://github.com/open-telemetry/opentelemetry.io/blob/main/package.json</a>
    </td>
   </tr>
 </table>
