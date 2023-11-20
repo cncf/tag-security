@@ -1,4 +1,4 @@
-# Pixie Security Self Assessment
+# Open Telemetry Security Self Assessment
 
 ## Metadata
 
@@ -6,13 +6,13 @@
   <tr>
    <td>Software
    </td>
-   <td><a href="https://github.com/pixie-io/pixie">https://github.com/pixie-io/pixie</a>
+   <td><a href="https://github.com/open-telemetry/opentelemetry.io/tree/main">https://github.com/open-telemetry/opentelemetry.io/tree/main</a>
    </td>
   </tr>
   <tr>
    <td>Website
    </td>
-   <td><a href="https://px.dev/">https://px.dev/</a>
+   <td><a href="https://opentelemetry.io">https://opentelemetry.io</a>
    </td>
   </tr>
   <tr>
@@ -24,13 +24,13 @@
   <tr>
    <td>Languages
    </td>
-   <td>C++, Golang, Typescript
+   <td>C++, .NET, Erlang / Elixir, Go, Java, JavaScript / TypeScript, PHP, Python, Ruby, Rust, Swift, Any Language
    </td>
   </tr>
   <tr>
    <td>SBOM
    </td>
-   <td><a href="https://storage.googleapis.com/pixie-dev-public/oss-licenses/latest.json">https://storage.googleapis.com/pixie-dev-public/oss-licenses/latest.json</a>
+   <td><a href=""></a>
    </td>
   </tr>
 </table>
@@ -50,13 +50,13 @@
   <tr>
    <td>Security file
    </td>
-   <td><a href="https://github.com/pixie-io/pixie/blob/main/SECURITY.md">https://github.com/pixie-io/pixie/blob/main/SECURITY.md</a>
+   <td><a href="https://github.com/open-telemetry/opentelemetry.io/security/policy">https://github.com/open-telemetry/opentelemetry.io/security/policy</a>
    </td>
   </tr>
   <tr>
    <td>Default and optional configs
    </td>
-   <td><a href="https://github.com/pixie-io/pixie/blob/main/k8s/operator/helm/values.yaml">https://github.com/pixie-io/pixie/blob/main/k8s/operator/helm/values.yaml</a>
+   <td><a href=""></a>
    </td>
   </tr>
 </table>
