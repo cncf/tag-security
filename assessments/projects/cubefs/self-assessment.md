@@ -49,14 +49,11 @@ use the table below as an example:
 
 ## Overview
 
-One or two sentences describing the project -- something memorable and accurate
-that distinguishes your project to quickly orient readers who may be assessing
-multiple projects.
+CubeFS is a next-generation cloud-native storage product that is currently an incubating open-source project hosted by the Cloud Native Computing Foundation (CNCF).
 
 ### Background
 
-Provide information for reviewers who may not be familiar with your project's
-domain or problem area.
+CubeFS is an open-source cloud storage solution that is compatible with various data access protocols such as S3, POSIX, and HDFS, and supports two storage engines - multiple replicas and erasure coding. It provides users with multiple features such as multi-tenancy, multi-AZ deployment, and cross-region replication. It is widely used in scenarios such as big data, AI, container platforms, databases, middleware storage and computing separation, data sharing and data protection.
 
 ### Actors
 These are the individual parts of your system that interact to provide the 
