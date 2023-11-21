@@ -90,15 +90,22 @@ access, and then returns a token to the client.  The client then transmits that
 token to the file server, which, after confirming its validity, returns the file.
 
 ### Goals
-The intended goals of the projects including the security guarantees the project
- is meant to provide (e.g., Flibble only allows parties with an authorization
-key to change data it stores).
+Goal of emissary-ingress is to act as more native to kubernetes solution for a API Gateway, which supports functions like Layer 7 load balancer + Kubernetes Ingress built on Envoy Proxy. emissary achieves these functionalities leveraging envoy features and kubernetes features.
+
+#### Security Goals
+* Protect the declarative configurations such that no bad actor could modify them intern effect routing paths of the service.
+  - Mitigation: Rbac
+* Provide robust authentication features such that unpermitted accesses are allowed entry to the cluster
+* Provide robust security around TLS features
+* Provide security around service discovery
+* Provide security against attacks like DDos using effective rate limiting.
+
 
 ### Non-goals
-Non-goals that a reasonable reader of the project’s literature could believe may
-be in scope (e.g., Flibble does not intend to stop a party with a key from storing
-an arbitrarily large amount of data, possibly incurring financial cost or overwhelming
- the servers)
+- emissary-ingress doesnt protect against risks such as Kubernetes API Server Bypass, which could have in a few number of ways with bad actors modifiying cluter configurations.
+https://kubernetes.io/docs/concepts/security/api-server-bypass-risks/
+- emissary-ingress doesnt protect against risks such as SQL injections, block malicious traffic, and monitor traffic in realtime. usually this done using a Web Application FireWall and can be integrated into API gateways to mitigrate such risks.
+- 
 
 ## Self-assessment use
 
