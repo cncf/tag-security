@@ -290,22 +290,115 @@ security audit.
 
 ## Secure development practices
 
-- Development Pipeline. A description of the testing and assessment processes
-  that the software undergoes as it is developed and built. Be sure to include
-  specific information such as if contributors are required to sign commits, if
-  any container images immutable and signed, how many reviewers before merging,
-  any automated checks for vulnerabilities, etc.
-- Communication Channels. Reference where you document how to reach your team
-  or describe in corresponding section.
-  - Internal. How do team members communicate with each other?
-  - Inbound. How do users or prospective users communicate with the team?
-  - Outbound. How do you communicate with your users? (e.g. flibble-announce@
-    mailing list)
-- Ecosystem. How does your software fit into the cloud native ecosystem? (e.g.
-  Flibber is integrated with both Flocker and Noodles which covers
-  virtualization for 80% of cloud users. So, our small number of "users"
-  actually represents very wide usage across the ecosystem since every virtual
-  instance uses Flibber encryption by default.)
+[OpenKruise is tagged as "in
+progess"](https://www.bestpractices.dev/en/projects/2908) for the OpenSSF best
+practices badge
+
+### Contributing guidelines
+
+- The Kruise project has [clear contributing
+  guidelines](https://github.com/openkruise/kruise/blob/master/CONTRIBUTING.md)
+- Anyone is encouraged to submit an issue, code, or documentation change
+- They additional information for building and [testing your code
+  locally](https://github.com/openkruise/kruise/tree/master/docs/contributing)
+- [Proposals](https://github.com/openkruise/kruise/tree/master/docs/proposals)
+  should be submitted before making a significant change
+- Decisions are made based on consensus between maintainers. Proposals and
+  ideas can either be submitted for agreement via a github issue or PR.
+
+#### Development pipeline
+
+All source code is [available on publicly on
+GitHub](https://github.com/openkruise/kruise)
+
+- Submitting a PR is the only way to change Kruise project files
+- Process for submitting a PR is first forking the main repository, then
+  cloning the project from your repo, setting the remote upstream for syncing
+  changes, and finally creating a branch to develop on that will be used to
+  submit features.
+- They've provided [a PR description
+  template](https://github.com/openkruise/kruise/blob/master/.github/PULL_REQUEST_TEMPLATE.md)
+  to keep descriptions focused
+- An [OWNERS](https://github.com/openkruise/kruise/blob/master/OWNERS) file
+  specifies approvers and reviewers enforced by GitHub in the PR process -
+  [More information about OWNERS
+  files](https://www.kubernetes.dev/docs/guide/owners/)
+  specific to Kubernetes exists
+- There are multiple automated checks using GitHub Actions when a PR is
+  created. See the workflows directory for [a list of yaml
+  files](https://github.com/openkruise/kruise/tree/master/.github/workflows)
+  that specify each job below. All automated checks need to pass before
+  something can be merged. (To be confirmed)
+  - DCO (Enforces signed commits)
+  - E2E-1.20-EphemeralJob
+  - E2E-1.26 (Some automated tests)
+  - E2E-1.16 (Some automated tests)
+  - CI (Mischellaneous continuous integration)
+  - Spell check
+  - golangci-lint
+  - markdownlint-misspell-shellcheck
+  - unit-tests
+  - License (Unapproved license check)
+  - Code scanning (Automated Trivy scanning)
+- Automatic code coverage using [codecov.io](https://app.codecov.io/) is
+  generated in the PR for each submitted
+- At least 1 approving review is required to merge a pull request
+
+#### Development security policy
+
+- Container images are scanned in every PR with [Snyk](https://snyk.io/) to
+  detect new vulnerabilities
+- Additional measures of security are in the process of being implemented
+  - Scan code in master/nightly build and PR/master/nightly for Go.
+  - Scan published container images on GitHub Container Registry.
+
+#### Release process
+
+The [entire release process is covered in
+detail](https://github.com/openkruise/kruise/blob/master/RELEASE-PROCESS.md) in
+the repository
+
+- The changelog is updated manually each time a release is created. The
+  individual in charge of the release is expected to update the changelog with
+  relevant user facing information.
+- Documentation is manually published to update what's on the website
+- Creating a new release in the releases page triggers a GitHub Workflow. This
+  includes the automated creation of a new image with the latest code tagged
+  with the right version.
+- The Helm Chart needs to be prepared for shipping the update. There is a
+  separate repository that contains [all of the
+  charts](https://github.com/openkruise/charts/tree/master/versions/kruise) and
+  where new charts are added. A new chart version is created and the CRDs and
+  Kubernetes resources updated based on the release artifact. (Check what
+  exactly it means to update these resources)
+- A PR is submitted to merge the new release and publish automatically does so
+
+#### Communication Channels
+
+##### Internal
+
+Team members communicate with each other [through a range of
+mediums](https://github.com/openkruise/kruise#community). There is an invite
+only Slack channel, DingTalk group, and WeChat. There are also Bi-weekly
+Community Meetings held in both Chinese and English.
+
+##### Inbound
+
+Users communicate with the team through [docs](https://openkruise.io/docs/),
+[issues](https://github.com/openkruise/kruise/issues), and
+[discussions](https://github.com/openkruise/kruise/discussions)
+
+##### Outbound
+
+Team members communicate with users though the website and changelog
+
+#### Ecosystem
+
+OpenKruise is used by users of Kubernetes to extend the functionality of
+Kubernetes to something that better fits their needs and use cases running
+productions apps. It is installed directly by users and administrators for
+Kubernetes. OpenKruise is a CNCF([Cloud Native Computing
+Foundation](https://cncf.io/)) project.
 
 ## Security issue resolution
 
