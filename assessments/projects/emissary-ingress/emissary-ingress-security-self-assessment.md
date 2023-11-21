@@ -67,11 +67,12 @@ in some way.  For example, if a service has a database and a front-end API, but
 if a vulnerability in either one would compromise the other, then the distinction
 between the database and front-end is not relevant.
 
-|     |     |
+|   |     |
+| -- | -- |
 | Platform Adminstrators| Those who modify the configurations of the API gateway. Main focus on maintaining the Platform|
 | Application Developers| Can Modify the Configuration of the API Gateway. Access only limited to Mapping and Routing Configurations|
 | External Users| All the users whose request go through API Gateway|
-|     |     |
+| | |
 
 The means by which actors are isolated should also be described, as this is often
 what prevents an attacker from moving laterally after a compromise.
