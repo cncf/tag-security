@@ -33,6 +33,7 @@ Express Learning course provided by Linux Foundation Training & Certification:
 |   |  |
 | -- | -- |
 | Software | https://github.com/cubefs/cubefs  |
+| Website | https://cubefs.io/ |
 | Security Provider | No  |
 | Languages | Golang |
 | SBOM | Software bill of materials.  Link to the libraries, packages, versions used by the project, may also include direct dependencies. |
@@ -40,12 +41,12 @@ Express Learning course provided by Linux Foundation Training & Certification:
 
 ### Security links
 
-Provide the list of links to existing security documentation for the project. You may
-use the table below as an example:
 | Doc | url |
 | -- | -- |
-| Security file | https://github.com/cubefs/cubefs/blob/master/SECURITY.md |
-| Default and optional configs | https://example.org/config |
+| Security File | https://github.com/cubefs/cubefs/blob/master/SECURITY.md |
+| Default & Optional Configs | https://github.com/cubefs/cubefs/blob/master/docs/source/maintenance/configs/config.md |
+| Current Issues & Future Work | https://github.com/cubefs/cubefs/blob/master/docs/source/design/authnode.md |
+| Release & Contact | https://github.com/cubefs/cubefs/tree/master/security | 
 
 ## Overview
 
