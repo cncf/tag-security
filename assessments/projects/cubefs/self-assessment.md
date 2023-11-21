@@ -59,14 +59,25 @@ CubeFS is an open-source cloud storage solution that is compatible with various 
 In June 2019, JD.com donated (then known as) ChubaoFS to the CNCF, and in December 2019, ChubaoFS was sandboxed. Later, in August 2020, OPPO joined the project as a promoter and contributor. By March 2022, the project name was changed from ChubaoFS to CubeFS to ease pronunciation in English. Finally, in July 2022 CubeFS entered the incubation stage.
 
 ### Actors
-These are the individual parts of your system that interact to provide the 
-desired functionality.  Actors only need to be separate, if they are isolated
-in some way.  For example, if a service has a database and a front-end API, but
-if a vulnerability in either one would compromise the other, then the distinction
-between the database and front-end is not relevant.
+CubeFS consists of a metadata subsystem, a data subsystem, a resource management node (Master), and an object gateway (Object Subsystem), which can access stored data through the POSIX/HDFS/S3 interface.
 
-The means by which actors are isolated should also be described, as this is often
-what prevents an attacker from moving laterally after a compromise.
+![cfs-arch-ec 2b2b3b63](https://github.com/avinashnarasimhan18/tag-security/assets/144389734/e14a6396-16fa-4f33-8fd3-727385868b2e)
+
+CubeFS Actors:
+
+1) Resource Management Node (Master) - Composed of multiple Master nodes, it is responsible for asynchronously processing different types of tasks, such as managing data shards and metadata shards (including creation, deletion, updating, and consistency checks), checking the health status of data or metadata nodes, and maintaining volume information. There can be multiple Master nodes, and the consistency of metadata is ensured through the Raft algorithm and persisted to RocksDB.
+   
+2) Metadata Subsystem (Meta Node, Meta Partition) - Composed of multiple Meta Node nodes, multiple metadata shards (Meta Partition), and Raft instances (based on the Multi-Raft replication protocol), each metadata shard represents an Inode range metadata, which contains two in-memory B-Tree structures: inode B-Tree and dentry B-Tree.  The metadata node ensures high availability through Raft, and can quickly recover after a single point of failure. Secondly, the client ensures retries within a certain period.
+
+3) Data Subsystem (Replica Subsystem, Erasure Code Subsystem) - Divided into Replica Subsystem and Erasure Code Subsystem, both subsystems can coexist or exist independently: 
+
+   a) The Replica Subsystem consists of DataNodes, with each node managing a set of data shards. Multiple nodes' data shards form a replica group. Horizontal scaling ensures that each DataNode manages a set of shards, preventing lateral movement by isolating access to specific data shards
+
+   b) The Erasure Code Subsystem (Blobstore) is mainly composed of BlobNode modules, with each node managing a set of data blocks. Multiple nodes' data blocks form an erasure-coded stripe. Each BlobNode handles a set of data blocks, ensuring isolation between nodes.
+
+4) Object Subsystem (Object Nodes) - Composed of object nodes, it provides an access protocol compatible with standard S3 semantics and can be accessed through tools such as Amazon S3 SDK or s3cmd. Access to Object Nodes is isolated through authentication and access controls, restricting unauthorized access to the S3-compatible interface.
+
+5) Volume - A logical concept composed of multiple metadata and data shards. From the client's perspective, a volume can be seen as a file system instance that containers can access. From the perspective of object storage, a volume corresponds to a bucket. A volume can be mounted in multiple containers, allowing files to be accessed by different clients simultaneously.
 
 ### Actions
 These are the steps that a project performs in order to provide some service
