@@ -30,13 +30,11 @@ Express Learning course provided by Linux Foundation Training & Certification:
 
 ## Metadata
 
-A table at the top for quick reference information, later used for indexing.
-
 |   |  |
 | -- | -- |
-| Software | A link to the software’s repository.  |
-| Security Provider | Yes or No. Is the primary function of the project to support the security of an integrating system?  |
-| Languages | languages the project is written in |
+| Software | https://github.com/cubefs/cubefs  |
+| Security Provider | No  |
+| Languages | Golang |
 | SBOM | Software bill of materials.  Link to the libraries, packages, versions used by the project, may also include direct dependencies. |
 | | |
 
@@ -46,7 +44,7 @@ Provide the list of links to existing security documentation for the project. Yo
 use the table below as an example:
 | Doc | url |
 | -- | -- |
-| Security file | https://my.security.file |
+| Security file | https://github.com/cubefs/cubefs/blob/master/SECURITY.md |
 | Default and optional configs | https://example.org/config |
 
 ## Overview
