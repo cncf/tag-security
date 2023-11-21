@@ -36,7 +36,7 @@ A table at the top for quick reference information, later used for indexing.
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Software          | https://github.com/openkruise/kruise                                                                                                                                         |
 | Security Provider | No. OpenKruise is an extended component suite for Kubernetes, which mainly focuses on application automations, such as deployment, upgrade, ops and availability protection. |
-| Languages         | [Go](https://go.dev/)                                                                                                                                                        |
+| Languages         | Go, Makefile, Dockerfile, Shell                                                                                                                                              |
 | SBOM              | Software bill of materials. https://github.com/openkruise/kruise/blob/master/go.mod, https://github.com/openkruise/kruise/blob/master/tools/src/kind/go.mod                  |
 |                   |                                                                                                                                                                              |
 
