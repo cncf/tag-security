@@ -33,6 +33,7 @@ Express Learning course provided by Linux Foundation Training & Certification:
 |   |  |
 | -- | -- |
 | Software | https://github.com/cubefs/cubefs  |
+| Website | https://cubefs.io/ |
 | Security Provider | No  |
 | Languages | Golang |
 | SBOM | Software bill of materials.  Link to the libraries, packages, versions used by the project, may also include direct dependencies. |
@@ -40,12 +41,12 @@ Express Learning course provided by Linux Foundation Training & Certification:
 
 ### Security links
 
-Provide the list of links to existing security documentation for the project. You may
-use the table below as an example:
 | Doc | url |
 | -- | -- |
-| Security file | https://github.com/cubefs/cubefs/blob/master/SECURITY.md |
-| Default and optional configs | https://example.org/config |
+| Security File | https://github.com/cubefs/cubefs/blob/master/SECURITY.md |
+| Default & Optional Configs | https://github.com/cubefs/cubefs/blob/master/docs/source/maintenance/configs/config.md |
+| Current Issues & Future Work | https://github.com/cubefs/cubefs/blob/master/docs/source/design/authnode.md |
+| Release & Contact | https://github.com/cubefs/cubefs/tree/master/security | 
 
 ## Overview
 
@@ -54,6 +55,8 @@ CubeFS is a next-generation cloud-native storage product that is currently an in
 ### Background
 
 CubeFS is an open-source cloud storage solution that is compatible with various data access protocols such as S3, POSIX, and HDFS, and supports two storage engines - multiple replicas and erasure coding. It provides users with multiple features such as multi-tenancy, multi-AZ deployment, and cross-region replication. It is widely used in scenarios such as big data, AI, container platforms, databases, middleware storage and computing separation, data sharing and data protection.
+
+In June 2019, JD.com donated (then known as) ChubaoFS to the CNCF, and in December 2019, ChubaoFS was sandboxed. Later, in August 2020, OPPO joined the project as a promoter and contributor. By March 2022, the project name was changed from ChubaoFS to CubeFS to ease pronunciation in English. Finally, in July 2022 CubeFS entered the incubation stage.
 
 ### Actors
 These are the individual parts of your system that interact to provide the 
