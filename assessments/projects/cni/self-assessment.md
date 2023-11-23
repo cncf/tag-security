@@ -5,8 +5,8 @@ documentation for their users. This document is ideal for projects currently in 
 CNCF **sandbox** as well as projects that are looking to receive a joint assessment and
 currently in CNCF **incubation**.
 
-For a detailed guide with step-by-step discussion and examples, check out the free 
-Express Learning course provided by Linux Foundation Training & Certification: 
+For a detailed guide with step-by-step discussion and examples, check out the free
+Express Learning course provided by Linux Foundation Training & Certification:
 [Security Assessments for Open Source Projects](https://training.linuxfoundation.org/express-learning/security-self-assessments-for-open-source-projects-lfel1005/).
 
 # Self-assessment outline
@@ -34,10 +34,10 @@ A table at the top for quick reference information, later used for indexing.
 
 |   |  |
 | -- | -- |
-| Software | A link to the software’s repository.  |
-| Security Provider | Yes or No. Is the primary function of the project to support the security of an integrating system?  |
-| Languages | languages the project is written in |
-| SBOM | Software bill of materials.  Link to the libraries, packages, versions used by the project, may also include direct dependencies. |
+| Software | [A link to CNI's repository.](https://github.com/containernetworking/cni)  |
+| Security Provider | No. The primary function of CNI is to configure networking for containers in a standardized manner.  |
+| Languages | Go |
+| SBOM | [Link to SBOM generated using FOSSA](https://github.com/jasonliny/tag-security/blob/main/assessments/projects/cni/docs/CNI_SBOM_cyclonedx.bom.json)|
 | | |
 
 ### Security links
@@ -61,7 +61,7 @@ Provide information for reviewers who may not be familiar with your project's
 domain or problem area.
 
 ### Actors
-These are the individual parts of your system that interact to provide the 
+These are the individual parts of your system that interact to provide the
 desired functionality.  Actors only need to be separate, if they are isolated
 in some way.  For example, if a service has a database and a front-end API, but
 if a vulnerability in either one would compromise the other, then the distinction
@@ -73,13 +73,13 @@ what prevents an attacker from moving laterally after a compromise.
 ### Actions
 These are the steps that a project performs in order to provide some service
 or functionality.  These steps are performed by different actors in the system.
-Note, that an action need not be overly descriptive at the function call level.  
-It is sufficient to focus on the security checks performed, use of sensitive 
-data, and interactions between actors to perform an action.  
+Note, that an action need not be overly descriptive at the function call level.
+It is sufficient to focus on the security checks performed, use of sensitive
+data, and interactions between actors to perform an action.
 
-For example, the access server receives the client request, checks the format, 
-validates that the request corresponds to a file the client is authorized to 
-access, and then returns a token to the client.  The client then transmits that 
+For example, the access server receives the client request, checks the format,
+validates that the request corresponds to a file the client is authorized to
+access, and then returns a token to the client.  The client then transmits that
 token to the file server, which, after confirming its validity, returns the file.
 
 ### Goals
