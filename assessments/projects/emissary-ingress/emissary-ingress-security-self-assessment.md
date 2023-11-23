@@ -142,17 +142,32 @@ included in threat modeling.
 
 ## Secure development practices
 
+Emissary-Ingress is in progress with 94% in Open Source Security Foundation (OpenSSF) best practices. [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/1852/badge)](https://www.bestpractices.dev/projects/1852)
+
 * Development Pipeline.  A description of the testing and assessment processes that
-  the software undergoes as it is developed and built. Be sure to include specific
-information such as if contributors are required to sign commits, if any container
-images immutable and signed, how many reviewers before merging, any automated checks for
-vulnerabilities, etc.
+  All code is maintained in [GitHub](https://github.com/emissary-ingress/emissary) and changes must be reviewed by maintainers.
+  - All the source code is publicly available on github
+  - Development process is done through PRs on the master branch only, and Issue led.
+  - Extensive documentation, resolution and targetted versions for the changes are required to be added to the Issue.
+  - Every PR requires thorough testing, lint checks and corresponding Docs updation.
+  - Commits need to be signed off and commit msgs are expected to be descriptive, include Issue links.
+  - Each PR requires minimum 2 reviewer sign offs to be merged, and Maintainers will merge the PR.
+  - All of the release branches are long-lived and have branch protection enabled, which will be used for security fixes or bug fixes.
+  - Backport statergy: majority of the time patch branch will be based off from master and most Pull Requests will target master. ensuring bugs and fixes arent missed in the Next shipping version.
+  - All PR requests trigger jobs that perform:
+    - Unit Tests
+    -  
+
 * Communication Channels. Reference where you document how to reach your team or
   describe in corresponding section.
   * Internal. How do team members communicate with each other?
+    Team members communicate with each other through the [Community Slack](https://a8r.io/slack), [Github issues](https://github.com/emissary-ingress/emissary/issues) or [Zoom meetings](https://ambassadorlabs.zoom.us/j/86139262248?pwd=bzZlcU96WjAxN2E1RFZFZXJXZ1FwQT09).
   * Inbound. How do users or prospective users communicate with the team?
+    Users communicate with the team through the [Community Slack](https://a8r.io/slack), [Github issues](https://github.com/emissary-ingress/emissary/issues) or [Zoom troubleshooting meetings](https://us02web.zoom.us/j/83032365622).
   * Outbound. How do you communicate with your users? (e.g. flibble-announce@
     mailing list)
+    Team members communicate with users through the [Community Slack](https://a8r.io/slack).
+
 * Ecosystem. How does your software fit into the cloud native ecosystem?  (e.g.
   Flibber is integrated with both Flocker and Noodles which covers
 virtualization for 80% of cloud users. So, our small number of "users" actually
