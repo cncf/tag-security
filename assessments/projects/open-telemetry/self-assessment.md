@@ -198,18 +198,18 @@ Users can make API requests to the control plane in 3 ways:
 
 
 
-* Autotelemetry: Automatically collect rich telemetry data without requiring any manual instrumentation/configuration from the user.
-* In-cluster edge compute: Collect, store, and query telemetry data locally in the cluster.
-* Low overhead: Use less than 5% of cluster CPU.
-* Scriptability: Querying data in Pixie should be flexible and easy to accommodate for different use cases and visualizations.
+* Custom telemetry: Set sensible defaults but allow customization.
+* Generate own data: Not tied to proprietary data formats or tools.
+* High performance: Unexpected interference effects do not exist in the host application.
+* Simplicity: Allows learning a set of APIs and conventions to capture traces and metrics, simplifying the application instrumentation process.
 
 **Security**
 
 
 
-* At query-time, Pixie data should be protected and robust against traffic snooping.
-* Only authenticated users or users with an API key should be able to make API requests/execute scripts on the org/user’s behalf.
-* If the control plane has been compromised, protect against using the auto-update mechanism to deploy malicious containers.
+* Do not run as root/admin when trying to run and use OpenTelemetry.
+* Configuration files must be verified before loading, and sensitive information in the configuration files must be hidden to reduce unnecessary exposure.
+* To prevent resource exhaustion and other attacks, default parameters such as queues and payloads should not be adjusted arbitrarily.
 
 
 ### Non-Goals
@@ -218,24 +218,22 @@ Users can make API requests to the control plane in 3 ways:
 
 
 
-* Long-term retention: Pixie is built for real-time debugging. As Pixie collects and stores rich, fine-grained data in-memory, Pixie should typically not be used to store data for > 24 hours. Users should instead use the Pixie Plugin system to send data to another datastore using OpenTelemetry.
+* Data limitations: OpenTelemetry can help you access high-quality telemetry data, but data storage and visualization still require other tools, and code analysis and application security are unavailable.
 
 **Security**
 
 
 
-* Stop a third-party with an API key or OpenTelemetry plugin from storing a large amount of data, possibly incurring financial cost or overwhelming the servers.
-* Stop a third-party with an API key or OpenTelemetry plugin from querying sensitive data collected by Pixie.
-* Prevent a malicious actor with a deploy key from deploying to the associated org.
+* Use API tokens and TSl network security encryption to encrypt sensitive information to prevent third parties from querying OpenTelementry telemetry data.
+* Prevent external access to internal resources. When running Open Telemetry, there should be no privileged access.
 
 
 ## Self-Assessment Use
 
-This self-assessment is created by the Pixie team to perform an internal analysis of the project's security. It is not intended to provide a security audit of Pixie, or function as an independent assessment or attestation of Pixie's security health.
+Our group created this self-assessment to analyze the overall security of OpenTelemetry. This document mainly helps users get a preliminary understanding of OpenTelemetry’s security architecture and security development practices. In addition, it allows users to have a deeper understanding of the security functions of OpenTelemetry, helping users better develop, use, and telemetry the data they need.
 
-This document serves to provide Pixie users with an initial understanding of Pixie's security, where to find existing security documentation, Pixie plans for security, and general overview of Pixie security practices, both for development of Pixie as well as security of Pixie.
+All in all, this document helps explain this CNCF open source project, pave the way for the project to seek graduation, provide clear guidance during the incubation process, and bring a more transparent and clear security audit to the overall project.
 
-This document provides the CNCF TAG-Security with an initial understanding of Pixie to assist in a joint-review, necessary for projects under incubation. Taken together, this document and the joint-review serve as a cornerstone for if and when Pixie seeks graduation and is preparing for a security audit.
 
 
 ## Security Functions and Features
