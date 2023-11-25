@@ -60,9 +60,17 @@ Provide information for reviewers who may not be familiar with your project's
 domain or problem area.
 
 ### Actors
-# (need to finish this, just copied and pasted from the website)
+Event Consumer: The entity/system interested in subscribing to different events. Receiving Events from the producer will trigger further action that is up to the consumer.
+
+Event Producer: The entity/system that is produces the "events". The are responsible for wrapping event data in the CloudEvents specification.
+
+
+Event Mediator: Depending on the architecture of the system, the event mediator is the entity/system that is responsible for the distribution, processing and routing of events to consumers. The event broker ensures reliable delivery and may enforce security policies. 
+
+
 #### Occurrence
 An "occurrence" is the capture of a statement of fact during the operation of a software system. This might occur because of a signal raised by the system or a signal being observed by the system, because of a state change, because of a timer elapsing, or any other noteworthy activity. For example, a device might go into an alert state because the battery is low, or a virtual machine is about to perform a scheduled reboot.
+
 
 #### Event
 An "event" is a data record expressing an occurrence and its context. Events are routed from an event producer (the source) to interested event consumers. The routing can be performed based on information contained in the event, but an event will not identify a specific routing destination. Events will contain two types of information: the Event Data representing the Occurrence and Context metadata providing contextual information about the Occurrence. A single occurrence MAY result in more than one event.
@@ -114,6 +122,7 @@ For example, the access server receives the client request, checks the format,
 validates that the request corresponds to a file the client is authorized to 
 access, and then returns a token to the client.  The client then transmits that 
 token to the file server, which, after confirming its validity, returns the file.
+
 
 ### Goals
 The intended goals of the projects including the security guarantees the project
