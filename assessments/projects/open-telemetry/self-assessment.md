@@ -199,17 +199,17 @@ Users can make API requests to the control plane in 3 ways:
 
 
 * Custom telemetry: Set sensible defaults but allow customization.
-* Generate own data: Not tied to proprietary data formats or tools.
+* Own your data: Not tied to proprietary data formats or tools.
 * High performance: Unexpected interference effects do not exist in the host application.
-* Simplicity: Allows learning a set of APIs and conventions to capture traces and metrics, simplifying the application instrumentation process.
+* Simplicity: It is only necessary to learn a single set of APIs and conventions to capture traces and metrics, simplifying the application instrumentation process.
 
 **Security**
 
 
 
-* Do not run as root/admin when trying to run and use OpenTelemetry.
+* The OpenTelemetry Collector should not be run as root.
 * Configuration files must be verified before loading, and sensitive information in the configuration files must be hidden to reduce unnecessary exposure.
-* To prevent resource exhaustion and other attacks, default parameters such as queues and payloads should not be adjusted arbitrarily.
+* To prevent resource exhaustion attacks, default parameters such as queues and payloads should be accounted for.
 
 
 ### Non-Goals
@@ -224,7 +224,7 @@ Users can make API requests to the control plane in 3 ways:
 
 
 
-* Use API tokens and TSl network security encryption to encrypt sensitive information to prevent third parties from querying OpenTelementry telemetry data.
+* Use API tokens and TLS network security encryption to encrypt sensitive information to prevent third parties from querying OpenTelementry telemetry data.
 * Prevent external access to internal resources. When running Open Telemetry, there should be no privileged access.
 
 
