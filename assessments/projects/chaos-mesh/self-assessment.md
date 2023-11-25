@@ -47,10 +47,11 @@ A table at the top for quick reference information, later used for indexing.
 
 Provide the list of links to existing security documentation for the project. You may
 use the table below as an example:
-| Doc                          | url                        |
-| ---------------------------- | -------------------------- |
-| Security file                | https://my.security.file   |
-| Default and optional configs | https://example.org/config |
+| Doc                                       | url                                                       |
+| ----------------------------------------- | --------------------------------------------------------- |
+| Manage user permissions                   | https://chaos-mesh.org/docs/manage-user-permissions/      |
+| Configure namespace for Chaos Experiments | https://chaos-mesh.org/docs/configure-enabled-namespace/  |
+| GCP OAuth Authentication                  | https://chaos-mesh.org/docs/gcp-authentication/           |
 
 ## Overview
 
