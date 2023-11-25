@@ -47,11 +47,12 @@ A table at the top for quick reference information, later used for indexing.
 
 Provide the list of links to existing security documentation for the project. You may
 use the table below as an example:
-| Doc                                       | url                                                       |
-| ----------------------------------------- | --------------------------------------------------------- |
-| Manage user permissions                   | https://chaos-mesh.org/docs/manage-user-permissions/      |
-| Configure namespace for Chaos Experiments | https://chaos-mesh.org/docs/configure-enabled-namespace/  |
-| GCP OAuth Authentication                  | https://chaos-mesh.org/docs/gcp-authentication/           |
+| Doc                                                                 | url                                                           |
+| ------------------------------------------------------------------- | ------------------------------------------------------------- |
+| Manage user permissions                                             | https://chaos-mesh.org/docs/manage-user-permissions/          |
+| Configure namespace for Chaos Experiments                           | https://chaos-mesh.org/docs/configure-enabled-namespace/      |
+| GCP OAuth Authentication                                            | https://chaos-mesh.org/docs/gcp-authentication/               |
+| Chaos Mesh manages permissions using the native RBAC feature in K8s | https://kubernetes.io/docs/reference/access-authn-authz/rbac/ |
 
 ## Overview
 
