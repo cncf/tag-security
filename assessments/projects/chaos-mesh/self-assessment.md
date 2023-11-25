@@ -37,20 +37,22 @@ A table at the top for quick reference information, later used for indexing.
 
 |                   |                                                                                                                                   |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Software          | A link to the software’s repository.                                                                                              |
-| Security Provider | Yes or No. Is the primary function of the project to support the security of an integrating system?                               |
-| Languages         | languages the project is written in                                                                                               |
-| SBOM              | Software bill of materials.  Link to the libraries, packages, versions used by the project, may also include direct dependencies. |
+| Software          | https://github.com/chaos-mesh/chaos-mesh                                                                                          |
+| Security Provider | No, Chaos Mesh offers various types of fault simulation and has an enormous capability to orchestrate fault scenarios.            |
+| Languages         | Go, Typescript, Javascript, Shell                                                                                                 |
+| SBOM              | `https://github.com/<username>/<repository>/releases/tag/<release-tag>/chaos-mesh-${{ needs.build-specific-architecture.outputs.image_tag }}-sbom.spdx` |
 |                   |                                                                                                                                   |
 
 ### Security links
 
 Provide the list of links to existing security documentation for the project. You may
 use the table below as an example:
-| Doc                          | url                        |
-| ---------------------------- | -------------------------- |
-| Security file                | https://my.security.file   |
-| Default and optional configs | https://example.org/config |
+| Doc                                                                 | url                                                           |
+| ------------------------------------------------------------------- | ------------------------------------------------------------- |
+| Manage user permissions                                             | https://chaos-mesh.org/docs/manage-user-permissions/          |
+| Configure namespace for Chaos Experiments                           | https://chaos-mesh.org/docs/configure-enabled-namespace/      |
+| GCP OAuth Authentication                                            | https://chaos-mesh.org/docs/gcp-authentication/               |
+| Chaos Mesh manages permissions using the native RBAC feature in K8s | https://kubernetes.io/docs/reference/access-authn-authz/rbac/ |
 
 ## Overview
 
