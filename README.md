@@ -74,38 +74,17 @@ and posting to the channels.
 
 ## Meeting times
 
-Group meeting times are listed below:
+For our members in North and South America, we host weekly sessions each Wednesday at 10 am (UTC-7). To participate, simply use the following Zoom link: https://zoom.us/j/99809474566. The meeting ID is 998 0947 4566. 
 
-- US:   Weekly on Wednesdays at 10 am UTC-7 (see your timezone
-  [here](https://time.is/1000_today_in_PT?CNCF_Security_TAG_US_Meeting))
-- EMEA: Bi-weekly on Wednesdays at 1 pm UTC+0 (UTC+1 while observing daylight savings) (see your timezone
-  [here](https://time.is/UTC?CNCF_Security_TAG_EMEA_Meeting))
+Meanwhile, participants from Europe, the Middle East, and Africa (EMEA) can join bi-weekly meetings on Wednesdays at 1 pm UTC+0, which adjusts to UTC+1 when daylight saving time is in effect. Join us through this Zoom link: https://zoom.us/j/99917523142, with the meeting ID: 999 1752 3142. 
 
-[Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
+To find the corresponding time in your local area, please see your timezone [here]([url](https://time.is/)). 
 
-### Calendar
+This dual schedule ensures that no matter where you are, you'll have a place in our conversations.
 
-- Here is a [TAG-Security curated calendar](https://calendar.google.com/calendar/u/0?cid=MGI4dTVlbDh0YTRzOTN0MmNtNzJ0dXZoaGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
-with the main meetings and working groups.
-- See the [CNCF Calendar](https://www.cncf.io/calendar/) for a list of all CNCF calendar
-invites.
+We invite you to mark your calendars and join the dialogue. For your convenience, all meetings are listed on the main [CNCF calendar](https://www.cncf.io/calendar/) as well as the [TAG Security Calendar](https://calendar.google.com/calendar/u/0?cid=MGI4dTVlbDh0YTRzOTN0MmNtNzJ0dXZoaGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ). These calendars are updated regularly to ensure that you stay informed of all upcoming meetings and events.
 
-Got something to bring up or share? Review how to get a topic or presentation
-added to the Agenda on our [process](governance/process.md#getting-on-the-agenda) page.
-
-### Zoom Meeting Details
-
-#### [North America] CNCF TAG-Security Weekly Meeting
-
-https://zoom.us/j/99809474566
-
-Meeting ID: 998 0947 4566
-
-#### [EMEA] CNCF TAG-Security Weekly Meeting
-
-https://zoom.us/j/99917523142
-
-Meeting ID: 999 1752 3142
+Got something to bring up or share? Review how to get a topic or presentation added to the Agenda on our [process](governance/process.md#getting-on-the-agenda) page.
 
 ## Gatherings
 
@@ -194,7 +173,7 @@ the project and its risk profile.
 Facilitator: Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)),
 New York University
 
-Facilitator: Andres Vega ([@anvega](https://github.com/anvega)), ControlPlane
+Facilitator: Andrés Vega ([@anvega](https://github.com/anvega))
 
 Co-chair representatives: @sublimino @PushkarJ
 
