@@ -1,13 +1,11 @@
-# Self-assessment
-The Self-assessment is the initial document for projects to begin thinking about the
-security of the project, determining gaps in their security, and preparing any security
-documentation for their users. This document is ideal for projects currently in the
-CNCF **sandbox** as well as projects that are looking to receive a joint assessment and
-currently in CNCF **incubation**.
+# CloudEvents Self-assessment
+September 26, 2023
 
-For a detailed guide with step-by-step discussion and examples, check out the free 
-Express Learning course provided by Linux Foundation Training & Certification: 
-[Security Assessments for Open Source Projects](https://training.linuxfoundation.org/express-learning/security-self-assessments-for-open-source-projects-lfel1005/).
+Authors: Igor Rodrigues (@igor8mr), Matthew Gong (@MatthewZGong), Kushal Kothari (@) and Devyani Bairagya (@)
+
+Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV)
+
+This document elaborates and explores the design goals for CloudEvents as well as a security assessment of the software.
 
 # Self-assessment outline
 
@@ -16,17 +14,24 @@ Express Learning course provided by Linux Foundation Training & Certification:
 * [Metadata](#metadata)
   * [Security links](#security-links)
 * [Overview](#overview)
+  * [Background](#background)
   * [Actors](#actors)
   * [Actions](#actions)
-  * [Background](#background)
   * [Goals](#goals)
   * [Non-goals](#non-goals)
 * [Self-assessment use](#self-assessment-use)
 * [Security functions and features](#security-functions-and-features)
 * [Project compliance](#project-compliance)
 * [Secure development practices](#secure-development-practices)
+  * [Development Pipeline ](#development-pipeline)
+  * [Communications Channels](#communications-channels)
+  * [Ecosystem ](#ecosystem)
 * [Security issue resolution](#security-issue-resolution)
 * [Appendix](#appendix)
+  * [Known Issues Over Time](#known-issues-over-time)
+  * [CII Best Practices](#cii-best-practices)
+  * [Case Studies](#case-studies)
+  * [Related Projects / Vendors](#related-projects-and-vendors)
 
 ## Metadata
 
@@ -34,9 +39,9 @@ A table at the top for quick reference information, later used for indexing.
 
 |   |  |
 | -- | -- |
-| Software | A link to the software’s repository.  |
-| Security Provider | Yes or No. Is the primary function of the project to support the security of an integrating system?  |
-| Languages | languages the project is written in |
+| Software | [CloudEvents Repository](https://github.com/cloudevents/spec)  |
+| Security Provider | No  |
+| Languages | ANTRL, Python, C#/.NET, Go, Java, Javascript, PHP, PowerShell, Ruby and Rust |
 | SBOM | Software bill of materials.  Link to the libraries, packages, versions used by the project, may also include direct dependencies. |
 | | |
 
@@ -46,8 +51,7 @@ Provide the list of links to existing security documentation for the project. Yo
 use the table below as an example:
 | Doc | url |
 | -- | -- |
-| Security file | https://my.security.file |
-| Default and optional configs | https://example.org/config |
+| CloudEvents Security Assessment  | https://github.com/cloudevents/spec/blob/main/docs/CE-SecurityAudit-2022-10.pdf |
 
 ## Overview
 CloudEvents is an open-source specification for describing data events. Such events are frequently used across many industry fields, but there are currently no standards on how to write those. Because of that, which is currently very different across different developers. This makes programmers have to develop new event handling logic for each event source and makes it hard for two systems to communicate with each other. CloudEvents seeks to dramatically simplify event declaration and delivery across services, platforms, and beyond.
@@ -163,7 +167,7 @@ included in threat modeling.
 
 ## Secure development practices
 
-### Development Pipieline 
+### Development Pipeline 
 
 - You can either report a change or create a Github Issue
     - Check existing issues first
@@ -229,15 +233,85 @@ patching/update availability.
 
 ## Appendix
 
-* Known Issues Over Time. List or summarize statistics of past vulnerabilities
-  with links. If none have been reported, provide data, if any, about your track
-record in catching issues in code review or automated testing.
+### Known Issues Over Time
+
+#### Issues found by Trail of Bits
+
+The main security assessment on CloudEvents was a Security Audit performed by Trail of Bits released on October 26, 2022.
+
+##### [Java SDK] Reliance on default encoding
+* Severity: Undetermined
+* Difficulty: Low
+* Type: Undefined Behavior
+* Finding ID: TOB-CE-1
+* Target: Java SDK
+
+##### [Java SDK] Outdated Vulnerable Dependencies
+* Severity: Undetermined
+* Difficulty: Medium
+* Type: Patching
+* Finding ID: TOB-CE-2
+* Target: Java SDK
+
+##### [JavaScript SDK] Potential XSS in httpTransport()
+* Severity: Undetermined
+* Difficulty: Low
+* Type: Data Validation
+* Finding ID: TOB-CE-3
+* Target: sdk-javascript/src/transport/http/index.ts
+
+##### [Go SDK] Outdated Vulnerable Dependencies
+* Severity: Undetermined
+* Difficulty: Low
+* Type: Patching
+* Finding ID: TOB-CE-4
+* Target: Go SDK
+
+##### [Go SDK] Downcasting of 64-bit integer
+* Severity: Undetermined
+* Difficulty: Low
+* Type: Undefined Behavior
+* Finding ID: TOB-CE-5
+* Target: sql/v2/parser/expression_visitor.go, sql/v2/utils/casting.go
+
+##### [Go SDK] ReadHeaderTimeout not configured
+* Severity: Informational
+* Difficulty: Low
+* Type: Denial of Service
+* Finding ID: TOB-CE-6
+* Target: Go SDK
+
+##### [CSharp SDK] Outdated Vulnerable Dependencies
+* Severity: Undetermined
+* Difficulty: Low
+* Type: Patching
+* Finding ID: TOB-CE-7
+* Target: CSharp SDK
+
+### CII Best Practices
+
 * [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/).
   Best Practices. A brief discussion of where the project is at
   with respect to CII best practices and what it would need to
   achieve the badge.
+
+### Case Studies
 * Case Studies. Provide context for reviewers by detailing 2-3 scenarios of
   real-world use cases.
-* Related Projects / Vendors. Reflect on times prospective users have asked
-  about the differences between your project and projectX. Reviewers will have
-the same question.
+
+### Related Projects / Vendors
+
+#### OpenTelemetry
+[OpenTelemetry](https://opentelemetry.io/)
+
+#### AsyncAPI
+[OpenTelemetry](https://www.asyncapi.com/)
+
+#### Event-B
+[OpenTelemetry](https://www.southampton.ac.uk/~tsh2n14/publications/chapters/eventb-dbook13.pdf)
+
+Event-B is a formal method for system-level modelling and analysis. Key features of Event-B are the use of set theory as a modelling notation, the use of refinement to represent systems at different abstraction levels and the use of mathematical proof to verify consistency between refinement levels.
+
+
+#### Apex Event Specification
+[Apex Event Specification Guide](https://insights.eventscouncil.org/Portals/0/APEX_Event_Specifications_Guide.pdf)
