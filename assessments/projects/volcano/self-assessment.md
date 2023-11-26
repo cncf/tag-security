@@ -34,10 +34,10 @@ A table at the top for quick reference information, later used for indexing.
 
 |                   |                                                                                                                                  |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Software          | A link to the software's repository.                                                                                             |
-| Security Provider | Yes or No. Is the primary function of the project to support the security of an integrating system?                              |
-| Languages         | languages the project is written in                                                                                              |
-| SBOM              | Software bill of materials. Link to the libraries, packages, versions used by the project, may also include direct dependencies. |
+| Software          | https://github.com/volcano-sh/volcano
+| Security Provider | No
+| Languages         | Go, Shell, Makefile, Dockerfile, Python, Smarty|
+| SBOM              | [SBOM](SBOM.json)|
 |                   |                                                                                                                                  |
 
 ### Security links
@@ -46,8 +46,7 @@ Provide the list of links to existing security documentation for the project.
 You may use the table below as an example:
 \| Doc \| url \|
 \| -- \| -- \|
-\| Security file \| https://my.security.file \|
-\| Default and optional configs \| https://example.org/config \|
+\| SECURITY.md \| https://github.com/volcano-sh/volcano/blob/master/SECURITY.md\|
 
 ## Overview
 
