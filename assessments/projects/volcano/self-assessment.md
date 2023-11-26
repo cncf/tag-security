@@ -32,21 +32,19 @@ For a detailed guide with step-by-step discussion and examples, check out the fr
 
 A table at the top for quick reference information, later used for indexing.
 
-|                   |                                                                                                                                  |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | Software          | https://github.com/volcano-sh/volcano
 | Security Provider | No
 | Languages         | Go, Shell, Makefile, Dockerfile, Python, Smarty|
 | SBOM              | [SBOM](SBOM.json)|
-|                   |                                                                                                                                  |
 
 ### Security links
 
 Provide the list of links to existing security documentation for the project.
 You may use the table below as an example:
-\| Doc \| url \|
-\| -- \| -- \|
-\| SECURITY.md \| https://github.com/volcano-sh/volcano/blob/master/SECURITY.md\|
+| Document          | URL
+|-------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| SECURITY.md | https://github.com/volcano-sh/volcano/blob/master/SECURITY.md|
 
 ## Overview
 
