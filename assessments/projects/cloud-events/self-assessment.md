@@ -120,20 +120,13 @@ A protocol binding describes how events are sent and received over a given proto
 
 Protocol bindings MAY choose to use an Event Format to map an event directly to the transport envelope body, or MAY provide additional formatting and structure to the envelope. For example, a wrapper around a structured-mode message might be used, or several messages could be batched together into a transport envelope body. 
 
-
-
-
 ### Goals
 - Cloud Events aims to simplify event declaration and delivery across services, platforms and systems 
 - Cloud Events aims to create interoperability and portability between different systems and services in event driven systems.
 
-
-
 ### Non-goals
 - Cloud Events does not aim to change the implementation details of underlying communication protocols. 
 - Cloud Events does not want to define the processing logic for events within different application and systems.
-
-
 
 ## Self-assessment use
 
@@ -170,7 +163,42 @@ included in threat modeling.
 
 ## Secure development practices
 
-* Development Pipeline.  A description of the testing and assessment processes that
+### Development Pipieline 
+
+- You can either report a change or create a Github Issue
+    - Check existing issues first
+- All Proposed changes will be done through Github Pull Requests (PRs)
+- All patches must be signed by the commiter 
+    - The sign-off is a simple line at the end of the explanation for the patch
+- PRs will be review during official meetings 
+    - off-line reviews are recommended before meetings 
+    - Meetings happen every Thursday at 9AM PT 
+- PRs will be resolved and merged during official meetings as a result of a motion
+    - PRs should not be merged if substantial changes have been made in the past 2 days
+
+### Communications Channels
+- Internal
+    - Meetings 
+    - Email
+    - Github Issues
+- InBound 
+    - cncf-cloudevents@lists.cncf.io
+    - [CNCF's Slack workspace](http://slack.cncf.io/)
+    - [CNCF's Meeting Calender](https://www.cncf.io/community/calendar/)
+- Outgoing 
+    - Subscription: https://lists.cncf.io/g/cncf-cloudevents-sdk
+
+### Ecosystem 
+
+CloudEvents is integrated with various different cloud-native technologies and services. It goal is to create interoperability in event-driven architecture
+
+CloudEvents has many adopters including but not limited to:
+- Adobe I/O Events
+- Azure Event Grid
+- Google Cloud Eventarc
+- VMware Event Broker Appliance
+
+<!-- * Development Pipeline.  A description of the testing and assessment processes that
   the software undergoes as it is developed and built. Be sure to include specific
 information such as if contributors are required to sign commits, if any container
 images immutable and signed, how many reviewers before merging, any automated checks for
@@ -185,7 +213,7 @@ vulnerabilities, etc.
   Flibber is integrated with both Flocker and Noodles which covers
 virtualization for 80% of cloud users. So, our small number of "users" actually
 represents very wide usage across the ecosystem since every virtual instance uses
-Flibber encryption by default.)
+Flibber encryption by default.) -->
 
 ## Security issue resolution
 
