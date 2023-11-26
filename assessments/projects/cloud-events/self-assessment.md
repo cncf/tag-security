@@ -56,8 +56,11 @@ The project also provides software development kits (SDKs) for Go, JavaScript, J
 
 ### Background
 
-Provide information for reviewers who may not be familiar with your project's
-domain or problem area.
+"Events" refer to occurrences or incidents that cause a response or action within a system. 
+
+There is no common language on events themselves. So when a new software is created developers have to write new event handling processes for different types of sources. This can become very chaotic and unorganized.
+
+CloudEvents was developed to address the lack of uniformity in event data formats that exist in cloud and microservices environments. By providing a standardized way to represent events, CloudEvents aims to enhance interoperability, portability, and simplicity in event-driven architectures across different cloud providers and services.
 
 ### Actors
 Event Consumer: The entity/system interested in subscribing to different events. Receiving Events from the producer will trigger further action that is up to the consumer.
