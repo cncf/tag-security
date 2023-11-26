@@ -1,0 +1,2896 @@
+{
+    "SPDXID": "SPDXRef-DOCUMENT",
+    "spdxVersion": "SPDX-2.3",
+    "creationInfo": {
+        "created": "2023-11-26T23:40:49Z",
+        "creators": [
+            "Tool: GitHub.com-Dependency-Graph"
+        ]
+    },
+    "name": "com.github.volcano-sh/volcano",
+    "dataLicense": "CC0-1.0",
+    "documentDescribes": [
+        "SPDXRef-com.github.volcano-sh-volcano"
+    ],
+    "documentNamespace": "https://github.com/volcano-sh/volcano/dependency_graph/sbom-f88707856ce66ac2",
+    "packages": [
+        {
+            "SPDXID": "SPDXRef-com.github.volcano-sh-volcano",
+            "name": "com.github.volcano-sh/volcano",
+            "versionInfo": "",
+            "downloadLocation": "git+https://github.com/volcano-sh/volcano",
+            "licenseDeclared": "Apache-2.0",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:github/volcano-sh/volcano"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-agiledragon-gomonkey-v2-2.2.0",
+            "name": "go:github.com/agiledragon/gomonkey/v2",
+            "versionInfo": "2.2.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/agiledragon/gomonkey/v2@2.2.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-antlr-antlr4-runtime-Go-antlr-1.4.10",
+            "name": "go:github.com/antlr/antlr4/runtime/Go/antlr",
+            "versionInfo": "1.4.10",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/antlr/antlr4/runtime/Go/antlr@1.4.10",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-asaskevich-govalidator-0.0.0-20190424111038-f61b66f89f4a",
+            "name": "go:github.com/asaskevich/govalidator",
+            "versionInfo": "0.0.0-20190424111038-f61b66f89f4a",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/asaskevich/govalidator@0.0.0-20190424111038-f61b66f89f4a",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-beorn7-perks-1.0.1",
+            "name": "go:github.com/beorn7/perks",
+            "versionInfo": "1.0.1",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/beorn7/perks@1.0.1",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-blang-semver-v4-4.0.0",
+            "name": "go:github.com/blang/semver/v4",
+            "versionInfo": "4.0.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/blang/semver/v4@4.0.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-cenkalti-backoff-v4-4.1.3",
+            "name": "go:github.com/cenkalti/backoff/v4",
+            "versionInfo": "4.1.3",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/cenkalti/backoff/v4@4.1.3",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-cespare-xxhash-v2-2.2.0",
+            "name": "go:github.com/cespare/xxhash/v2",
+            "versionInfo": "2.2.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/cespare/xxhash/v2@2.2.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-coreos-go-semver-0.3.0",
+            "name": "go:github.com/coreos/go-semver",
+            "versionInfo": "0.3.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/coreos/go-semver@0.3.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-coreos-go-systemd-v22-22.4.0",
+            "name": "go:github.com/coreos/go-systemd/v22",
+            "versionInfo": "22.4.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/coreos/go-systemd/v22@22.4.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-davecgh-go-spew-1.1.1",
+            "name": "go:github.com/davecgh/go-spew",
+            "versionInfo": "1.1.1",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/davecgh/go-spew@1.1.1",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-docker-distribution-2.8.2+incompatible",
+            "name": "go:github.com/docker/distribution",
+            "versionInfo": "2.8.2+incompatible",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/docker/distribution@2.8.2%2Bincompatible",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-elastic-go-elasticsearch-v7-7.17.7",
+            "name": "go:github.com/elastic/go-elasticsearch/v7",
+            "versionInfo": "7.17.7",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/elastic/go-elasticsearch/v7@7.17.7",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-emicklei-go-restful-v3-3.9.0",
+            "name": "go:github.com/emicklei/go-restful/v3",
+            "versionInfo": "3.9.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/emicklei/go-restful/v3@3.9.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-evanphx-json-patch-4.12.0+incompatible",
+            "name": "go:github.com/evanphx/json-patch",
+            "versionInfo": "4.12.0+incompatible",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/evanphx/json-patch@4.12.0%2Bincompatible",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-evanphx-json-patch-v5-5.6.0",
+            "name": "go:github.com/evanphx/json-patch/v5",
+            "versionInfo": "5.6.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/evanphx/json-patch/v5@5.6.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-felixge-httpsnoop-1.0.3",
+            "name": "go:github.com/felixge/httpsnoop",
+            "versionInfo": "1.0.3",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/felixge/httpsnoop@1.0.3",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-fsnotify-fsnotify-1.6.0",
+            "name": "go:github.com/fsnotify/fsnotify",
+            "versionInfo": "1.6.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/fsnotify/fsnotify@1.6.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-go-logr-logr-1.2.3",
+            "name": "go:github.com/go-logr/logr",
+            "versionInfo": "1.2.3",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/go-logr/logr@1.2.3",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-go-logr-stdr-1.2.2",
+            "name": "go:github.com/go-logr/stdr",
+            "versionInfo": "1.2.2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/go-logr/stdr@1.2.2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-go-openapi-jsonpointer-0.19.6",
+            "name": "go:github.com/go-openapi/jsonpointer",
+            "versionInfo": "0.19.6",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/go-openapi/jsonpointer@0.19.6",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-go-openapi-jsonreference-0.20.1",
+            "name": "go:github.com/go-openapi/jsonreference",
+            "versionInfo": "0.20.1",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/go-openapi/jsonreference@0.20.1",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-go-openapi-swag-0.22.3",
+            "name": "go:github.com/go-openapi/swag",
+            "versionInfo": "0.22.3",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/go-openapi/swag@0.22.3",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-go-task-slim-sprig-0.0.0-20210107165309-348f09dbbbc0",
+            "name": "go:github.com/go-task/slim-sprig",
+            "versionInfo": "0.0.0-20210107165309-348f09dbbbc0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/go-task/slim-sprig@0.0.0-20210107165309-348f09dbbbc0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-gogo-protobuf-1.3.2",
+            "name": "go:github.com/gogo/protobuf",
+            "versionInfo": "1.3.2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/gogo/protobuf@1.3.2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-golang-groupcache-0.0.0-20210331224755-41bb18bfe9da",
+            "name": "go:github.com/golang/groupcache",
+            "versionInfo": "0.0.0-20210331224755-41bb18bfe9da",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/golang/groupcache@0.0.0-20210331224755-41bb18bfe9da",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-golang-mock-1.6.0",
+            "name": "go:github.com/golang/mock",
+            "versionInfo": "1.6.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/golang/mock@1.6.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-golang-protobuf-1.5.3",
+            "name": "go:github.com/golang/protobuf",
+            "versionInfo": "1.5.3",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/golang/protobuf@1.5.3",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-google-cadvisor-0.47.1",
+            "name": "go:github.com/google/cadvisor",
+            "versionInfo": "0.47.1",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/google/cadvisor@0.47.1",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-google-cel-go-0.12.6",
+            "name": "go:github.com/google/cel-go",
+            "versionInfo": "0.12.6",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/google/cel-go@0.12.6",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-google-gnostic-0.5.7-v3refs",
+            "name": "go:github.com/google/gnostic",
+            "versionInfo": "0.5.7-v3refs",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/google/gnostic@0.5.7-v3refs",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-google-go-cmp-0.5.9",
+            "name": "go:github.com/google/go-cmp",
+            "versionInfo": "0.5.9",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/google/go-cmp@0.5.9",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-google-gofuzz-1.1.0",
+            "name": "go:github.com/google/gofuzz",
+            "versionInfo": "1.1.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/google/gofuzz@1.1.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-google-pprof-0.0.0-20210720184732-4bb14d4b1be1",
+            "name": "go:github.com/google/pprof",
+            "versionInfo": "0.0.0-20210720184732-4bb14d4b1be1",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/google/pprof@0.0.0-20210720184732-4bb14d4b1be1",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-google-shlex-0.0.0-20191202100458-e7afc7fbc510",
+            "name": "go:github.com/google/shlex",
+            "versionInfo": "0.0.0-20191202100458-e7afc7fbc510",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/google/shlex@0.0.0-20191202100458-e7afc7fbc510",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-google-uuid-1.3.0",
+            "name": "go:github.com/google/uuid",
+            "versionInfo": "1.3.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/google/uuid@1.3.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-grpc-ecosystem-go-grpc-prometheus-1.2.0",
+            "name": "go:github.com/grpc-ecosystem/go-grpc-prometheus",
+            "versionInfo": "1.2.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/grpc-ecosystem/go-grpc-prometheus@1.2.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-grpc-ecosystem-grpc-gateway-v2-2.11.3",
+            "name": "go:github.com/grpc-ecosystem/grpc-gateway/v2",
+            "versionInfo": "2.11.3",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/grpc-ecosystem/grpc-gateway/v2@2.11.3",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-hashicorp-errwrap-1.0.0",
+            "name": "go:github.com/hashicorp/errwrap",
+            "versionInfo": "1.0.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/hashicorp/errwrap@1.0.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-hashicorp-go-multierror-1.0.0",
+            "name": "go:github.com/hashicorp/go-multierror",
+            "versionInfo": "1.0.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/hashicorp/go-multierror@1.0.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-imdario-mergo-0.3.12",
+            "name": "go:github.com/imdario/mergo",
+            "versionInfo": "0.3.12",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/imdario/mergo@0.3.12",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-inconshreveable-mousetrap-1.0.1",
+            "name": "go:github.com/inconshreveable/mousetrap",
+            "versionInfo": "1.0.1",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/inconshreveable/mousetrap@1.0.1",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-josharian-intern-1.0.0",
+            "name": "go:github.com/josharian/intern",
+            "versionInfo": "1.0.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/josharian/intern@1.0.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-json-iterator-go-1.1.12",
+            "name": "go:github.com/json-iterator/go",
+            "versionInfo": "1.1.12",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/json-iterator/go@1.1.12",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-mailru-easyjson-0.7.7",
+            "name": "go:github.com/mailru/easyjson",
+            "versionInfo": "0.7.7",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/mailru/easyjson@0.7.7",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-matttproud-golang-protobuf-extensions-1.0.2",
+            "name": "go:github.com/matttproud/golang_protobuf_extensions",
+            "versionInfo": "1.0.2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@1.0.2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-mitchellh-mapstructure-1.5.0",
+            "name": "go:github.com/mitchellh/mapstructure",
+            "versionInfo": "1.5.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/mitchellh/mapstructure@1.5.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-moby-sys-mountinfo-0.6.2",
+            "name": "go:github.com/moby/sys/mountinfo",
+            "versionInfo": "0.6.2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/moby/sys/mountinfo@0.6.2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-modern-go-concurrent-0.0.0-20180306012644-bacd9c7ef1dd",
+            "name": "go:github.com/modern-go/concurrent",
+            "versionInfo": "0.0.0-20180306012644-bacd9c7ef1dd",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/modern-go/concurrent@0.0.0-20180306012644-bacd9c7ef1dd",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-modern-go-reflect2-1.0.2",
+            "name": "go:github.com/modern-go/reflect2",
+            "versionInfo": "1.0.2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/modern-go/reflect2@1.0.2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-munnerz-goautoneg-0.0.0-20191010083416-a7dc8b61c822",
+            "name": "go:github.com/munnerz/goautoneg",
+            "versionInfo": "0.0.0-20191010083416-a7dc8b61c822",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/munnerz/goautoneg@0.0.0-20191010083416-a7dc8b61c822",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-NYTimes-gziphandler-1.1.1",
+            "name": "go:github.com/NYTimes/gziphandler",
+            "versionInfo": "1.1.1",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/NYTimes/gziphandler@1.1.1",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-onsi-ginkgo-v2-2.9.1",
+            "name": "go:github.com/onsi/ginkgo/v2",
+            "versionInfo": "2.9.1",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/onsi/ginkgo/v2@2.9.1",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-onsi-gomega-1.27.4",
+            "name": "go:github.com/onsi/gomega",
+            "versionInfo": "1.27.4",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/onsi/gomega@1.27.4",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-opencontainers-go-digest-1.0.0",
+            "name": "go:github.com/opencontainers/go-digest",
+            "versionInfo": "1.0.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/opencontainers/go-digest@1.0.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-opencontainers-selinux-1.10.0",
+            "name": "go:github.com/opencontainers/selinux",
+            "versionInfo": "1.10.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/opencontainers/selinux@1.10.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-pkg-errors-0.9.1",
+            "name": "go:github.com/pkg/errors",
+            "versionInfo": "0.9.1",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/pkg/errors@0.9.1",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-pmezard-go-difflib-1.0.0",
+            "name": "go:github.com/pmezard/go-difflib",
+            "versionInfo": "1.0.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/pmezard/go-difflib@1.0.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-prometheus-client-golang-1.14.0",
+            "name": "go:github.com/prometheus/client_golang",
+            "versionInfo": "1.14.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/prometheus/client_golang@1.14.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-prometheus-client-model-0.3.0",
+            "name": "go:github.com/prometheus/client_model",
+            "versionInfo": "0.3.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/prometheus/client_model@0.3.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-prometheus-common-0.37.0",
+            "name": "go:github.com/prometheus/common",
+            "versionInfo": "0.37.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/prometheus/common@0.37.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-prometheus-procfs-0.8.0",
+            "name": "go:github.com/prometheus/procfs",
+            "versionInfo": "0.8.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/prometheus/procfs@0.8.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-spf13-cobra-1.6.0",
+            "name": "go:github.com/spf13/cobra",
+            "versionInfo": "1.6.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/spf13/cobra@1.6.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-spf13-pflag-1.0.5",
+            "name": "go:github.com/spf13/pflag",
+            "versionInfo": "1.0.5",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/spf13/pflag@1.0.5",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-stoewer-go-strcase-1.2.0",
+            "name": "go:github.com/stoewer/go-strcase",
+            "versionInfo": "1.2.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/stoewer/go-strcase@1.2.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-github.com-stretchr-testify-1.8.3",
+            "name": "go:github.com/stretchr/testify",
+            "versionInfo": "1.8.3",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/github.com/stretchr/testify@1.8.3",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-go.etcd.io-etcd-api-v3-3.5.7",
+            "name": "go:go.etcd.io/etcd/api/v3",
+            "versionInfo": "3.5.7",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/go.etcd.io/etcd/api/v3@3.5.7",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-go.etcd.io-etcd-client-pkg-v3-3.5.7",
+            "name": "go:go.etcd.io/etcd/client/pkg/v3",
+            "versionInfo": "3.5.7",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/go.etcd.io/etcd/client/pkg/v3@3.5.7",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-go.etcd.io-etcd-client-v3-3.5.7",
+            "name": "go:go.etcd.io/etcd/client/v3",
+            "versionInfo": "3.5.7",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/go.etcd.io/etcd/client/v3@3.5.7",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-go.opentelemetry.io-contrib-instrumentation-google.golang.org-grpc-otelgrpc-0.35.0",
+            "name": "go:go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc",
+            "versionInfo": "0.35.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc@0.35.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-go.opentelemetry.io-contrib-instrumentation-net-http-otelhttp-0.35.1",
+            "name": "go:go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+            "versionInfo": "0.35.1",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@0.35.1",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-go.opentelemetry.io-otel-1.10.0",
+            "name": "go:go.opentelemetry.io/otel",
+            "versionInfo": "1.10.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/go.opentelemetry.io/otel@1.10.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-go.opentelemetry.io-otel-exporters-otlp-internal-retry-1.10.0",
+            "name": "go:go.opentelemetry.io/otel/exporters/otlp/internal/retry",
+            "versionInfo": "1.10.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/go.opentelemetry.io/otel/exporters/otlp/internal/retry@1.10.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-go.opentelemetry.io-otel-exporters-otlp-otlptrace-1.10.0",
+            "name": "go:go.opentelemetry.io/otel/exporters/otlp/otlptrace",
+            "versionInfo": "1.10.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/go.opentelemetry.io/otel/exporters/otlp/otlptrace@1.10.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-go.opentelemetry.io-otel-exporters-otlp-otlptrace-otlptracegrpc-1.10.0",
+            "name": "go:go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc",
+            "versionInfo": "1.10.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc@1.10.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-go.opentelemetry.io-otel-metric-0.31.0",
+            "name": "go:go.opentelemetry.io/otel/metric",
+            "versionInfo": "0.31.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/go.opentelemetry.io/otel/metric@0.31.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-go.opentelemetry.io-otel-sdk-1.10.0",
+            "name": "go:go.opentelemetry.io/otel/sdk",
+            "versionInfo": "1.10.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/go.opentelemetry.io/otel/sdk@1.10.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-go.opentelemetry.io-otel-trace-1.10.0",
+            "name": "go:go.opentelemetry.io/otel/trace",
+            "versionInfo": "1.10.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/go.opentelemetry.io/otel/trace@1.10.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-go.opentelemetry.io-proto-otlp-0.19.0",
+            "name": "go:go.opentelemetry.io/proto/otlp",
+            "versionInfo": "0.19.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/go.opentelemetry.io/proto/otlp@0.19.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-go.uber.org-atomic-1.7.0",
+            "name": "go:go.uber.org/atomic",
+            "versionInfo": "1.7.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/go.uber.org/atomic@1.7.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-go.uber.org-automaxprocs-1.4.0",
+            "name": "go:go.uber.org/automaxprocs",
+            "versionInfo": "1.4.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/go.uber.org/automaxprocs@1.4.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-go.uber.org-multierr-1.6.0",
+            "name": "go:go.uber.org/multierr",
+            "versionInfo": "1.6.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/go.uber.org/multierr@1.6.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-go.uber.org-zap-1.21.0",
+            "name": "go:go.uber.org/zap",
+            "versionInfo": "1.21.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/go.uber.org/zap@1.21.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-golang.org-x-crypto-0.1.0",
+            "name": "go:golang.org/x/crypto",
+            "versionInfo": "0.1.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/golang.org/x/crypto@0.1.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-golang.org-x-mod-0.9.0",
+            "name": "go:golang.org/x/mod",
+            "versionInfo": "0.9.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/golang.org/x/mod@0.9.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-golang.org-x-net-0.9.0",
+            "name": "go:golang.org/x/net",
+            "versionInfo": "0.9.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/golang.org/x/net@0.9.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-golang.org-x-oauth2-0.7.0",
+            "name": "go:golang.org/x/oauth2",
+            "versionInfo": "0.7.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/golang.org/x/oauth2@0.7.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-golang.org-x-sync-0.1.0",
+            "name": "go:golang.org/x/sync",
+            "versionInfo": "0.1.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/golang.org/x/sync@0.1.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-golang.org-x-sys-0.7.0",
+            "name": "go:golang.org/x/sys",
+            "versionInfo": "0.7.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/golang.org/x/sys@0.7.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-golang.org-x-term-0.7.0",
+            "name": "go:golang.org/x/term",
+            "versionInfo": "0.7.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/golang.org/x/term@0.7.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-golang.org-x-text-0.9.0",
+            "name": "go:golang.org/x/text",
+            "versionInfo": "0.9.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/golang.org/x/text@0.9.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-golang.org-x-time-0.3.0",
+            "name": "go:golang.org/x/time",
+            "versionInfo": "0.3.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/golang.org/x/time@0.3.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-golang.org-x-tools-0.7.0",
+            "name": "go:golang.org/x/tools",
+            "versionInfo": "0.7.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/golang.org/x/tools@0.7.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-google.golang.org-appengine-1.6.7",
+            "name": "go:google.golang.org/appengine",
+            "versionInfo": "1.6.7",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/google.golang.org/appengine@1.6.7",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-google.golang.org-genproto-0.0.0-20230526161137-0005af68ea54",
+            "name": "go:google.golang.org/genproto",
+            "versionInfo": "0.0.0-20230526161137-0005af68ea54",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/google.golang.org/genproto@0.0.0-20230526161137-0005af68ea54",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-google.golang.org-genproto-googleapis-api-0.0.0-20230525234035-dd9d682886f9",
+            "name": "go:google.golang.org/genproto/googleapis/api",
+            "versionInfo": "0.0.0-20230525234035-dd9d682886f9",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/google.golang.org/genproto/googleapis/api@0.0.0-20230525234035-dd9d682886f9",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-google.golang.org-genproto-googleapis-rpc-0.0.0-20230525234030-28d5490b6b19",
+            "name": "go:google.golang.org/genproto/googleapis/rpc",
+            "versionInfo": "0.0.0-20230525234030-28d5490b6b19",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/google.golang.org/genproto/googleapis/rpc@0.0.0-20230525234030-28d5490b6b19",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-google.golang.org-grpc-1.54.0",
+            "name": "go:google.golang.org/grpc",
+            "versionInfo": "1.54.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/google.golang.org/grpc@1.54.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-google.golang.org-protobuf-1.30.0",
+            "name": "go:google.golang.org/protobuf",
+            "versionInfo": "1.30.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/google.golang.org/protobuf@1.30.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-gopkg.in-inf.v0-0.9.1",
+            "name": "go:gopkg.in/inf.v0",
+            "versionInfo": "0.9.1",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/gopkg.in/inf.v0@0.9.1",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-gopkg.in-natefinch-lumberjack.v2-2.0.0",
+            "name": "go:gopkg.in/natefinch/lumberjack.v2",
+            "versionInfo": "2.0.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/gopkg.in/natefinch/lumberjack.v2@2.0.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-gopkg.in-yaml.v2-2.4.0",
+            "name": "go:gopkg.in/yaml.v2",
+            "versionInfo": "2.4.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/gopkg.in/yaml.v2@2.4.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-gopkg.in-yaml.v3-3.0.1",
+            "name": "go:gopkg.in/yaml.v3",
+            "versionInfo": "3.0.1",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/gopkg.in/yaml.v3@3.0.1",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-api-0.27.2",
+            "name": "go:k8s.io/api",
+            "versionInfo": "0.27.2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/api@0.27.2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-apimachinery-0.27.2",
+            "name": "go:k8s.io/apimachinery",
+            "versionInfo": "0.27.2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/apimachinery@0.27.2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-apiserver-0.27.2",
+            "name": "go:k8s.io/apiserver",
+            "versionInfo": "0.27.2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/apiserver@0.27.2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-client-go-0.27.2",
+            "name": "go:k8s.io/client-go",
+            "versionInfo": "0.27.2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/client-go@0.27.2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-cloud-provider-0.25.0",
+            "name": "go:k8s.io/cloud-provider",
+            "versionInfo": "0.25.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/cloud-provider@0.25.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-code-generator-0.27.2",
+            "name": "go:k8s.io/code-generator",
+            "versionInfo": "0.27.2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/code-generator@0.27.2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-component-base-0.27.2",
+            "name": "go:k8s.io/component-base",
+            "versionInfo": "0.27.2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/component-base@0.27.2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-component-helpers-0.27.2",
+            "name": "go:k8s.io/component-helpers",
+            "versionInfo": "0.27.2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/component-helpers@0.27.2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-controller-manager-0.27.2",
+            "name": "go:k8s.io/controller-manager",
+            "versionInfo": "0.27.2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/controller-manager@0.27.2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-csi-translation-lib-0.27.2",
+            "name": "go:k8s.io/csi-translation-lib",
+            "versionInfo": "0.27.2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/csi-translation-lib@0.27.2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-gengo-0.0.0-20220902162205-c0856e24416d",
+            "name": "go:k8s.io/gengo",
+            "versionInfo": "0.0.0-20220902162205-c0856e24416d",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/gengo@0.0.0-20220902162205-c0856e24416d",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-klog-1.0.0",
+            "name": "go:k8s.io/klog",
+            "versionInfo": "1.0.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/klog@1.0.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-klog-v2-2.90.1",
+            "name": "go:k8s.io/klog/v2",
+            "versionInfo": "2.90.1",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/klog/v2@2.90.1",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-kms-0.27.2",
+            "name": "go:k8s.io/kms",
+            "versionInfo": "0.27.2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/kms@0.27.2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-kube-openapi-0.0.0-20230501164219-8b0f38b5fd1f",
+            "name": "go:k8s.io/kube-openapi",
+            "versionInfo": "0.0.0-20230501164219-8b0f38b5fd1f",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/kube-openapi@0.0.0-20230501164219-8b0f38b5fd1f",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-kube-scheduler-0.0.0",
+            "name": "go:k8s.io/kube-scheduler",
+            "versionInfo": "0.0.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/kube-scheduler@0.0.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-kubelet-0.0.0",
+            "name": "go:k8s.io/kubelet",
+            "versionInfo": "0.0.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/kubelet@0.0.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-kubernetes-1.27.2",
+            "name": "go:k8s.io/kubernetes",
+            "versionInfo": "1.27.2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/kubernetes@1.27.2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-metrics-0.27.2",
+            "name": "go:k8s.io/metrics",
+            "versionInfo": "0.27.2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/metrics@0.27.2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-mount-utils-0.25.0",
+            "name": "go:k8s.io/mount-utils",
+            "versionInfo": "0.25.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/mount-utils@0.25.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-k8s.io-utils-0.0.0-20230209194617-a36077c30491",
+            "name": "go:k8s.io/utils",
+            "versionInfo": "0.0.0-20230209194617-a36077c30491",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/k8s.io/utils@0.0.0-20230209194617-a36077c30491",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-sigs.k8s.io-apiserver-network-proxy-konnectivity-client-0.1.2",
+            "name": "go:sigs.k8s.io/apiserver-network-proxy/konnectivity-client",
+            "versionInfo": "0.1.2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/sigs.k8s.io/apiserver-network-proxy/konnectivity-client@0.1.2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-sigs.k8s.io-controller-runtime-0.13.0",
+            "name": "go:sigs.k8s.io/controller-runtime",
+            "versionInfo": "0.13.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/sigs.k8s.io/controller-runtime@0.13.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-sigs.k8s.io-json-0.0.0-20221116044647-bc3834ca7abd",
+            "name": "go:sigs.k8s.io/json",
+            "versionInfo": "0.0.0-20221116044647-bc3834ca7abd",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/sigs.k8s.io/json@0.0.0-20221116044647-bc3834ca7abd",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-sigs.k8s.io-structured-merge-diff-v4-4.2.3",
+            "name": "go:sigs.k8s.io/structured-merge-diff/v4",
+            "versionInfo": "4.2.3",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/sigs.k8s.io/structured-merge-diff/v4@4.2.3",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-sigs.k8s.io-yaml-1.3.0",
+            "name": "go:sigs.k8s.io/yaml",
+            "versionInfo": "1.3.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/sigs.k8s.io/yaml@1.3.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-stathat.com-c-consistent-1.0.0",
+            "name": "go:stathat.com/c/consistent",
+            "versionInfo": "1.0.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/stathat.com/c/consistent@1.0.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-volcano.sh-apis-1.8.0-alpha.0.0.20231028020234-1a5aa81107d7",
+            "name": "go:volcano.sh/apis",
+            "versionInfo": "1.8.0-alpha.0.0.20231028020234-1a5aa81107d7",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/volcano.sh/apis@1.8.0-alpha.0.0.20231028020234-1a5aa81107d7",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-go-volcano.sh-volcano-1.1.0",
+            "name": "go:volcano.sh/volcano",
+            "versionInfo": "1.1.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:golang/volcano.sh/volcano@1.1.0",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-actions-actions-checkout-3",
+            "name": "actions:actions/checkout",
+            "versionInfo": "3",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:githubactions/actions/checkout@3",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-actions-github-codeql-action-analyze-1",
+            "name": "actions:github/codeql-action/analyze",
+            "versionInfo": "1",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:githubactions/github/codeql-action/analyze@1",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-actions-github-codeql-action-autobuild-1",
+            "name": "actions:github/codeql-action/autobuild",
+            "versionInfo": "1",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:githubactions/github/codeql-action/autobuild@1",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-actions-github-codeql-action-init-1",
+            "name": "actions:github/codeql-action/init",
+            "versionInfo": "1",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:githubactions/github/codeql-action/init@1",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-actions-actions-cache-2",
+            "name": "actions:actions/cache",
+            "versionInfo": "2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:githubactions/actions/cache@2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-actions-actions-setup-go-4",
+            "name": "actions:actions/setup-go",
+            "versionInfo": "4",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:githubactions/actions/setup-go@4",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-actions-actions-cache-3",
+            "name": "actions:actions/cache",
+            "versionInfo": "3",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:githubactions/actions/cache@3",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-actions-actions-setup-java-3",
+            "name": "actions:actions/setup-java",
+            "versionInfo": "3",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:githubactions/actions/setup-java@3",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-actions-actions-upload-artifact-2",
+            "name": "actions:actions/upload-artifact",
+            "versionInfo": "2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:githubactions/actions/upload-artifact@2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-actions-docker-setup-buildx-action-2",
+            "name": "actions:docker/setup-buildx-action",
+            "versionInfo": "2",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:githubactions/docker/setup-buildx-action@2",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-actions-docker-login-action-1",
+            "name": "actions:docker/login-action",
+            "versionInfo": "1",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:githubactions/docker/login-action@1",
+                    "referenceType": "purl"
+                }
+            ]
+        },
+        {
+            "SPDXID": "SPDXRef-actions-helm-chart-releaser-action-1.5.0",
+            "name": "actions:helm/chart-releaser-action",
+            "versionInfo": "1.5.0",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "supplier": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:githubactions/helm/chart-releaser-action@1.5.0",
+                    "referenceType": "purl"
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-agiledragon-gomonkey-v2-2.2.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-antlr-antlr4-runtime-Go-antlr-1.4.10"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-asaskevich-govalidator-0.0.0-20190424111038-f61b66f89f4a"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-beorn7-perks-1.0.1"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-blang-semver-v4-4.0.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-cenkalti-backoff-v4-4.1.3"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-cespare-xxhash-v2-2.2.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-coreos-go-semver-0.3.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-coreos-go-systemd-v22-22.4.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-davecgh-go-spew-1.1.1"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-docker-distribution-2.8.2+incompatible"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-elastic-go-elasticsearch-v7-7.17.7"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-emicklei-go-restful-v3-3.9.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-evanphx-json-patch-4.12.0+incompatible"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-evanphx-json-patch-v5-5.6.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-felixge-httpsnoop-1.0.3"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-fsnotify-fsnotify-1.6.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-go-logr-logr-1.2.3"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-go-logr-stdr-1.2.2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-go-openapi-jsonpointer-0.19.6"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-go-openapi-jsonreference-0.20.1"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-go-openapi-swag-0.22.3"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-go-task-slim-sprig-0.0.0-20210107165309-348f09dbbbc0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-gogo-protobuf-1.3.2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-golang-groupcache-0.0.0-20210331224755-41bb18bfe9da"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-golang-mock-1.6.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-golang-protobuf-1.5.3"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-google-cadvisor-0.47.1"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-google-cel-go-0.12.6"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-google-gnostic-0.5.7-v3refs"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-google-go-cmp-0.5.9"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-google-gofuzz-1.1.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-google-pprof-0.0.0-20210720184732-4bb14d4b1be1"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-google-shlex-0.0.0-20191202100458-e7afc7fbc510"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-google-uuid-1.3.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-grpc-ecosystem-go-grpc-prometheus-1.2.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-grpc-ecosystem-grpc-gateway-v2-2.11.3"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-hashicorp-errwrap-1.0.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-hashicorp-go-multierror-1.0.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-imdario-mergo-0.3.12"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-inconshreveable-mousetrap-1.0.1"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-josharian-intern-1.0.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-json-iterator-go-1.1.12"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-mailru-easyjson-0.7.7"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-matttproud-golang-protobuf-extensions-1.0.2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-mitchellh-mapstructure-1.5.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-moby-sys-mountinfo-0.6.2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-modern-go-concurrent-0.0.0-20180306012644-bacd9c7ef1dd"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-modern-go-reflect2-1.0.2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-munnerz-goautoneg-0.0.0-20191010083416-a7dc8b61c822"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-NYTimes-gziphandler-1.1.1"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-onsi-ginkgo-v2-2.9.1"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-onsi-gomega-1.27.4"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-opencontainers-go-digest-1.0.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-opencontainers-selinux-1.10.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-pkg-errors-0.9.1"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-pmezard-go-difflib-1.0.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-prometheus-client-golang-1.14.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-prometheus-client-model-0.3.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-prometheus-common-0.37.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-prometheus-procfs-0.8.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-spf13-cobra-1.6.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-spf13-pflag-1.0.5"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-stoewer-go-strcase-1.2.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-github.com-stretchr-testify-1.8.3"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-go.etcd.io-etcd-api-v3-3.5.7"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-go.etcd.io-etcd-client-pkg-v3-3.5.7"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-go.etcd.io-etcd-client-v3-3.5.7"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-go.opentelemetry.io-contrib-instrumentation-google.golang.org-grpc-otelgrpc-0.35.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-go.opentelemetry.io-contrib-instrumentation-net-http-otelhttp-0.35.1"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-go.opentelemetry.io-otel-1.10.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-go.opentelemetry.io-otel-exporters-otlp-internal-retry-1.10.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-go.opentelemetry.io-otel-exporters-otlp-otlptrace-1.10.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-go.opentelemetry.io-otel-exporters-otlp-otlptrace-otlptracegrpc-1.10.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-go.opentelemetry.io-otel-metric-0.31.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-go.opentelemetry.io-otel-sdk-1.10.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-go.opentelemetry.io-otel-trace-1.10.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-go.opentelemetry.io-proto-otlp-0.19.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-go.uber.org-atomic-1.7.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-go.uber.org-automaxprocs-1.4.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-go.uber.org-multierr-1.6.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-go.uber.org-zap-1.21.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-golang.org-x-crypto-0.1.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-golang.org-x-mod-0.9.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-golang.org-x-net-0.9.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-golang.org-x-oauth2-0.7.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-golang.org-x-sync-0.1.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-golang.org-x-sys-0.7.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-golang.org-x-term-0.7.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-golang.org-x-text-0.9.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-golang.org-x-time-0.3.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-golang.org-x-tools-0.7.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-google.golang.org-appengine-1.6.7"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-google.golang.org-genproto-0.0.0-20230526161137-0005af68ea54"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-google.golang.org-genproto-googleapis-api-0.0.0-20230525234035-dd9d682886f9"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-google.golang.org-genproto-googleapis-rpc-0.0.0-20230525234030-28d5490b6b19"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-google.golang.org-grpc-1.54.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-google.golang.org-protobuf-1.30.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-gopkg.in-inf.v0-0.9.1"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-gopkg.in-natefinch-lumberjack.v2-2.0.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-gopkg.in-yaml.v2-2.4.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-gopkg.in-yaml.v3-3.0.1"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-api-0.27.2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-apimachinery-0.27.2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-apiserver-0.27.2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-client-go-0.27.2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-cloud-provider-0.25.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-code-generator-0.27.2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-component-base-0.27.2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-component-helpers-0.27.2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-controller-manager-0.27.2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-csi-translation-lib-0.27.2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-gengo-0.0.0-20220902162205-c0856e24416d"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-klog-1.0.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-klog-v2-2.90.1"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-kms-0.27.2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-kube-openapi-0.0.0-20230501164219-8b0f38b5fd1f"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-kube-scheduler-0.0.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-kubelet-0.0.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-kubernetes-1.27.2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-metrics-0.27.2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-mount-utils-0.25.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-k8s.io-utils-0.0.0-20230209194617-a36077c30491"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-sigs.k8s.io-apiserver-network-proxy-konnectivity-client-0.1.2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-sigs.k8s.io-controller-runtime-0.13.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-sigs.k8s.io-json-0.0.0-20221116044647-bc3834ca7abd"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-sigs.k8s.io-structured-merge-diff-v4-4.2.3"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-sigs.k8s.io-yaml-1.3.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-stathat.com-c-consistent-1.0.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-volcano.sh-apis-1.8.0-alpha.0.0.20231028020234-1a5aa81107d7"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-go-volcano.sh-volcano-1.1.0"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-actions-actions-checkout-3"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-actions-github-codeql-action-analyze-1"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-actions-github-codeql-action-autobuild-1"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-actions-github-codeql-action-init-1"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-actions-actions-cache-2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-actions-actions-setup-go-4"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-actions-actions-cache-3"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-actions-actions-setup-java-3"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-actions-actions-upload-artifact-2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-actions-docker-setup-buildx-action-2"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-actions-docker-login-action-1"
+        },
+        {
+            "relationshipType": "DEPENDS_ON",
+            "spdxElementId": "SPDXRef-com.github.volcano-sh-volcano",
+            "relatedSpdxElement": "SPDXRef-actions-helm-chart-releaser-action-1.5.0"
+        }
+    ]
+}
