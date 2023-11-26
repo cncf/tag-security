@@ -414,15 +414,37 @@ Foundation](https://cncf.io/)) project.
 
 ## Appendix
 
-- Known Issues Over Time. List or summarize statistics of past vulnerabilities
-  with links. If none have been reported, provide data, if any, about your track
-  record in catching issues in code review or automated testing.
-- [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/).
-  Best Practices. A brief discussion of where the project is at
-  with respect to CII best practices and what it would need to
-  achieve the badge.
-- Case Studies. Provide context for reviewers by detailing 2-3 scenarios of
-  real-world use cases.
-- Related Projects / Vendors. Reflect on times prospective users have asked
-  about the differences between your project and projectX. Reviewers will have
-  the same question.
+* **Known Issues Over Time** <br>
+  Openkruise doesn’t have any security vulnerabilities pointed out as of the moment, but the project is impacted by the vulnerabilities in the internal tools and frameworks that it uses (for eg. Golang vulnerabilities).
+* **[CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/)** <br>
+  OpenKruise hasn’t attained any badge from Open Source Security Foundation (OpenSSF), the progress is at 30% to attaining a passing level criteria from OpenSSF.<br>
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/2908/badge)](https://www.bestpractices.dev/projects/2908)
+* **Case Studies** <br>
+  Many organisations have adopted Karmada and are using our project in production.<br> Here are few Case studies:
+  * **Alibaba:** Alibaba Group, a leading Chinese multinational conglomerate, is renowned for its robust cloud computing services provided through Alibaba Cloud. As one of the world's top cloud service providers, Alibaba Cloud offers a comprehensive suite of services, including computing power, storage, databases, artificial intelligence, and more. Alibaba Cloud plays a pivotal role in supporting Alibaba's e-commerce platforms, facilitating scalable and reliable infrastructure to handle vast amounts of online transactions. Additionally, Alibaba Cloud serves a diverse range of industries, including finance, healthcare, and manufacturing, offering innovative solutions for digital transformation. Leveraging its extensive global network of data centers, Alibaba Cloud enables businesses worldwide to harness the power of cloud computing, providing flexible and cost-effective solutions to meet the evolving demands of the digital era.
+During the 2020 Double 11 Global Shopping Festival, Alibaba made its core systems fully cloud-native. Alibaba has been running nearly 100,000 OpenKruise workloads and managing millions of containers.
+Challenges faced by Alibaba in its ultra-large-scale business scenarios:
+    * When an application is released, all containers need to be migrated and rebuilt. This is nearly unacceptable. If all of Alibaba’s large-scale applications are rebuilt at a large scale at the release peak, it will be disastrous for both business and other components, such as schedulers, middleware, network, and storage components.
+    * The deployment workloads do not support grayscale upgrades.
+The following features of OpenKruise gave an advantage over the vintage Kubernetes to help them scale to such an extent:  
+    * The main feature that Alibaba lists is the “in-place upgrade” in OpenKruise. When customers need to upgrade an application, this feature only upgrades the images in the original pod without migrating or rebuilding the container.
+    * OpenKruise provides Advanced DaemonSet - This workload is used to deploy host-level daemons on all nodes, including various basic components for network configuration and storage for business containers.
+[Full Details on Alibaba Double 11 Case Study ]([https://karmada.io/docs/casestudies/vipkid/](https://alibaba-cloud.medium.com/openkruise-the-cloud-native-platform-for-the-comprehensive-process-of-alibabas-double-11-3bfd05741f33))
+  * **SpectroCloud:** SpectroCloud is a cloud infrastructure management company that focuses on simplifying the deployment and management of Kubernetes clusters across multiple clouds. SpectroCloud provides a platform that helps organizations build and operate Kubernetes infrastructures efficiently, regardless of the underlying cloud providers. The company aims to streamline the adoption of Kubernetes by offering a unified management experience that spans various cloud environments. The platform may leverage cloud-native technologies to optimize Kubernetes deployment, monitoring, and maintenance tasks, providing users with a seamless and consistent experience across different cloud infrastructures.
+    * OpenKruise enabled SpectroCloud to manage periodic node actions.
+    * OpenKruise provides the following services that can be used to manage periodic node actions:
+      - OpenKruise's custom controllers, such as the Advanced DaemonSet Controller, can be employed to schedule and manage periodic node actions.
+      - OpenKruise allows users to define custom deployment strategies, and these strategies can extend to periodic node actions.
+      - OpenKruise's webhook server can be used to validate and control node-related resource requests.
+* **Related Projects / Vendors** <br>
+  * **Istio -** Istio is a service mesh that provides a uniform way to secure, connect, and monitor microservices. It manages the communication between services in a Kubernetes cluster.<br>
+Istio primarily focuses on service mesh features such as traffic management, security, and observability. OpenKruise is geared towards enhancing application deployment strategies, offering features beyond service communication.
+  * **Kubevela -** KubeVela is a modern application delivery framework for Kubernetes, providing higher-level abstractions for defining, deploying, and managing applications.<br>
+Both KubeVela and OpenKruise provide higher-level abstractions, but they may differ in their approach to application delivery and management. OpenKruise offers advanced deployment strategies through controllers, whereas KubeVela may have a different emphasis in its framework.<br>
+There are also plans for OpenKruise to integrate with other open-source products from related fields, like KubeVela, to build a more complete cloud-native application system.
+  * **ArgoCD -** ArgoCD is a declarative GitOps continuous delivery tool for Kubernetes. It automates the deployment of applications based on configurations stored in Git repositories, ensuring the desired state is maintained.<br>
+While ArgoCD excels in GitOps and continuous delivery, OpenKruise focuses on extending Kubernetes controllers to offer advanced deployment strategies. OpenKruise provides features like rolling updates, canary releases, and blue-green deployments, offering a broader range of options for application lifecycle management.
+  * **FluxCD -** FluxCD is a GitOps tool for Kubernetes, ensuring the cluster’s state aligns with the Git repository configuration. It automates the deployment of applications by continuously monitoring and applying changes from the repository.<br>
+FluxCD is heavily focused on GitOps practices, while OpenKruise emphasizes advanced deployment strategies. OpenKruise's controllers allow users to define more sophisticated deployment workflows beyond GitOps.
+  * **Knative -** Knative is a set of components for building modern, serverless applications on Kubernetes. It abstracts away infrastructure complexities for serverless workloads.<br>
+Knative is more oriented toward serverless computing, while OpenKruise concentrates on traditional application deployment and management strategies. OpenKruise's controllers provide features like rolling updates and canary releases for more controlled application updates.
