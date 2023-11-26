@@ -105,31 +105,26 @@ A protocol binding describes how events are sent and received over a given proto
 
 Protocol bindings MAY choose to use an Event Format to map an event directly to the transport envelope body, or MAY provide additional formatting and structure to the envelope. For example, a wrapper around a structured-mode message might be used, or several messages could be batched together into a transport envelope body. -->
 
+
+<!-- #### Occurrence
 ### Actions
-These are the steps that a project performs in order to provide some service
-or functionality.  These steps are performed by different actors in the system.
-Note, that an action need not be overly descriptive at the function call level.  
-It is sufficient to focus on the security checks performed, use of sensitive 
-data, and interactions between actors to perform an action.  
+An "occurrence" is the capture of a statement of fact during the operation of a software system. This might occur because of a signal raised by the system or a signal being observed by the system, because of a state change, because of a timer elapsing, or any other noteworthy activity. For example, a device might go into an alert state because the battery is low, or a virtual machine is about to perform a scheduled reboot. -->
 
-For example, the access server receives the client request, checks the format, 
-validates that the request corresponds to a file the client is authorized to 
-access, and then returns a token to the client.  The client then transmits that 
-token to the file server, which, after confirming its validity, returns the file.
-
-#### Occurrence
-An "occurrence" is the capture of a statement of fact during the operation of a software system. This might occur because of a signal raised by the system or a signal being observed by the system, because of a state change, because of a timer elapsing, or any other noteworthy activity. For example, a device might go into an alert state because the battery is low, or a virtual machine is about to perform a scheduled reboot.
+### Actions
 
 #### Event Formating
-Called by the producer and the consumer. An Event Format specifies how to we want to serialize a CloudEvent as a sequence of bytes. Stand-alone event formats, such as the JSON format, specify serialization independent of any protocol or storage medium.
+Called by the producer and the consumer. An Event Format specifies how to we want to serialize a CloudEvent as a sequence of bytes. Stand-alone event formats, such as the JSON format, specify serialization independent of any protocol or storage medium. The producer encodes the event, while the consumer decodes the event.
 
+#### Protocol Binding
+A protocol binding describes how events are sent and received over a given protocol.
+
+Protocol bindings MAY choose to use an Event Format to map an event directly to the transport envelope body, or MAY provide additional formatting and structure to the envelope. For example, a wrapper around a structured-mode message might be used, or several messages could be batched together into a transport envelope body. 
 
 
 
 
 ### Goals
 - Cloud Events aims to simplify event declaration and delivery across services, platforms and systems 
-
 - Cloud Events aims to create interoperability and portability between different systems and services in event driven systems.
 
 
