@@ -56,48 +56,39 @@ The project also provides software development kits (SDKs) for Go, JavaScript, J
 
 ### Background
 
-"Events" refer to occurrences or incidents that cause a response or action within a system. 
+#### Event
+An "event" is a data record expressing an occurrence and its context. Events are routed from an event producer (the source) to interested event consumers. The routing can be performed based on information contained in the event, but an event will not identify a specific routing destination. Events will contain two types of information: the Event Data representing the Occurrence and Context metadata providing contextual information about the Occurrence. A single occurrence MAY result in more than one event.
 
 There is no common language on events themselves. So when a new software is created developers have to write new event handling processes for different types of sources. This can become very chaotic and unorganized.
 
 CloudEvents was developed to address the lack of uniformity in event data formats that exist in cloud and microservices environments. By providing a standardized way to represent events, CloudEvents aims to enhance interoperability, portability, and simplicity in event-driven architectures across different cloud providers and services.
 
 ### Actors
-Event Consumer: The entity/system interested in subscribing to different events. Receiving Events from the producer will trigger further action that is up to the consumer.
 
-Event Producer: The entity/system that is produces the "events". The are responsible for wrapping event data in the CloudEvents specification.
+#### Event Consumer
+ The entity/system interested in subscribing to different events. Receiving Events from the producer will trigger further action that is up to the consumer. A "consumer" receives the event and acts upon it, which might lead to the occurrence of new events.
 
-
-Event Mediator: Depending on the architecture of the system, the event mediator is the entity/system that is responsible for the distribution, processing and routing of events to consumers. The event broker ensures reliable delivery and may enforce security policies. 
-
-
-#### Occurrence
-An "occurrence" is the capture of a statement of fact during the operation of a software system. This might occur because of a signal raised by the system or a signal being observed by the system, because of a state change, because of a timer elapsing, or any other noteworthy activity. For example, a device might go into an alert state because the battery is low, or a virtual machine is about to perform a scheduled reboot.
+#### Event Producer
+ The entity/system that produces the "events". They are responsible for wrapping event data in the CloudEvents specification.
 
 
-#### Event
-An "event" is a data record expressing an occurrence and its context. Events are routed from an event producer (the source) to interested event consumers. The routing can be performed based on information contained in the event, but an event will not identify a specific routing destination. Events will contain two types of information: the Event Data representing the Occurrence and Context metadata providing contextual information about the Occurrence. A single occurrence MAY result in more than one event.
+#### Event Mediator/Intermediary
+ Depending on the architecture of the system, the event mediator is the entity/system that is responsible for the distribution, processing and routing of events to consumers. The event broker ensures reliable delivery and may enforce security policies. 
 
-#### Producer
-The "producer" is a specific instance, process or device that creates the data structure describing the CloudEvent.
 
-#### Source
+<!-- #### Occurrence
+An "occurrence" is the capture of a statement of fact during the operation of a software system. This might occur because of a signal raised by the system or a signal being observed by the system, because of a state change, because of a timer elapsing, or any other noteworthy activity. For example, a device might go into an alert state because the battery is low, or a virtual machine is about to perform a scheduled reboot. -->
+
+
+<!-- #### Source
 The "source" is the context in which the occurrence happened. In a distributed system it might consist of multiple Producers. If a source is not aware of CloudEvents, an external producer creates the CloudEvent on behalf of the source.
 
-#### Consumer
-A "consumer" receives the event and acts upon it. It uses the context and data to execute some logic, which might lead to the occurrence of new events.
-
-#### Intermediary
-An "intermediary" receives a message containing an event for the purpose of forwarding it to the next receiver, which might be another intermediary or a Consumer. A typical task for an intermediary is to route the event to receivers based on the information in the Context.
 
 #### Context
 Context metadata will be encapsulated in the Context Attributes. Tools and application code can use this information to identify the relationship of Events to aspects of the system or to other Events.
 
 #### Data
 Domain-specific information about the occurrence (i.e. the payload). This might include information about the occurrence, details about the data that was changed, or more. See the Event Data section for more information.
-
-#### Event Format
-An Event Format specifies how to serialize a CloudEvent as a sequence of bytes. Stand-alone event formats, such as the JSON format, specify serialization independent of any protocol or storage medium. Protocol Bindings MAY define formats that are dependent on the protocol.
 
 #### Message
 Events are transported from a source to a destination via messages.
@@ -112,7 +103,7 @@ Messages can be delivered through various industry standard protocol (e.g. HTTP,
 #### Protocol Binding
 A protocol binding describes how events are sent and received over a given protocol.
 
-Protocol bindings MAY choose to use an Event Format to map an event directly to the transport envelope body, or MAY provide additional formatting and structure to the envelope. For example, a wrapper around a structured-mode message might be used, or several messages could be batched together into a transport envelope body.
+Protocol bindings MAY choose to use an Event Format to map an event directly to the transport envelope body, or MAY provide additional formatting and structure to the envelope. For example, a wrapper around a structured-mode message might be used, or several messages could be batched together into a transport envelope body. -->
 
 ### Actions
 These are the steps that a project performs in order to provide some service
@@ -126,17 +117,28 @@ validates that the request corresponds to a file the client is authorized to
 access, and then returns a token to the client.  The client then transmits that 
 token to the file server, which, after confirming its validity, returns the file.
 
+#### Occurrence
+An "occurrence" is the capture of a statement of fact during the operation of a software system. This might occur because of a signal raised by the system or a signal being observed by the system, because of a state change, because of a timer elapsing, or any other noteworthy activity. For example, a device might go into an alert state because the battery is low, or a virtual machine is about to perform a scheduled reboot.
+
+#### Event Formating
+Called by the producer and the consumer. An Event Format specifies how to we want to serialize a CloudEvent as a sequence of bytes. Stand-alone event formats, such as the JSON format, specify serialization independent of any protocol or storage medium.
+
+
+
+
 
 ### Goals
-The intended goals of the projects including the security guarantees the project
- is meant to provide (e.g., Flibble only allows parties with an authorization
-key to change data it stores).
+- Cloud Events aims to simplify event declaration and delivery across services, platforms and systems 
+
+- Cloud Events aims to create interoperability and portability between different systems and services in event driven systems.
+
+
 
 ### Non-goals
-Non-goals that a reasonable reader of the project’s literature could believe may
-be in scope (e.g., Flibble does not intend to stop a party with a key from storing
-an arbitrarily large amount of data, possibly incurring financial cost or overwhelming
- the servers)
+- Cloud Events does not aim to change the implementation details of underlying communication protocols. 
+- Cloud Events does not want to define the processing logic for events within different application and systems.
+
+
 
 ## Self-assessment use
 
