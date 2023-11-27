@@ -125,72 +125,29 @@ Compromising these services would allow an attacker to leak sensitive informatio
 
 ### Actions
 
-**Connecting a Vizier to the Control Plane**
+**Telemetry Data Collection**
 
-When a Vizier is deployed to a cluster, it must first connect to the control plane to associate itself with an org/user. In order to perform this association, each Vizier should be deployed using a _deploy key_. This deploy key is a UUID associated with an org + user and is re-usable. For example you can deploy to Cluster A with the key, and then Cluster B with the same key.
+These agents collect telemetry data (metrics, logs, traces) from the application. Data is often collected in a non-intrusive and secure manner, ensuring that sensitive information is not exposed. The agents must authenticate themselves to the backend systems where the data is sent.
 
-This will result in both clusters getting associated with the same org + user. This key only has permissions to associate the Vizier with an org/user–it cannot be used to make any API calls on the user’s behalf. Specifically, the key doesn’t have permissions to do anything that can affect other Viziers deployed to the user’s org. The deploy key remains active indefinitely, until deletion by the user. It is, however, straightforward to add an expiry.
+**Data Transmission**
 
-Each time a Vizier is deployed, the deploy key ID and cluster information is logged to the pod logs for audit purposes.
+The application sends the collected telemetry data to a backend system (like a telemetry collector or directly to an analysis tool). The transmission often involves secure protocols like HTTPS/TLS. The backend system may require authentication and authorization to accept data, ensuring that only legitimate data is received.
 
-If leaked to a malicious actor, the most the actor can do is connect a Vizier and make _their_ data accessible to someone else. To the affected user, they will see this new Vizier available in the list of Viziers they can query in the API. However, this Vizier will have a distinct name and ID from their other Viziers, so is distinguishable. Vizier names are unique across the entire platform. If someone else were to try to deploy another Vizier with the name "test-cluster", Pixie will assign it the name "test-cluster_&lt;random generated hash>". We currently do allow homoglyphs, but can add sanitization to avoid these situations ([#1653](https://github.com/pixie-io/pixie/issues/1653)).
+**Data Processing and Aggregation**
 
-Once the Vizier is connected to the control plane, it establishes a bi-directional gRPC stream (using server-side TLS) between both actors. Enabling mTLS for the bi-directional stream would require users to create signed TLS certs for each cluster which they want to deploy Pixie to. This can be a hassle if not using self-signed certs, as users may have hundreds of clusters.
+The backend processes and aggregates the data. This may involve transforming the data into a suitable format for analysis. During processing, the backend validates the integrity and format of the data. It may also implement role-based access controls to ensure that only authorized personnel or systems can access or modify the data.
 
-We currently do not have OCSP or CRL revocation checking for the TLS connection between the Vizier and control plane. However, this can be added (likely using Golang’s ocsp library).
+**Data Export and Integration**
 
-Messages are passed between the Vizier and control plane using this stream. Aside from queries (see _Query a Vizier_ below), these messages do not contain any sensitive information. The control plane has the ability to make configuration changes to the Vizier from this mechanism–for example, auto updating to the latest Vizier release.
+Once processed, the data is exported to various monitoring and analysis tools (like Prometheus, Jaeger, etc.). The export process includes secure API calls or data transmission methods. The receiving systems often authenticate the incoming data to ensure its validity.
 
-_Tracking Versions for Auto-Update_
+**Analysis and Visualization**
 
-In our release builds, anytime we release a new artifact (Vizier, CLI, operator), we update a manifest file that is stored in Github: [https://github.com/pixie-io/pixie/blob/gh-pages/artifacts/manifest.json](https://github.com/pixie-io/pixie/blob/gh-pages/artifacts/manifest.json). This is written by pushing to the branch in Github Actions.
+The data is analyzed, and insights are presented through dashboards or alerts. Access to these insights is typically controlled through user authentication and authorization, ensuring that only authorized users can view or manipulate sensitive telemetry data.
 
-The control plane then polls this manifest to track any new versions that are released.
+**Alerting and Incident Response**
 
-In a default deployment of the control plane, the manifest file which is updated by our release builds is used by default. However, users can also point the control plane to their own manifest file if they want to have more control over their versions/releases. For example, if they don't want to automatically pick up the latest releases, they can have their own manifest file which they manually add new releases to when ready.
-
-If the manifest were to be compromised, this could result in users deploying malicious applications to their cluster.
-
-We can consider adopting a system like TUF to reduce the scope of impact on users. It is also a well-accepted and supported standard. Signing via cosign has also been added to mitigate this issue. If we choose not to adopt a system such as TUF, the auto-updater can check the validity of the images before they are deployed to a user’s cluster. This will stop the auto-updater from deploying malicious containers specified in a compromised manifest.
-
-**Querying a Vizier**
-
-Users query collected data from Viziers by executing scripts. Scripts are executed using the API (see _Making an API Request to the Control Plane_ for more details) with the control plane acting as a passthrough proxy. From the control plane, the request is sent to the Vizier via the bi-directional gRPC stream. The data is processed and sent back to the control plane through the gRPC stream, after which it is sent back to the client as a response. Throughout this whole process, the data is [end-to-end encrypted](https://blog.px.dev/e2e-encryption/) to ensure the data is only readable by the end client.
-
-The process for end-to-end encryption is as follows:
-
-
-    1. The client generates an asymmetric keypair used to do end-to-end encryption. The public key is passed as a parameter in the ScriptExecution request to the control plane.
-
-
-    2. The control plane sends the ScriptExecution request to the Vizier via the bi-directional gRPC stream. The public key is still included in this ScriptExecution request.
-
-
-    3. The Vizier receives the request, runs the script in the request and produces some results. Before results are sent back to the control plane, it is encrypted using the public key.
-
-
-    4. Vizier sends the execution results back to the control plane through the bi-directional gRPC stream.
-
-
-    5. The control plane sends the data back to the client. The client then uses its private key to decrypt the data.
-
-Although most scripts are used just to query data, scripts have the ability to run mutations. Mutations result in some action or configuration change on the Vizier. Currently, the only supported mutation is to dynamically deploy BPF probes. Pixie only allows deploying probes which can be used to read data and cannot be used to modify any system state. PxL is based on a subset of the Python language and is turing complete. We currently rely on Kubernetes resource limits to manage excessive resource consumption. However, this can still lead to DoS of the Pixie service itself (OOMKills, evictions). We plan to alleviate this by adding circuit breakers during script execution. For example: [#471](https://github.com/pixie-io/pixie/issues/471) will prevent the collector/aggregator pod from processing results that may run over its memory limit.
-
-**Making an API Request to the Control Plane**
-
-The control plane serves as the API. The control plane can be configured to work with any auth provider which supports OIDC. ser
-
-Users can make API requests to the control plane in 3 ways:
-
-
-
-* CLI: Users authenticate their CLI through the CLI’s login mechanism. Login requires users to log into the UI from their browser. The login returns a JWT (with a short expiration) from the auth provider, which is then sent or pasted into the CLI. The CLI exchanges the JWT for a Pixie token by sending it back to the control plane, after which the Pixie token can be used to authenticate API requests through Bearer Token Auth. Access to either the JWT or Pixie token will enable an attacker to use the Pixie API as the user. This will allow the attacker to:
-* Run scripts and access data to any Vizier that the user has deployed.
-* Deploy Vizier to the attacker’s own cluster and connect it to the user’s org, thereby giving the user the attacker’s data.
-* Update org settings, including removing members from the user’s organization.
-* UI: Users authenticate by logging into the browser. The auth provider returns a JWT which is sent to the auth service in the control plane. The JWT is exchanged for a Pixie token which is stored in the user’s browser cookies. These cookies [have the Secure flag set](https://github.com/pixie-io/pixie/blob/0ba4a1b284fe11e1bc3094e87072db1d44e0b4b4/src/cloud/api/controllers/auth.go#L541) to prevent MITM TLS stripping attacks.
-* Go/Python API: In order to use the Go/Python API clients, users create a Pixie API key through the UI or CLI. An API key is associated with a user/org and is used to authenticate users when attached to the `PX-API-KEY` request headers.
-
+In case of anomalies or incidents detected through telemetry data, alerts are generated. The alerting mechanism is secured to prevent false alerts and ensure that alerts reach the correct recipients. Incident response protocols are in place to handle any security incidents reported through these alerts.
 
 ### Goals
 
