@@ -125,72 +125,29 @@ Compromising these services would allow an attacker to leak sensitive informatio
 
 ### Actions
 
-**Connecting a Vizier to the Control Plane**
+**Telemetry Data Collection**
 
-When a Vizier is deployed to a cluster, it must first connect to the control plane to associate itself with an org/user. In order to perform this association, each Vizier should be deployed using a _deploy key_. This deploy key is a UUID associated with an org + user and is re-usable. For example you can deploy to Cluster A with the key, and then Cluster B with the same key.
+These agents collect telemetry data (metrics, logs, traces) from the application. Data is often collected in a non-intrusive and secure manner, ensuring that sensitive information is not exposed. The agents must authenticate themselves to the backend systems where the data is sent.
 
-This will result in both clusters getting associated with the same org + user. This key only has permissions to associate the Vizier with an org/user–it cannot be used to make any API calls on the user’s behalf. Specifically, the key doesn’t have permissions to do anything that can affect other Viziers deployed to the user’s org. The deploy key remains active indefinitely, until deletion by the user. It is, however, straightforward to add an expiry.
+**Data Transmission**
 
-Each time a Vizier is deployed, the deploy key ID and cluster information is logged to the pod logs for audit purposes.
+The application sends the collected telemetry data to a backend system (like a telemetry collector or directly to an analysis tool). The transmission often involves secure protocols like HTTPS/TLS. The backend system may require authentication and authorization to accept data, ensuring that only legitimate data is received.
 
-If leaked to a malicious actor, the most the actor can do is connect a Vizier and make _their_ data accessible to someone else. To the affected user, they will see this new Vizier available in the list of Viziers they can query in the API. However, this Vizier will have a distinct name and ID from their other Viziers, so is distinguishable. Vizier names are unique across the entire platform. If someone else were to try to deploy another Vizier with the name "test-cluster", Pixie will assign it the name "test-cluster_&lt;random generated hash>". We currently do allow homoglyphs, but can add sanitization to avoid these situations ([#1653](https://github.com/pixie-io/pixie/issues/1653)).
+**Data Processing and Aggregation**
 
-Once the Vizier is connected to the control plane, it establishes a bi-directional gRPC stream (using server-side TLS) between both actors. Enabling mTLS for the bi-directional stream would require users to create signed TLS certs for each cluster which they want to deploy Pixie to. This can be a hassle if not using self-signed certs, as users may have hundreds of clusters.
+The backend processes and aggregates the data. This may involve transforming the data into a suitable format for analysis. During processing, the backend validates the integrity and format of the data. It may also implement role-based access controls to ensure that only authorized personnel or systems can access or modify the data.
 
-We currently do not have OCSP or CRL revocation checking for the TLS connection between the Vizier and control plane. However, this can be added (likely using Golang’s ocsp library).
+**Data Export and Integration**
 
-Messages are passed between the Vizier and control plane using this stream. Aside from queries (see _Query a Vizier_ below), these messages do not contain any sensitive information. The control plane has the ability to make configuration changes to the Vizier from this mechanism–for example, auto updating to the latest Vizier release.
+Once processed, the data is exported to various monitoring and analysis tools (like Prometheus, Jaeger, etc.). The export process includes secure API calls or data transmission methods. The receiving systems often authenticate the incoming data to ensure its validity.
 
-_Tracking Versions for Auto-Update_
+**Analysis and Visualization**
 
-In our release builds, anytime we release a new artifact (Vizier, CLI, operator), we update a manifest file that is stored in Github: [https://github.com/pixie-io/pixie/blob/gh-pages/artifacts/manifest.json](https://github.com/pixie-io/pixie/blob/gh-pages/artifacts/manifest.json). This is written by pushing to the branch in Github Actions.
+The data is analyzed, and insights are presented through dashboards or alerts. Access to these insights is typically controlled through user authentication and authorization, ensuring that only authorized users can view or manipulate sensitive telemetry data.
 
-The control plane then polls this manifest to track any new versions that are released.
+**Alerting and Incident Response**
 
-In a default deployment of the control plane, the manifest file which is updated by our release builds is used by default. However, users can also point the control plane to their own manifest file if they want to have more control over their versions/releases. For example, if they don't want to automatically pick up the latest releases, they can have their own manifest file which they manually add new releases to when ready.
-
-If the manifest were to be compromised, this could result in users deploying malicious applications to their cluster.
-
-We can consider adopting a system like TUF to reduce the scope of impact on users. It is also a well-accepted and supported standard. Signing via cosign has also been added to mitigate this issue. If we choose not to adopt a system such as TUF, the auto-updater can check the validity of the images before they are deployed to a user’s cluster. This will stop the auto-updater from deploying malicious containers specified in a compromised manifest.
-
-**Querying a Vizier**
-
-Users query collected data from Viziers by executing scripts. Scripts are executed using the API (see _Making an API Request to the Control Plane_ for more details) with the control plane acting as a passthrough proxy. From the control plane, the request is sent to the Vizier via the bi-directional gRPC stream. The data is processed and sent back to the control plane through the gRPC stream, after which it is sent back to the client as a response. Throughout this whole process, the data is [end-to-end encrypted](https://blog.px.dev/e2e-encryption/) to ensure the data is only readable by the end client.
-
-The process for end-to-end encryption is as follows:
-
-
-    1. The client generates an asymmetric keypair used to do end-to-end encryption. The public key is passed as a parameter in the ScriptExecution request to the control plane.
-
-
-    2. The control plane sends the ScriptExecution request to the Vizier via the bi-directional gRPC stream. The public key is still included in this ScriptExecution request.
-
-
-    3. The Vizier receives the request, runs the script in the request and produces some results. Before results are sent back to the control plane, it is encrypted using the public key.
-
-
-    4. Vizier sends the execution results back to the control plane through the bi-directional gRPC stream.
-
-
-    5. The control plane sends the data back to the client. The client then uses its private key to decrypt the data.
-
-Although most scripts are used just to query data, scripts have the ability to run mutations. Mutations result in some action or configuration change on the Vizier. Currently, the only supported mutation is to dynamically deploy BPF probes. Pixie only allows deploying probes which can be used to read data and cannot be used to modify any system state. PxL is based on a subset of the Python language and is turing complete. We currently rely on Kubernetes resource limits to manage excessive resource consumption. However, this can still lead to DoS of the Pixie service itself (OOMKills, evictions). We plan to alleviate this by adding circuit breakers during script execution. For example: [#471](https://github.com/pixie-io/pixie/issues/471) will prevent the collector/aggregator pod from processing results that may run over its memory limit.
-
-**Making an API Request to the Control Plane**
-
-The control plane serves as the API. The control plane can be configured to work with any auth provider which supports OIDC. ser
-
-Users can make API requests to the control plane in 3 ways:
-
-
-
-* CLI: Users authenticate their CLI through the CLI’s login mechanism. Login requires users to log into the UI from their browser. The login returns a JWT (with a short expiration) from the auth provider, which is then sent or pasted into the CLI. The CLI exchanges the JWT for a Pixie token by sending it back to the control plane, after which the Pixie token can be used to authenticate API requests through Bearer Token Auth. Access to either the JWT or Pixie token will enable an attacker to use the Pixie API as the user. This will allow the attacker to:
-* Run scripts and access data to any Vizier that the user has deployed.
-* Deploy Vizier to the attacker’s own cluster and connect it to the user’s org, thereby giving the user the attacker’s data.
-* Update org settings, including removing members from the user’s organization.
-* UI: Users authenticate by logging into the browser. The auth provider returns a JWT which is sent to the auth service in the control plane. The JWT is exchanged for a Pixie token which is stored in the user’s browser cookies. These cookies [have the Secure flag set](https://github.com/pixie-io/pixie/blob/0ba4a1b284fe11e1bc3094e87072db1d44e0b4b4/src/cloud/api/controllers/auth.go#L541) to prevent MITM TLS stripping attacks.
-* Go/Python API: In order to use the Go/Python API clients, users create a Pixie API key through the UI or CLI. An API key is associated with a user/org and is used to authenticate users when attached to the `PX-API-KEY` request headers.
-
+In case of anomalies or incidents detected through telemetry data, alerts are generated. The alerting mechanism is secured to prevent false alerts and ensure that alerts reach the correct recipients. Incident response protocols are in place to handle any security incidents reported through these alerts.
 
 ### Goals
 
@@ -243,82 +200,48 @@ See [Actors](#actors) and [Actions](#actions) for more detailed description of t
 
 ### Critical
 
-**Vizier (Data Plane)**
+**Telemetry Data Encryption**
 
-Vizier is responsible for collecting and processing data in a Kubernetes cluster. One Vizier should be deployed per each cluster which needs to be monitored. Communications between the microservices in the data plane are authenticated using a JWT signed by a signing key known only to the microservices. For both the inter-service communication in the data and control plane, we generate a random JWT signing key stored as a Kubernetes secret. Updating or rotating this key is easy, as it just requires updating the Kubernetes secret with the new key and bouncing all related deployments to pick up the updated secret. We then use [HMAC w/ SHA-256 hash](https://github.com/pixie-io/pixie/blob/main/src/shared/services/utils/jwt.go#L127) for the JWA. When verifying the JWT, [we require HS256](https://github.com/pixie-io/pixie/blob/0ba4a1b284fe11e1bc3094e87072db1d44e0b4b4/src/shared/services/authcontext/context.go#LL55C21-L55C21) to be used and do not allow a JWA of none.
+Encryption of telemetry data in OpenTelemetry is critical for protecting data confidentiality and integrity during transmission. It serves as the first line of defense against data breaches, making it a fundamental aspect in threat modeling for assessing risks related to eavesdropping and data tampering.
 
-**Control Plane**
+**Authentication and Authorization Mechanisms**
 
-The control plane manages metadata in Pixie, such users, orgs, and connected clusters. It is also responsible for hosting Pixie’s API and UI so users can easily access and visualize data collected by the Viziers. Communications between the microservices in the control plane are authenticated using a JWT signed by a signing key known only to the microservices. Any requests made to the API are authenticated via an API key or cookie.
+These mechanisms in OpenTelemetry ensure that only authenticated and authorized entities can interact with the system, playing a crucial role in safeguarding against unauthorized access and manipulation. In threat modeling, they are key to evaluating the potential risks of system penetration and data breaches.
+
+**API Security**
+
+OpenTelemetry's API security involves securing data transmission endpoints against common vulnerabilities. This is vital for preventing malicious attacks through these interfaces, making API security a critical element in threat modeling for external interaction risks.
+
+**Data Integrity Checks**
+
+Ensuring the integrity of telemetry data in OpenTelemetry is essential for reliable system monitoring and decision-making. Data integrity checks are crucial in threat modeling to identify potential manipulation threats and maintain the trustworthiness of operational data.
+
+**Context Propagation Security**
+
+ In OpenTelemetry, secure context propagation is critical for maintaining trace integrity across services. It's a key defense against trace manipulation, playing an important role in threat modeling, especially in distributed tracing scenarios.
 
 
 ### Security Relevant
 
-**Vizier Operator**
+**Configurable Data Scrubbing**
 
-The operator (optional) is responsible for deploying a Vizier instance and managing the deployment, such as keeping it up-to-date and auto-repairing bad states. We use OLM to manage the operator and follow their best practices and guidelines for building and distributing the operator. The operator must use a deploy key in order to deploy a Vizier instance on the user/org’s behalf.
+OpenTelemetry's data scrubbing feature allows for the removal or anonymization of sensitive information, crucial for privacy compliance and reducing exposure risks. It's a significant factor in threat modeling, particularly in handling sensitive information.
 
-Some cases where the Vizier instance may end up in a bad state are:
+**Role-Based Access Control (RBAC) for Dashboards and Tools**
 
+RBAC in OpenTelemetry controls user access to data and functionalities, preventing unauthorized actions and enhancing system security. It's a critical consideration in threat modeling for assessing risks related to unauthorized access and privilege escalation.
 
+**Logging and Auditing**
 
-* User has deployed Vizier with Vizier’s metadata store backed by etcd. This is a configuration option that users can choose at deployment time, particularly for users who do not have persistent volume support in their cluster. It can, however, be slightly more unstable due to its reliance on RAFT. If, for any reason etcd loses quorum (such as evictions, node going down, etc), the etcd replicas will start crashing. When this occurs, Pixie’s metadata pod which relies on etcd will begin to CrashLoopBackoff, resulting in other dependent pods (such as the data collectors) erroring and running into CrashLoopBackoff as well. This will make Pixie unhealthy and unqueryable.
+This feature in OpenTelemetry tracks system activities and is vital for security audits and post-incident analysis. It plays a significant role in threat modeling for identifying unauthorized activities and breaches, enhancing incident detection and response strategies.
 
-    The operator detects this state and restarts the entire etcd instance. Although this means users will lose metadata stored in the original etcd instance, they can at least get Vizier back to a functioning state.
+**Rate Limiting and Throttling**
 
-* Vizier uses NATS as a message bus. There have been infrequent cases where the NATS instance becomes unhealthy (as indicated by the healthcheck endpoint). The operator restarts the NATS pod to resolve the issue. Since NATS is stateless, there is no loss of data. If the operator’s auto-repair is working correctly, the user should not notice any difference in functionality. If NATS were to go down without the auto-repair, this would result in Pixie pods erroring and entering CrashLoopBackoff since they are unable to connect to NATS. This will surface in the UI that the Vizier is in an unhealthy state. We can specifically surface the issue that NATS is unhealthy, however since the operator auto-repairs the issue, users are unlikely to see this error.
+Implementing rate limiting and throttling in OpenTelemetry is key for protecting against denial-of-service attacks and ensuring service availability. These mechanisms are considered in threat modeling for evaluating risks related to service resilience.
 
-**Data Access Mode**
+**Regular Security Updates and Patch Management**
 
-Pixie has the potential to collect sensitive data/PII from a user’s cluster. Pixie uses eBPF to perform protocol tracing–intercepting network traffic and parsing details such as request/response headers and bodies to provide visibility in the user’s application. Pixie deploys uprobes to commonly used SSL libraries (openSSL, boringSSL, etc.) allowing Pixie to intercept the network traffic before it is encrypted. As a result, it is possible for Pixie to collect request/response bodies that may contain PII. Pixie employs several techniques to guard this data:
-
-
-
-1. All data is stored in-memory on the data collector pods in the user’s cluster. The data lives within the customer’s environment under their control (for example, firewalls). This data is never exported or persisted anywhere without the user explicitly choosing to do so. Accessing this in-memory data would require an attacker to gain access to the user’s environment, and be able to parse through the process’s memory.
-2. The data can only be queried through PxL script execution requests (UI, CLI, API) which uses end-to-end encryption (described in “Querying a Vizier”). The end-to-end encryption ensures that if the data were intercepted at any point, only the requesting client has the ability to decrypt and read the data.
-
-The most likely attack would be if an attacker has access to a user’s API key. They would then be able to query Vizier on the user’s behalf and be able to see all data which Pixie has collected. Adding finer-grained levels of RBAC (for example, [#1321](https://github.com/pixie-io/pixie/issues/1321)) will help reduce the scope of API keys.
-
-Although Pixie does not redact the data stored in-memory, users can opt to enable “Restricted” data mode which redacts PII at script execution time. All rows in a potentially sensitive column, such as HTTP bodies, will be redacted.
-
-We have two “restricted” data modes.
-
-
-
-1. Full redaction: In this mode, _any _columns that could potentially contain PII, such as request bodies, will be completely redacted, whether or not it does contain data with PII or not. Only columns that clearly do not have PII, such as latencies, headers, request paths, will not be redacted.
-2. Best-effort PII redaction: In this mode, we use [regular expressions](https://github.com/pixie-io/pixie/blob/9711f0f769b24aa1e35d197d71544a1783b0c36e/src/carnot/funcs/builtins/pii_ops.cc#L42) for common forms of PII, such as social security numbers and phone numbers, to detect and mask PII. This mode is clearly marked as best-effort, as regular expressions may not detect all cases of PII.
-
-Our goal around PII is to provide users full visibility into their system. If users are especially security-conscious, they should opt for full-redaction mode to ensure that no PII ever leaves their environment. However, this will also limit the potential insight they may have into their application (for example, “all requests with this field in the request body have higher latency”). Users should make the trade-off accordingly.
-
-**Plugin System**
-
-Pixie integrates with other tools through the Pixie plugin system. In the plugin system, users can configure endpoints, keys, and other options which may be necessary to export the data to any Open Telemetry endpoint. This information is stored encrypted in the control plane’s database.
-
-The Pixie Plugin system is currently used to export Pixie data to other tools through OpenTelemetry. Third-party providers who want to support easy Pixie data export to their tools can submit a plugin in the [Pixie Plugin repo](https://github.com/pixie-io/pixie-plugin). All changes are reviewed and must be approved by a Pixie maintainer.
-
-There is currently a limited set of options that a plugin provider can configure:
-
-
-
-* Information about the plugin provider (such as name, image)
-* Which PxL scripts should be run, and how frequently they should be run.
-* The endpoint in which the script results should be sent–this should be to an OTel server.
-* Extra configurations which should be sent in the request headers to the OTel server, such as API keys for authenticating which user is sending the data.
-
-No custom code is executed, excluding data queries crafted by the plugin provider.  These are reviewed by Pixie maintainers to check for correctness, efficiency, etc.
-
-Given that plugins are containers for some simple configuration, and OpenTelemetry is a widely adopted standard, we envision that the existing OpenTelemetry plugin should suffice the use case for data export for a large number of users. We don’t expect this plugin system to need many varied plugins, but in a scenario where we see a large demand for custom plugins, we will create a more rigorous process to accept plugins.
-
-An alternative to the Pixie Plugin system is that users can leverage Pixie’s APIs in order to periodically execute scripts and send results to their datastore/application. The Plugin System simplifies that process by orchestrating the script execution and sending of results. It also allows these third-party tools to provide a set of common scripts that may be useful to their users.
-
-The Pixie Plugin system is very commonly used to export Pixie data into other tools.
-
-_Plugin System UI_
-
-Users can see which plugins are enabled by going to the Admin page in the Pixie UI. On that page they can see which plugins are enabled and the configurations they have set.
-
-
-There is also a separate page in the UI which displays which export scripts they have enabled for each plugin, which clusters those scripts are running on, and how frequently. For each script, they can also dive deeper to see the status of the last 10 export runs. This shows information such as whether the export was successful and how much data was processed/exported.
+Regularly updating and patching OpenTelemetry components is essential for maintaining system security and protecting against known vulnerabilities. This practice is a crucial aspect of threat modeling, focusing on the system's defenses against known exploits.
 
 ## Project Compliance
 
