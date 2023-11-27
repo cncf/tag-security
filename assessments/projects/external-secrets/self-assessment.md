@@ -35,7 +35,7 @@ A table at the top for quick reference information, later used for indexing.
 |   |  |
 | -- | -- |
 | Software | [A link to the External-Secret's repository.] (https://github.com/external-secrets/external-secrets) |
-| Security Provider | Yes |
+| Security Provider | No - Facilitator of security |
 | Languages | Go, HCL, Makefile, Shell, Smarty, Dockerfile |
 | SBOM |SBOM generated using **FOSSA-cli** tool on the latest code base. [Link to SBOM](https://github.com/rrgodhorus/tag-security/blob/ab10047/assessments/projects/external-secrets/docs/external_secrets_sbom.spdx.json)  |
 | | |
@@ -46,8 +46,8 @@ Provide the list of links to existing security documentation for the project. Yo
 use the table below as an example:
 | Doc | url |
 | -- | -- |
-| Security file | https://my.security.file |
-| Default and optional configs | https://example.org/config |
+| Security file | [Security.md](https://github.com/external-secrets/external-secrets/blob/main/SECURITY.md) |
+| Default and optional configs | https://external-secrets.io/latest/guides/security-best-practices|
 
 ## Overview
 The External Secrets Operator seamlessly bridges Kubernetes with advanced external secret management systems, providing an automated, secure pipeline for syncing sensitive data into cluster environments. It stands out as a key enabler for cloud-native security, transforming complex secrets management into a streamlined, reliable process.
@@ -58,9 +58,8 @@ The External Secrets Operator seamlessly bridges Kubernetes with advanced extern
 ### Background
 The External Secrets Operator (ESO) is a tool designed for Kubernetes, a widely-used system for automating the deployment, scaling, and management of containerized applications. ESO addresses a key challenge in this domain: secure and efficient management of sensitive configuration data, known as "secrets" (like passwords, API keys, etc.). Typically, managing these secrets within Kubernetes can be complex and risky if not handled properly. ESO simplifies this by integrating Kubernetes with external secret management services (such as AWS Secrets Manager or HashiCorp Vault), which specialize in securely storing and managing these secrets. This integration not only enhances security but also streamlines the process of injecting these secrets into Kubernetes applications.
 
-
-
 ### Actors
+
 #### 1. External Secret Management Systems
 - Examples: AWS Secrets Manager, HashiCorp Vault.
 - Isolation: Network boundaries and authentication mechanisms separate these from the Kubernetes cluster.
@@ -75,48 +74,63 @@ The External Secrets Operator (ESO) is a tool designed for Kubernetes, a widely-
 - Isolation: Kubernetes namespaces and access policies provide compartmentalization.
 - Security Note: A compromise in one namespace doesn’t necessarily expose secrets in another.
 
-##### Isolation Mechanisms Overview
-- The isolation between these actors relies on network security, access control mechanisms, and the principle of least privilege.
-- This architecture ensures limited scope of breach, even if one part is compromised.
+  ##### Isolation Mechanisms Overview
+  - The isolation between these actors relies on network security, access control mechanisms, and the principle of least privilege.
+  - This architecture ensures limited scope of breach, even if one part is compromised.
 
 ### Actions
-These are the steps that a project performs in order to provide some service
-or functionality.  These steps are performed by different actors in the system.
-Note, that an action need not be overly descriptive at the function call level.  
-It is sufficient to focus on the security checks performed, use of sensitive 
-data, and interactions between actors to perform an action.  
+  For the External Secrets Operator (ESO), the steps it performs to synchronize secrets from external sources into Kubernetes can be outlined focusing on security checks, data handling, and interactions:
 
-For example, the access server receives the client request, checks the format, 
-validates that the request corresponds to a file the client is authorized to 
-access, and then returns a token to the client.  The client then transmits that 
-token to the file server, which, after confirming its validity, returns the file.
+  #### 1. Client Request to External Secret Management System
+  ESO, acting as a client, sends a request to an external secret management system (like AWS Secrets Manager). This request includes authentication and authorization checks to ensure that ESO is permitted to access the requested secrets.
+  #### 2. Retrieval of Secrets
+  Upon successful authentication and authorization, the external system sends the requested secrets to ESO. These secrets are transmitted over secure, encrypted channels to ensure their confidentiality and integrity.
+  #### 3. Validation and Transformation
+    ESO validates the format and integrity of the received secrets. If necessary, it transforms the data to a format compatible with Kubernetes Secrets.
+  #### 4. Synchronization to Kubernetes Secrets
+    ESO then creates or updates Kubernetes Secret objects with the retrieved data. This step involves interacting with the Kubernetes API server, which includes RBAC checks to ensure that ESO has the necessary permissions to perform these operations.
+  #### 5. Use by Kubernetes Workloads
+    Applications or workloads running in Kubernetes can then access these secrets. Access to these secrets within Kubernetes is controlled by namespace-specific policies and RBAC, ensuring that only authorized workloads can retrieve them.
+
+  Overall, ESO's goal is to provide a secure, efficient, and reliable way of managing secrets in Kubernetes environments, ensuring that only authorized entities have access to sensitive data and that this data is handled securely at all times.
 
 ### Goals
-The intended goals of the projects including the security guarantees the project
- is meant to provide (e.g., Flibble only allows parties with an authorization
-key to change data it stores).
+    
+  #### 1.Secure Secret Management
+  ESO's primary goal is to securely manage secrets within Kubernetes by leveraging external secret management systems. It ensures that sensitive information like API keys, passwords, and tokens are stored and managed in systems specifically designed for this purpose, offering robust security features.
+
+  #### 2. Automated Synchronization
+  ESO automates the synchronization of secrets from these external systems into Kubernetes, ensuring that applications always have access to the latest version of each secret.
+
+  #### 3. Access Control
+  By integrating with external secret managers, ESO inherits and enforces their access control mechanisms. It guarantees that only authorized parties can retrieve or modify the secrets, both in the external systems and when they are injected into Kubernetes.
+
+  #### 4. Encryption and Integrity
+  ESO ensures that the transmission of secrets from external systems to Kubernetes is secure, maintaining the confidentiality and integrity of the data throughout the process.
+
 
 ### Non-goals
-Non-goals that a reasonable reader of the project’s literature could believe may
-be in scope (e.g., Flibble does not intend to stop a party with a key from storing
-an arbitrarily large amount of data, possibly incurring financial cost or overwhelming
- the servers)
+
+  #### 1. Secret Data Encryption
+  While ESO manages encrypted secrets, it does not provide encryption services itself. The actual encryption and decryption are handled by the external secret management systems.
+
+  #### 2. Intrusion Detection or Prevention
+  ESO does not function as an intrusion detection or prevention system. It does not monitor or protect against unauthorized access within the Kubernetes cluster or the external secret systems.
+
+  #### 3. Full Lifecycle Management of Secrets
+  The primary role of ESO is to synchronize secrets from external systems to Kubernetes. It does not manage the full lifecycle (like creation, rotation, and deletion) of secrets within the external systems.
+
+  #### 4. Direct Security Auditing or Compliance Assurance
+  ESO does not perform security auditing or provide direct compliance assurance. It relies on the security and compliance features of the external secret management systems it integrates with.
 
 ## Self-assessment use
 
-This self-assessment is created by the [project] team to perform an internal analysis of the
-project's security.  It is not intended to provide a security audit of [project], or
-function as an independent assessment or attestation of [project]'s security health.
+This self-assessment is created by the external-secrets team to perform an internal analysis of the project's security. It is not intended to provide a security audit of external-secrets, or function as an independent assessment or attestation of external-secrets's security health.
 
-This document serves to provide [project] users with an initial understanding of
-[project]'s security, where to find existing security documentation, [project] plans for
-security, and general overview of [project] security practices, both for development of
-[project] as well as security of [project].
+This document serves to provide external-secrets users with an initial understanding of external-secrets's security, where to find existing security documentation, external-secrets plans for security, and general overview of external-secrets security practices, both for development of external-secrets as well as security of external-secrets.
 
-This document provides the CNCF TAG-Security with an initial understanding of [project]
-to assist in a joint-assessment, necessary for projects under incubation.  Taken
-together, this document and the joint-assessment serve as a cornerstone for if and when
-[project] seeks graduation and is preparing for a security audit.
+This document provides the CNCF TAG-Security with an initial understanding of external-secrets to assist in a joint-assessment, necessary for projects under incubation. Taken together, this document and the joint-assessment serve as a cornerstone for if and when external-secrets seeks graduation and is preparing for a security audit.
+
 
 ## Security functions and features
 
