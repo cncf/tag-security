@@ -3,9 +3,9 @@
 September 26, 2023
 
 Authors: Igor Rodrigues (@igor8mr), Matthew Gong (@MatthewZGong), Kushal Kothari
-(@Kushal-kothari) and Devyani Bairagya (@devyani-14)
+(@Kushal-kothari) and Devyani Bairagya (@devyani-14).
 
-Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV)
+Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV).
 
 This document elaborates and explores the design goals for CloudEvents as well
 as a security assessment of the software.
@@ -32,7 +32,7 @@ as a security assessment of the software.
   * [Known Issues Over Time](#known-issues-over-time)
   * [CII Best Practices](#cii-best-practices)
   * [Case Studies](#case-studies)
-  * [Related Projects / Vendors](#related-projects-vendors)
+  * [Related Projects and Vendors](#related-projects-and-vendors)
 
 ## Metadata
 
@@ -41,7 +41,7 @@ as a security assessment of the software.
 | Software | [CloudEvents Repository](https://github.com/cloudevents/spec)  |
 | Security Provider | No  |
 | Languages | ANTRL, Python, C#/.NET, Go, Java, Javascript, PHP, PowerShell, Ruby and Rust |
-| SBOM | Software bill of materials.  Link to the libraries, packages, versions used by the project, may also include direct dependencies. |
+| SBOM | **`TO-DO`** Software bill of materials.  Link to the libraries, packages, versions used by the project, may also include direct dependencies. |
 | | |
 
 ### Security links
@@ -102,13 +102,12 @@ across different cloud providers and services.
  The entity/system that produces the "events". They are responsible for wrapping
  event data in the CloudEvents specification.
 
-
 #### Event Mediator/Intermediary
 
  Depending on the architecture of the system, the event mediator is the
  entity/system that is responsible for the distribution, processing and routing
  of events to consumers. The event broker ensures reliable delivery and may
- enforce security policies. 
+ enforce security policies.
 
 ### Actions
 
@@ -141,7 +140,7 @@ body.
 ### Non-goals
 
 * Cloud Events does not aim to change the implementation details of underlying
-  communication protocols. 
+  communication protocols.
 * Cloud Events does not want to define the processing logic for events within
   different application and systems.
 
@@ -168,46 +167,60 @@ security audit.
 
 ### Critical Security Components
 
-* Event Identification: Every event within CloudEvents is uniquely identified by
-  a specific combination of `source` and `id`. Producers must guarantee that
-  each unique event's concatenation of `source` and id` remains distinctive.
-  This practice aids in distinguishing events and preventing the processing of
-  duplicate events.
+#### Event Identification
 
-* Event Type: The `type` attribute holds a value that characterizes the nature
-  of the event associated with the initial incident. This attribute is
-  frequently utilized for routing, observability, policy enforcement, and
-  similar purposes. The producer determines the format, which may contain
-  details such as the version of the `type`.
+Every event within CloudEvents is uniquely identified by a specific combination
+of `source` and `id`. Producers must guarantee that each unique event's
+concatenation of `source` and id` remains distinctive. This practice aids in
+distinguishing events and preventing the processing of duplicate events.
 
-* Event Subject: The `subject` attribute explains the event's subject within the
-  context of the event producer. Clarifying the subject in contextual metadata
-  proves particularly beneficial in scenarios involving generic subscription
-  filtering, where middleware may lack the ability to interpret the content
-  within the `data` attribute.
+#### Event Type
 
-* Event Data Integrity: Encryption should be applied to domain-specific event
-  data to limit visibility to trusted entities. The specific encryption
-  mechanism used is a mutual agreement between producers and consumers.
+The `type` attribute holds a value that characterizes the nature
+of the event associated with the initial incident. This attribute is frequently
+utilized for routing, observability, policy enforcement, and similar purposes.
+The producer determines the format, which may contain details such as the
+version of the `type`.
 
-* Privacy and Sensitive Information Handling: Context attributes should not
-  carry or represent sensitive information. CloudEvent producers, consumers, and
-  intermediaries can inspect and log context attributes.
+#### Event Subject
+
+The `subject` attribute explains the event's subject within the context of the
+event producer. Clarifying the subject in contextual metadata proves
+particularly beneficial in scenarios involving generic subscription filtering,
+where middleware may lack the ability to interpret the content within the `data`
+attribute.
+
+#### Event Data Integrity
+
+Encryption should be applied to domain-specific event data to limit visibility
+to trusted entities. The specific encryption mechanism used is a mutual
+agreement between producers and consumers.
+
+#### Privacy and Sensitive Information Handling
+
+Context attributes should not carry or represent sensitive information.
+CloudEvent producers, consumers, and intermediaries can inspect and log context
+attributes.
   
 ### Security Relevant Components
 
-* Transport Security: Although CloudEvents does not prescribe specific transport
-  security mechanisms, it is typically conveyed over secure protocols such as
-  HTTPS, ensuring integrity and confidentiality.
+#### Transport Security
 
-* Event Source Authentication: The `source` attribute within a CloudEvent
-  provides context for the event occurrence, establishing reliable and secure
-  source identification.
+Although CloudEvents does not prescribe specific transport
+security mechanisms, it is typically conveyed over secure protocols such as
+HTTPS, ensuring integrity and confidentiality.
+
+#### Event Source Authentication
+
+The `source` attribute within a CloudEvent provides context for the event
+occurrence, establishing reliable and secure source identification.
   
-* Data Schema Verification: The `data` attribute in a CloudEvent contains the
-  actual event data, and its schema can be defined and validated for consistency
-  and accuracy. This verification process helps to prevent issues arising from
-  malformed or unexpected data.
+#### Data Schema Verification
+
+The `data` attribute in a CloudEvent contains the actual event data, and its
+schema can be defined and validated for consistency and accuracy. This
+verification process helps to prevent issues arising from malformed or
+unexpected data.
 
 ## Project compliance
 
@@ -218,40 +231,105 @@ security audit.
 
 ## Secure development practices
 
-### Development Pipeline 
+### Development Pipeline
 
-* You can either report a change or create a Github Issue
-  * Check existing issues first
-* All Proposed changes will be done through Github Pull Requests (PRs)
-* All patches must be signed by the commiter
-  * The sign-off is a simple line at the end of the explanation for the patch
-* Pull Requests will be review during official meetings 
-  * off-line reviews are recommended before meetings 
-  * Meetings happen every Thursday at 9AM PT 
+#### CloudEvents Membership
+
+There are three project membership categories, which make it harder for a single
+individual to make bad changes to the repository.
+
+* **Member**: Anyone participating in group activities across communication
+  channels. No formal registration is required.
+* **Voting Member**: Criteria for Voting Members are outlined in the [Voting
+  section of the governance
+  page](https://github.com/cloudevents/spec/blob/main/docs/GOVERNANCE.md#voting).
+  They have equal influence as Members, with specific voting rights during
+  formal processes.
+* **Admin**: Members with extra privileges for administrative tasks like
+  managing the website and GitHub repos. Admin actions require group knowledge
+  and consent, including the ability to merge/close PRs, subject to group
+  approval. Since the role of an 'Admin' is mainly administrative, the list of
+  Members within this group should not need to change regularly, but can be done
+  with votes.
+
+#### CloudEvents SDK Community
+
+The CloudEvents SDK community is organized as follows:
+
+* Every SDK has its own [Github Team](https://github.com/cloudevents).
+* The union of all the SDK maintainers assembles the sdk maintainers group.
+* To propose a new SDK for the community, a PR should be opened in the spec
+  repository with the documentation changes necessary to point to the new
+  repository.
+
+CloudEvents define an SDK project as healthy if it meets the criteria below.
+
+* It works with the latest version of the programming language;
+* It supports the latest versions of the integrated libraries/frameworks;
+* It receives security patches regularly;
+* It supports the last N-1 major versions of CloudEvents spec, as defined in;
+  Contribution Acceptance;
+* Issues and PRs are triaged (labeled, commented, reviewed, etc) regularly.
+
+#### Contributing to CloudEvents
+
+##### General Instructions
+
+* Developers can either report a change or create a Github Issue, checking for
+  existing issues first.
+* All Proposed changes will be done through Github Pull Requests (PRs).
+* All patches must be signed by the commiter, with the sign-off being a simple
+  line at the end of the explanation for the patch.
+* All commits should use the [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/).
+* Pull Requests will be reviewed during official meetings.
+  * Off-line reviews are recommended before meetings.
+  * Meetings happen every Thursday at 9AM PT.
 * Pull Requests will be resolved and merged during official meetings as a result
-  of a motion
+  of a motion.
   * Pull Requests should not be merged if substantial changes have been made in
-    the past 2 days
+    the past 2 days.
+
+##### Pull Request process
+
+Usually, CloudEvents Pull Requests are expected to meet the following criteria
+prior to being merged:
+
+* The author of the PR indicates asks for it to be discussed and reviewed in an
+  upcoming meeting.
+* All comments have been addressed.
+* PRs that have objections/concerns will be discussed off-line by interested
+  parties. A resolution, updated PR, will be expected from those talks.
+
+#### Versioning
+
+The release process follows [Semantic Versioning (semver)](https://semver.org/),
+grouping specifications for simultaneous release. Non-breaking changes use
+"patch" updates, while breaking changes follow semver. Tags are applied to the
+main branch, and additional branches, like core-v2.0, may be created, then
+deleted post-merger. Creating a release involves updating versions via Pull
+requests, merging, and announcing changes.
 
 ### Communications Channels
 
-* Internal
+CloudEvents use different types of communication channels for different
+purposes.
+
+* Internal communications channels:
   * Meetings
   * Email
   * Github Issues
-
-* InBound
+* InBound communications channels:
   * [CloudEvents CNCF Email Address](cncf-cloudevents@lists.cncf.io)
   * [CNCF Slack workspace](http://slack.cncf.io/)
   * [CNCF Meeting Calender](https://www.cncf.io/community/calendar/)
-* Outgoing
+* Outgoing communications channels:
   * [CloudEvents CNCF
     Subscription](https://lists.cncf.io/g/cncf-cloudevents-sdk)
 
 ### Ecosystem
 
 CloudEvents is integrated with various different cloud-native technologies and
-services. It goal is to create interoperability in event-driven architecture
+services. It's goal is to create interoperability in event-driven architecture.
 
 CloudEvents has many adopters including but not limited to:
 
@@ -264,6 +342,14 @@ CloudEvents has many adopters including but not limited to:
 
 ### Responsible Disclosures Process
 
+#### Reporting an Issue
+
+To report an issue, or to a new idea, contributors can open an issue, but should
+check existing issues first to see if a similar one has already been opened and
+discussed.
+
+#### Reporting Security Concerns
+
 CloudEvents provides a dedicated [email
 address](cncf-cloudevents-security@lists.cncf.io) for reporting security
 concerns related to the specification or the SDKs.
@@ -272,13 +358,16 @@ concerns related to the specification or the SDKs.
   disclosures process should suspected security issues, incidents, or
 vulnerabilities be discovered both external and internal to the project. The
 outline should discuss communication methods/strategies.
-  * Vulnerability Response Process. Who is responsible for responding to a
-    report. What is the reporting process? How would you respond?
+
+#### Vulnerability Response Process
+
+* Who is responsible for responding to a report. What is the reporting process?
+    How would you respond?
 
 ### Incident Response
 
 A description of the defined procedures for triage, confirmation, notification
-  of vulnerability or security incident, and patching/update availability.
+of vulnerability or security incident, and patching/update availability.
 
 ## Appendix
 
@@ -290,7 +379,8 @@ The main security assessment on CloudEvents was a [Security Audit performed by
 Trail of
 Bits](https://github.com/cloudevents/spec/blob/main/docs/CE-SecurityAudit-2022-10.pdf)
 released on October 26, 2022. These were mainly concerning the different
-CloudEvents SDK, not the specification.
+CloudEvents SDK, not the specification. Below are listed the findings by Trail
+Of Bits with their descriptions.
 
 ##### [Java SDK] Reliance on default encoding
 
@@ -335,7 +425,7 @@ conducted.
 The JavaScript SDK's httpTransport() method exposes raw error messages from the
 endpoint, potentially leading to XSS vulnerabilities if user-controlled data is
 reflected without proper sanitization in the rendered web page. While the
-specification doesn't mandate validation or sanitization, the SDK documentation
+specification des not mandate validation or sanitization, the SDK documentation
 should emphasize the risk of unsanitized HTTP responses when using this API in
 an emitter.
 
@@ -406,11 +496,11 @@ the SDK's context was skipped.
 * Case Studies. Provide context for reviewers by detailing 2-3 scenarios of
   real-world use cases.
 
-### Related Projects / Vendors
+### Related Projects and Vendors
 
 #### OpenTelemetry
 
-[OpenTelemetry Website](https://opentelemetry.io/)
+* [OpenTelemetry Website](https://opentelemetry.io/)
 
 OpenTelemetry is a collection of APIs, SDKs, and tools. Use it to instrument,
 generate, collect, and export telemetry data (metrics, logs, and traces) to help
@@ -418,7 +508,7 @@ you analyze your software’s performance and behavior.
 
 #### AsyncAPI
 
-[AsyncAPI Website](https://www.asyncapi.com/)
+* [AsyncAPI Website](https://www.asyncapi.com/)
 
 AsyncAPI is an open source initiative that seeks to improve the current state of
 Event-Driven Architectures (EDA). Our long-term goal is to make working with
@@ -427,7 +517,7 @@ generation, and from discovery to event management.
 
 #### Event-B
 
-[An Introduction to the Event-B Modelling
+* [An Introduction to the Event-B Modelling
 Method](https://www.southampton.ac.uk/~tsh2n14/publications/chapters/eventb-dbook13.pdf)
 
 Event-B is a formal method for system-level modelling and analysis. Key features
@@ -437,7 +527,7 @@ mathematical proof to verify consistency between refinement levels.
 
 #### Apex Event Specification
 
-[Apex Event Specification
+* [Apex Event Specification
 Guide](https://insights.eventscouncil.org/Portals/0/APEX_Event_Specifications_Guide.pdf)
 
 The APEX Event Specifications Guide (ESG) is a written document that contains
