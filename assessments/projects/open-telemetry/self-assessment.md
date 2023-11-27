@@ -393,6 +393,11 @@ The Enhancements Telemetry security-related issues are labeled with "Enhancement
 Consider security when making pull requests, and need to consider the possibility of exposing sensitive information.
 
 
+### CII Best Practices
+
+Pixie has achieved an Open Source Security Foundation (OpenSSF) best practices badge at passing level, see more details at [Pixie’s openssf best practices](https://bestpractices.coreinfrastructure.org/en/projects/5027).
+
+
 ### Case Studies
 
 We’ve seen Pixie adopters leverage Pixie in two main ways:
