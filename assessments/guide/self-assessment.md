@@ -37,7 +37,7 @@ A table at the top for quick reference information, later used for indexing.
 | Software | [A link to the Longhorn’s repository.] (https://github.com/external-secrets/external-secrets) |
 | Security Provider | Yes |
 | Languages | Go, HCL, Makefile, Shell, Smarty, Dockerfile |
-| SBOM |SBOM generated using **FOSSA-cli** tool on the latest code base. [Link to SBOM](https://github.com/Rana-KV/tag-security/blob/main/assessments/projects/karmada/docs/Karmada_SBOM_cyclonedx.bom.json)  |
+| SBOM |SBOM generated using **FOSSA-cli** tool on the latest code base. [Link to SBOM](https://github.com/rrgodhorus/tag-security/blob/ab10047/assessments/projects/external-secrets/docs/external_secrets_sbom.spdx.json)  |
 | | |
 
 ### Security links
@@ -52,6 +52,8 @@ use the table below as an example:
 ## Overview
 The External Secrets Operator seamlessly bridges Kubernetes with advanced external secret management systems, providing an automated, secure pipeline for syncing sensitive data into cluster environments. It stands out as a key enabler for cloud-native security, transforming complex secrets management into a streamlined, reliable process.
 
+<p align="center"><img width="600" alt="image" src="https://github.com/rrgodhorus/tag-security/blob/ab10047/assessments/projects/external-secrets/docs/overview.png"></p>
+
 
 ### Background
 The External Secrets Operator (ESO) is a tool designed for Kubernetes, a widely-used system for automating the deployment, scaling, and management of containerized applications. ESO addresses a key challenge in this domain: secure and efficient management of sensitive configuration data, known as "secrets" (like passwords, API keys, etc.). Typically, managing these secrets within Kubernetes can be complex and risky if not handled properly. ESO simplifies this by integrating Kubernetes with external secret management services (such as AWS Secrets Manager or HashiCorp Vault), which specialize in securely storing and managing these secrets. This integration not only enhances security but also streamlines the process of injecting these secrets into Kubernetes applications.
@@ -59,14 +61,23 @@ The External Secrets Operator (ESO) is a tool designed for Kubernetes, a widely-
 
 
 ### Actors
-These are the individual parts of your system that interact to provide the 
-desired functionality.  Actors only need to be separate, if they are isolated
-in some way.  For example, if a service has a database and a front-end API, but
-if a vulnerability in either one would compromise the other, then the distinction
-between the database and front-end is not relevant.
+#### 1. External Secret Management Systems
+- Examples: AWS Secrets Manager, HashiCorp Vault.
+- Isolation: Network boundaries and authentication mechanisms separate these from the Kubernetes cluster.
+- Security Note: A breach in these systems does not directly compromise the Kubernetes cluster.
 
-The means by which actors are isolated should also be described, as this is often
-what prevents an attacker from moving laterally after a compromise.
+#### 2. Kubernetes Cluster (including ESO)
+- Role: ESO bridges Kubernetes and external secret systems.
+- Isolation: Kubernetes Role-Based Access Control (RBAC) limits potential lateral movement in case of a compromise.
+
+#### 3. Kubernetes Secrets
+- Function: Store synchronized secrets within the cluster via ESO.
+- Isolation: Kubernetes namespaces and access policies provide compartmentalization.
+- Security Note: A compromise in one namespace doesn’t necessarily expose secrets in another.
+
+##### Isolation Mechanisms Overview
+- The isolation between these actors relies on network security, access control mechanisms, and the principle of least privilege.
+- This architecture ensures limited scope of breach, even if one part is compromised.
 
 ### Actions
 These are the steps that a project performs in order to provide some service
