@@ -32,12 +32,13 @@ For a detailed guide with step-by-step discussion and examples, check out the fr
 
 A table at the top for quick reference information, later used for indexing.
 
-| | 
+|                   | |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | Software          | https://github.com/volcano-sh/volcano
 | Security Provider | No
 | Languages         | Go, Shell, Makefile, Dockerfile, Python, Smarty|
 | SBOM              | [SBOM](SBOM.json)|
+|                   | |
 
 ### Security links
 
