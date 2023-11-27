@@ -32,13 +32,13 @@ For a detailed guide with step-by-step discussion and examples, check out the fr
 
 A table at the top for quick reference information, later used for indexing.
 
-|                   | |
+| | |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | Software          | https://github.com/volcano-sh/volcano
 | Security Provider | No
 | Languages         | Go, Shell, Makefile, Dockerfile, Python, Smarty|
 | SBOM              | [SBOM](SBOM.json)|
-|                   | |
+
 
 ### Security links
 
@@ -50,130 +50,110 @@ You may use the table below as an example:
 
 ## Overview
 
-One or two sentences describing the project -- something memorable and accurate
-that distinguishes your project to quickly orient readers who may be assessing
-multiple projects.
+Volcano is a cloud native system for high-performance workloads, which has been accepted by Cloud Native Computing Foundation (CNCF) as its first and only official container batch scheduling project. Volcano supports popular computing frameworks such as Spark, TensorFlow, PyTorch, Flink, Argo, MindSpore, and PaddlePaddle. Volcano also supports scheduling of computing resources on different architectures such as x86, Arm, and Kunpeng.
 
 ### Background
 
-Provide information for reviewers who may not be familiar with your project's
-domain or problem area.
+Kubernetes is a portable, extensible, open source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. However, Kubernetes is insufficient with high-performance batch computing. High-performance batch computing requires complex job scheduling and management that is commonly required by many classes of high-performance workloads, including: machine learning/deep learning, bioinformatics/genomics and other big data applications. Volcano enables this requirement by providing powerful batch scheduling capability. It also enables other features such as:
+Support for a rich set of scheduling algorithms
+Enhanced job management using multi-pod jobs, improved error handling and indexed jobs
+Non-intrusive support for mainstream computing frameworks
+Support for multi-architecture computing
+In addition, Volcano inherits the design of Kubernetes APIs, allowing you to easily run applications that require high-performance computing on Kubernetes.
+
 
 ### Actors
 
-These are the individual parts of your system that interact to provide the
-desired functionality. Actors only need to be separate, if they are isolated
-in some way. For example, if a service has a database and a front-end API, but
-if a vulnerability in either one would compromise the other, then the
-distinction between the database and front-end is not relevant.
-
-The means by which actors are isolated should also be described, as this is
-often what prevents an attacker from moving laterally after a compromise.
+![Architechture Diagram of Volcano](arch.png)
+1. Users: Individuals or systems that interact with Volcano for job management. This could include administrators who configure the system, users who submit jobs, and any external systems that interface with Volcano.
+2. Volcano Scheduler: The core component responsible for scheduling tasks. It makes decisions about job placement and resource allocation in the Kubernetes cluster.
+3. Volcano API Server: Handles requests and responses between users and the Volcano scheduler. It's a critical interface and thus a separate actor due to its role in processing and validating job submissions.
+4. Kubernetes Cluster: While Volcano operates within Kubernetes, the cluster itself can be considered a separate actor. It manages the resources that Volcano schedules jobs onto and enforces access controls.
+5. Integrated Systems: Any external systems or tools that Volcano integrates with (e.g., TensorFlow, PyTorch, etc.). These are separate actors as they are external yet interact closely with Volcano.
 
 ### Actions
 
-These are the steps that a project performs in order to provide some service
-or functionality. These steps are performed by different actors in the system.
-Note, that an action need not be overly descriptive at the function call level.
-It is sufficient to focus on the security checks performed, use of sensitive
-data, and interactions between actors to perform an action.
+1. User Interaction with Volcano
+  - Job Submission: Users submit batch processing jobs to Volcano via the API Server. This includes specifying job requirements, resources needed, and priorities.
+  - Configuration and Management: Administrators configure Volcano settings, manage resource quotas, and set security policies.
+2. Volcano Scheduler Operations
+  - Job Scheduling: The scheduler decides how and when to allocate resources to jobs based on current cluster status, job priority, and resource requirements.
+  - Resource Management: Manages the allocation and release of resources in the Kubernetes cluster for scheduled jobs.
+3. Volcano API Server Functions
+  - Request Processing: Handles and validates requests from users, ensuring they conform to defined schemas and security protocols.
+  - Authentication and Authorization: Verifies user identities and checks whether they have sufficient permissions to perform requested actions.
+4. Kubernetes Cluster Interactions
+  - Resource Provisioning: Kubernetes cluster provides the necessary resources (like CPU, memory, and storage) as dictated by Volcano's scheduling decisions.
+  - Enforcement of Security Policies: Kubernetes enforces security policies set by administrators, such as network policies and access controls, affecting how jobs are run and isolated.
+5. Integration with External Systems
+  - Data Exchange: Volcano may exchange data with integrated systems (like TensorFlow, PyTorch) for processing jobs. This includes sending job data and receiving results.
+  - Security Protocol Compliance: Ensures that interactions with these external systems comply with security protocols, maintaining data integrity and confidentiality.
 
-For example, the access server receives the client request, checks the format,
-validates that the request corresponds to a file the client is authorized to
-access, and then returns a token to the client. The client then transmits that
-token to the file server, which, after confirming its validity, returns the file.
 
 ### Goals
 
-The intended goals of the projects including the security guarantees the project
-is meant to provide (e.g., Flibble only allows parties with an authorization
-key to change data it stores).
+- Efficient, optimized batch job scheduling in Kubernetes.
+- Secure handling of jobs and data within Kubernetes.
+
 
 ### Non-goals
 
-Non-goals that a reasonable reader of the project's literature could believe
-may be in scope (e.g., Flibble does not intend to stop a party with a key from
-storing an arbitrarily large amount of data, possibly incurring financial cost
-or overwhelming the servers)
+- Replacing core Kubernetes functionalities.
+- Non-batch processing tasks.
+
 
 ## Self-assessment use
 
-This self-assessment is created by the \[project\] team to perform an internal
-analysis of the project's security. It is not intended to provide a security
-audit of \[project\], or function as an independent assessment or attestation
-of \[project\]'s security health.
+This self-assessment is created by the Volcano team to perform an internal analysis of the project's security. It is not intended to provide a security audit of Volcano, or function as an independent assessment or attestation of Volcano's security health.
+This document serves to provide Volcano users with an initial understanding of Volcano's security, where to find existing security documentation, Volcano plans for security, and general overview of Volcano security practices, both for development of Volcano as well as security of Volcano.
+This document provides the CNCF TAG-Security with an initial understanding of Volcano to assist in a joint-assessment, necessary for projects under incubation. Taken together, this document and the joint-assessment serve as a cornerstone for if and when Volcano seeks graduation and is preparing for a security audit.
 
-This document serves to provide \[project\] users with an initial understanding
-of \[project\]'s security, where to find existing security documentation,
-\[project\] plans for security, and general overview of \[project\] security
-practices, both for development of \[project\] as well as security of
-\[project\].
-
-This document provides the CNCF TAG-Security with an initial understanding of
-\[project\] to assist in a joint-assessment, necessary for projects under
-incubation. Taken together, this document and the joint-assessment serve as a
-cornerstone for if and when \[project\] seeks graduation and is preparing for a
-security audit.
 
 ## Security functions and features
 
-- Critical. A listing critical security components of the project with a brief
-  description of their importance. It is recommended these be used for threat
-  modeling. These are considered critical design elements that make the product
-  itself secure and are not configurable. Projects are encouraged to track
-  these as primary impact items for changes to the project.
-- Security Relevant. A listing of security relevant components of the project
-  with brief description. These are considered important to enhance the overall
-  security of the project, such as deployment configurations, settings, etc.
-  These should also be included in threat modeling.
+- Critical:
+    + Volcano Scheduler: The heart of Volcano, responsible for making scheduling decisions. Its algorithms and mechanisms are crucial for ensuring that jobs are allocated to the appropriate resources without compromising cluster security. It's non-configurable and central to the system's operation, directly impacting security by enforcing job isolation and resource controls.
+    + API Server: Serves as the primary interface for user interactions with Volcano. It is critical for ensuring that all requests are authenticated and authorized, thus preventing unauthorized access and manipulation of job scheduling.
+    + Admission Controllers: These play a key role in validating and mutating requests in Volcano. Their correct operation is essential to enforce security policies and prevent malicious or malformed job submissions from affecting the cluster.
+- Security Relevant
+    + Authentication Mechanisms: While not part of the core functionality, the authentication methods used by Volcano to interface with Kubernetes are vital for securing access. They ensure that only authorized users and systems can interact with Volcano.
+    + Logging and Monitoring: These components are crucial for tracking the behavior of the system and identifying potential security incidents. They enable administrators to monitor job submissions, scheduling decisions, and system changes, providing visibility into the system's operation and aiding in incident detection and response.
+    + Configuration Management: The way Volcano is configured can significantly impact its security. Secure default settings, proper configuration of resource limits, and job isolation parameters are important to prevent abuse and ensure the stable operation of the system within a Kubernetes cluster.
+    + Network Policies: Network configurations within Volcano, especially how it communicates within the Kubernetes cluster and with external systems, are important for securing data in transit and ensuring that the network layer does not become a vector for attacks.
 
 ## Project compliance
-
-- Compliance. List any security standards or sub-sections the project is
-  already documented as meeting (PCI-DSS, COBIT, ISO, GDPR, etc.).
+Not Applicable.
 
 ## Secure development practices
 
-- Development Pipeline. A description of the testing and assessment processes
-  that the software undergoes as it is developed and built. Be sure to include
-  specific information such as if contributors are required to sign commits, if
-  any container images immutable and signed, how many reviewers before merging,
-  any automated checks for vulnerabilities, etc.
-- Communication Channels. Reference where you document how to reach your team
-  or describe in corresponding section.
-  - Internal. How do team members communicate with each other?
-  - Inbound. How do users or prospective users communicate with the team?
-  - Outbound. How do you communicate with your users? (e.g. flibble-announce@
-    mailing list)
-- Ecosystem. How does your software fit into the cloud native ecosystem? (e.g.
-  Flibber is integrated with both Flocker and Noodles which covers
-  virtualization for 80% of cloud users. So, our small number of "users"
-  actually represents very wide usage across the ecosystem since every virtual
-  instance uses Flibber encryption by default.)
+- Development Pipeline
+    + Contributor Sign-off: Contributors to Volcano may be required to sign off on their commits as part of a Developer Certificate of Origin (DCO).
+    + Code Review Process: Volcano employs a rigorous code review process, with multiple maintainers from different organizations. This ensures high standards of code quality and security.
+    + Automated Testing and CI/CD: The project likely utilizes continuous integration and deployment pipelines, including automated testing for vulnerabilities and code quality checks.
+    + Container Image Security: If Volcano uses containerized deployments, assess whether the container images are signed and immutable, which adds a layer of security against tampering.
+    + Dependency Management: The project should regularly update its dependencies and check for vulnerabilities using tools like OWASP Dependency-Check or similar.
+- Communication Channels
+    + Internal: The development team likely uses platforms like GitHub, Slack, or email lists for internal communications.
+    + Inbound: Users and prospective users can likely communicate with the Volcano team via GitHub issues, mailing lists, or a dedicated Slack channel.
+    + Outbound: Updates and announcements are possibly made through GitHub, CNCF mailing lists, or social media channels.
+- Ecosystem
+    + Volcano is a CNCF Sandbox project and integrates with the larger cloud-native ecosystem, providing batch processing capabilities in Kubernetes environments. It is used by companies like Huawei, AWS, JD.com, OpenAI, Baidu, and Tencent, indicating a broad impact across different cloud environments.
+
 
 ## Security issue resolution
 
-- Responsible Disclosures Process. A outline of the project's responsible
-  disclosures process should suspected security issues, incidents, or
-  vulnerabilities be discovered both external and internal to the project. The
-  outline should discuss communication methods/strategies.
-  - Vulnerability Response Process. Who is responsible for responding to a
-    report. What is the reporting process? How would you respond?
-- Incident Response. A description of the defined procedures for triage,
-  confirmation, notification of vulnerability or security incident, and
-  patching/update availability.
+The Volcano project has a Product Security Team (PST) responsible for handling security vulnerabilities, coordinating responses, and organizing both internal communication and external disclosure.
+- Responsible Disclosures Process: Volcano encourages private reporting of security vulnerabilities to their dedicated security email (volcano-security@googlegroups.com). Public disclosure of vulnerabilities is discouraged until the PST has developed a fix or mitigation plan.(got this from security.md)
+    + Vulnerability Response Process 
+    + Report Handling: When a security vulnerability is reported to the Volcano security team (via volcano-security@googlegroups.com), the Product Security Team (PST) takes charge of the response.
+    + Fix Lead Assignment: A member of the PST volunteers to lead the response, coordinating the development of a fix and communicating with the community.
+    + Fix Development: The PST works with the relevant engineers to develop a fix, create a CVSS score, and review the fix in a private security repository.
+    + Timeliness: The process is designed to handle disclosures quickly, with initial steps taken within the first 24 hours and the development of a fix within 1-7 days.
+- Incident Response. The PST follows a structured process for patching, releasing, and publicly communicating about vulnerabilities. This includes creating a CVSS score, developing fixes, and coordinating with the community and distributors for patch releases and announcements.
 
 ## Appendix
 
-- Known Issues Over Time. List or summarize statistics of past vulnerabilities
-  with links. If none have been reported, provide data, if any, about your track
-  record in catching issues in code review or automated testing.
-- [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/).
-  Best Practices. A brief discussion of where the project is at
-  with respect to CII best practices and what it would need to
-  achieve the badge.
-- Case Studies. Provide context for reviewers by detailing 2-3 scenarios of
-  real-world use cases.
-- Related Projects / Vendors. Reflect on times prospective users have asked
-  about the differences between your project and projectX. Reviewers will have
-  the same question.
+- Volcano has achieved an Open Source Security Foundation (OpenSSF) best practices badge at passing level, see more details at Volcano’s openssf best practices. [Link](https://www.bestpractices.dev/en/projects/3012)
+- [The Linux Foundation Talk: Using Volcano and Kubernetes for Cutting-Edge AI Deployment](https://www.youtube.com/watch?v=hjfoEdMD3cI)
+- [CNCF Talk (Chinese): Volcano Helps FinTech BigData on K8s](https://www.youtube.com/watch?v=wYEmjqPbjjY)
+
