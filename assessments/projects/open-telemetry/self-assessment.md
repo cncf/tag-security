@@ -395,7 +395,7 @@ Consider security when making pull requests, and need to consider the possibilit
 
 ### CII Best Practices
 
-Pixie has achieved an Open Source Security Foundation (OpenSSF) best practices badge at passing level, see more details at [Pixie’s openssf best practices](https://bestpractices.coreinfrastructure.org/en/projects/5027).
+Not applicable
 
 
 ### Case Studies
@@ -416,19 +416,19 @@ We’ve seen Pixie adopters leverage Pixie in two main ways:
 
 * Since Pixie makes it easy to collect and query rich telemetry data from a user’s cluster, some users leverage Pixie as a data source. Pixie data is exported to other tools/applications either through the Pixie Plugin system or Pixie’s API. These tools then perform the additional filtering/processing necessary to make sense of the data for their specific use-case. For example, VMware is building a tool called [Project Trinidad](https://octo.vmware.com/project-trinidad-and-pixie-partnership/). Project Trinidad uses machine learning models to learn normal traffic patterns in a user’s cluster, allowing them to detect and quarantine anomalous behavior. Pixie’s network data serves as the tool’s “data sensor”. In another use-case,  [Choreo](https://wso2.com/choreo/blog/introducing-observability-for-polyglot-applications/) is a tool which helps users design, implement, and deploy applications all inside their platform. Choreo leverages and adapts Pixie data to provide the observability and monitoring insights for these applications inside their platform.
 
-    In these cases, Pixie serves as a data collector and may be augmented with other data sources or further processing to mitigate issues such as data forgery. 
+    In these cases, Pixie serves as a data collector and may be augmented with other data sources or further processing to mitigate issues such as data forgery.
 
 
 
 ### Related Projects/Vendors
 
-As a vendor-neutral open-source observability framework, OpenTelemetry helps users better telemetry different data, including traces, metrics, and logs. It facilitates comprehensive insights into application performance. Due to the framework's diverse language support, it helps optimize the system's reliability and is of more significant help in troubleshooting.
+As a vendor-neutral open-source observability framework, Opentelemetry helps users better telemetry different data, including traces, metrics, and logs. It facilitates comprehensive insights into application performance. Due to the framework's diverse language support, it helps optimize the system's reliability and is of more significant help in troubleshooting.
 
 OpenTelemetry is vendor and tool-agnostic, and it can be used with different observability backends, improving overall ease of use. Enable OpenTelemetry through native OTLP, helping add-on products deepen the connection with OpenTelemetry. Regarding observability backends that OpenTelemetry can be used together, there are Jaeger, Prometheus, Grafana, etc.
 
 
-
 * **Prometheus**: Both Prometheus and OpenTelemetry can collect metrics across applications and services. However, Prometheus focuses more on the pull model, and OpenTelemetry includes both push and pull models. In addition, combining built-in alerts in Prometheus and OpenTelemetry helps create an observability ecosystem and improve stability.
 * **Grafana**: OpenTelemetry and Grafana complement each other, and the visualization in Grafana's dashboard can better help analyze various types of data collected from OpenTelemetry. In addition, Grafana supports enable interoperability from OpenTelemetry by calling on SDKs and application observability standards, among others, integrating telemetry into a unified open-source monitoring backend.
+* **OpenTelemetry**: Same
 * **Jaeger**: Jaeger is a distributed tracing system that can be started and run in a local environment. Users can first use OpenTelemetry to detect various indicators of the application and then send the tracking data to Jaeger. The advantage of using Jaeger is that it makes finding the source of latency and lack of concurrency easier. All in all, Jaeger is more focused, while OpenTelemetry is a broader framework.
-
+* **Cilium**: Not applicable
