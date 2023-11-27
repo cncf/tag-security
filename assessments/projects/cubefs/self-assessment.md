@@ -36,7 +36,7 @@ Express Learning course provided by Linux Foundation Training & Certification:
 | Website | https://cubefs.io/ |
 | Security Provider | No  |
 | Languages | Golang |
-| SBOM | Software bill of materials.  Link to the libraries, packages, versions used by the project, may also include direct dependencies. |
+| SBOM | https://github.com/cubefs/cubefs/blob/master/docs/source/deploy/k8s.md |
 | | |
 
 ### Security links
