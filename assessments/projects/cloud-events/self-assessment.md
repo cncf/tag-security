@@ -1,7 +1,7 @@
 # CloudEvents Self-assessment
 September 26, 2023
 
-Authors: Igor Rodrigues (@igor8mr), Matthew Gong (@MatthewZGong), Kushal Kothari (@) and Devyani Bairagya (@)
+Authors: Igor Rodrigues (@igor8mr), Matthew Gong (@MatthewZGong), Kushal Kothari (@) and Devyani Bairagya (@devyani-14)
 
 Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV)
 
@@ -150,14 +150,19 @@ CloudEvents seeks graduation and is preparing for a security audit.
 
 ## Security functions and features
 
-* Critical.  A listing critical security components of the project with a brief
-description of their importance.  It is recommended these be used for threat modeling.
-These are considered critical design elements that make the product itself secure and
-are not configurable.  Projects are encouraged to track these as primary impact items
-for changes to the project.
-* Security Relevant.  A listing of security relevant components of the project with
-  brief description.  These are considered important to enhance the overall security of
-the project, such as deployment configurations, settings, etc.  These should also be
+### Critical:
+- Event Identification: Every event within CloudEvents is uniquely identified by a specific combination of 'source' and 'id'. Producers must guarantee that each unique event's concatenation of 'source' and 'id' remains distinctive. This practice aids in distinguishing events and preventing the processing of duplicate events.
+
+- Event Type: The 'type' attribute holds a value that characterizes the nature of the event associated with the initial incident. This attribute is frequently utilized for routing, observability, policy enforcement, and similar purposes. The producer determines the format, which may contain details such as the version of the 'type'.
+
+- Event Subject: The 'subject' attribute explains the event's subject within the context of the event producer. Clarifying the subject in contextual metadata proves particularly beneficial in scenarios involving generic subscription filtering, where middleware may lack the ability to interpret the content within the 'data' attribute.
+
+- Event Data Integrity: Encryption should be applied to domain-specific event data to limit visibility to trusted entities. The specific encryption mechanism used is a mutual agreement between producers and consumers.
+
+- Privacy and Sensitive Information Handling: Context attributes should not carry or represent sensitive information. CloudEvent producers, consumers, and intermediaries can inspect and log context attributes.
+  
+### Security Relevant.  
+A listing of security relevant components of the project with brief description.  These are considered important to enhance the overall security of the project, such as deployment configurations, settings, etc.  These should also be
 included in threat modeling.
 
 ## Project compliance
