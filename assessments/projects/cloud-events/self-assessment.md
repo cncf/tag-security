@@ -161,9 +161,12 @@ CloudEvents seeks graduation and is preparing for a security audit.
 
 - Privacy and Sensitive Information Handling: Context attributes should not carry or represent sensitive information. CloudEvent producers, consumers, and intermediaries can inspect and log context attributes.
   
-### Security Relevant.  
-A listing of security relevant components of the project with brief description.  These are considered important to enhance the overall security of the project, such as deployment configurations, settings, etc.  These should also be
-included in threat modeling.
+### Security Relevant:
+- Transport Security: Although CloudEvents doesn't prescribe specific transport security mechanisms, it is typically conveyed over secure protocols such as HTTPS, ensuring integrity and confidentiality.
+
+- Event Source Authentication: The 'source' attribute within a CloudEvent provides context for the event occurrence, establishing reliable and secure source identification.
+  
+- Data Schema Verification: The 'data' attribute in a CloudEvent contains the actual event data, and its schema can be defined and validated for consistency and accuracy. This verification process helps to prevent issues arising from malformed or unexpected data.
 
 ## Project compliance
 
