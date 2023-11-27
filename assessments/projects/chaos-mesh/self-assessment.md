@@ -112,51 +112,75 @@ together, this document and the joint-assessment serve as a cornerstone for if a
 
 ## Security functions and features
 
-* Critical.  A listing critical security components of the project with a brief
-description of their importance.  It is recommended these be used for threat modeling.
-These are considered critical design elements that make the product itself secure and
-are not configurable.  Projects are encouraged to track these as primary impact items
-for changes to the project.
-* Security Relevant.  A listing of security relevant components of the project with
-  brief description.  These are considered important to enhance the overall security of
-the project, such as deployment configurations, settings, etc.  These should also be
-included in threat modeling.
+* Critical.
+
+Role-Based Access Control (RBAC): RBAC in Chaos Mesh ensures that only authorized users can perform specific actions within the system. It controls access to resources based on the roles of individual users, thus limiting the potential damage that can be caused by malicious actors or accidental misuse.
+
+Authentication and Authorization: These mechanisms verify the identity of users and ensure that they have the appropriate permissions to perform actions. This is crucial to prevent unauthorized access to the system and to control what actions each user can perform.
+
+* Security Relevant. 
+
+Pod Security Policies: In Kubernetes environments, pod security policies define the conditions that pods must meet to run. Configuring these policies helps ensure that Chaos Mesh operates within a secure environment.
+
+Chaos Mesh Experiment Configurations: The configuration of chaos experiments themselves, including defining scope, duration, and intensity, is crucial. Proper configuration ensures that these experiments do not unintentionally compromise system stability or security.
+
+Network Security Configurations: These include settings related to firewalls, network segmentation, and access controls. Proper configuration can prevent unauthorized access and limit the scope of potential network-based attacks.
+
+Resource Quotas and Limits: Setting appropriate resource quotas and limits in Kubernetes helps prevent resource exhaustion attacks, where an attacker could attempt to overwhelm the system by consuming excessive resources.
 
 ## Project compliance
 
-* Compliance.  List any security standards or sub-sections the project is
-  already documented as meeting (PCI-DSS, COBIT, ISO, GDPR, etc.).
+None
 
 ## Secure development practices
 
-* Development Pipeline.  A description of the testing and assessment processes that
-  the software undergoes as it is developed and built. Be sure to include specific
-information such as if contributors are required to sign commits, if any container
-images immutable and signed, how many reviewers before merging, any automated checks for
-vulnerabilities, etc.
+* Development Pipeline.  
+
+1. Clone the repo to remote device and make a change
+2. Unit test
+3. Perform manual tests in Chaos Mesh
+4. Commit and push to remote branch. Commit must be signed
+5. Create a pull request
+6. Get a code review by two reviewers
+7. Goto step 1 if changes are required
+
 * Communication Channels. Reference where you document how to reach your team or
   describe in corresponding section.
-  * Internal. How do team members communicate with each other?
-  * Inbound. How do users or prospective users communicate with the team?
-  * Outbound. How do you communicate with your users? (e.g. flibble-announce@
-    mailing list)
-* Ecosystem. How does your software fit into the cloud native ecosystem?  (e.g.
-  Flibber is integrated with both Flocker and Noodles which covers
-virtualization for 80% of cloud users. So, our small number of "users" actually
-represents very wide usage across the ecosystem since every virtual instance uses
-Flibber encryption by default.)
+
+  * Internal:
+    Slack: https://cloud-native.slack.com/archives/C0193VAV272
+    GitHub Issues: https://github.com/chaos-mesh/chaos-mesh/issues/new?assignees=&labels=&template=question.md
+    GitHub Discussion: https://github.com/chaos-mesh/chaos-mesh/discussions/new
+    Email: https://github.com/chaos-mesh/chaos-mesh/blob/master/MAINTAINERS.md
+
+  * Inbound:
+    Slack: https://cloud-native.slack.com/archives/C0193VAV272
+    GitHub Issues: https://github.com/chaos-mesh/chaos-mesh/issues/new?assignees=&labels=&template=question.md
+    GitHub Discussion: https://github.com/chaos-mesh/chaos-mesh/discussions/new
+
+  * Outbound:
+    Chaos Mesh Blog: https://chaos-mesh.org/blog
+    Twitter: https://twitter.com/chaos_mesh
+    Community Meeting: https://community.cncf.io/chaos-mesh-community/
+    Development Meeting: https://community.cncf.io/chaos-mesh-community/
+
+* Ecosystem. 
+
+Chaos Mesh is primarily designed for Kubernetes environments. It leverages Kubernetes features and concepts, like Custom Resource Definitions (CRDs), to manage chaos experiments as Kubernetes resources. This tight integration makes it an essential tool for organizations that use Kubernetes for orchestration.
 
 ## Security issue resolution
 
-* Responsible Disclosures Process. A outline of the project's responsible
-  disclosures process should suspected security issues, incidents, or
-vulnerabilities be discovered both external and internal to the project. The
-outline should discuss communication methods/strategies.
-  * Vulnerability Response Process. Who is responsible for responding to a
-    report. What is the reporting process? How would you respond?
-* Incident Response. A description of the defined procedures for triage,
-  confirmation, notification of vulnerability or security incident, and
-patching/update availability.
+Reports of security issues should be made to the Chaos Mesh Security Team: chaos-mesh-security@lists.cncf.io
+
+Known public security vulnerabilities will be disclosed as soon as possible after receiving the report. 
+
+Vulnerabilities discovered for the first time will be disclosed in accordance with the following process:
+
+1. The received security vulnerability report shall be handed over to the security team for follow-up coordination and repair work.
+2. After the vulnerability is confirmed, the team creates a draft Security Advisory on Github that lists the details of the vulnerability.
+3. Invite related personnel to discuss the fix.
+4. Fork the temporary private repository on Github, and collaborate to fix the vulnerability.
+5. After the fixed code is merged into all supported versions, the vulnerability will be publicly posted in the GitHub Advisory Database.
 
 ## Appendix
 
