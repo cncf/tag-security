@@ -1,7 +1,8 @@
 # CloudEvents Self-assessment
+
 September 26, 2023
 
-Authors: Igor Rodrigues (@igor8mr), Matthew Gong (@MatthewZGong), Kushal Kothari (@) and Devyani Bairagya (@devyani-14)
+Authors: Igor Rodrigues (@igor8mr), Matthew Gong (@MatthewZGong), Kushal Kothari (@Kushal-kothari) and Devyani Bairagya (@devyani-14)
 
 Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV)
 
@@ -35,8 +36,6 @@ This document elaborates and explores the design goals for CloudEvents as well a
 
 ## Metadata
 
-A table at the top for quick reference information, later used for indexing.
-
 |   |  |
 | -- | -- |
 | Software | [CloudEvents Repository](https://github.com/cloudevents/spec)  |
@@ -47,8 +46,6 @@ A table at the top for quick reference information, later used for indexing.
 
 ### Security links
 
-Provide the list of links to existing security documentation for the project. You may
-use the table below as an example:
 | Doc | url |
 | -- | -- |
 | CloudEvents Security Assessment  | https://github.com/cloudevents/spec/blob/main/docs/CE-SecurityAudit-2022-10.pdf |
@@ -79,41 +76,6 @@ CloudEvents was developed to address the lack of uniformity in event data format
 #### Event Mediator/Intermediary
  Depending on the architecture of the system, the event mediator is the entity/system that is responsible for the distribution, processing and routing of events to consumers. The event broker ensures reliable delivery and may enforce security policies. 
 
-
-<!-- #### Occurrence
-An "occurrence" is the capture of a statement of fact during the operation of a software system. This might occur because of a signal raised by the system or a signal being observed by the system, because of a state change, because of a timer elapsing, or any other noteworthy activity. For example, a device might go into an alert state because the battery is low, or a virtual machine is about to perform a scheduled reboot. -->
-
-
-<!-- #### Source
-The "source" is the context in which the occurrence happened. In a distributed system it might consist of multiple Producers. If a source is not aware of CloudEvents, an external producer creates the CloudEvent on behalf of the source.
-
-
-#### Context
-Context metadata will be encapsulated in the Context Attributes. Tools and application code can use this information to identify the relationship of Events to aspects of the system or to other Events.
-
-#### Data
-Domain-specific information about the occurrence (i.e. the payload). This might include information about the occurrence, details about the data that was changed, or more. See the Event Data section for more information.
-
-#### Message
-Events are transported from a source to a destination via messages.
-
-A "structured-mode message" is one where the event is fully encoded using a stand-alone event format and stored in the message body.
-
-A "binary-mode message" is one where the event data is stored in the message body, and event attributes are stored as part of message meta-data.
-
-#### Protocol
-Messages can be delivered through various industry standard protocol (e.g. HTTP, AMQP, MQTT, SMTP), open-source protocols (e.g. Kafka, NATS), or platform/vendor specific protocols (AWS Kinesis, Azure Event Grid).
-
-#### Protocol Binding
-A protocol binding describes how events are sent and received over a given protocol.
-
-Protocol bindings MAY choose to use an Event Format to map an event directly to the transport envelope body, or MAY provide additional formatting and structure to the envelope. For example, a wrapper around a structured-mode message might be used, or several messages could be batched together into a transport envelope body. -->
-
-
-<!-- #### Occurrence
-### Actions
-An "occurrence" is the capture of a statement of fact during the operation of a software system. This might occur because of a signal raised by the system or a signal being observed by the system, because of a state change, because of a timer elapsing, or any other noteworthy activity. For example, a device might go into an alert state because the battery is low, or a virtual machine is about to perform a scheduled reboot. -->
-
 ### Actions
 
 #### Event Formating
@@ -125,7 +87,7 @@ A protocol binding describes how events are sent and received over a given proto
 Protocol bindings MAY choose to use an Event Format to map an event directly to the transport envelope body, or MAY provide additional formatting and structure to the envelope. For example, a wrapper around a structured-mode message might be used, or several messages could be batched together into a transport envelope body. 
 
 ### Goals
-- Cloud Events aims to simplify event declaration and delivery across services, platforms and systems 
+- Cloud Events aims to simplify event declaration and delivery across services, platforms and systems.
 - Cloud Events aims to create interoperability and portability between different systems and services in event driven systems.
 
 ### Non-goals
@@ -150,25 +112,29 @@ CloudEvents seeks graduation and is preparing for a security audit.
 
 ## Security functions and features
 
-### Critical:
-- Event Identification: Every event within CloudEvents is uniquely identified by a specific combination of 'source' and 'id'. Producers must guarantee that each unique event's concatenation of 'source' and 'id' remains distinctive. This practice aids in distinguishing events and preventing the processing of duplicate events.
+### Critical Security Components
 
-- Event Type: The 'type' attribute holds a value that characterizes the nature of the event associated with the initial incident. This attribute is frequently utilized for routing, observability, policy enforcement, and similar purposes. The producer determines the format, which may contain details such as the version of the 'type'.
+- Event Identification: Every event within CloudEvents is uniquely identified by a specific combination of `source` and `id`. Producers must guarantee that each unique event's concatenation of `source` and id` remains distinctive. This practice aids in distinguishing events and preventing the processing of duplicate events.
 
-- Event Subject: The 'subject' attribute explains the event's subject within the context of the event producer. Clarifying the subject in contextual metadata proves particularly beneficial in scenarios involving generic subscription filtering, where middleware may lack the ability to interpret the content within the 'data' attribute.
+- Event Type: The `type` attribute holds a value that characterizes the nature of the event associated with the initial incident. This attribute is frequently utilized for routing, observability, policy enforcement, and similar purposes. The producer determines the format, which may contain details such as the version of the `type`.
+
+- Event Subject: The `subject` attribute explains the event's subject within the context of the event producer. Clarifying the subject in contextual metadata proves particularly beneficial in scenarios involving generic subscription filtering, where middleware may lack the ability to interpret the content within the `data` attribute.
 
 - Event Data Integrity: Encryption should be applied to domain-specific event data to limit visibility to trusted entities. The specific encryption mechanism used is a mutual agreement between producers and consumers.
 
 - Privacy and Sensitive Information Handling: Context attributes should not carry or represent sensitive information. CloudEvent producers, consumers, and intermediaries can inspect and log context attributes.
   
-### Security Relevant:
-- Transport Security: Although CloudEvents doesn't prescribe specific transport security mechanisms, it is typically conveyed over secure protocols such as HTTPS, ensuring integrity and confidentiality.
+### Security Relevant Components
 
-- Event Source Authentication: The 'source' attribute within a CloudEvent provides context for the event occurrence, establishing reliable and secure source identification.
+- Transport Security: Although CloudEvents does not prescribe specific transport security mechanisms, it is typically conveyed over secure protocols such as HTTPS, ensuring integrity and confidentiality.
+
+- Event Source Authentication: The `source` attribute within a CloudEvent provides context for the event occurrence, establishing reliable and secure source identification.
   
-- Data Schema Verification: The 'data' attribute in a CloudEvent contains the actual event data, and its schema can be defined and validated for consistency and accuracy. This verification process helps to prevent issues arising from malformed or unexpected data.
+- Data Schema Verification: The `data` attribute in a CloudEvent contains the actual event data, and its schema can be defined and validated for consistency and accuracy. This verification process helps to prevent issues arising from malformed or unexpected data.
 
 ## Project compliance
+
+**`TO-DO`**
 
 * Compliance.  List any security standards or sub-sections the project is
   already documented as meeting (PCI-DSS, COBIT, ISO, GDPR, etc.).
@@ -210,24 +176,9 @@ CloudEvents has many adopters including but not limited to:
 - Google Cloud Eventarc
 - VMware Event Broker Appliance
 
-<!-- * Development Pipeline.  A description of the testing and assessment processes that
-  the software undergoes as it is developed and built. Be sure to include specific
-information such as if contributors are required to sign commits, if any container
-images immutable and signed, how many reviewers before merging, any automated checks for
-vulnerabilities, etc.
-* Communication Channels. Reference where you document how to reach your team or
-  describe in corresponding section.
-  * Internal. How do team members communicate with each other?
-  * Inbound. How do users or prospective users communicate with the team?
-  * Outbound. How do you communicate with your users? (e.g. flibble-announce@
-    mailing list)
-* Ecosystem. How does your software fit into the cloud native ecosystem?  (e.g.
-  Flibber is integrated with both Flocker and Noodles which covers
-virtualization for 80% of cloud users. So, our small number of "users" actually
-represents very wide usage across the ecosystem since every virtual instance uses
-Flibber encryption by default.) -->
-
 ## Security issue resolution
+
+**`TO-DO`**
 
 * Responsible Disclosures Process. A outline of the project's responsible
   disclosures process should suspected security issues, incidents, or
@@ -245,58 +196,81 @@ patching/update availability.
 
 #### Issues found by Trail of Bits
 
-The main security assessment on CloudEvents was a Security Audit performed by Trail of Bits released on October 26, 2022.
+The main security assessment on CloudEvents was a [Security Audit performed by Trail of Bits](https://github.com/cloudevents/spec/blob/main/docs/CE-SecurityAudit-2022-10.pdf) released on October 26, 2022. These were mainly concerning the different CloudEvents SDK, not the specification.
 
 ##### [Java SDK] Reliance on default encoding
+
 * Severity: Undetermined
 * Difficulty: Low
 * Type: Undefined Behavior
 * Finding ID: TOB-CE-1
 * Target: Java SDK
 
+Several instances were found where the getByte() standard Java API is utilized without specifying encoding, leading the Java SDK to rely on system default encoding. This can result in varying processing of event data across platforms. While the specification mandates adherence to appropriate and RFC-compliant encodings, there is room for improvement in the Java SDK implementation and documentation to emphasize the significance of consistent encoding among actors. Although not all instances are problematic, especially when handling binary data, it is crucial to document and address this behavior in the SDK implementation, documentation, and provided examples.
+
 ##### [Java SDK] Outdated Vulnerable Dependencies
+
 * Severity: Undetermined
 * Difficulty: Medium
 * Type: Patching
 * Finding ID: TOB-CE-2
 * Target: Java SDK
 
+The Java SDK contains multiple outdated dependencies with publicly known vulnerabilities, including high- and medium-risk ones. The snyk tool automatically audited each module due to time constraints and ease of remediation. Manual review of exploitability within the SDK's context was not conducted.
+
 ##### [JavaScript SDK] Potential XSS in httpTransport()
+
 * Severity: Undetermined
 * Difficulty: Low
 * Type: Data Validation
 * Finding ID: TOB-CE-3
 * Target: sdk-javascript/src/transport/http/index.ts
 
+The JavaScript SDK's httpTransport() method exposes raw error messages from the endpoint, potentially leading to XSS vulnerabilities if user-controlled data is reflected without proper sanitization in the rendered web page. While the specification doesn't mandate validation or sanitization, the SDK documentation should emphasize the risk of unsanitized HTTP responses when using this API in an emitter.
+
 ##### [Go SDK] Outdated Vulnerable Dependencies
+
 * Severity: Undetermined
 * Difficulty: Low
 * Type: Patching
 * Finding ID: TOB-CE-4
 * Target: Go SDK
 
+The Go SDK has multiple outdated dependencies with known vulnerabilities. The open-source snyk tool automatically audited each module. Due to time constraints and ease of remediation, manual review of exploitability within the SDK's context was skipped.
+
 ##### [Go SDK] Downcasting of 64-bit integer
+
 * Severity: Undetermined
 * Difficulty: Low
 * Type: Undefined Behavior
 * Finding ID: TOB-CE-5
 * Target: sql/v2/parser/expression_visitor.go, sql/v2/utils/casting.go
 
+The strconv.Atoi function parses a machine-dependent integer (int64 for 64-bit targets). In some code instances, the result from strconv.Atoi is later converted to a smaller type (int16 or int32), risking overflow with specific inputs.
+
 ##### [Go SDK] ReadHeaderTimeout not configured
+
 * Severity: Informational
 * Difficulty: Low
 * Type: Denial of Service
 * Finding ID: TOB-CE-6
 * Target: Go SDK
 
+The Go http.server API offers four timeouts, including ReadHeaderTimeout. Failure to set a value for this timeout makes the listener instance susceptible to Slowloris DoS attacks.
+
 ##### [CSharp SDK] Outdated Vulnerable Dependencies
+
 * Severity: Undetermined
 * Difficulty: Low
 * Type: Patching
 * Finding ID: TOB-CE-7
 * Target: CSharp SDK
 
+The CSharp SDK has multiple outdated dependencies with known vulnerabilities. Using the open-source snyk tool, each module was automatically audited. Due to time constraints and ease of remediation, manual review of exploitability within the SDK's context was skipped.
+
 ### CII Best Practices
+
+**`TO-DO`**
 
 * [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/).
   Best Practices. A brief discussion of where the project is at
@@ -304,22 +278,39 @@ The main security assessment on CloudEvents was a Security Audit performed by Tr
   achieve the badge.
 
 ### Case Studies
+
+**`TO-DO`**
+
 * Case Studies. Provide context for reviewers by detailing 2-3 scenarios of
   real-world use cases.
 
 ### Related Projects / Vendors
 
 #### OpenTelemetry
-[OpenTelemetry](https://opentelemetry.io/)
+
+[OpenTelemetry Website](https://opentelemetry.io/)
+
+OpenTelemetry is a collection of APIs, SDKs, and tools. Use it to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
+
 
 #### AsyncAPI
-[OpenTelemetry](https://www.asyncapi.com/)
+
+[AsyncAPI Website](https://www.asyncapi.com/)
+
+AsyncAPI is an open source initiative that seeks to improve the current state of Event-Driven Architectures (EDA). Our long-term goal is to make working with EDAs as easy as working with REST APIs. That goes from documentation to code generation, and from discovery to event management.
 
 #### Event-B
-[OpenTelemetry](https://www.southampton.ac.uk/~tsh2n14/publications/chapters/eventb-dbook13.pdf)
+
+[An Introduction to the Event-B Modelling
+Method](https://www.southampton.ac.uk/~tsh2n14/publications/chapters/eventb-dbook13.pdf)
 
 Event-B is a formal method for system-level modelling and analysis. Key features of Event-B are the use of set theory as a modelling notation, the use of refinement to represent systems at different abstraction levels and the use of mathematical proof to verify consistency between refinement levels.
 
 
 #### Apex Event Specification
+
 [Apex Event Specification Guide](https://insights.eventscouncil.org/Portals/0/APEX_Event_Specifications_Guide.pdf)
+
+The APEX Event Specifications Guide (ESG) is a written document that contains all the details of an event. The ESG is used by event organizers to communicate information to venues and suppliers. The ESG is a three-part template that includes: Narrative, Schedule, Function orders.
+
+This is an older document used across many engineering fields, which is not restricted to computer science, making it different from the other examples. However, it is an example of event specification being widely used in industry, including more physical areas such as mechanical engineering and factories.
