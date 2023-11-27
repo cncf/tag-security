@@ -30,8 +30,6 @@ For a detailed guide with step-by-step discussion and examples, check out the fr
 
 ## Metadata
 
-A table at the top for quick reference information, later used for indexing.
-
 | | |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | Software          | https://github.com/volcano-sh/volcano
@@ -42,8 +40,6 @@ A table at the top for quick reference information, later used for indexing.
 
 ### Security links
 
-Provide the list of links to existing security documentation for the project.
-You may use the table below as an example:
 | Document          | URL
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | SECURITY.md | https://github.com/volcano-sh/volcano/blob/master/SECURITY.md|
