@@ -156,7 +156,9 @@ Emissary-Ingress is in progress with 94% in Open Source Security Foundation (Ope
   - Backport statergy: majority of the time patch branch will be based off from master and most Pull Requests will target master. ensuring bugs and fixes arent missed in the Next shipping version.
   - All PR requests trigger jobs that perform:
     - Unit Tests
-    -  
+    - E2E tests
+    - Linting
+    - 
 
 * Communication Channels. Reference where you document how to reach your team or
   describe in corresponding section.
