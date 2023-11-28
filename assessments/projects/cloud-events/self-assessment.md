@@ -22,17 +22,22 @@ as a security assessment of the software.
   * [Non-goals](#non-goals)
 * [Self-assessment use](#self-assessment-use)
 * [Security functions and features](#security-functions-and-features)
+  * [Critical Security Components](#critical-security-components)
+  * [Security Relevant Components](#security-relevant-components)
 * [Project compliance](#project-compliance)
 * [Secure development practices](#secure-development-practices)
   * [Development Pipeline](#development-pipeline)
   * [Communications Channels](#communications-channels)
   * [Ecosystem](#ecosystem)
 * [Security issue resolution](#security-issue-resolution)
+  * [Responsible Disclosures Process](#responsible-disclosures-process)
+  * [Incident Response](#incident-response)
 * [Appendix](#appendix)
   * [Known Issues Over Time](#known-issues-over-time)
   * [CII Best Practices](#cii-best-practices)
   * [Case Studies](#case-studies)
   * [Related Projects and Vendors](#related-projects-and-vendors)
+
 
 ## Metadata
 
@@ -92,32 +97,31 @@ across different cloud providers and services.
 
 #### Event Consumer
 
- The entity/system interested in subscribing to different events. Receiving
+ The entity or system interested in subscribing to different events. Receiving
  Events from the producer will trigger further action that is up to the
  consumer. A "consumer" receives the event and acts upon it, which might lead to
  the occurrence of new events.
 
 #### Event Producer
 
- The entity/system that produces the "events". They are responsible for wrapping
- event data in the CloudEvents specification.
+ The entity or system that produces the "events". They are responsible for
+ wrapping event data in the CloudEvents specification.
 
-#### Event Mediator/Intermediary
+#### Event Mediator or Intermediary
 
- Depending on the architecture of the system, the event mediator is the
- entity/system that is responsible for the distribution, processing and routing
- of events to consumers. The event broker ensures reliable delivery and may
- enforce security policies.
+ Depending on the architecture of the system, the event mediator is the entity
+ or system that is responsible for the distribution, processing and routing of
+ events to consumers. The event broker ensures reliable delivery and may enforce
+ security policies.
 
 ### Actions
 
 #### Event Formating
 
-Called by the producer and the consumer. An Event Format specifies how to we
-want to serialize a CloudEvent as a sequence of bytes. Stand-alone event
-formats, such as the JSON format, specify serialization independent of any
-protocol or storage medium. The producer encodes the event, while the consumer
-decodes the event.
+Called by the producer and the consumer. An Event Format specifies how to
+serialize a CloudEvent as a sequence of bytes. Stand-alone event formats, such
+as the JSON format, specify serialization independent of any protocol or storage
+medium. The producer encodes the event, while the consumer decodes the event.
 
 #### Protocol Binding
 
@@ -130,19 +134,48 @@ to the envelope. For example, a wrapper around a structured-mode message might
 be used, or several messages could be batched together into a transport envelope
 body.
 
+![CloudEvents Actions](images/cloud-events-actions.png)
+
 ### Goals
 
-* Cloud Events aims to simplify event declaration and delivery across services,
-  platforms and systems.
-* Cloud Events aims to create interoperability and portability between different
-  systems and services in event driven systems.
+Listed below are the main goals of CloudEvents.
+
+* Simplify event declaration and delivery across services, platforms and
+  systems.
+* Create interoperability and portability between different systems and services
+  in event driven systems.
+* Allow event producers to generate events before consumers are listening, and
+  enable consumers to express interest in events not yet produced.
+* Define a set of metadata to deliver minimal information needed for routing and
+  processing events between systems.
+* Duplicate application data as part of CloudEvent attributes for proper
+  delivery and processing.
+* Provide specifications for serializing events in different formats and
+  protocols.
+* Support native batching of multiple events in some protocols, leaving the
+  implementation details to the protocols themselves for interoperability.
+* Exclude the purpose or semantic meaning of an event from the specification;
+  any message conforming to the specification is considered a valid CloudEvent.
+* Allow transmission of errors or exceptions as CloudEvents, leaving attribute
+  values to be defined by the event producer.
+* Define non-normative adapters for mapping events from popular non-native event
+  producers into CloudEvents, providing a best-guess specification for attribute
+  population.
 
 ### Non-goals
+
+The following are considered as non-goals by CloudEvents:
 
 * Cloud Events does not aim to change the implementation details of underlying
   communication protocols.
 * Cloud Events does not want to define the processing logic for events within
   different application and systems.
+* Function build and invocation process
+* Language-specific runtime APIs
+* Selecting a single identity/access control system
+* Inclusion of protocol-level routing information
+* Event persistence processes
+* Mechanism for Authorization, Data Integrity and Confidentiality
 
 ## Self-assessment use
 
