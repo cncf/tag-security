@@ -127,22 +127,26 @@ CNI does not document meeting any particular security standards or sub-sections.
 
 ## Secure development practices
 
-* Development Pipeline.  A description of the testing and assessment processes that
-  the software undergoes as it is developed and built. Be sure to include specific
-information such as if contributors are required to sign commits, if any container
-images immutable and signed, how many reviewers before merging, any automated checks for
-vulnerabilities, etc.
-* Communication Channels. Reference where you document how to reach your team or
-  describe in corresponding section.
-  * Internal. How do team members communicate with each other?
-  * Inbound. How do users or prospective users communicate with the team?
-  * Outbound. How do you communicate with your users? (e.g. flibble-announce@
-    mailing list)
-* Ecosystem. How does your software fit into the cloud native ecosystem?  (e.g.
-  Flibber is integrated with both Flocker and Noodles which covers
-virtualization for 80% of cloud users. So, our small number of "users" actually
-represents very wide usage across the ecosystem since every virtual instance uses
-Flibber encryption by default.)
+### Development Pipeline
+* Contributions are made via GitHub pull requests
+* Contributors must sign off their commits which indicates they agree to the Developer Certificate of Origin ([DCO](https://www.cni.dev/docs/dco/))
+* There is a test suite provided that should be run for any new features or bug fixes.
+* Pull requests should include tests for new code and old code
+* Pull requests trigger workflows (maintainer approval required). The jobs covered include:
+	* Linting
+	* Building on all linux architectures
+	* Running tests on Linux amd64
+	* Building and running tests on Windows
+* In general, pull requests are merged once one or two maintainers endorse it.
+### Communication Channels
+* **Internal**
+  Team members communicate with each other through the [Weekly maintainers meeting using Jitsi](https://meet.jit.si/CNIMaintainersMeeting), [#cni channel on the CNCF slack](https://slack.cncf.io/), [cni-dev Google Group](https://groups.google.com/forum/#!forum/cni-dev), or [GitHub issues](https://github.com/containernetworking/cni/issues)
+* **Inbound**
+  Users communicate with the team though the [#cni channel on the CNCF slack](https://slack.cncf.io/), [cni-dev Google Group](https://groups.google.com/forum/#!forum/cni-dev), or [GitHub issues](https://github.com/containernetworking/cni/issues).
+* **Outbound**
+  Team members communicate with users through the [#cni channel on the CNCF slack](https://slack.cncf.io/), [cni-dev Google Group](https://groups.google.com/forum/#!forum/cni-dev).
+### Ecosystem
+* CNI is a vendor-neutral specification so it can be used by any system that chooses to implement it. It is used by Kubernetes, Mesos, CloudFoundry, podman, and CRI-O.
 
 ## Security issue resolution
 
