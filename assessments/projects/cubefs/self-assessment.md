@@ -103,40 +103,41 @@ CubeFS Actors:
 
 
 ### Goals
-**1. Authentication and Authorization**:
 
-* **Goal**: Ensure secure authentication mechanisms for all nodes within CubeFS, preventing unauthorized access and establishing trusted communication channels.
-* **Security Guarantee**: Robust authentication and authorization framework managed by Authnode, providing secure access to services and data.
+* **Authentication and Authorization** - 
 
-**2. Data Confidentiality and Integrity**:
+  * **Goal**: Ensure secure authentication mechanisms for all nodes within CubeFS, preventing unauthorized access and establishing trusted communication channels.
+  * **Security Guarantee**: Robust authentication and authorization framework managed by Authnode, providing secure access to services and data.
 
-* **Goal**: Guarantee the confidentiality and integrity of data during transit and storage within CubeFS.
-* **Security Guarantee**: Implementation of end-to-end encryption for data transmission and plans to support data encryption at rest, ensuring data remains confidential and unaltered.
+* **Data Confidentiality and Integrity** - 
 
-**3. Credential Revocation Mechanism**:
+  * **Goal**: Guarantee the confidentiality and integrity of data during transit and storage within CubeFS.
+  * **Security Guarantee**: Implementation of end-to-end encryption for data transmission and plans to support data encryption at rest, ensuring data remains confidential and unaltered.
 
-* **Goal**: Prevent misuse of leaked credentials by implementing a revocation mechanism.
-* **Security Guarantee**: Plans to introduce credential revocation to mitigate risks if credentials are compromised.
+* **Credential Revocation Mechanism** - 
 
-**4. Hardware Security Module (HSM) Integration**:
+  * **Goal**: Prevent misuse of leaked credentials by implementing a revocation mechanism.
+  * **Security Guarantee**: Plans to introduce credential revocation to mitigate risks if credentials are compromised.
 
-* **Goal**: Enhance the security of Authnode by integrating with Hardware Security Modules (HSMs).
-* **Security Guarantee**: Leveraging HSMs (e.g., SGX) to secure key management, reducing the risk of Auth Node compromise.
+* **Hardware Security Module (HSM) Integration** - 
 
-**5. Enhanced Authentication Features**:
+  * **Goal**: Enhance the security of Authnode by integrating with Hardware Security Modules (HSMs).
+  * **Security Guarantee**: Leveraging HSMs (e.g., SGX) to secure key management, reducing the risk of Auth Node compromise.
 
-* **Goal**: Expand authentication features for improved security and usability.
-* **Security Guarantee**: Future improvements include support for credential revocation, key rotation, and HSM integration for a more secure authentication framework.
+* **Enhanced Authentication Features** - 
 
-**6. Performance-Enhancing Security Measures:**
+  * **Goal**: Expand authentication features for improved security and usability.
+  * **Security Guarantee**: Future improvements include support for credential revocation, key rotation, and HSM integration for a more secure authentication framework.
 
-* **Goal**: Ensure security measures do not compromise system performance.
-* **Security Guarantee**: Continuous refinement of security mechanisms (e.g., optimizing writeback cache, addressing performance limitations in encryption) without compromising overall system performance.
+* **Performance-Enhancing Security Measures** - 
 
-**7. Key Management and Rotation**:
+  * **Goal**: Ensure security measures do not compromise system performance.
+  * **Security Guarantee**: Continuous refinement of security mechanisms (e.g., optimizing writeback cache, addressing performance limitations in encryption) without compromising overall system performance.
 
-* **Goal**: Safeguard shared keys and support regular key rotation for enhanced security.
-* **Security Guarantee**: Future enhancements to support key rotation, reducing the risk of key compromise and strengthening encryption mechanisms.
+* **Key Management and Rotation**:
+
+  * **Goal**: Safeguard shared keys and support regular key rotation for enhanced security.
+  * **Security Guarantee**: Future enhancements to support key rotation, reducing the risk of key compromise and strengthening encryption mechanisms.
 
 ### Non-goals
 
