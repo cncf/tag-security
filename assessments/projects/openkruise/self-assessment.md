@@ -47,7 +47,7 @@ You may use the table below as an example:
 
 | Doc           | url                         |
 |---------------|-----------------------------|
-| Official site | https://openkruise.io/      |
+| Security file | [SECURITY.md](https://github.com/openkruise/kruise/blob/master/SECURITY.md) |
 | Documentation | https://openkruise.io/docs/ |
 
 ## Overview
