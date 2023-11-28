@@ -262,6 +262,7 @@ All code is maintained on [Github](https://github.com/open-telemetry/opentelemet
   * The code is reviewed by multiple members from various teams and then approved by all of the reviewers before passing the check.
 * Automated Testing
   * In each PR, the code has to pass through various security checks and vulnerability analysis, to find if the code is secure and would not fail basic testing. 
+  * Tools like CodeQL and GoSec have been adopted for security scanning.
   * The project utilizes various vulnerability tests, unit tests and neutral tests to quantify whether the changes would be safe in basic context, before the reviews done by the project maintainers. 
 * Dependency Management
   * The project regularly updates its dependencies and check for vulnerabilities and keeps its github updated at all times asynchronously. 
@@ -284,20 +285,18 @@ OpenTelemetry is a toolkit to design and export telemetry data. The project is s
 
 ### Responsible Disclosure Process
 
-Pixie project vulnerability handling related processes are recorded in the [Pixie Security Doc](https://github.com/pixie-io/pixie/blob/main/SECURITY.md). Related security vulnerabilities can be reported and communicated via email to [cncf-pixie-maintainers@lists.cncf.io](mailto:cncf-pixie-maintainers@lists.cncf.io).
+For any projects under the OpenTelemetry project, any security issue is not to be reported through Github but through the steps defined in the [Security Policy](https://github.com/open-telemetry/opentelemetry.io/security/policy). The way to report any Vulnerability is through 'Report a Vulnerability' and creating a private channel between the reporter and the maintainers. 
 
-The Pixie maintainers are responsible for responding within 3 working days. It is the maintainers’ duties to triage the severity of the issue and determine how to address the issue.
+The technical team recieves the message for the report and they are required to provide the issue to the respective teams, as the respective team might not have the private key to decrypt the report we have sent throught the private channel of communcation. 
 
 
 ### Incident Response
 
-See [Pixie Security Doc](https://github.com/pixie-io/pixie/blob/main/SECURITY.md) for a description for how incidents should be communicated, triaged, confirmed, and notified. Pixie maintainers are responsible for tracking any vulnerabilities filed to the Pixie maintainers mailing list. That forum allows us to communicate privately with the reporter.
+See [Security Policy](https://github.com/open-telemetry/opentelemetry.io/security/policy) for a description for how incidents should be communicated, triaged, confirmed, and notified.
 
-The Pixie maintainer on-call for that week is responsible for triaging issues and escalating to the other maintainers. If the issue is a high-profile security incident which may have widespread impact on Pixie users, this will be done via a private channel in the Pixie Slack. Incidents that are lower profile/impact will have a public channel. This channel is used for collaboration on remediations and embargos. Any tie-breakers are settled by Pixie’s BDFL.
+The OpenTelemetry team likely follows a structured process for patching a vulnerabilty, releasing it as soon as possible, and publicly communicating about vulnerabilities. 
 
-Once the fix is confirmed, the security group will patch the vulnerability in the next patch or minor release, and backport a patch release into the latest minor releases, in which the fix details will be included.
-
-The release of low to medium severity bug fixes will include the fix details in the patch release notes. Any public announcements sent for these fixes will be linked to the release notes.
+Reporters are expected to comply with agreed-upon dates for public disclosure, ensuring a responsible and coordinated release of information according to the Policy mentioned before. 
 
 
 ## Appendix
