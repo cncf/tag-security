@@ -211,10 +211,6 @@ There is no publicly available document outlining an incident response process.
 [**CVE-2021-20206**](https://nvd.nist.gov/vuln/detail/CVE-2021-20206) (CVSS v3.1 Base Score: 7.2 High Severity) Arbitrry path injection via type field in CNI configuration  
 A path name flaw allowed execution of binaries elsewhere on the system including binaries that are not CNI plugins. This was fixed in libcni version 0.8.1 by [tightening up the plugin-finding logic](https://github.com/containernetworking/cni/pull/808).
 
-## CII Best Practices
-
-Best Practices. A brief discussion of where the project is at with respect to CII best practices and what it would need to achieve the badge.
-
 ### CII Best Practices
 
 [**Current Progress**](https://www.bestpractices.dev/en/projects/2446) (Last updated January 2021):
@@ -223,10 +219,6 @@ Best Practices. A brief discussion of where the project is at with respect to CI
 - They do not use static code analyzers to automatically catch vulnerabilities in code.
 - They do not identify fixed vulnerabilities or acknowledge bug reports
 - They do not have a specific or safe way of testing new functionalities
-
-## Case Studies
-
-Provide context for reviewers by detailing 2-3 scenarios of real-world use cases.
 
 ### Case Studies
 
@@ -248,8 +240,6 @@ Provide context for reviewers by detailing 2-3 scenarios of real-world use cases
 These case studies provide insights into how CNI is used in practice, emphasizing its role and effectiveness in Kubernetes networking and security.
 
 ## Related Projects/Vendors
-
-Reflect on times prospective users have asked about the differences between your project and projectX. Reviewers will have the same question.
 
 - **Kubernetes:** Utilizes CNI for container networking.
 - **Mesos:** Integrates CNI for networking solutions.
