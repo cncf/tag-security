@@ -174,7 +174,7 @@ This self-assessment is created to perform an internal analysis of the project's
 
    Along a similar vein, future work includes the implementation of end-to-end data encryption. The current implementation of Authnode does not support encryption of data in transit or at rest, only during communication. With the encryption keys managed and distributed by Authnode, end-to-end encryption can reduce data leaks once the data server is compromised. 
 
- * **Erasure Coding**
+ * **Erasure Coding** - 
    The support for Erasure Coding (EC) using Reed-Solomon encoding reduces data redundancy and optimizes storage costs, but also ensures a certain level of fault tolerance by breaking down data into fragments. Unlike replication, where multiple identical copies of the data are stored, erasure coding allows the original data to be reconstructed from a subset of the fragments and parity information. By mitigating the impact of data loss, erasure encoding helps make CubeFS a more secure system. If, for example, an attacker gains access to and compromises a subset of nodes, the system can still function and recover the original data from the remaining healthy nodes and parity information. This makes it more challenging for attackers to compromise or manipulate data by targeting a single point of failure.
 
  **Security Relevant** - 
