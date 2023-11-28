@@ -188,7 +188,7 @@ This self-assessment is created to perform an internal analysis of the project's
 
 ## Project compliance
 
-Cubefs does not currently document meeting particular compliance standards such as PCI-DSS, COBIT, ISO, GDPR, etc.
+CubeFS does not currently document meeting particular compliance standards such as PCI-DSS, COBIT, ISO, GDPR, etc.
 
 ## Secure development practices
 
