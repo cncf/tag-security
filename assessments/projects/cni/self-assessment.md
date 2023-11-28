@@ -50,15 +50,17 @@ use the table below as an example:
 | Default and optional configs | [CNI Specification](https://www.cni.dev/docs/spec/) outlines required keys, optional keys, and protocol parameters |
 
 ## Overview
-
-One or two sentences describing the project -- something memorable and accurate
-that distinguishes your project to quickly orient readers who may be assessing
-multiple projects.
+** Container Network Interface ** <br>
+CNI, a project under the Cloud Native Computing Foundation, includes a set of guidelines and software libraries 
+used for developing plugins that set up network interfaces within Linux and Windows containers. Its primary goal 
+is managing container network connectivity and deallocating resources once a container is removed. This specific 
+focus has led to broad support for CNI and a straightforward implementation process due to its simple specification.
 
 ### Background
-
-Provide information for reviewers who may not be familiar with your project's
-domain or problem area.
+With the rapid development of application containers on Linux, networking in this area is still not well addressed
+as it is highly environment-specific. To deal with this problem, developers seek to create a network layer that is 
+pluggable for container runtimes. Ultimately, CNI, along with libraries for Go and a set of plugins, was introduced 
+as a common interface between network plugins and container execution.
 
 ### Actors
 These are the individual parts of your system that interact to provide the
@@ -69,6 +71,12 @@ between the database and front-end is not relevant.
 
 The means by which actors are isolated should also be described, as this is often
 what prevents an attacker from moving laterally after a compromise.
+
+The following are the actors found in CNI project:
+- **CNI Plugin**: A program that applies a specified network configuration. It interfaces with a variety of networking solutions to provide flexible networking capabilities.
+- **Container**: A network isolation domain, though the actual isolation technology is not defined by the specification.
+- **Container Runtime**: Is responsible for executing CNI plugins. It interacts with plugins to apply network configurations to individual containers.
+- **Network**: A group of endpoints that are uniquely addressable that can communicate amongst each other. This could be either an individual container (as specified above), a machine, or some other network device (e.g. a router). Containers can be conceptually added to or removed from one or more networks.It includes configuration data such as IP addresses, routing rules, and network policies.
 
 ### Actions
 These are the steps that a project performs in order to provide some service
@@ -82,16 +90,53 @@ validates that the request corresponds to a file the client is authorized to
 access, and then returns a token to the client.  The client then transmits that
 token to the file server, which, after confirming its validity, returns the file.
 
+#### Overview
+1. A format for administrators defines network configurations
+2. A protocol for container runtimes makes requests to network plugins with parameters from environment variables and network configuration
+3. With the supplied configuration, a procedure executes the plugins.
+4. CNI plugins may also have a procedure to delegate functionality to other plugins
+5. Data types for plugins return their results to the runtime
+
+#### Action 1: Network Configuration Format
+CNI defines a network configuration format for administrators. It contains directives for both the container runtime as well as the plugins
+to consume. At plugin execution time, this configuration format is interpreted by the runtime and transformed in to a form to be passed to the plugins.
+- **Example configuration**:
+  <br>
+  <div style="text-align:center;">
+    <img src="docs/CNI-config.png" alt="CNI config">
+  </div>
+  <br>
+
+#### Action 2: Execution Protocol
+The CNI protocol is based on execution of binaries invoked by the container runtime. CNI defines the protocol between the plugin binary and the runtime. CNI defines 4 operations: ADD, DEL, CHECK, and VERSION. These are passed to the plugin via the CNI_COMMAND environment variable. 
+
+#### Action 3: Execution of Network Configurations
+A container time interprets a network configuration and executes plugins accordingly. A runtime can add, delete, or check a network configuration in a container, which results in a series of plugin ADD, DELETE, or CHECK executions correspondingly.
+
+#### Action 4: Plugin Delegation
+There are some operations that, for whatever reason, cannot reasonably be implemented as a discrete chained plugin. Rather, a CNI plugin may wish to delegate some functionality to another plugin. One common example of this is IP address management.
+
+#### Action 5: Result Types
+Plugins can return one of three result types:
+* Success
+* Error
+* _Version
+
 ### Goals
 The intended goals of the projects including the security guarantees the project
- is meant to provide (e.g., Flibble only allows parties with an authorization
-key to change data it stores).
+ is meant to provide 
+**General**
+* CNI defines a common interface between the network plugins and container execution
+* CNI is language-agnostic and a vendor-neutral specification
+* Backwards compatible: plugins are able to easily implement all versions of the specification and some helper code is available to convert between versions. 
 
 ### Non-goals
 Non-goals that a reasonable reader of the project’s literature could believe may
-be in scope (e.g., Flibble does not intend to stop a party with a key from storing
-an arbitrarily large amount of data, possibly incurring financial cost or overwhelming
- the servers)
+be in scope 
+**General**
+* Dynamic updates to existing network configurations 
+* Dynamic policies for network bandwidth and firewall rules
+
 
 ## Self-assessment use
 
