@@ -230,18 +230,6 @@ As of the latest security assessment, CloudEvents does not explicitly document c
 
 ### Development Pipeline
 
-#### CII Best Practices
-
-CloudEvents aims to align with the [Core Infrastructure Initiative (CII) Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/), focusing on:
-
-1. **Security Response Process**: Establishing a comprehensive process for reporting and addressing security vulnerabilities.
-2. **Automated Testing**: Implementing automated testing in the development pipeline for consistent security and vulnerability checks.
-3. **Dependency Management**: Regular auditing and updating of third-party dependencies to mitigate security risks.
-4. **Documentation**: Enhancing documentation to provide clear guidance on security considerations for developers.
-
-These efforts are part of CloudEvents' commitment to maintaining high standards in open-source software development.
-
-
 #### CloudEvents Membership
 
 There are three project membership categories, which make it harder for a single
@@ -511,13 +499,13 @@ time constraints and ease of remediation, manual review of exploitability within
 the SDK's context was skipped.
 
 ### CII Best Practices
+CloudEvents aims to align with the Core Infrastructure Initiative (CII) Best Practices, focusing on:
 
-**`TO-DO`**
-
-* [CII Best
-  Practices](https://www.coreinfrastructure.org/programs/best-practices-program/).
-  Best Practices. A brief discussion of where the project is at with respect to
-  CII best practices and what it would need to achieve the badge.
+Security Response Process: Establishing a comprehensive process for reporting and addressing security vulnerabilities.
+Automated Testing: Implementing automated testing in the development pipeline for consistent security and vulnerability checks.
+Dependency Management: Regular auditing and updating of third-party dependencies to mitigate security risks.
+Documentation: Enhancing documentation to provide clear guidance on security considerations for developers.
+These efforts are part of CloudEvents' commitment to maintaining high standards in open-source software development.
 
 ### Case Studies
 
