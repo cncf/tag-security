@@ -150,15 +150,14 @@ CNI does not document meeting any particular security standards or sub-sections.
 
 ## Security issue resolution
 
-* Responsible Disclosures Process. A outline of the project's responsible
-  disclosures process should suspected security issues, incidents, or
-vulnerabilities be discovered both external and internal to the project. The
-outline should discuss communication methods/strategies.
-  * Vulnerability Response Process. Who is responsible for responding to a
-    report. What is the reporting process? How would you respond?
-* Incident Response. A description of the defined procedures for triage,
-  confirmation, notification of vulnerability or security incident, and
-patching/update availability.
+### Responsible Disclosures Process
+
+As documented under the [Contact section of CNI's documentation](https://www.cni.dev/docs/#contact), issues can be reported privately via email to the email addresses listed in the [MAINTAINERS](https://github.com/containernetworking/cni/blob/master/MAINTAINERS) file.
+There is no publicly available document outlining a standard process for handling/responding to reports.
+
+### Incident Response Process
+
+There is no publicly available document outlining an incident response process.
 
 ## Appendix
 
