@@ -157,19 +157,7 @@ CubeFS Actors:
 
 ## Self-assessment use
 
-This self-assessment is created by the [project] team to perform an internal analysis of the
-project's security.  It is not intended to provide a security audit of [project], or
-function as an independent assessment or attestation of [project]'s security health.
-
-This document serves to provide [project] users with an initial understanding of
-[project]'s security, where to find existing security documentation, [project] plans for
-security, and general overview of [project] security practices, both for development of
-[project] as well as security of [project].
-
-This document provides the CNCF TAG-Security with an initial understanding of [project]
-to assist in a joint-assessment, necessary for projects under incubation.  Taken
-together, this document and the joint-assessment serve as a cornerstone for if and when
-[project] seeks graduation and is preparing for a security audit.
+This self-assessment is created to perform an internal analysis of the project's security.  It is not intended to provide a security audit of CubeFS, or function as an independent assessment or attestation of CubeFS's security health. This document serves to provide CubeFS users with an initial understanding of CubeFS's security, where to find existing security documentation, their plans for security, and a general overview of its security practices, both for the development as well as security of CubeFS. This document provides the CNCF TAG-Security with an initial understanding of the project and its security posture.
 
 ## Security functions and features
 
