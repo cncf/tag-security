@@ -2,6 +2,6 @@
 
 ## Summary
 
-## Feedback to Pixie Team
+## Feedback to Volcano Team
 
 ## Feedback to CNCF
