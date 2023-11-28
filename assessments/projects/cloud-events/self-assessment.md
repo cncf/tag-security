@@ -176,11 +176,11 @@ distinguishing events and preventing the processing of duplicate events.
 
 #### Event Type
 
-The `type` attribute holds a value that characterizes the nature
-of the event associated with the initial incident. This attribute is frequently
-utilized for routing, observability, policy enforcement, and similar purposes.
-The producer determines the format, which may contain details such as the
-version of the `type`.
+The `type` attribute holds a value that characterizes the nature of the event
+associated with the initial incident. This attribute is frequently utilized for
+routing, observability, policy enforcement, and similar purposes. The producer
+determines the format, which may contain details such as the version of the
+`type`.
 
 #### Event Subject
 
@@ -206,9 +206,9 @@ attributes.
 
 #### Transport Security
 
-Although CloudEvents does not prescribe specific transport
-security mechanisms, it is typically conveyed over secure protocols such as
-HTTPS, ensuring integrity and confidentiality.
+Although CloudEvents does not prescribe specific transport security mechanisms,
+it is typically conveyed over secure protocols such as HTTPS, ensuring integrity
+and confidentiality.
 
 #### Event Source Authentication
 
@@ -271,6 +271,15 @@ CloudEvents define an SDK project as healthy if it meets the criteria below.
   Contribution Acceptance;
 * Issues and PRs are triaged (labeled, commented, reviewed, etc) regularly.
 
+Moreover, CloudEvents define an SDK as `not actively maintained` if:
+
+* Issues and/or PRs are not being triaged from the SDK maintainers for 2 months
+* Security patches are not being released from the SDK maintainers for 1 months
+  from CVE disclosures
+
+If a project is not meeting one of the criteria above, the community can decide
+to hand over the project to a new group of maintainers by a voting process.
+
 #### Contributing to CloudEvents
 
 ##### General Instructions
@@ -280,7 +289,8 @@ CloudEvents define an SDK project as healthy if it meets the criteria below.
 * All Proposed changes will be done through Github Pull Requests (PRs).
 * All patches must be signed by the commiter, with the sign-off being a simple
   line at the end of the explanation for the patch.
-* All commits should use the [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/).
+* All commits should use the [Conventional Commits
+  Specification](https://www.conventionalcommits.org/en/v1.0.0/).
 * Pull Requests will be reviewed during official meetings.
   * Off-line reviews are recommended before meetings.
   * Meetings happen every Thursday at 9AM PT.
@@ -344,30 +354,41 @@ CloudEvents has many adopters including but not limited to:
 
 #### Reporting an Issue
 
-To report an issue, or to a new idea, contributors can open an issue, but should
-check existing issues first to see if a similar one has already been opened and
-discussed.
+To report an issue, or to a new idea, contributors can open a new  issue on the
+GitHub repository. However, they should check if a similar issue already exists.
 
-#### Reporting Security Concerns
-
-CloudEvents provides a dedicated [email
+CloudEvents also provides a dedicated [email
 address](cncf-cloudevents-security@lists.cncf.io) for reporting security
 concerns related to the specification or the SDKs.
 
-* Responsible Disclosures Process. A outline of the project's responsible
-  disclosures process should suspected security issues, incidents, or
-vulnerabilities be discovered both external and internal to the project. The
-outline should discuss communication methods/strategies.
-
 #### Vulnerability Response Process
 
-* Who is responsible for responding to a report. What is the reporting process?
-    How would you respond?
+It is the responsibility of the CloudEvents SDK maintainers to triage issues and
+PRs from their respective repositories, as well as frequently release security
+patches to issues found. As mentioned in [CloudEvents SDK
+Community](#cloudevents-sdk-community), the maintainers cannot abstain from
+triaging issues and PRs for more than 2 months, or releasing security patches
+for more than 1 month. Otherwise, their project will be marked as `not actively
+maintained`, which can lead to them to loose the management of the SDK
+repository.
 
 ### Incident Response
 
-A description of the defined procedures for triage, confirmation, notification
-of vulnerability or security incident, and patching/update availability.
+#### Discussing the Issue
+
+After an issue is reported, the maintainers of the SDK will contact the author
+of the issue, talking through it to understand whether it should be resolved,
+its priority, how a solution could be implemented, and who will implement it,
+which can be done through the GitHub issues page of the SDK, Slack, a meeting or
+any other CloudEvents communication channel.
+
+#### Solving the Issue
+
+Once a security patch is written, the contributor should make Pull Request and
+mark it as reviewed. The PR will be reviewed, improved, and approved by the
+other maintainers of the SDK. With that, a security patch is released by
+following the process described in [Contributing to
+CloudEvents](#contributing-to-cloudevents).
 
 ## Appendix
 
@@ -510,18 +531,18 @@ you analyze your software’s performance and behavior.
 
 * [AsyncAPI Website](https://www.asyncapi.com/)
 
-AsyncAPI is an open source initiative that seeks to improve the current state of
+AsyncAPI is an open-source initiative that seeks to improve the current state of
 Event-Driven Architectures (EDA). Our long-term goal is to make working with
 EDAs as easy as working with REST APIs. That goes from documentation to code
 generation, and from discovery to event management.
 
 #### Event-B
 
-* [An Introduction to the Event-B Modelling
+* [An Introduction to the Event-B Modeling
 Method](https://www.southampton.ac.uk/~tsh2n14/publications/chapters/eventb-dbook13.pdf)
 
-Event-B is a formal method for system-level modelling and analysis. Key features
-of Event-B are the use of set theory as a modelling notation, the use of
+Event-B is a formal method for system-level modeling and analysis. Key features
+of Event-B are the use of set theory as a modeling notation, the use of
 refinement to represent systems at different abstraction levels and the use of
 mathematical proof to verify consistency between refinement levels.
 
@@ -533,7 +554,7 @@ Guide](https://insights.eventscouncil.org/Portals/0/APEX_Event_Specifications_Gu
 The APEX Event Specifications Guide (ESG) is a written document that contains
 all the details of an event. The ESG is used by event organizers to communicate
 information to venues and suppliers. The ESG is a three-part template that
-includes: Narrative, Schedule, Function orders.
+includes: Narrative, Schedule, and Function orders.
 
 This is an older document used across many engineering fields, which is not
 restricted to computer science, making it different from the other examples.
