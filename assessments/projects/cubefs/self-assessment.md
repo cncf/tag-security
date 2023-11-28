@@ -190,22 +190,31 @@ included in threat modeling.
 
 ## Secure development practices
 
-* Development Pipeline.  A description of the testing and assessment processes that
-  the software undergoes as it is developed and built. Be sure to include specific
-information such as if contributors are required to sign commits, if any container
-images immutable and signed, how many reviewers before merging, any automated checks for
-vulnerabilities, etc.
-* Communication Channels. Reference where you document how to reach your team or
-  describe in corresponding section.
-  * Internal. How do team members communicate with each other?
-  * Inbound. How do users or prospective users communicate with the team?
-  * Outbound. How do you communicate with your users? (e.g. flibble-announce@
-    mailing list)
-* Ecosystem. How does your software fit into the cloud native ecosystem?  (e.g.
-  Flibber is integrated with both Flocker and Noodles which covers
-virtualization for 80% of cloud users. So, our small number of "users" actually
-represents very wide usage across the ecosystem since every virtual instance uses
-Flibber encryption by default.)
+* **Development Pipeline** - 
+
+  * **Version control** - The CubeFS repository uses Git as its primary version control tool.
+
+  * **Code contribution** - CubeFS has defined a document for users and other community members who want to contribute to the repository. The document contains development style guidelines and commit message guidelines. 
+
+  * **Commit Signing** - All commits have to be signed following certain guidelines and go through a DCO (Developer Certificate of Origin) check. 
+
+  * **CI/CD pipeline** - CubeFS uses automated CI/CD pipelines to build and test code and uses the Travis CI service to run all checks including unit and integration tests. 
+
+  * **Code reviews** - All pull requests have to be approved by at least one core maintainer, and pass all checks, before it can be merged. 
+
+  * **Container Image Security** - Images are built using trusted base images. The services use volumes to persist data, and certain configuration files have been mounted onto containers which contributes to immutability. However, there is no explicit configuration for image signing or content trust.
+
+  * **OpenSSF Scorecard Check** - CubeFS has a GitHub Actions workflow to check the security posture of their repository using the OpenSSF Scorecard. The workflow runs a check based on certain trigger conditions and uploads the results in SARIF format, which can be accessed via the Actions tab. This check does not get triggered on every push, it runs when there are changes to the master branch or on a scheduled basis.  
+
+* **Communication Channels** - 
+
+  * **Internal communication** - Team members communicate with each other through Slack channels to coordinate activities. 
+
+  * **Inbound communication** - Users and other community members can reach out to the CubeFS team either through the public Slack channel, the public mailing list users@cubefs.groups.io or through WeChat channels. 
+
+  * **Outbound communication** - The CubeFS team communicates new releases, patch fixes and other updates through their public mailing list, Slack and WeChat channels, and through GitHub discussions. They also have a Twitter page to communicate updates.
+
+* **Ecosystem** - CubeFS is integrated with various data access protocols such as S3, POSIX, and HDFS, and supports two storage engines - multiple replicas and erasure coding. This wide compatibility covers a large portion of cloud storage use cases. Furthermore, CubeFS’s integration with Kubernetes means that it is used by default in many cloud-native applications, further extending its reach in the ecosystem.
 
 ## Security issue resolution
 
