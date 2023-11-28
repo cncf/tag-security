@@ -45,10 +45,10 @@ A table at the top for quick reference information, later used for indexing.
 Provide the list of links to existing security documentation for the project.
 You may use the table below as an example:
 
-| Doc           | url                         |
-|---------------|-----------------------------|
+| Doc           | url                                                                         |
+|---------------|-----------------------------------------------------------------------------|
 | Security file | [SECURITY.md](https://github.com/openkruise/kruise/blob/master/SECURITY.md) |
-| Documentation | https://openkruise.io/docs/ |
+| Documentation | https://openkruise.io/docs/                                                 |
 
 ## Overview
 
@@ -276,53 +276,84 @@ security audit.
 Critical:
 - Security scanning with Snyk in the CI pipeline identifies vulnerabilities in container images so only verified images are displayed.
 - Supporting only recent software versions that provide patches and updates mitigates general vulnerabilities.
-  
+
 Security Relevant:
 - Regularly scanning the code in the main (master) and nightly builds, as well as in pull requests (PRs) for the Go programming language helps identify any potential vulnerabilities or issues before release.
 - Scanning the container images that are published on the GitHub Container Registry ensures that the images, which are used to run OpenKruise in a Kubernetes environment, are secure.
 
-# Threat Modeling with STRIDE
+### Threat Modeling with STRIDE
 
-Spoofing:
+#### Spoofing:
+
 - Threat-01-S: Impersonating an Administrator
-  - An attacker could impersonate an OpenKruise admin, maintainer, or somebody with elevated privilege in order to access data within the containers, code repositories, or     contributions from other developers.
+- An attacker could impersonate an OpenKruise admin, maintainer, or somebody
+  with elevated privilege in order to access data within the containers, code
+  repositories, or contributions from other developers.
 - Threat-02-S: Spoofing a Kubernetes Cluster
-  - If an attacker is able to spoof a Kubernetes cluster, they may potentially send false information or nefarious commands to OpenKruise, leading to undefined behavior.
+- If an attacker is able to spoof a Kubernetes cluster, they may potentially
+  send false information or nefarious commands to OpenKruise, leading to
+  undefined behavior.
 - Recommended Mitigations
-  - Enforce multi-factor authentication or other defenses in order to be granted control access or data retrieval.
-  - Use mutual TLS to confirm that both OpenKruise and the Kubernetes cluster authenticate each other’s identities before connecting.
+- Enforce multi-factor authentication or other defenses in order to be granted
+  control access or data retrieval.
+- Use mutual TLS to confirm that both OpenKruise and the Kubernetes cluster
+  authenticate each other's identities before connecting.
 
-Tampering:
+#### Tampering:
+
 - Threat-03-T: Altering Critical Components
-  - OpenKruise components could be tampered with during build, installation, or runtime, potentially allowing an attacker to download malware into the host system, OpenKruise itself, or Kubernetes.
+- OpenKruise components could be tampered with during build, installation, or
+  runtime, potentially allowing an attacker to download malware into the host
+  system, OpenKruise itself, or Kubernetes.
 - Recommended Mitigations
-  - Use checksums and/or digital signatures to monitor for unauthorized modifications.
-  - Only allow the downloading of OpenKruise components from the official website and/or Helm package manager
+- Use checksums and/or digital signatures to monitor for unauthorized
+  modifications.
+- Only allow the downloading of OpenKruise components from the official website
+  and/or Helm package manager
 
-Repudiation:
+#### Repudiation:
+
 - Threat-04-R: Denial of Administrator Actions
-  - OpenKruise admins of Kubernetes applications may deny or misrepresent actions they have performed, particularly if they include any changes made to configuration updates or scaling within the Kubernetes clusters managed by OpenKruise.
+- OpenKruise admins of Kubernetes applications may deny or misrepresent actions
+  they have performed, particularly if they include any changes made to
+  configuration updates or scaling within the Kubernetes clusters managed by
+  OpenKruise.
 - Recommended Mitigations
-  - Use an encrypted log management system to merge logs from various OpenKruise operations to establish a comprehensive audit trail for all actions taken in the environment.
+- Use an encrypted log management system to merge logs from various OpenKruise
+  operations to establish a comprehensive audit trail for all actions taken in
+  the environment.
 
-Information Disclosure:
+#### Information Disclosure:
+
 - Threat-05-I: Vulnerability Exploitation Through User Reports
-  - OpenKruise relies on user-reporting of vulnerabilities through Gmail or GitHub Issues. If a user discovers a bug and reports it, an attacker may find a way to view such reports and exploit the bug before it can be fixed.
+- OpenKruise relies on user-reporting of vulnerabilities through Gmail or
+  GitHub Issues. If a user discovers a bug and reports it, an attacker may find
+  a way to view such reports and exploit the bug before it can be fixed.
 - Recommended Mitigations
-  - Encrypt all logs of vulnerability reports sent by users to OpenKruise and implement strict access controls to prevent unauthorized access to the log storage.
+- Encrypt all logs of vulnerability reports sent by users to OpenKruise and
+  implement strict access controls to prevent unauthorized access to the log
+  storage.
 
-Denial of Service:
+#### Denial of Service:
+
 - Threat-06-D: Resource Exhaustion in Controllers
-  - OpenKruise controllers, daemons, or the applications being managed may consume more resources than allocated and affect the availability of the Kubernetes cluster.
+- OpenKruise controllers, daemons, or the applications being managed may
+  consume more resources than allocated and affect the availability of the
+  Kubernetes cluster.
 - Recommended Mitigations
-  - Prevent network-based attacks through network isolation and segmentation
-  - Use rate limiting to lessen the number of requests a user can make to OpenKruise’s components.
+- Prevent network-based attacks through network isolation and segmentation
+- Use rate limiting to lessen the number of requests a user can make to
+  OpenKruise's components.
 
-Elevation of Privilege:
+#### Elevation of Privilege:
+
 - Threat-07-E: Unauthorized Access to Kubernetes Resources
-  - If an attacker compromises a part of OpenKruise, particularly one that has permissions to modify Kubernetes resources, they could potentially escalate their privileges within the Kubernetes cluster.
+- If an attacker compromises a part of OpenKruise, particularly one that has
+  permissions to modify Kubernetes resources, they could potentially escalate
+  their privileges within the Kubernetes cluster.
 - Recommended Mitigations
-  - Use Role-Based Access Control (RBAC) policies with OpenKruise components to give them the least privilege necessary in regards to Kubernetes.
+- Use Role-Based Access Control (RBAC) policies with OpenKruise components to
+  give them the least privilege necessary in regards to Kubernetes.
 
 ## Project compliance
 
@@ -455,37 +486,109 @@ Foundation](https://cncf.io/)) project.
 
 ## Appendix
 
-* **Known Issues Over Time** <br>
-  Openkruise doesn’t have any security vulnerabilities pointed out as of the moment, but the project is impacted by the vulnerabilities in the internal tools and frameworks that it uses (for eg. Golang vulnerabilities).
-* **[CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/)** <br>
-  OpenKruise hasn’t attained any badge from Open Source Security Foundation (OpenSSF), the progress is at 30% to attaining a passing level criteria from OpenSSF.<br>
-[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/2908/badge)](https://www.bestpractices.dev/projects/2908)
-* **Case Studies** <br>
-  Many organisations have adopted Karmada and are using our project in production.<br> Here are few Case studies:
-  * **Alibaba:** Alibaba Group, a leading Chinese multinational conglomerate, is renowned for its robust cloud computing services provided through Alibaba Cloud. As one of the world's top cloud service providers, Alibaba Cloud offers a comprehensive suite of services, including computing power, storage, databases, artificial intelligence, and more. Alibaba Cloud plays a pivotal role in supporting Alibaba's e-commerce platforms, facilitating scalable and reliable infrastructure to handle vast amounts of online transactions. Additionally, Alibaba Cloud serves a diverse range of industries, including finance, healthcare, and manufacturing, offering innovative solutions for digital transformation. Leveraging its extensive global network of data centers, Alibaba Cloud enables businesses worldwide to harness the power of cloud computing, providing flexible and cost-effective solutions to meet the evolving demands of the digital era.
-During the 2020 Double 11 Global Shopping Festival, Alibaba made its core systems fully cloud-native. Alibaba has been running nearly 100,000 OpenKruise workloads and managing millions of containers.
-Challenges faced by Alibaba in its ultra-large-scale business scenarios:
-    * When an application is released, all containers need to be migrated and rebuilt. This is nearly unacceptable. If all of Alibaba’s large-scale applications are rebuilt at a large scale at the release peak, it will be disastrous for both business and other components, such as schedulers, middleware, network, and storage components.
-    * The deployment workloads do not support grayscale upgrades.
-The following features of OpenKruise gave an advantage over the vintage Kubernetes to help them scale to such an extent:  
-    * The main feature that Alibaba lists is the “in-place upgrade” in OpenKruise. When customers need to upgrade an application, this feature only upgrades the images in the original pod without migrating or rebuilding the container.
-    * OpenKruise provides Advanced DaemonSet - This workload is used to deploy host-level daemons on all nodes, including various basic components for network configuration and storage for business containers.
-[Full Details on Alibaba Double 11 Case Study ]([https://karmada.io/docs/casestudies/vipkid/](https://alibaba-cloud.medium.com/openkruise-the-cloud-native-platform-for-the-comprehensive-process-of-alibabas-double-11-3bfd05741f33))
-  * **SpectroCloud:** SpectroCloud is a cloud infrastructure management company that focuses on simplifying the deployment and management of Kubernetes clusters across multiple clouds. SpectroCloud provides a platform that helps organizations build and operate Kubernetes infrastructures efficiently, regardless of the underlying cloud providers. The company aims to streamline the adoption of Kubernetes by offering a unified management experience that spans various cloud environments. The platform may leverage cloud-native technologies to optimize Kubernetes deployment, monitoring, and maintenance tasks, providing users with a seamless and consistent experience across different cloud infrastructures.
-    * OpenKruise enabled SpectroCloud to manage periodic node actions.
-    * OpenKruise provides the following services that can be used to manage periodic node actions:
-      - OpenKruise's custom controllers, such as the Advanced DaemonSet Controller, can be employed to schedule and manage periodic node actions.
-      - OpenKruise allows users to define custom deployment strategies, and these strategies can extend to periodic node actions.
-      - OpenKruise's webhook server can be used to validate and control node-related resource requests.
-* **Related Projects / Vendors** <br>
-  * **Istio -** Istio is a service mesh that provides a uniform way to secure, connect, and monitor microservices. It manages the communication between services in a Kubernetes cluster.<br>
-Istio primarily focuses on service mesh features such as traffic management, security, and observability. OpenKruise is geared towards enhancing application deployment strategies, offering features beyond service communication.
-  * **Kubevela -** KubeVela is a modern application delivery framework for Kubernetes, providing higher-level abstractions for defining, deploying, and managing applications.<br>
-Both KubeVela and OpenKruise provide higher-level abstractions, but they may differ in their approach to application delivery and management. OpenKruise offers advanced deployment strategies through controllers, whereas KubeVela may have a different emphasis in its framework.<br>
-There are also plans for OpenKruise to integrate with other open-source products from related fields, like KubeVela, to build a more complete cloud-native application system.
-  * **ArgoCD -** ArgoCD is a declarative GitOps continuous delivery tool for Kubernetes. It automates the deployment of applications based on configurations stored in Git repositories, ensuring the desired state is maintained.<br>
-While ArgoCD excels in GitOps and continuous delivery, OpenKruise focuses on extending Kubernetes controllers to offer advanced deployment strategies. OpenKruise provides features like rolling updates, canary releases, and blue-green deployments, offering a broader range of options for application lifecycle management.
-  * **FluxCD -** FluxCD is a GitOps tool for Kubernetes, ensuring the cluster’s state aligns with the Git repository configuration. It automates the deployment of applications by continuously monitoring and applying changes from the repository.<br>
-FluxCD is heavily focused on GitOps practices, while OpenKruise emphasizes advanced deployment strategies. OpenKruise's controllers allow users to define more sophisticated deployment workflows beyond GitOps.
-  * **Knative -** Knative is a set of components for building modern, serverless applications on Kubernetes. It abstracts away infrastructure complexities for serverless workloads.<br>
-Knative is more oriented toward serverless computing, while OpenKruise concentrates on traditional application deployment and management strategies. OpenKruise's controllers provide features like rolling updates and canary releases for more controlled application updates.
+- **Known Issues Over Time** <br>
+  Openkruise doesn't have any security vulnerabilities pointed out as of the
+  moment, but the project is impacted by the vulnerabilities in the internal
+  tools and frameworks that it uses (for eg. Golang vulnerabilities).
+- **[CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/)** <br>
+  OpenKruise hasn't attained any badge from Open Source Security Foundation
+  (OpenSSF), the progress is at 30% to attaining a passing level criteria from
+  OpenSSF.<br>
+  [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/2908/badge)](https://www.bestpractices.dev/projects/2908)
+- **Case Studies** <br>
+  Many organisations have adopted Karmada and are using our project in
+  production.<br> Here are few Case studies:
+  - **Alibaba:** Alibaba Group, a leading Chinese multinational conglomerate,
+    is renowned for its robust cloud computing services provided through
+    Alibaba Cloud. As one of the world's top cloud service providers, Alibaba
+    Cloud offers a comprehensive suite of services, including computing power,
+    storage, databases, artificial intelligence, and more. Alibaba Cloud plays
+    a pivotal role in supporting Alibaba's e-commerce platforms, facilitating
+    scalable and reliable infrastructure to handle vast amounts of online
+    transactions. Additionally, Alibaba Cloud serves a diverse range of
+    industries, including finance, healthcare, and manufacturing, offering
+    innovative solutions for digital transformation. Leveraging its extensive
+    global network of data centers, Alibaba Cloud enables businesses worldwide
+    to harness the power of cloud computing, providing flexible and
+    cost-effective solutions to meet the evolving demands of the digital era.
+    During the 2020 Double 11 Global Shopping Festival, Alibaba made its core
+    systems fully cloud-native. Alibaba has been running nearly 100,000
+    OpenKruise workloads and managing millions of containers. Challenges faced
+    by Alibaba in its ultra-large-scale business scenarios:
+    - When an application is released, all containers need to be migrated and
+      rebuilt. This is nearly unacceptable. If all of Alibaba's large-scale
+      applications are rebuilt at a large scale at the release peak, it will be
+      disastrous for both business and other components, such as schedulers,
+      middleware, network, and storage components.
+    - The deployment workloads do not support grayscale upgrades.
+      The following features of OpenKruise gave an advantage over the vintage
+      Kubernetes to help them scale to such an extent:
+    - The main feature that Alibaba lists is the "in-place upgrade" in
+      OpenKruise. When customers need to upgrade an application, this feature
+      only upgrades the images in the original pod without migrating or
+      rebuilding the container.
+    - OpenKruise provides Advanced DaemonSet - This workload is used to deploy
+      host-level daemons on all nodes, including various basic components for
+      network configuration and storage for business containers.
+      [Full Details on Alibaba Double 11 Case Study](%5Bhttps://karmada.io/docs/casestudies/vipkid/%5D(https://alibaba-cloud.medium.com/openkruise-the-cloud-native-platform-for-the-comprehensive-process-of-alibabas-double-11-3bfd05741f33))
+  - **SpectroCloud:** SpectroCloud is a cloud infrastructure management company
+    that focuses on simplifying the deployment and management of Kubernetes
+    clusters across multiple clouds. SpectroCloud provides a platform that
+    helps organizations build and operate Kubernetes infrastructures
+    efficiently, regardless of the underlying cloud providers. The company aims
+    to streamline the adoption of Kubernetes by offering a unified management
+    experience that spans various cloud environments. The platform may leverage
+    cloud-native technologies to optimize Kubernetes deployment, monitoring,
+    and maintenance tasks, providing users with a seamless and consistent
+    experience across different cloud infrastructures.
+    - OpenKruise enabled SpectroCloud to manage periodic node actions.
+    - OpenKruise provides the following services that can be used to manage
+      periodic node actions:
+      - OpenKruise's custom controllers, such as the Advanced DaemonSet
+        Controller, can be employed to schedule and manage periodic node
+        actions.
+      - OpenKruise allows users to define custom deployment strategies, and
+        these strategies can extend to periodic node actions.
+      - OpenKruise's webhook server can be used to validate and control
+        node-related resource requests.
+- **Related Projects / Vendors** <br>
+  - **Istio -** Istio is a service mesh that provides a uniform way to secure,
+    connect, and monitor microservices. It manages the communication between
+    services in a Kubernetes cluster.<br>
+    Istio primarily focuses on service mesh features such as traffic
+    management, security, and observability. OpenKruise is geared towards
+    enhancing application deployment strategies, offering features beyond
+    service communication.
+  - **Kubevela -** KubeVela is a modern application delivery framework for
+    Kubernetes, providing higher-level abstractions for defining, deploying,
+    and managing applications.<br>
+    Both KubeVela and OpenKruise provide higher-level abstractions, but they
+    may differ in their approach to application delivery and management.
+    OpenKruise offers advanced deployment strategies through controllers,
+    whereas KubeVela may have a different emphasis in its framework.<br>
+    There are also plans for OpenKruise to integrate with other open-source
+    products from related fields, like KubeVela, to build a more complete
+    cloud-native application system.
+  - **ArgoCD -** ArgoCD is a declarative GitOps continuous delivery tool for
+    Kubernetes. It automates the deployment of applications based on
+    configurations stored in Git repositories, ensuring the desired state is
+    maintained.<br>
+    While ArgoCD excels in GitOps and continuous delivery, OpenKruise focuses
+    on extending Kubernetes controllers to offer advanced deployment
+    strategies. OpenKruise provides features like rolling updates, canary
+    releases, and blue-green deployments, offering a broader range of options
+    for application lifecycle management.
+  - **FluxCD -** FluxCD is a GitOps tool for Kubernetes, ensuring the cluster's
+    state aligns with the Git repository configuration. It automates the
+    deployment of applications by continuously monitoring and applying changes
+    from the repository.<br>
+    FluxCD is heavily focused on GitOps practices, while OpenKruise emphasizes
+    advanced deployment strategies. OpenKruise's controllers allow users to
+    define more sophisticated deployment workflows beyond GitOps.
+  - **Knative -** Knative is a set of components for building modern,
+    serverless applications on Kubernetes. It abstracts away infrastructure
+    complexities for serverless workloads.<br>
+    Knative is more oriented toward serverless computing, while OpenKruise
+    concentrates on traditional application deployment and management
+    strategies. OpenKruise's controllers provide features like rolling updates
+    and canary releases for more controlled application updates.
