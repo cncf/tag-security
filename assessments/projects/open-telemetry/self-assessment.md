@@ -1,4 +1,4 @@
-# Open Telemetry Security Self Assessment
+# OpenTelemetry Security Self Assessment
 
 ## Table of contents
 
