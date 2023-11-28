@@ -184,9 +184,9 @@ This self-assessment is created to perform an internal analysis of the project's
 
    CubeFS uses multiple replicas to meet multi-tenant requirements. The data between replicas is mirrored, and strong consistency replication protocols are utilized to ensure data consistency between different replicas. Users can flexibly configure different numbers of replicas according to their application scenarios. Though not a strategy whose main explicit purpose is security, there are nonetheless security benefits to it. By the redundancy of the design, the security of CubeFS is elevated as even if one replica becomes corrupted or unavailable by a fault or attack, by the user’s configuration there can be several backups of the same data to ensure performance is not compromised. As well, consider the following scenarios:
 
-    * In the case of a DDoS attack, where an attacker floods a system with a massive volume of requests to overwhelm and disrupt services, having multiple replicas helps distribute the incoming traffic. Load balancers can redirect requests across replicas, preventing a single point of failure and making it more challenging for attackers to overload a specific server.
+   * In the case of a DDoS attack, where an attacker floods a system with a massive volume of requests to overwhelm and disrupt services, having multiple replicas helps distribute the incoming traffic. Load balancers can redirect requests across replicas, preventing a single point of failure and making it more challenging for attackers to overload a specific server.
 
-    * Multiple replicas provide protection against attacks that aim to compromise data integrity. If one replica is targeted by a data manipulation attack, the other replicas can act as a reference to identify and rectify unauthorized changes, preserving the integrity of the data.
+   * Multiple replicas provide protection against attacks that aim to compromise data integrity. If one replica is targeted by a data manipulation attack, the other replicas can act as a reference to identify and rectify unauthorized changes, preserving the integrity of the data.
 
 ## Project compliance
 
