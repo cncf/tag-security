@@ -250,46 +250,33 @@ Not applicable.
 
 ## Secure Development Practices
 
-The Pixie project follows established CNCF and OSS best practices for code development and delivery. Pixie [passes OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/en/projects/5027) and has an[ OpenSSF scorecard of ](https://api.securityscorecards.dev/projects/github.com/pixie-io/pixie)9.7.
-
-
 ### Development Pipeline
 
-All code is maintained on [Github](https://github.com/pixie-io/pixie). Changes must be reviewed and merged by the project maintainers. Before changes are merged, all the changes must pass static checks, license checks, verifications on gofmt, go lint, go vet, and pass all unit tests and e2e tests. Changes are scanned by snyk and Trivy nightly. Code changes are submitted via Pull Requests (PRs) and must be signed and verified. Commits to the main branch directly are not allowed.
+All code is maintained on [Github](https://github.com/pixie-io/pixie). 
 
+* Contributions and Changes
+  * Code changes are submitted via Pull Requests (PRs) and must be signed and verified. 
+  * Commits to the main branch directly are not allowed.
+* Code Review
+  * Changes must be reviewed and merged by the project maintainers. 
+  * The code is reviewed by multiple members from various teams and then approved by all of the reviewers before passing the check.
+* Automated Testing
+  * In each PR, the code has to pass through various security checks and vulnerability analysis, to find if the code is secure and would not fail basic testing. 
+  * The project utilizes various vulnerability tests, unit tests and neutral tests to quantify whether the changes would be safe in basic context, before the reviews done by the project maintainers. 
+* Dependency Management
+  * The project regularly updates its dependencies and check for vulnerabilities and keeps its github updated at all times asynchronously. 
 
 ### Communication Channels
-
-
-#### Internal
-
-Team members communicate with each other through the [Pixie Community Slack](https://slackin.px.dev/) and discuss in Github [issues](https://github.com/pixie-io/pixie/issues) or [pull requests](https://github.com/pixie-io/pixie/pulls).
-
-
-#### Inbound
-
-Users communicate with the team through the [Pixie Community Slack](https://slackin.px.dev/) or through [Github issues](https://github.com/pixie-io/pixie/issues).
-
-
-#### Outbound
-
-Team members communicate with users through the [Pixie Community Slack](https://slackin.px.dev/) and discuss in Github [issues](https://github.com/pixie-io/pixie/issues) or [pull requests](https://github.com/pixie-io/pixie/pulls).
-
-
-#### Security Email Group
-
-To report a security problem in Pixie, users should contact the Maintainers Team at [cncf-pixie-maintainers@lists.cncf.io](mailto:cncf-pixie-maintainers@lists.cncf.io). The security email group is also listed in the security document in our repository: [https://github.com/pixie-io/pixie/blob/main/SECURITY.md](https://github.com/pixie-io/pixie/blob/main/SECURITY.md).
-
+* Internal
+  * The OpenTelemetry team mostly uses platforms like GitHub, Slack, or email lists for internal communications within the teams.
+* Inbound
+  * Users and contributors to the OpenTelemetry project can communicate with the OpenTelemetry team via GitHub issues, mailing lists, CNCF Slack channels and through Discord Communications as well. 
+* Outbound
+  * The updates and announcements from OpenTelemetry are made through OpenTelemetry Blog, GitHub, CNCF mailing lists, and social media channels.
 
 ### Ecosystem
 
-Pixie is a real-time debugging platform for Kubernetes. Although Pixie does have some [system requirements](https://docs.px.dev/installing-pixie/requirements/), the Pixie team is actively working towards increasing support across different machine architectures, languages, and libraries.
-
-Pixie’s plugin system utilizes open standards so developers can effortlessly integrate Pixie with other cloud-native projects. The plugin system allows users to export their Pixie data to any other tool which accepts OTLP data. This enables users to send data to Jaeger, Prometheus, and more. When exporting this data to other tools, users typically aggregate this data in the PxL script to collate high-level information or patterns about their cluster/application state. Users also have the ability to configure the scripts to decide what data should be exported and is actually important to them. This heavily reduces the flood of data that Pixie can send to other tools. We can additionally update Pixie to enforce export limits. For example: stop running an export if we’ve exported more than X bytes in a particular time period.
-
-In general, observability data is high volume regardless of whether that data be metrics, traces, or logs. As a result, the tools in the observability ecosystem are typically well-designed to handle large data volumes and scale well to handle clusters and applications of large size, traffic, and load. OpenTelemetry collectors also have ways of efficiently processing and pipelining this data, such as batching.
-
-Observability tools can be at risk of importing forged data. Sending a tool forged data can lead to false alerts, thereby paging an on-call engineer for a non-incident. Alternatively, forged data can also help mask incidents. For example, take the scenario where a user is monitoring the average request latency of a service. If that latency were to increase, but a flood of forged data for low-latency requests is imported, the actual latency increase would be missed. For end users of any data-capturing tool, work needs to be done to address cases where data is missing or incorrect. Care must be taken to validate the data being collected from any given tool, cross check the data and then use it to inform downstream decisions.
+OpenTelemetry is a toolkit to design and export telemetry data. The project is supported for both developers and operations teams to make it much more viable in any context. It has support and instrumentation in almost all of the popular programming languages. It is a CNCF Incubation project and integrates with most of the other projects, namely, Kubernetes and others. It is also used by major companies such as JP Morgan, Splunk, etc. 
 
 
 ## Security Issue Resolution
