@@ -32,11 +32,18 @@ as a security assessment of the software.
 * [Security issue resolution](#security-issue-resolution)
   * [Responsible Disclosures Process](#responsible-disclosures-process)
   * [Incident Response](#incident-response)
+* [Lightweight Threat Modelling](#lightweight-threat-modelling)
+  * [Threat Modelling Notes](#threat-modelling-notes)
+  * [Threat Scenarios](#threat-scenarios)
+  * [Theoretical Threats](#theoretical-threats)
+  * [Potential threats](#potential-threats)
+  * [Recommendations](#recommendations)
 * [Appendix](#appendix)
   * [Known Issues Over Time](#known-issues-over-time)
   * [CII Best Practices](#cii-best-practices)
   * [Case Studies](#case-studies)
   * [Related Projects and Vendors](#related-projects-and-vendors)
+* [References](#references)
 
 ## Metadata
 
@@ -471,7 +478,7 @@ CloudEvents](#contributing-to-cloudevents).
 
 ### Potential threats
 
-#### The SDK management teams may implement vulnerabilities while implementing SDKs.
+#### The SDK management teams may implement vulnerabilities while implementing SDKs
 
 Trail Of Bits was able to identify 7 different security concerns regarding the
 different CloudEvents SDKs. As the number of SDKs grows, it is expected that
@@ -753,3 +760,7 @@ including more physical areas such as mechanical engineering and factories.
 
 * [CloudEvents Website](https://cloudevents.io/)
 * [CloudEvents GitHub](https://github.com/cloudevents)
+* [CloudEvents Security Assessment by Trail of
+  Bits](https://github.com/cloudevents/spec/blob/main/docs/CE-SecurityAudit-2022-10.pdf)
+* [Open and
+  Secure](https://github.com/cncf/tag-security/blob/main/assessments/Open_and_Secure.pdf)
