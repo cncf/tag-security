@@ -175,18 +175,16 @@ This self-assessment is created to perform an internal analysis of the project's
    Along a similar vein, future work includes the implementation of end-to-end data encryption. The current implementation of Authnode does not support encryption of data in transit or at rest, only during communication. With the encryption keys managed and distributed by Authnode, end-to-end encryption can reduce data leaks once the data server is compromised. 
 
  * **Erasure Coding**
-
    The support for Erasure Coding (EC) using Reed-Solomon encoding reduces data redundancy and optimizes storage costs, but also ensures a certain level of fault tolerance by breaking down data into fragments. Unlike replication, where multiple identical copies of the data are stored, erasure coding allows the original data to be reconstructed from a subset of the fragments and parity information. By mitigating the impact of data loss, erasure encoding helps make CubeFS a more secure system. If, for example, an attacker gains access to and compromises a subset of nodes, the system can still function and recover the original data from the remaining healthy nodes and parity information. This makes it more challenging for attackers to compromise or manipulate data by targeting a single point of failure.
 
  **Security Relevant** - 
 
   * **Multiple Replicas**
-
    CubeFS uses multiple replicas to meet multi-tenant requirements. The data between replicas is mirrored, and strong consistency replication protocols are utilized to ensure data consistency between different replicas. Users can flexibly configure different numbers of replicas according to their application scenarios. Though not a strategy whose main explicit purpose is security, there are nonetheless security benefits to it. By the redundancy of the design, the security of CubeFS is elevated as even if one replica becomes corrupted or unavailable by a fault or attack, by the user’s configuration there can be several backups of the same data to ensure performance is not compromised. As well, consider the following scenarios:
 
-   * In the case of a DDoS attack, where an attacker floods a system with a massive volume of requests to overwhelm and disrupt services, having multiple replicas helps distribute the incoming traffic. Load balancers can redirect requests across replicas, preventing a single point of failure and making it more challenging for attackers to overload a specific server.
+    * In the case of a DDoS attack, where an attacker floods a system with a massive volume of requests to overwhelm and disrupt services, having multiple replicas helps distribute the incoming traffic. Load balancers can redirect requests across replicas, preventing a single point of failure and making it more challenging for attackers to overload a specific server.
 
-   * Multiple replicas provide protection against attacks that aim to compromise data integrity. If one replica is targeted by a data manipulation attack, the other replicas can act as a reference to identify and rectify unauthorized changes, preserving the integrity of the data.
+    * Multiple replicas provide protection against attacks that aim to compromise data integrity. If one replica is targeted by a data manipulation attack, the other replicas can act as a reference to identify and rectify unauthorized changes, preserving the integrity of the data.
 
 ## Project compliance
 
