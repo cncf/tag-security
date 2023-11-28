@@ -473,15 +473,39 @@ Foundation](https://cncf.io/)) project.
 
 ## Security issue resolution
 
-- Responsible Disclosures Process. A outline of the project's responsible
-  disclosures process should suspected security issues, incidents, or
-  vulnerabilities be discovered both external and internal to the project. The
-  outline should discuss communication methods/strategies.
-  - Vulnerability Response Process. Who is responsible for responding to a
-    report. What is the reporting process? How would you respond?
-- Incident Response. A description of the defined procedures for triage,
-  confirmation, notification of vulnerability or security incident, and
-  patching/update availability.
+- Responsible Disclosures Process: OpenKruise has a responsible disclosure
+  process for reporting security vulnerabilities. This process is designed to
+  ensure that vulnerabilities are handled in a timely and effective manner. The
+  process can be found here:
+  https://github.com/openkruise/kruise/security/policy
+- Security researchers can report vulnerabilities confidentially by emailing
+  cncf-openkruise-maintainers@lists.cncf.io.
+- GitHub: Security-related issues can be reported through GitHub issues at
+  https://github.com/openkruise/kruise/issues
+- Reporters can expect a response from the maintainers within 2 business days.
+- The maintainers will triage the vulnerability and determine the appropriate
+  remediation
+- It is the maintainers' responsibility to triage the severity of issues and
+  determine remediation plans
+- Disclosures: Openkruise encourages the community to assist in identifying
+  security breaches; in the event of a confirmed breach, reporters will receive
+  full credit and have the option to stay informed and kept in the loop.
+- If you know of a publicly disclosed security vulnerability, you should
+  immediately email the OpenKruise maintainers at
+  cncf-openkruise-maintainers@lists.cncf.io.
+- Remediation: Kruise commits to supporting the n-2 version minor version of
+  the current major release; as well as the last minor version of the previous
+  major release
+
+### Communication
+
+[GitHub Security
+Advisory](https://github.com/openkruise/kruise/security/advisories) will be
+used to communicate during the identification, fixing, and shipping of
+vulnerability mitigations.
+
+The advisory becomes public only when the patched version is released to inform
+the community about the breach and its potential security impact.
 
 ## Appendix
 
