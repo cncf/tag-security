@@ -209,15 +209,33 @@ Flibber encryption by default.)
 
 ## Security issue resolution
 
-* Responsible Disclosures Process. A outline of the project's responsible
-  disclosures process should suspected security issues, incidents, or
-vulnerabilities be discovered both external and internal to the project. The
-outline should discuss communication methods/strategies.
-  * Vulnerability Response Process. Who is responsible for responding to a
-    report. What is the reporting process? How would you respond?
-* Incident Response. A description of the defined procedures for triage,
-  confirmation, notification of vulnerability or security incident, and
-patching/update availability.
+The CubeFS team has defined a clear-cut process for how security issues, incidents or vulnerabilities are reported, identified, patched, released and communicated to users. 
+
+* **Vulnerability Reporting and Response Process** - 
+
+  * CubeFS has established a certain set of rules as to what constitutes/does not constitute a security vulnerability.  They also have a procedure to be followed by reporters to report vulnerabilities. The details also have to be sent to the private mailing list security@cubefs.groups.io. 
+
+  * Once the report is received, it is directed to a dedicated committee of community volunteers called the Product Security Committee (PSC) which is responsible for organizing the entire incident response and communication disclosure. The members of the PSC share various tasks such as triaging, developing and releasing the fix, apart from managing disclosures. Each report is acknowledged and analysed by Product Security Committee members within 3 working days. 
+
+* **Responsible Disclosure Process** - 
+
+The disclosure processes can be either private or public. This depends on the severity of the vulnerability reported. 
+
+  * If any reporter knows of a publicly disclosed security vulnerability, they need to email security@cubefs.groups.io to inform the PSC about the vulnerability so they may start the patch, release, and communication process. 
+
+  * If the issue follows a private disclosure process, disclosing the issue and the fix will depend solely on the PSC. Disclosure is done once the vulnerability has been identified, triaged, patched and released. If it follows a public disclosure process, a public disclosure date is negotiated by the PSC and the bug reporter. The timeframe for disclosure is from immediate to a few weeks at PSC’s discretion.
+
+* **Incident Response Process**
+
+For each vulnerability, the PSC members will coordinate to create the fix and release, and send emails to the rest of the community. The PSC drives the schedule using their based on severity, development time, and release work. CubeFS follows the following Incident Response steps to manage vulnerabilities. 
+
+  * **Fix Team Organization** - This step is completed within the first 24 hours of Disclosure. In this step, the PSC works to identify relevant engineers from the affected projects and packages and CC those engineers into the disclosure thread.
+
+  * **Fix Development Process** - This process is completed within 1-7 days of disclosure once the team is formed. The team will determine the severity of the bug, request a CVE and then work on the fix branch. Depending on the severity, the PSC can adjust release timelines and disclosure processes.
+
+  * **Fix Release and Disclosure Process** - The disclosure process begins after the Fix Team has developed a fix or mitigation so that a realistic timeline can be communicated to users. On release day, the code for the fix is merged by the project maintainers. The PSC will announce the new release, the CVE number, severity, and impact. This announcement with details is sent to users via their private mailing list.
+
+  * **Retrospective** - Once the release is done, within 1-3 days, a retrospective of the process is conducted which includes the details of everyone involved, the timeline of the process, relevant PR links, and critiques of the response and the release process. This retrospective is sent to their private mailing list. 
 
 ## Appendix
 
