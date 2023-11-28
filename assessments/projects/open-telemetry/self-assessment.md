@@ -338,3 +338,4 @@ OpenTelemetry is vendor and tool-agnostic, and it can be used with different obs
 * **Jaeger**: Jaeger is a distributed tracing system that can be started and run in a local environment. Users can first use OpenTelemetry to detect various indicators of the application and then send the tracking data to Jaeger. The advantage of using Jaeger is that it makes finding the source of latency and lack of concurrency easier. All in all, Jaeger is more focused, while OpenTelemetry is a broader framework.
 * **Cilium**: Not applicable
 
+[comment]: # (The First Draft of Self Assessment has been completed on Nov 28, 2023: 4:20 EST)
