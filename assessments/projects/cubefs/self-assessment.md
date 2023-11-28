@@ -185,8 +185,7 @@ included in threat modeling.
 
 ## Project compliance
 
-* Compliance.  List any security standards or sub-sections the project is
-  already documented as meeting (PCI-DSS, COBIT, ISO, GDPR, etc.).
+Cubefs does not currently document meeting particular compliance standards.
 
 ## Secure development practices
 
