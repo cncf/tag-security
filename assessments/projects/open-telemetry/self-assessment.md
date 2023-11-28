@@ -318,14 +318,14 @@ The release of low to medium severity bug fixes will include the fix details in 
 
 ### Known Issues Over Time
 
-All Pixie security related issues (both fixes and enhancements) are labeled with "kind/security" and can be queried using[ https://github.com/pixie-io/pixie/labels/kind/security](https://github.com/pixie-io/pixie/labels/kind/security).
+The Enhancements Telemetry security-related issues are labeled with "Enhancement", and the fixes are marked with "dependencies." it can be queried using[ https://github.com/open-telemetry/opentelemetry.io/issues](https://github.com/open-telemetry/opentelemetry.io/issues).
 
-The code review process requires maintainers to consider security while reviewing designs and pull requests.
+Consider security when making pull requests, and need to consider the possibility of exposing sensitive information.
 
 
 ### CII Best Practices
 
-Pixie has achieved an Open Source Security Foundation (OpenSSF) best practices badge at passing level, see more details at [Pixie’s openssf best practices](https://bestpractices.coreinfrastructure.org/en/projects/5027).
+Not applicable
 
 
 ### Case Studies
@@ -352,14 +352,15 @@ We’ve seen Pixie adopters leverage Pixie in two main ways:
 
 ### Related Projects/Vendors
 
-Pixie is a real-time debugging platform for Kubernetes. It provides out-of-the-box data collection for metrics/spans/logs and programmatic manipulation of that data for analysis and visualization. As a result, Pixie spans the entire observability landscape (monitoring, logging, tracing, visualizations). There are open-source projects adjacent to us at each of these layers.
-
-Because our users already know and love many of these projects, we designed Pixie to use programmatic interfaces and open standards in order to make it easy to integrate with other tools. It is easy to export Pixie data to another system using the Pixie Plugin system.
+As a vendor-neutral open-source observability framework, Opentelemetry helps users better telemetry different data, including traces, metrics, and logs. It facilitates comprehensive insights into application performance. Due to the framework's diverse language support, it helps optimize the system's reliability and is of more significant help in troubleshooting.
 
 
+OpenTelemetry is vendor and tool-agnostic, and it can be used with different observability backends, improving overall ease of use. Enable OpenTelemetry through native OTLP, helping add-on products deepen the connection with OpenTelemetry. Regarding observability backends that OpenTelemetry can be used together, there are Jaeger, Prometheus, Grafana, etc.
 
-* **Prometheus**: Similar to Prometheus, Pixie can scrape, store, and query time-series data. Pixie can also be utilized to gather data of other formats, such as dynamic logs and traces. Unlike Prometheus, Pixie does not provide long-term storage of data.
-* **Grafana**: Pixie offers a scriptable UI and CLI for programmatic data visualization exploration. Grafana provides a rich dashboarding interface for visualizing data from a variety of sources, and a large ecosystem of plugins. We have built a Pixie plugin for Grafana so that Grafana users can use Pixie data to power Grafana dashboards.
-* **OpenTelemetry**: OpenTelemetry provides a specification for telemetry data. Pixie provides the capability to collect and export data to that format.
-* **Jaeger**: Jaeger is a distributed tracing system. Similar to Pixie, it is used to debug and troubleshoot microservice applications. Pixie collects other types of data, such as metrics, and auto-collects HTTP, database, and other requests in the users’ system. Jaeger focuses on traces. Jaeger also provides support for manual instrumentation.
-* **Cilium**: Cilium and Hubble (built on-top of Cilium) also use eBPF to provide network and security visibility into applications running on Linux Container platforms. Similar to Pixie, they can provide service maps, track response statuses, and pinpoint 99th-percentile request latencies. Pixie aims to provide this baseline view of a user’s system, but also allow them to use eBPF to dive into deeper code-level views, such as flamegraphs.
+
+* **Prometheus**: Both Prometheus and OpenTelemetry can collect metrics across applications and services. However, Prometheus focuses more on the pull model, and OpenTelemetry includes both push and pull models. In addition, combining built-in alerts in Prometheus and OpenTelemetry helps create an observability ecosystem and improve stability.
+* **Grafana**: OpenTelemetry and Grafana complement each other, and the visualization in Grafana's dashboard can better help analyze various types of data collected from OpenTelemetry. In addition, Grafana supports enable interoperability from OpenTelemetry by calling on SDKs and application observability standards, among others, integrating telemetry into a unified open-source monitoring backend.
+* **OpenTelemetry**: Same
+* **Jaeger**: Jaeger is a distributed tracing system that can be started and run in a local environment. Users can first use OpenTelemetry to detect various indicators of the application and then send the tracking data to Jaeger. The advantage of using Jaeger is that it makes finding the source of latency and lack of concurrency easier. All in all, Jaeger is more focused, while OpenTelemetry is a broader framework.
+* **Cilium**: Not applicable
+
