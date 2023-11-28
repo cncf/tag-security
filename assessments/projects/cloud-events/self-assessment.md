@@ -425,6 +425,135 @@ other maintainers of the SDK. With that, a security patch is released by
 following the process described in [Contributing to
 CloudEvents](#contributing-to-cloudevents).
 
+## Lightweight Threat Modelling
+
+* Project data classification: Sensitive
+* Owner(s) and/or maintainer(s):
+  * Name: CloudEvents Steering Committee
+  * Representation: Cloud Native Computing Foundation (CNCF)
+  * Contact: CloudEvents GitHub Org
+
+### Threat Modelling Notes
+
+* Where does it store data?
+  * CloudEvents primarily defines a specification and does not store data
+    itself.
+* Is encryption used for data in transit and at rest?
+  * The specification recommends using secure protocols for data in transit.
+* Is data from potentially untrusted sources subject to input validation?
+  * Yes, validation is part of the SDK implementations.
+
+### Threat Scenarios
+
+* **An External Attacker:** Could potentially send malformed or malicious event
+  data to disrupt services that consume CloudEvents.
+* **An External Attacker with valid access:** Could potentially inject false
+  events to lead to incorrect actions being taken by consumers.
+* **An Internal Attacker:** Might be able to alter event definitions or
+  intercept event data in transit within systems that utilise CloudEvents.
+* **A Malicious Internal User:** Could misuse the event system to trigger
+  unauthorised actions or services.
+
+### Theoretical Threats
+
+* **Deployment Architecture (pod and namespace configuration):** Not applicable
+  to CloudEvents as a specification.
+
+* **Networking (internal and external):** Networking controls are typically
+  managed by the underlying infrastructure and transport protocols used for
+  sending and receiving CloudEvents.
+
+* **Cryptography:** CloudEvents uses secure transport layers that provide
+  encryption, but does not specify cryptographic implementations.
+
+* **Audit and logging:** This is typically handled by the platforms and services
+  that implement CloudEvents.
+
+### Potential threats
+
+#### The SDK management teams may implement vulnerabilities while implementing SDKs.
+
+Trail Of Bits was able to identify 7 different security concerns regarding the
+different CloudEvents SDKs. As the number of SDKs grows, it is expected that
+more vulnerabilities may be introduced, which can be used as vulnerable points
+in a system using CloudEvents.
+
+Mitigations:
+
+* Frequently triage and patch issues.
+* Always check if the code can be trusted before merging a Pull Request.
+* Perform security audits when possible.
+
+#### Man in the middle acting as Event Mediator
+
+If an attacker is able to act as a man in the middle for an event mediator, the
+intruder may be able to read the events from the event generator or modify them
+before they arrive at the event consumer.
+
+Mitigations:
+
+* Users should implement infrastructure around CloudEvents making it difficult
+  for bad actors to get access to the systems using CloudEvents or the channels
+  delivering the events.
+
+#### CloudEvent Modification in Transit
+
+If event data is not properly encrypted, it could be intercepted and modified by
+an attacker, leading to misinformation or unauthorized actions.
+
+Mitigations:
+
+* Users should encrypt, validate, and monitor all important data to reduce the
+  impact of modifications during transit.
+* User permissions should be routinely checked to ensure that only the
+  authorized users have the required capabilities.
+
+#### Improper encoding and decoding of data
+
+A bad actor can send malicious or faulty data with a CloudEvent wrapper to the
+main producer. If the decoding of that data is not handled correctly it can lead
+to the system crashing.
+
+Mitigations:
+
+* All actors (event producer, event mediator event consumer) should check if the
+  data is correctly formatted to the CloudEvents Specification, not passing the
+  data forward in such scenarios, but discarding or properly handling it.
+* All SDKs should help in handling these scenarios.
+
+#### Committing vulnerable code
+
+Although there are many checks before a Pull Request is accepted, a developer
+can still commit code to the source repository that has vulnerabilities if
+nobody notices it. This can be either because of malicious intent or because of
+mistakes like vulnerable libraries being used.
+
+Mitigations:
+
+* A risk assessment can be done to uncover any potential gaps in the security
+  controls.
+* All secure development practices established by CloudEvents and CNCF should be
+  strictly followed to prevent vulnerabilities from being introduced.
+
+#### Malicious CloudEvent Wrapper
+
+An attacker could wrap malicious content in a CloudEvent to exploit
+vulnerabilities in event consumers.
+
+Mitigations:
+
+* Users should check for malicious content when receiving CloudEvent data, not
+  trusting the source whenever possible.
+
+### Recommendations
+
+As mentioned by CloudEvents, the maintainers of SDKs must release security
+patches and fix issues frequently if the project for the project to be marked as
+active. It is essential for the maintainers of each SDK to frequently triage and
+release patches to the security issues found, which can solve problems such as
+the ones found by Trail Of Bits. Moreover, it is important for users to
+frequently check and install updates to their CloudEvents SDK installation.
+
 ## Appendix
 
 ### Known Issues Over Time
@@ -591,8 +720,8 @@ you analyze your software’s performance and behavior.
 * [AsyncAPI Website](https://www.asyncapi.com/)
 
 AsyncAPI is an open-source initiative that seeks to improve the current state of
-Event-Driven Architecture (EDA). Our long-term goal is to make working with
-EDAs as easy as working with REST APIs. That goes from documentation to code
+Event-Driven Architecture (EDA). Our long-term goal is to make working with EDAs
+as easy as working with REST APIs. That goes from documentation to code
 generation, and from discovery to event management.
 
 #### Event-B
@@ -619,3 +748,8 @@ This is an older document used across many engineering fields, which is not
 restricted to computer science, making it different from the other examples.
 However, it is an example of event specification being widely used in industry,
 including more physical areas such as mechanical engineering and factories.
+
+## References
+
+* [CloudEvents Website](https://cloudevents.io/)
+* [CloudEvents GitHub](https://github.com/cloudevents)
