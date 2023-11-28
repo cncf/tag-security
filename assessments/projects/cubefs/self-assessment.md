@@ -109,12 +109,12 @@ CubeFS Actors:
 **2) Data Confidentiality and Integrity**:
 
 * **Goal**: Guarantee the confidentiality and integrity of data during transit and storage within CubeFS.
-* **Security Guarantee**: Implementation of end-to-end encryption for data transmission and future plans to support data encryption at rest, ensuring data remains confidential and unaltered.
+* **Security Guarantee**: Implementation of end-to-end encryption for data transmission and plans to support data encryption at rest, ensuring data remains confidential and unaltered.
 
 **3) Credential Revocation Mechanism**:
 
 * **Goal**: Prevent misuse of leaked credentials by implementing a revocation mechanism.
-* **Security Guarantee**: Future plans to introduce credential revocation to mitigate risks if credentials are compromised.
+* **Security Guarantee**: Plans to introduce credential revocation to mitigate risks if credentials are compromised.
 
 **4) Hardware Security Module (HSM) Integration**:
 
@@ -137,10 +137,20 @@ CubeFS Actors:
 * **Security Guarantee**: Future enhancements to support key rotation, reducing the risk of key compromise and strengthening encryption mechanisms.
 
 ### Non-goals
-Non-goals that a reasonable reader of the project’s literature could believe may
-be in scope (e.g., Flibble does not intend to stop a party with a key from storing
-an arbitrarily large amount of data, possibly incurring financial cost or overwhelming
- the servers)
+
+* **Absolute Prevention of All Security Threats** - CubeFS does not claim to completely eliminate all possible security threats or vulnerabilities within the system. While CubeFS implements robust security measures, absolute prevention of all security threats is not feasible due to evolving security landscapes.
+
+* **Full Resistance Against Zero-Day Exploits** - CubeFS does not guarantee complete immunity against zero-day exploits or unknown vulnerabilities. They acknowledge the possibility of unforeseen vulnerabilities emerging.
+
+* **Elimination of All Performance Impact Due to Security Measures** - CubeFS does not aim to implement security measures without any impact on system performance.
+
+* **Providing Certification or Compliance by Default** - CubeFS does not inherently provide certification or compliance with specific security standards by default. Achieving specific certifications or compliance may require additional configurations or procedures.
+
+* **Absolute Guarantee Against Insider Threats** - CubeFS does not promise absolute protection against insider threats or malicious activities from authorized users.
+
+* **Elimination of All Operational Errors** - CubeFS does not aim to eradicate all potential errors or misconfigurations during operational usage.
+
+* **Providing Protection Beyond Defined Use Cases** - CubeFS does not extend security protections to scenarios or use cases not explicitly defined or supported. CubeFS focuses on securing the defined use cases and may not cover security aspects outside these boundaries.
 
 ## Self-assessment use
 
