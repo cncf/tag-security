@@ -50,7 +50,7 @@ use the table below as an example:
 | Default and optional configs | [CNI Specification](https://www.cni.dev/docs/spec/) outlines required keys, optional keys, and protocol parameters |
 
 ## Overview
-** Container Network Interface ** <br>
+**Container Network Interface** <br>
 CNI, a project under the Cloud Native Computing Foundation, includes a set of guidelines and software libraries 
 used for developing plugins that set up network interfaces within Linux and Windows containers. Its primary goal 
 is managing container network connectivity and deallocating resources once a container is removed. This specific 
@@ -90,7 +90,7 @@ validates that the request corresponds to a file the client is authorized to
 access, and then returns a token to the client.  The client then transmits that
 token to the file server, which, after confirming its validity, returns the file.
 
-#### Overview
+#### Action Overview
 1. A format for administrators defines network configurations
 2. A protocol for container runtimes makes requests to network plugins with parameters from environment variables and network configuration
 3. With the supplied configuration, a procedure executes the plugins.
@@ -124,16 +124,14 @@ Plugins can return one of three result types:
 
 ### Goals
 The intended goals of the projects including the security guarantees the project
- is meant to provide 
-**General**
+ is meant to provide <br>
 * CNI defines a common interface between the network plugins and container execution
 * CNI is language-agnostic and a vendor-neutral specification
 * Backwards compatible: plugins are able to easily implement all versions of the specification and some helper code is available to convert between versions. 
 
 ### Non-goals
 Non-goals that a reasonable reader of the project’s literature could believe may
-be in scope 
-**General**
+be in scope <br>
 * Dynamic updates to existing network configurations 
 * Dynamic policies for network bandwidth and firewall rules
 
