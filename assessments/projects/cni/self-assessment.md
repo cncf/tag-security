@@ -46,8 +46,8 @@ Provide the list of links to existing security documentation for the project. Yo
 use the table below as an example:
 | Doc | url |
 | -- | -- |
-| Security file | https://my.security.file |
-| Default and optional configs | https://example.org/config |
+| Security file | [README.md#Security](https://github.com/containernetworking/cni/blob/main/README.md#Security) |
+| Default and optional configs | [CNI Specification](https://www.cni.dev/docs/spec/) outlines required keys, optional keys, and protocol parameters |
 
 ## Overview
 
