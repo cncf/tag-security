@@ -47,7 +47,7 @@
   <tr>
    <td>SBOM
    </td>
-   <td><a href="https://github.com/open-telemetry/opentelemetry.io/blob/main/package.json">https://github.com/open-telemetry/opentelemetry.io/blob/main/package.json</a>
+   <td><a href="https://mvnrepository.com/artifact/io.opentelemetry/opentelemetry-bom">https://mvnrepository.com/artifact/io.opentelemetry/opentelemetry-bom</a>
    </td>
   </tr>
 </table>
