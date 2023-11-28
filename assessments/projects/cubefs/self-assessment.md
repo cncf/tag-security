@@ -45,7 +45,7 @@ Express Learning course provided by Linux Foundation Training & Certification:
 | -- | -- |
 | Security File | https://github.com/cubefs/cubefs/blob/master/SECURITY.md |
 | Default & Optional Configs | https://github.com/cubefs/cubefs/blob/master/docs/source/maintenance/configs/config.md |
-| Current Issues & Future Work | https://github.com/cubefs/cubefs/blob/master/docs/source/design/authnode.md |
+| Current Issues & Future Work | https://github.com/cubefs/cubefs/issues, https://github.com/cubefs/cubefs/blob/master/docs/source/design/authnode.md |
 | Release & Contact | https://github.com/cubefs/cubefs/tree/master/security | 
 
 ## Overview
