@@ -229,7 +229,7 @@ The CubeFS team has defined a clear-cut process for how security issues, inciden
 
 * Known Issues Over Time - CubeFS reported a vulnerability [CVE-2023-30512](https://nvd.nist.gov/vuln/detail/CVE-2023-30512) with a 6.5/10 security rating that allowed Kubernetes cluster-level privilege escalation through CubeFS. Aside from this, no vulnerabilities have been reported by the project.
 
-* [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/) - The project has achieved the passing level criteria from the OPenSSF best practices with a scorecard of 7.7. The project is in the process of getting a silver badge but no updates have been made by the team since 10/24/22.
+* [CII Best Practices](https://www.bestpractices.dev/en/projects) - The project has achieved the passing level criteria from the OpenSSF best practices with a scorecard of 7.7 (The badge can be found [here](https://www.bestpractices.dev/en/projects/6232). The project is in the process of getting a silver badge but no updates have been made by the team since 10/24/22.
 
 * Case Studies -
 
