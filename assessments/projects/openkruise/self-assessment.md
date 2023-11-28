@@ -273,15 +273,56 @@ security audit.
 
 ## Security functions and features
 
-- Critical. A listing critical security components of the project with a brief
-  description of their importance. It is recommended these be used for threat
-  modeling. These are considered critical design elements that make the product
-  itself secure and are not configurable. Projects are encouraged to track
-  these as primary impact items for changes to the project.
-- Security Relevant. A listing of security relevant components of the project
-  with brief description. These are considered important to enhance the overall
-  security of the project, such as deployment configurations, settings, etc.
-  These should also be included in threat modeling.
+Critical:
+- Security scanning with Snyk in the CI pipeline identifies vulnerabilities in container images so only verified images are displayed.
+- Supporting only recent software versions that provide patches and updates mitigates general vulnerabilities.
+  
+Security Relevant:
+- Regularly scanning the code in the main (master) and nightly builds, as well as in pull requests (PRs) for the Go programming language helps identify any potential vulnerabilities or issues before release.
+- Scanning the container images that are published on the GitHub Container Registry ensures that the images, which are used to run OpenKruise in a Kubernetes environment, are secure.
+
+# Threat Modeling with STRIDE
+
+Spoofing:
+- Threat-01-S: Impersonating an Administrator
+  - An attacker could impersonate an OpenKruise admin, maintainer, or somebody with elevated privilege in order to access data within the containers, code repositories, or     contributions from other developers.
+- Threat-02-S: Spoofing a Kubernetes Cluster
+  - If an attacker is able to spoof a Kubernetes cluster, they may potentially send false information or nefarious commands to OpenKruise, leading to undefined behavior.
+- Recommended Mitigations
+  - Enforce multi-factor authentication or other defenses in order to be granted control access or data retrieval.
+  - Use mutual TLS to confirm that both OpenKruise and the Kubernetes cluster authenticate each other’s identities before connecting.
+
+Tampering:
+- Threat-03-T: Altering Critical Components
+  - OpenKruise components could be tampered with during build, installation, or runtime, potentially allowing an attacker to download malware into the host system, OpenKruise itself, or Kubernetes.
+- Recommended Mitigations
+  - Use checksums and/or digital signatures to monitor for unauthorized modifications.
+  - Only allow the downloading of OpenKruise components from the official website and/or Helm package manager
+
+Repudiation:
+- Threat-04-R: Denial of Administrator Actions
+  - OpenKruise admins of Kubernetes applications may deny or misrepresent actions they have performed, particularly if they include any changes made to configuration updates or scaling within the Kubernetes clusters managed by OpenKruise.
+- Recommended Mitigations
+  - Use an encrypted log management system to merge logs from various OpenKruise operations to establish a comprehensive audit trail for all actions taken in the environment.
+
+Information Disclosure:
+- Threat-05-I: Vulnerability Exploitation Through User Reports
+  - OpenKruise relies on user-reporting of vulnerabilities through Gmail or GitHub Issues. If a user discovers a bug and reports it, an attacker may find a way to view such reports and exploit the bug before it can be fixed.
+- Recommended Mitigations
+  - Encrypt all logs of vulnerability reports sent by users to OpenKruise and implement strict access controls to prevent unauthorized access to the log storage.
+
+Denial of Service:
+- Threat-06-D: Resource Exhaustion in Controllers
+  - OpenKruise controllers, daemons, or the applications being managed may consume more resources than allocated and affect the availability of the Kubernetes cluster.
+- Recommended Mitigations
+  - Prevent network-based attacks through network isolation and segmentation
+  - Use rate limiting to lessen the number of requests a user can make to OpenKruise’s components.
+
+Elevation of Privilege:
+- Threat-07-E: Unauthorized Access to Kubernetes Resources
+  - If an attacker compromises a part of OpenKruise, particularly one that has permissions to modify Kubernetes resources, they could potentially escalate their privileges within the Kubernetes cluster.
+- Recommended Mitigations
+  - Use Role-Based Access Control (RBAC) policies with OpenKruise components to give them the least privilege necessary in regards to Kubernetes.
 
 ## Project compliance
 
