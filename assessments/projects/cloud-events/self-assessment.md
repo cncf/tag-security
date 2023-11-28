@@ -555,11 +555,11 @@ Mitigations:
 ### Recommendations
 
 As mentioned by CloudEvents, the maintainers of SDKs must release security
-patches and fix issues frequently if the project for the project to be marked as
-active. It is essential for the maintainers of each SDK to frequently triage and
-release patches to the security issues found, which can solve problems such as
-the ones found by Trail Of Bits. Moreover, it is important for users to
-frequently check and install updates to their CloudEvents SDK installation.
+patches and fix issues frequently for the project to be marked as active. It is
+essential for the maintainers of each SDK to frequently triage and release
+patches to the security issues found, which can solve problems such as the ones
+found by Trail Of Bits. Moreover, it is important for users to frequently check
+and install updates to their CloudEvents SDK installation.
 
 ## Appendix
 
