@@ -80,24 +80,26 @@ CubeFS Actors:
 * **Volume** - A logical concept composed of multiple metadata and data shards. From the client's perspective, a volume can be seen as a file system instance that containers can access. From the perspective of object storage, a volume corresponds to a bucket. A volume can be mounted in multiple containers, allowing files to be accessed by different clients simultaneously.
 
 ### Actions
-**1) Data Write Operation**:
-* Actors: Client Application, DataNode/Replica Subsystem, Metadata Subsystem
-* Security Checks: The first step will be authentication and authorization of the client application performing the write operations. Next, access control checks to ensure the client has the necessary permissions to write the data. Finally, data integrity checks during the write process to prevent data tampering or corruption
-* Use of Sensitive Data: This will include two things, first, secure transmission of sensitive data from the client to CubeFS, potentially involving encryption, and second, handling access credentials securely to authorize the write operation
-* Actor Interaction: The client interacts with the DataNode/Replica Subsystem for data storage and the Metadata Subsystem to update metadata information
 
-**2) Metadata Update:**
-* Actors: Metadata Subsystem, Master Node
-* Security Checks: Sensitive metadata information should be encrypted during transmission and storage. There should be consistency checks to ensure metadata remains coherent and accurate. Authentication and authorization are a must for metadata updates to prevent unauthorized changes
-* Actor Interaction: The Metadata Subsystem will update and manage the metadata shards while coordinating with the Master Node for consistency and replication
+* **Data Write Operation** - 
 
-**3) User Authentication and Authorization:**
-* Actors: Authentication Service, CubeFS Components (e.g., Master, Metadata, DataNodes)
-* Actor Interaction: Authentication Service validates user credentials via service requests and grants access permissions to CubeFS components based on defined policies
+  * Actors: Client Application, DataNode/Replica Subsystem, Metadata Subsystem
+  * Security Checks: The first step will be authentication and authorization of the client application performing the write operations. Next, access control checks to ensure the client has the necessary permissions to write the data. Finally, data integrity checks during the write process to prevent data tampering or corruption
+  * Use of Sensitive Data: This will include two things, first, secure transmission of sensitive data from the client to CubeFS, potentially involving encryption, and second, handling access credentials securely to authorize the write operation
+  * Actor Interaction: The client interacts with the DataNode/Replica Subsystem for data storage and the Metadata Subsystem to update metadata information
 
-**4) Volume Access Control:**
-* Actors: Volume Management System, Container/Client Applications
-* Actor Interaction: Volume Management System manages access permissions and interacts with container/client applications to grant or restrict access to volumes. Regular audits to ensure access permissions align with security policies. 
+* **Metadata Update** - 
+  * Actors: Metadata Subsystem, Master Node
+  * Security Checks: Sensitive metadata information should be encrypted during transmission and storage. There should be consistency checks to ensure metadata remains coherent and accurate. Authentication and authorization are a must for metadata updates to prevent unauthorized changes
+  * Actor Interaction: The Metadata Subsystem will update and manage the metadata shards while coordinating with the Master Node for consistency and replication
+
+* **User Authentication and Authorization** - 
+  * Actors: Authentication Service, CubeFS Components (e.g., Master, Metadata, DataNodes)
+  * Actor Interaction: Authentication Service validates user credentials via service requests and grants access permissions to CubeFS components based on defined policies
+
+* **Volume Access Control** -
+  * Actors: Volume Management System, Container/Client Applications
+  * Actor Interaction: Volume Management System manages access permissions and interacts with container/client applications to grant or restrict access to volumes. Regular audits to ensure access permissions align with security policies. 
 
 
 ### Goals
