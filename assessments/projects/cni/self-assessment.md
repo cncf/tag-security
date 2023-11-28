@@ -246,3 +246,71 @@ These case studies provide insights into how CNI is used in practice, emphasizin
 - **Cloud Foundry:** Adopts CNI for managing container network interfaces.
 - **Podman:** Implements CNI to configure network settings for containers.
 - **CRI-O:** Leverages CNI as part of its container runtime interface.
+
+# CNI Security Threat Modeling
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [System Overview](#system-overview)
+3. [Threat Identification](#threat-identification)
+4. [Threat Analysis](#threat-analysis)
+5. [Mitigation Strategies](#mitigation-strategies)
+6. [Conclusion](#conclusion)
+
+## Introduction
+This document presents a threat model for the Container Network Interface (CNI) project, aiming to identify potential security threats and propose mitigation strategies.
+
+## System Overview
+- **Description**: CNI provides networking for containers.
+- **Components**:
+  - **CNI Plugins**: Interface with various networking solutions.
+  - **Container Runtimes**: Interact with plugins to configure network settings for containers.
+  - **Network Settings**: Configuration data that determines how networking is handled in containerized environments.
+
+## Threat Identification
+- **Unauthorized Access**
+- **Misconfiguration**
+- **Data Leakage**
+- **Service Interruption**
+
+## Threat Analysis
+### Unauthorized Access
+- **Impact**: High
+- **Likelihood**: Medium
+- **Description**: Potential unauthorized access to network configurations.
+
+### Misconfiguration
+- **Impact**: High
+- **Likelihood**: High
+- **Description**: Incorrect network settings leading to vulnerabilities.
+
+### Data Leakage
+- **Impact**: Medium
+- **Likelihood**: Medium
+- **Description**: Exposure of sensitive information through network traffic.
+
+### Service Interruption
+- **Impact**: High
+- **Likelihood**: Low
+- **Description**: Potential DoS attacks affecting network availability.
+
+## Mitigation Strategies
+### Unauthorized Access
+- Implement robust authentication and authorization mechanisms.
+- Regularly audit access logs.
+
+### Misconfiguration
+- Provide clear documentation on secure configuration practices.
+- Implement configuration validation tools.
+
+### Data Leakage
+- Enforce encryption for network traffic.
+- Regularly update security certificates.
+
+### Service Interruption
+- Implement network redundancy and load balancing.
+- Monitor network traffic for unusual patterns.
+
+## Conclusion
+Ongoing evaluation and updates to this model are necessary to adapt to evolving security threats in the CNI project.
+
