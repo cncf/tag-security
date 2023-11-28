@@ -252,7 +252,7 @@ Not applicable.
 
 ### Development Pipeline
 
-All code is maintained on [Github](https://github.com/pixie-io/pixie). 
+All code is maintained on [Github](https://github.com/open-telemetry/opentelemetry.io/tree/main). 
 
 * Contributions and Changes
   * Code changes are submitted via Pull Requests (PRs) and must be signed and verified. 
