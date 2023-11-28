@@ -206,15 +206,53 @@ There is no publicly available document outlining an incident response process.
 
 ## Appendix
 
-* Known Issues Over Time. List or summarize statistics of past vulnerabilities
-  with links. If none have been reported, provide data, if any, about your track
-record in catching issues in code review or automated testing.
-* [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/).
-  Best Practices. A brief discussion of where the project is at
-  with respect to CII best practices and what it would need to
-  achieve the badge.
-* Case Studies. Provide context for reviewers by detailing 2-3 scenarios of
-  real-world use cases.
-* Related Projects / Vendors. Reflect on times prospective users have asked
-  about the differences between your project and projectX. Reviewers will have
-the same question.
+### Known Issues Over Time
+
+[**CVE-2021-20206**](https://nvd.nist.gov/vuln/detail/CVE-2021-20206) (CVSS v3.1 Base Score: 7.2 High Severity) Arbitrry path injection via type field in CNI configuration  
+A path name flaw allowed execution of binaries elsewhere on the system including binaries that are not CNI plugins. This was fixed in libcni version 0.8.1 by [tightening up the plugin-finding logic](https://github.com/containernetworking/cni/pull/808).
+
+## CII Best Practices
+
+Best Practices. A brief discussion of where the project is at with respect to CII best practices and what it would need to achieve the badge.
+
+### CII Best Practices
+
+[**Current Progress**](https://www.bestpractices.dev/en/projects/2446) (Last updated January 2021):
+- CNI does not meet a passing level (only 72% of the way there)
+- They do not have developers with knowledge of designing secure software or preventing and handling vulnerabilities.
+- They do not use static code analyzers to automatically catch vulnerabilities in code.
+- They do not identify fixed vulnerabilities or acknowledge bug reports
+- They do not have a specific or safe way of testing new functionalities
+
+## Case Studies
+
+Provide context for reviewers by detailing 2-3 scenarios of real-world use cases.
+
+### Case Studies
+
+1. **Cilium Integration with Kubernetes:**
+   - Description: Cilium is used in Kubernetes environments for network security and observability. It leverages CNI's plugin-based network connectivity management to provide networking and security in Kubernetes clusters. Cilium specifically enhances Kubernetes by offering API-aware network security, load balancing, and visibility for microservices. The integration of Cilium with Kubernetes via CNI demonstrates CNI’s compatibility and effectiveness in real-world applications​​.
+   - Key Points:
+     - Enhances Kubernetes network security and observability.
+     - Leverages CNI for seamless integration.
+     - Provides API-aware network security, load balancing, and visibility for microservices.
+   - Link: [Cilium users and real world case studies](https://cilium.io/adopters/#:~:text=URL%3A%20https%3A%2F%2Fcilium)
+
+2. **Isovalent’s Use of CNI for Kubernetes Networking:**
+   - Description: Isovalent, the company behind Cilium, utilizes CNI for networking in Kubernetes environments. This case study highlights the advanced networking capabilities of CNI as employed by Isovalent. The use of CNI in Isovalent’s Kubernetes networking solutions showcases the flexibility and scalability of CNI in handling complex networking requirements​​.
+   - Key Points:
+     - Isovalent employs CNI in Kubernetes networking.
+     - Demonstrates CNI’s flexibility and scalability in complex networking environments.
+   - Link: [Top 20 Cilium Use Cases - Isovalent](https://isovalent.com/blog/post/top-20-cilium-use-cases/)
+
+These case studies provide insights into how CNI is used in practice, emphasizing its role and effectiveness in Kubernetes networking and security.
+
+## Related Projects/Vendors
+
+Reflect on times prospective users have asked about the differences between your project and projectX. Reviewers will have the same question.
+
+- **Kubernetes:** Utilizes CNI for container networking.
+- **Mesos:** Integrates CNI for networking solutions.
+- **Cloud Foundry:** Adopts CNI for managing container network interfaces.
+- **Podman:** Implements CNI to configure network settings for containers.
+- **CRI-O:** Leverages CNI as part of its container runtime interface.
