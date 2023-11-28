@@ -227,15 +227,37 @@ The CubeFS team has defined a clear-cut process for how security issues, inciden
 
 ## Appendix
 
-* Known Issues Over Time. List or summarize statistics of past vulnerabilities
-  with links. If none have been reported, provide data, if any, about your track
-record in catching issues in code review or automated testing.
-* [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/).
-  Best Practices. A brief discussion of where the project is at
-  with respect to CII best practices and what it would need to
-  achieve the badge.
-* Case Studies. Provide context for reviewers by detailing 2-3 scenarios of
-  real-world use cases.
-* Related Projects / Vendors. Reflect on times prospective users have asked
-  about the differences between your project and projectX. Reviewers will have
-the same question.
+* Known Issues Over Time - CubeFS reported a vulnerability [CVE-2023-30512](https://nvd.nist.gov/vuln/detail/CVE-2023-30512) with a 6.5/10 security rating that allowed Kubernetes cluster-level privilege escalation through CubeFS. Aside from this, no vulnerabilities have been reported by the project.
+
+* [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/) - The project has achieved the passing level criteria from the OPenSSF best practices with a scorecard of 7.7. The project is in the process of getting a silver badge but no updates have been made by the team since 10/24/22.
+
+* Case Studies -
+
+  * OPPO: OPPO is a Chinese electronics manufacturer that in 2021 was building a one-stop service for a large-scale machine learning platform for their brand. However, the challenge they faced was in training itself. To optimize costs they had built a hybrid GPU cloud which was inefficient when they started training. They solved this problem with CubeFS which accelerated their training 3 times. 
+OPPO used Cube FS to store their data for Machine learning training iterating with multiple epochs. CubeFS provided OPPO with a fast cache when training, accelerating the training process. CubeFS centralized the datasets allowing better management for OPPO. Cube FS with cache acceleration utilized other ML Models to increase performance. Overall, Cube FS helped OPPO efficiently train their machine learning models without worrying about security issues in transferring data or worrying about clunky training with hybrid cloud GPU resources. (Full details can be found [here](https://cubefs.io/blog/case/oppo-ai.html#what-s-next-for-oppo)
+
+
+  * JD.com: JD.com uses a service called Elasticsearch which is an open-source distributed RESTful search engine. It can quickly store, search, and analyze large amounts of data. Currently, the production environment cluster scale exceeds 5000 servers. CubeFS is responsible for managing over 50 petabytes of data and is the default storage for applications deployed in the large-scale internal container platform. Large Businesses may write tens of millions of times per second as such, speed is key. CubeFS helps optimize these scenarios with its architecture and cache speeding up writes and access. Additionally, IO reads & writes are uneven, to solve this Elasticsearch used CubeFS to increase performance and scalability with CubeFS’s distributed file system. CubeFS Supports multiple read-write models and is compatible with different protocols allowing Elasticsearch to scale without many blocks. (Full Details can be found [here](https://cubefs.io/blog/case/elasticsearch.html#real-time-data-analysis-engine-to-form-statistical-reports)
+
+* Related Projects / Vendors -
+
+  * Red Hat GlusterFS: GlusterFS is a scalable network filesystem suitable for data-intensive tasks such as cloud storage and media streaming. GlusterFS is free and open-source software and can utilize common off-the-shelf hardware.
+
+    * Key differences - 
+      * CubeFS has found use cases in Machine learning and aggregating data using its fast cache, whereas Gluster FS has found its use case in cloud computing, streaming media services and CDNs.
+      * GlusterFS and CubeFS both support POSIX protocols however CubeFS has support for more protocols making it more widely accessible
+
+  * ObjectiveFS: Objective FS is a distributed file system that is POSIX compliant with an object store backend. It was initially released with an AWSS3 backend. The software is developed and maintained by Objective Security Corporation.
+
+    * Key differences -
+      * ObjectiveFS Is not an open-source platform and is a for-profit database which is the opposite of CubeFS
+      * Both file systems have support for POSIX and utilize AWS S3 however CubeFS has support for more protocols as well. 
+
+  * JuiceFS: Juice FS is a POSIX-compatible file system that is high-performance and under the Apache License. It is free and open source and has support for different access protocols. The metadata in the FS can be compatible with different database engines as well such as Redis, MySQL, and TiKV.
+    
+     * Key differences -
+       * Juice FS has support for data compression through LZ4 or Zstandard to compress your data.
+       * Juice FS has support for metadata engines such as Redis, MariaDB, TiKV, PostgreSQL etc.
+       * CubeFS prides itself on its compatibility with different protocols such as its own REST API.
+       * JuiceFS has an enterprise version as well as a community edition. 
+
