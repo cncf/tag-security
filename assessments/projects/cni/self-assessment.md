@@ -51,15 +51,15 @@ use the table below as an example:
 
 ## Overview
 **Container Network Interface** <br>
-CNI, a project under the Cloud Native Computing Foundation, includes a set of guidelines and software libraries 
-used for developing plugins that set up network interfaces within Linux and Windows containers. Its primary goal 
-is managing container network connectivity and deallocating resources once a container is removed. This specific 
+CNI, a project under the Cloud Native Computing Foundation, includes a set of guidelines and software libraries
+used for developing plugins that set up network interfaces within Linux and Windows containers. Its primary goal
+is managing container network connectivity and deallocating resources once a container is removed. This specific
 focus has led to broad support for CNI and a straightforward implementation process due to its simple specification.
 
 ### Background
 With the rapid development of application containers on Linux, networking in this area is still not well addressed
-as it is highly environment-specific. To deal with this problem, developers seek to create a network layer that is 
-pluggable for container runtimes. Ultimately, CNI, along with libraries for Go and a set of plugins, was introduced 
+as it is highly environment-specific. To deal with this problem, developers seek to create a network layer that is
+pluggable for container runtimes. Ultimately, CNI, along with libraries for Go and a set of plugins, was introduced
 as a common interface between network plugins and container execution.
 
 ### Actors
@@ -108,7 +108,7 @@ to consume. At plugin execution time, this configuration format is interpreted b
   <br>
 
 #### Action 2: Execution Protocol
-The CNI protocol is based on execution of binaries invoked by the container runtime. CNI defines the protocol between the plugin binary and the runtime. CNI defines 4 operations: ADD, DEL, CHECK, and VERSION. These are passed to the plugin via the CNI_COMMAND environment variable. 
+The CNI protocol is based on execution of binaries invoked by the container runtime. CNI defines the protocol between the plugin binary and the runtime. CNI defines 4 operations: ADD, DEL, CHECK, and VERSION. These are passed to the plugin via the CNI_COMMAND environment variable.
 
 #### Action 3: Execution of Network Configurations
 A container time interprets a network configuration and executes plugins accordingly. A runtime can add, delete, or check a network configuration in a container, which results in a series of plugin ADD, DELETE, or CHECK executions correspondingly.
@@ -127,12 +127,12 @@ The intended goals of the projects including the security guarantees the project
  is meant to provide <br>
 * CNI defines a common interface between the network plugins and container execution
 * CNI is language-agnostic and a vendor-neutral specification
-* Backwards compatible: plugins are able to easily implement all versions of the specification and some helper code is available to convert between versions. 
+* Backwards compatible: plugins are able to easily implement all versions of the specification and some helper code is available to convert between versions.
 
 ### Non-goals
 Non-goals that a reasonable reader of the project’s literature could believe may
 be in scope <br>
-* Dynamic updates to existing network configurations 
+* Dynamic updates to existing network configurations
 * Dynamic policies for network bandwidth and firewall rules
 
 
@@ -208,17 +208,16 @@ There is no publicly available document outlining an incident response process.
 
 ### Known Issues Over Time
 
-[**CVE-2021-20206**](https://nvd.nist.gov/vuln/detail/CVE-2021-20206) (CVSS v3.1 Base Score: 7.2 High Severity) Arbitrry path injection via type field in CNI configuration  
+[**CVE-2021-20206**](https://nvd.nist.gov/vuln/detail/CVE-2021-20206) (CVSS v3.1 Base Score: 7.2 High Severity) Arbitrry path injection via type field in CNI configuration
 A path name flaw allowed execution of binaries elsewhere on the system including binaries that are not CNI plugins. This was fixed in libcni version 0.8.1 by [tightening up the plugin-finding logic](https://github.com/containernetworking/cni/pull/808).
 
 ### CII Best Practices
 
 [**Current Progress**](https://www.bestpractices.dev/en/projects/2446) (Last updated January 2021):
 - CNI does not meet a passing level (only 72% of the way there)
-- They do not have developers with knowledge of designing secure software or preventing and handling vulnerabilities.
+- Progress should be updated as there are currently several practices marked with ‘?’
+- There are no primary developers identified as having knowledge of designing secure software or preventing and handling vulnerabilities.
 - They do not use static code analyzers to automatically catch vulnerabilities in code.
-- They do not identify fixed vulnerabilities or acknowledge bug reports
-- They do not have a specific or safe way of testing new functionalities
 
 ### Case Studies
 
