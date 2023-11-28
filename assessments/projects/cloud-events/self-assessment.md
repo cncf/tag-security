@@ -1,4 +1,4 @@
-# CloudEvents Self-assessment
+# CloudEvents self-assessment
 
 September 26, 2023
 
@@ -718,17 +718,17 @@ and resident satisfaction.
 
 * [OpenTelemetry Website](https://opentelemetry.io/)
 
-OpenTelemetry is a collection of APIs, SDKs, and tools. Use it to instrument,
-generate, collect, and export telemetry data (metrics, logs, and traces) to help
-you analyze your software’s performance and behavior.
+OpenTelemetry is a collection of APIs, SDKs, and tools. It can be used to
+instrument, generate, collect, and export telemetry data (metrics, logs, and
+traces) to help analyzing software performance and behavior.
 
 #### AsyncAPI
 
 * [AsyncAPI Website](https://www.asyncapi.com/)
 
 AsyncAPI is an open-source initiative that seeks to improve the current state of
-Event-Driven Architecture (EDA). Our long-term goal is to make working with EDAs
-as easy as working with REST APIs. That goes from documentation to code
+Event-Driven Architecture (EDA). Their long-term goal is to make working with
+EDAs as easy as working with REST APIs. That goes from documentation to code
 generation, and from discovery to event management.
 
 #### Event-B
