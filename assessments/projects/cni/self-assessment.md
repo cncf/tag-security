@@ -154,15 +154,17 @@ CNI seeks graduation and is preparing for a security audit.
 
 ## Security functions and features
 
-* Critical.  A listing critical security components of the project with a brief
-description of their importance.  It is recommended these be used for threat modeling.
-These are considered critical design elements that make the product itself secure and
-are not configurable.  Projects are encouraged to track these as primary impact items
-for changes to the project.
-* Security Relevant.  A listing of security relevant components of the project with
-  brief description.  These are considered important to enhance the overall security of
-the project, such as deployment configurations, settings, etc.  These should also be
-included in threat modeling.
+### Critical Security Components
+
+1. **Plugin-Based Network Connectivity Management**: CNI plugins are responsible for inserting a network interface into the container network namespace and making necessary changes on the host, such as attaching the other end of the veth into a bridge. They also assign IP addresses and set up routes consistent with IP Address Management (IPAM) plugins.
+
+### Security Relevant Components
+
+1. **Support for Kubernetes Network Policies**: CNI, especially Amazon VPC CNI, now natively supports enforcing Kubernetes network policies. These policies act as a virtual firewall, allowing segmentation and security of the cluster by specifying ingress and egress network traffic rules based on various criteria like pod labels, namespaces, IP addresses, etc. This integration provides granular control over the flow of network traffic, enhancing the security and isolation within Kubernetes clusters.
+2. **Compatibility with Kubernetes Network Policy API**: Amazon Elastic Kubernetes Service (EKS) fully supports the upstream Kubernetes Network Policy API, ensuring compatibility and adherence to Kubernetes standards. This compatibility allows for the use of all capabilities of the Network Policy API within Amazon EKS clusters, further enhancing security and isolation.
+3. **Implementation Components for Network Policies**: Amazon EKS introduces key components like Network Policy Controller, Node Agent, and eBPF SDK to facilitate the implementation of network policies. These components work together to monitor, apply, and manage network policies efficiently across the cluster.
+4. **Integration of Security Groups for Pods**: Amazon VPC CNI in IPv4 mode offers a feature called Security groups for pods. This feature enables the definition of rules governing inbound and outbound network traffic to and from pods, providing an additional layer of security. When combined with network policies, it enhances the overall security posture, reducing the attack surface and potential vulnerabilities.
+
 
 ## Project compliance
 
