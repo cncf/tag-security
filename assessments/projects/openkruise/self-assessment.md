@@ -357,8 +357,7 @@ Security Relevant:
 
 ## Project compliance
 
-- Compliance. List any security standards or sub-sections the project is
-  already documented as meeting (PCI-DSS, COBIT, ISO, GDPR, etc.).
+OpenKruise does not document meeting particular compliance standards
 
 ## Secure development practices
 
