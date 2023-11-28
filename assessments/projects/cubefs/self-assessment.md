@@ -101,9 +101,33 @@ CubeFS Actors:
 
 
 ### Goals
-The intended goals of the projects including the security guarantees the project
- is meant to provide (e.g., Flibble only allows parties with an authorization
-key to change data it stores).
+**1) Authentication and Authorization**:
+**Goal**: Ensure secure authentication mechanisms for all nodes within CubeFS, preventing unauthorized access and establishing trusted communication channels.
+**Security Guarantee**: Robust authentication and authorization framework managed by Authnode, providing secure access to services and data.
+
+**2) Data Confidentiality and Integrity**:
+**Goal**: Guarantee the confidentiality and integrity of data during transit and storage within CubeFS.
+**Security Guarantee**: Implementation of end-to-end encryption for data transmission and future plans to support data encryption at rest, ensuring data remains confidential and unaltered.
+
+**3) Credential Revocation Mechanism**:
+**Goal**: Prevent misuse of leaked credentials by implementing a revocation mechanism.
+**Security Guarantee**: Future plans to introduce credential revocation to mitigate risks if credentials are compromised.
+
+**4) Hardware Security Module (HSM) Integration**:
+**Goal**: Enhance the security of Authnode by integrating with Hardware Security Modules (HSMs).
+**Security Guarantee**: Leveraging HSMs (e.g., SGX) to secure key management, reducing the risk of Auth Node compromise.
+
+**5) Enhanced Authentication Features**:
+**Goal**: Expand authentication features for improved security and usability.
+**Security Guarantee**: Future improvements include support for credential revocation, key rotation, and HSM integration for a more secure authentication framework.
+
+**6) Performance-Enhancing Security Measures:**
+**Goal**: Ensure security measures do not compromise system performance.
+**Security Guarantee**: Continuous refinement of security mechanisms (e.g., optimizing writeback cache, addressing performance limitations in encryption) without compromising overall system performance.
+
+**7) Key Management and Rotation**:
+**Goal**: Safeguard shared keys and support regular key rotation for enhanced security.
+**Security Guarantee**: Future enhancements to support key rotation, reducing the risk of key compromise and strengthening encryption mechanisms.
 
 ### Non-goals
 Non-goals that a reasonable reader of the project’s literature could believe may
