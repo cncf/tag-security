@@ -261,7 +261,7 @@ of OpenKruise's security health.
 
 This document serves to provide OpenKruise users with an initial understanding
 of OpenKruise's security, where to find existing security documentation,
-OpenKruise plans for security, and general overview of \[project\] security
+OpenKruise plans for security, and general overview of OpenKruise security
 practices, both for development of OpenKruise as well as security of
 OpenKruise.
 
@@ -552,8 +552,8 @@ the community about the breach and its potential security impact.
       rebuilding the container.
     - OpenKruise provides Advanced DaemonSet - This workload is used to deploy
       host-level daemons on all nodes, including various basic components for
-      network configuration and storage for business containers.
-      [Full Details on Alibaba Double 11 Case Study](%5Bhttps://karmada.io/docs/casestudies/vipkid/%5D(https://alibaba-cloud.medium.com/openkruise-the-cloud-native-platform-for-the-comprehensive-process-of-alibabas-double-11-3bfd05741f33))
+      network configuration and storage for business containers.<br>
+      [Full Details on Alibaba Double 11 Case Study](https://alibaba-cloud.medium.com/openkruise-the-cloud-native-platform-for-the-comprehensive-process-of-alibabas-double-11-3bfd05741f33)
   - **SpectroCloud:** SpectroCloud is a cloud infrastructure management company
     that focuses on simplifying the deployment and management of Kubernetes
     clusters across multiple clouds. SpectroCloud provides a platform that
