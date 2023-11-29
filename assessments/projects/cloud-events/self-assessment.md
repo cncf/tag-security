@@ -63,13 +63,14 @@ as a security assessment of the software.
 
 ## Overview
 
-CloudEvents is an open-source specification for describing data events. Such
-events are frequently used across many industry fields, but there are currently
-no standards on how to write those. Because of that, which is currently very
-different across different developers. This makes programmers have to develop
-new event handling logic for each event source and makes it hard for two systems
-to communicate with each other. CloudEvents seeks to dramatically simplify event
-declaration and delivery across services, platforms, and beyond.
+CloudEvents is a open-source specification designed to articulate data events.
+While these events are widely employed in various industries, the absence of
+standardized guidelines for their composition has led to significant divergence
+among developers. This lack of uniformity makes programmers create distinct
+event handling logic for each event source, impeding seamless communication
+between different systems. CloudEvents aims to streamline the process of
+declaring and delivering events, improving simplicity and interoperability
+across diverse services and platforms.
 
 ![CloudEvents Logo](images/cloudevents-logo.png)
 
