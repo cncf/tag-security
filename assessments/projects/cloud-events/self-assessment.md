@@ -552,6 +552,19 @@ Mitigations:
 * Users should check for malicious content when receiving CloudEvent data, not
   trusting the source whenever possible.
 
+### Conclusion
+
+Overall, CloudEvents has solid governance rules and management practices. These
+rules delineate procedures that prioritize security patching, with strict
+enforcement mechanisms. Clear articulation of goals and non-goals assists users
+in discerning the aspects they need to self-enforce.
+
+A notable challenge within the project revolves around the numerous SDKs
+developed by the CloudEvents SDK communities. Certain SDKs, particularly the
+newer ones, are susceptible to security vulnerabilities. While governance rules
+play a crucial role in ensuring continuous patching and monitoring, some SDKs
+have experienced vulnerabilities in the past, highlighting an ongoing concern.
+
 ### Recommendations
 
 As mentioned by CloudEvents, the maintainers of SDKs must release security
