@@ -129,7 +129,11 @@ medium. The producer encodes the event, while the consumer decodes the event.
 #### Protocol Binding
 
 A protocol binding describes how events are sent and received over a given
-protocol.
+protocol. CloudEvents defines encoding modes like binary and structured for serializing a CloudEvent during transmission.
+
+* Binary Content Mode: The event data is placed in the message body, while the event attributes (metadata) are included in the message's metadata. This mode is commonly employed when a CloudEvent producer wants to incorporate metadata into an existing event without affecting the message body. Binary encoding will maintain a receiver's event processing since the message's metadata often accommodates extension attributes.
+
+* Structured Content Mode: The event data and attributes are encoded within the message body following a specific event format. This mode maintains event metadata and data in the payload, facilitating the straightforward forwarding of the same event across various routing hops and protocols.
 
 Protocol bindings MAY choose to use an Event Format to map an event directly to
 the transport envelope body, or MAY provide additional formatting and structure
