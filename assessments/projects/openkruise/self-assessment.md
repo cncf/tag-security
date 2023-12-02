@@ -72,7 +72,7 @@ this in large-scale production clusters.
 
 > OpenKruise is an extended component suite for Kubernetes, which mainly
 > focuses on automated management of large-scale applications, such
-> as *deployment, upgrade, ops and availability protection*.
+> as *deployment, upgrade, ops and availability protection*.
 
 A Kubernetes cluster is split into two main components, Control Plane
 Components which make global decisions about the cluster and Node Components
@@ -124,9 +124,10 @@ are compiled into the same binary running on the API server. It consists of a
   in the desiredstate based on the user-configuration. It checks the resources
   across all of the nodes and ensures they are up-to-date.
 
-- `kruise-webhook` - Used for admission control. It intercepts and validates
-  requests coming from the `kruise-operator`. The `kruise-webhook-service` is
-  important for calling the `kube-apiserver`.
+- `kruise-webhook` - Used for admission control. It intercepts，validates and
+  potentially mutates requests coming from the `kruise-operator`. The
+  `kruise-webhook` is important since the `kube-apiserver` will fail the
+  request if the calling to the `kruise-webhook` fails.
 
 #### `kruise-daemon`
 
@@ -174,7 +175,7 @@ by using the CLI or a client SDK.
 ##### Workflow
 
 1.  `kruise-operator` executes `kubctl-kruise` to initiate manual action
-    1.  Examples of manual action are expose, scale, and rollout
+    1.  Examples of manual action are scale and rollout
 2.  `kubctl-kruise` calls the `kruise-manager` which is part of the Control Plane
 3.  `kruise-daemon` calls the `kruise-manager` through the `kube-apiserver`
 4.  `kruise-daemon` executes an operation on the node
@@ -198,7 +199,7 @@ Pod, as it can reuse the image layers that are already pulled on the node.
 
 1.  `kruise-manager` starts to update a pod
 2.  `kruise-manager` updates the changed fields in the pod
-3.  `kubelet` or `kruise-daemon` stops the old container
+3.  `kubelet` stops the old container
 4.  `kubelet` pulls the image, creates, and starts new container
 5.  `kruise-manager` updates local conditions for `InPlaceUpdate`
 6.  `kubelet` update Pod Status to be ready
@@ -237,7 +238,7 @@ as an action for OpenKruise.
 
 #### General
 
-- OpenKruise is **not** a PaaS and it will **not** provide any abilities of PaaS
+- OpenKruise is **not** a PaaS and it will **not** provide any abilities of PaaS
 - Providing ways of managing containers without Kubernetes
 - Replacement for kubernetes: OpenKruise is not intended as a means to replace
   kubernetes, rather it is an extension to Kubernetes providing extra features
@@ -274,12 +275,20 @@ security audit.
 ## Security functions and features
 
 Critical:
-- Security scanning with Snyk in the CI pipeline identifies vulnerabilities in container images so only verified images are displayed.
-- Supporting only recent software versions that provide patches and updates mitigates general vulnerabilities.
+- Security scanning with Snyk in the CI pipeline identifies vulnerabilities in
+container images so only verified images are displayed.
+- Security scanning with CodeQL in the CI pipeline identifies variants of known
+security vulnerability in the codebase.
+- Supporting only recent software versions that provide patches and updates
+mitigates general vulnerabilities.
 
 Security Relevant:
-- Regularly scanning the code in the main (master) and nightly builds, as well as in pull requests (PRs) for the Go programming language helps identify any potential vulnerabilities or issues before release.
-- Scanning the container images that are published on the GitHub Container Registry ensures that the images, which are used to run OpenKruise in a Kubernetes environment, are secure.
+- Regularly scanning the code in the main (master) and nightly builds, as well
+as in pull requests (PRs) for the Go programming language helps identify any
+potential vulnerabilities or issues before release.
+- Scanning the container images that are published on the GitHub Container
+Registry ensures that the images, which are used to run OpenKruise in a
+Kubernetes environment, are secure.
 
 ### Threat Modeling with STRIDE
 
@@ -289,13 +298,9 @@ Security Relevant:
 - An attacker could impersonate an OpenKruise admin, maintainer, or somebody
   with elevated privilege in order to access data within the containers, code
   repositories, or contributions from other developers.
-- Threat-02-S: Spoofing a Kubernetes Cluster
-- If an attacker is able to spoof a Kubernetes cluster, they may potentially
-  send false information or nefarious commands to OpenKruise, leading to
-  undefined behavior.
 - Recommended Mitigations
-- Enforce multi-factor authentication or other defenses in order to be granted
-  control access or data retrieval.
+- Assign proper roles (per principle of least privilege) to the users using
+  Role Based Authorization Control of Kubernetes.
 - Use mutual TLS to confirm that both OpenKruise and the Kubernetes cluster
   authenticate each other's identities before connecting.
 
@@ -319,17 +324,17 @@ Security Relevant:
   configuration updates or scaling within the Kubernetes clusters managed by
   OpenKruise.
 - Recommended Mitigations
-- Use an encrypted log management system to merge logs from various OpenKruise
-  operations to establish a comprehensive audit trail for all actions taken in
-  the environment.
+- Enable the auditing logs of Kubernetes apiserver so any request to OpenKruise
+  is logged.
 
 #### Information Disclosure:
 
 - Threat-05-I: Vulnerability Exploitation Through User Reports
 - OpenKruise relies on user-reporting of vulnerabilities through Gmail or
-  GitHub Issues. If a user discovers a bug and reports it, an attacker may find
-  a way to view such reports and exploit the bug before it can be fixed.
+  GitHub. If a user discovers a bug and reports it, an attacker may find a way
+  to view such reports and exploit the bug before it can be fixed.
 - Recommended Mitigations
+- Report vulnerability via github security page or private email
 - Encrypt all logs of vulnerability reports sent by users to OpenKruise and
   implement strict access controls to prevent unauthorized access to the log
   storage.
@@ -341,9 +346,10 @@ Security Relevant:
   consume more resources than allocated and affect the availability of the
   Kubernetes cluster.
 - Recommended Mitigations
-- Prevent network-based attacks through network isolation and segmentation
 - Use rate limiting to lessen the number of requests a user can make to
   OpenKruise's components.
+- Set the resource request and limit values of OpenKruise component so as to
+  limit the resource usage of Openkruise under attackers
 
 #### Elevation of Privilege:
 
@@ -352,8 +358,11 @@ Security Relevant:
   permissions to modify Kubernetes resources, they could potentially escalate
   their privileges within the Kubernetes cluster.
 - Recommended Mitigations
-- Use Role-Based Access Control (RBAC) policies with OpenKruise components to
-  give them the least privilege necessary in regards to Kubernetes.
+- Enable only required features of OpenKruise via feature gates, so give
+  OpenKruise least privilege necessary in regards to Kubernetes.
+- Grant access of kruise-manager to limited and trusted operators
+- Grant access of the OpenKruise API, especially the one of cluster scope such
+  as SidecarSet and ResourceDistribution to limited and trusted operators
 
 ## Project compliance
 
@@ -361,9 +370,10 @@ OpenKruise does not document meeting particular compliance standards
 
 ## Secure development practices
 
-[OpenKruise is tagged as "in
-progess"](https://www.bestpractices.dev/en/projects/2908) for the OpenSSF best
-practices badge
+- [OpenKruise is tagged as "in progess"](https://www.bestpractices.dev/en/projects/2908)
+  for the OpenSSF best practices badge
+- OpenKruise use [distort-less image](https://github.com/GoogleContainerTools/distroless)
+  to reduce attack
 
 ### Contributing guidelines
 
@@ -399,10 +409,11 @@ GitHub](https://github.com/openkruise/kruise)
   created. See the workflows directory for [a list of yaml
   files](https://github.com/openkruise/kruise/tree/master/.github/workflows)
   that specify each job below. All automated checks need to pass before
-  something can be merged. (To be confirmed)
+  something can be merged.
+  - CodeQL (Static Code Analysis)
   - DCO (Enforces signed commits)
   - E2E-1.20-EphemeralJob
-  - E2E-1.26 (Some automated tests)
+  - E2E-1.24 (Some automated tests)
   - E2E-1.16 (Some automated tests)
   - CI (Mischellaneous continuous integration)
   - Spell check
@@ -417,7 +428,7 @@ GitHub](https://github.com/openkruise/kruise)
 
 #### Development security policy
 
-- Container images are scanned in every PR with [Snyk](https://snyk.io/) to
+- Container images are scanned in every PR with [Snyk](https://snyk.io/) to
   detect new vulnerabilities
 - Additional measures of security are in the process of being implemented
   - Scan code in master/nightly build and PR/master/nightly for Go.
@@ -511,7 +522,6 @@ the community about the breach and its potential security impact.
 
 - **Known Issues Over Time** <br>
   Openkruise doesn't have any security vulnerabilities pointed out as of the
-  moment, but the project is impacted by the vulnerabilities in the internal
   tools and frameworks that it uses (for eg. Golang vulnerabilities).
 - **[CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/)** <br>
   OpenKruise hasn't attained any badge from Open Source Security Foundation
@@ -519,61 +529,12 @@ the community about the breach and its potential security impact.
   OpenSSF.<br>
   [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/2908/badge)](https://www.bestpractices.dev/projects/2908)
 - **Case Studies** <br>
-  Many organisations have adopted Karmada and are using our project in
-  production.<br> Here are few Case studies:
-  - **Alibaba:** Alibaba Group, a leading Chinese multinational conglomerate,
-    is renowned for its robust cloud computing services provided through
-    Alibaba Cloud. As one of the world's top cloud service providers, Alibaba
-    Cloud offers a comprehensive suite of services, including computing power,
-    storage, databases, artificial intelligence, and more. Alibaba Cloud plays
-    a pivotal role in supporting Alibaba's e-commerce platforms, facilitating
-    scalable and reliable infrastructure to handle vast amounts of online
-    transactions. Additionally, Alibaba Cloud serves a diverse range of
-    industries, including finance, healthcare, and manufacturing, offering
-    innovative solutions for digital transformation. Leveraging its extensive
-    global network of data centers, Alibaba Cloud enables businesses worldwide
-    to harness the power of cloud computing, providing flexible and
-    cost-effective solutions to meet the evolving demands of the digital era.
-    During the 2020 Double 11 Global Shopping Festival, Alibaba made its core
-    systems fully cloud-native. Alibaba has been running nearly 100,000
-    OpenKruise workloads and managing millions of containers. Challenges faced
-    by Alibaba in its ultra-large-scale business scenarios:
-    - When an application is released, all containers need to be migrated and
-      rebuilt. This is nearly unacceptable. If all of Alibaba's large-scale
-      applications are rebuilt at a large scale at the release peak, it will be
-      disastrous for both business and other components, such as schedulers,
-      middleware, network, and storage components.
-    - The deployment workloads do not support grayscale upgrades.
-      The following features of OpenKruise gave an advantage over the vintage
-      Kubernetes to help them scale to such an extent:
-    - The main feature that Alibaba lists is the "in-place upgrade" in
-      OpenKruise. When customers need to upgrade an application, this feature
-      only upgrades the images in the original pod without migrating or
-      rebuilding the container.
-    - OpenKruise provides Advanced DaemonSet - This workload is used to deploy
-      host-level daemons on all nodes, including various basic components for
-      network configuration and storage for business containers.<br>
-      [Full Details on Alibaba Double 11 Case Study](https://alibaba-cloud.medium.com/openkruise-the-cloud-native-platform-for-the-comprehensive-process-of-alibabas-double-11-3bfd05741f33)
-  - **SpectroCloud:** SpectroCloud is a cloud infrastructure management company
-    that focuses on simplifying the deployment and management of Kubernetes
-    clusters across multiple clouds. SpectroCloud provides a platform that
-    helps organizations build and operate Kubernetes infrastructures
-    efficiently, regardless of the underlying cloud providers. The company aims
-    to streamline the adoption of Kubernetes by offering a unified management
-    experience that spans various cloud environments. The platform may leverage
-    cloud-native technologies to optimize Kubernetes deployment, monitoring,
-    and maintenance tasks, providing users with a seamless and consistent
-    experience across different cloud infrastructures.
-    - OpenKruise enabled SpectroCloud to manage periodic node actions.
-    - OpenKruise provides the following services that can be used to manage
-      periodic node actions:
-      - OpenKruise's custom controllers, such as the Advanced DaemonSet
-        Controller, can be employed to schedule and manage periodic node
-        actions.
-      - OpenKruise allows users to define custom deployment strategies, and
-        these strategies can extend to periodic node actions.
-      - OpenKruise's webhook server can be used to validate and control
-        node-related resource requests.
+  Many organisations have adopted OpenKruise and are using our project in
+  - Alibaba Group, also known as Alibaba, is a Chinese multinational technology company specializing in e-commerce, retail, Internet, and technology. Alibaba had made its core systems fully cloud-native, and had managed more than 10w OpenKruise workload, and gained 80% improvement in deployment efficiency. Alibaba had utilized many workloads in OpenKruise, including CloneSet, Advance StatefulSet, SidecarSet, Advance DaemonSet etc. Their story had been presented in many [blog posts](https://www.alibabacloud.com/blog/openkruise-the-cloud-native-platform-for-the-comprehensive-process-of-alibabas-double-11_596966).
+  - Ctrip: a Chinese multinational online travel company, is using OpenKruise advanced workload to build their cloud native PaaS platform. They rely on the inplace update feature of openkruise and manage more than 2.8w CloneSet and 200+ advance StatefulSet. Their story had been presented in a [KubeMeet sharing](https://developer.aliyun.com/ebook/7564/87513)
+  - Oppo: a Chinese consumer electronics manufacturer, is using OpenKruise to manage large scale stateful applications. Oppo rely on the inplace-update feature of OpenKruise, and had even customized K8S so that OpenKruise can be extended to inplace update fields other than container images. They share their story in a [blog post](https://mp.weixin.qq.com/s/hRvZz_bZfchmP0tkF6M2OA).
+  - Ant Group: formerly known as Ant Financial, a world leading internet open platform, owns the world's largest online payment platform Alipay. Ant Group chose Kubernetes to orchestrate the tens-of-thousands-of-node clusters in its data centers. To manage these nodes, they chose OpenKruise advance daemonset to manage node agents, utilizing the enhanced rolling strategy such as rolling selector, partition rolling. They are consented to share necessary details privately with the TOC, if required.
+  - LinkedIn: a leading business and employment-oriented online service in America， is using OpenKruise CloneSet to manage large scale workloads for the inplace-update and enhanced PVC support feature. In addition, they're evaluating the container launch priority feature to ensure their configuration update sequence in pod creation as well as container inplace-update scenarios.
 - **Related Projects / Vendors** <br>
   - **Istio -** Istio is a service mesh that provides a uniform way to secure,
     connect, and monitor microservices. It manages the communication between
