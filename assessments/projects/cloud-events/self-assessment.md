@@ -94,7 +94,13 @@ There is no common language on events themselves. So when a new software is
 created developers have to write new event handling processes for different
 types of sources. This can become very chaotic and unorganized.
 
-CloudEvents was developed to address the need for uniformity in event data formats in cloud and microservices environments. CloudEvents adopts a pragmatic approach instead of enforcing a universal event format. While it provides a structured layout, it acknowledges the diverse preferences in the industry. Users can include event data and context attributes in a single document, and the support for a binary format seamlessly integrates with existing event structures.
+CloudEvents was developed to address the need for uniformity in event data
+formats in cloud and microservices environments. CloudEvents adopts a pragmatic
+approach instead of enforcing a universal event format. While it provides a
+structured layout, it acknowledges the diverse preferences in the industry.
+Users can include event data and context attributes in a single document, and
+the support for a binary format seamlessly integrates with existing event
+structures.
 
 ### Actors
 
@@ -129,11 +135,20 @@ medium. The producer encodes the event, while the consumer decodes the event.
 #### Protocol Binding
 
 A protocol binding describes how events are sent and received over a given
-protocol. CloudEvents defines encoding modes like binary and structured for serializing a CloudEvent during transmission.
+protocol. CloudEvents defines encoding modes like binary and structured for
+serializing a CloudEvent during transmission.
 
-* Binary Content Mode: The event data is placed in the message body, while the event attributes (metadata) are included in the message's metadata. This mode is commonly employed when a CloudEvent producer wants to incorporate metadata into an existing event without affecting the message body. Binary encoding will maintain a receiver's event processing since the message's metadata often accommodates extension attributes.
+* **Binary Content Mode:** The event data is placed in the message body, while
+  the event attributes (metadata) are included in the message's metadata. This
+  mode is commonly employed when a CloudEvent producer wants to incorporate
+  metadata into an existing event without affecting the message body. Binary
+  encoding will maintain a receiver's event processing since the message's
+  metadata often accommodates extension attributes.
 
-* Structured Content Mode: The event data and attributes are encoded within the message body following a specific event format. This mode maintains event metadata and data in the payload, facilitating the straightforward forwarding of the same event across various routing hops and protocols.
+* **Structured Content Mode:** The event data and attributes are encoded within
+  the message body following a specific event format. This mode maintains event
+  metadata and data in the payload, facilitating the straightforward forwarding
+  of the same event across various routing hops and protocols.
 
 Protocol bindings MAY choose to use an Event Format to map an event directly to
 the transport envelope body, or MAY provide additional formatting and structure
@@ -150,41 +165,29 @@ CloudEvents](https://github.com/cloudevents/spec/blob/main/cloudevents/primer.md
 
 * Simplify event declaration and delivery across services, platforms and
   systems.
-* Create interoperability and portability between different systems and services
-  in event driven systems.
-* Allow event producers to generate events before consumers are listening, and
-  enable consumers to express interest in events not yet produced.
-* Define a set of metadata to deliver minimal information needed for routing and
-  processing events between systems.
-* Duplicate application data as part of CloudEvent attributes for proper
-  delivery and processing.
+* Define interoperability of event systems that allow services to produce or
+  consume events, where the producer and consumer can be developed and deployed
+  independently.
+* Define a set of metadata about the event being transferred between systems,
+  and how those pieces of metadata should appear in that message while being
+  sent on various protocols.
 * Provide specifications for serializing events in different formats and
   protocols.
-* Support native batching of multiple events in some protocols, leaving the
-  implementation details to the protocols themselves for interoperability.
-* Exclude the purpose or semantic meaning of an event from the specification;
-  any message conforming to the specification is considered a valid CloudEvent.
-* Allow transmission of errors or exceptions as CloudEvents, leaving attribute
-  values to be defined by the event producer.
-* Define non-normative adapters for mapping events from popular non-native event
-  producers into CloudEvents, providing a best-guess specification for attribute
-  population.
 
 ### Non-goals
 
 The following are considered as [non-goals by
 CloudEvents](https://github.com/cloudevents/spec/blob/main/cloudevents/primer.md#non-goals):
 
-* Cloud Events does not aim to change the implementation details of underlying
-  communication protocols.
-* Cloud Events does not want to define the processing logic for events within
-  different application and systems.
-* Function build and invocation process
-* Language-specific runtime APIs
-* Selecting a single identity/access control system
-* Inclusion of protocol-level routing information
-* Event persistence processes
-* Mechanism for Authorization, Data Integrity and Confidentiality
+* Function build and invocation process.
+* Language-specific runtime APIs.
+* Selecting a single identity/access control system.
+* Inclusion of protocol-level routing information.
+* Event persistence processes.
+* Mechanism for Authorization, Data Integrity and Confidentiality.
+* Change the implementation details of underlying communication protocols.
+* Define the processing logic for events within different application and
+  systems.
 
 ## Self-assessment use
 
@@ -202,8 +205,7 @@ CloudEvents.
 This document provides the CNCF TAG-Security with an initial understanding of
 CloudEvents to assist in a joint-assessment, necessary for projects under
 incubation.  Taken together, this document and the joint-assessment serve as a
-cornerstone for if and when CloudEvents seeks graduation and is preparing for a
-security audit.
+cornerstone as CloudEvents is under review for a Graduation status.
 
 ## Security functions and features
 
@@ -234,9 +236,12 @@ attribute.
 
 #### Event Data Integrity
 
-Encryption should be applied to domain-specific event data to limit visibility
-to trusted entities. The specific encryption mechanism used is a mutual
-agreement between producers and consumers.
+CloudEvents does not focus on defining the methods for safeguarding data
+integrity. Therefore, it is the responsibility of the user to address this
+aspect. One approach to enhance security is to apply encryption to event data
+specific to the domain, restricting visibility to trusted entities. The choice
+of the encryption mechanism is collaboratively determined by event producers and
+consumers.
 
 #### Privacy and Sensitive Information Handling
 
@@ -384,14 +389,19 @@ purposes.
 CloudEvents is integrated with various different cloud-native technologies and
 services. It's goal is to create interoperability in event-driven architecture.
 
-CloudEvents has many adopters including but not limited to:
+CloudEvents has many
+[adopters](https://cloudevents.io/#:~:text=CloudEvents%20Adopters) including but
+not limited to:
 
 * Adobe I/O Events
 * Azure Event Grid
+* European Commission
 * Google Cloud Eventarc
+* IBM Cloud Code Engine
+* Oracle Cloud
 * VMware Event Broker Appliance
 
-## Security issue resolution
+## SDK Security issue resolution
 
 ### Responsible Disclosures Process
 
@@ -401,8 +411,9 @@ To report an issue, or to a new idea, contributors can open a new  issue on the
 GitHub repository. However, they should check if a similar issue already exists.
 
 CloudEvents also provides a dedicated [email
-address](cncf-cloudevents-security@lists.cncf.io) for reporting security
-concerns related to the specification or the SDKs.
+address](cncf-cloudevents-security@lists.cncf.io) and a [Security Mailing
+List](https://lists.cncf.io/g/cncf-cloudevents-security/topics) for reporting
+security concerns related to the specification or the SDKs.
 
 #### Vulnerability Response Process
 
@@ -437,9 +448,10 @@ CloudEvents](#contributing-to-cloudevents).
 
 * Project data classification: Sensitive
 * Owner(s) and/or maintainer(s):
-  * Name: CloudEvents Steering Committee
-  * Representation: Cloud Native Computing Foundation (CNCF)
-  * Contact: CloudEvents GitHub Org
+  * Name: CloudEvents administrators and members
+  * Representation: [Cloud Native Computing Foundation
+    (CNCF)](https://www.cncf.io/)
+  * Contact: [CloudEvents Website](https://cloudevents.io/)
 
 ### Threat Modelling Notes
 
@@ -458,9 +470,9 @@ CloudEvents](#contributing-to-cloudevents).
 * **An External Attacker with valid access:** Could potentially inject false
   events to lead to incorrect actions being taken by consumers.
 * **An Internal Attacker:** Might be able to alter event definitions or
-  intercept event data in transit within systems that utilise CloudEvents.
+  intercept event data in transit within systems that utilize CloudEvents.
 * **A Malicious Internal User:** Could misuse the event system to trigger
-  unauthorised actions or services.
+  unauthorized actions or services.
 
 ### Theoretical Threats
 
@@ -472,7 +484,7 @@ CloudEvents](#contributing-to-cloudevents).
   sending and receiving CloudEvents.
 
 * **Cryptography:** CloudEvents uses secure transport layers that provide
-  encryption, but does not specify cryptographic implementations.
+  encryption, but it does not specify cryptographic implementations.
 
 * **Audit and logging:** This is typically handled by the platforms and services
   that implement CloudEvents.
@@ -482,9 +494,10 @@ CloudEvents](#contributing-to-cloudevents).
 #### The SDK management teams may implement vulnerabilities while implementing SDKs
 
 Trail Of Bits was able to identify 7 different security concerns regarding the
-different CloudEvents SDKs. As the number of SDKs grows, it is expected that
-more vulnerabilities may be introduced, which can be used as vulnerable points
-in a system using CloudEvents.
+different CloudEvents SDKs. Although these issues have all been resolved, as the
+number of SDKs grows, it is expected that more vulnerabilities may be
+introduced, which can be used as vulnerable points in a system using
+CloudEvents.
 
 Mitigations:
 
@@ -585,8 +598,10 @@ The main security assessment on CloudEvents was a [Security Audit performed by
 Trail of
 Bits](https://github.com/cloudevents/spec/blob/main/docs/CE-SecurityAudit-2022-10.pdf)
 released on October 26, 2022. These were mainly concerning the different
-CloudEvents SDK, not the specification. Below are listed the findings by Trail
-Of Bits with their descriptions.
+CloudEvents SDK, not the specification. All of the security issues found by
+Trail of Bits have already been addressed.
+
+Below are listed the findings by Trail Of Bits with their descriptions.
 
 ##### [Java SDK] Reliance on default encoding
 
@@ -747,11 +762,11 @@ generation, and from discovery to event management.
 
 #### Event-B
 
-* [An Introduction to the Event-B Modeling
+* [An Introduction to the Event-B Modelling
 Method](https://www.southampton.ac.uk/~tsh2n14/publications/chapters/eventb-dbook13.pdf)
 
-Event-B is a formal method for system-level modeling and analysis. Key features
-of Event-B are the use of set theory as a modeling notation, the use of
+Event-B is a formal method for system-level modelling and analysis. Key features
+of Event-B are the use of set theory as a modelling notation, the use of
 refinement to represent systems at different abstraction levels and the use of
 mathematical proof to verify consistency between refinement levels.
 
