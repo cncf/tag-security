@@ -82,7 +82,7 @@ event routers, tracing systems, and other tools.
 
 #### Event
 
-An "event" is a data record expressing an occurrence and its context. Events are
+An `event` is a data record expressing an occurrence and its context. Events are
 routed from an event producer (the source) to interested event consumers. The
 routing can be performed based on information contained in the event, but an
 event will not identify a specific routing destination. Events will contain two
