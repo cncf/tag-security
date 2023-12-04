@@ -547,10 +547,10 @@ CloudEvents](#contributing-to-cloudevents).
 #### The SDK management teams may implement vulnerabilities while implementing SDKs
 
 Trail Of Bits was able to identify 7 different security concerns regarding the
-different CloudEvents SDKs. Although these issues have all been resolved, as the
-number of SDKs grows, it is expected that more vulnerabilities may be
-introduced, which can be used as vulnerable points in a system using
-CloudEvents.
+different CloudEvents SDKs. While these issues have been addressed, the
+expanding number of SDKs raises the possibility of introducing additional
+vulnerabilities. These vulnerabilities could serve as potential weak points in
+systems utilizing CloudEvents.
 
 Mitigations:
 
