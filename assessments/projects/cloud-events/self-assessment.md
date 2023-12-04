@@ -7,8 +7,9 @@ Authors: Igor Rodrigues (@Igor8mr), Matthew Gong (@MatthewZGong), Kushal Kothari
 
 Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV).
 
-This document elaborates and explores the design goals for CloudEvents as well
-as a security assessment of the software.
+This document elaborates and explores the design goals for
+[CloudEvents](https://cloudevents.io/) as well as a security assessment of the
+software.
 
 ## Table of contents
 
@@ -29,7 +30,7 @@ as a security assessment of the software.
   * [Development Pipeline](#development-pipeline)
   * [Communications Channels](#communications-channels)
   * [Ecosystem](#ecosystem)
-* [Security issue resolution](#security-issue-resolution)
+* [SDK Security issue resolution](#sdk-security-issue-resolution)
   * [Responsible Disclosures Process](#responsible-disclosures-process)
   * [Incident Response](#incident-response)
 * [Lightweight Threat Modelling](#lightweight-threat-modelling)
@@ -61,7 +62,9 @@ as a security assessment of the software.
 | Doc | url |
 | -- | -- |
 | CloudEvents Security Assessment  | https://github.com/cloudevents/spec/blob/main/docs/CE-SecurityAudit-2022-10.pdf |
-| CloudEvents SDK Governance | https://github.com/cloudevents/spec/blob/main/docs/SDK-GOVERNANCE.md#asynchronous-voting-process |
+| CloudEvents Privacy and Security Specification | https://github.com/cloudevents/spec/blob/130ba0d183f5e45c1d141f5c1f272cf71d898623/cloudevents/spec.md#privacy-and-security |
+| CloudEvents SDK Security Standards | https://github.com/cloudevents/spec/blob/main/docs/SDK-GOVERNANCE.md#ensuring-projects-health |
+
 
 ## Overview
 
@@ -86,13 +89,16 @@ routers, tracing systems, and other tools.
 
 #### Event
 
-An `event` is a data record expressing an occurrence and its context. Events are
-routed from an event producer (the source) to interested event consumers. The
-routing can be performed based on information contained in the event, but an
-event will not identify a specific routing destination. Events will contain two
-types of information: the Event Data representing the Occurrence and Context
-metadata providing contextual information about the Occurrence. A single
-occurrence MAY result in more than one event.
+An
+[event](https://github.com/cloudevents/spec/blob/130ba0d183f5e45c1d141f5c1f272cf71d898623/cloudevents/spec.md#event)
+is a data entry that conveys an occurrence  along with its surrounding context.
+Events are transmitted from an event producer (the origin) to interested event
+consumers. The transmission process may consider the information within the
+event, but the event itself does not specify a particular destination for
+routing. Events comprise two categories of information: Event Data, which
+represents the incident, and Context metadata, which furnishes additional
+contextual details about the incident. It's possible for a single incident to
+generate more than one event.
 
 There is no common language on events themselves. So when a new software is
 created developers have to write new event handling processes for different
@@ -110,37 +116,49 @@ structures.
 
 #### Event Consumer
 
- The entity or system interested in subscribing to different events. Receiving
- Events from the producer will trigger further action that is up to the
- consumer. A "consumer" receives the event and acts upon it, which might lead to
- the occurrence of new events.
+The [Event
+Consumer](https://github.com/cloudevents/spec/blob/130ba0d183f5e45c1d141f5c1f272cf71d898623/cloudevents/spec.md#consumer)
+is the entity or system interested in subscribing to different  events.
+Receiving Events from the producer will trigger further action that is up to the
+consumer. A "consumer" receives the event and acts upon it, which might lead to
+the occurrence of new events.
 
 #### Event Producer
 
- The entity or system that produces the "events". They are responsible for
- wrapping event data in the CloudEvents specification.
+The [Event
+Producer](https://github.com/cloudevents/spec/blob/130ba0d183f5e45c1d141f5c1f272cf71d898623/cloudevents/spec.md#producer)
+is the entity or system that produces the "events". They are responsible for
+wrapping event data in the CloudEvents specification.
 
 #### Event Mediator or Intermediary
 
- Depending on the architecture of the system, the event mediator is the entity
- or system that is responsible for the distribution, processing and routing of
- events to consumers. The event broker ensures reliable delivery and may enforce
- security policies.
+Depending on the architecture of the system, [Event
+Mediator](https://github.com/cloudevents/spec/blob/130ba0d183f5e45c1d141f5c1f272cf71d898623/cloudevents/spec.md#intermediary)
+is the entity or system that is responsible for the distribution, processing and
+routing of events to consumers. The event broker ensures reliable delivery and
+may enforce security policies.
 
 ### Actions
 
 #### Event Formating
 
-Called by the producer and the consumer. An Event Format specifies how to
-serialize a CloudEvent as a sequence of bytes. Stand-alone event formats, such
-as the JSON format, specify serialization independent of any protocol or storage
-medium. The producer encodes the event, while the consumer decodes the event.
+Called by the producer and the consumer. An [Event
+Format](https://github.com/cloudevents/spec/blob/130ba0d183f5e45c1d141f5c1f272cf71d898623/cloudevents/spec.md#event-format)
+specifies how to serialize a CloudEvent as a sequence of bytes. Stand-alone
+event formats, such as the JSON format, specify serialization independent of any
+protocol or storage medium. The producer encodes the event, while the consumer
+decodes the event.
 
 #### Protocol Binding
 
-A protocol binding describes how events are sent and received over a given
-protocol. CloudEvents defines encoding modes like binary and structured for
-serializing a CloudEvent during transmission.
+A [protocol
+binding](https://github.com/cloudevents/spec/blob/130ba0d183f5e45c1d141f5c1f272cf71d898623/cloudevents/spec.md#protocol-binding)
+describes how events are sent and received over a given protocol. CloudEvents
+defines encoding modes such as
+[binary](https://github.com/cloudevents/spec/blob/main/cloudevents/bindings/kafka-protocol-binding.md#32-binary-content-mode)
+and
+[structured](https://github.com/cloudevents/spec/blob/main/cloudevents/bindings/kafka-protocol-binding.md#33-structured-content-mode)
+for serializing a CloudEvent during transmission.
 
 * **Binary Content Mode:** The event data is placed in the message body, while
   the event attributes (metadata) are included in the message's metadata. This
@@ -218,25 +236,31 @@ cornerstone as CloudEvents is under review for a Graduation status.
 #### Event Identification
 
 Every event within CloudEvents is uniquely identified by a specific combination
-of `source` and `id`. Producers must guarantee that each unique event's
-concatenation of `source` and id` remains distinctive. This practice aids in
-distinguishing events and preventing the processing of duplicate events.
+of
+[source](https://github.com/cloudevents/spec/blob/130ba0d183f5e45c1d141f5c1f272cf71d898623/cloudevents/spec.md#source-1)
+and
+[id](https://github.com/cloudevents/spec/blob/130ba0d183f5e45c1d141f5c1f272cf71d898623/cloudevents/spec.md#id).
+Producers must guarantee that each unique event's concatenation of `source` and
+`id` remains distinctive. This practice aids in distinguishing events and
+preventing the processing of duplicate events.
 
 #### Event Type
 
-The `type` attribute holds a value that characterizes the nature of the event
-associated with the initial incident. This attribute is frequently utilized for
-routing, observability, policy enforcement, and similar purposes. The producer
-determines the format, which may contain details such as the version of the
-`type`.
+The
+[type](https://github.com/cloudevents/spec/blob/130ba0d183f5e45c1d141f5c1f272cf71d898623/cloudevents/spec.md#type)
+attribute holds a value that characterizes the nature of the event associated
+with the initial incident. This attribute is frequently utilized for routing,
+observability, policy enforcement, and similar purposes. The producer determines
+the format, which may contain details such as the version of the `type`.
 
 #### Event Subject
 
-The `subject` attribute explains the event's subject within the context of the
-event producer. Clarifying the subject in contextual metadata proves
-particularly beneficial in scenarios involving generic subscription filtering,
-where middleware may lack the ability to interpret the content within the `data`
-attribute.
+The
+[subject](https://github.com/cloudevents/spec/blob/130ba0d183f5e45c1d141f5c1f272cf71d898623/cloudevents/spec.md#subject)
+attribute explains the event's subject within the context of the event producer.
+Clarifying the subject in contextual metadata proves particularly beneficial in
+scenarios involving generic subscription filtering, where middleware may lack
+the ability to interpret the content within the `data` attribute.
 
 #### Event Data Integrity
 
@@ -579,8 +603,11 @@ Mitigations:
 
 ### Conclusion
 
-Overall, CloudEvents has solid governance rules and management practices. These
-rules delineate procedures that prioritize security patching, with strict
+Overall, CloudEvents has solid governance rules and management practices for the
+[specification](https://github.com/cloudevents/spec/blob/main/docs/GOVERNANCE.md)
+and the
+[SDKs](https://github.com/cloudevents/spec/blob/main/docs/SDK-GOVERNANCE.md).
+These rules delineate procedures that prioritize security patching, with strict
 enforcement mechanisms. Clear articulation of goals and non-goals assists users
 in discerning the aspects they need to self-enforce.
 
@@ -616,11 +643,11 @@ Below are listed the findings by Trail Of Bits with their descriptions.
 
 ##### [Java SDK] Reliance on default encoding
 
-* Severity: Undetermined
-* Difficulty: Low
-* Type: Undefined Behavior
-* Finding ID: TOB-CE-1
-* Target: Java SDK
+* **Severity:** Undetermined
+* **Difficulty:** Low
+* **Type:** Undefined Behavior
+* **Finding ID:** TOB-CE-1
+* **Target:** Java SDK
 
 Several instances were found where the getByte() standard Java API is utilized
 without specifying encoding, leading the Java SDK to rely on system default
@@ -634,11 +661,11 @@ implementation, documentation, and provided examples.
 
 ##### [Java SDK] Outdated Vulnerable Dependencies
 
-* Severity: Undetermined
-* Difficulty: Medium
-* Type: Patching
-* Finding ID: TOB-CE-2
-* Target: Java SDK
+* **Severity:** Undetermined
+* **Difficulty:** Medium
+* **Type:** Patching
+* **Finding ID:** TOB-CE-2
+* **Target:** Java SDK
 
 The Java SDK contains multiple outdated dependencies with publicly known
 vulnerabilities, including high- and medium-risk ones. The snyk tool
@@ -648,11 +675,11 @@ conducted.
 
 ##### [JavaScript SDK] Potential XSS in httpTransport()
 
-* Severity: Undetermined
-* Difficulty: Low
-* Type: Data Validation
-* Finding ID: TOB-CE-3
-* Target: sdk-javascript/src/transport/http/index.ts
+* **Severity:** Undetermined
+* **Difficulty:** Low
+* **Type:** Data Validation
+* **Finding ID:** TOB-CE-3
+* **Target:** sdk-javascript/src/transport/http/index.ts
 
 The JavaScript SDK's httpTransport() method exposes raw error messages from the
 endpoint, potentially leading to XSS vulnerabilities if user-controlled data is
@@ -663,11 +690,11 @@ an emitter.
 
 ##### [Go SDK] Outdated Vulnerable Dependencies
 
-* Severity: Undetermined
-* Difficulty: Low
-* Type: Patching
-* Finding ID: TOB-CE-4
-* Target: Go SDK
+* **Severity:** Undetermined
+* **Difficulty:** Low
+* **Type:** Patching
+* **Finding ID:** TOB-CE-4
+* **Target:** Go SDK
 
 The Go SDK has multiple outdated dependencies with known vulnerabilities. The
 open-source snyk tool automatically audited each module. Due to time constraints
@@ -676,11 +703,11 @@ context was skipped.
 
 ##### [Go SDK] Downcasting of 64-bit integer
 
-* Severity: Undetermined
-* Difficulty: Low
-* Type: Undefined Behavior
-* Finding ID: TOB-CE-5
-* Target: sql/v2/parser/expression_visitor.go, sql/v2/utils/casting.go
+* **Severity:** Undetermined
+* **Difficulty:** Low
+* **Type:** Undefined Behavior
+* **Finding ID:** TOB-CE-5
+* **Target:** sql/v2/parser/expression_visitor.go, sql/v2/utils/casting.go
 
 The strconv.Atoi function parses a machine-dependent integer (int64 for 64-bit
 targets). In some code instances, the result from strconv.Atoi is later
@@ -689,11 +716,11 @@ inputs.
 
 ##### [Go SDK] ReadHeaderTimeout not configured
 
-* Severity: Informational
-* Difficulty: Low
-* Type: Denial of Service
-* Finding ID: TOB-CE-6
-* Target: Go SDK
+* **Severity:** Informational
+* **Difficulty:** Low
+* **Type:** Denial of Service
+* **Finding ID:** TOB-CE-6
+* **Target:** Go SDK
 
 The Go http.server API offers four timeouts, including ReadHeaderTimeout.
 Failure to set a value for this timeout makes the listener instance susceptible
@@ -701,11 +728,11 @@ to Slowloris DoS attacks.
 
 ##### [CSharp SDK] Outdated Vulnerable Dependencies
 
-* Severity: Undetermined
-* Difficulty: Low
-* Type: Patching
-* Finding ID: TOB-CE-7
-* Target: CSharp SDK
+* **Severity:** Undetermined
+* **Difficulty:** Low
+* **Type:** Patching
+* **Finding ID:** TOB-CE-7
+* **Target:** CSharp SDK
 
 The CSharp SDK has multiple outdated dependencies with known vulnerabilities.
 Using the open-source snyk tool, each module was automatically audited. Due to
@@ -756,40 +783,40 @@ and resident satisfaction.
 
 #### OpenTelemetry
 
-* [OpenTelemetry Website](https://opentelemetry.io/)
+![OpenTelemetry Logo](images/opentelemetry-logo.svg)
 
-OpenTelemetry is a collection of APIs, SDKs, and tools. It can be used to
-instrument, generate, collect, and export telemetry data (metrics, logs, and
-traces) to help analyzing software performance and behavior.
+[OpenTelemetry](https://opentelemetry.io/) is a collection of APIs, SDKs, and
+tools. It can be used to instrument, generate, collect, and export telemetry
+data (metrics, logs, and traces) to help analyzing software performance and
+behavior.
 
 #### AsyncAPI
 
-* [AsyncAPI Website](https://www.asyncapi.com/)
+![AsyncAPI Logo](images/async-api-logo.png)
 
-AsyncAPI is an open-source initiative that seeks to improve the current state of
-Event-Driven Architecture (EDA). Their long-term goal is to make working with
-EDAs as easy as working with REST APIs. That goes from documentation to code
-generation, and from discovery to event management.
+[AsyncAPI](https://www.asyncapi.com/) is an open-source initiative that seeks to
+improve the current state of Event-Driven Architecture (EDA). Their long-term
+goal is to make working with EDAs as easy as working with REST APIs. That goes
+from documentation to code generation, and from discovery to event management.
 
 #### Event-B
 
-* [An Introduction to the Event-B Modelling
-Method](https://www.southampton.ac.uk/~tsh2n14/publications/chapters/eventb-dbook13.pdf)
-
-Event-B is a formal method for system-level modelling and analysis. Key features
-of Event-B are the use of set theory as a modelling notation, the use of
-refinement to represent systems at different abstraction levels and the use of
-mathematical proof to verify consistency between refinement levels.
+[Event-B](https://www.event-b.org/) is a formal method for system-level
+modelling and analysis. Key features of Event-B are the use of set theory as a
+modelling notation, the use of refinement to represent systems at different
+abstraction levels and the use of mathematical proof to verify consistency
+between refinement levels.
 
 #### Apex Event Specification
 
-* [Apex Event Specification
-Guide](https://insights.eventscouncil.org/Portals/0/APEX_Event_Specifications_Guide.pdf)
+![Apex Logo](images/apex-logo.png)
 
-The APEX Event Specifications Guide (ESG) is a written document that contains
-all the details of an event. The ESG is used by event organizers to communicate
-information to venues and suppliers. The ESG is a three-part template that
-includes: Narrative, Schedule, and Function orders.
+The [Apex Event Specification Guide
+(ESG)](https://insights.eventscouncil.org/Portals/0/APEX_Event_Specifications_Guide.pdf)
+is a written document that contains all the details of an event. The ESG is used
+by event organizers to communicate information to venues and suppliers. The ESG
+is a three-part template that includes: Narrative, Schedule, and Function
+orders.
 
 This is an older document used across many engineering fields, which is not
 restricted to computer science, making it different from the other examples.
