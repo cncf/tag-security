@@ -194,7 +194,9 @@ CloudEvents](https://github.com/cloudevents/spec/blob/main/cloudevents/primer.md
 * Define interoperability of event systems that allow services to produce or
   consume events, where the producer and consumer can be developed and deployed
   independently.
-* Establish a structured framework for the exchange of event data among services by standardizing the location for storing and retrieving common metadata related to events.
+* Establish a structured framework for the exchange of event data among services
+  by standardizing the location for storing and retrieving common metadata
+  related to events.
 * Provide specifications for serializing events in different formats and
   protocols.
 
@@ -229,7 +231,7 @@ CloudEvents.
 This document provides the CNCF TAG-Security with an initial understanding of
 CloudEvents to assist in a joint-assessment, necessary for projects under
 incubation.  Taken together, this document and the joint-assessment serve as a
-cornerstone as CloudEvents is [under review for a Graduation
+cornerstone since CloudEvents is [under review for a Graduation
 status](https://github.com/cncf/toc/pull/996).
 
 ## Security functions and features
@@ -275,7 +277,10 @@ the ability to interpret the content within the `data` attribute.
 #### Event Data Integrity
 
 CloudEvents does not focus on defining the methods for safeguarding data
-integrity. Therefore, it is the choice of the user/developer to address this aspect. One approach to enhance security is to apply encryption to event data specific to the domain, restricting visibility to trusted entities. The choice of the encryption mechanism is collaboratively determined by event producers and
+integrity. Therefore, it is the choice of the user/developer to address this
+aspect. One approach to enhance security is to apply encryption to event data
+specific to the domain, restricting visibility to trusted entities. The choice
+of the encryption mechanism is collaboratively determined by event producers and
 consumers, which is an implementation detail defined by the user.
 
 #### Privacy and Sensitive Information Handling
@@ -532,7 +537,9 @@ CloudEvents](#contributing-to-cloudevents).
   managed by the underlying infrastructure and transport protocols used for
   sending and receiving CloudEvents.
 
-* **Cryptography:** CloudEvents does not provide an encryption methods or cryptographic implemntations, all implementations are left up to the user/ developers choice.
+* **Cryptography:** CloudEvents does not provide an encryption methods or
+  cryptographic implemntations, all implementations are left up to the user/
+  developers choice.
 
 * **Audit and logging:** This is typically handled by the platforms and services
   that implement CloudEvents.
