@@ -194,9 +194,7 @@ CloudEvents](https://github.com/cloudevents/spec/blob/main/cloudevents/primer.md
 * Define interoperability of event systems that allow services to produce or
   consume events, where the producer and consumer can be developed and deployed
   independently.
-* Define a set of metadata about the event being transferred between systems,
-  and how those pieces of metadata should appear in that message while being
-  sent on various protocols.
+* Establish a structured framework for the exchange of event data among services by standardizing the location for storing and retrieving common metadata related to events.
 * Provide specifications for serializing events in different formats and
   protocols.
 
@@ -277,10 +275,7 @@ the ability to interpret the content within the `data` attribute.
 #### Event Data Integrity
 
 CloudEvents does not focus on defining the methods for safeguarding data
-integrity. Therefore, it is the choice of the user to address this aspect. One
-approach to enhance security is to apply encryption to event data specific to
-the domain, restricting visibility to trusted entities. The choice of the
-encryption mechanism is collaboratively determined by event producers and
+integrity. Therefore, it is the choice of the user/developer to address this aspect. One approach to enhance security is to apply encryption to event data specific to the domain, restricting visibility to trusted entities. The choice of the encryption mechanism is collaboratively determined by event producers and
 consumers, which is an implementation detail defined by the user.
 
 #### Privacy and Sensitive Information Handling
@@ -537,8 +532,7 @@ CloudEvents](#contributing-to-cloudevents).
   managed by the underlying infrastructure and transport protocols used for
   sending and receiving CloudEvents.
 
-* **Cryptography:** CloudEvents uses secure transport layers that provide
-  encryption, but it does not specify cryptographic implementations.
+* **Cryptography:** CloudEvents does not provide an encryption methods or cryptographic implemntations, all implementations are left up to the user/ developers choice.
 
 * **Audit and logging:** This is typically handled by the platforms and services
   that implement CloudEvents.
