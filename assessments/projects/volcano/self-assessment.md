@@ -123,23 +123,25 @@ Not Applicable.
 ## Secure development practices
 
 - Development Pipeline
-    + Contributor Sign-off: Contributors to Volcano may be required to sign off on their commits as part of a Developer Certificate of Origin (DCO).
-    + Code Review Process: Volcano employs a rigorous code review process, with multiple maintainers from different organizations. This ensures high standards of code quality and security.
-    + Automated Testing and CI/CD: The project likely utilizes continuous integration and deployment pipelines, including automated testing for vulnerabilities and code quality checks.
+    + Contributor Sign-off: Contributors to Volcano are required to sign off on their commits as part of a [Developer Certificate of Origin](https://probot.github.io/apps/dco/) (DCO).
+    + Code Review Process: Volcano employs a rigorous [code review process](https://github.com/volcano-sh/volcano/blob/master/contribute.md#code-review), with [multiple maintainers](https://github.com/volcano-sh/volcano/blob/master/MAINTAINERS.md) from different organizations and automated checks using [CodeQL](https://github.com/volcano-sh/volcano/actions/workflows/codeql-analysis.yml). This ensures high standards of code quality and security.
+    + Automated Testing and CI/CD: The project utilizes continuous integration and deployment pipelines, including [automated testing](https://github.com/volcano-sh/volcano/blob/master/contribute.md#testing) for vulnerabilities and code quality checks.
     + Container Image Security: If Volcano uses containerized deployments, assess whether the container images are signed and immutable, which adds a layer of security against tampering.
     + Dependency Management: The project should regularly update its dependencies and check for vulnerabilities using tools like OWASP Dependency-Check or similar.
 - Communication Channels
-    + Internal: The development team likely uses platforms like GitHub, Slack, or email lists for internal communications.
+    + Internal: The development team uses platforms like GitHub, Slack, and email lists for internal communications.
     + Inbound: Users and prospective users can likely communicate with the Volcano team via GitHub issues, mailing lists, or a dedicated Slack channel.
-    + Outbound: Updates and announcements are possibly made through GitHub, CNCF mailing lists, or social media channels.
+    + Outbound: Updates and announcements are made through GitHub, mailing lists, blog posts, or social media channels.
 - Ecosystem
     + Volcano is a CNCF Sandbox project and integrates with the larger cloud-native ecosystem, providing batch processing capabilities in Kubernetes environments. It is used by companies like Huawei, AWS, JD.com, OpenAI, Baidu, and Tencent, indicating a broad impact across different cloud environments.
+    + Volcano [requires two-factor authentication](https://github.com/volcano-sh/volcano/blob/master/docs/development/prepare-for-development.md#setting-up-a-personal-access-token) to be part of the github organization and a personal access token to enable push via HTTPS.
+    + Volcano has a defined community membership process that requires sponsorship from two approvers to become a member. [Link](https://github.com/volcano-sh/volcano/blob/master/community-membership.md)
 
 
 ## Security issue resolution
 
-The Volcano project has a Product Security Team (PST) responsible for handling security vulnerabilities, coordinating responses, and organizing both internal communication and external disclosure.
-- Responsible Disclosures Process: Volcano encourages private reporting of security vulnerabilities to their dedicated security email (volcano-security@googlegroups.com). Public disclosure of vulnerabilities is discouraged until the PST has developed a fix or mitigation plan.(got this from security.md)
+The Volcano project has a [Product Security Team (PST)](https://github.com/volcano-sh/volcano/security#product-security-team-pst) responsible for handling security vulnerabilities, coordinating responses, and organizing both internal communication and external disclosure.
+- [Responsible Disclosures Process](https://github.com/volcano-sh/volcano/security#disclosures): Volcano encourages private reporting of security vulnerabilities to their dedicated security email (volcano-security@googlegroups.com). Public disclosure of vulnerabilities is discouraged until the PST has developed a fix or mitigation plan.
     + Vulnerability Response Process 
     + Report Handling: When a security vulnerability is reported to the Volcano security team (via volcano-security@googlegroups.com), the Product Security Team (PST) takes charge of the response.
     + Fix Lead Assignment: A member of the PST volunteers to lead the response, coordinating the development of a fix and communicating with the community.
@@ -150,6 +152,9 @@ The Volcano project has a Product Security Team (PST) responsible for handling s
 ## Appendix
 
 - Volcano has achieved an Open Source Security Foundation (OpenSSF) best practices badge at passing level, see more details at Volcano’s openssf best practices. [Link](https://www.bestpractices.dev/en/projects/3012)
-- [The Linux Foundation Talk: Using Volcano and Kubernetes for Cutting-Edge AI Deployment](https://www.youtube.com/watch?v=hjfoEdMD3cI)
-- [CNCF Talk (Chinese): Volcano Helps FinTech BigData on K8s](https://www.youtube.com/watch?v=wYEmjqPbjjY)
-
+- Volcano has achieved A+ quality as an open source Go project. [Link](https://goreportcard.com/report/github.com/volcano-sh/volcano)
+- [Volcano Usage and Adopters](https://github.com/volcano-sh/volcano/blob/master/docs/community/adopters.md)
+- Related Talks:
+  + [The Linux Foundation Talk: Using Volcano and Kubernetes for Cutting-Edge AI Deployment](https://www.youtube.com/watch?v=hjfoEdMD3cI)
+  + [CNCF Talk (Chinese): Volcano Helps FinTech BigData on K8s](https://www.youtube.com/watch?v=wYEmjqPbjjY)
+- [Volcano Bug Reporting Guidelines](https://github.com/volcano-sh/volcano/blob/master/docs/getting-started/reporting_bugs.md)
