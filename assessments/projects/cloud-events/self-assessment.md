@@ -231,7 +231,8 @@ CloudEvents.
 This document provides the CNCF TAG-Security with an initial understanding of
 CloudEvents to assist in a joint-assessment, necessary for projects under
 incubation.  Taken together, this document and the joint-assessment serve as a
-cornerstone as CloudEvents is under review for a Graduation status.
+cornerstone as CloudEvents is [under review for a Graduation
+status](https://github.com/cncf/toc/pull/996).
 
 ## Security functions and features
 
