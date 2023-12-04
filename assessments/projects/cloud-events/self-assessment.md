@@ -13,6 +13,7 @@ software.
 
 ## Table of contents
 
+* [Table of contents](#table-of-contents)
 * [Metadata](#metadata)
   * [Security links](#security-links)
 * [Overview](#overview)
@@ -30,14 +31,15 @@ software.
   * [Development Pipeline](#development-pipeline)
   * [Communications Channels](#communications-channels)
   * [Ecosystem](#ecosystem)
-* [SDK Security issue resolution](#sdk-security-issue-resolution)
-  * [Responsible Disclosures Process](#responsible-disclosures-process)
-  * [Incident Response](#incident-response)
+* [Security Issue Resolution](#security-issue-resolution)
+  * [CloudEvents Specification](#cloudevents-specification)
+  * [CloudEvents SDKs](#cloudevents-sdks)
 * [Lightweight Threat Modelling](#lightweight-threat-modelling)
   * [Threat Modelling Notes](#threat-modelling-notes)
   * [Threat Scenarios](#threat-scenarios)
   * [Theoretical Threats](#theoretical-threats)
   * [Potential threats](#potential-threats)
+  * [Conclusion](#conclusion)
   * [Recommendations](#recommendations)
 * [Appendix](#appendix)
   * [Known Issues Over Time](#known-issues-over-time)
@@ -443,11 +445,9 @@ CloudEvents has many
 * Oracle Cloud
 * VMware Event Broker Appliance
 
-## SDK Security Issue Resolution
+## Security Issue Resolution
 
-### Responsible Disclosures Process
-
-#### Reporting an Issue
+### CloudEvents Specification
 
 To report an issue, or to a new idea, contributors can open a new  issue on the
 GitHub repository. However, they should check if a similar issue already exists.
@@ -456,6 +456,16 @@ CloudEvents also provides a dedicated [email
 address](cncf-cloudevents-security@lists.cncf.io) and a [Security Mailing
 List](https://lists.cncf.io/g/cncf-cloudevents-security/topics) for reporting
 security concerns related to the specification or the SDKs.
+
+### CloudEvents SDKs
+
+#### Responsible Disclosures Process
+
+Similarly to the CloudEvents specification, to report an issue about one of the
+CloudEvents SDKs, contributors can open a new  issue on the GitHub repository,
+as well as using the dedicated [email
+address](cncf-cloudevents-security@lists.cncf.io) and the [Security Mailing
+List](https://lists.cncf.io/g/cncf-cloudevents-security/topics).
 
 #### Vulnerability Response Process
 
@@ -468,9 +478,9 @@ for more than 1 month. Otherwise, their project will be marked as `not actively
 maintained`, which can lead to them to loose the management of the SDK
 repository.
 
-### Incident Response
+#### Incident Response
 
-#### Discussing the Issue
+##### Discussing the Issue
 
 After an issue is reported, the maintainers of the SDK will contact the author
 of the issue, talking through it to understand whether it should be resolved,
@@ -478,7 +488,7 @@ its priority, how a solution could be implemented, and who will implement it,
 which can be done through the GitHub issues page of the SDK, Slack, a meeting or
 any other CloudEvents communication channel.
 
-#### Solving the Issue
+##### Solving the Issue
 
 Once a security patch is written, the contributor should make Pull Request and
 mark it as reviewed. The PR will be reviewed, improved, and approved by the
