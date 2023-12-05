@@ -162,6 +162,30 @@ do you have a pull request, issue, or any other link to the implementation of
 the bots idea? Also, we are willing to help implement one of those solutions to
 the concerns if you have some specific things in mind.
 
+### Dug (Dec 5th at 11:57:30 AM)
+
+* [Message
+  Link](https://cloud-native.slack.com/archives/C9DB5ABAA/p1701795450643219?thread_ts=1701293353.624819&cid=C9DB5ABAA)
+
+@Igor Rodrigues just this one: https://github.com/cloudevents/spec/issues/1235
+
+### Dug (Dec 5th at 11:58:19 AM)
+
+* [Message
+  Link](https://cloud-native.slack.com/archives/C9DB5ABAA/p1701795499076589?thread_ts=1701293353.624819&cid=C9DB5ABAA)
+
+If someone knows how to setup the bots and wants to submit a PR to add them...
+that would be great! Or even just a list of instructions for an admin to follow
+(if it's more than just a PR) that would be great too.
+
+### Igor Rodrigues (Dec 5th at 12:12:57 PM)
+
+* [Message
+  Link](https://cloud-native.slack.com/archives/C9DB5ABAA/p1701796377013619?thread_ts=1701293353.624819&cid=C9DB5ABAA)
+
+Great, thanks! We are taking a look here
+
 ## CloudEvents Team Meeting
 
-Igor Rodrigues also joined the CloudEvents [public team meeting on November 30th, 2023](https://www.youtube.com/watch?v=2OZPTQOqFEw&t=191s).
+Igor Rodrigues also joined the CloudEvents [public team meeting on November
+30th, 2023](https://www.youtube.com/watch?v=2OZPTQOqFEw&t=191s).

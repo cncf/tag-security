@@ -10,7 +10,8 @@ Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV) and Doug Davis
 
 This document elaborates and explores the design goals for
 [CloudEvents](https://cloudevents.io/) as well as a security assessment of the
-software. It was made in collaboration with the CloudEvents maintainers, whose [communications were recorded](CE-maintainers-communications.md).
+software. It was made in collaboration with the CloudEvents maintainers, whose
+[communications were recorded](CE-maintainers-communications.md).
 
 ## Table of contents
 
@@ -648,10 +649,11 @@ play a crucial role in ensuring continuous patching and monitoring, some SDKs
 have experienced vulnerabilities in the past, highlighting an ongoing concern.
 
 During a [team meeting on November 30, 2023](https://youtu.be/2OZPTQOqFEw), a
-CloudEvents administrator also mentioned plans to introduce bots for regularly
-assessing the health of each SDK. This proactive measure aims to address
-potential security concerns that may arise in the future, mitigating both
-technical and managerial aspects across various SDKs.
+CloudEvents administrator also mentioned plans to introduce [bots for regularly
+assessing the health of each
+SDK](https://github.com/cloudevents/spec/issues/1235). This proactive measure
+aims to address potential security concerns that may arise in the future,
+mitigating both technical and managerial aspects across various SDKs.
 
 ### Recommendations
 
@@ -668,6 +670,8 @@ and install updates to their CloudEvents SDK installation.
 
 #### Bot Implementation for SDK Monitoring
 
+* **Issue Link:** [Setup snyk for
+  SDKs](https://github.com/cloudevents/spec/issues/1235)
 * **Objective:** Develop and deploy an automated bot system to monitor the
   health of various SDKs.
 * **Action Steps:** Collaborate with the team to conceptualize the bot's
