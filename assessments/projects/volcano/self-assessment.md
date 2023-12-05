@@ -34,7 +34,7 @@ For a detailed guide with step-by-step discussion and examples, check out the fr
   - [Badges](#badges)
   - [Links](#links)
   - [Case Studies](#case-studies)
-  - [Relevant Talks](#relevant-talks)
+  - [Related Talks](#related-talks)
 
 ## Metadata
 
