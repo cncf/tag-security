@@ -252,7 +252,7 @@ Security issues can be reported through various channels:
 ### Known Issues Over Time
 - **Authentication Bypass Vulnerability:** A notable vulnerability in NATS was the authentication bypass in versions before 2.9.23 and 2.10.x before 2.10.2. This issue was due to an implicit $G user in an authorization block, which could be exploited for unauthenticated access under certain configurations.
 
-### [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/)
+### [CII Best Practices]([https://www.coreinfrastructure.org/programs/best-practices-program/](https://www.bestpractices.dev/en/projects/1895))
 - NATS has achieved a "Passing" status for CII Best Practices as of June 8th. More information can be found [here](https://www.bestpractices.dev/en/projects/1895).
 
 ### Case Studies
