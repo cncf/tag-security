@@ -667,78 +667,149 @@ and install updates to their CloudEvents SDK installation.
 
 ## Action Items
 
-### Immediate Priority
+### [Action Item 1] Setup Snyk for SDKs
 
-#### Setup Snyk for SDKs
-
-* **Issue Link:** [Setup Snyk for
+* **GitHub Issue Link:** [Setup Snyk for
   SDKs](https://github.com/cloudevents/spec/issues/1235)
-* **Objective:** Enhance the security posture of CloudEvents SDKs by
-  implementing Snyk for comprehensive dependency checks.
-* **Action Steps:** Develop and deploy an automated bot system to monitor the
-  health of various SDKs by integrating Snyk into the development workflow.
-  Collaborate with the team to conceptualize the bot's features, ensuring its
-  capability to evaluate maintenance status, address issues, and implement patch
-  updates following the rules outlined in the governance documents. Configure
-  Snyk to perform dependaBot-type checks, ensuring comprehensive analysis of SDK
-  dependencies. Investigate the feasibility and requirements for adding a
-  dedicated security bot to scan for potential security issues. Document the
-  integration process and provide guidelines for ongoing usage within the
-  development environment.
 
-#### Regular SDK Security Audits
+#### [Action Item 1] Objective
 
-* **Objective:** Establish a regular schedule for security audits of CloudEvents
-  SDKs.
-* **Action Steps:** Specify the frequency of audits, assemble the audit team,
-  identify the tools and services required, and manage the coordination of audit
-  activities.
+Improve the security of CloudEvents SDKs by integrating Snyk for automatic
+dependency assessments. This integration will both conduct comprehensive scans
+for vulnerabilities within the SDK and also systematically search the internet
+for recently reported issues or vulnerabilities linked to the library
+dependencies used in the development of CloudEvents SDKs. The automated tool
+will alert the development team to threats, helping the implementation of
+proactive measures for identifying, addressing, and mitigating potential risks.
 
-### Long-Term Strategies
+#### [Action Item 1] Steps
 
-#### Automated Vulnerability Scanning for SDK Dependencies
+Develop and deploy an automated bot system to monitor the health of various SDKs
+by integrating Snyk into the development workflow. Collaborate with the team to
+conceptualize the bot's features, ensuring its capability to evaluate
+maintenance status, address issues, and implement patch updates following the
+rules outlined in the governance documents. Configure Snyk to perform
+dependaBot-type checks, ensuring comprehensive analysis of SDK dependencies.
+Investigate the feasibility and requirements for adding a dedicated security bot
+to scan for potential security issues. Document the integration process and
+provide guidelines for ongoing usage within the development environment.
 
-* **Objective:** Implement a system to automatically scan for vulnerabilities in
-  SDK dependencies.
-* **Action Steps:** Research and integrate tools for continuous scanning of
-  dependencies. Establish a notification system for newly identified
-  vulnerabilities.
+##### Initial Setup
 
-#### Enhanced Encryption and Data Validation Mechanisms
+1. [Install the Snyk
+   CLI](https://support.snyk.io/hc/en-us/articles/360003812538-Install-the-Snyk-CLI)
+   on a local machine according to the operating system.
+2. Run the command `Snyk auth` to authenticate the Snyk account. Follow the
+   prompts to log in and authenticate.
+3. Create the CloudEvents Snyk organization in the [Snyk
+   Dashboard](https://app.snyk.io/dashboard).
+4. In the Snyk Dashboard, go to the organization settings and add the [GitHub
+   Integration](https://docs.snyk.io/integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-integration)
+   for CloudEvents account under `Source Control Integrations.``
 
-* **Objective:** Emphasize to the user the goals and non-goals of CloudEvents.
-* **Action Steps:** Highlight to the user the importance of establishing a
-  robust infrastructure for encryption and data validation practices around the
-  CloudEvents implementation.
+##### Individual SDK Setup
 
-#### Documentation and Knowledge Sharing
+1. In the Snyk Dashboard, click `Add Project` and select the GitHub repository
+   containing the CloudEvents SDK code.
+2. Configure Snyk Policies by defining policies for the project to set
+   thresholds for vulnerability severity levels.
+    * This helps to control when to fail a build or raise an alert.
+    * The [Security Audit performed by Trail of
+      Bits](https://github.com/cloudevents/spec/blob/main/docs/CE-SecurityAudit-2022-10.pdf)
+      could be used as a guide on which types and severities of vulnerabilities
+      should be analyzed.
+3. Enable GitHub Integration for the CloudEvents project to receive automatic
+   pull requests for fixing vulnerabilities, which can streamline the
+   remediation process.
+4. Configure notification settings to alert all interested CloudEvents admins
+   and members for new vulnerabilities or policy violations, which should
+   include at least the maintainers of the specific SDK.
+5. Snyk should also be integrated with the CloudEvents Semantic Versioning
+   control system, so Snyk can automatically update its vulnerability database
+   and scan for new vulnerabilities.
 
-* **Objective:** Continue improving the documentation related to security
-  practices and vulnerabilities within CloudEvents SDKs.
-* **Action Steps:** Create comprehensive and accessible documentation that
-  covers security best practices, identified vulnerabilities, resolved issues,
-  public Software Bill of Materials, and strategies for mitigation of
-  vulnerabilities.
+##### Configure Snyk to perform Dependabot-style checks
 
-#### Community Engagement and Feedback
+1. Go to the CloudEvents SDK project in the Snyk Dashboard.
+2. Navigate to the `Settings` tab.
+3. Under `Policy`, enable the `Auto-fix` option.
 
-* **Objective:** Enhance engagement with the CloudEvents user community for
-  feedback and insights on security
-* **Action Steps:** Establish channels for consistent feedback, administer
-  community surveys, and arrange Q&A sessions. Evaluate GitHub issues, engage in
-  discussions with authors, formulate mitigation or solution strategies, and
-  execute them. Prioritize and resolve security vulnerabilities identified by
-  users through proper triage processes.
+### [Action Item 2] Regular SDK Security Audits
 
-### Potential Ideas
+#### [Action Item 2] Objective
 
-* A supplementary proposal for a bot is the creation of a monitoring system that
-systematically scans the web for recently reported issues or vulnerabilities
-associated with the library dependencies employed in the development of Cloud
-Events SDKs. This automated tool would function to promptly notify the
-development team of emerging threats, enabling them to implement proactive
-measures for timely identification, addressing, and mitigation of potential
-risks.
+Establish a regular schedule for security audits of CloudEvents SDKs.
+
+#### [Action Item 2] Steps
+
+Specify the frequency of audits, assemble the audit team, identify the tools and
+services required, and manage the coordination of audit activities.
+
+### [Action Item 3] Enforce governance rules throughout SDK development
+
+#### [Action Item 3] Objective
+
+Implement a [CI/CD
+Pipeline](https://www.redhat.com/en/topics/devops/what-cicd-pipeline) to enforce
+the CloudEvents governance rules. A CI/CD serves as a dynamic framework guiding
+the entire software development lifecycle, encompassing key stages like
+building, rigorous testing, and seamless code deployment. Given the thorough of
+the CloudEvents Governance rules, integrating a CI/CD pipeline would both ensure
+adherence to these rules and fortify security measures, promoting a more robust
+environment for the development of the SDKs. This would lower the amount of
+human mistakes in this process and, consequently, the chances of new
+vulnerabilities being created.
+
+#### [Action Item 3] Steps
+
+Implementing a CI/CD pipeline for CloudEvents involves using Git for source code
+management and selecting a CI/CD platform like Jenkins or GitHub Actions. The
+pipeline should include a build stage to compile code and create artifacts, and
+a test stage for unit and integration tests, with a focus on validating
+CloudEvents generation and consumption. Artifacts should be stored in container
+registries or repositories, and the deployment stage completes the process by
+deploying to the target environment. This automated pipeline ensures efficient
+and reliable development, testing, and deployment of applications using
+CloudEvents.
+
+### [Action Item 4] Enhanced Encryption and Data Validation Mechanisms
+
+#### [Action Item 4] Objective
+
+Emphasize to the user the goals and non-goals of CloudEvents.
+
+#### [Action Item 4] Steps
+
+Highlight to the user the importance of establishing a robust infrastructure for
+encryption and data validation practices around the CloudEvents implementation.
+
+### [Action Item 5] Documentation and Knowledge Sharing
+
+#### [Action Item 5] Objective
+
+Continue improving the documentation related to security practices and
+  vulnerabilities within CloudEvents SDKs.
+
+#### [Action Item 5] Steps
+
+Create comprehensive and accessible documentation that covers security best
+practices, identified vulnerabilities, resolved issues, public Software Bill of
+Materials, and strategies for mitigation of vulnerabilities.
+
+### [Action Item 6] Community Engagement and Feedback
+
+#### [Action Item 6] Objective
+
+Enhance engagement with the CloudEvents user community for feedback and insights
+on security.
+
+#### [Action Item 6] Steps
+
+Establish channels for consistent feedback, administer community surveys, and
+arrange Q&A sessions. Evaluate GitHub issues, engage in discussions with
+authors, formulate mitigation or solution strategies, and execute them.
+Prioritize and resolve security vulnerabilities identified by users through
+proper triage processes.
 
 ## Appendix
 
