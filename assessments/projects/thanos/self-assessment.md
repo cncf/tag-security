@@ -38,7 +38,7 @@ A table at the top for quick reference information, later used for indexing.
 | Software | <https://github.com/thanos-io/thanos>  |
 | Security Provider | No. |
 | Languages | Golang |
-| SBOM | SBOM generated using FOSSA-cli tool on the latest code base. [Link to SBOM](/assessments/projects/thanos/res/Thanos_SBOM_cyclonedx.bom.json) |
+| SBOM | SBOM generated using the FOSSA-cli tool on the latest code base. [Link to SBOM](/assessments/projects/thanos/res/Thanos_SBOM_cyclonedx.bom.json) |
 | | |
 
 ### Security links
@@ -101,7 +101,7 @@ between the database and front-end is not relevant. The means by which actors ar
 * Store Gateway: Act as gateways to block data stored in object storage.
 * Rule/Ruler: Evaluate recording and alerting rules against data in Thanos.
 * Metric Sources: Components that produce or collect metric data, such as Prometheus, Sidecar and Ruler.
-* Users: Individuals or organizations utilizing Thanos for their metrics storage and querying needs. These can be individuals running direct queries on Thanos or other PromQL compatible tools for visualisation of the metrics provided by Thanos.
+* Users: Individuals or organizations utilizing Thanos for their metrics storage and querying needs. These can be individuals running direct queries on Thanos or other PromQL compatible tools for visualization of the metrics provided by Thanos.
 * Sidecar: Deployed along with Prometheus to fetch its metrics.
 * Receive: Deployed as a separate component which can receive metrics from Prometheus.
 * Compactor: The thanos compact command applies the compaction procedure of the Prometheus 2.0 storage engine to block data stored in object storage and is also responsible for downsampling of data.
@@ -158,7 +158,7 @@ It exposes StoreAPI which can be used by the querier to fetch the historical met
 
 **Querier**  
 It takes queries from the user and translates it to StoreAPI requests for sidecar+prometheus, receive or the store gateway.  
-It exposes the same API as Prometheus which takes queries in the PromQL (Prometheus Query Language). This makes it possible for the User to be a human running an individual query or a tool like Grafana that can use PromQL queries for different visualisations.  
+It exposes the same API as Prometheus which takes queries in the PromQL (Prometheus Query Language). This makes it possible for the User to be a human running an individual query or a tool like Grafana that can use PromQL queries for different visualizations.  
 There is no authentication or authorization done by the querier.
 
 There are two types of deployment models as listed in Actors section:
@@ -183,7 +183,7 @@ In addition Thanos Ruler could be deployed which would add another source for th
 ###### Simplified Step-by-step description of how Thanos works:
 * The user wants metrics.
 * The user initiates a query to gather the metric data.
-* Metric data is pulled from the Thanos store and Thanos sidecar. The querier performs mandatory operations such as filtering, aggregation and compaction.
+* Metric data is pulled from the Thanos' store and Thanos sidecar. The querier performs mandatory operations such as filtering, aggregation and compaction.
     * The Thanos query uses the gRPC protocol to talk to Thanos store and the sidecar.
 * The metrics are delivered to the user.
 
@@ -191,10 +191,10 @@ In addition Thanos Ruler could be deployed which would add another source for th
 
 ###### Basic Deployment:
 * Set up a Prometheus server instance.
-* Have sidecar run alongside the Prometheus instance.
+* Have the sidecar run alongside the Prometheus instance.
 * Give the querier the ability to communicate with sidecar.
 * Deploy Thanos store to fetch metrics stored in long term storage.
-* Set up compactor for compaction and downsampling.
+* Set up the compactor for compaction and downsampling.
 * Configure node exporter container to expose node metrics.
 * Use Grafana for visualization.
 
@@ -302,10 +302,10 @@ A listing of critical security components of the project with a brief descriptio
 * Components communicate securely with TLS. This prevents unauthorized modification of data in transit.
 * High availability and fault tolerance is achieved by distributing Prometheus data across multiple instances and using object storage for long-term storage. Because of redundancy in multiple components, if one part of the system fails, the user can still perform certain actions.
 * Thanos uses Prometheus built in authentication and authorization mechanisms. Users can leverage Prometheus to implement customizable authentication and authorization methods to meet their security needs.
-* Thanos uses Prometheus Role Based Action control system. This means that access to certain functionalities can be prevented based on a user's role and permission.
+* Thanos uses Prometheus' Role Based Action control system. This means that access to certain functionalities can be prevented based on a user's role and permission.
 
 **Security Relevant:**
-A listing of security relevant components of the project wit a brief description.  These are considered important to enhance the overall security of the project, such as deployment configurations, settings, etc.  These should also be
+A listing of security relevant components of the project with a brief description.  These are considered important to enhance the overall security of the project, such as deployment configurations, settings, etc.  These should also be
 included in threat modeling.
 
 * Logging and monitoring of Thanos components to detect security breaches:
@@ -403,7 +403,7 @@ No vulnerabilites have been disclosed in the Thanos project, but the project may
 #### [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/).
 
 The Thanos project has achieved the passing level criteria and has also attained a silver badge in Open Source Security Foundation (OpenSSF) best practices badge.
- [Thanos openssf best practies](https://www.bestpractices.dev/en/projects/3048).
+ [Thanos OpenSSF best practices](https://www.bestpractices.dev/en/projects/3048).
 
   <!--Best Practices. A brief discussion of where the project is at
   with respect to CII best practices and what it would need to
@@ -414,9 +414,9 @@ Many organisations have adopted Thanos and are using our project in production [
 
 
 ###### Aiven
-Aiven is a cloud-native data infrastructure platform that provides fully managed open source database, streaming, and analytics services on 11 clouds and over 150 regions. Aiven offers open source products including PostgreSQL, MySQL, ClickHouse, Cassandra, M3, InfluxDB, along with streaming platforms such as Kafka and Flink. Aiven has a major investment in upstream contributions not altering the true open source solutions which are offered making Aiven the open source data platform for everyone. Aiven also provide ease of use, reliability, scalability, security, and cost-effectiveness for their users.
+Aiven is a cloud-native data infrastructure platform that provides fully managed open source database, streaming, and analytics services on 11 clouds and over 150 regions. Aiven offers open source products including PostgreSQL, MySQL, ClickHouse, Cassandra, M3, InfluxDB, along with streaming platforms such as Kafka and Flink. Aiven has a major investment in upstream contributions not altering the true open source solutions which are offered making Aiven the open source data platform for everyone. Aiven also provides ease of use, reliability, scalability, security, and cost-effectiveness for their users.
 
-Initially, Aiven used InfluxDB but it was unable to handle their scale of fleet and variability of cloud infrasturcture.  M3 fit the bill, architecturally, at the time.  Fast forward to 2022, with the changes at Uber and Chronosphere , contibutions were no longer being made to M3DB.  M3DB was missing a lot of new functionality which were introduced to Prometheus over time. As a result, Aiven had to look for a replacement project.
+Initially, Aiven used InfluxDB but it was unable to handle their scale of fleet and variability of cloud infrastructure.  M3 fit the bill, architecturally, at the time.  Fast forward to 2022, with the changes at Uber and Chronosphere , contibutions were no longer being made to M3DB.  M3DB was missing a lot of new functionality which were introduced to Prometheus over time. As a result, Aiven had to look for a replacement project.
 
 After conducting their research, they saw that their main options were Cortex and Thanos. Cortex has similar problems to M3DB. Thanos was the better fit. It had a vibrant ecosystem, aligned with software foundations, and was Apache 2.0 licensed. Aiven tested Thanos by using proof of concept. After conducting the test, Aiven found that Thanos was feasible and its cost savings were pretty significant. Additionally, Thanos performed better than M3DB and Thanos' queries were faster.
 
@@ -435,14 +435,14 @@ Thanos addressed several problems by:
 * Retaining one year of metrics samples without vertically scaling their Prometheuses.
 * Simplifying management by deploying identical architecture in each data center.
 * Providing a global view of all metrics.
-* Quick implentation of Thanos' components.
+* Quick implementation of Thanos' components.
 
-In early 2020, the SRE task force handed off their proof of concept to the newly-formed Performance and Observability (POE) team for hardening, widespread launch, and ongoing support. As Medallia expanded into public cloud providers, they faced dificulty with incorporating metrics from smaller virtual data centers.
-Despite these challenges, the hybrid solution was able to meet their needs. It allowed them to mantain flexibility and stability while adapting to the changing infrastructure landscape.
+In early 2020, the SRE task force handed off their proof of concept to the newly-formed Performance and Observability (POE) team for hardening, widespread launch, and ongoing support. As Medallia expanded into public cloud providers, they faced difficulty with incorporating metrics from smaller virtual data centers.
+Despite these challenges, the hybrid solution was able to meet their needs. It allowed them to maintain flexibility and stability while adapting to the changing infrastructure landscape.
 
 For the past 3 years, the ability of Thanos components to play various roles within Medallia's architecture to support their ever-increasing scale of Prometheus-based metrics has been extremely valuable.
 
-Medallia is now considering a shift to a 100% remote-write architecture with centralized storage to reduce overall complexity. However, they expect Thanos' components to remain a major part of their solution. They recommend Thanos to anyone facing a need to operate Prometheus metrics at any scale and the abilitiy to mantain flexibility in their architecture to accommodate change.
+Medallia is now considering a shift to a 100% remote-write architecture with centralized storage to reduce overall complexity. However, they expect Thanos' components to remain a major part of their solution. They recommend Thanos to anyone facing a need to operate Prometheus metrics at any scale and the ability to maintain flexibility in their architecture to accommodate change.
 
 To read more, see source [2022-09-08-thanos-at-medallia.md](https://github.com/thanos-io/thanos/blob/main/docs/blog/2022-09-08-thanos-at-medallia.md)
 
@@ -457,7 +457,7 @@ the same question.
 VictoriaMetrics is a fast, cost-effective and  scalable monitoring solution and time series database. 
 
 Key differences: 
-VictoriaMetrics(VM) offers a single node and cluster version, which provides simplicity and ease of deployment, while Thanos has a modular system with  several distinct components. VM has its own custom storage and compression algorithms, while Thanos uses TSDB. VictoriaMetrics uses metricsQL, while Thanos uses PromQL. Thanos relies on object storage and replication, while VictoriaMetrics has a cluster version and stores its data on local storage. Both systems offer downsampling and customizable retention policies. In terms of performance, both systems handle large workloads seamlessly; with Thanos being prefered by some for its modular, customizable features and VictoriaMetrics being preferred by others for its speed, resource efficiency, and utilization of CPU and disk space.
+VictoriaMetrics(VM) offers a single node and cluster version, which provides simplicity and ease of deployment, while Thanos has a modular system with  several distinct components. VM has its own custom storage and compression algorithms, while Thanos uses TSDB. VictoriaMetrics uses metricsQL, while Thanos uses PromQL. Thanos relies on object storage and replication, while VictoriaMetrics has a cluster version and stores its data on local storage. Both systems offer downsampling and customizable retention policies. In terms of performance, both systems handle large workloads seamlessly; with Thanos being prefered by some for its modular and customizable features, and VictoriaMetrics being preferred by others for its speed, resource efficiency, and utilization of CPU and disk space.
 
 Sources:  
 [Thanos vs. VictoriaMetrics](https://last9.io/blog/thanos-vs-victoriametrics/) 
