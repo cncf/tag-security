@@ -62,10 +62,10 @@ Volcano is a cloud native system for high-performance workloads, which has been 
 ### Background
 
 Kubernetes is a portable, extensible, open source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. However, Kubernetes is insufficient with high-performance batch computing. High-performance batch computing requires complex job scheduling and management that is commonly required by many classes of high-performance workloads, including: machine learning/deep learning, bioinformatics/genomics and other big data applications. Volcano enables this requirement by providing powerful batch scheduling capability. It also enables other features such as:
-Support for a rich set of scheduling algorithms
-Enhanced job management using multi-pod jobs, improved error handling and indexed jobs
-Non-intrusive support for mainstream computing frameworks
-Support for multi-architecture computing
+- Support for a rich set of scheduling algorithms
+- Enhanced job management using multi-pod jobs, improved error handling and indexed jobs
+- Non-intrusive support for mainstream computing frameworks
+- Support for multi-architecture computing
 In addition, Volcano inherits the design of Kubernetes APIs, allowing you to easily run applications that require high-performance computing on Kubernetes.
 
 
