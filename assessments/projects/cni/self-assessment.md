@@ -179,7 +179,7 @@ CNI does not document meeting any particular security standards or sub-sections.
 * **Outbound**
   Team members communicate with users through the [#cni channel on the CNCF slack](https://slack.cncf.io/), [cni-dev Google Group](https://groups.google.com/forum/#!forum/cni-dev).
 ### Ecosystem
-* CNI is a vendor-neutral specification so it can be used by any system that chooses to implement it. It is used by Kubernetes, Mesos, CloudFoundry, podman, and CRI-O.
+* CNI is a vendor-neutral specification so it can be used by any system that chooses to implement it. It is used by Kubernetes, Mesos, CloudFoundry, podman, CRI-O, and [more](https://www.cni.dev/docs/#who-is-using-cni).
 
 ## Security issue resolution
 
