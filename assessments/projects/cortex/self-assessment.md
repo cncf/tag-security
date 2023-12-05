@@ -36,8 +36,8 @@ A table at the top for quick reference information, later used for indexing.
 | -- | -- |
 | Software | https://github.com/cortexproject/cortex |
 | Security Provider | No |
-| Languages | Go, Makefile, Shell, HTML, Dockerfile, SCSS |
-| SBOM | [Cortex SBOM](sbom.json)  |
+| Languages | Go |
+| SBOM | [Cortex SBOM](sbom.json) `Generated using cyclonedx-gomod`  |
 | | |
 
 ### Security links
@@ -184,109 +184,37 @@ Cortex is a CNCF Incubating project and a highly scalable, long-term storage for
 
 ### 1. Spoofing:
 
-**Threat:** 
-- Unauthorized access to Cortex components or data.
-
-**Attack:**
-- An attacker gains access to the Cortex system by impersonating a legitimate user or service.
-
-**Components at Risk:**
-- Authentication Mechanisms (used by all services)
-- External Reverse Proxy (handling authentication and authorization)
-
-**Mitigation:**
-- Ensure the robustness of authentication mechanisms.
-- Monitor and audit external proxy logs for unauthorized access attempts.
+- **Threat:** Unauthorized access to Cortex components or data.
+- **Application to Cortex:** Previously considered out of scope. Kubernetes network policies can restrict component access.
+- **Mitigation:** Implementation and fine-tuning of Kubernetes network policies to ensure restricted access.
 
 ### Tampering:
-
-**Threat:** 
-- Unauthorized modification of data or configuration settings.
-
-**Attack:** 
-- An attacker modifies data in the storage backend or tampers with configurations to disrupt the system or compromise data integrity.
-
-**Components at Risk:**
-- Configuration files (used by various services)
-- Write Path (ingesters, distributors)
-
-**Mitigation:**
-- Implement integrity checks and digital signatures for configuration files.
-- Use encryption to protect data in transit and at rest.
+- **Threat:** Unauthorized modification of data or configuration settings.
+- **Application to Cortex:** Not applicable as Kubernetes containers can’t change their configuration files.
+- **Mitigation:** Rely on the inherent security features of Kubernetes to prevent tampering.
 
 ### Repudiation:
-
-**Threat:** 
-- Denying the occurrence of certain actions or events within Cortex.
-
-**Attack:** 
-- An attacker manipulates or deletes logs to hide their activities, making it difficult to trace unauthorized access or modifications.
-
-**Components at Risk:**
-- Logging Mechanism (implemented by all services)
-- HA Tracker (in Distributor)
-
-**Mitigation:**
-- Implement tamper-evident logs with proper timestamping.
-- Regularly review, audit, and protect logs from unauthorized modifications.
+- **Threat:** Denying the occurrence of certain actions or events within Cortex.
+- **Application to Cortex:** Considered out of scope. Secure log gathering and preservation methods are available in Kubernetes.
+- **Mitigation:** Utilize Kubernetes logging mechanisms to ensure traceability and log integrity.
 
 ### Information Disclosure:
-
-**Threat:** 
-- Unauthorized access to sensitive information within Cortex.
-
-**Attack:** 
-- An attacker gains access to tenant data, configurations, or other sensitive information stored within the Cortex system.
-
-**Components at Risk:**
-- Blocks Storage (TSDB)
-- Query Frontend (optional service)
-
-**Mitigation:**
-- Apply proper access controls and encryption to protect sensitive information.
-- Regularly audit and monitor access to sensitive data.
+- **Threat:** Unauthorized access to sensitive information within Cortex.
+- **Application to Cortex:** Not a concern due to network policies in Kubernetes that prevent unauthorized access.
+- **Mitigation:** Proper configuration of Kubernetes network policies to protect sensitive data.
 
 ### Denial of Service (DoS):
-
-**Threat:** 
-- Disrupting or degrading the availability of Cortex services.
-
-**Attack:** 
-- Overloading the system with a high volume of requests, causing it to become unresponsive or slow.
-
-**Components at Risk:**
-- Distributor (handling incoming samples)
-- Querier (handling queries)
-
-**Mitigation:**
-- Implement rate limiting and load balancing.
-- Use DDoS protection mechanisms and regularly test system resilience.
+- **Threat:** Disrupting or degrading the availability of Cortex services.
+- **Application to Cortex:** A well-configured Cortex system is resilient to DoS attacks.
+- **Mitigation:** Implement rate limiting and series per tenant limits to prevent DoS attacks.
 
 ### Elevation of Privilege:
+- **Threat:** Unauthorized escalation of user privileges within Cortex.
+- **Application to Cortex:** Not applicable in Cortex as there is no concept of a superuser or admin user.
+- **Mitigation:** Ensure adherence to Kubernetes access controls.
 
-**Threat:** 
-- Unauthorized escalation of user privileges within Cortex.
-
-**Attack:**
-- An attacker gains higher-level access or control over Cortex components, allowing them to perform actions beyond their authorized scope.
-
-**Components at Risk:**
-- Authentication and Authorization Mechanisms
-- Ingesters (handling write path)
-
-**Mitigation:**
-- Apply the principle of least privilege.
-- Regularly review and update access controls.
-
-### Specific to Microservices Architecture:
-
-**Components at Risk:**
-- Communication Channels between Microservices
-- Dependencies and Libraries (used by various services)
-
-**Mitigation:**
-- Ensure secure communication channels and authentication between microservices.
-- Regularly update and patch underlying dependencies to mitigate known vulnerabilities.
+### Additional Considerations:
+- **Alertmanager Security:** Address security threats around Alertmanager, which have already been mitigated. Focus on ensuring these mitigations remain effective.
 
 ## Security issue resolution
 
@@ -304,6 +232,20 @@ Incident Response:
 
 ## Appendix
 
-- Cortex has achieved an Open Source Security Foundation (OpenSSF) best practices badge at passing level [Link](https://www.bestpractices.dev/en/projects/6681)
-- Security Vulerabilities: [Link](https://github.com/cortexproject/cortex/issues?q=label%3Atype%2Fsecurity)
-- [Cortex: How to Run a Rock Solid Multi-Tenant Prometheus](https://youtu.be/Pl5hEoRPLJU?si=VgK33c0DxWvF6LOj)
+### Known Issues Over Time
+- **CVE-2023-29405 to CVE-2023-29403:** Found in version v1.15.3, these vulnerabilities in the Go binary were fixed in Go version 1.20.5.
+- **CVE-2023-2975:** Affects v1.15.3 with implications for libssl3 and libcrypto3.
+- **CVE-2022-4304:** In v1.14.1, this timing-based side-channel vulnerability in OpenSSL was addressed in OpenSSL 1.1.1t-r0.
+- **CVE-2023-0215:** Also in v1.14.1, this vulnerability related to OpenSSL's ASN.1 data processing was fixed in OpenSSL 1.1.1t-r0.
+
+### CII Best Practices
+The Cortex project does not explicitly document its compliance with the Core Infrastructure Initiative (CII) Best Practices. However, as a widely used and community-driven project, it likely adheres to several best practices, including regular code reviews, automated testing, and secure coding standards, crucial for maintaining open-source software's security and reliability.
+
+### Case Studies
+Detailed case studies or specific real-world use cases for Cortex were not found. However, Cortex is designed for large-scale cloud-native environments, suggesting its use in extensive monitoring and analysis of time-series data, showcasing its scalability, long-term storage, and multi-tenancy capabilities.
+
+### Related Projects / Vendors
+Comparing Cortex with similar projects like Thanos reveals key differences:
+- **Thanos:** A CNCF Incubating project known for its highly available Prometheus setup with long-term storage capabilities.
+- **Cortex:** Distinguished by its horizontally scalable architecture, high availability, multi-tenant support, and focus on long-term storage for Prometheus
+
