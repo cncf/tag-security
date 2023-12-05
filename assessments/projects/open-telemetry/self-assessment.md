@@ -211,17 +211,13 @@ Encryption of telemetry data in OpenTelemetry is critical for protecting data co
 
 These mechanisms in OpenTelemetry ensure that only authenticated and authorized entities can interact with the system, playing a crucial role in safeguarding against unauthorized access and manipulation. In threat modeling, they are key to evaluating the potential risks of system penetration and data breaches.
 
-**API Security**
-
-OpenTelemetry's API security involves securing data transmission endpoints against common vulnerabilities. This is vital for preventing malicious attacks through these interfaces, making API security a critical element in threat modeling for external interaction risks.
-
 **Data Integrity Checks**
 
 Ensuring the integrity of telemetry data in OpenTelemetry is essential for reliable system monitoring and decision-making. Data integrity checks are crucial in threat modeling to identify potential manipulation threats and maintain the trustworthiness of operational data.
 
 **Context Propagation Security**
 
- In OpenTelemetry, secure context propagation is critical for maintaining trace integrity across services. It's a key defense against trace manipulation, playing an important role in threat modeling, especially in distributed tracing scenarios.
+In OpenTelemetry, secure context propagation is critical for maintaining trace integrity across services. The context in distributed tracing includes information necessary to maintain the trace's continuity as it moves from one service to another. This typically includes trace identifiers, span identifiers, and other metadata that links individual service calls to the overarching trace. Distributed tracing tracks the journey of a request as it traverses through these microservices, creating a trace that represents the entire flow. It's a key defense against trace manipulation, playing an important role in threat modeling, especially in distributed tracing scenarios.
 
 
 ### Security Relevant
