@@ -45,7 +45,7 @@ document](CE-maintainers-communications.md).
   * [Conclusion](#conclusion)
   * [Recommendations](#recommendations)
 * [Action Items](#action-items)
-  * [Immediate Priorities](#immediate-priorities)
+  * [Immediate Priority](#immediate-priority)
   * [Long-Term Strategies](#long-term-strategies)
   * [Potential Ideas](#potential-ideas)
 * [Appendix](#appendix)
@@ -667,7 +667,7 @@ and install updates to their CloudEvents SDK installation.
 
 ## Action Items
 
-### Immediate Priorities
+### Immediate Priority
 
 #### Setup Snyk for SDKs
 
