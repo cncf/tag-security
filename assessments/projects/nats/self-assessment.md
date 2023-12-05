@@ -174,6 +174,8 @@ This document provides the CNCF TAG-Security with an initial understanding of NA
 Threat modeling link: 
 https://github.com/ddk304/tag-security/blob/main/assessments/projects/nats/doc/threat-modeling.md 
 
+NATS Security Document:
+https://docs.nats.io/nats-concepts/security
 
 ### Critical
 Critical security components of the project with a brief description of their importance. These are used for threat modeling and are considered critical design elements that make the product itself secure and are not configurable.
