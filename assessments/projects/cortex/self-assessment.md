@@ -27,6 +27,7 @@ Express Learning course provided by Linux Foundation Training & Certification:
 * [Secure development practices](#secure-development-practices)
 * [Security issue resolution](#security-issue-resolution)
 * [Appendix](#appendix)
+* [Action Items](#action-items)
 
 ## Metadata
 
