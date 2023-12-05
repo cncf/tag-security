@@ -57,12 +57,12 @@ CoreDNS's plugin-driven architecture empowers users to customize their DNS infra
 
 ### Actors
 **CoreDNS Server**</br>
-On startup, CoreDNS runs servers, each defined by the zones and ports it serves. Each server contains a list of external plugins and manages its own plugin chain that defines how a query is processed. Plugins are server components and not individual actors since a vulnerability in a plugin could compromise the server, vice versa.
+On startup, CoreDNS runs servers, each defined by the zones and ports it serves. Each server contains a list of plugins and manages its own plugin chain that defines how a query is processed. Plugins are server components and not individual actors since a vulnerability in a plugin could compromise the server, vice versa.
 
 ### Actions
 * Create DNS servers: To handle DNS queries and tasks for other services running in a network.
-* Process DNS queries: Procss DNS queries sent by clients such as web browsers, terminal utilities, etc. These queries can be sent over UDP, TCP, or gRPC. DNS over HTTPS (DoH) or DNS over TLS (DoT) can also be used.
-* Return DNS Replies: After a plugin chain processes a DNS query, CoreDN sends an appropriate DNS reply back to the client.
+* Process DNS queries: Process DNS queries sent by clients such as web browsers, terminal utilities, etc. These queries can be sent over UDP, TCP, or gRPC. DNS over HTTPS (DoH) or DNS over TLS (DoT) can also be used.
+* Return DNS Replies: After a plugin chain processes a DNS query, CoreDNS sends an appropriate DNS reply back to the client.
 * Log data: Query, response, and error messages can be logged.
 * Collect operational metrics: The Prometheus plugin can be used to export operational metrics.
 * Handle secrets: Secrets such as private keys and credentials for the cloud services are handled and processed by CoreDNS.
@@ -86,8 +86,6 @@ On startup, CoreDNS runs servers, each defined by the zones and ports it serves.
 ### Non-goals
 * Full Recursive DNS Capabilities:
     * CoreDNS does not aim to support full recursion like traditional DNS servers (e.g., BIND), relying instead on forwarders for comprehensive domain resolution.
-* Universal DNS Server Replacement:
-    * It is not intended to be a one-size-fits-all replacement for all types of DNS servers, especially in environments not utilizing containerized or microservices architectures.
 * Handling Non-Standard Protocols and Functions:
     * CoreDNS is not designed to support non-standard or deprecated DNS protocols and functions that fall outside the common use cases in modern distributed systems.
 * Unlimited Resource Utilization:
@@ -266,3 +264,5 @@ By addressing these areas, Coredns can demonstrate a heightened commitment to se
   - CoreDNS is purpose-built for high-performance and scalability, making it an excellent choice for large-scale deployments.
   - Dnsmasq is a lightweight and easily configurable option, best suited for small networks or embedded devices.
   - Each DNS server serves distinct purposes, catering to varying requirements in terms of performance, scalability, and security.
+
+
