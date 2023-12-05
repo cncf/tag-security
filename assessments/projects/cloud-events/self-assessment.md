@@ -41,6 +41,7 @@ software.
   * [Potential threats](#potential-threats)
   * [Conclusion](#conclusion)
   * [Recommendations](#recommendations)
+* [Action Items](#action-items)
 * [Appendix](#appendix)
   * [Known Issues Over Time](#known-issues-over-time)
   * [CII Best Practices](#cii-best-practices)
@@ -654,16 +655,37 @@ and install updates to their CloudEvents SDK installation.
 
 ## Action Items
 
-Still in discussion with the Project 
+Action Items
+Immediate Priorities
+1. Bot Implementation for SDK Monitoring
+Objective: Develop and deploy an automated bot system to monitor the health of various SDKs.
+Action Steps: Collaborate with the team to design the bot's functionalities, ensuring it can assess maintenance status, issue resolution, and patch updates.
 
-To solve some of the concerns mentioned above, CloudEvents has undertaken a
-strategic initiative to rectify these issues through the implementation of a
-dedicated bot. This automated system is designed to manage and monitor concerns
-within the CloudEvent SDKs, ensuring their resolution. Its primary functions
-include assessing the if libraries are being maintained, validating the active
-involvement of CloudEvent developers and maintainers in addressing identified
-issues, and overseeing the judicious application of requisite patches for
-effective issue resolution.
+2. Addressing Security Vulnerabilities
+Objective: Triage and address the security vulnerabilities identified in the Trail of Bits audit.
+Action Steps: Review the audit report, prioritize the vulnerabilities based on severity, and develop patches or updates.
+
+3. Regular SDK Security Audits
+Objective: Establish a regular schedule for security audits of CloudEvents SDKs.
+Action Steps: Define audit frequency, select auditing tools or services, and coordinate audit activities.
+
+Long-Term Strategies
+4. Automated Vulnerability Scanning for SDK Dependencies
+Objective: Implement a system to automatically scan for vulnerabilities in SDK dependencies.
+Action Steps: Research and integrate tools for continuous scanning of dependencies. Establish a notification system for newly identified vulnerabilities.
+
+5. Enhanced Encryption and Data Validation Mechanisms
+Objective: Strengthen the encryption and data validation practices within CloudEvents SDKs.
+Action Steps: Assess current encryption and data validation methods, identify improvements, and implement enhancements.
+
+6. Documentation and Knowledge Sharing
+Objective: Improve the documentation related to security practices and vulnerabilities within CloudEvents.
+Action Steps: Create comprehensive, accessible documentation that covers security best practices, known vulnerabilities, and mitigation strategies.
+
+7. Community Engagement and Feedback
+Objective: Enhance engagement with the CloudEvents user community for feedback and insights on security.
+Action Steps: Establish channels for regular feedback, conduct community surveys, and organize Q&A sessions.
+
 
 ### Potential Ideas
 
