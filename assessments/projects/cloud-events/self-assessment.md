@@ -712,7 +712,7 @@ provide guidelines for ongoing usage within the development environment.
    Dashboard](https://app.snyk.io/dashboard).
 4. In the Snyk Dashboard, go to the organization settings and add the [GitHub
    Integration](https://docs.snyk.io/integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-integration)
-   for CloudEvents account under `Source Control Integrations.``
+   for CloudEvents account under `Source Control Integrations.`
 
 ##### Individual SDK Setup
 
