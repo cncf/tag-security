@@ -63,16 +63,18 @@
    </td>
    <td><strong>URL</strong>
    </td>
-   <td>
-   </td>
   </tr>
   <tr>
-   <td>Security file
-   </td>
-   <td><a href="https://github.com/open-telemetry/opentelemetry.io/security/policy">https://github.com/open-telemetry/opentelemetry.io/security/policy</a>
+   <td>Security best practices
    </td>
    <td><a href="https://github.com/open-telemetry/opentelemetry-collector/blob/main/docs/security-best-practices.md">https://github.com/open-telemetry/opentelemetry-collector/blob/main/docs/security-best-practices.md</a>
    </td>
+   <tr>
+   <td>OpenTelemetry Website Security Policy
+   </td>
+   <td><a href="https://github.com/open-telemetry/opentelemetry.io/security/policy">https://github.com/open-telemetry/opentelemetry.io/security/policy</a>
+   </td>
+   </tr>
 </table>
 
 
@@ -85,7 +87,7 @@ OpenTelemetry is an observability framework and toolkit that helps developers un
 
 OpenTelemetry is an Observability framework and toolkit designed to create and manage telemetry data such as traces, metrics, and logs. Opentelemetry provides a standard protocol for dealing with telemetry data, language SDKs, a collector that receives, processes, and exports telemetry data, as well as other documentation and tools for telemetry.
 
-The OpenTelemetry Collector offers a vendor-agnostic implementation on how to receive, process and export telemetry data. In addition, it removes the need to run, operate and maintain multiple agents/collectors in order to support open-source telemetry data formats (e.g. Jaeger, Prometheus, etc.) to multiple open-source or commercial back-ends. The Collector receives telemetry using the OTL Protocol from external services, it then processes the data and exports it to further Observability frontends/APIs such as Jaeger and Prometheus.
+The OpenTelemetry Collector offers a vendor-agnostic implementation on how to receive, process and export telemetry data. In addition, it removes the need to run, operate and maintain multiple agents/collectors in order to support open-source telemetry data formats (e.g. Jaeger, Prometheus, etc.) to multiple open-source or commercial back-ends. The Collector may utilize one or more Receivers which accept data from external services in a wide variety of telemetry data formats, it then processes the data and exports it to further Observability frontends/APIs such as Jaeger and Prometheus.
 
 OpenTelemetry does two important things:
 
@@ -113,13 +115,13 @@ While the components (Receiver, Processor, Exporter) are ostensibly separate par
 
 The Receiver is responsible for accepting telemetry data, and as such, should use encryption communicating with telemetry providers. A compromised Receiver would allow the attacker to obtain unsanitized telemetry data with sensitive information.The Processor may also be misconfigured to prevent telemetry from reaching downstream services/components.
 
-The Processor component of the Collector is reponsible for the sanitization of incoming telemetry data. It ensures that any downstream components will not receive data that is confidential or malicious. Care must be taken so that the Processor itself is not susceptible to malicious payloads inside telemetry data and that the raw data is not leaked to attackers. The Processor may also be used to modify telemetry data, or prevent telemetry from reaching downstream services/components.
+The Processor component of the Collector is reponsible for the sanitization of incoming telemetry data. It ensures that any downstream components will not receive data that is confidential or malicious. While the Processor is responsible for sanitizing data, it should also not be vulnerable to any sort of injection which would allow an attacker to take control of the Processor. The Processor may also be used to modify telemetry data, or prevent telemetry from reaching downstream services/components.
 
 The Exporter is responsible for delivering the processed telemetry data to telemetry frontends for visualization and storage. It should use encryption to safeguard the data as well. A compromised Exporter can be used to leak sensitive information if the data was not properly sanitized, or provide a means to attack any systems downstream of the Collector. It may also be misconfgured to prevent any exports of telemetry to downstream services.
 
 **Downstream Services**
 
-OpenTelemetry can export data to Prometheus, Jaeger, or in the OTLP format. While these actors do not influence the rest of the OpenTelemetry ecosystem directly, they are the recipients of data provided by the Collector, or in the case of Collectorless setups, the telemetry sources. If the telemetry data passing through the Collector is not sanitized properly, these services are now vulnerable.
+OpenTelemetry can export data to Prometheus, Jaeger, or in the OTLP format, among others. While these actors do not influence the rest of the OpenTelemetry ecosystem directly, they are the recipients of data provided by the Collector, or in the case of Collectorless setups, the telemetry sources. If the telemetry data passing through the Collector is not sanitized properly, these services are now vulnerable to injection attacks inside the telemetry payload. Furthermore, they might now expose sensitive data themselves.
 
 Compromising these services would allow an attacker to leak sensitive information, modify telemetry data, or delete all of the telemetry data collected.
 
@@ -253,32 +255,32 @@ Not applicable.
 
 ### Development Pipeline
 
-All code is maintained on [Github](https://github.com/open-telemetry/opentelemetry.io/tree/main). 
+All code is maintained on [Github](https://github.com/open-telemetry/opentelemetry.io/tree/main).
 
 * Contributions and Changes
-  * Code changes are submitted via Pull Requests (PRs) and must be signed and verified. 
+  * Code changes are submitted via Pull Requests (PRs) and must be signed and verified.
   * Commits to the main branch directly are not allowed.
 * Code Review
-  * Changes must be reviewed and merged by the project maintainers. 
+  * Changes must be reviewed and merged by the project maintainers.
   * The code is reviewed by multiple members from various teams and then approved by all of the reviewers before passing the check.
 * Automated Testing
-  * In each PR, the code has to pass through various security checks and vulnerability analysis, to find if the code is secure and would not fail basic testing. 
+  * In each PR, the code has to pass through various security checks and vulnerability analysis, to find if the code is secure and would not fail basic testing.
   * Tools like CodeQL and GoSec have been adopted for security scanning.
-  * The project utilizes various vulnerability tests, unit tests and neutral tests to quantify whether the changes would be safe in basic context, before the reviews done by the project maintainers. 
+  * The project utilizes various vulnerability tests, unit tests and neutral tests to quantify whether the changes would be safe in basic context, before the reviews done by the project maintainers.
 * Dependency Management
-  * The project regularly updates its dependencies and check for vulnerabilities and keeps its github updated at all times asynchronously. 
+  * The project regularly updates its dependencies and check for vulnerabilities and keeps its github updated at all times asynchronously.
 
 ### Communication Channels
 * Internal
   * The OpenTelemetry team mostly uses platforms like GitHub, Slack, or email lists for internal communications within the teams.
 * Inbound
-  * Users and contributors to the OpenTelemetry project can communicate with the OpenTelemetry team via GitHub issues, mailing lists, CNCF Slack channels and through Discord Communications as well. 
+  * Users and contributors to the OpenTelemetry project can communicate with the OpenTelemetry team via GitHub issues, mailing lists, CNCF Slack channels and through Discord Communications as well.
 * Outbound
   * The updates and announcements from OpenTelemetry are made through OpenTelemetry Blog, GitHub, CNCF mailing lists, and social media channels.
 
 ### Ecosystem
 
-OpenTelemetry is a toolkit to design and export telemetry data. The project is supported for both developers and operations teams to make it much more viable in any context. It has support and instrumentation in almost all of the popular programming languages. It is a CNCF Incubation project and integrates with most of the other projects, namely, Kubernetes and others. It is also used by major companies such as JP Morgan, Splunk, etc. 
+OpenTelemetry is a toolkit to design and export telemetry data. The project is supported for both developers and operations teams to make it much more viable in any context. It has support and instrumentation in almost all of the popular programming languages. It is a CNCF Incubation project and integrates with most of the other projects, namely, Kubernetes and others. It is also used by major companies such as JP Morgan, Splunk, etc.
 
 
 ## Security Issue Resolution
@@ -286,18 +288,18 @@ OpenTelemetry is a toolkit to design and export telemetry data. The project is s
 
 ### Responsible Disclosure Process
 
-For any projects under the OpenTelemetry project, any security issue is not to be reported through Github but through the steps defined in the [Security Policy](https://github.com/open-telemetry/opentelemetry.io/security/policy). The way to report any Vulnerability is through 'Report a Vulnerability' and creating a private channel between the reporter and the maintainers. 
+For any projects under the OpenTelemetry project, any security issue is not to be reported through Github but through the steps defined in the [Security Policy](https://github.com/open-telemetry/opentelemetry.io/security/policy). The way to report any Vulnerability is through 'Report a Vulnerability' and creating a private channel between the reporter and the maintainers.
 
-The technical team recieves the message for the report and they are required to provide the issue to the respective teams, as the respective team might not have the private key to decrypt the report we have sent throught the private channel of communcation. 
+The technical team recieves the message for the report and they are required to provide the issue to the respective teams, as the respective team might not have the private key to decrypt the report we have sent throught the private channel of communcation.
 
 
 ### Incident Response
 
 See [Security Policy](https://github.com/open-telemetry/opentelemetry.io/security/policy) for a description for how incidents should be communicated, triaged, confirmed, and notified.
 
-The OpenTelemetry team likely follows a structured process for patching a vulnerabilty, releasing it as soon as possible, and publicly communicating about vulnerabilities. 
+The OpenTelemetry team likely follows a structured process for patching a vulnerabilty, releasing it as soon as possible, and publicly communicating about vulnerabilities.
 
-Reporters are expected to comply with agreed-upon dates for public disclosure, ensuring a responsible and coordinated release of information according to the Policy mentioned before. 
+Reporters are expected to comply with agreed-upon dates for public disclosure, ensuring a responsible and coordinated release of information according to the Policy mentioned before.
 
 
 ## Appendix
