@@ -172,7 +172,7 @@ This document provides the CNCF TAG-Security with an initial understanding of NA
 ## Security functions and features
 
 Threat modeling link: 
-https://github.com/ddk304/tag-security/blob/main/assessments/projects/nats/doc/threat-modeling.md 
+[https://github.com/ddk304/tag-security/blob/main/assessments/projects/nats/doc/threat-modeling.md ](https://github.com/Ricardo-A-Zapata/tag-security/blob/main/assessments/projects/nats/doc/threat-modeling.md)
 
 NATS Security Document:
 https://docs.nats.io/nats-concepts/security
