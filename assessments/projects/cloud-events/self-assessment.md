@@ -194,9 +194,7 @@ CloudEvents](https://github.com/cloudevents/spec/blob/main/cloudevents/primer.md
 * Define interoperability of event systems that allow services to produce or
   consume events, where the producer and consumer can be developed and deployed
   independently.
-* Establish a structured framework for the exchange of event data among services
-  by standardizing the location for storing and retrieving common metadata
-  related to events.
+* Establish a structured framework for the exchange of event data among services by standardizing the location for storing and retrieving common metadata related to events.
 * Provide specifications for serializing events in different formats and
   protocols.
 
@@ -231,8 +229,7 @@ CloudEvents.
 This document provides the CNCF TAG-Security with an initial understanding of
 CloudEvents to assist in a joint-assessment, necessary for projects under
 incubation.  Taken together, this document and the joint-assessment serve as a
-cornerstone since CloudEvents is [under review for a Graduation
-status](https://github.com/cncf/toc/pull/996).
+cornerstone as CloudEvents is under review for a Graduation status.
 
 ## Security functions and features
 
@@ -277,10 +274,7 @@ the ability to interpret the content within the `data` attribute.
 #### Event Data Integrity
 
 CloudEvents does not focus on defining the methods for safeguarding data
-integrity. Therefore, it is the choice of the user/developer to address this
-aspect. One approach to enhance security is to apply encryption to event data
-specific to the domain, restricting visibility to trusted entities. The choice
-of the encryption mechanism is collaboratively determined by event producers and
+integrity. Therefore, it is the choice of the user/developer to address this aspect. One approach to enhance security is to apply encryption to event data specific to the domain, restricting visibility to trusted entities. The choice of the encryption mechanism is collaboratively determined by event producers and
 consumers, which is an implementation detail defined by the user.
 
 #### Privacy and Sensitive Information Handling
@@ -537,9 +531,7 @@ CloudEvents](#contributing-to-cloudevents).
   managed by the underlying infrastructure and transport protocols used for
   sending and receiving CloudEvents.
 
-* **Cryptography:** CloudEvents does not provide an encryption methods or
-  cryptographic implemntations, all implementations are left up to the user/
-  developers choice.
+* **Cryptography:** CloudEvents does not provide an encryption methods or cryptographic implemntations, all implementations are left up to the user/ developers choice.
 
 * **Audit and logging:** This is typically handled by the platforms and services
   that implement CloudEvents.
@@ -667,7 +659,7 @@ Trail of Bits have already been addressed.
 
 Below are listed the findings by Trail Of Bits with their descriptions.
 
-##### [Java SDK] Reliance on default encoding
+##### [Java SDK](https://github.com/cloudevents/sdk-java) Reliance on default encoding
 
 * **Severity:** Undetermined
 * **Difficulty:** Low
@@ -699,7 +691,7 @@ automatically audited each module due to time constraints and ease of
 remediation. Manual review of exploitability within the SDK's context was not
 conducted.
 
-##### [JavaScript SDK] Potential XSS in httpTransport()
+##### [JavaScript SDK](https://github.com/cloudevents/sdk-javascript) Potential XSS in httpTransport()
 
 * **Severity:** Undetermined
 * **Difficulty:** Low
@@ -727,7 +719,7 @@ open-source snyk tool automatically audited each module. Due to time constraints
 and ease of remediation, manual review of exploitability within the SDK's
 context was skipped.
 
-##### [Go SDK] Downcasting of 64-bit integer
+##### [Go SDK](https://github.com/cloudevents/sdk-go) Downcasting of 64-bit integer
 
 * **Severity:** Undetermined
 * **Difficulty:** Low
@@ -752,7 +744,7 @@ The Go http.server API offers four timeouts, including ReadHeaderTimeout.
 Failure to set a value for this timeout makes the listener instance susceptible
 to Slowloris DoS attacks.
 
-##### [CSharp SDK] Outdated Vulnerable Dependencies
+##### [CSharp SDK](https://github.com/cloudevents/sdk-csharp) Outdated Vulnerable Dependencies
 
 * **Severity:** Undetermined
 * **Difficulty:** Low
