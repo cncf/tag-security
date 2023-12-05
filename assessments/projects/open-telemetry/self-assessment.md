@@ -305,7 +305,7 @@ Reporters are expected to comply with agreed-upon dates for public disclosure, e
 
 ### Known Issues Over Time
 
-The Enhancements Telemetry security-related issues are labeled with "Enhancement", and the fixes are marked with "dependencies." it can be queried using[ https://github.com/open-telemetry/opentelemetry.io/issues](https://github.com/open-telemetry/opentelemetry.io/issues).
+The Enhancements Telemetry security-related issues can be searched using the keywords "Security type:pr," and the fixes can be searched using the keywords "fix type:pr." it can be queried using[ https://github.com/open-telemetry/opentelemetry.io/issues](https://github.com/open-telemetry/opentelemetry.io/issues).
 
 Consider security when making pull requests, and need to consider the possibility of exposing sensitive information.
 
@@ -333,7 +333,7 @@ As a vendor-neutral open-source observability framework, Opentelemetry helps use
 OpenTelemetry is vendor and tool-agnostic, and it can be used with different observability backends, improving overall ease of use. Enable OpenTelemetry through native OTLP, helping add-on products deepen the connection with OpenTelemetry. Regarding observability backends that OpenTelemetry can be used together, there are Jaeger, Prometheus, Grafana, etc.
 
 
-* **Prometheus**: Both Prometheus and OpenTelemetry can collect metrics across applications and services. However, Prometheus focuses more on the pull model, and OpenTelemetry includes both push and pull models. In addition, combining built-in alerts in Prometheus and OpenTelemetry helps create an observability ecosystem and improve stability.
+* **Prometheus**: Both Prometheus and OpenTelemetry can collect metrics across applications and services. However, Prometheus focuses more on the pull model, and OpenTelemetry includes both push and pull models. In addition, OpenTelemetry does not have built-in alarms, but Prometheus does. OpenTelemetry combining built-in alerts in Prometheus helps create an observability ecosystem and improve stability.
 * **Grafana**: OpenTelemetry and Grafana complement each other, and the visualization in Grafana's dashboard can better help analyze various types of data collected from OpenTelemetry. In addition, Grafana supports enable interoperability from OpenTelemetry by calling on SDKs and application observability standards, among others, integrating telemetry into a unified open-source monitoring backend.
 * **OpenTelemetry**: Same
 * **Jaeger**: Jaeger is a distributed tracing system that can be started and run in a local environment. Users can first use OpenTelemetry to detect various indicators of the application and then send the tracking data to Jaeger. The advantage of using Jaeger is that it makes finding the source of latency and lack of concurrency easier. All in all, Jaeger is more focused, while OpenTelemetry is a broader framework.
