@@ -183,11 +183,12 @@ In case of anomalies or incidents detected through telemetry data, alerts are ge
 
 * Use API tokens and TLS network security encryption to encrypt sensitive information to prevent third parties from querying OpenTelementry telemetry data.
 * Prevent external access to internal resources. When running Open Telemetry, there should be no privileged access.
+* The agents must authenticate themselves to the backend systems where the data is sent.
 
 
 ## Self-Assessment Use
 
-Our group created this self-assessment to analyze the overall security of OpenTelemetry. This document mainly helps users get a preliminary understanding of OpenTelemetry’s security architecture and security development practices. In addition, it allows users to have a deeper understanding of the security functions of OpenTelemetry, helping users better develop, use, and telemetry the data they need.
+Our team comprises graduate students from different professional backgrounds, and each member is rich in insight. We have come together with a shared commitment to create this self-assessment to analyze the overall security of OpenTelemetry. This document mainly helps users get a preliminary understanding of OpenTelemetry’s security architecture and security development practices. In addition, it allows users to have a deeper understanding of the security functions of OpenTelemetry, helping users better develop, use, and telemetry the data they need.
 
 All in all, this document helps explain this CNCF open source project, pave the way for the project to seek graduation, provide clear guidance during the incubation process, and bring a more transparent and clear security audit to the overall project.
 
