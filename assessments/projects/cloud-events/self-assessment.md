@@ -45,9 +45,17 @@ document](CE-maintainers-communications.md).
   * [Conclusion](#conclusion)
   * [Recommendations](#recommendations)
 * [Action Items](#action-items)
-  * [Immediate Priority](#immediate-priority)
-  * [Long-Term Strategies](#long-term-strategies)
-  * [Potential Ideas](#potential-ideas)
+  * [[Action Item 1] Setup Snyk for SDKs](#action-item-1-setup-snyk-for-sdks)
+  * [[Action Item 2] Regular SDK Security
+    Audits](#action-item-2-regular-sdk-security-audits)
+  * [[Action Item 3] Enforce governance rules throughout SDK
+    development](#action-item-3-enforce-governance-rules-throughout-sdk-development)
+  * [[Action Item 4] Enhanced Encryption and Data Validation
+    Mechanisms](#action-item-4-enhanced-encryption-and-data-validation-mechanisms)
+  * [[Action Item 5] Documentation and Knowledge
+    Sharing](#action-item-5-documentation-and-knowledge-sharing)
+  * [[Action Item 6] Community Engagement and
+    Feedback](#action-item-6-community-engagement-and-feedback)
 * [Appendix](#appendix)
   * [Known Issues Over Time](#known-issues-over-time)
   * [CII Best Practices](#cii-best-practices)
@@ -82,7 +90,7 @@ document](CE-maintainers-communications.md).
 events. While these events are widely employed in various industries, the
 absence of standardized guidelines for their composition has led to significant
 divergence among developers. This lack of uniformity makes programmers create
-distinct event handling logic for each event source, impeding seamless
+distinct event-handling logic for each event source, impeding seamless
 communication between different systems. CloudEvents aims to streamline the
 process of declaring and delivering events, improving simplicity and
 interoperability across diverse services and platforms.
@@ -488,8 +496,7 @@ patches to issues found. As mentioned in [CloudEvents SDK
 Community](#cloudevents-sdk-community), the maintainers cannot abstain from
 triaging issues and PRs for more than 2 months, or releasing security patches
 for more than 1 month. Otherwise, their project will be marked as `not actively
-maintained`, which can lead to them to lose the management of the SDK
-repository.
+maintained`, which can lead to them losing the management of the SDK repository.
 
 #### Incident Response
 
@@ -676,11 +683,11 @@ and install updates to their CloudEvents SDK installation.
 
 Improve the security of CloudEvents SDKs by integrating Snyk for automatic
 dependency assessments. This integration will both conduct comprehensive scans
-for vulnerabilities within the SDK and also systematically search the internet
-for recently reported issues or vulnerabilities linked to the library
-dependencies used in the development of CloudEvents SDKs. The automated tool
-will alert the development team to threats, helping the implementation of
-proactive measures for identifying, addressing, and mitigating potential risks.
+for vulnerabilities within the SDK and systematically search the internet for
+recently reported issues or vulnerabilities linked to the library dependencies
+used in the development of CloudEvents SDKs. The automated tool will alert the
+development team to threats, helping the implementation of proactive measures
+for identifying, addressing, and mitigating potential risks.
 
 #### [Action Item 1] Steps
 
