@@ -453,24 +453,14 @@ Reflect on times prospective users have asked about the differences between your
 the same question.
 
 ###### Victoria Metrics
-VictoriaMetrics is a fast, cost-effective and scalable monitoring solution and time series database.
-
-Victoria Metrics, while maintaining a simpler architecture, also includes several core components:
-* single-node- All-in-one binary, which is very easy to use and maintain. Single-server-VictoriaMetrics perfectly scales vertically and easily handles millions of metrics/s;
-* cluster- Set of components for building horizontally scalable clusters. This version of Voctoria Metrics has extra components such as VMSelect, VMInsert and VMStorage nodes.
-* vmagent- Data scraper than can pull data from a variety of sources and sends it to Victoria metrics or another remote storage that supports InfluxDB or Prometheus remote write protocol.
-* vmalert- Executes a list of the given alerting or recording rules against configured -datasource.url compatible with Prometheus HTTP API.
-* vmctl- The command line tool provides various useful actions with VictoriaMetrics components. It migrates data from different Timescale Dtabases (TSDBs) to Victoria Metrics.
-* vmstorage- Where data is stored.
-* vmui- Victoria Metrics' user interface.
+VictoriaMetrics is a fast, cost-effective and scalable monitoring solution and time series database. VictoriaMetrics began as an alternative long term remote storage TSDB for Prometheus.
 
 Key differences:
-* Purpose- Thanos was created to extend Prometheus by providing multi-cluster monitoring and long-term storage. Its main goals are a global query view, unlimited retention and downsampling. VictoriaMetrics began as an alternative long term remote storage TSDB for Prometheus.
 * Architecture- Thanos has a modular system with several components that each have different functions. This system provides functionality. VictoriaMetrics has single node and cluster versions. Victoriametrics provide simplicity and ease of deployment.
-* Storage- Thanos uses TSDB. VictoriaMetrics is morre storage effeicent due to having its own custom storage and compression algorithms.
+* Storage- Thanos uses TSDB. VictoriaMetrics is more storage effeicent due to having its own custom storage and compression algorithms.
 *  Query language- Thanos uses PromQL just like Prometheus. VictoriaMetrics uses metricsQl which is baskwards compatible with PromQL.
 * High Avaliability and Reliability: Thanos relies on  object storage for long term data and has replication features in other components; this provides high availability. VictoriaMetrics has a cluster version and stores its data on local storage which provides high availability and redundancy.
-* Downsampling & retention: Both Thanos & VM has downsampling and customizable retention policies, the specifics of each may vary.
+* Downsampling & retention: Both Thanos & VM \\\\\\\\\, the specifics of each may vary.
 * Integration: Thanos integrates closely with Prometheus and can integrate with Grafana.VictoriaMetrics implements MetricsQL - query language inspired by PromQL. MetricsQL is backwards-compatible with PromQL, so Grafana dashboards backed by Prometheus data source should work the same after switching from Prometheus to VictoriaMetrics.
 * Performance: Both Thanos and VictoriaMetrics handle large workloads seamlessly.  Some prefer Thanos since it has a modular architecture that can be customized for specific setups. Some prefer VictoriaMetrics and believe that it's faster, more resource-effecient and uses CPU and disk space better.
 
@@ -478,28 +468,16 @@ Sources:
 [Thanos vs. VictoriaMetrics](https://last9.io/blog/thanos-vs-victoriametrics/) 
 [VictoriaMetrics documentation](https://docs.victoriametrics.com/Single-server-VictoriaMetrics.html)
 
-<!--###### Mimir
-Grafana Mimir is an open source software project that provides a scalable long-term storage for Prometheus. Some of the core strengths of Grafana Mimir include:
-* Ease of installment and maintenance : Grafana Mimir’s extensive documentation, tutorials, and deployment tooling make it quick to get started. Using its monolithic mode, you can get Grafana Mimir up and running with just one binary and no additional dependencies. Once deployed, the best-practice dashboards, alerts, and runbooks packaged with Grafana Mimir make it easy to monitor the health of the system.
-* Massive scalability: You can run Grafana Mimir's horizontally-scalable architecture across multiple machines, resulting in the ability to process orders of magnitude more time series than a single Prometheus instance.
-* Global view of metrics: Grafana Mimir enables you to run queries that aggregate series from multiple Prometheus instances, giving you a global view of your systems.
-* Cheap, durable metric storage: Grafana Mimir uses object storage for long-term data storage, allowing it to take advantage of this ubiquitous, cost-effective, high-durability technology. It is compatible with multiple object store implementations, including AWS S3, Google Cloud Storage, Azure Blob Storage, OpenStack Swift, as well as any S3-compatible object storage.
-* High availability: Grafana Mimir replicates incoming metrics, ensuring that no data is lost in the event of machine failure. Its horizontally scalable architecture also means that it can be restarted, upgraded, or downgraded with zero downtime, which means no interruptions to metrics ingestion or querying.
-* Natively multi-tenant: Grafana Mimir’s multi-tenant architecture enables you to isolate data and queries from independent teams or business units, making it possible for these groups to share the same cluster.
-
-Key differences:  -->
-
 
 ###### Cortex
 Cortex is a  horizontally scalable, highly available, multi-tenant, long term storage for Prometheus.
-
 
 |                      | Cortex                                                       | Thanos                                                         |
 |----------------------|--------------------------------------------------------------|----------------------------------------------------------------|
 | Design               | Ready to use packaged solution that provides a complete view of the storage system; allows metrics from multiple Prometheus servers to be sent to a single machine. | More flexibility; allows users to design and configure each part of their Prometheus server to meet their specific needs. |
 | Rollout              | Single binary or as multiple independent microservices.      | Independently or incrementally alongside Prometheus server.      |
 | Storage              | Block storage. Also possible to be configured to use local storage. | Configurable object storage clients.                             |
-| Features             | * Separate central Cortex cluster and storage backend needed to achieve global querying view. * Push based model: only samples from a single replica accepted. * Remote write to push data to central cluster. * Optimization techniques like batch iterators, caching indexes, HTTP response compression etc. *  Migrates individual Prometheus chunks to object storage for better scalability. | * Prometheus servers used to achieve a global querying view. * Querier reads from multiple replicas and merges metrics into a single result. * Integrates with sidecar. * For query optimization, downsamples historical data. * Read and written as Prometheus TSDB blocks. |
+| Features             | - Separate central Cortex cluster and storage backend needed to achieve global querying view. - Push based model: only samples from a single replica accepted. - Remote write to push data to central cluster. - Optimization techniques like batch iterators, caching indexes, HTTP response compression etc. - Migrates individual Prometheus chunks to object storage for better scalability. | - Prometheus servers used to achieve a global querying view. - Querier reads from multiple replicas and merges metrics into a single result. - Integrates with sidecar. - For query optimization, downsamples historical data. - Read and written as Prometheus TSDB blocks. |
 
  Source: 
  
