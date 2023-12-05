@@ -129,7 +129,7 @@ Compromising these services would allow an attacker to leak sensitive informatio
 
 **Telemetry Data Collection**
 
-These agents collect telemetry data (metrics, logs, traces) from the application. Data is often collected in a non-intrusive and secure manner, ensuring that sensitive information is not exposed. The agents must authenticate themselves to the backend systems where the data is sent.
+These agents collect telemetry data (metrics, logs, traces) from the application. Data is often collected in a non-intrusive and secure manner. In this case, sensitive information will not be exposed. The agents must authenticate themselves to the backend systems where the data is sent. Agents are assigned unique identifiers or credentials, such as API keys, tokens, or digital certificates. During data transmission, these credentials are sent to the backend system. The backend system verifies these credentials according to a database or a token service. This process may also include authorization checks to confirm the agent's permissions for the requested actions. 
 
 **Data Transmission**
 
