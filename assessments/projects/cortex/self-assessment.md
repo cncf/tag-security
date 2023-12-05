@@ -165,6 +165,11 @@ Cortex doesn’t document meeting particular compliance standards.
 
 - **Contributor Sign-Off:** Any contributors to the Cortex must sign off their commits with a Developer Certificate of Origin (DCO).
 - **Workflow:** Cortex follows a standard GitHub pull request workflow. 
+- **Prior to the completion of any work:**
+   1. Work should be organized into one or more commits, each with a commit message describing all the changes made
+   2. Each commit should build towards the whole - don’t leave in back-tracks and mistakes that you later corrected.
+   3. Have unit and/or integration tests for functionality or to catch the bug being fixed
+   4. Include a CHANGELOG message if you would like Cortex users to see the work you did
 - **Code Reviews and Approval:** Pull requests may be merged after receiving at least two positive votes. If the PR author is a maintainer, this counts as a vote.
 - **Automated Testing and CI/CD:** The Cortex project integration tests run in CI for every PR, and can be easily executed locally during development.
 - **Container Image Security:** Integration tests run in isolation, and after each test, the Cortex docker image is terminated and deleted.
@@ -172,9 +177,9 @@ Cortex doesn’t document meeting particular compliance standards.
 
 #### Communication Channels
 
-- **Internal:** The Cortex team communicates with one another through the Cortex Slack channel and an email list for any questions.
-- **Inbound:** Users also likely communicate with the team through mailing lists and the Slack channel, and they can also file an issue via GitHub Issues.
-- **Outbound:** Updates and announcements are likely made through the Slack channel or the user mailing list. There are also Cortex community meetings held every two weeks, and meeting notes are posted on their website.
+- **Internal:** The Cortex team communicates with one another through the [Cortex Slack channel](https://app.slack.com/client/T08PSQ7BQ/CCYDASBLP/) and an [email list](mailto:cortex-users@lists.cncf.io) for any questions.
+- **Inbound:** Users also likely communicate with the team through mailing lists and the [Cortex Slack channel](https://app.slack.com/client/T08PSQ7BQ/CCYDASBLP/), and they can also file an issue via [GitHub Issues](https://github.com/cortexproject/cortex/issues/new).
+- **Outbound:** Updates and announcements are likely made through the [Cortex Slack channel](https://app.slack.com/client/T08PSQ7BQ/CCYDASBLP/) or the [user mailing list](cortex-users@lists.cncf.io). There are also Cortex community meetings held every two weeks, and meeting notes are posted on their website.
 
 #### Ecosystem
 
