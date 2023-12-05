@@ -11,7 +11,7 @@ Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV) and Doug Davis
 This document elaborates and explores the design goals for
 [CloudEvents](https://cloudevents.io/) as well as a security assessment of the
 software. It was written in collaboration with the CloudEvents team. All
-communications with CloudEvents was recorded on a [separate
+communications with CloudEvents were recorded on a [separate
 document](CE-maintainers-communications.md).
 
 ## Table of contents
@@ -100,14 +100,14 @@ routers, tracing systems, and other tools.
 
 An
 [event](https://github.com/cloudevents/spec/blob/130ba0d183f5e45c1d141f5c1f272cf71d898623/cloudevents/spec.md#event)
-is a data entry that conveys an occurrence  along with its surrounding context.
+is a data entry that conveys an occurrence along with its surrounding context.
 Events are transmitted from an event producer (the origin) to interested event
 consumers. The transmission process may consider the information within the
 event, but the event itself does not specify a particular destination for
 routing. Events comprise two categories of information: Event Data, which
 represents the incident, and Context metadata, which furnishes additional
-contextual details about the incident. It's possible for a single incident to
-generate more than one event.
+contextual details about the incident. A single incident can generate more than
+one event.
 
 There is no common language on events themselves. So when a new software is
 created developers have to write new event handling processes for different
@@ -129,10 +129,10 @@ logic of the event.
 
 The [Event
 Consumer](https://github.com/cloudevents/spec/blob/130ba0d183f5e45c1d141f5c1f272cf71d898623/cloudevents/spec.md#consumer)
-is the entity or system interested in subscribing to different  events.
-Receiving Events from the producer will trigger further action that is up to the
-consumer. A "consumer" receives the event and acts upon it, which might lead to
-the occurrence of new events.
+is the entity or system interested in subscribing to different events. Receiving
+Events from the producer will trigger further action that is up to the consumer.
+A "consumer" receives the event and acts upon it, which might lead to the
+occurrence of new events.
 
 #### Event Producer
 
@@ -143,7 +143,7 @@ wrapping event data in the CloudEvents specification.
 
 #### Event Mediator or Intermediary
 
-Depending on the architecture of the system, [Event
+Depending on the architecture of the system, the [Event
 Mediator](https://github.com/cloudevents/spec/blob/130ba0d183f5e45c1d141f5c1f272cf71d898623/cloudevents/spec.md#intermediary)
 is the entity or system that is responsible for the distribution, processing and
 routing of events to consumers. The event broker ensures reliable delivery and
@@ -219,7 +219,7 @@ CloudEvents](https://github.com/cloudevents/spec/blob/main/cloudevents/primer.md
 * Event persistence processes.
 * Mechanism for Authorization, Data Integrity and Confidentiality.
 * Change the implementation details of underlying communication protocols.
-* Define the processing logic for events within different application and
+* Define the processing logic for events within different applications and
   systems.
 
 ## Self-assessment use
@@ -231,13 +231,13 @@ CloudEvents's security health.
 
 This document serves to provide CloudEvents users with an initial understanding
 of CloudEvents's security, where to find existing security documentation,
-CloudEvents plans for security, and general overview of CloudEvents security
-practices, both for development of CloudEvents as well as security of
+CloudEvents plans for security, and a general overview of CloudEvents security
+practices, both for the development of CloudEvents as well as security of
 CloudEvents.
 
 This document provides the CNCF TAG-Security with an initial understanding of
-CloudEvents to assist in a joint-assessment, necessary for projects under
-incubation.  Taken together, this document and the joint-assessment serve as a
+CloudEvents to assist in a joint assessment, necessary for projects under
+incubation.  Taken together, this document and the joint assessment serve as a
 cornerstone as CloudEvents is under review for a Graduation status.
 
 ## Security functions and features
@@ -345,7 +345,7 @@ repository.
   managing the website and GitHub repos. Admin actions require group knowledge
   and consent, including the ability to merge/close PRs, subject to group
   approval. Since the role of an 'Admin' is mainly administrative, the list of
-  Members within this group should not need to change regularly, but can be done
+  Members within this group should not need to change regularly but can be done
   with votes.
 
 #### CloudEvents SDK Community
@@ -353,12 +353,12 @@ repository.
 The CloudEvents SDK community is organized as follows:
 
 * Every SDK has its own [Github Team](https://github.com/cloudevents).
-* The union of all the SDK maintainers assembles the sdk maintainers group.
+* The union of all the SDK maintainers assembles the SDK maintainers group.
 * To propose a new SDK for the community, a PR should be opened in the spec
   repository with the documentation changes necessary to point to the new
   repository.
 
-CloudEvents define an [SDK project as
+CloudEvents defines an [SDK project as
 healthy](https://github.com/cloudevents/spec/blob/main/docs/SDK-GOVERNANCE.md#ensuring-projects-health)
 if it meets the criteria below.
 
@@ -369,17 +369,17 @@ if it meets the criteria below.
   Contribution Acceptance;
 * Issues and PRs are triaged (labeled, commented, reviewed, etc) regularly.
 
-Moreover, CloudEvents define an SDK as `not actively maintained` if:
+Moreover, CloudEvents defines an SDK as `not actively maintained` if:
 
-* Issues and/or PRs are not being triaged from the SDK maintainers for 2 months
-* Security patches are not being released from the SDK maintainers for 1 months
+* Issues and/or PRs have not been triaged from the SDK maintainers for 2 months
+* Security patches have not been released from the SDK maintainers for 1 month
   from CVE disclosures
 
-If a project is not meeting the criteria above, the community can decide to
-[hand over the
+If a project does not meet the criteria above, the community can decide to [hand
+over the
 project](https://github.com/cloudevents/spec/blob/main/docs/SDK-GOVERNANCE.md#handover-to-a-new-maintainergroup-of-maintainers)
-to a new group of maintainers by a voting process. In such cases, the community
-may also decide to [archive the
+to a new group of maintainers through a voting process. In such cases, the
+community may also decide to [archive the
 project](https://github.com/cloudevents/spec/blob/main/docs/SDK-GOVERNANCE.md#archive-a-project)
 instead.
 
@@ -390,14 +390,14 @@ instead.
 * Developers can either report a change or create a Github Issue, checking for
   existing issues first.
 * All Proposed changes will be done through Github Pull Requests (PRs).
-* All patches must be signed by the commiter, with the sign-off being a simple
+* All patches must be signed by the author, with the sign-off being a simple
   line at the end of the explanation for the patch.
 * All commits should use the [Conventional Commits
   Specification](https://www.conventionalcommits.org/en/v1.0.0/).
 * Pull Requests will be reviewed during [official
   meetings](https://github.com/cloudevents/spec/blob/main/docs/GOVERNANCE.md#meetings).
   * Off-line reviews are recommended before meetings.
-  * Meetings happen every Thursday at 9AM PT.
+  * Meetings happen every Thursday at 9 AM PT.
 * Pull Requests will be resolved and merged during official meetings as a result
   of a motion.
   * Pull Requests should not be merged if substantial changes have been made in
@@ -407,20 +407,20 @@ instead.
 
 Usually, CloudEvents Pull Requests are expected to meet the following
 [criteria](https://github.com/cloudevents/spec/blob/main/docs/SDK-PR-guidelines.md)
-prior to being merged:
+before being merged:
 
-* The author of the PR indicates asks for it to be discussed and reviewed in an
-  upcoming meeting.
+* The author of the PR asks for it to be discussed and reviewed in an upcoming
+  meeting.
 * All comments have been addressed.
 * PRs that have objections/concerns will be discussed off-line by interested
-  parties. A resolution, updated PR, will be expected from those talks.
+  parties. A resolution and updated PR will be expected from those talks.
 
 #### Versioning
 
 The release process follows [Semantic Versioning (semver)](https://semver.org/),
 grouping specifications for simultaneous release. Non-breaking changes use
-"patch" updates, while breaking changes follow semver. Tags are applied to the
-main branch, and additional branches, like core-v2.0, may be created, then
+"patch" updates while breaking changes follow `semver`. Tags are applied to the
+main branch, and additional branches, like core-v2.0, may be created, and then
 deleted post-merger. Creating a release involves updating versions via Pull
 requests, merging, and announcing changes.
 
@@ -433,19 +433,19 @@ purposes.
 * Internal communications channels:
   * [Meetings](https://docs.google.com/document/d/1OVF68rpuPK5shIHILK9JOqlZBbfe91RNzQ7u_P7YCDE/edit?usp=sharing)
   * Email
-  * Github Issues
-* InBound communications channels:
+  * GitHub Issues
+* Inbound communications channels:
   * [CloudEvents CNCF Email Address](cncf-cloudevents@lists.cncf.io)
   * [CNCF Slack workspace](http://slack.cncf.io/)
-  * [CNCF Meeting Calender](https://www.cncf.io/community/calendar/)
+  * [CNCF Meeting Calendar](https://www.cncf.io/community/calendar/)
 * Outgoing communications channels:
   * [CloudEvents CNCF
     Subscription](https://lists.cncf.io/g/cncf-cloudevents-sdk)
 
 ### Ecosystem
 
-CloudEvents is integrated with various different cloud-native technologies and
-services. It's goal is to create interoperability in event-driven architecture.
+CloudEvents is integrated with different cloud-native technologies and services.
+Its goal is to create interoperability in event-driven architecture.
 
 CloudEvents has many
 [adopters](https://cloudevents.io/#:~:text=CloudEvents%20Adopters), including:
@@ -462,7 +462,7 @@ CloudEvents has many
 
 ### CloudEvents Specification
 
-To report an issue, or to a new idea, contributors can open a new  issue on the
+To report an issue, or to a new idea, contributors can open a new issue on the
 GitHub repository. However, they should check if a similar issue already exists.
 
 CloudEvents also provides a dedicated [email
@@ -475,8 +475,8 @@ security concerns related to the specification or the SDKs.
 #### Responsible Disclosures Process
 
 Similarly to the CloudEvents specification, to report an issue about one of the
-CloudEvents SDKs, contributors can open a new  issue on the GitHub repository,
-as well as using the dedicated [email
+CloudEvents SDKs, contributors can open a new issue on the GitHub repository, as
+well as using the dedicated [email
 address](cncf-cloudevents-security@lists.cncf.io) and the [Security Mailing
 List](https://lists.cncf.io/g/cncf-cloudevents-security/topics).
 
@@ -488,7 +488,7 @@ patches to issues found. As mentioned in [CloudEvents SDK
 Community](#cloudevents-sdk-community), the maintainers cannot abstain from
 triaging issues and PRs for more than 2 months, or releasing security patches
 for more than 1 month. Otherwise, their project will be marked as `not actively
-maintained`, which can lead to them to loose the management of the SDK
+maintained`, which can lead to them to lose the management of the SDK
 repository.
 
 #### Incident Response
@@ -503,7 +503,7 @@ any other CloudEvents communication channel.
 
 ##### Solving the Issue
 
-Once a security patch is written, the contributor should make Pull Request and
+Once a security patch is written, the contributor should make a Pull Request and
 mark it as reviewed. The PR will be reviewed, improved, and approved by the
 other maintainers of the SDK. With that, a security patch is released by
 following the process described in [Contributing to
@@ -549,9 +549,9 @@ CloudEvents](#contributing-to-cloudevents).
   managed by the underlying infrastructure and transport protocols used for
   sending and receiving CloudEvents.
 
-* **Cryptography:** CloudEvents does not provide an encryption methods or
-  cryptographic implemntations, all implementations are left up to the user/
-  developers choice.
+* **Cryptography:** CloudEvents does not provide encryption methods or
+  cryptographic implementations, all implementations are left up to the users'
+  choice.
 
 * **Audit and logging:** This is typically handled by the platforms and services
   that implement CloudEvents.
@@ -574,7 +574,7 @@ Mitigations:
 
 #### Man in the middle acting as Event Mediator
 
-If an attacker is able to act as a man in the middle for an event mediator, the
+If an attacker can act as a man in the middle for an event mediator, the
 intruder may be able to read the events from the event generator or modify them
 before they arrive at the event consumer.
 
@@ -671,7 +671,7 @@ and install updates to their CloudEvents SDK installation.
 
 #### Setup Snyk for SDKs
 
-* **Issue Link:** [Setup snyk for
+* **Issue Link:** [Setup Snyk for
   SDKs](https://github.com/cloudevents/spec/issues/1235)
 * **Objective:** Enhance the security posture of CloudEvents SDKs by
   implementing Snyk for comprehensive dependency checks.
@@ -698,7 +698,7 @@ and install updates to their CloudEvents SDK installation.
 
 #### Automated Vulnerability Scanning for SDK Dependencies
 
-* **Ojective:** Implement a system to automatically scan for vulnerabilities in
+* **Objective:** Implement a system to automatically scan for vulnerabilities in
   SDK dependencies.
 * **Action Steps:** Research and integrate tools for continuous scanning of
   dependencies. Establish a notification system for newly identified
@@ -764,7 +764,7 @@ Below are listed the findings by Trail Of Bits with their descriptions.
 * **Target:** Java SDK
 
 Several instances were found where the getByte() standard Java API is utilized
-without specifying encoding, leading the [Java
+without specifying an encoding, leading the [Java
 SDK](https://github.com/cloudevents/sdk-java) to rely on system default
 encoding. This can result in varying processing of event data across platforms.
 While the specification mandates adherence to appropriate and RFC-compliant
@@ -784,9 +784,9 @@ implementation, documentation, and provided examples.
 
 The [Java SDK](https://github.com/cloudevents/sdk-java) contains multiple
 outdated dependencies with publicly known vulnerabilities, including high- and
-medium-risk ones. The snyk tool automatically audited each module due to time
-constraints and ease of remediation. Manual review of exploitability within the
-SDK's context was not conducted.
+medium-risk ones. The Snyk tool automatically audited each module due to time
+constraints and ease of remediation. A manual review of exploitability within
+the SDK's context was not conducted.
 
 ##### [JavaScript SDK] Potential XSS in httpTransport()
 
@@ -799,7 +799,7 @@ SDK's context was not conducted.
 The [JavaScript SDK](https://github.com/cloudevents/sdk-javascript)'s
 httpTransport() method exposes raw error messages from the endpoint, potentially
 leading to XSS vulnerabilities if user-controlled data is reflected without
-proper sanitization in the rendered web page. While the specification des not
+proper sanitization in the rendered web page. While the specification does not
 mandate validation or sanitization, the SDK documentation should emphasize the
 risk of unsanitized HTTP responses when using this API in an emitter.
 
@@ -812,8 +812,8 @@ risk of unsanitized HTTP responses when using this API in an emitter.
 * **Target:** Go SDK
 
 The [Go SDK](https://github.com/cloudevents/sdk-go) has multiple outdated
-dependencies with known vulnerabilities. The open-source snyk tool automatically
-audited each module. Due to time constraints and ease of remediation, manual
+dependencies with known vulnerabilities. The open-source Snyk tool automatically
+audited each module. Due to time constraints and ease of remediation, a manual
 review of exploitability within the SDK's context was skipped.
 
 ##### [Go SDK] Downcasting of 64-bit integer
@@ -824,7 +824,7 @@ review of exploitability within the SDK's context was skipped.
 * **Finding ID:** TOB-CE-5
 * **Target:** sql/v2/parser/expression_visitor.go, sql/v2/utils/casting.go
 
-In the [Go SDK](https://github.com/cloudevents/sdk-go), the strconv.Atoi
+In the [Go SDK](https://github.com/cloudevents/sdk-go), the `strconv.Atoi`
 function parses a machine-dependent integer (int64 for 64-bit targets). In some
 code instances, the result from strconv.Atoi is later converted to a smaller
 type (int16 or int32), risking overflow with specific inputs.
@@ -850,9 +850,9 @@ makes the listener instance susceptible to Slowloris DoS attacks.
 * **Target:** CSharp SDK
 
 The [CSharp SDK](https://github.com/cloudevents/sdk-csharp) has multiple
-outdated dependencies with known vulnerabilities. Using the open-source snyk
+outdated dependencies with known vulnerabilities. Using the open-source Snyk
 tool, each module was automatically audited. Due to time constraints and ease of
-remediation, manual review of exploitability within the SDK's context was
+remediation, a manual review of exploitability within the SDK's context was
 skipped.
 
 ### CII Best Practices
@@ -873,7 +873,7 @@ commitment to maintaining high standards in open-source software development.
 ### Case Studies
 
 CloudEvents has the potential to revolutionize event-driven architectures in
-various sectors. Below  are a couple of enhanced case studies demonstrating its
+various sectors. Below are a couple of enhanced case studies demonstrating its
 applicability.
 
 #### Healthcare Data Management
@@ -903,7 +903,7 @@ and resident satisfaction.
 
 [OpenTelemetry](https://opentelemetry.io/) is a collection of APIs, SDKs, and
 tools. It can be used to instrument, generate, collect, and export telemetry
-data (metrics, logs, and traces) to help analyzing software performance and
+data (metrics, logs, and traces) to help analyze software performance and
 behavior.
 
 #### AsyncAPI
@@ -917,11 +917,11 @@ from documentation to code generation, and from discovery to event management.
 
 #### Event-B
 
-[Event-B](https://www.event-b.org/) is a formal method for system-level
-modelling and analysis. Key features of Event-B are the use of set theory as a
-modelling notation, the use of refinement to represent systems at different
-abstraction levels and the use of mathematical proof to verify consistency
-between refinement levels.
+[Event-B](https://www.event-b.org/) is a formal method for system-level modeling
+and analysis. Key features of Event-B are the use of set theory as a modeling
+notation, the use of refinement to represent systems at different abstraction
+levels and the use of mathematical proof to verify consistency between
+refinement levels.
 
 #### Simple Object Access Protocol (SOAP)
 
