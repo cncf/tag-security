@@ -223,6 +223,14 @@ The Volcano project has a [Product Security Team (PST)](https://github.com/volca
 ## Appendix
 ### Badges
 - [Volcano has achieved an Open Source Security Foundation (OpenSSF) best practices badge at passing level.](https://www.bestpractices.dev/en/projects/3012)
+  - Currently Volcano has a 5/10 on the OpenSSF scorecard. Some things that could improve this project's score/security are:
+      - Cryptographically signing release artifacts.
+      - Having the project's workflows follow the principle of least privilege. (multiple GitHub workflow tokens were detected with excessive permissions)
+      - Fuzzing the project
+      - Checking all commits with static code analysis
+      - Limiting the project's exposure to open, known unfixed vulnerabilities.
+      - Having the project declare and pinned the dependencies of its build process by hash
+    - source: [open source insights](https://deps.dev/go/volcano.sh%2Fvolcano/v0.3.0?filter=relation%3A%22direct%22)
 - [Volcano has achieved A+ quality as an open source Go project.](https://goreportcard.com/report/github.com/volcano-sh/volcano)
 
 ### Links
