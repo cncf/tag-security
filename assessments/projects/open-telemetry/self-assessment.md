@@ -129,7 +129,7 @@ Compromising these services would allow an attacker to leak sensitive informatio
 
 **Telemetry Data Collection**
 
-These agents collect telemetry data (metrics, logs, traces) from the application. Data is often collected in a non-intrusive and secure manner, ensuring that sensitive information is not exposed. The agents must authenticate themselves to the backend systems where the data is sent.
+These agents collect telemetry data (metrics, logs, traces) from the application. Data is often collected in a non-intrusive and secure manner. In this case, sensitive information will not be exposed. The agents must authenticate themselves to the backend systems where the data is sent. Agents are assigned unique identifiers or credentials, such as API keys, tokens, or digital certificates. During data transmission, these credentials are sent to the backend system. The backend system verifies these credentials according to a database or a token service. This process may also include authorization checks to confirm the agent's permissions for the requested actions. 
 
 **Data Transmission**
 
@@ -205,15 +205,11 @@ See [Actors](#actors) and [Actions](#actions) for more detailed description of t
 
 **Telemetry Data Encryption**
 
-Encryption of telemetry data in OpenTelemetry is critical for protecting data confidentiality and integrity during transmission. It serves as the first line of defense against data breaches, making it a fundamental aspect in threat modeling for assessing risks related to eavesdropping and data tampering.
+Encryption of telemetry data in OpenTelemetry is critical for protecting data confidentiality and integrity during transmission. This process involves transforming the readable telemetry data (metrics, logs, and traces) into an encrypted format, which can only be deciphered by authorized parties with the appropriate decryption keys. It serves as the first line of defense against data breaches, making it a fundamental aspect in threat modeling for assessing risks related to eavesdropping and data tampering.
 
 **Authentication and Authorization Mechanisms**
 
 These mechanisms in OpenTelemetry ensure that only authenticated and authorized entities can interact with the system, playing a crucial role in safeguarding against unauthorized access and manipulation. In threat modeling, they are key to evaluating the potential risks of system penetration and data breaches.
-
-**API Security**
-
-OpenTelemetry's API security involves securing data transmission endpoints against common vulnerabilities. This is vital for preventing malicious attacks through these interfaces, making API security a critical element in threat modeling for external interaction risks.
 
 **Data Integrity Checks**
 
@@ -221,7 +217,7 @@ Ensuring the integrity of telemetry data in OpenTelemetry is essential for relia
 
 **Context Propagation Security**
 
- In OpenTelemetry, secure context propagation is critical for maintaining trace integrity across services. It's a key defense against trace manipulation, playing an important role in threat modeling, especially in distributed tracing scenarios.
+In OpenTelemetry, secure context propagation is critical for maintaining trace integrity across services. The context in distributed tracing includes information necessary to maintain the trace's continuity as it moves from one service to another. This typically includes trace identifiers, span identifiers, and other metadata that links individual service calls to the overarching trace. Distributed tracing tracks the journey of a request as it traverses through these microservices, creating a trace that represents the entire flow. It's a key defense against trace manipulation, playing an important role in threat modeling, especially in distributed tracing scenarios.
 
 
 ### Security Relevant
@@ -234,13 +230,13 @@ OpenTelemetry's data scrubbing feature allows for the removal or anonymization o
 
 RBAC in OpenTelemetry controls user access to data and functionalities, preventing unauthorized actions and enhancing system security. It's a critical consideration in threat modeling for assessing risks related to unauthorized access and privilege escalation.
 
-**Logging and Auditing**
+**Monitoring and Auditing**
 
-This feature in OpenTelemetry tracks system activities and is vital for security audits and post-incident analysis. It plays a significant role in threat modeling for identifying unauthorized activities and breaches, enhancing incident detection and response strategies.
+This feature in OpenTelemetry tracks system activities and is vital for security audits and analysis. Monitoring and auditing apply to both the performance and the security of the telemetry data pipeline. For example, metrics, logs, and alerts can be used for the OpenTelemetry agents, collectors, and exporters. Reports, dashboards, and notifications can be used for the databases or cloud services that store the telemetry data. It plays a significant role in threat modeling for identifying unauthorized activities and breaches, enhancing incident detection and response strategies.
 
-**Rate Limiting and Throttling**
+**Reverse Proxy**
 
-Implementing rate limiting and throttling in OpenTelemetry is key for protecting against denial-of-service attacks and ensuring service availability. These mechanisms are considered in threat modeling for evaluating risks related to service resilience.
+A reverse proxy sits between the clients (which could be instrumented applications or OpenTelemetry agents) and the backend services (like telemetry collectors or observability platforms). It manages the incoming traffic and applies rate limiting and throttling rules to control the flow of requests. This setup is crucial for protecting the backend services from being overwhelmed by excessive traffic or potential denial-of-service attacks.
 
 **Regular Security Updates and Patch Management**
 
