@@ -719,6 +719,12 @@ and install updates to their CloudEvents SDK installation.
   execute them. Prioritize and resolve security vulnerabilities identified by
   users through proper triage processes.
 
+#### [Setup snyk for SDKs](https://github.com/cloudevents/spec/issues/1235)
+
+* **Objective:** Enhance the security posture of CloudEvents SDKs by implementing Snyk for comprehensive dependency checks.
+* **Action Steps:** Integrate Snyk into the SDK development workflow. Configure Snyk to perform dependaBot-type checks, ensuring comprehensive analysis of SDK dependencies. Investigate the feasibility and requirements for adding a dedicated security bot to scan for potential security issues. Document the integration process and provide guidelines for ongoing usage within the development environment.
+
+
 ### Potential Ideas
 
 * A supplementary proposal for a bot is the creation of a monitoring system that
