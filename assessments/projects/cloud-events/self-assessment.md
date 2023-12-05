@@ -856,6 +856,18 @@ restricted to computer science, making it different from the other examples.
 However, it is an example of event specification being widely used in industry,
 including more physical areas such as mechanical engineering and factories.
 
+## Action Items 
+
+Still in discussion with the Project 
+
+
+In response to the issues we've identified, CloudEvents is has already been planning to address these issues them through the implementation of a dedicated bot. This bot is designed to manage and monitor issues within the CloudEvent SDKs, ensuring their timely resolution. Its primary functions include assessing the currency of libraries, verifying that issues are actively being attended to by CloudEvent developers and maintainers, and overseeing the application of necessary patches for issue resolution.
+
+### Potential Ideas 
+
+* An additional suggestion for a bot could be creating a bot that monitors and scraps the web for any newly reported issues or vulnerabilities related to the library dependencies utilized in developing the Cloud Events SDKs. This bot would serve to keep the development team informed about emerging threats promptly, facilitating proactive measures to address and mitigate potential risks in a timely manner.
+
+
 ## References
 
 * [CloudEvents Website](https://cloudevents.io/)
