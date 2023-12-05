@@ -555,6 +555,25 @@ Elevation of Privilege:
    * Thanos piggy-backs off of Prometheus's authentication and authorization mechanisms.
    * User permissions must be frequently reviewed.
 
+### Action Items
+Description: Action items refer to certain tasks or actions related to security that need to be discussed and implemented with the project maintainers.
+
+Questions to ask Maintainers:
+* The admin api of Prometheus has to be enabled for Sidecar to get external labels. Is the admin api only used for fetching labels?
+* Do we need complete admin access or is this only for labels?
+
+Development Pipeline:
+* Do you have branch protection or repo security features in place?
+* Are committers required to sign their commits, or a contributor license agreement?
+* Do you have automated testing or fuzzing on every pull request?
+* Do you have software composition analysis or dependency management tooling?
+* How many reviewers are required for a pull request to be approved?
+* Do you have any measures around code owners?
+* Is your release process automated?
+* Does every release include an automatically generated Software Bill of Materials?
+* Do you sign releases?
+* Are container images immutable and signed?
+  
 Sources: 
 [Thanos Maintainers](https://thanos.io/tip/thanos/maintainers.md)
 [Guide](https://github.com/Rana-KV/tag-security/blob/main/assessments/projects/karmada/self-assessment.md#threat-modeling-with-stride)
