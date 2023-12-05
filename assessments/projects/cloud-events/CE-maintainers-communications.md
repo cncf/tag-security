@@ -2,7 +2,14 @@
 
 ## Slack Communications
 
-### Igor Rodrigues (Nov 29th at 4:29:13 PM)
+* **Security Pals Involved:**
+  * Igor Rodrigues (Igor Rodrigues)
+* **CloudEvents Team Members Involved:**
+  * Doug Davis (dug)
+
+### Slack Report
+
+#### Igor Rodrigues (Nov 29th at 4:29:13 PM)
 
 * [Message
   Link](https://cloud-native.slack.com/archives/C9DB5ABAA/p1701293353624819)
@@ -23,7 +30,7 @@ practices](https://github.com/Igor8mr/tag-security/blob/main/assessments/project
 Please, feel free to share your thoughts here on Slack, on GitHub, or on a call.
 Thank you!
 
-### Dug (Nov 29th at 8:02:04 PM)
+#### Dug (Nov 29th at 8:02:04 PM)
 
 * [Message
   Link](https://cloud-native.slack.com/archives/C9DB5ABAA/p1701306124114029?thread_ts=1701293353.624819&cid=C9DB5ABAA)
@@ -31,7 +38,7 @@ Thank you!
 Hi @Igor Rodrigues - will take a look. Just curious though, what made you decide
 to analyze CloudEvents?
 
-### Igor Rodrigues (Nov 29th at 8:36:26 PM)
+#### Igor Rodrigues (Nov 29th at 8:36:26 PM)
 
 * [Message
   Link](https://cloud-native.slack.com/archives/C9DB5ABAA/p1701308186825319?thread_ts=1701293353.624819&cid=C9DB5ABAA)
@@ -41,7 +48,7 @@ taking with Professor Justin Cappos. Each group was assigned to a CNCF project,
 and ours was CloudEvents. The project is interesting, so we are trying to do a
 bit more than expected. I hope the assessment helps in the future.
 
-### Dug (Nov 30th at 10:24:13 AM)
+#### Dug (Nov 30th at 10:24:13 AM)
 
 * [Message
   Link](https://cloud-native.slack.com/archives/C9DB5ABAA/p1701357853677559?thread_ts=1701293353.624819&cid=C9DB5ABAA)
@@ -92,7 +99,7 @@ bit more than expected. I hope the assessment helps in the future.
 * It might be good to mention that (I think) all of the security issues found by
   Trail of Bits have been addressed
 
-### Igor Rodrigues (Nov 30th at 11:58:51 AM)
+#### Igor Rodrigues (Nov 30th at 11:58:51 AM)
 
 * [Message
   Link](https://cloud-native.slack.com/archives/C9DB5ABAA/p1701363531073659?thread_ts=1701293353.624819&cid=C9DB5ABAA)
@@ -103,7 +110,7 @@ added it to the assessment, but I may remove it if it's not very relevant. I'll
 also definitely add Markdown, thanks for noticing that. We'll review the doc,
 update it with your comments and tell you about the changes. Thank you again!
 
-### Igor Rodrigues (Dec 4th at 11:15:26 AM)
+#### Igor Rodrigues (Dec 4th at 11:15:26 AM)
 
 * [Message
   Link](https://cloud-native.slack.com/archives/C9DB5ABAA/p1701706526314599?thread_ts=1701293353.624819&cid=C9DB5ABAA)
@@ -119,7 +126,7 @@ Issue
 resolution](https://github.com/Igor8mr/tag-security/blob/main/assessments/projects/cloud-events/self-assessment.md#cloudevents-specification).
 Thank you for all the help!
 
-### Dug (Dec 4th at 11:36:23 AM)
+#### Dug (Dec 4th at 11:36:23 AM)
 
 * [Message
   Link](https://cloud-native.slack.com/archives/C9DB5ABAA/p1701707783421699?thread_ts=1701293353.624819&cid=C9DB5ABAA)
@@ -128,28 +135,28 @@ The closest thing we have to a SBOM is:
 https://github.com/cloudevents/spec#cloudevents-documents Thanks for the update.
 Will look it over in a bit.
 
-### Igor Rodrigues (Dec 4th at 11:44:52 AM)
+#### Igor Rodrigues (Dec 4th at 11:44:52 AM)
 
 * [Message
   Link](https://cloud-native.slack.com/archives/C9DB5ABAA/p1701708292972649?thread_ts=1701293353.624819&cid=C9DB5ABAA)
 
 Great, thanks!
 
-### Dug (Dec 4th at 12:08:22 PM)
+#### Dug (Dec 4th at 12:08:22 PM)
 
 * [Message
   Link](https://cloud-native.slack.com/archives/C9DB5ABAA/p1701709702994029?thread_ts=1701293353.624819&cid=C9DB5ABAA)
 
 I put just a few minor tweaks as comments on the commit.
 
-### Igor Rodrigues (Dec 4th at 12:28:53 PM)
+#### Igor Rodrigues (Dec 4th at 12:28:53 PM)
 
 * [Message
   Link](https://cloud-native.slack.com/archives/C9DB5ABAA/p1701710933601919?thread_ts=1701293353.624819&cid=C9DB5ABAA)
 
 Thanks, I'll fix those soon
 
-### Igor Rodrigues (Dec 5th at 8:05:09 AM)
+#### Igor Rodrigues (Dec 5th at 8:05:09 AM)
 
 * [Message
   Link](https://cloud-native.slack.com/archives/C9DB5ABAA/p1701781509377939?thread_ts=1701293353.624819&cid=C9DB5ABAA)
@@ -162,14 +169,14 @@ do you have a pull request, issue, or any other link to the implementation of
 the bots idea? Also, we are willing to help implement one of those solutions to
 the concerns if you have some specific things in mind.
 
-### Dug (Dec 5th at 11:57:30 AM)
+#### Dug (Dec 5th at 11:57:30 AM)
 
 * [Message
   Link](https://cloud-native.slack.com/archives/C9DB5ABAA/p1701795450643219?thread_ts=1701293353.624819&cid=C9DB5ABAA)
 
 @Igor Rodrigues just this one: https://github.com/cloudevents/spec/issues/1235
 
-### Dug (Dec 5th at 11:58:19 AM)
+#### Dug (Dec 5th at 11:58:19 AM)
 
 * [Message
   Link](https://cloud-native.slack.com/archives/C9DB5ABAA/p1701795499076589?thread_ts=1701293353.624819&cid=C9DB5ABAA)
@@ -178,7 +185,7 @@ If someone knows how to setup the bots and wants to submit a PR to add them...
 that would be great! Or even just a list of instructions for an admin to follow
 (if it's more than just a PR) that would be great too.
 
-### Igor Rodrigues (Dec 5th at 12:12:57 PM)
+#### Igor Rodrigues (Dec 5th at 12:12:57 PM)
 
 * [Message
   Link](https://cloud-native.slack.com/archives/C9DB5ABAA/p1701796377013619?thread_ts=1701293353.624819&cid=C9DB5ABAA)
@@ -187,5 +194,20 @@ Great, thanks! We are taking a look here
 
 ## CloudEvents Team Meeting
 
-Igor Rodrigues also joined the CloudEvents [public team meeting on November
-30th, 2023](https://www.youtube.com/watch?v=2OZPTQOqFEw&t=191s).
+* **Security Pals Involved:**
+  * Igor Rodrigues
+* **CloudEvents Team Members Involved:**
+  * Doug Davis
+  * Tommy
+  * Erik
+  * David B
+  * Jon
+  * Calum
+  * Jem
+  * Clemens
+
+### Team Meeting Report
+
+The team joined the CloudEvents public team meeting on November 30th, 2023,
+which was [recorded on
+YouTube](https://www.youtube.com/watch?v=2OZPTQOqFEw&t=191s).
