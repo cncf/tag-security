@@ -194,7 +194,9 @@ CloudEvents](https://github.com/cloudevents/spec/blob/main/cloudevents/primer.md
 * Define interoperability of event systems that allow services to produce or
   consume events, where the producer and consumer can be developed and deployed
   independently.
-* Establish a structured framework for the exchange of event data among services by standardizing the location for storing and retrieving common metadata related to events.
+* Establish a structured framework for the exchange of event data among services
+  by standardizing the location for storing and retrieving common metadata
+  related to events.
 * Provide specifications for serializing events in different formats and
   protocols.
 
@@ -274,7 +276,10 @@ the ability to interpret the content within the `data` attribute.
 #### Event Data Integrity
 
 CloudEvents does not focus on defining the methods for safeguarding data
-integrity. Therefore, it is the choice of the user/developer to address this aspect. One approach to enhance security is to apply encryption to event data specific to the domain, restricting visibility to trusted entities. The choice of the encryption mechanism is collaboratively determined by event producers and
+integrity. Therefore, it is the choice of the user/developer to address this
+aspect. One approach to enhance security is to apply encryption to event data
+specific to the domain, restricting visibility to trusted entities. The choice
+of the encryption mechanism is collaboratively determined by event producers and
 consumers, which is an implementation detail defined by the user.
 
 #### Privacy and Sensitive Information Handling
@@ -388,7 +393,8 @@ to hand over the project to a new group of maintainers by a voting process.
 
 ##### Pull Request process
 
-Usually, CloudEvents Pull Requests are expected to meet the following [criteria](https://github.com/cloudevents/spec/blob/main/docs/SDK-PR-guidelines.md)
+Usually, CloudEvents Pull Requests are expected to meet the following
+[criteria](https://github.com/cloudevents/spec/blob/main/docs/SDK-PR-guidelines.md)
 prior to being merged:
 
 * The author of the PR indicates asks for it to be discussed and reviewed in an
@@ -531,7 +537,9 @@ CloudEvents](#contributing-to-cloudevents).
   managed by the underlying infrastructure and transport protocols used for
   sending and receiving CloudEvents.
 
-* **Cryptography:** CloudEvents does not provide an encryption methods or cryptographic implemntations, all implementations are left up to the user/ developers choice.
+* **Cryptography:** CloudEvents does not provide an encryption methods or
+  cryptographic implemntations, all implementations are left up to the user/
+  developers choice.
 
 * **Audit and logging:** This is typically handled by the platforms and services
   that implement CloudEvents.
@@ -644,6 +652,29 @@ patches to the security issues found, which can solve problems such as the ones
 found by Trail Of Bits. Moreover, it is important for users to frequently check
 and install updates to their CloudEvents SDK installation.
 
+## Action Items
+
+Still in discussion with the Project 
+
+To solve some of the concerns mentioned above, CloudEvents has undertaken a
+strategic initiative to rectify these issues through the implementation of a
+dedicated bot. This automated system is designed to manage and monitor concerns
+within the CloudEvent SDKs, ensuring their resolution. Its primary functions
+include assessing the if libraries are being maintained, validating the active
+involvement of CloudEvent developers and maintainers in addressing identified
+issues, and overseeing the judicious application of requisite patches for
+effective issue resolution.
+
+### Potential Ideas
+
+* A supplementary proposal for a bot is the creation of a monitoring system that
+  systematically scans the web for recently reported issues or vulnerabilities
+  associated with the library dependencies employed in the development of Cloud
+  Events SDKs. This automated tool would function to promptly notify the
+  development team of emerging threats, enabling them to implement proactive
+  measures for timely identification, addressing, and mitigation of potential
+  risks.
+
 ## Appendix
 
 ### Known Issues Over Time
@@ -659,7 +690,7 @@ Trail of Bits have already been addressed.
 
 Below are listed the findings by Trail Of Bits with their descriptions.
 
-##### [Java SDK](https://github.com/cloudevents/sdk-java) Reliance on default encoding
+##### [[Java SDK]](https://github.com/cloudevents/sdk-java) Reliance on default encoding
 
 * **Severity:** Undetermined
 * **Difficulty:** Low
@@ -677,7 +708,7 @@ Although not all instances are problematic, especially when handling binary
 data, it is crucial to document and address this behavior in the SDK
 implementation, documentation, and provided examples.
 
-##### [Java SDK](https://github.com/cloudevents/sdk-java) Outdated Vulnerable Dependencies
+##### [[Java SDK]](https://github.com/cloudevents/sdk-java) Outdated Vulnerable Dependencies
 
 * **Severity:** Undetermined
 * **Difficulty:** Medium
@@ -691,7 +722,7 @@ automatically audited each module due to time constraints and ease of
 remediation. Manual review of exploitability within the SDK's context was not
 conducted.
 
-##### [JavaScript SDK](https://github.com/cloudevents/sdk-javascript) Potential XSS in httpTransport()
+##### [[JavaScript SDK]](https://github.com/cloudevents/sdk-javascript) Potential XSS in httpTransport()
 
 * **Severity:** Undetermined
 * **Difficulty:** Low
@@ -706,7 +737,7 @@ specification des not mandate validation or sanitization, the SDK documentation
 should emphasize the risk of unsanitized HTTP responses when using this API in
 an emitter.
 
-##### [Go SDK](https://github.com/cloudevents/sdk-go) Outdated Vulnerable Dependencies
+##### [[Go SDK]](https://github.com/cloudevents/sdk-go) Outdated Vulnerable Dependencies
 
 * **Severity:** Undetermined
 * **Difficulty:** Low
@@ -719,7 +750,7 @@ open-source snyk tool automatically audited each module. Due to time constraints
 and ease of remediation, manual review of exploitability within the SDK's
 context was skipped.
 
-##### [Go SDK](https://github.com/cloudevents/sdk-go) Downcasting of 64-bit integer
+##### [[Go SDK]](https://github.com/cloudevents/sdk-go) Downcasting of 64-bit integer
 
 * **Severity:** Undetermined
 * **Difficulty:** Low
@@ -732,7 +763,7 @@ targets). In some code instances, the result from strconv.Atoi is later
 converted to a smaller type (int16 or int32), risking overflow with specific
 inputs.
 
-##### [Go SDK](https://github.com/cloudevents/sdk-go) ReadHeaderTimeout not configured
+##### [[Go SDK]](https://github.com/cloudevents/sdk-go) ReadHeaderTimeout not configured
 
 * **Severity:** Informational
 * **Difficulty:** Low
@@ -744,7 +775,7 @@ The Go http.server API offers four timeouts, including ReadHeaderTimeout.
 Failure to set a value for this timeout makes the listener instance susceptible
 to Slowloris DoS attacks.
 
-##### [CSharp SDK](https://github.com/cloudevents/sdk-csharp) Outdated Vulnerable Dependencies
+##### [[CSharp SDK]](https://github.com/cloudevents/sdk-csharp) Outdated Vulnerable Dependencies
 
 * **Severity:** Undetermined
 * **Difficulty:** Low
@@ -855,18 +886,6 @@ This is an older document used across many engineering fields, which is not
 restricted to computer science, making it different from the other examples.
 However, it is an example of event specification being widely used in industry,
 including more physical areas such as mechanical engineering and factories.
-
-## Action Items 
-
-Still in discussion with the Project 
-
-
-In response to the issues we've identified, CloudEvents is has already been planning to address these issues them through the implementation of a dedicated bot. This bot is designed to manage and monitor issues within the CloudEvent SDKs, ensuring their timely resolution. Its primary functions include assessing the currency of libraries, verifying that issues are actively being attended to by CloudEvent developers and maintainers, and overseeing the application of necessary patches for issue resolution.
-
-### Potential Ideas 
-
-* An additional suggestion for a bot could be creating a bot that monitors and scraps the web for any newly reported issues or vulnerabilities related to the library dependencies utilized in developing the Cloud Events SDKs. This bot would serve to keep the development team informed about emerging threats promptly, facilitating proactive measures to address and mitigate potential risks in a timely manner.
-
 
 ## References
 
