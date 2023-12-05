@@ -388,7 +388,7 @@ to hand over the project to a new group of maintainers by a voting process.
 
 ##### Pull Request process
 
-Usually, CloudEvents Pull Requests are expected to meet the following criteria
+Usually, CloudEvents Pull Requests are expected to meet the following [criteria](https://github.com/cloudevents/spec/blob/main/docs/SDK-PR-guidelines.md)
 prior to being merged:
 
 * The author of the PR indicates asks for it to be discussed and reviewed in an
