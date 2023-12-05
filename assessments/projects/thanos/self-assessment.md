@@ -269,6 +269,7 @@ an arbitrarily large amount of data, possibly incurring financial cost or overwh
     * Authorization or TLS  for Thanos server HTTP APIs is not yet specified.
 * Real-time monitoring and altering: Thanos does not provide real time monitoring. It simply extends Prometheus by providing long term, scalable storage and querying capabilities. For real time monitoring results, you have to use Prometheus directly. While Thanos integrates Prometheus, it does not contain built in alerting mechanisms.
 * Thanos does not restrict a user from storing extremely large amounts of data, even when its costly for Thanos or challenges server capacity.
+* Thanos does not restrict running big queries, that, if run without any proper limits can bring down Thanos components.
 * Thanos does not guarantee that data never gets lost or is always consistent across all replicas and remote storage systems.
 
 
