@@ -149,7 +149,10 @@ CNI seeks graduation and is preparing for a security audit.
 
 ## Security functions and features
 
-The CNI project primarily focuses on providing network interfaces and connectivity for containers, emphasizing flexibility in network configuration and plugins. While these are its core functionalities, specific security measures such as data encryption, checksums, signatures, and authentication mechanisms are not directly provided by the CNI project itself. These security features are more likely dependent on specific network plugins implementing the CNI interface or container orchestration systems using CNI, such as Kubernetes.
+- **Critical:**
+    - As documented in the [required keys for plugin configuration objects](https://www.cni.dev/docs/spec/#plugin-configuration-objects), the 'type' string containing the name of a CNI plugin cannot contain disallowed characters in file paths (e.g., '/' or '\\'). Disallowing such characters prevents using characters such as "../" to references binaries elsewhere on the system.
+- **Security relevant:**
+    - As documented in the [protocol parameters passed to plugins](https://www.cni.dev/docs/spec/#parameters), the environment variable CNI_PATH contains the list of paths to search for CNI plugin executables. This limits where CNI can look which could prevent unintended binaries from being executed.
 
 ## Project compliance
 
@@ -193,7 +196,7 @@ There is no publicly available document outlining an incident response process.
 
 ### Known Issues Over Time
 
-[**CVE-2021-20206**](https://nvd.nist.gov/vuln/detail/CVE-2021-20206) (CVSS v3.1 Base Score: 7.2 High Severity) Arbitrry path injection via type field in CNI configuration
+[**CVE-2021-20206**](https://nvd.nist.gov/vuln/detail/CVE-2021-20206) (CVSS v3.1 Base Score: 7.2 High Severity) Arbitrary path injection via type field in CNI configuration
 A path name flaw allowed execution of binaries elsewhere on the system including binaries that are not CNI plugins. This was fixed in libcni version 0.8.1 by [tightening up the plugin-finding logic](https://github.com/containernetworking/cni/pull/808).
 
 ### CII Best Practices
