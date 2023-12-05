@@ -493,31 +493,13 @@ Key differences:  -->
 ###### Cortex
 Cortex is a  horizontally scalable, highly available, multi-tenant, long term storage for Prometheus.
 
-* Horizontally scalable: Cortex can run across multiple machines in a cluster, exceeding the throughput and storage of a single machine. This enables you to send the metrics from multiple Prometheus servers to a single Cortex cluster and run "globally aggregated" queries across all data in a single place.
-* Highly available: When run in a cluster, Cortex can replicate data between machines. This allows you to survive machine failure without gaps in your graphs.
-* Multi-tenant: Cortex can isolate data and queries from multiple different independent Prometheus sources in a single cluster, allowing untrusted parties to share the same cluster.
-* Long term storage: Cortex supports S3, GCS, Swift and Microsoft Azure for long term storage of metric data. This allows you to durably store data for longer than the lifetime of any single machine, and use this data for long term capacity planning.
 
-Key differences:
-* Design:
-  * Cortex: A horizontally scalable, highly available, multi-tenant, long term storage built on top of Prometheus. Cortex can run across multiple machines, allowing metrics from multiple Prometheus servers to be sent to a single Cortex cluster for a global view of the data.
-  * Thanos: Thanos components can be set up into a Prometheus setup that allows reliable metrics, simple operations and long term storage capbilities.
-  * Basically Cortex is a ready to use solution that gives you a complete view of the solution. Thanos does something similar but it gives you the flexibility to design and configure each part of your Prometheus server to meet your specific needs.
-
-* Rollout
-  * Cortex: Rolled out as a single binary or as multiple independent microservices. Single binery approach is simple and good for testing. Multiple independent approach is used for the prouction stage. It allows you to  scale services for storing and querying metrics as well as for isolating failures.
-  * Thanos: Can be deployed independently enabling gradual rollouts and complex deployment scenarios. Thanos can also be rolled out incrementally along side a Prometheus deployment using the side car approach.
-
-* Storage
-   * Cortex: To store and query time series data, block storage (based on Prometheus TSDB) is used. Can also be configured to use local storage.
-   * Thanos: Metrics stored in configurable object storage clients.
-
-* Features
-    *  Global Querying View: Thanos reuses existing Prometheus deployment servers to achieve a global querying view, while Cortex needs a separate central Cortex cluster and storage backend.
-    *  Deduplication and Merging of Metrics: * Thanos querier reads from multiple replicas and merges the metrics collected from each pair into a single result. Cortex uses a push-based model. In this model, Cortex elects a leader replica for each Prometheus cluster and drops samples pushed by the other member in the pair. So technically, only samples form a single replica are accepted.
-   *  Seamless Integration with Existing Prometheus Setups: Thanos integrates with a sidecar.  Cortex uses remote write to  push data to a central cluster.
-   *  Query Optimization: To improve query speed, Thanos downsamples historical data. Cortex, on the other hand uses optimization techniques like batch iterators, caching indexes, HTTP response compression etc.
-   * Data Format: With Thanos, data can be read and written as Prometheus TSDB blocks. Cortex is migrating individual Prometheus chunks to object storage for better scalability.
+|                      | Cortex                                                       | Thanos                                                         |
+|----------------------|--------------------------------------------------------------|----------------------------------------------------------------|
+| Design               | Ready to use packaged solution that provides a complete view of the storage system; allows metrics from multiple Prometheus servers to be sent to a single machine. | More flexibility; allows users to design and configure each part of their Prometheus server to meet their specific needs. |
+| Rollout              | Single binary or as multiple independent microservices.      | Independently or incrementally alongside Prometheus server.      |
+| Storage              | Block storage. Also possible to be configured to use local storage. | Configurable object storage clients.                             |
+| Features             | Separate central Cortex cluster and storage backend needed to achieve global querying view. Push based model: only samples from a single replica accepted. Remote write to push data to central cluster. Optimization techniques like batch iterators, caching indexes, HTTP response compression etc.  | Prometheus servers used to achieve a global querying view. Querier reads from multiple replicas and merges metrics into a single result. Integrates with sidecar. For query optimization, downsamples historical data. Read and written as Prometheus TSDB blocks. |
 
  Source: 
  
