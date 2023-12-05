@@ -103,7 +103,7 @@ In addition, Volcano inherits the design of Kubernetes APIs, allowing you to eas
 ### Non-goals
 
 - Replacing core Kubernetes functionalities.
-- Non-batch processing tasks.
+- Non-batch processing tasks (such as data-set processing/analysis, or machine learning).
 
 
 ## Self-assessment use
