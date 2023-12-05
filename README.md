@@ -151,19 +151,6 @@ seen [here](governance/related-groups/)
 
 ### On-going projects
 
-#### Policy team
-
-Policy is an essential component of a secure system.
-
-[Bi-weekly meetings](https://docs.google.com/document/d/1ihFfEfgViKlUMbY2NKxaJzBkgHh-Phk5hqKTzK-NEEs/edit?usp=sharing)
-at 3:00 PM PT focus on policy concerns and initiatives.
-
-Co-leads
-
-- TBD
-
-Co-chair representative: @achetal01
-
 #### Security reviews
 
 [Security reviews](./assessments) are a collaborative process for the benefit of
