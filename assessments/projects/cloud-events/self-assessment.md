@@ -11,8 +11,8 @@ Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV) and Doug Davis
 This document elaborates and explores the design goals for
 [CloudEvents](https://cloudevents.io/) as well as a security assessment of the
 software. It was written in collaboration with the CloudEvents team. All
-communications with CloudEvents was
-recorded on a [separate document](CE-maintainers-communications.md).
+communications with CloudEvents was recorded on a [separate
+document](CE-maintainers-communications.md).
 
 ## Table of contents
 
@@ -120,8 +120,8 @@ structured layout, it acknowledges the diverse preferences in the industry.
 Users can include event data and context attributes in a single document, and
 the support for a binary format seamlessly integrates with existing event
 structures. Therefore, CloudEvents standardizes the location for retrieving
-shared metadata about an event without the need to parse the specific format of
-the event.
+shared metadata about an event without the need to parse the specific business
+logic of the event.
 
 ### Actors
 
@@ -151,7 +151,7 @@ may enforce security policies.
 
 ### Actions
 
-#### Event Formating
+#### Event Formatting
 
 Called by the producer and the consumer. An [Event
 Format](https://github.com/cloudevents/spec/blob/130ba0d183f5e45c1d141f5c1f272cf71d898623/cloudevents/spec.md#event-format)
@@ -431,7 +431,7 @@ channels](https://github.com/cloudevents/spec#communications) for different
 purposes.
 
 * Internal communications channels:
-  * [Meetings](https://zoom.us/my/cncfserverlesswg?pwd=YjNqYzhOdjRRd01YWFkzS1lHbDZqUT09)
+  * [Meetings](https://docs.google.com/document/d/1OVF68rpuPK5shIHILK9JOqlZBbfe91RNzQ7u_P7YCDE/edit?usp=sharing)
   * Email
   * Github Issues
 * InBound communications channels:
