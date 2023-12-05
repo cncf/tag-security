@@ -279,7 +279,7 @@ OPPO used Cube FS to store their data for Machine learning training iterating wi
       
 # Action Items
 
-This section enumerates a couple of action items the CubeFS team could consider implementing to improve CubeFS's security posture and overall enhancement.
+This section enumerates a couple of action items the CubeFS team could consider implementing to improve CubeFS's security posture and overall enhancement. Each action item also has a suggested resolution which the team may find useful.
 
 * **Docker Image Security** -
     * **Existing Issue** - Docker Content Trust (DCT), which provides image signing and verification, is not explicitly enabled. Enabling this can ensure the integrity and authenticity of images. There is also no vulnerability scanning for container images. Vulnerability scanning tools can identify and report known vulnerabilities. Audit logging is not explicitly mentioned for the containers.
@@ -287,14 +287,14 @@ This section enumerates a couple of action items the CubeFS team could consider 
  
 * **Formal SBOM** -
     * **Existing Issue** - CubeFS is currently missing a document that formally outlines all of the project’s dependencies including licenses, versions, etc.
-    * **Suggested Resolution** - A formal SBOM document can be generated using the FOSSA CLI as specified in this [guide blog](https://fossa.com/blog/generate-software-bill-of-materials-fossa/)
+    * **Suggested Resolution** - A formal SBOM document can be generated using the FOSSA CLI as specified in this [guide blog](https://fossa.com/blog/generate-software-bill-of-materials-fossa/).
  
 * **SLSA Provenance File** -
     * **Existing Issue** - Although CubeFS's current score of Signed-Release on their OpenSSF scorecard is passable through cryptographically signing release artifacts, it should have more detailed records of their artifacts' origins and production. 
-    * **Suggested Resolution** - To meet the highest standards of the OpenSSF Scorecard, and ensure maximum project integrity, a SLSA provenance file should be included in the assets for each release. Including this file in the assets for each release will increase the Signed-Releases score. The details on how this is done are on SLSA's [official site](https://slsa.dev/)
+    * **Suggested Resolution** - To meet the highest standards of the OpenSSF Scorecard, and ensure maximum project integrity, a SLSA provenance file should be included in the assets for each release. Including this file in the assets for each release will increase the Signed-Releases score. The details on how this is done are on SLSA's [official site](https://slsa.dev/).
  
 * **Use of Static Application Security Testing (SAST) tool** -
     * **Existing Issue** - CubeFS’s current commit procedure does not include the use of a Static Application Security Testing (SAST) tool. Though some commits use SAST tools, not all of them do. This could result in unsafe code, and potential security threats being merged with the main branch.
-    * **Suggested Resolution** - By standardizing the use of SAST tools before every commit within the pipeline, regardless of the commit’s purpose, CubeFS can ensure that the integrity of their code is consistently up to date. Details of SAST can be found [here](https://github.com/ossf/scorecard/blob/4edb07802fdad892fa8d10f8fd47666b6ccc27c9/docs/checks.md#sast)
+    * **Suggested Resolution** - By standardizing the use of SAST tools before every commit within the pipeline, regardless of the commit’s purpose, CubeFS can ensure that the integrity of their code is consistently up to date. Details of SAST can be found [here](https://github.com/ossf/scorecard/blob/4edb07802fdad892fa8d10f8fd47666b6ccc27c9/docs/checks.md#sast).
 
 
