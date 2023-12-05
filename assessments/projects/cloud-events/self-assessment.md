@@ -677,7 +677,7 @@ Although not all instances are problematic, especially when handling binary
 data, it is crucial to document and address this behavior in the SDK
 implementation, documentation, and provided examples.
 
-##### [Java SDK] Outdated Vulnerable Dependencies
+##### [Java SDK](https://github.com/cloudevents/sdk-java) Outdated Vulnerable Dependencies
 
 * **Severity:** Undetermined
 * **Difficulty:** Medium
@@ -706,7 +706,7 @@ specification des not mandate validation or sanitization, the SDK documentation
 should emphasize the risk of unsanitized HTTP responses when using this API in
 an emitter.
 
-##### [Go SDK] Outdated Vulnerable Dependencies
+##### [Go SDK](https://github.com/cloudevents/sdk-go) Outdated Vulnerable Dependencies
 
 * **Severity:** Undetermined
 * **Difficulty:** Low
@@ -732,7 +732,7 @@ targets). In some code instances, the result from strconv.Atoi is later
 converted to a smaller type (int16 or int32), risking overflow with specific
 inputs.
 
-##### [Go SDK] ReadHeaderTimeout not configured
+##### [Go SDK](https://github.com/cloudevents/sdk-go) ReadHeaderTimeout not configured
 
 * **Severity:** Informational
 * **Difficulty:** Low
