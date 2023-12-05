@@ -453,16 +453,11 @@ Reflect on times prospective users have asked about the differences between your
 the same question.
 
 ###### Victoria Metrics
-VictoriaMetrics is a fast, cost-effective and scalable monitoring solution and time series database. VictoriaMetrics began as an alternative long term remote storage TSDB for Prometheus.
 
-Key differences:
-* Architecture- Thanos has a modular system with several components that each have different functions. This system provides functionality. VictoriaMetrics has single node and cluster versions. Victoriametrics provide simplicity and ease of deployment.
-* Storage- Thanos uses TSDB. VictoriaMetrics is more storage effeicent due to having its own custom storage and compression algorithms.
-*  Query language- Thanos uses PromQL just like Prometheus. VictoriaMetrics uses metricsQl which is baskwards compatible with PromQL.
-* High Avaliability and Reliability: Thanos relies on  object storage for long term data and has replication features in other components; this provides high availability. VictoriaMetrics has a cluster version and stores its data on local storage which provides high availability and redundancy.
-* Downsampling & retention: Both Thanos & VM \\\\\\\\\, the specifics of each may vary.
-* Integration: Thanos integrates closely with Prometheus and can integrate with Grafana.VictoriaMetrics implements MetricsQL - query language inspired by PromQL. MetricsQL is backwards-compatible with PromQL, so Grafana dashboards backed by Prometheus data source should work the same after switching from Prometheus to VictoriaMetrics.
-* Performance: Both Thanos and VictoriaMetrics handle large workloads seamlessly.  Some prefer Thanos since it has a modular architecture that can be customized for specific setups. Some prefer VictoriaMetrics and believe that it's faster, more resource-effecient and uses CPU and disk space better.
+VictoriaMetrics is a fast, cost-effective and  scalable monitoring solution and time series database. 
+
+Key differences: 
+VictoriaMetrics(VM) offers a single node and cluster version, which provides simplicity and ease of deployment, while Thanos has a modular system with  several distinct components. VM has its own custom storage and compression algorithms, while Thanos uses TSDB. VictoriaMetrics uses metricsQL, while Thanos uses PromQL. Thanos relies on object storage and replication, while VictoriaMetrics has a cluster version and stores its data on local storage. Both systems offer downsampling and customizable retention policies. In terms of performance, both systems handle large workloads seamlessly; with Thanos being prefered by some for its modular customizable through and VictoriaMetrics being prefered by others for its speed, resource efficiency, and utilization of CPU and disk space.
 
 Sources:  
 [Thanos vs. VictoriaMetrics](https://last9.io/blog/thanos-vs-victoriametrics/) 
@@ -489,24 +484,8 @@ Cortex is a  horizontally scalable, highly available, multi-tenant, long term st
 
 Prometheus, a Cloud Native Computing Foundation project, is a systems and service monitoring system. It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts when specified conditions are observed.
 
-The features that distinguish Prometheus from other metrics and monitoring systems are:
-
-A multi-dimensional data model (time series defined by metric name and set of key/value dimensions)
-PromQL, a powerful and flexible query language to leverage this dimensionality
-No dependency on distributed storage; single server nodes are autonomous
-An HTTP pull model for time series collection
-Pushing time series is supported via an intermediary gateway for batch jobs
-Targets are discovered via service discovery or static configuration
-Multiple modes of graphing and dashboarding support
-
 Key differences:
-* Storage & Scalability: Prometheus is designed for short term monitoring and can't handle large amounts of historical data. Thanos' distributed storage layer allows for scalable, long term storage and query capabilities.
-* High availability: Prometheus operates in single server mode. Thanos has a distributed architecture and redundancy in many components . Therefore, even in the face of failures seamless querying and retrieval of data is possible.
-* Querying and analysis: Prometheus uses PromQL for retrieve and analyzing time series data. Thanos extends PromQL to query data from multiple Prometheus instances. This enables cross instance aggregation and federation of metrics.
-* Retention and downsampling: Prometheus uses local disk storage for short term solutions.  Thanos uses object storage solutions like (Amazon S3 or Google cloud Storage) for long-term data retention.
-* Integration & Ecosystem: Prometheus has a rich ecosystem with many integrations and exporters available.  This makes it well suited for monitoring kubernetes and cloud-native environments.  Thanos inherits this integration and also provides scalability and long term storage.
-* Recording rules: Prometheus uses recording rules to pre-calculate and store frequently used queries as a new time series. This helps to optimize query perfromance and simplify  complicated calculations. Thanos inherits this feature from Prometheus.
-* Downsampling: Prometheus supports downsampling which involves combining data over large time intervals to minimize storage needs and simplify query processing. Thanos inherits this capability from Prometheus.
+Prometheus is designed for short term monitoring, and not large scale or long term storage, while Thanos is designed for long term storage, scalability and querying capabilities. Prometheus operates in single server mode, while Thanos has a distributed architecture and redundancy in its components. Prometheus uses PromQL for retrieving and analyzing time series data, while Thanos extends PromQL to query data from multiple Prometheus instances.  Prometheus uses local disk storage for short term solutions while Thanos uses object storage solutions like for long-term data retention.
 
 Source: 
 
