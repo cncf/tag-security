@@ -33,7 +33,7 @@ A table at the top for quick reference information, later used for indexing.
 | Software |  https://github.com/nats-io/nats-server |
 | Security Provider | No  |
 | Languages | 99.6% Go 0.4% Other |
-| SBOM | https://github.com/Ricardo-A-Zapata/tag-security/blob/main/assessments/projects/nats/doc/SBOM%20report.html  |
+| SBOM | [Report Linked] (https://github.com/Ricardo-A-Zapata/tag-security/blob/main/assessments/projects/nats/doc/SBOM%20report.html)  |
 | | |
 
 ### Security links
