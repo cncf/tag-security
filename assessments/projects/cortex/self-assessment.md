@@ -244,7 +244,8 @@ Incident Response:
 - **CVE-2023-0215:** Also in v1.14.1, this vulnerability related to OpenSSL's ASN.1 data processing was fixed in OpenSSL 1.1.1t-r0.
 
 ### CII Best Practices
-The Cortex project does not explicitly document its compliance with the Core Infrastructure Initiative (CII) Best Practices. However, as a widely used and community-driven project, it likely adheres to several best practices, including regular code reviews, automated testing, and secure coding standards, crucial for maintaining open-source software's security and reliability.
+- Cortex has achieved an Open Source Security Foundation (OpenSSF) best practices badge at passing level: https://www.bestpractices.dev/en/projects/6681
+- Cortex has achieved A+ quality as an open-source Go project: https://goreportcard.com/report/github.com/cortexproject/cortex
 
 ### Case Studies
 Detailed case studies or specific real-world use cases for Cortex were not found. However, Cortex is designed for large-scale cloud-native environments, suggesting its use in extensive monitoring and analysis of time-series data, showcasing its scalability, long-term storage, and multi-tenancy capabilities.
@@ -253,4 +254,11 @@ Detailed case studies or specific real-world use cases for Cortex were not found
 Comparing Cortex with similar projects like Thanos reveals key differences:
 - **Thanos:** A CNCF Incubating project known for its highly available Prometheus setup with long-term storage capabilities.
 - **Cortex:** Distinguished by its horizontally scalable architecture, high availability, multi-tenant support, and focus on long-term storage for Prometheus
+
+## Action Items
+- Engaged in collaborative self-assessment discussions with Project Maintainers on [Slack](https://cloud-native.slack.com/archives/C0682GTKK4K/p1701568106182349) and [GitHub Issue](https://github.com/cortexproject/cortex/issues/5692) to align goals and address feedback 
+- Implemented SBOM generation using cyclonedx-gomod, providing a detailed inventory of Go module dependencies.
+- Conducted a comprehensive update of the project's threat model with respect to Cortex Maintainer's Response.
+- Revised and expanded the project documentation's appendix section, incorporating additional materials to enhance overall understanding and documentation.
+- Ensured that all relevant links associated with the development pipeline and communication channels are up-to-date.
 
