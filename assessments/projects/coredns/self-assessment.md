@@ -131,7 +131,7 @@ CoreDNS supports extensions and plug-ins to easily set up security mechanisms an
    
 ## Project compliance
 
-CoreDNS is not explicitly documented to meet the criteria of any security standards. While CoreDNS is designed with security in mind with features such as TLS encryption and DNSSEC zone signing, it does not claim to comply with any known security standards such as PCI-DSS, COBIT, ISO, or GDPR.
+CoreDNS is not explicitly documented to meet the criteria of any security standards. While CoreDNS is designed with a security mindset - providing features such as policy enforcement, TLS encryption, and DNSSEC zone signing - it does not claim to comply with any known security standards such as PCI-DSS, COBIT, ISO, or GDPR.
 
 ## Secure development practices
 
