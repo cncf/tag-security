@@ -230,13 +230,13 @@ OpenTelemetry's data scrubbing feature allows for the removal or anonymization o
 
 RBAC in OpenTelemetry controls user access to data and functionalities, preventing unauthorized actions and enhancing system security. It's a critical consideration in threat modeling for assessing risks related to unauthorized access and privilege escalation.
 
-**Logging and Auditing**
+**Monitoring and Auditing**
 
-This feature in OpenTelemetry tracks system activities and is vital for security audits and post-incident analysis. It plays a significant role in threat modeling for identifying unauthorized activities and breaches, enhancing incident detection and response strategies.
+This feature in OpenTelemetry tracks system activities and is vital for security audits and analysis. Monitoring and auditing apply to both the performance and the security of the telemetry data pipeline. For example, metrics, logs, and alerts can be used for the OpenTelemetry agents, collectors, and exporters. Reports, dashboards, and notifications can be used for the databases or cloud services that store the telemetry data. It plays a significant role in threat modeling for identifying unauthorized activities and breaches, enhancing incident detection and response strategies.
 
-**Rate Limiting and Throttling**
+**Reverse Proxy**
 
-Implementing rate limiting and throttling in OpenTelemetry is key for protecting against denial-of-service attacks and ensuring service availability. These mechanisms are considered in threat modeling for evaluating risks related to service resilience.
+A reverse proxy sits between the clients (which could be instrumented applications or OpenTelemetry agents) and the backend services (like telemetry collectors or observability platforms). It manages the incoming traffic and applies rate limiting and throttling rules to control the flow of requests. This setup is crucial for protecting the backend services from being overwhelmed by excessive traffic or potential denial-of-service attacks.
 
 **Regular Security Updates and Patch Management**
 
