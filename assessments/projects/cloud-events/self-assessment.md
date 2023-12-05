@@ -64,10 +64,9 @@ software.
 
 | Doc | url |
 | -- | -- |
-| CloudEvents Security Assessment  | https://github.com/cloudevents/spec/blob/main/docs/CE-SecurityAudit-2022-10.pdf |
-| CloudEvents Privacy and Security Specification | https://github.com/cloudevents/spec/blob/130ba0d183f5e45c1d141f5c1f272cf71d898623/cloudevents/spec.md#privacy-and-security |
-| CloudEvents SDK Security Standards | https://github.com/cloudevents/spec/blob/main/docs/SDK-GOVERNANCE.md#ensuring-projects-health |
-
+| CloudEvents Security Assessment  | <https://github.com/cloudevents/spec/blob/main/docs/CE-SecurityAudit-2022-10.pdf> |
+| CloudEvents Privacy and Security Specification | <https://github.com/cloudevents/spec/blob/130ba0d183f5e45c1d141f5c1f272cf71d898623/cloudevents/spec.md#privacy-and-security> |
+| CloudEvents SDK Security Standards | <https://github.com/cloudevents/spec/blob/main/docs/SDK-GOVERNANCE.md#ensuring-projects-health> |
 
 ## Overview
 
@@ -655,47 +654,70 @@ and install updates to their CloudEvents SDK installation.
 
 ## Action Items
 
-Action Items
-Immediate Priorities
-1. Bot Implementation for SDK Monitoring
-Objective: Develop and deploy an automated bot system to monitor the health of various SDKs.
-Action Steps: Collaborate with the team to design the bot's functionalities, ensuring it can assess maintenance status, issue resolution, and patch updates.
+### Immediate Priorities
 
-2. Addressing Security Vulnerabilities
-Objective: Triage and address the security vulnerabilities identified in the Trail of Bits audit.
-Action Steps: Review the audit report, prioritize the vulnerabilities based on severity, and develop patches or updates.
+#### Bot Implementation for SDK Monitoring
 
-3. Regular SDK Security Audits
-Objective: Establish a regular schedule for security audits of CloudEvents SDKs.
-Action Steps: Define audit frequency, select auditing tools or services, and coordinate audit activities.
+* **Objective:** Develop and deploy an automated bot system to monitor the
+  health of various SDKs.
+* **Action Steps:** Collaborate with the team to conceptualize the bot's
+  features, ensuring its capability to evaluate maintenance status, address
+  issues, and implement patch updates in accordance with the rules outlined in
+  the governance documents.
 
-Long-Term Strategies
-4. Automated Vulnerability Scanning for SDK Dependencies
-Objective: Implement a system to automatically scan for vulnerabilities in SDK dependencies.
-Action Steps: Research and integrate tools for continuous scanning of dependencies. Establish a notification system for newly identified vulnerabilities.
+#### Regular SDK Security Audits
 
-5. Enhanced Encryption and Data Validation Mechanisms
-Objective: Strengthen the encryption and data validation practices within CloudEvents SDKs.
-Action Steps: Assess current encryption and data validation methods, identify improvements, and implement enhancements.
+* **Objective:** Establish a regular schedule for security audits of CloudEvents
+  SDKs.
+* **Action Steps:** Specify the frequency of audits, assemble the audit team,
+  identify the tools and services required, and manage the coordination of audit
+  activities.
 
-6. Documentation and Knowledge Sharing
-Objective: Improve the documentation related to security practices and vulnerabilities within CloudEvents.
-Action Steps: Create comprehensive, accessible documentation that covers security best practices, known vulnerabilities, and mitigation strategies.
+### Long-Term Strategies
 
-7. Community Engagement and Feedback
-Objective: Enhance engagement with the CloudEvents user community for feedback and insights on security.
-Action Steps: Establish channels for regular feedback, conduct community surveys, and organize Q&A sessions.
+#### Automated Vulnerability Scanning for SDK Dependencies
 
+* **Ojective:** Implement a system to automatically scan for vulnerabilities in
+  SDK dependencies.
+* **Action Steps:** Research and integrate tools for continuous scanning of
+  dependencies. Establish a notification system for newly identified
+  vulnerabilities.
+
+#### Enhanced Encryption and Data Validation Mechanisms
+
+* **Objective:** Emphasize to the user the goals and non-goals of CloudEvents.
+* **Action Steps:** Highlight to the user the importance of establishing a
+  robust infrastructure for encryption and data validation practices around the
+  CloudEvents implementation.
+
+#### Documentation and Knowledge Sharing
+
+* **Objective:** Continue improving the documentation related to security
+  practices and vulnerabilities within CloudEvents SDKs.
+* **Action Steps:** Create comprehensive and accessible documentation that
+  covers security best practices, identified vulnerabilities, resolved issues,
+  public Software Bill of Materials, and strategies for mitigation of
+  vulnerabilities.
+
+#### Community Engagement and Feedback
+
+* **Objective:** Enhance engagement with the CloudEvents user community for
+  feedback and insights on security
+* **Action Steps:** Establish channels for consistent feedback, administer
+  community surveys, and arrange Q&A sessions. Evaluate GitHub issues, engage in
+  discussions with authors, formulate mitigation or solution strategies, and
+  execute them. Prioritize and resolve security vulnerabilities identified by
+  users through proper triage processes.
 
 ### Potential Ideas
 
 * A supplementary proposal for a bot is the creation of a monitoring system that
-  systematically scans the web for recently reported issues or vulnerabilities
-  associated with the library dependencies employed in the development of Cloud
-  Events SDKs. This automated tool would function to promptly notify the
-  development team of emerging threats, enabling them to implement proactive
-  measures for timely identification, addressing, and mitigation of potential
-  risks.
+systematically scans the web for recently reported issues or vulnerabilities
+associated with the library dependencies employed in the development of Cloud
+Events SDKs. This automated tool would function to promptly notify the
+development team of emerging threats, enabling them to implement proactive
+measures for timely identification, addressing, and mitigation of potential
+risks.
 
 ## Appendix
 
