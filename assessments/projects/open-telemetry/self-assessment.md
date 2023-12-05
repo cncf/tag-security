@@ -205,7 +205,7 @@ See [Actors](#actors) and [Actions](#actions) for more detailed description of t
 
 **Telemetry Data Encryption**
 
-Encryption of telemetry data in OpenTelemetry is critical for protecting data confidentiality and integrity during transmission. It serves as the first line of defense against data breaches, making it a fundamental aspect in threat modeling for assessing risks related to eavesdropping and data tampering.
+Encryption of telemetry data in OpenTelemetry is critical for protecting data confidentiality and integrity during transmission. This process involves transforming the readable telemetry data (metrics, logs, and traces) into an encrypted format, which can only be deciphered by authorized parties with the appropriate decryption keys. It serves as the first line of defense against data breaches, making it a fundamental aspect in threat modeling for assessing risks related to eavesdropping and data tampering.
 
 **Authentication and Authorization Mechanisms**
 
