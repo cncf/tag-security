@@ -1,13 +1,9 @@
 # Self-assessment
-The Self-assessment is the initial document for projects to begin thinking about the
-security of the project, determining gaps in their security, and preparing any security
-documentation for their users. This document is ideal for projects currently in the
-CNCF **sandbox** as well as projects that are looking to receive a joint assessment and
-currently in CNCF **incubation**.
+Authors: Tom Zhang, Rohit Chaudhari, Maryam Mohagheghi, Vamshi Madineni
 
-For a detailed guide with step-by-step discussion and examples, check out the free 
-Express Learning course provided by Linux Foundation Training & Certification: 
-[Security Assessments for Open Source Projects](https://training.linuxfoundation.org/express-learning/security-self-assessments-for-open-source-projects-lfel1005/).
+Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV).
+
+This document evaluates the design goals for [CoreDNS](https://coredns.io/) as provides a security assessment of the software.
 
 # Self-assessment outline
 
