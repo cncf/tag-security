@@ -131,7 +131,7 @@ CoreDNS supports extensions and plug-ins to easily set up security mechanisms an
    
 ## Project compliance
 
-CoreDNS is not explicitly documented to meet the criteria of any security standards. While CoreDNS is designed with security in mind, providing services such as TLS encryption and DNSSEC, it does not claim to comply with any known security standards such as PCI-DSS, COBIT, ISO, or GDPR.
+CoreDNS is not explicitly documented to meet the criteria of any security standards. While CoreDNS is designed with security in mind with features such as TLS encryption and DNSSEC zone signing, it does not claim to comply with any known security standards such as PCI-DSS, COBIT, ISO, or GDPR.
 
 ## Secure development practices
 
@@ -218,7 +218,9 @@ All of the timelines below are estimates and assume a Private Disclosure. If the
   - **Published Date:** December 13, 2019; 5:15:11 PM -0500
   - **Impact:** Predictable TXIDs allow attackers to forge DNS responses, leading to potential DNS cache poisoning or man-in-the-middle attacks.
 
-### CII Best Practices [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/1250/badge)](https://www.bestpractices.dev/projects/1250)
+### CII Best Practices
+
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/1250/badge)](https://www.bestpractices.dev/projects/1250)
 
 Coredns currently holds a [passing level badge](https://www.bestpractices.dev/en/projects/1250) for its adherence to CII best practices. However, to achieve the silver badge, several key areas need attention:
 
