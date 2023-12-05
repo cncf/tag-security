@@ -37,7 +37,7 @@ A table at the top for quick reference information, later used for indexing.
 | Software |  [Rook](https://github.com/rook/rook)  |
 | Security Provider | No  |
 | Languages | Go, Python, C++ |
-| SBOM | [prerequisites](https://github.com/rook/rook/blob/master/Documentation/Getting-Started/Prerequisites/prerequisites.md), [go.mod](https://github.com/rook/rook/blob/master/pkg/apis/go.mod), [API go.mod](https://github.com/rook/rook/blob/master/pkg/apis/go.mod), [Build Reqs](https://github.com/rook/rook/blob/master/INSTALL.md)|
+| SBOM | [prerequisites](https://github.com/rook/rook/blob/master/Documentation/Getting-Started/Prerequisites/prerequisites.md), [go.mod](https://github.com/rook/rook/blob/master/pkg/apis/go.mod), [API go.mod](https://github.com/rook/rook/blob/master/pkg/apis/go.mod), [Build Reqs](https://github.com/rook/rook/blob/master/INSTALL.md), [images](https://github.com/rook/rook/blob/v1.12.9/deploy/examples/images.txt)|
 | | |
 
 ### Security links
@@ -160,7 +160,7 @@ Rook automates deployment and management of Ceph to provide self-managing, self-
 
 * All access to rook operator should be authenticated and authorized
 * Secrets created by Rook operator should maintain confidentiality
-* Rook operator should obey the principle of least privilege (see [here](https://github.com/rook/rook/blob/release-1.12/design/ceph/security-model.md) for planned changes)
+* Rook operator should obey the principle of least privilege (see [here](https://github.com/rook/rook/pull/1736) for improvements already made to operator permissions model)
 * Ceph storage elements should maintain integrity and availability while scaling
 
 ### Non-goals
@@ -270,16 +270,14 @@ Any changes to the meeting schedule will be added to the [agenda doc](https://do
 
 Anyone who wants to discuss the direction of the project, design and implementation reviews, or general questions with the broader community is welcome and encouraged to join.
 
-- Meeting link: <https://zoom.us/j/392602367?pwd=NU1laFZhTWF4MFd6cnRoYzVwbUlSUT09>
+- [Community Meeting Link: Zoom](https://zoom.us/j/392602367?pwd=NU1laFZhTWF4MFd6cnRoYzVwbUlSUT09)
 - [Current agenda and past meeting notes](https://docs.google.com/document/d/1exd8_IG6DkdvyA0eiTtL2z5K2Ra-y68VByUUgwP7I9A/edit?usp=sharing)
 - [Past meeting recordings](https://www.youtube.com/playlist?list=PLP0uDo-ZFnQP6NAgJWAtR9jaRcgqyQKVy)
 
 
 ## Security issue resolution
 
-For a complete list of closed security issues, please refer to the below link 
-Closed Security Issues: https://github.com/rook/rook/issues?q=is%3Aissue+label%3Asecurity+is%3Aclosed
-
+For a complete list of closed security issues, please refer to [this link](https://github.com/rook/rook/issues?q=is%3Aissue+label%3Asecurity+is%3Aclosed) 
 
 ### Responsible Disclosures Process
 
@@ -322,85 +320,55 @@ In addition, Rook has a Fix Disclosure Process that includes the disclosure of f
 
 ## Incident Response
 
-There is a template for incident response for reference.
-https://github.com/dhauss/tag-security/blob/main/project-resources/templates/incident-response.md
-
+There is a template for incident response for reference [here](https://github.com/cncf/tag-security/blob/main/project-resources/templates/incident-response.md)
 
 ## Appendix
 
-* Known Issues Over Time.
-
-This was a security audit done in 2019: https://drive.google.com/file/d/1rOwrwYmBUpLUm6W5J5rhXvdVit818hWJ/view
-
+* **Known Issues Over Time** <br>
+There was a [security audit](https://drive.google.com/file/d/1rOwrwYmBUpLUm6W5J5rhXvdVit818hWJ/view) carried out in 2019.<br>
 Rook, like any other software project, has had its share of vulnerabilities over time. The project follows a robust responsible disclosures process, which includes the Product Security Team (PST) being responsible for responding to reports, and the reporting process involving sending a report privately to cncf-rook-security@lists.cncf.io
-
 For a complete list of closed security issues, please refer to the below link 
-##### Closed Security Issues: https://github.com/rook/rook/issues?q=is%3Aissue+label%3Asecurity+is%3Aclosed
-
+* **Closed Security [Issues](https://github.com/rook/rook/issues)** <br>
 Rook has a few closed security issues and vulnerabilities. Here are some of them:
-
-##### Secrets names and usernames are written to the log  Issue #4570 https://github.com/rook/rook/issues/4570
-
+    * **Secrets names and usernames are written to the log: [Issue](https://github.com/rook/rook/issues/4570)**<br>
 There are a number of locations where items such as secrets names and usernames are stored within the log above the Debugf level. The team evaluated to see if there is any user-sensitive and found that the logs do not contain any sensitive information.
-
-##### Rook should not log secret data when reconciling Issue #7624 https://github.com/rook/rook/issues/7624
-
+    * **Rook should not log secret data when reconciling [Issue](https://github.com/rook/rook/issues/7624)**<br>
         Deviation from expected behavior: Rook reconciles on changes it makes to daemon keyrings. It also outputs messages          that contain the keyring, which is a security leak.
         Expected behaviour: Rook should ignore rook-ceph-<daemon>-*-keyring secrets during reconciles.
-
-##### Insecure file and directory permissions Issue #4579 https://github.com/rook/rook/issues/4579
-
+    * **Insecure file and directory permissions [Issue](https://github.com/rook/rook/issues/4579)**<br>
 Throughout the repository there are areas in which files and directories are written and
 created with statically defined permissions. Many of these permissions are rather open,
 potentially allowing other system tenants to view and interact with their contents, which
 may be sensitive.
-
 An attacker gains access to a host running a Rook component. Because the file and
 directory permissions are loose, the attacker is able to view potentially sensitive
 configuration values that could be used for accessing other privileged portions of the
 system.
-
-##### Missing input and output encodings  Issue #4575 https://github.com/rook/rook/issues/4575
+    * **Missing input and output encodings [Issue](https://github.com/rook/rook/issues/4575)**<br>
 Across the Rook codebase there are components that will create structured content such
 as shell commands or JSON without a proper encoder, opting instead for sprintf or other
 similar construction methods. This could lead to an attacker-controlled input to influence
 the final result of the structured content in a malicious or unintended way.
-
 An attacker is able to provide malicious input through Rook’s configuration interface,
 allowing injection of arbitrary commands or JSON values to the final constructed value.
-
 Resolved in #4863. No user input was taken from the CRs or otherwise, so the json formatting is safe.
 
-* [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/).
-  Best Practices.
-
+* **[CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/)** <br>
 As a graduation requirement for CNCF, Rook follows CII Best Practices Badging Issue #1440
-Rook added the CII Best Practices badge to the Rook README in a pull request in August 2018.
-https://github.com/rook/rook/pull/2051
-The pull request noted that, at the time, the project was in 80% compliance with the best practices checklist. The project has since made significant progress and has achieved 100% compliance with the CII Best Practices Badge
-The CII Best Practices checklist includes a variety of areas, such as the security disclosure process, majority code coverage from automated testing, and test policy. Rook has been proactive in addressing these areas and has made significant strides in compliance with the best practices
-Project Rook has made significant progress in achieving these best practices. The project has added a security disclosure process, achieved majority code coverage from automated testing, and documented a test policy. These efforts have helped Rook achieve 100% compliance with the CII Best Practices Badge
-
+Rook added the CII Best Practices badge to the Rook README in a [pull request](https://github.com/rook/rook/pull/2051) in August 2018.<br>
+The pull request noted that, at the time, the project was in 80% compliance with the best practices checklist. The project has since made significant progress and has achieved 100% compliance with the CII Best Practices Badge. The CII Best Practices checklist includes a variety of areas, such as the security disclosure process, majority code coverage from automated testing, and test policy. Rook has been proactive in addressing these areas and has made significant strides in compliance with the best practices. Project Rook has made significant progress in achieving these best practices. The project has added a security disclosure process, achieved majority code coverage from automated testing, and documented a test policy. These efforts have helped Rook achieve 100% compliance with the CII Best Practices Badge<br>
+See the Rook Open_SSF (CII) badge [here](https://www.bestpractices.dev/en/projects/1599#security)
   
-* Case Studies.
-
-On the Rook site, some of the businesses that have adopted or incorporated Rook are listed on the main page such as Pacific Research Platform, Canada's Centre of Excellence in Next Generation Networks (CENGN), Crowdfox, Cloudways, Gini, and Radio Sound are all featured. Beyond this list, Rook has documented adopters in their GitHub repository. This more expansive list includes Calit2, Norwegian Labour and Welfare Administration, Replicated, Discogs, Finleap Connect, Avisi, Geodata, CyCore Systems, Datacom, Turtle Network, LeanNet, FHE3 GmbH, infraBuilder, GreenCom Networks, PITS Global Data Recovery Services. 
-
-Crowdfox used Rook to migrate virtual machines with no downtime thanks to Rook's storage orchestration capabilities. 
-
-Gini used Rook as the storage infrastructure to provide a stable and secure digital everyday assistant for users. 
-
+* **Case Studies** <br>
+On the Rook site, some of the businesses that have adopted or incorporated Rook are listed on the main page such as Pacific Research Platform, Canada's Centre of Excellence in Next Generation Networks (CENGN), Crowdfox, Cloudways, Gini, and Radio Sound are all featured. Beyond this list, Rook has documented adopters in their GitHub repository. This more expansive list includes Calit2, Norwegian Labour and Welfare Administration, Replicated, Discogs, Finleap Connect, Avisi, Geodata, CyCore Systems, Datacom, Turtle Network, LeanNet, FHE3 GmbH, infraBuilder, GreenCom Networks, PITS Global Data Recovery Services.<br>
+Crowdfox used Rook to migrate virtual machines with no downtime thanks to Rook's storage orchestration capabilities.<br> 
+Gini used Rook as the storage infrastructure to provide a stable and secure digital everyday assistant for users.<br>
 CENGN uses Rook to set up Kubernetes clusters for small to medium enterprises in CENGN labs which are in the Information and Communications Technology sector. This allows for CENGN to help facilitate the growth of new technology in the Canadian technology sector.
   
-* Related Projects / Vendors.
-
-### Ansible
-Rook and Ansible, while serving distinct purposes, both automate operations and are compatible with Cepth. Both tools allow for configuration with a declarative approach, enabling users to specify the desired state of their infrastructure and automate tasks efficiently. Additionally, they both apply the idea of Infrastructure as Code (IaC), promoting code-centric management for enhanced reproducibility and scalability. Rook's specializes in orchestrating distributed storage systems within containerized environments with Kubernetes. In contrast, Ansible is a versatile automation tool designed for broader IT automation needs, encompassing tasks such as configuration management, application deployment, and orchestration across diverse infrastructure components. Both Rook and Ansible benefit from active open-source communities, providing users with documentation, support, and extensibility through plugins and modules.
-
-In summary, Rook excels in storage orchestration for containerized environments, particularly Kubernetes, while Ansible offers a more general-purpose automation solution with flexibility for a wide array of IT automation tasks beyond storage management. The choice between Rook and Ansible depends on the specific automation needs and the context of the infrastructure being managed.
-
-### Portworx
-
-Portworx is a container storage and data management platform that is designed to provide persistent storage solutions for containerized applications in cloud-native environments, particularly Kubernetes. On the other hand, Rook is an open-source storage orchestrator for Kubernetes that automates the deployment, configuration, and management of distributed storage systems, with a focus on integrating with Ceph.
-
+* **Related Projects / Vendors**<br>
+<br>**Ansible**<br>
+Rook and Ansible, while serving distinct purposes, both automate operations and are compatible with Cepth. Both tools allow for configuration with a declarative approach, enabling users to specify the desired state of their infrastructure and automate tasks efficiently. Additionally, they both apply the idea of Infrastructure as Code (IaC), promoting code-centric management for enhanced reproducibility and scalability. Rook's specializes in orchestrating distributed storage systems within containerized environments with Kubernetes. In contrast, Ansible is a versatile automation tool designed for broader IT automation needs, encompassing tasks such as configuration management, application deployment, and orchestration across diverse infrastructure components. Both Rook and Ansible benefit from active open-source communities, providing users with documentation, support, and extensibility through plugins and modules.<br>
+In summary, Rook excels in storage orchestration for containerized environments, particularly Kubernetes, while Ansible offers a more general-purpose automation solution with flexibility for a wide array of IT automation tasks beyond storage management. The choice between Rook and Ansible depends on the specific automation needs and the context of the infrastructure being managed.<br>
+<br>**Portworx**<br>
+Portworx is a container storage and data management platform that is designed to provide persistent storage solutions for containerized applications in cloud-native environments, particularly Kubernetes. On the other hand, Rook is an open-source storage orchestrator for Kubernetes that automates the deployment, configuration, and management of distributed storage systems, with a focus on integrating with Ceph.<br>
 Both Portworx and Rook are tailored for containerized environments, emphasizing compatibility with Kubernetes. They address the challenges of persistent storage for containerized applications, ensuring data persistence and availability in dynamic and scalable cloud-native architectures. Differences lie in their underlying architectures and approaches. Portworx is a commercial product offering a comprehensive storage solution with features like data replication, backup, and encryption. Rook, being open source, focuses on orchestrating storage systems and has specific integration with Ceph, allowing users to deploy and manage distributed storage clusters within Kubernetes environments
