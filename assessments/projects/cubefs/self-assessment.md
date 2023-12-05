@@ -291,7 +291,7 @@ This section enumerates a couple of action items the CubeFS team could consider 
  
 * **SLSA Provenance File** -
     * **Existing Issue** - Although CubeFS's current score of Signed-Release on their OpenSSF scorecard is passable through cryptographically signing release artifacts, it should have more detailed records of their artifacts' origins and production. 
-    * **Suggested Resolution** - To meet the highest standards of the OpenSSF Scorecard, and ensure maximum project integrity, a SLSA provenance file should be included in the assets for each release. Including this file in the assets for each release will increase the Signed-Releases score. The details on how this is done are on SLSA's [official site](https://slsa.dev/).
+    * **Suggested Resolution** - To meet the highest standards of the OpenSSF Scorecard, and ensure maximum project integrity, a SLSA provenance file should be included in the assets for each release, which in turn will increase the Signed-Releases score. The details on this can be found on the SLSA [official site](https://slsa.dev/).
  
 * **Use of Static Application Security Testing (SAST) tool** -
     * **Existing Issue** - CubeFS’s current commit procedure does not include the use of a Static Application Security Testing (SAST) tool. Though some commits use SAST tools, not all of them do. This could result in unsafe code, and potential security threats being merged with the main branch.
