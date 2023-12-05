@@ -154,6 +154,10 @@ The Volcano project has a [Product Security Team (PST)](https://github.com/volca
 - Volcano has achieved an Open Source Security Foundation (OpenSSF) best practices badge at passing level, see more details at Volcano’s openssf best practices. [Link](https://www.bestpractices.dev/en/projects/3012)
 - Volcano has achieved A+ quality as an open source Go project. [Link](https://goreportcard.com/report/github.com/volcano-sh/volcano)
 - [Volcano Usage and Adopters](https://github.com/volcano-sh/volcano/blob/master/docs/community/adopters.md)
+- Case Study: [Using Volcano in Large-Scale, Distributed Offline Computing](https://volcano.sh/en/blog/ruitian2-en/)
+- Case Study: [ING Bank: How Volcano Empowers Their Big Data Analytics Platform](https://volcano.sh/en/blog/ing_case-en/)
+- Case Study: [How Does Volcano Empower a Content Recommendation Engine in Xiaohongshu](https://volcano.sh/en/blog/xiaohongshu-en/)
+- Case Study: [How Ruitian Used Volcano to Run Large-Scale Offline HPC Jobs](https://volcano.sh/en/blog/ruitian-en/)
 - Related Talks:
   + [The Linux Foundation Talk: Using Volcano and Kubernetes for Cutting-Edge AI Deployment](https://www.youtube.com/watch?v=hjfoEdMD3cI)
   + [CNCF Talk (Chinese): Volcano Helps FinTech BigData on K8s](https://www.youtube.com/watch?v=wYEmjqPbjjY)
