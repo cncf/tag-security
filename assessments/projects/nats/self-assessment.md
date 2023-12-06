@@ -177,6 +177,9 @@ Threat modeling link:
 NATS Security Document:
 https://docs.nats.io/nats-concepts/security
 
+Security Audit:
+https://github.com/nats-io/nats-general/blob/main/reports/Cure53_NATS_Audit.pdf
+
 ### Critical
 Critical security components of the project with a brief description of their importance. These are used for threat modeling and are considered critical design elements that make the product itself secure and are not configurable.
 
