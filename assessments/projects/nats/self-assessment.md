@@ -283,19 +283,19 @@ Additionally,
 
 ### Related Projects / Vendors
 To understand NATS better, it's useful to compare it with other notable technologies like Apache Kafka, RabbitMQ, Apache Pulsar, and gRPC.
-- NATS vs Apache Kafka:
+- NATS vs [Apache Kafka](https://kafka.apache.org/):
    - NATS is known for its simplicity and lightweight architecture, while Kafka excels in high-throughput scenarios and durable message storage.
    - Kafka provides strong ordering and retention guarantees, which NATS trades for lower latency and higher performance in certain scenarios.
  
-- NATS vs RabbitMQ:
+- NATS vs [RabbitMQ](https://www.rabbitmq.com/):
    - RabbitMQ offers a variety of messaging patterns and has more built-in features, while NATS focuses on core publish-subscribe and request-reply patterns for simplicity.
    - NATS provides easier horizontal scaling compared to RabbitMQ, which may require more configuration for clustering and high availability.
  
-- NATS vs Apache Pulsar:
+- NATS vs [Apache Pulsar](https://pulsar.apache.org/):
    - Pulsar offers strong durability and individual message acknowledgments, contrasting with NATS's focus on high-throughput and lower latency.
    - NATS is often praised for its simplicity and ease of use, whereas Pulsar provides a more feature-rich ecosystem, especially for complex streaming needs.
  
-- NATS vs gRPC:
+- NATS vs [gRPC](https://grpc.io/):
    - NATS is a messaging system that excels in pub-sub scenarios, while gRPC is a framework for RPC (Remote Procedure Calls) that is well-suited for point-to-point communication.
    - gRPC is built on HTTP/2, offering advantages in bi-directional streaming, whereas NATS is protocol-agnostic and generally simpler to deploy.
   
