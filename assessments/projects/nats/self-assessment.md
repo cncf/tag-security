@@ -227,9 +227,9 @@ According to the NATS security documentation, there is no mention of the project
   - **Twitter:** [NATS Twitter](https://twitter.com/nats_io/)
 
 ### Ecosystem
-NATS, as a messaging system, plays a significant role in the cloud-native ecosystem due to its design and capabilities that align well with cloud-native principles and practices.
-- **Microservices Architecture:** NATS is particularly well-suited for microservices architectures commonly used in cloud-native environments. Its lightweight, high-performance nature makes it ideal for the communication needs of loosely coupled, independently deployable microservices.
-- **Containerized Environments:** NATS integrates seamlessly with containerized environments and orchestration platforms like Kubernetes. This integration is crucial for automated deployment, scaling, and management of containerized NATS instances, making it a natural fit for cloud-native workflows.
+NATS, as a messaging system, plays a significant role in the cloud-native ecosystem due to its design and capabilities that align well with cloud-native principles and practices. [NATS in the CNCF Ecosystem](https://www.cncf.io/projects/nats/).
+- **[Microservices Architecture:](https://nats.io/blog/building-scalable-microservices-with-nats/)** NATS is particularly well-suited for microservices architectures commonly used in cloud-native environments. Its lightweight, high-performance nature makes it ideal for the communication needs of loosely coupled, independently deployable microservices.
+- **[Containerized Environments:](https://docs.nats.io/running-a-nats-service/nats-kubernetes)** NATS integrates seamlessly with containerized environments and orchestration platforms like Kubernetes. This integration is crucial for automated deployment, scaling, and management of containerized NATS instances, making it a natural fit for cloud-native workflows.
 
 
 ## Security issue resolution
