@@ -44,6 +44,7 @@ use the table below as an example:
 | -- | -- |
 | Security file |https://docs.nats.io/nats-concepts/security |
 | Default and optional configs |  https://docs.nats.io/running-a-nats-service/configuration|
+| Security audit | A third party security audit was performed by Cure53, you can see the full report [here](https://github.com/nats-io/nats-general/blob/main/reports/Cure53_NATS_Audit.pdf).
 
 ## Overview
 
