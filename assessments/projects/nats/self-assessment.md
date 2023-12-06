@@ -171,14 +171,12 @@ This document provides the CNCF TAG-Security with an initial understanding of NA
 
 ## Security functions and features
 
-Threat modeling link: 
-[ https://github.com/Ricardo-A-Zapata/tag-security/blob/main/assessments/projects/nats/doc/threat-modeling.md ](https://github.com/Ricardo-A-Zapata/tag-security/blob/main/assessments/projects/nats/doc/threat-modeling.md)
+Sources:
+[NATS Security Document](https://docs.nats.io/nats-concepts/security)
+[Security Audit](https://github.com/nats-io/nats-general/blob/main/reports/Cure53_NATS_Audit.pdf)
 
-NATS Security Document:
-https://docs.nats.io/nats-concepts/security
 
-Security Audit:
-https://github.com/nats-io/nats-general/blob/main/reports/Cure53_NATS_Audit.pdf
+[Threat model](https://github.com/Ricardo-A-Zapata/tag-security/blob/main/assessments/projects/nats/doc/threat-modeling.md)
 
 ### Critical
 Critical security components of the project with a brief description of their importance. These are used for threat modeling and are considered critical design elements that make the product itself secure and are not configurable.
