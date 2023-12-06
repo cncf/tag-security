@@ -208,13 +208,14 @@ According to the NATS security documentation, there is no mention of the project
 ## Secure development practices
 
 ### Development Pipeline
-- **Source Code Maintenance:** All source code is maintained in GitHub and changes must be reviewed by maintainers.
+- **[Source Code Maintenance:](https://github.com/nats-io/nats-server)** All source code is maintained in GitHub and changes must be reviewed by maintainers.
 - **Commit Signing:** Contributors are generally encouraged to sign their commits.
-- **Testing:** Each push and every pull request are tested using Travis CI and other relevant CI platforms.
-- **Release Testing:** Releases are primarily tested on individual laptops, Docker images, and Travis CI.
+- **[Testing:](https://github.com/nats-io/nats-server/blob/main/test/test.go)** Each push and every pull request are tested using Travis CI and other relevant CI platforms.
+- **[Release Testing:](https://docs.nats.io/running-a-nats-service/nats_docker)** Releases are primarily tested on individual laptops, Docker images, and Travis CI.
 - **Review Process:** Other reviewers, including committers, may comment on the changes and suggest modifications. Changes can be added by simply pushing more commits to the same branch.
 - **Approval Requirements:** Generally, LGTMs are required by at least two committers to approve a change for merge. This varies depending on the size/scope/complexity of the change.
-- **Coding Standards:** NATS follows widely-adopted standards for code formatting and style in each implementation language. Please refer to the CONTRIBUTING.md in individual NATS projects for specifics that apply to each.
+- **Coding Standards:** NATS follows widely-adopted standards for code formatting and style in each implementation language. Please refer to the [CONTRIBUTING.md](https://github.com/nats-io/nats-server/blob/main/CONTRIBUTING.md) in individual NATS projects for specifics that apply to each.
+- The [NATS documentation](https://docs.nats.io/using-nats/developer) provides comprehensive information on developing with NATS.
 
 ### Communication Channels
 - **Internal:**
