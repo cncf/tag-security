@@ -256,13 +256,13 @@ Security issues can be reported through various channels:
 - NATS has achieved a "Passing" status for CII Best Practices as of June 8th. More information can be found [here](https://www.bestpractices.dev/en/projects/1895).
 
 ### Case Studies
-- **[Appsecco's Security Workflow Automation](https://nats.io/blog/appsecco-chooses-nats/)**
+- **[Appsecco's Security Workflow Automation:](https://nats.io/blog/appsecco-chooses-nats/)**
   - Appsecco, a security-focused company, implemented NATS for security workflow automation in cloud-based environments. 
   - NATS was utilized for orchestrating various units of their workflow, leveraging features like consumer groups, wildcard subscriptions, failure resiliency, low latency, and high throughput.
   - Transition from RabbitMQ and Kafka to NATS for its lightweight, fast message queue system compatible with Kubernetes Pods.
   - The NATS server was integral for message passing, with the API Server initiating scan workflows and the Feedback Function creating a dynamic and responsive system.
 
-- **Persistent Logs with NATS Streaming:**
+- **[Persistent Logs with NATS Streaming:](https://nats.io/blog/use-cases-for-persistent-logs-with-nats-streaming/#:~:text=Guest%20Post%3A%20Use%20cases%20for,persistent%20logs%20with%20NATS%20Streaming)**
   - In this use case, a log is an ordered sequence of messages that are append-only and cannot be altered post-creation. 
   - NATS Streaming ensures that logs are durable and maintained even beyond server restarts.
   - Subscribers can receive messages off a stream in an ordered fashion, and in cases of disconnection, NATS Streaming allows clients to pick up where they left off.
