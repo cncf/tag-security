@@ -173,6 +173,7 @@ This document provides the CNCF TAG-Security with an initial understanding of NA
 
 Sources:
 [NATS Security Document](https://docs.nats.io/nats-concepts/security)
+
 [Security Audit](https://github.com/nats-io/nats-general/blob/main/reports/Cure53_NATS_Audit.pdf)
 
 
