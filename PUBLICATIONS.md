@@ -3,6 +3,20 @@
 This document lists all the publications and resources that TAG Security has
 produced.
 
+## Cloud Native Security Controls Catalog
+
+Mapping of Cloud Native Security Whitepaper and Software Supply Chain Best
+Practices Paper to NIST SP800-53r5
+
+- [Markdown](https://github.com/cncf/tag-security/blob/main/cloud-native-controls/phase-one-announcement.md)
+- [Spreadsheet](https://docs.google.com/spreadsheets/d/1GUohOTlLw9FKUQ3O23X7ypvJLXN-B3veJGe6YE6JYfU/edit?usp=sharing)
+
+## Cloud Native Security Lexicon
+
+Standardization of terminologies specific to Cloud Native Security
+
+- [Markdown](https://github.com/cncf/tag-security/blob/main/security-lexicon/cloud-native-security-lexicon.md)
+
 ## Cloud Native Security Whitepaper
 
 The Cloud Native Security Whitepaper (CNSWP) is a TAG Security effort to ensure
@@ -22,6 +36,41 @@ Translations
   (v1)
 - [Chinese](https://github.com/cncf/tag-security/blob/main/security-whitepaper/v1/cloud-native-security-whitepaper-simplified-chinese.md)
   (v1)
+
+## Open and Secure - A Manual for Practicing Threat Modeling to Assess and Fortify Open Source Security
+
+A comprehensive guide dedicated to assessing and understanding the security of open source software projects. The book is the culmination of five years of TAG Secure Assessments, practical insights, and collaborative effort from experts in the field. Our goal? To empower you with the knowledge and skills to enhance the security of the cloud native ecosystem, the projects, and their use in your organization’s platforms.
+
+- [PDF](https://github.com/cncf/tag-security/blob/main/assessments/Open_and_Secure.pdf)
+
+## Policy
+
+### Formal Verification for Policy Configurations
+
+- [Markdown](https://github.com/cncf/tag-security/blob/main/policy/overview-policy-formal-verification.md)
+
+### Handling build-time dependency vulnerabilities
+
+- [Markdown](https://github.com/cncf/tag-security/blob/main/policy/overview-policy-build-time-dependency-vulns.md)
+
+## Secure Defaults: Cloud Native 8
+
+- [Markdown](https://github.com/cncf/tag-security/blob/main/security-whitepaper/secure-defaults-cloud-native-8.md)
+
+## Security Assessments
+
+TAG Security has conducted security assessments of several CNCF projects. These
+assessments are available to the public.
+
+- [Buildpacks](https://github.com/cncf/tag-security/tree/main/assessments/projects/buildpacks)
+- [Cloud
+  Custodian](https://github.com/cncf/tag-security/tree/main/assessments/projects/custodian)
+- [Harbor](https://github.com/cncf/tag-security/tree/main/assessments/projects/harbor)
+- [In-toto](https://github.com/cncf/tag-security/tree/main/assessments/projects/in-toto)
+- [Keycloak](https://github.com/cncf/tag-security/tree/main/assessments/projects/keycloak)
+- [Kyverno](https://github.com/cncf/tag-security/tree/main/assessments/projects/kyverno)
+- [OPA](https://github.com/cncf/tag-security/tree/main/assessments/projects/opa)
+- [Spiffe-Spire](https://github.com/cncf/tag-security/tree/main/assessments/projects/spiffe-spire)
 
 ## Supply Chain Security
 
@@ -54,11 +103,7 @@ them
 
 - [Markdown](https://github.com/cncf/tag-security/tree/main/supply-chain-security/compromises)
 
-## Cloud Native Security Lexicon
 
-Standardization of terminologies specific to Cloud Native Security
-
-- [Markdown](https://github.com/cncf/tag-security/blob/main/security-lexicon/cloud-native-security-lexicon.md)
 
 ## Use Cases & Personas
 
@@ -67,39 +112,6 @@ of cloud native technology
 
 - [Markdown](https://github.com/cncf/tag-security/blob/main/usecase-personas/README.md)
 
-## Policy
 
-### Formal Verification for Policy Configurations
 
-- [Markdown](https://github.com/cncf/tag-security/blob/main/policy/overview-policy-formal-verification.md)
 
-### Handling build-time dependency vulnerabilities
-
-- [Markdown](https://github.com/cncf/tag-security/blob/main/policy/overview-policy-build-time-dependency-vulns.md)
-
-## Secure Defaults: Cloud Native 8
-
-- [Markdown](https://github.com/cncf/tag-security/blob/main/security-whitepaper/secure-defaults-cloud-native-8.md)
-
-## Cloud Native Security Controls Catalog
-
-Mapping of Cloud Native Security Whitepaper and Software Supply Chain Best
-Practices Paper to NIST SP800-53r5
-
-- [Markdown](https://github.com/cncf/tag-security/blob/main/cloud-native-controls/phase-one-announcement.md)
-- [Spreadsheet](https://docs.google.com/spreadsheets/d/1GUohOTlLw9FKUQ3O23X7ypvJLXN-B3veJGe6YE6JYfU/edit?usp=sharing)
-
-## Security Assessments
-
-TAG Security has conducted security assessments of several CNCF projects. These
-assessments are available to the public.
-
-- [Buildpacks](https://github.com/cncf/tag-security/tree/main/assessments/projects/buildpacks)
-- [Cloud
-  Custodian](https://github.com/cncf/tag-security/tree/main/assessments/projects/custodian)
-- [Harbor](https://github.com/cncf/tag-security/tree/main/assessments/projects/harbor)
-- [In-toto](https://github.com/cncf/tag-security/tree/main/assessments/projects/in-toto)
-- [Keycloak](https://github.com/cncf/tag-security/tree/main/assessments/projects/keycloak)
-- [Kyverno](https://github.com/cncf/tag-security/tree/main/assessments/projects/kyverno)
-- [OPA](https://github.com/cncf/tag-security/tree/main/assessments/projects/opa)
-- [Spiffe-Spire](https://github.com/cncf/tag-security/tree/main/assessments/projects/spiffe-spire)
