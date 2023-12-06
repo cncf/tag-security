@@ -256,7 +256,7 @@ Security issues can be reported through various channels:
 - NATS has achieved a "Passing" status for CII Best Practices as of June 8th. More information can be found [here](https://www.bestpractices.dev/en/projects/1895).
 
 ### Case Studies
-- **[Appsecco's Security Workflow Automation]:]**(https://nats.io/blog/appsecco-chooses-nats/)
+- **[Appsecco's Security Workflow Automation](https://nats.io/blog/appsecco-chooses-nats/)**
   - Appsecco, a security-focused company, implemented NATS for security workflow automation in cloud-based environments. 
   - NATS was utilized for orchestrating various units of their workflow, leveraging features like consumer groups, wildcard subscriptions, failure resiliency, low latency, and high throughput.
   - Transition from RabbitMQ and Kafka to NATS for its lightweight, fast message queue system compatible with Kubernetes Pods.
