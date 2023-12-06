@@ -171,10 +171,8 @@ This document provides the CNCF TAG-Security with an initial understanding of NA
 
 ## Security functions and features
 
-Sources:
-[NATS Security Document](https://docs.nats.io/nats-concepts/security)
-
-[Security Audit](https://github.com/nats-io/nats-general/blob/main/reports/Cure53_NATS_Audit.pdf)
+Sources: 
+[NATS Security Document](https://docs.nats.io/nats-concepts/security), [Security Audit](https://github.com/nats-io/nats-general/blob/main/reports/Cure53_NATS_Audit.pdf)
 
 
 [Threat model](https://github.com/Ricardo-A-Zapata/tag-security/blob/main/assessments/projects/nats/doc/threat-modeling.md)
