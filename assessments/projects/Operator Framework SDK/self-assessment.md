@@ -37,7 +37,7 @@ Express Learning course provided by Linux Foundation Training & Certification:
 | Software | [Operator Framework](https://github.com/operator-framework/operator-sdk)  |
 | Security Provider | No  |
 | Languages | Go, Ansible, Python, C++ |
-| SBOM |The SBOM file has been generated using SPDX, [bom-go-mod.spdx](https://github.com/Brandonpinos/SecurityPals-Operator-Framework/blob/main/bom-go-mod.spdx). The project (or the sub-projects) does not mantain an SBOM, this has been generated for documentation purposes. |
+| SBOM | N/A |
 | | |
 
 ### Security links
