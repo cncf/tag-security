@@ -75,7 +75,6 @@ These are the applications that use NATS client libraries to interact with the N
 
 The client applications are isolated in the sense that they interact with the NATS server via network protocols. Their internal state or vulnerabilities do not directly affect the NATS servers or other client applications, provided the communication is secured and authenticated. The communication is secured, authenticated, and authorization for the application's credentials appropriately restrict subject access.
 
-#### Client Types
 - **Publishers**: These are client applications responsible for sending messages to NATS subjects.
 - **Subscribers**: These clients listen to subjects and receive messages published to them.
 - **Requesters**: In a request-reply pattern, these clients send requests and await responses.
@@ -241,8 +240,11 @@ NATS, as a messaging system, plays a significant role in the cloud-native ecosys
 ### Responsible Disclosures Process
 
 The disclosure process is managed by triaging the report, drawing in subject-matter experts to ensure analysis is correct, and then scheduling work according to the triage results.
+
 NATS make sure to understand the report, then work to reproduce it, then understand the full potential impact in a couple of main deployment scenarios.
+
 Depending upon the triage, the fix might be developed in private and a release made without pushing the source to GitHub until the binaries are available, or the fix might just be merged to main and left for a later release, or anything in-between.
+
 If they feel that an issue is real and that people using NATS might be impacted, then in parallel with writing the fix, we draft an advisory.  The advisory will be published when the new release is published. They check with the reporter for their desired acknowledgement in the credits
 
 
