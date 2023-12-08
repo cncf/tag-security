@@ -38,7 +38,7 @@ A table at the top for quick reference information, later used for indexing.
 | Software | https://github.com/cortexproject/cortex |
 | Security Provider | No |
 | Languages | Go |
-| SBOM | [Cortex SBOM](sbom.json) `Generated using cyclonedx-gomod`  |
+| SBOM | `Not Applicable`  |
 | | |
 
 ### Security links
