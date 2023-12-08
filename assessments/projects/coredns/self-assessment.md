@@ -33,7 +33,6 @@ A table at the top for quick reference information, later used for indexing.
 | Software | [CoreDNS](https://github.com/coredns/coredns) |
 | Security Provider | No |
 | Languages | Golang |
-| SBOM | [Github-Generated SBOM](https://github.com/TomY-Zhang/tag-security/blob/main/assessments/projects/coredns/coredns_sbom.json)|
 | | |
 
 ### Security links
