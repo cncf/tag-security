@@ -43,8 +43,11 @@ use the table below as an example:
 | Doc | url |
 | -- | -- |
 | Security file |https://docs.nats.io/nats-concepts/security |
-| Default and optional configs |  https://docs.nats.io/running-a-nats-service/configuration|
+| Default and optional configs |  note below|
+| NATS Project Security Advisory Policy | https://advisories.nats.io/advisory-policy|
 | Security audit | A third party security audit was performed by Cure53, you can see the full report [here](https://github.com/nats-io/nats-general/blob/main/reports/Cure53_NATS_Audit.pdf).
+
+Note: In terms of default and optional configs: Security configurations for NATS deployments primarily recommend disabling anonymous access and enabling TLS for secure communications. Further, it's advised to consider account isolation boundaries. These guidelines form the core security practices for NATS, underscoring the need for customized security measures based on specific deployment scenarios.
 
 ## Overview
 
@@ -62,7 +65,7 @@ As an open-source project under the Cloud Native Computing Foundation (CNCF), NA
 
 Figure 1: Messaging Design via NATS Documentation [uploaded as a seperate image in folder]
 
-NATS uses subject-based messaging in its publish-subscribe model, where messages are routed by subjects - simple string identifiers. This method allows publishers to send messages to specific subjects and subscribers to express interest in particular subjects, enhancing communication flexibility. The system's ability to handle wildcard subscriptions further allows subscribers to receive messages from a range of related subjects. This decoupling of publishers and subscribers, central to NATS' scalable architecture, is particularly advantageous in cloud and microservices environments. Efficient message routing, combined with the system's simplicity and ease of use, positions NATS as a robust solution for the dynamic needs of modern distributed systems.
+NATS uses subject-based messaging in its publish-subscribe model, where messages are routed by subjects - simple string identifiers. This method allows publishers to send messages to specific subjects and subscribers to express interest in particular subject patterns, enhancing communication flexibility. The system's ability to handle wildcard subscriptions further allows subscribers to receive messages from a range of related subjects. This decoupling of publishers and subscribers, central to NATS' scalable architecture, is particularly advantageous in cloud and microservices environments. Efficient message routing, combined with the system's simplicity and ease of use, positions NATS as a robust solution for the dynamic needs of modern distributed systems.
 
 
 
@@ -70,7 +73,7 @@ NATS uses subject-based messaging in its publish-subscribe model, where messages
 ### NATS Client Applications
 These are the applications that use NATS client libraries to interact with the NATS server. They perform operations like publishing, subscribing, requesting, and replying to messages. These client applications can be parts of a single distributed application or entirely separate applications.
 
-The client applications are isolated in the sense that they interact with the NATS server via network protocols. Their internal state or vulnerabilities do not directly affect the NATS servers or other client applications, provided the communication is secured and authenticated.
+The client applications are isolated in the sense that they interact with the NATS server via network protocols. Their internal state or vulnerabilities do not directly affect the NATS servers or other client applications, provided the communication is secured and authenticated. The communication is secured, authenticated, and authorization for the application's credentials appropriately restrict subject access.
 
 #### Client Types
 - **Publishers**: These are client applications responsible for sending messages to NATS subjects.
@@ -83,7 +86,6 @@ Each of these client roles can be considered separate actors within the NATS eco
 ### NATS Service Infrastructure (Servers)
 The NATS server processes form the backbone of the NATS service infrastructure. These servers handle the routing and delivery of messages among client applications. They can be configured in various topologies, ranging from a single server to a global super-cluster.
 
-NATS servers are isolated by design, running as separate processes possibly on different machines or containers. Each server can be secured and monitored individually. Even in clustered configurations, the failure or compromise of one server doesn't directly affect the others, maintaining overall system integrity.
 
 #### Server Configurations
 - **Single NATS Servers**: Individual server instances handling message routing.
@@ -92,8 +94,8 @@ NATS servers are isolated by design, running as separate processes possibly on d
 
 Within this infrastructure, each server instance, cluster, and supercluster can be considered a distinct actor, especially in terms of security and operational management.
 
-### NATS Streaming Servers
-While NATS primarily focuses on real-time messaging, NATS Streaming adds durable, at-least-once delivery, providing additional capabilities for scenarios requiring reliable and historic message replay.
+### JetStream in NATS: 
+The core NATS server now includes JetStream, which has replaced the previously used NATS Streaming Servers. JetStream continues to support NATS's focus on real-time messaging and introduces enhanced features such as durable, at-least-once delivery, and capabilities for reliable message replay and historical message retention. This evolution in the NATS architecture calls for a reassessment of the security features and implications in line with the current functionalities provided by JetStream
 
 ### Administrative and Operational Tools
 These include tools for monitoring, managing, and configuring NATS servers and clients. They play a crucial role in the maintenance and oversight of the NATS ecosystem.
@@ -135,7 +137,7 @@ JetStream extends Core NATS functionalities with enhanced qualities of service a
 The intended goals of the projects including the security guarantees the project is meant to provide (e.g., Flibble only allows parties with an authorization key to change data it stores).
 
 ### General Goals
-- **Effortless M:N Connectivity:** NATS manages addressing and discovery based on subjects and not hostname and ports.
+- **Effortless M:N Connectivity:** NATS manages addressing and discovery based on subjects and not hostname and ports. NATS manages addressing and discovery based on subjects and not hostname and ports. It aims to provide for a dialtone-level of connectivity as a default choice for application communication, and to be a good building block for system design to handle resilient communication patterns.
 - **Deploy Anywhere:** NATS can be deployed nearly anywhere. It runs well within deployment frameworks or without.
 - **Secure:** NATS is secure by default and makes no requirements on network perimeter security models. NATS supports basic security features: authentication, authorization, and encryption (TLS).
 - **Scalable:** NATS infrastructure and clients communicate all topology changes in real-time. This means that NATS clients do not need to change when NATS deployments change. NATS handles endpoint locations transparently.
@@ -230,12 +232,20 @@ According to the NATS security documentation, there is no mention of the project
 ### Ecosystem
 NATS, as a messaging system, plays a significant role in the cloud-native ecosystem due to its design and capabilities that align well with cloud-native principles and practices. [NATS in the CNCF Ecosystem](https://www.cncf.io/projects/nats/).
 - **[Microservices Architecture:](https://nats.io/blog/building-scalable-microservices-with-nats/)** NATS is particularly well-suited for microservices architectures commonly used in cloud-native environments. Its lightweight, high-performance nature makes it ideal for the communication needs of loosely coupled, independently deployable microservices.
-- **[Containerized Environments:](https://docs.nats.io/running-a-nats-service/nats-kubernetes)** NATS integrates seamlessly with containerized environments and orchestration platforms like Kubernetes. This integration is crucial for automated deployment, scaling, and management of containerized NATS instances, making it a natural fit for cloud-native workflows.
+- **[Containerized Environments:](https://docs.nats.io/running-a-nats-service/nats-kubernetes)** NATS integrates seamlessly with containerized environments and orchestration platforms like Kubernetes. This integration is crucial for automated deployment, scaling, and management of containerized NATS instances, making it a natural fit for cloud-native workflows. Adding to its strengths, the embeddable nature of the nats-server allows developers to integrate it directly into applications. Projects like Choria.io leverage this feature, showcasing the adaptability of NATS within diverse cloud-native environments.
+
 
 
 ## Security issue resolution
 
 ### Responsible Disclosures Process
+
+The disclosure process is managed by triaging the report, drawing in subject-matter experts to ensure analysis is correct, and then scheduling work according to the triage results.
+NATS make sure to understand the report, then work to reproduce it, then understand the full potential impact in a couple of main deployment scenarios.
+Depending upon the triage, the fix might be developed in private and a release made without pushing the source to GitHub until the binaries are available, or the fix might just be merged to main and left for a later release, or anything in-between.
+If they feel that an issue is real and that people using NATS might be impacted, then in parallel with writing the fix, we draft an advisory.  The advisory will be published when the new release is published. They check with the reporter for their desired acknowledgement in the credits
+
+
 Security issues can be reported through various channels:
 - **GitHub Reporting:** Report security issues at [NATS Server Security on GitHub](https://github.com/nats-io/nats-server/security).
 - **Email Reporting:** Security researchers can email at [security@nats.io](mailto:security@nats.io) to report security issues confidentially.
