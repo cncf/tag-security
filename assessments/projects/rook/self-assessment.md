@@ -1,13 +1,4 @@
-# Self-assessment
-The Self-assessment is the initial document for projects to begin thinking about the
-security of the project, determining gaps in their security, and preparing any security
-documentation for their users. This document is ideal for projects currently in the
-CNCF **sandbox** as well as projects that are looking to receive a joint assessment and
-currently in CNCF **incubation**.
-
-For a detailed guide with step-by-step discussion and examples, check out the free 
-Express Learning course provided by Linux Foundation Training & Certification: 
-[Security Assessments for Open Source Projects](https://training.linuxfoundation.org/express-learning/security-self-assessments-for-open-source-projects-lfel1005/).
+# Rook Self-assessment
 
 # Self-assessment outline
 
@@ -42,8 +33,6 @@ A table at the top for quick reference information, later used for indexing.
 
 ### Security links
 
-Provide the list of links to existing security documentation for the project. You may
-use the table below as an example:
 | Doc | url |
 | -- | -- |
 | Security file | https://github.com/rook/rook/blob/master/SECURITY.md |
@@ -93,17 +82,6 @@ The Ceph-CSI driver provides the provisioning and mounting of volumes
 The Ceph daemons run the core storage architecture. See the [Glossary](https://github.com/rook/rook/blob/master/Documentation/Getting-Started/glossary.md#ceph) to learn more about each daemon.
 
 ### Actions
-These are the steps that a project performs in order to provide some service
-or functionality.  These steps are performed by different actors in the system.
-Note, that an action need not be overly descriptive at the function call level.  
-It is sufficient to focus on the security checks performed, use of sensitive 
-data, and interactions between actors to perform an action.  
-
-For example, the access server receives the client request, checks the format, 
-validates that the request corresponds to a file the client is authorized to 
-access, and then returns a token to the client.  The client then transmits that 
-token to the file server, which, after confirming its validity, returns the file.
-
 Rook can be used to automatically configure the Ceph CSI drivers to mount the storage to an application's pods. See image at top of [Actors](#actors) for reference
 
 ##### Actors
