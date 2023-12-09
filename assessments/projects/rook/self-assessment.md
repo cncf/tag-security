@@ -58,7 +58,14 @@ The status of the Ceph storage provider is **Stable**. Features and improvements
 
 - `Rook Operator`
 	- `Ceph CSI Driver`
+		-`RADOS Block Device`
+		-`CephFS`
+		-`Ceph Object Gateway`
 	- `Ceph Daemons`
+		-`ceph-mgr`
+		-`Ceph Monitor Daemon`
+		-`Ceph Object Storage Daemon`
+		-`Ceph MetaData Server`
 	- `CephX`
 
 #### `Rook Operator`
@@ -69,10 +76,17 @@ The operator will monitor the storage daemons to ensure the cluster is healthy. 
 Rook automatically configures the Ceph-CSI driver to mount the storage to your pods. The rook/ceph image includes all necessary tools to manage the cluster. Rook is not in the Ceph data path. Many of the Ceph concepts like placement groups and crush maps are hidden so you don't have to worry about them. Instead, Rook creates a simplified user experience for admins that is in terms of physical resources, pools, volumes, filesystems, and buckets. Advanced configuration can be applied when needed with the Ceph tools.
 
 #### `Ceph CSI Driver`
-The Ceph-CSI driver provides the provisioning and mounting of volumes. This is split into three types of storage: block, file, and object. The Ceph CSI Driver for block storage is also called “RADOS Block Device” and RBD, a software instrument that orchestrates the storage of block-based data in Ceph. Ceph Block Device splits block-based application data into “chunks”. RADOS stores these chunks as objects. Ceph Block Device orchestrates the storage of those objects across the storage cluster. The Ceph CSI Driver for File storage, or the Ceph File System (CephFS), provides a POSIX-compliant filesystem as a service that is layered on top of the object-based Ceph Storage Cluster. CephFS files get mapped to objects that Ceph stores in the Ceph Storage Cluster. Ceph Clients mount a CephFS filesystem as a kernel object or as a Filesystem in User Space (FUSE). For object storage, a Ceph Object Store includes a Ceph Object Gateway (RGW), an object storage interface built on top of librados. Ceph Object Gateway provides a RESTful gateway between applications and Ceph storage clusters.
+The Ceph-CSI driver provides the provisioning and mounting of volumes. This is split into three types of storage: block, file, and object.
+* The Ceph CSI Driver for block storage is also called “RADOS Block Device” and RBD, a software instrument that orchestrates the storage of block-based data in Ceph. Ceph Block Device splits block-based application data into “chunks”. RADOS stores these chunks as objects. Ceph Block Device orchestrates the storage of those objects across the storage cluster.
+* The Ceph CSI Driver for File storage, or the Ceph File System (CephFS), provides a POSIX-compliant filesystem as a service that is layered on top of the object-based Ceph Storage Cluster. CephFS files get mapped to objects that Ceph stores in the Ceph Storage Cluster. Ceph Clients mount a CephFS filesystem as a kernel object or as a Filesystem in User Space (FUSE).
+* For object storage, a Ceph Object Store includes a Ceph Object Gateway (RGW), an object storage interface built on top of librados. Ceph Object Gateway provides a RESTful gateway between applications and Ceph storage clusters.
 
 #### `Ceph Daemons`
-The Ceph daemons run the core storage architecture. They are daemons that maintain a map of the state of the cluster. This “cluster state” includes the monitor map, the manager map, the OSD map, and the CRUSH map. A Ceph cluster must contain a minimum of three running monitors in order to be both redundant and highly-available. Ceph monitors and the nodes on which they run are often referred to as “mon”s. The Ceph manager daemon (ceph-mgr) is a daemon that runs alongside monitor daemons to provide monitoring and interfacing to external monitoring and management systems. Since the Luminous release (12.x), no Ceph cluster functions properly unless it contains a running ceph-mgr daemon. Ceph monitor daemons maintain a map of the state of the cluster. This “cluster state” includes the monitor map, the manager map, the OSD map, and the CRUSH map. The Ceph Object Storage Daemon interacts with logical disks. The Ceph MetaData Server daemon. Also referred to as “ceph-mds”, must be running in any Ceph cluster that runs the CephFS file system. The MDS stores all filesystem metadata.
+The Ceph daemons run the core storage architecture. They are daemons that maintain a map of the state of the cluster. This “cluster state” includes the monitor map, the manager map, the OSD map, and the CRUSH map. A Ceph cluster must contain a minimum of three running monitors in order to be both redundant and highly-available. Ceph monitors and the nodes on which they run are often referred to as “mon”s.
+* The Ceph manager daemon (ceph-mgr) is a daemon that runs alongside monitor daemons to provide monitoring and interfacing to external monitoring and management systems. Since the Luminous release (12.x), no Ceph cluster functions properly unless it contains a running ceph-mgr daemon.
+* Ceph monitor daemons maintain a map of the state of the cluster. This “cluster state” includes the monitor map, the manager map, the OSD map, and the CRUSH map.
+* The Ceph Object Storage Daemon interacts with logical disks.
+* The Ceph MetaData Server daemon. Also referred to as “ceph-mds”, must be running in any Ceph cluster that runs the CephFS file system. The MDS stores all filesystem metadata.
 
 
 #### `CephX`
@@ -140,6 +154,13 @@ Rook automates deployment and management of Ceph to provide self-managing, self-
 * Ceph storage elements should maintain integrity and availability while scaling
 
 ### Non-goals
+
+**General**
+
+* Rook is not meant to be used for storage outside of K8s
+* Rook is not meant to modify the Ceph or K8s architectures, but to leverage their existing capabilities in order to provide cloud native persistent storage
+
+**Security**
 
 * Ceph- and K8s-specific vulnerabilities
 * Vulnerabilities caused by user error
