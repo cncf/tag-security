@@ -1,6 +1,6 @@
 # Rook Self-assessment
 
-# Self-assessment outline
+## Self-assessment outline
 
 ## Table of contents
 
@@ -53,20 +53,13 @@ Rook automates deployment and management of Ceph to provide self-managing, self-
 The status of the Ceph storage provider is **Stable**. Features and improvements will be planned for many future versions. Upgrades between versions are provided to ensure backward compatibility between releases.
 
 ### Actors
-These are the individual parts of your system that interact to provide the 
-desired functionality.  Actors only need to be separate, if they are isolated
-in some way.  For example, if a service has a database and a front-end API, but
-if a vulnerability in either one would compromise the other, then the distinction
-between the database and front-end is not relevant.
-
-The means by which actors are isolated should also be described, as this is often
-what prevents an attacker from moving laterally after a compromise.
 
 ![Rook Components on Kubernetes](Rook%20High-Level%20Architecture.png)
 
 - `Rook Operator`
 	- `Ceph CSI Driver`
 	- `Ceph Daemons`
+	- `CephX`
 
 #### `Rook Operator`
 The Rook operator is a simple container that has all that is needed to bootstrap and monitor the storage cluster. The operator will start and monitor Ceph monitor pods, the Ceph OSD daemons to provide RADOS storage, as well as start and manage other Ceph daemons. The operator manages CRDs for pools, object stores (S3/Swift), and filesystems by initializing the pods and other resources necessary to run the services.
@@ -76,10 +69,15 @@ The operator will monitor the storage daemons to ensure the cluster is healthy. 
 Rook automatically configures the Ceph-CSI driver to mount the storage to your pods. The rook/ceph image includes all necessary tools to manage the cluster. Rook is not in the Ceph data path. Many of the Ceph concepts like placement groups and crush maps are hidden so you don't have to worry about them. Instead, Rook creates a simplified user experience for admins that is in terms of physical resources, pools, volumes, filesystems, and buckets. Advanced configuration can be applied when needed with the Ceph tools.
 
 #### `Ceph CSI Driver`
-The Ceph-CSI driver provides the provisioning and mounting of volumes
+The Ceph-CSI driver provides the provisioning and mounting of volumes. This is split into three types of storage: block, file, and object. The Ceph CSI Driver for block storage is also called “RADOS Block Device” and RBD, a software instrument that orchestrates the storage of block-based data in Ceph. Ceph Block Device splits block-based application data into “chunks”. RADOS stores these chunks as objects. Ceph Block Device orchestrates the storage of those objects across the storage cluster. The Ceph CSI Driver for File storage, or the Ceph File System (CephFS), provides a POSIX-compliant filesystem as a service that is layered on top of the object-based Ceph Storage Cluster. CephFS files get mapped to objects that Ceph stores in the Ceph Storage Cluster. Ceph Clients mount a CephFS filesystem as a kernel object or as a Filesystem in User Space (FUSE). For object storage, a Ceph Object Store includes a Ceph Object Gateway (RGW), an object storage interface built on top of librados. Ceph Object Gateway provides a RESTful gateway between applications and Ceph storage clusters.
 
 #### `Ceph Daemons`
-The Ceph daemons run the core storage architecture. See the [Glossary](https://github.com/rook/rook/blob/master/Documentation/Getting-Started/glossary.md#ceph) to learn more about each daemon.
+The Ceph daemons run the core storage architecture. They are daemons that maintain a map of the state of the cluster. This “cluster state” includes the monitor map, the manager map, the OSD map, and the CRUSH map. A Ceph cluster must contain a minimum of three running monitors in order to be both redundant and highly-available. Ceph monitors and the nodes on which they run are often referred to as “mon”s. The Ceph manager daemon (ceph-mgr) is a daemon that runs alongside monitor daemons to provide monitoring and interfacing to external monitoring and management systems. Since the Luminous release (12.x), no Ceph cluster functions properly unless it contains a running ceph-mgr daemon. Ceph monitor daemons maintain a map of the state of the cluster. This “cluster state” includes the monitor map, the manager map, the OSD map, and the CRUSH map. The Ceph Object Storage Daemon interacts with logical disks. The Ceph MetaData Server daemon. Also referred to as “ceph-mds”, must be running in any Ceph cluster that runs the CephFS file system. The MDS stores all filesystem metadata.
+
+
+#### `CephX`
+The Ceph authentication protocol. CephX authenticates users and daemons. CephX operates like Kerberos, but it has no single point of failure. The cephx authentication system is used by Ceph to authenticate users and daemons and to protect against man-in-the-middle attacks. cephx uses shared secret keys for authentication. This means that both the client and the monitor cluster keep a copy of the client’s secret key. The cephx protocol makes it possible for each party to prove to the other that it has a copy of the key without revealing it. This provides mutual authentication and allows the cluster to confirm (1) that the user has the secret key and (2) that the user can be confident that the cluster has a copy of the secret key. As stated in Scalability and High Availability, Ceph does not have any centralized interface between clients and the Ceph object store. By avoiding such a centralized interface, Ceph avoids the bottlenecks that attend such centralized interfaces. However, this means that clients must interact directly with OSDs. Direct interactions between Ceph clients and OSDs require authenticated connections. The cephx authentication system establishes and sustains these authenticated connections.
+
 
 ### Actions
 Rook can be used to automatically configure the Ceph CSI drivers to mount the storage to an application's pods. See image at top of [Actors](#actors) for reference
