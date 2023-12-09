@@ -16,7 +16,7 @@
 * [Secure development practices](#secure-development-practices)
 * [Security issue resolution](#security-issue-resolution)
 * [Appendix](#appendix)
-* [Threat Modeling With STRIDE](#Threat-Modeling-With-STRIDE)
+* [Recommendations](#recommendations)
 
 
 ## Metadata
@@ -284,7 +284,8 @@ Dame, M. (2022). The Kubernetes Operator Framework Book. Packt Publishing. (Chap
 - **Crossplane** is more of a cloud focused tool, i.e., it manages connecting, consuming and provisioning cloud resources using CRDs and controllers. It also provides a package manager and container registry for the installation and distribution of controllers. The Github repository for Crossplane is under actively maintained.
 
 
-
+## Recommendations
+Recommendations to the Operator Framework Team.
 ### Threat Modeling With STRIDE
 
 STRIDE-based threat model outlines potential threats and recommended mitigations for security considerations within  Operator Framework for Kubernetes projects. 
