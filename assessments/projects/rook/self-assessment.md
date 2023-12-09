@@ -238,7 +238,7 @@ Rook includes automated checks for vulnerabilities. These checks are part of Roo
 Rook's upstream continuous integration (CI) tests will run integration tests against your changes automatically. You do not need to run these tests locally, but you may if you like.
 
 
-* Communication Channels.
+### Communication Channels.
   Rook Communication Channels
 
 #### Internal Communication
