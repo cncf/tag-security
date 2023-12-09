@@ -38,7 +38,7 @@ A table at the top for quick reference information, later used for indexing.
 | Software | https://github.com/cortexproject/cortex |
 | Security Provider | No |
 | Languages | Go |
-| SBOM | `Not Applicable`  |
+| SBOM | [Built on release](https://github.com/cortexproject/cortex/releases/latest/download/sbom.tar.gz)  |
 | | |
 
 ### Security links
