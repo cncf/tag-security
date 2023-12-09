@@ -1,13 +1,9 @@
 # Cortex - Self-assessment
-The Self-assessment is the initial document for projects to begin thinking about the
-security of the project, determining gaps in their security, and preparing any security
-documentation for their users. This document is ideal for projects currently in the
-CNCF **sandbox** as well as projects that are looking to receive a joint assessment and
-currently in CNCF **incubation**.
 
-For a detailed guide with step-by-step discussion and examples, check out the free 
-Express Learning course provided by Linux Foundation Training & Certification: 
-[Security Assessments for Open Source Projects](https://training.linuxfoundation.org/express-learning/security-self-assessments-for-open-source-projects-lfel1005/).
+The Self-assessment is the initial document for Cortex to begin thinking about the security of the project, determining gaps in its security, and preparing any security documentation for their users.
+
+Authors: Dhanraj Chavan @heydc7 Raiya Haque @raiyahaque Abdul Alhazmi @Abkzmii Sushanth Rabipalli sushanth3120
+Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV)
 
 # Self-assessment outline
 
@@ -178,7 +174,7 @@ Cortex doesn’t document meeting particular compliance standards.
 
 #### Communication Channels
 
-- **Internal:** The Cortex team communicates with one another through the [Cortex Slack channel](https://app.slack.com/client/T08PSQ7BQ/CCYDASBLP/) and an [email list](mailto:cortex-users@lists.cncf.io) for any questions.
+- **Internal:** The Cortex team communicates with one another through the [Cortex Slack channel](https://app.slack.com/client/T08PSQ7BQ/CCYDASBLP/) and an [email](mailto:cortex-users@lists.cncf.io) for any questions.
 - **Inbound:** Users also likely communicate with the team through mailing lists and the [Cortex Slack channel](https://app.slack.com/client/T08PSQ7BQ/CCYDASBLP/), and they can also file an issue via [GitHub Issues](https://github.com/cortexproject/cortex/issues/new).
 - **Outbound:** Updates and announcements are likely made through the [Cortex Slack channel](https://app.slack.com/client/T08PSQ7BQ/CCYDASBLP/) or the [user mailing list](cortex-users@lists.cncf.io). There are also Cortex community meetings held every two weeks, and meeting notes are posted on their website.
 
