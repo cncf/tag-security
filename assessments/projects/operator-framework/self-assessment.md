@@ -155,7 +155,7 @@ Not applicable.
 ## Secure development practices
 
 ### Development Pipeline
-Operator SDK and Operator Lifecyle Manager do not inherently managa and consumer user data. They are tools focused on managing Operators and applications in Kubernetes clusters. The respoinsibility for maintaining security and protection of user data falls onto the Operator creators and the users who use them. The Operator creators should always be using the Kubernetes Best Pratices listed further below. Similarly, users should always perform research beforehand to ensure the validity of the Operator and take measures towards protecting their own user data.
+Operator SDK and Operator Lifecyle Manager do not inherently manage and consume user data. They are tools focused on managing Operators and applications in Kubernetes clusters. The respoinsibility for maintaining security and protection of user data falls onto the Operator creators and the users who use them. The Operator creators should always be using the Kubernetes Best Pratices listed further below. Similarly, users should always perform research beforehand to ensure the validity of the Operator and take measures towards protecting their own user data.
 
 All Code is maintained in [Github](https://github.com/operator-framework) and changes are reviewed by maintainers
 * The Source Code is visible in the Github
