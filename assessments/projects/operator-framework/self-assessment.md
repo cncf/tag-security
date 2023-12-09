@@ -40,7 +40,7 @@
 
 Operator Framework is an open-source toolkit that provides the runtime environment and software development kit (SDK) for building and running Kubernetes applications, dubbed “Operators”, in an effective and easily scalable way.
 
-Built on top of Kubernetes, OpenShift Operators use kubernetes as a framework to allow extensions to developers to build and manipulate Operators without prior knowledge of the complexities of Kubernetes API. By automating deployment, scale, updates and maintenance OpenShift uses operators to manage systems without the need of consistent human intervention. If interaction is necessary, OpenShift’s operators provide specialized libraries and tools to allow developers to use familiar languages to interact with operators in a simple way.
+Built on top of Kubernetes, Operators use kubernetes as a framework to allow extensions to developers to build and manipulate Operators without prior knowledge of the complexities of Kubernetes API. By automating deployment, scale, updates, and maintenance, using operators to manage systems without the need of consistent human intervention becomes simple. If interaction is necessary, Operators provide specialized libraries and tools to allow developers to use familiar languages to interact with operators in a simple way.
 
 
 ### Background
@@ -52,8 +52,7 @@ Containerization solves this problem. Containerization is the process of packagi
 Kubernetes is a control system that helps manage and run applications with multiple software components. An open source containerization platform, Kubernetes automates application deployment, updates, and overall management. It provides the container infrastructure and allows developers to define their application requirements. These reasons alone with a host of other benefits would be a great help to any development team.
 
 However, setting up and configuring Kubernetes clusters can pose a challenge for developers unfamiliar with its complexities. It requires an in-depth understanding of networking, infrastructure, and storage concepts. These are significant learning curves that create a “threshold filter” of sorts that leads developers to deciding on a different alternative to Kubernetes. 
-
-Red Hat's OpenShift which utilizes an Operator Framework is a solution to this problem along with providing several benefits that Kubernetes does not natively supply. The Operator Framework allows developers to build Operators with languages and libraries that they are already familiar with. Operators built with Operator Framework allow for even more options for automation of tasks and workflows beyond the basic functionalities provided by Kubernetes. Overall Operator Framework complements the benefits that Kubernetes offers by providing the specialized tools for easier learning for developers, better automation, and better scalability making Kubernetes an easier and more powerful tool.
+Operator Framework is a solution to this problem along with providing several benefits that Kubernetes does not natively supply. The Operator Framework allows developers to build Operators with languages and libraries that they are already familiar with. Operators built with Operator Framework allow for even more options for automation of tasks and workflows beyond the basic functionalities provided by Kubernetes. Overall Operator Framework complements the benefits that Kubernetes offers by providing the specialized tools for easier learning for developers, better automation, and better scalability making Kubernetes an easier and more powerful tool.
 
 ### Actors
 Operator Framework is comprised of the following parts 
@@ -119,13 +118,13 @@ They also do not cover every aspect of deployment of applications. They mainly f
 
 ## Self-assessment use
 
-This self-assessment is created by the Security Pals team to perform an internal analysis of the
-OpenShift Operator Framework's security.  It is not intended to provide a security audit of Operator Framework, or
+This self-assessment is created by the Security Pals team to perform an internal analysis of
+Operator Framework's security.  It is not intended to provide a security audit of Operator Framework, or
 function as an independent assessment or attestment of Operator Framework's security health.
 
-This document serves to provide Operator Framework users with an brief and easily understandable description of OpenShifts's security. Defines where to find existing security documentation. Clearly explains Operator Framework plans for security. Lays out general overview of Operator Framework security practices both for development of Operator Framework as well as security of Operator Framework.
+This document serves to provide Operator Framework users with an brief and easily understandable description of Operator Framework's security. Defines where to find existing security documentation. Clearly explains Operator Framework plans for security. Lays out general overview of Operator Framework security practices both for development of Operator Framework as well as security of Operator Framework.
 
-This document provides the CNCF TAG-Security with an initial understanding of OpenShift
+This document provides the CNCF TAG-Security with an initial understanding of Operator Framework
 to assist in a joint-assessment, necessary for projects under incubation.  Taken
 together, this document and the joint-assessment serve as a cornerstone for if and when
 Operator Framework seeks graduation and is preparing for a security audit.
@@ -133,7 +132,7 @@ Operator Framework seeks graduation and is preparing for a security audit.
 
 ## Security functions and features
 
-By focusing on the following security-relevant components and features, the OpenShift Operator Framework maintains a robust security posture, reducing potential vulnerabilities and threats to the platform on Kubernetes environments.
+By focusing on the following security-relevant components and features, Operator Framework maintains a robust security posture, reducing potential vulnerabilities and threats to the platform on Kubernetes environments.
 
 | Component | Applicability | Description of Importance |
 | --------- | ------------- | ------------------------- |
@@ -142,7 +141,7 @@ By focusing on the following security-relevant components and features, the Open
 | Operator Registry | Relevant | Automates the generation of manifests and indexes while restricting user access to modification of critical manifest generation/indexing logic. Implements validation checks on Operator bundles, ensuring error-free installations/updates and bolstering overall security. | 
 
 
-### Security Measures for OpenShift Operator Framework
+### Security Measures for Operator Framework
 | Security Aspect | Importance | Description of Importance |
 | --------------- | ---------- | ------------------------- |
 | Depolyment Configurations and Settings | High | Limited access to critical components fortifies security. Threat modeling includes potential attacks on communication channels, unauthorized data access, and tampering attempts with Operator logic or registry contents.|
@@ -169,11 +168,13 @@ All Code is maintained in [Github](https://github.com/operator-framework) and ch
 
 Operators employ several techniques that ensure their security and integrity, most following the Kubernetes Best Practices
 * Using Trusted Base images for building containers
+* Limiting permissions to the minimum required
 * Operators follow the principle of least privilege, ensuring that they only access the necessary resources with the least amount of permissions
 * Operators use secure communication channels such as SSH between various components to prevent eavesdropping or mishandling of information
 * Operators should employ a Role Based Access Control (RBAC) System to ensure that only the authorized users and services are allowed to perform actions in the Operator's lifecycle
 * Operators are expected to use Kubernetes Secrets objects rather than hardcoding for sensitive data
 * Regularly updating dependencies
+* Training and awareness of users and maintainers
 * Avoiding granting root privileges
 * Configuring security contexts and monitoring logging
 
@@ -234,7 +235,7 @@ The specific details about the timings of the meetings and communication channel
 
 ### Known Issues Over Time
 
-All reported bugs, issues, and fixes can be viewed from [operator-framework/operator-sdk/issues repository](https://github.com/operator-framework/operator-sdk/issues). Security vulnerabilities are usually assigned a CVE number to them. All security issues can be tracked [here](https://github.com/operator-framework/operator-sdk/issues?q=CVE+in%3Atitle)
+All reported bugs, issues, and fixes can be viewed from [operator-framework/operator-sdk/issues repository](https://github.com/operator-framework/operator-sdk/issues). Security vulnerabilities are usually assigned a CVE number to them. All security issues can be tracked [here](https://github.com/operator-framework/operator-sdk/issues?q=CVE+in%3Atitle). A security relevant tag should be added to security related issues to ease querying, currently this label is absent.
 
 Examples of some known security issues include:
 - **upgrade mongo-go-driver for CVE-2021-20329 [#6450](https://github.com/operator-framework/operator-sdk/issues/6450)** This is a case where the operator-sdk was using a version of mongo-go-driver in which a vulnerability was found
@@ -249,6 +250,11 @@ Examples of some known security issues include:
 
 The project has [not been documented](https://www.bestpractices.dev/en/projects) to have achieved the passing level criteria for CII best practices.
 
+However, we have evaluated the project's current state of compliance in the file titled CII Best Practices.md. The criteria has been taken from this draft of the CII Best Practices. The summary is provided below:
+Open Source Software Project Fundamentals: The Operator Framework complies with all fundamental criteria for open-source software projects, including the provision of a public website with a stable URL, the utilization of HTTPS for secure communication, and adherence to appropriate licensing requirements.
+Change Management: The framework employs a publicly accessible, version-controlled source repository that meticulously records changes. It also embraces distributed version control systems, which is consistent with established best practices.
+Issue Reporting Mechanisms: The project has established comprehensive mechanisms for reporting bugs and vulnerabilities. This includes the use of an issue tracker and the maintenance of a publicly accessible archive for reports, thereby ensuring transparency and accountability.
+Code Quality Assurance: The current documentation does not conclusively indicate whether the project fulfills the criteria for static and dynamic code analysis to address vulnerabilities. Enhanced documentation is required to ascertain compliance in this area.
 ### Case Studies
 
 The problem with finding specific case studies is that it is usually not *explicitly* documented when the project is built by the operator framework. Hence, we look at the applicability of the features provided by the operator framework through the lens of Prometheus and etcd operators:
@@ -281,22 +287,22 @@ Dame, M. (2022). The Kubernetes Operator Framework Book. Packt Publishing. (Chap
 
 ### Threat Modeling With STRIDE
 
-STRIDE-based threat model outlines potential threats and recommended mitigations for security considerations within the OpenShift Operator Framework for Kubernetes projects. 
+STRIDE-based threat model outlines potential threats and recommended mitigations for security considerations within  Operator Framework for Kubernetes projects. 
 
-##### Threat-01-S - Spoofing of OpenShift Operator Framework Admin
-* Description: The identity of the OpenShift Operator Framework Admin can be spoofed due to stolen credentials or lack of authentication.
+##### Threat-01-S - Spoofing of  Operator Framework Admin
+* Description: The identity of the Operator Framework Admin can be spoofed due to stolen credentials or lack of authentication.
 * Mitigations:
-Implement authentication for OpenShift Operator Framework Admin before processing requests.
+Implement authentication for Operator Framework Admin before processing requests.
 Discard and log as a security event if authentication fails.
 
-##### Threat-02-S - Spoofing of OpenShift Operator Framework API-Server
-* Description: A user could potentially interfere with a working cluster and impersonate as the OpenShift Operator Framework API-Server, gaining unauthorized access.
+##### Threat-02-S - Spoofing of Operator Framework API-Server
+* Description: A user could potentially interfere with a working cluster and impersonate as the Operator Framework API-Server, gaining unauthorized access.
 * Mitigations:
-Authenticate OpenShift Operator Framework API-Server and working clusters before processing requests.
+Authenticate Operator Framework API-Server and working clusters before processing requests.
 Discard and log as a security event if authentication fails.
 Tampering
 
-##### Threat-03-T - Tampering of OpenShift Operator Framework Components
+##### Threat-03-T - Tampering of Operator Framework Components
 * Description: Operator Framework components and configuration files can be tampered during build, installation, or runtime.
 * Mitigations:
 Verify checksum value and signature during build and installation.
@@ -309,7 +315,7 @@ Verify integrity of commands received before processing.
 Discard and log as a security event if integrity check fails. Rejection of access. 
 
 ##### Threat-05-R - Repudiation of Admin Actions
-* Description: Actions performed by OpenShift Operator Framework Admin should be detectable and logged for auditing purposes.
+* Description: Actions performed by Operator Framework Admin should be detectable and logged for auditing purposes.
 * Mitigations:
 Implement auditing to log all actions performed by the Admin.
 Implement centralized audit collection for suspicious activities.
@@ -323,7 +329,7 @@ Encrypt sensitive information during communication.
 ##### Threat-07-D - Exhausting Cloud Resources
 * Description: Incessant requests within the network can make Worker Cluster unavailable.
 * Mitigations:
-Isolate the network of the OpenShift Operator Framework environment.
+Isolate the network of the Operator Framework environment.
 Isolate Worker Cluster from users by elevation of privilege
 
 ##### Threat-08-E - Elevating Access to Control Plane via Worker Cluster
