@@ -1,12 +1,10 @@
-# Self-assessment
+# Volcano Self-Assessment
 
 Authors: Mayank Ramnani (@mayank-ramnani), Anish Vempaty (@anish-vempaty), Francis Gabriel Delamerced (@fdg238), Ruthvik Akula, George Gonzalez
 
-Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV)
+Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV), Eddie Knight (@eddie-knight), Ragashree (@ragashreeshekar)
 
 The Self-assessment is the initial document for Volcano to begin thinking about the security of the project, determining gaps in its security, and preparing any security documentation for their users.
-
-# Self-assessment outline
 
 ## Table of contents
 
@@ -40,7 +38,6 @@ The Self-assessment is the initial document for Volcano to begin thinking about 
 | Software          | https://github.com/volcano-sh/volcano
 | Security Provider | No
 | Languages         | Go, Shell, Makefile, Dockerfile, Python, Smarty|
-| SBOM              | [SBOM](SBOM.json)|
 
 
 ### Security links
