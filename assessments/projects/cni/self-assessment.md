@@ -161,12 +161,14 @@ The main points are summarized below.
 * In general, pull requests are merged once one or two maintainers endorse it.
 
 ### Communication Channels
+
 * **Internal**
-  Team members communicate with each other through the [Weekly maintainers meeting using Jitsi](https://meet.jit.si/CNIMaintainersMeeting), [#cni channel on the CNCF slack](https://slack.cncf.io/), [cni-dev Google Group](https://groups.google.com/forum/#!forum/cni-dev), or [GitHub issues](https://github.com/containernetworking/cni/issues)
+  Team members communicate with each other through the [Weekly maintainers meeting using Jitsi](https://meet.jit.si/CNIMaintainersMeeting), [#cni and #cni-dev channel on the CNCF slack](https://slack.cncf.io/), [cni-dev Google Group](https://groups.google.com/forum/#!forum/cni-dev), or [GitHub issues](https://github.com/containernetworking/cni/issues)
 * **Inbound**
-  Users communicate with the team though the [#cni channel on the CNCF slack](https://slack.cncf.io/), [cni-dev Google Group](https://groups.google.com/forum/#!forum/cni-dev), or [GitHub issues](https://github.com/containernetworking/cni/issues).
+  Users communicate with the team though the [#cni and #cni-dev channel on the CNCF slack](https://slack.cncf.io/), [cni-dev Google Group](https://groups.google.com/forum/#!forum/cni-dev), or [GitHub issues](https://github.com/containernetworking/cni/issues).
 * **Outbound**
   Team members communicate with users through the [#cni channel on the CNCF slack](https://slack.cncf.io/), [cni-dev Google Group](https://groups.google.com/forum/#!forum/cni-dev).
+
 ### Ecosystem
 * CNI is a vendor-neutral specification so it can be used by any system that chooses to implement it. It is used by Kubernetes, Mesos, CloudFoundry, podman, CRI-O, and [more](https://www.cni.dev/docs/#who-is-using-cni).
 
