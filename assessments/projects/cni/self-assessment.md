@@ -1,9 +1,4 @@
 # Self-assessment
-The Self-assessment is the initial document for projects to begin thinking about the
-security of the project, determining gaps in their security, and preparing any security
-documentation for their users. This document is ideal for projects currently in the
-CNCF **sandbox** as well as projects that are looking to receive a joint assessment and
-currently in CNCF **incubation**.
 
 # Self-assessment outline
 
@@ -26,8 +21,6 @@ currently in CNCF **incubation**.
 
 ## Metadata
 
-A table at the top for quick reference information, later used for indexing.
-
 |   |  |
 | -- | -- |
 | Software | [A link to CNI's repository.](https://github.com/containernetworking/cni)  |
@@ -38,7 +31,6 @@ A table at the top for quick reference information, later used for indexing.
 
 ### Security links
 
-Provide the list of links to existing security documentation for the project.
 | Doc | url |
 | -- | -- |
 | Security file | [README.md#Security](https://github.com/containernetworking/cni/blob/main/README.md#Security) |
@@ -58,14 +50,6 @@ pluggable for container runtimes. Ultimately, CNI, along with libraries for Go a
 as a common interface between network plugins and container execution.
 
 ### Actors
-These are the individual parts of your system that interact to provide the
-desired functionality.  Actors only need to be separate, if they are isolated
-in some way.  For example, if a service has a database and a front-end API, but
-if a vulnerability in either one would compromise the other, then the distinction
-between the database and front-end is not relevant.
-
-The means by which actors are isolated should also be described, as this is often
-what prevents an attacker from moving laterally after a compromise.
 
 The following are the actors found in CNI project:
 - **CNI Plugin**: A program that applies a specified network configuration. It interfaces with a variety of networking solutions to provide flexible networking capabilities.
@@ -74,16 +58,6 @@ The following are the actors found in CNI project:
 - **Network**: A group of endpoints that are uniquely addressable that can communicate amongst each other. This could be either an individual container (as specified above), a machine, or some other network device (e.g. a router). Containers can be conceptually added to or removed from one or more networks.It includes configuration data such as IP addresses, routing rules, and network policies.
 
 ### Actions
-These are the steps that a project performs in order to provide some service
-or functionality.  These steps are performed by different actors in the system.
-Note, that an action need not be overly descriptive at the function call level.
-It is sufficient to focus on the security checks performed, use of sensitive
-data, and interactions between actors to perform an action.
-
-For example, the access server receives the client request, checks the format,
-validates that the request corresponds to a file the client is authorized to
-access, and then returns a token to the client.  The client then transmits that
-token to the file server, which, after confirming its validity, returns the file.
 
 #### Action Overview
 1. A format for administrators defines network configurations
@@ -118,15 +92,11 @@ Plugins can return one of three result types:
 * _Version
 
 ### Goals
-The intended goals of the projects including the security guarantees the project
- is meant to provide <br>
 * CNI defines a common interface between the network plugins and container execution
 * CNI is language-agnostic and a vendor-neutral specification
 * Backwards compatible: plugins are able to easily implement all versions of the specification and some helper code is available to convert between versions.
 
 ### Non-goals
-Non-goals that a reasonable reader of the project’s literature could believe may
-be in scope <br>
 * Dynamic updates to existing network configurations
 * Dynamic policies for network bandwidth and firewall rules
 
