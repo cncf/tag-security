@@ -165,7 +165,7 @@ CubeFS does not currently document meeting particular compliance standards such 
 
   * **Commit Signing** - All commits have to be signed following certain guidelines and go through a DCO (Developer Certificate of Origin) check. 
 
-  * **CI/CD pipeline** - CubeFS uses automated CI/CD pipelines to build and test code and uses the Travis CI service to run all checks including unit and integration tests. However CubeFS currently does not have SAST tools included in their Ci/CD pipelines.
+  * **CI/CD pipeline** - CubeFS uses automated CI/CD pipelines to build and test code and uses the Travis CI service to run all checks including unit and integration tests. However, CubeFS currently does not have SAST tools included in their CI/CD pipelines.
 
   * **Code reviews** - All pull requests have to be approved by at least one core maintainer, and pass all checks, before it can be merged.
 
