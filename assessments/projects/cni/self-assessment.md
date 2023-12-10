@@ -94,14 +94,25 @@ Plugins can return one of three result types:
 * _Version
 
 ### Goals
+
+**General**
 * CNI defines a common interface between the network plugins and container execution
 * CNI is language-agnostic and a vendor-neutral specification
 * Backwards compatible: plugins are able to easily implement all versions of the specification and some helper code is available to convert between versions.
 
+**Security**
+* Limit which file paths are included when searching for a CNI plugin on a system.
+
 ### Non-goals
+
+**General**
 * Dynamic updates to existing network configurations
 * Dynamic policies for network bandwidth and firewall rules
 
+**Security**
+* Stop a container runtime from executing CNI plugins
+* Restrict what a plugin does
+* Manage the security of the container it interacts with
 
 ## Self-assessment use
 
