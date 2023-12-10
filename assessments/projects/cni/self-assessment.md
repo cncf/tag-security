@@ -195,10 +195,10 @@ An issue with CNI portmap was found with Kubernetes, which allowed it to match i
 ### CII Best Practices
 
 [**Current Progress**](https://www.bestpractices.dev/en/projects/2446) (Last updated January 2021):
-- CNI does not meet a passing level (only 72% of the way there)
-- Progress should be updated as there are currently several practices marked with ‘?’
-- There are no primary developers identified as having knowledge of designing secure software or preventing and handling vulnerabilities.
-- They do not use static code analyzers to automatically catch vulnerabilities in code.
+* CNI does not meet a passing level (only 72% of the way there)
+* Progress should be updated as there are currently several practices marked with '?'
+* There are no primary developers identified as having knowledge of designing secure software or preventing and handling vulnerabilities.
+* Static code analyzers are not used to automatically catch vulnerabilities in code.
 
 ### Case Studies
 
