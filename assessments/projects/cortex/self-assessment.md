@@ -216,6 +216,8 @@ Cortex is a CNCF Incubating project and a highly scalable, long-term storage for
 
 ## Security issue resolution
 
+Cortex team manages their vulnerability disclosure program: https://github.com/cortexproject/cortex/blob/master/SECURITY.md
+
 #### Responsible Disclosures Process:
 
 - **Discovery:** Report externally or internally discovered security issues privately to maintainers and CC cortex-team@googlegroups.com.
@@ -224,9 +226,12 @@ Cortex is a CNCF Incubating project and a highly scalable, long-term storage for
 - **Communication Methods/Strategies:** Private channels for reporting, coordination, and optional public acknowledgment.
 - **Response Process:** Prompt acknowledgment, validation, fix development, coordination with reporter, and public disclosure.
 
-Incident Response:
+#### Incident Response:
 - **Triage, Confirmation, and Notification:** Assess, confirm, and notify stakeholders of vulnerabilities, with ongoing communication.
 - **Patching/Update Availability:** Develop a patch, coordinate disclosure, publicly disclose, and provide clear instructions for patching or updating the application.
+
+#### Private Vendors List
+Cortex has a list of vendors who provide Cortex to their users. This list is not intended for individuals to find out about security issues. For more info: [Link](https://github.com/cortexproject/cortex/blob/master/SECURITY.md#private-vendors-list)
 
 ## Appendix
 
