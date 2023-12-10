@@ -2,8 +2,9 @@
 
 The Self-assessment is the initial document for Cortex to begin thinking about the security of the project, determining gaps in its security, and preparing any security documentation for their users.
 
-Authors: Dhanraj Chavan @heydc7 Raiya Haque @raiyahaque Abdul Alhazmi @Abkzmii Sushanth Rabipalli sushanth3120
-Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV)
+**Authors:** Dhanraj Chavan @heydc7 Raiya Haque @raiyahaque Abdul Alhazmi @Abkzmii Sushanth Rabipalli sushanth3120
+
+**Contributors/Reviewers:** Pranava Kumar Vemula (@Rana-KV)
 
 ## Self-assessment outline
 
