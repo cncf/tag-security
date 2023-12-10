@@ -27,13 +27,11 @@ Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV)
 
 ## Metadata
 
-|   |  |
 | -- | -- |
 | Software | https://github.com/cortexproject/cortex |
 | Security Provider | No |
 | Languages | Go |
 | SBOM | `Not Applicable` |
-| | |
 
 ### Security links
 
