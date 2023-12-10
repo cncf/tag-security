@@ -187,8 +187,10 @@ There is no publicly available document outlining an incident response process.
 
 ### Known Issues Over Time
 
-[**CVE-2021-20206**](https://nvd.nist.gov/vuln/detail/CVE-2021-20206) (CVSS v3.1 Base Score: 7.2 High Severity) Arbitrary path injection via type field in CNI configuration
+* [**CVE-2021-20206**](https://nvd.nist.gov/vuln/detail/CVE-2021-20206) (CVSS v3.1 Base Score: 7.2 High Severity) **Arbitrary path injection via type field in CNI configuration.**
 A path name flaw allowed execution of binaries elsewhere on the system including binaries that are not CNI plugins. This was fixed in libcni version 0.8.1 by [tightening up the plugin-finding logic](https://github.com/containernetworking/cni/pull/808).
+* [**CVE-2019-9946**](https://nvd.nist.gov/vuln/detail/CVE-2019-9946) (CVSS v3.0 Base Score: 7.5 High Severity) **Incorrect rule insertion by CNI 'portmap'.**
+An issue with CNI portmap was found with Kubernetes, which allowed it to match incoming traffic even if better, more specific rules existed later in the chain. This was fixed in version 0.7.5 by [appending instead of prepending rules](https://github.com/containernetworking/plugins/pull/269).
 
 ### CII Best Practices
 
