@@ -1,9 +1,6 @@
 # CoreDNS Self-assessment
-Authors: Tom Zhang, Rohit Chaudhari, Maryam Mohagheghi, Vamshi Madineni
 
-Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV).
-
-This document evaluates the design goals for [CoreDNS](https://coredns.io/) as provides a security assessment of the software.
+This document evaluates the design goals for the CoreDNS CNCF project and provides a security assessment of its software. The authors of this document are Tom Zhang, Rohit Chaudhari, Maryam Mohagheghi,  and Vamshi Madineni.
 
 ## Table of contents
 
@@ -24,20 +21,20 @@ This document evaluates the design goals for [CoreDNS](https://coredns.io/) as p
 
 ## Metadata
 
-|   |  |
+| Category | Data |
 | -- | -- |
 | Software | [CoreDNS](https://github.com/coredns/coredns) |
 | Security Provider | No |
 | Languages | Golang |
-| | |
 
 ### Security links
 
-| Doc | url |
+| Document | URL |
 | -- | -- |
 | CoreDNS Security Policy | [SECURITY.md](https://github.com/coredns/coredns/security) |
-| Core53 Audit | [Audit Report](https://coredns.io/assets/DNS-01-report.pdf) |
-| Trail of Bits Audit | [Audit Report](https://github.com/trailofbits/publications/blob/master/reviews/CoreDNS.pdf) |
+| CoreDNS Manual | [Manual](https://coredns.io/manual/toc/) | 
+| Core53 Audit | [Report](https://coredns.io/assets/DNS-01-report.pdf) |
+| Trail of Bits Audit | [Report](https://github.com/trailofbits/publications/blob/master/reviews/CoreDNS.pdf) |
 
 ## Overview
 
@@ -52,41 +49,42 @@ CoreDNS was developed to address the limitations of traditional DNS solutions in
 CoreDNS's plugin-driven architecture empowers users to customize their DNS infrastructure to meet specific requirements, making it adaptable for a wide range of use cases, such as serving as a DNS server, forwarding DNS requests, or implementing advanced features. This adaptability positions CoreDNS as a critical component in cloud-native environments where dynamic service discovery and communication are essential.
 
 ### Actors
-**CoreDNS Server**</br>
-On startup, CoreDNS runs servers, each defined by the zones and ports it serves. Each server contains a list of plugins and manages its own plugin chain that defines how a query is processed. Plugins are server components and not individual actors since a vulnerability in a plugin could compromise the server, vice versa.
+**CoreDNS Server**
+* On startup, CoreDNS runs servers, each defined by the zones and ports it serves. Each server contains a list of plugins and manages its own plugin chain that defines how a query is processed.
+* Plugins are considered to be server components and not individual actors since a vulnerability in a plugin would compromise the server.
 
 ### Actions
-* Create DNS servers: To handle DNS queries and tasks for other services running in a network.
-* Process DNS queries: Process DNS queries sent by clients such as web browsers, terminal utilities, etc. These queries can be sent over UDP, TCP, or gRPC. DNS over HTTPS (DoH) or DNS over TLS (DoT) can also be used.
-* Return DNS Replies: After a plugin chain processes a DNS query, CoreDNS sends an appropriate DNS reply back to the client.
-* Log data: Query, response, and error messages can be logged.
-* Collect operational metrics: The Prometheus plugin can be used to export operational metrics.
-* Handle secrets: Secrets such as private keys and credentials for the cloud services are handled and processed by CoreDNS.
-* Plugins can provide additional functionality for DNS servers. For instance, plugins can make API calls and make calls to cloud services. Certain plugins can also receive API requests from clients via HTTP. These can send back responses outside of typical DNS data flow, eg: the health plugin can requested by a client to provide the health status of the server. 
+* Create DNS servers to handle DNS queries and tasks for other services running in a network.
+* Process DNS queries sent by clients such as web browsers, terminal utilities, etc. These queries can be sent over UDP, TCP, or gRPC. DNS over HTTPS (DoH) or DNS over TLS (DoT) can also be used.
+* Return DNS Replies after a plugin chain processes a DNS query, CoreDNS sends an appropriate DNS reply back to the client.
+* Logs queries, response, and error messages.
+* Collect operational metrics. The Prometheus plugin can be used to export operational metrics.
+* Handle and process secrets such as private keys and credentials for the cloud services.
+* Integrate plugins for additional functionality for DNS servers. For instance, plugins can make API calls and make calls to cloud services. Certain plugins can also receive API requests from clients via HTTP. These can send back responses outside of typical DNS data flow, eg: the health plugin can requested by a client to provide the health status of the server. 
 
 ### Goals
-* Primary Functionality:
+* Primary Functionality
     * To serve as a flexible and efficient DNS server, especially in containerized environments like Kubernetes.
     * Provide robust service discovery functions in distributed systems.
-* Security Guarantees:
+* Security Guarantees
     * Ensure a high level of security, leveraging Go's memory-safe properties to prevent common vulnerabilities such as buffer overflows.
     * Implement secure DNS query options like DoT, DoH, and DoQ to protect against eavesdropping and tampering.
-* Performance and Flexibility:
+* Performance and Flexibility
     * Deliver high performance with a plugin-based architecture, allowing for custom extensions and optimizations.
     * Support a variety of backends (e.g., etcd, Kubernetes) for diverse deployment scenarios.
-* Integration with Cloud and Container Environments:
+* Integration with Cloud and Container Environments
     * Seamless integration with cloud-native technologies, particularly Kubernetes, for effective service discovery in dynamic environments.
-* User-Friendly Configuration:
+* User-Friendly Configuration
     * Offer a simple and intuitive configuration system (Corefile), making it accessible for users with varying levels of expertise.
 
 ### Non-goals
-* Full Recursive DNS Capabilities:
+* Full Recursive DNS Capabilities
     * CoreDNS does not aim to support full recursion like traditional DNS servers (e.g., BIND), relying instead on forwarders for comprehensive domain resolution.
-* Handling Non-Standard Protocols and Functions:
+* Handling Non-Standard Protocols and Functions
     * CoreDNS is not designed to support non-standard or deprecated DNS protocols and functions that fall outside the common use cases in modern distributed systems.
-* Unlimited Resource Utilization:
+* Unlimited Resource Utilization
     * The software does not aim to manage unlimited resource utilization, such as handling an arbitrary number of DNS requests without considering the underlying system's capacity.
-* Automated Management of Security Vulnerabilities:
+* Automated Management of Security Vulnerabilities
     * While CoreDNS prioritizes security, it does not automatically manage all aspects of security vulnerabilities, requiring administrator intervention for updates and configuration changes.
 
 ## Self-assessment use
@@ -125,24 +123,20 @@ CoreDNS is not explicitly documented to meet the criteria of any security standa
 
 ## Secure development practices
 
-1. Development Pipeline
+**Development Pipeline**
 * Commit Signing and Review Process: CoreDNS maintains a rigorous code review process to ensure the highest quality and security of the codebase. All contributors are required to sign their commits, establishing a verifiable chain of custody. Before merging, each pull request undergoes a thorough review by at least two CoreDNS maintainers, ensuring a double-check on the code's integrity and security.
 * Automated Vulnerability Checks: CoreDNS integrates automated vulnerability scanning tools within its continuous integration pipeline. Tools such as GoSec are used to perform static code analysis, identifying common security issues in the Go codebase. These checks are performed on every commit to the master branch, ensuring immediate detection of potential security risks.
 * Container Image Management: For CoreDNS deployments using containerization, all container images are treated as immutable and are digitally signed to prevent tampering. This ensures that the deployed CoreDNS instances are based on the verified and trusted codebase, enhancing overall security.
 * Quality Assurance and Testing: CoreDNS employs a comprehensive testing strategy that includes unit tests, integration tests, and end-to-end tests. These tests are automated and are run on various environments to ensure robustness and compatibility. The testing process is an integral part of the development cycle, ensuring that each release meets the highest standards of quality and security.
-2. Communication Channels
+
+**Communication Channels**
 * Internal Team Communication: The CoreDNS team utilizes secure and encrypted communication channels for internal discussions, including email and messaging platforms with end-to-end encryption. This ensures that sensitive information, such as security vulnerabilities and patches, remains confidential within the team.
 * Inbound Communication: Users and prospective users can reach the CoreDNS team primarily through the GitHub issue tracker. This platform facilitates transparent and efficient communication regarding bugs, feature requests, and security concerns. For more direct communication, a dedicated email address (security@coredns.io) is provided for reporting security vulnerabilities.
-* Outbound Communication: CoreDNS communicates updates, announcements, and security advisories through multiple channels, including the CoreDNS blog, Twitter (@corednsio), and a dedicated mailing list (coredns-distributors-announce@lists.cncf.io). These channels ensure timely and broad dissemination of important information to the user community.
-3. Ecosystem Integration
+* Outbound Communication: CoreDNS communicates updates, announcements, and security advisories through multiple channels, including the [CoreDNS blog](https://coredns.io/blog/), Twitter (@corednsio), and a dedicated mailing list (coredns-distributors-announce@lists.cncf.io). These channels ensure timely and broad dissemination of important information to the user community.
+
+**Ecosystem Integration**
 * Cloud Native Ecosystem Role: As a CNCF graduated project, CoreDNS plays a critical role in the cloud-native ecosystem, particularly in environments managed by Kubernetes. It seamlessly integrates with Kubernetes, providing DNS-based service discovery which is crucial for microservices architecture.
 * Impact of CoreDNS in Cloud Environments: In cloud environments, CoreDNS enhances service discovery and network configuration, thereby underpinning many cloud-based applications' functionality. Its lightweight, modular architecture makes it a preferred choice in containerized environments, thus amplifying its impact across the cloud-native ecosystem.
-4. Compliance and Standards
-* Adherence to Security Standards: CoreDNS adheres to industry-standard security practices and coding guidelines. This includes following the recommendations for secure coding in Go and regularly updating dependencies to mitigate vulnerabilities.
-* Third-Party Audits and Assessments: CoreDNS has undergone security audits by reputable third parties like Cure53 and Trail of Bits. These audits have significantly contributed to the project's security posture by identifying and addressing potential vulnerabilities.
-Conclusion
-* Ongoing Improvements: CoreDNS is committed to continuously improving its security practices. The team actively seeks feedback from the community and collaborates with security experts to stay ahead of emerging threats.
-*Feedback Mechanism: The CoreDNS team (security@coredns.io) welcomes feedback on its security practices and this self-assessment document. Community members are encouraged to contribute their insights via GitHub discussions or the project's mailing list.
 
 ## Security issue resolution
 The Product Security Team (PST) is responsible for organizing the entire response including internal communication and external disclosure.
