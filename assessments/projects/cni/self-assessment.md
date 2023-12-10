@@ -221,11 +221,19 @@ These case studies provide insights into how CNI is used in practice, emphasizin
 
 ## Related Projects/Vendors
 
-- **Kubernetes:** Utilizes CNI for container networking.
-- **Mesos:** Integrates CNI for networking solutions.
-- **Cloud Foundry:** Adopts CNI for managing container network interfaces.
-- **Podman:** Implements CNI to configure network settings for containers.
-- **CRI-O:** Leverages CNI as part of its container runtime interface.
+* **[Container Network Model (CNM)](https://github.com/moby/moby/blob/master/libnetwork/docs/design.md#the-container-network-model) / [libnetwork](https://github.com/moby/moby/tree/master/libnetwork)** is a standard proposed by Docker and is also supported in several products such as Project Calico, Cisco Contiv, and Weave.
+    * Key features that separate it from CNI:
+        * CNM uses a network sandbox to isolate a container's network configuration.
+        * CNM features the use of user-defined labels (key-value pairs) passed as metadata to inform network driver behavior.
+    * Factors that affect adoption:
+        * There are design choices and assumptions made that can be an [issue for systems such as Kubernetes](https://kubernetes.io/blog/2016/01/why-kubernetes-doesnt-use-libnetwork/), whereas CNI is simpler to implement and support.
+* **[Netavark](https://github.com/containers/netavark)** is a network configuration tool for containers. It was developed by Podman and will replace CNI in Podman version 5.0.
+    * Primary differences:
+        * Netavark does not use a plugin model like CNI. All setup is performed directly by Netavark.
+            * This resulted in less overhead compared to executing multiple plugins in sequentially to configure a network.
+        * Containers can set static IP and MAC addresses for individual networks as opposed to only being able to set them for a container on a single network.
+    * Factors that affect adoption:
+        * Is mainly being designed for use with Podman.
 
 # CNI Security Threat Modeling
 
