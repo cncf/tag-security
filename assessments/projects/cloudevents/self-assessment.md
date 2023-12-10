@@ -850,116 +850,16 @@ proper triage processes.
 
 ### Known Issues Over Time
 
-#### Issues found by Trail of Bits
+#### Trail of Bits Security Assessment
 
-The main security assessment on CloudEvents was a [Security Audit performed by
+CloudEvents underwent a [Security Audit performed by
 Trail of
 Bits](https://github.com/cloudevents/spec/blob/main/docs/CE-SecurityAudit-2022-10.pdf)
-released on October 26, 2022. These were mainly concerning the different
-CloudEvents SDK, not the specification. All of the security issues found by
-Trail of Bits have already been addressed.
+released on October 26, 2022.
 
-Below are listed the findings by Trail Of Bits with their descriptions.
+Trail of Bits is a cybersecurity company based in the United States that specializes in various aspects of security services, including security assessments, penetration testing, and software security. 
 
-##### [Java SDK] Reliance on default encoding
-
-* **Severity:** Undetermined
-* **Difficulty:** Low
-* **Type:** Undefined Behavior
-* **Finding ID:** TOB-CE-1
-* **Target:** Java SDK
-
-Several instances were found where the getByte() standard Java API is utilized
-without specifying an encoding, leading the [Java
-SDK](https://github.com/cloudevents/sdk-java) to rely on system default
-encoding. This can result in varying processing of event data across platforms.
-While the specification mandates adherence to appropriate and RFC-compliant
-encodings, there is room for improvement in the Java SDK implementation and
-documentation to emphasize the significance of consistent encoding among actors.
-Although not all instances are problematic, especially when handling binary
-data, it is crucial to document and address this behavior in the SDK
-implementation, documentation, and provided examples.
-
-##### [Java SDK] Outdated Vulnerable Dependencies
-
-* **Severity:** Undetermined
-* **Difficulty:** Medium
-* **Type:** Patching
-* **Finding ID:** TOB-CE-2
-* **Target:** Java SDK
-
-The [Java SDK](https://github.com/cloudevents/sdk-java) contains multiple
-outdated dependencies with publicly known vulnerabilities, including high- and
-medium-risk ones. The Snyk tool automatically audited each module due to time
-constraints and ease of remediation. A manual review of exploitability within
-the SDK's context was not conducted.
-
-##### [JavaScript SDK] Potential XSS in httpTransport()
-
-* **Severity:** Undetermined
-* **Difficulty:** Low
-* **Type:** Data Validation
-* **Finding ID:** TOB-CE-3
-* **Target:** sdk-javascript/src/transport/http/index.ts
-
-The [JavaScript SDK](https://github.com/cloudevents/sdk-javascript)'s
-httpTransport() method exposes raw error messages from the endpoint, potentially
-leading to XSS vulnerabilities if user-controlled data is reflected without
-proper sanitization in the rendered web page. While the specification does not
-mandate validation or sanitization, the SDK documentation should emphasize the
-risk of unsanitized HTTP responses when using this API in an emitter.
-
-##### [Go SDK] Outdated Vulnerable Dependencies
-
-* **Severity:** Undetermined
-* **Difficulty:** Low
-* **Type:** Patching
-* **Finding ID:** TOB-CE-4
-* **Target:** Go SDK
-
-The [Go SDK](https://github.com/cloudevents/sdk-go) has multiple outdated
-dependencies with known vulnerabilities. The open-source Snyk tool automatically
-audited each module. Due to time constraints and ease of remediation, a manual
-review of exploitability within the SDK's context was skipped.
-
-##### [Go SDK] Downcasting of 64-bit integer
-
-* **Severity:** Undetermined
-* **Difficulty:** Low
-* **Type:** Undefined Behavior
-* **Finding ID:** TOB-CE-5
-* **Target:** sql/v2/parser/expression_visitor.go, sql/v2/utils/casting.go
-
-In the [Go SDK](https://github.com/cloudevents/sdk-go), the `strconv.Atoi`
-function parses a machine-dependent integer (int64 for 64-bit targets). In some
-code instances, the result from strconv.Atoi is later converted to a smaller
-type (int16 or int32), risking overflow with specific inputs.
-
-##### [Go SDK] ReadHeaderTimeout not configured
-
-* **Severity:** Informational
-* **Difficulty:** Low
-* **Type:** Denial of Service
-* **Finding ID:** TOB-CE-6
-* **Target:** Go SDK
-
-The [Go SDK](https://github.com/cloudevents/sdk-go) http.server API offers four
-timeouts, including ReadHeaderTimeout. Failure to set a value for this timeout
-makes the listener instance susceptible to Slowloris DoS attacks.
-
-##### [CSharp SDK] Outdated Vulnerable Dependencies
-
-* **Severity:** Undetermined
-* **Difficulty:** Low
-* **Type:** Patching
-* **Finding ID:** TOB-CE-7
-* **Target:** CSharp SDK
-
-The [CSharp SDK](https://github.com/cloudevents/sdk-csharp) has multiple
-outdated dependencies with known vulnerabilities. Using the open-source Snyk
-tool, each module was automatically audited. Due to time constraints and ease of
-remediation, a manual review of exploitability within the SDK's context was
-skipped.
+The audit focused on various CloudEvents Software Development Kits (SDKs) rather than the specification itself. All identified security issues have been addressed. The report highlighted specific findings for different SDKs, such as the Java SDK's reliance on default encoding or the outdated and vulnerable dependencies in both Java and Go SDKs. All of the security issues found by Trail of Bits have already been addressed.
 
 ### CII Best Practices
 
