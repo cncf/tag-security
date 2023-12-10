@@ -32,7 +32,7 @@ Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV)
 | Software | https://github.com/cortexproject/cortex |
 | Security Provider | No |
 | Languages | Go |
-| SBOM | [Built on release](https://github.com/cortexproject/cortex/releases/latest/download/sbom.tar.gz)  |
+| SBOM | `Not Applicable` |
 | | |
 
 ### Security links
