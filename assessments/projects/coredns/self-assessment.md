@@ -5,8 +5,6 @@ Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV).
 
 This document evaluates the design goals for [CoreDNS](https://coredns.io/) as provides a security assessment of the software.
 
-# Self-assessment outline
-
 ## Table of contents
 
 * [Metadata](#metadata)
