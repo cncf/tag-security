@@ -164,6 +164,15 @@ may enforce security policies.
 #### Developer 
 Responsible for incorporating CloudEvents support into their applications to enable interoperability with other services and systems. The developer can use CloudEvents SDKs to integrate CloudEvents functionality into their applications. Developers also collaborate to ensure the proper functioning of other actors within the CloudEvents ecosystem.
 
+#### SDK maintainers
+Part of the CloudEvents ecosystem, they are responsible for the development, maintenance, and enhancement of CloudEvents Software Development Kits (SDKs). As stewards of the SDKs, their role is critical in ensuring that developers have reliable, up-to-date and safe tools to work with. 
+
+#### CloudEvents Administrator
+These central figures in the ongoing development and governance of the CloudEvents ecosystem and specification. They are responsible for the management of critical aspects of the CloudEvents infrastructure. For example, the website, github repos and moderate the meetings.
+
+#### CloudEvents Spec Maintainer
+A CloudEvents specification maintainer is responsible for developing and maintaining the CloudEvents standard, ensuring consistency and interoperability for describing event data. They manage the roadmap, coordinate releases, and collaborate with the community to implement changes, improving the CloudEvents specification to facilitate event exchange in diverse cloud environments.
+
 ### Actions
 
 #### Event Formatting
