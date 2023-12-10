@@ -265,6 +265,6 @@ Ongoing evaluation and updates to this model are necessary to adapt to evolving 
 
 # Action Items
 
-- Create a publicly available SBOM
-- Security policy: Include what response can be expected after a vulnerability has been reported and consider creating a file or page dedicated to the vulnerability reporting process. ([Security Policy Template/Example](https://github.com/cncf/tag-security/blob/main/project-resources/templates/SECURITY.md)).
-- Incident Response: Create a publicly available document outlining how security issues are triaged, how any parties are notified, and details surrounding the publication and release of a patch. ([Incident Response Template/Example](https://github.com/cncf/tag-security/blob/main/project-resources/templates/incident-response.md))
+- Consider creation of an SBOM for CNI
+- Security policy: Include what response can be expected after a vulnerability has been reported and consider creating a file or page dedicated to the vulnerability reporting process. ([Example Security Policy Template](https://github.com/cncf/tag-security/blob/main/project-resources/templates/SECURITY.md)).
+- Incident Response: Create a publicly available document outlining how security issues are triaged, how any parties are notified, and details surrounding the publication and release of a patch. ([Example Incident Response Template](https://github.com/cncf/tag-security/blob/main/project-resources/templates/incident-response.md))
