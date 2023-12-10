@@ -137,10 +137,7 @@ CoreDNS is not explicitly documented to meet the criteria of any security standa
 3. Ecosystem Integration
 * Cloud Native Ecosystem Role: As a CNCF graduated project, CoreDNS plays a critical role in the cloud-native ecosystem, particularly in environments managed by Kubernetes. It seamlessly integrates with Kubernetes, providing DNS-based service discovery which is crucial for microservices architecture.
 * Impact of CoreDNS in Cloud Environments: In cloud environments, CoreDNS enhances service discovery and network configuration, thereby underpinning many cloud-based applications' functionality. Its lightweight, modular architecture makes it a preferred choice in containerized environments, thus amplifying its impact across the cloud-native ecosystem.
-4. Security Incident Response
-* Incident Management: CoreDNS has a structured process for managing security incidents, which includes an initial analysis, followed by a detailed investigation. Once a vulnerability is confirmed, the team works diligently on a fix, which is then promptly released. The team also ensures transparent communication with the community about the nature of the vulnerability and the steps taken to resolve it.
-* Vulnerability Reporting: Users are encouraged to report any security vulnerabilities discreetly via the dedicated email address (security@coredns.io). The team prioritizes these reports and works towards a swift resolution while maintaining confidentiality until a fix is released.
-5. Compliance and Standards
+4. Compliance and Standards
 * Adherence to Security Standards: CoreDNS adheres to industry-standard security practices and coding guidelines. This includes following the recommendations for secure coding in Go and regularly updating dependencies to mitigate vulnerabilities.
 * Third-Party Audits and Assessments: CoreDNS has undergone security audits by reputable third parties like Cure53 and Trail of Bits. These audits have significantly contributed to the project's security posture by identifying and addressing potential vulnerabilities.
 Conclusion
