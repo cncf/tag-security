@@ -1,15 +1,4 @@
-# Self-assessment
-The Self-assessment is the initial document for projects to begin thinking about the
-security of the project, determining gaps in their security, and preparing any security
-documentation for their users. This document is ideal for projects currently in the
-CNCF **sandbox** as well as projects that are looking to receive a joint assessment and
-currently in CNCF **incubation**.
-
-For a detailed guide with step-by-step discussion and examples, check out the free 
-Express Learning course provided by Linux Foundation Training & Certification: 
-[Security Assessments for Open Source Projects](https://training.linuxfoundation.org/express-learning/security-self-assessments-for-open-source-projects-lfel1005/).
-
-# Self-assessment outline
+# Contour Self-assessment
 
 ## Table of contents
 
@@ -30,20 +19,16 @@ Express Learning course provided by Linux Foundation Training & Certification:
 
 ## Metadata
 
-A table at the top for quick reference information, later used for indexing.
-
 |   |  |
 | -- | -- |
 | Software | https://github.com/projectcontour/contour |
 | Security Provider | No |
 | Languages | Go |
-| SBOM | TBD after discussion with project maintainers |
+| SBOM | Contour does not currently produce an SBOM at build time |
 | | |
 
 ### Security links
 
-Provide the list of links to existing security documentation for the project. You may
-use the table below as an example:
 | Doc | url |
 | -- | -- |
 | Security file | https://github.com/projectcontour/contour/blob/main/SECURITY.md |
@@ -60,18 +45,42 @@ As an ingress controller, Contour manages incoming traffic for services hosted v
 While Kubernetes already has base resources for ingress control, Contour utilizes those resources and extends Kubernetes’ capabilities for managing external access to services running within a cluster.
 
 ### Actors
-There are three separate actors in this project’s system:
-- **_Kubernetes_**, which provides the clusters that Contour and Envoy deployments are made within
-- **_Contour_**, which acts as a management server for Envoy and provides it with configuration 
-- **_Envoy_**, which provides a high-performance reverse proxy.
+
+**Directed Acyclic Graph (DAG)**
+Contour builds a DAG in memory, which represents the routing topology for the controller. Within the DAG, explicit rules can be set regarding how incoming requests should be handled or routed to different services. The DAG is constructed based upon Kubernetes Ingress objects.
+
+**xDS Server (gRPC)**
+An xDS Server is exposed to provide functionality and communication between Contour and Envoy. The xDS server knows everything that Contour does about the cluster's config, including the name & values of all secrets relative to ingress configuration.
+
+**HTTPProxy**
+A Custom Resource Definition (CRD) introduced by Contour to enhance and extend the functionality of the Ingress API.
+
+>While **Envoy** and **Kubernetes** are technically not considered internal actors within the Contour system, they are worth mentioning as they provide more context for the functionality of Contour. 
+>
+>_Envoy_ serves as the data plane for Contour, handling the actual forwarding and processing of network traffic based on the configuration provided by the Contour control plane.
+>
+>_Kubernetes_ provides the deployment platform for Contour.
 
 ### Actions
-For Contour to serve as an ingress controller it must be deployed along with Envoy as separate containers in Kubernetes. Contour is a client of the Kubernetes API and watches it utilizing controller-runtime primitives. In the Envoy Pods, Contour runs as an init container and writes the configuration to a temporary volume. After initialization is complete, the Envoy container starts and retrieves the bootstrap configuration written by Contour.
+_HTTPProxy Usage_
+Kubernetes objects may be translated into corresponded HTTPProxy objects for extended functionality. These objects are then served to the in-memory DAG to construct a more complex and hierarchical set of routing definitions.
+
+_Information Translation_
+In order for Envoy to make use of any Ingress data, Kubernetes Ingress objects must be mapped and translated into corresponding and valid Envoy objects. Between the DAG and xDS Server, Contour translates Kubernetes object information into an appropriate format to be used between the xDS Server and Envoy. 
+
+_Configuration Updates_
+At any point, routing and ingress rules configured within the DAG may be changed and updated. The xDS Server must also reflect these changes to ensure that any action requiring data translation between the two actors still yields a correct and reliable result.
+
+_Deployment_
+For Contour to serve as an ingress controller it must be deployed along with Envoy, the external actor, as separate containers in Kubernetes. Contour is a client of the Kubernetes API and watches it utilizing controller-runtime primitives. In the Envoy Pods, Contour runs as an init container and writes the configuration to a temporary volume. After initialization is complete, the Envoy container starts and retrieves the bootstrap configuration written by Contour.
+
+_Request Handling_
 When a request is sent, first it is routed by a load-balancer to an instance of Envoy. The Envoy proxy then sends the request to a Contour pod.
 
+![Contour Actors & Relationships](https://i.imgur.com/HSsNU6D.png)
 
 ### Goals
-Contour serves as a Layer 7 HTTP middleware reverse proxy for enabling ingress to Kubernetes clusters.
+Contour serves as a Layer 7 HTTP middleware reverse proxy for enabling ingress to Kubernetes clusters. Contour aims to support dynamic configuration updates easily while maintaining a lightweight profile. Contour also introduces a new ingress API HTTPProxy implemented via a Custom Resource Definition (CRD). It aims to allow for a richer user experience and solve shortcomings in the original design of Ingress API.
 
 ### Non-goals
 Contour is not a service mesh, nor is the intention for Contour to expose all of the features or configuration options of Envoy. 
@@ -81,9 +90,9 @@ Using Contour to proxy raw TCP or UDP traffic may work, but is not the intended 
 
 ## Self-assessment use
 
-This self-assessment is created by the Contour team to perform an internal analysis of the
-project's security.  It is not intended to provide a security audit of Contour, or
-function as an independent assessment or attestation of Contour's security health.
+This self-assessment is created by Heejin Jang, Justin Rivera, Samuel Vieira Restrepo, and Esther Wang 
+to perform an internal analysis of the project's security. It is not intended to provide 
+a security audit of Contour, or function as an independent assessment or attestation of Contour's security health.
 
 This document serves to provide Contour users with an initial understanding of
 Contour's security, where to find existing security documentation, Contour plans for
@@ -105,7 +114,7 @@ Contour seeks graduation and is preparing for a security audit.
 ## Project compliance
 
 * Compliance
-  * TBD after discussion with project maintainers
+  * Project Contour currently does not have FIPS compliance as the application needs to be tested by a CVMP labatory. However, the projectcontour/contour container image can be compiled and linked to BoringCrypto for FIPS compliance.
 
 ## Secure development practices
 
@@ -113,16 +122,33 @@ Contour seeks graduation and is preparing for a security audit.
   <br>
   > A detailed description of secure development practices can be found at https://projectcontour.io/resources/how-we-work/.
 
+  > Information on unit testing  and commit + pull request guidelines can be found at https://github.com/projectcontour/contour/blob/main/CONTRIBUTING.md/.
+
   When GitHub issues are created and being worked on, the contributor assigned to the issue is responsible for giving regular status reports on the issue. Additionally, contributors should not work on issues that they are not assigned to, horde multiple issues, or assign issues to others without communicating first. Each of these practices ensure that issues are well tracked and understood as to avoid a decline in productivity and security.
   GitHub issues should also be labeled, as appropriate labels make it much easier for an issue to be assessed at any given time. 
 
   There are also code reviews, where a reviewer can review and make comments on a contributor’s code. 
   Before fixing any bug, a test must be written to show that the bug was fixed. Similarly, tests must be written for new features to prevent a future developer from accidentally breaking it down the line.
+
+  <br>
+
+  To ensure a secure development pipeline, there are also some standards for commits and pull requests made to the Project Contour repository to adhere to, which are detailed in the [contributing doc](https://github.com/projectcontour/contour/blob/main/CONTRIBUTING.md) within the repository. This document also identifies major tests that may ran against builds of Contour made by a contributor.
+
+  Pull requests made to the Project Contour repository also employ automatic checks to enforce branch protection. A list of branch protection rules can be found on this [sample pull request](https://github.com/projectcontour/contour/pull/6012/checks) made to the Contour repository.
+
+  <br>
+
+  **Some of these checks include:**
+  * Check if each commit is signed
+  * Check that an appropriate label was assigned to the PR
+  * Code scanning
+  * Build and test the incoming PR 
+
   <br>
 * Communication Channels
-  * Internal - Twitter, Slack, RSS, GitHub
+  * Internal - [Twitter](https://twitter.com/projectcontour), [Slack](https://kubernetes.slack.com/messages/contour), [RSS](https://projectcontour.io/docs/v1.10.0/), [GitHub](https://github.com/projectcontour/contour)
   * Inbound
-    * Users can join the Contour channel in Kubernetes Slack
+    * Users can join the Contour channel in the Kubernetes Slack
     * Users can also open issues on the Project Contour GitHub to get help from the team
     * Additionally, users can email the Contour private email address for more sensitive issues, such as a security vulnerability
     * Contour community meetings via Zoom – users can ask questions to the team
@@ -145,11 +171,9 @@ Contour seeks graduation and is preparing for a security audit.
 * Vulnerability Response Process
   * To report a vulnerability, an email must be sent to the Contour private email address and contain details of the vulnerability. The email must contain basic identification, detailed steps on how to reproduce the vulnerability, a description of the effects of the vulnerability, how the vulnerability affects Contour usage, and a list of other projects that were used in conjunction to produce the vulnerability.
   * When a vulnerability is reported, the Contour Security Team is responsible for responding. Emails will be addressed within 3 business days and include a detailed plan to investigate the issue and any potential workarounds to perform in the meantime.
-  * The Security Team will investigate the vulnerability. If it is not deemed to be a vulnerability, the Team will follow up with a detailed reason for rejection. Otherwise, the Security Team will work on a plan to communicate and identify mitigating steps to protect users. Additionally, a Common Vulnerability Scoring System (CVSS) will be created using the CVSS calculator.
+  * The Security Team will investigate the idetified vulnerability by releasing a security advisory to first assist if it is a vunerability. If it is not deemed to be a vulnerability, the Team will follow up with a detailed reason to reject the vulnerability. Otherwise, the Security Team will work on a plan to communicate and identify mitigating steps to protect users. Additionally, a Common Vulnerability Scoring System (CVSS) will be created using the CVSS calculator.
 
 * Incident Response 
-  * Github Pending security check
-
   * The Security Team will work on fixing the vulnerability and perform internal testing.
   * The Security Team will provide early disclosure of the vulnerbility via email to those who joined the Contour Distributors mailing list. Distributors can initially plan for the vulnerability patch ahead of the fix, and later can test the fix and provide feedback to the Contour team.
   * The Security Team will patch the vulnerability in the next patch or minor release, once the fix is confirmed. The Team will then backport a patch release into all earlier supported releases.
@@ -179,7 +203,7 @@ Contour seeks graduation and is preparing for a security audit.
     * Patched versions: 1.7
 
 * [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/)
-  * TBD after discussion with project maintainers
+  * Contour has achieved an OpenSSF best practices badge at passing level, see more details at [Contour's openssf best practices](https://www.bestpractices.dev/en/projects/4141).
 
 * Case Studies
   * **A [variety of organizations](https://projectcontour.io/resources/adopters/) adopt Contour and utilize it as a component in their products:**
