@@ -161,6 +161,9 @@ is the entity or system that is responsible for the distribution, processing and
 routing of events to consumers. The event broker ensures reliable delivery and
 may enforce security policies.
 
+#### Developer 
+Responsible for incorporating CloudEvents support into their applications to enable interoperability with other services and systems. The developer can use CloudEvents SDKs to integrate CloudEvents functionality into their applications. Developers also collaborate to ensure the proper functioning of other actors within the CloudEvents ecosystem.
+
 ### Actions
 
 #### Event Formatting
