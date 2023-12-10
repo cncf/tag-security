@@ -9,8 +9,6 @@ For a detailed guide with step-by-step discussion and examples, check out the fr
 Express Learning course provided by Linux Foundation Training & Certification: 
 [Security Assessments for Open Source Projects](https://training.linuxfoundation.org/express-learning/security-self-assessments-for-open-source-projects-lfel1005/).
 
-# Self-assessment outline
-
 ## Table of contents
 
 * [Metadata](#metadata)
@@ -37,7 +35,7 @@ Express Learning course provided by Linux Foundation Training & Certification:
 | Website | https://cubefs.io/ |
 | Security Provider | No  |
 | Languages | Golang |
-| SBOM | [CubeFS SBOM File](https://github.com/avinashnarasimhan18/tag-security/blob/4e6b73248f7807cef59a456ab87d8f357094f380/assessments/projects/cubefs/cubefs_sbom.json)|
+| SBOM | Currently, no SBOM is publicly available for CubeFS|
 | | |
 
 ### Security links
@@ -87,7 +85,7 @@ CubeFS Actors:
   * Actors: Client Application, DataNode/Replica Subsystem, Metadata Subsystem
   * Security Checks: The first step will be authentication and authorization of the client application performing the write operations. Next, access control checks to ensure the client has the necessary permissions to write the data. Finally, data integrity checks during the write process to prevent data tampering or corruption
   * Use of Sensitive Data: This will include two things, first, secure transmission of sensitive data from the client to CubeFS, potentially involving encryption, and second, handling access credentials securely to authorize the write operation
-  * Actor Interaction: The client interacts with the DataNode/Replica Subsystem for data storage and the Metadata Subsystem to update metadata information
+  * Actor Interaction: The Client Application initiates read operations by obtaining metadata from the Metadata Subsystem, which directs it to data blocks through the DataNode/Replica Subsystem. For write operations, the Client updates metadata through the Metadata Subsystem and sends data to the DataNode/Replica Subsystem, ensuring consistency and integrity across the distributed file system
 
 * **Metadata Update** - 
   * Actors: Metadata Subsystem, Master Node
@@ -105,56 +103,19 @@ CubeFS Actors:
 
 ### Goals
 
-* **Authentication and Authorization** - 
+* CubeFS aims to provide a scalable and reliable distributed file system with seamless integration of both POSIX and S3-compatible object storage interfaces.
 
-  * **Goal**: Ensure secure authentication mechanisms for all nodes within CubeFS, preventing unauthorized access and establishing trusted communication channels.
-  * **Security Guarantee**: Robust authentication and authorization framework managed by Authnode, providing secure access to services and data.
+* Its primary goals include supporting the native Amazon S3 SDK, offering a fusion storage solution with universal interfaces (POSIX and S3), ensuring stateless and highly scalable design for ObjectNode, facilitating semantic conversion between POSIX and object storage, enabling secure user authentication and authorization through Authnode, integrating with FUSE for user-space file system interfaces, implementing client-side caching for performance optimization, and supporting live upgrades and warm-up functions.
 
-* **Data Confidentiality and Integrity** - 
-
-  * **Goal**: Guarantee the confidentiality and integrity of data during transit and storage within CubeFS.
-  * **Security Guarantee**: Implementation of end-to-end encryption for data transmission and plans to support data encryption at rest, ensuring data remains confidential and unaltered.
-
-* **Credential Revocation Mechanism** - 
-
-  * **Goal**: Prevent misuse of leaked credentials by implementing a revocation mechanism.
-  * **Security Guarantee**: Plans to introduce credential revocation to mitigate risks if credentials are compromised.
-
-* **Hardware Security Module (HSM) Integration** - 
-
-  * **Goal**: Enhance the security of Authnode by integrating with Hardware Security Modules (HSMs).
-  * **Security Guarantee**: Leveraging HSMs (e.g., SGX) to secure key management, reducing the risk of Auth Node compromise.
-
-* **Enhanced Authentication Features** - 
-
-  * **Goal**: Expand authentication features for improved security and usability.
-  * **Security Guarantee**: Future improvements include support for credential revocation, key rotation, and HSM integration for a more secure authentication framework.
-
-* **Performance-Enhancing Security Measures** - 
-
-  * **Goal**: Ensure security measures do not compromise system performance.
-  * **Security Guarantee**: Continuous refinement of security mechanisms (e.g., optimizing writeback cache, addressing performance limitations in encryption) without compromising overall system performance.
-
-* **Key Management and Rotation**:
-
-  * **Goal**: Safeguard shared keys and support regular key rotation for enhanced security.
-  * **Security Guarantee**: Future enhancements to support key rotation, reducing the risk of key compromise and strengthening encryption mechanisms.
+* The system strives to address security concerns, such as unauthorized access and Man-in-the-middle attacks, through a comprehensive authentication and authorization framework.
 
 ### Non-goals
 
-* **Absolute Prevention of All Security Threats** - CubeFS does not claim to completely eliminate all possible security threats or vulnerabilities within the system. While CubeFS implements robust security measures, absolute prevention of all security threats is not feasible due to evolving security landscapes.
+* **Advanced Query and Indexing** -  CubeFS does not offer advanced indexing or querying capabilities directly within the storage layer. CubeFS does not have built-in query engines for complex data retrieval and analysis.
 
-* **Full Resistance Against Zero-Day Exploits** - CubeFS does not guarantee complete immunity against zero-day exploits or unknown vulnerabilities. They acknowledge the possibility of unforeseen vulnerabilities emerging.
+* **Integrated Data Processing Engines**: While CubeFS provides storage capabilities, it does not integrate directly with powerful data processing engines such as Apache Hudi with Apache Spark or Delta Lake with Apache Spark on Databricks.
 
-* **Elimination of All Performance Impact Due to Security Measures** - CubeFS does not aim to implement security measures without any impact on system performance.
-
-* **Providing Certification or Compliance by Default** - CubeFS does not inherently provide certification or compliance with specific security standards by default. Achieving specific certifications or compliance may require additional configurations or procedures.
-
-* **Absolute Guarantee Against Insider Threats** - CubeFS does not promise absolute protection against insider threats or malicious activities from authorized users.
-
-* **Elimination of All Operational Errors** - CubeFS does not aim to eradicate all potential errors or misconfigurations during operational usage.
-
-* **Providing Protection Beyond Defined Use Cases** - CubeFS does not extend security protections to scenarios or use cases not explicitly defined or supported. CubeFS focuses on securing the defined use cases and may not cover security aspects outside these boundaries.
+* **Native Machine Learning Integrations**: CubeFS does not offer any sort of machine learning capabilities or have native integrations with machine learning frameworks and tools. CubeFS does not offer features to train machine learning models directly on the stored data.
 
 ## Self-assessment use
 
@@ -177,6 +138,9 @@ This self-assessment is created to perform an internal analysis of the project's
 
  * **Erasure Coding** - 
    The support for Erasure Coding (EC) using Reed-Solomon encoding reduces data redundancy and optimizes storage costs, but also ensures a certain level of fault tolerance by breaking down data into fragments. Unlike replication, where multiple identical copies of the data are stored, erasure coding allows the original data to be reconstructed from a subset of the fragments and parity information. By mitigating the impact of data loss, erasure encoding helps make CubeFS a more secure system. If, for example, an attacker gains access to and compromises a subset of nodes, the system can still function and recover the original data from the remaining healthy nodes and parity information. This makes it more challenging for attackers to compromise or manipulate data by targeting a single point of failure.
+
+ * **Data Recovery** - 
+   CubeFS implements a dual-step data recovery process: firstly, through the primary-backup replication protocol, it detects replica failures and aligns data blocks to restore consistency by checking their lengths. Once this step is completed, the system utilizes the Multi-Raft protocol for further recovery, ensuring high availability and maintaining data consistency in distributed environments. This two-tiered approach enhances fault tolerance and overall resilience in CubeFS.  
 
  **Security Relevant** - 
 
@@ -201,9 +165,9 @@ CubeFS does not currently document meeting particular compliance standards such 
 
   * **Commit Signing** - All commits have to be signed following certain guidelines and go through a DCO (Developer Certificate of Origin) check. 
 
-  * **CI/CD pipeline** - CubeFS uses automated CI/CD pipelines to build and test code and uses the Travis CI service to run all checks including unit and integration tests. 
+  * **CI/CD pipeline** - CubeFS uses automated CI/CD pipelines to build and test code and uses the Travis CI service to run all checks including unit and integration tests. However CubeFS currently does not have SAST tools included in their Ci/CD pipelines.
 
-  * **Code reviews** - All pull requests have to be approved by at least one core maintainer, and pass all checks, before it can be merged. 
+  * **Code reviews** - All pull requests have to be approved by at least one core maintainer, and pass all checks, before it can be merged.
 
   * **Container Image Security** - Images are built using trusted base images. The services use volumes to persist data, and certain configuration files have been mounted onto containers which contributes to immutability. However, there is no explicit configuration for image signing or content trust.
 
