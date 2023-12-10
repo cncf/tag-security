@@ -349,7 +349,5 @@ OpenTelemetry is vendor and tool-agnostic, and it can be used with different obs
 
 * **Prometheus**: Both Prometheus and OpenTelemetry can collect metrics across applications and services. However, Prometheus focuses more on the pull model, and OpenTelemetry includes both push and pull models. In addition, OpenTelemetry does not have built-in alarms, but Prometheus does. OpenTelemetry combining built-in alerts in Prometheus helps create an observability ecosystem and improve stability.
 * **Grafana**: OpenTelemetry and Grafana complement each other, and the visualization in Grafana's dashboard can better help analyze various types of data collected from OpenTelemetry. In addition, Grafana supports enable interoperability from OpenTelemetry by calling on SDKs and application observability standards, among others, integrating telemetry into a unified open-source monitoring backend.
-* **OpenTelemetry**: Same
 * **Jaeger**: Jaeger is a distributed tracing system that can be started and run in a local environment. Users can first use OpenTelemetry to detect various indicators of the application and then send the tracking data to Jaeger. The advantage of using Jaeger is that it makes finding the source of latency and lack of concurrency easier. All in all, Jaeger is more focused, while OpenTelemetry is a broader framework.
-* **Cilium**: Not applicable
 
