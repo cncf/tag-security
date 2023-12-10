@@ -144,16 +144,22 @@ CNI does not document meeting any particular security standards or sub-sections.
 ## Secure development practices
 
 ### Development Pipeline
+
+The [Contributing](https://www.cni.dev/docs/contributing/) document contains details on development workflow.
+The main points are summarized below.
+
 * Contributions are made via GitHub pull requests
+* Work is done in a topic branch (usually branched from main)
 * Contributors must sign off their commits which indicates they agree to the Developer Certificate of Origin ([DCO](https://www.cni.dev/docs/dco/))
 * There is a test suite provided that should be run for any new features or bug fixes.
 * Pull requests should include tests for new code and old code
-* Pull requests trigger workflows (maintainer approval required). The jobs covered include:
+* Pull requests trigger a [workflow](https://github.com/containernetworking/cni/actions/workflows/test.yaml). The jobs covered include:
 	* Linting
-	* Building on all linux architectures
+	* Build for linux architectures
 	* Running tests on Linux amd64
 	* Building and running tests on Windows
 * In general, pull requests are merged once one or two maintainers endorse it.
+
 ### Communication Channels
 * **Internal**
   Team members communicate with each other through the [Weekly maintainers meeting using Jitsi](https://meet.jit.si/CNIMaintainersMeeting), [#cni channel on the CNCF slack](https://slack.cncf.io/), [cni-dev Google Group](https://groups.google.com/forum/#!forum/cni-dev), or [GitHub issues](https://github.com/containernetworking/cni/issues)
