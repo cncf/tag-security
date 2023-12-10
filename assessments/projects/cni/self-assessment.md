@@ -1,6 +1,4 @@
-# Self-assessment
-
-# Self-assessment outline
+# CNI Self-assessment
 
 ## Table of contents
 
@@ -37,6 +35,7 @@
 | Default and optional configs | [CNI Specification](https://www.cni.dev/docs/spec/) outlines required keys, optional keys, and protocol parameters |
 
 ## Overview
+
 **Container Network Interface** <br>
 CNI, a project under the Cloud Native Computing Foundation, includes a set of guidelines and software libraries
 used for developing plugins that set up network interfaces within Linux and Windows containers. Its primary goal
@@ -44,6 +43,7 @@ is managing container network connectivity and deallocating resources once a con
 focus has led to broad support for CNI and a straightforward implementation process due to its simple specification.
 
 ### Background
+
 With the rapid development of application containers on Linux, networking in this area is still not well addressed
 as it is highly environment-specific. To deal with this problem, developers seek to create a network layer that is
 pluggable for container runtimes. Ultimately, CNI, along with libraries for Go and a set of plugins, was introduced
@@ -54,14 +54,15 @@ as a common interface between network plugins and container execution.
 ### Actors
 
 The following are the actors found in CNI project:
-- **CNI Plugin**: A program that applies a specified network configuration. It interfaces with a variety of networking solutions to provide flexible networking capabilities.
-- **Container**: A network isolation domain, though the actual isolation technology is not defined by the specification.
-- **Container Runtime**: Is responsible for executing CNI plugins. It interacts with plugins to apply network configurations to individual containers.
-- **Network**: A group of endpoints that are uniquely addressable that can communicate amongst each other. This could be either an individual container (as specified above), a machine, or some other network device (e.g. a router). Containers can be conceptually added to or removed from one or more networks.It includes configuration data such as IP addresses, routing rules, and network policies.
+* **CNI Plugin**: A program that applies a specified network configuration. It interfaces with a variety of networking solutions to provide flexible networking capabilities.
+* **Container**: A network isolation domain, though the actual isolation technology is not defined by the specification.
+* **Container Runtime**: Is responsible for executing CNI plugins. It interacts with plugins to apply network configurations to individual containers.
+* **Network**: A group of endpoints that are uniquely addressable that can communicate amongst each other. This could be either an individual container (as specified above), a machine, or some other network device (e.g. a router). Containers can be conceptually added to or removed from one or more networks.It includes configuration data such as IP addresses, routing rules, and network policies.
 
 ### Actions
 
 #### Action Overview
+
 1. A format for administrators defines network configurations
 2. A protocol for container runtimes makes requests to network plugins with parameters from environment variables and network configuration
 3. With the supplied configuration, a procedure executes the plugins.
@@ -69,9 +70,10 @@ The following are the actors found in CNI project:
 5. Data types for plugins return their results to the runtime
 
 #### Action 1: Network Configuration Format
+
 CNI defines a network configuration format for administrators. It contains directives for both the container runtime as well as the plugins
-to consume. At plugin execution time, this configuration format is interpreted by the runtime and transformed in to a form to be passed to the plugins.
-- **Example configuration**:
+to consume. At plugin execution time, this configuration format is interpreted by the runtime and transformed into a form to be passed to the plugins.
+* **Example configuration**:
   <br>
   <div style="text-align:center;">
     <img src="docs/CNI-config.png" alt="CNI config">
@@ -79,19 +81,23 @@ to consume. At plugin execution time, this configuration format is interpreted b
   <br>
 
 #### Action 2: Execution Protocol
-The CNI protocol is based on execution of binaries invoked by the container runtime. CNI defines the protocol between the plugin binary and the runtime. CNI defines 4 operations: ADD, DEL, CHECK, and VERSION. These are passed to the plugin via the CNI_COMMAND environment variable.
+
+The CNI protocol is based on execution of binaries invoked by the container runtime. CNI defines the protocol between the plugin binary and the runtime. CNI defines 4 operations: ADD, DEL, CHECK, and VERSION. These are passed to the plugin via the CNI\_COMMAND environment variable.
 
 #### Action 3: Execution of Network Configurations
+
 A container time interprets a network configuration and executes plugins accordingly. A runtime can add, delete, or check a network configuration in a container, which results in a series of plugin ADD, DELETE, or CHECK executions correspondingly.
 
 #### Action 4: Plugin Delegation
+
 There are some operations that, for whatever reason, cannot reasonably be implemented as a discrete chained plugin. Rather, a CNI plugin may wish to delegate some functionality to another plugin. One common example of this is IP address management.
 
 #### Action 5: Result Types
+
 Plugins can return one of three result types:
 * Success
 * Error
-* _Version
+* \_Version
 
 ### Goals
 
@@ -132,10 +138,10 @@ CNI seeks graduation and is preparing for a security audit.
 
 ## Security functions and features
 
-- **Critical:**
-    - As documented in the [required keys for plugin configuration objects](https://www.cni.dev/docs/spec/#plugin-configuration-objects), the 'type' string containing the name of a CNI plugin cannot contain disallowed characters in file paths (e.g., '/' or '\\'). Disallowing such characters prevents using characters such as "../" to references binaries elsewhere on the system.
-- **Security relevant:**
-    - As documented in the [protocol parameters passed to plugins](https://www.cni.dev/docs/spec/#parameters), the environment variable CNI_PATH contains the list of paths to search for CNI plugin executables. This limits where CNI can look which could prevent unintended binaries from being executed.
+* **Critical:**
+    * As documented in the [required keys for plugin configuration objects](https://www.cni.dev/docs/spec/#plugin-configuration-objects), the 'type' string containing the name of a CNI plugin cannot contain disallowed characters in file paths (e.g., '/' or '\\'). Disallowing such characters prevents using characters such as "../" to reference binaries elsewhere on the system.
+* **Security relevant:**
+    * As documented in the [protocol parameters passed to plugins](https://www.cni.dev/docs/spec/#parameters), the environment variable CNI\_PATH contains the list of paths to search for CNI plugin executables. This limits where CNI can look which could prevent unintended binaries from being executed.
 
 ## Project compliance
 
@@ -170,6 +176,7 @@ The main points are summarized below.
   Team members communicate with users through the [#cni channel on the CNCF slack](https://slack.cncf.io/), [cni-dev Google Group](https://groups.google.com/forum/#!forum/cni-dev).
 
 ### Ecosystem
+
 * CNI is a vendor-neutral specification so it can be used by any system that chooses to implement it. It is used by Kubernetes, Mesos, CloudFoundry, CRI-O, and [more](https://www.cni.dev/docs/#who-is-using-cni).
 
 ## Security issue resolution
@@ -203,19 +210,19 @@ An issue with CNI portmap was found with Kubernetes, which allowed it to match i
 ### Case Studies
 
 1. **Cilium Integration with Kubernetes:**
-   - Description: Cilium is used in Kubernetes environments for network security and observability. It leverages CNI's plugin-based network connectivity management to provide networking and security in Kubernetes clusters. Cilium specifically enhances Kubernetes by offering API-aware network security, load balancing, and visibility for microservices. The integration of Cilium with Kubernetes via CNI demonstrates CNI’s compatibility and effectiveness in real-world applications​​.
-   - Key Points:
-     - Enhances Kubernetes network security and observability.
-     - Leverages CNI for seamless integration.
-     - Provides API-aware network security, load balancing, and visibility for microservices.
-   - Link: [Cilium users and real world case studies](https://cilium.io/adopters/#:~:text=URL%3A%20https%3A%2F%2Fcilium)
+   * Description: Cilium is used in Kubernetes environments for network security and observability. It leverages CNI's plugin-based network connectivity management to provide networking and security in Kubernetes clusters. Cilium specifically enhances Kubernetes by offering API-aware network security, load balancing, and visibility for microservices. The integration of Cilium with Kubernetes via CNI demonstrates CNI’s compatibility and effectiveness in real-world applications​​.
+   * Key Points:
+     * Enhances Kubernetes network security and observability.
+     * Leverages CNI for seamless integration.
+     * Provides API-aware network security, load balancing, and visibility for microservices.
+   * Link: [Cilium users and real world case studies](https://cilium.io/adopters/#:~:text=URL%3A%20https%3A%2F%2Fcilium)
 
 2. **Isovalent’s Use of CNI for Kubernetes Networking:**
-   - Description: Isovalent, the company behind Cilium, utilizes CNI for networking in Kubernetes environments. This case study highlights the advanced networking capabilities of CNI as employed by Isovalent. The use of CNI in Isovalent’s Kubernetes networking solutions showcases the flexibility and scalability of CNI in handling complex networking requirements​​.
-   - Key Points:
-     - Isovalent employs CNI in Kubernetes networking.
-     - Demonstrates CNI’s flexibility and scalability in complex networking environments.
-   - Link: [Top 20 Cilium Use Cases - Isovalent](https://isovalent.com/blog/post/top-20-cilium-use-cases/)
+   * Description: Isovalent, the company behind Cilium, utilizes CNI for networking in Kubernetes environments. This case study highlights the advanced networking capabilities of CNI as employed by Isovalent. The use of CNI in Isovalent’s Kubernetes networking solutions showcases the flexibility and scalability of CNI in handling complex networking requirements​​.
+   * Key Points:
+     * Isovalent employs CNI in Kubernetes networking.
+     * Demonstrates CNI’s flexibility and scalability in complex networking environments.
+   * Link: [Top 20 Cilium Use Cases - Isovalent](https://isovalent.com/blog/post/top-20-cilium-use-cases/)
 
 These case studies provide insights into how CNI is used in practice, emphasizing its role and effectiveness in Kubernetes networking and security.
 
@@ -263,7 +270,7 @@ This section presents a threat model for the Container Network Interface (CNI) p
 
 Ongoing evaluation and updates to this model are necessary to adapt to evolving security threats in the CNI project.
 
-# Action Items
+## Action Items
 
 - Consider creation of an SBOM for CNI
 - Security policy: Include what response can be expected after a vulnerability has been reported and consider creating a file or page dedicated to the vulnerability reporting process. ([Example Security Policy Template](https://github.com/cncf/tag-security/blob/main/project-resources/templates/SECURITY.md)).
