@@ -16,7 +16,6 @@ document](CE-maintainers-communications.md).
 
 ## Table of contents
 
-* [Table of contents](#table-of-contents)
 * [Metadata](#metadata)
   * [Security links](#security-links)
 * [Overview](#overview)
@@ -45,17 +44,22 @@ document](CE-maintainers-communications.md).
   * [Conclusion](#conclusion)
   * [Recommendations](#recommendations)
 * [Action Items](#action-items)
-  * [[Action Item 1] Setup Snyk for SDKs](#action-item-1-setup-snyk-for-sdks)
+  * [[Action Item 1] Setup a bot for reviewing
+    SDKs](#action-item-1-setup-a-bot-for-reviewing-sdks)
   * [[Action Item 2] Regular SDK Security
     Audits](#action-item-2-regular-sdk-security-audits)
   * [[Action Item 3] Enforce governance rules throughout SDK
     development](#action-item-3-enforce-governance-rules-throughout-sdk-development)
-  * [[Action Item 4] Enhanced Encryption and Data Validation
-    Mechanisms](#action-item-4-enhanced-encryption-and-data-validation-mechanisms)
-  * [[Action Item 5] Documentation and Knowledge
-    Sharing](#action-item-5-documentation-and-knowledge-sharing)
-  * [[Action Item 6] Community Engagement and
-    Feedback](#action-item-6-community-engagement-and-feedback)
+  * [[Action Item 4] Obtain a Silver or Gold CII Best Practices
+    Badge](#action-item-4-obtain-a-silver-or-gold-cii-best-practices-badge)
+  * [[Action Item 5] Improve the documentation on the Security Response
+    Processes](#action-item-5-improve-the-documentation-on-the-security-response-processes)
+  * [[Action Item 6] Enhanced Encryption and Data Validation
+    Mechanisms](#action-item-6-enhanced-encryption-and-data-validation-mechanisms)
+  * [[Action Item 7] Documentation and Knowledge
+    Sharing](#action-item-7-documentation-and-knowledge-sharing)
+  * [[Action Item 8] Community Engagement and
+    Feedback](#action-item-8-community-engagement-and-feedback)
 * [Appendix](#appendix)
   * [Known Issues Over Time](#known-issues-over-time)
   * [CII Best Practices](#cii-best-practices)
@@ -71,6 +75,7 @@ document](CE-maintainers-communications.md).
 | Security Provider | CloudEvents is not a security provider  |
 | CloudEvents Specification Language | Markdown |
 | CloudEvents SDK Languages | Python, C#/.NET, Go, Java, Javascript, PHP, PowerShell, Ruby and Rust |
+| SBOM | CloudEvents does not have a public SBOM available |
 | Technical Documents | [CloudEvents Documents](https://github.com/cloudevents/spec#cloudevents-documents) |
 | | |
 
@@ -326,9 +331,7 @@ unexpected data.
 
 As of the latest security assessment, CloudEvents does not explicitly document
 compliance with specific security standards such as PCI-DSS, COBIT, ISO, GDPR,
-etc. Current efforts are focused on evaluating compliance with these standards
-and ensuring that CloudEvents adheres to industry best practices in security and
-privacy.
+etc.
 
 ## Secure development practices
 
@@ -469,8 +472,10 @@ CloudEvents has many
 
 ### CloudEvents Specification
 
-To report an issue, or to a new idea, contributors can open a new issue on the
-GitHub repository. However, they should check if a similar issue already exists.
+To [report an issue regarding
+CloudEvents](https://github.com/cloudevents/spec/blob/main/docs/CONTRIBUTING.md#reporting-an-issue),
+contributors can open a new issue on the GitHub repository. However, they should
+check if a similar issue already exists.
 
 CloudEvents also provides a dedicated [email
 address](cncf-cloudevents-security@lists.cncf.io) and a [Security Mailing
@@ -489,13 +494,16 @@ List](https://lists.cncf.io/g/cncf-cloudevents-security/topics).
 
 #### Vulnerability Response Process
 
-It is the responsibility of the CloudEvents SDK maintainers to triage issues and
-PRs from their respective repositories, as well as frequently release security
-patches to issues found. As mentioned in [CloudEvents SDK
-Community](#cloudevents-sdk-community), the maintainers cannot abstain from
-triaging issues and PRs for more than 2 months, or releasing security patches
-for more than 1 month. Otherwise, their project will be marked as `not actively
-maintained`, which can lead to them losing the management of the SDK repository.
+CloudEvets does not specify a strict way on how issues should be handled, but it
+defines that it is the [responsibility of the CloudEvents SDK
+maintainers](https://github.com/cloudevents/spec/blob/main/docs/SDK-GOVERNANCE.md#security-patches)
+to triage issues and PRs from their respective repositories, as well as
+frequently release security patches to issues found. As mentioned in
+[CloudEvents SDK Community](#cloudevents-sdk-community), the maintainers cannot
+abstain from triaging issues and PRs for more than 2 months, or releasing
+security patches for more than 1 month. Otherwise, their project will be marked
+as `not actively maintained`, which can lead to them losing the management of
+the SDK repository.
 
 #### Incident Response
 
@@ -510,8 +518,8 @@ any other CloudEvents communication channel.
 ##### Solving the Issue
 
 Once a security patch is written, the contributor should make a Pull Request and
-mark it as reviewed. The PR will be reviewed, improved, and approved by the
-other maintainers of the SDK. With that, a security patch is released by
+mark it as ready to review. The PR will be reviewed, improved, and approved by
+the other maintainers of the SDK. With that, a security patch is released by
 following the process described in [Contributing to
 CloudEvents](#contributing-to-cloudevents).
 
@@ -673,14 +681,14 @@ and install updates to their CloudEvents SDK installation.
 
 ## Action Items
 
-### [Action Item 1] Setup Snyk for SDKs
+### [Action Item 1] Setup a bot for reviewing SDKs
 
 * **GitHub Issue Link:** [Setup Snyk for
   SDKs](https://github.com/cloudevents/spec/issues/1235)
 
 #### [Action Item 1] Objective
 
-Improve the security of CloudEvents SDKs by integrating Snyk for automatic
+Improve the security of CloudEvents SDKs by integrating a bot for automatic
 dependency assessments. This integration will both conduct comprehensive scans
 for vulnerabilities within the SDK and systematically search the internet for
 recently reported issues or vulnerabilities linked to the library dependencies
@@ -691,54 +699,22 @@ for identifying, addressing, and mitigating potential risks.
 #### [Action Item 1] Steps
 
 Develop and deploy an automated bot system to monitor the health of various SDKs
-by integrating Snyk into the development workflow. Collaborate with the team to
+by integrating a bot into the development workflow. Collaborate with the team to
 conceptualize the bot's features, ensuring its capability to evaluate
 maintenance status, address issues, and implement patch updates following the
-rules outlined in the governance documents. Configure Snyk to perform
+rules outlined in the governance documents. Configure the bot to perform
 dependaBot-type checks, ensuring comprehensive analysis of SDK dependencies.
 Investigate the feasibility and requirements for adding a dedicated security bot
 to scan for potential security issues. Document the integration process and
 provide guidelines for ongoing usage within the development environment.
 
-##### Initial Setup
-
-1. [Install the Snyk
-   CLI](https://support.snyk.io/hc/en-us/articles/360003812538-Install-the-Snyk-CLI)
-   on a local machine according to the operating system.
-2. Run the command `Snyk auth` to authenticate the Snyk account. Follow the
-   prompts to log in and authenticate.
-3. Create the CloudEvents Snyk organization in the [Snyk
-   Dashboard](https://app.snyk.io/dashboard).
-4. In the Snyk Dashboard, go to the organization settings and add the [GitHub
-   Integration](https://docs.snyk.io/integrate-with-snyk/git-repositories-scms-integrations-with-snyk/snyk-github-integration)
-   for CloudEvents account under `Source Control Integrations.`
-
-##### Individual SDK Setup
-
-1. In the Snyk Dashboard, click `Add Project` and select the GitHub repository
-   containing the CloudEvents SDK code.
-2. Configure Snyk Policies by defining policies for the project to set
-   thresholds for vulnerability severity levels.
-    * This helps to control when to fail a build or raise an alert.
-    * The [Security Audit performed by Trail of
-      Bits](https://github.com/cloudevents/spec/blob/main/docs/CE-SecurityAudit-2022-10.pdf)
-      could be used as a guide on which types and severities of vulnerabilities
-      should be analyzed.
-3. Enable GitHub Integration for the CloudEvents project to receive automatic
-   pull requests for fixing vulnerabilities, which can streamline the
-   remediation process.
-4. Configure notification settings to alert all interested CloudEvents admins
-   and members for new vulnerabilities or policy violations, which should
-   include at least the maintainers of the specific SDK.
-5. Snyk should also be integrated with the CloudEvents Semantic Versioning
-   control system, so Snyk can automatically update its vulnerability database
-   and scan for new vulnerabilities.
-
-##### Configure Snyk to perform Dependabot-style checks
-
-1. Go to the CloudEvents SDK project in the Snyk Dashboard.
-2. Navigate to the `Settings` tab.
-3. Under `Policy`, enable the `Auto-fix` option.
+The CloudEvents team created a [GitHub
+Issue](https://github.com/cloudevents/spec/issues/1235) on October 10, 2023, to
+implement the Snyk bot for CloudEvents, which is a possible bot that could solve
+the issues mentioned above. The Security Pals team wrote a [comment on possible
+steps to implement
+Snyk](https://github.com/cloudevents/spec/issues/1235#issuecomment-1841532959)
+under the issue.
 
 ### [Action Item 2] Regular SDK Security Audits
 
@@ -778,38 +754,85 @@ deploying to the target environment. This automated pipeline ensures efficient
 and reliable development, testing, and deployment of applications using
 CloudEvents.
 
-### [Action Item 4] Enhanced Encryption and Data Validation Mechanisms
+### [Action Item 4] Obtain a Silver or Gold CII Best Practices Badge
 
 #### [Action Item 4] Objective
 
-Emphasize to the user the goals and non-goals of CloudEvents.
+Improve the current [CloudEvents CII Best Practices
+Badge](https://www.bestpractices.dev/en/projects/6770) from `passing` level
+criteria to either `silver` or `gold` by improving the project's security
+practices.
 
 #### [Action Item 4] Steps
+
+The project already has a `passing` badge and some of the necessary tasks
+required to obtain the other badges. Moreover, although not documented on the
+website yet, the project already accomplished some of the tasks necessary to
+obtain `silver` and `gold` badges, such as defining a [project governance
+model](https://github.com/cloudevents/spec/blob/main/docs/GOVERNANCE.md) and
+[key roles and
+responsibilities](https://github.com/cloudevents/spec/blob/main/docs/GOVERNANCE.md#membership).
+These should be documented in the [CII Best Practices
+website](https://www.bestpractices.dev/en/projects/6770?criteria_level=1).
+Moreover, the project still needs to complete other tasks to get a `silver`
+badge and, later, a `gold` badge, such as implementing an automated test suite
+on each check-in to a shared repository for at least one branch.
+
+### [Action Item 5] Improve the documentation on the Security Response Processes
+
+#### [Action Item 5] Objective
+
+Currently, CloudEvents defines different means of [reporting security
+issues](#responsible-disclosures-process). They also define that it is the
+responsibility of the CloudEvents SDK maintainers to [triage problems and issue
+security
+patches](https://github.com/cloudevents/spec/blob/main/docs/SDK-GOVERNANCE.md#security-patches).
+However, they still need to better specify the  Vulnerability and Issue Response
+Processes, which are currently scattered around different documents, such as the
+[SDK Governance
+Document](https://github.com/cloudevents/spec/blob/main/docs/SDK-GOVERNANCE),
+and not very detailed.
+
+#### [Action Item 5] Steps
+
+CloudEvents should create a separate document outlining a systematic approach to
+triage issues, identify and execute solutions, and release security patches.
+This process should be standard and well-defined for all SDKs. This would make
+fixing problems quicker, especially issues like the ones [Trail of Bits
+found](#issues-found-by-trail-of-bits).
+
+### [Action Item 6] Enhanced Encryption and Data Validation Mechanisms
+
+#### [Action Item 6] Objective
+
+Emphasize to the user the goals and non-goals of CloudEvents.
+
+#### [Action Item 6] Steps
 
 Highlight to the user the importance of establishing a robust infrastructure for
 encryption and data validation practices around the CloudEvents implementation.
 
-### [Action Item 5] Documentation and Knowledge Sharing
+### [Action Item 7] Documentation and Knowledge Sharing
 
-#### [Action Item 5] Objective
+#### [Action Item 7] Objective
 
 Continue improving the documentation related to security practices and
   vulnerabilities within CloudEvents SDKs.
 
-#### [Action Item 5] Steps
+#### [Action Item 7] Steps
 
 Create comprehensive and accessible documentation that covers security best
 practices, identified vulnerabilities, resolved issues, public Software Bill of
 Materials, and strategies for mitigation of vulnerabilities.
 
-### [Action Item 6] Community Engagement and Feedback
+### [Action Item 8] Community Engagement and Feedback
 
-#### [Action Item 6] Objective
+#### [Action Item 8] Objective
 
 Enhance engagement with the CloudEvents user community for feedback and insights
 on security.
 
-#### [Action Item 6] Steps
+#### [Action Item 8] Steps
 
 Establish channels for consistent feedback, administer community surveys, and
 arrange Q&A sessions. Evaluate GitHub issues, engage in discussions with
@@ -934,7 +957,14 @@ skipped.
 
 ### CII Best Practices
 
-CloudEvents aims to align with the Core Infrastructure Initiative (CII) Best
+CloudEvents received a `passing` [CII Best Practices
+badge](https://www.bestpractices.dev/en/projects/6770) on December 08, 2022, at
+17:02:04.
+
+[![OpenSSF Best
+Practices](https://www.bestpractices.dev/projects/6770/badge)](https://www.bestpractices.dev/projects/6770)
+
+The project aims to align with the Core Infrastructure Initiative (CII) Best
 Practices, focusing on:
 
 * **Security Response Process**: Establishing a comprehensive process for
