@@ -138,6 +138,13 @@ CoreDNS is not explicitly documented to meet the criteria of any security standa
 * Cloud Native Ecosystem Role: As a CNCF graduated project, CoreDNS plays a critical role in the cloud-native ecosystem, particularly in environments managed by Kubernetes. It seamlessly integrates with Kubernetes, providing DNS-based service discovery which is crucial for microservices architecture.
 * Impact of CoreDNS in Cloud Environments: In cloud environments, CoreDNS enhances service discovery and network configuration, thereby underpinning many cloud-based applications' functionality. Its lightweight, modular architecture makes it a preferred choice in containerized environments, thus amplifying its impact across the cloud-native ecosystem.
 
+**Compliance and Standards**
+* Adherence to Security Standards: CoreDNS adheres to industry-standard security practices and coding guidelines. This includes following the recommendations for secure coding in Go and regularly updating dependencies to mitigate vulnerabilities.
+* Third-Party Audits and Assessments: CoreDNS has undergone security audits by reputable third parties like Cure53 and Trail of Bits. These audits have significantly contributed to the project's security posture by identifying and addressing potential vulnerabilities.
+Conclusion
+* Ongoing Improvements: CoreDNS is committed to continuously improving its security practices. The team actively seeks feedback from the community and collaborates with security experts to stay ahead of emerging threats.
+*Feedback Mechanism: The CoreDNS team (security@coredns.io) welcomes feedback on its security practices and this self-assessment document. Community members are encouraged to contribute their insights via GitHub discussions or the project's mailing list.
+
 ## Security issue resolution
 The Product Security Team (PST) is responsible for organizing the entire response including internal communication and external disclosure.
 
