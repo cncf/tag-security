@@ -1,4 +1,4 @@
-# Self-assessment
+# CoreDNS self-assessment
 Authors: Tom Zhang, Rohit Chaudhari, Maryam Mohagheghi, Vamshi Madineni
 
 Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV).
