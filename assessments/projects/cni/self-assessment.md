@@ -49,6 +49,8 @@ as it is highly environment-specific. To deal with this problem, developers seek
 pluggable for container runtimes. Ultimately, CNI, along with libraries for Go and a set of plugins, was introduced
 as a common interface between network plugins and container execution.
 
+![Overview of how CNI fits into cloud native world](docs/CNI-role.png)
+
 ### Actors
 
 The following are the actors found in CNI project:
