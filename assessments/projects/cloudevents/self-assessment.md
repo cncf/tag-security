@@ -44,8 +44,8 @@ document](CE-maintainers-communications.md).
   * [Conclusion](#conclusion)
   * [Recommendations](#recommendations)
 * [Action Items](#action-items)
-  * [[Action Item 1] Setup a bot for reviewing
-    SDKs](#action-item-1-setup-a-bot-for-reviewing-sdks)
+  * [[Action Item 1] Setup a system for automatically reviewing SDKs
+    SDKs](#action-item-1-setup-a-system-for-automatically-reviewing-sdks)
   * [[Action Item 2] Regular SDK Security
     Audits](#action-item-2-regular-sdk-security-audits)
   * [[Action Item 3] Enforce governance rules throughout SDK
@@ -681,32 +681,38 @@ and install updates to their CloudEvents SDK installation.
 
 ## Action Items
 
-### [Action Item 1] Setup a bot for reviewing SDKs
+### [Action Item 1] Setup a system for automatically reviewing SDKs
 
 * **GitHub Issue Link:** [Setup Snyk for
   SDKs](https://github.com/cloudevents/spec/issues/1235)
 
 #### [Action Item 1] Objective
 
-Improve the security of CloudEvents SDKs by integrating a bot for automatic
-dependency assessments. This integration will both conduct comprehensive scans
-for vulnerabilities within the SDK and systematically search the internet for
-recently reported issues or vulnerabilities linked to the library dependencies
-used in the development of CloudEvents SDKs. The automated tool will alert the
-development team to threats, helping the implementation of proactive measures
-for identifying, addressing, and mitigating potential risks.
+Improve the security of CloudEvents SDKs by integrating [static application
+security testing
+(SAST)](https://en.wikipedia.org/wiki/Static_application_security_testing),
+[Software composition analysis
+(SCA)](https://www.synopsys.com/glossary/what-is-software-composition-analysis.html)
+and/or [secret scanning
+services](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning)
+for automatic dependency assessments. This integration should both conduct
+comprehensive scans for vulnerabilities within the SDK and systematically search
+the internet for recently reported issues or vulnerabilities linked to the
+library dependencies used in the development of CloudEvents SDKs. The automated
+tool should alert the development team to threats, helping the implementation of
+proactive measures for identifying, addressing, and mitigating potential risks.
 
 #### [Action Item 1] Steps
 
-Develop and deploy an automated bot system to monitor the health of various SDKs
-by integrating a bot into the development workflow. Collaborate with the team to
+Develop and deploy an automated system to monitor the health of various SDKs by
+integrating a bot into the development workflow. Collaborate with the team to
 conceptualize the bot's features, ensuring its capability to evaluate
 maintenance status, address issues, and implement patch updates following the
-rules outlined in the governance documents. Configure the bot to perform
-dependaBot-type checks, ensuring comprehensive analysis of SDK dependencies.
-Investigate the feasibility and requirements for adding a dedicated security bot
-to scan for potential security issues. Document the integration process and
-provide guidelines for ongoing usage within the development environment.
+rules outlined in the governance documents. Configure the bot to perform checks,
+ensuring comprehensive analysis of SDK dependencies. Investigate the feasibility
+and requirements for adding a dedicated security bot to scan for potential
+security issues. Document the integration process and provide guidelines for
+ongoing usage within the development environment.
 
 The CloudEvents team created a [GitHub
 Issue](https://github.com/cloudevents/spec/issues/1235) on October 10, 2023, to
