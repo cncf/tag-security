@@ -235,71 +235,32 @@ These case studies provide insights into how CNI is used in practice, emphasizin
     * Factors that affect adoption:
         * Is mainly being designed for use with Podman.
 
-# CNI Security Threat Modeling
+## CNI Security Threat Modeling
 
-## Table of Contents
-1. [Introduction](#introduction)
-2. [System Overview](#system-overview)
-3. [Threat Identification](#threat-identification)
-4. [Threat Analysis](#threat-analysis)
-5. [Mitigation Strategies](#mitigation-strategies)
-6. [Conclusion](#conclusion)
+### Introduction
 
-## Introduction
-This document presents a threat model for the Container Network Interface (CNI) project, aiming to identify potential security threats and propose mitigation strategies.
+This section presents a threat model for the Container Network Interface (CNI) project, aiming to identify potential security threats and propose mitigation strategies.
 
-## System Overview
-- **Description**: CNI provides networking for containers.
-- **Components**:
-  - **CNI Plugins**: Interface with various networking solutions.
-  - **Container Runtimes**: Interact with plugins to configure network settings for containers.
-  - **Network Settings**: Configuration data that determines how networking is handled in containerized environments.
+### Threat Analysis
 
-## Threat Identification
-- **Unauthorized Access**
-- **Misconfiguration**
-- **Data Leakage**
-- **Service Interruption**
+#### Potential Unauthorized Access to Network Configurations
 
-## Threat Analysis
-### Unauthorized Access
-- **Impact**: High
-- **Likelihood**: Medium
-- **Description**: Potential unauthorized access to network configurations.
+* Category: Repudiation
+* Given that CNI is an administrative tool used to manage container networking, malicious or abusive actions that CNI is directed to perform should be traceable.
+* Possible Mitigation Strategies:
+    * Mandate logging mechanisms.
+    * Implement auditing of access logs.
 
-### Misconfiguration
-- **Impact**: High
-- **Likelihood**: High
-- **Description**: Incorrect network settings leading to vulnerabilities.
+#### Misconfiguration of Networks Leading to Vulnerabilities
 
-### Data Leakage
-- **Impact**: Medium
-- **Likelihood**: Medium
-- **Description**: Exposure of sensitive information through network traffic.
+* Category: Denial of Service, Tampering
+* Certain configurations may lead to unexpected denial of service or tampering due to a plugin's precedence rules or if a configuration is invalid.
+* Possible Mitigation Strategies:
+    * Provide clear documentation on secure configuration practices.
+    * Implement configuration validation tools.
 
-### Service Interruption
-- **Impact**: High
-- **Likelihood**: Low
-- **Description**: Potential DoS attacks affecting network availability.
+### Conclusion
 
-## Mitigation Strategies
-### Unauthorized Access
-- Implement robust authentication and authorization mechanisms.
-- Regularly audit access logs.
-
-### Misconfiguration
-- Provide clear documentation on secure configuration practices.
-- Implement configuration validation tools.
-
-### Data Leakage
-- Enforce encryption for network traffic.
-- Regularly update security certificates.
-
-### Service Interruption
-- Implement network redundancy and load balancing.
-- Monitor network traffic for unusual patterns.
-
-## Conclusion
 Ongoing evaluation and updates to this model are necessary to adapt to evolving security threats in the CNI project.
 
 # Action Items
