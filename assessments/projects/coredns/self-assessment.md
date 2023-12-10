@@ -1,4 +1,4 @@
-# CoreDNS self-assessment
+# CoreDNS Self-assessment
 Authors: Tom Zhang, Rohit Chaudhari, Maryam Mohagheghi, Vamshi Madineni
 
 Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV).
@@ -26,8 +26,6 @@ This document evaluates the design goals for [CoreDNS](https://coredns.io/) as p
 
 ## Metadata
 
-A table at the top for quick reference information, later used for indexing.
-
 |   |  |
 | -- | -- |
 | Software | [CoreDNS](https://github.com/coredns/coredns) |
@@ -39,8 +37,9 @@ A table at the top for quick reference information, later used for indexing.
 
 | Doc | url |
 | -- | -- |
-| Core53 | [Audit Report](https://coredns.io/assets/DNS-01-report.pdf) |
-| Trail of Bits | [Audit Report](https://github.com/trailofbits/publications/blob/master/reviews/CoreDNS.pdf) |
+| CoreDNS Security Policy | [SECURITY.md](https://github.com/coredns/coredns/security) |
+| Core53 Audit | [Audit Report](https://coredns.io/assets/DNS-01-report.pdf) |
+| Trail of Bits Audit | [Audit Report](https://github.com/trailofbits/publications/blob/master/reviews/CoreDNS.pdf) |
 
 ## Overview
 
@@ -135,8 +134,8 @@ CoreDNS is not explicitly documented to meet the criteria of any security standa
 * Quality Assurance and Testing: CoreDNS employs a comprehensive testing strategy that includes unit tests, integration tests, and end-to-end tests. These tests are automated and are run on various environments to ensure robustness and compatibility. The testing process is an integral part of the development cycle, ensuring that each release meets the highest standards of quality and security.
 2. Communication Channels
 * Internal Team Communication: The CoreDNS team utilizes secure and encrypted communication channels for internal discussions, including email and messaging platforms with end-to-end encryption. This ensures that sensitive information, such as security vulnerabilities and patches, remains confidential within the team.
-* Inbound Communication: Users and prospective users can reach the CoreDNS team primarily through the GitHub issue tracker. This platform facilitates transparent and efficient communication regarding bugs, feature requests, and security concerns. For more direct communication, a dedicated email address is provided for reporting security vulnerabilities.
-* Outbound Communication: CoreDNS communicates updates, announcements, and security advisories through multiple channels, including the CoreDNS blog, Twitter (@corednsio), and a dedicated mailing list. These channels ensure timely and broad dissemination of important information to the user community.
+* Inbound Communication: Users and prospective users can reach the CoreDNS team primarily through the GitHub issue tracker. This platform facilitates transparent and efficient communication regarding bugs, feature requests, and security concerns. For more direct communication, a dedicated email address (security@coredns.io) is provided for reporting security vulnerabilities.
+* Outbound Communication: CoreDNS communicates updates, announcements, and security advisories through multiple channels, including the CoreDNS blog, Twitter (@corednsio), and a dedicated mailing list (coredns-distributors-announce@lists.cncf.io). These channels ensure timely and broad dissemination of important information to the user community.
 3. Ecosystem Integration
 * Cloud Native Ecosystem Role: As a CNCF graduated project, CoreDNS plays a critical role in the cloud-native ecosystem, particularly in environments managed by Kubernetes. It seamlessly integrates with Kubernetes, providing DNS-based service discovery which is crucial for microservices architecture.
 * Impact of CoreDNS in Cloud Environments: In cloud environments, CoreDNS enhances service discovery and network configuration, thereby underpinning many cloud-based applications' functionality. Its lightweight, modular architecture makes it a preferred choice in containerized environments, thus amplifying its impact across the cloud-native ecosystem.
@@ -148,7 +147,7 @@ CoreDNS is not explicitly documented to meet the criteria of any security standa
 * Third-Party Audits and Assessments: CoreDNS has undergone security audits by reputable third parties like Cure53 and Trail of Bits. These audits have significantly contributed to the project's security posture by identifying and addressing potential vulnerabilities.
 Conclusion
 * Ongoing Improvements: CoreDNS is committed to continuously improving its security practices. The team actively seeks feedback from the community and collaborates with security experts to stay ahead of emerging threats.
-*Feedback Mechanism: The CoreDNS team welcomes feedback on its security practices and this self-assessment document. Community members are encouraged to contribute their insights via GitHub discussions or the project's mailing list.
+*Feedback Mechanism: The CoreDNS team (security@coredns.io) welcomes feedback on its security practices and this self-assessment document. Community members are encouraged to contribute their insights via GitHub discussions or the project's mailing list.
 
 ## Security issue resolution
 The Product Security Team (PST) is responsible for organizing the entire response including internal communication and external disclosure.
