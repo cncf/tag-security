@@ -38,6 +38,8 @@ The Self-assessment is the initial document for Volcano to begin thinking about 
 | Software          | https://github.com/volcano-sh/volcano
 | Security Provider | No
 | Languages         | Go, Shell, Makefile, Dockerfile, Python, Smarty|
+| SBOM                 | Volcano does not currently generate an SBOM on release |
+
 
 
 ### Security links
