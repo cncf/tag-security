@@ -28,7 +28,7 @@ documentation for their users.
 | Website | https://cubefs.io/ |
 | Security Provider | No  |
 | Languages | Golang |
-| SBOM | Currently, no SBOM is publicly available for CubeFS|
+| SBOM | CubeFS does not currently generate an SBOM on release|
 | | |
 
 ### Security links
