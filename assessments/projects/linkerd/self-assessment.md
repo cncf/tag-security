@@ -1,31 +1,16 @@
 # Linkerd Security Self-assessment
-# Self-assessment
-The Self-assessment is the initial document for projects to begin thinking about the
-security of the project, determining gaps in their security, and preparing any security
-documentation for their users. This document is ideal for projects currently in the
-CNCF **sandbox** as well as projects that are looking to receive a joint assessment and
-currently in CNCF **incubation**.
-
-
-For a detailed guide with step-by-step discussion and examples, check out the free
-Express Learning course provided by Linux Foundation Training & Certification:
-[Security Assessments for Open Source Projects](https://training.linuxfoundation.org/express-learning/security-self-assessments-for-open-source-projects-lfel1005/).
-
-
-# Self-assessment outline
-
 
 ## Table of contents
 
 
 * [Metadata](#metadata)
- * [Security links](#security-links)
+  * [Security links](#security-links)
 * [Overview](#overview)
- * [Actors](#actors)
- * [Actions](#actions)
- * [Background](#background)
- * [Goals](#goals)
- * [Non-goals](#non-goals)
+  * [Actors](#actors)
+  * [Actions](#actions)
+  * [Background](#background)
+  * [Goals](#goals)
+  * [Non-goals](#non-goals)
 * [Self-assessment use](#self-assessment-use)
 * [Security functions and features](#security-functions-and-features)
 * [Project compliance](#project-compliance)
@@ -158,7 +143,7 @@ For Linkerd, the non-goals, which a reader might mistakenly assume are in scope,
 
 ## Self-assessment use
 
-This self-assessment is created by the Linkerd team to perform an internal analysis of the
+This self-assessment is created by [Amanda Gonzalez](https://github.com/amanda-gonzalez), [Dwireph Kamleshkumar Parmar](https://github.com/dwireph18), [Kaya Erol](https://github.com/shugo0016), and [Thaison Le](https://github.com/thaileaf), independent of the Linkerd team to perform an internal analysis of the
 project's security.  It is not intended to provide a security audit of Linkerd, or
 function as an independent assessment or attestation of Linkerd's security health.
 
@@ -207,35 +192,18 @@ The tap tool supports real time analysis of live traffic. This feature can poten
 
 
 ## Project compliance
+Not Applicable.
 
-# Security and Vulnerability Management:
+## Security and Vulnerability Management
 
-# Vulnerability Reporting: 
+### Vulnerability Reporting: 
 
 Linkerd’s approach to vulnerability reporting aligns with industry compliance standards, particularly in the context of Kubernetes based applications. The service mesh’s design is based on a sidecar model which is a design pattern commonly used in microservices architectures, specifically with containerized applications like those running on Kubernetes. This plays a crucial role in managing network security controls and implementing security features without making changes to the underlying application. Thus this model ensures robust vulnerability reporting and management. 
 
-# Continuous Monitoring: 
+### Continuous Monitoring: 
 
 Linkerd achieves Continuous monitoring through its lightweight, performance-oriented proxy architecture. Which is fundamental for implementing security controls once again in a Kubernetes environment. The focus on minimizing the compute and operational footprint of each proxy, along with the use of Rust for enhanced security and performance, allows for a strong commitment to continuous monitoring, which is a key aspect of compliance with regulatory standards. 
 
-# Core Infrastructure Initiative (CII) Best Practices: 
-
-Badge Link: 
-
-[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/1445/badge)](https://www.bestpractices.dev/projects/1445)
-
-Linkerd’s implementation of mutual TLS, its approach to authorization policy enforcement, and the use of the zero trust model where the proxy in each pod acts as an enforcement point for network access, aligns with the “enforce everywhere, every time” directive of zero trust security. This approach is indicative of Linkerd’s commitment to best practices and standards in security and compliance specifically in cloud and Kubernetes environments. 
-
-
-# Coding Standards and Reviews:
-
-Linkerd employs a structured Requested for Comment (RFC) process for contributions. This ensures any changes made align with the project goals and compliance standards. This process is inspired by best practices from successful open-source projects and includes thorough community review and discussion 
-The process involves detailed code reviews, which emphasizes adherence to Linkerd’s design principles and coding standards. This approach guarantees that the project remains compliant with industry best practices in software development. 
-
-
-Linkerd’s implementation of mutual TLS, its approach to authorization policy enforcement, and the use of the zero trust model where the proxy in each pod acts as an enforcement point for network access, aligns with the “enforce everywhere, every time” directive of zero trust security. This approach is indicative of Linkerd’s commitment to best practices and standards in security and compliance specifically in cloud and Kubernetes environments. 
-
-
 ### Coding Standards and Reviews:
 
 Linkerd employs a structured Requested for Comment (RFC) process for contributions. This ensures any changes made align with the project goals and compliance standards. This process is inspired by best practices from successful open-source projects and includes thorough community review and discussion 
@@ -245,31 +213,7 @@ The process involves detailed code reviews, which emphasizes adherence to Linker
 Linkerd’s implementation of mutual TLS, its approach to authorization policy enforcement, and the use of the zero trust model where the proxy in each pod acts as an enforcement point for network access, aligns with the “enforce everywhere, every time” directive of zero trust security. This approach is indicative of Linkerd’s commitment to best practices and standards in security and compliance specifically in cloud and Kubernetes environments. 
 
 
-### Coding Standards and Reviews:
-
-Linkerd employs a structured Requested for Comment (RFC) process for contributions. This ensures any changes made align with the project goals and compliance standards. This process is inspired by best practices from successful open-source projects and includes thorough community review and discussion 
-The process involves detailed code reviews, which emphasizes adherence to Linkerd’s design principles and coding standards. This approach guarantees that the project remains compliant with industry best practices in software development. 
-
-
-Linkerd’s implementation of mutual TLS, its approach to authorization policy enforcement, and the use of the zero trust model where the proxy in each pod acts as an enforcement point for network access, aligns with the “enforce everywhere, every time” directive of zero trust security. This approach is indicative of Linkerd’s commitment to best practices and standards in security and compliance specifically in cloud and Kubernetes environments. 
-
-
-### Coding Standards and Reviews:
-
-Linkerd employs a structured Requested for Comment (RFC) process for contributions. This ensures any changes made align with the project goals and compliance standards. This process is inspired by best practices from successful open-source projects and includes thorough community review and discussion 
-The process involves detailed code reviews, which emphasizes adherence to Linkerd’s design principles and coding standards. This approach guarantees that the project remains compliant with industry best practices in software development. 
-
-
-Linkerd’s implementation of mutual TLS, its approach to authorization policy enforcement, and the use of the zero trust model where the proxy in each pod acts as an enforcement point for network access, aligns with the “enforce everywhere, every time” directive of zero trust security. This approach is indicative of Linkerd’s commitment to best practices and standards in security and compliance specifically in cloud and Kubernetes environments. 
-
-
-### Coding Standards and Reviews:
-
-Linkerd employs a structured Requested for Comment (RFC) process for contributions. This ensures any changes made align with the project goals and compliance standards. This process is inspired by best practices from successful open-source projects and includes thorough community review and discussion 
-The process involves detailed code reviews, which emphasizes adherence to Linkerd’s design principles and coding standards. This approach guarantees that the project remains compliant with industry best practices in software development. 
-
-
-# Secure development practices
+## Secure development practices
 
 ### Development Pipeline 
 
@@ -330,8 +274,15 @@ Fixes are propagated to the stable branches as fast as possible, except in cases
 ### Known Issues Over Time
 Linkerd has maintained a robust track record in addressing and resolving issues promptly. The project's commitment to transparency is evident in its detailed reporting and timely resolutions. For a comprehensive list of past vulnerabilities and their respective resolutions, please refer to the Linkerd Security Advisories.
 
-### CII Best Practices
+### Core Infrastructure Initiative (CII) Best Practices
+
 The Linkerd project is actively aligning itself with the Core Infrastructure Initiative (CII) best practices. To obtain the CII Best Practices badge, the project is currently implementing and refining processes in areas such as security, documentation, and community engagement. For the latest status and details, please visit the CII Best Practices Program.
+
+Linkerd recieved a passing score in 2017: [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/1445/badge)](https://www.bestpractices.dev/projects/1445)
+
+In 2021, they recieved a passing score for Linkerd2: [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/4629/badge)](https://www.bestpractices.dev/projects/4629)
+
+Linkerd’s implementation of mutual TLS, its approach to authorization policy enforcement, and the use of the zero trust model where the proxy in each pod acts as an enforcement point for network access, aligns with the “enforce everywhere, every time” directive of zero trust security. This approach is indicative of Linkerd’s commitment to best practices and standards in security and compliance specifically in cloud and Kubernetes environments. 
 
 ### Case Studies
 **Scenario 1: Microservices Resilience**
@@ -345,7 +296,7 @@ In a real-world scenario, Organization Y successfully migrated its monolithic ap
 ### Related Projects / Vendors
 Prospective users often inquire about the differences between Linkerd and alternative projects or vendors. Here are some key distinctions:
 
-**Istio:** While both Linkerd and Istio address service mesh functionality, Linkerd is known for its lightweight design and simplicity, making it an excellent choice for organizations seeking a streamlined service mesh solution.
+**[Istio:](https://istio.io/latest/about/service-mesh/)** Istio was started by Google and IBM, with an Envoy proxy to manage ingress and egress traffic, leveraging some differences with Linkerd. But while both Linkerd and Istio address service mesh functionality, Linkerd is known for its lightweight design and simplicity, making it an excellent choice for organizations seeking a streamlined service mesh solution. Documentation for getting started with an Istio service mesh can be found [here](https://istio.io/latest/docs/setup/getting-started/).
 
-**Consul Connect:** Linkerd differentiates itself by focusing on the data plane, providing dedicated solutions for service communication. Consul Connect, on the other hand, offers a broader spectrum of features beyond service mesh, including service discovery and configuration management.
+**[Consul Connect:](https://developer.hashicorp.com/consul/docs/connect)** Linkerd differentiates itself by focusing on the data plane, providing dedicated solutions for service communication. Consul Connect, on the other hand, offers a broader spectrum of features beyond service mesh, including service discovery and configuration management. More information about starting with Consul Connect can be found [here](https://developer.hashicorp.com/consul/tutorials/kubernetes-deploy/service-mesh?utm_source=docs).
 
