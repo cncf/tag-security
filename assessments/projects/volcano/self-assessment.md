@@ -71,22 +71,94 @@ In addition, Volcano inherits the design of Kubernetes APIs, allowing you to eas
 
 ### Actions
 
-1. User Interaction with Volcano
-  - Job Submission: Users submit batch processing jobs to Volcano via the API Server. This includes specifying job requirements, resources needed, and priorities.
-  - Configuration and Management: Administrators configure Volcano settings, manage resource quotas, and set security policies.
-2. Volcano Scheduler Operations
-  - Job Scheduling: The scheduler decides how and when to allocate resources to jobs based on current cluster status, job priority, and resource requirements.
-  - Resource Management: Manages the allocation and release of resources in the Kubernetes cluster for scheduled jobs.
-3. Volcano API Server Functions
-  - Request Processing: Handles and validates requests from users, ensuring they conform to defined schemas and security protocols.
-  - Authentication and Authorization: Verifies user identities and checks whether they have sufficient permissions to perform requested actions.
-4. Kubernetes Cluster Interactions
-  - Resource Provisioning: Kubernetes cluster provides the necessary resources (like CPU, memory, and storage) as dictated by Volcano's scheduling decisions.
-  - Enforcement of Security Policies: Kubernetes enforces security policies set by administrators, such as network policies and access controls, affecting how jobs are run and isolated.
-5. Integration with External Systems
-  - Data Exchange: Volcano may exchange data with integrated systems (like TensorFlow, PyTorch) for processing jobs. This includes sending job data and receiving results.
-  - Security Protocol Compliance: Ensures that interactions with these external systems comply with security protocols, maintaining data integrity and confidentiality.
+1. User Interaction with Volcano: Job Submission
+  - Users submit batch processing jobs to Volcano via the API Server. This includes specifying job requirements, resources needed, and priorities.
+  - Involved Actors:
+    + User
+    + Volcano API Server
+    + Volcano Scheduler
+  - Security Checks and System Actions:
+    + User Authentication: Verify user identity before accepting job submission.
+    + Input Validation: Ensure job details adhere to required formats and security policies.
+    + Authorization Check: Confirm user has permissions to submit the job.
+    + Schema Validation: API Server validates the job request against the expected structure.
+    + Resource Allocation: Scheduler allocates resources considering security policies and fairness.
 
+2. User Interaction with Volcano: Configuration and Management
+  - Administrators configure Volcano settings, manage resource quotas, and set security policies.
+  - Involved Actors:
+    + Administrator
+    + Volcano API Server
+  - Security Checks and System Actions:
+    + Administrator Authentication: Verify identity of the person making configuration changes.
+    + Authorization Verification: Check if the administrator has appropriate permissions.
+    + Configuration Validation: Ensure settings comply with security standards and policies.
+    + Monitoring for Anomalies: Continuous checks for unauthorized or unusual configuration changes.
+
+3. Volcano Scheduler Operations: Job Scheduling
+  - The scheduler decides how and when to allocate resources to jobs based on current cluster status, job priority, and resource requirements.
+  - Involved Actors:
+    + Volcano Scheduler
+    + Kubernetes Cluster
+  - Security Checks and System Actions:
+    + Job Priority Assessment: Ensure job priorities are assigned and handled securely.
+    + Resource Fairness: Allocate resources fairly while preventing exploitation and priority escalation.
+    + Security Policy Compliance: Align job scheduling with cluster-level security policies.
+  
+4. Volcano Scheduler Operations: Resource Management
+  - Manages the allocation and release of resources in the Kubernetes cluster for scheduled jobs.
+  - Involved Actors
+    + Volcano Scheduler
+    + Kubernetes Cluster
+Security Checks and System Actions:
+    + Resource Utilization Check: Ensure efficient and secure usage of cluster resources.
+    + Job Isolation: Maintain isolation between jobs to safeguard against cross-job interference or data leakage.
+
+5. API Server Functions: Request Processing
+  - Handles and validates requests from users, ensuring they conform to defined schemas and security protocols.
+  - Involved Actors:
+    + Users
+    + Volcano API Server
+  - Security Checks and System Actions:
+    + Request Authentication: Authenticate users making requests.
+    + Request Validation: Validate requests against security protocols and schemas.
+    + Response Integrity: Ensure the integrity and security of the data in the responses.
+
+6. API Server Functions: Authentication and Authorization
+  - Verifies user identities and checks whether they have sufficient permissions to perform requested actions.
+  - Involved Actors:
+    + Users
+    + Volcano API Server
+  - Security Checks and System Actions:
+    + Identity Verification: Confirm the identity of users.
+    + Permission Checks: Verify user permissions for requested actions.
+
+7. Kubernetes Cluster Interactions: Resource Provisioning
+  - Kubernetes cluster provides the necessary resources (like CPU, memory, and storage) as dictated by Volcano's scheduling decisions.
+  - Involved Actors:
+    + Kubernetes Cluster
+    + Volcano Scheduler
+  - Security Checks and System Actions:
+    + Resource Allocation Security: Ensure resources are provided securely and in compliance with policies.
+    + Access Control Enforcement: Kubernetes enforces access controls on resource provision.
+
+
+8. Kubernetes Cluster Interactions: Enforcement of Security Policies
+  - Kubernetes enforces security policies set by administrators, such as network policies and access controls, affecting how jobs are run and isolated.
+  - Involved Actors:
+    + Kubernetes Cluster
+  - Security Checks and System Actions:
+    + Policy Implementation: Enforce network and access control policies.
+    + Security Compliance Monitoring: Continuously monitor for compliance with set security policies.
+
+9. Integration with External Systems
+  - Data Exchange: Volcano may exchange data with integrated systems (like TensorFlow, PyTorch) for processing jobs. This includes sending job data and receiving results.
+  - Involved Actors
+    + Volcano
+    + Integrated Systems (e.g., TensorFlow, PyTorch)
+  - Security Checks and System Actions
+    + Secure Data Exchange: Ensure data exchanged with external systems is secure and complies with protocols.
+    + Compliance Check: Verify interactions adhere to established security standard
 
 ### Goals
 
