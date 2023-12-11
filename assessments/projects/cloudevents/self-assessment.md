@@ -5,8 +5,8 @@ September 26, 2023
 Authors: Igor Rodrigues (@Igor8mr), Matthew Gong (@MatthewZGong), Kushal Kothari
 (@Kushal-kothari) and Devyani Bairagya (@devyani-14).
 
-Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV) and Doug Davis
-(@duglin).
+Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV), Doug Davis (@duglin),
+Eddie Knight (@eddie-knight) and Ragashree (@ragashreeshekar).
 
 This document elaborates and explores the design goals for
 [CloudEvents](https://cloudevents.io/) as well as a security assessment of the
@@ -161,17 +161,38 @@ is the entity or system that is responsible for the distribution, processing and
 routing of events to consumers. The event broker ensures reliable delivery and
 may enforce security policies.
 
-#### Developer 
-Responsible for incorporating CloudEvents support into their applications to enable interoperability with other services and systems. The developer can use CloudEvents SDKs to integrate CloudEvents functionality into their applications. Developers also collaborate to ensure the proper functioning of other actors within the CloudEvents ecosystem.
+#### System Administrator
 
-#### SDK maintainers
-Part of the CloudEvents ecosystem, they are responsible for the development, maintenance, and enhancement of CloudEvents Software Development Kits (SDKs). As stewards of the SDKs, their role is critical in ensuring that developers have reliable, up-to-date and safe tools to work with. 
+Responsible for incorporating CloudEvents support into their system to enable
+interoperability with other services and applications. The developer can use one
+of the CloudEvents SDKs to integrate CloudEvents functionality into their
+applications. Developers also collaborate to ensure the proper functioning of
+other actors within the CloudEvents ecosystem. They can also report issues they
+find to the CloudEvents maintainers, helping improve the specification and/or
+SDKs.
 
-#### CloudEvents Administrator
-These central figures in the ongoing development and governance of the CloudEvents ecosystem and specification. They are responsible for the management of critical aspects of the CloudEvents infrastructure. For example, the website, github repos and moderate the meetings.
+#### SDK Maintainers
+
+Part of the CloudEvents ecosystem, they are responsible for the development,
+maintenance, and enhancement of CloudEvents Software Development Kits (SDKs). As
+stewards of the SDKs, their role is critical in ensuring that developers have
+reliable, up-to-date and safe tools to work with. They must triage issues, find
+and implement solutions to them and release security patches promptly.
 
 #### CloudEvents Spec Maintainer
-A CloudEvents specification maintainer is responsible for developing and maintaining the CloudEvents standard, ensuring consistency and interoperability for describing event data. They manage the roadmap, coordinate releases, and collaborate with the community to implement changes, improving the CloudEvents specification to facilitate event exchange in diverse cloud environments.
+
+A CloudEvents specification maintainer is responsible for developing and
+maintaining the CloudEvents standard, ensuring consistency and interoperability
+for describing event data. They manage the roadmap, coordinate releases, and
+collaborate with the community to implement changes, improving the CloudEvents
+specification to facilitate event exchange in diverse cloud environments.
+
+#### CloudEvents Administrator
+
+These central figures in the ongoing development and governance of the
+CloudEvents ecosystem and specification. They are responsible for the management
+of critical aspects of the CloudEvents infrastructure. For example, the website,
+GitHub repos and moderate the meetings.
 
 ### Actions
 
@@ -586,11 +607,11 @@ CloudEvents](#contributing-to-cloudevents).
 
 #### The SDK management teams may implement vulnerabilities while implementing SDKs
 
-Trail Of Bits was able to identify 7 different security concerns regarding the
-different CloudEvents SDKs. While these issues have been addressed, the
-expanding number of SDKs raises the possibility of introducing additional
-vulnerabilities. These vulnerabilities could serve as potential weak points in
-systems utilizing CloudEvents.
+Trail Of Bits was able to identify [security concerns regarding the different
+CloudEvents SDKs](#trail-of-bits-security-assessment). While these issues have
+been addressed, the expanding number of SDKs raises the possibility of
+introducing additional vulnerabilities. These vulnerabilities could serve as
+potential weak points in systems utilizing CloudEvents.
 
 Mitigations:
 
@@ -817,9 +838,9 @@ CloudEvents should create a separate document outlining a systematic approach to
 triage issues, identify and execute solutions, and release security patches.
 This process should be standard and well-defined for all SDKs. This would make
 fixing problems quicker, especially issues like the ones [Trail of Bits
-found](#issues-found-by-trail-of-bits).
+found](#trail-of-bits-security-assessment).
 
-### [Action Item 6] Enhanced Encryption and Data Validation Mechanisms
+### [Action Item 6] Emphasize goals, non-goals and user responsibilities
 
 #### [Action Item 6] Objective
 
@@ -864,14 +885,20 @@ proper triage processes.
 
 #### Trail of Bits Security Assessment
 
-CloudEvents underwent a [Security Audit performed by
-Trail of
+CloudEvents underwent a [Security Audit performed by Trail of
 Bits](https://github.com/cloudevents/spec/blob/main/docs/CE-SecurityAudit-2022-10.pdf)
 released on October 26, 2022.
 
-Trail of Bits is a cybersecurity company based in the United States that specializes in various aspects of security services, including security assessments, penetration testing, and software security. 
+Trail of Bits is a cybersecurity company based in the United States that
+specializes in various aspects of security services, including security
+assessments, penetration testing, and software security.
 
-The audit focused on various CloudEvents Software Development Kits (SDKs) rather than the specification itself. All identified security issues have been addressed. The report highlighted specific findings for different SDKs, such as the Java SDK's reliance on default encoding or the outdated and vulnerable dependencies in both Java and Go SDKs. All of the security issues found by Trail of Bits have already been addressed.
+The audit focused on various CloudEvents Software Development Kits (SDKs) rather
+than the specification itself. All identified security issues have been
+addressed. The report highlighted specific findings for different SDKs, such as
+the Java SDK's reliance on default encoding or the outdated and vulnerable
+dependencies in both Java and Go SDKs. All of the security issues found by Trail
+of Bits have already been addressed.
 
 ### CII Best Practices
 
