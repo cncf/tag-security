@@ -18,7 +18,6 @@ documentation for their users.
 * [Secure development practices](#secure-development-practices)
 * [Security issue resolution](#security-issue-resolution)
 * [Appendix](#appendix)
-* [Action Items](#action-items)
 
 ## Metadata
 
