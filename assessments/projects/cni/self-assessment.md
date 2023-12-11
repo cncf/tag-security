@@ -39,8 +39,7 @@ Authors: Jason Lin, Quan Phung, Jackson Qu, Grace Liu
 
 ## Overview
 
-**Container Network Interface** <br>
-CNI, a project under the Cloud Native Computing Foundation, includes a set of guidelines and software libraries
+Container Network Interface (CNI), a project under the Cloud Native Computing Foundation, includes a set of guidelines and a software library
 used for developing plugins that set up network interfaces within Linux and Windows containers. Its primary goal
 is managing container network connectivity and deallocating resources once a container is removed. This specific
 focus has led to broad support for CNI and a straightforward implementation process due to its simple specification.
@@ -49,8 +48,8 @@ focus has led to broad support for CNI and a straightforward implementation proc
 
 With the rapid development of application containers on Linux, networking in this area is still not well addressed
 as it is highly environment-specific. To deal with this problem, developers seek to create a network layer that is
-pluggable for container runtimes. Ultimately, CNI, along with libraries for Go and a set of plugins, was introduced
-as a common interface between network plugins and container execution.
+pluggable for container runtimes. Ultimately, CNI was introduced as a standardized interface between network plugins and container execution.
+The CNI team provides a library for integrating CNI into applications and maintains some reference plugins for CNI.
 
 ![Overview of how CNI fits into cloud native world](docs/CNI-role.png)
 
