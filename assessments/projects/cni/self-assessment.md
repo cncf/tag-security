@@ -226,7 +226,7 @@ An issue with CNI portmap was found with Kubernetes, which allowed it to match i
 
 These case studies provide insights into how CNI is used in practice, emphasizing its role and effectiveness in Kubernetes networking and security.
 
-## Related Projects/Vendors
+### Related Projects/Vendors
 
 * **[Container Network Model (CNM)](https://github.com/moby/moby/blob/master/libnetwork/docs/design.md#the-container-network-model) / [libnetwork](https://github.com/moby/moby/tree/master/libnetwork)** is a standard proposed by Docker and is also supported in several products such as Project Calico, Cisco Contiv, and Weave.
     * Key features that separate it from CNI:
@@ -242,15 +242,15 @@ These case studies provide insights into how CNI is used in practice, emphasizin
     * Factors that affect adoption:
         * Is mainly being designed for use with Podman.
 
-## CNI Security Threat Modeling
+### CNI Security Threat Modeling
 
-### Introduction
+#### Introduction
 
 This section presents a threat model for the Container Network Interface (CNI) project, aiming to identify potential security threats and propose mitigation strategies.
 
-### Threat Analysis
+#### Threat Analysis
 
-#### Potential Unauthorized Access to Network Configurations
+##### Potential Unauthorized Access to Network Configurations
 
 * Category: Repudiation
 * Given that CNI is an administrative tool used to manage container networking, malicious or abusive actions that CNI is directed to perform should be traceable.
@@ -258,7 +258,7 @@ This section presents a threat model for the Container Network Interface (CNI) p
     * Mandate logging mechanisms.
     * Implement auditing of access logs.
 
-#### Misconfiguration of Networks Leading to Vulnerabilities
+##### Misconfiguration of Networks Leading to Vulnerabilities
 
 * Category: Denial of Service, Tampering
 * Certain configurations may lead to unexpected denial of service or tampering due to a plugin's precedence rules or if a configuration is invalid.
@@ -266,12 +266,6 @@ This section presents a threat model for the Container Network Interface (CNI) p
     * Provide clear documentation on secure configuration practices.
     * Implement configuration validation tools.
 
-### Conclusion
+#### Conclusion
 
 Ongoing evaluation and updates to this model are necessary to adapt to evolving security threats in the CNI project.
-
-## Action Items
-
-- Consider creation of an SBOM for CNI
-- Security policy: Include what response can be expected after a vulnerability has been reported and consider creating a file or page dedicated to the vulnerability reporting process. ([Example Security Policy Template](https://github.com/cncf/tag-security/blob/main/project-resources/templates/SECURITY.md)).
-- Incident Response: Create a publicly available document outlining how security issues are triaged, how any parties are notified, and details surrounding the publication and release of a patch. ([Example Incident Response Template](https://github.com/cncf/tag-security/blob/main/project-resources/templates/incident-response.md))
