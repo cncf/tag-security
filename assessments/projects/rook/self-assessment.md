@@ -24,7 +24,7 @@
 | Software |  [Rook](https://github.com/rook/rook)  |
 | Security Provider | No  |
 | Languages | Go, Python, C++ |
-| SBOM | [prerequisites](https://github.com/rook/rook/blob/master/Documentation/Getting-Started/Prerequisites/prerequisites.md), [go.mod](https://github.com/rook/rook/blob/master/pkg/apis/go.mod), [API go.mod](https://github.com/rook/rook/blob/master/pkg/apis/go.mod), [Build Reqs](https://github.com/rook/rook/blob/master/INSTALL.md), [images](https://github.com/rook/rook/blob/v1.12.9/deploy/examples/images.txt)|
+| SBOM | Rook does not currently generate an SBOM on release|
 | | |
 
 ### Security links
