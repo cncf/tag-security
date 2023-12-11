@@ -305,19 +305,15 @@ The Volcano project has a [Product Security Team (PST)](https://github.com/volca
 
 ## Action Items
 - Review priveleges of 184 non-maintainer users who are in the working groups.
-- Discuss about the default pod security configuration used by Volcano. [Link](https://github.com/volcano-sh/volcano/tree/master/installer#configuration)
-- Discuss: Deployment Architecture: What safeguards are in place to prevent unauthorized access or changes to deployments?
-- Discuss: Networking: How does Volcano secure communication between its services?
-- Discuss: Networking: Are there any additional network security measures (e.g., firewalls, IDS/IPS systems) implemented in the default Volcano deployment?
-- Discuss: Networking: What is the process for updating network policies in Volcano?
-- Discuss: Cryptography: How does Volcano manage cryptographic keys and certificates?
-- Discuss: Multi-tenancy: How does Volcano handle resource isolation and security in a multi-tenant environment?
-- Discuss: Multi-tenancy: Can you describe any multi-tenancy security challenges that have been encountered and how they were resolved?
-- Discuss: Secrets Management: Is Kubernetes Secrets used for Secret Management? For securing daily release workflow and release chart workflow secrets. What is used for securing admission secret, image pull secret?
-- Discuss: Storage: Does Volcano store any sensitive job data? Is [CSCI Storage?](https://kubernetes.io/blog/2019/01/15/container-storage-interface-ga/) used? Is [Dedicated Volume?](https://github.com/volcano-sh/volcano/blob/master/docs/design/dedicated-volume.md) used?
-- Discuss: Logging: Is logging done only using kubectl logs? Is it sufficient to detect an attack or mis-behaviour of Volcano components?
-- Discuss: Security Testing: Other than CodeQL, is there any other security testing used in the development or deployment process?
-- Discuss if there are any known security issues or limitations with the current version of Volcano.
+- Review about the default pod security configuration used by Volcano. [Link](https://github.com/volcano-sh/volcano/tree/master/installer#configuration)
+- Review the deployment architecture to add safeguards to prevent unauthorized access or changes to deployments.
+- Review communication between services within Volcano to consider need of encryption to prevent integrity.
+- Review and document protocols used for safeguarding credentials like admission secret, image pull secret, cryptographic keys and certificates.
+- Review resource isolation and security in a multi-tenant environment.
+- Review safety of storing sensitive job data within Volcano structures like [CSCI Storage?](https://kubernetes.io/blog/2019/01/15/container-storage-interface-ga/) or [Dedicated Volume](https://github.com/volcano-sh/volcano/blob/master/docs/design/dedicated-volume.md).
+- Review insufficiency of logging using limited kubectl logs to detect an attack or mis-behaviour of Volcano components.
+- Review and add tools additional to CodeQL in the development and deployment process to manage code quality and security.
+- Document known security issues or limitations with the current version of Volcano.
 - Improve OpenSSF best practices badge from 5/10 to 10/10 by implementing the following tasks:
   - Cryptographically signing release artifacts.
   - Having the project's workflows follow the principle of least privilege. (multiple GitHub workflow tokens were detected with excessive permissions)
@@ -325,4 +321,4 @@ The Volcano project has a [Product Security Team (PST)](https://github.com/volca
   - Checking all commits with static code analysis
   - Limiting the project's exposure to open, known unfixed vulnerabilities.
   - Having the project declare and pinned the dependencies of its build process by hash
-- Conduct a comprehensive review of RBAC policies to ensure the principle of least privilege.
+- Conduct a comprehensive review of RBAC policies within Volcano scheduler and controller to ensure the principle of least privilege.
