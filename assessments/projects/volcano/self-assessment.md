@@ -200,8 +200,7 @@ Not Applicable.
     + Contributor Sign-off: Contributors to Volcano are required to sign off on their commits as part of a [Developer Certificate of Origin](https://probot.github.io/apps/dco/) (DCO).
     + Code Review Process: Volcano employs a rigorous [code review process](https://github.com/volcano-sh/volcano/blob/master/contribute.md#code-review), with [multiple maintainers](https://github.com/volcano-sh/volcano/blob/master/MAINTAINERS.md) from different organizations and automated checks using [CodeQL](https://github.com/volcano-sh/volcano/actions/workflows/codeql-analysis.yml). This ensures high standards of code quality and security.
     + Automated Testing and CI/CD: The project utilizes continuous integration and deployment pipelines, including [automated testing](https://github.com/volcano-sh/volcano/blob/master/contribute.md#testing) for vulnerabilities and code quality checks.
-    + Container Image Security: If Volcano uses containerized deployments, assess whether the container images are signed and immutable, which adds a layer of security against tampering.
-    + Dependency Management: The project should regularly update its dependencies and check for vulnerabilities using tools like OWASP Dependency-Check or similar.
+
 - Communication Channels
     + Internal: The development team uses platforms like GitHub, Slack, and email lists for internal communications.
     + Inbound: Users and prospective users can likely communicate with the Volcano team via GitHub issues, mailing lists, or a dedicated Slack channel.
@@ -322,3 +321,5 @@ The Volcano project has a [Product Security Team (PST)](https://github.com/volca
   - Limiting the project's exposure to open, known unfixed vulnerabilities.
   - Having the project declare and pinned the dependencies of its build process by hash
 - Conduct a comprehensive review of RBAC policies within Volcano scheduler and controller to ensure the principle of least privilege.
+- Review image security for containerized deployments to make sure container images are signed and immutable.
+- Define a process to regularly update Volcano dependencies and automate check for vulnerabilities in them using tools like OWASP Dependency-Check.
