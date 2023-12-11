@@ -1029,7 +1029,10 @@ and CloudEvents is the fact that the latter does not aim to develop new security
 protocols. Instead, it relies on existing and resilient protocols. As mentioned
 before, the CloudEvents Specification focuses solely on standardizing the
 creation and representation of events across different protocols, intentionally
-steering clear of specifying methods for their transportation.
+steering clear of specifying methods for their transportation. Moreover, while
+CloudEvents is focused on lightweight and flexibility, SOAP is more associated
+with traditional and heavyweight web services, emphasizing standards and strict
+message formatting.
 
 #### Apex Event Specification
 
