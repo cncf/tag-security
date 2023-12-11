@@ -167,6 +167,10 @@ In case of anomalies or incidents detected through telemetry data, alerts are ge
 * The OpenTelemetry Collector should not be run as root.
 * Configuration files must be verified before loading, and sensitive information in the configuration files must be hidden to reduce unnecessary exposure.
 * To prevent resource exhaustion attacks, default parameters such as queues and payloads should be accounted for.
+* Data integrity: The entire transaction of OpenTelemetry carries contextual information to ensure that each part can understand the whole transaction, and the error handling methods included in OpenTelemetry can also help maintain data integrity.
+* Authentication: Need authenticated entities to interact with the system.
+* Authorization:  Need authorized entities to interact with the system.
+* Access control functionalities: Use RBAC to control user access to data and functionality.
 
 
 ### Non-Goals
@@ -181,9 +185,8 @@ In case of anomalies or incidents detected through telemetry data, alerts are ge
 
 
 
-* Use API tokens and TLS network security encryption to encrypt sensitive information to prevent third parties from querying OpenTelementry telemetry data.
-* Prevent external access to internal resources. When running Open Telemetry, there should be no privileged access.
-* The agents must authenticate themselves to the backend systems where the data is sent.
+* External API tokens and [TLS network](https://opentelemetry.io/docs/collector/configuration/#service) security encryption [resources](https://github.com/cloudflare/cfssl) are used to encrypt sensitive information to prevent third parties from querying OpenTelementry telemetry data.
+* The agents must [authenticate themselves](https://opentelemetry.io/docs/collector/configuration/#service) to the backend systems where the data is sent.
 
 
 ## Self-Assessment Use
