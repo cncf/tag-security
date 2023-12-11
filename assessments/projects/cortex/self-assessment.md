@@ -28,11 +28,13 @@ The Self-assessment is the initial document for Cortex to begin thinking about t
 
 ## Metadata
 
+|   |  |
 | -- | -- |
 | Software | https://github.com/cortexproject/cortex |
 | Security Provider | No |
 | Languages | Go |
 | SBOM | `Not Applicable` |
+| | |
 
 ### Security links
 
