@@ -253,9 +253,5 @@ Comparing Cortex with similar projects like Thanos reveals key differences:
 - **Cortex:** Distinguished by its horizontally scalable architecture, high availability, multi-tenant support, and focus on long-term storage for Prometheus
 
 ## Action Items
-- Engaged in collaborative self-assessment discussions with Project Maintainers on [Slack](https://cloud-native.slack.com/archives/C0682GTKK4K/p1701568106182349) and [GitHub Issue](https://github.com/cortexproject/cortex/issues/5692) to align goals and address feedback 
-- Implemented SBOM generation using cyclonedx-gomod, providing a detailed inventory of Go module dependencies.
-- Conducted a comprehensive update of the project's threat model with respect to Cortex Maintainer's Response.
-- Revised and expanded the project documentation's appendix section, incorporating additional materials to enhance overall understanding and documentation.
-- Ensured that all relevant links associated with the development pipeline and communication channels are up-to-date.
+- Suggested to create SBOM(Software Bill of Materials) for Cortex project: [Issue](https://github.com/cortexproject/cortex/issues/5692)
 
