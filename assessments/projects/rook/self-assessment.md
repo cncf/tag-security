@@ -21,8 +21,6 @@
 
 ## Metadata
 
-A table at the top for quick reference information, later used for indexing.
-
 |   |  |
 | -- | -- |
 | Software |  [Rook](https://github.com/rook/rook)  |
