@@ -1,7 +1,5 @@
 # Rook Self-assessment
 
-## Self-assessment outline
-
 ## Table of contents
 
 * [Metadata](#metadata)
