@@ -33,7 +33,7 @@ The Self-assessment is the initial document for Cortex to begin thinking about t
 | Software | https://github.com/cortexproject/cortex |
 | Security Provider | No |
 | Languages | Go |
-| SBOM | `Not Applicable` |
+| SBOM | https://github.com/cortexproject/cortex/releases/latest/download/sbom.tar.gz |
 | | |
 
 ### Security links
