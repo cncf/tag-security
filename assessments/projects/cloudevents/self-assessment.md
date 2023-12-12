@@ -8,11 +8,8 @@ Authors: Igor Rodrigues (@Igor8mr), Matthew Gong (@MatthewZGong), Kushal Kothari
 Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV), Doug Davis (@duglin),
 Eddie Knight (@eddie-knight) and Ragashree (@ragashreeshekar).
 
-This document elaborates and explores the design goals for
-[CloudEvents](https://cloudevents.io/) as well as a security assessment of the
-software. It was written in collaboration with the CloudEvents team. All
-communications with CloudEvents were recorded on a [separate
-document](CE-maintainers-communications.md).
+This document was written in collaboration with the CloudEvents team to elaborate on and explores the design goals for
+[CloudEvents](https://cloudevents.io/) through a limited security assessment of the software.
 
 ## Table of contents
 
