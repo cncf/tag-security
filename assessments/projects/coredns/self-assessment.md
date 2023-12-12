@@ -67,7 +67,7 @@ CoreDNS's plugin-driven architecture empowers users to customize their DNS infra
     * The _health_ plugin can requested by a client to provide the health status of the server
     * The _dnssec_ plugin enables on-the-fly DNSSEC signing of zone data
     * The _loadbalance_ plugin adds a round-robin DNS load balancer by randomizing the order of A, AAAA, and MX records.
-    * THe _log_ plugin implements query logging to the standard output.
+    * The _log_ plugin implements query logging to the standard output.
     * The _prometheus_ plugin enables collection and exports of operational metrics from the [Prometheus Go client](https://prometheus.io/docs/guides/go-application/).
 3. Processes DNS queries sent by clients such as web browsers, terminal utilities, etc.
     * These queries can be sent over UDP, TCP, or gRPC.
