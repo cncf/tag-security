@@ -17,8 +17,6 @@
 * [Secure development practices](#secure-development-practices)
 * [Security issue resolution](#security-issue-resolution)
 * [Appendix](#appendix)
-* [STRIDE Threat Model](#stride-threat-model)
-* [Questions about potential vulnerabilities](#questions-about-potential-vulnerabilities)
 * [Suggested action items](#suggested-action-items)
 
 ## Metadata
@@ -35,7 +33,8 @@
 
 | Doc | url |
 | -- | -- |
-| Security file | https://github.com/tikv/tikv/blob/master/security/Security-Audit.pdf |
+| Security file |  https://github.com/tikv/tikv/blob/master/SECURITY.md |
+| Security Audit Report | https://github.com/tikv/tikv/blob/master/security/Security-Audit.pdf |
 | Default and optional configs | https://tikv.org/docs/3.0/tasks/configure/security/ |
 
 ## Overview
@@ -279,54 +278,10 @@ Deploys TiKV with TiDB:
 **Company: PingCAP; Offering: TiDB Cloud; Industry: DBaas.**
 PingCAP is the company behind the open-source TiKV project and supplies continuous development of the project. TiDB Cloud is a database-as-a-service (DBaas) provided by PingCAP. It is built using TiKV and TiDB technologies. It offers fully-managed clusters of the open source TiKV database in the cloud. TiDB Cloud manages various operational tasks such as provisioning, upgrades, scaling, monitoring, and ensuring high availability. The main difference is that some users may prefer the convenience of TiDB Cloud as a service to the responsibility of administering their own TiKV environment. Overall, TiDB Cloud is intended for utilization by users who desire to operate it locally or as a service. Both projects give users the opportunity to leverage PingCAP's innovative technology. 
 
-## STRIDE Threat Model
-| STRIDE Element                    | Access Controls                                                               | Password Protection                                                         | Raft Consensus Algorithm                                                    | MVCC in TiKV                                                                | RocksDB Storage Engine                                                       | TiKV Clients                                                               | Placement Driver                                                             | Timestamp Oracle                                                            | Transport-Layer Security (TLS)                                               | Programming Language (Rust)                                                 | Authentication                                                               |
-|-----------------------------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| Spoofing Identity                 | Attackers could impersonate authorized users to gain access to TiKV nodes and PD. | Weak password protocols can be exploited to gain unauthorized access.        | Falsifying identity as a leader node could disrupt consensus.               | Spoofing transactions to appear as legitimate could enable unauthorized actions. | | Impersonating a legitimate client could allow unauthorized access to TiKV nodes. | Spoofing the Placement Driver could disrupt TiKV’s data management and routing. | Spoofing timestamp requests can lead to incorrect time assignments for transactions. | Intercepting TLS certificates could enable attackers to impersonate TiKV nodes. | | Impersonating an authenticated user can grant unauthorized access to sensitive functions. |
-| Tampering                         | Tampering with access control settings could weaken restrictions.              | Attackers could alter authentication data or mechanisms.                    | Tampering with data replication processes can corrupt data consistency.     | Tampering with timestamps could cause data inconsistencies or conflicts.    | Altering RocksDB configurations or data could compromise data integrity.      | Tampering with client applications can lead to malicious data insertion or alteration. | Tampering with PD’s metadata can lead to incorrect data placement or loss.   | Manipulating timestamps can cause inconsistencies and conflicts in transaction ordering. | Tampering with TLS configurations can compromise secure communication.     | Exploiting language-specific vulnerabilities, though less likely in Rust, can lead to data tampering. | Altering authentication data or mechanisms can lead to unauthorized system access. |
-| Repudiation                       | If audit trails are poor, malicious activities may go unrecorded, denying wrongdoing. | Lack of secure audit logs could prevent tracking unauthorized access changes. | Without proper logging, changes made to the consensus process might not be traceable. | Untraceable transactions due to poor logging could lead to repudiation of actions. | Without proper audit logs, unauthorized modifications in RocksDB might go unnoticed. | Clients could deny performing actions if actions are not properly logged.    | Lack of auditing can make it difficult to trace unauthorized changes in PD. | Lack of traceability for timestamp issuance could enable denial of transaction manipulation. | Failure to log TLS configuration changes could allow unauthorized alterations to go unnoticed. | Rust's safety features reduce the likelihood of untraceable changes in the codebase. | Failure to log authentication attempts could allow unauthorized activities to be denied. |
-| Information Disclosure            | Unauthorized access could lead to exposure of sensitive data.                  | Insufficient password protection might reveal user credentials.             | Intercepting communications could reveal sensitive replicated data.         | Unencrypted timestamps could reveal transaction times and patterns.          | Vulnerabilities in third-party dependencies could lead to data leaks.        | Compromised clients could leak sensitive data stored in TiKV.               | Gaining access to PD can reveal critical metadata about data distribution.    | Access to timestamping information could expose transaction patterns and timings. | Compromised TLS can lead to exposure of data in transit between nodes.      | | |
-| Denial of Service                  | Overloading access control mechanisms could lead to service disruptions.       | Repeated password attempts or protocol abuse could disrupt service.          | Disrupting the consensus process can lead to denial of service.             | Conflicts or faulty timestamping can lead to transaction processing delays.  | Exploiting RocksDB vulnerabilities could slow down or halt data operations.   | Overloading clients or exploiting vulnerabilities can disrupt their interaction with TiKV. | Overloading or disrupting PD can significantly impact data availability and cluster operations. | Overloading the Timestamp Oracle can delay or prevent timestamp issuance, disrupting transactions. | Disrupting TLS can block or slow down secure communication, affecting service availability. | | |
-| Elevation of Privilege             | Gaining unauthorized access could lead to elevated privileges within the system. | Accessing accounts with higher privileges could lead to control over critical functions. | An attacker could gain control over data flow and decision-making by becoming a malicious leader. | Altering timestamps could grant unauthorized data access or modifications.    | Exploiting vulnerabilities could lead to unauthorized access or control over data storage. | Accessing elevated privileges through client exploitation can lead to broader system compromise. | Controlling PD could grant significant control over the cluster’s operational aspects. | Manipulating the timestamping process could give undue advantage or access to certain transactions. | Compromised TLS could be exploited to gain access to encrypted communications, leading to privileged information access. | Exploiting rare vulnerabilities in Rust could lead to unauthorized system access. | |
 
 
+### Please refer to TiKV's STRIDE Thread Model following this [link](tikv-threat-model.md)
 
-## Questions about potential vulnerabilities
-
-**Potential vulnerabilities in Key-Value Database Systems:**
-
-* Are there proper access controls that restrict unauthorized access to TiKV nodes and Placement Drivers by potentially malicious clients?
-* How safe are password protection methods (two-factor authentication)?
-
-**Potential vulnerabilities related to the Raft Consensus Algorithm:**
-
-* Are there proper integrity checks in place as the Leader Node is copying the client’s read/writes to the follower nodes?
-* Raft Consensus Algorithm could potentially be exploited via a Byzantine-control attack. If a malicious node is voted as leader, what does TiKV do to protect the rest of the Raft group?
-
-**Potential vulnerabilities related to Multiversion Concurrency Control (MVCC) used in TiKV:**
-
-* Is there any way to tamper with the timestamps in TiKV transactions?
-  - Transaction timestamps are stored in the metadata associated with each key-value pair
-  - If there is a conflict, i.e. two transactions trying to write to modify the same key, then only one transaction can be completed successfully, while others have to be retried.
-  - To prevent conflicts, TiKV uses locks to control key access.
-  - In theory, these timestamps are **not** encrypted, so the security of TiKV is contingent upon the security measures implemented at higher and lower levels (higher – Application level; lower – RocksDB)
-
-**Potential vulnerabilities related to RocksDB, TiKV’s storage engine:**
-* RocksDB may have vulnerable third-party dependencies, so if RocksDB has them, so does TiKV potentially.
-* RocksDB does not support Data-at-Rest encryption (DARE), so does this affect the layers above?
-* In fact, RocksDB does not have any built-in encryption features...
-
-**Potential vulnerabilities related to TiKV clients:**
-* A compromised client could potentially get unencrypted access, which would be made even worse due to an unencrypted disk?
-
-**Potential vulnerabilities related to Placement Driver:**
-* Placement Driver is responsible for storing all the metadata. If you control the Placement Driver could you affect availability or shut down the entire system?
-* How vulnerable is the placement driver?
-
-**Potential vulnerabilities related to Timestamp Oracle:**
-* How can the Timestamp Oracle meet excessive demand without scaling to multiple nodes (in large projects)
-* Timestamp Oracle is unable to be scaled up to multiple nodes
-* When the current Raft leader fails, there is a gap wherein the system cannot allocate a timestamp before a new leader has been elected. Can an attacker exploit this?
 
 ## Suggested action items
 
