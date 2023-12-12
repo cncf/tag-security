@@ -263,8 +263,7 @@ Rook automates deployment and management of Ceph to provide self-managing, self-
 
 ## Self-assessment use
 
-This self-assessment is created by David Hauss, Nikhita Dhenuvakonda, and Gayatri Tyagi with input from the Rook team in order to perform an internal analysis of the
-project's security.  It is not intended to provide a security audit of Rook, or
+This self-assessment is not intended to provide a security audit of Rook, or
 function as an independent assessment or attestation of Rook's security health.
 
 This document serves to provide Rook users with an initial understanding of
@@ -275,7 +274,7 @@ Rook as well as security of Rook.
 This document provides the CNCF TAG-Security with an initial understanding of Rook
 to assist in a joint-assessment, necessary for projects under incubation.  Taken
 together, this document and the joint-assessment serve as a cornerstone for if and when
-Rook seeks graduation and is preparing for a security audit.
+Rook is preparing for a security audit.
 
 ## Security functions and features
 
