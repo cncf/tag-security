@@ -5,6 +5,7 @@ This document evaluates the design goals for the CoreDNS CNCF project and provid
 ## Table of contents
 
 * [Metadata](#metadata)
+  * [Documentation](#documentation)
   * [Security links](#security-links)
 * [Overview](#overview)
   * [Actors](#actors)
@@ -28,12 +29,18 @@ This document evaluates the design goals for the CoreDNS CNCF project and provid
 | Languages | Golang |
 | SBOM | CoreDS does not generate an SBOM at build time |
 
+### Documentation
+
+| Document | UR |
+| -- | -- |
+| CoreDNS Manual | [Manual](https://coredns.io/manual/toc/) |
+| CoreDNS Plugin Documentation | [Documentation](https://coredns.io/plugins/) |
+
 ### Security links
 
 | Document | URL |
 | -- | -- |
 | CoreDNS Security Policy | [SECURITY.md](https://github.com/coredns/coredns/security) |
-| CoreDNS Manual | [Manual](https://coredns.io/manual/toc/) | 
 | Core53 Audit | [Report](https://coredns.io/assets/DNS-01-report.pdf) |
 | Trail of Bits Audit | [Report](https://github.com/trailofbits/publications/blob/master/reviews/CoreDNS.pdf) |
 
@@ -55,13 +62,18 @@ CoreDNS's plugin-driven architecture empowers users to customize their DNS infra
 2. **CoreDNS Plugins** - Each plugin performs a DNS function, executing isolated custom behavior.
 
 ### Actions
-* Create DNS servers to handle DNS queries and tasks for other services running in a network.
-* Process DNS queries sent by clients such as web browsers, terminal utilities, etc. These queries can be sent over UDP, TCP, or gRPC. DNS over HTTPS (DoH) or DNS over TLS (DoT) can also be used.
-* Return DNS Replies after a plugin chain processes a DNS query, CoreDNS sends an appropriate DNS reply back to the client.
-* Logs queries, response, and error messages.
-* Collect operational metrics. The Prometheus plugin can be used to export operational metrics.
-* Handle and process secrets such as private keys and credentials for the cloud services.
-* Integrate plugins for additional functionality for DNS servers. For instance, plugins can make API calls and make calls to cloud services. Certain plugins can also receive API requests from clients via HTTP. These can send back responses outside of typical DNS data flow, eg: the health plugin can requested by a client to provide the health status of the server. 
+1. Creates DNS servers to handle DNS queries and tasks for other services running in a network.
+2. Integrates [plugins](https://coredns.io/plugins/) mainted by CoreDNS and [external plugins](https://coredns.io/explugins/) to provide additional functionality for DNS servers, e.g. 
+    * The _health_ plugin can requested by a client to provide the health status of the server
+    * The _dnssec_ plugin enables on-the-fly DNSSEC signing of zone data
+    * The _loadbalance_ plugin adds a round-robin DNS load balancer by randomizing the order of A, AAAA, and MX records.
+    * THe _log_ plugin implements query logging to the standard output.
+    * The _prometheus_ plugin enables collection and exports of operational metrics from the [Prometheus Go client](https://prometheus.io/docs/guides/go-application/).
+3. Processes DNS queries sent by clients such as web browsers, terminal utilities, etc.
+    * These queries can be sent over UDP, TCP, or gRPC.
+    * DNS over HTTPS (DoH) or DNS over TLS (DoT) can also be used.
+4. After a plugin chain processes a DNS query, CoreDNS sends an appropriate DNS reply back to the client.
+5. Handles and process secrets such as private keys and credentials for the cloud services.
 
 ### Goals
 * Primary Functionality
