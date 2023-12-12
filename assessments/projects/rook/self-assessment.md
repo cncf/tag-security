@@ -263,7 +263,7 @@ Rook automates deployment and management of Ceph to provide self-managing, self-
 
 ## Self-assessment use
 
-This self-assessment is created by the Rook team to perform an internal analysis of the
+This self-assessment is created by David Hauss, Nikhita Dhenuvakonda, and Gayatri Tyagi with input from the Rook team in order to perform an internal analysis of the
 project's security.  It is not intended to provide a security audit of Rook, or
 function as an independent assessment or attestation of Rook's security health.
 
