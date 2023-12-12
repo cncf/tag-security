@@ -160,16 +160,11 @@ This document provides the CNCF TAG-Security with an initial understanding of ES
 * Role-Based Access Control (RBAC) Configuration: Determines what resources within Kubernetes the ESO can access, significantly affecting the isolation and security of the secrets.
 * Network Policies: Governs the network traffic to and from ESO, relevant for preventing unauthorized network access.
 
-### [Threat Modeling with STRIDE](#external-secrets-operator-threat-modeling)
-
 ## Project Compliance
 
 * Compliance - No specific compliance certifications or adherence to standards like PCI-DSS, COBIT, ISO, or GDPR have been documented. 
 
 ## Secure Development Practices
-
-ESO has achieved a "passing" Open Source Security Foundation (OpenSSF) best practices badge
-[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/5947/badge)](https://www.bestpractices.dev/projects/5947). The project is working on receiving a silver badge and is in the process of meeting the criteria for it.
 
 ### Development Pipeline
 
@@ -203,7 +198,7 @@ ESO has achieved a "passing" Open Source Security Foundation (OpenSSF) best prac
     * [Github Issues](https://github.com/external-secrets/external-secrets/issues)
     * [Github Discussions](https://github.com/external-secrets/external-secrets/discussions)
     * [Contributing Process](https://external-secrets.io/latest/contributing/process/)
-    * Contact Email: contact@external-secrets.io
+    * Contact Email: cncf-externalsecretsop-maintainers@lists.cncf.io
   * Outbound:
     * [Twitter](https://twitter.com/ExtSecretsOptr)
 
@@ -215,7 +210,7 @@ ESO has achieved a "passing" Open Source Security Foundation (OpenSSF) best prac
 ESO's security policy can be found in [SECURITY.md](https://github.com/external-secrets/external-secrets/blob/main/SECURITY.md).
 
 ### Responsible Disclosures Process
-* ESO specifies that any security vulnerability found should be sent as a confidential email to contact@external-secrets.io and not be reported as an Issue.
+* ESO specifies that any security vulnerability found should be sent as a confidential email to cncf-externalsecretsop-maintainers@lists.cncf.io and not be reported as an Issue.
 ### Vulnerability Management Plans
 * ESO uses Github Security Alerts and Dependabot Dependency Updates to learn about critical software updates and security threats.
 ### Vulnerability Response Process
@@ -239,11 +234,9 @@ ESO's security policy can be found in [SECURITY.md](https://github.com/external-
 *  ESO has achieved a "passing" Open Source Security Foundation (OpenSSF) best practices badge [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/5947/badge)](https://www.bestpractices.dev/projects/5947). The project is working on receiving a silver badge and is in the process of meeting the criteria for it.
 
 ### Case Studies
-The project is still in sandbox and hasn’t recorded any specific case studies publicly. This data can be acquired from project maintainers during Part 2.
+ESO provides a list of its official adopters in [Adopters.md](https://github.com/external-secrets/external-secrets/blob/main/ADOPTERS.md).
 
-ESO does provide a list of its official adopters in [Adopters.md](https://github.com/external-secrets/external-secrets/blob/main/ADOPTERS.md).
-
-A few general use cases are available below:
+A few general use cases are available below followed by a case study:
 
 * Use Case 1: Managing secrets for multiple environments
 
@@ -257,7 +250,7 @@ A few general use cases are available below:
 
   A company may use multiple sources for their secrets, such as AWS Secrets Manager, HashiCorp Vault, and a custom secrets store. ESO can be used to access secrets from all of these sources. ESO can be configured to use different secret providers for different types of secrets. For example, ESO could be configured to use AWS Secrets Manager for database credentials and HashiCorp Vault for API keys.
 
-* Use Case 4: Seamlessly distributing secrets in multiple labelled namespaces
+* Case Study 1: Seamlessly distributing secrets in multiple labelled namespaces
 
   Open-source SAP uses ESO in its current offering for tools that use their new [OCM](https://ocm.software) specification to deliver software to various environments securely. The tools uses ESO in the following configuration: There are things called `Project`s that represent a single Namespace. This namespace further contains multiple items (read more [here](https://github.com/open-component-model/MPAS/tree/a9cfdd59d9819148022a0678b94c60839c632aaa/docs/concepts)). The namespace has a label such as `mpas.ocm.system/project`. These namespaces need access to certain things, for example, fetching components, images, etc. These secrets are provided by an operator defining a ClusterSecretStore. This ClusterSecretStore is restricted to work in a few namespaces only. To avoid having to manually repeate certain secrets to all namespaces all the time, this ClusterSecretStore is referenced by further ClusterExternalSecrets that are replicating secrets into these namespaces ( also using the label to identify `Project`s ). OCM's custom controllers then pick these secrets up ( also specially labelled by ExternalSecrets ) and add them to a Project ServiceAccount that is used to gather credentials. A sample project and a demo can be found here: [mpas-public-demo](https://github.com/open-component-model/mpas-public-demo).
 
@@ -268,104 +261,7 @@ A few general use cases are available below:
 
 ### External Secrets Operator Threat Modeling
 
-ESO already has a threat-model documented at [threat-model](https://external-secrets.io/latest/guides/threat-model/).
+ESO has a threat-model documented at [threat-model](https://external-secrets.io/latest/guides/threat-model/).
 
-A seperate threat modeling using STRIDE is provided below:
+A seperate threat modeling using STRIDE is provided [here](docs/stride-threat-model.md)
 
-#### Spoofing
-
-##### Threat-01-S - Spoofing of External Secrets Operator
-A malicious actor might attempt to impersonate the External System Operator (ESO) to illicitly access confidential information stored in external systems.
-
-##### Threat-01-S Recommended Mitigations
-* Implementing mutual TLS (Transport Layer Security) ensures that both the ESO and the external secret management system authenticate each other.
-* Using robust authentication mechanisms, like using API tokens or OAuth, further secure the connection, preventing impersonation.
-
-##### Threat-02-S - Spoofing of External Secrets
-The risk of the External Secrets Operator (ESO) interacting with a fake external secret store represents a significant security threat. In such a scenario, an attacker could set up a counterfeit secret management service, mimicking legitimate services like AWS Secrets Manager or HashiCorp Vault. If ESO is deceived into connecting with this fraudulent service, it could lead to several security breaches, including the leakage of sensitive information, injection of false secrets, or disruption of secret synchronization processes.
-
-##### Threat-02-S Recommended Mitigations
-* Certificate Verification: Implement strict SSL/TLS certificate verification for all external secret stores. This ensures that ESO establishes connections only with authenticated and validated services.
-* Endpoint Validation: Configure ESO to connect only to known and verified endpoints of secret stores, possibly using allowlists for trusted URLs and IP addresses.
-* Regular Auditing: Periodically audit and verify the configurations and connections of ESO to external services to detect any anomalies or changes that could indicate a security breach.
-
-#### Tampering
-
-##### Threat-03-T - Supply Chain Attacks
-An attack can infiltrate the ESO container through various attack vectors. The following are some potential entry points, although this is not an exhaustive list:
-* Source Threats: Unauthorized changes or inclusion of vulnerable code in ESO through code submissions.
-* Build Threats: Creation and distribution of malicious builds of ESO, such as in container registries, Artifact Hub, or Operator Hub.
-* Dependency Threats: Introduction of vulnerable code into ESO dependencies.
-* Deployment and Runtime Threats: Injection of malicious code through compromised deployment processes.
-
-##### Threat-03-T Recommended Mitigations
-* CI/CD Security: Secure the Continuous Integration and Continuous Deployment (CI/CD) pipeline with tools that scan for vulnerabilities and unauthorized changes.
-* Dependency Management: Regularly scan and update dependencies to prevent vulnerabilities and use trusted sources for dependencies.
-* Container Image Security: Utilize signed and verified container images, and scan these images for vulnerabilities.
-
-##### Threat-04-T - Tampering with ESO configuration files
-The threat of tampering with External Secrets Operator (ESO) configuration files involves unauthorized modifications to the ESO's settings, which can lead to security breaches or malfunctioning of the system.
-
-##### Threat-04-T Recommended Mitigations
-* File Integrity Monitoring: Implement a system that continuously monitors the ESO configuration files for unauthorized changes. This tool alerts administrators whenever a file is altered, enabling quick detection and response to tampering.
-* Access Controls: Restrict access to ESO configuration files using robust access control mechanisms. Ensure that only authorized personnel have the necessary permissions to modify these files, and enforce multi-factor authentication for added security.
-
-#### Repudiation
-
-##### Threat-05-R - Unauthorized Modification Denial
-An unauthorized user might modify a secret and subsequently deny their involvement.
-
-##### Threat-05-R Recommended Mitigations
-* Implement a robust logging system that captures every interaction with the secrets, including access and modifications. The logs should record user identities, timestamps, and specific changes made to the secrets.
-* Use digital signatures or similar mechanisms to ensure the integrity and non-repudiation of the log entries.
-* Regular audits of these logs can help in quickly identifying and addressing unauthorized changes, thus holding users accountable for their actions.
-
-##### Threat-06-R - Disputing Synchronization
-There could be discrepancies or disputes regarding when a secret was synchronized from the external store to Kubernetes.
-
-##### Threat-06-R Recommended Mitigations
-* Maintaining detailed logs with precise timestamps for each synchronization event helps resolve these disputes. These logs should capture when the ESO checks for updates in external secret stores, when it retrieves updates, and when it synchronizes them to Kubernetes Secrets.
-* Timestamps in these logs provide clear and indisputable evidence of the timing of each synchronization, aiding in resolving any disputes or confusion over the timing of updates.
-
-#### Information Disclosure
-
-##### Threat-07-I - Unauthorized access to cluster secrets
-An attacker can gain unauthorized access to secrets by utilizing the service account token of the ESO core controller Pod or exploiting software vulnerabilities. This unauthorized access allows the attacker to read secrets within the cluster, potentially leading to a cluster takeover.
-
-##### Threat-07-I Recommended Mitigations
-* Service Account Security: Secure the service account associated with the ESO core controller Pod. Implement minimal permissions (principle of least privilege) and regularly audit these permissions.
-* Vulnerability Management: Regularly update and patch ESO to address known vulnerabilities. Use vulnerability scanning tools to proactively identify and mitigate potential weaknesses.
-* Network Policies and Pod Security: Implement stringent network policies and pod security measures to restrict and control the communication to and from the ESO core controller Pod.
-
-#### Denial of Service (DoS)
-
-##### Threat-08-D - Webhook DOS
-Currently, ESO generates an X.509 certificate for webhook registration without authenticating the kube-apiserver. Consequently, if an attacker gains network access to the webhook Pod, they can overload the webhook server and initiate a DoS attack. As a result, modifications to ESO resources may fail, and the ESO core controller may be impacted due to the unavailability of the conversion webhook.
-
-##### Threat-08-D Recommended Mitigations
-* Authenticate the kube-apiserver: Ensure that the communication between ESO's webhook and the kube-apiserver is authenticated, preventing unauthorized entities from interacting with the webhook.
-* Implement Rate Limiting: Introduce rate limiting on the webhook to prevent it from being overwhelmed by excessive requests.
-* Network Security: Strengthen network security policies to restrict access to the webhook Pod, ensuring that only authorized traffic can reach it.
-
-##### Threat-09-D - Man-in-the-Middle (MITM) attack
-An adversary could launch a Man-in-the-Middle (MITM) attack to hijack the webhook pod, enabling them to manipulate the data of the conversion webhook. This could involve injecting malicious resources or causing a Denial-of-Service (DoS) attack.
-
-##### Threat-09-D Recommended Mitigations
-To mitigate this threat, a mutual authentication mechanism should be enforced for the connection between the Kubernetes API server and the webhook service to ensure that only authenticated endpoints can communicate.
-
-#### Elevation of Privilege
-
-##### Threat-10-E - Exploiting Vulnerabilities for Higher Privileges:
-Attackers might identify and exploit existing vulnerabilities in the External Secrets Operator (ESO) or the Kubernetes environment. These vulnerabilities could range from software bugs to insecure configurations, allowing attackers to gain unauthorized access or control.
-
-##### Threat-10-E Recommended Mitigations
-* Perform regular updates and apply patches to both ESO and Kubernetes, addressing known security issues.
-* Continuously monitor for new vulnerabilities and apply security patches as soon as they are released.
-
-##### Threat-11-E -  Insufficiently Restricted User Roles
-In this scenario, users or attackers exploit overly permissive or poorly configured RBAC (Role-Based Access Control) policies in Kubernetes. This can lead to unauthorized access elevation, potentially giving attackers control over sensitive operations or data.
-
-##### Threat-11-E Recommended Mitigations
-* Implement and enforce strict RBAC policies, ensuring each role is granted only the minimum necessary permissions.
-* Regularly review and audit RBAC configurations to detect and correct any excess permissions, ensuring they align with the principle of least privilege.
-* Document security best practices for administrators and users on the importance of secure role configuration and management.
