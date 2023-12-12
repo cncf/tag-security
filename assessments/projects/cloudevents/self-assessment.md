@@ -8,8 +8,10 @@ Authors: Igor Rodrigues (@Igor8mr), Matthew Gong (@MatthewZGong), Kushal Kothari
 Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV), Doug Davis (@duglin),
 Eddie Knight (@eddie-knight) and Ragashree (@ragashreeshekar).
 
-This document was written in collaboration with the CloudEvents team to elaborate on and explores the design goals for
-[CloudEvents](https://cloudevents.io/) through a limited security assessment of the software.
+This document was written in collaboration with the CloudEvents team to
+elaborate on and explore the design goals for
+[CloudEvents](https://cloudevents.io/) through a limited security assessment of
+the software.
 
 ## Table of contents
 
@@ -62,7 +64,7 @@ This document was written in collaboration with the CloudEvents team to elaborat
   * [CII Best Practices](#cii-best-practices)
   * [Case Studies](#case-studies)
   * [Related Projects and Vendors](#related-projects-and-vendors)
-* [References](#references)
+  * [References](#references)
 
 ## Metadata
 
@@ -1047,7 +1049,7 @@ restricted to computer science, making it different from the other examples.
 However, it is an example of event specification being widely used in industry,
 including more physical areas such as mechanical engineering and factories.
 
-## References
+### References
 
 * [CloudEvents Website](https://cloudevents.io/)
 * [CloudEvents GitHub](https://github.com/cloudevents)
