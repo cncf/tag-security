@@ -75,7 +75,7 @@ document](CE-maintainers-communications.md).
 | Security Provider | CloudEvents is not a security provider  |
 | CloudEvents Specification Language | Markdown |
 | CloudEvents SDK Languages | Python, C#/.NET, Go, Java, Javascript, PHP, PowerShell, Ruby and Rust |
-| SBOM | CloudEvents does not have a public SBOM available |
+| SBOM | CloudEvents does not generate an SBOM at build time |
 | Technical Documents | [CloudEvents Documents](https://github.com/cloudevents/spec#cloudevents-documents) |
 | | |
 
