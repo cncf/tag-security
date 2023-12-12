@@ -26,6 +26,7 @@ This document evaluates the design goals for the CoreDNS CNCF project and provid
 | Software | [CoreDNS](https://github.com/coredns/coredns) |
 | Security Provider | No |
 | Languages | Golang |
+| SBOM | CoreDS does not generate an SBOM at build time |
 
 ### Security links
 
