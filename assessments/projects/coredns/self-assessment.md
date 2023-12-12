@@ -50,9 +50,9 @@ CoreDNS was developed to address the limitations of traditional DNS solutions in
 CoreDNS's plugin-driven architecture empowers users to customize their DNS infrastructure to meet specific requirements, making it adaptable for a wide range of use cases, such as serving as a DNS server, forwarding DNS requests, or implementing advanced features. This adaptability positions CoreDNS as a critical component in cloud-native environments where dynamic service discovery and communication are essential.
 
 ### Actors
-**CoreDNS Server**
-* On startup, CoreDNS runs servers, each defined by the zones and ports it serves. Each server contains a list of plugins and manages its own plugin chain that defines how a query is processed.
-* Plugins are considered to be server components and not individual actors since a vulnerability in a plugin would compromise the server.
+
+1. **CoreDNS Server** - Servers are run on startup, each defined by the zones and ports it serves. Each server contains a list of plugins and manages its own plugin chain that defines how a query is processed.
+2. **CoreDNS Plugins** - Each plugin performs a DNS function, executing isolated custom behavior.
 
 ### Actions
 * Create DNS servers to handle DNS queries and tasks for other services running in a network.
