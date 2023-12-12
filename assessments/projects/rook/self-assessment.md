@@ -193,8 +193,6 @@ The Ceph operator also runs an object store bucket provisioner which can grant a
 * [storageclass-bucket-retain.yaml](https://github.com/rook/rook/blob/master/deploy/examples/storageclass-bucket-retain.yaml) Creates a new StorageClass which defines the Ceph Object Store and retains the bucket after the initiating OBC is deleted.
 * [storageclass-bucket-delete.yaml](https://github.com/rook/rook/blob/master/deploy/examples/storageclass-bucket-delete.yaml) Creates a new StorageClass which defines the Ceph Object Store and deletes the bucket after the initiating OBC is deleted.
 
-##### Actors
-
 * Rook Operator
 * Ceph CSI Drivers
 * Ceph Daemons
