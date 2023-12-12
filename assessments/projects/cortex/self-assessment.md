@@ -254,6 +254,3 @@ Comparing Cortex with similar projects like Thanos reveals key differences:
 - **Thanos:** A CNCF Incubating project known for its highly available Prometheus setup with long-term storage capabilities.
 - **Cortex:** Distinguished by its horizontally scalable architecture, high availability, multi-tenant support, and focus on long-term storage for Prometheus
 
-## Action Items
-- Suggested to create SBOM(Software Bill of Materials) for Cortex project: [Issue](https://github.com/cortexproject/cortex/issues/5692)
-
