@@ -1,6 +1,6 @@
 # CloudEvents self-assessment
 
-September 26, 2023
+November 26, 2023
 
 Authors: Igor Rodrigues (@Igor8mr), Matthew Gong (@MatthewZGong), Kushal Kothari
 (@Kushal-kothari) and Devyani Bairagya (@devyani-14).
@@ -51,7 +51,6 @@ the software.
   * [Case Studies](#case-studies)
   * [Related Projects and Vendors](#related-projects-and-vendors)
   * [References](#references)
-
 
 ## Metadata
 
@@ -488,6 +487,18 @@ CloudEvents has many
 * VMware Event Broker Appliance
 
 ## Security Issue Resolution
+
+CloudEvents currently addresses the reporting of security issues and the
+responsible parties for triaging and issuing security patches through documented
+processes, such as [how to report issues](#responsible-disclosures-process) and
+[who should triage and solve them](#vulnerability-response-process). The
+CloudEvents specification does not have centralized documentation of the
+Vulnerability and Issue Response Processes; instead, these processes are
+currently distributed across different documents, such as the [SDK
+Governance](https://github.com/cloudevents/spec/blob/main/docs/SDK-GOVERNANCE.md#ensuring-projects-health)
+and
+[Contributing](https://github.com/cloudevents/spec/blob/main/docs/CONTRIBUTING.md#reporting-an-issue)
+documents.
 
 ### CloudEvents Specification
 
