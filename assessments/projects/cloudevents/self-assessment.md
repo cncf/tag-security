@@ -8,10 +8,13 @@ Authors: Igor Rodrigues (@Igor8mr), Matthew Gong (@MatthewZGong), Kushal Kothari
 Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV), Doug Davis (@duglin),
 Eddie Knight (@eddie-knight) and Ragashree (@ragashreeshekar).
 
-This document was written in collaboration with the CloudEvents team to
-elaborate on and explore the design goals for
-[CloudEvents](https://cloudevents.io/) through a limited security assessment of
-the software.
+This document was written to elaborate on and explore the design goals of
+CloudEvents through a limited security assessment of the software in
+collaboration with the project maintainer team. The information contained in
+this assessment was extracted from the [CloudEvents GitHub
+Repository](https://github.com/cloudevents/spec), and other channels maintained
+by the project, such as its [website](https://cloudevents.io/) and [Slack
+workspace](http://slack.cncf.io/).
 
 ## Table of contents
 
@@ -254,10 +257,19 @@ CloudEvents](https://github.com/cloudevents/spec/blob/main/cloudevents/primer.md
 
 ## Self-assessment use
 
-This self-assessment is created by the CloudEvents team to perform an internal
-analysis of the project's security. It is not intended to provide a security
-audit of CloudEvents, or function as an independent assessment or attestation of
-CloudEvents's security health.
+This security assessment was created by [Igor
+Rodrigues](https://github.com/Igor8mr), [Matthew
+Gong](https://github.com/MatthewZGong), [Kushal
+Kothari](https://github.com/Kushal-kothari), and [Devyani
+Bairagya](https://github.com/devyani-14) to perform an internal analysis of the
+CloudEvents project. The document was also reviewed by CloudEvents maintainers
+and members of the [CNCF Security Technical Advisory Group
+(TAG)](https://github.com/cncf/tag-security). It is meant to provide a current
+summary of the project and its security-related aspects. It is not intended to
+provide a security audit of CloudEvents, or function as an independent
+assessment or attestation of CloudEvents's security health. For the latest state
+of the project please check the [CloudEvents GitHub
+repository](https://github.com/cloudevents/spec).
 
 This document serves to provide CloudEvents users with an initial understanding
 of CloudEvents's security, where to find existing security documentation,
