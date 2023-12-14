@@ -226,24 +226,9 @@ To contribute to TiKV, bug fixes or documentation improvements can be made throu
 
 ***Known Issues Over Time***
 
-* **Outdated Library Versions**: Some libraries used in TiKV were outdated and not actively maintained, posing a security risk. This issue highlighted the need for better patch management and attention to third-party dependencies.
-* **Database Encryption**: While the TiKV database encryption was evaluated, it was found to be using a basic XOR method, not yet production-ready. However, according to PingCAP, it provides information about the encryption support in TiDB components. In TiKV, it supports encryption at rest, and it allows TiKV to transparently encrypt data files using AES or SM4 in CTR mode.  
-* **Codebase TODOs**: A large number of TODO blocks in the TiKV source code indicated incomplete functionalities, requiring further evaluation and integration to the project’s issue tracker. 
-* **Fuzz Testing**: The implemented fuzzing tests were not properly run or evaluated at the time of the assessment, signaling a need for improvement in this area.
-* **Dependency Scanner Disabled**: The integrated dependency scanner was disabled due to a non-updated dependency, leading to potential security risks from unmonitored dependencies.
-* **Lack of Bug Bounty Program**: While not a direct issue, a 2020 security audit suggested that implementing a bug bounty program could be beneficial for TiKV.
-* **High Apply Wait Tail Latency**: There was an issue with high latency in the apply wait tail, affecting performance.
-* **Performance regression**: A specific commit caused a 3-5% performance regression under certain workloads.
-* **False Positive in Slow Score**: This issue prevented the adoption of TiKV in production environments due to false positives in slow score measurement.
-* **Inconsistent Store Size After Enabling Titan**: Store size did not stabilize after enabling the Titan component.
-* **SST Importer Cleaning Requirement**: The SST Importer needed to clean the SST if no key-value needed to be saved and rewritten.
-* **CPU Usage of Snapshot-Worker Thread**: An enhancement was requested to reduce the CPU usage of this thread to prevent it from blocking scheduling.
-* **Slow Store Check Leader**: This bug potentially affected the ability of a store to advance resolve_ts.
-* **Titan Configuration Tuning**: This was listed as an enhancement issue to optimize the configuration of the Titan engine.
-* **Different Store Size Among Nodes After Enabling Titan**: There were issues with varying store sizes among TiKV nodes after Titan was enabled.
-* **TiKV Out of Memory (OOM)**: There were reported instances of TiKV running out of memory.
-* **Not All TiKV Clients Offer The Same Encryption**: According to TiKV's Security Configuration page, the TiKV Java Client does not currently support TLS. 
+All TiKV security related ongoing and fixed issues can be browsed through the various labels they use for categorizing issues to find ones that might pertain to security. You can access and search for these issues using the labels in the TiKV GitHub repository. Here's the link to the TiKV GitHub Labels page: TiKV GitHub Labels e.g. issues labeled with “security” can be queried using https://github.com/tikv/tikv/labels?q=security. 
 
+The review process involves making changes for adherence to code quality and performance with the project's standards by community members and maintainers. For more details, see their development guide. 
 
 ***CII Best Practices***
 
