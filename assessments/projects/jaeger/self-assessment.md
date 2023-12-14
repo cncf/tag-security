@@ -33,6 +33,7 @@
 | Doc | url |
 | -- | -- |
 | Security file | [SECURITY.md](https://github.com/jaegertracing/jaeger/blob/main/SECURITY.md) |
+| Reporting Security Issues | [Jaeger website – Reporting Security Issues](https://www.jaegertracing.io/report-security-issue/) |
 | Default and optional configs | [Securing Jaeger installation](https://www.jaegertracing.io/docs/1.51/security/) |
 
 ## Overview
@@ -53,14 +54,12 @@ With its dashboard UI, users are able to make complex queries and gather insight
 The following are the different actors found in the Jaeger project:
 
  I. OpenTelemetry SDK
-
- II. Deprecated [Jaeger agent](https://github.com/jaegertracing/jaeger/issues/4739) (NOT REQUIRED)
  
- III. The Jaeger Collector
+ II. The Jaeger Collector
  
- IV. Jaeger Query
+ III. Jaeger Query
  
- V. Jaeger Ingester
+ IV. Jaeger Ingester
 
 
 [Architecture as displayed on the Jaeger website](https://www.jaegertracing.io/docs/1.51/architecture/)
@@ -69,10 +68,6 @@ The following are the different actors found in the Jaeger project:
 #### Tracing/ OpenTelemetry SDK
 
 A Tracing or OpenTelemetry’s SDK downloaded on the client or host is used to generate tracing data. An “instrumented application” (ex. OpenTelemetry API) creates spans when receiving a request and attaches context info (trace id, span id, and baggage). Only Ids and baggage are propagated. Other info sent to Jaeger backend asynchronously (Jaeger SDK)
-
-#### Deprecated [Jaeger Agent](https://github.com/jaegertracing/jaeger/issues/4739) (NOT REQUIRED)
-
-The Jaeger Agent is a deprecated network daemon used for listening for spans sent over UDP.
 
 #### Jaeger Collector
 
@@ -157,6 +152,12 @@ Sampling Strategies: To control the amount of trace data that is gathered and ke
 
 ## Self-assessment use
 
+Contributing Authors: Cristian Panaro, Jia Lin Weng, Sameer Gori, Sarah Moughal
+
+Contributing Project Maintainers: Yuri Shkuro, Jonah Kowall
+
+Contributing Reviewers: Ragashree Shekar, Eddie Knight
+
 This self-assessment is created by the Jaeger team to perform an internal analysis of the
 project's security.  It is not intended to provide a security audit of Jaeger, or
 function as an independent assessment or attestation of Jaeger's security health.
@@ -198,48 +199,36 @@ Jaeger seeks graduation and is preparing for a security audit.
 
 ## Project compliance
 
-* Compliance.  List any security standards or sub-sections the project is
-  already documented as meeting (PCI-DSS, COBIT, ISO, GDPR, etc.).
-
 Jaeger does not currently document meeting particular compliance standards.
 
 ## Secure development practices
 
 ### Development Pipeline.  
 
-* To contribute change, an issue must be opened first. The issue should describe:
-  * Requirement: what use case is being solved
-  * Problem: what is missing from Jaeger to solve the requirement
-  * Proposal: what changes are going to be made to solve the problem 
-* All packages must have a complementary test to go along with it.
-* After the approach is agreed upon, code changes can be made and a pull request can be opened
-* If one wants to work on an existing issue, they can leave a comment under the issue and submit a pull request
-* Create a new local branch and sign all your commits
-* All dependencies are automatically checked and updated using dependabot
-* Push your changes and look for an output containing an URL to create a pull request
-* Each PR should have a contain:
-  * <50 characters
-  * Capitalized title
-  * Title not end with a period
-  * A description of the problem it’s solving or a reference to the corresponding issue
-  * Summary of what changes were made
-* The pull request will then be reviewed and merged by the maintainer
+Jaeger maintains their code on a public repository. Contributors are asked to follow the [CONTRIBUTING_GUIDELINES.md](https://github.com/jaegertracing/jaeger/blob/main/CONTRIBUTING_GUIDELINES.md). 
+* All commits are required to be signed by contributors. 
+* If a pull request has no activity in 60 days then it will be marked as stale and will be closed in 14 days if nothing is done. 
+* One approving reviewer is required to merge a PR.
 
-https://github.com/jaegertracing/jaeger/blob/main/CONTRIBUTING.md
-https://github.com/jaegertracing/jaeger/blob/main/CONTRIBUTING_GUIDELINES.md
+Jaeger has certain automated [‘workflows’](https://github.com/jaegertracing/jaeger/tree/main/.github/workflows) set up and managed by [GitHub Actions](https://github.com/jaegertracing/jaeger/actions).
 
+These ‘workflows’ incorporate the following elements to maintain project security:
+* Harden-Runner to provide runtime security
+* Dependabot checks and updates dependencies
+* FOSSA -SCA tool checks for software license violations in dependencies
+* OpenSSF scorecard, CodeQl, and OpenSearch to perform various automated security checks
 
 
 ### Communication Channels. 
 
 #### Internal
-* Jaeger maintainers and contributors have a monthly [zoom meeting](https://calendar.google.com/calendar/u/0/embed?src=77a1bva4sn9cm822r8oa03l2j0@group.calendar.google.com) every 3rd thursday at 11am EST.
+* Jaeger maintainers and contributors have a monthly [zoom meeting](https://calendar.google.com/calendar/u/0/embed?src=77a1bva4sn9cm822r8oa03l2j0@group.calendar.google.com) every 3rd thursday at 11am EST. The #jaeger-maintainers channel on the CNCF Slack is for maintainers.
 
 #### Inbound
-* Inbound Users can contact the Jaeger team via email at jaeger-tracing@googlegroups.com, open an issue on GitHub or send a message to the [#jaeger channel on the CNCF Slack](https://cloud-native.slack.com/archives/CGG7NFUJ3).
+* Inbound Users can contact the Jaeger team via email at jaeger-tracing@googlegroups.com, open an issue on GitHub or send a message to the [#jaeger channel on the CNCF Slack](https://cloud-native.slack.com/archives/CGG7NFUJ3). Topics/questions can also be discused on the project's [GitHub Discussions](https://github.com/orgs/jaegertracing/discussions) page or [Stack Overflow](https://stackoverflow.com/questions/tagged/jaeger).
 
 #### Outbound
-* Outbound the Jaeger team communicates with their users on their [website](https://www.jaegertracing.io/) and the [#jaeger channel on the CNCF Slack](https://cloud-native.slack.com/archives/CGG7NFUJ3).
+* Outbound the Jaeger team communicates with their users on their [website](https://www.jaegertracing.io/) and the [#jaeger channel on the CNCF Slack](https://cloud-native.slack.com/archives/CGG7NFUJ3). 
 
 ### Ecosystem. 
 
@@ -268,12 +257,8 @@ Prometheus is a well-liked open-source monitoring and alerting toolkit that can 
 ## Security issue resolution
 
 #### Responsible Disclosures Process. 
-
-Vulnerabilities are shared publicly.
-
-#### Vulnerability Response Process. 
     
-Refer to the [Security docs](https://www.jaegertracing.io/report-security-issue/
+Refer to the [Security docs](https://www.jaegertracing.io/report-security-issue/). 
 
 #### Incident Response. 
 
@@ -310,8 +295,8 @@ https://www.bestpractices.dev/en/projects/1273
 
 **ZipKin** was an earlier open source distributed tracing system which is used to help users monitor and troubleshoot microservice-based architectures. Both Zipkin and Jaeger aim to provide visibility into the flow of requests and responses across various services in a distributed system. While Zipkin has been around longer, Jaeger is known for its scalability to handle tracing in large and complex microservices and displaying those traces on the Web UI. Jaeger also has backward compatibility with Zipkin to help users transition from Zipkin to Jaeger. While Zipkin has been around longer than Jaeger, Jaeger has the benefit of being a part of Cloud Native Computing Foundation(CNCF), supporting containers, kubernetes and OpenTracing. To conclude, the decision between the two comes down to preference, supported languages and whatever is compatible with your existing tech stack.
 
-### Action Items.
+### Actions
 
-Develop addition to Jaeger Query’s Jaeger UI to sanitize keys of objects. Currently json-markup is used and does not sanitize keys leaving the KeyValuesTable vulnerable to XSS.
-Related Security Advisory Link: https://github.com/jaegertracing/jaeger/security/advisories/GHSA-2w8w-qhg4-f78j
+Refer to the 'Actions' document: [actions.md](actions.md)
+
 
