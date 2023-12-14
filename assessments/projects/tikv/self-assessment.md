@@ -202,11 +202,23 @@ In addition, there is a separate infrastructure team, not responsible for the te
 * Positive votes require no explanation, while vetoes (negative votes) must have an explanation. 
 * Required vote counts can vary based on the decision but typically require at least 2 positive votes.
 
-* Internal Communication: Slack 
+**Communication Links**
 
- * Inbound Communication: Twitter, Blog, Reddit, Stack Overflow
+Reporting Issues:
+* GitHub Issues: For reporting problems, suggesting features, or discussing enhancements related to TiKV. TiKV GitHub Issues
 
-* Outbound Communication: None
+Internal:
+* TiKV team members collaborate primarily through Special Interest Groups (SIGs), with details available in their community repository. Team members also communicate with each other through the TiKV Community Slack and discuss TiKV GitHub Issues or TiKV Pull Requests.
+
+Inbound:
+* Users communicate with the team through the TiKV Community Slack or through TiKV GitHub Issues
+
+Outbound:
+* Team members communicate with users through the TiKV Community Slack or through TiKV GitHub Issues, TiKV Pull Requests, Twitter, Stack Overflow
+
+Security Email Group:
+* Security Email: For reporting security vulnerabilities. Email: tikv-security@lists.cncf.io
+
 
 **Ecosystem**
 
