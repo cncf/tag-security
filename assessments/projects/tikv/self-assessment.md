@@ -218,18 +218,7 @@ Finally, TiKV is an essential part of the TiDB ecosystem and helps to make cloud
 
 ## Security issue resolution
 
-***Note:*** When looking for methods of security issue resolution, there was no easily accessible area to discuss each protocol. This could potentially lead to mishaps like major security vulnerabilities being publicly shown as issues
-
-* Bug Fixes or documentation improvement can be implemented via a normal Github Pull Request workload
-* To contribute “substantial changes”, a RFC (request for comments) document provides a consistent and controlled path for new features to enter the project
-  - RFCs must provide summary, motivation, detailed design, drawbacks, alternative, and unanswered questions
-* To report a vital security vulnerability, an email should be sent to the TiKV-security group (tikv-security@lists.cncf.io), and encrypted using the public PGP key
-  - Disclosure Policy:
-    - The received security vulnerability report shall be handed over to the security team for follow-up coordination and repair work.
-    - After the vulnerability is confirmed, a draft Security Advisory will be created on Github that lists the details of the vulnerability.
-    - Invite related personnel to discuss the fix.
-    - Fork the temporary private repository on Github, and collaborate to fix the vulnerability.
-    - After the fixed code is merged into all supported versions, the vulnerability will be publicly posted in the GitHub Advisory Database.
+To contribute to TiKV, bug fixes or documentation improvements can be made through a standard GitHub Pull Request process. For more substantial changes, a Request for Comments (RFC) document is required, outlining the summary, motivation, detailed design, drawbacks, alternatives, and unanswered questions. Security vulnerabilities should be reported to the TiKV-security group via email (tikv-security@lists.cncf.io) using their public PGP key. The security team manages these reports, coordinating repairs and creating a draft Security Advisory on GitHub. Fixes are developed in a private GitHub repository before being merged and publicly posted in the GitHub Advisory Database.
 
 ## Appendix
 
