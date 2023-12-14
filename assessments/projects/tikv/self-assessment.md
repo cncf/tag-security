@@ -207,14 +207,13 @@ In addition, there is a separate infrastructure team, not responsible for the te
 * Outbound Communication: None
 
 **Ecosystem**
-* At the time of writing, there are currently four client drivers: Go, Java, Rust, and C
-  - The Go client is the only stable client
-  - The Java and Rust clients are considered unstable
-  - The C client is currently in early development
+TiKV integrates smoothly into the cloud-native world, embracing scalability, resilience, and openness. TiKV, as part of a cloud-native ecosystem, is intended to be a distributed transactional key-value store that can dynamically adapt to cloud contexts. The adoption of the Raft Consensus Algorithm ensures strong consistency and fault tolerance, making it suitable for distributed storage.
 
-TiKV provides two separate clients: Raw and Transactional
-* ***Raw***: A lower-level key-value API for interacting directly with individual key-value pairs
-* ***Transactional***: A higher level key value API that provides ACID semantics
+TiKV is open standard-compliant and has well-defined APIs for simple integration with many CNCF projects, like gRPC. It is flexible and allows for simple integration with a diverse set of cloud-native technologies, while also supporting a variety of programming languages and machine architectures.
+
+TiKV's distributed and decentralized architecture, along with its strong consistency methods (e.g. MVCC), address data integrity and trust concerns by reducing the possibility of data modification or forgery. This guarantees correct insights from observability and monitoring tools that rely on TiKV, enabling well-informed decision-making in cloud-native applications.
+
+Finally, TiKV is an essential part of the TiDB ecosystem and helps to make cloud-native, distributed, and highly available database solutions possible. TiKV is positioned as a vital and dependable part of cloud-native environments, fulfilling the various needs of contemporary distributed applications thanks to its architecture, scalability, and compatibility with other cloud-native services.
 
 ## Security issue resolution
 
