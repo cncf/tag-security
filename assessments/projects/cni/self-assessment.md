@@ -245,4 +245,4 @@ These case studies provide insights into how CNI is used in practice, emphasizin
         * Is mainly being designed for use with Podman.
 
 ### Threat Modeling
-[See CNI Threat Modeling Document](docs/threat-modeling.md)
+[See the CNI Lightweight Threat Assessment document](docs/lightweight-threat-assessment.md)

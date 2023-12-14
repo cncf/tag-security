@@ -1,8 +1,8 @@
-# CNI Threat Modeling
+# CNI Lightweight Threat Assessment
 
 ## Introduction
 
-This document presents a threat model for the Container Network Interface (CNI) project, aiming to identify potential security threats and propose mitigation strategies.
+This document presents a lightweight threat assessment for the Container Network Interface (CNI) project, aiming to identify potential security threats and propose mitigation strategies.
 
 ## Threat Analysis
 
@@ -24,4 +24,4 @@ This document presents a threat model for the Container Network Interface (CNI) 
 
 ## Conclusion
 
-Ongoing evaluation and updates to this model are necessary to adapt to evolving security threats in the CNI project.
+Ongoing evaluation and updates to this assessment are necessary to adapt to evolving security threats in the CNI project.
