@@ -195,7 +195,7 @@ Logging persistence is considered out of scope. Clients can handle and persist c
 
 ## Self-assessment use
 
-This self-assessment is created by the Containerd team to perform an internal analysis of the project's security.  It is not intended to provide a security audit of Containerd, or function as an independent assessment or attestation of Containerd's security health.
+This self-assessment was authored by Swati Baleri, Vivek Radhakrishnan, Swati Baleri, Sunny Li, and Nathan Smith with a format established by the Containerd maintainers. The purpose of this document is to perform an internal analysis of the project's security.  It is not intended to provide a security audit of Containerd, or function as an independent assessment or attestation of Containerd's security health.
 
 This document serves to provide Containerd users with an initial understanding of Containerd's security, where to find existing security documentation, Containerd plans for security, and general overview of Containerd security practices, both for development of Containerd as well as security of Containerd.
 
