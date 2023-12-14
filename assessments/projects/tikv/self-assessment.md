@@ -185,7 +185,7 @@ Although TiKV does not provide explicit documentation regarding its compliance w
 
 ## Secure development practices
 
-For testing, TiKV uses regression tests, performance tests, ChaosMesh, and models their algorithms utilizing TLA+. TiKV uses Cargo as a universal project tool, and split tests into test modules in respective code files. Among the fuzzing libraries used are LLVM's libfuzzer, AFL and Google's Honggfuzz; however, tests do not run in an automated fashion.
+For testing, TiKV uses regression tests, performance tests, ChaosMesh, and models their algorithms utilizing TLA+. TiKV uses Cargo as a universal project tool, and split tests into test modules in respective code files. Among the fuzzing libraries used are LLVM's libfuzzer, AFL and Google's Honggfuzz; however, according to a [security audit](https://github.com/tikv/tikv/blob/master/security/Security-Audit.pdf) performed by Cure53, these tests do not run in an automated fashion.
 
 The TiKV project utilizes persistent open groups which each focus on a part of the TiKV project; teams and members provided in the teams folder for each individual project. Each team consists of reviewers, committers, and maintainers:
 * **Reviewers**: Responsible for contributions and code review 
@@ -264,7 +264,8 @@ PingCAP is the company behind the open-source TiKV project and supplies continuo
 
 
 
-### Please refer to TiKV's STRIDE Thread Model following this [link](tikv-threat-model.md)
+### Please refer to TiKV's STRIDE Thread Model following this [link](tikv-threat-model.md). 
+### For more on TiKV's security policies, please refer to the following [link](https://github.com/tikv/tikv/blob/master/SECURITY.md).
 
 
 ## Suggested action items
