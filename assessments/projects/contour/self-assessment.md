@@ -1,4 +1,11 @@
 # Contour Self-assessment
+#### Contributors
+| Contributor | GitHub ID | Affiliation |
+| --------------- | --------- | ----------- |
+| Justin Rivera | [jriv01](https://github.com/jriv01) | NYU |
+| Esther Wang | [estherwng](https://github.com/estherwng) | NYU |
+| Heejin Jang | [hj2118](https://github.com/hj2118) | NYU |
+| Samuel Vieira Restrepo | [SamuelVRPO](https://github.com/SamuelVRPO)| NYU |
 
 ## Table of contents
 
@@ -77,7 +84,7 @@ For Contour to serve as an ingress controller it must be deployed along with Env
 _Request Handling_
 When a request is sent, first it is routed by a load-balancer to an instance of Envoy. The Envoy proxy then sends the request to a Contour pod.
 
-![Contour Actors & Relationships](https://i.imgur.com/HSsNU6D.png)
+![Contour Actors & Relationships](https://i.imgur.com/MRcBGa6.png)
 
 ### Goals
 Contour serves as a Layer 7 HTTP middleware reverse proxy for enabling ingress to Kubernetes clusters. Contour aims to support dynamic configuration updates easily while maintaining a lightweight profile. Contour also introduces a new ingress API HTTPProxy implemented via a Custom Resource Definition (CRD). It aims to allow for a richer user experience and solve shortcomings in the original design of Ingress API.
@@ -90,9 +97,7 @@ Using Contour to proxy raw TCP or UDP traffic may work, but is not the intended 
 
 ## Self-assessment use
 
-This self-assessment is created by Heejin Jang, Justin Rivera, Samuel Vieira Restrepo, and Esther Wang 
-to perform an internal analysis of the project's security. It is not intended to provide 
-a security audit of Contour, or function as an independent assessment or attestation of Contour's security health.
+This self-assessment is created by the Contour team + external affiliates to perform an internal analysis of the project's security. It is not intended to provide a security audit of Contour, or function as an independent assessment or attestation of Contour's security health.
 
 This document serves to provide Contour users with an initial understanding of
 Contour's security, where to find existing security documentation, Contour plans for
