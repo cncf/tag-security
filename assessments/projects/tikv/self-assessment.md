@@ -226,9 +226,9 @@ To contribute to TiKV, bug fixes or documentation improvements can be made throu
 
 ***Known Issues Over Time***
 
-All TiKV security related ongoing and fixed issues can be browsed through the various labels they use for categorizing issues to find ones that might pertain to security. You can access and search for these issues using the labels in the TiKV GitHub repository. Here's the link to the TiKV GitHub Labels page: TiKV GitHub Labels e.g. issues labeled with “security” can be queried using https://github.com/tikv/tikv/labels?q=security. 
+All TiKV security related ongoing and fixed issues can be browsed through the various labels they use for categorizing issues to find ones that might pertain to security. You can access and search for these issues using the labels in the TiKV GitHub repository. Here's the link to the TiKV GitHub Labels page: [TiKV GitHub Labels](https://github.com/tikv/tikv/labels) e.g. issues labeled with “security” can be queried using https://github.com/tikv/tikv/labels?q=security. 
 
-The review process involves making changes for adherence to code quality and performance with the project's standards by community members and maintainers. For more details, see their development guide. 
+The review process involves making changes for adherence to code quality and performance with the project's standards by community members and maintainers. For more details, see their [development guide](https://tikv.github.io/tikv-dev-guide/contribute-to-tikv/review-a-pull-request.html). 
 
 ***CII Best Practices***
 
