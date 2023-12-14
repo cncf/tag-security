@@ -373,4 +373,4 @@ OpenTelemetry is vendor and tool-agnostic, and it can be used with different obs
 * **Grafana**: OpenTelemetry and Grafana complement each other, and the visualization in Grafana's dashboard can better help analyze various types of data collected from OpenTelemetry. In addition, Grafana supports enable interoperability from OpenTelemetry by calling on SDKs and application observability standards, among others, integrating telemetry into a unified open-source monitoring backend.
 * **Jaeger**: Jaeger is a distributed tracing system that can be started and run in a local environment. Users can first use OpenTelemetry to detect various indicators of the application and then send the tracking data to Jaeger. The advantage of using Jaeger is that it makes finding the source of latency and lack of concurrency easier. All in all, Jaeger is more focused, while OpenTelemetry is a broader framework.
 
-[comment]: # (The First Draft of Self Assessment has been completed on Nov 28, 2023: 4:20 EST)
+[comment]: # (The Final Draft of Self Assessment has been completed on Dec 14, 2023: 5:40 EST)
