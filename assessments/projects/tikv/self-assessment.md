@@ -246,13 +246,8 @@ To contribute to TiKV, bug fixes or documentation improvements can be made throu
 
 
 ***CII Best Practices***
-  > A CII Best Practice is a process or method that, when executed effectively, leads to enhanced project performance. TiKV has many practices that seem to fulfill this concept.
-  * **Change Management**: TiKV, like many open-source projects, involves changes in code, features, and security practices. Effective change management is crucial in the particular context for ensuring stable and secure updates to the software.
-* **Risk Management**: The process of identifying, assessing, and managing risks is fundamental in developing software, especially a database like TiKV. This aligns with the CII best practices of project risk management, where potential impacts are evaluated to mitigate risks.
-* **Quality Management**: TiKV’s commitment to maintaining high-quality program and efficient processes represents the CII best practices of quality management. This encompasses activities to improve efficiency and compliance, important for projects like TiKV which is widely used in various industries. 
-* **Lessons Learned**: Continuous improvement in software development is the key to achieve CII Best Practices. It is also important to keep track of its previous issues and bugs, and learn from its past experiences. TiKV has done a great job of that.
+TiKV has achieved a badge from the Core Infrastructure Initiative (CII) Best Practices program, highlighting its commitment to high-quality standards in open-source software development. This achievement is a testament to TiKV's adherence to best practices in Free/Libre and Open Source Software (FLOSS). For more details on TiKV's recognition in this area, visit the [TiKV CII Best Practices](https://www.bestpractices.dev/zh-CN/projects/2574) page.
   
-
 ***Case Studies***
 
 * **JD Cloud and AI** – A scalable database was required by cloud computing provider JD Cloud & AI to store metadata for its Object Storage Service (OSS). The metadata was exceeding the capacity of their MySQL database at an alarming rate. A globally ordered key-value store with the capacity to store enormous quantities of data was necessary. They decided to utilize TiKV following a scaled evaluation of their alternatives. TiKV is highly proficient in managing extensive datasets and offers support for petabyte-scale deployments. TiKV satisfied the performance, scalability, and defect tolerance criteria set forth by JD Cloud & AI after thorough testing. The application from TiKV has a latency of 10ms and a QPS of over 40,000. It has substituted MySQL as the metadata repository for their OSS. As of now, the principal database utilized by JD Cloud & AI for storing OSS metadata is TiKV.
