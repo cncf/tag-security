@@ -196,31 +196,31 @@ The TiKV project utilizes persistent open groups which each focus on a part of t
 In addition, there is a separate infrastructure team, not responsible for the team decision-making process, but that helps on applying the decision. The current list of infrastructure members is provided with their emails and githubs on the TiKV Governance page.
 * **Infrastructure team**: Responsible for setting administration, security, and supporting the existing teams
 
-**Voting**
+### Voting
 * Decisions regarding the project are made by votes on the primary project community repository.
 * Votes are indicated via pull requests under the votes folder.
 * Positive votes require no explanation, while vetoes (negative votes) must have an explanation. 
 * Required vote counts can vary based on the decision but typically require at least 2 positive votes.
 
-**Communication Links**
+### Communication Links
 
 Reporting Issues:
-* GitHub Issues: For reporting problems, suggesting features, or discussing enhancements related to TiKV. TiKV GitHub Issues
+* GitHub Issues: For reporting problems, suggesting features, or discussing enhancements related to TiKV. [TiKV GitHub Issues](https://github.com/tikv/tikv/issues).
 
 Internal:
-* TiKV team members collaborate primarily through Special Interest Groups (SIGs), with details available in their community repository. Team members also communicate with each other through the TiKV Community Slack and discuss TiKV GitHub Issues or TiKV Pull Requests.
+* TiKV team members collaborate primarily through Special Interest Groups (SIGs), with details available in their [community repository](https://github.com/tikv/community). Team members also communicate with each other through the TiKV Community [Slack](https://tikv-wg.slack.com/join/shared_invite/enQtNTUyODE4ODU2MzI0LWVlMWMzMDkyNWE5ZjY1ODAzMWUwZGVhNGNhYTc3MzJhYWE0Y2FjYjliYzY1OWJlYTc4OWVjZWM1NDkwN2QxNDE#/shared-invite/email) and discuss TiKV GitHub [Issues](https://github.com/tikv/tikv/issues) or [TiKV Pull Requests](https://github.com/tikv/tikv/pulls).
 
 Inbound:
-* Users communicate with the team through the TiKV Community Slack or through TiKV GitHub Issues
+* Users communicate with the team through the TiKV Community [Slack](https://tikv-wg.slack.com/join/shared_invite/enQtNTUyODE4ODU2MzI0LWVlMWMzMDkyNWE5ZjY1ODAzMWUwZGVhNGNhYTc3MzJhYWE0Y2FjYjliYzY1OWJlYTc4OWVjZWM1NDkwN2QxNDE#/shared-invite/email) or through [TiKV GitHub Issues](https://github.com/tikv/tikv/issues)
 
 Outbound:
-* Team members communicate with users through the TiKV Community Slack or through TiKV GitHub Issues, TiKV Pull Requests, Twitter, Stack Overflow
+* Team members communicate with users through the TiKV Community [Slack](https://tikv-wg.slack.com/join/shared_invite/enQtNTUyODE4ODU2MzI0LWVlMWMzMDkyNWE5ZjY1ODAzMWUwZGVhNGNhYTc3MzJhYWE0Y2FjYjliYzY1OWJlYTc4OWVjZWM1NDkwN2QxNDE#/shared-invite/email) or through [TiKV GitHub Issues](https://github.com/tikv/tikv/issues), [TiKV Pull Requests](https://github.com/tikv/tikv/pulls), [Twitter](https://twitter.com/i/flow/login?redirect_after_login=%2Ftikvproject), [Stack Overflow](https://stackoverflow.com/questions/tagged/tikv)
 
 Security Email Group:
 * Security Email: For reporting security vulnerabilities. Email: tikv-security@lists.cncf.io
 
 
-**Ecosystem**
+### Ecosystem 
 
 TiKV integrates smoothly into the cloud-native world, embracing scalability, resilience, and openness. TiKV, as part of a cloud-native ecosystem, is intended to be a distributed transactional key- value store that can dynamically adapt to cloud contexts. The adoption of the Raft Consensus Algorithm ensures strong consistency and fault tolerance, making it suitable for distributed storage.
 
