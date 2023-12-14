@@ -246,6 +246,7 @@ To contribute to TiKV, bug fixes or documentation improvements can be made throu
 
 
 ***CII Best Practices***
+
 TiKV has achieved a badge from the Core Infrastructure Initiative (CII) Best Practices program, highlighting its commitment to high-quality standards in open-source software development. This achievement is a testament to TiKV's adherence to best practices in Free/Libre and Open Source Software (FLOSS). For more details on TiKV's recognition in this area, visit the [TiKV CII Best Practices](https://www.bestpractices.dev/zh-CN/projects/2574) page.
   
 ***Case Studies***
