@@ -62,7 +62,7 @@ In addition, Volcano inherits the design of Kubernetes APIs, allowing you to eas
 
 ![Architechture Diagram of Volcano](arch.png)
 1. Users: Individuals or systems that interact with Volcano for job management. This could include administrators who configure the system, users who submit jobs, and any external systems that interface with Volcano.
-2. Volcano Scheduler: The core component responsible for scheduling tasks. It makes decisions about job placement and resource allocation in the Kubernetes cluster.
+2. [Volcano Scheduler](https://volcano.sh/en/docs/architecture/#scheduler): The core component responsible for scheduling tasks. It makes decisions about job placement and resource allocation in the Kubernetes cluster.
 3. Volcano API Server: Handles requests and responses between users and the Volcano scheduler. It's a critical interface and thus a separate actor due to its role in processing and validating job submissions.
 4. Kubernetes Cluster: While Volcano operates within Kubernetes, the cluster itself can be considered a separate actor. It manages the resources that Volcano schedules jobs onto and enforces access controls.
 5. Integrated Systems: Any external systems or tools that Volcano integrates with (e.g., TensorFlow, PyTorch, etc.). These are separate actors as they are external yet interact closely with Volcano.
