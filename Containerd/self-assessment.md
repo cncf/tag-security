@@ -5,10 +5,6 @@ documentation for their users. This document is ideal for projects currently in 
 CNCF **sandbox** as well as projects that are looking to receive a joint assessment and
 currently in CNCF **incubation**.
 
-For a detailed guide with step-by-step discussion and examples, check out the free 
-Express Learning course provided by Linux Foundation Training & Certification: 
-[Security Assessments for Open Source Projects](https://training.linuxfoundation.org/express-learning/security-self-assessments-for-open-source-projects-lfel1005/).
-
 # Self-assessment outline
 
 ## Table of contents
@@ -34,7 +30,7 @@ A table at the top for quick reference information, later used for indexing.
 
 |   |  |
 | -- | -- |
-| Software | https://github.com/containerd/containerd  |
+| Software | [containerd](https://github.com/containerd/containerd)  |
 | Security Provider | No  |
 | Languages | Go, C++ |
 | SBOM | [Packages](https://github.com/containerd/containerd/tree/main/pkg) [Versions](https://github.com/containerd/containerd/tree/main/version) |
@@ -262,7 +258,7 @@ It is reasonable to suggest its minimal framework could support CIS Benchmarks o
 - TLS encryption safeguards data exchange, and secure networking configurations and communication protocols protect against unauthorized access. 
 - The use of secure communication protocols, such as HTTPS, when communicating with external services to protect data from exposure is also promoted.
 - Security audits occur regularly (CNCF fuzzing audit, community-driven audits, etc.) complemented by a responsible disclosure policy for discreetly reporting and addressing security issues before public disclosure.
-- Containerd releases updates with security patches, performance enhancements, and bug fixes, while comprehensive documentation guides secure deployment (https://containerd.io/docs/).
+- Containerd releases updates with security patches, performance enhancements, and bug fixes, while comprehensive [documentation](https://containerd.io/docs/) guides secure deployment.
 
 **Communication Channels:**
 
@@ -321,30 +317,28 @@ Defined procedures are in place for triaging reported vulnerabilities, assessing
 
 * Case Studies:
   
-   Demonstrates how Red Hat OpenShift, integrated with containerd, streamlines containerization adoption and simplifies Kubernetes management.
-  
-   https://swapnasagarpradhan.medium.com/install-a-kubernetes-cluster-on-rhel8-with-conatinerd-b48b9257877a
+   [Demonstrates how Red Hat OpenShift, integrated with containerd, streamlines containerization adoption and simplifies Kubernetes management.](https://swapnasagarpradhan.medium.com/install-a-kubernetes-cluster-on-rhel8-with-conatinerd-b48b9257877a)
 
-  Explores how containerd simplifies container management on Google Kubernetes Engine (GKE), Google Cloud's fully managed Kubernetes service.
+  [Explores how containerd simplifies container management on Google Kubernetes Engine (GKE), Google Cloud's fully managed Kubernetes service.](https://cloud.google.com/kubernetes-engine)
 
-  https://cloud.google.com/kubernetes-engine
+  [Delves into the integration of containerd with Amazon Elastic Container Service (ECS), Amazon Web Services' container orchestration service](https://aws.amazon.com/blogs/containers/tag/containerd/)
 
-  Delves into the integration of containerd with Amazon Elastic Container Service (ECS), Amazon Web Services' container orchestration service
-
-  https://aws.amazon.com/blogs/containers/tag/containerd/
-
-  Explores how containerd enables organizations to effectively manage containers on Azure Kubernetes Service (AKS), Microsoft Azure's managed Kubernetes service
-
-  https://azure.microsoft.com/en-us/updates/generally-available-containerd-support-for-windows-in-aks/
+  [Explores how containerd enables organizations to effectively manage containers on Azure Kubernetes Service (AKS), Microsoft Azure's managed Kubernetes service](https://azure.microsoft.com/en-us/updates/generally-available-containerd-support-for-windows-in-aks/)
   
 * Related Projects / Vendors:
 
+  Docker uses Containerd for Container management, it offers complete container management service such as image building, user interface and a built-in runtime.
+   
   https://www.docker.com/products/container-runtime/
-  
+  https://humalect.com/blog/containerd-vs-docker/
+  https://www.wallarm.com/cloud-native-products-101/containerd-vs-docker-what-is-the-difference-between-the-tools/
+ 
+  Cri-o and containerd are both container runtimes, but they serve different purposes and have different relationships with Kubernetes. Cri-o is designed specifically for Kubernetes    and has a smaller footprint, which is optimized for resource usage within Kubernetes. It leverages containerd's core functionalities for image management and execution, but adds      Kubernetes-specific features and optimizations.
+
   https://cri-o.io/
   
-  https://humalect.com/blog/containerd-vs-docker/
   
-  https://www.wallarm.com/cloud-native-products-101/containerd-vs-docker-what-is-the-difference-between-the-tools/
+  
+  
   
   
