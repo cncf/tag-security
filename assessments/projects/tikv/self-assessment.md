@@ -110,18 +110,20 @@ TiKV is part of the Cloud Native Computing Foundation and created by PingCAP; it
 
 ### Actions
 
-* **Clients**
-  - TiKV provides two types of APIs for developers: the Raw Key-Value API and the Transactional Key-Value API
-* **TiKV Instance**
-  - Each instance acts isolated from every other node 
-  - Data is distributed across TiKV instances via the Raft Consensus Algorithm
-  - Data Regions (within TiKV Nodes)
-    - This is the basic unit of key-value data movement
-    - Each Region is replicated to multiple Nodes, and multiple replicas form a Raft group
-* **Placement Driver**
-    - The cluster manager of TiKV periodically checks replication constraints to balance load and data automatically across nodes and regions in a process called auto-sharding
-    - TimeStamp Oracle (within Placement Driver)
-      - Plays a significant role in the Percolator transaction model, where every transaction requires contacting the Oracle at least twice and proper scalability
+* **TiKV Recovery with Raft Consensus Algorithm:**
+  - Essential for TiKV is the development of effective node recovery systems. The Raft Consensus Algorithm is central to this, appointing a primary leader within a peer network to manage client requests. This setup ensures data replication among follower nodes for consistency. If the leader node fails, a new leader is elected from the followers.
+* **Ensuring Strong Consistency and Efficient Data Partitioning:**
+  - During transactions, TiKV upholds strong consistency. It organizes transaction keys into batches for concurrent prewriting processes. Utilizing range partitioning, TiKV enhances the efficiency of scan operations and simplifies the process of splitting or merging data, thereby reducing unnecessary data movement.
+* **Key-Value Storage and Management Using RocksDB:**
+  - TiKV employs RocksDB for its key-value storage needs. This includes supporting Multi-Version Concurrency Control (MVCC) for each row and using Bloom Filters for quick key searches. For managing snapshots and garbage collection, it utilizes functionalities like Ingest External File and DeleteFilesInRange.
+* **Transaction Management and Timestamp Allocation:**
+  - TiKV adopts the Percolator model for transactions, which relies on optimistic locking and avoids using a single coordinating node, thereby increasing fault tolerance. The Placement Driver (PD), embedded within TiKV, is responsible for issuing timestamps crucial for keeping transaction order and also manages metadata and load balancing.
+* **Distributed Execution of SQL Queries:**
+  - TiKV handles queries in a distributed fashion, dividing tasks by geographical region and assigning them to various TiKV nodes. It is equipped with several executors to manage different operations, including table scans, index scans, selections, aggregations, and sorting.
+* **Rigorous Testing and Simulation Procedures:**
+  - TiKV undergoes thorough testing, encompassing both unit and integration tests. The PD component of TiKV includes a simulator tool designed for detecting and resolving scheduling conflicts within large-scale clusters.
+* **Client-Server Communication via gRPC:**
+  - For remote procedure calls, TiKV utilizes gRPC. This framework supports both standard and streaming modes, facilitating versatile and efficient communication between clients and servers.
 
 ### Goals
 
