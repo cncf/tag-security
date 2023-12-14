@@ -46,7 +46,7 @@ The Self-assessment is the initial document for Volcano to begin thinking about 
 
 ## Overview
 
-Volcano is a cloud native system for high-performance workloads, which has been accepted by Cloud Native Computing Foundation (CNCF) as its first and only official container batch scheduling project. Volcano supports popular computing frameworks such as Spark, TensorFlow, PyTorch, Flink, Argo, MindSpore, and PaddlePaddle. Volcano also supports scheduling of computing resources on different architectures such as x86, Arm, and Kunpeng.
+[Volcano](https://volcano.sh/en/docs/#what-is-volcano) is a cloud native system for high-performance workloads, which has been accepted by Cloud Native Computing Foundation (CNCF) as its first and only official container batch scheduling project. Volcano supports popular computing frameworks such as [Spark](https://spark.apache.org/), [TensorFlow](https://www.tensorflow.org/), [PyTorch](https://pytorch.org/), [Flink](https://flink.apache.org/), [Argo](https://argoproj.github.io/), [MindSpore](https://www.mindspore.cn/en/), [Kubeflow](https://www.kubeflow.org/), [PaddlePaddle](https://www.paddlepaddle.org.cn/), and [more](https://volcano.sh/en/docs/#ecosystem). Volcano also supports the scheduling of computing resources on different architectures such as x86, Arm, and Kunpeng.
 
 ### Background
 
