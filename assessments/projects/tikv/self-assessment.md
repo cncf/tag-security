@@ -232,7 +232,7 @@ Finally, TiKV is an essential part of the TiDB ecosystem and helps to make cloud
 
 ## Security issue resolution
 
-To contribute to TiKV, bug fixes or documentation improvements can be made through a standard GitHub [Pull Request](https://github.com/tikv/tikv/pulls) process. For more substantial changes, a [Request for Comments](https://github.com/tikv/rfcs) (RFC) document is required, outlining the summary, motivation, detailed design, drawbacks, alternatives, and unanswered questions. Security vulnerabilities should be reported to the TiKV-security group via email (tikv-security@lists.cncf.io) using their public PGP key. The security team manages these reports, coordinating repairs and creating a draft Security Advisory on GitHub. Fixes are developed in a private GitHub repository before being merged and publicly posted in the GitHub [Advisory Database](https://github.com/advisories).
+Security vulnerabilities should be reported to the TiKV-security group via email (tikv-security@lists.cncf.io) using their public PGP key. The security team manages these reports, coordinating repairs and creating a draft Security Advisory on GitHub. Fixes are developed in a private GitHub repository before being merged and publicly posted in the GitHub [Advisory Database](https://github.com/advisories).
 
 ## Appendix
 
