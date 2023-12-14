@@ -91,32 +91,21 @@ As an open-source project under the Cloud Native Computing Foundation (CNCF), Co
 
 **- Containerd Core:**
 
-Role: Serves as the core orchestration engine, managing the execution of container-related actions.
-Significance: Defines the fundamental behavior of the container runtime, providing the essential framework for container management.
+Role: Serves as the core orchestration engine, managing the complete lifecycle of containers.
+Functionality: Coordinates tasks such as image storage, transfer, execution, and supervision. Ensures a consistent and efficient containerized application experience.
+Isolation: Adopts a modular design, separating concerns to prevent unauthorized access and actions. Implements access controls to reinforce security.
 
 **- Container Runtimes:**
 
 Role: Executes containers based on specifications provided by containerd, interacting directly with the underlying operating system.
-Significance: Key players responsible for translating container configurations into actual running instances, ensuring compatibility and adherence to standards.
+Functionality: Translates container configurations into running instances, ensuring compatibility and adherence to standards.
+Isolation: Operates within well-defined boundaries, utilizing namespaces and cgroups for robust process and resource isolation.
 
 **- Image Registries:**
 
 Role: Acts as repositories for container images, collaborating with containerd in tasks such as image pulling, pushing, and managing metadata.
-Significance: Critical components for image distribution, storage, and retrieval, forming a pivotal part of the containerized ecosystem.
-
-**- System Administrators:**
-
-Role: Configures, monitors, and maintains containerd in the broader system context, overseeing its integration into the overall infrastructure.
-Responsibilities: Involves setup, continuous monitoring, optimization, and troubleshooting of containerd to ensure seamless operation.
-
-**- Developers/Contributors:**
-
-Role: Actively contributes to the containerd project through codebase enhancements, bug fixes, and feature development.
-Responsibilities: Shapes the evolution of containerd, addressing issues, introducing improvements, and ensuring the project's ongoing robustness.
-
-**- End Users:**
-Role: Leverage containerd for deploying, managing, and orchestrating containerized applications.
-Interaction: Engage with containerd through various interfaces and tools, contributing to the widespread adoption and integration of containerized solutions.
+Functionality: Stores and facilitates the distribution of container images, supporting seamless integration with containerd for efficient image management.
+Isolation: Maintains a separate identity to prevent unauthorized modifications. Implements access controls to secure image repositories.
 
 ### Actions
 
