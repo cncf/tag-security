@@ -1,11 +1,4 @@
-# Self-assessment
-The Self-assessment is the initial document for projects to begin thinking about the
-security of the project, determining gaps in their security, and preparing any security
-documentation for their users. This document is ideal for projects currently in the
-CNCF **sandbox** as well as projects that are looking to receive a joint assessment and
-currently in CNCF **incubation**.
-
-# Self-assessment outline
+# Containerd Self-assessment
 
 ## Table of contents
 
@@ -26,7 +19,6 @@ currently in CNCF **incubation**.
 
 ## Metadata
 
-A table at the top for quick reference information, later used for indexing.
 
 |   |  |
 | -- | -- |
@@ -36,26 +28,27 @@ A table at the top for quick reference information, later used for indexing.
 | SBOM | [Packages](https://github.com/containerd/containerd/tree/main/pkg) [Versions](https://github.com/containerd/containerd/tree/main/version) |
 | | |
 
+
 ### Security links
 
-Provide the list of links to existing security documentation for the project. You may
-use the table below as an example:
+
 | Doc | url |
 | -- | -- |
 | Security file | https://github.com/containerd/project/blob/main/SECURITY.md |
 | Default and optional configs | https://github.com/containerd/containerd/blob/main/docs/man/containerd-config.toml.5.md  https://github.com/containerd/containerd/blob/main/docs/cri/config.md  https://github.com/containerd/containerd/blob/main/docs/hosts.md |
 
+
 ## Overview
 
-Containerd is a Cloud Native Computing Foundation (CNCF) Project focused on providing the core functionalities for container orchestration. Specifically architected to focus on modularity and compatibility, this provides a secure and minimal approach making it a great option for integrating into different container systems. 
+Containerd is a container runtime focused on providing the core functionalities for managing container lifecycles. Specifically architected to focus on modularity and compatibility, it provides a secure and minimal approach making it a great option for integrating into different container orchestrators. 
 
-![Sample Image](https://github.com/containerd/containerd/blob/main/docs/historical/design/architecture.png)
+![Overview Image](https://github.com/containerd/containerd/blob/main/docs/historical/design/architecture.png)
 
 ### Background
 
 Containerd, a fundamental tool in the realm of containerization, provides a dependable and standardized approach to managing containers. It is a lightweight yet powerful container runtime, ensuring a consistent and efficient experience.
 
-Originally developed by Docker, Inc. as an integral part of the Docker project, Containerd has evolved with the dynamic container ecosystem. Docker's decision to separate container runtime functionality led to Containerd, an independent project dedicated to container management.
+Originally developed by Docker, Inc. as an integral part of the Docker project, containerd has evolved with the dynamic container ecosystem. Docker's decision to separate container runtime functionality from the runc project led to containerd, an independent project dedicated to container management.
 
 #### Core Features:
 
@@ -73,7 +66,7 @@ With a strong emphasis on security, Containerd implements features like user nam
 
 **- Compatibility:**
 
-Aligned with the Open Container Initiative (OCI) specifications, Containerd ensures compatibility with other runtimes and tools adhering to the OCI standard. This compatibility facilitates easy transitions between container runtimes supporting OCI.
+Aligned with the Open Container Initiative (OCI) specifications, containerd ensures compatibility with other runtimes and tools adhering to the OCI standard. This compatibility facilitates easy transitions between container runtimes supporting OCI.
 
 **- CLI and APIs:**
 
@@ -91,7 +84,7 @@ As an open-source project under the Cloud Native Computing Foundation (CNCF), Co
 
 **- Containerd Core:**
 
-Role: Serves as the core orchestration engine, managing the complete lifecycle of containers.
+Role: The core container orchestration engine, managing the complete container lifecycle.
 Functionality: Coordinates tasks such as image storage, transfer, execution, and supervision. Ensures a consistent and efficient containerized application experience.
 Isolation: Adopts a modular design, separating concerns to prevent unauthorized access and actions. Implements access controls to reinforce security.
 
@@ -103,7 +96,7 @@ Isolation: Operates within well-defined boundaries, utilizing namespaces and cgr
 
 **- Image Registries:**
 
-Role: Acts as repositories for container images, collaborating with containerd in tasks such as image pulling, pushing, and managing metadata.
+Role: Repositories for container images, providing storage and retrieval for containerd in tasks such as image pulling, pushing, and metadata management.
 Functionality: Stores and facilitates the distribution of container images, supporting seamless integration with containerd for efficient image management.
 Isolation: Maintains a separate identity to prevent unauthorized modifications. Implements access controls to secure image repositories.
 
@@ -184,7 +177,7 @@ Logging persistence is considered out of scope. Clients can handle and persist c
 
 ## Self-assessment use
 
-This self-assessment was authored by Swati Baleri, Vivek Radhakrishnan, Swati Baleri, Sunny Li, and Nathan Smith with a format established by the Containerd maintainers. The purpose of this document is to perform an internal analysis of the project's security.  It is not intended to provide a security audit of Containerd, or function as an independent assessment or attestation of Containerd's security health.
+This self-assessment was authored by Swati Baleri, Vivek Radhakrishnan, Sunny Li, and Nathan Smith with a format established by the Containerd maintainers. The purpose of this document is to perform an internal analysis of the project's security.  It is not intended to provide a security audit of Containerd, or function as an independent assessment or attestation of Containerd's security health.
 
 This document serves to provide Containerd users with an initial understanding of Containerd's security, where to find existing security documentation, Containerd plans for security, and general overview of Containerd security practices, both for development of Containerd as well as security of Containerd.
 
