@@ -1,6 +1,5 @@
 # Recommendations to Volcano
 ## Action Items
-- [ ] Review priveleges of 184 non-maintainer users who are in the working groups.
 - [ ] Review about the default pod security configuration used by Volcano. [Link](https://github.com/volcano-sh/volcano/tree/master/installer#configuration)
 - [ ] Review the deployment architecture to add safeguards to prevent unauthorized access or changes to deployments.
 - [ ] Review communication between services within Volcano to consider need of encryption to prevent integrity.

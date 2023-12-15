@@ -2,7 +2,7 @@
 
 Authors: Mayank Ramnani (@mayank-ramnani), Anish Vempaty (@anish-vempaty), Francis Gabriel Delamerced (@fdg238)
 
-Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV), Eddie Knight (@eddie-knight), Ragashree (@ragashreeshekar)
+Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV), Eddie Knight (@eddie-knight), Ragashree (@ragashreeshekar), @torinvdb
 
 The Self-assessment is the initial document for Volcano to begin thinking about the security of the project, determining gaps in its security, and preparing any security documentation for their users.
 
@@ -172,7 +172,7 @@ Security Checks and System Actions:
 
 ## Self-assessment use
 
-This self-assessment is created by the Volcano team to perform an internal analysis of the project's security. It is not intended to provide a security audit of Volcano, or function as an independent assessment or attestation of Volcano's security health.
+This self-assessment is created by a team of grad students at NYU, independent of the Volcano team to perform an analysis of the project's security. It is not intended to provide a security audit of Volcano, or function as an independent assessment or attestation of Volcano's security health.
 This document serves to provide Volcano users with an initial understanding of Volcano's security, where to find existing security documentation, Volcano plans for security, and general overview of Volcano security practices, both for development of Volcano as well as security of Volcano.
 This document provides the CNCF TAG-Security with an initial understanding of Volcano to assist in a joint-assessment, necessary for projects under incubation. Taken together, this document and the joint-assessment serve as a cornerstone for if and when Volcano seeks graduation and is preparing for a security audit.
 
@@ -228,7 +228,7 @@ The Volcano project has a [Product Security Team (PST)](https://github.com/volca
 ### Links
 - [Volcano Usage and Adopters](https://github.com/volcano-sh/volcano/blob/master/docs/community/adopters.md)
 - [Volcano Bug Reporting Guidelines](https://github.com/volcano-sh/volcano/blob/master/docs/getting-started/reporting_bugs.md)
-- [Volcano Threat Modelling](threat-modelling.md)
+- [Volcano Threat Analysis](threat-analysis.md)
 - [Recommendations to Volcano Post Self-Assessment](recommendations.md)
 
 ### Case Studies

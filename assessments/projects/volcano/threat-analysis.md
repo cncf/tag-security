@@ -1,7 +1,4 @@
-# Lightweight Threat Modelling
-## Threat Modelling Notes
-- There are a total of 190 contributors and only 6 maintainers and owners thus there are 184 non-maintainer users who are in the working groups.
-
+# Lightweight Threat Analysis 
 ## Theoretical Threats
 - Risks of Denial of Service (DoS) attacks that can overload the Volcano scheduler or controller components.
 - Potential for unauthorized access or privelege esaclation if RBAC (Role-Based Access Control) policies are not properly configured (since default values for RBAC configuration are not present).
