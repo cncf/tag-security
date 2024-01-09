@@ -187,12 +187,11 @@ The main points are summarized below.
 
 ### Responsible Disclosures Process
 
-As documented under the [Contact section of CNI's documentation](https://www.cni.dev/docs/#contact), issues can be reported privately via email to the email addresses listed in the [MAINTAINERS](https://github.com/containernetworking/cni/blob/master/MAINTAINERS) file.\
-Beyond what is mentioned above, the CNI team does not have a defined process for handling/responding to reports.
+As documented under the [Contact section of CNI's documentation](https://www.cni.dev/docs/#contact), issues can be reported privately via email to the email addresses listed in the [MAINTAINERS](https://github.com/containernetworking/cni/blob/master/MAINTAINERS) file.
 
 ### Incident Response Process
 
-The CNI team does not have an incident response process defined. If a security issue is found, it is suggested to report privately to the email addresses listed in the MAINTAINERS file.
+The CNI team does not have an incident response process defined.
 
 ## Appendix
 
