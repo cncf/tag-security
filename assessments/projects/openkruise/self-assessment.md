@@ -1,4 +1,5 @@
 # OpenKruise Self-assessment
+This assessment was created by community members as part of the Security Pals process, and is currently pending changes from the OpenFGA team.
 
 ## Authors and collaborators
 
