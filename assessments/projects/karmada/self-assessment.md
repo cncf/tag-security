@@ -36,7 +36,7 @@ A table at the top for quick reference information, later used for indexing.
 | **Software** | [A link to Karmada’s repository.](https://github.com/karmada-io/karmada)  |
 | **Security Provider** | No. The primary function of the project is to run Kubernetes clusters across clouds. Security is not the primary objective. |
 | **Languages** |<ul><li>Go</li><li>Shell</li><li>Smarty</li><li>Mustache</li><li>Makefile</li><li>Dockerfile</li></ul> |
-| **SBOM** | Not Available |
+| **SBOM** | [FOSSA Scan](https://app.fossa.com/projects/custom%2B28176%2Fgithub.com%2Fkarmada-io%2Fkarmada/refs/branch/master/65376b28d5037c27ff7ec0e56542c2a345d1a120/preview) |
 
 ### Security links
 
