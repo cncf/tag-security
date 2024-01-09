@@ -5,7 +5,6 @@ documentation for their users. This document is ideal for projects currently in 
 CNCF **sandbox** as well as projects that are looking to receive a joint assessment and
 currently in CNCF **incubation**.
 
-# Self-assessment outline
 
 ## Table of contents
 
