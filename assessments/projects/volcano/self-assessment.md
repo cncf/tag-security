@@ -1,4 +1,5 @@
 # Volcano Self-Assessment
+This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process, and is currently pending changes from the maintainer team.
 
 Authors: Mayank Ramnani (@mayank-ramnani), Anish Vempaty (@anish-vempaty), Francis Gabriel Delamerced (@fdg238)
 
@@ -8,29 +9,32 @@ The Self-assessment is the initial document for Volcano to begin thinking about 
 
 ## Table of contents
 
-- [Metadata](#metadata)
-  - [Security links](#security-links)
-- [Overview](#overview)
-  - [Actors](#actors)
-  - [Actions](#actions)
-  - [Background](#background)
-  - [Goals](#goals)
-  - [Non-goals](#non-goals)
-- [Self-assessment use](#self-assessment-use)
-- [Security functions and features](#security-functions-and-features)
-- [Project compliance](#project-compliance)
-- [Secure development practices](#secure-development-practices)
-- [Security issue resolution](#security-issue-resolution)
-- [Appendix](#appendix)
-  - [Badges](#badges)
-  - [Links](#links)
-  - [Case Studies](#case-studies)
-  - [Related Talks](#related-talks)
+- [Volcano Self-Assessment](#volcano-self-assessment)
+  - [Table of contents](#table-of-contents)
+  - [Metadata](#metadata)
+    - [Security links](#security-links)
+  - [Overview](#overview)
+    - [Background](#background)
+    - [Actors](#actors)
+    - [Actions](#actions)
+    - [Goals](#goals)
+    - [Non-goals](#non-goals)
+  - [Self-assessment use](#self-assessment-use)
+  - [Security functions and features](#security-functions-and-features)
+  - [Project compliance](#project-compliance)
+  - [Secure development practices](#secure-development-practices)
+  - [Security issue resolution](#security-issue-resolution)
+  - [Appendix](#appendix)
+    - [Badges](#badges)
+    - [Links](#links)
+    - [Case Studies](#case-studies)
+    - [Related Talks](#related-talks)
 
 ## Metadata
 
 | | |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| Assessment Stage | Incomplete | 
 | Software          | https://github.com/volcano-sh/volcano
 | Security Provider | No
 | Languages         | Go, Shell, Makefile, Dockerfile, Python, Smarty|
