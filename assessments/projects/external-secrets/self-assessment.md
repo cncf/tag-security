@@ -1,4 +1,5 @@
 # Self-assessment for External Secrets Operator (ESO)
+This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process, and is currently pending changes from the maintainer team.
 
 ## Table of contents
 
@@ -22,6 +23,7 @@
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete | 
 | Software | A link to the External-Secret Operator's repository: [external-secrets](https://github.com/external-secrets/external-secrets) |
 | Security Provider | No  - Primary function is to sync passwords from external secret store to k8 clusters.|
 | Languages | Go, HCL, Makefile, Shell, Smarty, Dockerfile |
