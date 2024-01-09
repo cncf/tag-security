@@ -27,7 +27,7 @@ A table at the top for quick reference information, later used for indexing.
 | **Software** | [A link to Karmada’s repository.](https://github.com/karmada-io/karmada)  |
 | **Security Provider** | No. The primary function of the project is to run Kubernetes clusters across clouds. Security is not the primary objective. |
 | **Languages** |<ul><li>Go</li><li>Shell</li><li>Smarty</li><li>Mustache</li><li>Makefile</li><li>Dockerfile</li></ul> |
-| **SBOM** | SBOM generated using **FOSSA-cli** tool on the latest code base. [Link to SBOM](https://github.com/Rana-KV/tag-security/blob/main/assessments/projects/karmada/docs/Karmada_SBOM_cyclonedx.bom.json) |
+| **SBOM** | Not Available |
 
 ### Security links
 
