@@ -1,4 +1,13 @@
 # Self-assessment for Karmada
+This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process with the help of project maintainers.
+
+Authors: Pranava Kumar Vemula (@Rana-KV)
+
+Contributors/Reviewers:  Eddie Knight (@eddie-knight), Ragashree (@ragashreeshekar), @torinvdb
+
+Project Maintainers: Hongcai Ren (@RainbowMango)
+
+The Self-assessment is the initial document for Karmada to begin thinking about the security of the project, determining gaps in its security, and preparing any security documentation for their users.
 
 ## Table of contents
 
@@ -189,7 +198,7 @@ an arbitrarily large amount of data, possibly incurring financial cost or overwh
 
 ## Self-assessment use
 
-This self-assessment is created by the Karmada team to perform an internal analysis of the
+This self-assessment is created by the NYU Graduate student with the help of project maintainers to perform an internal analysis of the
 project's security.  It is not intended to provide a security audit of Karmada, or
 function as an independent assessment or attestation of Karmada's security health.
 
