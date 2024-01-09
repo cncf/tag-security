@@ -1,31 +1,40 @@
 # Fluentd Self-assessment
-Signed-off-by: Nihal Rahman <nr2320@nyu.edu>
+This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process, and is currently pending changes from the maintainer team.
 
 Co-authored-by: 
+Nihal Rahman <nr2320@nyu.edu>
 Jeffrey Wong <jw4186@nyu.edu>
 Garvin Huang <gh2222@nyu.edu>
 Jin Zhou <jz3928@nyu.edu>
 
 ## Table of contents
-* [Metadata](#metadata)
-  * [Security links](#security-links)
-* [Overview](#overview)
-  * [Actors](#actors)
-  * [Actions](#actions)
-  * [Background](#background)
-  * [Goals](#goals)
-  * [Non-goals](#non-goals)
-* [Self-assessment use](#self-assessment-use)
-* [Security functions and features](#security-functions-and-features)
-* [Project compliance](#project-compliance)
-* [Secure development practices](#secure-development-practices)
-* [Security issue resolution](#security-issue-resolution)
-* [Appendix](#appendix)
+- [Fluentd Self-assessment](#fluentd-self-assessment)
+  - [Table of contents](#table-of-contents)
+  - [Metadata](#metadata)
+    - [Security links](#security-links)
+  - [Overview](#overview)
+    - [Background](#background)
+    - [Actors](#actors)
+    - [Actions](#actions)
+    - [Goals](#goals)
+    - [Non-goals](#non-goals)
+  - [Self-assessment use](#self-assessment-use)
+  - [Security functions and features](#security-functions-and-features)
+    - [Critical:](#critical)
+    - [Security Relevant:](#security-relevant)
+  - [Project compliance](#project-compliance)
+  - [Secure development practices](#secure-development-practices)
+    - [Development Pipeline](#development-pipeline)
+    - [Communication Channels](#communication-channels)
+    - [Ecosystem](#ecosystem)
+  - [Security issue resolution](#security-issue-resolution)
+  - [Appendix](#appendix)
 
 ## Metadata
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete | 
 | Software | https://github.com/fluent/fluentd  |
 | Security Provider | No  |
 | Languages | Ruby, HTML |
