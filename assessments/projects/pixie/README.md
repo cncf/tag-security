@@ -1,4 +1,4 @@
-# Pixie feedback
+# Pixie Joint Security Assessment
 
 ## Summary
 Pixie is an observability tool that provides a quick and easy way to get information about cloud native applications without requiring manual instrumentation.
