@@ -1,22 +1,39 @@
 # Linkerd Security Self-assessment
 
+This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process, and is currently pending changes from the maintainer team.
+
+
 ## Table of contents
 
 
-* [Metadata](#metadata)
-  * [Security links](#security-links)
-* [Overview](#overview)
-  * [Actors](#actors)
-  * [Actions](#actions)
-  * [Background](#background)
-  * [Goals](#goals)
-  * [Non-goals](#non-goals)
-* [Self-assessment use](#self-assessment-use)
-* [Security functions and features](#security-functions-and-features)
-* [Project compliance](#project-compliance)
-* [Secure development practices](#secure-development-practices)
-* [Security issue resolution](#security-issue-resolution)
-* [Appendix](#appendix)
+- [Linkerd Security Self-assessment](#linkerd-security-self-assessment)
+  - [Table of contents](#table-of-contents)
+  - [Metadata](#metadata)
+    - [Security links](#security-links)
+  - [Overview](#overview)
+    - [Background](#background)
+    - [Actors](#actors)
+    - [Actions](#actions)
+    - [Goals](#goals)
+    - [Non-goals](#non-goals)
+  - [Self-assessment use](#self-assessment-use)
+  - [Security functions and features](#security-functions-and-features)
+    - [Critical](#critical)
+    - [Security Relevant](#security-relevant)
+  - [Project compliance](#project-compliance)
+  - [Security and Vulnerability Management](#security-and-vulnerability-management)
+    - [Vulnerability Reporting:](#vulnerability-reporting)
+    - [Continuous Monitoring:](#continuous-monitoring)
+    - [Coding Standards and Reviews:](#coding-standards-and-reviews)
+  - [Secure development practices](#secure-development-practices)
+    - [Development Pipeline](#development-pipeline)
+    - [Communication Channels](#communication-channels)
+    - [Ecosystem](#ecosystem)
+  - [Appendix](#appendix)
+    - [Known Issues Over Time](#known-issues-over-time)
+    - [Core Infrastructure Initiative (CII) Best Practices](#core-infrastructure-initiative-cii-best-practices)
+    - [Case Studies](#case-studies)
+    - [Related Projects / Vendors](#related-projects--vendors)
 
 
 ## Metadata
@@ -24,6 +41,7 @@
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete | 
 | Software | https://github.com/linkerd/linkerd2/tree/main |
 | Security Provider | No |
 | Languages | Go, Rust, JavaScript, Shell |
@@ -143,8 +161,7 @@ For Linkerd, the non-goals, which a reader might mistakenly assume are in scope,
 
 ## Self-assessment use
 
-This self-assessment is created by [Amanda Gonzalez](https://github.com/amanda-gonzalez), [Dwireph Kamleshkumar Parmar](https://github.com/dwireph18), [Kaya Erol](https://github.com/shugo0016), and [Thaison Le](https://github.com/thaileaf), independent of the Linkerd team to perform an internal analysis of the
-project's security.  It is not intended to provide a security audit of Linkerd, or
+This self-assessment is created by [Amanda Gonzalez](https://github.com/amanda-gonzalez), [Dwireph Kamleshkumar Parmar](https://github.com/dwireph18), [Kaya Erol](https://github.com/shugo0016), and [Thaison Le](https://github.com/thaileaf), independent of the Linkerd team to perform an internal analysis of the project's security.  It is not intended to provide a security audit of Linkerd, or
 function as an independent assessment or attestation of Linkerd's security health.
 
 This document serves to provide Linkerd users with an initial understanding of
@@ -198,7 +215,13 @@ Not Applicable.
 
 ### Vulnerability Reporting: 
 
-Linkerd’s approach to vulnerability reporting aligns with industry compliance standards, particularly in the context of Kubernetes based applications. The service mesh’s design is based on a sidecar model which is a design pattern commonly used in microservices architectures, specifically with containerized applications like those running on Kubernetes. This plays a crucial role in managing network security controls and implementing security features without making changes to the underlying application. Thus this model ensures robust vulnerability reporting and management. 
+Responsible Disclosures Process: Linkerd has a responsible disclosure process for reporting security vulnerabilities. This process is designed to  ensure that vulnerabilities are handled in a timely and effective manner. The process can be found at linkerd2 GitHub security advisory - https://github.com/linkerd/linkerd2/blob/main/SECURITY.md. 
+
+The maintainers will diagnose the severity of the issue and determine how to address the issue. In general, critical issues that affect Linkerd's security posture or that reduce its ability to provide security for users will receive immediate attention and be fixed as quickly as possible.
+
+Issues that do not affect Linkerd's security posture and that don't reduce its ability to provide security for users may not be immediately addressed. For example, CVEs in underlying dependencies that don't actually affect Linkerd may not be immediately addressed.
+
+Additional details can be found at https://github.com/linkerd/linkerd2/blob/main/SECURITY.md
 
 ### Continuous Monitoring: 
 
@@ -258,16 +281,6 @@ The release process of Linkerd goes as follows:
   Some of the keys parts of how Linkerd integrates with the cloud native ecosystem include: 
   1. Kubernetes Native: Linkered is designed primarily for Kubernetes enchacing its networking capabilities. 
   2. CNCF Project: As a part of the Cloud Native Computing Foundation, it aligns with their principles and practices which include Minimum viable Governance, Flexible Governance model, Project Mangement by Mainterners, Neutrality and Open SOurce Community Health. 
-
-## Security issue resolution
-
-As outlined by Linkerd's [Security Policy](https://github.com/linkerd/linkerd2/blob/main/SECURITY.md), security problems are reported to the Security Alert Team for Linkerd by email to determine severity. It is unclear whether this team are maintainers that are obligated to address these issues or if they have any financial affiliations with Linkerd. There is no distinction made between external and internal issues, suggesting that all issues should pass through this communication channel. All confirmations, notifications, and security patches seem to to happen after the email chain between the Security Alert team and the reporter.
-
-Non-severe issues are filed as GitHub issues, while critical issues receive immediate attention. It is unclear who is tasked with addressing these issues, both non-severe and severe, presumably the Security Alert Team. The distinction between severe and non severe issues is not clearly defined, but to be decided by the Security Alert team.
-
-Fixes are propagated to the stable branches as fast as possible, except in cases where multiple issues are found at once. Critical issuses that have ben corrected are announced as a security advisory on Github and to cncf-linkerd-annouce mailing lists, containing a pointer to the fix.
-
-
 
 ## Appendix
 
