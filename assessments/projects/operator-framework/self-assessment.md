@@ -1,5 +1,7 @@
 # Operator Framework Self-assessment
 
+This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process, and is currently pending changes from the maintainer team.
+
 ## Table of contents
 
 * [Metadata](#metadata)
@@ -18,11 +20,11 @@
 * [Appendix](#appendix)
 * [Recommendations](#recommendations)
 
-
 ## Metadata
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete | 
 | Software | [Operator Framework](https://github.com/operator-framework/operator-sdk)  |
 | Security Provider | No  |
 | Languages | Go, Ansible, Python, C++ |
