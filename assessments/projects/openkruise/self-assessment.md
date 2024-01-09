@@ -32,6 +32,7 @@ This assessment was created by community members as part of the [Security Pals](
 
 |                   |                                                                                                                                                                              |
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Assessment Stage | Incomplete | 
 | Software          | https://github.com/openkruise/kruise                                                                                                                                         |
 | Security Provider | No. OpenKruise is an extended component suite for Kubernetes, which mainly focuses on application automations, such as deployment, upgrade, ops and availability protection. |
 | Languages         | Go, Makefile, Dockerfile, Shell                                                                                                                                              |
