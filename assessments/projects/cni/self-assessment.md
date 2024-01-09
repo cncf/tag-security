@@ -1,6 +1,7 @@
 # CNI Self-assessment
 
-This self-assessment was created as part of the Security Pals process.\
+This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process, and is currently pending changes from the maintainer team.
+
 Authors: Jason Lin, Quan Phung, Jackson Qu, Grace Liu
 
 ## Table of contents
@@ -24,6 +25,7 @@ Authors: Jason Lin, Quan Phung, Jackson Qu, Grace Liu
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete | 
 | Software | [A link to CNI's repository.](https://github.com/containernetworking/cni)  |
 | Security Provider | No |
 | Languages | Go |
@@ -190,7 +192,7 @@ Beyond what is mentioned above, the CNI team does not have a defined process for
 
 ### Incident Response Process
 
-The CNI team does not have an incident response process defined.
+The CNI team does not have an incident response process defined. If a security issue is found, it is suggested to report privately to the email addresses listed in the MAINTAINERS file.
 
 ## Appendix
 
