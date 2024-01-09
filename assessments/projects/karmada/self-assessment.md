@@ -36,7 +36,7 @@ use the table below as an example:
 | Doc | url |
 | -- | -- |
 | Security file | [SECURITY.md](https://github.com/karmada-io/community/blob/main/security-team/SECURITY.md) |
-| Default and optional configs | TBD - https://example.org/config |
+| Default and optional configs | [Default Controllers and Configurations](https://karmada.io/docs/administrator/configuration/configure-controllers) |
 
 ## Overview
 **Karmada (Kubernetes Armada)** <br>
