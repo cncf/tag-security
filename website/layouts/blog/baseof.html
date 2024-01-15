@@ -4,6 +4,10 @@
     {{ partial "head.html" . }}
   </head>
   <body class="td-{{ .Kind }}">
+    {{ if hugo.IsProduction }}
+      {{ partial "gtm-noscript.html" . }}
+    {{ end }}
+
     <header>
       {{ partial "navbar.html" . }}
     </header>

@@ -18,15 +18,13 @@
 <script src="https://cmp.osano.com/16A0DbT9yDNIaQkvZ/c3494b1e-ff3a-436f-978d-842e9a0bed27/osano.js"></script>
 
 {{ if hugo.IsProduction }}
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T6VMPWFRDW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-T6VMPWFRDW');
-</script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WJJ7VKZ');</script>
+  <!-- End Google Tag Manager -->
 
 {{ end }}
 {{ partialCached "head-css.html" . "asdf" }}
