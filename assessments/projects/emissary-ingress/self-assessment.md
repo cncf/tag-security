@@ -1,5 +1,7 @@
 # Emissary Ingress Self-assessment
 
+This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process and is currently pending changes from the maintainer team.
+
 Authors: Yashaswi Makula (@yashaswi2000), Disha Sheshappa (@Disha-S-Gowda), Sai Prasanth Virigineni (@Saipv17), Jarred Carter (@jcart657).
 
 Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV), Alice Wasko (@AliceProxy), Eddie Knight (@eddie-knight), Ragashree (@ragashreeshekar)
