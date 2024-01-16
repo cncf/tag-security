@@ -22,8 +22,10 @@ This assessment was created by community members as part of the [Security Pals](
 * [Suggested action items](#suggested-action-items)
 
 ## Metadata
+
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete |
 | Software | [TiKV](https://github.com/tikv/tikv/tree/master)  |
 | Security Provider | No  |
 | Languages | Rust, Java, Go, and C |
