@@ -28,6 +28,7 @@ Contributors/Reviewers: Pranava Kumar Vemula (@Rana-KV), Alice Wasko (@AliceProx
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete |
 | Software | [emissary](https://github.com/emissary-ingress/emissary)  |
 | Security Provider | No |
 | Languages | Python, Golang, make, shell, html, dockerfile |
