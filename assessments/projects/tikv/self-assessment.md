@@ -150,8 +150,7 @@ TiKV is part of the Cloud Native Computing Foundation and created by PingCAP; it
 
 ## Self-assessment use
 
-This self-assessment is created by the TiKV team to perform an internal analysis of the
-project's security. It is not intended to provide a security audit of TiKV, or
+This self-assessment is not intended to provide a security audit of TiKV, or
 function as an independent assessment or attestation of TiKV's security health.
 
 This document serves to provide TiKV users with an initial understanding of
