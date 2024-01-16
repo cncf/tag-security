@@ -29,6 +29,7 @@ A table at the top for quick reference information, later used for indexing.
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete |
 | Software |  https://github.com/nats-io/nats-server |
 | Security Provider | No  |
 | Languages | 99.6% Go 0.4% Other |
