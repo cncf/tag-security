@@ -22,6 +22,7 @@ This Self-assessment document was created by community members as part of the [S
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete | 
 | Software |  [Rook](https://github.com/rook/rook)  |
 | Security Provider | No  |
 | Languages | Go, Python, C++ |
