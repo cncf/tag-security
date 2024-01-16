@@ -38,6 +38,7 @@ Quick reference information:
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete |
 | Software | <https://github.com/thanos-io/thanos>  |
 | Security Provider | No. |
 | Languages | Golang |
