@@ -188,7 +188,7 @@ In addition, Thanos' Ruler could be deployed; this would add another source for 
 
 > Similar actions are done in push mode; except, Querier pulls from Receive instead of Sidecar.
 
-##### Basic Deployment:
+#### Basic Deployment:
 * Set up a Prometheus server instance.
 * Have the Sidecar run alongside the Prometheus instance.
 * Give the Querier the ability to communicate with Sidecar.
