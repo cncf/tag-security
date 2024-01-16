@@ -143,7 +143,7 @@ ESO does not perform security auditing or provide direct compliance assurance. I
 
 ## Self-assessment use
 
-This self-assessment is created by the External Secrets Operator (ESO) team to perform an internal analysis of the project's security. It is not intended to provide a security audit of ESO, or function as an independent assessment or attestation of ESO's security health.
+This self-assessment is not intended to provide a security audit of ESO, or function as an independent assessment or attestation of ESO's security health.
 
 This document serves to provide ESO users with an initial understanding of ESO's security, where to find existing security documentation, ESO plans for security, and a general overview of ESO security practices, both for the development of ESO as well as the security of ESO.
 
