@@ -28,6 +28,7 @@ The Longhorn self-assessment documentation was written with security in mind. It
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete |
 | Software | [A link to the Longhorn’s repository.](https://github.com/longhorn/longhorn) |
 | Security Provider | No |
 | Languages | Python, Shell, Mustache |
