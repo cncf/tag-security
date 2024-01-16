@@ -126,8 +126,7 @@ Plugins can return one of three result types:
 
 ## Self-assessment use
 
-This self-assessment is created for the CNI project to perform an internal analysis of the
-project's security.  It is not intended to provide a security audit of CNI, or
+This self-assessment is not intended to provide a security audit of CNI, or
 function as an independent assessment or attestation of CNI's security health.
 
 This document serves to provide CNI users with an initial understanding of
