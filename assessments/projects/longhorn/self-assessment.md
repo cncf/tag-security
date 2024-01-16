@@ -105,7 +105,7 @@ Longhorn's placement within the cloud-native ecosystem is characterised by its f
 
 ## Self-assessment use
 
-This self-assessment is created by the Longhorn team to perform an internal analysis of the project's security. It is not intended to provide a security audit of Longhorn, or function as an independent assessment or attestation of Longhorn's security health.
+This self-assessment is not intended to provide a security audit of Longhorn, or function as an independent assessment or attestation of Longhorn's security health.
 
 This document serves to provide Longhorn users with an initial understanding of Longhorn's security, where to find existing security documentation, Longhorn plans for security, and general overview of Longhorn security practices, both for development of Longhorn as well as security of Longhorn.
 
