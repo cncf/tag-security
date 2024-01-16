@@ -32,6 +32,7 @@ The Self-assessment is the initial document for Cortex to begin thinking about t
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete |
 | Software | https://github.com/cortexproject/cortex |
 | Security Provider | No |
 | Languages | Go |
