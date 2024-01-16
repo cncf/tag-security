@@ -33,6 +33,7 @@ A table at the top for quick reference information, later used for indexing.
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete | 
 | **Software** | [A link to Karmada’s repository.](https://github.com/karmada-io/karmada)  |
 | **Security Provider** | No. The primary function of the project is to run Kubernetes clusters across clouds. Security is not the primary objective. |
 | **Languages** |<ul><li>Go</li><li>Shell</li><li>Smarty</li><li>Mustache</li><li>Makefile</li><li>Dockerfile</li></ul> |
