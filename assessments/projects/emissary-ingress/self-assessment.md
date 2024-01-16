@@ -131,8 +131,7 @@ https://kubernetes.io/docs/concepts/security/api-server-bypass-risks/
 
 ## Self-Assessment Use
 
-This self-assessment is created by the emissary-ingress team to perform an internal analysis of the
-project's security.  It is not intended to provide a security audit of emissary-ingress, or
+This self-assessment is not intended to provide a security audit of emissary-ingress, or
 function as an independent assessment or attestation of emissary-ingress's security health.
 
 This document serves to provide emissary-ingress users with an initial understanding of
