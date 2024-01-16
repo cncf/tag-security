@@ -1,5 +1,8 @@
 # CubeFS Self-assessment
-This Self-assessment document was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process, and is currently pending changes from the maintainer team. It aims to help provide information regarding CubeFS, determining gaps in their security, and preparing any security documentation for their users. 
+This Self-assessment document was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process, and is currently pending changes from the maintainer team. 
+
+It aims to help provide information regarding CubeFS, determining gaps in their security, and preparing any security documentation for their users. 
+
 
 ## Table of contents
 
