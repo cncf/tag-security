@@ -22,6 +22,7 @@
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete |
 | **Software** | [A link to Jaeger’s repository.](https://github.com/jaegertracing/jaeger)  |
 | **Security Provider** | No, the main function of this project is to enable distributed tracing in an organization’s tech infrastructure. Security is not the primary objective.  |
 | **Languages** | <ul><li>Go</li><li>Shell</li><li>Makefile</li><li>Python</li><li>Dockerfile</li></ul> |
