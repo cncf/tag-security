@@ -1,4 +1,4 @@
-# SPIFFE/SPIRE Security Assessment
+# SPIFFE/SPIRE Joint Security Assessment
 
 Completed: 26 Feb 2020
 

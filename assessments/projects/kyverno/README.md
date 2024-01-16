@@ -1,4 +1,4 @@
-# Kyverno Security Assessments
+# Kyverno Security Assessment
 
 **Project website**: https://kyverno.io
 
