@@ -42,40 +42,14 @@ For a detailed guide with step-by-step discussion and examples, check out the fr
 
 ## Metadata
 
-<table>
-  <tr>
-   <td>Software
-   </td>
-   <td><a href="https://github.com/open-telemetry/opentelemetry.io/tree/main">https://github.com/open-telemetry/opentelemetry.io/tree/main</a>
-   </td>
-  </tr>
-  <tr>
-   <td>Website
-   </td>
-   <td><a href="https://opentelemetry.io">https://opentelemetry.io</a>
-   </td>
-  </tr>
-  <tr>
-   <td>Security Provider
-   </td>
-   <td>No
-   </td>
-  </tr>
-  <tr>
-   <td>Languages
-   </td>
-   <td>C++, .NET, Erlang / Elixir, Go, Java, JavaScript / TypeScript, PHP, Python, Ruby, Rust, Swift, Any Language
-   </td>
-  </tr>
-  <tr>
-   <td>SBOM
-   </td>
-   <td><a href="https://mvnrepository.com/artifact/io.opentelemetry/opentelemetry-bom">https://mvnrepository.com/artifact/io.opentelemetry/opentelemetry-bom</a>
-   </td>
-  </tr>
-</table>
-
-
+|   |  |
+| -- | -- |
+| Assessment Stage | Incomplete | 
+| Software | [OpenTelemetry](https://github.com/open-telemetry/opentelemetry.io/tree/main)  |
+| Website | https://opentelemetry.io |
+| Security Provider | No |
+| Languages | C++, .NET, Erlang / Elixir, Go, Java, JavaScript / TypeScript, PHP, Python, Ruby, Rust, Swift, Any Language |
+| SBOM | https://mvnrepository.com/artifact/io.opentelemetry/opentelemetry-bom |
 
 ### Security Links
 
