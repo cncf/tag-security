@@ -25,6 +25,7 @@ It aims to help provide information regarding CubeFS, determining gaps in their 
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete | 
 | Software | https://github.com/cubefs/cubefs  |
 | Website | https://cubefs.io/ |
 | Security Provider | No  |
