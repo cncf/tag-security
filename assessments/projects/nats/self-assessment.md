@@ -167,7 +167,7 @@ The intended goals of the projects including the security guarantees the project
 
 ## Self-assessment use
 
-This self-assessment is created by the NATS team to perform an internal analysis of the project's security. It is not intended to provide a security audit of NATS, or function as an independent assessment or attestation of NATS's security health.
+This self-assessment is not intended to provide a security audit of NATS, or function as an independent assessment or attestation of NATS's security health.
 This document serves to provide NATS users with an initial understanding of NATS's security, where to find existing security documentation, NATS plans for security, and general overview of NATS security practices, both for development of NATS as well as security of NATS.
 This document provides the CNCF TAG-Security with an initial understanding of NATS to assist in a joint-assessment, necessary for projects under incubation. Taken together, this document and the joint-assessment serve as a cornerstone for if and when NATS seeks graduation and is preparing for a security audit.
 
