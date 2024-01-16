@@ -1,6 +1,8 @@
 # Longhorn Self-assessment
-This is the Longhorn's Self-assessment documentation that we wrote after we began thinking about the security of the project, determining gaps in its security, and preparing security documentation for Longhorn's users. This project is currently in the CNCF Incubation phase preparing for Graduation.
 
+This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process and is currently pending changes from the maintainer team.
+
+The Longhorn self-assessment documentation was written with security in mind. It was written after carefully considering the security of the project, determining gaps in its security, and preparing security documentation for Longhorn's users. This project is currently in the CNCF Incubation phase, preparing for Graduation.
 
 ## Table of contents
 
