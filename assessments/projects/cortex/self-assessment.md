@@ -1,5 +1,7 @@
 # Cortex - Self-assessment
 
+This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process and is currently pending changes from the maintainer team.
+
 The Self-assessment is the initial document for Cortex to begin thinking about the security of the project, determining gaps in its security, and preparing any security documentation for their users.
 
 **Authors:** Dhanraj Chavan @heydc7 Raiya Haque @raiyahaque Abdul Alhazmi @Abkzmii Sushanth Rabipalli sushanth3120
