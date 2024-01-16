@@ -1,5 +1,7 @@
 # Self-assessment for NATS
-The Self-assessment is the initial document for the NATS project to begin thinking about the
+This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process and is currently pending changes from the maintainer team.
+
+The self-assessment is the initial document for the NATS project to begin thinking about the
 security of the project, determining gaps in their security, and preparing any security
 documentation for their users. This document is ideal for projects currently in the
 CNCF **sandbox** as well as projects that are looking to receive a joint assessment and
