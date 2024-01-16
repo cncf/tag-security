@@ -24,6 +24,7 @@ This assessment was created by community members as part of the [Security Pals](
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete |
 | Software | [containerd](https://github.com/containerd/containerd)  |
 | Security Provider | No  |
 | Languages | Go, C++ |
