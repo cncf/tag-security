@@ -128,7 +128,6 @@ Cortex serves as a remote storage backend for Prometheus instances. It receives 
 
 ## Self-assessment use
 
-This self-assessment is created by the Cortex team to perform an internal analysis of Cortex's security. It is not intended to provide a security audit of Cortex or function as an independent assessment or attestation of Cortex's security health.
 
 This document serves to provide Cortex users with an initial understanding of Cortex's security, where to find existing security documentation, Cortex plans for security, and a general overview of Cortex security practices, both for the development of Cortex as well as the security of Cortex.
 
