@@ -1,6 +1,9 @@
 # OpenFGA Security Self Assessment
 
+This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process and is currently pending changes from the maintainer team.
+
 ## Table of Contents
+
 
 - [OpenFGA Security Self Assessment](#openfga-security-self-assessment)
   - [Table of Contents](#table-of-contents)
