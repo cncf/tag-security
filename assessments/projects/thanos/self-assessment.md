@@ -119,16 +119,6 @@ Two types of deployment strategies are generally used:
 
 > These are the steps that a project performs in order to provide some service. Refer [[2]](#references), [[3]](#references) and [[4]](#references) for documentation and understanding.
 
-<!-- These are the steps that a project performs in order to provide some service -->
-<!-- or functionality.  These steps are performed by different actors in the system. -->
-<!-- Note, that an action need not be overly descriptive at the function call level. -->
-<!-- It is sufficient to focus on the security checks performed, use of sensitive -->
-<!-- data, and interactions between actors to perform an action. -->
-<!---->
-<!-- For example, the access server receives the client request, checks the format, -->
-<!-- validates that the request corresponds to a file the client is authorized to -->
-<!-- access, and then returns a token to the client.  The client then transmits that -->
-<!-- token to the file server, which, after confirming its validity, returns the file. -->
 
 **Metric Sources**  
 Primarily Prometheus is used as the metrics source with Thanos.
