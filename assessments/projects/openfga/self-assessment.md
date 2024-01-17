@@ -37,6 +37,7 @@ This assessment was created by community members as part of the [Security Pals](
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete |
 | Software | https://github.com/openfga |
 | Security Provider | Yes. OpenFGA is used to decide if a subject (user, application) user can perform a specific action on a resource or not.|
 | Languages | Go, Java, Javascript, Python, C# |
