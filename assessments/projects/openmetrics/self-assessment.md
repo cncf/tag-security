@@ -35,6 +35,7 @@ Express Learning course provided by Linux Foundation Training & Certification:
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete |
 | Software | https://github.com/OpenObservability/OpenMetrics |
 | Security Provider | No |
 | Languages | Go-89.1%, HTML-4.9%, Makefile-3.6%, Sass-1.7%, Python-0.3%, Dockerfile-0.3%, Ruby-0.1%  |
