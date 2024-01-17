@@ -182,9 +182,6 @@ In addition, Thanos' Ruler could be deployed; this would add another source for 
 
 > These are the intended goals of the project, including the security guarantees the project is meant to provide. Refer [[1]](#references)
 
-<!-- The intended goals of the projects including the security guarantees the project
- is meant to provide (e.g., Flibble only allows parties with an authorization
-key to change data it stores).-->
 General:
 * Global Query View: Scaling Prometheus setups to allow querying across multiple servers and clusters.
 * Unlimited Retention: Storing metrics for an unlimited time in the chosen object storage.
