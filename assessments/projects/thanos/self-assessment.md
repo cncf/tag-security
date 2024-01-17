@@ -397,9 +397,6 @@ No vulnerabilities have been disclosed in the Thanos project, but the project ma
 The Thanos project has achieved the passing level criteria and has also attained a silver badge in Open Source Security Foundation (OpenSSF) best practices badge.
  [Thanos OpenSSF best practices](https://www.bestpractices.dev/en/projects/3048).
 
-  <!--Best Practices. A brief discussion of where the project is at
-  with respect to CII best practices and what it would need to
-  achieve the badge.-->
 
 ### Case Studies.
 Many organizations have adopted Thanos and are using our project in production [[adopters-list](https://github.com/thanos-io/thanos/blob/main/website/data/adopters.yml)]. Here are a few case studies:
