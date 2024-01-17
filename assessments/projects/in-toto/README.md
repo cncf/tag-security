@@ -1,4 +1,4 @@
-# in-toto Security Assessment
+# in-toto Joint Security Assessment
 
 Completed: May 2019
 
