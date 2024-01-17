@@ -1,6 +1,10 @@
 # Knative Self-Assessment
+
+This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process and is currently pending changes from the maintainer team.
+
 Security reviewers: Maya Humston, Ethan Vazquez, Zhikang Xu, Shambhavi Seth
 This document is intended to assess the current state of security for the Knative project.
+
 ## Table of Contents
 * [Metadata](#metadata)
   * [Software Bill of Materials](#software-bill-of-materials)
