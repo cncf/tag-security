@@ -64,8 +64,6 @@ Highly available Prometheus setup with long term storage capabilities.
 
 ### Background
 
-<!-- Provide information for reviewers who may not be familiar with your project's -->
-<!-- domain or problem area. -->
 
 Thanos as a tool extends the capabilities of the Prometheus monitoring tool. Refer [[1]](#references)
 It does so by providing:
