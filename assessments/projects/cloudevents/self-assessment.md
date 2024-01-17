@@ -61,6 +61,7 @@ workspace](http://slack.cncf.io/).
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete |
 | Software | [CloudEvents Repository](https://github.com/cloudevents/spec)  |
 | Security Provider | CloudEvents is not a security provider  |
 | CloudEvents Specification Language | Markdown |
