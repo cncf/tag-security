@@ -540,19 +540,5 @@ Elevation of Privilege:
 [13] <https://github.com/prometheus/prometheus> (Prometheus documentation)  
 [14] <https://www.bestpractices.dev/en/projects/3048#security> (Development Practices)
 
-<!-- [1]: https://github.com/thanos-io/thanos (Background; Goals) -->  
-<!-- [2]: https://github.com/thanos-io/thanos/tree/main/docs/components (Actors; Actions; Components) -->  
-<!-- [3]: https://killercoda.com/thanos/ (Actions; Interactive Tutorials) -->  
-<!-- [4]: https://thesaadahmed.medium.com/thanos-monitoring-with-prometheus-and-grafana-843ed231c8a6 (Actions; monitoring) -->  
-<!-- [5]: https://github.com/thanos-io/thanos/blob/main/SECURITY.md (Goals; Security) -->  
-<!-- [6]: https://www.bestpractices.dev/en/projects/3048#security (Goals; best practices) -->  
-<!-- [7]: https://thanos.io/tip/contributing/contributing.md/ (Communication channels) -->  
-<!-- [8]: https://last9.io/blog/thanos-vs-victoriametrics/ (Thanos vs. VictoriaMetrics) -->
-<!-- [9]: https://docs.victoriametrics.com/Single-server-VictoriaMetrics.html (VictoriaMetrics documentation) -->
-<!-- [10]: https://last9.io/blog/thanos-vs-cortex/#:~:text=Thanos%20Querier%20can%20pull%20data,deduplicated%20into%20a%20single%20copy (Thanos vs Cortex) -->
-<!-- [11]: https://github.com/cortexproject/cortex (Cortex documentation) -->
-<!-- [12]: https://last9.io/blog/prometheus-vs-thanos/ (Prometheus vs. Thanos) -->
-<!-- [13]: https://github.com/prometheus/prometheus (Prometheus documentation) -->
-<!-- [14]: https://www.bestpractices.dev/en/projects/3048#security (Development Practices) -->
 
 
