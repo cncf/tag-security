@@ -92,10 +92,6 @@ By using Thanos in conjunction with Prometheus, organizations can address the ch
 
 > These are the individual parts of our system that interact to provide the desired functionality. Refer [[2]](#references) for description of various components.
 
-<!--Actors are only separated if they are isolated
-in some way.  For example, if a service has a database and a front-end API, but
-if a vulnerability in either one would compromise the other, then the distinction
-between the database and front-end is not relevant. The means by which actors are isolated should also be described, as this is often what prevents an attacker from moving laterally after a compromise. -->
 
 * Queriers: Stateless and horizontally scalable instances responsible for executing PromQL queries.
 * Store Gateway: Act as gateways to block data stored in object storage.
