@@ -236,7 +236,6 @@ Thanos seeks graduation and is preparing for a security audit.
 
 **Critical:**
 
-> A listing of critical security components of the project with a brief description of their importance.
 
 * Components communicate securely with TLS. This prevents unauthorized modification of data in transit.
 * High availability and fault tolerance is achieved by distributing Prometheus data across multiple instances and using object storage for long-term storage. Because of redundancy in multiple components, if one part of the system fails, the user can still perform certain actions.
