@@ -1,4 +1,4 @@
-# Cloud Native Buildpacks Security Assessment
+# Cloud Native Buildpacks Joint Security Assessment
 
 Date completed: Sep 7, 2021
 
