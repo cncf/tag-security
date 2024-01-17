@@ -215,10 +215,6 @@ Limitations:
 
 
 
-<!--Other features:
-*Seamless integration with Prometheus .
-*Easy deployment model .
-*Minimal baseline cost. -->
 
 ## Self-assessment use
 
