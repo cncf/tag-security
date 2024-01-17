@@ -438,8 +438,6 @@ Medallia is now considering a shift to a 100% remote-write architecture with cen
 To read more, see source [2022-09-08-thanos-at-medallia.md](https://github.com/thanos-io/thanos/blob/main/docs/blog/2022-09-08-thanos-at-medallia.md)
 
 ### Related Projects / Vendors.
-<!--Reflect on times prospective users have asked about the differences between your project and project X. Reviewers will have
-the same question. -->
 
 #### Victoria Metrics
 
