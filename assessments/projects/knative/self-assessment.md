@@ -31,6 +31,7 @@ This document is intended to assess the current state of security for the Knativ
 ## Metadata
 | | |
 |-----------|------|
+| Assessment Stage | Incomplete |
 | Software | https://github.com/knative/serving https://github.com/knative/eventing https://github.com/knative/func |
 | Security Provider? | No — the primary function of Knative is to provide a set of components and building blocks to extend Kubernetes functionality and should not be considered primarily a security provider. |
 | Languages | Go |
