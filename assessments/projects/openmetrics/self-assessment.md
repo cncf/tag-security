@@ -97,7 +97,7 @@ Failing to reach any part of these actors will not structurally ruin the other p
 
 ## Self-assessment use
 
-This self-assessment is created by the OpenMetrics team to perform an internal analysis of the project's security. It is not intended to provide a security audit of OpenMetrics, or function as an independent assessment or attestation of OpenMetrics's security health.
+This self-assessment is not intended to provide a security audit of OpenMetrics, or function as an independent assessment or attestation of OpenMetrics's security health.
 
 This document serves to provide OpenMetrics users with an initial understanding of OpenMetrics's security, where to find existing security documentation, OpenMetrics plans for security, and general overview of OpenMetrics security practices, both for development of OpenMetrics as well as security of OpenMetrics.
 
