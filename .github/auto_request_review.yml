@@ -40,6 +40,8 @@ reviewers:
       - ashutosh-narkar
     controls-reviewers:
       - JonZeolla
+    assessments-reviewers:
+      - eddie-knight
 
 files:
   # Keys are glob expressions.
@@ -54,6 +56,8 @@ files:
     - supply-chain-security-reviewers #group
   'cloud-native-controls/**':
     - controls-reviewers #group
+  'assessments/**':
+    - assessments-reviewers #group
 
 options:
   ignore_draft: true #draft PRs are ignored

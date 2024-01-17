@@ -1,4 +1,4 @@
-# OPA Security Assessment
+# OPA Joint Security Assessment
 
 Completed: September 2019
 
