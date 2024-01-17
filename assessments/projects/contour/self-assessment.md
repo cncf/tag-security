@@ -31,6 +31,7 @@ This assessment was created by community members as part of the [Security Pals](
 
 |   |  |
 | -- | -- |
+| Assessment Stage | Incomplete |
 | Software | https://github.com/projectcontour/contour |
 | Security Provider | No |
 | Languages | Go |
