@@ -2,15 +2,6 @@
 
 This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process and is currently pending changes from the maintainer team.
 
-The Self-assessment is the initial document for projects to begin thinking about the
-security of the project, determining gaps in their security, and preparing any security
-documentation for their users. This document is ideal for projects currently in the
-CNCF **sandbox** as well as projects that are looking to receive a joint assessment and
-currently in CNCF **incubation**.
-
-For a detailed guide with step-by-step discussion and examples, check out the free 
-Express Learning course provided by Linux Foundation Training & Certification: 
-[Security Assessments for Open Source Projects](https://training.linuxfoundation.org/express-learning/security-self-assessments-for-open-source-projects-lfel1005/).
 
 ## Table of contents
 
