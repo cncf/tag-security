@@ -517,7 +517,6 @@ Elevation of Privilege:
 * Threat: An attacker can change their status to perform actions only meant for certain trusted users.
   * For example, if Thanos is not configured to have proper access control mechanisms, a user might be able to change authentication or authorization settings to elevate their access. By doing so, a user could possibly change their role or grant themselves extra privileges.
 * Mitigation:
-   <!--* Secure communications via TLS encryption -->
    * Prometheus operates with the minimum level of access rights necessary to function (principle of least privilege). Thanos can also be configured (via config flags) to minimize its access so that damage-potential is limited.
    * Prometheus is a monitoring tool, so it can be used to raise alerts upon suspicious activity that may coincide with attempts at privilege escalation within Thanos as well.
    * Thanos piggy-backs off of Prometheus's authentication and authorization mechanisms.
