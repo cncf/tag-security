@@ -23,6 +23,7 @@ This assessment was created by community members as part of the [Security Pals](
 
 |                   |                                                                  |
 | ----------------- | ---------------------------------------------------------------- |
+| Assessment Stage | Incomplete |
 | Software          | https://github.com/etcd-io/etcd                                  |
 | Security Provider | No                                                               |
 | Languages         | Golang                                                           |
