@@ -203,17 +203,6 @@ These features and practices demonstrate Thanos's commitment to security within 
 Limitations:
 * Currently, Thanos does not support encrypting metrics in local storage or client-side encryption for object storage. However, metric data is often considered non-sensitive (they do not contain PII information as that would have the cardinality implication). If encryption is mandatory, Thanos project recommends using server-side encryption for object storage.
 
-<!--* Global query view of metrics.
-* Unlimited retention of metrics.
-* High availability of components, including Prometheus.
-* Deduplication and merging of metrics collected from Prometheus HA pairs
-* Seamless integration with existing Prometheus setups
-* Any object storage as its only, optional dependency
-* Downsampling historical data for massive query speedup
-* Cross-cluster federation
-* Fault-tolerant query routing
-* Simple gRPC "Store API" for unified data access across all metric data
-* Easy integration points for custom metric providers -->
 
 ### Non-goals
 
