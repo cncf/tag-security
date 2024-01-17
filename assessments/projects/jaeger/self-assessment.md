@@ -159,8 +159,7 @@ Contributing Project Maintainers: Yuri Shkuro, Jonah Kowall
 
 Contributing Reviewers: Ragashree Shekar, Eddie Knight
 
-This self-assessment is created by the Jaeger team to perform an internal analysis of the
-project's security.  It is not intended to provide a security audit of Jaeger, or
+This self-assessment is not intended to provide a security audit of Jaeger, or
 function as an independent assessment or attestation of Jaeger's security health.
 
 This document serves to provide Jaeger users with an initial understanding of
