@@ -244,7 +244,6 @@ Thanos seeks graduation and is preparing for a security audit.
 
 **Security Relevant:**
 
-> A listing of security relevant components of the project with a brief description.
 
 * Logging and monitoring of Thanos components to detect security breaches:
    * Make a log of what components were used, when, how by what user etc.
