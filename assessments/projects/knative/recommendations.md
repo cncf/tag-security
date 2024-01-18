@@ -1,0 +1,7 @@
+# Recommendations
+
+Here we offer a few recommendations to the knative team regarding their documentation based on the findings of our assessment. 
+
+- The actors are scattered throughout the documentation and cannot be found in one single place. As a result, it’s difficult to determine the *correct* list of “actors” for serving, eventing, and functions. If possible, it would be an improvement to consolidate this information into one location to ensure the user’s understanding of the product and its components.
+- On Knative’s official website https://knative.dev/docs/ they refer to the product as having two main components, serving and eventing. “Functions” is an aspect of the product that they include as a lesser component. However, on CNCF’s website (https://landscape.cncf.io/?selected=knative) they refer to Knative having three main components, counting functions as one. We believe that the documentation suggests that “Functions” is a main component on the level of serving and eventing, and we suggest that the website’s documentation be updated to reflect this. Either way, we suggest that Knative standardizes the description of the product across all platforms in a single markdown file.
+- There are no mentions that we could find in the documentation describing any project compliance standards knative upholds. There are several publicly known standards that Kubernetes follows, but these are not strictly relevant to knative. If there exist any compliance standards that knative follows, we recommend these be prominantly displayed in the documentation. 
