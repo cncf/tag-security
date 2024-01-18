@@ -160,8 +160,6 @@ the project and its risk profile.
 Facilitator: Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)),
 New York University
 
-Facilitator: Andrés Vega ([@anvega](https://github.com/anvega))
-
 Co-chair representatives: @sublimino @PushkarJ
 
 #### Software Supply Chain Security
