@@ -26,6 +26,7 @@ This document evaluates the design goals for the CoreDNS CNCF project and provid
 
 | Category | Data |
 | -- | -- |
+| Assessment Stage | Incomplete |
 | Software | [CoreDNS](https://github.com/coredns/coredns) |
 | Security Provider | No |
 | Languages | Golang |
