@@ -1,5 +1,7 @@
 # CoreDNS Self-assessment
 
+This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process and is currently pending changes from the maintainer team.
+
 This document evaluates the design goals for the CoreDNS CNCF project and provides a security assessment of its software. The authors of this document are Tom Zhang, Rohit Chaudhari, Maryam Mohagheghi,  and Vamshi Madineni.
 
 ## Table of contents
