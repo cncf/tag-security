@@ -1,5 +1,5 @@
 repository:
-  # See https://developer.github.com/v3/repos/#edit for all available settings.
+  # See https://developer.github.com/v3/repos/#edit for all available settings on github.
 
   # The name of the repository. Changing this will rename the repository
   name: tag-security
