@@ -12,6 +12,7 @@ Current list of projects:
 * Falco
 * Harbor
 * in-toto
+* Keycloak
 * Open Policy Agent
 * Notary
 * TUF
