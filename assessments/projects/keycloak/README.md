@@ -1,4 +1,4 @@
-# Keycloak Security Assessment
+# Keycloak Joint Security Assessment
 
 Completed: October 2020
 
