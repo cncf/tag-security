@@ -31,6 +31,7 @@ The Self-assessment is the initial document for Chaos Mesh to begin thinking abo
 
 |                   |                                                                                                                                |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Assessment Stage | Incomplete |
 | Software          | https://github.com/chaos-mesh/chaos-mesh                                                                                       |
 | Security Provider | No, Chaos Mesh offers various types of fault simulation and has an enormous capability to orchestrate fault scenarios.         |
 | Languages         | Go, Typescript, Javascript, Shell                                                                                              |
