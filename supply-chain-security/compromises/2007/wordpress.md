@@ -12,3 +12,7 @@ shortly.
 
 Publishing Infrastructure & Source Code - Infrastructure compromise with source
 code access, no signatures/authenticity.
+
+## References
+
+- https://lwn.net/Articles/224997/
