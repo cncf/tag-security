@@ -40,7 +40,7 @@ of compromise needs added, please include that as well.
 | [npm Library ‘node-ipc’ Sabotaged with npm Library ‘peacenotwar’ in Protest by their Maintainer](2022/node-ipc-peacenotwar.md) | 2022 | Malicious Maintainer | [1](https://snyk.io/blog/peacenotwar-malicious-npm-node-ipc-package-vulnerability/)|
 | [npm Libraries ‘colors’ and ‘faker’ Sabotaged in Protest by their Maintainer](2022/js-faker-colors.md) | 2022 | Malicious Maintainer | [1](https://www.revenera.com/blog/software-composition-analysis/the-story-behind-colors-js-and-faker-js/)|
 | [GCP Golang Buildpacks Old Compiler Injection](2022/golang-buildpacks-compiler.md) | 2022 | Source Code | [1](https://zt.dev/posts/gcp-buildpacks-old-compiler/)|
-| [WordPress theme publisher compromised](2022/wp-apthemes.md) | 2022 | Source Code | [1](https://jetpack.com/2022/01/18/backdoor-found-in-themes-and-plugins-from-accesspress-themes/), [2](https://blog.sucuri.net/2022/01/accesspress-themes-hit-with-targeted-supply-chain-attack.html)|
+| [WordPress theme publisher compromised](2022/wp-apthemes.md) | 2022 | Source Code <br> Publishing Infrastructure | [1](https://jetpack.com/2022/01/18/backdoor-found-in-themes-and-plugins-from-accesspress-themes/), [2](https://blog.sucuri.net/2022/01/accesspress-themes-hit-with-targeted-supply-chain-attack.html)|
 | [Remote code injection in Log4j](2021/log4j.md) | 2021 | Source code | [1](https://security.googleblog.com/2021/12/understanding-impact-of-apache-log4j.html) |
 | [Compromise of npm packages coa and rc](2021/coa-rc.md) | 2021 | Malicious Maintainer | [1](https://blog.sonatype.com/npm-hijackers-at-it-again-popular-coa-and-rc-open-source-libraries-taken-over-to-spread-malware) |
 | [Compromise of ua-parser-js](2021/ua-parser-js.md) | 2021 | Malicious Maintainer | [1](https://github.com/faisalman/ua-parser-js/issues/536) |
@@ -93,9 +93,9 @@ of compromise needs added, please include that as well.
 | [kernel.org compromise](2011/kernelorg.md) | 2011 | Publishing infrastructure | [1](https://lwn.net/Articles/461237/), [2](https://lwn.net/Articles/461552/) |
 | [apache.org incident](2010/apache.md) | 2010 | Attack Chaining | [1](https://blogs.apache.org/infra/entry/apache_org_04_09_2010) |
 | [Operation Aurora](2010/aurora.md) | 2010 | Watering-hole attack | [1](https://www.wired.com/2010/03/source-code-hacks/) |
-| [ProFTPD](2010/proftpd.md) | 2010 | Source Code | [1](https://www.zdnet.com/article/open-source-proftpd-hacked-backdoor-planted-in-source-code/) |
+| [ProFTPD](2010/proftpd.md) | 2010 | Publishing Infrastructure | [1](https://www.zdnet.com/article/open-source-proftpd-hacked-backdoor-planted-in-source-code/) |
 | [WordPress backdoor](2007/wordpress.md) | 2007 | Source Code <br> Publishing Infrastructure </br> | [1](https://lwn.net/Articles/224997/) |
-| [SquirrelMail backdoor](2007/squirrelmail.md) | 2007 | Source Code | [1](https://lwn.net/Articles/262688/) |
-| [gentoo rsync compromise](2003/gentoo-rsync.md) | 2003 | Source Code Repository | [1](https://archives.gentoo.org/gentoo-announce/message/7b0581416ddd91522c14513cb789f17a) |
+| [SquirrelMail backdoor](2007/squirrelmail.md) | 2007 | Source Code <br> Publishing Infrastructure | [1](https://lwn.net/Articles/262688/) |
+| [gentoo rsync compromise](2003/gentoo-rsync.md) | 2003 | Publishing Infrastructure | [1](https://archives.gentoo.org/gentoo-announce/message/7b0581416ddd91522c14513cb789f17a) |
 | [Debian infra compromise](2003/debian.md) | 2003 | Publishing infrastructure | [1](https://www.debian.org/News/2003/20031202) |
 | [Unix Support Group login backdoor](1984/login-bell.md) | <1984 | Dev Tooling | [1](https://niconiconi.neocities.org/posts/ken-thompson-really-did-launch-his-trusting-trust-trojan-attack-in-real-life/) |

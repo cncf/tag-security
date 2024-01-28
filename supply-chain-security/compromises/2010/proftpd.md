@@ -9,5 +9,11 @@ N/A
 
 ## Type of compromise
 
-The attackers seem to have been able to hack the source code repository but not
-developer keys.
+Publishing Infrastructure - the attackers gained access to the server hosting
+distribution artifacts and replaced them. No signing seems to have been employed
+and it's unlikely a key compromise was involved.
+
+## References
+
+- https://www.zdnet.com/article/open-source-proftpd-hacked-backdoor-planted-in-source-code/
+- https://www.theregister.com/2010/12/02/proftpd_backdoored/
