@@ -12,7 +12,9 @@ The response timeline suggests early discovery, and additional reporting indicat
 
 ## Type of Compromise
 
-Given not much is known about the original compromise, this is categorized as a source code compromise.
+Given not much is known about the original compromise, this is categorized as a
+source code compromise. It's also possible this was a compromise of publishing
+infrastructure, where only release artifacts were affected.
 
 ## References
 
