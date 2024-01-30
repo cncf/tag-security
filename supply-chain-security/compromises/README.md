@@ -93,6 +93,7 @@ of compromise needs added, please include that as well.
 | [Code Spaces](2014/code-spaces.md) | 2014    | Source Code | [1](https://threatpost.com/hacker-puts-hosting-service-code-spaces-out-of-business/106761/)
 | [Monju Incident](2014/monju.md) | 2014    | Publishing infrastructure| [1](https://www.contextis.com/en/blog/context-threat-intelligence-the-monju-incident)
 | [APT lack of validation for source packages](2013/apt.md) | 2013 | Negligence | [1](https://lwn.net/Articles/602461/) |
+| [GitHub rails/rails Vulnerability](2012/ruby-on-rails-github.md) | 2012 | Source Code <br> Dev Tooling | [1](https://homakov.blogspot.com/2012/03/how-to.html), [2](https://github.blog/2012-03-05-responsible-disclosure-policy/) |
 | [kernel.org compromise](2011/kernelorg.md) | 2011 | Publishing infrastructure | [1](https://lwn.net/Articles/461237/), [2](https://lwn.net/Articles/461552/) |
 | [FSF Website Hack](2010/fsf-website.md) | 2010 | Source Code | [1](https://www.computerworld.com/article/2752415/free-software-foundation-s-software-repository-hacked.html) |
 | [apache.org incident](2010/apache.md) | 2010 | Attack Chaining | [1](https://blogs.apache.org/infra/entry/apache_org_04_09_2010) |
