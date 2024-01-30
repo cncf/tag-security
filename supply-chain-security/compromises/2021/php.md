@@ -7,6 +7,10 @@ add backdoor capabilities.
 
 ## Impact
 
+<!-- cSpell:ignore Rasmus -->
+<!-- cSpell:ignore Lerdorf -->
+<!-- cSpell:ignore Popov -->
+
 * Code changes in the form of two commits to the official and self-hosted Git
 server were made as if they were signed-off by PHP maintainers Rasmus Lerdorf
 and Nikita Popov.
