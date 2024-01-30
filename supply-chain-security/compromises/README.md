@@ -101,6 +101,7 @@ of compromise needs added, please include that as well.
 | [ProFTPD](2010/proftpd.md) | 2010 | Publishing Infrastructure | [1](https://www.zdnet.com/article/open-source-proftpd-hacked-backdoor-planted-in-source-code/) |
 | [WordPress backdoor](2007/wordpress.md) | 2007 | Source Code <br> Publishing Infrastructure </br> | [1](https://lwn.net/Articles/224997/) |
 | [SquirrelMail backdoor](2007/squirrelmail.md) | 2007 | Source Code <br> Publishing Infrastructure | [1](https://lwn.net/Articles/262688/) |
+| [Linux Kernel CVS Repository Hack](2003/kernel-repository.md) | 2003 | Source Code <br> Dev Tooling | [1](https://lwn.net/Articles/57135/) |
 | [gentoo rsync compromise](2003/gentoo-rsync.md) | 2003 | Publishing Infrastructure | [1](https://archives.gentoo.org/gentoo-announce/message/7b0581416ddd91522c14513cb789f17a) |
 | [Debian infra compromise](2003/debian.md) | 2003 | Publishing infrastructure | [1](https://www.debian.org/News/2003/20031202) |
 | [Unix Support Group login backdoor](1984/login-bell.md) | <1984 | Dev Tooling | [1](https://niconiconi.neocities.org/posts/ken-thompson-really-did-launch-his-trusting-trust-trojan-attack-in-real-life/) |
