@@ -24,9 +24,9 @@ declared their GitHub PHP project repository as the primary source.
 
 ## Type of Compromise
 
-Source Code: Still unknown how the threat actors were able to gain access to
-the Git server, compromising the source code that powers 79.2% of all
-websites [2].
+Source Code and Dev Tooling: Still unknown how the threat actors were able to
+gain access to the Git server, compromising the source code that powers 79.2% of
+all websites [2].
 
 ## References
 
