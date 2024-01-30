@@ -94,6 +94,7 @@ of compromise needs added, please include that as well.
 | [Monju Incident](2014/monju.md) | 2014    | Publishing infrastructure| [1](https://www.contextis.com/en/blog/context-threat-intelligence-the-monju-incident)
 | [APT lack of validation for source packages](2013/apt.md) | 2013 | Negligence | [1](https://lwn.net/Articles/602461/) |
 | [kernel.org compromise](2011/kernelorg.md) | 2011 | Publishing infrastructure | [1](https://lwn.net/Articles/461237/), [2](https://lwn.net/Articles/461552/) |
+| [FSF Website Hack](2010/fsf-website.md) | 2010 | Source Code | [1](https://www.computerworld.com/article/2752415/free-software-foundation-s-software-repository-hacked.html) |
 | [apache.org incident](2010/apache.md) | 2010 | Attack Chaining | [1](https://blogs.apache.org/infra/entry/apache_org_04_09_2010) |
 | [Operation Aurora](2010/aurora.md) | 2010 | Watering-hole attack | [1](https://www.wired.com/2010/03/source-code-hacks/) |
 | [ProFTPD](2010/proftpd.md) | 2010 | Publishing Infrastructure | [1](https://www.zdnet.com/article/open-source-proftpd-hacked-backdoor-planted-in-source-code/) |
