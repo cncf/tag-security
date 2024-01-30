@@ -7,6 +7,10 @@ add backdoor capabilities.
 
 ## Impact
 
+<!-- cSpell:ignore Rasmus -->
+<!-- cSpell:ignore Lerdorf -->
+<!-- cSpell:ignore Popov -->
+
 * Code changes in the form of two commits to the official and self-hosted Git
 server were made as if they were signed-off by PHP maintainers Rasmus Lerdorf
 and Nikita Popov.
@@ -24,9 +28,9 @@ declared their GitHub PHP project repository as the primary source.
 
 ## Type of Compromise
 
-Source Code: Still unknown how the threat actors were able to gain access to
-the Git server, compromising the source code that powers 79.2% of all
-websites [2].
+Source Code and Dev Tooling: Still unknown how the threat actors were able to
+gain access to the Git server, compromising the source code that powers 79.2% of
+all websites [2].
 
 ## References
 
