@@ -30,6 +30,9 @@ of compromise needs added, please include that as well.
 <!-- cSpell:disable -->
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
+| [Fake Dependabot commits](2023/fake-dependabot.md) | 2023 | Source Code | [1](https://checkmarx.com/blog/surprise-when-dependabot-contributes-malicious-code/) |
+| [Okta Source Code Theft](2022/okta-github-repo-leak.md) | 2022 | Source Code <br> Dev Tooling | [1](https://www.bleepingcomputer.com/news/security/oktas-source-code-stolen-after-github-repositories-hacked/)
+| [Auth0 Source Code Theft](2022/auth0-source-code-leak.md) | 2022 | Source Code <br> Dev Tooling | [1](https://auth0.com/blog/auth0-code-repository-archives-from-2020-and-earlier/) [2](https://www.bleepingcomputer.com/news/security/auth0-warns-that-some-source-code-repos-may-have-been-stolen/)
 | [RubyGems Package Overwrite Flaw](2022/rubygems-override.md) | 2022 | Publishing Infrastructure | [1](https://www.bleepingcomputer.com/news/security/check-your-gems-rubygems-fixes-unauthorized-package-takeover-bug/)
 | [Legitimate software update mechanism abused to deliver wiper malware](2022/fantasy.md) | 2022 | Publishing Infrastructure | [1](https://www.welivesecurity.com/2022/12/07/fantasy-new-agrius-wiper-supply-chain-attack/)|
 | [Docker Hub malicious containers](2022/docker-hub-malicious-containers.md) | 2022 | Publishing Infrastructure | [1](https://www.bleepingcomputer.com/news/security/docker-hub-repositories-hide-over-1-650-malicious-containers/)
