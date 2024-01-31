@@ -10,5 +10,10 @@ issued later.
 
 ## Type of compromise
 
-Source Code - Infrastructure compromise with source code access, no
-signatures/authenticity.
+Source Code / Publishing Infrastructure - SquirrelMail is written in PHP and the
+distribution is the source itself. The modification appears to have been in a
+tarball which no longer matched the MD5 checksum.
+
+## References
+
+- https://lwn.net/Articles/262688/

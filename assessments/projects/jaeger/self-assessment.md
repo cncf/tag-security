@@ -1,6 +1,6 @@
 # Jaeger Self-assessment
 
-This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process and is currently pending changes from the maintainer team.
+This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process. The Jaeger team thanks them for the contribution!
 
 ## Table of contents
 
@@ -23,7 +23,7 @@ This assessment was created by community members as part of the [Security Pals](
 
 |   |  |
 | -- | -- |
-| Assessment Stage | Incomplete |
+| Assessment Stage | Complete |
 | **Software** | [A link to Jaeger’s repository.](https://github.com/jaegertracing/jaeger)  |
 | **Security Provider** | No, the main function of this project is to enable distributed tracing in an organization’s tech infrastructure. Security is not the primary objective.  |
 | **Languages** | <ul><li>Go</li><li>Shell</li><li>Makefile</li><li>Python</li><li>Dockerfile</li></ul> |

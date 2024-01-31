@@ -1,0 +1,21 @@
+# Recommendations to Volcano
+## Action Items
+- [ ] Review about the default pod security configuration used by Volcano. [Link](https://github.com/volcano-sh/volcano/tree/master/installer#configuration)
+- [ ] Review the deployment architecture to add safeguards to prevent unauthorized access or changes to deployments.
+- [ ] Review communication between services within Volcano to consider need of encryption to prevent integrity.
+- [ ] Review and document protocols used for safeguarding credentials like admission secret, image pull secret, cryptographic keys and certificates.
+- [ ] Review resource isolation and security in a multi-tenant environment.
+- [ ] Review safety of storing sensitive job data within Volcano structures like [CSCI Storage?](https://kubernetes.io/blog/2019/01/15/container-storage-interface-ga/) or [Dedicated Volume](https://github.com/volcano-sh/volcano/blob/master/docs/design/dedicated-volume.md).
+- [ ] Review insufficiency of logging using limited kubectl logs to detect an attack or mis-behaviour of Volcano components.
+- [ ] Review and add tools additional to CodeQL in the development and deployment process to manage code quality and security.
+- [ ] Document known security issues or limitations with the current version of Volcano.
+- [ ] Improve OpenSSF best practices badge from 5/10 to 10/10 by implementing the following tasks:
+    - [ ] Cryptographically signing release artifacts.
+    - [ ] Having the project's workflows follow the principle of least privilege. (multiple GitHub workflow tokens were detected with excessive permissions)
+    - [ ] Fuzzing the project
+    - [ ] Checking all commits with static code analysis
+    - [ ] Limiting the project's exposure to open, known unfixed vulnerabilities.
+    - [ ] Having the project declare and pinned the dependencies of its build process by hash
+- [ ] Conduct a comprehensive review of RBAC policies within Volcano scheduler and controller to ensure the principle of least privilege.
+- [ ] Review image security for containerized deployments to make sure container images are signed and immutable.
+- [ ] Define a process to regularly update Volcano dependencies and automate check for vulnerabilities in them using tools like OWASP Dependency-Check.
