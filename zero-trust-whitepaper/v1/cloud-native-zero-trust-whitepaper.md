@@ -106,13 +106,9 @@ We intend to equip organizations with comprehensive knowledge to implement Zero 
 
 In the context of cloud systems, Zero Trust is a collection of concepts and architectures in cybersecurity to secure cloud services - self-contained software units that offer a specific function or feature with the view that cloud systems are already compromised. Zero Trust assumes that protecting the cloud system perimeter does not suffice, and offenders may find ways to attack cloud services from within the cloud network. This calls for protecting cloud services in an environment where offenders have a foothold inside the cloud systems and at clients approaching the cloud services. Zero Trust is a cyber approach in which everything needs to be suspected; no trust should be given implicitly, and minimal trust should be given explicitly to those showing good conduct to do their specific tasks. The Zero Trust approach aims to enforce accurate, least privileged, behavior-based, per-request access decisions to every cloud service, regardless of whether the service request is sourced from a client within the cloud or from an external client.
 
-** \
- \
-**
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 ![alt_text](images/image1.png "image_tooltip")
+
+_Image 1._
 
 In recent years, Zero Trust has gained significant attention, propelled by the efforts of the US Government after President Biden’s[ Zero Trust Mandate](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf). A few recent codification efforts include [NIST SP 800-207, Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final), [CISA’s Zero Trust Maturity Model](https://www.cisa.gov/sites/default/files/2023-04/zero_trust_maturity_model_v2_508.pdf), [Department of Defense (DoD) Zero Trust Reference Architecture](https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf), and NIST SP 800-207A,[ A Zero Trust Architecture Model for Access Control in Cloud Native Applications in Multi-Location Environments](https://csrc.nist.gov/publications/detail/sp/800-207a/draft). Zero Trust is in many ways a revolution in cyber security practices, and since codification papers aiming to offer concrete, practical recommendations often limit the scope and seek a more evolutionary approach to present readers. This often comes while deviating from the Zero Trust methodology. Different standards seem to legitimize other deviations. Therefore, it is no surprise that none of these papers agree. For example, a paper focused on the required evolution of identity management may leave out controls needed to protect against a compromised client or stolen credentials.
 
@@ -144,20 +140,12 @@ We hope that the cloud native community, CNCF members, and other interested part
 
 Principles allow the reader to understand the fundamental ideas and beliefs that shape the rest of the paper's content. Principles serve as a reference point and help readers contextualize the information presented throughout the paper. They provide a logical and conceptual framework that supports the arguments, strategies, and recommendations discussed later in the document.
 
-
-         \
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image2.png "image_tooltip")
- \
-_In the context of Zero Trust, we model cloud native as an environment where “Service Request Senders” (users or machines from within the cloud or from outside the cloud) send “Service Requests” to Services implementing specific functions or features._
+
+_Image 2. In the context of Zero Trust, we model cloud native as an environment where “Service Request Senders” (users or machines from within the cloud or from outside the cloud) send “Service Requests” to Services implementing specific functions or features._
+
 
 Principles of Zero Trust:
-
-
 
 * **Assume a breach**.  Plan for systems and elements getting compromised.
     1. **Assume every image includes vulnerabilities** - there is no such thing as a vulnerability-free image._ Dependencies are vulnerable, development tools get hacked, repositories get hacked, and CI/CD tools get hacked. The mountain of code we all use is vulnerable. _
@@ -307,10 +295,8 @@ Authentication and authorization are handled on a per-request basis rather than 
 
 We can break this into three simple steps to keep in mind.
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
+![alt_text](images/image3.png "image_tooltip")
+_Image 3._
 
 
 #### Always identify
@@ -342,17 +328,9 @@ When writing a paper on zero trust and how it applies to cloud native architectu
 
 The [DoD Reference Architecture](https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf) identifies seven core pillars: Users, Devices, Networking, Applications and Workloads, Data, and Automation and Orchestration. We identify the following as the Bedrocks of cloud native Zero Trust:
 
+![alt_text](images/image4.png "image_tooltip")
 
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
- \
-Note that the service request sender (aka client) may be malicious. The Network and Data may also be compromised.  \
-
-
+_Image 4. Note that the service request sender (aka client) may be malicious. The Network and Data may also be compromised._
 
 
 * **Service Instances** - Securing services offered using containers on cloud native clusters. DevSecOps practices to secure applications from inception till production. Secure by design practices, image build methodologies, image scanning, and storage. Service runtime protection methods include behavioral monitoring methods of services to form **confidence levels** in services.
@@ -374,17 +352,11 @@ Security Behavior Analytics (SBA) is a technology that serves as an _Active Obse
 
 Under Cloud Native Zero Trust, SBA enables the monitoring of **services**, **client identities**, and **service requests.**
 
+![alt_text](images/image5.png "image_tooltip")
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+_Image 5._
 
-
-![alt_text](images/image4.png "image_tooltip")
-
-
- \
 In the context of Cloud Services, we identify between:
-
-
 
 * **Security Behavior Analytics for Service Requests (SBA-SR)** - the use of SBA for analyzing the behavior exposed by **service requests** before they arrive at a vulnerable service.
 * **Security Behavior Analytics for Service Instances (SBA-SI)** - the use of SBA for analyzing the behavior exposed by cloud **service.**
