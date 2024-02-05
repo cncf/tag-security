@@ -61,15 +61,15 @@ In the context of cloud systems, Zero Trust is a collection of concepts and arch
 
 _Image 1._
 
-In recent years, Zero Trust has gained significant attention, propelled by the efforts of the US Government after President Biden’s[ Zero Trust Mandate](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf) [^2]. A few recent codification efforts include [NIST SP 800-207, Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final), [CISA’s Zero Trust Maturity Model](https://www.cisa.gov/sites/default/files/2023-04/zero_trust_maturity_model_v2_508.pdf), [Department of Defense (DoD) Zero Trust Reference Architecture](https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf), and NIST SP 800-207A,[ A Zero Trust Architecture Model for Access Control in Cloud Native Applications in Multi-Location Environments](https://csrc.nist.gov/publications/detail/sp/800-207a/draft). Zero Trust is in many ways a revolution in cyber security practices, and since codification papers aiming to offer concrete, practical recommendations often limit the scope and seek a more evolutionary approach to present readers. This often comes while deviating from the Zero Trust methodology. Different standards seem to legitimize other deviations. Therefore, it is no surprise that none of these papers agree. For example, a paper focused on the required evolution of identity management may leave out controls needed to protect against a compromised client or stolen credentials.
+In recent years, Zero Trust has gained significant attention, propelled by the efforts of the US Government after President Biden’s[ Zero Trust Mandate](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf) [^2]. A few recent codification efforts include [NIST SP 800-207, Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final), [CISA’s Zero Trust Maturity Model](https://www.cisa.gov/sites/default/files/2023-04/zero_trust_maturity_model_v2_508.pdf), [Department of Defense (DoD) Zero Trust Reference Architecture](https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf) [^3], and [NIST SP 800-207A](https://csrc.nist.gov/pubs/sp/800/207/a/final),[ A Zero Trust Architecture Model for Access Control in Cloud Native Applications in Multi-Location Environments](https://csrc.nist.gov/publications/detail/sp/800-207a/draft). Zero Trust is in many ways a revolution in cyber security practices, and since codification papers aiming to offer concrete, practical recommendations often limit the scope and seek a more evolutionary approach to present readers. This often comes while deviating from the Zero Trust methodology. Different standards seem to legitimize other deviations. Therefore, it is no surprise that none of these papers agree. For example, a paper focused on the required evolution of identity management may leave out controls needed to protect against a compromised client or stolen credentials.
 
 This whitepaper aims to explore zero trust principles, based on our biases and interpretations, as applied to cloud native architectures and platforms to help practitioners with guidance and best practices to achieve Zero Trust through the various stages of maturity. We view ZTA as a holistic approach to security required when abandoning the assumption that the perimeter is defendable. It affects all aspects of cyber security and changes the relationship between them and their respective relative importance.
 
 We aim in this whitepaper to provide initial thoughts and positioning of zero trust for cloud native architectures and platforms. This provides a baseline for conversation and iterative upgrades to our recommendations and guidance as the field inevitably matures.
 
-Before going further, we need to define Zero Trust. The concept of Zero Trust was first introduced by John Kindervag, then an analyst at Forrester Research, in 2010. It has evolved since then as a security framework to help reduce implicit trust in systems - not ensure there is no trust at all. All systems have ‘trust’; but trust “is not a property, but rather an assessment based on experience…. [It is] a declaration made by an observer [not] a property of the observed.”[^3] Resultantly, Zero trust is about not giving implicit trust but rather keeping trust in the system and its components to the bare minimum necessary (the well-known principle of least privilege) and ensuring it’s enforced - ideally automatically - while ensuring continual assessment. When implementing zero trust, perimeter security is no longer enough; you must treat users, systems, and networks as untrusted.
+Before going further, we need to define Zero Trust. The concept of Zero Trust was first introduced by John Kindervag, then an analyst at Forrester Research, in 2010. It has evolved since then as a security framework to help reduce implicit trust in systems - not ensure there is no trust at all. All systems have ‘trust’; but trust “is not a property, but rather an assessment based on experience…. [It is] a declaration made by an observer [not] a property of the observed.”[^4] Resultantly, Zero trust is about not giving implicit trust but rather keeping trust in the system and its components to the bare minimum necessary (the well-known principle of least privilege) and ensuring it’s enforced - ideally automatically - while ensuring continual assessment. When implementing zero trust, perimeter security is no longer enough; you must treat users, systems, and networks as untrusted.
 
-The DoD’s Reference Architecture sums it up nicely:
+The DoD’s Reference Architecture [^3] sums it up nicely:
 
  >_“The foundational tenet of the Zero Trust Model is that no actor, system, network, or service operating outside or within the security perimeter is trusted. It is a dramatic paradigm shift in [the] philosophy of how we secure our infrastructure, networks, and data, from verify once at the perimeter to continual verification of each user, device, application, and transaction.”_
 
@@ -536,23 +536,15 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
 [Secuity-Guard](https://knative.dev/docs/serving/app-security/security-guard-about/) implements dynamic access control by introducing an Access Control gate in front of every **Service Instance**.The Access Control can be configured to block **service requests** based on the request **confidence level**.
 
 
-## References and Footnotes
-
-[^1]:
-    Internet Crime Complaint Center (IC3) Annual report:  [https://www.ic3.gov/Media/PDF/AnnualReport/2022_IC3Report.pdf](https://www.ic3.gov/Media/PDF/AnnualReport/2022_IC3Report.pdf)
-[^2]:
-    President Biden’s Zero Trust Mandate: [https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf)
-[^3]:
-     Dorothy Denning- A New Paradigm for Trusted Systems, 1993  [https://dl.acm.org/doi/pdf/10.1145/283751.283772](https://dl.acm.org/doi/pdf/10.1145/283751.283772)
-
-
+## References
 
 * NIST SP 800-207, Zero Trust Architecture: [https://csrc.nist.gov/publications/detail/sp/800-207/final](https://csrc.nist.gov/publications/detail/sp/800-207/final)
+* NIST SP 800-207A, A Zero Trust Architecture Model for Access Control in Cloud-Native Applications in Multi-Cloud Environments:[https://csrc.nist.gov/pubs/sp/800/207/a/final](https://csrc.nist.gov/pubs/sp/800/207/a/final)
 * CISA Zero Trust Maturity Model: [https://www.cisa.gov/zero-trust-maturity-model](https://www.cisa.gov/zero-trust-maturity-model)
 * Department of Defense (DoD) Zero Trust Reference Architecture: [https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf](https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf)
 * DoD Zero Trust Strategy (defense.gov): [https://dodcio.defense.gov/Portals/0/Documents/Library/DoD-ZTStrategy.pdf](https://dodcio.defense.gov/Portals/0/Documents/Library/DoD-ZTStrategy.pdf)
 * DoD Enterprise DevSecOps Reference Design: [https://dodcio.defense.gov/Portals/0/Documents/DoD%20Enterprise%20DevSecOps%20Reference%20Design%20v1.0_Public%20Release.pdf](https://dodcio.defense.gov/Portals/0/Documents/DoD%20Enterprise%20DevSecOps%20Reference%20Design%20v1.0_Public%20Release.pdf)
-* _A Zero Trust Architecture Model for Access Control in Cloud Native Applications in Multi-Location Environments_: [https://csrc.nist.gov/publications/detail/sp/800-207a/draft](https://csrc.nist.gov/publications/detail/sp/800-207a/draft)
+* A Zero Trust Architecture Model for Access Control in Cloud Native Applications in Multi-Location Environments: [https://csrc.nist.gov/publications/detail/sp/800-207a/draft](https://csrc.nist.gov/publications/detail/sp/800-207a/draft)
 * Identity and Access Management section of tag-security whitepaper: [https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md#access](https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md#access)
 * Help implementing zero trust architecture (UK): [https://www.ncsc.gov.uk/collection/zero-trust-architecture/implementing-zta](https://www.ncsc.gov.uk/collection/zero-trust-architecture/implementing-zta)
 * Zero Trust Thought Paper (Canada): [https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/services-policies-for-government/information-management-technology/information-security/information-security-awareness/zero_trust_thought_paper.pdf](https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/services-policies-for-government/information-management-technology/information-security/information-security-awareness/zero_trust_thought_paper.pdf)
@@ -579,34 +571,32 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
     * Cert-manager: [https://cert-manager.io/](https://cert-manager.io/)
     * Kubernetes Network Policies: [https://kubernetes.io/docs/concepts/services-networking/network-policies/](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 
-History of Zero Trust:
+### History of Zero Trust:
 
-[https://infraon.io/blog/history-of-zero-trust-security/](https://infraon.io/blog/history-of-zero-trust-security/)
+* [https://infraon.io/blog/history-of-zero-trust-security/](https://infraon.io/blog/history-of-zero-trust-security/)
 
-In April 1994, the term "zero trust" was coined by Stephen Paul Marsh in his doctoral thesis on computer security at the University of Stirling. Marsh's work studied trust as something finite that can be described mathematically, asserting that the concept of trust transcends human factors such as morality, ethics, lawfulness, justice, and judgment.
+    In April 1994, the term "zero trust" was coined by Stephen Paul Marsh in his doctoral thesis on computer security at the University of Stirling. Marsh's work studied trust as something finite that can be described mathematically, asserting that the concept of trust transcends human factors such as morality, ethics, lawfulness, justice, and judgment.
 
-[TR133.pdf (stir.ac.uk)](https://www.cs.stir.ac.uk/~kjt/techreps/pdf/TR133.pdf)
+* [TR133.pdf (stir.ac.uk)](https://www.cs.stir.ac.uk/~kjt/techreps/pdf/TR133.pdf)
 
-John Kindervag, a former analyst at Forrester Research, in 2010. John Kindervag published a research paper titled "No More Chewy Centers: Introducing the Zero Trust Model of Information Security," in which he introduced the concept of zero trust as a new approach to cybersecurity.
+    John Kindervag, a former analyst at Forrester Research, in 2010. John Kindervag published a research paper titled "No More Chewy Centers: Introducing the Zero Trust Model of Information Security," in which he introduced the concept of zero trust as a new approach to cybersecurity.
 
-[Forrester-No-More-Chewy-Centers.pdf (ndm.net)](https://www.ndm.net/firewall/pdf/palo_alto/Forrester-No-More-Chewy-Centers.pdf)
+* [Forrester-No-More-Chewy-Centers.pdf (ndm.net)](https://www.ndm.net/firewall/pdf/palo_alto/Forrester-No-More-Chewy-Centers.pdf)
 
-The concept of Zero Trust was first introduced by John Kindervag, a former analyst at Forrester Research, in 2010. In his model, a network is divided into “zones” with varying levels of trust. The innermost zone, known as the “inner circle,” is the most trusted and contains the organization’s most sensitive data and resources. As you move outward from the inner circle, the level of trust decreases, with the outermost zone being the least trusted.
+    The concept of Zero Trust was first introduced by John Kindervag, a former analyst at Forrester Research, in 2010. In his model, a network is divided into “zones” with varying levels of trust. The innermost zone, known as the “inner circle,” is the most trusted and contains the organization’s most sensitive data and resources. As you move outward from the inner circle, the level of trust decreases, with the outermost zone being the least trusted.
 
-[https://techskillnation.com/2022/12/zero-trust/](https://techskillnation.com/2022/12/zero-trust/)
+* [https://techskillnation.com/2022/12/zero-trust/](https://techskillnation.com/2022/12/zero-trust/)
 
-Google was one of the first companies to take the cue from the potentialities of the Zero Trust architecture. The initiative was called BeyondCorp, and in 2009, Google implemented a de-parameterized framework based on the Zero Trust Architecture.
+    Google was one of the first companies to take the cue from the potentialities of the Zero Trust architecture. The initiative was called BeyondCorp, and in 2009, Google implemented a de-parameterized framework based on the Zero Trust Architecture.
 
-[Zero Trust Network Architecture the Best Fit for Your Use Cases | 2022 | Infraon](https://infraon.io/blog/zero-trust-network-access-use-cases/)
+* [Zero Trust Network Architecture the Best Fit for Your Use Cases | 2022 | Infraon](https://infraon.io/blog/zero-trust-network-access-use-cases/)
 
-NIST played a significant role in popularizing and formalizing the zero trust security model
+    NIST played a significant role in popularizing and formalizing the zero trust security model
 
-[https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf)
+* [https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf)
 
-A zero trust architecture is designed and deployed with adherence to the following zero trust
+    A zero trust architecture is designed and deployed with adherence to the following zero trust
 basic tenets….
-
-
 
 ## Acknowledgments
 
@@ -624,3 +614,14 @@ We want to thank several contributors from whom we had excellent input and feedb
 For anyone involved in creating this paper, we express our heartfelt gratitude for your time, dedication, and professionalism. Your contributions have undoubtedly elevated the standard of our research, and we are immensely grateful for your collaboration.
 
 Thank you for being an integral part of this endeavor
+
+## Footnotes and Citations
+
+[^1]:
+    Internet Crime Complaint Center (IC3) Annual report:  [https://www.ic3.gov/Media/PDF/AnnualReport/2022_IC3Report.pdf](https://www.ic3.gov/Media/PDF/AnnualReport/2022_IC3Report.pdf)
+[^2]:
+    President Biden’s Zero Trust Mandate: [https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf)
+[^3]:
+    Department of Defense (DoD) Zero Trust Reference Architecture: [https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf](https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf)
+[^4]:
+    Dorothy Denning- A New Paradigm for Trusted Systems, 1993  [https://dl.acm.org/doi/pdf/10.1145/283751.283772](https://dl.acm.org/doi/pdf/10.1145/283751.283772)
