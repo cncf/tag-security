@@ -490,12 +490,22 @@ To ensure all communications in-transit are encrypted, all services should be us
 
 ### Client Identities
 
-Identity verification can be based on either client-sent tokens or mTLS client certificates. Note that identity verification is only the first step in verifying the client’s identity. Verified identities under Zero Trust also need to be monitored by an _Active Observer_ to determine that the credentials are not being misused for malicious activity.
+Identity verification can be based on either client-sent tokens, mTLS client certificates, or a combination of both. Typically, the identity of the workload or service is represented by an Identity Token, also known as an Access Token, included with every request. This token can be inspected by a chain of Policy Enforcement Points to control access. Certificates, on the other hand, are designed to encrypt the connection between two points and guarantee the identity of one (TLS) or both (mTLS) access points.
+
+It's important to note that identity verification is only the first step in confirming the client’s identity. Verified identities under Zero Trust also need to be monitored by an _Active Observer_ to ensure that credentials are not being misused for malicious activity.
 
 
 #### Token-Based Identity
 
-When using Tokens such as [JSON Web Tokens (JWT)](https://jwt.io) to establish identity, the client obtains a token from a trusted third party. The token is then sent as part of the service request, enabling the service to verify the client’s identity using the trusted third party. Tokens are often used for authentication enabling a service to verify a client’s identity, even when the service request was sent via intermediate proxies.
+When using Tokens such as [JSON Web Tokens (JWT)](https://jwt.io) to establish identity, the client obtains a token from a trusted third party. The token is then sent as part of the service request, enabling the service to verify the client’s identity using the trusted third party. Tokens, preferably short-lived, are often used for authentication, allowing a service to verify a client’s identity even when the service request is sent via intermediate proxies. As the request with the Identity Token travels across the endpoints, the identity attributes can be easily read by Policy Enforcement Points, or a chain of them, allowing them to accept or deny access to various resources along the way while preserving the integrity of the token (it cannot be modified).
+
+In adherence to current best practices for utilizing JWT Tokens, it is recommended to perform the following checks:
+
+* **Signature**: Verify if the token has not been tampered with.
+* **exp** and **nbf** Claims: Validate the expiration time of the token.
+* **iss** Claim: Confirm the issuer's identity.
+* **aud** Claim: Check if the audience includes the workload itself.
+* **Scope Claim** (if exists): For example, ensure that the resource owner authorizes access to the resource."
 
 Related CNCF token based projects include [Dex](https://dexidp.io/) - an OpenID Connect (OIDC) identity and OAuth 2.0 provider, [Keycloak](https://www.keycloak.org/) - Identity and Access Management, and [SPIFFE and SPIRE](https://spiffe.io/) - A Universal identity control plane for distributed systems, suitable for managing identities in a multi-cloud environment.
 
