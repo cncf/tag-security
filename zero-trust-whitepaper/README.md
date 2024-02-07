@@ -1,7 +1,7 @@
 # Cloud Native Zero Trust Whitepaper
 
 > :sunflower: **Click
-> _[here](v2/CNCF_cloud-native-security-whitepaper-May2022-v2.pdf)_ for
+> _[here](v1/cloud-native-zero-trust-whitepaper.pdf)_ for
 > _version 1_ (PDF) whitepaper**
 
 ## About
@@ -71,6 +71,6 @@ approval on the PR.  At which point the markdown state will be changed to
 * [Original Issue](https://github.com/cncf/tag-security/issues/950)
 
 [whitepaper-v1-md]:
-https://github.com/cncf/tag-security/blob/main/zero-trust-whitepaper/v1/cloud-native-security-whitepaper.md
+https://github.com/cncf/tag-security/blob/main/zero-trust-whitepaper/v1/cloud-native-zero-trust-whitepaper.md
 [whitepaper-pdf-v1]:
-https://github.com/cncf/tag-security/blob/main/zero-trust-whitepaper/v1/CNCF_cloud-native-zero-trust-whitepaper-Nov2020.pdf
+https://github.com/cncf/tag-security/blob/main/zero-trust-whitepaper/v1/cloud-native-zero-trust-whitepaper.pdf
