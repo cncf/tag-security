@@ -61,13 +61,20 @@ In the context of cloud systems, Zero Trust is a collection of concepts and arch
 
 _Image 1._
 
-In recent years, Zero Trust has gained significant attention, propelled by the efforts of the US Government after President Biden’s[ Zero Trust Mandate](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf) [^2]. A few recent codification efforts include [NIST SP 800-207, Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final), [CISA’s Zero Trust Maturity Model](https://www.cisa.gov/sites/default/files/2023-04/zero_trust_maturity_model_v2_508.pdf), [Department of Defense (DoD) Zero Trust Reference Architecture](https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf) [^3], and [NIST SP 800-207A](https://csrc.nist.gov/pubs/sp/800/207/a/final),[ A Zero Trust Architecture Model for Access Control in Cloud Native Applications in Multi-Location Environments](https://csrc.nist.gov/publications/detail/sp/800-207a/draft). Zero Trust is in many ways a revolution in cyber security practices, and since codification papers aiming to offer concrete, practical recommendations often limit the scope and seek a more evolutionary approach to present readers. This often comes while deviating from the Zero Trust methodology. Different standards seem to legitimize other deviations. Therefore, it is no surprise that none of these papers agree. For example, a paper focused on the required evolution of identity management may leave out controls needed to protect against a compromised client or stolen credentials.
+In recent years, Zero Trust has gained significant attention, propelled by the efforts of the US Government after President Biden’s[ Zero Trust Mandate](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf) [^2]. A few recent codification efforts include<!-- cspell:disable -->
+[NIST SP 800-207, Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final),
+[CISA’s Zero Trust Maturity Model](https://www.cisa.gov/sites/default/files/2023-04/zero_trust_maturity_model_v2_508.pdf),
+[Department of Defense (DoD) Zero Trust Reference Architecture](https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf) [^3], and
+[NIST SP 800-207A](https://csrc.nist.gov/pubs/sp/800/207/a/final),
+[ A Zero Trust Architecture Model for Access Control in Cloud Native Applications in Multi-Location Environments](https://csrc.nist.gov/publications/detail/sp/800-207a/draft).
+<!-- cspell:enable -->
+Zero Trust is in many ways a revolution in cyber security practices, and since codification papers aiming to offer concrete, practical recommendations often limit the scope and seek a more evolutionary approach to present readers. This often comes while deviating from the Zero Trust methodology. Different standards seem to legitimize other deviations. Therefore, it is no surprise that none of these papers agree. For example, a paper focused on the required evolution of identity management may leave out controls needed to protect against a compromised client or stolen credentials.
 
 This whitepaper aims to explore zero trust principles, based on our biases and interpretations, as applied to cloud native architectures and platforms to help practitioners with guidance and best practices to achieve Zero Trust through the various stages of maturity. We view ZTA as a holistic approach to security required when abandoning the assumption that the perimeter is defendable. It affects all aspects of cyber security and changes the relationship between them and their respective relative importance.
 
 We aim in this whitepaper to provide initial thoughts and positioning of zero trust for cloud native architectures and platforms. This provides a baseline for conversation and iterative upgrades to our recommendations and guidance as the field inevitably matures.
 
-Before going further, we need to define Zero Trust. The concept of Zero Trust was first introduced by John Kindervag, then an analyst at Forrester Research, in 2010. It has evolved since then as a security framework to help reduce implicit trust in systems - not ensure there is no trust at all. All systems have ‘trust’; but trust “is not a property, but rather an assessment based on experience…. [It is] a declaration made by an observer [not] a property of the observed.”[^4] Resultantly, Zero trust is about not giving implicit trust but rather keeping trust in the system and its components to the bare minimum necessary (the well-known principle of least privilege) and ensuring it’s enforced - ideally automatically - while ensuring continual assessment. When implementing zero trust, perimeter security is no longer enough; you must treat users, systems, and networks as untrusted.
+Before going further, we need to define Zero Trust. The concept of Zero Trust was first introduced by <!-- cspell:disable -->John Kindervag, then an analyst at Forrester Research<!-- cspell:enable -->, in 2010. It has evolved since then as a security framework to help reduce implicit trust in systems - not ensure there is no trust at all. All systems have ‘trust’; but trust “is not a property, but rather an assessment based on experience…. [It is] a declaration made by an observer [not] a property of the observed.”[^4] Resultantly, Zero trust is about not giving implicit trust but rather keeping trust in the system and its components to the bare minimum necessary (the well-known principle of least privilege) and ensuring it’s enforced - ideally automatically - while ensuring continual assessment. When implementing zero trust, perimeter security is no longer enough; you must treat users, systems, and networks as untrusted.
 
 The DoD’s Reference Architecture [^3] sums it up nicely:
 
@@ -112,7 +119,7 @@ Principles of Zero Trust:
     In the context of cloud native:
     * (a) **Eliminate implicit trust**
         * **Always authenticate the service** - internal and external clients need to verify the identity of any service approached.
-            * The internal cluster network can also be hostile; hence, even internal clients must authenticate the services and protect against MITM attacks on the internal network.
+            * The internal cluster network can also be hostile; hence, even internal clients must authenticate the services and protect against Man-in-the-Middle attacks on the internal network.
         * **Always authenticate service request senders** - verify the identity of any request sender (aka client), either cluster internal or external to any service. This includes both users as well as machines sending requests.
             * We should assume the internal cluster network is also hostile, and offenders may send requests from within the internal cluster network.
     * (b) **Continually monitor actual behavior to verify  trustworthiness**
@@ -431,7 +438,7 @@ Consider a case where the _Confidence Level_ of a **Service Instance** suggests 
 
 ## Best Practices to Achieve Zero Trust
 
->“A guiding policy can be an advantage in and of itself if it _anticipates_ actions and reactions of others, _reduces the complexity and ambiguity_ of a situation, by exploiting _leverage_, and by creating policies and actions that are _coherent_.” - [Good Strategy, Bad Strategy by Richard Rumelt](https://youexec.com/book-summaries/good-strategy-bad-strategy)
+>“A guiding policy can be an advantage in and of itself if it _anticipates_ actions and reactions of others, _reduces the complexity and ambiguity_ of a situation, by exploiting _leverage_, and by creating policies and actions that are _coherent_.” - <!-- cspell:disable -->[Good Strategy, Bad Strategy by Richard Rumelt](https://youexec.com/book-summaries/good-strategy-bad-strategy)<!-- cspell:enable -->
 
 
 |Topic   | Key concept |
@@ -479,7 +486,7 @@ CNCF Knative offers the [Security-Guard](https://knative.dev/docs/serving/app-se
 
 Guard’s SBA-SR offers the added benefit of being able to detect unknown exploits to unknown vulnerabilities without the use of signatures. It can help protect services without the usual race between CVEs, Exploits, and Patches.
 
-SBA-SR may also be embedded in Web Application Firewall (WAF) that maintains per service state and is capable of analyzing incoming/ongoing traffic and detecting threads and ongoing attacks. Solutions like [Coraza](https://coraza.io) or [Curiefense](https://www.curiefense.io/) and many others provide anomaly scores for requests and decide whether to block them based on predefined thresholds. Such anomaly scores can evolve to offer SBA-SR features.
+SBA-SR may also be embedded in Web Application Firewall (WAF) that maintains per service state and is capable of analyzing incoming/ongoing traffic and detecting threads and ongoing attacks. Solutions like <!-- cspell:disable --> [Coraza](https://coraza.io) or [Curiefense](https://www.curiefense.io/) <!-- cspell:enable --> and many others provide anomaly scores for requests and decide whether to block them based on predefined thresholds. Such anomaly scores can evolve to offer SBA-SR features.
 
 
 #### Data in Transit
@@ -543,7 +550,7 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
 
 #### Dynamic access control
 
-[Secuity-Guard](https://knative.dev/docs/serving/app-security/security-guard-about/) implements dynamic access control by introducing an Access Control gate in front of every **Service Instance**.The Access Control can be configured to block **service requests** based on the request **confidence level**.
+[Security-Guard](https://knative.dev/docs/serving/app-security/security-guard-about/) implements dynamic access control by introducing an Access Control gate in front of every **Service Instance**.The Access Control can be configured to block **service requests** based on the request **confidence level**.
 
 
 ## References
@@ -563,7 +570,7 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
 * Success Story: Israel National Cyber Directorate Version 2.0 | NIST: [https://www.nist.gov/cyberframework/success-stories/israel-national-cyber-directorate-version-20](https://www.nist.gov/cyberframework/success-stories/israel-national-cyber-directorate-version-20)
 * Government Zero Trust Architecture (GovZTA) | Singapore Government Developer Portal (tech.gov.sg): [https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/government-zero-trust-architecture](https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/government-zero-trust-architecture)
 * 2022-2023 Best Undergraduate Cybersecurity Programs - US News Rankings: [https://www.usnews.com/best-colleges/rankings/computer-science/cybersecurity](https://www.usnews.com/best-colleges/rankings/computer-science/cybersecurity)
-* Referenced Projects;
+* Referenced Projects:<!-- cspell:disable -->
     * CNCF Knative’s Security-Guard: [https://knative.dev/docs/serving/app-security/security-guard-about/](https://knative.dev/docs/serving/app-security/security-guard-about/)
     * Falco: [https://falco.org/](https://falco.org/)
     * Cilium: [https://cilium.io/](https://cilium.io/)
@@ -580,20 +587,25 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
     * JSON Web Tokens (JWT): [https://jwt.io](https://jwt.io)
     * Cert-manager: [https://cert-manager.io/](https://cert-manager.io/)
     * Kubernetes Network Policies: [https://kubernetes.io/docs/concepts/services-networking/network-policies/](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
-
+<!-- cspell:enable -->
 ### History of Zero Trust:
-
-* [https://infraon.io/blog/history-of-zero-trust-security/](https://infraon.io/blog/history-of-zero-trust-security/)
+<!-- cspell:disable -->
+* [https://infraon.io/blog/history-of-zero-trust-security/](https://infraon.io/blog/history-of-zero-trust-security/) <!-- cspell:enable -->
 
     In April 1994, the term "zero trust" was coined by Stephen Paul Marsh in his doctoral thesis on computer security at the University of Stirling. Marsh's work studied trust as something finite that can be described mathematically, asserting that the concept of trust transcends human factors such as morality, ethics, lawfulness, justice, and judgment.
 
 * [TR133.pdf (stir.ac.uk)](https://www.cs.stir.ac.uk/~kjt/techreps/pdf/TR133.pdf)
 
-    John Kindervag, a former analyst at Forrester Research, in 2010. John Kindervag published a research paper titled "No More Chewy Centers: Introducing the Zero Trust Model of Information Security," in which he introduced the concept of zero trust as a new approach to cybersecurity.
+    <!-- cspell:disable -->
+    John Kindervag, a former analyst at Forrester Research, in 2010. John Kindervag <!-- cspell:enable --> published a research paper titled "No More Chewy Centers: Introducing the Zero Trust Model of Information Security," in which he introduced the concept of zero trust as a new approach to cybersecurity.
 
 * [Forrester-No-More-Chewy-Centers.pdf (ndm.net)](https://www.ndm.net/firewall/pdf/palo_alto/Forrester-No-More-Chewy-Centers.pdf)
 
-    The concept of Zero Trust was first introduced by John Kindervag, a former analyst at Forrester Research, in 2010. In his model, a network is divided into “zones” with varying levels of trust. The innermost zone, known as the “inner circle,” is the most trusted and contains the organization’s most sensitive data and resources. As you move outward from the inner circle, the level of trust decreases, with the outermost zone being the least trusted.
+    The concept of Zero Trust was first introduced by
+    <!-- cspell:disable -->
+    John Kindervag, a former analyst at Forrester Research,
+    <!-- cspell:enable -->
+    in 2010. In his model, a network is divided into “zones” with varying levels of trust. The innermost zone, known as the “inner circle,” is the most trusted and contains the organization’s most sensitive data and resources. As you move outward from the inner circle, the level of trust decreases, with the outermost zone being the least trusted.
 
 * [https://techskillnation.com/2022/12/zero-trust/](https://techskillnation.com/2022/12/zero-trust/)
 
