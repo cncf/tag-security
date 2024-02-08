@@ -71,6 +71,6 @@ approval on the PR.  At which point the markdown state will be changed to
 * [Original Issue](https://github.com/cncf/tag-security/issues/950)
 
 [whitepaper-v1-md]:
-https://github.com/cncf/tag-security/blob/main/zero-trust-whitepaper/v1/cloud-native-zero-trust-whitepaper.md
+./v1/cloud-native-zero-trust-whitepaper.md
 [whitepaper-pdf-v1]:
-https://github.com/cncf/tag-security/blob/main/zero-trust-whitepaper/v1/cloud-native-zero-trust-whitepaper.pdf
+./v1/cloud-native-zero-trust-whitepaper.pdf

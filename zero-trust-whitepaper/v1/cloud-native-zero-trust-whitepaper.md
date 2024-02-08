@@ -565,7 +565,7 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
 * Identity and Access Management section of tag-security whitepaper: [https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md#access](https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md#access)
 * Help implementing zero trust architecture (UK): [https://www.ncsc.gov.uk/collection/zero-trust-architecture/implementing-zta](https://www.ncsc.gov.uk/collection/zero-trust-architecture/implementing-zta)
 * Zero Trust Thought Paper (Canada): [https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/services-policies-for-government/information-management-technology/information-security/information-security-awareness/zero_trust_thought_paper.pdf](https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/services-policies-for-government/information-management-technology/information-security/information-security-awareness/zero_trust_thought_paper.pdf)
-* Essential Eight Maturity Model (Australia): [https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model)
+* Essential Eight Maturity Model (beyondtrust.com): [https://www.beyondtrust.com/blog/entry/essential-eight-maturity-model-updates](https://www.beyondtrust.com/blog/entry/essential-eight-maturity-model-updates)
 * Cybersecurity Policies (Europe): [https://digital-strategy.ec.europa.eu/en/policies/cybersecurity-policies](https://digital-strategy.ec.europa.eu/en/policies/cybersecurity-policies)
 * Success Story: Israel National Cyber Directorate Version 2.0 | NIST: [https://www.nist.gov/cyberframework/success-stories/israel-national-cyber-directorate-version-20](https://www.nist.gov/cyberframework/success-stories/israel-national-cyber-directorate-version-20)
 * Government Zero Trust Architecture (GovZTA) | Singapore Government Developer Portal (tech.gov.sg): [https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/government-zero-trust-architecture](https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/government-zero-trust-architecture)
@@ -599,7 +599,7 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
     <!-- cspell:disable -->
     John Kindervag, a former analyst at Forrester Research, in 2010. John Kindervag <!-- cspell:enable --> published a research paper titled "No More Chewy Centers: Introducing the Zero Trust Model of Information Security," in which he introduced the concept of zero trust as a new approach to cybersecurity.
 
-* [Forrester-No-More-Chewy-Centers.pdf (ndm.net)](https://www.ndm.net/firewall/pdf/palo_alto/Forrester-No-More-Chewy-Centers.pdf)
+* [Forrester-No-More-Chewy-Centers.pdf (crystaltechnologies.com)](https://crystaltechnologies.com/wp-content/uploads/2017/12/forrester-zero-trust-model-information-security.pdf)
 
     The concept of Zero Trust was first introduced by
     <!-- cspell:disable -->
@@ -631,6 +631,7 @@ We want to thank several contributors from whom we had excellent input and feedb
 * Matteo Bisi
 * Fabian Kammel
 * Yaron Schneider
+* Yoshiyuki Tabata
 <!-- cspell:enable -->
 
 For anyone involved in creating this paper, we express our heartfelt gratitude for your time, dedication, and professionalism. Your contributions have undoubtedly elevated the standard of our research, and we are immensely grateful for your collaboration.
