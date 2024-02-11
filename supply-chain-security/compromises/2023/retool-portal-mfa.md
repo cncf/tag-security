@@ -10,7 +10,7 @@ According to [Retool](https://retool.com/blog/mfa-isnt-mfa) (a development platf
 
 ## Type of Compromise
 
-This compromise of **Dev Tooling** also exhibits **Chaining** characteristics, and it's rooted on the spear-phishing and voice deepfake components.
+This compromise of **Dev Tooling**, possibly via **Source Code** changes impersonating an employee (rooted on the spear-phishing and voice deepfaking), exhibits various **Chaining** characteristics.
 
 ## Additional references
 - [Help Net Security Article on Retool Breach](https://www.helpnetsecurity.com/2023/09/14/retool-breach/)
