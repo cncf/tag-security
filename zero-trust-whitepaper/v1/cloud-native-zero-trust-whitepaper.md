@@ -526,7 +526,7 @@ Making mTLS standard for all communications in a cloud cluster is often achieved
 
 #### _Active Observer_ for Client Identities
 
-**Confidence level** of local clients embedded in cloud clusters may be evaluated by aggregating the **confidence level** of the respective** service instances** that embed such local clients. Inputs about external clients may or may be obtainable.
+**Confidence level** of local clients embedded in cloud clusters may be evaluated by aggregating the **confidence level** of the respective** service instances** that embed such local clients. Inputs about external clients may or may not be obtainable.
 
 An additional source of client identity **confidence level** can be achieved by aggregating the **confidence level** of all **service requests** emitted by the said client identity. Such information is available for both local and external clients.
 
