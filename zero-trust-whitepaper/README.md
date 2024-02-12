@@ -21,8 +21,8 @@ submitted to the repo and labeled with "suggestion" and "whitepaper".
 
 ### Markdown
 
-The living CNZTWP is maintained in [markdown][whitepaper-md] and all updates will
-be made in markdown.
+The living CNZTWP is maintained in [markdown][whitepaper-v1-md]
+and all updates will be made in markdown.
 
 ### Contributing updates
 

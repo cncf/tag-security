@@ -2,7 +2,7 @@
 
 ## Designing Zero Trust using Cloud Native Platforms (Part 1)
 
-```
+```text
 [*** Document locked for review by CNCF TAG Security community
      Suggestions and comments only *** ]
 ```
@@ -49,7 +49,7 @@ As a testament to the commitment of the CNCF community to address this critical 
 
 By leveraging the insights and guidelines presented in this white paper, organizations can bolster their security measures, adapt to the dynamic threat landscape, and establish a more robust security posture within their cloud native environments. The journey towards a Zero Trust approach represents a pivotal step in safeguarding critical services and data, ensuring a safer and more resilient digital future.
 
-In this paper, *Part 1 “Designing Zero Trust using Cloud Native Platforms”*, our primary objective is to provide a foundational understanding of the key principles, bedrock components, and best practices that form the backbone of this security model. However, it’s essential to emphasize that there is a forthcoming follow-up paper update part 2, which will explore far deeper into the subject matter. In the upcoming part 2 “Implementing Zero Trust using Cloud Native Platforms”, we will provide an extensive overview of detailed technologies, offer practical examples, and analyze advanced use cases, focusing on integrating Zero Trust principles with CNCF components and tools.
+In this paper, _Part 1 “Designing Zero Trust using Cloud Native Platforms”_, our primary objective is to provide a foundational understanding of the key principles, bedrock components, and best practices that form the backbone of this security model. However, it’s essential to emphasize that there is a forthcoming follow-up paper update part 2, which will explore far deeper into the subject matter. In the upcoming part 2 “Implementing Zero Trust using Cloud Native Platforms”, we will provide an extensive overview of detailed technologies, offer practical examples, and analyze advanced use cases, focusing on integrating Zero Trust principles with CNCF components and tools.
 
 We intend to equip organizations with comprehensive knowledge to implement Zero Trust security within cloud native environments successfully. This multi-part approach ensures that readers will thoroughly understand the topic and be well-prepared to enhance their cybersecurity defenses effectively.
 
@@ -61,12 +61,12 @@ In the context of cloud systems, Zero Trust is a collection of concepts and arch
 
 _Image 1._
 
-In recent years, Zero Trust has gained significant attention, propelled by the efforts of the US Government after President Biden’s[ Zero Trust Mandate](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf) [^2]. A few recent codification efforts include<!-- cspell:disable -->
+In recent years, Zero Trust has gained significant attention, propelled by the efforts of the US Government after President Biden’s[Zero Trust Mandate](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf) [^2]. A few recent codification efforts include<!-- cspell:disable -->
 [NIST SP 800-207, Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final),
 [CISA’s Zero Trust Maturity Model](https://www.cisa.gov/sites/default/files/2023-04/zero_trust_maturity_model_v2_508.pdf),
 [Department of Defense (DoD) Zero Trust Reference Architecture](https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf) [^3], and
 [NIST SP 800-207A](https://csrc.nist.gov/pubs/sp/800/207/a/final),
-[ A Zero Trust Architecture Model for Access Control in Cloud Native Applications in Multi-Location Environments](https://csrc.nist.gov/publications/detail/sp/800-207a/draft).
+[A Zero Trust Architecture Model for Access Control in Cloud Native Applications in Multi-Location Environments](https://csrc.nist.gov/publications/detail/sp/800-207a/draft).
 <!-- cspell:enable -->
 Zero Trust is in many ways a revolution in cyber security practices, and since codification papers aiming to offer concrete, practical recommendations often limit the scope and seek a more evolutionary approach to present readers. This often comes while deviating from the Zero Trust methodology. Different standards seem to legitimize other deviations. Therefore, it is no surprise that none of these papers agree. For example, a paper focused on the required evolution of identity management may leave out controls needed to protect against a compromised client or stolen credentials.
 
@@ -111,33 +111,33 @@ Principles of Zero Trust:
     4. **Assume the cluster network is hostile and untrusted** - Assume injection and extraction of cluster network data. Never trust internal cluster traffic more than you trust ingress traffic. _Cluster networks do get hacked. Services on clusters do get hacked, and lateral movement is a thing._
     5. **Assume request senders (aka clients) may potentially send malicious requests** - Even when presenting valid credentials, a request may still be hostile. Credentials get stolen, clients get hacked, users may seek to abuse their access rights, etc.
 * **Always verify, never trust.** This Zero Trust tenet translates into three aspects:
-    * (a) **Eliminate implicit trust**
-    * (b) **Continually monitor actual behavior to verify trustworthiness**
-    * (c) **Minimize explicit trust**
+  * (a) **Eliminate implicit trust**
+  * (b) **Continually monitor actual behavior to verify trustworthiness**
+  * (c) **Minimize explicit trust**
 
     In the context of cloud native:
     * (a) **Eliminate implicit trust**
-        * **Always authenticate the service** - internal and external clients need to verify the identity of any service approached.
+      * **Always authenticate the service** - internal and external clients need to verify the identity of any service approached.
             * The internal cluster network can also be hostile; hence, even internal clients must authenticate the services and protect against Man-in-the-Middle attacks on the internal network.
         * **Always authenticate service request senders** - verify the identity of any request sender (aka client), either cluster internal or external to any service. This includes both users as well as machines sending requests.
-            * We should assume the internal cluster network is also hostile, and offenders may send requests from within the internal cluster network.
+          * We should assume the internal cluster network is also hostile, and offenders may send requests from within the internal cluster network.
     * (b) **Continually monitor actual behavior to verify  trustworthiness**
-        * **Always monitor and verify the service instance behavior** - verify that the service instances are not being exploited. Services do get hacked.
-            * Data does get stolen.
-            * Offenders do use services to advance sinister intentions.
-        * **Always monitor and verify service request behavior** - verify, per request, that the request behaves as expected.
-            * Requests are being used to exploit vulnerabilities in services.
-        * **Always monitor and verify the client behavior** - observe the behavior of the identities of request senders (aka clients), either users or machines, and verify that such identities behave as expected over time.
-            * Identities do get hacked, credentials do get stolen, and insiders may misbehave.
-            * Has the geo-location changed?
-            * Does the amount of requests make sense?
-            * Has this identity sent suspicious or non-permitted requests recently?
+      * **Always monitor and verify the service instance behavior** - verify that the service instances are not being exploited. Services do get hacked.
+        * Data does get stolen.
+        * Offenders do use services to advance sinister intentions.
+      * **Always monitor and verify service request behavior** - verify, per request, that the request behaves as expected.
+        * Requests are being used to exploit vulnerabilities in services.
+      * **Always monitor and verify the client behavior** - observe the behavior of the identities of request senders (aka clients), either users or machines, and verify that such identities behave as expected over time.
+        * Identities do get hacked, credentials do get stolen, and insiders may misbehave.
+        * Has the geo-location changed?
+        * Does the amount of requests make sense?
+        * Has this identity sent suspicious or non-permitted requests recently?
     * (c) **Minimize explicit trust**
-        * **Always grant minimal permissions to service requests and permit the minimal required behaviors** - explicitly verify that _this client_ is allowed to perform _this operation_ against _this service_ in view of the observed behaviors of the client, the service request, and the service.
-            For example, you could ask questions such as:
-            * _Do we allow any trusted identity to access all data and do anything?_
-            * _Do we allow this identity, given its past behavior, to make this request?_
-            * _Do we allow this request, given that we suspect it is an exploit?_
+      * **Always grant minimal permissions to service requests and permit the minimal required behaviors** - explicitly verify that _this client_ is allowed to perform _this operation_ against _this service_ in view of the observed behaviors of the client, the service request, and the service.
+        For example, you could ask questions such as:
+        * _Do we allow any trusted identity to access all data and do anything?_
+        * _Do we allow this identity, given its past behavior, to make this request?_
+        * _Do we allow this request, given that we suspect it is an exploit?_
 
 Additionally, the following general principle applies:
 
@@ -168,7 +168,7 @@ Such dependencies, tools, and repositories all rely on a tremendous amount of co
 
 Organizations should always assume that all deployed services are vulnerable and plan accordingly. Any service deployed should be assumed to run based on a vulnerable image and expose vulnerabilities via its service API.
 
-Many organizations discover that CVEs related to services they have in production become published, and at this point, become aware that their services are vulnerable to a particular type of attack. But how long was this attack possible before the vulnerability was published? Not knowing about a vulnerability does not mean such a vulnerability does not exist. CVEs are published because a white hat security researcher detects and publishes a vulnerability. Blackhat hackers and cybercriminals would not be so inclined. Assuming services without current CVEs are non-vulnerable is similar to walking in complete darkness and assuming no harm will come simply because one can't see the obstacles ahead.
+Many organizations discover that CVEs related to services they have in production become published, and at this point, become aware that their services are vulnerable to a particular type of attack. But how long was this attack possible before the vulnerability was published? Not knowing about a vulnerability does not mean such a vulnerability does not exist. CVEs are published because a white hat security researcher detects and publishes a vulnerability. Blackhat hackers and cyber-criminals would not be so inclined. Assuming services without current CVEs are non-vulnerable is similar to walking in complete darkness and assuming no harm will come simply because one can't see the obstacles ahead.
 
 An important observation is that vulnerability does not necessarily mean services will be exploited. Though services are vulnerable, in some ways unknown to the organization, offenders still need to identify these vulnerabilities to exploit them. A vulnerability that can’t be exploited represents a risk that can’t be realized.
 
@@ -387,9 +387,9 @@ Under Zero Trust, **Access Control** takes new roles in several dimensions:
 * Access control should be applied for specific **client identities** rather than for “all clients” or groups of clients.
 * Access control should be applied per **Service** rather than for “all services” or groups of services. All Service Instances should naturally have the same access control.
 * Access control should be considered per **Service Request** rather than being applied once for a client and applied for all the client requests.
-    * When access control is considered for a **Service Request**, it should consider the following:
-        * The _Confidence Level_ of the** Service Requests **(how sure are we that this is not an exploit or part of an attack)
-        * The _Confidence Level_ of the** Client identity **(how sure are we that this client is not compromised)
+  * When access control is considered for a **Service Request**, it should consider the following:
+    * The _Confidence Level_ of the** Service Requests **(how sure are we that this is not an exploit or part of an attack)
+    * The _Confidence Level_ of the** Client identity **(how sure are we that this client is not compromised)
 
 Combined, Zero Trust **Access Control** apply
 
@@ -528,22 +528,22 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
 * Government Zero Trust Architecture (GovZTA) | Singapore Government Developer Portal (tech.gov.sg): [https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/government-zero-trust-architecture](https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/government-zero-trust-architecture)
 * 2022-2023 Best Undergraduate Cybersecurity Programs - US News Rankings: [https://www.usnews.com/best-colleges/rankings/computer-science/cybersecurity](https://www.usnews.com/best-colleges/rankings/computer-science/cybersecurity)
 * Referenced Projects:
-    * CNCF Knative’s Security-Guard: [https://knative.dev/docs/serving/app-security/security-guard-about/](https://knative.dev/docs/serving/app-security/security-guard-about/)
-    * Falco: [https://falco.org/](https://falco.org/)
-    * Cilium: [https://cilium.io/](https://cilium.io/)
-    * Pixie: [https://docs.px.dev/](https://docs.px.dev/)
-    * KubeArmor: [https://kubearmor.io/](https://kubearmor.io/)
-    * Curiefense: [https://www.curiefense.io/](https://www.curiefense.io/)
-    * Istio: [https://istio.io/](https://istio.io/)
-    * Linkerd: [https://linkerd.io/](https://linkerd.io/)
-    * Dapr: [https://dapr.io/](https://dapr.io/)
-    * Knative: [https://knative.dev/](https://knative.dev/)
-    * Dex: [https://dexidp.io/](https://dexidp.io/)
-    * Keycloak: [https://www.keycloak.org/](https://www.keycloak.org/)
-    * SPIFFE and SPIRE: [https://spiffe.io/](https://spiffe.io/)
-    * JSON Web Tokens (JWT): [https://jwt.io](https://jwt.io)
-    * Cert-manager: [https://cert-manager.io/](https://cert-manager.io/)
-    * Kubernetes Network Policies: [https://kubernetes.io/docs/concepts/services-networking/network-policies/](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
+  * CNCF Knative’s Security-Guard: [https://knative.dev/docs/serving/app-security/security-guard-about/](https://knative.dev/docs/serving/app-security/security-guard-about/)
+  * Falco: [https://falco.org/](https://falco.org/)
+  * Cilium: [https://cilium.io/](https://cilium.io/)
+  * Pixie: [https://docs.px.dev/](https://docs.px.dev/)
+  * KubeArmor: [https://kubearmor.io/](https://kubearmor.io/)
+  * Curiefense: [https://www.curiefense.io/](https://www.curiefense.io/)
+  * Istio: [https://istio.io/](https://istio.io/)
+  * Linkerd: [https://linkerd.io/](https://linkerd.io/)
+  * Dapr: [https://dapr.io/](https://dapr.io/)
+  * Knative: [https://knative.dev/](https://knative.dev/)
+  * Dex: [https://dexidp.io/](https://dexidp.io/)
+  * Keycloak: [https://www.keycloak.org/](https://www.keycloak.org/)
+  * SPIFFE and SPIRE: [https://spiffe.io/](https://spiffe.io/)
+  * JSON Web Tokens (JWT): [https://jwt.io](https://jwt.io)
+  * Cert-manager: [https://cert-manager.io/](https://cert-manager.io/)
+  * Kubernetes Network Policies: [https://kubernetes.io/docs/concepts/services-networking/network-policies/](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 
 ### History of Zero Trust:
 
