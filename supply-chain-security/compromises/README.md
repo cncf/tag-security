@@ -104,4 +104,4 @@ of compromise needs added, please include that as well.
 | [Linux Kernel CVS Repository Hack](2003/kernel-repository.md) | 2003 | Source Code <br> Dev Tooling | [1](https://lwn.net/Articles/57135/) |
 | [gentoo rsync compromise](2003/gentoo-rsync.md) | 2003 | Publishing Infrastructure | [1](https://archives.gentoo.org/gentoo-announce/message/7b0581416ddd91522c14513cb789f17a) |
 | [Debian infra compromise](2003/debian.md) | 2003 | Publishing infrastructure | [1](https://www.debian.org/News/2003/20031202) |
-| [Unix Support Group login backdoor](1984/login-bell.md) | <1984 | Dev Tooling | [1](https://niconiconi.neocities.org/posts/ken-thompson-really-did-launch-his-trusting-trust-trojan-attack-in-real-life/) |
+| [Unix Support Group login backdoor](1975/login-bell.md) | 1975 | Dev Tooling | [1](https://niconiconi.neocities.org/posts/ken-thompson-really-did-launch-his-trusting-trust-trojan-attack-in-real-life/) |
