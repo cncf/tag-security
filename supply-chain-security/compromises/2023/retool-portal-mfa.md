@@ -1,3 +1,5 @@
+<!-- cSpell:ignore deepfaking -->
+
 # Spear Phishing Attack Targets Customers of Retool Development Platform
 
 ## Description
