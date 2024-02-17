@@ -1,3 +1,5 @@
+<!-- cSpell:ignore xmlsec cisa xalan santuario -->
+
 # Widespread Exploitation of ManageEngine Flaw
 
 ## Description
