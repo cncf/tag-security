@@ -11,9 +11,9 @@ an attacker to control a number of customer accounts.
 
 ## Impact
 
-[Reports indicate](https://www.coindesk.com/business/2023/09/13/phishing-attack-on-cloud-provider-with-fortune-500-clients-led-to-15m-crypto-theft-from-fortress-trust/) that a developer
-portal (built using Retool) was then compromised by the attacker to
-control end customer funds.
+[Reports indicate](https://www.coindesk.com/business/2023/09/13/phishing-attack-on-cloud-provider-with-fortune-500-clients-led-to-15m-crypto-theft-from-fortress-trust/)
+that a developer portal (built using Retool) was then compromised by the
+attacker to control end customer funds.
 
 ## Type of Compromise
 
