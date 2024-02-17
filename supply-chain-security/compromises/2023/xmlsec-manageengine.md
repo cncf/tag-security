@@ -22,12 +22,13 @@ widespread exploitation.
 
 ## Type of Compromise
 
-According to [Flashpoint](https://flashpoint.io/blog/manageengine-apache-santuario-cve-2022-47966/), while "usage of a more recent version of Apache Santuario [...] could have mitigated
-exploitation in ManageEngine significantly", the dependency itself
-was using an outdated, vulnerable (CVE-2014-0107) dependency called
-Apache Xalan, and says "the combination of this exceptionally old
-library, which by itself has a vulnerable dependency and insecure
-defaults" contributed to the impact.
+According to [Flashpoint](https://flashpoint.io/blog/manageengine-apache-santuario-cve-2022-47966/),
+while "usage of a more recent version of Apache Santuario [...] could
+have mitigated exploitation in ManageEngine significantly", the
+dependency itself was using an outdated, vulnerable (CVE-2014-0107)
+dependency called Apache Xalan, and says "the combination of this
+exceptionally old library, which by itself has a vulnerable dependency
+and insecure defaults" contributed to the impact.
 
 ## References
 
