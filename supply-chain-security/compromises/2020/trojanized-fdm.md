@@ -1,3 +1,5 @@
+<!-- cSpell:ignore Kaspersky Securelist -->
+
 # Trojanized Free Download Manager Targets Unsuspecting Linux Users
 
 ## Description
