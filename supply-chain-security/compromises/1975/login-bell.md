@@ -13,5 +13,4 @@ Compiler backdoor, possibly compounded with human elements.
 ## References
 
 1. [Ken Thompson Really Did Launch His "Trusting Trust" Trojan Attack in Real Life](https://niconiconi.neocities.org/posts/ken-thompson-really-did-launch-his-trusting-trust-trojan-attack-in-real-life/)
-
-Note: it's likely this event occured in the 70s but, absent primary sources, we picked the year _Reflections_ was published.
+2. [Running the “Reflections on Trusting Trust” Compiler](https://research.swtch.com/nih), a blog post that determined the date to be June 1975.
