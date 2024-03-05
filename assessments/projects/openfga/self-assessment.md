@@ -48,7 +48,7 @@ This assessment was created by community members as part of the [Security Pals](
 | Doc | url |
 | -- | -- |
 | Security Policy | [OpenFGA Security Policy](https://github.com/openfga/openfga/security/policy) |
-| Security Insights | [OpenFGA Security Insights](https://github.com/openfga/openfga/blob/main/SECURITY-INSIGHTS.yml.) |
+| Security Insights | [OpenFGA Security Insights](https://github.com/openfga/openfga/blob/main/SECURITY-INSIGHTS.yml) |
 | Security risks | [OpenFGA Security risks](https://github.com/orgs/openfga/security/risk) |
 | -- | -- |
 
