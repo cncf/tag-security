@@ -593,7 +593,7 @@ We want to thank several contributors from whom we had excellent input and feedb
 
 For anyone involved in creating this paper, we express our heartfelt gratitude for your time, dedication, and professionalism. Your contributions have undoubtedly elevated the standard of our research, and we are immensely grateful for your collaboration.
 
-Thank you for being an integral part of this endeavor
+Thank you for being an integral part of this endeavor.
 
 ## Footnotes and Citations
 
