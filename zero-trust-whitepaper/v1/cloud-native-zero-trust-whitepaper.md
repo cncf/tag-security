@@ -229,7 +229,7 @@ Organizations should use dynamic and fine-grain access control to ensure that th
 1. The operation required by the identity - is it one that the identity should be allowed to make?
 1. The **confidence level** of the true identity of the sender
 1. The **confidence level** of the request not being an exploit
-1. The overall context - are we expecting requests at this time of day? From this ip-range? Etc.
+1. The overall context - are we expecting requests at this time of day? From this IP-range? Etc.
 
 ### Summary
 
