@@ -506,7 +506,7 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
 
 #### Dynamic access control
 
-[Security-Guard](https://knative.dev/docs/serving/app-security/security-guard-about/) implements dynamic access control by introducing an Access Control gate in front of every **Service Instance**.The Access Control can be configured to block **service requests** based on the request **confidence level**.
+[Security-Guard](https://knative.dev/docs/serving/app-security/security-guard-about/) implements dynamic access control by introducing an Access Control gate in front of every **Service Instance**. The Access Control can be configured to block **service requests** based on the request **confidence level**.
 
 
 ## References
