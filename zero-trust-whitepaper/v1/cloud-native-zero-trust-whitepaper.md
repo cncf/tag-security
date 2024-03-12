@@ -470,7 +470,7 @@ In adherence to current best practices for utilizing JWT Tokens, it is recommend
 * **aud** Claim: Check if the audience includes the workload itself.
 * **Scope Claim** (if exists): For example, ensure that the resource owner authorizes access to the resource.
 
-Related CNCF token based projects include [Dex](https://dexidp.io/) - an OpenID Connect (OIDC) identity and OAuth 2.0 provider, [Keycloak](https://www.keycloak.org/) - Identity and Access Management, and [SPIFFE and SPIRE](https://spiffe.io/) - A Universal identity control plane for distributed systems, suitable for managing identities in a multi-cloud environment.
+Related CNCF token-based projects include [Dex](https://dexidp.io/) - an OpenID Connect (OIDC) identity and OAuth 2.0 provider, [Keycloak](https://www.keycloak.org/) - Identity and Access Management, and [SPIFFE and SPIRE](https://spiffe.io/) - A Universal identity control plane for distributed systems, suitable for managing identities in a multi-cloud environment.
 
 
 #### Certificate-Based Identity
