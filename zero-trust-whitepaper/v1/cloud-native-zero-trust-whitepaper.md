@@ -394,7 +394,7 @@ Under Zero Trust, **Access Control** takes new roles in several dimensions:
 Combined, Zero Trust **Access Control** apply
 
 1. The principle of least privilege (PoLP) gives a **client** connecting to a **service** only the privileges the client needs to perform their job as part of the service and nothing more. This can be achieved by a Role-Based Access Control (RBAC)  that will be correctly used to ensure each client is authorized based on its identity and the identity of a specific cloud service being approached. Other options include ABAC (Attribute-Based Access Control) and ReBAC (Relationship-Based Access Control).
-2. Dynamic and context-aware access control, taking real-time access decisions on a per-request basis. Decisions are based on the _Confidence Levels _evaluated by an _Active Observer_. This can be achieved by introducing SBA technology and enhancing Access Control to enable the introduction of dynamic access rules and policies.
+2. Dynamic and context-aware access control, taking real-time access decisions on a per-request basis. Decisions are based on the _Confidence Levels_ evaluated by an _Active Observer_. This can be achieved by introducing SBA technology and enhancing Access Control to enable the introduction of dynamic access rules and policies.
 
 ### Automation
 
