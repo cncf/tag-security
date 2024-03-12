@@ -366,7 +366,7 @@ Similarly, an _Active Observer_ is required to verify that the client is sending
 
 #### Continuous Monitoring and Logging
 
-Continuous monitoring is crucial for a Zero Trust approach. This involves collecting and analyzing logs to detect unusual activity and setting up alerts for possible security incidents. Security monitoring plays an important role as an input to an _Active Observer_. It may be used to detect compromised **Clients** and **Service Instances.
+Continuous monitoring is crucial for a Zero Trust approach. This involves collecting and analyzing logs to detect unusual activity and setting up alerts for possible security incidents. Security monitoring plays an important role as an input to an _Active Observer_. It may be used to detect compromised **Clients** and **Service Instances**.
 
 #### Security Behavior Analytics for Service request (SBA-SR)
 
