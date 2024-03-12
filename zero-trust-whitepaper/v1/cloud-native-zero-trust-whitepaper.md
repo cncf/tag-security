@@ -360,7 +360,7 @@ Additionally, under Zero Trust, runtime security is required to monitor suspicio
 
 ### The _Active Observer_
 
-Under cloud native Zero Trust, we require an _Active Observer _to establish trust. It is not enough to verify the **client’s** identity using Identity Management; for example, we need to consider that credentials may be stolen and the **client** may be compromised. An _Active Observer_ should be in place to observe that client’s activities and decide on the _Confidence Level _assigned to that identity - how sure are we that the **client** is not compromised and that the entity presenting the credentials is indeed the **client**?
+Under cloud native Zero Trust, we require an _Active Observer_ to establish trust. It is not enough to verify the **client’s** identity using Identity Management; for example, we need to consider that credentials may be stolen and the **client** may be compromised. An _Active Observer_ should be in place to observe that client’s activities and decide on the _Confidence Level_ assigned to that identity - how sure are we that the **client** is not compromised and that the entity presenting the credentials is indeed the **client**?
 
 Similarly, an _Active Observer_ is required to verify that the client is sending legitimate **service requests** rather than malicious ones. And that the **Service Instances** processing such requests are not compromised.
 
