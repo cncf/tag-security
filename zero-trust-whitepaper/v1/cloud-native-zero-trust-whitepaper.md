@@ -106,7 +106,7 @@ Principles of Zero Trust:
 
 * **Assume a breach**.  Plan for systems and elements getting compromised.
     1. **Assume every image includes vulnerabilities** - there is no such thing as a vulnerability-free image._ Dependencies are vulnerable, development tools get hacked, repositories get hacked, and CI/CD tools get hacked. The mountain of code we all use is vulnerable. _
-    2. **Assume every service is vulnerable** - there is no such thing as a vulnerability-free service. _Services are vulnerable as they use images with vulnerabilities and exchange data that may be under an offender’s control. _
+    2. **Assume every service is vulnerable** - there is no such thing as a vulnerability-free service. _Services are vulnerable as they use images with vulnerabilities and exchange data that may be under an offender’s control._
     3. **Assume every service will be exploited sometime** - services are never air-gapped, and a determined offender will find a way in. _Yes, every service needs to be monitored and have a plan for when they are being exploited._
     4. **Assume the cluster network is hostile and untrusted** - Assume injection and extraction of cluster network data. Never trust internal cluster traffic more than you trust ingress traffic. _Cluster networks do get hacked. Services on clusters do get hacked, and lateral movement is a thing._
     5. **Assume request senders (aka clients) may potentially send malicious requests** - Even when presenting valid credentials, a request may still be hostile. Credentials get stolen, clients get hacked, users may seek to abuse their access rights, etc.
