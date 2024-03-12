@@ -118,9 +118,9 @@ Principles of Zero Trust:
     In the context of cloud native:
     * (a) **Eliminate implicit trust**
       * **Always authenticate the service** - internal and external clients need to verify the identity of any service approached.
-            * The internal cluster network can also be hostile; hence, even internal clients must authenticate the services and protect against Man-in-the-Middle attacks on the internal network.
-        * **Always authenticate service request senders** - verify the identity of any request sender (aka client), either cluster internal or external to any service. This includes both users as well as machines sending requests.
-          * We should assume the internal cluster network is also hostile, and offenders may send requests from within the internal cluster network.
+        * The internal cluster network can also be hostile; hence, even internal clients must authenticate the services and protect against Man-in-the-Middle attacks on the internal network.
+      * **Always authenticate service request senders** - verify the identity of any request sender (aka client), either cluster internal or external to any service. This includes both users as well as machines sending requests.
+        * We should assume the internal cluster network is also hostile, and offenders may send requests from within the internal cluster network.
     * (b) **Continually monitor actual behavior to verify  trustworthiness**
       * **Always monitor and verify the service instance behavior** - verify that the service instances are not being exploited. Services do get hacked.
         * Data does get stolen.
