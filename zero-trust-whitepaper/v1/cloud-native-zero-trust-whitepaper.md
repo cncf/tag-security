@@ -250,7 +250,7 @@ No matter where the client is, whenever a client tries to access, validate that 
 
 Just because a client authentication was successful, it doesn’t mean the client is trustworthy. All service request traffic, whether internal or external, is treated as potentially malicious  - analyze it and verify it is not an attack. Insider threats and malicious actors may gain access to valid credentials. Legitimate clients with proper credentials may be compromised and act maliciously.
 
-Clients, client requests, and services need to be continuously analyzed and based on their behavior compared to an expected criteria. Continuously record all network and system activity and regularly analyze and inspect it to verify what occurs. Make sure you can replay decisions for audit purposes.
+Clients, client requests, and services need to be continuously analyzed and based on their behavior compared to expected criteria. Continuously record all network and system activity and regularly analyze and inspect it to verify what occurs. Make sure you can replay decisions for audit purposes.
 
 #### Always control
 
