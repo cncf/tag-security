@@ -273,7 +273,7 @@ The [DoD Reference Architecture](https://dodcio.defense.gov/Portals/0/Documents/
 _Image 4. Note that the service request sender (aka client) may be malicious. The Network and Data may also be compromised._
 
 * **Service Instances** - Securing services offered using containers on cloud native clusters. DevSecOps practices to secure applications from inception till production. Secure by design practices, image build methodologies, image scanning, and storage. Service runtime protection methods include behavioral monitoring methods of services to form **confidence levels** in services.
-* **Clients Identities** - Securing the identity of clients sending service requests, either external or internal, monitoring their behavior to form a confidence** level** in identities.
+* **Clients Identities** - Securing the identity of clients sending service requests, either external or internal, monitoring their behavior to form a **confidence level** in identities.
 * **Service requests** - Securing the requests sent by clients and processed by services. Monitoring the risks posed by requests to form **confidence levels** in risks from requests.
 * **Data** - Categorization of data to enable securing data by data types.
 * **Network** - Securing service requests and responses sent between Clients and Services, including encryption mechanisms.
