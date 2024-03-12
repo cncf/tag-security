@@ -388,8 +388,8 @@ Under Zero Trust, **Access Control** takes new roles in several dimensions:
 * Access control should be applied per **Service** rather than for “all services” or groups of services. All Service Instances should naturally have the same access control.
 * Access control should be considered per **Service Request** rather than being applied once for a client and applied for all the client requests.
   * When access control is considered for a **Service Request**, it should consider the following:
-    * The _Confidence Level_ of the** Service Requests **(how sure are we that this is not an exploit or part of an attack)
-    * The _Confidence Level_ of the** Client identity **(how sure are we that this client is not compromised)
+    * The _Confidence Level_ of the **Service Requests** (how sure are we that this is not an exploit or part of an attack)
+    * The _Confidence Level_ of the **Client identity** (how sure are we that this client is not compromised)
 
 Combined, Zero Trust **Access Control** apply
 
