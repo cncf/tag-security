@@ -203,6 +203,7 @@ OpenFGA provides a wide variety of SDK's, as well as easy integration for new SD
 ### Security Relevant
 
 **Basic Threat Landscape**
+
 The Basic Threat Landscape presents a general overview of technologies and actors specific to the security of integrating openFGA in a broader system. The list of introductory threats stands to orient future comprehensive threat models.  
 ```
 non-goals:
@@ -220,6 +221,7 @@ technologies:
     - language.go
     - container.docker
     - image.chainguard
+    - protocols.tls
     - protocols.grpc
     - protocols.http
     - openapi
@@ -277,7 +279,7 @@ actions:
 
   configuration.language:
     - Provide a domain specific language to describe authorization policies
-    - Describe the authorization model with [types], [relations] and [conditions] 
+    - Describe the authorization model with[types], [relations] and [conditions] 
     
   openfga.datastore:
     - Store authorization models [openfga.authz_models] 
@@ -321,8 +323,8 @@ actions:
 
 sdlcAssessment:
   - technologies:
-      sca: snyk, fossa, dependabot  
-      sast: semgrep, codeql, 
+      sca: snyk, fossa, dependabot
+      sast: semgrep, codeql
       dast: n/a
       
 
@@ -506,5 +508,5 @@ All OpenFGA security issues can be found on the [Github advisories page](https:/
 The [list](https://github.com/openfga/community/blob/main/ADOPTERS.md) of projects that utilize OpenFGA include Okta FGA, Twintag, Mapped, Procure Ai,Canonical (Juju & LFX), Wolt, Italarchivi, Read AI, Virtool, Configu, Fianu Labs, and ExcID.
 
 ### Related Projects/Vendors
-The list of related project is available as a community resource here [](https://github.com/openfga/community/blob/main/ADOPTERS.md)
 
+The list of related projects is available as a [community ressource](https://github.com/openfga/community/blob/main/related-projects.md)
