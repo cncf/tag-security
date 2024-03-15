@@ -1,5 +1,7 @@
 # OpenFGA Security Self Assessment
 
+This assessment was initially drafted by the core maintainer team and contributed to by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process. 
+
 ## Table of Contents
 
 
@@ -227,7 +229,7 @@ technologies:
     - observability.prometheus
     
   openfga.datastore:
-    - in-memory
+    - in_memory
     - mysql
     - postgres
   
@@ -263,7 +265,7 @@ actions:
 
   system.developers:
     - Integrate [openfga.sdks] in [openfga.clients|system.applications]
-    - Validate and verify semantically [opengfa.authz_models] 
+    - Validate and verify semantically [openfga.authz_models] 
 
   system.operators:
     - Migrate [openfga.datastore]  
@@ -275,25 +277,25 @@ actions:
 
   configuration.language:
     - Provide a domain specific language to describe authorization policies
-    - Describe the authorization model with [entities], [types] and [relations] against a [schema] 
+    - Describe the authorization model with [types], [relations] and [conditions] 
     
   openfga.datastore:
-    - Store authorization models [opengfa.authz_models] 
-    - Store authorization data [opengfa.relationships.tupples]
+    - Store authorization models [openfga.authz_models] 
+    - Store authorization data [openfga.relationships.tuples]
     - Support for [MySQL, Postgres] database
 
   openfga.clients|system.applications:
     - Authenticate against [openfga.server] with [openfga.psk] secret or through [external.idp]    
     - Execute authorization checks with [openfga.relationships.queries]
-    - Manage the authorization model [opengfa.authz_models] 
+    - Manage the authorization model [openfga.authz_models] 
 
   openfga.server:
-    - Write authorization model [opengfa.authz_models] to [openfga.datastore]
-    - Write authorization data [opengfa.relationships.tupples] to [openfga.datastore]
+    - Write authorization model [openfga.authz_models] to [openfga.datastore]
+    - Write authorization data [openfga.relationships.tuples] to [openfga.datastore]
     - Provide [grpc|http] messaging protocol 
-    - Authenticate trusted [opengfa.clients] with 3 options [none|psk|oidc] 
+    - Authenticate trusted [openfga.clients] with 3 options [none|psk|oidc] 
     - Validate and verify [payload]   
-    - Evaluate access control decisions [opengfa.relationships.queries]
+    - Evaluate access control decisions [openfga.relationships.queries]
   
   openfga.server.api:
     stores:
@@ -307,7 +309,7 @@ actions:
       - list
       - create
       - get
-    relationships.tupples:
+    relationships.tuples:
       - read
       - write
       - list.changes
@@ -319,8 +321,8 @@ actions:
 
 sdlcAssessment:
   - technologies:
-      sca: snyk
-      sast: semgrep, codeql
+      sca: snyk, fossa, dependabot  
+      sast: semgrep, codeql, 
       dast: n/a
       
 
@@ -377,7 +379,7 @@ threats:
     likelihood: low
 
     summary: |
-      opengfa.authz_model is flawed or too permissive 
+      openfga.authz_model is flawed or too permissive 
     weakness: business logic
     attack: elevation of privilege
     component: system.applications
@@ -387,7 +389,7 @@ threats:
     likelihood: low
 
     summary: |
-      opengfa.authz_model is updated, but openfga.clients are not updated to match versions
+      openfga.authz_model is updated, but openfga.clients are not updated to match versions
     weakness: improper authorization
     attack: elevation of privilege
     component: openfga.server
@@ -397,7 +399,7 @@ threats:
     likelihood: low
 
     summary: |
-      system.applications execute a check without specifying the opengfa.authz_model version
+      system.applications execute a check without specifying the openfga.authz_model version
     weakness: server configuration
     attack: elevation of privilege
     component: system.applications
@@ -407,7 +409,7 @@ threats:
     likelihood: high
 
     summary: |
-      opengfa.datastore exhibit eventual consistency leading to inconsistent authorization checks amongst openfga.clients   
+      openfga.datastore exhibit eventual consistency leading to inconsistent authorization checks amongst openfga.clients   
     weakness: improper authorization
     attack: elevation of privilege
     component: system.applications
@@ -417,7 +419,7 @@ threats:
     likelihood: low
 
     summary: |
-      opengfa.configuration.language vulnerabilities leads to authorization bypass 
+      openfga.configuration.language vulnerabilities leads to authorization bypass 
     weakness: business logic
     attack: authorization bypass
     component: system.applications
@@ -504,13 +506,5 @@ All OpenFGA security issues can be found on the [Github advisories page](https:/
 The [list](https://github.com/openfga/community/blob/main/ADOPTERS.md) of projects that utilize OpenFGA include Okta FGA, Twintag, Mapped, Procure Ai,Canonical (Juju & LFX), Wolt, Italarchivi, Read AI, Virtool, Configu, Fianu Labs, and ExcID.
 
 ### Related Projects/Vendors
+The list of related project is available as a community resource here [](https://github.com/openfga/community/blob/main/ADOPTERS.md)
 
-[OPA (Open Policy Agent)](https://github.com/open-policy-agent):
- - Part of CNCF projects for externalizing authorization.
- - Uses Rego as its policy language.
- - Differs from OpenFGA by storing required data as relationship tuples.
- - Requires data provision during policy invocation or querying during evaluation.
-
- [Kyverno](https://github.com/kyverno):
-
- - CNCF project focusing on implementing security policies for Kubernetes deployments.
