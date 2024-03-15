@@ -1,6 +1,7 @@
 # OpenFGA Security Self Assessment
 
-This assessment was initially drafted by the core maintainer team and contributed to by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process. 
+This assessment was contributed to by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process as well as the core maintainer team. 
+
 
 ## Table of Contents
 
@@ -277,9 +278,11 @@ actions:
     - Provide [jwks_uri] through oidc /.well-known/openid-configuration 
     - Sign [token] with [rs256] algorithm 
 
-  configuration.language:
+  openfga.language:
+
     - Provide a domain specific language to describe authorization policies
-    - Describe the authorization model with[types], [relations] and [conditions] 
+    - Describe the authorization model with [types], [relations] and [conditions] 
+
     
   openfga.datastore:
     - Store authorization models [openfga.authz_models] 
