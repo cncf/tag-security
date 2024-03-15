@@ -252,7 +252,7 @@ actors:
     - server
     - datastore
     - clients
-    - configuration.language
+    - language
 
   system:
     - users
@@ -279,7 +279,6 @@ actions:
     - Sign [token] with [rs256] algorithm 
 
   openfga.language:
-
     - Provide a domain specific language to describe authorization policies
     - Describe the authorization model with [types], [relations] and [conditions] 
 
@@ -424,7 +423,7 @@ threats:
     likelihood: low
 
     summary: |
-      openfga.configuration.language vulnerabilities leads to authorization bypass 
+      openfga.language vulnerabilities leads to authorization bypass 
     weakness: business logic
     attack: authorization bypass
     component: system.applications
