@@ -132,7 +132,7 @@ Stores the relationship tuples and authorization models, as well as a changelog.
 
 Make API requests to the OpenFGA server, i.e. creating/querying relationship tuples, updating authorization models, checking for access, or listing objects a user has access to. 
 
-Clients can use either no authentication, shared key, or OAuth client credentials as a method for authentication.
+Clients can use either no authentication, shared key, or oidc as a method for authentication against the OpenFGA server.
 
 ### Actions
 
@@ -147,7 +147,7 @@ Every time a server endpoint is invoked, OpenFGA validates that:
   - Payload Verification: 
   
     - Confirm that API payloads adhere to Protobuf API definitions.  
-    - Validate parameters for proper structure, e.g. ensuring users are written in the correct format which is 'user:<userid>'
+    - Validate parameters for proper structure, e.g. ensuring users are written in the correct format which is '<userType>:<userid>'
   
 **Writing an Authorization Model**
 
