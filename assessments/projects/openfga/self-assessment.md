@@ -1,10 +1,8 @@
 # OpenFGA Security Self Assessment
 
-This assessment was contributed to by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process as well as the core maintainer team. 
-
+This assessment was contributed to by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process as well as the core maintainer team.
 
 ## Table of Contents
-
 
 - [OpenFGA Security Self Assessment](#openfga-security-self-assessment)
   - [Table of Contents](#table-of-contents)
@@ -25,13 +23,12 @@ This assessment was contributed to by community members as part of the [Security
     - [Development Pipeline](#development-pipeline)
     - [Communication Channels](#communication-channels)
       - [Internal](#internal)
-      - [Security Email Group](#security-email-group)
+      - [Inbound and Outbound](#inbound-and-outbound)
   - [Security Issue Resolution](#security-issue-resolution)
-    - [Responsible Disclosure Process](#responsible-disclosure-process)
+    - [Responsible Disclosure](#responsible-disclosure)
     - [Incident Response](#incident-response)
   - [Appendix](#appendix)
-    - [Known Issues Over Time](#known-issues-over-time)
-    - [Case Studies.](#case-studies)
+    - [Case Studies](#case-studies)
     - [Related Projects/Vendors](#related-projectsvendors)
 
 ## Metadata
@@ -39,10 +36,10 @@ This assessment was contributed to by community members as part of the [Security
 |   |  |
 | -- | -- |
 | Assessment Stage | Incomplete |
-| Software | https://github.com/openfga |
+| Software | [https://github.com/openfga](https://github.com/openfga) |
 | Security Provider | Yes. OpenFGA is used to decide if a subject (user, application) user can perform a specific action on a resource or not.|
 | Languages | Go, Java, Javascript, Python, C# |
-| SBOM | The Software Bill of Materials is not publicly available, but is included in each GitHub release using Syft, which is a CLI tool, and Go library for generating an SBOM from container images and filesystems. https://github.com/openfga/openfga/pull/683 |
+| SBOM | The Software Bill of Materials is not publicly available, but is included in each GitHub release using Syft, which is a CLI tool, and Go library for generating an SBOM from container images and filesystems, since [pull/683](https://github.com/openfga/openfga/pull/683) |
 
 ### Security Links
 
@@ -55,9 +52,9 @@ This assessment was contributed to by community members as part of the [Security
 
 ## Overview
 
-Implementing access control is a very common requirement when developing applications, where different subjects can perform different actions on different resources. 
+Implementing access control is a very common requirement when developing applications, where different subjects can perform different actions on different resources.
 
-OpenFGA is a high performance and flexible authorization/permission engine that can be used to implement fine grained access control in any application component. 
+OpenFGA is a high performance and flexible authorization/permission engine that can be used to implement fine grained access control in any application component.
 
 Developers can use OpenFGA to easily craft authorization and permission methods based on the policies they require that are specific to their own projects.
 
@@ -114,9 +111,9 @@ With this information, OpenFGA can be queried in different ways:
 
 ### Actors
 
-The actors within the system are the OpenFGA server, Database server, and the CLI/API clients. 
+The actors within the system are the OpenFGA server, Database server, and the CLI/API clients.
 
-**OpenFGA Server**
+#### OpenFGA Server
 
 The OpenFGA server is responsible for:
 
@@ -124,64 +121,67 @@ The OpenFGA server is responsible for:
 - Storing and retrieving and authorization models.
 - Evaluating the inferred permissions for a given subject and object.
 
-**Database Server**
+#### Database Server
 
 Stores the relationship tuples and authorization models, as well as a changelog. Currently support Postgres and MySQL.
 
-**CLI/API Clients**
+#### CLI/API Clients
 
-Make API requests to the OpenFGA server, i.e. creating/querying relationship tuples, updating authorization models, checking for access, or listing objects a user has access to. 
+Make API requests to the OpenFGA server, i.e. creating/querying relationship tuples, updating authorization models, checking for access, or listing objects a user has access to.
 
 Clients can use either no authentication, shared key, or oidc as a method for authentication against the OpenFGA server.
 
 ### Actions
 
-**Invoking the OpenFGA APIs**
+#### Invoking the OpenFGA APIs
 
 Every time a server endpoint is invoked, OpenFGA validates that:
 
-  - The credentials provided in the API call match the ones configured in the server.
+- The credentials provided in the API call match the ones configured in the server.
 
-  - Ensures that the input is a semantically valid, e.g. that a tuple is valid according to the authorization model or that the model does not have disallowed cyclical or problematic definitions
+- Ensures that the input is a semantically valid, e.g. that a tuple is valid according to the authorization model or that the model does not have disallowed cyclical or problematic definitions
 
-  - Payload Verification: 
+- Payload Verification
   
-    - Confirm that API payloads adhere to Protobuf API definitions.  
-    - Validate parameters for proper structure, e.g. ensuring users are written in the correct format which is '<userType>:<userid>'
+- Confirm that API payloads adhere to Protobuf API definitions.  
+
+- Validate parameters for proper structure, e.g. ensuring users are written in the correct format which is '\<userType>:\<userid>'
   
-**Writing an Authorization Model**
+#### Writing an Authorization Model
 
-  - Semantic Model Verification: OpenFGA validates that Authorization Models are semantically valid, avoiding cyclical or problematic definitions and other disallowed criteria.
+- Semantic Model Verification: OpenFGA validates that Authorization Models are semantically valid, avoiding cyclical or problematic definitions and other disallowed criteria.
 
-  - Version and Configuration: When writing a model, a new version is created (models are immutable). Applications must be configured to use the new version after validation and confirmation of expected behavior.
+- Version and Configuration: When writing a model, a new version is created (models are immutable). Applications must be configured to use the new version after validation and confirmation of expected behavior.
 
-**Calling the Authorization Query endpoints**
+#### Calling the Authorization Query endpoints
 
-When the [/check](https://openfga.dev/api/service#/Relationship%20Queries/Check) and [/list-objects](https://openfga.dev/api/service#/Relationship%20Queries/ListObjects) endpoints are called, OpenFGA limits the number of simultaneous paths explored and enforces depth limitations on the graph traversal. 
+When the [/check](https://openfga.dev/api/service#/Relationship%20Queries/Check) and [/list-objects](https://openfga.dev/api/service#/Relationship%20Queries/ListObjects) endpoints are called, OpenFGA limits the number of simultaneous paths explored and enforces depth limitations on the graph traversal.
 
 To protect against DoS attacks, OpenFGA restricts both the number of simultaneous paths explored and the depth of paths traversed in the graph.
 
-**Upgrading OpenFGA Database Schema**
+#### Upgrading OpenFGA Database Schema
 
 Database Migration Planning: When installing new versions of OpenFGA, database migrations can be executed in a way that minimizes downtime and ensure a smooth transition in the target system.
 
 ### Goals
 
-* Simplify and standardize authorization processes, making them more consistent across various applications and systems.
+- Simplify and standardize authorization processes, making them more consistent across various applications and systems.
 
-* Establish patterns and standards for externalized authorization.
+- Establish patterns and standards for externalized authorization.
 
-* Create architectural patterns, terminologies, and protocols that enable interoperability among different authorization systems.
+- Create architectural patterns, terminologies, and protocols that enable interoperability among different authorization systems.
 
-* Deliver an authorization service for any application component.
+- Deliver an authorization service for any application component.
 
-* Enable centralized authorization decisions and permits diverse teams to implement authorization using a shared framework across various application components.
+- Enable centralized authorization decisions and permits diverse teams to implement authorization using a shared framework across various application components.
 
 ### Non-Goals
 
-* Tools for management of groups/roles/permissions not inherently provided to the end-users.
-* Does not intend to serve as a comprehensive data repository for non-authorization related data.
-* Does not aim to provide a complete authentication and Access Control Solution.
+- Tools for management of groups/roles/permissions not inherently provided to the end-users.
+
+- Does not intend to serve as a comprehensive data repository for non-authorization related data.
+
+- Does not aim to provide a complete authentication and Access Control Solution.
 
 ## Self-Assessment Use
 
@@ -203,10 +203,11 @@ OpenFGA provides a wide variety of SDK's, as well as easy integration for new SD
 
 ### Security Relevant
 
-**Basic Threat Landscape**
+#### Basic Threat Landscape
 
 The Basic Threat Landscape presents a general overview of technologies and actors specific to the security of integrating openFGA in a broader system. The list of introductory threats stands to orient future comprehensive threat models.  
-```
+
+```yaml
 non-goals:
   - Manipulate groups/roles/permissions 
   - Store non-authorization data and PII data
@@ -458,26 +459,30 @@ By refraining from including PII in relationship tuples, users can simplify thei
 | | |
 
 ### Communication Channels
+
 #### Internal
+
 [![github](https://img.shields.io/badge/github-discussions-black.svg?logo=github)](https://github.com/orgs/openfga/discussions)
 [![github](https://img.shields.io/badge/github-issues-black.svg?logo=github)](https://github.com/orgs/openfga/discussions)
 [![github](https://img.shields.io/badge/github-pulls-black.svg?logo=github)](https://github.com/orgs/openfga/discussions)
 [![slack](https://img.shields.io/badge/slack-okta_%23external%82okta%82openfga-black.svg?logo=slack)](https://cloud-native.slack.com/archives/C06G1NNH47N)
 
-#### Inbound & Outbound
+#### Inbound and Outbound
+
 [![email](https://img.shields.io/badge/email-security@openfga.dev-openfga?color=25c2a0&logo=mail.ru)](mailto:security@openfga.dev)
 [![community](https://img.shields.io/badge/openfga-community-25c2a0.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAABY0lEQVR4AYWSIYyDQBBFn1eVNWdR9QJ1Co+qD6o+J+pFVdX51NfVB4tCYiowaASCJrg5dj6Xbgi5++a18BhmZ8D+CbakrRx17ajatXCD3Ywj5DP2cFsJvNPaI2BDyM5FQG/lhlBDMeOm2ieoI0EZBWVanaLpVGZ0Uw93zVtIvfCAF66B3l+W/gpLT5eAJAG4qOtyESoJ14DTCeAqoVoEK1ye9tCadfAxedni3eRg6kvoBV3EhqduthalmYTBKOFgZmdVVF5AMzOBkg/gYT2ASpna/TS7A3sSFwZtack3kJnvLKGeZV37MkXneWqAFTZ16rm3KN2CydCPl6O1CKNLEvLQhk07L/yE3egN5PEuyHJC8oDVqCWkGe5lq2VF6x41ngYYfQhZ9MH00YCnRsdqV5+cnNeoP67GQgVHzeuqY5UrQT31AXmRBmwID+sIObAh3LX1Qls/wH0lWK/emwVd3OSf+QEqxdwXzzaUTwAAAABJRU5ErkJggg==)](https://openfga.dev/docs/community )
 [![slack](https://img.shields.io/badge/slack-cncf_%23openfga-25c2a0.svg?logo=slack)](https://cloud-native.slack.com/archives/C06G1NNH47N)
 
- ### Ecosystem
+### Ecosystem
 
 #### Artifacts
 
 [![chainguard](https://img.shields.io/badge/Chainguard-images-openfga?color=25c2a0&logo=chainguard)](https://images.chainguard.dev/directory/image/go/versions)
-[![helmchart](https://img.shields.io/badge/Helm_-charts-openfga?color=25c2a0&logo=helm)](https://github.com/openfga/helm-charts) 
-[![artifact hub](https://img.shields.io/badge/Artifact_-hub-openfga?color=25c2a0&logo=artifacthub)](https://artifacthub.io/packages/helm/openfga/openfga) 
+[![helmchart](https://img.shields.io/badge/Helm_-charts-openfga?color=25c2a0&logo=helm)](https://github.com/openfga/helm-charts)
+[![artifact hub](https://img.shields.io/badge/Artifact_-hub-openfga?color=25c2a0&logo=artifacthub)](https://artifacthub.io/packages/helm/openfga/openfga)
 
 #### Observability
+
 OpenFGA can be integrated with and monitored through the following technologies:
 
 [![opentelemetry](https://img.shields.io/badge/Opentelemetry--openfga?color=25c2a0&logo=opentelemetry)](https://github.com/open-telemetry)
@@ -486,13 +491,14 @@ OpenFGA can be integrated with and monitored through the following technologies:
 [![jaeger](https://img.shields.io/badge/Jaeger--openfga?color=25c2a0&logo=jaeger)](https://jaegertracing.io/)
 [![dynatrace](https://img.shields.io/badge/Dynatrace--openfga?color=25c2a0&logo=Dynatrace)](https://dynatrace.io/)
 
-
 ## Security Issue Resolution
+
 ### Responsible Disclosure
 
-OpenFGA vulnerability management is described in the official project security documentation [SECURITY.md](https://github.com/openfga/.github/blob/main/SECURITY.md). 
+OpenFGA vulnerability management is described in the official project security documentation [SECURITY.md](https://github.com/openfga/.github/blob/main/SECURITY.md).
 
 ### Incident Response
+
 The OpenFGA maintainers bear the responsibility of monitoring and addressing reported vulnerabilities. Identified issues undergo prioritized triage, with immediate escalation upon confirmation. The triage process is conducted in private channels.
 
 Adhering to the GitHub security advisory process, OpenFGA initiates the CVE (Common Vulnerabilities and Exposures) request upon issue identification. The resolution is developed in a private branch associated with the CVE.
@@ -505,7 +511,7 @@ All OpenFGA security issues can be found on the [Github advisories page](https:/
 
 ## Appendix
 
-### Case Studies. 
+### Case Studies
 
 The [list](https://github.com/openfga/community/blob/main/ADOPTERS.md) of projects that utilize OpenFGA include Okta FGA, Twintag, Mapped, Procure Ai,Canonical (Juju & LFX), Wolt, Italarchivi, Read AI, Virtool, Configu, Fianu Labs, and ExcID.
 
