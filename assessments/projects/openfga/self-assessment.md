@@ -39,7 +39,7 @@ This assessment was contributed to by community members as part of the [Security
 | Software | [https://github.com/openfga](https://github.com/openfga) |
 | Security Provider | Yes. OpenFGA is used to decide if a subject (user, application) user can perform a specific action on a resource or not.|
 | Languages | Go, Java, Javascript, Python, C# |
-| SBOM | The Software Bill of Materials is not publicly available, but is included in each GitHub release using Syft, which is a CLI tool, and Go library for generating an SBOM from container images and filesystems, since [pull/683](https://github.com/openfga/openfga/pull/683) |
+| SBOM | The Software Bill of Materials is not publicly available, but is included in each GitHub release using Syft, which is a CLI tool, and Go library for generating an SBOM from container images and file systems, since [pull/683](https://github.com/openfga/openfga/pull/683) |
 
 ### Security Links
 
@@ -62,7 +62,7 @@ Developers can use OpenFGA to easily craft authorization and permission methods 
 
 OpenFGA is an authorization/permission engine that incorporates Relationship-Based Access Control (ReBAC) and Attribute Based Access Control (ABAC) concepts with a domain-specific language that enables crafting authorizations solutions that can grow and evolve to any use case.
 
-It's inspired on the idea described in the [Google Zanzibar paper](https://research.google/pubs/pub48190/).
+It's inspired on the idea described in the [Google Zanzibar paper](https://research.google/pubs/pub48190).
 
 Fine-Grained Authorization refers to individual users having access to specific objects and resources within a system. Google Drive is an example of this, as owners of resources can grant different users to have different levels of access to their resources.
 
@@ -143,9 +143,9 @@ Every time a server endpoint is invoked, OpenFGA validates that:
 
 - Payload Verification
   
-- Confirm that API payloads adhere to Protobuf API definitions.  
+- Confirm that API payloads adhere to protobuf API definitions.  
 
-- Validate parameters for proper structure, e.g. ensuring users are written in the correct format which is '\<userType>:\<userid>'
+- Validate parameters for proper structure, e.g. ensuring users are written in the correct format which is '\<userType>:\<userId>'
   
 #### Writing an Authorization Model
 
@@ -195,7 +195,7 @@ This document provides the CNCF TAG-Security with an initial understanding of Op
 
 OpenFGA, being an Open-Source project, allows for a more robust security implementation by following the Principle of Open Design.
 
-OpenFGA models authorization systems by providing the security features such as Role-based Access Control and Atrribute-based Access Control.
+OpenFGA models authorization systems by providing the security features such as Role-based Access Control and Attribute-based Access Control.
 
 OpenFGA boasts exceptional speed in processing secure authorization check call. This swift authorization mechanism not only enhances efficiency but also reinforces the security posture, assuring robust protection for applications and platforms for diverse scales.
 
@@ -242,7 +242,7 @@ technologies:
     - language.java
     - language.go
     - language.python
-    - language.donet
+    - language.dotnet
     - language.js
 
   openfga.deployment:
@@ -354,12 +354,12 @@ threats:
     likelihood: low
 
     summary: | 
-      the preshared key used for openfga.server/clients authentication is leaked/stolen     
+      the pre-shared key used for openfga.server/clients authentication is leaked/stolen     
     weakness: improper secrets handling/storing
     attack: information disclosure 
     component: openfga.server, openfga.clients
     actors: compromised:openfga.clients, malicious:system.operators
-    control: secret:safe_mannipulation
+    control: secret:safe_manipulation
     impact: high
     likelihood: low
 
@@ -379,7 +379,7 @@ threats:
     attack: denial of service
     component: openfga.server
     actors: malicious:openfga.clients, misconfigured:system.applications
-    control: input:sanization, input:normalization,  
+    control: input:sanitization, input:normalization,  
     impact: medium
     likelihood: low
 
@@ -419,7 +419,7 @@ threats:
     attack: elevation of privilege
     component: system.applications
     actors: malicious:system.users
-    control: software:versioning, software:timestamping
+    control: software:versioning, software:timestamp
     impact: low
     likelihood: low
 
@@ -463,22 +463,21 @@ By refraining from including PII in relationship tuples, users can simplify thei
 #### Internal
 
 [![github](https://img.shields.io/badge/github-discussions-black.svg?logo=github)](https://github.com/orgs/openfga/discussions)
-[![github](https://img.shields.io/badge/github-issues-black.svg?logo=github)](https://github.com/orgs/openfga/discussions)
-[![github](https://img.shields.io/badge/github-pulls-black.svg?logo=github)](https://github.com/orgs/openfga/discussions)
-[![slack](https://img.shields.io/badge/slack-okta_%23external%82okta%82openfga-black.svg?logo=slack)](https://cloud-native.slack.com/archives/C06G1NNH47N)
+[![github](https://img.shields.io/badge/github-issues-black.svg?logo=github)](https://github.com/openfga/openfga/issues)
+[![github](https://img.shields.io/badge/github-pulls-black.svg?logo=github)](https://github.com/openfga/openfga/pulls)
 
 #### Inbound and Outbound
 
 [![email](https://img.shields.io/badge/email-security@openfga.dev-openfga?color=25c2a0&logo=mail.ru)](mailto:security@openfga.dev)
 [![community](https://img.shields.io/badge/openfga-community-25c2a0.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAABY0lEQVR4AYWSIYyDQBBFn1eVNWdR9QJ1Co+qD6o+J+pFVdX51NfVB4tCYiowaASCJrg5dj6Xbgi5++a18BhmZ8D+CbakrRx17ajatXCD3Ywj5DP2cFsJvNPaI2BDyM5FQG/lhlBDMeOm2ieoI0EZBWVanaLpVGZ0Uw93zVtIvfCAF66B3l+W/gpLT5eAJAG4qOtyESoJ14DTCeAqoVoEK1ye9tCadfAxedni3eRg6kvoBV3EhqduthalmYTBKOFgZmdVVF5AMzOBkg/gYT2ASpna/TS7A3sSFwZtack3kJnvLKGeZV37MkXneWqAFTZ16rm3KN2CydCPl6O1CKNLEvLQhk07L/yE3egN5PEuyHJC8oDVqCWkGe5lq2VF6x41ngYYfQhZ9MH00YCnRsdqV5+cnNeoP67GQgVHzeuqY5UrQT31AXmRBmwID+sIObAh3LX1Qls/wH0lWK/emwVd3OSf+QEqxdwXzzaUTwAAAABJRU5ErkJggg==)](https://openfga.dev/docs/community )
-[![slack](https://img.shields.io/badge/slack-cncf_%23openfga-25c2a0.svg?logo=slack)](https://cloud-native.slack.com/archives/C06G1NNH47N)
+[![slack](https://img.shields.io/badge/slack-cncf_%23openfga-25c2a0.svg?logo=slack)](https://cloud-native.slack.com)
 
 ### Ecosystem
 
 #### Artifacts
 
 [![chainguard](https://img.shields.io/badge/Chainguard-images-openfga?color=25c2a0&logo=chainguard)](https://images.chainguard.dev/directory/image/go/versions)
-[![helmchart](https://img.shields.io/badge/Helm_-charts-openfga?color=25c2a0&logo=helm)](https://github.com/openfga/helm-charts)
+[![helm chart](https://img.shields.io/badge/Helm_-charts-openfga?color=25c2a0&logo=helm)](https://github.com/openfga/helm-charts)
 [![artifact hub](https://img.shields.io/badge/Artifact_-hub-openfga?color=25c2a0&logo=artifacthub)](https://artifacthub.io/packages/helm/openfga/openfga)
 
 #### Observability
@@ -517,4 +516,4 @@ The [list](https://github.com/openfga/community/blob/main/ADOPTERS.md) of projec
 
 ### Related Projects/Vendors
 
-The list of related projects is available as a [community ressource](https://github.com/openfga/community/blob/main/related-projects.md)
+The list of related projects is available as a [community resource](https://github.com/openfga/community/blob/main/related-projects.md)
