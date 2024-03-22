@@ -1,6 +1,6 @@
 # CNCF TAG Security: Cloud Native Zero Trust White Paper
 
-## Designing Zero Trust using Cloud Native Platforms (Part 1)
+## Designing Zero Trust Using Cloud Native Platforms (Part 1)
 
 ```text
 [*** Document locked for review by CNCF TAG Security community
@@ -39,23 +39,25 @@
 
 ## Executive Summary
 
-The continual cat-and-mouse game between organizations seeking to protect their distributed cloud services (through perimeter security) and offenders seeking to punch holes in such a perimeter (by exploiting new weaknesses in deployed cloud services and their underlying cloud native platforms) intensifies annually. As the [number of incidents](https://www.ic3.gov/Media/PDF/AnnualReport/2022_IC3Report.pdf) [^1] continues to show steep annual growth, some organizations try to keep up with the pace and variety of attacks by adopting secure-by-design practices and improving their ability to detect cyber weaknesses. Nevertheless, offenders seem to always have the upper hand. As organizations continue to use the common practice of perimeter defenses, offenders find new innovative ways to overcome the perimeter, place a first foothold within the organization, and carry on attacks deeper into the network from within. The practice of perimeter defenses is further weakened by organizations moving workloads to the cloud, even more so while deploying a multi-cloud strategy. In a cloud environment, the concept of perimeter becomes blurry as organizations lose control over the network and much of the inner services.
+The continual cat-and-mouse game between organizations seeking to protect their distributed cloud services (through perimeter security) and offenders seeking to punch holes in such a perimeter (by exploiting new weaknesses in deployed cloud services and their underlying cloud native platforms) intensifies annually. As the [number of incidents](https://www.ic3.gov/Media/PDF/AnnualReport/2022_IC3Report.pdf) [^1] continues to show steep annual growth, some organizations try to keep up with the pace and variety of attacks by adopting secure-by-design practices and improving their ability to detect cyber weaknesses. Nevertheless, offenders seem to always have the upper hand. As organizations continue to use the common practice of perimeter defenses, offenders find new innovative ways to overcome the perimeter, place a first foothold within the organization, and carry on attacks deeper into the network from within. The practice of perimeter defenses is further weakened by organizations moving workloads to the cloud; a multi-cloud strategy makes these efforts even more fraught and less likely to succeed. In any cloud environment, the concept of perimeter becomes blurry as organizations lose control over the network and much of the inner services.
 
-Zero Trust revolutionizes cyber defenses by replacing the core security principles. It considers any client a suspect that may be used to commence attacks against the organization. It considers the internal network as hostile as the external network. It takes into account that good citizens of the organization's network may get hacked and become a stepping stone for offenders to further their attacks. It assumes everyone is a suspect, any message sent can be an exploit and any cloud service will at some point get hacked. Therefore, the Zero Trust cyber approach is especially suitable for cloud services where the perimeter is blurry.
+Zero Trust revolutionizes cyber defenses by replacing the core security principles. It considers any client a suspect that may be used to commence attacks against the organization. It considers the internal network as hostile as the external network. It takes into account that good citizens of the organization's network may get hacked and become a stepping stone for offenders to further their attacks. It assumes everyone is a suspect, any message sent can be an exploit, and any cloud service will at some point get hacked. Therefore, the Zero Trust cyber approach is especially suitable for cloud services where the perimeter is blurry.
 
-In a cloud environment, the scope and complexity of services are dynamic. Further, any client or service entity may change its location between hosts, clusters, regions, and sometimes clouds. The paper begins by outlining the manifestation of fundamental Zero Trust principles in cloud native environments. It identifies key cloud native elements that serve as the foundation for implementing Zero Trust effectively. Furthermore, the white paper presents a comprehensive overview of the essential components required to establish a Zero Trust Architecture (ZTA) within a cloud native context.
+In a cloud environment, the scope and complexity of services are dynamic. Further, any client or service entity may change its location between hosts, clusters, regions, and sometimes clouds. This overview begins by outlining the fundamental Zero Trust principles in cloud native environments. It identifies key cloud native elements that serve as the foundation for implementing Zero Trust effectively. Furthermore, we present a comprehensive overview of the essential components required to establish a Zero Trust Architecture (ZTA) within a cloud native context.
 
-As a testament to the commitment of the CNCF community to address this critical challenge, the paper showcases existing systems and solutions within CNCF that can support and accelerate the journey toward a ZTA (See “Best Practices” chapter). Embracing these solutions empowers the Cloud Native Community to fortify its defenses and stay ahead of the threats posed by cyber offenders.
+As a testament to the commitment of the CNCF community to address this critical challenge, we showcase existing systems and solutions within CNCF that can support and accelerate the journey toward a ZTA (See “Best Practices” chapter). Embracing these solutions empowers the Cloud Native Community to fortify its defenses and stay ahead of the threats posed by cyber offenders.
 
 By leveraging the insights and guidelines presented in this white paper, organizations can bolster their security measures, adapt to the dynamic threat landscape, and establish a more robust security posture within their cloud native environments. The journey towards a Zero Trust approach represents a pivotal step in safeguarding critical services and data, ensuring a safer and more resilient digital future.
 
-In this paper, _Part 1 “Designing Zero Trust using Cloud Native Platforms”_, our primary objective is to provide a foundational understanding of the key principles, bedrock components, and best practices that form the backbone of this security model. However, it’s essential to emphasize that there is a forthcoming follow-up paper update part 2, which will explore far deeper into the subject matter. In the upcoming part 2 “Implementing Zero Trust using Cloud Native Platforms”, we will provide an extensive overview of detailed technologies, offer practical examples, and analyze advanced use cases, focusing on integrating Zero Trust principles with CNCF components and tools.
+In this paper, _Part 1 “Designing Zero Trust Using Cloud Native Platforms”_, our primary objective is to provide a foundational understanding of the key principles, bedrock components, and best practices that form the backbone of this security model. _Please note, there is a forthcoming follow-up paper, which will explore far deeper into the subject matter. In the upcoming part 2 “Implementing Zero Trust using Cloud Native Platforms,” we will provide an extensive overview of detailed technologies, offer practical examples, and analyze advanced use cases, focusing on integrating Zero Trust principles with CNCF components and tools._
 
-We intend to equip organizations with comprehensive knowledge to implement Zero Trust security within cloud native environments successfully. This multi-part approach ensures that readers will thoroughly understand the topic and be well-prepared to enhance their cybersecurity defenses effectively.
+We intend to equip organizations with comprehensive knowledge to implement Zero Trust security within their cloud native environments successfully. This multi-part approach ensures that readers will thoroughly understand the topic and be well-prepared to enhance their cybersecurity defenses effectively.
 
 ## Introduction
 
-In the context of cloud systems, Zero Trust is a collection of concepts and architectures in cybersecurity to secure cloud services - self-contained software units that offer a specific function or feature with the view that cloud systems are already compromised. Zero Trust assumes that protecting the cloud system perimeter does not suffice, and offenders may find ways to attack cloud services from within the cloud network. This calls for protecting cloud services in an environment where offenders have a foothold inside the cloud systems and at clients approaching the cloud services. Zero Trust is a cyber approach in which everything needs to be suspected; no trust should be given implicitly, and minimal trust should be given explicitly to those showing good conduct to do their specific tasks. The Zero Trust approach aims to enforce accurate, least privileged, behavior-based, per-request access decisions to every cloud service, regardless of whether the service request is sourced from a client within the cloud or from an external client.
+Before going further, we need to define Zero Trust. The concept of Zero Trust was first introduced by John Kindervag, then an analyst at Forrester Research, in 2010. It has evolved since then as a security framework to help reduce implicit trust in systems - not ensure there is no trust at all. All systems have ‘trust’; but trust “is not a property, but rather an assessment based on experience…. [It is] a declaration made by an observer [not] a property of the observed.” [^4] Resultantly, Zero Trust is about not giving implicit trust but rather keeping trust in the system and its components to the bare minimum necessary (the well-known principle of least privilege) and ensuring it’s enforced - ideally automatically - while ensuring continual assessment. When implementing Zero Trust, perimeter security is no longer enough; you must treat users, systems, and networks as untrusted. The DoD’s Reference Architecture sums it up nicely: “The foundational tenet of the Zero Trust Model is that no actor, system, network, or service operating outside or within the security perimeter is trusted. It is a dramatic paradigm shift in [the] philosophy of how we secure our infrastructure, networks, and data, from verify once at the perimeter to continual verification of each user, device, application, and transaction.”
+
+In the context of cloud systems, Zero Trust is a collection of concepts and architectures to secure cloud services. **Zero Trust assumes that protecting the cloud system perimeter does not suffice, and offenders may find ways to attack cloud services from within the cloud network. This calls for protecting cloud services in an environment where offenders have a foothold inside the cloud systems and at clients approaching the cloud services.** Zero Trust is a cyber approach in which everything needs to be suspected; no trust should be given implicitly, and minimal trust should be given explicitly to those showing good conduct to do their specific tasks. The Zero Trust approach aims to enforce accurate, least privileged, behavior-based, per-request access decisions to every cloud service, regardless of whether the service request is sourced from a client within the cloud or from an external client.
 
 ![alt_text](images/image1.png "image_tooltip")
 
@@ -68,17 +70,9 @@ In recent years, Zero Trust has gained significant attention, propelled by the e
 [NIST SP 800-207A](https://csrc.nist.gov/pubs/sp/800/207/a/final),
 [A Zero Trust Architecture Model for Access Control in Cloud Native Applications in Multi-Location Environments](https://csrc.nist.gov/publications/detail/sp/800-207a/draft).
 <!-- cspell:enable -->
-Zero Trust is in many ways a revolution in cyber security practices, and since codification papers aiming to offer concrete, practical recommendations often limit the scope and seek a more evolutionary approach to present readers. This often comes while deviating from the Zero Trust methodology. Different standards seem to legitimize other deviations. Therefore, it is no surprise that none of these papers agree. For example, a paper focused on the required evolution of identity management may leave out controls needed to protect against a compromised client or stolen credentials.
+Zero Trust is in many ways a revolution in cyber security practices, and since codification, papers aiming to offer concrete, practical recommendations often limit the scope and seek a more evolutionary approach, sometimes deviating from the Zero Trust methodology. Different standards seem to legitimize other deviations. Therefore, it is no surprise that none of these analyses agree. For example, a paper focused on the required evolution of identity management may leave out controls needed to protect against a compromised client or stolen credentials.
 
-This whitepaper aims to explore zero trust principles, based on our biases and interpretations, as applied to cloud native architectures and platforms to help practitioners with guidance and best practices to achieve Zero Trust through the various stages of maturity. We view ZTA as a holistic approach to security required when abandoning the assumption that the perimeter is defendable. It affects all aspects of cyber security and changes the relationship between them and their respective relative importance.
-
-We aim in this whitepaper to provide initial thoughts and positioning of zero trust for cloud native architectures and platforms. This provides a baseline for conversation and iterative upgrades to our recommendations and guidance as the field inevitably matures.
-
-Before going further, we need to define Zero Trust. The concept of Zero Trust was first introduced by <!-- cspell:disable -->John Kindervag, then an analyst at Forrester Research<!-- cspell:enable -->, in 2010. It has evolved since then as a security framework to help reduce implicit trust in systems - not ensure there is no trust at all. All systems have ‘trust’; but trust “is not a property, but rather an assessment based on experience…. [It is] a declaration made by an observer [not] a property of the observed.”[^4] Resultantly, Zero trust is about not giving implicit trust but rather keeping trust in the system and its components to the bare minimum necessary (the well-known principle of least privilege) and ensuring it’s enforced - ideally automatically - while ensuring continual assessment. When implementing zero trust, perimeter security is no longer enough; you must treat users, systems, and networks as untrusted.
-
-The DoD’s Reference Architecture [^3] sums it up nicely:
-
- >_“The foundational tenet of the Zero Trust Model is that no actor, system, network, or service operating outside or within the security perimeter is trusted. It is a dramatic paradigm shift in [the] philosophy of how we secure our infrastructure, networks, and data, from verify once at the perimeter to continual verification of each user, device, application, and transaction.”_
+Into all this confusion we offer our take: ZTA is a holistic approach to security required when abandoning the assumption that the perimeter is defendable. It affects all aspects of cyber security and changes everything. We aim in this whitepaper to provide initial thoughts and positioning of Zero Trust for cloud native architectures and platforms. This provides a baseline for conversation and iterative upgrades to our recommendations and guidance as the field inevitably matures.
 
 This paper will examine several critical aspects of Zero Trust security, guiding organizations in designing and implementing robust strategies for safeguarding their ecosystems. These principles serve as high-level guidelines that steer the direction of Zero Trust initiatives, ensuring that security remains at the forefront of every decision and action.
 
@@ -90,13 +84,13 @@ Achieving Zero Trust is not just about implementing technologies but also about 
 
 Additionally, a list of references for further exploration and research on topics discussed in this paper can be found at the bottom of the document.
 
-We hope that the cloud native community, CNCF members, and other interested parties will use this whitepaper as a baseline for conversation and implementation of zero trust principles into their deployments while engaging in [feedback](https://github.com/cncf/tag-security/issues/950) to help evolve this paper.
+We hope that the cloud native community, CNCF members, and other interested parties will use this whitepaper as a baseline for conversation and implementation of Zero Trust principles into their deployments while engaging in [feedback](https://github.com/cncf/tag-security/issues/950) to help evolve this paper.
 
 ## Principles of Zero Trust
 
 ### General Principles
 
-Principles allow the reader to understand the fundamental ideas and beliefs that shape the rest of the paper's content. Principles serve as a reference point and help readers contextualize the information presented throughout the paper. They provide a logical and conceptual framework that supports the arguments, strategies, and recommendations discussed later in the document.
+Principles allow the reader to understand the fundamental ideas and beliefs that shape the rest of the paper's content. Principles serve as a reference point and help readers contextualize the information presented throughout the paper. They provide a logical and conceptual framework that supports the arguments, strategies, and recommendations discussed later.
 
 ![alt_text](images/image2.png "image_tooltip")
 
@@ -127,7 +121,7 @@ Principles of Zero Trust:
         * Offenders do use services to advance sinister intentions.
       * **Always monitor and verify service request behavior** - verify, per request, that the request behaves as expected.
         * Requests are being used to exploit vulnerabilities in services.
-      * **Always monitor and verify the client behavior** - observe the behavior of the identities of request senders (aka clients), either users or machines, and verify that such identities behave as expected over time.
+      * **Always monitor and verify the client behavior** - observe the behavior of the identities of request senders (aka clients), -either users or machines- and verify that such identities behave as expected over time.
         * Identities do get hacked, credentials do get stolen, and insiders may misbehave.
         * Has the geo-location changed?
         * Does the amount of requests make sense?
@@ -141,19 +135,19 @@ Principles of Zero Trust:
 
 Additionally, the following general principle applies:
 
-* **A Principle of the least privilege** - by default, it grants no access or minimal access, then elevates the privilege only when needed, only to specific clients needing such access. It refrains from assuming such access is granted and doesn't assume it is forever. Instead, such access is subject to the actual behaviors observed in the system and may be revoked if the behavior indicates a breach. When access is given, it is granted. Also, ensure permissions grant access to a deterministic list of subjects and resources - not to all owners of specific roles. Access is granted for specific operations, not for any operation. Access to use an operation is granted for specific services, not a group of services. Overall, this results in privileges given in the form of: X client, if it behaves, can do Y operation, if the operation request looks legit, at Z service, as long as Z is not shown to be compromised.
+* **A Principle of the least privilege** - by default, it grants no access or minimal access, then elevates the privilege only when needed, and only to specific clients needing such access. It refrains from assuming such access is granted and doesn't assume it is forever. Instead, such access is subject to the actual behaviors observed in the system and may be revoked if the behavior indicates a breach. When access is given, it is granted. Also, ensure permissions grant access to a deterministic list of subjects and resources - not to all owners of specific roles. Access is granted for specific operations, not for any operation. Access to use an operation is granted for specific services, not a group of services. Overall, this results in privileges given in the form of: X client, if it behaves, can do Y operation, if the operation request looks legit, at Z service, as long as Z is not shown to be compromised.
 
 Overall, Zero Trust aims for the **right user to have access to the right data, for the right reason, at the right time**.
 
 ### Cloud Native Principles of Zero Trust
 
-The main approach of Zero Trust is to “Trust Nothing by default”. Ever. When you trust nothing, you are forced to seek relevant security measures wherever there is a risk. Consequently, we should “Verify Everything.” Do not assume that passing a check naturally affords trust. Having credentials doesn’t mean you are trustable. It just means you have credentials. And credentials can be stolen. We discuss here the cloud native principles derived from the Zero Trust approach.
+The main approach of Zero Trust is to “Trust nothing by default”. Ever. When you trust nothing, you are forced to seek relevant security measures wherever there is a risk. Consequently, we should “Verify Everything.” Do not assume that passing a check naturally affords trust. Having credentials doesn’t mean you are trustable -It just means you have credentials. And credentials can be stolen. We discuss here the cloud native principles derived from the Zero Trust approach.
 
 #### Assume every image includes vulnerabilities
 
 Organizations should always assume all cloud native images are vulnerable and plan accordingly. Organizations should assume that all bespoke software and applications they develop, distribute, and deploy, as well as any third-party software, are vulnerable to various attacks and plan accordingly.
 
-Just as container images are responsible for runtime binaries like Java or Go are assumed to be vulnerable, similar assumptions should be made regarding the specific business logic within an application and the open-source software used as dependencies for rapid development. Frequently, vulnerabilities are exploited through these same libraries or business logic, particularly when exposed through an API.
+Just as container images are responsible for runtime binaries like Java or Go are assumed to be vulnerable, similar assumptions should be made regarding the specific business logic within an application and the open source software used as dependencies for rapid development. Frequently, vulnerabilities are exploited through these same libraries or business logic, particularly when exposed through an API.
 
 This harsh reality should be clear when taking into account that any deployed services rely not only on the organization's own code but also on:
 
@@ -193,7 +187,7 @@ Organizations should ensure that the identity of any service request sender send
 
 #### Always monitor and verify the service instance behavior
 
-Organizations should always assume that a service may be misused. Organizations should avoid a false sense of security while assuming that well-designed services by well-trained teams will behave as designed from a security standpoint. Instead, dynamic per-service-instance evaluation is required. Any service instance should be evaluated based on actual behavior and tagged with a proper **confidence level**, given how it acts in practice. Note that when one service instance is misused, other instances may remain intact. The evaluation of the **confidence level** may be based on parameters such as:
+Organizations should always assume that a service may be misused. Organizations should avoid a false sense of security when assuming that well-designed services by well-trained teams will behave as designed from a security standpoint. Instead, dynamic per-service-instance evaluation is required. Any service instance should be evaluated based on actual behavior and tagged with a proper **confidence level**, given how it acts in practice. Note that when one service instance is misused, other instances may remain intact. The evaluation of the **confidence level** may be based on parameters such as:
 
 1. Expected behavior of the service includes:
     * Expected requests that the service should or should not make to other services
@@ -201,7 +195,7 @@ Organizations should always assume that a service may be misused. Organizations 
     * Service instance behavior as an executable (use of compute resources, system calls, logs, metrics, etc.)
 2. Past behavior of the service instance - both its normal behavior and the past **confidence level** of the service.
 
-Organizations should identify and stop service instances that are being misused while maintaining a stable overall service. Offenders should not be allowed to maintain a presence in clusters after detection. Cyber attacks are often governed by a Return On Investment (ROI). The sooner a misused service instance is terminated, the lower the gain obtained by the offender. This results in a lower overall ROI for offenders from attacks. When detection and termination can be achieved before any offender gains, the offender incentive is nullified. Organizations should consider a goal of reducing ROI to offenders in the context of service continuity and the effect of terminating service instances given a certain **confidence level** that a service instance is misused.
+Organizations should identify and stop service instances that are being misused while maintaining a stable overall service. Offenders should not be allowed to maintain a presence in clusters after detection. Cyber attacks are often governed by the concept of Return On Investment (ROI). The sooner a misused service instance is terminated, the lower the gain obtained by the offender. This results in a lower overall ROI for offenders from attacks. When detection and termination can be achieved before any offender gains, the incentive is nullified. Organizations should consider reducing ROI to offenders in the context of service continuity and the effect of terminating service instances given a certain **confidence level** that a service instance is misused.
 
 Throughout this paper, we distinguish between the main service states:
 
@@ -209,7 +203,7 @@ Throughout this paper, we distinguish between the main service states:
 2. **Compromised Service:** The attacker has a foothold at the service or the infrastructure, e.g., an exploitable vulnerability or malware triggered to become active at some stage of the service life after deployment.
 3. **Exploited Service**: The service is taken and under an attacker’s control. The attacker has active malware running as part of the deployment.
 
-    Note that we never assume any service can never be exploited. We assume all services may have vulnerabilities in their code, their configuration, etc. We distinguish between services suspected to have such vulnerabilities but are not known to be compromised, services suspected to be compromised, and services actively being exploited.
+    _Note that we never assume any service can never be exploited. We assume all services may have vulnerabilities in their code, their configuration, etc. We distinguish between services suspected to have such vulnerabilities but are not known to be compromised, services suspected to be compromised, and services actively being exploited._
 
 #### Always monitor and verify service request behavior
 
@@ -262,7 +256,7 @@ Zero Trust promotes the implementation of network segmentation into smaller, iso
 
 ## Bedrocks of Zero Trust
 
-When writing a paper on zero trust and how it applies to cloud native architectures, it is important to discuss the core elements of zero trust as they form the guiding principles and foundation of the zero trust security model. The following Bedrocks of Zero Trust represent the key elements that define and support the implementation of a Zero Trust architecture. By addressing these bedrocks, we provide readers with a comprehensive understanding of the concept and its practical implications. This helps to ensure greater longevity and flexibility of the advice, even as technologies change.
+The following Bedrocks of Zero Trust represent the key elements that define and support the implementation of a Zero Trust architecture. By addressing these bedrocks, we provide a comprehensive understanding of the concept and its practical implications. This helps to ensure greater longevity and flexibility of the advice, even as technologies change.
 
 ### Cloud Native Zero Trust Core Elements
 
@@ -306,31 +300,22 @@ By applying zero trust principles to the Bedrocks of Zero Trust, we have a struc
 
 ### Trust in a Zero Trust Cloud Native Platform
 
-When applying zero trust principles to cloud native platforms, we need to consider what zero trust is, why we need it, the components of these platforms, and how our principles should be applied to each.
+When applying Zero Trust principles to cloud native platforms, we need to consider what Zero Trust is, why we need it, the components of these platforms, and how our principles should be applied to each.
 
-The elephant in the room is that the "zero" in Zero Trust does not mean we trust nothing. All systems require “trust;” it is how that trust is obtained that changes. With zero trust, trust is not a given; it is not enough to be inside the cloud native platform to be trusted. Perimeter security is no longer enough; we must treat cloud native **clients**, **service instances**, **service requests**, **data**, and **networks** as untrusted. Zero trust requires continual and dynamic assessment to evaluate if trust is to be given at any given moment to any given entity. We no longer trust “by design;” we trust after making a specific assessment given all the information we can collect at any given moment.
+The elephant in the room is that the "zero" in Zero Trust does not mean we trust nothing. All systems require “trust;” it is how that trust is obtained that changes. With Zero Trust, trust is not a given; it is not enough to be inside the cloud native platform to be trusted. Perimeter security is no longer enough; we must treat cloud native **clients**, **service instances**, **service requests**, **data**, and **networks** as untrusted. Zero Trust requires continual and dynamic assessment to evaluate if trust is to be given at any given moment to any given entity. We no longer trust “by design;” we trust after making a specific assessment given all the information we can collect at any given moment.
 
 As Dorothy Denning highlights in “A New Paradigm for Trusted Systems":
 
 >_"trust is not a property but rather an assessment based on experience! It is a declaration made by an observer, not a property of the observed."_
 
-Resultantly, under Zero trust, we are required to introduce to our systems an _Active Observer_ that will make **automated assessments based on experience and declare the trust level we should have in the observed entities**. In other words, such an _Active Observer_ will continuously make trust assessments on our behalf in real-time to determine our current _Confidence Level_ - how sure we are right now that we may trust the observed entity.
+Resultantly, under Zero Trust, we are required to introduce to our systems an _Active Observer_ that will make **automated assessments based on experience and declare the trust level we should have in the observed entities**. In other words, such an _Active Observer_ will continuously make trust assessments on our behalf in real-time to determine our current _Confidence Level_ - how sure we are right now that we may trust the observed entity.
 
 Our confidence in an entity must be considered when making granular real-time decisions regarding who and what to trust. This helps us keep trust in system components to the bare minimum necessary (the well-known principle of least privilege) and make sure it’s enforced - ideally automatically - while ensuring continual assessment. To implement such granular real-time decisions, we need an enhanced Access Control.
 
 The DoD’s Reference Architecture sums it up nicely:
 >_“[No] actor, system, network, or service operating outside or within the security perimeter is trusted. Instead, we must verify anything and everything attempting to establish access. It is a dramatic paradigm shift in [the] philosophy of how we secure our infrastructure, networks, and data, from verify once at the perimeter to continual verification of each user, device, application, and transaction.”_
 
-Cloud native platforms and systems epitomize the increasing complexity of securing infrastructure, data, and access. Cloud native platforms are inherently scalable, dynamic, and increasingly distributed with expansion into use cases such as edge and IoT. IP-based identity and perimeter security have become obsolete in a world of ephemeral IP addresses and constantly changing resources.
-
-We next discuss:
-
-* **Container Platform and Orchestration** - principal components required for baseline static Zero Trust security
-* **_Active Observer_** - additions needed to obtain dynamic Zero Trust security
-* **Access Control** - Using confidence levels and static controls together
-* **Automation** - Using confidence levels as part of Automation
-
-All these components need to work together effectively, so it's important to ensure that your security tools and processes are well-integrated.
+Cloud native platforms and systems epitomize the increasing complexity of securing infrastructure, data, and access. Cloud native platforms are inherently scalable, dynamic, and increasingly distributed with expansion into use cases such as edge computing and IoT. IP-based identity and perimeter security have become obsolete in a world of ephemeral IP addresses and constantly changing resources.
 
 ### Container Platform and Orchestration
 
@@ -346,11 +331,11 @@ Note that under Zero Trust, once we verify a client's identity, we are still req
 
 #### Network Security
 
-In a Zero Trust model, the network is always considered untrustworthy. This means applying security measures such as micro-segmentation, which involves dividing the network into secure zones and enforcing rules, using Access Control, about the traffic that can flow between them. This helps limit the spread of breaches and makes it easier to manage traffic and monitor suspicious behavior.
+In a Zero Trust model, the network is always considered untrustworthy. This means applying security measures such as micro-segmentation, which involves dividing the network into secure zones and enforcing rules -using Access Control - about the traffic that can flow between them. This helps limit the spread of breaches and makes it easier to manage traffic and monitor suspicious behavior.
 
 #### Encryption
 
-Zero trust assumes that offenders may reside inside cloud clusters, stage attacks on the cluster network, and attempt to access any data stored in the cloud. Therefore, all data, at rest and in transit, should be encrypted under Zero Trust. This protects sensitive data if it falls into the wrong hands and forms part of the process of authenticating and verifying interactions.
+Zero Trust assumes that offenders may reside inside cloud clusters, stage attacks on the cluster network, and attempt to access any data stored in the cloud. Therefore, all data, at rest and in transit, should be encrypted under Zero Trust. This protects sensitive data if it falls into the wrong hands and forms part of the process of authenticating and verifying interactions.
 
 #### Container Security
 
@@ -360,7 +345,7 @@ Additionally, under Zero Trust, runtime security is required to monitor suspicio
 
 ### The _Active Observer_
 
-Under cloud native Zero Trust, we require an _Active Observer_ to establish trust. It is not enough to verify the **client’s** identity using Identity Management; for example, we need to consider that credentials may be stolen and the **client** may be compromised. An _Active Observer_ should be in place to observe that client’s activities and decide on the _Confidence Level_ assigned to that identity - how sure are we that the **client** is not compromised and that the entity presenting the credentials is indeed the **client**?
+Under cloud native Zero Trust, we require an _Active Observer_ to establish trust. It is not enough to verify the **client’s** identity using Identity Management; we need to consider that credentials may be stolen and the **client** may be compromised. An _Active Observer_ should be in place to observe that client’s activities and decide on the _Confidence Level_ assigned to that identity - how sure are we that the **client** is not compromised and that the entity presenting the credentials is indeed the **client**?
 
 Similarly, an _Active Observer_ is required to verify that the client is sending legitimate **service requests** rather than malicious ones. And that the **Service Instances** processing such requests are not compromised.
 
@@ -370,9 +355,9 @@ Continuous monitoring is crucial for a Zero Trust approach. This involves collec
 
 #### Security Behavior Analytics for Service request (SBA-SR)
 
-When an offender aims to gain an initial foothold in a vulnerable service, the offender needs to manipulate the request sent to the service API such that it may exploit it. Using the exploit, the offender seeks to trigger some unplanned behavior of the service. The offender is, therefore, required to send an irregular sequence of characters or/and an irregular sequence of requests. Note that benign users will not be sending such irregular sequences.
+When an offender aims to gain an initial foothold in a vulnerable service, the offender needs to manipulate the request sent to the service API such that it may exploit it. Using the exploit, the offender seeks to trigger some unplanned behavior of the service. The offender is, therefore, required to send an irregular sequence of characters or/and an irregular sequence of requests. (Note that benign users will not be sending such irregular sequences.)
 
-Detecting such irregularities is a key element in protecting vulnerable cloud services. Organizations should deploy Security Behavior Analytics for Service Requests (SBA-SR) - for detecting security-related irregularities in any communications between clients and the Service API. The deployed SBA-SR should be capable of discerning regular requests of benign users from manipulated requests made by offenders.  The outcome of this component is a _Confidence Level_ of a **Service Request** that should be handled by **Access Control,** as discussed below.
+Detecting such irregularities is a key element in protecting vulnerable cloud services. Organizations should deploy Security Behavior Analytics for Service Requests (SBA-SR) for detecting security-related irregularities in any communications between clients and the Service API. The deployed SBA-SR should be capable of discerning regular requests of benign users from manipulated requests made by offenders.  The outcome of this component is a _Confidence Level_ of a **Service Request** that should be handled by **Access Control,** as discussed below.
 
 #### Security Behavior Analytics for Service Instances (SBA-SI)
 
@@ -587,6 +572,7 @@ We want to thank several contributors from whom we had excellent input and feedb
 * Fabian Kammel
 * Yaron Schneider
 * Yoshiyuki Tabata
+* Valerie Silverthorne
 <!-- cspell:enable -->
 
 For anyone involved in creating this paper, we express our heartfelt gratitude for your time, dedication, and professionalism. Your contributions have undoubtedly elevated the standard of our research, and we are immensely grateful for your collaboration.
