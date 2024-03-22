@@ -469,7 +469,7 @@ By refraining from including PII in relationship tuples, users can simplify thei
 #### Inbound and Outbound
 
 [![email](https://img.shields.io/badge/email-security@openfga.dev-openfga?color=25c2a0&logo=mail.ru)](mailto:security@openfga.dev)
-[![community](https://img.shields.io/badge/openfga-community-25c2a0.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAABY0lEQVR4AYWSIYyDQBBFn1eVNWdR9QJ1Co+qD6o+J+pFVdX51NfVB4tCYiowaASCJrg5dj6Xbgi5++a18BhmZ8D+CbakrRx17ajatXCD3Ywj5DP2cFsJvNPaI2BDyM5FQG/lhlBDMeOm2ieoI0EZBWVanaLpVGZ0Uw93zVtIvfCAF66B3l+W/gpLT5eAJAG4qOtyESoJ14DTCeAqoVoEK1ye9tCadfAxedni3eRg6kvoBV3EhqduthalmYTBKOFgZmdVVF5AMzOBkg/gYT2ASpna/TS7A3sSFwZtack3kJnvLKGeZV37MkXneWqAFTZ16rm3KN2CydCPl6O1CKNLEvLQhk07L/yE3egN5PEuyHJC8oDVqCWkGe5lq2VF6x41ngYYfQhZ9MH00YCnRsdqV5+cnNeoP67GQgVHzeuqY5UrQT31AXmRBmwID+sIObAh3LX1Qls/wH0lWK/emwVd3OSf+QEqxdwXzzaUTwAAAABJRU5ErkJggg==)](https://openfga.dev/docs/community )
+[![community](https://img.shields.io/badge/openfga-community-25c2a0.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAABY0lEQVR4AYWSIYyDQBBFn1eVNWdR9QJ1Co+qD6o+J+pFVdX51NfVB4tCYiowaASCJrg5dj6Xbgi5++a18BhmZ8D+CbakrRx17ajatXCD3Ywj5DP2cFsJvNPaI2BDyM5FQG/lhlBDMeOm2ieoI0EZBWVanaLpVGZ0Uw93zVtIvfCAF66B3l+W/gpLT5eAJAG4qOtyESoJ14DTCeAqoVoEK1ye9tCadfAxedni3eRg6kvoBV3EhqduthalmYTBKOFgZmdVVF5AMzOBkg/gYT2ASpna/TS7A3sSFwZtack3kJnvLKGeZV37MkXneWqAFTZ16rm3KN2CydCPl6O1CKNLEvLQhk07L/yE3egN5PEuyHJC8oDVqCWkGe5lq2VF6x41ngYYfQhZ9MH00YCnRsdqV5+cnNeoP67GQgVHzeuqY5UrQT31AXmRBmwID+sIObAh3LX1Qls/wH0lWK/emwVd3OSf+QEqxdwXzzaUTwAAAABJRU5ErkJggg==)](https://openfga.dev/docs/community)
 [![slack](https://img.shields.io/badge/slack-cncf_%23openfga-25c2a0.svg?logo=slack)](https://cloud-native.slack.com)
 
 ### Ecosystem
