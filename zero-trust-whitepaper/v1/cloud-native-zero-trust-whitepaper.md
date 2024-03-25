@@ -532,11 +532,11 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
 
 ### History of Zero Trust:
 
-* [https://infraon.io/blog/history-of-zero-trust-security/](https://infraon.io/blog/history-of-zero-trust-security/) <!-- cspell:enable -->
+* [History of Zero Trust Security (infraon.io)](https://infraon.io/blog/history-of-zero-trust-security/) <!-- cspell:enable -->
 
     In April 1994, the term "zero trust" was coined by Stephen Paul Marsh in his doctoral thesis on computer security at the University of Stirling. Marsh's work studied trust as something finite that can be described mathematically, asserting that the concept of trust transcends human factors such as morality, ethics, lawfulness, justice, and judgment.
 
-* [Formalising Trust as a Computational Concept (stir.ac.uk)](https://www.cs.stir.ac.uk/~kjt/techreps/pdf/TR133.pdf)
+* [Formalizing Trust as a Computational Concept (stir.ac.uk)](https://www.cs.stir.ac.uk/~kjt/techreps/pdf/TR133.pdf)
 
     <!-- cspell:disable -->
     John Kindervag, a former analyst at Forrester Research, in 2010. John Kindervag <!-- cspell:enable --> published a research paper titled "No More Chewy Centers: Introducing the Zero Trust Model of Information Security," in which he introduced the concept of zero trust as a new approach to cybersecurity.
@@ -547,15 +547,17 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
     The concept of Zero Trust was first introduced by
     John Kindervag, a former analyst at Forrester Research, <!-- cspell:enable --> in 2010. In his model, a network is divided into “zones” with varying levels of trust. The innermost zone, known as the “inner circle,” is the most trusted and contains the organization’s most sensitive data and resources. As you move outward from the inner circle, the level of trust decreases, with the outermost zone being the least trusted.
 
+<!-- cspell:disable -->
 * [Zero Trust (techskillnation.com)](https://techskillnation.com/2022/12/zero-trust/)
 
-    Google was one of the first companies to take the cue from the potentialities of the Zero Trust architecture. The initiative was called BeyondCorp, and in 2009, Google implemented a de-parameterized framework based on the Zero Trust Architecture.
+     <!-- cspell:enable -->Google was one of the first companies to take the cue from the potentialities of the Zero Trust architecture. The initiative was called BeyondCorp, and in 2009, Google implemented a de-parameterized framework based on the Zero Trust Architecture.
 <!-- cspell:disable -->
 * [Zero Trust Network Architecture the Best Fit for Your Use Cases | 2022 | Infraon](https://infraon.io/blog/zero-trust-network-access-use-cases/)<!-- cspell:enable -->
 
     NIST played a significant role in popularizing and formalizing the zero trust security model
 
-* [Zero Trust Architecture (nvlpubs.nist.gov)](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf)
+<!-- cspell:disable -->
+* [Zero Trust Architecture (nvlpubs.nist.gov)](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf) <!-- cspell:enable -->
 
     A zero trust architecture is designed and deployed with adherence to the following zero trust
 basic tenets….
