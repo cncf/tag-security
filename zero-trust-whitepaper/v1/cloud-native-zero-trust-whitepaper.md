@@ -536,7 +536,7 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
 
     In April 1994, the term "zero trust" was coined by Stephen Paul Marsh in his doctoral thesis on computer security at the University of Stirling. Marsh's work studied trust as something finite that can be described mathematically, asserting that the concept of trust transcends human factors such as morality, ethics, lawfulness, justice, and judgment.
 
-* [TR133.pdf (stir.ac.uk)](https://www.cs.stir.ac.uk/~kjt/techreps/pdf/TR133.pdf)
+* [Formalising Trust as a Computational Concept (stir.ac.uk)](https://www.cs.stir.ac.uk/~kjt/techreps/pdf/TR133.pdf)
 
     <!-- cspell:disable -->
     John Kindervag, a former analyst at Forrester Research, in 2010. John Kindervag <!-- cspell:enable --> published a research paper titled "No More Chewy Centers: Introducing the Zero Trust Model of Information Security," in which he introduced the concept of zero trust as a new approach to cybersecurity.
