@@ -542,7 +542,7 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
     John Kindervag, a former analyst at Forrester Research, in 2010. John Kindervag <!-- cspell:enable --> published a research paper titled "No More Chewy Centers: Introducing the Zero Trust Model of Information Security," in which he introduced the concept of zero trust as a new approach to cybersecurity.
 
    <!-- cspell:disable -->
-* [Forrester-No-More-Chewy-Centers.pdf (crystaltechnologies.com)](https://crystaltechnologies.com/wp-content/uploads/2017/12/forrester-zero-trust-model-information-security.pdf)
+* [No More Chewy Centers: The Zero Trust Model Of Information Security (crystaltechnologies.com)](https://crystaltechnologies.com/wp-content/uploads/2017/12/forrester-zero-trust-model-information-security.pdf)
 
     The concept of Zero Trust was first introduced by
     John Kindervag, a former analyst at Forrester Research, <!-- cspell:enable --> in 2010. In his model, a network is divided into “zones” with varying levels of trust. The innermost zone, known as the “inner circle,” is the most trusted and contains the organization’s most sensitive data and resources. As you move outward from the inner circle, the level of trust decreases, with the outermost zone being the least trusted.
