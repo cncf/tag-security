@@ -411,7 +411,7 @@ _A summary of the best practice topics to support ZTA principles using CNCF tech
 
 #### Security Behavior Analytics for Service Instances (SBA-SI)
 
-CNCF Knative’s [Security-Guard](https://knative.dev/docs/serving/app-security/security-guard-about/) (Guard) offers support as an SBA-SI. Like other Knative components, Guard can be used separately from Knative and be deployed as part of vanilla Kubernetes or other cloud native orchestration systems. Guard uses machine-learning-based criteria synthesis to identify the standard patterns service clients use. Guard also supports setting manual criteria. Guard’s SBA-SI identifies changes in the external communication performed by service instances. It calculates a **confidence level** of **service instances** and is integrated with **Automation**, which optionally allows deleting service instances suspected as being exploited.
+CNCF Knative’s [Security-Guard](https://knative.dev/docs/serving/app-security/security-guard-about/) (Guard) offers support as an SBA-SI. Like other Knative components, Guard can be used separately from Knative and be deployed as part of vanilla Kubernetes or other cloud native orchestration systems. Guard uses machine-learning-based criteria synthesis to identify the standard patterns service clients use. Guard also supports setting manual criteria. Guard’s SBA-SI identifies changes in the external communication performed by service instances. It calculates a **confidence level** of **service instances** and is integrated with **automation**, which optionally allows deleting service instances suspected as being exploited.
 
 Profiling the behavior of **service instances** and evaluating **confidence levels** may also take advantage of eBPF technology. Several CNCF projects use eBPF-based technology in observability, networking, and security ([Falco](https://falco.org/), [Cilium](https://cilium.io/), [Pixie](https://docs.px.dev/), and [KubeArmor](https://kubearmor.io/)). eBPF may be used to synthesize criteria describing the standard patterns used by **service instances.** Such criteria can later be used to evaluate the **confidence level** of running **service instances**.
 
@@ -426,7 +426,7 @@ An additional source of information that can be used to determine the **confiden
 
 #### Security Behavior Analytics for Service Requests (SBA-SR)
 
-CNCF Knative offers the [Security-Guard](https://knative.dev/docs/serving/app-security/security-guard-about/#security-guard-profile-and-criteria) extension (Guard for short) main function is to serve as an SBA-SR. As indicated above, Guard can be used separately from Knative and be deployed as part of vanilla Kubernetes. Guard maintains machine-learning-based criteria synthesis to identify the standard patterns used by service requests. It also supports manual criteria. Guard’s SBA-SR identifies changes in service requests performed by clients. It calculates a **confidence level** of **service requests** and is integrated with Access Control, which optionally allows removing service requests suspected as exploits.
+CNCF Knative offers the [Security-Guard](https://knative.dev/docs/serving/app-security/security-guard-about/#security-guard-profile-and-criteria) extension (Guard for short) and its main function is to serve as an SBA-SR. As indicated above, Guard can be used separately from Knative and be deployed as part of vanilla Kubernetes. Guard maintains machine-learning-based criteria synthesis to identify the standard patterns used by service requests. It also supports manual criteria. Guard’s SBA-SR identifies changes in service requests performed by clients. It calculates a **confidence level** of **service requests** and is integrated with Access Control, which optionally allows removing service requests suspected as exploits.
 
 Guard’s SBA-SR offers the added benefit of being able to detect unknown exploits to unknown vulnerabilities without the use of signatures. It can help protect services without the usual race between CVEs, Exploits, and Patches.
 
@@ -467,14 +467,14 @@ Making mTLS standard for all communications in a cloud cluster is often achieved
 
 #### _Active Observer_ for Client Identities
 
-**Confidence level** of local clients embedded in cloud clusters may be evaluated by aggregating the **confidence level** of the respective **service instances** that embed such local clients. Inputs about external clients may or may not be obtainable.
+**The confidence level** of local clients embedded in cloud clusters may be evaluated by aggregating the **confidence level** of the respective **service instances** that embed such local clients. Inputs about external clients may or may not be obtainable.
 
 An additional source of client identity **confidence level** can be achieved by aggregating the **confidence level** of all **service requests** emitted by the said client identity. Such information is available for both local and external clients.
 
 
 ### Access Control
 
-Under Zero Trust, we aim to improve the control over the network in several ways. First, by micro-segmentation of the cloud cluster network and placing access control in front of every micro-segment. Second by applying fine-grained access control where every operation by any client is controlled. Lastly, by applying dynamic access control that considers the **confidence level** we have in both the **client identity** and the **service request**.
+Under Zero Trust, we aim to improve the control over the network in several ways: First, by micro-segmentation of the cloud cluster network and placing access control in front of every micro-segment and second by applying fine-grained access control where every operation by any client is controlled. Lastly, by applying dynamic access control that considers the **confidence level**, we have in both the **client identity** and the **service request**.
 
 
 #### Micro-Segmentation
