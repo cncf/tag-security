@@ -547,9 +547,10 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
     The concept of Zero Trust was first introduced by
     John Kindervag, a former analyst at Forrester Research, <!-- cspell:enable --> in 2010. In his model, a network is divided into “zones” with varying levels of trust. The innermost zone, known as the “inner circle,” is the most trusted and contains the organization’s most sensitive data and resources. As you move outward from the inner circle, the level of trust decreases, with the outermost zone being the least trusted.
 
+<!-- cspell:disable -->
 * [Zero Trust (techskillnation.com)](https://techskillnation.com/2022/12/zero-trust/)
 
-    Google was one of the first companies to take the cue from the potentialities of the Zero Trust architecture. The initiative was called BeyondCorp, and in 2009, Google implemented a de-parameterized framework based on the Zero Trust Architecture.
+     <!-- cspell:enable -->Google was one of the first companies to take the cue from the potentialities of the Zero Trust architecture. The initiative was called BeyondCorp, and in 2009, Google implemented a de-parameterized framework based on the Zero Trust Architecture.
 <!-- cspell:disable -->
 * [Zero Trust (techskillnation.com)](https://techskillnation.com/2022/12/zero-trust/)
 
