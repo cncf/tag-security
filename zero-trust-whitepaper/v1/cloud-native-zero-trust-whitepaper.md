@@ -526,7 +526,7 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
   * Dex: [https://dexidp.io/](https://dexidp.io/)
   * Keycloak: [https://www.keycloak.org/](https://www.keycloak.org/)
   * SPIFFE and SPIRE: [https://spiffe.io/](https://spiffe.io/)
-  * JSON Web Tokens (JWT): [https://jwt.io](https://jwt.io)
+  * JSON Web Tokens (JWT): [https://datatracker.ietf.org/doc/rfc7519/](https://datatracker.ietf.org/doc/rfc7519/)
   * Cert-manager: [https://cert-manager.io/](https://cert-manager.io/)
   * Kubernetes Network Policies: [https://kubernetes.io/docs/concepts/services-networking/network-policies/](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 
