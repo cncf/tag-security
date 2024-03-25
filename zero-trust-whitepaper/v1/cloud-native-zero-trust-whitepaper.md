@@ -555,7 +555,7 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
 
     NIST played a significant role in popularizing and formalizing the zero trust security model
 
-* [https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf)
+* [Zero Trust Architecture (nvlpubs.nist.gov)](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf)
 
     A zero trust architecture is designed and deployed with adherence to the following zero trust
 basic tenets….
