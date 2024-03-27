@@ -552,7 +552,7 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
 
      <!-- cspell:enable -->Google was one of the first companies to take the cue from the potentialities of the Zero Trust architecture. The initiative was called BeyondCorp, and in 2009, Google implemented a de-parameterized framework based on the Zero Trust Architecture.
 <!-- cspell:disable -->
-* [Zero Trust Network Architecture the Best Fit for Your Use Cases | 2022 | Infraon](https://infraon.io/blog/zero-trust-network-access-use-cases/)<!-- cspell:enable -->
+* [Zero Trust Network Architecture the Best Fit for Your Use Cases (infraon.io)](https://infraon.io/blog/zero-trust-network-access-use-cases/)<!-- cspell:enable -->
 
     NIST played a significant role in popularizing and formalizing the zero trust security model
 
