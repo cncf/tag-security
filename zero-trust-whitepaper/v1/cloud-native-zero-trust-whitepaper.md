@@ -2,11 +2,6 @@
 
 ## Designing Zero Trust Using Cloud Native Platforms (Part 1)
 
-```text
-[*** Document locked for review by CNCF TAG Security community
-     Suggestions and comments only *** ]
-```
-
 <!-- markdownlint-disable MD001 MD009 MD010 MD012 MD013 MD022 MD024 MD026 MD030 MD033 MD034 MD036 MD037 MD041 MD045 -->
 <!-- cspell:disable -->
 **Version**: 1.0 **Created**: _Date_ **Status**: WIP | In Review | **Not Approved**
@@ -27,13 +22,9 @@
   * Aradhna Chetal ([TIAA](http://tiaa.org/)), Asad Faizi, David Hadas ([IBM](https://www.ibm.com/)), Kishore Nadendla ([TIAA](http://tiaa.org/)), Mariusz Sabath ([IBM](https://www.ibm.com/)), Philip Griffiths ([NetFoundry](https://netfoundry.io/)), Victor Lu
 
 * **Reviewers**:
-  * Pushkar Joglekar, Nate Waddington, Andrés Vega
+  * Pushkar Joglekar, Nate Waddington, Andrés Vega, Valerie Silverthorne, Yoshiyuki Tabata
 
 <!-- cspell:enable -->
-
-<span style="text-decoration:underline;">Table of Contents</span>
-
-[TOC]
 
 **Note**: All tools, projects, libraries mentioned in the paper are mentioned as examples when describing a relevant section. Hence, such mention **should not** be taken as an official recommendation by TAG Security or CNCF. Readers should evaluate adoption of such tools, projects or libraries based on their own understanding and threat model of the system under review.
 
@@ -63,7 +54,7 @@ In the context of cloud systems, Zero Trust is a collection of concepts and arch
 
 _Image 1._
 
-In recent years, Zero Trust has gained significant attention, propelled by the efforts of the US Government after President Biden’s[Zero Trust Mandate](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf) [^2]. A few recent codification efforts include<!-- cspell:disable -->
+In recent years, Zero Trust has gained significant attention, propelled by the efforts of the US Government after President Biden’s [Zero Trust Mandate](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf) [^2]. A few recent codification efforts include<!-- cspell:disable -->
 [NIST SP 800-207, Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final),
 [CISA’s Zero Trust Maturity Model](https://www.cisa.gov/sites/default/files/2023-04/zero_trust_maturity_model_v2_508.pdf),
 [Department of Defense (DoD) Zero Trust Reference Architecture](https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf) [^3], and
@@ -234,7 +225,8 @@ Authentication and authorization are handled on a per-request basis rather than 
 We can break this into three simple steps to keep in mind.
 
 ![alt_text](images/image3.png "image_tooltip")
-_Image 3._
+
+_Image 3. Three steps of the Zero Trust process_
 
 #### Always identify
 
@@ -286,7 +278,7 @@ Under Cloud Native Zero Trust, SBA enables the monitoring of **services**, **cli
 
 ![alt_text](images/image5.png "image_tooltip")
 
-_Image 5._
+_Image 5. Security Behavior Analytics_
 
 In the context of Cloud Services, we identify between:
 
@@ -577,8 +569,6 @@ We want to thank several contributors from whom we had excellent input and feedb
 * Matteo Bisi
 * Fabian Kammel
 * Yaron Schneider
-* Yoshiyuki Tabata
-* Valerie Silverthorne
 <!-- cspell:enable -->
 
 For anyone involved in creating this paper, we express our heartfelt gratitude for your time, dedication, and professionalism. Your contributions have undoubtedly elevated the standard of our research, and we are immensely grateful for your collaboration.
