@@ -558,7 +558,7 @@ basic tenets….
 
 We want to thank several contributors from whom we had excellent input and feedback and, as leading practitioners in the field, did much of the work that we write about in this document:
 <!-- cspell:disable -->
-* José Carlos Chávez (Tetrate)
+* José Carlos Chávez (Okta)
 * Matt Flannery
 * Sundar Nadathur (Intel NEX)
 * Andrew Martin
