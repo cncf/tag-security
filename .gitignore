@@ -7,4 +7,3 @@ modified
 website/root/*
 !website/root/.gitkeep
 website/static/design/
-website/static/design/logo/.gitkeep
