@@ -2,7 +2,7 @@
 
 <!-- cspell:disable -->
 <!-- markdownlint-disable-next-line MD033 MD013 -->
-<img src="design/logo/cloud-native-security-horizontal-darkmodesafe.svg" alt="Cloud Native Security logo" />
+![Cloud Native Security Logo](/design/logo/cloud-native-security-horizontal-darkmodesafe.svg)
 <!-- cSpell:enable -->
 
 ## Quick links
@@ -78,7 +78,7 @@ For our members in North and South America, we host weekly sessions each Wednesd
 
 Meanwhile, participants from Europe, the Middle East, and Africa (EMEA) can join bi-weekly meetings on Wednesdays at 1 pm UTC+0, which adjusts to UTC+1 when daylight saving time is in effect. Join us through this Zoom link: https://zoom.us/j/99917523142, with the meeting ID: 999 1752 3142. 
 
-To find the corresponding time in your local area, please see your timezone [here]([url](https://time.is/)). 
+To find the corresponding time in your local area, please see your timezone [here](https://time.is/).
 
 This dual schedule ensures that no matter where you are, you'll have a place in our conversations.
 

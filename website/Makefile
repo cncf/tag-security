@@ -1,4 +1,9 @@
-serve:
+deps:
+	rsync -av ../* root/ --exclude=website --exclude=root/design/colors
+	rsync -av 'root/design/' 'static/design/' --exclude='#*'
+	git submodule update --init --recursive
+
+serve: deps
 	hugo server \
 		--disableFastRender \
 		--buildDrafts \
@@ -12,14 +17,12 @@ serve:
 		--templateMetricsHints \
 		--gc
 
-production-build:
-	git submodule update --init --recursive
+production-build: deps
 	hugo \
 		--minify
 	npx -y pagefind --site public
 
-preview-build:
-	git submodule update --init --recursive
+preview-build: deps
 	hugo \
 		--baseURL $(DEPLOY_PRIME_URL) \
 		--buildDrafts \
