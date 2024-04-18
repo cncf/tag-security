@@ -1,9 +1,6 @@
 # CNCF Security Technical Advisory Group
 
-<!-- cspell:disable -->
-<!-- markdownlint-disable-next-line MD033 MD013 -->
-<img src="design/logo/cloud-native-security-horizontal-darkmodesafe.svg" alt="Cloud Native Security logo" />
-<!-- cSpell:enable -->
+![Cloud Native Security Logo](/design/logo/cloud-native-security-horizontal-darkmodesafe.svg)
 
 ## Quick links
 
@@ -20,14 +17,15 @@ developers, and end-users across the cloud native ecosystem.
 
 ## Background
 
-Cloud Native describes the building, deploying, and operating of modern applications in cloud computing environments, typically using open source. This complex ecosystem composed of different open source projects presents an increasingly complicated technology risk landscape. While there are several projects in the cloud native ecosystem that address trust, safety, and security in the dynamic interplay between the different layers of infrastructure and application services, the technological shift demands application and information security be rethought through the lens of developer experience as close to applying software engineering to design for security considerations in the effort to safeguard an integrated cloud native ecosystem as a whole.
-
+Cloud Native describes the building, deploying, and operating of modern applications in cloud computing environments, typically using open source. This complex ecosystem composed of different open source projects presents an increasingly complicated technology risk landscape.
+While there are several projects in the cloud native ecosystem that address trust, safety, and security in the dynamic interplay between the different layers of infrastructure and application services, the technological shift demands application and information security be rethought through the lens of developer experience as close to applying software engineering to design for security considerations in the effort to safeguard an integrated cloud native ecosystem as a whole.
 
 ## Vision
 
 We believe in a future where the probability and impact of attacks, breaches, and compromises are significantly reduced. Where the most common risks of today are not just mitigated but made implausible. We believe developers and operators can be empowered to understand better and be reassured by the posture of the systems they build and run through the informed use of cloud technologies with clear
 understanding of responsibility and risks and the unlocked ability to validate that their architectural intent meets compliance and regulatory objectives.
 
+<!-- cSpell:ignore sociotechnical -->
 There is a growing ecosystem of tools that promises to unlock developer productivity and operational efficiency. We strive to fulfill the human side of the sociotechnical equation to acceleration and attain that promise including:
 
 1. Consumable system security architectures that account for the ever
@@ -64,8 +62,8 @@ Group communication:
 Leadership:
 
 - To reach the leadership team (chairs & tech leads), email
-  cncf-tag-security-leads@lists.cncf.io
-- To reach the chairs, email cncf-tag-security-chairs@lists.cncf.io
+  [cncf-tag-security-leads@lists.cncf.io](mailto:cncf-tag-security-leads@lists.cncf.io)
+- To reach the chairs, email [cncf-tag-security-chairs@lists.cncf.io](mailto:cncf-tag-security-chairs@lists.cncf.io)
 
 ### Slack governance
 
@@ -74,11 +72,11 @@ and posting to the channels.
 
 ## Meeting times
 
-For our members in North and South America, we host weekly sessions each Wednesday at 10 am (UTC-7). To participate, simply use the following Zoom link: https://zoom.us/j/99809474566. The meeting ID is 998 0947 4566. 
+For our members in North and South America, we host weekly sessions each Wednesday at 10 am (UTC-7). To participate, simply use the following Zoom link: <https://zoom.us/j/99809474566>. The meeting ID is 998 0947 4566.
 
-Meanwhile, participants from Europe, the Middle East, and Africa (EMEA) can join bi-weekly meetings on Wednesdays at 1 pm UTC+0, which adjusts to UTC+1 when daylight saving time is in effect. Join us through this Zoom link: https://zoom.us/j/99917523142, with the meeting ID: 999 1752 3142. 
+Meanwhile, participants from Europe, the Middle East, and Africa (EMEA) can join bi-weekly meetings on Wednesdays at 1 pm UTC+0, which adjusts to UTC+1 when daylight saving time is in effect. Join us through this Zoom link: <https://zoom.us/j/99917523142>, with the meeting ID: 999 1752 3142.
 
-To find the corresponding time in your local area, please see your timezone [here]([url](https://time.is/)). 
+To find the corresponding time in your local area, please see your timezone [here](https://time.is/).
 
 This dual schedule ensures that no matter where you are, you'll have a place in our conversations.
 
@@ -182,7 +180,7 @@ the [issue](https://github.com/cncf/tag-security/issues/679)
 ### CNCF Security TAG reviews
 
 As part of
-the [CNCF project proposal process](https://github.com/cncf/toc/blob/main/process/project_proposals.md)
+the [CNCF project proposal process](https://github.com/cncf/toc/blob/main/process)
 projects should create a
 new [security review issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 with a
