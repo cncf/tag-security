@@ -1,0 +1,14 @@
+{{ $path := .Get 0 }}
+{{ $includeTitle := .Get 1 | default "true" }}
+{{ $content := readFile $path }}
+
+{{ if eq $includeTitle "false" }}
+  {{ $contentLines := split $content "\n" }}
+  {{ if gt (len $contentLines) 0 }}
+    {{ if hasPrefix (index $contentLines 0) "#" }}
+      {{ $content = delimit (after 1 $contentLines) "\n" }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $content | markdownify }}
