@@ -9,7 +9,7 @@ or local laws and regulations regarding user privacy and data, with assurance of
 specific technical configuration of software and systems, but also require complex orchestration of human administrative, operational, and design activities, especially when involving  audit activities 
 expecting concrete, reviewable independent audit artifacts.
 
-The motivation of the Compliance WG is cross-disciplinary and focused on bridging purely technical issues to broader legal and regulatory workflows: not only the prevention of system breaches, but also 
+The motivation of the Compliance WG is cross-disciplinary and focused on bridging purely technical issues to broader legal and regulatory workflows: not only to strive for the prevention of system breaches, but also 
 considering supply chain, operators, data and AI failures while simultaneously considering auditability, non-repudiation, legally required forensic evidence, etc. - across all the various activities 
 required of cloud native operators of all sizes. The Compliance WG plans to curate tools for evidence collection, chain-of-custody in audits, as well as automated workflows for continuous compliance 
 authoring and assessment.
