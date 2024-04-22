@@ -36,7 +36,7 @@ and support these compliance-specific requirements as first class citizen to ena
 - Work on integrating common tooling across different projects, particularly where that tooling is a CNCF project (but the targets may not be)
 - Cross project focus on the projects and efforts the CNCF is funding, helping projects identify needs and providing subject matter expertise to assist
 - Recommendations of integrating security tooling with compliance tooling and processes - making both the synergies and unique separations of concern explicit and achieving community consensus.
-- Growing CNCF external relationships with interested parties, eg NIST and other compliance standards bodies such as FINOS, OSCAL, OpenSSF
+- Growing CNCF external relationships with interested parties, e.g. NIST and other compliance standards bodies such as FINOS, OSCAL, OpenSSF
 
 
 ## Stakeholders/Key people - Roles and responsibilities
