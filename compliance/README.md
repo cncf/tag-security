@@ -30,7 +30,7 @@ and support these compliance-specific requirements as first class citizen to ena
 ## Responsibilities
 
 - Users/personas/needs/customer demands for industry and regulatory compliance (both human and technical)
-- Identifications of areas of focus eg human workflows, automated workflows, analytical tools, audit and assessment tools, technical security controls that cut across components and systems and clouds, etc
+- Identifications of areas of focus e.g. human workflows, automated workflows, analytical tools, audit and assessment tools, technical security controls that cut across components and systems and clouds, etc
 - Framework for evaluation, audit and reporting - how do products and tools demonstrate compliance?
 - Training and automation - what is missing, what is difficult to understand, what knowledge gaps are there?
 - Work on integrating common tooling across different projects, particularly where that tooling is a CNCF project (but the targets may not be)
