@@ -21,7 +21,7 @@ entities that govern clouds, specific industries, and more generally data and pu
 requirements span human activities and performance, system availability and reliability, the combined human and technical aspects of continuity of operations, defining and monitoring data location as 
 well as sovereignty and provenance of the regulated environment components and data
 
-- Generating specific examples of compliance as code, normalized templates, and tools for automating these both technical and non-technical requirements, control assessment, data analyses, audit and 
+- Generating specific examples of compliance as code, normalized templates, and tools for automating these both technical and non-technical requirements, control assessment, data analysis, audit and 
 compliance remediation workflows that specifically benefit CNCF projects and their community of users.
 
 - Reviewing industry and governmental standards - eg NIST, PCI, HIPAA, etc - from a cloud native perspective and serving as Subject Matter Experts in the CNCF community for how projects should implement 
