@@ -43,22 +43,22 @@ and support these compliance-specific requirements as first class citizen to ena
 
 ### WG co-chairs
 
-Anca Sailer
+- Anca Sailer ([@ancatri](https://github.com/ancatri))
 
-Robert Ficcaglia
+- Robert Ficcaglia ([@rficcaglia](https://github.com/rficcaglia))
 
 ### WG tech leads
 
-Alejandro Leiva
+- Alejandro Leiva ([@AleJo2995](https://github.com/AleJo2995))
 
-Jennifer Power
+- Jennifer Power ([@jpower432](https://github.com/jpower432))
 
-Lou DeGenaro
+- Lou DeGenaro ([@degenaro](https://github.com/degenaro))
 
-Manjiree Gadgil
+- Manjiree Gadgil ([@mrgadgil](https://github.com/mrgadgil))
 
-Vikas Agarwal
+- Vikas Agarwal ([@vikas-agarwal76](https://github.com/vikas-agarwal76))
 
-Yuji Watanabe
+- Yuji Watanabe ([@yuji-watanabe-jp](https://github.com/yuji-watanabe-jp))
 
-Takumi Yanagawa
+- Takumi Yanagawa ([@yana1205](https://github.com/yana1205))
