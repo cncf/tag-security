@@ -34,7 +34,7 @@ and support these compliance-specific requirements as first class citizen to ena
 - Framework for evaluation, audit and reporting - how do products and tools demonstrate compliance?
 - Training and automation - what is missing, what is difficult to understand, what knowledge gaps are there?
 - Work on integrating common tooling across different projects, particularly where that tooling is a CNCF project (but the targets may not be)
-- Cross project focus on the projects and efforts the CNCF is funding, helping projects identify needs and providing subject matters to assist
+- Cross project focus on the projects and efforts the CNCF is funding, helping projects identify needs and providing subject matter expertise to assist
 - Recommendations of integrating security tooling with compliance tooling and processes - making both the synergies and unique separations of concern explicit and achieving community consensus.
 - Growing CNCF external relationships with interested parties, eg NIST and other compliance standards bodies such as FINOS, OSCAL, OpenSSF
 
