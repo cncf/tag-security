@@ -3,7 +3,7 @@
 ## Charter
 
 Cloud Native systems represent a paradigm shift in both technical and human operations workflows.  The community (and industry) has invested significant time researching and solutioning approaches to
-Cloud Native Cyber Security concerns and topics: software vulnerabilities, risk management, software component dependencies and infrastructure as code (aka supply chain), malicious attackers, threat 
+Cloud native security concerns and topics: software vulnerabilities, risk management, software component dependencies and infrastructure as code (GitOps), supply chain provenance, malicious attackers, threat 
 models, and technical security assessments.  However, many commercial, non-profit community and government organizations performing services or providing data storage must abide by national, regional, 
 or local laws and regulations regarding user privacy and data, with assurance of protection of their compute and data processing integrity and resilience. These cross cutting concerns span not only 
 specific technical configuration of software and systems, but also require complex orchestration of human administrative, operational, and design activities, especially when involving  audit activities 
