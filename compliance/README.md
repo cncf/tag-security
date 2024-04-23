@@ -11,7 +11,7 @@ expecting concrete, reviewable independent audit artifacts.
 
 The motivation of the Compliance WG is cross-disciplinary and focused on bridging purely technical issues to broader legal and regulatory workflows: not only to strive for the prevention of system breaches, but also 
 considering supply chain, operators, data and AI failures while simultaneously considering auditability, non-repudiation, legally required forensic evidence, etc. - across all the various activities 
-required of cloud native operators of all sizes. The Compliance WG plans to curate tools for evidence collection, chain-of-custody in audits, as well as automated workflows for continuous compliance 
+required of cloud native operators of all sizes. The Compliance WG plans to curate vendor neutral tools for evidence collection, chain-of-custody in audits, as well as automated workflows for continuous compliance 
 authoring and assessment.
 
 The key areas of the Compliance WG include:
