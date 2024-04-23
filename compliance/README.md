@@ -16,7 +16,7 @@ authoring and assessment.
 
 The key areas of the Compliance WG include:
 
-- Building a knowledge base (in github and possibly other tools) and case studies on the How, What, Why and When of operating a cloud native environment within the requirements of legal and regulatory 
+- Building a knowledge base (in GitHub and possibly other tools) and case studies on the How, What, Why and When of operating a cloud native environment within the requirements of legal and regulatory 
 entities that govern clouds, specific industries, and more generally data and public/consumer usage. These requirements are often _not just_  technical security concerns. Compliance activities and 
 requirements span human activities and performance, system availability and reliability, the combined human and technical aspects of continuity of operations, defining and monitoring data location as 
 well as sovereignty and provenance of the regulated environment components and data
