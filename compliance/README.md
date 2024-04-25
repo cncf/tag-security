@@ -2,25 +2,31 @@
 
 ## Charter
 
-Cloud Native systems represent a paradigm shift in both technical and human operations workflows.  The community (and industry) has invested significant time researching and solutioning 
-approaches to Cloud native security concerns and topics: software vulnerabilities, risk management, software component dependencies and infrastructure as code (GitOps), supply chain 
-provenance, malicious attackers, threat models, and technical security assessments.  At the same time, many commercial, non-profit foundations, community and government organizations 
-performing services or providing data storage must abide by national, regional, or local laws and regulations regarding user privacy and data, with assurance of protection of their compute 
-and data processing integrity and resilience. These cross cutting concerns span not only specific technical configuration of software and systems, but also require complex orchestration of 
+Cloud Native systems represent a paradigm shift in both technical and human operations workflows.  The community (and industry) has invested significant time researching and solutioning
+approaches to Cloud native security concerns and topics: software vulnerabilities, risk management, software component dependencies and infrastructure as code (GitOps), supply chain
+provenance, malicious attackers, threat models, and technical security assessments.  At the same time, many commercial, non-profit foundations, community and government organizations
+performing services or providing data storage must abide by national, regional, or local laws and regulations regarding user privacy and data, with assurance of protection of their compute
+and data processing integrity and resilience. These cross cutting concerns span not only specific technical configuration of software and systems, but also require complex orchestration of
 human administrative, operational, and design activities, especially when involving  audit activities expecting concrete, reviewable independent audit artifacts.
 
-The motivation of the Compliance WG is cross-disciplinary and focused on bridging purely technical issues to broader legal and regulatory workflows: not only to strive for the prevention 
-of system breaches, but also considering supply chain, operators, data and AI failures while simultaneously considering auditability, non-repudiation, legally required forensic evidence, 
-etc. - across all the various activities required of cloud native operators of all sizes. The Compliance WG plans to curate vendor neutral tools for evidence collection, chain-of-custody 
+The motivation of the Compliance WG is cross-disciplinary and focused on bridging purely technical issues to broader legal and regulatory workflows: not only to strive for the prevention
+of system breaches, but also considering supply chain, operators, data and AI failures while simultaneously considering auditability, non-repudiation, legally required forensic evidence,
+etc. - across all the various activities required of cloud native operators of all sizes. The Compliance WG plans to curate vendor neutral tools for evidence collection, chain-of-custody
 in audits, as well as automated workflows for continuous compliance authoring and assessment.
 
 The key areas of the Compliance WG include:
 
-- Building a knowledge base (in GitHub and possibly other tools) and case studies on the How, What, Why and When of operating a cloud native environment within the requirements of legal and regulatory entities that govern clouds, specific industries, and more generally data and public/consumer usage. These requirements are often _not just_  technical security concerns. Compliance activities and requirements span human activities and performance, system availability and reliability, the combined human and technical aspects of continuity of operations, defining and monitoring data location as well as sovereignty and provenance of the regulated environment components and data
+- Building a knowledge base (in GitHub and possibly other tools) and case studies on the How, What, Why and When of operating a cloud native environment within the requirements of legal
+and regulatory entities that govern clouds, specific industries, and more generally data and public/consumer usage. These requirements are often _not just_  technical security concerns.
+Compliance activities and requirements span human activities and performance, system availability and reliability, the combined human and technical aspects of continuity of operations,
+defining and monitoring data location as well as sovereignty and provenance of the regulated environment components and data
 
-- Generating specific examples of compliance as code, normalized templates, and tools for automating these both technical and non-technical requirements, control assessment, data analysis, audit and compliance remediation workflows that specifically benefit CNCF projects and their community of users.
+- Generating specific examples of compliance as code, normalized templates, and tools for automating these both technical and non-technical requirements, control assessment, data analysis,
+audit and compliance remediation workflows that specifically benefit CNCF projects and their community of users.
 
-- Reviewing industry and governmental standards - eg NIST, PCI, HIPAA, etc - from a cloud native perspective and serving as Subject Matter Experts in the CNCF community for how projects should implement and support these compliance-specific requirements as first class citizen to enable broad adoption of the best practices by commercial, non-profit, governmental, and humanitarian organizations.
+- Reviewing industry and governmental standards - eg NIST, PCI, HIPAA, etc - from a cloud native perspective and serving as Subject Matter Experts in the CNCF community for how projects
+should implement and support these compliance-specific requirements as first class citizen to enable broad adoption of the best practices by commercial, non-profit, governmental, and
+humanitarian organizations.
 
 ## Responsibilities
 
@@ -34,6 +40,8 @@ The key areas of the Compliance WG include:
 - Growing CNCF external relationships with interested parties, e.g. NIST and other compliance standards bodies such as FINOS, OSCAL, OpenSSF
 
 ## Stakeholders/Key people - Roles and responsibilities
+
+<!-- cSpell:disable -->
 
 ### WG co-chairs
 
