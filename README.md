@@ -151,10 +151,13 @@ seen [here](governance/related-groups/)
 
 #### Compliance Working Group
 
+[Compliance Working Group](./compliance) is cross-disciplinary and focused on bridging purely technical issues to broader legal and regulatory workflows: 
+not only the prevention of system breaches, but also considering supply chain, operators, data and AI failures while simultaneously considering auditability, 
+non-repudiation, legally required forensic evidence, etc. - across all the various activities required of cloud native operators of all sizes. 
+The Compliance WG plans to curate vendor neutral tools for evidence collection, chain-of-custody in audits, as well as automated workflows for continuous compliance authoring and assessment.
 
-[Compliance Working Group](./compliance) is cross-disciplinary and focused on bridging purely technical issues to broader legal and regulatory workflows: not only the prevention of system breaches, but also considering supply chain, operators, data and AI failures while simultaneously considering auditability, non-repudiation, legally required forensic evidence, etc. - across all the various activities required of cloud native operators of all sizes. The Compliance WG plans to curate vendor neutral tools for evidence collection, chain-of-custody in audits, as well as automated workflows for continuous compliance authoring and assessment.
+Weekly meetings at 10:00 AM ET (60 min) [Check My Time](https://mytime.io/10am/ET)
 
-Weekly meetings at 10:00 AM ET (60 min) https://mytime.io/10am/ET
 See [CNCF calendar](https://calendar.google.com/calendar/u/0/embed?src=0b8u5el8ta4s93t2cm72tuvhhk@group.calendar.google.com&ctz=America/Los_Angeles) for invite.
 
 Meeting link: [Zoom meeting](https://zoom.us/j/92729235315?pwd=ZFIxU3RSanlVODh4a1g2SFdJOGpoZz09)
