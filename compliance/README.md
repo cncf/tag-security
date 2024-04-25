@@ -2,7 +2,7 @@
 
 ## Charter
 
-Cloud Native systems represent a paradigm shift in both technical and human operations workflows.  The community (and industry) has invested significant time researching and solutioning
+Cloud Native systems represent a paradigm shift in both technical and human operations workflows.  The community (and industry) has invested significant time researching and solving
 approaches to Cloud native security concerns and topics: software vulnerabilities, risk management, software component dependencies and infrastructure as code (GitOps), supply chain
 provenance, malicious attackers, threat models, and technical security assessments.  At the same time, many commercial, non-profit foundations, community and government organizations
 performing services or providing data storage must abide by national, regional, or local laws and regulations regarding user privacy and data, with assurance of protection of their compute
@@ -29,6 +29,8 @@ should implement and support these compliance-specific requirements as first cla
 humanitarian organizations.
 
 ## Responsibilities
+
+<!-- cSpell:disable -->
 
 - Users/personas/needs/customer demands for industry and regulatory compliance (both human and technical)
 - Identifications of areas of focus e.g. human workflows, automated workflows, analytical tools, audit and assessment tools, technical security controls that cut across components and systems and clouds, etc
