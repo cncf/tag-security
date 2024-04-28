@@ -30,6 +30,7 @@ of compromise needs added, please include that as well.
 <!-- cSpell:disable -->
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
+| [xz backdoor incident](2024/xz.md) | 2024 | Malicious Maintainer | [1](https://cloudsecurityalliance.org/blog/2024/04/25/navigating-the-xz-utils-vulnerability-cve-2024-3094-a-comprehensive-guide) |
 | [ManageEngine xmlsec dependency](2023/xmlsec-manageengine.md) | 2023 | Outdated Dependencies | [1](ttps://flashpoint.io/blog/manageengine-apache-santuario-cve-2022-47966) |
 | [Retool Spear Phishing](2023/retool-portal-mfa.md) | 2023 | Dev Tooling | [1](https://www.coindesk.com/business/2023/09/13/phishing-attack-on-cloud-provider-with-fortune-500-clients-led-to-15m-crypto-theft-from-fortress-trust/) |
 | [Fake Dependabot commits](2023/fake-dependabot.md) | 2023 | Source Code | [1](https://checkmarx.com/blog/surprise-when-dependabot-contributes-malicious-code/) |
