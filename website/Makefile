@@ -1,6 +1,6 @@
 deps:
-	rsync -av ../* root/ --exclude=website --exclude=root/design/colors
-	rsync -av 'root/design/' 'static/design/' --exclude='#*'
+	rsync -av ../ content/ --include='assessments' --include='governance' --include='governance/related-groups' --include='supply-chain-security' --include='*.md' --exclude='*'
+	rsync -av '../design/' 'static/design/' --exclude='#*'
 	git submodule update --init --recursive
 
 serve: deps
