@@ -2,12 +2,14 @@
 
 ![Cloud Native Security Logo](/design/logo/cloud-native-security-horizontal-darkmodesafe.svg)
 
+<!-- markdown-link-check-disable -->
 ## Quick links
 
 - [Meeting Information](#meeting-times)
 - [Slack Information](#communications)
 - [New Members](#new-members)
 - [Members](#members)
+<!-- markdown-link-check-enable -->
 
 ## Objective
 
