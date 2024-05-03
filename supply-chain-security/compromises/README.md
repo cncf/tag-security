@@ -30,7 +30,8 @@ of compromise needs added, please include that as well.
 <!-- cSpell:disable -->
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
-| [ManageEngine xmlsec dependency](2023/xmlsec-manageengine.md) | 2023 | Outdated Dependencies | [1](ttps://flashpoint.io/blog/manageengine-apache-santuario-cve-2022-47966) |
+| [3proxy signing incident](2024/laixi-3proxy.md) | 2024 | Trust and Signing | [1](https://news.sophos.com/en-us/2024/04/09/smoke-and-screen-mirrors-a-strange-signed-backdoor/) |
+| [ManageEngine xmlsec dependency](2023/xmlsec-manageengine.md) | 2023 | Outdated Dependencies | [1](https://flashpoint.io/blog/manageengine-apache-santuario-cve-2022-47966) |
 | [Retool Spear Phishing](2023/retool-portal-mfa.md) | 2023 | Dev Tooling | [1](https://www.coindesk.com/business/2023/09/13/phishing-attack-on-cloud-provider-with-fortune-500-clients-led-to-15m-crypto-theft-from-fortress-trust/) |
 | [Fake Dependabot commits](2023/fake-dependabot.md) | 2023 | Source Code | [1](https://checkmarx.com/blog/surprise-when-dependabot-contributes-malicious-code/) |
 | [Okta Source Code Theft](2022/okta-github-repo-leak.md) | 2022 | Source Code <br> Dev Tooling | [1](https://www.bleepingcomputer.com/news/security/oktas-source-code-stolen-after-github-repositories-hacked/) |
