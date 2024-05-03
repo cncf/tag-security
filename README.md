@@ -2,12 +2,14 @@
 
 ![Cloud Native Security Logo](/design/logo/cloud-native-security-horizontal-darkmodesafe.svg)
 
+<!-- markdown-link-check-disable -->
 ## Quick links
 
 - [Meeting Information](#meeting-times)
 - [Slack Information](#communications)
 - [New Members](#new-members)
 - [Members](#members)
+<!-- markdown-link-check-enable -->
 
 ## Objective
 
@@ -44,7 +46,7 @@ found in the [publications](PUBLICATIONS.md) document.
 ## Governance
 
 [Security TAG charter](governance/charter.md) outlines the scope of our group
-activities, as part of our [governance process](governance) which details how we
+activities, as part of our [governance process](governance/README.md) which details how we
 work.
 
 ## Communications
@@ -105,7 +107,7 @@ our [New Members Page](NEW-MEMBERS.md)
 
 There are several groups that are affiliated to or do work and cover topics
 relevant to the work of Security TAG. These can be
-seen [here](governance/related-groups/)
+seen [here](governance/related-groups/README.md)
 
 ## History
 
@@ -180,7 +182,7 @@ Co-chair representatives: @sublimino @PushkarJ
 Software Supply Chain attacks have come to the wider community's attention
 following recent high-profile attack, but have been an ongoing threat for a long
 time. With the ever growing importance of free and open source software,
-software [supply chain security](./supply-chain-security) is crucial,
+software [supply chain security](./supply-chain-security/README.md) is crucial,
 particularly in cloud native environments where everything is software-defined.
 
 Weekly meetings at 8:00 AM PT (50 min) (see your
