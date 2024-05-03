@@ -4,15 +4,19 @@ deps:
 	rsync -av '../design/' 'static/design/' --exclude='#*'
 
 	cd root/ && \
-	find . -mindepth 2 -type f -name '*.md' | while IFS= read -r file; do \
+	find . -mindepth 1 -type f -name '*.md' | while IFS= read -r file; do \
+		if [ "$(basename "$file")" = "README.md" ]; then \
+			continue; \
+		fi; \
 		BASE_NAME=$$(basename "$$file" .md); \
 		TEXT_TO_PREPEND="---\ntitle: \"$$BASE_NAME\"\n---\n"; \
-		sed -i '' '1s/^/$(TEXT_TO_PREPEND)/' "$$file"; \
+		sed -i '' "1s/^/$(TEXT_TO_PREPEND)/" "$$file"; \
 	done
 	for dir in root/* ; do \
 		if [ -d "$$dir" ]; then \
-			base_name=$${dir%/}; \
-			echo "---\ntitle: $$base_name\n---" > "$$dir/_index.md"; \
+			base_name=$$(basename $$dir); \
+			echo "---\ntitle: $$base_name\nmenu:\n  main:\n    weight: 20\n---" > "$$dir/_index.md"; \
+			echo "{{< include-markdown \"$$dir/README.md\" \"false\" >}}" >> "$$dir/_index.md"; \
 		fi; \
 	done
 	mv root/* content/
