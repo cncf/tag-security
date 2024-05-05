@@ -19,7 +19,7 @@ deps:
 			echo "{{< include-markdown \"$$dir/README.md\" \"false\" >}}" >> "$$dir/_index.md"; \
 		fi; \
 	done
-	mv root/* content/
+	rsync -avv --exclude='README.md' root/ content/
 
 serve: deps
 	hugo server \
