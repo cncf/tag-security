@@ -1,25 +1,39 @@
+make devtest:
+	@echo "your-test-string-here" | awk '{for(i=1; i<=NF; i++) $$i = toupper(substr($$i, 1, 1)) tolower(substr($$i, 2)); print}'
+
 deps:
 	git submodule update --init --recursive
-	rsync -av ../ root/ --include='assessments' --include='governance' --include='governance/related-groups' --include='supply-chain-security' --include='*.md' --exclude='*'
+
+	rsync -avv ../ root/ \
+	--include='assessments' --include='assessments/**' \
+	--include='governance' --include='governance/**' \
+	--include='supply-chain-security' --include='supply-chain-security/**' \
+	--include='*.md' --exclude='*'
+
 	rsync -av '../design/' 'static/design/' --exclude='#*'
 
-	cd root/ && \
-	find . -mindepth 1 -type f -name '*.md' | while IFS= read -r file; do \
-		if [ "$(basename "$file")" = "README.md" ]; then \
+	find root -type f -name '*.md' | while IFS= read -r file; do \
+		base_name=$$(basename "$$file" .md); \
+		if [ "$$file" = "/_index.md" -o "$$base_name" = "README" ]; then \
 			continue; \
 		fi; \
-		BASE_NAME=$$(basename "$$file" .md); \
-		TEXT_TO_PREPEND="---\ntitle: \"$$BASE_NAME\"\n---\n"; \
-		sed -i '' "1s/^/$(TEXT_TO_PREPEND)/" "$$file"; \
+		text_to_prepend="---\ntitle: \"$$base_name\"\n---\n"; \
+		sed -i '' "1s/^/$$text_to_prepend/" "$$file"; \
 	done
-	for dir in root/* ; do \
-		if [ -d "$$dir" ]; then \
-			base_name=$$(basename $$dir); \
-			echo "---\ntitle: $$base_name\nmenu:\n  main:\n    weight: 20\n---" > "$$dir/_index.md"; \
-			echo "{{< include-markdown \"$$dir/README.md\" \"false\" >}}" >> "$$dir/_index.md"; \
+
+	find root -type d -exec sh -c '\
+		base_title=$$(basename "$$1"); \
+		spaced_title=$$(echo "$$base_title" | sed "s/-/ /g" | tr "[:lower:]" "[:upper:]"); \
+		title=$$(echo "$$spaced_title" | awk "{for(i=1; i<=NF; i++) \$$i = toupper(substr(\$$i, 1, 1)) tolower(substr(\$$i, 2)); print}"); \
+		if [ $$1 = "root/$$base_title" ]; then \
+			echo "---\ntitle: $$title\nmenu:\n  main:\n    weight: 20\n---" > "$$1/_index.md"; \
+		else \
+			echo "---\ntitle: $$title\n---" > "$$1/_index.md"; \
 		fi; \
-	done
-	rsync -avv --exclude='README.md' root/ content/
+		echo "{{< include-markdown \"$$1/README.md\" \"false\" >}}" >> "$$1/_index.md"; \
+	' sh {} \;
+
+	rsync -avv --exclude='README.md' --exclude='/_index.md' root/ content/
 
 serve: deps
 	hugo server \
