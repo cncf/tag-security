@@ -7,25 +7,21 @@
   {{ if not .Site.Params.ui.sidebar_search_disable -}}
   <form class="td-sidebar__search d-flex align-items-center">
     {{ partial "search-input.html" . }}
-    {{ if or ( in $navRoot "assessments" ) ( in $navRoot "about" )  }}
       <button class="hamburger" type="button" aria-label="Toggle Menu" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
       </span>
       </button>
-    {{ end }}
   </form>
   {{ else -}}
   <div id="content-mobile">
   <form class="td-sidebar__search d-flex align-items-center">
     {{ partial "search-input.html" . }}
-    {{ if or ( in $navRoot "assessments" ) ( in $navRoot "about" )  }}
       <button class="hamburger" type="button" aria-label="Toggle Menu" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
       </span>
       </button>
-    {{ end }}
   </form>
   </div>
   <div id="content-desktop"></div>
@@ -41,9 +37,7 @@
     {{ $ulShow := cond (isset .Site.Params.ui "ul_show") .Site.Params.ui.ul_show 1 -}}
     {{ $sidebarMenuTruncate := cond (isset .Site.Params.ui "sidebar_menu_truncate") .Site.Params.ui.sidebar_menu_truncate 50 -}}
     <ul class="td-sidebar-nav__section pr-md-3 ul-{{ $ulNr }}">
-      {{ if or ( in $navRoot "assessments" ) ( in $navRoot "about" )  }}
         {{ template "section-tree-nav-section" (dict "page" . "section" $navRoot "shouldDelayActive" $shouldDelayActive "sidebarMenuTruncate" $sidebarMenuTruncate "ulNr" $ulNr "ulShow" (add $ulShow 1)) }}
-      {{ end }}
     </ul>
   </nav>
 </div>
