@@ -1,3 +1,5 @@
+<!-- cSpell:ignore Appsecco choria ciphersuite dialtone nats NATS's NKEY supercluster -->
+
 # Self-assessment for NATS
 
 This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process and is currently pending changes from the maintainer team.
@@ -10,6 +12,7 @@ currently in CNCF **incubation**.
 
 ## Table of contents
 
+<!-- markdown-link-check-disable -->
 * [Metadata](#metadata)
   * [Security links](#security-links)
 * [Overview](#overview)
@@ -24,6 +27,7 @@ currently in CNCF **incubation**.
 * [Secure development practices](#secure-development-practices)
 * [Security issue resolution](#security-issue-resolution)
 * [Appendix](#appendix)
+<!-- markdown-link-check-enable -->
 
 ## Metadata
 
@@ -35,7 +39,7 @@ A table at the top for quick reference information, later used for indexing.
 | Software | [GitHub Repo](https://github.com/nats-io/nats-server) |
 | Security Provider | No  |
 | Languages | 99.6% Go, 0.4% Other |
-| SBOM | [SBOM Report](https://github.com/Ricardo-A-Zapata/tag-security/blob/main/assessments/projects/nats/doc/SBOM%20report.html)  |
+| SBOM | Not automatically generated at build/release time |
 | | |
 
 ### Security links
@@ -62,7 +66,7 @@ It is well-suited for both small and large-scale applications. The self-healing 
 
 ![NATS Diagram](./images/NATS_Figure_1_Image.jpg)
 
-Figure 1: Messaging Design via NATS Documentation [uploaded as a seperate image in folder]
+Figure 1: Messaging Design via NATS Documentation [uploaded as a separate image in folder]
 
 NATS uses subject-based messaging in its publish-subscribe model, where messages are routed by subjects - simple string identifiers. This method allows publishers to send messages to specific subjects and subscribers to express interest in particular subject patterns, enhancing communication flexibility. The system's ability to handle wildcard subscriptions further allows subscribers to receive messages from a range of related subjects.
 This decoupling of publishers and subscribers, central to NATS' scalable architecture, is particularly advantageous in cloud and microservices environments. Efficient message routing, combined with the system's simplicity and ease of use, positions NATS as a robust solution for the dynamic needs of modern distributed systems.
@@ -94,7 +98,7 @@ The NATS server processes form the backbone of the NATS service infrastructure. 
 
 Within this infrastructure, each server instance, cluster, and supercluster can be considered a distinct actor, especially in terms of security and operational management.
 
-### JetStream in NATS:
+### JetStream in NATS
 
 The core NATS server now includes JetStream, which has replaced the previously used NATS Streaming Servers. JetStream continues to support NATS's focus on real-time messaging and introduces enhanced features such as durable, at-least-once delivery, and capabilities for reliable message replay and historical message retention. This evolution in the NATS architecture calls for a reassessment of the security features and implications in line with the current functionalities provided by JetStream
 
@@ -233,16 +237,19 @@ According to the NATS security documentation, there is no mention of the project
 - **Inbound:**
   - **Slack Channel:** [NATS Slack](https://slack.nats.io/)
   - **Github Issues:** [nats-io/nats-server issues](https://github.com/nats-io/nats-server/issues)
-  - **Stackoverflow:** [Stackoverflow NATS.IO queries](https://stackoverflow.com/search?tab=newest&q=NATS.IO)
+  - **Stack Overflow:** [Stack Overflow NATS.IO queries](https://stackoverflow.com/search?tab=newest&q=NATS.IO)
+<!-- markdown-link-check-disable -->
 - **Outbound:**
   - **Twitter:** [NATS Twitter](https://twitter.com/nats_io/)
+<!-- markdown-link-check-enable -->
 
 ### Ecosystem
 
 NATS, as a messaging system, plays a significant role in the cloud-native ecosystem due to its design and capabilities that align well with cloud-native principles and practices. [NATS in the CNCF Ecosystem](https://www.cncf.io/projects/nats/).
 
 - **[Microservices Architecture:](https://nats.io/blog/building-scalable-microservices-with-nats/)** NATS is particularly well-suited for microservices architectures commonly used in cloud-native environments. Its lightweight, high-performance nature makes it ideal for the communication needs of loosely coupled, independently deployable microservices.
-- **[Containerized Environments:](https://docs.nats.io/running-a-nats-service/nats-kubernetes)** NATS integrates seamlessly with containerized environments and orchestration platforms like Kubernetes. This integration is crucial for automated deployment, scaling, and management of containerized NATS instances, making it a natural fit for cloud-native workflows. Adding to its strengths, the embeddable nature of the nats-server allows developers to integrate it directly into applications. Projects like Choria.io leverage this feature, showcasing the adaptability of NATS within diverse cloud-native environments.
+- **[Containerized Environments:](https://docs.nats.io/running-a-nats-service/nats-kubernetes)** NATS integrates seamlessly with containerized environments and orchestration platforms like Kubernetes. This integration is crucial for automated deployment, scaling, and management of containerized NATS instances, making it a natural fit for cloud-native workflows. 
+Adding to its strengths, the embeddable nature of the nats-server allows developers to integrate it directly into applications. Projects like Choria.io leverage this feature, showcasing the adaptability of NATS within diverse cloud-native environments.
 
 ## Security issue resolution
 
@@ -263,14 +270,17 @@ Security issues can be reported through various channels:
 
 ### Vulnerability Response Process
 
-- **Tracking Known Issues:** The NATS Project aims to make it easy for administrators to track any known security issues. This includes using appropriate ecosystem identifiers such as CVE numbers and posting information to relevant forums and the advisories page when public statements are to be made. 
+- **Tracking Known Issues:** The NATS Project aims to make it easy for administrators to track any known security issues. This includes using appropriate ecosystem identifiers such as CVE numbers and posting information to relevant forums and the advisories page when public statements are to be made.
 Public advisories, typically security-related, are hosted on a dedicated repository, ensuring transparency and accessibility. This repository is accessible at [NATS Advisories Repository](https://github.com/nats-io/advisories) and is also linked through [advisories.nats.io](https://advisories.nats.io/) for broader visibility.
+<!-- markdown-link-check-disable -->
 - **Handling Security-Impacting Issues:** If it is known that a fix addresses a security-impacting issue, the NATS team may hold the fix until the release is available. This ensures that the fixed code is available in compiled forms as soon as possible, minimizing the risk window between the identification of the issue and its resolution. The project aims to utilize GitHub's facility for requesting CVEs as part of drafting advisories, streamlining the process of obtaining CVE numbers.
 The process for adding an advisory involves updating the CVE/ directory in the repository and editing the index.md file with the relevant details. Once these changes are committed and pushed, they are made public, and the deployment progress can be tracked at [GitHub NATS Advisories Deployments Activity Log​](https://github.com/nats-io/advisories/deployments/github-pages).
+<!-- markdown-link-check-enable -->
 
 ### Incident Response
 
-- **Development Language and Security:** The core parts of NATS are developed in Go, a type-safe compiled language with protections against common security issues like buffer overflows, inherently reducing certain types of security risks. The nats-server is written in Go and uses Go stdlib for SSL/TLS, which further enhances its security profile. You can refer to this information in the [NATS Security Advisory Policy](https://advisories.nats.io/advisory-policy.html#:~:text=The%20primary%20development%20language%20of%20the%20core%20parts,in%20Go%20and%20uses%20Go%20stdlib%20for%20SSL%2FTLS).
+- **Development Language and Security:** The core parts of NATS are developed in Go, a type-safe compiled language with protections against common security issues like buffer overflows, inherently reducing certain types of security risks. The nats-server is written in Go and uses Go stdlib for SSL/TLS, which further enhances its security profile. 
+You can refer to this information in the [NATS Security Advisory Policy](https://advisories.nats.io/advisory-policy.html#:~:text=The%20primary%20development%20language%20of%20the%20core%20parts,in%20Go%20and%20uses%20Go%20stdlib%20for%20SSL%2FTLS).
 - **Client Libraries and Security Properties:** NATS offers client libraries in a variety of languages, each with its security properties, which are considered in the overall security approach of the project. Additionally, NATS's security features include multiple methods for client authentication (such as Token Authentication, Username/Password credentials, TLS Certificate, NKEY with Challenge, and Decentralized JWT Authentication/Authorization), along with the ability to integrate with existing authentication/authorization systems or create custom authentication solutions. This diverse range of authentication methods contributes to the security properties of NATS client libraries. More details on these features can be found [here](https://docs.nats.io/nats-concepts/security).
 
 ## Appendix
@@ -288,7 +298,7 @@ The process for adding an advisory involves updating the CVE/ directory in the r
 - [Incorrect handling of credential expiry by NATS Server](https://github.com/nats-io/nats-server/security/advisories/GHSA-2c64-vj8g-vwrq) (High severity, Mar 24, 2021): This high-severity issue involves the NATS server not correctly handling the expiration of credentials, potentially leading to security lapses.
 Additionally,
 
-### [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/)
+### [CII Best Practices](https://www.bestpractices.dev/)
 
 - NATS has achieved a "Passing" status for CII Best Practices as of June 8th. More information can be found [here](https://www.bestpractices.dev/en/projects/1895).
 
