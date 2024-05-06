@@ -1,4 +1,4 @@
-<!-- cSpell:ignore Appsecco choria ciphersuite dialtone nats NATS's NKEY supercluster -->
+<!-- cSpell:ignore Appsecco choria ciphersuite dialtone nats NATS's NKEY supercluster superclusters -->
 
 # Self-assessment for NATS
 
@@ -248,7 +248,7 @@ According to the NATS security documentation, there is no mention of the project
 NATS, as a messaging system, plays a significant role in the cloud-native ecosystem due to its design and capabilities that align well with cloud-native principles and practices. [NATS in the CNCF Ecosystem](https://www.cncf.io/projects/nats/).
 
 - **[Microservices Architecture:](https://nats.io/blog/building-scalable-microservices-with-nats/)** NATS is particularly well-suited for microservices architectures commonly used in cloud-native environments. Its lightweight, high-performance nature makes it ideal for the communication needs of loosely coupled, independently deployable microservices.
-- **[Containerized Environments:](https://docs.nats.io/running-a-nats-service/nats-kubernetes)** NATS integrates seamlessly with containerized environments and orchestration platforms like Kubernetes. This integration is crucial for automated deployment, scaling, and management of containerized NATS instances, making it a natural fit for cloud-native workflows. 
+- **[Containerized Environments:](https://docs.nats.io/running-a-nats-service/nats-kubernetes)** NATS integrates seamlessly with containerized environments and orchestration platforms like Kubernetes. This integration is crucial for automated deployment, scaling, and management of containerized NATS instances, making it a natural fit for cloud-native workflows.
 Adding to its strengths, the embeddable nature of the nats-server allows developers to integrate it directly into applications. Projects like Choria.io leverage this feature, showcasing the adaptability of NATS within diverse cloud-native environments.
 
 ## Security issue resolution
@@ -279,9 +279,10 @@ The process for adding an advisory involves updating the CVE/ directory in the r
 
 ### Incident Response
 
-- **Development Language and Security:** The core parts of NATS are developed in Go, a type-safe compiled language with protections against common security issues like buffer overflows, inherently reducing certain types of security risks. The nats-server is written in Go and uses Go stdlib for SSL/TLS, which further enhances its security profile. 
+- **Development Language and Security:** The core parts of NATS are developed in Go, a type-safe compiled language with protections against common security issues like buffer overflows, inherently reducing certain types of security risks. The nats-server is written in Go and uses Go stdlib for SSL/TLS, which further enhances its security profile.
 You can refer to this information in the [NATS Security Advisory Policy](https://advisories.nats.io/advisory-policy.html#:~:text=The%20primary%20development%20language%20of%20the%20core%20parts,in%20Go%20and%20uses%20Go%20stdlib%20for%20SSL%2FTLS).
-- **Client Libraries and Security Properties:** NATS offers client libraries in a variety of languages, each with its security properties, which are considered in the overall security approach of the project. Additionally, NATS's security features include multiple methods for client authentication (such as Token Authentication, Username/Password credentials, TLS Certificate, NKEY with Challenge, and Decentralized JWT Authentication/Authorization), along with the ability to integrate with existing authentication/authorization systems or create custom authentication solutions. This diverse range of authentication methods contributes to the security properties of NATS client libraries. More details on these features can be found [here](https://docs.nats.io/nats-concepts/security).
+- **Client Libraries and Security Properties:** NATS offers client libraries in a variety of languages, each with its security properties, which are considered in the overall security approach of the project. Additionally, NATS's security features include multiple methods for client authentication (such as Token Authentication, Username/Password credentials, TLS Certificate, NKEY with Challenge, and Decentralized JWT Authentication/Authorization),
+along with the ability to integrate with existing authentication/authorization systems or create custom authentication solutions. This diverse range of authentication methods contributes to the security properties of NATS client libraries. More details on these features can be found [here](https://docs.nats.io/nats-concepts/security).
 
 ## Appendix
 
