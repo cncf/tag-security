@@ -10,6 +10,10 @@ deps:
 
 	# Move over content such as graphics and logos
 	rsync -av '../design/' 'static/design/' --exclude='#*'
+	echo ***** DEBUGGING NETLIFY BUILD ENV *****
+	ls -l
+	ls -l root
+	echo ^^^^^ DEBUGGING NETLIFY BUILD ENV ^^^^^
 
 	# Update all imported markdown files to work as standalone hugo pages (except READMEs, see below)
 	find root -type f -name '*.md' | while IFS= read -r file; do \
