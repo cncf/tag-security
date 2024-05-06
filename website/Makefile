@@ -10,19 +10,16 @@ deps:
 
 	# Move over content such as graphics and logos
 	rsync -av '../design/' 'static/design/' --exclude='#*'
-	echo ***** DEBUGGING NETLIFY BUILD ENV *****
-	ls -l
-	ls -l root
-	echo ^^^^^ DEBUGGING NETLIFY BUILD ENV ^^^^^
 
 	# Update all imported markdown files to work as standalone hugo pages (except READMEs, see below)
+	# sed command is configured for the Netlify ubuntu env
 	find root -type f -name '*.md' | while IFS= read -r file; do \
 		base_name=$$(basename "$$file" .md); \
 		if [ "$$file" = "/_index.md" -o "$$base_name" = "README" ]; then \
 			continue; \
 		fi; \
 		text_to_prepend="---\ntitle: \"$$base_name\"\n---\n"; \
-		sed -i '' "1s/^/$$text_to_prepend/" "$$file"; \
+		sed -i "1s/^/$$text_to_prepend/" "$$file"; \
 	done
 
 	# Set up Navbar and Sidebar contents
