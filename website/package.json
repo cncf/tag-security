@@ -1,24 +1,13 @@
 {
-  "name": "tech-doc-hugo",
-  "version": "0.0.1",
-  "description": "Hugo theme for technical documentation.",
-  "main": "none.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "hugo serve --minify -DFE -w",
+    "serve:with-pagefind": "hugo --baseURL=/ --theme=docsy && npm_config_yes=true npx pagefind --site 'public' --output-subdir '../static/pagefind' && npm run serve"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/google/docsy-example.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/google/docsy-example/issues"
-  },
-  "homepage": "https://github.com/google/docsy-example#readme",
-  "devDependencies": {
+  "dependencies": {
     "autoprefixer": "^10.4.0",
+    "hugo-extended": "^0.115.2",
     "postcss": "^8.4.31",
-    "postcss-cli": "^9.0.2"
+    "postcss-cli": "^9.1.0"
   }
 }

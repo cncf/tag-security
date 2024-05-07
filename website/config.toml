@@ -48,10 +48,11 @@ anchor = "smart"
 [languages]
 [languages.en]
 title = "CNCF TAG Security"
-description = "TAG Security facilitates collaboration to discover and produce resources that enable secure access, policy control, and safety for operators, administrators, developers, and end-users across the cloud native ecosystem."
 languageName ="English"
 # Weight used for sorting.
 weight = 1
+[languages.en.params]
+description = "TAG Security facilitates collaboration to discover and produce resources that enable secure access, policy control, and safety for operators, administrators, developers, and end-users across the cloud native ecosystem."
 
 [markup]
   [markup.goldmark]
@@ -93,7 +94,7 @@ version = "0.0"
 url_latest_version = "https://security.cncf.io"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "94caa124b871f4944"
+# gcs_engine_id = "94caa124b871f4944"
 
 # Enable Algolia DocSearch
 algolia_docsearch = false

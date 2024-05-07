@@ -1,20 +1,63 @@
 {{ define "main" }}
 <div>
-<h1 class="thin">{{ .Title }}</h2>
-{{ with .Site.Params.gcs_engine_id }}
-<script>
-(function() {
-var cx = '{{ . }}';
-var gcse = document.createElement('script');
-gcse.type = 'text/javascript';
-gcse.async = true;
-gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-var s = document.getElementsByTagName('script')[0];
-s.parentNode.insertBefore(gcse, s);
-})();
-</script>
-			<gcse:searchresults-only></gcse:searchresults-only>
-{{ end }}
-</div>
+	<h1 class="thin">{{ .Title }}</h1>
 
+	<link href='{{ "/pagefind/pagefind-ui.css" }}' rel="stylesheet">
+
+	<style>
+		:root {
+			--pagefind-ui-scale: 1;
+			--pagefind-ui-primary: #000;
+			--pagefind-ui-text: #000;
+			--pagefind-ui-background: #ffffff;
+			--pagefind-ui-border: #eeeeee;
+			--pagefind-ui-tag: #eeeeee;
+			--pagefind-ui-border-width: 2px;
+			--pagefind-ui-border-radius: 8px;
+			--pagefind-ui-image-border-radius: 8px;
+			--pagefind-ui-image-box-ratio: 3 / 2;
+			--pagefind-ui-font: 'Clarity City', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, Roboto,
+	Ubuntu, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+		}
+	</style>
+	<script src='{{ "/pagefind/pagefind-ui.js" }}' defer></script>
+
+	<div id="search"></div>
+	<script>
+	window.addEventListener("DOMContentLoaded", (event) => {
+		pagefind = new PagefindUI({ element: "#search", showSubResults: true, showImages: false, resetStyles: false });
+
+		const urlParams = new URLSearchParams(window.location.search);
+		const q = urlParams.get('q');
+		if(q){
+        setTimeout(function(){
+            pagefind.triggerSearch(q);
+			}, 1000);
+		}
+
+		$("#search input").on("input", function() {
+			var inputValue = $(this).val();
+			var queryStringVar = "q";
+			updateQueryString(queryStringVar, inputValue);
+		});
+	});
+
+	function updateQueryString(key, value) {
+		var baseUrl = window.location.href.split("?")[0];
+		var queryString = window.location.search.slice(1);
+		var urlParams = new URLSearchParams(queryString);
+
+		if (urlParams.has(key)) {
+			urlParams.set(key, value);
+		} else {
+			urlParams.append(key, value);
+		}
+
+		var newUrl = baseUrl + "?" + urlParams.toString();
+		// Update the browser history (optional)
+		window.history.pushState({}, null, newUrl);
+	}
+	</script>
+	
+</div>
 {{ end }}

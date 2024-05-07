@@ -22,5 +22,4 @@ cd website
 npm install
 ```
 
-You can then run the site using `hugo server`.
-
+Then run the site using `npm run serve`. To have the site run locally with a functioning local search, run `npm run serve:with-pagefind`.
