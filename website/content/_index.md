@@ -3,4 +3,4 @@
 
 # Security Technical Advisory Group
 
-{{< include-markdown "root/README.md" "false" >}}
+{{< include-markdown "content/README.md" "false" >}}
