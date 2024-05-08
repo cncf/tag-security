@@ -7,7 +7,7 @@ a [CNCF Technical Advisory Group](https://github.com/cncf/toc/tree/main/tags).
 * [Roles](roles.md) - the work of the group is facilitated by Chairs, Technical
   Leads, and active group members
 * [Process](process.md) - how projects are proposed and work is tracked
-* [Related Groups](./related-groups/README.md) - list of CNCF, Kubernetes and
+* [Related Groups](related-groups/README.md) - list of CNCF, Kubernetes and
   other Industry wide groups that do related work
 
 General meetings are posted on the CNCF calendar and serve as a forum for

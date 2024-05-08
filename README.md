@@ -2,12 +2,14 @@
 
 ![Cloud Native Security Logo](/design/logo/cloud-native-security-horizontal-darkmodesafe.svg)
 
+<!-- markdown-link-check-disable -->
 ## Quick links
 
 - [Meeting Information](#meeting-times)
 - [Slack Information](#communications)
 - [New Members](#new-members)
 - [Members](#members)
+<!-- markdown-link-check-enable -->
 
 ## Objective
 
@@ -44,7 +46,7 @@ found in the [publications](PUBLICATIONS.md) document.
 ## Governance
 
 [Security TAG charter](governance/charter.md) outlines the scope of our group
-activities, as part of our [governance process](governance) which details how we
+activities, as part of our [governance process](governance/README.md) which details how we
 work.
 
 ## Communications
@@ -105,7 +107,7 @@ our [New Members Page](NEW-MEMBERS.md)
 
 There are several groups that are affiliated to or do work and cover topics
 relevant to the work of Security TAG. These can be
-seen [here](governance/related-groups/)
+seen [here](governance/related-groups/README.md)
 
 ## History
 
@@ -149,6 +151,21 @@ seen [here](governance/related-groups/)
 
 ### On-going projects
 
+#### Compliance Working Group
+
+[Compliance Working Group](./compliance) is cross-disciplinary and focused on bridging purely technical issues to broader legal and regulatory workflows:
+not only the prevention of system breaches, but also considering supply chain, operators, data and AI failures while simultaneously considering auditability,
+non-repudiation, legally required forensic evidence, etc. - across all the various activities required of cloud native operators of all sizes.
+The Compliance WG plans to curate vendor neutral tools for evidence collection, chain-of-custody in audits, as well as automated workflows for continuous compliance authoring and assessment.
+
+Weekly meetings at 10:00 AM ET (60 min) [Check My Time](https://mytime.io/10am/ET)
+
+See [CNCF calendar](https://calendar.google.com/calendar/u/0/embed?src=0b8u5el8ta4s93t2cm72tuvhhk@group.calendar.google.com&ctz=America/Los_Angeles) for invite.
+
+Meeting link: [Zoom meeting](https://zoom.us/j/92729235315?pwd=ZFIxU3RSanlVODh4a1g2SFdJOGpoZz09)
+
+Meeting [notes link](https://docs.google.com/document/d/1z9xvt-Z97j4CtEH1-nR9sMWul7jQkUi_fNY7BdMPgxM/edit#heading=h.88owgl3gm8w4)
+
 #### Security reviews
 
 [Security reviews](./assessments) are a collaborative process for the benefit of
@@ -165,7 +182,7 @@ Co-chair representatives: @sublimino @PushkarJ
 Software Supply Chain attacks have come to the wider community's attention
 following recent high-profile attack, but have been an ongoing threat for a long
 time. With the ever growing importance of free and open source software,
-software [supply chain security](./supply-chain-security) is crucial,
+software [supply chain security](./supply-chain-security/README.md) is crucial,
 particularly in cloud native environments where everything is software-defined.
 
 Weekly meetings at 8:00 AM PT (50 min) (see your
