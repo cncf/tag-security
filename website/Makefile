@@ -35,7 +35,7 @@ deps:
 		else \
 			echo "---\ntitle: $$title\n---" > "$$1/_index.md"; \
 		fi; \
-		echo "{{< include-markdown \"$$1/README.md\" \"false\" >}}" >> "$$1/_index.md"; \
+		echo "{{< include-markdown \"$$1/README.md\" >}}" >> "$$1/_index.md"; \
 	' sh {} \;
 
 	# Move everything but README files over to content dir

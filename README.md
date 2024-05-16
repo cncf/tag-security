@@ -1,4 +1,4 @@
-# CNCF Security Technical Advisory Group
+# Security Technical Advisory Group
 
 ![Cloud Native Security Logo](/design/logo/cloud-native-security-horizontal-darkmodesafe.svg)
 
