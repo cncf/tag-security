@@ -27,40 +27,33 @@
 <!-- cspell:enable -->
 
 ## Table of Contents
-<!-- vscode-markdown-toc -->
-* [Executive Summary](#ExecutiveSummary)
-* [Introduction](#Introduction)
-* [Principles of Zero Trust](#PrinciplesofZeroTrust)
-	* [General Principles](#GeneralPrinciples)
-	* [Cloud Native Principles of Zero Trust](#CloudNativePrinciplesofZeroTrust)
-	* [Summary](#Summary)
-* [Bedrocks of Zero Trust](#BedrocksofZeroTrust)
-	* [Cloud Native Zero Trust Core Elements](#CloudNativeZeroTrustCoreElements)
-	* [Active Observer evaluating Confidence Levels](#ActiveObserver_evaluating_ConfidenceLevels_)
-* [Zero Trust Components](#ZeroTrustComponents)
-	* [Trust in a Zero Trust Cloud Native Platform](#TrustinaZeroTrustCloudNativePlatform)
-	* [Container Platform and Orchestration](#ContainerPlatformandOrchestration)
-	* [The Active Observer](#The_ActiveObserver_)
-	* [Access Control](#AccessControl)
-	* [Automation](#Automation)
-* [Best Practices to Achieve Zero Trust](#BestPracticestoAchieveZeroTrust)
-	* [Service Instances](#ServiceInstances)
-	* [Service Requests](#ServiceRequests)
-	* [Client Identities](#ClientIdentities)
-	* [Access Control](#AccessControl-1)
-* [References](#References)
-* [Acknowledgments](#Acknowledgments)
-* [Footnotes and Citations](#FootnotesandCitations)
 
-<!-- vscode-markdown-toc-config
-	numbering=false
-	autoSave=true
-	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc -->
+- [Executive Summary](#executive-summary)
+- [Introduction](#introduction)
+- [Principles of Zero Trust](#principles-of-zero-trust)
+    - [General Principles](#general-principles)
+    - [Cloud Native Principles of Zero Trust](#cloud-native-principles-of-zero-trust)
+    - [Summary](#summary)
+- [Bedrocks of Zero Trust](#bedrocks-of-zero-trust)
+    - [Cloud Native Zero Trust Core Elements](#cloud-native-zero-trust-core-elements)
+- [Zero Trust Components](#zero-trust-components)
+    - [Trust in a Zero Trust Cloud Native Platform](#trust-in-a-zero-trust-cloud-native-platform)
+    - [Container Platform and Orchestration](#container-platform-and-orchestration)
+    - [The Active Observer](#the-active-observer)
+    - [Access Control](#access-control)
+    - [Automation](#automation)
+- [Best Practices to Achieve Zero Trust](#best-practices-to-achieve-zero-trust)
+    - [Service Instances](#service-instances)
+    - [Service Requests](#service-requests)
+    - [Client Identities](#client-identities)
+    - [Access Control](#access-control)
+- [References](#references)
+- [Acknowledgments](#acknowledgments)
+- [Footnotes and Citations](#footnotes-and-citations)
 
 **Note**: All tools, projects, libraries mentioned in the paper are mentioned as examples when describing a relevant section. Hence, such mention **should not** be taken as an official recommendation by TAG Security or CNCF. Readers should evaluate adoption of such tools, projects or libraries based on their own understanding and threat model of the system under review.
 
-## <a name='ExecutiveSummary'></a>Executive Summary
+## Executive Summary
 
 The continual cat-and-mouse game between organizations seeking to protect their distributed cloud services (through perimeter security) and offenders seeking to punch holes in such a perimeter (by exploiting new weaknesses in deployed cloud services and their underlying cloud native platforms) intensifies annually. As the [number of incidents](https://www.ic3.gov/Media/PDF/AnnualReport/2022_IC3Report.pdf) [^1] continues to show steep annual growth, some organizations try to keep up with the pace and variety of attacks by adopting secure-by-design practices and improving their ability to detect cyber weaknesses. Nevertheless, offenders seem to always have the upper hand. As organizations continue to use the common practice of perimeter defenses, offenders find new innovative ways to overcome the perimeter, place a first foothold within the organization, and carry on attacks deeper into the network from within. The practice of perimeter defenses is further weakened by organizations moving workloads to the cloud; a multi-cloud strategy makes these efforts even more fraught and less likely to succeed. In any cloud environment, the concept of perimeter becomes blurry as organizations lose control over the network and much of the inner services.
 
@@ -76,7 +69,7 @@ In this paper, _Part 1 “Designing Zero Trust Using Cloud Native Platforms”_,
 
 We intend to equip organizations with comprehensive knowledge to implement Zero Trust security within their cloud native environments successfully. This multi-part approach ensures that readers will thoroughly understand the topic and be well-prepared to enhance their cybersecurity defenses effectively.
 
-## <a name='Introduction'></a>Introduction
+## Introduction
 
 Before going further, we need to define Zero Trust. The concept of Zero Trust was first introduced by John Kindervag, then an analyst at Forrester Research, in 2010. It has evolved since then as a security framework to help reduce implicit trust in systems - not ensure there is no trust at all. All systems have ‘trust’; but trust “is not a property, but rather an assessment based on experience…. [It is] a declaration made by an observer [not] a property of the observed.” [^4] Resultantly, Zero Trust is about not giving implicit trust but rather keeping trust in the system and its components to the bare minimum necessary (the well-known principle of least privilege) and ensuring it’s enforced - ideally automatically - while ensuring continual assessment. When implementing Zero Trust, perimeter security is no longer enough; you must treat users, systems, and networks as untrusted. The DoD’s Reference Architecture sums it up nicely:
 
@@ -111,9 +104,9 @@ Additionally, a list of references for further exploration and research on topic
 
 We hope that the cloud native community, CNCF members, and other interested parties will use this whitepaper as a baseline for conversation and implementation of Zero Trust principles into their deployments while engaging in [feedback](https://github.com/cncf/tag-security/issues/950) to help evolve this paper.
 
-## <a name='PrinciplesofZeroTrust'></a>Principles of Zero Trust
+## Principles of Zero Trust
 
-### <a name='GeneralPrinciples'></a>General Principles
+### General Principles
 
 Principles allow the reader to understand the fundamental ideas and beliefs that shape the rest of the paper's content. Principles serve as a reference point and help readers contextualize the information presented throughout the paper. They provide a logical and conceptual framework that supports the arguments, strategies, and recommendations discussed later.
 
@@ -164,11 +157,11 @@ Additionally, the following general principle applies:
 
 Overall, Zero Trust aims for the **right user to have access to the right data, for the right reason, at the right time**.
 
-### <a name='CloudNativePrinciplesofZeroTrust'></a>Cloud Native Principles of Zero Trust
+### Cloud Native Principles of Zero Trust
 
 The main approach of Zero Trust is to “Trust nothing by default”. Ever. When you trust nothing, you are forced to seek relevant security measures wherever there is a risk. Consequently, we should “Verify Everything.” Do not assume that passing a check naturally affords trust. Having credentials doesn’t mean you are trustable -It just means you have credentials. And credentials can be stolen. We discuss here the cloud native principles derived from the Zero Trust approach.
 
-#### <a name='Assumeeveryimageincludesvulnerabilities'></a>Assume every image includes vulnerabilities
+#### Assume every image includes vulnerabilities
 
 Organizations should always assume all cloud native images are vulnerable and plan accordingly. Organizations should assume that all bespoke software and applications they develop, distribute, and deploy, as well as any third-party software, are vulnerable to various attacks and plan accordingly.
 
@@ -183,7 +176,7 @@ This harsh reality should be clear when taking into account that any deployed se
 
 Such dependencies, tools, and repositories all rely on a tremendous amount of code and were built by an endless number of developers over a long period. This “_mountain of code”_ is a vast resource for offenders. As past experiences teach us time and time again, new weaknesses are repeatedly discovered in widely used code.
 
-#### <a name='Assumeeveryserviceisvulnerable'></a>Assume every service is vulnerable
+#### Assume every service is vulnerable
 
 Organizations should always assume that all deployed services are vulnerable and plan accordingly. Any service deployed should be assumed to run based on a vulnerable image and expose vulnerabilities via its service API.
 
@@ -191,26 +184,26 @@ Many organizations discover that CVEs related to services they have in productio
 
 An important observation is that vulnerability does not necessarily mean services will be exploited. Though services are vulnerable, in some ways unknown to the organization, offenders still need to identify these vulnerabilities to exploit them. A vulnerability that can’t be exploited represents a risk that can’t be realized.
 
-#### <a name='Assumeeveryservicewillbeexploitedsometime'></a>Assume every service will be exploited sometime
+#### Assume every service will be exploited sometime
 
 Organizations need to adopt the mindset that any cloud native deployed service is susceptible to exploitation at some point. When deploying a service, it is crucial to assume that it can be exploited in various ways, such as internal malware infiltration, misuse by insiders, or unauthorized access to credentials or control systems.
 
-#### <a name='Assumetheclusternetworkishostileanduntrusted'></a>Assume the cluster network is hostile and untrusted
+#### Assume the cluster network is hostile and untrusted
 
 Organizations should always assume that the cluster network is compromised and that hostile entities have access to the network, can inject traffic, and can extract traffic from the cluster network.
 
-#### <a name='Assumerequestsendersakaclientsmaypotentiallysendmaliciousrequests'></a>Assume request senders (aka clients) may potentially send malicious requests
+#### Assume request senders (aka clients) may potentially send malicious requests
 
 Organizations should assume that even after a client provides credible credentials and shows good behavior over time, the next request sent by the client may be an attempt to attack the service. An offender may tag along a legitimate user using the same client or embed malicious code as part of a legitimate machine sending service requests.
 
-#### <a name='Alwaysauthenticatetheservice'></a>Always authenticate the service
+#### Always authenticate the service
 Organizations should ensure that the client verifies the identity of any service before the client sends a service request. This includes internal and external clients sending requests to internal and external services.
 
-#### <a name='Alwaysauthenticateservicerequestsenders'></a>Always authenticate service request senders
+#### Always authenticate service request senders
 
 Organizations should ensure that the identity of any service request sender sending requests to a cloud native service is verified before allowing the service to be processed. This includes verifying the identity of both internal and external request senders. When anonymous service is to be allowed, the sender’s identity should be considered as one that may come from any sender, both benign and malicious.
 
-#### <a name='Alwaysmonitorandverifytheserviceinstancebehavior'></a>Always monitor and verify the service instance behavior
+#### Always monitor and verify the service instance behavior
 
 Organizations should always assume that a service may be misused. Organizations should avoid a false sense of security when assuming that well-designed services by well-trained teams will behave as designed from a security standpoint. Instead, dynamic per-service-instance evaluation is required. Any service instance should be evaluated based on actual behavior and tagged with a proper **confidence level**, given how it acts in practice. Note that when one service instance is misused, other instances may remain intact. The evaluation of the **confidence level** may be based on parameters such as:
 
@@ -230,11 +223,11 @@ Throughout this paper, we distinguish between the main service states:
 
     _Note that we never assume any service can never be exploited. We assume all services may have vulnerabilities in their code, their configuration, etc. We distinguish between services suspected to have such vulnerabilities but are not known to be compromised, services suspected to be compromised, and services actively being exploited._
 
-#### <a name='Alwaysmonitorandverifyservicerequestbehavior'></a>Always monitor and verify service request behavior
+#### Always monitor and verify service request behavior
 
 Organizations should always assume that a request made to a service API may include an exploit. Requests should be considered a potential delivery mechanism for an effective exploit against a vulnerability in the service API. Organizations should not rely on the implied trustworthiness of the request from an authenticated trusted sender. Instead, dynamic per-request evaluation is required. Given its content, any request should be evaluated and tagged with a proper **confidence level** after being assessed as a potential exploit.
 
-#### <a name='Alwaysmonitorandverifytheclientbehavior'></a>Always monitor and verify the client behavior
+#### Always monitor and verify the client behavior
 
 Organizations should not assume that a service client, duly authenticated, is not a disguised attacker. Organizations should not rely on implied trustworthiness and always assume credentials may be stolen, insiders may become offensive, and attackers may reside in the sender’s system. Instead, dynamic per-client evaluation is required. Such evaluation may rely on:
 
@@ -250,7 +243,7 @@ Organizations should use dynamic and fine-grain access control to ensure that th
 1. The **confidence level** of the request not being an exploit
 1. The overall context - are we expecting requests at this time of day? From this IP-range? Etc.
 
-### <a name='Summary'></a>Summary
+### Summary
 
 Zero Trust is a security framework and assumes that all service requests, both from internal and external sources, are potentially untrustworthy. It emphasizes the importance of strict access controls, continuous monitoring, and a holistic approach to security.
 
@@ -262,17 +255,17 @@ We can break this into three simple steps to keep in mind.
 
 _Image 3. Three steps of the Zero Trust process_
 
-#### <a name='Alwaysidentify'></a>Always identify
+#### Always identify
 
 No matter where the client is, whenever a client tries to access, validate that the client has proper credentials. Never trust a client based on other attributes, such as their location. Keep track of all clients based on their individual identities. Make sure to periodically revalidate the client credentials to detect clients with invalidated credentials. Avoid long sessions based on past credential validations.
 
-#### <a name='Alwaysanalyze'></a>Always analyze
+#### Always analyze
 
 Just because a client authentication was successful, it doesn’t mean the client is trustworthy. All service request traffic, whether internal or external, is treated as potentially malicious  - analyze it and verify it is not an attack. Insider threats and malicious actors may gain access to valid credentials. Legitimate clients with proper credentials may be compromised and act maliciously.
 
 Clients, client requests, and services need to be continuously analyzed and based on their behavior compared to expected criteria. Continuously record all network and system activity and regularly analyze and inspect it to verify what occurs. Make sure you can replay decisions for audit purposes.
 
-#### <a name='Alwayscontrol'></a>Always control
+#### Always control
 
 Restrict access to resources based on client identity, device posture, and other contextual factors. Apply specific controls and checks in front of every service, controlling every action of every client. Adopt and strictly enforce the principle of least privilege – clients should only have access to the absolute minimum they need to perform their job. No client should have unneeded access, even if the risk of having such access is deemed low.
 
@@ -280,11 +273,11 @@ Combine the analysis results of the behavior of services, service clients, and s
 
 Zero Trust promotes the implementation of network segmentation into smaller, isolated segments or microsegments. Here, we identify each service as a micro segment. Separating access control per service helps to contain breaches and limit lateral movement within the network. By dividing the network into small segments  containing a single microservice, access controls can be applied more granularly, reducing the attack surface. Lateral movement between microservices is prevented as each microservice uses its access control and is protected from neighboring services.
 
-## <a name='BedrocksofZeroTrust'></a>Bedrocks of Zero Trust
+## Bedrocks of Zero Trust
 
 The following Bedrocks of Zero Trust represent the key elements that define and support the implementation of a Zero Trust architecture. By addressing these bedrocks, we provide a comprehensive understanding of the concept and its practical implications. This helps to ensure greater longevity and flexibility of the advice, even as technologies change.
 
-### <a name='CloudNativeZeroTrustCoreElements'></a>Cloud Native Zero Trust Core Elements
+### Cloud Native Zero Trust Core Elements
 
 The [DoD Reference Architecture](https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf) identifies seven core pillars: Users, Devices, Networking, Applications and Workloads, Data, and Automation and Orchestration. We identify the following as the Bedrocks of cloud native Zero Trust:
 
@@ -304,7 +297,7 @@ We identify that **Client Identities** may be malicious, **Service Requests** ma
 
 Cloud Native Zero Trust extends **Access Control** to consider the _Confidence Level_ assessment of the **Client Identity** and the **Service requests**. Zero Trust extends **Automation** to consider the **Service Instances**’ _Confidence Level_ assessment.
 
-#### <a name='ActiveObserver_evaluating_ConfidenceLevels_'></a>_Active Observer_ evaluating _Confidence Levels_
+#### _Active Observer_ evaluating _Confidence Levels_
 
 Security Behavior Analytics (SBA) is a technology that serves as an _Active Observer_ to evaluate the _Confidence Levels_ of an entity based on the entity's security-related behavior compared to its norm or other predefined known criteria. The entity’s standard behavior is first examined through security glasses, and the behavior exposed is recorded. Once standard behavior is recorded, _Confidence Levels_ can be deducted by changes in the security-related behavior of the entity.
 
@@ -322,9 +315,9 @@ In the context of Cloud Services, we identify between:
 
 By applying zero trust principles to the Bedrocks of Zero Trust, we have a structured framework to operationalize the key components required when applying it to cloud native architectures to ensure comprehensive coverage across different dimensions of zero trust.
 
-## <a name='ZeroTrustComponents'></a>Zero Trust Components
+## Zero Trust Components
 
-### <a name='TrustinaZeroTrustCloudNativePlatform'></a>Trust in a Zero Trust Cloud Native Platform
+### Trust in a Zero Trust Cloud Native Platform
 
 When applying Zero Trust principles to cloud native platforms, we need to consider what Zero Trust is, why we need it, the components of these platforms, and how our principles should be applied to each.
 
@@ -343,11 +336,11 @@ The DoD’s Reference Architecture sums it up nicely:
 
 Cloud native platforms and systems epitomize the increasing complexity of securing infrastructure, data, and access. Cloud native platforms are inherently scalable, dynamic, and increasingly distributed with expansion into use cases such as edge computing and IoT. IP-based identity and perimeter security have become obsolete in a world of ephemeral IP addresses and constantly changing resources.
 
-### <a name='ContainerPlatformandOrchestration'></a>Container Platform and Orchestration
+### Container Platform and Orchestration
 
 Zero Trust is a cybersecurity strategy based on the "never trust, always verify" principle. In the context of a Container Platform and Orchestration system, it implies that all interactions (within the system and with external systems) should be authenticated, authorized, and validated. This concept can be broken down into several components:
 
-#### <a name='IdentityManagement'></a>Identity Management
+#### Identity Management
 
 One of the most critical components of a Zero Trust approach is strong Identity Management. This involves verifying the identity of every **client** that tries to access resources in your container platform. The identity management may rely on a token presented by the client and verified by the **service instance** or on **client** certificates verified by **service instances** using _mTLS_ (mutual Transport Layer Security).
 
@@ -355,43 +348,43 @@ Identity management in a cloud native environment is described in the [Identity 
 
 Note that under Zero Trust, once we verify a client's identity, we are still required to verify that the requested operation is authorized and evaluate our confidence level that the client behaves as expected (e.g., client credentials were not being misused).
 
-#### <a name='NetworkSecurity'></a>Network Security
+#### Network Security
 
 In a Zero Trust model, the network is always considered untrustworthy. This means applying security measures such as micro-segmentation, which involves dividing the network into secure zones and enforcing rules - using Access Control - about the traffic that can flow between them. This helps limit the spread of breaches and makes it easier to manage traffic and monitor suspicious behavior.
 
-#### <a name='Encryption'></a>Encryption
+#### Encryption
 
 Zero Trust assumes that offenders may reside inside cloud clusters, stage attacks on the cluster network, and attempt to access any data stored in the cloud. Therefore, all data, at rest and in transit, should be encrypted under Zero Trust. This protects sensitive data if it falls into the wrong hands and forms part of the process of authenticating and verifying interactions.
 
-#### <a name='ContainerSecurity'></a>Container Security
+#### Container Security
 
 Container security should follow security best practices by applying security measures at the container level. This includes secure configuration (ensuring containers are set up securely) and vulnerability scanning (checking for known vulnerabilities in your container images).
 
 Additionally, under Zero Trust, runtime security is required to monitor suspicious activity while containers are running.
 
-### <a name='The_ActiveObserver_'></a>The _Active Observer_
+### The _Active Observer_
 
 Under cloud native Zero Trust, we require an _Active Observer_ to establish trust. It is not enough to verify the **client’s** identity using Identity Management; we need to consider that credentials may be stolen and the **client** may be compromised. An _Active Observer_ should be in place to observe that client’s activities and decide on the _Confidence Level_ assigned to that identity - how sure are we that the **client** is not compromised and that the entity presenting the credentials is indeed the **client**?
 
 Similarly, an _Active Observer_ is required to verify that the client is sending legitimate **service requests** rather than malicious ones. And that the **Service Instances** processing such requests are not compromised.
 
-#### <a name='ContinuousMonitoringandLogging'></a>Continuous Monitoring and Logging
+#### Continuous Monitoring and Logging
 
 Continuous monitoring is crucial for a Zero Trust approach. This involves collecting and analyzing logs to detect unusual activity and setting up alerts for possible security incidents. Security monitoring plays an important role as an input to an _Active Observer_. It may be used to detect compromised **Clients** and **Service Instances**.
 
-#### <a name='SecurityBehaviorAnalyticsforServicerequestSBA-SR'></a>Security Behavior Analytics for Service request (SBA-SR)
+#### Security Behavior Analytics for Service request (SBA-SR)
 
 When an offender aims to gain an initial foothold in a vulnerable service, the offender needs to manipulate the request sent to the service API such that it may exploit it. Using the exploit, the offender seeks to trigger some unplanned behavior of the service. The offender is, therefore, required to send an irregular sequence of characters or/and an irregular sequence of requests. (Note that benign users will not be sending such irregular sequences.)
 
 Detecting such irregularities is a key element in protecting vulnerable cloud services. Organizations should deploy Security Behavior Analytics for Service Requests (SBA-SR) for detecting security-related irregularities in any communications between clients and the Service API. The deployed SBA-SR should be capable of discerning regular requests of benign users from manipulated requests made by offenders.  The outcome of this component is a _Confidence Level_ of a **Service Request** that should be handled by **Access Control,** as discussed below.
 
-#### <a name='SecurityBehaviorAnalyticsforServiceInstancesSBA-SI'></a>Security Behavior Analytics for Service Instances (SBA-SI)
+#### Security Behavior Analytics for Service Instances (SBA-SI)
 
 A compromised service will not exhibit any behavioral changes unless exploited. Malware residing in a service can not be traced by observing the service behavior before the malware is activated. Once activated, the behavior induced by the malware is added to the one intended by the organization. This produces irregular service behaviors. Note that when using the common practice of cloud native scale-out, some service instances may be exploited while others are not. Therefore, some instances may exhibit irregular behavior while others exhibit regular ones.
 
 Detecting such irregularities is a key element in detecting exploited cloud service instances. The deployed SBA-SI should be capable of discerning regular service behavior intended by the organization from the composite behavior affected by the malware. The outcome of this component is a _Confidence Level_ of a **Service Instance** that should be handled by **Automation**, as discussed below.
 
-### <a name='AccessControl'></a>Access Control
+### Access Control
 
 Under Zero Trust, **Access Control** takes new roles in several dimensions:
 
@@ -407,13 +400,13 @@ Combined, Zero Trust **Access Control** apply
 1. The principle of least privilege (PoLP) gives a **client** connecting to a **service** only the privileges the client needs to perform their job as part of the service and nothing more. This can be achieved by a Role-Based Access Control (RBAC)  that will be correctly used to ensure each client is authorized based on its identity and the identity of a specific cloud service being approached. Other options include ABAC (Attribute-Based Access Control) and ReBAC (Relationship-Based Access Control).
 2. Dynamic and context-aware access control, taking real-time access decisions on a per-request basis. Decisions are based on the _Confidence Levels_ evaluated by an _Active Observer_. This can be achieved by introducing SBA technology and enhancing Access Control to enable the introduction of dynamic access rules and policies.
 
-### <a name='Automation'></a>Automation
+### Automation
 
 Given containerized environments’ complexity and dynamic nature, automation is crucial for maintaining a Zero Trust posture. This could include automated security scans, automated policy enforcement, and automated responses to security incidents.
 
 Consider a case where the _Confidence Level_ of a **Service Instance** suggests that the instance is compromised as an example of an automated response to a security incident. Automation is needed to consider the **Service Instance’s** deletion and allow a new, fresh **Service Instance** to replace it. Such a decision should consider several factors, including service availability.
 
-## <a name='BestPracticestoAchieveZeroTrust'></a>Best Practices to Achieve Zero Trust
+## Best Practices to Achieve Zero Trust
 
 >“A guiding policy can be an advantage in and of itself if it _anticipates_ actions and reactions of others, _reduces the complexity and ambiguity_ of a situation, by exploiting _leverage_, and by creating policies and actions that are _coherent_.” - <!-- cspell:disable -->[Good Strategy, Bad Strategy by Richard Rumelt](https://youexec.com/book-summaries/good-strategy-bad-strategy)<!-- cspell:enable -->
 
@@ -427,7 +420,7 @@ Consider a case where the _Confidence Level_ of a **Service Instance** suggests 
 
 _A summary of the best practice topics to support ZTA principles using CNCF technologies_
 
-### <a name='ServiceInstances'></a>Service Instances
+### Service Instances
 
 **Service instances** under CNCF Zero Trust need to be monitored using an _Active Observer_ to achieve two goals:
 
@@ -435,7 +428,7 @@ _A summary of the best practice topics to support ZTA principles using CNCF tech
 * Helping to identify compromised client identities when the affected service instance is also a client of other cloud services.
 * Allowing to run forensic analysis to identify the kind of ongoing attack
 
-#### <a name='SecurityBehaviorAnalyticsforServiceInstancesSBA-SI-1'></a>Security Behavior Analytics for Service Instances (SBA-SI)
+#### Security Behavior Analytics for Service Instances (SBA-SI)
 
 CNCF Knative’s [Security-Guard](https://knative.dev/docs/serving/app-security/security-guard-about/) (Guard) offers support as an SBA-SI. Like other Knative components, Guard can be used separately from Knative and be deployed as part of vanilla Kubernetes or other cloud native orchestration systems. Guard uses machine-learning-based criteria synthesis to identify the standard patterns service clients use. Guard also supports setting manual criteria. Guard’s SBA-SI identifies changes in the external communication performed by service instances. It calculates a **confidence level** of **service instances** and is integrated with **automation**, which optionally allows deleting service instances suspected as being exploited.
 
@@ -443,14 +436,14 @@ Profiling the behavior of **service instances** and evaluating **confidence leve
 
 An additional source of information that can be used to determine the **confidence level** of **Service Instances** is intelligence information about CVEs included in the service image. Such information may be obtained by scanning images before or during service orchestration.
 
-### <a name='ServiceRequests'></a>Service Requests
+### Service Requests
 
 **Service Requests** security takes an important role in Zero Trust. First and foremost, any transmission of Service Requests over the wire must be encrypted, as the network cannot be trusted. Additionally, requests need to be monitored by an _Active Observer_ using SBA-SR  to achieve two goals:
 
 * to determine the risk of servicing the request using a **Service Instance**
 * to help identify compromised client identities from which the request originated and take action accordingly.
 
-#### <a name='SecurityBehaviorAnalyticsforServiceRequestsSBA-SR'></a>Security Behavior Analytics for Service Requests (SBA-SR)
+#### Security Behavior Analytics for Service Requests (SBA-SR)
 
 CNCF Knative offers the [Security-Guard](https://knative.dev/docs/serving/app-security/security-guard-about/#security-guard-profile-and-criteria) extension (Guard for short) and its main function is to serve as an SBA-SR. As indicated above, Guard can be used separately from Knative and be deployed as part of vanilla Kubernetes. Guard maintains machine-learning-based criteria synthesis to identify the standard patterns used by service requests. It also supports manual criteria. Guard’s SBA-SR identifies changes in service requests performed by clients. It calculates a **confidence level** of **service requests** and is integrated with Access Control, which optionally allows removing service requests suspected as exploits.
 
@@ -458,18 +451,18 @@ Guard’s SBA-SR offers the added benefit of being able to detect unknown exploi
 
 SBA-SR may also be embedded in Web Application Firewall (WAF) that maintains per service state and is capable of analyzing incoming/ongoing traffic and detecting threads and ongoing attacks. Solutions like <!-- cspell:disable --> [Coraza](https://coraza.io) or [Curiefense](https://www.curiefense.io/) <!-- cspell:enable --> and many others provide anomaly scores for requests and decide whether to block them based on predefined thresholds. Such anomaly scores can evolve to offer SBA-SR features.
 
-#### <a name='DatainTransit'></a>Data in Transit
+#### Data in Transit
 
 To ensure all communications in-transit are encrypted, all services should be using TLS (at least a version 1.2), and all clients need to verify the certificates presented by the server. CNCF projects offering TLS and certificates to protect inter-service communication include [Istio](https://istio.io/), [Linkerd](https://linkerd.io/), [Dapr](https://dapr.io/), and [Knative](https://knative.dev/).
 
-### <a name='ClientIdentities'></a>Client Identities
+### Client Identities
 
 Identity verification can be based on either client-sent tokens, mTLS client certificates, or a combination of both. Typically, the identity of the workload or service is represented by an Identity Token, also known as an Access Token, included with every request. This token can be inspected by a chain of Policy Enforcement Points to control access. Certificates, on the other hand, are designed to encrypt the connection between two points and guarantee the identity of one (TLS) or both (mTLS) access points.
 
 It's important to note that identity verification is only the first step in confirming the client’s identity. Verified identities under Zero Trust also need to be monitored by an _Active Observer_ to ensure that credentials are not being misused for malicious activity.
 
 
-#### <a name='Token-BasedIdentity'></a>Token-Based Identity
+#### Token-Based Identity
 
 When using Tokens such as [JSON Web Tokens (JWT)](https://datatracker.ietf.org/doc/rfc7519/) to establish identity, the client obtains a token from a trusted third party. The token is then sent as part of the service request, enabling the service to verify the client’s identity using the trusted third party. Tokens, preferably short-lived, are often used for authentication, allowing a service to verify a client’s identity even when the service request is sent via intermediate proxies. As the request with the Identity Token travels across the endpoints, the identity attributes can be easily read by Policy Enforcement Points, or a chain of them, allowing them to accept or deny access to various resources along the way while preserving the integrity of the token (it cannot be modified).
 
@@ -484,43 +477,43 @@ In adherence to current best practices for utilizing JWT Tokens, it is recommend
 Related CNCF token-based projects include [Dex](https://dexidp.io/) - an OpenID Connect (OIDC) identity and OAuth 2.0 provider, [Keycloak](https://www.keycloak.org/) - Identity and Access Management, and [SPIFFE and SPIRE](https://spiffe.io/) - A Universal identity control plane for distributed systems, suitable for managing identities in a multi-cloud environment.
 
 
-#### <a name='Certificate-BasedIdentity'></a>Certificate-Based Identity
+#### Certificate-Based Identity
 
 Identity may alternatively be established by the client presenting a client certificate using mutual TLS (mTLS). mTLS allows bi-directional, certificate-based verification. The client can verify the Server, and the Server can verify the client. mTLS uses certificates for hop-by-hop identity verification, which allows a service to verify the identity of a directly connected client co-located on the cloud cluster network. CNCF projects for managing certificates include [cert-manager](https://cert-manager.io/) - cloud native certificate management.
 
 Making mTLS standard for all communications in a cloud cluster is often achieved by deploying a service mesh. CNCF Service mesh projects [Istio](https://istio.io/), [SPIFFE](https://spiffe.io/), and [Linkerd](https://linkerd.io/) offer service-to-service identity verification mTLS.  [Dapr](https://dapr.io/) also offers mTLS.
 
 
-#### <a name='ActiveObserver_forClientIdentities'></a>_Active Observer_ for Client Identities
+#### _Active Observer_ for Client Identities
 
 **The confidence level** of local clients embedded in cloud clusters may be evaluated by aggregating the **confidence level** of the respective **service instances** that embed such local clients. Inputs about external clients may or may not be obtainable.
 
 An additional source of client identity **confidence level** can be achieved by aggregating the **confidence level** of all **service requests** emitted by the said client identity. Such information is available for both local and external clients.
 
 
-### <a name='AccessControl-1'></a>Access Control
+### Access Control
 
 Under Zero Trust, we aim to improve the control over the network in several ways: First, by micro-segmentation of the cloud cluster network and placing access control in front of every micro-segment and second by applying fine-grained access control where every operation by any client is controlled. Lastly, by applying dynamic access control that considers the **confidence level**, we have in both the **client identity** and the **service request**.
 
 
-#### <a name='Micro-Segmentation'></a>Micro-Segmentation
+#### Micro-Segmentation
 
 Since offenders are assumed to be inside the cloud cluster perimeter, access control gates need to be implemented inside the cloud cluster network and ideally in front of every service or service instance.
 
 Under Kubernetes, ingress isolation [Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/) may be used for basic layer 3-4 network control by limiting access to a service to a defined set of other cloud services. Similar control can also be achieved by using mTLS, which would then verify the client’s identity. Note that such mechanisms do not support the required fine-grained access control or dynamic access control and are not suitable for controlling access based on client identities in a multi-hop interaction. Micro-segmentation allows for the division of a network into smaller, isolated segments or microsegments. The attack surface is significantly reduced by implementing strict access controls and separating resources into smaller compartments. Even if an attacker manages to compromise one microsegment, their lateral movement is limited, preventing them from accessing other parts of the network.
 
 
-#### <a name='Fine-grainedAccessControl'></a>Fine-grained Access Control
+#### Fine-grained Access Control
 
 Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://linkerd.io/)) offer opportunities to implement a gate in front of every service instance and support fine-grained access policies. Alternatively, when using [Dapr](https://dapr.io/), you may use the Dapr access control.
 
 
-#### <a name='Dynamicaccesscontrol'></a>Dynamic access control
+#### Dynamic access control
 
 [Security-Guard](https://knative.dev/docs/serving/app-security/security-guard-about/) implements dynamic access control by introducing an Access Control gate in front of every **Service Instance**. The Access Control can be configured to block **service requests** based on the request **confidence level**.
 
 
-## <a name='References'></a>References
+## References
 
 <!-- cspell:disable -->
 * NIST SP 800-207, Zero Trust Architecture: [https://csrc.nist.gov/publications/detail/sp/800-207/final](https://csrc.nist.gov/publications/detail/sp/800-207/final)
@@ -556,7 +549,7 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
   * Cert-manager: [https://cert-manager.io/](https://cert-manager.io/)
   * Kubernetes Network Policies: [https://kubernetes.io/docs/concepts/services-networking/network-policies/](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 
-### <a name='HistoryofZeroTrust:'></a>History of Zero Trust:
+### History of Zero Trust:
 
 * [History of Zero Trust Security (infraon.io)](https://infraon.io/blog/history-of-zero-trust-security/) <!-- cspell:enable -->
 
@@ -588,7 +581,7 @@ Service mesh based solutions ([Istio](https://istio.io/), [Linkerd](https://link
     A zero trust architecture is designed and deployed with adherence to the following zero trust
 basic tenets….
 
-## <a name='Acknowledgments'></a>Acknowledgments
+## Acknowledgments
 
 We want to thank several contributors from whom we had excellent input and feedback and, as leading practitioners in the field, did much of the work that we write about in this document:
 <!-- cspell:disable -->
@@ -605,7 +598,7 @@ For anyone involved in creating this paper, we express our heartfelt gratitude f
 
 Thank you for being an integral part of this endeavor.
 
-## <a name='FootnotesandCitations'></a>Footnotes and Citations
+## Footnotes and Citations
 
 [^1]:
     Internet Crime Complaint Center (IC3) Annual report:  [https://www.ic3.gov/Media/PDF/AnnualReport/2022_IC3Report.pdf](https://www.ic3.gov/Media/PDF/AnnualReport/2022_IC3Report.pdf)
