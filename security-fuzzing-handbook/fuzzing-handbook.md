@@ -102,14 +102,14 @@ In order to make the fuzzing work the developer compiles the fuzzing harness and
 #include <stdlib.h>
 
 int parseUntrustedBuffer(const uint8_t *buffer, size_t size) {
-        if (size < 2) {
-                return -1;
+    if (size < 2) {
+        return -1;
+    }
+    if (buffer[0] == 'A') {
+        if (buffer[1] == 'B') {
+            assert(0);
         }
-        if (buffer[0] == 'A') {
-                if (buffer[1] == 'B') {
-                        assert(0);
-                }
-        }
+    }
     return 0;
 }
 ```
@@ -124,8 +124,8 @@ The question in place for the fuzzer in this case is whether it will come up wit
 extern int parseUntrustedBuffer(const uint8_t *buffer, size_t size);
 
 int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
-        parseUntrustedBuffer(data, size);
-        return 0;
+    parseUntrustedBuffer(data, size);
+    return 0;
 }
 ```
 
@@ -356,7 +356,7 @@ The core task that we have to do in order to use LibFuzzer to fuzz a target appl
 #include <stdint.h>
 
 int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
-	/* Fuzz driver implementation */
+    /* Fuzz driver implementation */
 }
 ```
 
@@ -834,17 +834,17 @@ We can use the following fuzzer to attack this code:
 
 ```c
 int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size){
-	char *new_str = (char *)malloc(size+1);
-	if (new_str == NULL){
-		return 0;
-	}
-	memcpy(new_str, data, size);
-	new_str[size] = '\0';
-	
-	attack_me(new_str);
-	
-	free(new_str);
-	return 0;
+    char *new_str = (char *)malloc(size+1);
+    if (new_str == NULL){
+        return 0;
+    }
+    memcpy(new_str, data, size);
+    new_str[size] = '\0';
+    
+    attack_me(new_str);
+    
+    free(new_str);
+    return 0;
 }
 ```
 
@@ -1578,14 +1578,14 @@ The project has two fuzzers `fuzz_complex_parser.c:`
 #include "char_lib.h"
 
 int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
-  char *ns = malloc(size+1);
-  memcpy(ns, data, size);
-  ns[size] = '\0';
-  
-  count_lowercase_letters(ns);
-  
-  free(ns);
-  return 0;
+    char *ns = malloc(size+1);
+    memcpy(ns, data, size);
+    ns[size] = '\0';
+    
+    count_lowercase_letters(ns);
+    
+    free(ns);
+    return 0;
 }
 ```
 
@@ -1600,14 +1600,14 @@ and `fuzz_char_lib.c`
 #include "char_lib.h"
 
 int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
-  char *ns = malloc(size+1);
-  memcpy(ns, data, size);
-  ns[size] = '\0';
-  
-  parse_complex_format(ns);
-  
-  free(ns);
-  return 0;
+    char *ns = malloc(size+1);
+    memcpy(ns, data, size);
+    ns[size] = '\0';
+    
+    parse_complex_format(ns);
+    
+    free(ns);
+    return 0;
 }
 ```
 
