@@ -125,7 +125,7 @@ extern int parseUntrustedBuffer(const uint8_t *buffer, size_t size);
 
 int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
         parseUntrustedBuffer(data, size);
-    return 0;
+        return 0;
 }
 ```
 
