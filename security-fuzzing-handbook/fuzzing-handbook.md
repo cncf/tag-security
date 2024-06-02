@@ -191,7 +191,7 @@ int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
 }
 ```
 
-ompiling this and launching the fuzzer in a manner similar to Example 1 will result in the binary running forever. In each iteration of the fuzzer it will either print “Size 123” or “Not size 123”, however, by default it will never stop. This can seem counterintuitive at first, partly because it signals that there is no notion of “completeness” when fuzzing, as opposed to testing. This is correct in the sense there is no single truth value denoting if the fuzzing is complete or not, it is by nature an infinite while loop. To this end, a harness is generally run until either one of the conditions hold:
+Compiling this and launching the fuzzer in a manner similar to Example 1 will result in the binary running forever. In each iteration of the fuzzer it will either print “Size 123” or “Not size 123”, however, by default it will never stop. This can seem counterintuitive at first, partly because it signals that there is no notion of “completeness” when fuzzing, as opposed to testing. This is correct in the sense there is no single truth value denoting if the fuzzing is complete or not, it is by nature an infinite while loop. To this end, a harness is generally run until either one of the conditions hold:
 
 1. A timeout has been reached;
 2. The fuzzer found a bug and, therefore, exits.
