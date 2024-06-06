@@ -5,6 +5,7 @@ deps: clean
 	rsync -avv ../ root/ \
 	--include='assessments' --include='assessments/**' \
 	--include='governance' --include='governance/**' \
+	--include='publications' --include='publications/**' \
 	--include='*.md' --exclude='*'
 
 	# Move over content such as graphics and logos
