@@ -161,7 +161,7 @@ The TAG has various working groups that focus on specific areas. Most community 
 | Project                         | Leads                                       |
 |---------------------------------|---------------------------------------------|
 | [Applied Research](/community/research/README.md)               | Andrés Vega                                 |
-| [Automated Governance](/community/automated-governance/README.md)             | Andres Vega, Brand Keller                   |
+| [Automated Governance](/community/automated-governance/README.md)             | Andrés Vega, Brandt Keller                   |
 | [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres    |
 | [Compliance](/community/compliance/README.md)                   | Anca Sailer, Robert Ficcaglia               |
 | [Controls](/community/controls/README.md)                    | Jon Zeolla                                  |
