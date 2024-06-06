@@ -158,15 +158,15 @@ seen [here](governance/related-groups/README.md)
 
 The TAG has various working groups that focus on specific areas. Most community activity is organized by these working groups and our weekly community-wide meetings. These working groups provide an avenue for discussion, engagement, and sometimes publications with key stakeholders, although each may operate differently depending on their needs and workflows. Each working group is run by a lead who is responsible for the logistics of running the meeting and for ensuring the group reaches consensus on any issues raised. Each group's materials, including reports, white papers, documents, and reference architectures, can be found in the /community directory of this repository.
 
-| Project                         | Leads                                       |
+| Project | Leads |
 |---------------------------------|---------------------------------------------|
-| [Applied Research](/community/research/README.md)               | Andrés Vega                                 |
-| [Automated Governance](/community/automated-governance/README.md)             | Andrés Vega, Brandt Keller                   |
-| [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres    |
-| [Compliance](/community/compliance/README.md)                   | Anca Sailer, Robert Ficcaglia               |
-| [Controls](/community/controls/README.md)                    | Jon Zeolla                                  |
-| [Security Reviews](/assessments/README.md)              | Justin Cappos, Eddie Knight                 |
-| [Software Supply Chain](/community/supply-chain/README.md)           | Marina Moore, Michael Liebermann, John Kjell            |
+| [Applied Research](/community/research/README.md) | Andrés Vega |
+| [Automated Governance](/community/automated-governance/README.md) | Andrés Vega, Brandt Keller |
+| [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres |
+| [Compliance](/community/compliance/README.md) | Anca Sailer, Robert Ficcaglia |
+| [Controls](/community/controls/README.md) | Jon Zeolla |
+| [Security Reviews](/assessments/README.md) | Justin Cappos, Eddie Knight|
+| [Software Supply Chain](/community/supply-chain/README.md) | Marina Moore, Michael Liebermann, John Kjell |
 
 
 ## Additional information

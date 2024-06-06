@@ -5,4 +5,5 @@ The Catalog of Supply Chain Compromises provides real-world examples that help r
 For information on how to contribute, check the catalog directly: https://github.com/cncf/tag-security/tree/main/supply-chain-security/compromises
 
 ## Contact
+
 - **Lead:** Santiago Arias Torres
