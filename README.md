@@ -138,7 +138,7 @@ seen [here](governance/related-groups/README.md)
 | Andrés Vega           | M42                    | @anvega             |
 | Ragashree Shekar      | Independent            | @ragashreeshekar    |
 | Michael Lieberman     | Kusari                 | @mlieberman85       |
-| John Jkell    | TestifySec                 | @jkjell       |
+| John Kjell    | TestifySec                 | @jkjell       |
 
 
 ### Security TAG Chair Emeriti
