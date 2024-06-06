@@ -1,4 +1,4 @@
-deps: clean
+deps:
 	git submodule update --init --recursive # TODO: the hugo theme doesn't need to live in this directory
 
 	# Move select content from the root level into the website directory.
