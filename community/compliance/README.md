@@ -1,16 +1,16 @@
 # Compliance Working Group
 
-Cloud Native systems represent a paradigm shift in both technical and human operations workflows. The community has invested significant time researching and solving approaches to cloud native security concerns and topics: software vulnerabilities, risk management, software component dependencies and infrastructure as code (GitOps), supply chain provenance, malicious attackers, threat models, and technical security assessments. At the same time, many commercial, non-profit foundations, community and government organizations performing services or providing data storage must abide by national, regional, or local laws and regulations regarding user privacy and data, with assurance of protection of their compute and data processing integrity and resilience. These cross cutting concerns span not only specific technical configuration of software and systems, but also require complex orchestration of human administrative, operational, and design activities, especially when involving audit activities expecting concrete, reviewable independent audit artifacts.
+Cloud Native systems shift technical and human workflows. The community has researched cloud native security, tackling software vulnerabilities, risk management, dependencies, GitOps, supply chain provenance, malicious attacks, threat models, and security assessments. Organizations must comply with privacy and data protection laws, ensuring compute and data integrity. These concerns require both technical configurations and complex human orchestration, especially for audits needing reviewable artifacts.
 
-The motivation of the Compliance WG is cross-disciplinary and focused on bridging purely technical issues to broader legal and regulatory workflows: not only to strive for the prevention of system breaches, but also considering supply chain, operators, data and AI failures while simultaneously considering auditability, non-repudiation, legally required forensic evidence, etc. - across all the various activities required of cloud native operators of all sizes. The Compliance WG plans to curate vendor neutral tools for evidence collection, chain-of-custody in audits, as well as automated workflows for continuous compliance authoring and assessment.
+Bridging technical issues with legal and regulatory workflows, the aim to prevent system breaches while addressing supply chain, operator, data, and AI failures. Focusing on auditability, non-repudiation, and forensic evidence, it plans to curate vendor-neutral tools for evidence collection, chain-of-custody in audits, and automated workflows for continuous compliance.
 
-The key areas of the Compliance WG include:
+The key focus areas include:
 
-- Building a knowledge base (in GitHub and possibly other tools) and case studies on the How, What, Why and When of operating a cloud native environment within the requirements of legal and regulatory entities that govern clouds, specific industries, and more generally data and public/consumer usage. These requirements are often not just technical security concerns. Compliance activities and requirements span human activities and performance, system availability and reliability, the combined human and technical aspects of continuity of operations, defining and monitoring data location as well as sovereignty and provenance of the regulated environment components and data
+Creating a knowledge base and case studies on operating a cloud native environment within legal and regulatory requirements. These requirements encompass not just technical security but also human activities, system availability, continuity of operations, and data location, sovereignty, and provenance.
 
-- Generating specific examples of compliance as code, normalized templates, and tools for automating these both technical and non-technical requirements, control assessment, data analysis, audit and compliance remediation workflows that specifically benefit CNCF projects and their community of users.
+Generating compliance as code examples, templates, and tools for automating both technical and non-technical requirements, control assessment, data analysis, audit, and compliance remediation workflows benefiting CNCF projects and their users.
 
-- Reviewing industry and governmental standards - eg NIST, PCI, HIPAA, etc - from a cloud native perspective and serving as Subject Matter Experts in the CNCF community for how projects should implement and support these compliance-specific requirements as first class citizen to enable broad adoption of the best practices by commercial, non-profit, governmental, and humanitarian organizations.
+Reviewing industry and governmental standards (e.g., NIST, PCI, HIPAA) from a cloud native perspective and advising the CNCF community on implementing and supporting these compliance requirements to enable best practice adoption by various organizations.
 
 ## Responsibilities
 
@@ -25,7 +25,7 @@ The key areas of the Compliance WG include:
 
 ## Meeting Information
 
-- **Weekly Meetings:** 10:00 AM Eastern Time (US and Canada) (60 min) 
+- **Weekly Meetings:** 10:00 AM Eastern Time (US and Canada)
 - **Meeting Link:** [Zoom Meeting](https://zoom.us/j/92729235315?pwd=ZFIxU3RSanlVODh4a1g2SFdJOGpoZz09)
 - **Meeting Notes:** [Meeting Notes Link](https://docs.google.com/document/d/1z9xvt-Z97j4CtEH1-nR9sMWul7jQkUi_fNY7BdMPgxM/edit#heading=h.88owgl3gm8w4)
 - **Calendar Invite:** See [CNCF calendar](https://calendar.google.com/calendar/u/0/embed?src=0b8u5el8ta4s93t2cm72tuvhhk@group.calendar.google.com&ctz=America/Los_Angeles) for invite

@@ -10,7 +10,6 @@ This initiative aims to help various stakeholders by providing a standardized se
 
 ## Meeting Information
 
-- **Meeting Hangouts Link:** [Link](https://meet.google.com/gra-vpip-uvu)
 - **Meeting Notes:** [Google Docs](https://docs.google.com/document/d/1ARLHrZ4SKIEwnSKgDaa39vS19dVIH45RjfERBaJ1vlg/edit?usp=sharing)
 
 ## Contact

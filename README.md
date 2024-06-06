@@ -152,11 +152,9 @@ seen [here](governance/related-groups/README.md)
 - Andrew Martin ([@sublimino](https://github.com/sublimino)),
   ControlPlane [Chair term: 3/17/2022 - 3/17/2024]
 
-
-
 ### Working groups
 
-The TAG has various working groups that focus on specific areas. Most community activity is organized by these working groups and our weekly community-wide meetings. These working groups provide an avenue for discussion, engagement, and sometimes publications with key stakeholders, although each may operate differently depending on their needs and workflows. Each working group is run by a lead who is responsible for the logistics of running the meeting and for ensuring the group reaches consensus on any issues raised. Each group's materials, including reports, white papers, documents, and reference architectures, can be found in the /community directory of this repository.
+The TAG's working groups focus on specific areas and organize most community activities, including weekly meetings. These groups facilitate discussions, engagement, and publications with key stakeholders, operating differently based on their needs. Each group, led by a responsible leader, reaches consensus on issues and manages logistics. All materials, such as reports, white papers, documents, and reference architectures, are in the repository's /community directory.
 
 | Project | Leads |
 |---------------------------------|---------------------------------------------|
@@ -166,8 +164,7 @@ The TAG has various working groups that focus on specific areas. Most community 
 | [Compliance](/community/compliance/README.md) | Anca Sailer, Robert Ficcaglia |
 | [Controls](/community/controls/README.md) | Jon Zeolla |
 | [Security Reviews](/assessments/README.md) | Justin Cappos, Eddie Knight|
-| [Software Supply Chain](/community/supply-chain/README.md) | Marina Moore, Michael Liebermann, John Kjell |
-
+| [Software Supply Chain](/community/supply-chain-security/README.md) | Marina Moore, Michael Liebermann, John Kjell |
 
 ## Additional information
 
@@ -178,8 +175,7 @@ the [CNCF project proposal process](https://github.com/cncf/toc/blob/main/proces
 projects should create a
 new [security review issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 with a
-[self-assessment](https://github.com/cncf/tag-security/blob/main/assessments/guide/self-assessment.md)
-.
+[self-assessment](https://github.com/cncf/tag-security/blob/main/assessments/guide/self-assessment.md).
 
 ### Past events and meetings
 
