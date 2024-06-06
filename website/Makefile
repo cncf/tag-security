@@ -5,7 +5,7 @@ deps:
 	rsync -avv ../ root/ \
 	--include='assessments' --include='assessments/**' \
 	--include='governance' --include='governance/**' \
-	--include='supply-chain-security' --include='supply-chain-security/**' \
+	--include='publications' --include='publications/**' \
 	--include='*.md' --exclude='*'
 
 	# Move over content such as graphics and logos
@@ -69,3 +69,9 @@ preview-build: deps
 		--buildFuture \
 		--minify
 	npx -y pagefind --site public
+
+clean:
+	@git clean -f .
+	@rm -rf public resource
+	@find root/* -type f ! -name '*.gitkeep' -print0 | xargs -0 rm -v
+	@echo "Finished removing anything residual"
