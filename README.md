@@ -41,7 +41,7 @@ There is a growing ecosystem of tools that promises to unlock developer producti
 ## Publications
 
 TAG Security has published several resources for the community, which can be
-found in the [publications](PUBLICATIONS.md) document.
+found in the [publications](publications/README.md) document.
 
 ## Governance
 
