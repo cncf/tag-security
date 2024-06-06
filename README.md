@@ -151,48 +151,22 @@ seen [here](governance/related-groups/README.md)
 - Andrew Martin ([@sublimino](https://github.com/sublimino)),
   ControlPlane [Chair term: 3/17/2022 - 3/17/2024]
 
-### On-going projects
 
-#### Compliance Working Group
 
-[Compliance Working Group](./compliance) is cross-disciplinary and focused on bridging purely technical issues to broader legal and regulatory workflows:
-not only the prevention of system breaches, but also considering supply chain, operators, data and AI failures while simultaneously considering auditability,
-non-repudiation, legally required forensic evidence, etc. - across all the various activities required of cloud native operators of all sizes.
-The Compliance WG plans to curate vendor neutral tools for evidence collection, chain-of-custody in audits, as well as automated workflows for continuous compliance authoring and assessment.
+### Working groups
 
-Weekly meetings at 10:00 AM ET (60 min) [Check My Time](https://mytime.io/10am/ET)
+The TAG has various working groups that focus on specific areas. Most community activity is organized by these working groups and our weekly community-wide meetings. These working groups provide an avenue for discussion, engagement, and sometimes publications with key stakeholders, although each may operate differently depending on their needs and workflows. Each working group is run by a lead who is responsible for the logistics of running the meeting and for ensuring the group reaches consensus on any issues raised. Each group's materials, including reports, white papers, documents, and reference architectures, can be found in the /community directory of this repository.
 
-See [CNCF calendar](https://calendar.google.com/calendar/u/0/embed?src=0b8u5el8ta4s93t2cm72tuvhhk@group.calendar.google.com&ctz=America/Los_Angeles) for invite.
+| Project                         | Leads                                       |
+|---------------------------------|---------------------------------------------|
+| [Applied Research](/community/research/README.md)               | Andrés Vega                                 |
+| [Automated Governance](/community/automated-governance/README.md)             | Andres Vega, Brand Keller                   |
+| [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres    |
+| [Compliance](/community/compliance/README.md)                   | Anca Sailer, Robert Ficcaglia               |
+| [Controls](/community/controls/README.md)                    | Jon Zeolla                                  |
+| [Security Reviews](/assessments/README.md)              | Justin Cappos, Eddie Knight                 |
+| [Software Supply Chain](/community/supply-chain/README.md)           | Marina Moore, Michael Liebermann, John Kjell            |
 
-Meeting link: [Zoom meeting](https://zoom.us/j/92729235315?pwd=ZFIxU3RSanlVODh4a1g2SFdJOGpoZz09)
-
-Meeting [notes link](https://docs.google.com/document/d/1z9xvt-Z97j4CtEH1-nR9sMWul7jQkUi_fNY7BdMPgxM/edit#heading=h.88owgl3gm8w4)
-
-#### Security reviews
-
-[Security reviews](./assessments) are a collaborative process for the benefit of
-cloud native projects and prospective users by creating a consistent overview of
-the project and its risk profile.
-
-Facilitator: Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)),
-New York University
-
-Co-chair representatives: @PushkarJ @eddie-knight
-
-#### Software Supply Chain Security
-
-Software Supply Chain attacks have come to the wider community's attention
-following recent high-profile attack, but have been an ongoing threat for a long
-time. With the ever growing importance of free and open source software,
-software [supply chain security](./supply-chain-security/README.md) is crucial,
-particularly in cloud native environments where everything is software-defined.
-
-Weekly meetings at 8:00 AM PT (50 min) (see your
-timezone [here](https://time.is/0800_today_in_PT?CNCF_Security_TAG_Supply_Chain_WG_Meeting))
-See [CNCF calendar](https://www.cncf.io/calendar/) for invite.
-
-Facilitator for current deliverables is listed on
-the [issue](https://github.com/cncf/tag-security/issues/679)
 
 ## Additional information
 
