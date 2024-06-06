@@ -125,7 +125,7 @@ seen [here](governance/related-groups/README.md)
 | Name                  | Organization            | Term                | Handle    |
 |-----------------------|------------------------|---------------------|-----------|
 | Pushkar Joglekar      | Independent            | June, 2023 - June, 2025 | @PushkarJ |
-| Marina Moore          | NYU                    | October, 2023 - October, 2025 | @mnm678   |
+| Marina Moore          | Independent                  | October, 2023 - October, 2025 | @mnm678   |
 | Eddie Knight          | Sonatype               | May, 2024 - May, 2026 | @eddie-knight |
 
 
