@@ -9,6 +9,7 @@
 - [Slack Information](#communications)
 - [New Members](#new-members)
 - [Members](#members)
+- [Working Groups](#working-groups)
 <!-- markdown-link-check-enable -->
 
 ## Objective
