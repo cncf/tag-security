@@ -1,4 +1,3 @@
 {{ $filepath := .Get 0 }}
-{{ $raw := readFile $filepath }}
-{{ $content := $raw | replaceRE `(\[.*?\]\(.*?)(\.md)(\))` "${1}${3}" }}
+{{ $content := readFile $filepath }}
 {{ $content | markdownify }}

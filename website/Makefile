@@ -1,11 +1,10 @@
-deps:
+deps: clean
 	git submodule update --init --recursive # TODO: the hugo theme doesn't need to live in this directory
 
 	# Move select content from the root level into the website directory.
 	rsync -avv ../ root/ \
 	--include='assessments' --include='assessments/**' \
 	--include='governance' --include='governance/**' \
-	--include='supply-chain-security' --include='supply-chain-security/**' \
 	--include='*.md' --exclude='*'
 
 	# Move over content such as graphics and logos
@@ -69,3 +68,9 @@ preview-build: deps
 		--buildFuture \
 		--minify
 	npx -y pagefind --site public
+
+clean:
+	@git clean -f .
+	@rm -rf public resource
+	@find root/* -type f ! -name '*.gitkeep' -print0 | xargs -0 rm -v
+	@echo "Finished removing anything residual"
