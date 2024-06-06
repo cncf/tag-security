@@ -122,34 +122,37 @@ seen [here](governance/related-groups/README.md)
 
 ### Security TAG Chairs
 
-- Pushkar Joglekar ([@PushkarJ](https://github.com/PushkarJ)), Independent [Chair term: 6/3/2023 - 6/3/2025]
-- Marina Moore ([@mnm678](https://github.com/mnm678)), NYU [Chair term: 10/3/2023 - 10/3/2025]
-- Eddie Knight ([@eddie-knight](https://github.com/eddie-knight)), Sonatype [Chair term: 5/6/2024 - 5/6/2026]
+| Name                  | Organization            | Term                | Handle    |
+|-----------------------|------------------------|---------------------|-----------|
+| Pushkar Joglekar      | Independent            | June, 2023 - June, 2025 | @PushkarJ |
+| Marina Moore          | NYU                    | October, 2023 - October, 2025 | @mnm678   |
+| Eddie Knight          | Sonatype               | May, 2024 - May, 2026 | @eddie-knight |
+
 
 ### Tech Leads
 
-- Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York
-  University
-- Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), Styra
-- Andres Vega ([@anvega](https://github.com/anvega))
-- Ragashree Shekar ([@ragashreeshekar](https://github.com/ragashreeshekar)), Independent
-- Michael Lieberman ([@mlieberman85](https://github.com/mlieberman85)), Kusari
+| Name                  | Organization            | Handle              |
+|-----------------------|------------------------|---------------------|
+| Justin Cappos         | New York University    | @JustinCappos       |
+| Ash Narkar            | Styra                  | @ashutosh-narkar    |
+| Andrés Vega           | M42                    | @anvega             |
+| Ragashree Shekar      | Independent            | @ragashreeshekar    |
+| Michael Lieberman     | Kusari                 | @mlieberman85       |
+| John Jkell    | TestifySec                 | @jkjell       |
+
 
 ### Security TAG Chair Emeriti
 
-- Dan Shaw ([@dshaw](https://github.com/dshaw)),
-  PayPal [Chair term: 6/3/2019 - 9/3/2020]
-- Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair term:
-  6/3/2019 - 6/3/2021]
-- Jeyappragash JJ ([@pragashj](https://github.com/pragashj)),
-  Tetrate.io [Chair term: 6/3/2019 - 6/3/2021]
-- Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)),
-  Apple [Chair term: 9/28/2020 - 2/4/2022]
-- Brandon Lum ([@lumjjb](https://github.com/lumjjb)), Google [Chair term:
-  6/3/2021 - 6/3/2023]
-- Aradhana Chetal ([@achetal01](https://github.com/achetal01)), TIAA [Chair term: 6/3/2021 - 9/3/2023]
-- Andrew Martin ([@sublimino](https://github.com/sublimino)),
-  ControlPlane [Chair term: 3/17/2022 - 3/17/2024]
+| Name                  | Organization            | Term                | Handle    |
+|-----------------------|------------------------|---------------------|-----------|
+| Dan Shaw              | PayPal                 | June, 2019 - September, 2020 | @dshaw    |
+| Sarah Allen           |                        | June, 2019 - June, 2021 | @ultrasaurus |
+| Jeyappragash JJ       | Tetrate.io             | June, 2019 - June, 2021 | @pragashj |
+| Emily Fox             | Apple                  | September, 2020 - February, 2022 | @TheFoxAtWork |
+| Brandon Lum           | Google                 | June, 2021 - June, 2023 | @lumjjb   |
+| Aradhana Chetal       | TIAA                   | June, 2021 - September, 2023 | @achetal01 |
+| Andrew Martin         | ControlPlane           | March, 2022 - March, 2024 | @sublimino|
+
 
 ### On-going projects
 
