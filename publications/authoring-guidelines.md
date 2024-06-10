@@ -1,4 +1,4 @@
-# Publishing Guidelines and Standards
+# Authoring Guidelines and Standards
 
 The purpose of these guidelines is to ensure the production of high-quality, consistent, and impactful publications. Most pieces are authored as collaborative knowledge production efforts within working groups, under the guidance of a chair or technical leader.
 The topics tend to be sharp under the purview of a working group, for instance, “Software Supply Chain Best Practices,” “Secure Software Factory,” or “Open and Secure - A Manual for Practicing Threat Modeling to Assess and Fortify Open Source Security,” but sometimes cover broader themes like cloud native security white papers, the lexicon, and use cases and personas.
@@ -9,6 +9,8 @@ While some of our publications serve as "tour guides" rather than comprehensive 
 We intentionally maintain a low-friction, low-barrier approach to publishing to keep these efforts enjoyable and accessible.
 However, we ask authors to consider these guidelines upfront, as the proofing and editorial work often involves significant effort from volunteers. Unlike professionals at a publishing house, these volunteers juggle these tasks alongside their regular commitments. To ease this burden, we encourage authors to strive for the highest quality in their initial drafts, ensuring clarity, accuracy, and coherence from the start.
 This consideration helps make the collaborative process more efficient and enjoyable for everyone involved.
+
+For detailed guidelines on creating papers and delivering artifacts, refer to [Process for Creating Papers](process-for-creating-papers.md) and [Publishing Protocols for Project Deliverables](publishing-protocols.md).
 
 ## Initial Publishing Guidelines and Standards
 
