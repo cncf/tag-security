@@ -6,7 +6,7 @@ The controls catalog ensures the usability of CNCF deliverables by GRC professio
 
 ## Impact
 
-This initiative aims to help various stakeholders by providing a standardized set of controls mapped to relevant frameworks and regulations, enabling easier compliance and security assessments in cloud native environments.
+This initiative aims to provide a method for assessing environments against a standardized set of controls mapped to relevant frameworks and regulations, enabling easier compliance and security assessments in cloud native environments.
 
 ## Meeting Information
 
