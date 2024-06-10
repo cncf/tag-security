@@ -21,7 +21,7 @@
             {{ partial "toc.html" . }}
           </aside>
           <main class="col-12 col-md-9 col-xl-7 pl-md-5" role="main">
-            {{ partial "version-banner.html" . }}
+            {{ partial "under-construction-tmp" }}
             {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
             {{ with .Params.Category}}<div class="category"><i class="{{ lower . }}"></i>{{ upper . }}</div>{{ end }}
             {{ block "main" . }}{{ end }}

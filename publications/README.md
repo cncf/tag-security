@@ -103,15 +103,9 @@ them
 
 - [Markdown](https://github.com/cncf/tag-security/tree/main/supply-chain-security/compromises)
 
-
-
 ## Use Cases & Personas
 
 List of use cases to enable secure access, policy control and safety for users
 of cloud native technology
 
 - [Markdown](https://github.com/cncf/tag-security/blob/main/usecase-personas/README.md)
-
-
-
-
