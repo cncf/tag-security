@@ -30,6 +30,7 @@ of compromise needs added, please include that as well.
 <!-- cSpell:disable -->
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
+| [3proxy signing incident](2024/laixi-3proxy.md) | 2024 | Trust and Signing | [1](https://news.sophos.com/en-us/2024/04/09/smoke-and-screen-mirrors-a-strange-signed-backdoor/) |
 | [xz backdoor incident](2024/xz.md) | 2024 | Malicious Maintainer | [1](https://cloudsecurityalliance.org/blog/2024/04/25/navigating-the-xz-utils-vulnerability-cve-2024-3094-a-comprehensive-guide) |
 | [GitGot: using GitHub repositories as exfiltration store](2024/gitgot.md) | 2024 | Trust and Signing | [1](https://www.reversinglabs.com/blog/gitgot-cybercriminals-using-github-to-store-stolen-data) |
 | [ManageEngine xmlsec dependency](2023/xmlsec-manageengine.md) | 2023 | Outdated Dependencies | [1](ttps://flashpoint.io/blog/manageengine-apache-santuario-cve-2022-47966) |
