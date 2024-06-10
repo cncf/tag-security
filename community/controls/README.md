@@ -2,7 +2,7 @@
 
 ## Overview
 
-This controls catalogue is focused on mapping to existing frameworks and regulations (CSA, NIST, FedRamp, SOX, GDPR, etc.), conversion to machine-readable format (OSCAL, JSON, etc.), inclusion of tests to validate/verify (both process and technical tests as appropriate), and application to security reviews to improve consistency of CNCF Security TAG reviews. It should also address requirements for Auditors for Cloud Native Platforms.
+The controls catalog ensures the usability of CNCF deliverables by GRC professionals and Auditors of Cloud Native systems. The primary goal is to support quickly identifying the controls status of cloud-native environments, and methods to share the output of those assessments in machine readable formats (OSCAL, JSON, etc.). These outputs should also map to existing frameworks and regulations (CSA, NIST, FedRAMP, SOX, GDPR, etc.), and provide guidance to properly validate and verify administrative and technical controls.
 
 ## Impact
 
