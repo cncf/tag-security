@@ -1,46 +1,39 @@
-# CNCF Security Technical Advisory Group
+# Security Technical Advisory Group
 
-<!-- cspell:disable -->
-<!-- markdownlint-disable-next-line MD033 MD013 -->
-<img src="design/logo/cloud-native-security-horizontal-darkmodesafe.svg" alt="Cloud Native Security logo" width="400"/>
-<!-- cSpell:enable -->
+![Cloud Native Security Logo](/design/logo/cloud-native-security-horizontal-darkmodesafe.svg)
 
+<!-- markdown-link-check-disable -->
 ## Quick links
 
 - [Meeting Information](#meeting-times)
 - [Slack Information](#communications)
 - [New Members](#new-members)
 - [Members](#members)
+<!-- markdown-link-check-enable -->
 
 ## Objective
 
-STAG facilitates collaboration to discover and produce resources that enable
+The CNCF Security Technical Advisory Group facilitates collaboration to discover and produce resources that enable
 secure access, policy control, and safety for operators, administrators,
 developers, and end-users across the cloud native ecosystem.
 
 ## Background
 
-“Cloud Native” is open source cloud computing for applications — a complete
-trusted toolkit for modern architectures. There are multiple projects which
-address key parts of the problem of providing access controls and addressing
-safety concerns. Each of these adds value, yet for these technical solutions to
-be capable of working well together and manageable to operate they will need a
-minimal shared context of what defines a secure system architecture.
+Cloud Native describes the building, deploying, and operating of modern applications in cloud computing environments, typically using open source. This complex ecosystem composed of different open source projects presents an increasingly complicated technology risk landscape.
+While there are several projects in the cloud native ecosystem that address trust, safety, and security in the dynamic interplay between the different layers of infrastructure and application services, the technological shift demands application and information security be rethought through the lens of developer experience as close to applying software engineering to design for security considerations in the effort to safeguard an integrated cloud native ecosystem as a whole.
 
 ## Vision
 
-There is a future where operators, administrators and developers feel confident
-creating new cloud native applications. They use cloud technologies with clear
-understanding of risks and the ability to validate that their security policy
-decisions are reflected in deployed software.
+We believe in a future where the probability and impact of attacks, breaches, and compromises are significantly reduced. Where the most common risks of today are not just mitigated but made implausible. We believe developers and operators can be empowered to understand better and be reassured by the posture of the systems they build and run through the informed use of cloud technologies with clear
+understanding of responsibility and risks and the unlocked ability to validate that their architectural intent meets compliance and regulatory objectives.
 
-We envision that there could exist an ecosystem of tools that can simplify the
-experience of cloud native operators, administrators and developers, including:
+<!-- cSpell:ignore sociotechnical -->
+There is a growing ecosystem of tools that promises to unlock developer productivity and operational efficiency. We strive to fulfill the human side of the sociotechnical equation to acceleration and attain that promise including:
 
-1. System security architecture that understands and accommodates the ever
+1. Consumable system security architectures that account for the ever
    growing heterogeneity of systems and provides a framework to protect
    resources and data while servicing their users.
-2. Common vocabulary and open source libraries that make it easy for developers
+2. Common lexicon and open source libraries that make it easy for developers
    to create and deploy apps that meet system security requirements.
 3. Common libraries and protocols that enable people to reason about the
    security of the system, such as auditing and explainability features.
@@ -48,17 +41,17 @@ experience of cloud native operators, administrators and developers, including:
 ## Publications
 
 TAG Security has published several resources for the community, which can be
-found in the [publications](PUBLICATIONS.md) document.
+found under [publications](publications/README.md).
 
 ## Governance
 
-[STAG charter](governance/charter.md) outlines the scope of our group
-activities, as part of our [governance process](governance) which details how we
+[Security TAG charter](governance/charter.md) outlines the scope of our group
+activities, as part of our [governance process](governance/README.md) which details how we
 work.
 
 ## Communications
 
-Anyone is welcome to join our open discussions of STAG projects and share news
+Anyone is welcome to join our open discussions of Security TAG projects and share news
 related to the group's mission and charter. Much of the work of the group
 happens outside of Security TAG meetings and we encourage project teams to share
 progress updates or post questions in these channels:
@@ -71,8 +64,8 @@ Group communication:
 Leadership:
 
 - To reach the leadership team (chairs & tech leads), email
-  cncf-tag-security-leads@lists.cncf.io
-- To reach the chairs, email cncf-tag-security-chairs@lists.cncf.io
+  [cncf-tag-security-leads@lists.cncf.io](mailto:cncf-tag-security-leads@lists.cncf.io)
+- To reach the chairs, email [cncf-tag-security-chairs@lists.cncf.io](mailto:cncf-tag-security-chairs@lists.cncf.io)
 
 ### Slack governance
 
@@ -81,52 +74,17 @@ and posting to the channels.
 
 ## Meeting times
 
-Group meeting times are listed below:
+For our members in North and South America, we host weekly sessions each Wednesday at 10 am (UTC-7). To participate, simply use the following Zoom link: <https://zoom.us/j/99809474566>. The meeting ID is 998 0947 4566.
 
-- US:   Bi-weekly on Wednesdays at 10:00am UTC-7 (see your timezone
-  [here](https://time.is/1000_today_in_PT?CNCF_Security_TAG_US_Meeting))
-- EMEA: Bi-weekly on Wednesdays at 01:00pm London (see your timezone
-  [here](https://time.is/1300_today_in_London?CNCF_Security_TAG_EMEA_Meeting))
+Meanwhile, participants from Europe, the Middle East, and Africa (EMEA) can join bi-weekly meetings on Wednesdays at 1 pm UTC+0, which adjusts to UTC+1 when daylight saving time is in effect. Join us through this Zoom link: <https://zoom.us/j/99917523142>, with the meeting ID: 999 1752 3142.
 
-[Meeting minutes and agenda](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
+To find the corresponding time in your local area, please see your timezone [here](https://time.is/).
 
-### Calendar
+This dual schedule ensures that no matter where you are, you'll have a place in our conversations.
 
-- Here is a [TAG-Security curated calendar](https://calendar.google.com/calendar/u/0?cid=MGI4dTVlbDh0YTRzOTN0MmNtNzJ0dXZoaGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
-with the main meetings and working groups.
-- See the [CNCF Calendar](https://www.cncf.io/calendar/) for a list of all CNCF calendar
-invites.
+We invite you to mark your calendars and join the dialogue. For your convenience, all meetings are listed on the main [CNCF calendar](https://www.cncf.io/calendar/) as well as the [TAG Security Calendar](https://calendar.google.com/calendar/u/0?cid=MGI4dTVlbDh0YTRzOTN0MmNtNzJ0dXZoaGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ). These calendars are updated regularly to ensure that you stay informed of all upcoming meetings and events.
 
-Got something to bring up or share? Review how to get a topic or presentation
-added to the Agenda on our [process](governance/process.md#getting-on-the-agenda) page.
-
-### Zoom Meeting Details
-
-<!-- cSpell:ignore cncftagsecurity -->
-Meeting Link:
-[zoom.us/my/cncftagsecurity](https://zoom.us/j/7375677271?pwd=VkxmTjJ6TDVHK29Qb2tQakE4SitWZz09)
-(Password: 77777)
-
-One tap mobile:
-
-| Location | Number |
-| --- | --- |
-| US - New York | +16465588656,,7375677271# |
-| US - San Jose | +16699006833,,7375677271# |
-
-Dial by your location:
-
-| Location | Number |
-| --- | --- |
-| US - New York | +1 646 558 8656 |
-| US - San Jose | +1 669 900 6833|
-| US - Toll-free | 877 369 0926 |
-| US - Toll-free | 855 880 1246 |
-| Australia - Toll-free | 1800 945 157 |
-
-Or [find your local number](https://zoom.us/u/alwlmxlNn).
-
-Meeting ID: 737 567 7271
+Got something to bring up or share? Review how to get a topic or presentation added to the Agenda on our [process](governance/process.md#getting-on-the-agenda) page.
 
 ## Gatherings
 
@@ -136,7 +94,7 @@ a [github issue](https://github.com/cncf/tag-security/issues/new) for an event
 and add to list below:
 
 <!-- markdownlint-disable-next-line MD013 -->
-- [Cloud Native SecurityCon](https://events.linuxfoundation.org/cloudnativesecuritycon-north-america/) North America, Feb. 1-2 2023
+- [Cloud Native SecurityCon 24](https://events.linuxfoundation.org/cloudnativesecuritycon-north-america/) June 26-27, 2024 in Seattle, Washington
 
 [Past events](past-events.md)
 
@@ -149,11 +107,11 @@ our [New Members Page](NEW-MEMBERS.md)
 
 There are several groups that are affiliated to or do work and cover topics
 relevant to the work of Security TAG. These can be
-seen [here](governance/related-groups/)
+seen [here](governance/related-groups/README.md)
 
 ## History
 
-- TAG-Security - renamed STAG ([TOC Issue 549](https://github.com/cncf/toc/issues/549))
+- TAG-Security - renamed Security TAG ([TOC Issue 549](https://github.com/cncf/toc/issues/549))
 - SAFE WG - renamed to CNCF Security TAG
 - [(Proposed) CNCF Policy Working Group](/policy-wg-merging.md) - Merged into
   SAFE WG
@@ -162,51 +120,56 @@ seen [here](governance/related-groups/)
 
 <!-- cSpell:disable -->
 
-### STAG Chairs
+### Security TAG Chairs
 
-- Brandon Lum ([@lumjjb](https://github.com/lumjjb)), Google [Chair term:
-  6/3/2021 - 6/3/2023]
-- Aradhana Chetal ([@achetal01](https://github.com/achetal01)),
-  TIAA [Chair term: 6/3/2021 - 6/3/2023]
-- Andrew Martin ([@sublimino](https://github.com/sublimino)), Control
-  Plane [Chair term: 3/17/2022 - 3/17/2024]
+| Name                  | Organization            | Term                | Handle    |
+|-----------------------|------------------------|---------------------|-----------|
+| Pushkar Joglekar      | Independent            | June, 2023 - June, 2025 | @PushkarJ |
+| Marina Moore          | Independent                  | October, 2023 - October, 2025 | @mnm678   |
+| Eddie Knight          | Sonatype               | May, 2024 - May, 2026 | @eddie-knight |
+
 
 ### Tech Leads
 
-- Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York
-  University
-- Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), Styra
-- Andres Vega ([@anvega](https://github.com/anvega)), VMWare
-- Pushkar Joglekar ([@PushkarJ](https://github.com/PushkarJ)), VMWare
-- Ragashree Shekar ([@ragashreeshekar](https://github.com/ragashreeshekar)), TBD
-- Michael Lieberman ([@mlieberman85](https://github.com/mlieberman85)), TBD
-- Marina Moore ([@mnm678](https://github.com/mnm678)), NYU
+| Name                  | Organization            | Handle              |
+|-----------------------|------------------------|---------------------|
+| Justin Cappos         | New York University    | @JustinCappos       |
+| Ash Narkar            | Styra                  | @ashutosh-narkar    |
+| Andrés Vega           | M42                    | @anvega             |
+| Ragashree Shekar      | Independent            | @ragashreeshekar    |
+| Michael Lieberman     | Kusari                 | @mlieberman85       |
+| John Kjell    | TestifySec                 | @jkjell       |
 
-### STAG Chair Emeriti
 
-- Dan Shaw ([@dshaw](https://github.com/dshaw)),
-  PayPal [Chair term: 6/3/2019 - 9/3/2020]
-- Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair term:
-  6/3/2019 - 6/3/2021]
-- Jeyappragash JJ ([@pragashj](https://github.com/pragashj)),
-  Tetrate.io [Chair term: 6/3/2019 - 6/3/2021]
-- Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)),
-  Apple [Chair term: 9/28/2020 - 2/4/2022]
+### Security TAG Chair Emeriti
+
+| Name                  | Organization            | Term                | Handle    |
+|-----------------------|------------------------|---------------------|-----------|
+| Dan Shaw              | PayPal                 | June, 2019 - September, 2020 | @dshaw    |
+| Sarah Allen           |                        | June, 2019 - June, 2021 | @ultrasaurus |
+| Jeyappragash JJ       | Tetrate.io             | June, 2019 - June, 2021 | @pragashj |
+| Emily Fox             | Apple                  | September, 2020 - February, 2022 | @TheFoxAtWork |
+| Brandon Lum           | Google                 | June, 2021 - June, 2023 | @lumjjb   |
+| Aradhana Chetal       | TIAA                   | June, 2021 - September, 2023 | @achetal01 |
+| Andrew Martin         | ControlPlane           | March, 2022 - March, 2024 | @sublimino|
+
 
 ### On-going projects
 
-#### Policy team
+#### Compliance Working Group
 
-Policy is an essential component of a secure system.
+[Compliance Working Group](./compliance) is cross-disciplinary and focused on bridging purely technical issues to broader legal and regulatory workflows:
+not only the prevention of system breaches, but also considering supply chain, operators, data and AI failures while simultaneously considering auditability,
+non-repudiation, legally required forensic evidence, etc. - across all the various activities required of cloud native operators of all sizes.
+The Compliance WG plans to curate vendor neutral tools for evidence collection, chain-of-custody in audits, as well as automated workflows for continuous compliance authoring and assessment.
 
-[Bi-weekly meetings](https://docs.google.com/document/d/1ihFfEfgViKlUMbY2NKxaJzBkgHh-Phk5hqKTzK-NEEs/edit?usp=sharing)
-at 3:00 PM PT focus on policy concerns and initiatives.
+Weekly meetings at 10:00 AM ET (60 min) [Check My Time](https://mytime.io/10am/ET)
 
-Co-leads
+See [CNCF calendar](https://calendar.google.com/calendar/u/0/embed?src=0b8u5el8ta4s93t2cm72tuvhhk@group.calendar.google.com&ctz=America/Los_Angeles) for invite.
 
-- TBD
+Meeting link: [Zoom meeting](https://zoom.us/j/92729235315?pwd=ZFIxU3RSanlVODh4a1g2SFdJOGpoZz09)
 
-Co-chair representative: @achetal01
+Meeting [notes link](https://docs.google.com/document/d/1z9xvt-Z97j4CtEH1-nR9sMWul7jQkUi_fNY7BdMPgxM/edit#heading=h.88owgl3gm8w4)
 
 #### Security reviews
 
@@ -217,16 +180,14 @@ the project and its risk profile.
 Facilitator: Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)),
 New York University
 
-Facilitator: Matthew Giassa ([@Iaxes](https://github.com/iaxes)), Cisco
-
-Co-chair representative: @lumjjb
+Co-chair representatives: @PushkarJ @eddie-knight
 
 #### Software Supply Chain Security
 
 Software Supply Chain attacks have come to the wider community's attention
 following recent high-profile attack, but have been an ongoing threat for a long
 time. With the ever growing importance of free and open source software,
-software [supply chain security](./supply-chain-security) is crucial,
+software [supply chain security](./supply-chain-security/README.md) is crucial,
 particularly in cloud native environments where everything is software-defined.
 
 Weekly meetings at 8:00 AM PT (50 min) (see your
@@ -238,10 +199,10 @@ the [issue](https://github.com/cncf/tag-security/issues/679)
 
 ## Additional information
 
-### CNCF STAG reviews
+### CNCF Security TAG reviews
 
 As part of
-the [CNCF project proposal process](https://github.com/cncf/toc/blob/main/process/project_proposals.md)
+the [CNCF project proposal process](https://github.com/cncf/toc/blob/main/process)
 projects should create a
 new [security review issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 with a

@@ -63,7 +63,7 @@ identify compliance violations and misconfigurations early to create short and a
 improvement. This approach enables security failures to follow familiar workflows raised for other issues in the
 pipeline (e.g., bug fixes or continuous integration failures), which already require resolution before moving software
 further in the pipeline. The modern security lifecycle for this model revolves around the development of code that
-adheres to recommended design patterns (e.g., [12-factor](https://12factor.net/)<sup>1</sup>) and ensures the integrity
+adheres to recommended design patterns (e.g., [12-factor](https://12factor.net/)) and ensures the integrity
 of the development environment.
 
 #### Distribute
@@ -236,7 +236,7 @@ Security hardening during the development phase forms a critical component in th
 that security requirements must be introduced early in software development and treated in the same manner as any other
 design requirement. These requirements are typically based on business needs around risk and compliance and can be an
 outcome of a threat modeling exercise. Addressing these needs in the early phases prevents redoing work later in the
-lifecycle, which would otherwise slow down the DevOps pipeline, and increase overall costs [^6]. DevOps teams must also
+lifecycle, which would otherwise slow down the DevOps pipeline, and increase overall costs [^5]. DevOps teams must also
 leverage purpose-built tools to identify security misconfigurations and vulnerabilities before the deployment of these
 applications. Equally important is that these tools integrate seamlessly into existing and familiar tools leveraged by
 DevOps teams to complement agility with security and not impede it. For example, tools need to perform the scanning of
@@ -536,7 +536,7 @@ Any orchestration system has numerous threats that impact the overall security o
 at runtime. Malicious access to an orchestrator’s API, unauthorized access and changes to the key-value store,
 orchestrator dashboard to control clusters, intercept control plane traffic, API misuse, intercepting application
 traffic, and so on are all potential threat areas. It is important to use best practices and configuration hardening for
-any orchestrator to prevent exposure to these threats [^7]. It is also essential to monitor and detect any changes to
+any orchestrator to prevent exposure to these threats [^6]. It is also essential to monitor and detect any changes to
 the initial configurations made in runtime to ensure the continued security posture of the cluster. Other security best
 practices such as minimizing administrative access to the control plane, segregation of duties and principle of the
 least privilege should be enforced.
@@ -786,9 +786,9 @@ encryption requirements for their architecture.
 Encryption services can be implemented for data in transit (protecting data as it traverses the network) and for data at
 rest (protecting data on disk). The encryption may be implemented in the storage client or storage server and
 granularity of the encryption will vary by system (e.g. per volume, per group or global keys). In many systems, data in
-transit is protected with TLS (which has the added benefit of providing an authentication layer via certificates [^8].
+transit is protected with TLS (which has the added benefit of providing an authentication layer via certificates [^7].
 Older protocols (such as iscsi) may be harder to secure in transit (although more complex solutions such as IPsec or
-encrypted VPNs [^9] can be used). Data at rest is generally protected using standard symmetric encryption algorithms
+encrypted VPNs [^8] can be used). Data at rest is generally protected using standard symmetric encryption algorithms
 such as AES, and may be deployed with specific modes of encryption such as XTS for block devices.
 
 Public Cloud storage that includes Block, Shared File System and Object Storage, may support data encryption with CMK
@@ -1476,11 +1476,9 @@ innovation, delivering more value to their customers with dramatically less effo
 for regulated sectors such as finance due to the complexity of their legacy systems, and compliance challenges including
 concerns raised by regulatory institutions. Let’s look at three main authorities in case of European Union:
 
-* [EBA](https://www.eba.europa.eu/sites/default/documents/files/documents/10180/2170121/5fa5cdde-3219-4e95-946d-0c0d05494362/Final%20draft%20Recommendations%20on%20Cloud%20Outsourcing%20%28EBA-Rec-2017-03%29.pdf?retry=1)
-  - The “European Banking Authority” is an independent authority that works to ensure effective and consistent
+* [EBA](https://www.eba.europa.eu/sites/default/documents/files/documents/10180/2170121/5fa5cdde-3219-4e95-946d-0c0d05494362/Final%20draft%20Recommendations%20on%20Cloud%20Outsourcing%20%28EBA-Rec-2017-03%29.pdf?retry=1) - The “European Banking Authority” is an independent authority that works to ensure effective and consistent
     prudential regulation and supervision across the EU banking sector.
-* [EIOPA](https://www.eiopa.europa.eu/sites/default/files/publications/eiopa_guidelines/guidelines_on_outsourcing_to_cloud_service_providers_en.pdf)
-  - The “European Insurance and Occupational Pensions Authority” is a European Union financial regulatory institution.
+* [EIOPA](https://www.eiopa.europa.eu/sites/default/files/publications/eiopa_guidelines/guidelines_on_outsourcing_to_cloud_service_providers_en.pdf) - The “European Insurance and Occupational Pensions Authority” is a European Union financial regulatory institution.
 * [ESMA](https://www.esma.europa.eu/press-news/esma-news/esma-publishes-cloud-outsourcing-guidelines) - The “European
   Securities and Markets Authority” works in the field of securities legislation and regulation to improve the
   functioning of financial markets in Europe, strengthening investor protection and cooperation between national
@@ -1545,7 +1543,7 @@ As these attacks become more prevalent, more intricate, and expand, cloud native
 significant focus on enterprises and DevOps teams than where it currently resides. We are seeing an increase in the use
 of security policies as code, but there is a lot of room for evolution and increased automation in security policy
 enforcement, detection and response. It’s evident that immediate and automated security intelligence and responses will
-be essential to thwart the attacks, and even self-heal from them. Perhaps even adapt and integrate § [^10] as they
+be essential to thwart the attacks, and even self-heal from them. Perhaps even adapt and integrate [^9] as they
 occur.
 
 Container forensics tools and technologies will need to evolve to keep pace with where cloud native is headed. This is
@@ -1842,17 +1840,15 @@ Runtime
 
 [^4]: Human capital is a vital asset necessary to the success of any organization, the corresponding intellectual property and relational capital brought as a result is equally in need of protection.
 
-[^5] [https://blog.aquasec.com/malicious-container-image-docker-container-host](https://blog.aquasec.com/malicious-container-image-docker-container-host)
+[^5]: According to Applied Software Measurement, Capers Jones, 1996 and adjusting for inflation - 85% of defects are introduced during coding with a cost of $41 to fix compared to a post release fix cost of $26,542.
 
-[^6]: According to Applied Software Measurement, Capers Jones, 1996 and adjusting for inflation - 85% of defects are introduced during coding with a cost of $41 to fix compared to a post release fix cost of $26,542.
+[^6]: cisecurity.org maintains a listing of benchmarks for hardening
 
-[^7]: cisecurity.org maintains a listing of benchmarks for hardening
-
-[^8] It is critical to note that while authentication is available for use, [mutual authentication](https://github.com/PushkarJ/tag-security/blob/cnswpv2/security-whitepaper/v1/cloud-native-security-whitepaper.md#zero-trust-architecture) is the preferred mechanism to not only verify the client but also the server (outsider versus insider).
+[^7]: It is critical to note that while authentication is available for use, [mutual authentication](https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md#zero-trust-architecture) is the preferred mechanism to not only verify the client but also the server (outsider versus insider).
 
 [^8]: Utilization of a VPN does not guarantee encryption.
 
-[^10]: The concept of regression proofing is best explained as a facet of antifragile behaviors within technology environments. Instead of remaining resilient and robust against adverse conditions and attacks, technology can proactively adapt and thrive when subjected to them.
+[^9]: The concept of regression proofing is best explained as a facet of antifragile behaviors within technology environments. Instead of remaining resilient and robust against adverse conditions and attacks, technology can proactively adapt and thrive when subjected to them.
 
 #### Acknowledgements
 <!-- cspell:disable -->

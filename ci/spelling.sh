@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
+set -eo pipefail
+shopt -s globstar
+
 function spellcheck () {
-    git diff --name-only --diff-filter=AM main $HEAD | grep '\.md$' | xargs --no-run-if-empty -L1 npx cspell --show-suggestions -c ./ci/spelling-config.json
+    FAILURE=0
+    git diff --name-only --diff-filter=AM main $HEAD -- ./**/*.md | \
+        xargs --no-run-if-empty -L1 npx cspell --show-suggestions -c ./ci/spelling-config.json || FAILURE=1
+    return $FAILURE
 }
 
 function printhelp () {
@@ -21,6 +27,7 @@ function printhelp () {
 }
 
 
+git config --global --add safe.directory /usr/src/app
 npm install -g cspell
 git fetch origin main:main
 # Print help if spellcheck fails
