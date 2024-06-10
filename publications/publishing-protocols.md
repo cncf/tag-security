@@ -2,7 +2,7 @@
 
 This guide helps TAG Security project leads deliver their artifacts effectively by leveraging past experiences and best practices.
 
-For detailed guidelines on creating papers and the expected standard, refer to [Process for Creating Papers](process-for-creating-papers.md) and [Publishing Guidelines and Standards](guidelines.md).
+For detailed guidelines on creating papers and the expected standard, refer to [Process for Creating Papers](paper-process.md) and [Publishing Guidelines and Standards](authoring-guidelines.md).
 
 ## Using GitHub Issues to Track Progress
 
