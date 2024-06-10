@@ -1,4 +1,4 @@
-# Malware Disguised as Installer from Korean Public Institution
+# Malware Disguised as Official Installer Used to Target Korean Public Institution
 
 ## Detailed Account
 
