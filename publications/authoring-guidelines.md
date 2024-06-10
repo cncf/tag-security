@@ -10,7 +10,7 @@ We intentionally maintain a low-friction, low-barrier approach to publishing to 
 However, we ask authors to consider these guidelines upfront, as the proofing and editorial work often involves significant effort from volunteers. Unlike professionals at a publishing house, these volunteers juggle these tasks alongside their regular commitments. To ease this burden, we encourage authors to strive for the highest quality in their initial drafts, ensuring clarity, accuracy, and coherence from the start.
 This consideration helps make the collaborative process more efficient and enjoyable for everyone involved.
 
-For detailed guidelines on creating papers and delivering artifacts, refer to [Process for Creating Papers](process-for-creating-papers.md) and [Publishing Protocols for Project Deliverables](publishing-protocols.md).
+For detailed guidelines on creating papers and delivering artifacts, refer to [Process for Creating Papers](paper-process.md) and [Publishing Protocols for Project Deliverables](publishing-protocols.md).
 
 ## Initial Publishing Guidelines and Standards
 
