@@ -1,3 +1,3 @@
-This directory is used at build time to store all of the top-level repo content for use in the website, pulled in by the `Makefile` command `deps`.
+This directory is used at build time to store all of the top-level repo content for use in the website, pulled in by the `Makefile` command `deps`, and emptied by `clean`
 
 Example Usage: `{{< include-markdown "root/README.md" >}}`

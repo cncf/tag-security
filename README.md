@@ -1,13 +1,15 @@
-# CNCF Security Technical Advisory Group
+# Security Technical Advisory Group
 
 ![Cloud Native Security Logo](/design/logo/cloud-native-security-horizontal-darkmodesafe.svg)
 
+<!-- markdown-link-check-disable -->
 ## Quick links
 
 - [Meeting Information](#meeting-times)
 - [Slack Information](#communications)
 - [New Members](#new-members)
 - [Members](#members)
+<!-- markdown-link-check-enable -->
 
 ## Objective
 
@@ -39,12 +41,12 @@ There is a growing ecosystem of tools that promises to unlock developer producti
 ## Publications
 
 TAG Security has published several resources for the community, which can be
-found in the [publications](PUBLICATIONS.md) document.
+found under [publications](publications/README.md).
 
 ## Governance
 
 [Security TAG charter](governance/charter.md) outlines the scope of our group
-activities, as part of our [governance process](governance) which details how we
+activities, as part of our [governance process](governance/README.md) which details how we
 work.
 
 ## Communications
@@ -105,7 +107,7 @@ our [New Members Page](NEW-MEMBERS.md)
 
 There are several groups that are affiliated to or do work and cover topics
 relevant to the work of Security TAG. These can be
-seen [here](governance/related-groups/)
+seen [here](governance/related-groups/README.md)
 
 ## History
 
@@ -120,34 +122,54 @@ seen [here](governance/related-groups/)
 
 ### Security TAG Chairs
 
-- Andrew Martin ([@sublimino](https://github.com/sublimino)), ControlPlane [Chair term: 3/17/2022 - 3/17/2024]
-- Pushkar Joglekar ([@PushkarJ](https://github.com/PushkarJ)), Independent [Chair term: 6/3/2023 - 6/3/2025]
-- Marina Moore ([@mnm678](https://github.com/mnm678)), NYU [Chair term: 10/3/2023 - 10/3/2025]
+| Name                  | Organization            | Term                | Handle    |
+|-----------------------|------------------------|---------------------|-----------|
+| Pushkar Joglekar      | Independent            | June, 2023 - June, 2025 | @PushkarJ |
+| Marina Moore          | Independent                  | October, 2023 - October, 2025 | @mnm678   |
+| Eddie Knight          | Sonatype               | May, 2024 - May, 2026 | @eddie-knight |
+
 
 ### Tech Leads
 
-- Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York
-  University
-- Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), Styra
-- Andres Vega ([@anvega](https://github.com/anvega))
-- Ragashree Shekar ([@ragashreeshekar](https://github.com/ragashreeshekar)), Independent
-- Michael Lieberman ([@mlieberman85](https://github.com/mlieberman85)), Kusari
+| Name                  | Organization            | Handle              |
+|-----------------------|------------------------|---------------------|
+| Justin Cappos         | New York University    | @JustinCappos       |
+| Ash Narkar            | Styra                  | @ashutosh-narkar    |
+| Andrés Vega           | M42                    | @anvega             |
+| Ragashree Shekar      | Independent            | @ragashreeshekar    |
+| Michael Lieberman     | Kusari                 | @mlieberman85       |
+| John Kjell    | TestifySec                 | @jkjell       |
+
 
 ### Security TAG Chair Emeriti
 
-- Dan Shaw ([@dshaw](https://github.com/dshaw)),
-  PayPal [Chair term: 6/3/2019 - 9/3/2020]
-- Sarah Allen ([@ultrasaurus](https://github.com/ultrasaurus)), [Chair term:
-  6/3/2019 - 6/3/2021]
-- Jeyappragash JJ ([@pragashj](https://github.com/pragashj)),
-  Tetrate.io [Chair term: 6/3/2019 - 6/3/2021]
-- Emily Fox ([@TheFoxAtWork](https://github.com/TheFoxAtWork)),
-  Apple [Chair term: 9/28/2020 - 2/4/2022]
-- Brandon Lum ([@lumjjb](https://github.com/lumjjb)), Google [Chair term:
-  6/3/2021 - 6/3/2023]
-- Aradhana Chetal ([@achetal01](https://github.com/achetal01)), TIAA [Chair term: 6/3/2021 - 9/3/2023]
+| Name                  | Organization            | Term                | Handle    |
+|-----------------------|------------------------|---------------------|-----------|
+| Dan Shaw              | PayPal                 | June, 2019 - September, 2020 | @dshaw    |
+| Sarah Allen           |                        | June, 2019 - June, 2021 | @ultrasaurus |
+| Jeyappragash JJ       | Tetrate.io             | June, 2019 - June, 2021 | @pragashj |
+| Emily Fox             | Apple                  | September, 2020 - February, 2022 | @TheFoxAtWork |
+| Brandon Lum           | Google                 | June, 2021 - June, 2023 | @lumjjb   |
+| Aradhana Chetal       | TIAA                   | June, 2021 - September, 2023 | @achetal01 |
+| Andrew Martin         | ControlPlane           | March, 2022 - March, 2024 | @sublimino|
+
 
 ### On-going projects
+
+#### Compliance Working Group
+
+[Compliance Working Group](./compliance) is cross-disciplinary and focused on bridging purely technical issues to broader legal and regulatory workflows:
+not only the prevention of system breaches, but also considering supply chain, operators, data and AI failures while simultaneously considering auditability,
+non-repudiation, legally required forensic evidence, etc. - across all the various activities required of cloud native operators of all sizes.
+The Compliance WG plans to curate vendor neutral tools for evidence collection, chain-of-custody in audits, as well as automated workflows for continuous compliance authoring and assessment.
+
+Weekly meetings at 10:00 AM ET (60 min) [Check My Time](https://mytime.io/10am/ET)
+
+See [CNCF calendar](https://calendar.google.com/calendar/u/0/embed?src=0b8u5el8ta4s93t2cm72tuvhhk@group.calendar.google.com&ctz=America/Los_Angeles) for invite.
+
+Meeting link: [Zoom meeting](https://zoom.us/j/92729235315?pwd=ZFIxU3RSanlVODh4a1g2SFdJOGpoZz09)
+
+Meeting [notes link](https://docs.google.com/document/d/1z9xvt-Z97j4CtEH1-nR9sMWul7jQkUi_fNY7BdMPgxM/edit#heading=h.88owgl3gm8w4)
 
 #### Security reviews
 
@@ -158,14 +180,14 @@ the project and its risk profile.
 Facilitator: Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)),
 New York University
 
-Co-chair representatives: @sublimino @PushkarJ
+Co-chair representatives: @PushkarJ @eddie-knight
 
 #### Software Supply Chain Security
 
 Software Supply Chain attacks have come to the wider community's attention
 following recent high-profile attack, but have been an ongoing threat for a long
 time. With the ever growing importance of free and open source software,
-software [supply chain security](./supply-chain-security) is crucial,
+software [supply chain security](./supply-chain-security/README.md) is crucial,
 particularly in cloud native environments where everything is software-defined.
 
 Weekly meetings at 8:00 AM PT (50 min) (see your
