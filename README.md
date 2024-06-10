@@ -129,7 +129,6 @@ seen [here](governance/related-groups/README.md)
 | Marina Moore          | Independent                  | October, 2023 - October, 2025 | @mnm678   |
 | Eddie Knight          | Sonatype               | May, 2024 - May, 2026 | @eddie-knight |
 
-
 ### Tech Leads
 
 | Name                  | Organization            | Handle              |
@@ -140,7 +139,6 @@ seen [here](governance/related-groups/README.md)
 | Ragashree Shekar      | Independent            | @ragashreeshekar    |
 | Michael Lieberman     | Kusari                 | @mlieberman85       |
 | John Kjell    | TestifySec                 | @jkjell       |
-
 
 ### Security TAG Chair Emeriti
 
@@ -154,11 +152,10 @@ seen [here](governance/related-groups/README.md)
 | Aradhana Chetal       | TIAA                   | June, 2021 - September, 2023 | @achetal01 |
 | Andrew Martin         | ControlPlane           | March, 2022 - March, 2024 | @sublimino|
 
-
 ### Working groups
 
-The TAG's working groups focus on specific areas and organize most community activities, including weekly meetings. 
-These groups facilitate discussions, engagement, and publications with key stakeholders, operating differently based on their needs. 
+The TAG's working groups focus on specific areas and organize most community activities, including weekly meetings.
+These groups facilitate discussions, engagement, and publications with key stakeholders, operating differently based on their needs.
 Each group, led by a responsible leader, reaches consensus on issues and manages logistics. All materials, such as reports, white papers, documents, and reference architectures, are in the repository's /community directory.
 
 | Project | Leads |

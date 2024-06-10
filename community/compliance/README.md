@@ -1,4 +1,4 @@
- Compliance Working Group
+# Compliance Working Group
 
 Cloud Native systems shift technical and human workflows. The community has researched cloud native security, tackling software vulnerabilities, risk management, dependencies, GitOps, supply chain provenance, malicious attacks, threat models, and security assessments. Organizations must comply with privacy and data protection laws, ensuring compute and data integrity. These concerns require both technical configurations and complex human orchestration, especially for audits needing reviewable artifacts.
 

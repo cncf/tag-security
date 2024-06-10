@@ -2,7 +2,8 @@
 
 ## Overview
 
-The controls catalog ensures the usability of CNCF deliverables by GRC professionals and Auditors of Cloud Native systems. The primary goal is to support quickly identifying the controls status of cloud-native environments, and methods to share the output of those assessments in machine readable formats (OSCAL, JSON, etc.). These outputs should also map to existing frameworks and regulations (CSA, NIST, FedRAMP, SOX, GDPR, etc.), and provide guidance to properly validate and verify administrative and technical controls.
+The controls catalog ensures the usability of CNCF deliverables by GRC professionals and Auditors of Cloud Native systems. The primary goal is to support quickly identifying the controls status of cloud-native environments, and methods to share the output of those assessments in machine readable formats (OSCAL, JSON, etc.). 
+These outputs should also map to existing frameworks and regulations (CSA, NIST, FedRAMP, SOX, GDPR, etc.), and provide guidance to properly validate and verify administrative and technical controls.
 
 ## Impact
 
