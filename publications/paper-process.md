@@ -2,7 +2,7 @@
 
 This document provides a consistent mechanism for cloud native security to produce community papers, ensure they are reviewed, and subsequently published. This content complements existing proposal-to-project instructions.
 
-For detailed guidelines on publishing standards and protocols, refer to [Publishing Protocols for Project Deliverables](publishing-protocols.md) and [Publishing Guidelines and Standards](guidelines.md).
+For detailed guidelines on publishing standards and protocols, refer to [Publishing Protocols for Project Deliverables](publishing-protocols.md) and [Publishing Guidelines and Standards](authoring-guidelines.md).
 
 ## Proposal
 
