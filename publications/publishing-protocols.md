@@ -27,7 +27,7 @@ CNCF can assist with:
 - Blog posts
 - Social media outreach
 
-Publishing around KubeCon allows for broader sharing through various forums and sessions.
+Publishing around KubeCon allows for broader sharing through various forums and sessions. It also requires more lead time, as CNCF staff gets busy just before KubeCon.
 
 ## Define Stages of Publication
 
@@ -47,10 +47,11 @@ A blog post acts as a trailer for the deliverable. It should include:
 - Review the artifact for brevity, correctness, and flow multiple times with different goals.
 - Ensure all contributors and reviewers are credited in the PDF or markdown.
 - Engage CNCF early to avoid last-minute rushes.
+- Define the scope early in the process, and revisit it often to avoid scope creep.
 
 ## Sharing Far and Wide
 
-Seek help from CNCF, Co-chairs, and Tech Leads to share the artifact. Encourage contributors and reviewers to share it within their networks. Use CNCF mailing lists during RFC and after publication for wider reach.
+Seek help from CNCF, Co-chairs, and Tech Leads to share the artifact. Encourage contributors and reviewers to share it within their networks. Use CNCF mailing lists during RFC and after publication for wider reach. 
 
 ## Take Ownership and Give Credit
 
