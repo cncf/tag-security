@@ -1,7 +1,7 @@
 # Authoring Guidelines and Standards
 
 The purpose of these guidelines is to ensure the production of high-quality, consistent, and impactful publications. Most pieces are authored as collaborative knowledge production efforts within working groups, under the guidance of a chair or technical leader.
-The topics tend to be specifc under the purview of a working group, for instance, “Software Supply Chain Best Practices,” “Secure Software Factory,” or “Open and Secure - A Manual for Practicing Threat Modeling to Assess and Fortify Open Source Security,” but sometimes cover broader themes like cloud native security white papers, the lexicon, and use cases and personas.
+The topics tend to be specific under the purview of a working group, for instance, “Software Supply Chain Best Practices,” “Secure Software Factory,” or “Open and Secure - A Manual for Practicing Threat Modeling to Assess and Fortify Open Source Security,” but sometimes cover broader themes like cloud native security white papers, the lexicon, and use cases and personas.
 
 We strive for quality over quantity, emphasizing the importance of not duplicating existing materials unless we have something new to contribute or a cloud native perspective to offer.
 While some of our publications serve as "tour guides" rather than comprehensive handbooks, there is a recognized need for more in-depth books on building security that are regularly updated. These guidelines aim to foster a rigorous, clear, and professional standard for all our publications, ensuring they remain valuable resources for the community.
