@@ -5,17 +5,24 @@ group will have many members, all serving in varying capacities.  Within this
 document, "member" may refer to a Chair, a Technical Lead, or other Member
 roles.
 
-The following is the current listing of member roles:
+The various roles are listed as follows:
 
-* [Three Chairs](#role-of-chairs)
-* [Technical Leads](#role-of-technical-leads)
-* [Chair Emeriti](#role-of-chair-emeriti)
-* [Project Leads](#role-of-project-leads)
-* [STAG Representatives](#role-of-stag-representatives)
-* [Team leads](#role-of-team-leads)
-* [Group Members](#role-of-members)
-* [TOC Liaison](#toc-liaison)
-* [Facilitation Roles](#facilitation-roles)
+* [Role of members](#role-of-members)
+  * [Maintaining active members](#maintaining-active-members)
+  * [Managing membership](#managing-membership)
+* [Role of chairs](#role-of-chairs)
+* [Role of technical leads](#role-of-technical-leads)
+* [Role of chair emeriti](#role-of-chair-emeriti)
+* [Role of project leads](#role-of-project-leads)
+  * [Ongoing projects](#ongoing-projects)
+* [Role of team leads](#role-of-team-leads)
+* [TOC liaison](#toc-liaison)
+* [Facilitation roles](#facilitation-roles)
+  * [Security assessment facilitator](#security-assessment-facilitator)
+  * [Meeting facilitator](#meeting-facilitator)
+  * [Meeting scribe(s)](#meeting-scribe(s))
+  * [Triage team](#triage-team)
+  * [Project teams](#project-teams)
 
 All members are identified in the TAG [README](/README.md), with annotations
 where they hold an additional role.
@@ -44,19 +51,20 @@ consider their actions to support the group.
   other members to ensure the role is adequately staffed during the leave.
 * Members going on leave for 1-3 months *MAY* work with other members to
   identify a temporary replacement.
-* Members of a role *SHOULD* remove any other members that have not communicated
-  a leave of absence and either cannot be reached for more than 1 month or are
-  not fulfilling their documented responsibilities for more than 1 month. This
-  may be done through a super-majority vote of members, or if there are not
-  enough *active* members to get a super-majority of votes cast, then removal
-  may occur through a super-majority vote of the Chairs.
+* Members of a role *SHOULD* remove any other members that have not
+  communicated a leave of absence and either cannot be reached for more than 1
+  month or are not fulfilling their documented responsibilities for more than 1
+  month. This may be done through a super-majority vote of members, or if there
+  are not enough *active* members to get a super-majority of votes cast, then
+  removal may occur through a super-majority vote of the Chairs.
 * Members contribute to projects, according to the standard group
   [process](process.md).
 
 ### Managing membership
 
-* Membership disagreements may be escalated to the Chairs.  Disagreements among
-  the Chairs may be escalated to a Security TAG TOC Liaison.
+
+* Membership disagreements may be escalated to the Chairs.  Disagreements
+  among the Chairs may be escalated to a Security TAG TOC Liaison.
 * Members *MAY* decide to step down at anytime and optionally propose a
   replacement.
 
@@ -68,18 +76,18 @@ navigate a complex security landscape. If the TAG has less than two Technical
 Leads, any Chair may act as Technical Lead.
 
 * Primary role of Chairs is to run operations and the governance of the group.
-* The Chairs are responsible for ensuring that group meetings are planned and
-  facilitated effectively, while also engaging group members in leadership
+* The Chairs are responsible for ensuring that group meetings are planned
+  and facilitated effectively, while also engaging group members in leadership
   roles. Effective facilitation includes (but is not limited to) the following
   activities:
-  * setting the agenda for meetings
-  * extending discussion via asynchronous communication to be inclusive of
+  * Setting the agenda for meetings.
+  * Extending discussion via asynchronous communication to be inclusive of
     members who cannot attend a specific meeting time.
-  * scheduling discussion of proposals that have been submitted
-  * asking for new proposals to be made to address an identified need
-  * partnering with Technical Leads to establish a roadmap and manage ongoing
-    projects
-  * serving as Security TAG leadership representative to ensure the project and
+  * Scheduling discussion of proposals that have been submitted.
+  * Asking for new proposals to be made to address an identified need.
+  * Partnering with Technical Leads to establish a roadmap and manage ongoing
+    projects.
+  * Serving as Security TAG leadership representative to ensure the project and
     project lead(s) is successful
     * check in with the project lead regularly to discuss progress, blockers,
       and updates
@@ -141,39 +149,44 @@ as technical leads.
 
 ## Role of project leads
 
-Project Leads lead specific projects where a deliverable has been defined within
-the issue.
+Project Leads lead specific projects where a deliverable has been defined
+within the issue.
 
-Project Leads are nominated and approved by the process defined within our
-[governance process](process.md).
+Project Leads are nominated and approved by the following process:
 
-Project leads are expected to:
+1. Project Lead actively participates in the group, initiates the proposal or
+   volunteers to take on a project that has been prioritized by the group.
+2. A Chair or TL nominates a candidate, or requests the community to
+   nominate in a slack thread.
+3. The nomination is communicated via a pull request annotating the list
+   of members in the [TAG README](/README.md) with a link to the issue tracking
+   the project or on the issue tracking the project if a README is not yet made.
+   The nomination is typically open for a week (but may be shorter with LGTM
+   of at least two Chairs).
+4. The issue is updated with the assignment of the project lead as "assignee"
+   alongside the TAG Leadership member.
+5. Project Leads will be given the OWNER role of the directory or sub-directory
+   for their team's activities in order to empower merge/approve.
 
-* set the meetings for the project
-* drive the agenda of the project meetings
-* lead meetings and coordinate for a prepared back up prior to meetings if they
-  cannot make a meeting
-* provide technical direction unique to the project
-* establish the project schedule
-* modify the schedule
-* garner participation
-* keep the project moving forward
-* establish documents and correct permissions for contributions to occur
-* contribute content
-* provide the Security TAG leadership representative assigned or their
-  designated back up with updates, progress, and blocker on the project
-  
-### On-going projects
+### Ongoing projects
 
-On the occasion where a project becomes long term, Project Leads are also given
-the OWNER role of the directory or sub-directory along with 1 other nominated
-individual to ensure continuity in review and ongoing support of the project.
+On the occasion where a project becomes long term, Project Leads are also
+given the OWNER role of the directory or sub-directory along with 1 other
+nominated individual to ensure continuity in review and ongoing support of
+the project.
+
+  The nomination is typically open for a week (but may be shorter with LGTM
+  of at least two Chairs).
+  1. The issue is updated with the assignment of the project lead as "assignee"
+  alongside the TAG Leadership member.
+  1. Project Leads will be given the OWNER role of the directory or sub-directory
+  for their team's activities in order to empower merge/approve.
+
+This role may be subject to [lead rotations](#lead-rotations).
 
 Depending on the expected length of the project, Project Leads may be assigned
-as OWNERS of the project directory or sub-directory in this repository to help
-facilitate and moderate new content to the project. The sponsor of the project
-or their delegate initiates the PR to create the new directory and update the
-OWNERS file.
+as OWNERS of the project directory in this repository to help facilitate and
+moderate new content to the project.
 
 ### Duties of a project lead
 
@@ -232,13 +245,14 @@ Examples are:
 
 ## Role of Team Leads
 
+
 Team Leads lead larger streams of work that require sustained effort and
 coordination and remain ongoing.
 
-Teams must have a Chair sponsor to maintain visibility in the team's work and to
-ensure it is progressing.  The Chair sponsor also provides review and approval
-as part of the process whether be on engagement or deliverable publishing (such
-as with papers).  
+Teams must have a Chair sponsor to maintain visibility in the team's work
+and to ensure it is progressing.  The Chair sponsor also provides review
+and approval as part of the process whether be on engagement or deliverable
+publishing (such as with papers).
 
 On-going projects may not imply a team, and in such case the leadership role
 described below to sustain and coordinate.  The on-going project leadership
@@ -293,19 +307,68 @@ role for some time informally, then proposed as an on-going role by Pull Request
 which must be approved by a majority of Chairs.  Process clarifications are
 welcome and PRs can be approved by any single Chair.
 
-This role may be subject to [lead rotations](#lead-rotations).
 
-### Security review facilitator
+### Security assessment facilitator
 
-[Security Reviews](/assessments) are part of the ongoing work of the group and
-led by a Security Assessment Facilitator, who will:
+[Security Reviews](/assessments) are part of the ongoing work of the group
+and led by a security assessment facilitator (referred to in the rest of this
+sub-section as a facilitator). The facilitator is responsible for:
 
-* coordinate security review leads for upcoming security assessments.
-* identify and recommend security reviewers.
-* contribute to process improvements.
-* review and merge PRs in the /assessments directory (ensuring co-chair review
-  of significant process changes).
-* triage issues related to security assessments.
+* Ensuring that security reviews follow the assessment process.
+* Helping to bootstrap security assessments and reviews.
+* Determining assessment schedule of reviews, considering TOC requirements.
+
+The facilitator is responsible for coordinating with the TAG-Security co-chairs
+and deciding on the order in which security assessments (as submitted in the
+[GitHub issues tracker for
+TAG-Security](https://github.com/cncf/tag-security/issues?q=is%3Aopen+is%3Aissue+label%3Aassessment)
+will be addressed.  The facilitator is then responsible for reaching out to the
+project owners (via the GitHub issue said owners previously created in order to
+request an assessment), and coordinating the various requirements as outlined
+in the ["Joint Security Review" ticket
+template](https://github.com/cncf/tag-security/issues/new/choose). Once the
+maintainers/owners of the project have been identified, the facilitator is
+responsible for reaching out to the TAG-Security community at large (i.e.
+typically via attending the weekly general meetings or announcing to the
+community [via the `#tag-security`
+channel](https://cloud-native.slack.com/archives/CDJ7MLT8S)), and issue a
+call/request for reviewers (i.e. a single security assessment lead, and at
+least two additional security reviewers), and ensuring all reviewers [read the
+conflict of interest disclosure](../assessments/guide/security-reviewer.md) and
+sign-off on it in the GitHub ticket itself. 
+
+From this point forward, the security assessment lead is the primary
+individual responsible for driving progress in the assessment process with support from
+the security reviewers, as well as the project owners. The security assessment
+facilitator will act as a point of contact for escalations and will be
+responsible for conducting regular check-ins with the team to ensure that the
+assessment moves forward.
+
+Near the conclusion of the assessment (i.e. drafts of the self-assessment
+document and the joint review document are published via a pull request against
+the TAG-Security GitHub repository), the facilitator will take part in the
+review/feedback process alongside the security assessment lead and security
+reviewers.
+
+At the conclusion of the assessment (i.e. satisfactory completion of the
+final/canonical revisions of the self-assessment document and the joint review
+the document, chair approval, etc.), the facilitator is responsible for merging the
+pull request(s) associated with the assessment into the `main` branch of the
+TAG-Security GitHub repository.
+
+In addition to the aforementioned responsibilities, the facilitator is
+responsible for triaging issues that may impede the progress of the review, and
+coordinating with the security assessment lead and the TAG-Security co-chairs as
+needed (depending on the nature of the issue). The most important aspect to this
+responsibility is to provide visibility into the underlying issue so that it can
+be identified and remedied as early as possible.
+
+Lastly, the facilitator is expected, based on their experiences while working
+with security assessments, to identify any recurring issues or processes (i.e.
+"pain points") that impede reviews, and provide recommendations to the
+TAG-Security co-chairs on how to remedy or prevent said issues (i.e. does a
+process need to change, or is there a better tool or approach to implementing a
+specific part of an assessment document, etc.).
 
 ### Meeting facilitator
 
@@ -313,41 +376,43 @@ The group meetings are an important part of community building and the
 facilitator ensures a welcoming and inclusive atmosphere. In keeping with these
 goals, the meeting facilitator has the following responsibilities:
 
-* prepares the meeting notes with template and agenda
-* coordinates with presenter, if applicable
-* ensures there are scribes
-* runs meeting check-in, including partner groups
-* leads the meeting through the agenda
+* Prepares the meeting notes with template and agenda.
+* Coordinates with presenter, if applicable.
+* Ensures there are scribes.
+* Runs meeting check-in, including partner groups.
+* Leads the meeting through the agenda.
 
 Prerequisites:
 
-* active member
-* history of regular attendance
+* Active member.
+* History of regular attendance.
 
 One or more of the following:
 
-* served in another facilitator role
-* leader on a project team
-* tech lead
-* co-chair
+* Served in another facilitator role.
+* Leader on a project team.
+* Tech Lead.
+* Co-chair.
 
 Any member who meets the above qualifications is encouraged to add themselves to
 the [list of people in this role](/.github/settings.yml).
 
-### Meeting Scribe(s)
+### Meeting scribe(s)
 
 Each meeting must have at a minimal one scribe and preferable with two.
 
 Scribe is expected to perform the following:
 
 * Plan to coordinate/review meeting Agenda with facilitator via Slack before
-  start of meeting
-* Summarize discussions and capture into meeting notes (not transcribe verbatim)
+  start of meeting.
+* Summarize discussions and capture into meeting notes (not transcribe
+  verbatim).
 * Clarify and annotate actions as discussion progresses with assignee and due
-  dates
-* Partner with Facilitator to capture major occurring items in the meeting
-* Add links to issues being discussed if not already in Agenda
-* Open new issues to track action items from meeting
+  dates.
+* Partner with Facilitator to capture major occurring items in the meeting.
+* Add links to issues being discussed if not already in Agenda.
+* Open new issues to track action items from meeting.
+
 
 ### Triage team
 
@@ -365,10 +430,10 @@ volunteers to officially join the team.
 
 Each member of the Triage Team will:
 
-* assign labels to issues.
-* comment where issues need more detail.
-* recommend proposals or suggestions for discussion at working session meetings.
-* participate on #tag-security-triage slack channel.
+* Assign labels to issues.
+* Comment where issues need more detail.
+* Recommend proposals or suggestions for discussion at working session meetings.
+* Participate on #tag-security-triage slack channel.
 
 ### Project teams
 
