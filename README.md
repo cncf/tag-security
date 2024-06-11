@@ -25,7 +25,7 @@ We aim to significantly reduce the probability and impact of attacks, breaches, 
 
 ## Publications
 
-This document lists some of the key publications and resources that TAG Security has produced. For a complete list of assets in multiple formats, please refer to the [publications](publications/README.md) directory. 
+This document lists some of the key publications and resources that TAG Security has produced. For a complete list of assets in multiple formats, please refer to the [publications](publications/README.md) directory.
 
 | Publication | Date |
 |-------------|------|
