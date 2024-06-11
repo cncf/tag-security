@@ -78,7 +78,7 @@ Interested in attending or organizing an event? Create a [GitHub issue](https://
 
 ## New members
 
-New to the group? Check out our [New Members Page](NEW-MEMBERS.md) page.
+New to the group? Check out our [New Members](NEW-MEMBERS.md) page.
 
 ## Related groups
 
