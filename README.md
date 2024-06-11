@@ -2,74 +2,70 @@
 
 ![Cloud Native Security Logo](/design/logo/cloud-native-security-horizontal-darkmodesafe.svg)
 
-<!-- markdown-link-check-disable -->
 ## Quick links
 
-- [Meeting Information](#meeting-times)
+- [Meeting Information](#meeting-information)
 - [Slack Information](#communications)
-- [New Members](#new-members)
 - [Members](#members)
 - [Working Groups](#working-groups)
-<!-- markdown-link-check-enable -->
 
-## Objective
+## About Us
 
-The CNCF Security Technical Advisory Group facilitates collaboration to discover and produce resources that enable
-secure access, policy control, and safety for operators, administrators,
-developers, and end-users across the cloud native ecosystem.
+The CNCF Security Technical Advisory Group facilitates collaboration to exchange and produce knowledge and resources for building security in the cloud native ecosystem.
 
-## Background
+Cloud Native involves building, deploying, and operating modern applications in cloud computing environments, typically using open source. This complex ecosystem presents a technology risk landscape that demands rethinking application and information security through the lens of developer experience.
 
-Cloud Native describes the building, deploying, and operating of modern applications in cloud computing environments, typically using open source. This complex ecosystem composed of different open source projects presents an increasingly complicated technology risk landscape.
-While there are several projects in the cloud native ecosystem that address trust, safety, and security in the dynamic interplay between the different layers of infrastructure and application services, the technological shift demands application and information security be rethought through the lens of developer experience as close to applying software engineering to design for security considerations in the effort to safeguard an integrated cloud native ecosystem as a whole.
+We aim to significantly reduce the probability and impact of attacks, breaches, and compromises. By empowering developers and operators to understand and manage the security posture of their systems, we strive to fulfill the promise of enhanced productivity and operational efficiency.
 
-## Vision
+## Key Focus Areas
 
-We believe in a future where the probability and impact of attacks, breaches, and compromises are significantly reduced. Where the most common risks of today are not just mitigated but made implausible. We believe developers and operators can be empowered to understand better and be reassured by the posture of the systems they build and run through the informed use of cloud technologies with clear
-understanding of responsibility and risks and the unlocked ability to validate that their architectural intent meets compliance and regulatory objectives.
-
-<!-- cSpell:ignore sociotechnical -->
-There is a growing ecosystem of tools that promises to unlock developer productivity and operational efficiency. We strive to fulfill the human side of the sociotechnical equation to acceleration and attain that promise including:
-
-1. Consumable system security architectures that account for the ever
-   growing heterogeneity of systems and provides a framework to protect
-   resources and data while servicing their users.
-2. Common lexicon and open source libraries that make it easy for developers
-   to create and deploy apps that meet system security requirements.
-3. Common libraries and protocols that enable people to reason about the
-   security of the system, such as auditing and explainability features.
+- **System Security Architectures**: Frameworks to protect resources and data.
+- **Common Lexicon & Libraries**: Tools for developers to create secure apps.
+- **Auditing & Explainability**: Protocols for reasoning about system security.
 
 ## Publications
 
-TAG Security has published several resources for the community, which can be
-found under [publications](publications/README.md).
+This document lists some of the key publications and resources that TAG Security has produced. For a complete list of assets in multiple formats, please refer to the [publications](publications/README.md) in the publications subdirectory.
+
+| Publication | Date |
+|-------------|------|
+| [In-toto Security Assessment](https://github.com/cncf/tag-security/tree/main/assessments/projects/in-toto) | May, 2019 |
+| [Formal Verification for Policy Configurations](https://github.com/cncf/tag-security/blob/main/policy/overview-policy-formal-verification.md) | August, 2019 |
+| [OPA Security Assessment](https://github.com/cncf/tag-security/tree/main/assessments/projects/opa) | September, 2019 |
+| [Catalog of Supply Chain Compromises](https://github.com/cncf/tag-security/tree/main/supply-chain-security/compromises) | November 2019 - Present |
+| [Spiffe-Spire Security Assessment](https://github.com/cncf/tag-security/tree/main/assessments/projects/spiffe-spire) | February, 2020 |
+| [Harbor Security Assessment](https://github.com/cncf/tag-security/tree/main/assessments/projects/harbor) | April, 2020 |
+| [Keycloak Security Assessment](https://github.com/cncf/tag-security/tree/main/assessments/projects/keycloak) | October, 2020 |
+| [Software Supply Chain Best Practices](https://github.com/cncf/tag-security/raw/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf) | May, 2021 |
+| [Evaluating your supply chain security](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/secure-supply-chain-assessment.md) | May, 2021 |
+| [Cloud Native Security Lexicon](https://github.com/cncf/tag-security/blob/main/security-lexicon/cloud-native-security-lexicon.md) | August, 2021 |
+| [Buildpacks Security Assessment](https://github.com/cncf/tag-security/tree/main/assessments/projects/buildpacks) | September, 2021 |
+| [Cloud Native Security Whitepaper](https://www.cncf.io/wp-content/uploads/2022/06/CNCF_cloud-native-security-whitepaper-May2022-v2.pdf) | May, 2022 |
+| [Cloud Native Security Controls Catalog](https://github.com/cncf/tag-security/blob/main/cloud-native-controls/phase-one-announcement.md) | May, 2022 |
+| [Handling build-time dependency vulnerabilities](https://github.com/cncf/tag-security/blob/main/policy/overview-policy-build-time-dependency-vulns.md) | June, 2022 |
+| [Secure Software Factory: A Reference Architecture to Securing the Software Supply Chain](https://github.com/cncf/tag-security/raw/main/supply-chain-security/secure-software-factory/Secure_Software_Factory_Whitepaper.pdf) | May, 2022 |
+| [Secure Defaults](https://github.com/cncf/tag-security/blob/main/security-whitepaper/secure-defaults-cloud-native-8.md) | February, 2022 |
+| [Cloud Custodian Security Assessment](https://github.com/cncf/tag-security/tree/main/assessments/projects/custodian) | February, 2022 |
+| [Open and Secure - A Manual for Practicing Threat Modeling to Assess and Fortify Open Source Security](https://github.com/cncf/tag-security/blob/main/assessments/Open_and_Secure.pdf) | November, 2023 |
 
 ## Governance
 
-[Security TAG charter](governance/charter.md) outlines the scope of our group
-activities, as part of our [governance process](governance/README.md) which details how we
-work.
+Refer to the [Security TAG charter](governance/README.md) for our governance process.
 
 ## Communications
 
-Anyone is welcome to join our open discussions of Security TAG projects and share news
-related to the group's mission and charter. Much of the work of the group
-happens outside of Security TAG meetings and we encourage project teams to share
-progress updates or post questions in these channels:
-
-Group communication:
-
+Join our open discussions and share news:
 - [Email list](https://lists.cncf.io/g/cncf-tag-security)
 - [CNCF Slack](https://slack.cncf.io/) #tag-security channel
 
-Leadership:
+## Meeting Information
 
-- To reach the leadership team (chairs & tech leads), email
-  [cncf-tag-security-leads@lists.cncf.io](mailto:cncf-tag-security-leads@lists.cncf.io)
-- To reach the chairs, email [cncf-tag-security-chairs@lists.cncf.io](mailto:cncf-tag-security-chairs@lists.cncf.io)
+- **Americas**: Weekly on Wednesdays at 10 am (UTC-7). [Zoom link](https://zoom.us/j/99809474566), Meeting ID: 998 0947 4566.
+- **EMEA**: Bi-weekly on Wednesdays at 1 pm UTC+0 (adjusts for daylight saving). [Zoom link](https://zoom.us/j/99917523142), Meeting ID: 999 1752 3142.
 
-### Slack governance
+Check your local timezone [here](https://time.is/). Meetings are listed on the [CNCF calendar](https://www.cncf.io/calendar/) and the [TAG Security Calendar](https://calendar.google.com/calendar/u/0?cid=MGI4dTVlbDh0YTRzOTN0MmNtNzJ0dXZoaGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ).
 
+<<<<<<< HEAD
 Refer to the [Contributor Documentation] for details on slack channels
 and posting to the channels.
 
@@ -86,36 +82,25 @@ This dual schedule ensures that no matter where you are, you'll have a place in 
 We invite you to mark your calendars and join the dialogue. For your convenience, all meetings are listed on the main [CNCF calendar](https://www.cncf.io/calendar/) as well as the [TAG Security Calendar](https://calendar.google.com/calendar/u/0?cid=MGI4dTVlbDh0YTRzOTN0MmNtNzJ0dXZoaGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ). These calendars are updated regularly to ensure that you stay informed of all upcoming meetings and events.
 
 Got something to bring up or share? Review how to get a topic or presentation added to the Agenda on our [process](governance/process.md#getting-on-the-agenda) page.
+=======
+To add a topic to the agenda, review our [process](governance/process.md#getting-on-the-agenda).
+>>>>>>> fe701a4 (Streamline and update README.md)
 
 ## Gatherings
 
-Please let us know if you are going and if you are interested in attending (or
-helping to organize!) a gathering. Create
-a [github issue](https://github.com/cncf/tag-security/issues/new) for an event
-and add to list below:
+Interested in attending or organizing an event? Create a [GitHub issue](https://github.com/cncf/tag-security/issues/new):
 
 <!-- markdownlint-disable-next-line MD013 -->
 - [Cloud Native SecurityCon 24](https://events.linuxfoundation.org/cloudnativesecuritycon-north-america/) June 26-27, 2024 in Seattle, Washington
-
-[Past events](past-events.md)
+- [Past events](past-events.md)
 
 ## New members
 
-If you are new to the group, we encourage you to check out our
-[Contributor Documentation].
+New to the group? Check out our [New Members Page](NEW-MEMBERS.md) page.
 
 ## Related groups
 
-There are several groups that are affiliated to or do work and cover topics
-relevant to the work of Security TAG. These can be
-seen [here](governance/related-groups/README.md)
-
-## History
-
-- TAG-Security - renamed Security TAG ([TOC Issue 549](https://github.com/cncf/toc/issues/549))
-- SAFE WG - renamed to CNCF Security TAG
-- [(Proposed) CNCF Policy Working Group](/policy-wg-merging.md) - Merged into
-  SAFE WG
+Explore groups affiliated with or relevant to Security TAG [here](governance/related-groups/README.md)
 
 ## Members
 
@@ -152,7 +137,7 @@ seen [here](governance/related-groups/README.md)
 | Aradhana Chetal       | TIAA                   | June, 2021 - September, 2023 | @achetal01 |
 | Andrew Martin         | ControlPlane           | March, 2022 - March, 2024 | @sublimino|
 
-### Working groups
+### Working Groups
 
 The TAG's working groups focus on specific areas and organize most community activities, including weekly meetings.
 These groups facilitate discussions, engagement, and publications with key stakeholders, operating differently based on their needs.
@@ -160,7 +145,7 @@ Each group, led by a responsible leader, reaches consensus on issues and manages
 
 | Project | Leads |
 |---------------------------------|---------------------------------------------|
-| [Applied Research](/community/research/README.md) | Andrés Vega |
+| [Research](/community/research/README.md) | Andrés Vega |
 | [Automated Governance](/community/automated-governance/README.md) | Andrés Vega, Brandt Keller |
 | [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres |
 | [Compliance](/community/compliance/README.md) | Anca Sailer, Robert Ficcaglia |
@@ -172,13 +157,13 @@ Each group, led by a responsible leader, reaches consensus on issues and manages
 
 ### CNCF Security TAG reviews
 
-As part of
-the [CNCF project proposal process](https://github.com/cncf/toc/blob/main/process)
-projects should create a
+For [CNCF project proposal process](https://github.com/cncf/toc/blob/main/process)
+create a
 new [security review issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 with a
 [self-assessment](./assessments/guide/self-assessment.md)
 .
+<<<<<<< HEAD
 
 ### Past events and meetings
 
@@ -186,3 +171,5 @@ For more details on past events and meetings, please see
 our [past events page](past-events.md)
 
 [Contributor Documentation]: ./CONTRIBUTING.md
+=======
+>>>>>>> fe701a4 (Streamline and update README.md)
