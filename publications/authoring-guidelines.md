@@ -1,7 +1,7 @@
 # Authoring Guidelines and Standards
 
 The purpose of these guidelines is to ensure the production of high-quality, consistent, and impactful publications. Most pieces are authored as collaborative knowledge production efforts within working groups, under the guidance of a chair or technical leader.
-The topics tend to be sharp under the purview of a working group, for instance, “Software Supply Chain Best Practices,” “Secure Software Factory,” or “Open and Secure - A Manual for Practicing Threat Modeling to Assess and Fortify Open Source Security,” but sometimes cover broader themes like cloud native security white papers, the lexicon, and use cases and personas.
+The topics tend to be specifc under the purview of a working group, for instance, “Software Supply Chain Best Practices,” “Secure Software Factory,” or “Open and Secure - A Manual for Practicing Threat Modeling to Assess and Fortify Open Source Security,” but sometimes cover broader themes like cloud native security white papers, the lexicon, and use cases and personas.
 
 We strive for quality over quantity, emphasizing the importance of not duplicating existing materials unless we have something new to contribute or a cloud native perspective to offer.
 While some of our publications serve as "tour guides" rather than comprehensive handbooks, there is a recognized need for more in-depth books on building security that are regularly updated. These guidelines aim to foster a rigorous, clear, and professional standard for all our publications, ensuring they remain valuable resources for the community.
@@ -16,7 +16,7 @@ For detailed guidelines on creating papers and delivering artifacts, refer to [P
 
 ### 1. Content Quality
 
-- **Relevance**: Ensure all content is relevant to the topic and objectives of the publication.
+- **Relevance**: Ensure all content is relevant to the topic and objectives of the publication, as well as the mission of TAG Security.
 - **Accuracy**: Verify all facts, figures, and citations. Ensure all information is current and correct.
 - **Comprehensiveness**: Cover the topic thoroughly, providing a clear and complete picture. Avoid unnecessary jargon and ensure the content is accessible to the target audience.
 - **Clarity and Coherence**: Maintain a logical flow of ideas. Ensure that each section transitions smoothly to the next and that the overall structure supports the document’s objectives.
@@ -25,7 +25,7 @@ For detailed guidelines on creating papers and delivering artifacts, refer to [P
 
 - **Title and Abstract**: Provide a clear, concise title and abstract that summarize the main points and objectives.
 - **Sections and Headings**: Use clear and descriptive headings. Ensure that the document is divided into well-defined sections (e.g., Introduction, Background, Core Concepts, Implementation, Case Studies, Conclusion).
-- **Introduction**: Offer a compelling introduction that outlines the purpose and scope of the document.
+- **Introduction**: Offer a compelling introduction that outlines the purpose and scope of the document. For really short documents, like blog posts, a dedicated introduction section might be skipped, but at least an introductory paragraph is generally recommended.
 - **Conclusion**: Summarize key findings and provide actionable recommendations or next steps.
 
 ### 3. Writing Style
@@ -52,7 +52,7 @@ For detailed guidelines on creating papers and delivering artifacts, refer to [P
 
 ### 7. Review and Revision
 
-- **Peer Review**: Submit the document for peer review by knowledgeable individuals within the consortium. Incorporate feedback and revisions as needed.
+- **Peer Review**: Submit the document for peer review by knowledgeable individuals within the community. Specifically, documents should be posted to the #tag-security channel for feedback. Incorporate feedback and revisions as needed.
 - **Proofreading**: Conduct thorough proofreading to eliminate grammatical, typographical, and formatting errors.
 
 ### 8. Formatting and Presentation
