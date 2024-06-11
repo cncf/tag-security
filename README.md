@@ -55,6 +55,7 @@ Refer to the [Security TAG charter](governance/README.md) for our governance pro
 ## Communications
 
 Join our open discussions and share news:
+
 - [Email list](https://lists.cncf.io/g/cncf-tag-security)
 - [CNCF Slack](https://slack.cncf.io/) #tag-security channel
 
