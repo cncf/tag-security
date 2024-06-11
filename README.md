@@ -20,8 +20,8 @@ We aim to significantly reduce the probability and impact of attacks, breaches, 
 ## Key Focus Areas
 
 - **System Security Architectures**: Frameworks to protect resources and data.
-- **Common Lexicon & Libraries**: Tools for developers to create secure apps.
-- **Auditing & Explainability**: Protocols for reasoning about system security.
+- **Common Lexicon, Templates & Libraries**: Tools for developers to create secure apps.
+- **Heuristics and Models**: Approaches for reasoning about system security.
 
 ## Publications
 
@@ -89,9 +89,6 @@ To add a topic to the agenda, review our [process](governance/process.md#getting
 
 ## Gatherings
 
-Interested in attending or organizing an event? Create a [GitHub issue](https://github.com/cncf/tag-security/issues/new):
-
-<!-- markdownlint-disable-next-line MD013 -->
 - [Cloud Native SecurityCon 24](https://events.linuxfoundation.org/cloudnativesecuritycon-north-america/) June 26-27, 2024 in Seattle, Washington
 - [Past events](past-events.md)
 
