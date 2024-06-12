@@ -1,5 +1,7 @@
 # Free Software Foundation Website Hack
 
+**Note:** Review if this incident can be categorized as supply chain incident as per [compromise definitions](../compromise-definitions.md)
+
 The source repository for the FSF's website was hacked via a SQL injection.
 
 ## Impact
