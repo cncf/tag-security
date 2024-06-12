@@ -2,3 +2,8 @@
 node_modules
 modified
 *.DS_Store*
+
+# Hugo file replication
+website/root/*
+!website/root/.gitkeep
+website/static/design/

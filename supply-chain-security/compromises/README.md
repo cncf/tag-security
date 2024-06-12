@@ -30,6 +30,12 @@ of compromise needs added, please include that as well.
 <!-- cSpell:disable -->
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
+| [Malware Disguised as Installer used to target Korean Public Institution] | 2024 | Trust and Signing | [1](https://asec.ahnlab.com/en/63396/) |
+| [3proxy signing incident](2024/laixi-3proxy.md) | 2024 | Trust and Signing | [1](https://news.sophos.com/en-us/2024/04/09/smoke-and-screen-mirrors-a-strange-signed-backdoor/) |
+| [xz backdoor incident](2024/xz.md) | 2024 | Malicious Maintainer | [1](https://cloudsecurityalliance.org/blog/2024/04/25/navigating-the-xz-utils-vulnerability-cve-2024-3094-a-comprehensive-guide) |
+| [GitGot: using GitHub repositories as exfiltration store](2024/gitgot.md) | 2024 | Trust and Signing | [1](https://www.reversinglabs.com/blog/gitgot-cybercriminals-using-github-to-store-stolen-data) |
+| [ManageEngine xmlsec dependency](2023/xmlsec-manageengine.md) | 2023 | Outdated Dependencies | [1](ttps://flashpoint.io/blog/manageengine-apache-santuario-cve-2022-47966) |
+| [Retool Spear Phishing](2023/retool-portal-mfa.md) | 2023 | Dev Tooling | [1](https://www.coindesk.com/business/2023/09/13/phishing-attack-on-cloud-provider-with-fortune-500-clients-led-to-15m-crypto-theft-from-fortress-trust/) |
 | [Fake Dependabot commits](2023/fake-dependabot.md) | 2023 | Source Code | [1](https://checkmarx.com/blog/surprise-when-dependabot-contributes-malicious-code/) |
 | [Okta Source Code Theft](2022/okta-github-repo-leak.md) | 2022 | Source Code <br> Dev Tooling | [1](https://www.bleepingcomputer.com/news/security/oktas-source-code-stolen-after-github-repositories-hacked/) |
 | [Auth0 Source Code Theft](2022/auth0-source-code-leak.md) | 2022 | Source Code <br> Dev Tooling | [1](https://auth0.com/blog/auth0-code-repository-archives-from-2020-and-earlier/) [2](https://www.bleepingcomputer.com/news/security/auth0-warns-that-some-source-code-repos-may-have-been-stolen/) |
@@ -53,12 +59,13 @@ of compromise needs added, please include that as well.
 | [Codecov](2021/codecov.md) | 2021 | Source Code | [1](https://about.codecov.io/security-update/) |
 | [Repojacking exposed private repositories through supply-chain compromise](2021/repojacking.md) | 2021 | Negligence | [1](https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610) |
 | [VSCode GitHub](2021/vscode.md) | 2021 | Dev Tooling | [1](https://www.bleepingcomputer.com/news/security/heres-how-a-researcher-broke-into-microsoft-vs-codes-github/) |
+| [Free Download Manager](2020/trojanized-fdm.md) | 2020 | Publishing Infrastructure | [1](https://securelist.com/backdoored-free-download-manager-linux-malware/110465) |
 | [SUNBURST/SUNSPOT/Solarigate](2020/solarwinds.md) | 2020 | Publishing Infrastructure | [1](https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html), [2](https://msrc-blog.microsoft.com/2020/12/13/customer-guidance-on-recent-nation-state-cyber-attacks/), [3](https://www.crowdstrike.com/blog/sunspot-malware-technical-analysis/) |
 | [The Great Suspender](2020/thegreatsuspender.md) | 2020 | Malicious Maintainer | [1](https://github.com/greatsuspender/thegreatsuspender/issues/1263),[2](https://lifehacker.com/ditch-the-great-suspender-before-it-becomes-a-security-1845989664) |
 | [Abusing misconfigured SonarQube applications](2020/sonarqube.md) | 2020 | Dev Tooling | [1](https://www.zdnet.com/article/fbi-hackers-stole-source-code-from-us-government-agencies-and-private-companies/), [2](https://www.ic3.gov/Media/News/2020/201103-3.pdf) |
 | [Octopus Scanner](2020/octopus_scanner.md) | 2020 | Dev Tooling | [1](https://securitylab.github.com/research/octopus-scanner-malware-open-source-supply-chain),[2](https://threatpost.com/octopus-scanner-tentacles-github-repositories/156204/) |
 | [NPM reverse shells and data mining](2020/nodejs.md) | 2020 | Dev Tooling | [1](https://www.bleepingcomputer.com/news/security/npm-nukes-nodejs-malware-opening-windows-linux-reverse-shells/) |
-| [Binaries of the CLI for `monero` compromised](2019/monero.md) | 2019 | Publishing Infrastructure | [1](https://web.getmonero.org/2019/11/19/warning-compromised-binaries.html), [2](https://github.com/monero-project/monero/issues/6151), [3](https://old.reddit.com/r/Monero/comments/dyfozs/security_warning_cli_binaries_available_on/) |
+| [Binaries of the CLI for `monero` compromised](2019/monero.md) | 2019 | Publishing Infrastructure | [1](https://web.getmonero.org/2019/11/19/warning-compromised-binaries.html), [2](https://github.com/monero-project/monero/issues/6151), [3](https://web.archive.org/web/20230630012925/https://old.reddit.com/r/Monero/comments/dyfozs/security_warning_cli_binaries_available_on/) |
 | [Webmin backdoor](2019/webmin-backdoor.md) | 2019 | Dev Tooling | [1](https://www.zdnet.com/article/backdoor-found-in-webmin-a-popular-web-based-utility-for-managing-unix-servers/), [2](http://www.webmin.com/exploit.html) |
 | [purescript-npm](2019/purescript-npm.md) | 2019 | Source Code | [1](https://www.npmjs.com/advisories/1082) and [2](https://www.npmjs.com/advisories/1082) |
 | [electron-native-notify](2019/electron-native-notify.md) | 2019 | Source Code | [1](https://blog.npmjs.org/post/185397814280/plot-to-steal-cryptocurrency-foiled-by-the-npm), [2](https://komodoplatform.com/update-agama-vulnerability/)|
@@ -104,4 +111,4 @@ of compromise needs added, please include that as well.
 | [Linux Kernel CVS Repository Hack](2003/kernel-repository.md) | 2003 | Source Code <br> Dev Tooling | [1](https://lwn.net/Articles/57135/) |
 | [gentoo rsync compromise](2003/gentoo-rsync.md) | 2003 | Publishing Infrastructure | [1](https://archives.gentoo.org/gentoo-announce/message/7b0581416ddd91522c14513cb789f17a) |
 | [Debian infra compromise](2003/debian.md) | 2003 | Publishing infrastructure | [1](https://www.debian.org/News/2003/20031202) |
-| [Unix Support Group login backdoor](1984/login-bell.md) | <1984 | Dev Tooling | [1](https://niconiconi.neocities.org/posts/ken-thompson-really-did-launch-his-trusting-trust-trojan-attack-in-real-life/) |
+| [Unix Support Group login backdoor](1975/login-bell.md) | 1975 | Dev Tooling | [1](https://niconiconi.neocities.org/posts/ken-thompson-really-did-launch-his-trusting-trust-trojan-attack-in-real-life/) |

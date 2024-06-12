@@ -15,10 +15,11 @@
 {{ $gh_branch := (default "main" (index $github "branch")) }}
 {{ if $gh_repo }}
 <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
-{{ $gh_repo_path := printf "%s/content/%s" $gh_branch $pathFormatted }}
+{{ $gh_repo_path := printf "%s/%s" $gh_branch $pathFormatted }}
 {{ if $gh_subdir }}
-{{ $gh_repo_path = printf "%s/%s/content/%s" $gh_branch $gh_subdir $pathFormatted }}
+{{ $gh_repo_path = printf "%s/%s/%s" $gh_branch $gh_subdir $pathFormatted }}
 {{ end }}
+{{ $gh_repo_path = replace (replace $gh_repo_path "_index.md" "README.md") "website" "" }}
 {{ $editURL := printf "%s/edit/%s" $gh_repo $gh_repo_path }}
 {{ $createURL := printf "%s/edit/%s" $gh_repo $gh_repo_path }}
 {{ $issuesURL := printf "%s/issues/new?title=%s" $gh_repo (htmlEscape $.Title )}}
