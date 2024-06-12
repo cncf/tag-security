@@ -6,7 +6,7 @@ Primary Authors: Maël Valais, Ashley Davis
 Security reviewers: Maël Valais, Ashley Davis, Tim Ramlot
 
 This document is intended to aid in roadmapping, help with the onboarding of new maintainers and
-provide a good introuction to the security model of cert-manager.
+provide a good introduction to the security model of cert-manager.
 
 ## Metadata
 
@@ -167,7 +167,7 @@ cert-manager doesn't seek to handle anything outside of its scope of issuing and
 
 For example, while an X.509 certificate is required for TLS, it is not sufficient to configure a secure TLS server: settings like the TLS version and cipher suites are relevant for that. cert-manager makes no effort to help with that process. It only seeks to provide a valid and secure certificate.
 
-cert-manager also doesn’t provide any guarantees around TLS trust. Trusting certificates is an important foundation of TLS, and cert-manager has a sister project called trust-manager to help with this. The core cert-manager project doesn’t seek to address this.
+cert-manager also doesn't provide any guarantees around TLS trust. Trusting certificates is an important foundation of TLS, and cert-manager has a sister project called trust-manager to help with this. The core cert-manager project doesn't seek to address this.
 
 ## Self-assessment Use
 
@@ -176,14 +176,15 @@ analysis of the project's security. It is not intended to provide a security
 audit of cert-manager or function as an independent assessment or attestation of
 cert-manager's security health.
 
-This document serves to provide cert-manager users with an initial understanding
-of cert-manager's security, where to find existing security documentation, cert-
-manager plans for security, and general overview of cert-manager security
-practices, both for development of cert-manager as well as security of cert-
-manager.
+This document serves to provide cert-manager users with:
+
+- an initial understanding of the project's security posture
+- where to find existing security documentation
+- cert-manager's plans for security, and
+- a general overview of cert-manager security practices
 
 This document provides the CNCF TAG-Security with an initial understanding of
-cert-manager, and the self assessment is required as part of the graduation process for cert-manager within the CNCF. This document also paves the way for a joint assessment document with the CNCF  / TAG-Security in the future.
+cert-manager, and the self assessment is required as part of the graduation process for cert-manager within the CNCF. This document also paves the way for a joint assessment document with the CNCF / TAG-Security in the future.
 
 ## Security functions and features
 
