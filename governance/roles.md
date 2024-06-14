@@ -76,6 +76,8 @@ navigate a complex security landscape. If the TAG has less than two Technical
 Leads, any Chair may act as Technical Lead.
 
 * Primary role of Chairs is to run operations and the governance of the group.
+  This includes coordination with the TOC and providing approval for governance
+  changes.
 * The Chairs are responsible for ensuring that group meetings are planned
   and facilitated effectively, while also engaging group members in leadership
   roles. Effective facilitation includes (but is not limited to) the following
@@ -87,21 +89,8 @@ Leads, any Chair may act as Technical Lead.
   * Asking for new proposals to be made to address an identified need.
   * Partnering with Technical Leads to establish a roadmap and manage ongoing
     projects.
-  * Serving as Security TAG leadership representative to ensure the project and
-    project lead(s) is successful
-    * check in with the project lead regularly to discuss progress, blockers,
-      and updates
-    * provide mentorship to project lead(s)
-    * ensure the schedule set by the project lead(s) is adhered to
-    * verify the scope and proposed deliverables of the project are in alignment
-      with the [Charter](charter.md) prior to recommendation of becoming a
-      project
-    * provide the TOC and others on the leadership team with updates
-    * keep the issue up to date for the project lead(s) if they don't have write
-      access to do so
-    * enforce and encourage company diversity on a given project where possible
-    * provide guardrails and guidance to the project and project lead(s) as
-      appropriate
+ * Chairs may additionally perform any actions of technical leads as needed,
+   especially serving as the Security TAG leadership representative to a project.
 
 ## Role of technical leads
 
@@ -111,6 +100,8 @@ process](process.md)).
 
 The general list of activities for TL are:
 
+* Acting as maintainers of the TAG Security GitHub repository. This includes
+  reviewing pull requests and publications.
 * Establish new sub-projects
 * Decommission existing sub-projects
 * Resolve cross-sub-project technical issues and decisions
@@ -335,7 +326,7 @@ channel](https://cloud-native.slack.com/archives/CDJ7MLT8S)), and issue a
 call/request for reviewers (i.e. a single security assessment lead, and at
 least two additional security reviewers), and ensuring all reviewers [read the
 conflict of interest disclosure](../assessments/guide/security-reviewer.md) and
-sign-off on it in the GitHub ticket itself. 
+sign-off on it in the GitHub ticket itself.
 
 From this point forward, the security assessment lead is the primary
 individual responsible for driving progress in the assessment process with support from
