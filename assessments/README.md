@@ -4,26 +4,26 @@
 
 The [TAG-Security Security Assessment Process](guide) (formerly the security 
 review process) is designed to accelerate the adoption of cloud native 
-technologies, based on the below goals and assumptions.
+technologies based on the below goals and assumptions.
 
 ### 1) Reduce risk across the ecosystem
 
-The primary goal is to reduce the risk from malicious attacks and accidental
+The primary goal is to reduce the risk of malicious attacks and accidental
 breaches of privacy. This process supports that goal in two ways:
 
    * A clear and consistent process for communication increases detection &
-     reduces time to resolve known or suspected vulnerability issues
+     reduces time to resolve known or suspected vulnerability issues.
    * A collaborative assessment process increases domain expertise within each
      participating project.
 
 ### 2) Accelerate adoption of cloud native technologies
 
-Security assessments are a necessary, time intensive process. Each company,
+Security assessments are a necessary, time-intensive process. Each company,
 organization, and project must perform its own assessments to ensure that
 it meets
 its unique commitments to its own users and stakeholders. In open source, simply
-finding security-related information can be overwhelmingly difficult and a time
-consuming part of the security assessment. The CNCF TAG-Security Security
+finding security-related information can be an overwhelmingly difficult and 
+time-consuming part of the security assessment. The CNCF TAG-Security Security
 Assessment Process, hereafter "TSSA" Process is intended to enable improved 
 discovery of
 security information & assist in streamlining internal and external security
@@ -31,10 +31,10 @@ assessments in multiple ways:
 
    * Consistent documentation reduces assessment time.
    * Established baseline of security-relevant information reduced Q&A.
-   * Clear rubric for security profile enables organizations to align their risk
+   * Clear rubric for a security profile enables organizations to align their risk
      profile with the project’s risk profile and effectively allocate resources
-     (for assessment and needed project contribution).
-   * Structured metadata allows for navigation, grouping and cross-linking.
+     (for assessment and needed project contributions).
+   * Structured metadata allows for navigation, grouping, and cross-linking.
 
 We expect that this process will raise awareness of how specific open source
 projects affect the security of a cloud native system; however, separate
@@ -52,12 +52,12 @@ Each project's TSSA package shall include a description of:
 4. next steps toward increasing security of the project itself and/or increasing
    the applications of the project toward a more secure cloud native ecosystem
 
-Due to the nature and time frame for the analysis, *the TSSA package is not 
+Due to the nature and time frame of the analysis, *the TSSA package is not 
 meant to
 subsume the need for a professional security audit of the code*.  Audits of
 implementation-specific vulnerabilities, improper deployment configurations, etc.
-are not in scope of a TSSA.  A TSSA is intended to
-uncover design flaws, enhance the security mindset of the project, and to obtain
+are not in the scope of a TSSA.  A TSSA is intended to
+uncover design flaws, enhance the security mindset of the project, and obtain
 a clear, comprehensive articulation of the project's design goals and
 aspirations while documenting the intended security properties enforced,
 fulfilled, or executed by said project.
@@ -72,7 +72,7 @@ A TSSA has many benefits, creating:
 * a measurable security baseline from that point onward,
 * exposure and analysis of security issues, including the risk they introduce,
 * validation of security awareness and culture among the developers for building secured projects, and
-* a documented procedure, for future compliance, audit, or internal assessment
+* a documented procedure for future compliance, audit, or internal assessment
 
 ### Components of the TSSA package
 
@@ -83,21 +83,21 @@ of the project's current security statue.
 * [Joint-assessment](guide/joint-assessment.md). A hands-on assessment by both the [security
 reviewers](guide/security-reviewer.md) and the project team that includes parts
 of the self-assessment and expands to include a more comprehensive consideration
-of the project's security health.  This artifact, coupled with self-assessment
-provide invaluable information for security auditors as well as end-users.
-* Presentation. A security focused presentation of the project by the project
+of the project's security health.  This artifact, coupled with self-assessment,
+provides invaluable information for security auditors as well as end-users.
+* Presentation. A security-focused presentation of the project by the project
   team,
 * Review the [joint README template](guide/joint-readme-template.md).
 This template is used to create a readme at the end of the joint
-assessment by the security reviewers to provide a high level summary
+assessment by the security reviewers to provide a high-level summary
 of the joint assessment.  It is considered when performing due
 diligence.
 
 ### Use of a completed TSSA package
 
 A finalized TSSA package may be used by the community to assist in
-the contextual review of a project but are not an endorsement of the
-security of the project, not a security audit of the project, and do not relieve
+the contextual review of a project, but is not an endorsement of the
+security of the project, not a security audit of the project, and does not relieve
 an individual or organization from performing their own due diligence and
 complying with laws, regulations, and policies.
 
@@ -105,13 +105,13 @@ Draft assessments contain *unconfirmed* content and are not endorsed as factual
 until committed to this repository, which requires detailed peer review.  Draft
 documents may also contain *speculative* content as the project lead or security
 reviewer is performing an assessment.  Draft assessments are *only* for the purpose
-of preparing final artifact and are **not** to be used in any other capacity by
+of preparing final artifacts and are **not** to be used in any other capacity by
 the community.
 
 Final slides resulting from the presentation and the project's joint assessment
 will be stored in the individual project's folder with supporting
 documentation and artifacts from the TSSA.  These folders can be found under
- [assessments/projects](projects/) and clicking on the project name.
+ [assessments/projects](projects/) by clicking on the project name.
 
 ## Process
 
