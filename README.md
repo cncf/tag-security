@@ -1,6 +1,6 @@
 # Security Technical Advisory Group
 
-![Cloud Native Security Logo](/design/logo/cloud-native-security-horizontal-darkmodesafe.svg)
+![Cloud Native Security Logo](community/resources/design/logo/cloud-native-security-horizontal-darkmodesafe.svg)
 
 <!-- markdown-link-check-disable -->
 ## Quick links
@@ -42,7 +42,7 @@ There is a growing ecosystem of tools that promises to unlock developer producti
 ## Publications
 
 TAG Security has published several resources for the community, which can be
-found under [publications](publications/README.md).
+found under [publications](community/publications/README.md).
 
 ## Governance
 
@@ -97,12 +97,12 @@ and add to list below:
 <!-- markdownlint-disable-next-line MD013 -->
 - [Cloud Native SecurityCon 24](https://events.linuxfoundation.org/cloudnativesecuritycon-north-america/) June 26-27, 2024 in Seattle, Washington
 
-[Past events](past-events.md)
+[Past events](community/events/past-events.md)
 
 ## New members
 
 If you are new to the group, we encourage you to check out
-our [New Members Page](NEW-MEMBERS.md)
+our [New Members Page](governance/NEW-MEMBERS.md)
 
 ## Related groups
 
@@ -114,8 +114,6 @@ seen [here](governance/related-groups/README.md)
 
 - TAG-Security - renamed Security TAG ([TOC Issue 549](https://github.com/cncf/toc/issues/549))
 - SAFE WG - renamed to CNCF Security TAG
-- [(Proposed) CNCF Policy Working Group](/policy-wg-merging.md) - Merged into
-  SAFE WG
 
 ## Members
 
@@ -160,13 +158,13 @@ Each group, led by a responsible leader, reaches consensus on issues and manages
 
 | Project | Leads |
 |---------------------------------|---------------------------------------------|
-| [Applied Research](/community/research/README.md) | Andrés Vega |
-| [Automated Governance](/community/automated-governance/README.md) | Andrés Vega, Brandt Keller |
+| [Applied Research](/community/working-groups/research/README.md) | Andrés Vega |
+| [Automated Governance](/community/working-groups/automated-governance/README.md) | Andrés Vega, Brandt Keller |
 | [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres |
-| [Compliance](/community/compliance/README.md) | Anca Sailer, Robert Ficcaglia |
-| [Controls](/community/controls/README.md) | Jon Zeolla |
-| [Security Reviews](/assessments/README.md) | Justin Cappos, Eddie Knight|
-| [Software Supply Chain](/community/supply-chain-security/README.md) | Marina Moore, Michael Liebermann, John Kjell |
+| [Compliance](/community/working-groups/compliance/README.md) | Anca Sailer, Robert Ficcaglia |
+| [Controls](/community/working-groups/controls/README.md) | Jon Zeolla |
+| [Security Reviews](/assessments/working-groups/README.md) | Justin Cappos, Eddie Knight|
+| [Software Supply Chain](/community/working-groups/supply-chain-security/README.md) | Marina Moore, Michael Liebermann, John Kjell |
 
 ## Additional information
 
@@ -177,10 +175,10 @@ the [CNCF project proposal process](https://github.com/cncf/toc/blob/main/proces
 projects should create a
 new [security review issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 with a
-[self-assessment](https://github.com/cncf/tag-security/blob/main/assessments/guide/self-assessment.md)
+[self-assessment](community/assessments/guide/self-assessment.md)
 .
 
 ### Past events and meetings
 
 For more details on past events and meetings, please see
-our [past events page](past-events.md)
+our [past events page](community/events/past-events.md)
