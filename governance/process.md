@@ -57,9 +57,6 @@ informative note.
 ### Raising an Issue
 
 Anyone is welcome to raise an issue either as a suggestion or as a proposal.
-These will follow the process described in [proposals and suggestions](#proposals-and-suggestions).
-
-## Suggestions, proposals, & presentations
 
 Before creating an issue, review the existing issues to determine if something
 already exists that covers or is closely related to what you want to discuss or
@@ -72,7 +69,7 @@ We love to have presentations about various efforts our members and the greater
 community are working on. They allow us to gain insights into new challenges,
 upcoming trends, and often inspire our group to take on new projects. It is
 important that any content presented to the group must adhere to our
-[guidelines](presentations.md).
+[guidelines](../CONTRIBUTING.md#present-to-the-tag).
 
 Presentations require a [presentation
 issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=usecase-presentation%2C+triage-required&template=presentation.md&title=%5BPresentation%5D+Presentation+Title)
@@ -83,7 +80,7 @@ Once a presentation issue is submitted a Security TAG representative will be
 assigned to or review the issue to triage the request. Once triaged, the
 Security TAG representative will perform due diligence on the issue to ensure it
 adhere's to our requirements for presentation content. If the [requirements are
-met](presentations.md), the Security TAG representative will then add the
+met](../CONTRIBUTING.md#present-to-the-tag), the Security TAG representative will then add the
 topic, link the issue, and provide the point of contact and themselves on the
 Agenda.
 
@@ -148,7 +145,7 @@ line with the [mission and charter](charter.md).
    interested in working on the project is able to attend, then add the issue
    to the meeting agenda: include a link and the name of the person who will
    present the proposal in the "Planned Meeting" area of the
-   [meeting notes][https://github.com/cncf/tag-security#meeting-times].
+   [meeting notes](https://github.com/cncf/tag-security#meeting-times).
    Then at the meeting:
 
    * The presenter should screen share the github issue (or ask the meeting
