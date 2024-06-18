@@ -1,5 +1,4 @@
 # Contributing
-<!-- cSpell:ignore OpenOpps -->
 
 We welcome new contributors to this community. If you are contributing to the
 CNCF and/or TAG-Security for the first time, it's okay if you feel overwhelmed.
@@ -164,7 +163,6 @@ for consistency, propose additional style guidelines via PR to this document.
 
 Here are some additional sources for good content guidelines:
 
-- [OpenOpps Contribution Guide]
 - [18F Content Guide]
 
 ### Common Terms
@@ -203,5 +201,4 @@ Here are some additional sources for good content guidelines:
 [CNCF Slack guidelines]: https://github.com/cncf/foundation/blob/main/slack-guidelines.md
 [code of conduct]: https://github.com/cncf/tag-security/blob/main/CODE-OF-CONDUCT.md
 [CNCF Style Guide]: https://github.com/cncf/foundation/blob/main/style-guide.md
-[OpenOpps Contribution Guide]: https://github.com/openopps/openopps-platform/blob/main/CONTRIBUTING.md
 [18F Content Guide]: https://content-guide.18f.gov/
