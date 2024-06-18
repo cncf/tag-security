@@ -197,8 +197,8 @@ Here are some additional sources for good content guidelines:
 [CODE-OF-CONDUCT.md]: CODE-OF-CONDUCT.md
 [help is needed]: https://github.com/cncf/tag-security/labels/help%20wanted
 [communication channels]: README.md#Communications
-[security reviews]: ../assessments/README.md
+[security reviews]: ./assessments/README.md
 [CNCF Slack guidelines]: https://github.com/cncf/foundation/blob/main/slack-guidelines.md
-[code of conduct]: https://github.com/cncf/tag-security/blob/main/CODE-OF-CONDUCT.md
+[code of conduct]: ./CODE-OF-CONDUCT.md
 [CNCF Style Guide]: https://github.com/cncf/foundation/blob/main/style-guide.md
 [18F Content Guide]: https://content-guide.18f.gov/
