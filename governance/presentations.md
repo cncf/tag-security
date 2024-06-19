@@ -1,4 +1,4 @@
-# Security TAG presentations
+# Security TAG Presentations
 
 Part of the STAG activities include having guest presentations by members of the community.
 We welcome any topic related to our mission and charter. Typical topics include projects,

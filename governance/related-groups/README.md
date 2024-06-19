@@ -1,7 +1,7 @@
 <!-- if you edit this file, please add your name to the list below, so the
 cSpell spell checker won't try to correct them -->
 <!-- cSpell:ignore justincormack lizrice rficcaglia pushkarj achetal01 mlieberman85 altazv -->
-# Related groups
+# Related Groups
 
 These are groups that are affiliated to or do work and cover topics relevant to
 the work of Security TAG.

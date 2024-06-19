@@ -1,4 +1,4 @@
-# Tech Lead transition checklist
+# Tech Lead Transition Checklist
 
 This checklist should be copied into a new issue for when a new tech lead(s) is needed.
 

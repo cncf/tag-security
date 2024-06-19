@@ -1,4 +1,4 @@
-# Chair transition checklist
+# Chair Transition Checklist
 
 This checklist should be copied into a new issue for when a new chair(s) is needed.
 

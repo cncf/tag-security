@@ -1,4 +1,4 @@
-# Agenda, proposals, projects, and teams
+# Agenda, Proposals, Projects, and Teams
 
 In addition to the activities driven by the [CNCF Technical Oversight
 Committee][TOC], the work of the group often originates from group members with
