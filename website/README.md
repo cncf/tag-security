@@ -14,7 +14,7 @@ Configuration is set in [config.toml](./config.toml).
 
 To set up a local dev environment make sure you have [Hugo Extended](https://gohugo.io/installation/linux/#editions), [npm](https://www.npmjs.com/), and [rsync](https://github.com/RsyncProject/rsync) installed, then run the following:
 
-```
+```bash
 git clone git@github.com:cncf/tag-security.git
 cd tag-security/website/
 make deps

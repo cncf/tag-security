@@ -57,7 +57,7 @@ informative note.
 ### Raising an Issue
 
 Anyone is welcome to raise an issue either as a suggestion or as a proposal.
-These will follow the process described in [proposals and suggestions](#suggestions-proposals--presentations).
+These will follow the process described in Suggestions, proposals, & presentations.
 
 ## Suggestions, proposals, & presentations
 
@@ -148,7 +148,7 @@ line with the [mission and charter](charter.md).
    interested in working on the project is able to attend, then add the issue
    to the meeting agenda: include a link and the name of the person who will
    present the proposal in the "Planned Meeting" area of the
-   [meeting notes][https://github.com/cncf/tag-security#meeting-times].
+   [meeting notes](https://github.com/cncf/tag-security#meeting-times).
    Then at the meeting:
 
    * The presenter should screen share the github issue (or ask the meeting
