@@ -72,12 +72,11 @@ consider their actions to support the group.
 
 While CNCF TOC allows for Chairs to serve in purely administrative roles, The
 Security TAG was formed with deeply technical Chairs based on early need to
-navigate a complex security landscape. If the TAG has less than two Technical
-Leads, any Chair may act as Technical Lead.
+navigate a complex security landscape.
 
-* Primary role of Chairs is to run operations and the governance of the group.
-  This includes coordination with the TOC and providing approval for governance
-  changes.
+* The primary role of Chairs is to ensure effective operations and governance
+  of the group. This includes coordination with the TOC and providing approval
+  for governance changes.
 * The Chairs are responsible for ensuring that group meetings are planned
   and facilitated effectively, while also engaging group members in leadership
   roles. Effective facilitation includes (but is not limited to) the following
@@ -89,6 +88,8 @@ Leads, any Chair may act as Technical Lead.
   * Asking for new proposals to be made to address an identified need.
   * Partnering with Technical Leads to establish a roadmap and manage ongoing
     projects.
+ * Chairs are responsible for approving Pull Requests, specifically for
+   top-level content of the repository
  * Chairs may additionally perform any actions of technical leads as needed,
    especially serving as the Security TAG leadership representative to a project.
 
