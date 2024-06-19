@@ -42,12 +42,14 @@ A table at the top for quick reference information, later used for indexing.
 
 ### Security links
 
+<!-- markdown-link-check-disable -->
 Provide the list of links to existing security documentation for the project. You may
 use the table below as an example:
 | Doc | url |
 | -- | -- |
 | Security file | https://my.security.file |
 | Default and optional configs | https://example.org/config |
+<!-- markdown-link-check-enable -->
 
 ## Overview
 
@@ -162,7 +164,7 @@ patching/update availability.
 * Known Issues Over Time. List or summarize statistics of past vulnerabilities
   with links. If none have been reported, provide data, if any, about your track
 record in catching issues in code review or automated testing.
-* [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/).
+* [OpenSSF Best Practices](https://www.bestpractices.dev/en).
   Best Practices. A brief discussion of where the project is at
   with respect to CII best practices and what it would need to
   achieve the badge.
