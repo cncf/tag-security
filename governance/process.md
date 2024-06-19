@@ -57,7 +57,7 @@ informative note.
 ### Raising an Issue
 
 Anyone is welcome to raise an issue either as a suggestion or as a proposal.
-These will follow the process described in [proposals and suggestions](#proposals-and-suggestions).
+These will follow the process described in [proposals and suggestions](#suggestions-proposals--presentations).
 
 ## Suggestions, proposals, & presentations
 

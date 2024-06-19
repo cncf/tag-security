@@ -17,7 +17,7 @@ For nomination process please refer to [tech-lead-proposal-process](./tech-lead-
       have admin access, tech leads have push access).
     * [ ] Link to official vote email list message in PR descriptions
     * [ ] Add STAG milestone to track STAG rep for TL
-  * [ ] [TOC Repo update](https://github.com/cncf/toc/blob/main/tags/security.md)
+  * [ ] [TOC Repo update](https://github.com/cncf/toc/blob/main/tags/tag-charters/security.md)
   * [ ] Verify new TLs have zoom credentials
   * [ ] Introduce new TL selection, in the next steering committee meeting slide
   * [ ] YouTube Channel
