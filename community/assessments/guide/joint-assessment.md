@@ -62,10 +62,12 @@ mutually exclusive with markdown table syntax -->
 Provide the list of links to existing security documentation for the project.
 You may use the table below as an example:
 
+<!-- markdown-link-check-disable -->
 | Doc | URL |
 | -- | -- |
 | Security file | <https://my.security.file> |
 | Default and optional configs | <https://my.security.config> |
+<!-- markdown-link-check-enable -->
 
 ## Overview
 
@@ -111,8 +113,9 @@ references as part of a security audit.
 
 ## Intended Use
 
-* Target Users and Use Cases. Provide a mapping from [standard
-personas](../../usecase-personas) to the nomenclature used in your project docs
+* Target Users and Use Cases. Provide a mapping from [standard 
+personas](../../resources/usecase-personas/README.md) 
+to the nomenclature used in your project docs
 (which you should then use consistently for the remainder of this document).
 Describe the scenarios in which the project is expected to be used. This must be
 specific enough to provide context for analysis. For example:

@@ -5,7 +5,7 @@ different projects, this document outlines the procedure by which a project
 should be assessed during a TAG-Security Security Assessment (TSSA).
 
 * [Roles](#roles)
-* [TSSA package steps](#TSSA-package-steps)
+* [TSSA package steps](#tssa-package-steps)
   * [New projects](#new-projects)
     1. [Self-assessment](#complete-a-self-assessment)
     2. [Create issue](#create-a-presentation-issue)
@@ -13,10 +13,8 @@ should be assessed during a TAG-Security Security Assessment (TSSA).
     4. [Submit PR](#submit-a-pr-to-include-the-self-assessment-in-the-repo)
   * [Growing projects](#growing-projects)
     1. [Create issue](#create-tracking-issue)
-    2. [Draft joint
-       assessment](#project-leverages-self-assessment-to-draft-joint-assessment)
-    3. [Reviewers
-       assigned](#project-provides-the-joint-assessment-and-reviewers-are-assigned)
+    2. [Draft joint assessment](#project-leverages-self-assessment-to-draft-joint-assessment)
+    3. [Reviewers assigned](#project-provides-the-joint-assessment-and-reviewers-are-assigned)
     4. [Conflict of interest](#conflict-of-interest-statement-and-review)
     5. [Clarifying questions](#clarifying-questions-phase)
     6. [Assessment](#security-assessment-with-optional-hands-on-assessment)
