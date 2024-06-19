@@ -78,16 +78,8 @@ navigate a complex security landscape.
   of the group. This includes coordination with the TOC and providing approval
   for governance changes.
 * The Chairs are responsible for ensuring that group meetings are planned
-  and facilitated effectively, while also engaging group members in leadership
-  roles. Effective facilitation includes (but is not limited to) the following
-  activities:
-  * Setting the agenda for meetings.
-  * Extending discussion via asynchronous communication to be inclusive of
-    members who cannot attend a specific meeting time.
-  * Scheduling discussion of proposals that have been submitted.
-  * Asking for new proposals to be made to address an identified need.
-  * Partnering with Technical Leads to establish a roadmap and manage ongoing
-    projects.
+  and have facilitators assigned, while also engaging group members in leadership
+  roles.
  * Chairs are responsible for approving Pull Requests, specifically for
    top-level content of the repository
  * Chairs may additionally perform any actions of technical leads as needed,
@@ -373,6 +365,16 @@ goals, the meeting facilitator has the following responsibilities:
 * Ensures there are scribes.
 * Runs meeting check-in, including partner groups.
 * Leads the meeting through the agenda.
+
+Effective facilitation includes (but is not limited to) the following
+activities:
+* Setting the agenda for meetings.
+* Extending discussion via asynchronous communication to be inclusive of
+  members who cannot attend a specific meeting time.
+* Scheduling discussion of proposals that have been submitted.
+* Asking for new proposals to be made to address an identified need.
+* Partnering with Technical Leads to establish a roadmap and manage ongoing
+  projects.
 
 Prerequisites:
 
