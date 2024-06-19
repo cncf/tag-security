@@ -10,4 +10,3 @@ project directory for information about what type of assessment was performed.
 Note also, that some of the self-assessments were created by Security Pals, who are
 external parties that review the project's documentation to create an assessment
 draft.  These may not have been reviewed by the project team.
-
