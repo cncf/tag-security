@@ -113,8 +113,7 @@ references as part of a security audit.
 
 ## Intended Use
 
-* Target Users and Use Cases. Provide a mapping from [standard 
-personas](../../resources/usecase-personas/README.md) 
+* Target Users and Use Cases. Provide a mapping from [standard personas](../../resources/usecase-personas/README.md)
 to the nomenclature used in your project docs
 (which you should then use consistently for the remainder of this document).
 Describe the scenarios in which the project is expected to be used. This must be
