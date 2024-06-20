@@ -6,36 +6,32 @@ on:
   pull_request:
     branches:
       - main
-
+      
 jobs:
   Setup:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Setup
-        working-directory: ci
-        run: make setup
+        run: cd ci && make setup
   Lint:
     runs-on: ubuntu-latest
     needs: Setup
     steps:
       - uses: actions/checkout@v2
       - name: Lint
-        working-directory: ci
-        run: make lint
+        run: cd ci && make lint
   Spelling:
     runs-on: ubuntu-latest
     needs: Setup
     steps:
       - uses: actions/checkout@v2
       - name: Spelling
-        working-directory: ci
-        run: make spelling
+        run: cd ci && make spelling
   Links:
     runs-on: ubuntu-latest
     needs: Setup
     steps:
       - uses: actions/checkout@v2
       - name: Links
-        working-directory: ci
-        run: make links
+        run: cd ci && make links

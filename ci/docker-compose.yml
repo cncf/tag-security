@@ -5,19 +5,19 @@ services:
     image: node:18
     working_dir: /usr/src/app
     volumes:
-      - .:/usr/src/app
+      - "${PWD}:/usr/src/app"
   lint:
     image: node:18
     working_dir: /usr/src/app
     volumes:
-      - .:/usr/src/app
+      - "${PWD}:/usr/src/app"
   spelling:
     image: node:18
     working_dir: /usr/src/app
     volumes:
-      - .:/usr/src/app
+      - "${PWD}:/usr/src/app"
   links:
     image: node:18
     working_dir: /usr/src/app
     volumes:
-      - .:/usr/src/app
+      - "${PWD}:/usr/src/app"
