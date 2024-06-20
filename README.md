@@ -25,27 +25,20 @@ We aim to significantly reduce the probability and impact of attacks, breaches, 
 
 ## Publications
 
-This document lists some of the key publications and resources that TAG Security has produced. For a complete list of assets in multiple formats, please refer to the [publications](publications/README.md) directory.
+Below is a list of publications by TAG Security. For a comprehensive collection of our works in various formats, please visit the [publications](publications/README.md) directory.
 
 | Publication | Date |
 |-------------|------|
-| [In-toto Security Assessment](https://github.com/cncf/tag-security/tree/main/assessments/projects/in-toto) | May, 2019 |
 | [Formal Verification for Policy Configurations](https://github.com/cncf/tag-security/blob/main/policy/overview-policy-formal-verification.md) | August, 2019 |
-| [OPA Security Assessment](https://github.com/cncf/tag-security/tree/main/assessments/projects/opa) | September, 2019 |
 | [Catalog of Supply Chain Compromises](https://github.com/cncf/tag-security/tree/main/supply-chain-security/compromises) | November 2019 - Present |
-| [Spiffe-Spire Security Assessment](https://github.com/cncf/tag-security/tree/main/assessments/projects/spiffe-spire) | February, 2020 |
-| [Harbor Security Assessment](https://github.com/cncf/tag-security/tree/main/assessments/projects/harbor) | April, 2020 |
-| [Keycloak Security Assessment](https://github.com/cncf/tag-security/tree/main/assessments/projects/keycloak) | October, 2020 |
 | [Software Supply Chain Best Practices](https://github.com/cncf/tag-security/raw/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf) | May, 2021 |
-| [Evaluating your supply chain security](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/secure-supply-chain-assessment.md) | May, 2021 |
+| [Evaluating your Supply Chain Security](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/secure-supply-chain-assessment.md) | May, 2021 |
 | [Cloud Native Security Lexicon](https://github.com/cncf/tag-security/blob/main/security-lexicon/cloud-native-security-lexicon.md) | August, 2021 |
-| [Buildpacks Security Assessment](https://github.com/cncf/tag-security/tree/main/assessments/projects/buildpacks) | September, 2021 |
 | [Cloud Native Security Whitepaper](https://www.cncf.io/wp-content/uploads/2022/06/CNCF_cloud-native-security-whitepaper-May2022-v2.pdf) | May, 2022 |
 | [Cloud Native Security Controls Catalog](https://github.com/cncf/tag-security/blob/main/cloud-native-controls/phase-one-announcement.md) | May, 2022 |
-| [Handling build-time dependency vulnerabilities](https://github.com/cncf/tag-security/blob/main/policy/overview-policy-build-time-dependency-vulns.md) | June, 2022 |
+| [Handling Build-time Dependency Vulnerabilities](https://github.com/cncf/tag-security/blob/main/policy/overview-policy-build-time-dependency-vulns.md) | June, 2022 |
 | [Secure Software Factory: A Reference Architecture to Securing the Software Supply Chain](https://github.com/cncf/tag-security/raw/main/supply-chain-security/secure-software-factory/Secure_Software_Factory_Whitepaper.pdf) | May, 2022 |
 | [Secure Defaults](https://github.com/cncf/tag-security/blob/main/security-whitepaper/secure-defaults-cloud-native-8.md) | February, 2022 |
-| [Cloud Custodian Security Assessment](https://github.com/cncf/tag-security/tree/main/assessments/projects/custodian) | February, 2022 |
 | [Open and Secure - A Manual for Practicing Threat Modeling to Assess and Fortify Open Source Security](https://github.com/cncf/tag-security/blob/main/assessments/Open_and_Secure.pdf) | November, 2023 |
 
 ## Governance
