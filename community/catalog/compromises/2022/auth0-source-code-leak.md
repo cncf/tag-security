@@ -13,7 +13,7 @@ to Okta environments.
 
 It's not entirely clear what the type of compromise is here. It appears to be
 source code like the [Intel BIOS
-leak](/supply-chain-security/compromises/2022/intel-alder-lake-BIOS-leak.md) and
+leak](community/catalog/compromises/2022/intel-alder-lake-BIOS-leak.md) and
 might also involve dev tooling depending on how the attacker gained access to
 the source code.
 

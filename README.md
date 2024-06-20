@@ -121,7 +121,7 @@ Each group, led by a responsible leader, reaches consensus on issues and manages
 | [Research](/community/working-groups/research/README.md) | Andrés Vega |
 | [Automated Governance](/community/working-groups/automated-governance/README.md) | Andrés Vega, Brandt Keller |
 | [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres |
-| [Compliance](/community/working-groups/compliance/README.) | Anca Sailer, Robert Ficcaglia |
+| [Compliance](/community/working-groups/compliance/README.md) | Anca Sailer, Robert Ficcaglia |
 | [Controls](/community/working-groups/controls/README.md) | Jon Zeolla |
 | [Security Reviews](/assessments/README.md) | Justin Cappos, Eddie Knight|
 | [Software Supply Chain](/community/working-groups/supply-chain-security/README.md) | Marina Moore, Michael Liebermann, John Kjell |
