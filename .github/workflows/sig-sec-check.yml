@@ -1,4 +1,3 @@
----
 name: TAG-Security-Linter
 
 # Run this workflow on every PR to main
@@ -13,25 +12,25 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Setup
-        run: make setup
+        run: make -f .ci/Makefile setup
   Lint:
     runs-on: ubuntu-latest
     needs: Setup
     steps:
       - uses: actions/checkout@v2
       - name: Lint
-        run: make lint
+        run: make -f .ci/Makefile lint
   Spelling:
     runs-on: ubuntu-latest
     needs: Setup
     steps:
       - uses: actions/checkout@v2
       - name: Spelling
-        run: make spelling
+        run: make -f .ci/Makefile spelling
   Links:
     runs-on: ubuntu-latest
     needs: Setup
     steps:
       - uses: actions/checkout@v2
       - name: Links
-        run: make links
+        run: make -f .ci/Makefile links
