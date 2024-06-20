@@ -5,7 +5,7 @@
   {{ $path := replace $url.Path "README" "" }}
   {{ $path = replace $path ".md" "" }}
   {{ $url = urls.Parse $path }}
-  {{ if $url.Path }}
+  {{ if or ($url.Path) (eq .Destination "README.md") }}
     {{ $fragment := "" }}
     {{ with $url.Fragment }}
       {{ $fragment = printf "#%s" . }}

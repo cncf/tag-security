@@ -50,7 +50,7 @@ Refer to the [Security TAG charter](governance/README.md) for our governance pro
 Join our open discussions and share news:
 
 - [Email list](https://lists.cncf.io/g/cncf-tag-security)
-- [CNCF Slack](https://slack.cncf.io/) #tag-security channel
+- [CNCF Slack](https://slack.cncf.io/) #tag-security channel (Refer to the [contributing guidelines](CONTRIBUTING.md) for posting and participation details.)
 
 ## Meeting Information
 
@@ -68,7 +68,9 @@ To add a topic to the agenda, review our [process](governance/process.md#getting
 
 ## New members
 
-New to the group? Check out our [New Members](NEW-MEMBERS.md) page.
+If you are new to the group, we encourage you to check out our
+[contributing guidelines](CONTRIBUTING.md).
+
 
 ## Related groups
 
@@ -133,5 +135,5 @@ For [CNCF project proposal process](https://github.com/cncf/toc/blob/main/proces
 create a
 new [security review issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 with a
-[self-assessment](https://github.com/cncf/tag-security/blob/main/assessments/guide/self-assessment.md)
+[self-assessment](./assessments/guide/self-assessment.md)
 .
