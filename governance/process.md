@@ -13,7 +13,7 @@ that may involve one or more projects and activities.
 
 In order to better plan and facilitate meetings, Security TAG has **three** ways
 in which a topic may be added to the [Agenda for planned
-meetings](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit#heading=h.q3539ohya47f).
+meetings](https://docs.google.com/document/d/1XDmNG1P1YRnidQJEuZFKufaXaIenNHiY-TdYMlt0Un4/edit).
 
 In order to best manage the group's time, consider your topic and the audience,
 and select accordingly. If you are unsure, reach out in the
