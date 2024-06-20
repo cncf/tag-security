@@ -9,7 +9,8 @@ deps:
 	--include='*.md' --exclude='*'
 
 	# Move over content such as graphics and logos
-	rsync -av --mkpath '../community/resources/design/' 'static/community/resources/design/' --exclude='#*'
+	mkdir -p static/community/resources/design/
+	rsync -av '../community/resources/design/' 'static/community/resources/design/' --exclude='#*'
 
 	# Update all imported markdown files to work as standalone hugo pages (except READMEs, see below)
 	# sed command is configured for the Netlify ubuntu env
@@ -75,4 +76,3 @@ clean:
 	@rm -rf public resource
 	@find root/* -type f ! -name '*.gitkeep' -print0 | xargs -0 rm -v
 	@echo "Finished removing anything residual"
-	
