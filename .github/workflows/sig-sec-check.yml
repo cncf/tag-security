@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Setup
-        working-directory: .ci
+        working-directory: ci
         run: make setup
   Lint:
     runs-on: ubuntu-latest
@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Lint
-        working-directory: .ci
+        working-directory: ci
         run: make lint
   Spelling:
     runs-on: ubuntu-latest
@@ -29,7 +29,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Spelling
-        working-directory: .ci
+        working-directory: ci
         run: make spelling
   Links:
     runs-on: ubuntu-latest
@@ -37,5 +37,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Links
-        working-directory: .ci
+        working-directory: ci
         run: make links
