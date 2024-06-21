@@ -289,14 +289,18 @@ formal assessment and are no guarantee of the actual security of the project.
 *If a hands-on assessment was performed, the below format should be used for
 reporting details*
 
-| | |
-| -- | -- |
-| Date of assessment | mmddyyyy-mmddyyyy |
-| Hands-on reviewers | name, github handle |
+### Assessment Details
 
-| Finding Number | Finding name | Finding Notes | Reviewer |
-| -- | -- | -- | -- |
-| | | |
+| Field               | Description               |
+|---------------------|---------------------------|
+| Date of assessment  | mmddyyyy-mmddyyyy         |
+| Hands-on reviewers  | name, github handle       |
+
+### Findings
+
+| Finding Number | Finding name | Finding Notes | Reviewer           |
+|----------------|--------------|---------------|--------------------|
+|                |              |               |                    |
 
 ### Hands-on assessment result
 
