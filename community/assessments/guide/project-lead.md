@@ -8,8 +8,8 @@ interest in security.
 
 ## Time and effort
 
-The level of effort for the team providing the information is expected to be 
-around **80 hours** of work.  Note, projects that have already performed a 
+The level of effort for the team providing the information is expected to be
+around **80 hours** of work.  Note, projects that have already performed a
 security analysis internally are expected to have much lower requirements.
 
 ## Conflict of interest

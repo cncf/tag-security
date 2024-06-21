@@ -93,6 +93,7 @@ or other details in the ticketed request for a project's joint assessment may
 require additional time. However, analysis is expected to be concluded in a
 few weeks -- usually 3 weeks.  Effort is expected to include and may not be
 limited to:
+
 * reviewing existing security documentation
 * reviewing ticketed request for project assessment
 * analysis of security assertions and assumptions
@@ -112,22 +113,24 @@ There is a possibility of a conflict of interest that can arise between a
 security reviewer and the project being assessed due to the closely-knit nature
 of the community. Having clear guidelines for conflict of interest situations
 are important to prevent:
-- Individuals from intentionally or unintentionally promoting their own
+
+* Individuals from intentionally or unintentionally promoting their own
 company's project
-- TAG-Security chairs and review leads intentionally or
+* TAG-Security chairs and review leads intentionally or
 unintentionally limiting the participation of an individual unfairly by
 asserting conflict of interest
-- Security reviews being stalled while groups belabor on who should be allowed
+* Security reviews being stalled while groups belabor on who should be allowed
 to participate
 
 The conflicts of interest lie on a spectrum, and are classified into hard and
 soft conflicts:
+
 * A hard conflict makes a reviewer ineligible to assess a project.
 * A soft conflict allows a reviewer to assess a project, but not as a
 [project lead](./project-lead.md).
 * It is not unusual for reviewers to have soft conflicts. The diversity of
 reviewers that are familiar with a project can provide a deeper insight
-together with a fresh set of eyes and is beneficial to the success of a 
+together with a fresh set of eyes and is beneficial to the success of a
 TAG-Security Security Assessment.
 
 All reviewers must provide a conflict declaration on the tracking issue to
@@ -135,14 +138,14 @@ indicate which hard or soft conflicts do, or do not exist when they volunteer
 to be a reviewer.  This is done by placing a comment on the issue associated
 with the joint assessment using the table provided below.
 
-#### Conflict of interest statement template:
+### Conflict of interest statement template
+
 | Hard Conflicts | Y/N |
 | :------------- | :-: |
 | Reviewer is a currently a maintainer of the project |  |
 | Reviewer is direct report of/to a current maintainer of the project |  |
 | Reviewer is paid to work on the project |  |
 | Reviewer has significant financial interest directly ties to the success of the project |  |
-
 
 | Soft Conflicts | Y/N |
 | :------------- | :-: |
@@ -155,13 +158,14 @@ with the joint assessment using the table provided below.
 
 Should a conflict arise during the time of the assessment, reviewers should notify
 the lead security reviewer when they become aware of the potential conflict,
-so the new conflict may be consulted with the Security Assessment Facilitator 
+so the new conflict may be consulted with the Security Assessment Facilitator
 and/or chairs.
 
 ## Asserting team readiness to conduct a balanced assessment
 
 The lead security reviewer has the responsibility of ensuring a balanced assessment,
 and as part of that before kicking off the assessment must:
+
 * Check that all reviewers have conflict-of-interest declarations,
 * Provide their own declaration of any potential conflict-of-interest
 (or lack thereof),
@@ -188,4 +192,3 @@ participating in the assessment for which their hard conflict exists. Depending
  two chairs and the Security Assessment Facilitator may determine if the hard conflict
 may be waived.  Should this occur, the decision's justification will be documented
  to ensure it clearly depicts the circumstances for granting the waiver.
-
