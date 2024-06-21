@@ -12,3 +12,8 @@ authenticity wasn't being used for source packages.
 ## Type of compromise
 
 Negligence - Insufficient client-side package authenticity verification
+
+## References
+
+* <https://ubuntu.com/security/notices/USN-1762-1>
+* <https://nvd.nist.gov/vuln/detail/CVE-2013-1051>
