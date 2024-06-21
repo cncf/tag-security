@@ -1,4 +1,6 @@
-# ProFTPD hack
+<!-- cSpell:ignore FTPD -->
+
+# ProFTPD Hack and Backdoor
 
 A source code repository server of an open-source project (ProFTPD) was hacked
 by unknown attackers who planted a backdoor in the source code.
@@ -15,5 +17,5 @@ and it's unlikely a key compromise was involved.
 
 ## References
 
-- https://www.zdnet.com/article/open-source-proftpd-hacked-backdoor-planted-in-source-code/
-- https://www.theregister.com/2010/12/02/proftpd_backdoored/
+- <https://www.zdnet.com/article/open-source-proftpd-hacked-backdoor-planted-in-source-code/>
+- <https://www.theregister.com/2010/12/02/proftpd_backdoored/>
