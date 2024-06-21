@@ -1,9 +1,9 @@
 ## Goal
 
-The [SAFE roadmap](../roadmap.md) includes describing the landscape of
-cloud-native security. We evaluated categories in the
+TAG Security evaluated categories in the
 [CNCF Landscape](https://landscape.cncf.io/) and
-determined the need for a [modified approach](approach.md).
+determined the need for a [modified approach](approach.md) to describe
+the landscape of cloud native security.
 
 We propose [categories](categories.md) as a draft structure for a “Cloud Native
 Security Landscape”. We drafted this document after reviewing the current list

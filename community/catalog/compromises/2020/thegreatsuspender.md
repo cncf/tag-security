@@ -20,10 +20,12 @@ diverged from its Github source. A minor change in the manifest was now being
 shipped on the chrome web store, which was not included in Github. This is a
 major concern.
 
+<!-- markdown-link-check-disable -->
 As a final red flag, no part of the web-store posting has been updated to account
 for this. [@greatsuspender](https://github.com/greatsuspender) remains listed as
-the maintainer, and the privacy policy makes no mention of the new tracking or
+the maintainer, and a privacy policy makes no mention of the new tracking or
 maintainer [greatsuspender privacy policy](https://greatsuspender.github.io/privacy).
+<!-- markdown-link-check-disable -->
 
 On November 6th, [@lucasdf](https://github.com/lucasdf) discovered a smoking gun
 that the new maintainer is malicious. Although OpenWebAnalytics is legitimate
