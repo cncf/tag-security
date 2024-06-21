@@ -1,11 +1,11 @@
 # Joint-assessment Outline
 
-The joint-assessment is built on top of the [self-assessment.md](https://tag-security.cncf.io/assessments/projects/openfga/self-assessment/) to
+The joint-assessment is built on top of the [self-assessment.md](https://tag-security.cncf.io/assessments/projects/openfga/self-assessment/) to 
 collaboratively assess the current security state of a project.
 
 The burden is primarily on the proposing project to demonstrate it is secure in
-a manner that is understandable to the broader community.  The
-[reviewers](security-reviewer.md) will help to assess and probe the design.
+a manner that is understandable to the broader community. The
+reviewers will help to assess and probe the design.
 
 The proposing project must provide a written document that describes the project
 and its security.  The document must contain the following information, at a
@@ -70,14 +70,14 @@ These are link to existing security documentation for the project.
 
 ## Overview
 
-The overview sections are pulled from the [self-assessment](https://tag-security.cncf.io/assessments/projects/openfga/self-assessment/) and
-updated.
+The overview sections are pulled from the [self-assessment](https://tag-security.cncf.io/assessments/projects/openfga/self-assessment/) and updated.
 
 Implementing access control is a very common requirement when developing applications, where different subjects can perform different actions on different resources.
 
 OpenFGA is a high performance and flexible authorization/permission engine that can be used to implement fine grained access control in any application component.
 
-Developers can use OpenFGA to easily craft authorization and permission methods based on the policies they require that are specific to their own projects.
+Developers can use OpenFGA to easily craft authorization and permission methods based on the policies they require that are specific to their own projects. They can further use the API's provided by the project to confirm users have the permissions 
+required to access a given resource.
 
 ### Background
 
@@ -153,62 +153,103 @@ With this information, OpenFGA can be queried in different ways:
 ## Joint-assessment use
 
 The joint-assessment is initially created by the project team and then
-collaboratively developed with the [security reviewers](security-reviewer.md) as
+collaboratively developed with the security reviewers as
 part of the project's TAG-Security Security Assessment (TSSA) Process.
 Information about the TAG-Security Review can be found in the [CNCF TAG-Security
-Review Process Guide](./README.md).
+Review Process Guide](https://tag-security.cncf.io/assessments/guide/).
 
-This document does not intend to provide a security audit of [project] and is
+This document does not intend to provide a security audit of OpenFGA and is
 not intended to be used in lieu of a security audit.  This document provides
-users of [project] with a security focused understanding of [project] and when
-taken with the [self-assessment](self-assessment.md) provide the community with
+users of the project with a security focused understanding of OpenFGA and when
+taken with the [self-assessment](./self-assessment.md) provide the community with
 the TAG-Security Review of the project.  Both of these documents may be used and
-references as part of a security audit.
+referenced as part of a security audit.
 
-his self-assessment is created by the OpenFGA team to perform an internal analysis of the project's security. It is not intended to provide a security audit of OpenFGA, or function as an independent assessment or attestation of OpenFGA's security health.
-
-This document serves to provide OpenFGA users with an initial understanding of OpenFGA's security, where to find existing security documentation, OpenFGA plans for security, and general overview of OpenFGA security practices, both for development of OpenFGA as well as security of OpenFGA.
-
-This document provides the CNCF TAG-Security with an initial understanding of OpenFGA to assist in a joint-assessment, necessary for projects under incubation. Taken together, this document and the joint-assessment serve as a cornerstone for if and when OpenFGA seeks graduation and is preparing for a security audit.
+Taken together, this document and the [self-assessment](./self-assessment.md) serve as a 
+cornerstone for if and when OpenFGA seeks graduation and is preparing for a security audit.
 
 ## Intended Use
 
-* Target Users and Use Cases. Provide a mapping from [standard
-personas](../../usecase-personas) to the nomenclature used in your project docs
-(which you should then use consistently for the remainder of this document).
-Describe the scenarios in which the project is expected to be used. This must be
-specific enough to provide context for analysis. For example:
+* Target Users and Use Cases. The key users of this project are models who define authorization models, application developers that integrate the API into their application for externalizing authorization and operators.
 
-    Flibble can be used in any cloud environment.  Three diverse examples are as
-follows:
-    1. when a Flibble server is used by legacy servers as a database for salted
-       password hashes.
-    2. a Flibble cloudlet may be run on virtualized fog hardware near smartphone
-       users.
-    3. a Flibble distributed service may serve as a backend for a Notary image
-       registry.)
+    OpenFGA can be used in any environment and has helm charts defined for install on a Kubernetes platform. 
+    1. OpenFGA is used by applications to externalize authorization decisions
+    2. The project implements the [Google Zanzibar paper](https://research.google/pubs/pub48190) paper for effective, performant authorization
+    3. Administrators can program authorization models into the system for use by application teams
 
-* Operation.  A description of the operational aspects of the system, such as
-  how keys are likely to be managed and stored.
+* Operation.  OpenFGA supports both MySQL and Postgres as its datastore.
 
 ## Project Design
 
-* Design.  A description of the system design that discusses how it works. This
-  is especially critical for any mechanisms that relate to the security of the
-system.  Include architecture and network (if applicable) information such as
-encryption of traffic between services, access control types (RBAC, etc.) and
-enforcement, or security logging, etc.
-
-* Data flow diagram/Architecture diagram
+* Design. while OpenFGA provides rich documentation around its core [concepts](https://openfga.dev/docs/concepts) and usage of the project, the assessors were not able to locate any documentation about key architecture and design decisions.
 
 ### Functions and features
 
-* Critical.  A listing with brief description of functions and features that are
-  critical to the project's ability to meet its intended use.  It is recommended
-these be covered in the threat model.
-* Relevant.  A listing with brief description of the functions and features of
-  the project that perform a security relevant function.  It is recommended
-these be covered in the threat model.
+The list below describes the functionality provided by OpenFGA. This assessment 
+did not segregate these into critical and other levels but focused on the server 
+component as a priority.
+
+```yaml
+actions: 
+  system.users:
+    - Request access to [system.resources] through [openfga.clients|system.applications]  
+
+  system.developers:
+    - Integrate [openfga.sdks] in [openfga.clients|system.applications]
+    - Validate and verify semantically [openfga.authz_models] 
+
+  system.operators:
+    - Migrate [openfga.datastore]  
+    - Deploy [openfga.server]
+
+  system.external.idp:
+    - Provide [jwks_uri] through oidc /.well-known/openid-configuration 
+    - Sign [token] with [rs256] algorithm 
+
+  openfga.language:
+    - Provide a domain specific language to describe authorization policies
+    - Describe the authorization model with [types], [relations] and [conditions] 
+    
+  openfga.datastore:
+    - Store authorization models [openfga.authz_models] 
+    - Store authorization data [openfga.relationships.tuples]
+    - Support for [MySQL, Postgres] database
+
+  openfga.clients|system.applications:
+    - Authenticate against [openfga.server] with [openfga.psk] secret or through [external.idp]    
+    - Execute authorization checks with [openfga.relationships.queries]
+    - Manage the authorization model [openfga.authz_models] 
+
+  openfga.server:
+    - Write authorization model [openfga.authz_models] to [openfga.datastore]
+    - Write authorization data [openfga.relationships.tuples] to [openfga.datastore]
+    - Provide [grpc|http] messaging protocol 
+    - Authenticate trusted [openfga.clients] with 3 options [none|psk|oidc] 
+    - Validate and verify [payload]   
+    - Evaluate access control decisions [openfga.relationships.queries]
+
+  openfga.server.api:
+    stores:
+      - list
+      - create
+      - get
+      - delete 
+      - assertions.read
+      - assertions.upsert
+    authz-models:
+      - list
+      - create
+      - get
+    relationships.tuples:
+      - read
+      - write
+      - list.changes
+    relationships.queries:
+      - check
+      - expand
+      - list-objects
+      - streamed-list-objects
+```
 
 #### Security functions and features
 
@@ -222,26 +263,19 @@ OpenFGA provides a wide variety of SDK's, as well as easy integration for new SD
 
 ## Configuration and Set-Up
 
-* Default.  Documentation describing the default configuration of the project
-  with initial set-up instructions (link to docs is acceptable). Documentation
-should identify potential security risks/trade-offs of the default config.
-* Secure. Documentation describing recommended secure configuration and set-up
-  instructions, beyond defaults with justification for selection and trade-offs
-(link to docs is acceptable).
-* Advanced Secure. If applicable, documentation describing advanced settings for
-  most hardened configuration of the project to include justification for
-selection and trade-offs (link to docs is acceptable).
+* Default.  The default configuration of the project is described under the [getting started](https://openfga.dev/docs/getting-started) section of the documentation.
+
+* Secure. The recommended [production configuration](https://openfga.dev/docs/getting-started/running-in-production) of the project is described under a separate part of the documentation.
 
 ## Project Compliance
 
-This can be pulled from the self-assessment.
-
-* Compliance.  List any security standards or sub-sections the project is
-  already documented as meeting (NIST 800-53, HiTrust, etc.).
+There are no specific security standards or sub-sections the project is documented 
+as meeting (e.g. NIST 800-53, HiTrust, etc.).
 
 ### Existing Audits
 
-If any audits already exist, link them here with the appropriate dates.
+A self-assessment has been performed but there are no project audits currently 
+for OpenFGA.
 
 ## Security Analysis
 
@@ -554,12 +588,8 @@ All OpenFGA security issues can be found on the [Github advisories page](https:/
 
 ### Closed security issues and vulnerabilities
 
-This should provide links and very brief summary of any closed security issues
- or fixed vulnerabilities for the project (with or without CVE).  If the project
-does not have any closed or fixed vulnerabilities use the below text:
-
-> At the time of the joint assessment, [project] did not have known security issues
-with a closed state or any known vulnerabilities that were fixed.
+At the time of the joint assessment, OpenFGA did not have any closed or fixed 
+issues in their repo with the label "security".
 
 ## Hands-on assessment
 
@@ -569,8 +599,9 @@ with regard to security.  Hands-on assessments are subject to security reviewer
 availability and expertise.  They are not intended to serve as an audit or
 formal assessment and are no guarantee of the actual security of the project.
 
-**[Project] did/did not receive a hands-assessment from TAG-Security.**
+**OpenFGA did/did not receive a hands-assessment from TAG-Security.**
 
+<!-- Commented out in case a hands-on assessment is requested and performed
 *If a hands-on assessment was performed, the below format should be used for
 reporting details*
 
@@ -589,10 +620,11 @@ General comments and summary of the hands-on assessment with any recommendations
 worth noting.  If nothing found use the below example:
 
 > TAG-Security's hands-on assessment did not reveal any significant or notable
-security findings for [project]. This outcome does not indicate that none exist,
+security findings for OpenFGA. This outcome does not indicate that none exist,
 rather that none were discovered.
+-->
 
-## Roadmap
+## Roadmap [TODO] fill in consultation with project team
 
 * Project Next Steps. Link to your general roadmap, if available, then list
   prioritized next steps that may have an impact on the risk profile of your
