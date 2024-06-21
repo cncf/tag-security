@@ -19,4 +19,4 @@ Availability: What is the availability times of the speakers to present the topi
 TO DO
 - [ ] TAG Representative
 - [ ] Schedule date
-- [ ] By opening this issue, I, (Insert Github Handle/Name) acknowledge that the presentation topic and speaker will follow the [presentation guidelines](https://github.com/cncf/tag-security/blob/main/governance/presentations.md)
+- [ ] By opening this issue, I, (Insert Github Handle/Name) acknowledge that the presentation topic and speaker will follow the [presentation guidelines](../CONTRIBUTING.md#present-to-the-tag)

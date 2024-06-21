@@ -70,7 +70,7 @@ Leadership:
 
 ### Slack governance
 
-Refer to the [slack governance document](slack.md) for details on slack channels
+Refer to the [Contributor Documentation] for details on slack channels
 and posting to the channels.
 
 ## Meeting times
@@ -101,8 +101,8 @@ and add to list below:
 
 ## New members
 
-If you are new to the group, we encourage you to check out
-our [New Members Page](NEW-MEMBERS.md)
+If you are new to the group, we encourage you to check out our
+[Contributor Documentation].
 
 ## Related groups
 
@@ -177,10 +177,12 @@ the [CNCF project proposal process](https://github.com/cncf/toc/blob/main/proces
 projects should create a
 new [security review issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 with a
-[self-assessment](https://github.com/cncf/tag-security/blob/main/assessments/guide/self-assessment.md)
+[self-assessment](./assessments/guide/self-assessment.md)
 .
 
 ### Past events and meetings
 
 For more details on past events and meetings, please see
 our [past events page](past-events.md)
+
+[Contributor Documentation]: ./CONTRIBUTING.md
