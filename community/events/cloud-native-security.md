@@ -23,7 +23,7 @@ project, architecture, and enhance team awareness on security.
 
 - Copenhagen, Denmark
 - May 2-4, 2018
-- [notes](safe_kubecon.md)
+- [notes](safe-kubecon.md)
 
 [KubeCon + CloudNativeCon, Shanghai](https://events19.linuxfoundation.cn/events/kubecon-cloudnativecon-china-2018/)
 
