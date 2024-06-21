@@ -18,7 +18,7 @@ deps:
 		if [ "$$file" = "/_index.md" -o "$$base_name" = "README" ]; then \
 			continue; \
 		fi; \
-		title_case=$$(echo "$$base_name" | sed -e 's/-/ /g' | awk '{for(i=1;i<=NF;i++) if($$i !~ /^[A-Z]/) $$i=toupper(substr($$i,1,1)) substr($$i,2)}1'); \
+		title_case=$$(echo "$$base_name" | sed -e 's/-/ /g' -e 's/\b\(.\)/\u\1/g' | sed 's/cncf/CNCF/Ig'); \
 		text_to_prepend="---\ntitle: \"$$title_case\"\n---\n"; \
 		sed -i "1s/^/$$text_to_prepend/" "$$file"; \
 	done
