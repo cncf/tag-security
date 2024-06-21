@@ -1,4 +1,4 @@
-# Security TAG Chair proposal process
+# Security TAG Chair Proposal Process
 
 1) Security TAG Co-chairs operate as a team. The Co-Chair team seeks to maintain full coverage of the leadership capabilities across the key qualities of industry experience, hands-on cloud-native and security experience, as well as administrative experience needed to run a Security TAG.
 2) If a clear successor for the exiting Co-Chair exists based on the merit of their contributions ("chop wood, carry water") and relevant experience that will benefit the TAG, based on the TAG's collective experience over time, the exiting Co-chair may nominate a successor.
