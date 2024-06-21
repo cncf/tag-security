@@ -30,7 +30,7 @@ of compromise needs added, please include that as well.
 <!-- cSpell:disable -->
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
-| [Malware Disguised as Installer used to target Korean Public Institution] | 2024 | Trust and Signing | [1](https://asec.ahnlab.com/en/63396/) |
+| [Malware Disguised as Installer used to target Korean Public Institution](2024/targeted-signed-endoor.md) | 2024 | Trust and Signing | [1](https://asec.ahnlab.com/en/63396/) |
 | [3proxy signing incident](2024/laixi-3proxy.md) | 2024 | Trust and Signing | [1](https://news.sophos.com/en-us/2024/04/09/smoke-and-screen-mirrors-a-strange-signed-backdoor/) |
 | [xz backdoor incident](2024/xz.md) | 2024 | Malicious Maintainer | [1](https://cloudsecurityalliance.org/blog/2024/04/25/navigating-the-xz-utils-vulnerability-cve-2024-3094-a-comprehensive-guide) |
 | [GitGot: using GitHub repositories as exfiltration store](2024/gitgot.md) | 2024 | Trust and Signing | [1](https://www.reversinglabs.com/blog/gitgot-cybercriminals-using-github-to-store-stolen-data) |
@@ -100,12 +100,12 @@ of compromise needs added, please include that as well.
 | [Code Spaces](2014/code-spaces.md) | 2014    | Source Code | [1](https://threatpost.com/hacker-puts-hosting-service-code-spaces-out-of-business/106761/) |
 | [Monju Incident](2014/monju.md) | 2014    | Publishing infrastructure| [1](https://www.contextis.com/en/blog/context-threat-intelligence-the-monju-incident) |
 | [APT lack of validation for source packages](2013/apt.md) | 2013 | Negligence | [1](https://lwn.net/Articles/602461/) |
-| [GitHub rails/rails Vulnerability](2012/ruby-on-rails-github.md) | 2012 | Source Code <br> Dev Tooling | [1](https://homakov.blogspot.com/2012/03/how-to.html), [2](https://github.blog/2012-03-05-responsible-disclosure-policy/) |
-| [kernel.org compromise](2011/kernelorg.md) | 2011 | Publishing infrastructure | [1](https://lwn.net/Articles/461237/), [2](https://lwn.net/Articles/461552/) |
+| [GitHub Ruby on Rails Repository Hack](2012/ruby-on-rails-github.md) | 2012 | Source Code <br> Dev Tooling | [1](https://homakov.blogspot.com/2012/03/how-to.html), [2](https://github.blog/2012-03-05-responsible-disclosure-policy/) |
+| [kernel.org Infrastructure Compromise](2011/kernelorg.md) | 2011 | Publishing infrastructure | [1](https://lwn.net/Articles/461237/), [2](https://lwn.net/Articles/461552/) |
 | [FSF Website Hack](2010/fsf-website.md) | 2010 | Source Code | [1](https://www.computerworld.com/article/2752415/free-software-foundation-s-software-repository-hacked.html) |
-| [apache.org incident](2010/apache.md) | 2010 | Attack Chaining | [1](https://blogs.apache.org/infra/entry/apache_org_04_09_2010) |
+| [apache.org Internal Tools Compromise](2010/apache.md) | 2010 | Attack Chaining | [1](https://www.invicti.com/blog/web-security/apacheorg-and-jira-incident/) |
 | [Operation Aurora](2010/aurora.md) | 2010 | Watering-hole attack | [1](https://www.wired.com/2010/03/source-code-hacks/) |
-| [ProFTPD](2010/proftpd.md) | 2010 | Publishing Infrastructure | [1](https://www.zdnet.com/article/open-source-proftpd-hacked-backdoor-planted-in-source-code/) |
+| [ProFTPD Hack and Backdoor](2010/proftpd.md) | 2010 | Publishing Infrastructure | [1](https://www.zdnet.com/article/open-source-proftpd-hacked-backdoor-planted-in-source-code/) |
 | [WordPress backdoor](2007/wordpress.md) | 2007 | Source Code <br> Publishing Infrastructure </br> | [1](https://lwn.net/Articles/224997/) |
 | [SquirrelMail backdoor](2007/squirrelmail.md) | 2007 | Source Code <br> Publishing Infrastructure | [1](https://lwn.net/Articles/262688/) |
 | [Linux Kernel CVS Repository Hack](2003/kernel-repository.md) | 2003 | Source Code <br> Dev Tooling | [1](https://lwn.net/Articles/57135/) |
