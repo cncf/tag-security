@@ -8,8 +8,7 @@ The goal is not to catalog every known supply chain attack, but rather to captur
 many examples of different kinds of attack, so that we can better understand the
 patterns and develop best practices and tools.
 
-For definitions of each compromise type, please check out our [compromise
-definitions page](/supply-chain-security/compromises/compromise-definitions.md)
+For definitions of each compromise type, please check out our [compromise definitions page](community/catalog/compromises/compromise-definitions.md)
 
 We welcome additions to this catalog by [filing an
 issue](https://github.com/cncf/tag-security/issues/new/choose) or [github pull
