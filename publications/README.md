@@ -13,20 +13,20 @@ This document lists all the publications and resources that TAG Security has pro
 | | **Translations** | | |
 | | | Portuguese (v1) | [Link](https://github.com/cncf/tag-security/blob/main/security-whitepaper/v1/cloud-native-security-whitepaper-brazilian-portugese.md) |
 | | | Chinese (v1) | [Link](https://github.com/cncf/tag-security/blob/main/security-whitepaper/v1/cloud-native-security-whitepaper-simplified-chinese.md) |
-| **Open and Secure - A Manual for Practicing Threat Modeling to Assess and Fortify Open Source Security** | Guide for assessing and understanding the security of open source software projects | PDF | [Link](https://github.com/cncf/tag-security/blob/main/assessments/Open_and_Secure.pdf) |
+| **Open and Secure - A Manual for Practicing Threat Modeling to Assess and Fortify Open Source Security** | Guide for assessing and understanding the security of open source software projects | PDF | [Link](/community/assessments/Open_and_Secure.pdf) |
 | **Policy** | | | |
 | | Formal Verification for Policy Configurations | Markdown | [Link](https://github.com/cncf/tag-security/blob/main/policy/overview-policy-formal-verification.md) |
 | | Handling build-time dependency vulnerabilities | Markdown | [Link](https://github.com/cncf/tag-security/blob/main/policy/overview-policy-build-time-dependency-vulns.md) |
 | **Secure Defaults: Cloud Native 8** | | Markdown | [Link](https://github.com/cncf/tag-security/blob/main/security-whitepaper/secure-defaults-cloud-native-8.md) |
 | **Security Assessments** | Assessments of several CNCF projects | | |
-| | Buildpacks | Markdown | [Link](https://github.com/cncf/tag-security/tree/main/assessments/projects/buildpacks) |
-| | Cloud Custodian | Markdown | [Link](https://github.com/cncf/tag-security/tree/main/assessments/projects/custodian) |
-| | Harbor | Markdown | [Link](https://github.com/cncf/tag-security/tree/main/assessments/projects/harbor) |
-| | In-toto | Markdown | [Link](https://github.com/cncf/tag-security/tree/main/assessments/projects/in-toto) |
-| | Keycloak | Markdown | [Link](https://github.com/cncf/tag-security/tree/main/assessments/projects/keycloak) |
-| | Kyverno | Markdown | [Link](https://github.com/cncf/tag-security/tree/main/assessments/projects/kyverno) |
-| | OPA | Markdown | [Link](https://github.com/cncf/tag-security/tree/main/assessments/projects/opa) |
-| | Spiffe-Spire | Markdown | [Link](https://github.com/cncf/tag-security/tree/main/assessments/projects/spiffe-spire) |
+| | Buildpacks | Markdown | [Link](/community/assessments/projects/buildpacks) |
+| | Cloud Custodian | Markdown | [Link](/community/assessments/projects/custodian) |
+| | Harbor | Markdown | [Link](/community/assessments/projects/harbor) |
+| | In-toto | Markdown | [Link](/community/assessments/projects/in-toto) |
+| | Keycloak | Markdown | [Link](/community/assessments/projects/keycloak) |
+| | Kyverno | Markdown | [Link](/community/assessments/projects/kyverno) |
+| | OPA | Markdown | [Link](/community/assessments/projects/opa) |
+| | Spiffe-Spire | Markdown | [Link](/community/assessments/projects/spiffe-spire) |
 | **Supply Chain Security** | | | |
 | | Software Supply Chain Best Practices | Markdown | [Link](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md) |
 | | | PDF | [Link](https://github.com/cncf/tag-security/raw/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf) |

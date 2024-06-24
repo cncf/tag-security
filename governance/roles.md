@@ -318,7 +318,7 @@ community [via the `#tag-security`
 channel](https://cloud-native.slack.com/archives/CDJ7MLT8S)), and issue a
 call/request for reviewers (i.e. a single security assessment lead, and at
 least two additional security reviewers), and ensuring all reviewers [read the
-conflict of interest disclosure](../assessments/guide/security-reviewer.md) and
+conflict of interest disclosure](./community/assessments/guide/security-reviewer.md) and
 sign-off on it in the GitHub ticket itself.
 
 From this point forward, the security assessment lead is the primary
@@ -435,7 +435,7 @@ Some ongoing projects may have teams where members are identified for additional
 roles and may be required to have specific expertise. For visibility, these
 additional project roles are listed below:
 
-* [Security Reviewers](../assessments/guide/security-reviewer.md)
+* [Security Reviewers](./community/assessments/guide/security-reviewer.md)
 
 ## Lead rotations
 

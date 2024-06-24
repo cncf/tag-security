@@ -27,7 +27,7 @@ _Use cases, integrations, etc. bulleted, should be available in the joint assess
 
 ## Recommendations
 
-_refer to the existing readmes for other projects, such as [SPIFFE/SPIRE](https://github.com/cncf/tag-security/tree/main/assessments/projects/spiffe-spire) as a guide for developing this area_
+_refer to the existing readmes for other projects, such as [SPIFFE/SPIRE](/community/assessments/projects/spiffe-spire) as a guide for developing this area_
 
 ### CNCF recommendations
 
