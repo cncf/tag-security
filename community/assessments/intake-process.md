@@ -8,7 +8,7 @@ cloud native ecosystem and helping cloud native projects succeed.
 The following process describes how projects are prioritized for security
 assessments.
 
-# Authority
+## Authority
 
 Team members are welcome to submit PRs to streamline this process when
 priorities are clear based on the criteria below. As needed, specific leaders
@@ -26,14 +26,14 @@ coordinate the decision-making process.
   team, resolving questions/concerns about prioritization, and serving as an
   escalation point for projects or TAG members, if needed.
 
-# Pre-conditions
+## Pre-conditions
 
 * The project is either a CNCF project OR an assertion that the project is cloud
   native (any objection must be resolved before an assessment would be
   considered)
 * The project has identified a project lead and has a written self-assessment
 
-# Intake priorities
+## Intake priorities
 
 The following priorities are high-level guidance for how to coordinate the
 work of the group when there are multiple projects that are ready for an
@@ -65,14 +65,14 @@ Security Assessment Facilitator may remove the project from the queue with
 notification to the co-chairs.  The Security Assessment Facilitator will update
 the corresponding issue, prior to closing the project's request.
 
-# Updates and renewal
+## Updates and renewal
 
 The Security Assessment team will aim to review assessed projects annually,
 focusing primarily on any issues or concerns raised in previous assessments,
 addressing new functionality that affects risk profile of the project,
 and any issue that may have been flagged about the project.
 
-# Managing the assessment queue
+## Managing the assessment queue
 
 Note: this section describes the current process. Anyone is welcome to open a
 github issue or submit a pull request suggesting process improvements
@@ -82,7 +82,7 @@ is clearly communicated to the group (typically by adding a note to the
 relevant github issue).
 
 Each assessment is represented as a github issue, where the description field
-follows a [template](/.github/ISSUE_TEMPLATE/joint-assessment.md)
+follows a [template](.github/ISSUE_TEMPLATE/joint-review.md)
 
 The queue is visible through [github project](https://github.com/cncf/tag-security/projects/2)
 

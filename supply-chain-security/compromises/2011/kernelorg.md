@@ -1,5 +1,5 @@
 <!-- cSpell:ignore gkh's -->
-# kernel.org infrastructure compromise
+# kernel.org Infrastructure Compromise
 
 While the kernel.org compromise didn't likely involve source code (and would
 have had limited impact), from gkh's mail: "the compromise of kernel.org and

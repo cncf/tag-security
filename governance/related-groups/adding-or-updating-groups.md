@@ -1,4 +1,4 @@
-# Editing the related groups list
+# Editing the Related Groups List
 
 ## Updating an existing group
 

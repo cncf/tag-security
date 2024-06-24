@@ -9,7 +9,7 @@ exfiltrate user names and encrypted passwords from the affected server.
 
 ## Type of Compromise
 
-Source Code
+Attack Chaining
 
 ## References
 

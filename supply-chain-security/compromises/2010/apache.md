@@ -15,3 +15,7 @@ databases are considered leaked.
 ## Type of compromise
 
 Attack Chaining - multiple compromises.
+
+## Reference
+
+- <https://www.invicti.com/blog/web-security/apacheorg-and-jira-incident/>
