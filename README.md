@@ -61,11 +61,6 @@ Check your local timezone [here](https://time.is/). Meetings are listed on the [
 
 To add a topic to the agenda, review our [process](governance/process.md#getting-on-the-agenda).
 
-## Gatherings
-
-- [Cloud Native SecurityCon 24](https://events.linuxfoundation.org/cloudnativesecuritycon-north-america/) June 26-27, 2024 in Seattle, Washington
-- [Past events](past-events.md)
-
 ## New members
 
 If you are new to the group, we encourage you to check out our
