@@ -3,7 +3,6 @@ deps:
 
 	# Move select content from the root level into the website directory.
 	rsync -avv ../ root/ \
-	--include='assessments' --include='assessments/**' \
 	--include='governance' --include='governance/**' \
 	--include='publications' --include='publications/**' \
 	--include='community' --include='community/**' \

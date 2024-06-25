@@ -66,7 +66,7 @@ feel important in an updated self-assessment based on feedback and discussion.
 
 After the presentation, the **project lead** or their designee should submit a
 PR, citing the presentation issue number to add the self-assessment to
-[assessments/projects](https://github.com/cncf/tag-security/tree/main/assessments/projects)
+[assessments/projects](/community/assessments/projects)
 under its own folder.  The ticket may then be closed after merged in.
 
 ### Growing projects
