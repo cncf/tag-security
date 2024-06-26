@@ -39,7 +39,7 @@ improve overall security in cloud native systems.
 
 ## Focus
 
-In addition to the CNCF security-related projects, there
+In addition to the [CNCF security-related projects](https://landscape.cncf.io/?group=projects-and-products&view-mode=grid&tag=security), there
 are three key focus areas:
 
 * Protection of heterogeneous, distributed and fast changing systems, while
