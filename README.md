@@ -66,7 +66,6 @@ To add a topic to the agenda, review our [process](governance/process.md#getting
 If you are new to the group, we encourage you to check out our
 [contributing guidelines](CONTRIBUTING.md).
 
-
 ## Related groups
 
 Explore groups affiliated with or relevant to Security TAG [here](governance/related-groups/README.md)
@@ -119,7 +118,7 @@ Each group, led by a responsible leader, reaches consensus on issues and manages
 | [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres |
 | [Compliance](/community/compliance/README.md) | Anca Sailer, Robert Ficcaglia |
 | [Controls](/community/controls/README.md) | Jon Zeolla |
-| [Security Reviews](/assessments/README.md) | Justin Cappos, Eddie Knight|
+| [Security Reviews](community/assessments/README.md) | Justin Cappos, Eddie Knight|
 | [Software Supply Chain](/community/supply-chain-security/README.md) | Marina Moore, Michael Liebermann, John Kjell |
 
 ## Additional information
