@@ -15,7 +15,7 @@ Security Guidelines for New Projects aims to provide recommendations for new pro
 4. Incident management
 5. Badging
 
-![](../images/SecurityGuidelines.png)
+![](./SecurityGuidelines.png)
 
 **Figure 1**. An overview of security guidelines for new projects
 
@@ -231,10 +231,10 @@ The [OpenSSF Scorecards](https://securityscorecards.dev/) project helps quickly 
 
 This paper is influenced by the publications of CNCF Technical Advisory Group for Security, particularly the Cloud Native Security Whitepaper[[1]] and Software Supply Chain Security Best Practices Whitepaper,[[2]] and CNCF Cloud Native Security Map[[3]], programs and initiatives by OpenSSF[[4]] [[6]]. Our sincere gratitude for the contributors of these programs and publications, and to Emily Fox for suggesting the creation of this paper, to the contributors and reviewers of this paper.
 
-[1]: https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md
-[2]: https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf
+[1]: /security-whitepaper/v2/cloud-native-security-whitepaper.md
+[2]: /supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf
 [3]: https://cnsmap.github.io/
 [4]: https://bestpractices.coreinfrastructure.org/en
-[5]: https://github.com/cncf/tag-security/blob/main/PUBLICATIONS.md
+[5]: /publications/README.md
 [6]: https://securityscorecards.dev/
 [7]: https://clomonitor.io/
