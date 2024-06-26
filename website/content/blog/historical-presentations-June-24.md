@@ -3,7 +3,6 @@ title:  "Historical Presentations on TAG Security"
 date:   2024-06-25 09:00:00 -0700
 author: Eddie Knight 
 ---
-<!-- cSpell:ignore raycolline sreetummidi -->
 
 Prior to now, TAG Security has kept a list of time-based events and associated links. The tracking was previously maintained by several attentive TAG members, and served as a good way to keep folks aware and involved.
 
