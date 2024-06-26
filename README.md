@@ -61,16 +61,10 @@ Check your local timezone [here](https://time.is/). Meetings are listed on the [
 
 To add a topic to the agenda, review our [process](governance/process.md#getting-on-the-agenda).
 
-## Gatherings
-
-- [Cloud Native SecurityCon 24](https://events.linuxfoundation.org/cloudnativesecuritycon-north-america/) June 26-27, 2024 in Seattle, Washington
-- [Past events](past-events.md)
-
 ## New members
 
 If you are new to the group, we encourage you to check out our
 [contributing guidelines](CONTRIBUTING.md).
-
 
 ## Related groups
 
@@ -124,7 +118,7 @@ Each group, led by a responsible leader, reaches consensus on issues and manages
 | [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres |
 | [Compliance](/community/compliance/README.md) | Anca Sailer, Robert Ficcaglia |
 | [Controls](/community/controls/README.md) | Jon Zeolla |
-| [Security Reviews](/assessments/README.md) | Justin Cappos, Eddie Knight|
+| [Security Reviews](community/assessments/README.md) | Justin Cappos, Eddie Knight|
 | [Software Supply Chain](/community/supply-chain-security/README.md) | Marina Moore, Michael Liebermann, John Kjell |
 
 ## Additional information
