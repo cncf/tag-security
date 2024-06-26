@@ -6,7 +6,7 @@ ignore = "exit 1"
 
 [build.environment]
 NODE_VERSION = "18.16.1"
-HUGO_VERSION = "0.115.2"
+HUGO_VERSION = "0.128.0"
 
 [context.production.environment]
 HUGO_ENV = "production"
