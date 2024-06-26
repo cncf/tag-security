@@ -6,7 +6,7 @@ author: Eddie Knight
 
 Prior to now, TAG Security has kept a list of time-based events and associated links. The tracking was previously maintained by several attentive TAG members, and served as a good way to keep folks aware and involved.
 
-As part of the website redesign and the reorganization of the main TAG git repo, we've decided not to store a centralized list of non-recurring events. 
+As part of the website redesign and the reorganization of the main TAG git repo, we've decided not to store a centralized list of non-recurring events.
 
 But we realized that there were some gems in there that were too good to lose! Below is a list of presentations that you can view to learn more about the history of our community and its contributors.
 
