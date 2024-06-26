@@ -9,7 +9,7 @@ A lot is happening in the world of TAG Security recently! Most notably, this web
 
 At the time of this publication, a large portion of the cloud native security community is gathered in Seattle for CloudNativeSecurityCon North America, where Chris Aniszczyk is on stage calling the community to a higher standard— to "Grow up!"
 
-> It is our responsibility, as a community, to ensure there are safe and secure practices for the cloud native ecosystem, so we can continue to run the majority of the world’s workloads. - Chris Aniszyk
+> It is our responsibility, as a community, to ensure there are safe and secure practices for the cloud native ecosystem, so we can continue to run the majority of the world’s workloads. - Chris Aniszczyk
 
 Our community has done a great deal for the growth of open source security, along with others across the Linux Foundation and beyond, and it's worth taking a moment to celebrate the wins.
 
