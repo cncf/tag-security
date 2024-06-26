@@ -1,6 +1,6 @@
 ---
 title:  "Website Re-Launch at CNSC '24"
-date:   2024-06-25 09:00:00 -0700
+date:   2024-06-26 09:00:00 -0700
 author: Eddie Knight 
 ---
 <!-- cSpell:ignore Benedictis Aniszczyk  -->
