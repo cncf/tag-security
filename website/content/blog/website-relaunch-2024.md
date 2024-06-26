@@ -1,12 +1,13 @@
 ---
 title:  "Website Re-Launch at CNSC '24"
-date:   2024-06-26 09:00:00 -0700
+date:   2024-06-25 09:00:00 -0700
 author: Eddie Knight 
 ---
+<!-- cSpell:ignore Benedictis Aniszczyk  -->
 
 A lot is happening in the world of TAG Security recently! Most notably, this website is re-launching with a whole new set of content— thanks to contributions from the TAG leads and the special attention paid by TAG members **Brandt Keller** and **Marco De Benedictis**.
 
-At the time of this publication, a large portion of the cloud native security community is gathered in Seattle for CloudNativeSecurityCon North America, where Chris Aniszyk is on stage calling the community to a higher standard— to "Grow up!"
+At the time of this publication, a large portion of the cloud native security community is gathered in Seattle for CloudNativeSecurityCon North America, where Chris Aniszczyk is on stage calling the community to a higher standard— to "Grow up!"
 
 > It is our responsibility, as a community, to ensure there are safe and secure practices for the cloud native ecosystem, so we can continue to run the majority of the world’s workloads. - Chris Aniszyk
 
