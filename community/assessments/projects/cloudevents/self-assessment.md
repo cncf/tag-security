@@ -951,4 +951,4 @@ including more physical areas such as mechanical engineering and factories.
 * [Sample Security
   Assessment](https://github.com/Rana-KV/tag-security/blob/main/assessments/projects/karmada/self-assessment.md#threat-modeling-with-stride)
 * [Open and Secure
-  Book](https://github.com/cncf/tag-security/blob/main/assessments/Open_and_Secure.pdf)
+  Book](/community/assessments/Open_and_Secure.pdf)

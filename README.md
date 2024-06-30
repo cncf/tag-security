@@ -39,7 +39,7 @@ Below is a list of publications by TAG Security. For a comprehensive collection 
 | [Handling Build-time Dependency Vulnerabilities](https://github.com/cncf/tag-security/blob/main/policy/overview-policy-build-time-dependency-vulns.md) | June, 2022 |
 | [Secure Software Factory: A Reference Architecture to Securing the Software Supply Chain](https://github.com/cncf/tag-security/raw/main/supply-chain-security/secure-software-factory/Secure_Software_Factory_Whitepaper.pdf) | May, 2022 |
 | [Secure Defaults](https://github.com/cncf/tag-security/blob/main/security-whitepaper/secure-defaults-cloud-native-8.md) | February, 2022 |
-| [Open and Secure - A Manual for Practicing Threat Modeling to Assess and Fortify Open Source Security](https://github.com/cncf/tag-security/blob/main/assessments/Open_and_Secure.pdf) | November, 2023 |
+| [Open and Secure - A Manual for Practicing Threat Modeling to Assess and Fortify Open Source Security](/community/assessments/Open_and_Secure.pdf) | November, 2023 |
 
 ## Governance
 
@@ -61,16 +61,10 @@ Check your local timezone [here](https://time.is/). Meetings are listed on the [
 
 To add a topic to the agenda, review our [process](governance/process.md#getting-on-the-agenda).
 
-## Gatherings
-
-- [Cloud Native SecurityCon 24](https://events.linuxfoundation.org/cloudnativesecuritycon-north-america/) June 26-27, 2024 in Seattle, Washington
-- [Past events](past-events.md)
-
 ## New members
 
 If you are new to the group, we encourage you to check out our
 [contributing guidelines](CONTRIBUTING.md).
-
 
 ## Related groups
 
@@ -124,7 +118,7 @@ Each group, led by a responsible leader, reaches consensus on issues and manages
 | [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres |
 | [Compliance](/community/compliance/README.md) | Anca Sailer, Robert Ficcaglia |
 | [Controls](/community/controls/README.md) | Jon Zeolla |
-| [Security Reviews](/assessments/README.md) | Justin Cappos, Eddie Knight|
+| [Security Reviews](community/assessments/README.md) | Justin Cappos, Eddie Knight|
 | [Software Supply Chain](/community/supply-chain-security/README.md) | Marina Moore, Michael Liebermann, John Kjell |
 
 ## Additional information
@@ -135,5 +129,5 @@ For [CNCF project proposal process](https://github.com/cncf/toc/blob/main/proces
 create a
 new [security review issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 with a
-[self-assessment](./assessments/guide/self-assessment.md)
+[self-assessment](/community/assessments/guide/self-assessment.md)
 .

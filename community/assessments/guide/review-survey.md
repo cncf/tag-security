@@ -10,19 +10,15 @@ self-assessment or joint assessment and should be completed at the end.
 1. *Did the project team find the TSSA Process valuable to the
    security stature of the project?*
 
-
 2. *Did the reviewers find the TSSA Process valuable for
    establishing and evaluating the current security health of the project?*
 
-
 3. *What was the most valuable artifact or portion of the process?*
-
 
 ## Quality
 
 1. *Is the quality of the TSSA package / artifacts on par with previous
    TSSA packages (formerly assessments)?*
-
 
 2. *For self-assessments, was the self-assessment content helpful for
    assisting in the security documentation of the project?*
@@ -31,7 +27,6 @@ self-assessment or joint assessment and should be completed at the end.
 
 1. *Were there parts of the TSSA Process that could be improved,
    such as timeliness, communication, etc.?*
-
 
 2. *Are portions of the artifacts produced from this assessment duplicate, or better left as references
    elsewhere?*
@@ -42,12 +37,10 @@ assessment?*
 
 ## Other
 
-1.  *Would you recommend other projects receive a TSSA?*
+1. *Would you recommend other projects receive a TSSA?*
 
-
-2.  *What areas of the TSSA Process (templates, instructions,
+2. *What areas of the TSSA Process (templates, instructions,
     etc.) can be improved to make the experience and resulting artifacts more
 useful or desirable?*
 
-
-3.  *What additional feedback do you have?*
+3. *What additional feedback do you have?*

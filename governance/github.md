@@ -1,4 +1,4 @@
-# Github access permissions and administration
+# Github Access Permissions and Administration
 
 Facilitation roles are identified in [github settings](/.github/settings.yml)
 which we use for Github admin permissions and managing issues. Write permissions

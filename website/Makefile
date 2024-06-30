@@ -3,9 +3,9 @@ deps:
 
 	# Move select content from the root level into the website directory.
 	rsync -avv ../ root/ \
-	--include='assessments' --include='assessments/**' \
 	--include='governance' --include='governance/**' \
 	--include='publications' --include='publications/**' \
+	--include='community' --include='community/**' \
 	--include='*.md' --exclude='*'
 
 	# Move over content such as graphics and logos
@@ -18,7 +18,8 @@ deps:
 		if [ "$$file" = "/_index.md" -o "$$base_name" = "README" ]; then \
 			continue; \
 		fi; \
-		text_to_prepend="---\ntitle: \"$$base_name\"\n---\n"; \
+		title_case=$$(echo "$$base_name" | sed -e 's/-/ /g' -e 's/\b\(.\)/\u\1/g' | sed 's/cncf/CNCF/Ig'); \
+		text_to_prepend="---\ntitle: \"$$title_case\"\n---\n"; \
 		sed -i "1s/^/$$text_to_prepend/" "$$file"; \
 	done
 

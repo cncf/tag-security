@@ -120,5 +120,5 @@ The above guidelines are inspired by and borrowed from other communities:
 
 [cncf-coc]: https://github.com/cncf/foundation/blob/master/code-of-conduct.md  
 [charter]: https://github.com/cncf/tag-security/blob/main/governance/charter.md
-[review-outcome]: https://github.com/cncf/tag-security/tree/main/assessments#outcome
+[review-outcome]: /community/assessments#outcome
 [cncf-toc]: https://www.cncf.io/people/technical-oversight-committee/

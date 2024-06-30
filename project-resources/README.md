@@ -3,7 +3,7 @@
 This directory is intended to provide CNCF and other open source projects with
 resources and templates to assist in kick-starting their security practices.
 The templates, guides, and other documents herein assist projects in completion
-of the [self-assessment](../assessments/guide/self-assessment.md) as well as a few
+of the [self-assessment](./community/assessments/guide/self-assessment.md) as well as a few
 items in the [CII badging](https://bestpractices.coreinfrastructure.org/en)
 process.
 
