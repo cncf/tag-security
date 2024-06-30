@@ -472,13 +472,13 @@ potential leakage of information about application landscape.
 |Impact (High/ Med/ Low)|Low|
 |Likelihood (High/ Med/ Low)|Low|
 
-|Summary|Usage of PII as part of models.|
+|Summary|Usage of PII as part of Tuples.|
 |--|--|
 |Discovered in self-assessment?|Yes|
-|Weakness|PII can be exfiltrated if present as a part of the models.|
+|Weakness|PII can be exfiltrated if present as a part of the Tuples.|
 |MITRE classification|TA0042: Resource Development -> T1586: Compromise Accounts|
 |Actors|openfga.server|
-|Suggested Mitigation|Specifically called out in documentation that PII is not to be used as a part of models but not enforced.<br>Also, many sites will use email ID as primary login, documentation may need to address how to handle this situation.<br>A change to detect PII such as email ID's as part of models and relationships/ tuples and warn the user may tackle this finding at a code level.|
+|Suggested Mitigation|Specifically called out in documentation that PII is not to be used as a part of tuples but not enforced.<br>Also, many sites will use email ID as primary login, documentation may need to address how to handle this situation.<br>A change to detect PII such as email ID's as part of relationships/ tuples and warn the user may tackle this finding at a code level.|
 |Impact (High/ Med/ Low)|Med|
 |Likelihood (High/ Med/ Low)|Low|
 
