@@ -641,11 +641,11 @@ security findings for OpenFGA. This outcome does not indicate that none exist,
 rather that none were discovered.
 -->
 
-## Roadmap [TODO] fill in consultation with project team
+## Roadmap
 
-* Project Next Steps. Link to your general roadmap, if available, then list
-  prioritized next steps that may have an impact on the risk profile of your
-project, including anything that was identified as part of this assessment.
+* Project Next Steps. The team has created a [project](https://github.com/orgs/openfga/projects/8) under the OpenFGA organization to
+track remediations for the findings from this joint assessment. The required
+fixes are being undertaken by the project team.
 * CNCF Requests. In the initial draft, please include whatever you believe the
   CNCF could assist with that would increase security of the ecosystem.
 
