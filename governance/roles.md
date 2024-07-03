@@ -24,8 +24,7 @@ The various roles are listed as follows:
   * [Triage team](#triage-team)
   * [Project teams](#project-teams)
 
-All members are identified in the TAG [README](/README.md), with annotations
-where they hold an additional role.
+All chairs and leads are identified in the TAG [README](/README.md).
 
 Members fulfilling any Roles in Security TAG are responsible for understanding
 and abiding the by the [governance](./) and policies defined in this group. This
@@ -41,8 +40,6 @@ consider their actions to support the group.
 ## Role of members
 
 * The primary role of a member is to contribute expertise to the group.
-* To add yourself as a member, submit a Pull Request (PR) adding yourself to the
-  list of members.
 
 ### Maintaining active members
 
