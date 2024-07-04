@@ -22,7 +22,7 @@ Welcome to the Security TAG (STAG) Blog! Our blog is a platform for sharing insi
 
 ### Formatting
 
-- **File Name**: Blog Files should be dash-case `.md` markdown filetype. 
+- **File Name**: Blog Files should be dash-case `.md` markdown filetype.
 - **Headings**: Use appropriate headings (H1, H2, H3, etc.) to structure your post.
 - **Paragraphs**: Keep paragraphs short and focused.
 - **Lists**: Use bullet points or numbered lists to highlight key points.
@@ -39,7 +39,7 @@ Required `frontmatter` fields:
 - **title**: Title-case title for the blog post
 - **author**: Name of blog post author
 
-Note: **date** can be included but will be appended to the `frontmatter` when publication date is decided. 
+Note: **date** can be included but will be appended to the `frontmatter` when publication date is decided.
 
 #### Example
 
@@ -70,6 +70,7 @@ author: R. Raccoon
 4. **Final Review**: The team conducts a final review to ensure quality.
 
 ### Reviewer Criteria
+
 1. **Content**: Submission abides by all `Content Creation` guidelines established above.
 2. **Sponsor**: Submission is sponsored by the STAG directly or an STAG WG
 3. **Existing Content**: Submission does not duplicate existing material
