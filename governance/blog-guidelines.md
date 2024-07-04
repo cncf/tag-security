@@ -22,12 +22,34 @@ Welcome to the Security TAG (STAG) Blog! Our blog is a platform for sharing insi
 
 ### Formatting
 
+- **File Name**: Blog Files should be dash-case `.md` markdown filetype. 
 - **Headings**: Use appropriate headings (H1, H2, H3, etc.) to structure your post.
 - **Paragraphs**: Keep paragraphs short and focused.
 - **Lists**: Use bullet points or numbered lists to highlight key points.
 - **Tags**: Include relevant tags in the blog for filtering capabilities.
 - **Code**: Use code blocks for any code snippets.
 - **Images**: Include relevant images and graphics to enhance the content.
+
+### Front Matter
+
+The start of each blog document should contain the `frontmatter` information.
+
+Required `frontmatter` fields:
+
+- **title**: Title-case title for the blog post
+- **author**: Name of blog post author
+
+Note: **date** can be included but will be appended to the `frontmatter` when publication date is decided. 
+
+#### Example
+
+```yaml
+---
+title:  "New Informative Blog Post"
+date:   2024-06-26 09:00:00 -0700
+author: R. Raccoon
+---
+```
 
 ### Length
 
@@ -37,7 +59,7 @@ Welcome to the Security TAG (STAG) Blog! Our blog is a platform for sharing insi
 
 ### Submission
 
-1. **Draft**: Write your blog post in a markdown file.
+1. **Draft**: Write your blog post in a markdown file under `tag-security/website/content/blog`
 2. **Submission Pull Request**: Submit your draft using the [blog submission template](https://github.com/cncf/tag-security/blob/main/.github/ISSUE_TEMPLATE/blog-submission.md).
 
 ### Review
@@ -47,10 +69,16 @@ Welcome to the Security TAG (STAG) Blog! Our blog is a platform for sharing insi
 3. **Revisions**: Address the feedback and resubmit your revised draft.
 4. **Final Review**: The team conducts a final review to ensure quality.
 
+### Reviewer Criteria
+1. **Content**: Submission abides by all `Content Creation` guidelines established above.
+2. **Sponsor**: Submission is sponsored by the STAG directly or an STAG WG
+3. **Existing Content**: Submission does not duplicate existing material
+
 ### Approval
 
 - **Acceptance**: Once approved, your post will be scheduled for publication.
-- **Notification**: You will be notified of the publication date - A repo maintainer may update this field prior to merge.
+- **Notification**: You will be notified of the publication date - a repo maintainer may update this field prior to merge.
+- **Merge**: A repository maintainer will perform the merge once accepted.
 
 ## Value to the Community
 
