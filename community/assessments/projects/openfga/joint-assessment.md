@@ -5,7 +5,7 @@ collaboratively assess the current security state of a project.
 
 The burden is primarily on the proposing project to demonstrate it is secure in
 a manner that is understandable to the broader community. The
-reviewers will help to assess and probe the design.
+reviewers will help to assess and probe the design and supporting project documentation.
 
 The proposing project must provide a written document that describes the project
 and its security. In the case of OpenFGA, there is structured information present
@@ -49,7 +49,7 @@ mutually exclusive with markdown table syntax -->
 
 |   |  |
 | -- | -- |
-| Assessment Stage | Incomplete |
+| Assessment Stage | Complete |
 | Software | [https://github.com/openfga](https://github.com/openfga) |
 | Security Provider | Yes. OpenFGA is used to decide if a subject (user, application) user can perform a specific action on a resource or not.|
 | Languages | Go, Java, Javascript, Python, C# |
@@ -70,20 +70,25 @@ These are link to existing security documentation for the project.
 
 The overview sections are pulled from the [self-assessment](https://tag-security.cncf.io/assessments/projects/openfga/self-assessment/) and updated.
 
-Implementing access control is a very common requirement when developing applications, where different subjects can perform different actions on different resources.
+Implementing access control and authorization is a requirement when developing secure and compliant applications, to explicitly check permissions 
+such that a subjects can perform authorized actions on specific resources.
 
-OpenFGA is a high performance and flexible authorization/permission engine that can be used to implement fine grained access control in any application component.
+OpenFGA is a high performance and flexible authorization/permission engine that can be used to implement fine grained access control in any 
+application component.
 
-Developers can use OpenFGA to easily craft authorization and permission methods based on the policies they require that are specific to their own projects. They can further use the API's provided by the project to confirm users have the permissions
+Developers can use OpenFGA to craft authorization and permission policies based on the resource access and authorization model 
+specific to their own project(s). They can further use the APIs provided by the project to confirm users have the permissions
 required to access a given resource.
 
 ### Background
 
-OpenFGA is an authorization/permission engine that incorporates Relationship-Based Access Control (ReBAC) and Attribute Based Access Control (ABAC) concepts with a domain-specific language that enables crafting authorizations solutions that can grow and evolve to any use case.
+OpenFGA is an authorization/permission engine that incorporates Relationship-Based Access Control (ReBAC) and Attribute Based Access Control (ABAC) 
+concepts with a domain-specific language that enables crafting authorizations solutions that can grow and evolve to any use case.
 
-It's inspired on the idea described in the [Google Zanzibar paper](https://research.google/pubs/pub48190).
+Its inspired on the idea described in the [Google Zanzibar paper](https://research.google/pubs/pub48190).
 
-Fine-Grained Authorization refers to individual users having access to specific objects and resources within a system. Google Drive is an example of this, as owners of resources can grant different users to have different levels of access to their resources.
+Fine-Grained Authorization refers to individual users having access to specific objects and resources within a system. Google Drive is an example of this, 
+as owners of resources can grant different users to have different levels of access to their resources.
 
 OpenFGA makes helps developers make authorization decisions by combining two concepts:
 
@@ -158,10 +163,10 @@ Review Process Guide](https://tag-security.cncf.io/assessments/guide/).
 
 This document does not intend to provide a security audit of OpenFGA and is
 not intended to be used in lieu of a security audit.  This document provides
-users of the project with a security focused understanding of OpenFGA and when
-taken with the [self-assessment](./self-assessment.md) provide the community with
+users of the project with a security focused understanding of OpenFGA and, when
+taken with the [self-assessment](./self-assessment.md), provide the community with
 the TAG-Security Review of the project.  Both of these documents may be used and
-referenced as part of a security audit.
+referenced as inputs to a separate security audit.
 
 OpenFGA is a project that provides a security service and as such, any defect
 in the project may be a security issue. This document does not look to enumerate
@@ -169,22 +174,25 @@ all the possible quality issues (e.g. undetected circular references in model
 definitions) that could lead to security issues for users of OpenFGA.
 
 Taken together, this document and the [self-assessment](./self-assessment.md) serve as a
-cornerstone for if and when OpenFGA seeks graduation and is preparing for a security audit.
+context for the TOC and community when OpenFGA seeks graduation and is preparing for a security audit.
 
 ## Intended Use
 
-* Target Users and Use Cases. The key users of this project are users who define authorization models, application developers that integrate the API into their application for externalizing authorization and operators.
+* Target Users and Use Cases. The key users of this project are users who define authorization models, application developers that integrate the API
+  into their application for externalizing authorization and operators.
 
     OpenFGA can be used in any environment and has helm charts defined for install on a Kubernetes platform.
     1. OpenFGA is used by applications to externalize authorization decisions
     2. The project implements the [Google Zanzibar paper](https://research.google/pubs/pub48190) paper for effective, performant authorization
     3. Administrators can program authorization models into the system for use by application teams
 
-* Operation.  OpenFGA supports both MySQL and Postgres as its datastore.
+* Operation.  OpenFGA supports both MySQL and Postgres as its datastore. An in-memory store is implemented as the default.
 
 ## Project Design
 
-* Design. OpenFGA provides rich documentation around its core [concepts](https://openfga.dev/docs/concepts) and usage of the project. Some project decisions are documented under the [rfcs repository](https://github.com/openfga/rfcs), however, this does not have a comprehensive list of all project decisions.
+* Design. OpenFGA provides rich documentation around its core [concepts](https://openfga.dev/docs/concepts) and usage of the project. Some project
+  decisions are documented under the [rfcs repository](https://github.com/openfga/rfcs), however, this does not have a comprehensive list of all
+  project decisions.
 
 ### Functions and features
 
@@ -258,24 +266,26 @@ actions:
 
 #### Security functions and features
 
-OpenFGA, being an Open-Source project, allows for a more robust security implementation by following the Principle of Open Design.
+OpenFGA, as an Open-Source project, requires the community to review and evaluate the security implementation per the the Principle of Open Design.
 
 OpenFGA models authorization systems by providing the security features such as Role-based Access Control and Attribute-based Access Control.
 
-OpenFGA boasts exceptional speed in processing secure authorization check call. This swift authorization mechanism not only enhances efficiency but also reinforces the security posture, assuring robust protection for applications and platforms for diverse scales.
+OpenFGA was designed for speed in processing secure authorization check call. This swift authorization mechanism not only enhances efficiency 
+but also reinforces the security posture, assuring robust protection for applications and platforms for diverse scales.
 
-OpenFGA provides a wide variety of SDK's, as well as easy integration for new SDK's. This reduces the chance of critical vulnerabilities due to compatibility issues.
+OpenFGA provides a wide variety of SDKs, as well as easy integration for new SDKs.
 
 ## Configuration and Set-Up
 
 * Default.  The default configuration of the project is described under the [getting started](https://openfga.dev/docs/getting-started) section of the documentation.
 
-* Secure. The recommended [production configuration](https://openfga.dev/docs/getting-started/running-in-production) of the project is described under a separate part of the documentation.
+* Secure. The recommended [production configuration](https://openfga.dev/docs/getting-started/running-in-production) of the project is described under a
+  separate part of the documentation. It is not explicitly secure by default.
 
 ## Project Compliance
 
 There are no specific security standards or sub-sections the project is documented
-as meeting (e.g. NIST 800-53, HiTrust, etc.).
+as meeting (e.g. NIST 800-53, CSA, etc.).
 
 ### Existing Audits
 
@@ -290,53 +300,132 @@ OpenFGA is an authorization/ permission engine that secures sensitive informatio
 including users of the systems referenced by the permission model as well as
 permissions and access levels for each. Attackers may have multiple motivations
 including:
-* Exfiltrating data from the service
-* Tampering with data to assign or elevate permissions
-* Studying the data to understand the technology landscape
+* Exfiltrating relationship and condition and user data from the service
+* Tampering with data to assign or elevate permissions or remove access to authorized users
+* Studying the data to understand the application design and operation for further attack steps
 * Denial of service by rendering OpenFGA unable to respond to auth requests
 
 ### Predisposing Conditions
 
 There are multiple potential configurations of the project that could be exploited,
 this includes permissive settings for API tokens and other secrets, running the
-server in elevated/ privileged mode, exposing vulnerable endpoints accessible to
+server in elevated/privileged mode, exposing vulnerable endpoints such as the profiler accessible to
 an attacker and exfiltration of secret tokens from interfacing applications and CLI.
 
-In addition vulnerabilities may be discovered in the server and other components
+In addition vulnerabilities may be discovered in the server code or dependent libraries
 that can be exploited by an attacker.
 
 ### Expected Attacker Capabilities
 
 While the attacker is not expected to possess the capability to break well-known
-encryption standards such as SHA256, they will have sufficient capabilities
+encryption standards, eg AES256, or hashes such as SHA256, they will have sufficient capabilities
 and motivation to use well-known tools and techniques for their work. Attackers
-are not just assumed to be external to the company but may also be persistent
-threats within the company network that are looking to gain a foothold for
-further exploits. The latter scenarios assume that the attacker has breached
+are not just assumed to be external to the OpenFGA project, or client application vendor/project, but may also 
+be insiders who are contributors, maintainers, or repo admins, or developers or operators with privileged access 
+inside the client application environment that are looking to gain a foothold for
+further exploits. The latter scenarios assume that the attacker has breached or already has access through
 several layers of defense and has direct access to OpenFGA components and
 endpoints to further their position within the company perimeter.
 
 ### Attack Risks and Effects
 
 While not storing PII (as per project recommendations), OpenFGA does have sensitive
-information pertaining to the technology landscape and permissions within
+information pertaining to the application and permissions within
 the organization. This data could be used by attackers to better understand
-the landscape and also perform more destructive actions such as escalating
-their permissions and locking out users from system access. In a microservices
-environment, data tampering may lead to subtle issues within the stack that are
-difficult to debug and may degrade customer experience and tie up technology
-teams in troubleshooting.
+the attack landscape and also perform more destructive actions such as escalating
+their permissions and locking out users from system access.
 
-### Security Degradation
+### Security Impact Assessment
 
-A complete compromise of the OpenFGA server in production would lead to
-ripple effects throughout the organizations. Attackers could assign
-themselves arbitraty permissions to sensitive systems and also lock out
+A compromise of the OpenFGA server in production would lead to
+downstream effects in the application. Attackers could assign
+themselves arbitraty permissions to sensitive resources or data and also lock out
 legitimate users. This could lead to effects from a denial of service
 and degradation of customer experience to exfiltration of critical data
 from sensitive systems. OpenFGA deals directly with authorization and is
-a critical part of any organization, as such, compromising this system
+a critical part of any application, as such, compromising this system
 could have catastrophic consequences to the organization.
+
+#### Security Risks and Security Impact of Using/Operating OpenFGA
+- Access Control: OpenFGA by definition is designed to enforce: (i) information system access to authorized users, or
+  processes acting on behalf of authorized users or devices (including other information systems);
+  and (ii) the types of transactions and functions that authorized users are permitted to exercise. As such, a failure
+  in either access to OpenFGA data or code itself, or the functioning of OpenFGA exposes the application to critical access
+  control risks.
+- Awareness and Training: Using OpenFGA will requrire developer, operator, security team, auditor and end user training to ensure
+  that personnel are adequately prepared to deploy, maintain, and use OpenFGA and design appropriate relationships and models.
+  Security staff need to understand the failure modes and threat model and how to monitor the components and produce audit artifacts.
+  Even end users need to understand how permissions are modeled and managed, for example, understanfing Google Drive permissions can have a steep
+  learning curve for those used to more traditional RBAC rules found in Windows or Linux file systems.
+- Audit Support: Introducing OpenFGA will impact system/application audit requirements and require OpenFGA developers, app developers,
+  and operators to consider how to:
+    - create, protect, and retain information system audit records to the extent needed to enable the monitoring, analysis, investigation,
+      and reporting of unlawful, unauthorized, or inappropriate information system activity; and
+    - ensure that the actions of individual information system users can be uniquely traced to those users so they can be held accountable for their actions.
+- Change Management: OpenFGA project developers and app developers need to consider how changes to the OpenFGA code, configuration, model syntax and features, 
+  and the application's specific model(s) will impact the:
+    - baseline configuration and relate to the current inventory of organizational users, resources, and condition attributes;
+    - establishment and enforcement of secure configuration settings of the OpenFGA components and the app using OpenFGA; and 
+    - ability to monitor and control changes to the baseline configurations of the specific app models and to the OpenFGA components
+- Identity: How will change(s) to the underlying Identity Provider(s) and identity establishment impact how OpenFGA:
+    - identifies users, processes acting on behalf of users, or other subjects (eg IoT devices, etc.); and 
+    - authenticates (or verifies) the identities of those users, processes, or devices, as a prerequisite to allowing access.
+- Maintenance: How will periodic and timely maintenance be performed including critical security patches in OpenFGA's code and dependencies; 
+  how will the project and the app developers provide effective controls on the tools, techniques, mechanisms, and personnel performing maintenance 
+  of the OpenFGA code and apps using it.  For example, how would the project control for a malicious contributor trying to subtly introduce leaks or
+  back doors? How would app developers identify these potential flaws? How is the repo secured and maintained over time? Other dependencies? etc.
+- Securing Data In Transit, At Rest and In Use: While OpenFGA doesn't directly implement encryption, authentication, or integrity of data flows, 
+  the maintainers and devs using OpenFGA must consider:
+    - communications (i.e., information transmitted or received by OpenFGA components, and the app) are monitored, controlled, and protected at the 
+      internal and external boundaries; eg encrypting communication between OpenFGA and the database, or the shared keys, or the audit logs, etc. and 
+    - architectural designs, software development techniques, and systems engineering principles that promote effective data security are implemented
+- Risk Assessment and Vulnerability Management: How will OpenFGA maintainers and app devs and operators define how:
+    - OpenFGA and SDK flaws are identified, reported, and corrected in a timely manner; 
+    - malicious code protection is employed;
+    - component and OpenFGA app related events are monitored and detected;
+    - the correct configuration and operation of security features is tested and verified;
+    - information is checked for accuracy, completeness, validity, and authenticity. This is especially imporant in verifying and testing the model
+      syntax and semantics
+- Supply Chain Integrity and Attacks: How will risks related to OpenFGA itself, and its dependencies be assessed and tracked and remediated?
+- Incident Response, Disaster Recovery, Continuity, SRE: How will use of OpenFGA affect existing plans for responding to, investigating, and remediating
+  incidents - whether security or availability related?   What playbooks should be created specific to OpenFGA failure modes or attacks? What alerts are
+  useful? What forensic data is required? How are logs collected, aggregated, correlated, and retained?
+- Compliance and Regulatory Requirements: What documentation, processes, approvals, and legal requirements are in scope for either certification or audit
+  by a 3rd party or government agency or customer?
+
+#### Failure Modes Considered
+
+- Project/Repo/Code Failures
+  - Key admins or maintainers abandon the project or are unavailable
+  - The repository is deleted or defaced or compromised
+  - Bugs exist in the core validation of the relationships and conditions
+  - Bugs exist in the dependencies used
+  - Leakage of data in the logs or by contacting existing services
+  - Timing attacks, side channel telemetry
+  - shared key or OIDC TLS cert compromises (is OSCP or CRL being checked?)
+  - Lack of, or insecure use of, cryptographic code or protocols
+  - Release process failures
+  - Failures to respond to, or analyze, reported vulnerabilities or known exploits
+  - Malicious developers injecting malicious code or designs
+- Developer/App Design Failures
+  - incorrect use of OpenFGA outside its intended design/goals
+  - incorrect confiuration of OpenFGA store, keys, certs, etc
+  - incorrect definition of app code using OpenFGA to check relationships, conditions
+  - incorrect or missing error handling code or corner cases
+  - logging or leaking sensitive information
+  - lack of stress and performance testing
+  - not using the latest secure releases
+- OpenFGA/App Operations Failures
+  - failure to check the provenance and integrity of code used
+  - failure to check the provenance and integrity of confiuration used
+  - failure to check the provenance and integrity of model(s) used
+  - failure to secure keys, OIDC TLS, or database encryption and access control and auditing
+  - failute to plan for continuity and disaster recovery
+  - failure to plan for security incident response
+  - OpenFGA API service unavailable at runtime, either failing in a secure closed way, or due to DoS attack
+  - Store database unavailable at runtime, either failing in a secure closed way, or due to DoS attack
+  - Capacity planning for the service, networking, and database
+  - Messaging and communications to end users in the case of outages or failures or breach
 
 ### Compensating Mechanisms
 
@@ -348,10 +437,15 @@ address common exploits.
 
 ## Threat Model
 
-Threat modelling was done using MITRE Att&ck. Findings are listed below
+Threat modelling was done by threat hunting using the MITRE Att&ck framework. Findings are listed below
 along with the Att&ck technique associated with the finding. The findings
 are categorized into logical sections. The values for the **Impact** and **Likelihood**
 ratings can be High, Med or Low.
+
+NOTE: The OpenFGA server code is managed separately from the "language" parser code.
+This review focused on the server code, and so a separate review (perhaps formal modeling exercise) 
+would be beneficial for the "language" parser project. As such language parser threats/attacks 
+should be considered outside the scope of this review.
 
 Opportunities for improvement identified include:
 
@@ -359,7 +453,6 @@ Opportunities for improvement identified include:
 - Relook at user-defined API tokens as an authentication mechanism for API
 - Make all installation scripts "secure by default"
 - Validate best practices such as using strong API token and avoiding PII
-- Look at SPIFFE/ Spire integration as an option for OpenFGA server
 
 Further opportunities for improvement are listed under the [Secure Development](#security-hygiene-and-secure-sevelopment-practices) section.
 
@@ -379,15 +472,16 @@ implemented under a [project issue](https://github.com/openfga/roadmap/issues/30
 This risk is currently being mitigated by OpenFGA users by proxying requests
 and performing authorization on the proxy.
 
-|Summary|Fixed API access tokens are susceptible to brute force attacks.|
+
+|Summary|When authenticating using pre-shared keys, these are exposed in container env vars.|
 |--|--|
 |Discovered in self-assessment?|No|
-|Weakness|Having a fixed set of API tokens with no set TTL to rotate allows attackers to brute-force user created API tokens.|
-|MITRE classification|TA0006: Credential Access -> T1110: Brute Force|
+|Weakness|Env vars are accessible to anyone with access to the container. There cannot be further permissions set on these like files. Keys further give access to stores and models.|
+|MITRE classification|TA0001: Initial Access -> T1078: Valid Accounts<br>TA0003: Persistence -> T1078: Valid Accounts<br>TA0004: Privilege Escalation -> T1078: Valid Accounts|
 |Actors|openfga.server|
-|Suggested Mitigation|Support for rotation may mitigate the impact. Also, is this to be disabled in production? Also, can there be a minimal requirement for length and entropy that the server checks for API tokens?<br>SPIFFE/ Spire integration may offer a much high level of security|
+|Suggested Mitigation|Secrets mounted in filesystem can be restricted with permissions. Alternatively, <br>SPIFFE/ Spire integration may offer a much high level of security (specifically using x.509 SVIDs).|
 |Impact (High/ Med/ Low)|High|
-|Likelihood (High/ Med/ Low)|Med|
+|Likelihood (High/ Med/ Low)|Low|
 
 |Summary|Authenticating with shared keys allows keys to be added to the list.|
 |--|--|
@@ -395,7 +489,7 @@ and performing authorization on the proxy.
 |Weakness|Shared API keys are open to manipulation and bruteforcing since they are fixed keys.|
 |MITRE classification|TA0003: Persistence -> T1136: Create Account|
 |Actors|openfga.server|
-|Suggested Mitigation|Being able to manipulate keys in the container requires access to container. However, impact will be high as openfga access will allow attackers to assign themselves arbitrary privileges.<br>Mitigations include, the ability to rotate keys on a frequent basis and forcing these API tokens to be mounted as files (can be permission controlled) instead of environment variables.|
+|Suggested Mitigation|Being able to manipulate keys in the container requires access to container. However, impact will be high as openfga access will allow attackers to assign themselves arbitrary privileges.<br>Mitigations include, the ability to rotate keys on a frequent basis and forcing these API tokens to be mounted as files (can be permission controlled) instead of environment variables. Don't use shared keys. Use OAuth or SPIFFE.|
 |Impact (High/ Med/ Low)|High|
 |Likelihood (High/ Med/ Low)|Low|
 
@@ -409,15 +503,6 @@ and performing authorization on the proxy.
 |Impact (High/ Med/ Low)|High|
 |Likelihood (High/ Med/ Low)|Low|
 
-|Summary|When authenticating using pre-shared keys, these are exposed in container env vars.|
-|--|--|
-|Discovered in self-assessment?|No|
-|Weakness|Env vars are accessible to anyone with access to the container. There cannot be further permissions set on these like files. Keys further give access to stores and models.|
-|MITRE classification|TA0001: Initial Access -> T1078: Valid Accounts<br>TA0003: Persistence -> T1078: Valid Accounts<br>TA0004: Privilege Escalation -> T1078: Valid Accounts|
-|Actors|openfga.server|
-|Suggested Mitigation|Secrets mounted in filesystem can be restricted with permissions, however, may not offer a significantly higher level of security.<br>SPIFFE/ Spire integration may offer a much high level of security.|
-|Impact (High/ Med/ Low)|High|
-|Likelihood (High/ Med/ Low)|Low|
 
 ### Setting secure defaults for install
 
@@ -462,7 +547,17 @@ This section has other findings that could not be classified
 in earlier parts. It includes exploits such as server DDOS and
 potential leakage of information about application landscape.
 
-|Summary|Playground link as well as shape of API identifies the openfga server.|
+|Summary|INFORMATIONAL: Fixed API access tokens are susceptible to brute force attacks.|
+|--|--|
+|Discovered in self-assessment?|No|
+|Weakness|Having a fixed set of API tokens with no set TTL to rotate allows attackers to brute-force user created API tokens.|
+|MITRE classification|TA0006: Credential Access -> T1110: Brute Force|
+|Actors|openfga.server|
+|Suggested Mitigation|Support for rotation may mitigate the impact. Also, is this to be disabled in production? Also, can there be a minimal requirement for length and entropy that the server checks for API tokens?<br>SPIFFE/ Spire integration may offer a much high level of security|
+|Impact (High/ Med/ Low)|High|
+|Likelihood (High/ Med/ Low)|Med|
+
+|Summary|INFORMATIONAL: Playground link as well as shape of API identifies the openfga server.|
 |--|--|
 |Discovered in self-assessment?|No|
 |Weakness|An attacker performing reconnaissance will be able to identify if a service is the openfga server, a high-value target.|
@@ -472,7 +567,7 @@ potential leakage of information about application landscape.
 |Impact (High/ Med/ Low)|Low|
 |Likelihood (High/ Med/ Low)|Low|
 
-|Summary|Usage of PII as part of Tuples.|
+|Summary|INFORMATIONAL: Usage of PII as part of Tuples.|
 |--|--|
 |Discovered in self-assessment?|Yes|
 |Weakness|PII can be exfiltrated if present as a part of the Tuples.|
@@ -482,7 +577,7 @@ potential leakage of information about application landscape.
 |Impact (High/ Med/ Low)|Med|
 |Likelihood (High/ Med/ Low)|Low|
 
-|Summary|Turning off audit logs will let an attacker mask operations on the server.|
+|Summary|INFORMATIONAL: Turning off audit logs will let an attacker mask operations on the server.|
 |--|--|
 |Discovered in self-assessment?|No|
 |Weakness|Allowing audit logs to be turned off completely via configuration would allow attackers to mask their trail.|
@@ -492,7 +587,7 @@ potential leakage of information about application landscape.
 |Impact (High/ Med/ Low)|Med|
 |Likelihood (High/ Med/ Low)|Low|
 
-|Summary|DDOS attack on openfga server would impact overall application landscape.|
+|Summary|INFORMATIONAL: DDOS attack on openfga server would impact overall application landscape.|
 |--|--|
 |Discovered in self-assessment?|Yes|
 |Weakness|A DDOS attack on the server endpoint is not handled by the server and will result in widespread impact on all dependent applications.|
@@ -502,16 +597,49 @@ potential leakage of information about application landscape.
 |Impact (High/ Med/ Low)|High|
 |Likelihood (High/ Med/ Low)|Low|
 
+|Summary|INFORMATIONAL: Further review needed on tuple evaluation and crypto guarantees.|
+|--|--|
+|Discovered in self-assessment?|No|
+|Weakness|Potential ordering and collision attacks possible.|
+|MITRE classification|[TA0004](https://attack.mitre.org/tactics/TA0004/): Privilege Escalation |
+|Actors|openfga.server|
+|Discussion| There seem to be minimal/no guarantees on order of permission tuples when evaluated, combined with not truly random ids, might lead to various timing/sequencing attacks. Nation state sophisticated attckers, and insider attackers, may have elevated privileges but might not want to directly attack the OpenFGA server in a detectable manner.  They may also want  to stealthily stage capabilities for future attacks and remain undetected and evade forensic analysis. These attackers will look for more complex attacks that are harder to detect. Object and tuple ids are not guaranteed to be cryptographically random, nor are there cryptographically strong assurances of object/tuple content, so collisons may be craftable by attackers and thus the combo of malicious insertions and collision crafting could potentially lead to attcks where a malicious tuple that allows an unauthorized action replaces the correct expected tuple, or malicious tuples are inserted in different orders. For example when a tuple is written to storage it deletes an existing tuple with the same unique id. If an attacker can craft collisions  they might be able to subtly replace a good tuple with a malicious tuple. Also there is a tuple iterator "continuation token". The server uses the continuation token so that it   does not "have to restart from scratch on system restart or on error". This seems also succeptible to specially crafted attacks where changes can be introduced that make insertion and collision attacks possible. More review and testing and ideally formal validation would be needed to prove that such insertion and collision attacks are impossible. Review of all code comments in the golang crypto libraries used, and support of true random number generation would be appropriate for high security environments. Given the limited time available, neither empirical testing nor formal analysis was possible. This should be a focus for further (post-doc/intern funding?) testing and review.|
+|Suggested Mitigation|Ensure true random ids, add model/tuple/object hashes or signatures, enforce strict ordering guarantees to ensure evaluation in order, and add crypto safe uniqueness guarantees to make collision insertion attacks impossible.|
+|Impact (High/ Med/ Low)|High|
+|Likelihood (High/ Med/ Low)|Low|
+
+
+|Summary|INFORMATIONAL: AES and SH256 crypo use is subject to side channel attacks and speculative execution attaks.|
+|--|--|
+|Discovered in self-assessment?|No|
+|Weakness|golang crypto lib AES256-GCM + SHA256 hashing of key material used by encryptor function is subject to side channel attacks and speculative execution attacks.|
+|MITRE classification|TA0006: Credential Access -> T1110: Brute Force|
+|Actors|openfga.server|
+|Discussion|The golang AES GCM code says "If you want to convert a passphrase to a key, use a suitable package like bcrypt or scrypt." Simply hashing a secret  and using that as a key is not sufficient.  A good overview id [discussed here.](https://crypto.stackexchange.com/questions/68545/aes-why-is-it-a-good-practice-to-use-only-the-first-16-bytes-of-a-hash-for-encr). In short, hashes are specially designed for (quick) hashing, key derivation functions are designed specially and carefully for key derivation. Don't mix those use scenarios up. Further, while golang [has some special options](https://github.com/golang/go/wiki/Spectre/dac828df865fc0eb0fed2b7c477ef2c7863ee17d) - not compiled by default - for minimal defenses, golang's crypto package is not specifically defensive against side channel and [speculative execution](https://www.intel.com/content/www/us/en/developer/articles/technical/software-security-guidance/secure-coding/mitigate-timing-side-channel-crypto-implementation.html) [attacks](https://www.amd.com/content/dam/amd/en/documents/epyc-technical-docs/tuning-guides/software-techniques-for-managing-speculation.pdf).  While this is not an OpenFGA specific weakness, given the central importance of an authorization service, it is easy to presume  that attackers, especially nation state or inside attackers, would focus energy on the OpenFGA service and use these techniques.  Using hardware crypo offloading and also hardening OpenFGA and contributing upstream crypto and golang hardening would improve the overall robustness.|
+|Suggested Mitigation|Use a proper key derivation function for converting key material to an actual key for AES-GCM, eg. Argon2 or PBKDF. Support hardware  offloading of all crypto operations.  Review defensive recommendations for software side-channel and speculative execution attacks.|
+|Impact (High/ Med/ Low)|High|
+|Likelihood (High/ Med/ Low)|Low|
+
 ## Security Hygiene and Secure Development Practices
 
 This section addresses questions related to project-level security decisions.
+
+|Summary|Core maintainers are all currently from Okta.|
+|--|--|
+|Discovered in self-assessment?|No|
+|Weakness|Dependence on a single organization can impact governance and long term leadership of the project.|
+|MITRE classification|N/A|
+|Actors|N/A|
+|Suggested Mitigation|CNCF should provide resources and support for the project to recruit and train additional maintainers who can both help improve  security and participate longer term in project governance and design leadership. Additionally, CNCF member companies who use OpenFGA should consider  investing staff time and funds to OpenFGA governance and security.|
+|Impact (High/ Med/ Low)|N/A|
+|Likelihood (High/ Med/ Low)|N/A|
 
 Opportunities for improvement include:
 
 - Multi-organizational ownership of security reporting
 - A roadmap that demonstrates a strong consideration for security features
-- Public documentation of the project's release versioning policy
-- Easily understandable release process
+- Public documentation of the project's release versioning policy / Easily understandable release process
+- Public release of security and vulnerability scans, eg. Snyk, after appropriate embargo
 
 ### Release and Update Process
 
