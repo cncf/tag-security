@@ -4,6 +4,10 @@
 
 Welcome to the Security TAG (STAG) Blog! Our blog is a platform for sharing insights, experiences, and knowledge about Cloud Native software and the community. We encourage contributions from community members to help educate, inspire, and engage others. To ensure quality and consistency, we have established the following guidelines for content creation, submission review, and the overall value to the community.
 
+## Proposal
+
+Everyone is welcome to propose a new blog post using the [blog submission template](https://github.com/cncf/tag-security/blob/main/.github/ISSUE_TEMPLATE/blog-submission.md). Blog article proposals are meant to capture the intent of authoring one of many topics covered below.
+
 ## Content Creation
 
 ### Topics
@@ -11,6 +15,7 @@ Welcome to the Security TAG (STAG) Blog! Our blog is a platform for sharing insi
 - **Cloud Native Projects**: Share updates, features, and success stories.
 - **Technical Tutorials**: Provide how-to guides, coding tips, and best practices.
 - **Community Stories**: Highlight contributors, events, and community achievements.
+- **Working Groups**: Proposed initiatives, Updates, and calls to action.
 - **Opinion Pieces**: Discuss trends, challenges, and the future of open source.
 
 ### Writing Style
@@ -59,8 +64,8 @@ author: R. Raccoon
 
 ### Submission
 
-1. **Draft**: Write your blog post in a markdown file under `tag-security/website/content/blog`
-2. **Submission Pull Request**: Submit your draft using the [blog submission template](https://github.com/cncf/tag-security/blob/main/.github/ISSUE_TEMPLATE/blog-submission.md).
+1. **Draft**: Write your blog post in a markdown file under `tag-security/website/content/blog`.
+2. **Pull Request**: Submit your draft in a pull request.
 
 ### Review
 
@@ -72,8 +77,8 @@ author: R. Raccoon
 ### Reviewer Criteria
 
 1. **Content**: Submission abides by all `Content Creation` guidelines established above.
-2. **Sponsor**: Submission is sponsored by a STAG Co-Chair, Tech Lead, or Project Lead
-3. **Existing Content**: Submission does not duplicate existing material
+2. **Sponsor**: Submission is sponsored by a STAG Co-Chair, Tech Lead, or Project Lead.
+3. **Existing Content**: Submission does not duplicate existing material.
 
 ### Approval
 
