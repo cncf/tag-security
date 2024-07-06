@@ -72,7 +72,7 @@ author: R. Raccoon
 ### Reviewer Criteria
 
 1. **Content**: Submission abides by all `Content Creation` guidelines established above.
-2. **Sponsor**: Submission is sponsored by the STAG directly or an STAG WG
+2. **Sponsor**: Submission is sponsored by a STAG Co-Chair, Tech Lead, or Project Lead
 3. **Existing Content**: Submission does not duplicate existing material
 
 ### Approval
