@@ -1,5 +1,5 @@
 {
-    "aliveStatusCodes": [200,206,402],
+    "aliveStatusCodes": [200,206,402,999],
     "fallbackRetryDelay": "10s",
     "replacementPatterns": [
       {
