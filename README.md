@@ -74,36 +74,9 @@ Explore groups affiliated with or relevant to Security TAG [here](governance/rel
 
 <!-- cSpell:disable -->
 
-### Security TAG Chairs
+## Leadership
 
-| Name                  | Organization            | Term                | Handle    |
-|-----------------------|------------------------|---------------------|-----------|
-| Pushkar Joglekar      | Independent            | June, 2023 - June, 2025 | @PushkarJ |
-| Marina Moore          | Independent                  | October, 2023 - October, 2025 | @mnm678   |
-| Eddie Knight          | Sonatype               | May, 2024 - May, 2026 | @eddie-knight |
-
-### Tech Leads
-
-| Name                  | Organization            | Handle              |
-|-----------------------|------------------------|---------------------|
-| Justin Cappos         | New York University    | @JustinCappos       |
-| Ash Narkar            | Styra                  | @ashutosh-narkar    |
-| Andrés Vega           | M42                    | @anvega             |
-| Ragashree Shekar      | Independent            | @ragashreeshekar    |
-| Michael Lieberman     | Kusari                 | @mlieberman85       |
-| John Kjell    | TestifySec                 | @jkjell       |
-
-### Security TAG Chair Emeriti
-
-| Name                  | Organization            | Term                | Handle    |
-|-----------------------|------------------------|---------------------|-----------|
-| Dan Shaw              | PayPal                 | June, 2019 - September, 2020 | @dshaw    |
-| Sarah Allen           |                        | June, 2019 - June, 2021 | @ultrasaurus |
-| Jeyappragash JJ       | Tetrate.io             | June, 2019 - June, 2021 | @pragashj |
-| Emily Fox             | Apple                  | September, 2020 - February, 2022 | @TheFoxAtWork |
-| Brandon Lum           | Google                 | June, 2021 - June, 2023 | @lumjjb   |
-| Aradhana Chetal       | TIAA                   | June, 2021 - September, 2023 | @achetal01 |
-| Andrew Martin         | ControlPlane           | March, 2022 - March, 2024 | @sublimino|
+TAG Chairs, Tech Leads and TOC Liaisons are listed on the [CNCF Technical Advisory Groups ("TAGs") information page](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md).
 
 ### Working Groups
 
@@ -131,3 +104,8 @@ new [security review issue](https://github.com/cncf/tag-security/issues/new?assi
 with a
 [self-assessment](/community/assessments/guide/self-assessment.md)
 .
+
+## TAG Emeritus Leaders
+<!-- cSpell:disable -->
+A big thank you to all the [tag emeritus leaders](/tag-emeritus-leaders.md) of this TAG! Your hard work and dedication have helped to make this project a success. Your valuable contributions have enabled us to develop a strong contributor strategy and build a thriving open-source community. Thank you for all that you have done!
+<!-- cSpell:enable -->
