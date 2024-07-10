@@ -1,6 +1,6 @@
 ---
 title:  "Securing the Cloud: Insights from CloudNativeSecurityCon 2024"
-date:   2024-07-15 09:00:00 -0400
+date:  2024-07-15T9:00:00-04:00
 author: Shlomo Zalman Heigh
 ---
 
