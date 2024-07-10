@@ -1,5 +1,7 @@
 # TAG Security Chair Emeriti
 
+<!-- cSpell:disable -->
+
 | Name                  | Organization            | Term                | Handle    |
 |-----------------------|------------------------|---------------------|-----------|
 | Dan Shaw              | PayPal                 | June, 2019 - September, 2020 | @dshaw    |
