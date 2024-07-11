@@ -266,14 +266,14 @@ actions:
 
 #### Security functions and features
 
-OpenFGA, as an Open-Source project, requires the community to review and evaluate the security implementation per the the Principle of Open Design.
+OpenFGA, as an Open-Source project, requires the community to review and evaluate the security implementation per the Principle of Open Design.
 
-OpenFGA models authorization systems by providing the security features such as Role-based Access Control and Attribute-based Access Control.
+OpenFGA models authorization systems by providing authorization methods such as Role-based Access Control, Relationship-based Access Control and Attribute-based Access Control.
 
 OpenFGA was designed for speed in processing secure authorization check call. This swift authorization mechanism not only enhances efficiency 
 but also reinforces the security posture, assuring robust protection for applications and platforms for diverse scales.
 
-OpenFGA provides a wide variety of SDKs, as well as easy integration for new SDKs.
+OpenFGA provides a wide variety of SDKs, as well as easy API integration for new SDKs.
 
 ## Configuration and Set-Up
 
@@ -300,8 +300,8 @@ OpenFGA is an authorization/ permission engine that secures sensitive informatio
 including users of the systems referenced by the permission model as well as
 permissions and access levels for each. Attackers may have multiple motivations
 including:
-* Exfiltrating relationship and condition and user data from the service
-* Tampering with data to assign or elevate permissions or remove access to authorized users
+* Exfiltrating relationship, condition and user data from the service
+* Tampering with data to assign, elevate permissions or remove access to authorized users
 * Studying the data to understand the application design and operation for further attack steps
 * Denial of service by rendering OpenFGA unable to respond to auth requests
 
@@ -338,7 +338,7 @@ their permissions and locking out users from system access.
 ### Security Impact Assessment
 
 A compromise of the OpenFGA server in production would lead to
-downstream effects in the application. Attackers could assign
+downstream effects in the application landscape. Attackers could assign
 themselves arbitraty permissions to sensitive resources or data and also lock out
 legitimate users. This could lead to effects from a denial of service
 and degradation of customer experience to exfiltration of critical data
@@ -499,7 +499,7 @@ and performing authorization on the proxy.
 |Weakness|Broad permissions allow an admin to modify any model, not just ones that they own.|
 |MITRE classification|TA0042: Resource Development -> T1585: Establish Accounts|
 |Actors|openfga.server|
-|Suggested Mitigation|Can the API endpoint for openfga server support more fine grained permissions so that only owners of stores/ models can modify them? Permissions can be set at a module level.|
+|Suggested Mitigation|Can the API endpoint for openfga server support more fine grained permissions so that only owners of stores/ models can modify them? Permissions can be set at a module level. <br>This is being implemented under this [issue](https://github.com/openfga/roadmap/issues/30) by the project.|
 |Impact (High/ Med/ Low)|High|
 |Likelihood (High/ Med/ Low)|Low|
 
@@ -603,7 +603,7 @@ potential leakage of information about application landscape.
 |Weakness|Potential ordering and collision attacks possible.|
 |MITRE classification|[TA0004](https://attack.mitre.org/tactics/TA0004/): Privilege Escalation |
 |Actors|openfga.server|
-|Discussion| There seem to be minimal/no guarantees on order of permission tuples when evaluated, combined with not truly random ids, might lead to various timing/sequencing attacks. Nation state sophisticated attckers, and insider attackers, may have elevated privileges but might not want to directly attack the OpenFGA server in a detectable manner.  They may also want  to stealthily stage capabilities for future attacks and remain undetected and evade forensic analysis. These attackers will look for more complex attacks that are harder to detect. Object and tuple ids are not guaranteed to be cryptographically random, nor are there cryptographically strong assurances of object/tuple content, so collisons may be craftable by attackers and thus the combo of malicious insertions and collision crafting could potentially lead to attcks where a malicious tuple that allows an unauthorized action replaces the correct expected tuple, or malicious tuples are inserted in different orders. For example when a tuple is written to storage it deletes an existing tuple with the same unique id. If an attacker can craft collisions  they might be able to subtly replace a good tuple with a malicious tuple. Also there is a tuple iterator "continuation token". The server uses the continuation token so that it   does not "have to restart from scratch on system restart or on error". This seems also succeptible to specially crafted attacks where changes can be introduced that make insertion and collision attacks possible. More review and testing and ideally formal validation would be needed to prove that such insertion and collision attacks are impossible. Review of all code comments in the golang crypto libraries used, and support of true random number generation would be appropriate for high security environments. Given the limited time available, neither empirical testing nor formal analysis was possible. This should be a focus for further (post-doc/intern funding?) testing and review.|
+|Discussion| There seem to be minimal/no guarantees on order of permission tuples when evaluated, combined with not truly random ids, might lead to various timing/sequencing attacks. Nation states, sophisticated attackers, and insider attackers, may have elevated privileges but might not want to directly attack the OpenFGA server in a detectable manner.  They may also want  to stealthily stage capabilities for future attacks and remain undetected and evade forensic analysis. These attackers will look for more complex attacks that are harder to detect. Object and tuple ids are not guaranteed to be cryptographically random, nor are there cryptographically strong assurances of object/tuple content, so collisons may be craftable by attackers and thus the combo of malicious insertions and collision crafting could potentially lead to attcks where a malicious tuple that allows an unauthorized action replaces the correct expected tuple, or malicious tuples are inserted in different orders. For example when a tuple is written to storage it deletes an existing tuple with the same unique id. If an attacker can craft collisions  they might be able to subtly replace a good tuple with a malicious tuple. Also there is a tuple iterator "continuation token". The server uses the continuation token so that it   does not "have to restart from scratch on system restart or on error". This seems also succeptible to specially crafted attacks where changes can be introduced that make insertion and collision attacks possible. More review and testing and ideally formal validation would be needed to prove that such insertion and collision attacks are impossible. Review of all code comments in the golang crypto libraries used, and support of true random number generation would be appropriate for high security environments. Given the limited time available, neither empirical testing nor formal analysis was possible. This should be a focus for further (post-doc/intern funding?) testing and review.|
 |Suggested Mitigation|Ensure true random ids, add model/tuple/object hashes or signatures, enforce strict ordering guarantees to ensure evaluation in order, and add crypto safe uniqueness guarantees to make collision insertion attacks impossible.|
 |Impact (High/ Med/ Low)|High|
 |Likelihood (High/ Med/ Low)|Low|
