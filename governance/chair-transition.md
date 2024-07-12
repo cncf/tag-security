@@ -1,4 +1,4 @@
-# Chair transition checklist
+# Chair Transition Checklist
 
 This checklist should be copied into a new issue for when a new chair(s) is needed.
 
@@ -42,7 +42,7 @@ process](chair-proposal-process.md) with specific items that must be completed.
     * [ ] Update codeowners, github settings, README (TOC Liaisons and chairs
       have admin access, tech leads have push access).
     * [ ] Link to official vote email list message in PR descriptions
-  * [ ] [TOC Repo update](https://github.com/cncf/toc/blob/main/tags/security.md)
+  * [ ] [TOC Repo update](https://github.com/cncf/toc/blob/main/tags/tag-charters/security.md)
   * [ ] [Service Desk Access](https://cncfservicedesk.atlassian.net/servicedesk/customer/portal/1)
   * [ ] Update email lists
     * [ ] update email list membership

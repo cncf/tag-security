@@ -13,11 +13,11 @@ Project team:  _list name and github handle as appropriate_
 
 ## Background
 
-*Brief synopsys of the project, problem space, how the project solves the problem, can be pulled from the joint assessment.*
+_Brief synopsys of the project, problem space, how the project solves the problem, can be pulled from the joint assessment._
 
 ### Maturity
 
-*Use cases, integrations, etc. bulleted, should be available in the joint assessment.*
+_Use cases, integrations, etc. bulleted, should be available in the joint assessment._
 
 ## Summary
 
@@ -27,21 +27,21 @@ Project team:  _list name and github handle as appropriate_
 
 ## Recommendations
 
-_refer to the existing readmes for other projects, such as [SPIFFE/SPIRE](https://github.com/cncf/tag-security/tree/main/assessments/projects/spiffe-spire) as a guide for developing this area_
+_refer to the existing readmes for other projects, such as [SPIFFE/SPIRE](/community/assessments/projects/spiffe-spire) as a guide for developing this area_
 
 ### CNCF recommendations
 
-* 
-* 
+*
+*
 
 ### Project recommendations
 
-* 
-* 
+*
+*
 
 ### Additional recommendations
 
-* 
-* 
+*
+*
 
-Tracking issue: *link to issue for assessment*
+Tracking issue: _link to issue for assessment_

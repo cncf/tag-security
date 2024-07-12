@@ -5,7 +5,7 @@ different projects, this document outlines the procedure by which a project
 should be assessed during a TAG-Security Security Assessment (TSSA).
 
 * [Roles](#roles)
-* [TSSA package steps](#TSSA-package-steps)
+* [TSSA package steps](#tssa-package-steps)
   * [New projects](#new-projects)
     1. [Self-assessment](#complete-a-self-assessment)
     2. [Create issue](#create-a-presentation-issue)
@@ -13,10 +13,8 @@ should be assessed during a TAG-Security Security Assessment (TSSA).
     4. [Submit PR](#submit-a-pr-to-include-the-self-assessment-in-the-repo)
   * [Growing projects](#growing-projects)
     1. [Create issue](#create-tracking-issue)
-    2. [Draft joint
-       assessment](#project-leverages-self-assessment-to-draft-joint-assessment)
-    3. [Reviewers
-       assigned](#project-provides-the-joint-assessment-and-reviewers-are-assigned)
+    2. [Draft joint assessment](#project-provides-the-joint-assessment-and-reviewers-are-assigned)
+    3. [Reviewers assigned](#project-provides)
     4. [Conflict of interest](#conflict-of-interest-statement-and-review)
     5. [Clarifying questions](#clarifying-questions-phase)
     6. [Assessment](#security-assessment-with-optional-hands-on-assessment)
@@ -68,7 +66,7 @@ feel important in an updated self-assessment based on feedback and discussion.
 
 After the presentation, the **project lead** or their designee should submit a
 PR, citing the presentation issue number to add the self-assessment to
-[assessments/projects](https://github.com/cncf/tag-security/tree/main/assessments/projects)
+[assessments/projects](/community/assessments/projects)
 under its own folder.  The ticket may then be closed after merged in.
 
 ### Growing projects
@@ -176,7 +174,7 @@ assessment, the hands-on assessment is included in this step.
   * It is highly recommended that security reviewers familiarize themselves with
         the project's repo and docs if available
 * **Security reviewers and project lead/POCs** ensure all reviewer questions,
-     comments, and feedback are addressed and finalize the joint assessment 
+     comments, and feedback are addressed and finalize the joint assessment
 * **Lead security reviewer or their designee,** with the assistance of the
 **security reviewers** create a [draft summary
      document](joint-readme-template.md) to capture existing comments, feedback,
@@ -213,7 +211,7 @@ assessment and presentation slides.
 * PR approval of at least 1 **co-chair**, alongside other **reviewers'**
 approvals, is required before merging any artifacts.
 
-#### [Post-assessment survey](assessment-survey.md)
+#### [Post-assessment survey](review-survey.md)
 
 The should be completed by the **reviewers**, **project lead**, and other
 members of the TSSA.  Once complete the survey may be shared directly to the

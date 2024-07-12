@@ -61,11 +61,6 @@ Check your local timezone [here](https://time.is/). Meetings are listed on the [
 
 To add a topic to the agenda, review our [process](governance/process.md#getting-on-the-agenda).
 
-## Gatherings
-
-- [Cloud Native SecurityCon 24](https://events.linuxfoundation.org/cloudnativesecuritycon-north-america/) June 26-27, 2024 in Seattle, Washington
-- [Past events](community/events/past-events.md)
-
 ## New members
 
 If you are new to the group, we encourage you to check out our
@@ -123,7 +118,7 @@ Each group, led by a responsible leader, reaches consensus on issues and manages
 | [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres |
 | [Compliance](/community/working-groups/compliance/README.md) | Anca Sailer, Robert Ficcaglia |
 | [Controls](/community/working-groups/controls/README.md) | Jon Zeolla |
-| [Security Reviews](/assessments/README.md) | Justin Cappos, Eddie Knight|
+| [Security Reviews](/community/assessments/README.md) | Justin Cappos, Eddie Knight|
 | [Software Supply Chain](/community/working-groups/supply-chain-security/README.md) | Marina Moore, Michael Liebermann, John Kjell |
 
 ## Additional information
@@ -134,5 +129,5 @@ For [CNCF project proposal process](https://github.com/cncf/toc/blob/main/proces
 create a
 new [security review issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 with a
-[self-assessment](./assessments/guide/self-assessment.md)
+[self-assessment](/community/assessments/guide/self-assessment.md)
 .

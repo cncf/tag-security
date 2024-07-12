@@ -3,7 +3,7 @@
 This directory is intended to provide CNCF and other open source projects with
 resources and templates to assist in kick-starting their security practices.
 The templates, guides, and other documents herein assist projects in completion
-of the [self-assessment](/assessments/guide/self-assessment.md) as well as a few
+of the [self-assessment](./community/assessments/guide/self-assessment.md) as well as a few
 items in the [CII badging](https://bestpractices.coreinfrastructure.org/en)
 process.
 
@@ -77,7 +77,7 @@ and discussions as guidance when determining the content of their updates.
 
 It is highly recommended that you seek peer review for your updates beyond that
 of the Technical Leads and Chairs. More information on contributions to this
-repo may be found in the [contributing file](/CONTRIBUTING.md).
+repo may be found in the [contributing file](../CONTRIBUTING.md).
 
 #### New templates & updating contribute.cncf.io
 
