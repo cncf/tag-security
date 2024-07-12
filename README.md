@@ -78,6 +78,10 @@ Explore groups affiliated with or relevant to Security TAG [here](governance/rel
 
 Details about the TAG Chairs, Tech Leads, and TOC Liaisons can be found on the [CNCF Technical Advisory Groups (TAGs) information page](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md)
 
+## TAG Emeritus Leaders
+
+Thank you to all the [tag emeritus leaders]((/tag-emeritus-leaders.md)) for your contributions to the success of this community.
+
 ### Working Groups
 
 The TAG's working groups focus on specific areas and organize most community activities, including weekly meetings.
@@ -103,7 +107,3 @@ create a
 new [security review issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 with a
 [self-assessment](/community/assessments/guide/self-assessment.md).
-
-## TAG Emeritus Leaders
-
-A big thank you to all the [tag emeritus leaders](/tag-emeritus-leaders.md) of this TAG! Your hard work and dedication have helped to make this project a success. Your valuable contributions have enabled us to develop a strong contributor strategy and build a thriving open-source community. Thank you for all that you have done!
