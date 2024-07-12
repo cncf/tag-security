@@ -129,5 +129,4 @@ For [CNCF project proposal process](https://github.com/cncf/toc/blob/main/proces
 create a
 new [security review issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 with a
-[self-assessment](/community/assessments/guide/self-assessment.md)
-.
+[self-assessment](/community/assessments/guide/self-assessment.md).
