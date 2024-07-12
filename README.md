@@ -76,7 +76,7 @@ Explore groups affiliated with or relevant to Security TAG [here](governance/rel
 
 ## Leadership
 
-TAG Chairs, Tech Leads and TOC Liaisons are listed on the [CNCF Technical Advisory Groups ("TAGs") information page](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md).
+Details about the TAG Chairs, Tech Leads, and TOC Liaisons can be found on the [CNCF Technical Advisory Groups (TAGs) information page](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md)
 
 ### Working Groups
 
