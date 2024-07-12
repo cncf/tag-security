@@ -80,7 +80,7 @@ Details about the TAG Chairs, Tech Leads, and TOC Liaisons can be found on the [
 
 ## TAG Emeritus Leaders
 
-Thank you to all the [tag emeritus leaders]((/tag-emeritus-leaders.md)) for your contributions to the success of this community.
+Thank you to all the [tag emeritus leaders]((/community/assets/tag-emeritus-leaders.md)) for your contributions to the success of this community.
 
 ### Working Groups
 
