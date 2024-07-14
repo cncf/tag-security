@@ -1,7 +1,7 @@
 # Securing the Source Code
 
 {{% blocks/lead color="white" align="left" %}}
-Here are the list of requirements for securing the source code, which is a subcategory of the overall requirements for supply chain security.
+Here are the list of requirements for securing the source code, which is a subcategory of the overall requirements for supply chain security. For each requirement is a list of tools used to meet that requirement.
 {{% /blocks/lead %}}
 
 ## 1. Require signed commits
