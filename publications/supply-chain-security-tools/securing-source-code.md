@@ -6,9 +6,12 @@ Here are the list of requirements for securing the source code, which is a subca
 
 ## 1. Require signed commits
 
-Tool capability: sign commits, verify signed commits
+<div class="h4">Tool capability</div>
 
-### Tools
+- Sign commits
+- Verify signed commits
+
+<div class="h4 mt-4">Tools</div>
 
 - Sigstore (gitsign)
 - gittuf
@@ -16,9 +19,11 @@ Tool capability: sign commits, verify signed commits
 
 ## 2. Enforce full attestation and verification for protected branches
 
-Tool capability: monitor protected branches
+<div class="h4">Tool capability</div>
 
-### Tools
+- Monitor protected branches
+
+<div class="h4 mt-4">Tools</div>
 
 - gittuf
 
