@@ -1,4 +1,4 @@
-# Securing Artefacts
+# Securing Artifacts
 
 {{% blocks/lead color="white" align="left" %}}
 Here are the list of requirements for securing the source code. Each one has a list of tools used to achieve it.
@@ -6,21 +6,7 @@ Here are the list of requirements for securing the source code. Each one has a l
 
 ## 1. Require signed commits
 
-Tool capability: sign commits, verify signed commits
-
-#### Tools
-- Sigstore (gitsign)
-- gittuf
-- GUAC
-
-
 ## 2. Enforce full attestation and verification for protected branches
-
-Tool capability: monitor protected branches
-
-#### Tools
-- gittuf
-
 
 ## 3. Prevent committing secrets to the source code repository
 
@@ -43,4 +29,3 @@ Tool capability: monitor protected branches
 ## 12. Have a Key Rotation Policy
 
 ## 13. Use short-lived/ephemeral credentials for machine/service access
-
