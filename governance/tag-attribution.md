@@ -10,18 +10,23 @@ Below is a list of works categories, and what will enable it to be attributed
 as a TAG publication.
 
 1. Publications (whitepapers, etc)
-  - The document must follow all guidelines, protocols, and processes outlined
+
+- The document must follow all guidelines, protocols, and processes outlined
     in the [publications] directory.
+
 1. Presentations (conference talks, webinars, etc)
-  - The presentation must be made by a TAG Tech Lead or Chair
-  - The presentation content must be pre-approved by a majority of TAG Leads
-  - No significant concern has been left unaddressed by a TAG Tech Lead
+
+- The presentation must be made by a TAG Tech Lead or Chair
+- The presentation content must be pre-approved by a majority of TAG Leads
+- No significant concern has been left unaddressed by a TAG Tech Lead
+
 1. Blogs (On the TAG site or elsewhere)
-  - The Blog must be directly connected to an initiative such as a whitepaper
-    or event.
-  - If the blog contains any opinions, advice, or recommendations, it follows
-    all guidelines, protocols, and processes outlined in the [publications]
-    directory.
+
+- The Blog must be directly connected to an initiative such as a whitepaper
+  or event.
+- If the blog contains any opinions, advice, or recommendations, it follows
+  all guidelines, protocols, and processes outlined in the [publications]
+  directory.
 
 ## Personal Attribution
 
@@ -58,7 +63,6 @@ or approved by the TAG.
 - R. Racoon, Tech Lead, CNCF TAG Security
 - R. Racoon, TrashPanda Corp and TAG Security
 - R. Racoon, TrashPanda Corp, TAG Security
-
 
 [Attribution]: https://www.merriam-webster.com/dictionary/attribution
 [publications]: ../publications
