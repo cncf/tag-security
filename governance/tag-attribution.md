@@ -25,7 +25,7 @@ as a TAG publication.
 
 ## Personal Attribution
 
-A TAG Tech Lead, Chair, or project may use their title in any internal or
+A TAG Tech Lead, Chair, or Project Lead may use their title in any internal or
 external publication as they see fit. There is no restriction to this, but
 the following examples will aid in clarity to avoid mistaken attribution.
 
