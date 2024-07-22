@@ -45,6 +45,7 @@ These examples clearly delineate the author attribution from the author's role
 
 - R. Raccoon - Tech Lead, CNCF TAG Security
 - R. Raccoon (Tech Lead, CNCF TAG Security)
+- R. Raccoon (CTO, TrashPanda Corp and Tech Lead, CNCF TAG Security)
 
 ### Less Good Examples
 
