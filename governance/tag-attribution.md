@@ -61,4 +61,4 @@ or approved by the TAG.
 
 
 [Attribution]: https://www.merriam-webster.com/dictionary/attribution
-[publications]: </publications>
+[publications]: ../publications
