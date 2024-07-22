@@ -31,7 +31,7 @@ the following examples will aid in clarity to avoid mistaken attribution.
 
 ### Attribution Qualifier
 
-It is prefferable, but not required, that personally attributed works include
+It is preferable, but not required, that personally attributed works include
 a qualifying statement if the CNCF or the TAG is mentioned in the author byline
 or article content.
 
