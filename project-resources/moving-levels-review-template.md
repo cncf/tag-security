@@ -10,7 +10,6 @@ What ecosystem adoption has the project seen?
 
 How has the project addressed comments from previous reviews (incubation if graduation, sandbox if incubating, etc)?
 
-
 ## Security Reviews
 
 ### TAG Security Assessments
@@ -20,7 +19,6 @@ Has the project completed a TAG Security Self-Assessment and/or Joint Assessment
 ### Security Audit
 
 Has the project completed an external security audit? If yes, how have they addressed the findings?
-
 
 ## Best Practices
 
