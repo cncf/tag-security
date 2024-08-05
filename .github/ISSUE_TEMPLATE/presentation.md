@@ -20,3 +20,4 @@ TO DO
 - [ ] TAG Representative
 - [ ] Schedule date
 - [ ] By opening this issue, I, (Insert Github Handle/Name) acknowledge that the presentation topic and speaker will follow the [presentation guidelines](../CONTRIBUTING.md#present-to-the-tag)
+- [ ] If this is a presentation for a project moving levels, the TAG Representative should complete the [Moving Levels Recommendation](../project-resources/moving-levels-review-template.md)

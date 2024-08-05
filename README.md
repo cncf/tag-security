@@ -74,36 +74,13 @@ Explore groups affiliated with or relevant to Security TAG [here](governance/rel
 
 <!-- cSpell:disable -->
 
-### Security TAG Chairs
+## Leadership
 
-| Name                  | Organization            | Term                | Handle    |
-|-----------------------|------------------------|---------------------|-----------|
-| Pushkar Joglekar      | Independent            | June, 2023 - June, 2025 | @PushkarJ |
-| Marina Moore          | Independent                  | October, 2023 - October, 2025 | @mnm678   |
-| Eddie Knight          | Sonatype               | May, 2024 - May, 2026 | @eddie-knight |
+Details about the TAG Chairs, Tech Leads, and TOC Liaisons can be found on the [CNCF Technical Advisory Groups (TAGs) information page](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md)
 
-### Tech Leads
+## TAG Emeritus Leaders
 
-| Name                  | Organization            | Handle              |
-|-----------------------|------------------------|---------------------|
-| Justin Cappos         | New York University    | @JustinCappos       |
-| Ash Narkar            | Styra                  | @ashutosh-narkar    |
-| Andrés Vega           | M42                    | @anvega             |
-| Ragashree Shekar      | Independent            | @ragashreeshekar    |
-| Michael Lieberman     | Kusari                 | @mlieberman85       |
-| John Kjell    | TestifySec                 | @jkjell       |
-
-### Security TAG Chair Emeriti
-
-| Name                  | Organization            | Term                | Handle    |
-|-----------------------|------------------------|---------------------|-----------|
-| Dan Shaw              | PayPal                 | June, 2019 - September, 2020 | @dshaw    |
-| Sarah Allen           |                        | June, 2019 - June, 2021 | @ultrasaurus |
-| Jeyappragash JJ       | Tetrate.io             | June, 2019 - June, 2021 | @pragashj |
-| Emily Fox             | Apple                  | September, 2020 - February, 2022 | @TheFoxAtWork |
-| Brandon Lum           | Google                 | June, 2021 - June, 2023 | @lumjjb   |
-| Aradhana Chetal       | TIAA                   | June, 2021 - September, 2023 | @achetal01 |
-| Andrew Martin         | ControlPlane           | March, 2022 - March, 2024 | @sublimino|
+Thank you to all the [tag emeritus leaders](/community/assets/tag-emeritus-leaders.md) for your contributions to the success of this community.
 
 ### Working Groups
 
@@ -129,5 +106,4 @@ For [CNCF project proposal process](https://github.com/cncf/toc/blob/main/proces
 create a
 new [security review issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 with a
-[self-assessment](/community/assessments/guide/self-assessment.md)
-.
+[self-assessment](/community/assessments/guide/self-assessment.md).
