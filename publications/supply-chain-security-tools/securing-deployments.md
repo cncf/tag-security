@@ -1,31 +1,42 @@
 # Securing Deployments
 
 {{% blocks/lead color="white" align="left" %}}
-Here are the list of requirements for securing the source code. Each one has a list of tools used to achieve it.
+Here are the list of requirements for securing deployments. Each one has a list of tools used to achieve it.
 {{% /blocks/lead %}}
 
-## 1. Require signed commits
+## 1. Ensure clients can perform Verification of Artefacts and associated metadata
 
-## 2. Enforce full attestation and verification for protected branches
+### Tool capability
 
-## 3. Prevent committing secrets to the source code repository
+- perform client verification
 
-## 4. Define individuals/teams that are responsible for code in a repository and associated coding conventions
+### Tools
 
-## 5. Automate software security scanning and testing
+- Sigstore (cosign)
+- in-toto (in-toto implementations support verification of metadata against layouts)
+- TUF
+- Tekton (chains with sigstore)
+- Kyverno (Kyverno policies validate artifacts and metadata)
 
-## 6. Establish and adhere to contribution policies
 
-## 7. Define roles aligned to functional responsibilities
+## 2. Ensure clients can verify the "freshness" of files
 
-## 8. Enforce an independent four-eyes principle
+### Tool capability
 
-## 9. Use branch protection rules
+- verify freshness of files
 
-## 10. Enforce MFA for accessing source code repositories
+### Tools
 
-## 11. Use SSH keys to provide developers access to source code repositories
+- Sigstore (Rekor)
+- TUF
 
-## 12. Have a Key Rotation Policy
+## 3. Use The Update Framework
 
-## 13. Use short-lived/ephemeral credentials for machine/service access
+### Tool capability
+
+- support TUF metadata creation
+- support TUF metadata verification
+
+### Tools
+
+- TUF

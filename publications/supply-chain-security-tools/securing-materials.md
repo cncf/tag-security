@@ -1,31 +1,109 @@
 # Securing Materials
 
 {{% blocks/lead color="white" align="left" %}}
-Here are the list of requirements for securing the source code. Each one has a list of tools used to achieve it.
+Here are the list of requirements for securing materials. Each one has a list of tools used to achieve it.
 {{% /blocks/lead %}}
 
-## 1. Require signed commits
+## 1. Verify third party artefacts and open source libraries
 
-## 2. Enforce full attestation and verification for protected branches
+### Tool capability
 
-## 3. Prevent committing secrets to the source code repository
+- attest to review
+- verify review attestations
 
-## 4. Define individuals/teams that are responsible for code in a repository and associated coding conventions
+### Tools
 
-## 5. Automate software security scanning and testing
+- in-toto (can be validated via alpha-omega attestations, review attestations)
 
-## 6. Establish and adhere to contribution policies
 
-## 7. Define roles aligned to functional responsibilities
+## 2. Require SBOM from third party supplier
 
-## 8. Enforce an independent four-eyes principle
+### Tool capability
 
-## 9. Use branch protection rules
+- generate accurate SBOM
+- verify SBOM existence
+- verify SBOM accuracy
 
-## 10. Enforce MFA for accessing source code repositories
+### Tools
 
-## 11. Use SSH keys to provide developers access to source code repositories
+- _none_
 
-## 12. Have a Key Rotation Policy
+## 3. Track dependencies between open source components
 
-## 13. Use short-lived/ephemeral credentials for machine/service access
+### Tool capability
+
+- create accurate SBOM
+- update SBOM
+
+### Tools
+
+- _none_
+
+## 4. Build libraries based upon source code
+
+### Tool capability
+
+- attest to build
+- verify attestation of build
+- maintain list of trusted sources for built software
+- attestation from third-party builder/distributor
+- publish hashes for pre-built software
+
+### Tools
+
+- in-toto
+- apko
+
+## 5. Define and prioritize trusted package managers and repositories
+
+### Tool capability
+
+- define trusted/prioritized repositories
+- enforce the priority
+
+### Tools
+
+- TUF
+
+## 6. Generate an immutable SBOM of the code
+
+### Tool capability
+
+- generate an accurate SBOM (signed)
+
+### Tools
+
+- in-toto (SBOM attestations)
+- apko
+
+## 7. Scan software for vulnerabilities
+
+### Tool capability
+
+- scan the software
+
+### Tools
+
+- in-toto
+
+## 8. Scan software for license implications
+
+### Tool capability
+
+- scan the software
+
+### Tools
+
+- _none_
+
+## 9. Run software composition analysis on ingested software
+
+### Tool capability
+
+- run software composition analysis
+- ingest an SBOM
+- verify an SBOM's claims
+
+### Tools
+
+- _none_
