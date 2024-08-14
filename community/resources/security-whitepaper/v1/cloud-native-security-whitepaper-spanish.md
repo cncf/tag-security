@@ -540,7 +540,7 @@ Especificar el UID o GID del volumen sigue permitiendo el acceso del contenedor 
 ##### Registros de Artefactos
 
 Los registros deben incluir tecnologías para firmar y verificar los artefactos de OCI. También es importante asegurarse de que las herramientas de almacenamiento en caché y distribución también proporcionen la capacidad de firmar, cifrar y proporcionar sumas de comprobación para garantizar que la capa de caché pueda detectar manipulaciones o intentos de envenenar el conjunto de datos.
-El documento técnico [v2]((https://bit.ly/cncf-storage-whitepaperV2)) sobre almacenamiento de la CNCF proporciona información adicional sobre los conceptos, la terminología, los patrones de uso y las clases de tecnología del almacenamiento nativo en la nube.
+El documento técnico [v2](https://bit.ly/cncf-storage-whitepaperV2)) sobre almacenamiento de la CNCF proporciona información adicional sobre los conceptos, la terminología, los patrones de uso y las clases de tecnología del almacenamiento nativo en la nube.
 
 ### Acceso
 
