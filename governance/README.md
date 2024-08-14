@@ -3,7 +3,7 @@
 Security TAG is
 a [CNCF Technical Advisory Group](https://github.com/cncf/toc/tree/main/tags).
 
-* [Charter](charter.md) - mission and scope
+* [Charter](https://github.com/cncf/toc/tree/main/tags/tag-charters/security-charter.md) - mission and scope
 * [Roles](roles.md) - the work of the group is facilitated by Chairs, Technical
   Leads, and active group members
 * [Process](process.md) - how projects are proposed and work is tracked
