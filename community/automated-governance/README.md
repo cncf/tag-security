@@ -24,5 +24,5 @@ The scope of this project includes:
 
 ## Contact
 
-- **Lead:** Matthew Flannery, Brandt Keller
+- **Lead:** Andrés Vega, Brandt Keller
 - **Slack Channel:** [Link](https://cloud-native.slack.com/archives/C06B26A12AF)
