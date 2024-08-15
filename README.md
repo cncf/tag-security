@@ -54,7 +54,7 @@ Join our open discussions and share news:
 
 ## Meeting Information
 
-- **Americas**: Weekly on Wednesdays at 10 am (UTC-7). [Zoom link](https://zoom.us/j/99809474566), Meeting ID: 998 0947 4566.
+- **Americas**: Weekly on Wednesdays at 10 am (UTC-7). [Zoom link](https://zoom-lfx.platform.linuxfoundation.org/meeting/92340369657?password=76e24ffd-69f2-41a8-8aed-13796805225d), Meeting ID: 923 4036 9657.
 - **EMEA**: Bi-weekly on Wednesdays at 1 pm UTC+0 (adjusts for daylight saving). [Zoom link](https://zoom.us/j/99917523142), Meeting ID: 999 1752 3142.
 
 Check your local timezone [here](https://time.is/). Meetings are listed on the [CNCF calendar](https://www.cncf.io/calendar/) and the [TAG Security Calendar](https://calendar.google.com/calendar/u/0?cid=MGI4dTVlbDh0YTRzOTN0MmNtNzJ0dXZoaGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ).
