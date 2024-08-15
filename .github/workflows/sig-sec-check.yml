@@ -11,27 +11,27 @@ jobs:
   Setup:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
       - name: Setup
         run: make setup
   Lint:
     runs-on: ubuntu-latest
     needs: Setup
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
       - name: Lint
         run: make lint
   Spelling:
     runs-on: ubuntu-latest
     needs: Setup
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
       - name: Spelling
         run: make spelling
   Links:
     runs-on: ubuntu-latest
     needs: Setup
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
       - name: Links
         run: make links
