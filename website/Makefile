@@ -4,12 +4,13 @@ deps:
 	# Move select content from the root level into the website directory.
 	rsync -avv ../ root/ \
 	--include='governance' --include='governance/**' \
-	--include='publications' --include='publications/**' \
+	--include='community/publications' --include='community/publications/**' \
 	--include='community' --include='community/**' \
 	--include='*.md' --exclude='*'
 
 	# Move over content such as graphics and logos
-	rsync -av '../design/' 'static/design/' --exclude='#*'
+	mkdir -p static/community/resources/design/
+	rsync -av '../community/resources/design/' 'static/community/resources/design/' --exclude='#*'
 
 	# Update all imported markdown files to work as standalone hugo pages (except READMEs, see below)
 	# sed command is configured for the Netlify ubuntu env

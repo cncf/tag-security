@@ -8,8 +8,7 @@ The goal is not to catalog every known supply chain attack, but rather to captur
 many examples of different kinds of attack, so that we can better understand the
 patterns and develop best practices and tools.
 
-For definitions of each compromise type, please check out our [compromise
-definitions page](/supply-chain-security/compromises/compromise-definitions.md)
+For definitions of each compromise type, please check out our [compromise definitions page](community/catalog/compromises/compromise-definitions.md)
 
 We welcome additions to this catalog by [filing an
 issue](https://github.com/cncf/tag-security/issues/new/choose) or [github pull
@@ -23,7 +22,7 @@ enforcement of one of open sources founding principles, "[Linus's
 Law](https://en.wikipedia.org/wiki/Linus%27s_law)".
 
 When submitting an addition, please review the
-[definitions](https://github.com/cncf/sig-security/blob/master/supply-chain-security/compromises/compromise-definitions.md)
+[definitions](./compromise-definitions.md)
 page to ensure the Type of Compromise on the details of the incidents as well as
 the Catalog itself are consistent. If a definition doesn't exist or a new type
 of compromise needs added, please include that as well.
@@ -35,7 +34,7 @@ of compromise needs added, please include that as well.
 | [3proxy signing incident](2024/laixi-3proxy.md) | 2024 | Trust and Signing | [1](https://news.sophos.com/en-us/2024/04/09/smoke-and-screen-mirrors-a-strange-signed-backdoor/) |
 | [xz backdoor incident](2024/xz.md) | 2024 | Malicious Maintainer | [1](https://cloudsecurityalliance.org/blog/2024/04/25/navigating-the-xz-utils-vulnerability-cve-2024-3094-a-comprehensive-guide) |
 | [GitGot: using GitHub repositories as exfiltration store](2024/gitgot.md) | 2024 | Trust and Signing | [1](https://www.reversinglabs.com/blog/gitgot-cybercriminals-using-github-to-store-stolen-data) |
-| [ManageEngine xmlsec dependency](2023/xmlsec-manageengine.md) | 2023 | Outdated Dependencies | [1](ttps://flashpoint.io/blog/manageengine-apache-santuario-cve-2022-47966) |
+| [ManageEngine xmlsec dependency](2023/xmlsec-manageengine.md) | 2023 | Outdated Dependencies | [1](https://flashpoint.io/blog/manageengine-apache-santuario-cve-2022-47966) |
 | [Retool Spear Phishing](2023/retool-portal-mfa.md) | 2023 | Dev Tooling | [1](https://www.coindesk.com/business/2023/09/13/phishing-attack-on-cloud-provider-with-fortune-500-clients-led-to-15m-crypto-theft-from-fortress-trust/) |
 | [Fake Dependabot commits](2023/fake-dependabot.md) | 2023 | Source Code | [1](https://checkmarx.com/blog/surprise-when-dependabot-contributes-malicious-code/) |
 | [Okta Source Code Theft](2022/okta-github-repo-leak.md) | 2022 | Source Code <br> Dev Tooling | [1](https://www.bleepingcomputer.com/news/security/oktas-source-code-stolen-after-github-repositories-hacked/) |

@@ -19,6 +19,8 @@ This incident fits the [Dev Tooling](../compromise-definitions.md#dev-tooling) d
 
 ## References
 
+<!-- markdown-link-check-disable -->
 - [How I hacked CTX and PHPass Modules](https://sockpuppets.medium.com/how-i-hacked-ctx-and-phpass-modules-656638c6ec5e)
 - [Twitter thread on the topic](https://twitter.com/s0md3v/status/1529005758540808192)
 - [Reddit's I think the CTX package on PyPI has been hacked!](https://www.reddit.com/r/Python/comments/uwhzkj/i_think_the_ctx_package_on_pypi_has_been_hacked/)
+<!-- markdown-link-check-disable -->
