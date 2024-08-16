@@ -1,0 +1,47 @@
+# [Project Name] TAG-Security Security Assessment
+
+Completed:  dd MMM yyyy
+
+Security reviewers: _list names and github handles as appropriate_
+
+Project security lead: _list name and github handle as appropriate_
+
+Project team:  _list name and github handle as appropriate_
+
+* Source code: _url to repo_
+* Web site: _url_
+
+## Background
+
+_Brief synopsys of the project, problem space, how the project solves the problem, can be pulled from the joint assessment._
+
+### Maturity
+
+_Use cases, integrations, etc. bulleted, should be available in the joint assessment._
+
+## Summary
+
+**Design**:
+
+**Analysis**:
+
+## Recommendations
+
+_refer to the existing readmes for other projects, such as [SPIFFE/SPIRE](/community/assessments/projects/spiffe-spire) as a guide for developing this area_
+
+### CNCF recommendations
+
+*
+*
+
+### Project recommendations
+
+*
+*
+
+### Additional recommendations
+
+*
+*
+
+Tracking issue: _link to issue for assessment_

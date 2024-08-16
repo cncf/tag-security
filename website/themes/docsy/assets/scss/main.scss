@@ -26,6 +26,8 @@
 @import "blocks/blocks";
 @import "section-index";
 @import "pageinfo";
+@import "table";
+@import "logo";
 
 @if $td-enable-google-fonts {
     @import url($web-font-path);

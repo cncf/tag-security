@@ -1,5 +1,4 @@
 ---
-version: '2'
 services:
   setup:
     image: node:18
