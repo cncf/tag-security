@@ -3,7 +3,7 @@
 <!-- cspell:disable -->
 **Author**: Pushkar Joglekar
 
-**Contributors** (alphabetical order): Andres Vega, Emily Fox, Faraz Angabini,
+**Contributors** (alphabetical order): Emily Fox, Faraz Angabini,
 Robert Clark, Robert Van Voorhees
 <!-- cspell:enable -->
 
