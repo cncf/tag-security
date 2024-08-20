@@ -90,7 +90,6 @@ Each group, led by a responsible leader, reaches consensus on issues and manages
 
 | Project | Leads |
 |---------------------------------|---------------------------------------------|
-| [Research](/community/research/README.md) | Andrés Vega |
 | [Automated Governance](/community/automated-governance/README.md) | Matthew Flannery, Brandt Keller |
 | [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres |
 | [Compliance](/community/working-groups/compliance/README.md) | Anca Sailer, Robert Ficcaglia |
