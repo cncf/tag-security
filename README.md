@@ -39,7 +39,7 @@ Below is a list of publications by TAG Security. For a comprehensive collection 
 | [Handling Build-time Dependency Vulnerabilities](community/working-groups/archive/policy/overview-policy-build-time-dependency-vulns.md) | June, 2022 |
 | [Secure Software Factory: A Reference Architecture to Securing the Software Supply Chain](community/working-groups/supply-chain-security/secure-software-factory/Secure_Software_Factory_Whitepaper.pdf) | May, 2022 |
 | [Secure Defaults](community/resources/security-whitepaper/secure-defaults-cloud-native-8.md) | February, 2022 |
-| [Open and Secure - A Manual for Practicing Threat Modeling to Assess and Fortify Open Source Security](assessments/Open_and_Secure.pdf) | November, 2023 |
+| [Open and Secure - A Manual for Practicing Threat Modeling to Assess and Fortify Open Source Security](community/assessments/Open_and_Secure.pdf) | November, 2023 |
 
 ## Governance
 
@@ -90,7 +90,7 @@ Each group, led by a responsible leader, reaches consensus on issues and manages
 
 | Project | Leads |
 |---------------------------------|---------------------------------------------|
-| [Automated Governance](/community/automated-governance/README.md) | Matthew Flannery, Brandt Keller |
+| [Automated Governance](/community/working-groups/automated-governance/README.md) | Matthew Flannery, Brandt Keller |
 | [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres |
 | [Compliance](/community/working-groups/compliance/README.md) | Anca Sailer, Robert Ficcaglia |
 | [Controls](/community/working-groups/controls/README.md) | Jon Zeolla |
