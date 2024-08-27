@@ -23,10 +23,10 @@ Security Provider: yes/no (e.g. Is the primary function of the project to suppor
   - [ ] Project security lead
   - [ ] Lead security reviewer
   - [ ] 1 or more additional reviewer(s)
-  - [ ] Every reviewer has read [security reviewer guidelines](https://github.com/cncf/tag-security/blob/main/assessments/guide/security-reviewer.md) and stated declaration of conflict
+  - [ ] Every reviewer has read [security reviewer guidelines](/community/assessments/guide/joint-assessment.md) and stated declaration of conflict
   - [ ] Sign off by facilitator on reviewer conflicts
 - [ ] Create slack channel (e.g. #sec-assess-projectname)
-- [ ] Project lead provides draft document - see [outline](https://github.com/cncf/tag-security/blob/main/assessments/guide/joint-review.md)
+- [ ] Project lead provides draft document - see [outline](/community/assessments/guide/joint-assessment.md)
 - [ ] "Naive question phase" Lead Security Reviewer asks clarifying questions
 - [ ] Assign issue to security reviewers
 - [ ] Initial review

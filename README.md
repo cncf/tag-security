@@ -1,6 +1,6 @@
 # Security Technical Advisory Group
 
-![Cloud Native Security Logo](/design/logo/cloud-native-security-horizontal-darkmodesafe.svg)
+![Cloud Native Security Logo](/community/resources/design/logo/cloud-native-security-horizontal-darkmodesafe.svg)
 
 ## Quick links
 
@@ -25,21 +25,21 @@ We aim to significantly reduce the probability and impact of attacks, breaches, 
 
 ## Publications
 
-Below is a list of publications by TAG Security. For a comprehensive collection of our works in various formats, please visit the [publications](publications/README.md) directory.
+Below is a list of publications by TAG Security. For a comprehensive collection of our works in various formats, please visit the [publications](community/publications/README.md) directory.
 
 | Publication | Date |
 |-------------|------|
-| [Formal Verification for Policy Configurations](https://github.com/cncf/tag-security/blob/main/policy/overview-policy-formal-verification.md) | August, 2019 |
-| [Catalog of Supply Chain Compromises](https://github.com/cncf/tag-security/tree/main/supply-chain-security/compromises) | November 2019 - Present |
-| [Software Supply Chain Best Practices](https://github.com/cncf/tag-security/raw/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf) | May, 2021 |
-| [Evaluating your Supply Chain Security](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/secure-supply-chain-assessment.md) | May, 2021 |
-| [Cloud Native Security Lexicon](https://github.com/cncf/tag-security/blob/main/security-lexicon/cloud-native-security-lexicon.md) | August, 2021 |
-| [Cloud Native Security Whitepaper](https://www.cncf.io/wp-content/uploads/2022/06/CNCF_cloud-native-security-whitepaper-May2022-v2.pdf) | May, 2022 |
-| [Cloud Native Security Controls Catalog](https://github.com/cncf/tag-security/blob/main/cloud-native-controls/phase-one-announcement.md) | May, 2022 |
-| [Handling Build-time Dependency Vulnerabilities](https://github.com/cncf/tag-security/blob/main/policy/overview-policy-build-time-dependency-vulns.md) | June, 2022 |
-| [Secure Software Factory: A Reference Architecture to Securing the Software Supply Chain](https://github.com/cncf/tag-security/raw/main/supply-chain-security/secure-software-factory/Secure_Software_Factory_Whitepaper.pdf) | May, 2022 |
-| [Secure Defaults](https://github.com/cncf/tag-security/blob/main/security-whitepaper/secure-defaults-cloud-native-8.md) | February, 2022 |
-| [Open and Secure - A Manual for Practicing Threat Modeling to Assess and Fortify Open Source Security](https://github.com/cncf/tag-security/blob/main/assessments/Open_and_Secure.pdf) | November, 2023 |
+| [Formal Verification for Policy Configurations](community/working-groups/archive/policy/overview-policy-formal-verification.md) | August, 2019 |
+| [Catalog of Supply Chain Compromises](community/catalog/compromises) | November 2019 - Present |
+| [Software Supply Chain Best Practices](community/working-groups/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf) | May, 2021 |
+| [Evaluating your Supply Chain Security](community/working-groups/supply-chain-security/supply-chain-security-paper/secure-supply-chain-assessment.md) | May, 2021 |
+| [Cloud Native Security Lexicon](community/resources/security-lexicon/cloud-native-security-lexicon.md) | August, 2021 |
+| [Cloud Native Security Whitepaper](community/resources/security-whitepaper/v2/CNCF_cloud-native-security-whitepaper-May2022-v2.pdf) | May, 2022 |
+| [Cloud Native Security Controls Catalog](community/working-groups/controls/phase-one-announcement.md) | May, 2022 |
+| [Handling Build-time Dependency Vulnerabilities](community/working-groups/archive/policy/overview-policy-build-time-dependency-vulns.md) | June, 2022 |
+| [Secure Software Factory: A Reference Architecture to Securing the Software Supply Chain](community/working-groups/supply-chain-security/secure-software-factory/Secure_Software_Factory_Whitepaper.pdf) | May, 2022 |
+| [Secure Defaults](community/resources/security-whitepaper/secure-defaults-cloud-native-8.md) | February, 2022 |
+| [Open and Secure - A Manual for Practicing Threat Modeling to Assess and Fortify Open Source Security](community/assessments/Open_and_Secure.pdf) | November, 2023 |
 
 ## Governance
 
@@ -54,23 +54,17 @@ Join our open discussions and share news:
 
 ## Meeting Information
 
-- **Americas**: Weekly on Wednesdays at 10 am (UTC-7). [Zoom link](https://zoom.us/j/99809474566), Meeting ID: 998 0947 4566.
-- **EMEA**: Bi-weekly on Wednesdays at 1 pm UTC+0 (adjusts for daylight saving). [Zoom link](https://zoom.us/j/99917523142), Meeting ID: 999 1752 3142.
+- **Americas**: Weekly on Wednesdays at 10 am (UTC-7). [Zoom link](https://zoom-lfx.platform.linuxfoundation.org/meeting/92340369657?password=76e24ffd-69f2-41a8-8aed-13796805225d), Meeting ID: 923 4036 9657.
+- **EMEA**: Bi-weekly on Wednesdays at 1 pm UTC+0 (adjusts for daylight saving). [Zoom link](https://zoom-lfx.platform.linuxfoundation.org/meeting/98348738138?password=70e6a945-563a-491f-8485-ecf7394ec13a), Meeting ID: 983 4873 8138.
 
 Check your local timezone [here](https://time.is/). Meetings are listed on the [CNCF calendar](https://www.cncf.io/calendar/) and the [TAG Security Calendar](https://calendar.google.com/calendar/u/0?cid=MGI4dTVlbDh0YTRzOTN0MmNtNzJ0dXZoaGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ).
 
 To add a topic to the agenda, review our [process](governance/process.md#getting-on-the-agenda).
 
-## Gatherings
-
-- [Cloud Native SecurityCon 24](https://events.linuxfoundation.org/cloudnativesecuritycon-north-america/) June 26-27, 2024 in Seattle, Washington
-- [Past events](past-events.md)
-
 ## New members
 
 If you are new to the group, we encourage you to check out our
 [contributing guidelines](CONTRIBUTING.md).
-
 
 ## Related groups
 
@@ -80,36 +74,13 @@ Explore groups affiliated with or relevant to Security TAG [here](governance/rel
 
 <!-- cSpell:disable -->
 
-### Security TAG Chairs
+## Leadership
 
-| Name                  | Organization            | Term                | Handle    |
-|-----------------------|------------------------|---------------------|-----------|
-| Pushkar Joglekar      | Independent            | June, 2023 - June, 2025 | @PushkarJ |
-| Marina Moore          | Independent                  | October, 2023 - October, 2025 | @mnm678   |
-| Eddie Knight          | Sonatype               | May, 2024 - May, 2026 | @eddie-knight |
+Details about the TAG Chairs, Tech Leads, and TOC Liaisons can be found on the [CNCF Technical Advisory Groups (TAGs) information page](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md)
 
-### Tech Leads
+## TAG Emeritus Leaders
 
-| Name                  | Organization            | Handle              |
-|-----------------------|------------------------|---------------------|
-| Justin Cappos         | New York University    | @JustinCappos       |
-| Ash Narkar            | Styra                  | @ashutosh-narkar    |
-| Andrés Vega           | M42                    | @anvega             |
-| Ragashree Shekar      | Independent            | @ragashreeshekar    |
-| Michael Lieberman     | Kusari                 | @mlieberman85       |
-| John Kjell    | TestifySec                 | @jkjell       |
-
-### Security TAG Chair Emeriti
-
-| Name                  | Organization            | Term                | Handle    |
-|-----------------------|------------------------|---------------------|-----------|
-| Dan Shaw              | PayPal                 | June, 2019 - September, 2020 | @dshaw    |
-| Sarah Allen           |                        | June, 2019 - June, 2021 | @ultrasaurus |
-| Jeyappragash JJ       | Tetrate.io             | June, 2019 - June, 2021 | @pragashj |
-| Emily Fox             | Apple                  | September, 2020 - February, 2022 | @TheFoxAtWork |
-| Brandon Lum           | Google                 | June, 2021 - June, 2023 | @lumjjb   |
-| Aradhana Chetal       | TIAA                   | June, 2021 - September, 2023 | @achetal01 |
-| Andrew Martin         | ControlPlane           | March, 2022 - March, 2024 | @sublimino|
+Thank you to all the [tag emeritus leaders](/community/assets/tag-emeritus-leaders.md) for your contributions to the success of this community.
 
 ### Working Groups
 
@@ -119,13 +90,12 @@ Each group, led by a responsible leader, reaches consensus on issues and manages
 
 | Project | Leads |
 |---------------------------------|---------------------------------------------|
-| [Research](/community/research/README.md) | Andrés Vega |
-| [Automated Governance](/community/automated-governance/README.md) | Andrés Vega, Brandt Keller |
+| [Automated Governance](/community/working-groups/automated-governance/README.md) | Matthew Flannery, Brandt Keller |
 | [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres |
-| [Compliance](/community/compliance/README.md) | Anca Sailer, Robert Ficcaglia |
-| [Controls](/community/controls/README.md) | Jon Zeolla |
-| [Security Reviews](/assessments/README.md) | Justin Cappos, Eddie Knight|
-| [Software Supply Chain](/community/supply-chain-security/README.md) | Marina Moore, Michael Liebermann, John Kjell |
+| [Compliance](/community/working-groups/compliance/README.md) | Anca Sailer, Robert Ficcaglia |
+| [Controls](/community/working-groups/controls/README.md) | Jon Zeolla |
+| [Security Reviews](/community/assessments/README.md) | Justin Cappos, Eddie Knight|
+| [Software Supply Chain](/community/working-groups/supply-chain-security/README.md) | Marina Moore, Michael Liebermann, John Kjell |
 
 ## Additional information
 
@@ -135,5 +105,4 @@ For [CNCF project proposal process](https://github.com/cncf/toc/blob/main/proces
 create a
 new [security review issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 with a
-[self-assessment](./assessments/guide/self-assessment.md)
-.
+[self-assessment](/community/assessments/guide/self-assessment.md).

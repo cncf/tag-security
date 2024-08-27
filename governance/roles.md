@@ -20,12 +20,11 @@ The various roles are listed as follows:
 * [Facilitation roles](#facilitation-roles)
   * [Security assessment facilitator](#security-assessment-facilitator)
   * [Meeting facilitator](#meeting-facilitator)
-  * [Meeting scribe(s)](#meeting-scribe(s))
+  * [Meeting scribe](#meeting-scribe)
   * [Triage team](#triage-team)
   * [Project teams](#project-teams)
 
-All members are identified in the TAG [README](/README.md), with annotations
-where they hold an additional role.
+All chairs and leads are identified in the TAG [README](/README.md).
 
 Members fulfilling any Roles in Security TAG are responsible for understanding
 and abiding the by the [governance](./) and policies defined in this group. This
@@ -41,8 +40,6 @@ consider their actions to support the group.
 ## Role of members
 
 * The primary role of a member is to contribute expertise to the group.
-* To add yourself as a member, submit a Pull Request (PR) adding yourself to the
-  list of members.
 
 ### Maintaining active members
 
@@ -62,7 +59,6 @@ consider their actions to support the group.
 
 ### Managing membership
 
-
 * Membership disagreements may be escalated to the Chairs.  Disagreements
   among the Chairs may be escalated to a Security TAG TOC Liaison.
 * Members *MAY* decide to step down at anytime and optionally propose a
@@ -80,10 +76,10 @@ navigate a complex security landscape.
 * The Chairs are responsible for ensuring that group meetings are planned
   and have facilitators assigned, while also engaging group members in leadership
   roles.
- * Chairs are responsible for approving Pull Requests, specifically for
-   top-level content of the repository
- * Chairs may additionally perform any actions of technical leads as needed,
-   especially serving as the Security TAG leadership representative to a project.
+* Chairs are responsible for approving Pull Requests, specifically for
+  top-level content of the repository
+* Chairs may additionally perform any actions of technical leads as needed,
+  especially serving as the Security TAG leadership representative to a project.
 
 ## Role of technical leads
 
@@ -126,7 +122,7 @@ After a [Chair](#role-of-chairs) finishes their term, they transition into a
 role of [Chair Emeritus](#role-of-chair-emeriti). This allows previous Chairs to
 continue to chime in and provide valuable context and contributions to the TAG.
 A [Chair Emeritus](#role-of-chair-emeriti) can assume a role of a [technical
-lead](#roles-of-technical-leads), but in doing so, must be active in
+lead](#role-of-technical-leads), but in doing so, must be active in
 communicating with the co-chairs and technical leads (i.e. participating in the
 chair/TL slack and meetings). A Chair Emeritus has the same permissions/access
 as technical leads.
@@ -159,12 +155,13 @@ given the OWNER role of the directory or sub-directory along with 1 other
 nominated individual to ensure continuity in review and ongoing support of
 the project.
 
-  The nomination is typically open for a week (but may be shorter with LGTM
+  1. The nomination is typically open for a week (but may be shorter with LGTM
   of at least two Chairs).
   1. The issue is updated with the assignment of the project lead as "assignee"
   alongside the TAG Leadership member.
-  1. Project Leads will be given the OWNER role of the directory or sub-directory
-  for their team's activities in order to empower merge/approve.
+  1. Project Leads will be given the OWNER role of the directory or
+  sub-directory for their team's activities in order to empower
+  merge/approve.
 
 This role may be subject to [lead rotations](#lead-rotations).
 
@@ -229,7 +226,6 @@ Examples are:
 
 ## Role of Team Leads
 
-
 Team Leads lead larger streams of work that require sustained effort and
 coordination and remain ongoing.
 
@@ -291,10 +287,9 @@ role for some time informally, then proposed as an on-going role by Pull Request
 which must be approved by a majority of Chairs.  Process clarifications are
 welcome and PRs can be approved by any single Chair.
 
-
 ### Security assessment facilitator
 
-[Security Reviews](/assessments) are part of the ongoing work of the group
+[Security Reviews](/community/assessments) are part of the ongoing work of the group
 and led by a security assessment facilitator (referred to in the rest of this
 sub-section as a facilitator). The facilitator is responsible for:
 
@@ -318,7 +313,7 @@ community [via the `#tag-security`
 channel](https://cloud-native.slack.com/archives/CDJ7MLT8S)), and issue a
 call/request for reviewers (i.e. a single security assessment lead, and at
 least two additional security reviewers), and ensuring all reviewers [read the
-conflict of interest disclosure](../assessments/guide/security-reviewer.md) and
+conflict of interest disclosure](/community/assessments/guide/security-reviewer.md) and
 sign-off on it in the GitHub ticket itself.
 
 From this point forward, the security assessment lead is the primary
@@ -368,6 +363,7 @@ goals, the meeting facilitator has the following responsibilities:
 
 Effective facilitation includes (but is not limited to) the following
 activities:
+
 * Setting the agenda for meetings.
 * Extending discussion via asynchronous communication to be inclusive of
   members who cannot attend a specific meeting time.
@@ -391,7 +387,7 @@ One or more of the following:
 Any member who meets the above qualifications is encouraged to add themselves to
 the [list of people in this role](/.github/settings.yml).
 
-### Meeting scribe(s)
+### Meeting scribe
 
 Each meeting must have at a minimal one scribe and preferable with two.
 
@@ -406,7 +402,6 @@ Scribe is expected to perform the following:
 * Partner with Facilitator to capture major occurring items in the meeting.
 * Add links to issues being discussed if not already in Agenda.
 * Open new issues to track action items from meeting.
-
 
 ### Triage team
 
@@ -435,7 +430,7 @@ Some ongoing projects may have teams where members are identified for additional
 roles and may be required to have specific expertise. For visibility, these
 additional project roles are listed below:
 
-* [Security Reviewers](../assessments/guide/security-reviewer.md)
+* [Security Reviewers](/community/assessments/guide/security-reviewer.md)
 
 ## Lead rotations
 
