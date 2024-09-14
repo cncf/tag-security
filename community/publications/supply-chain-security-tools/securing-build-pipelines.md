@@ -69,6 +69,7 @@ Here are the list of requirements for securing build pipelines. Each one has a l
 ### Tools
 
 - apko
+- [maven-lockfile](https://github.com/chains-project/maven-lockfile/) for Java/Maven
 
 ## 6. Find and Eliminate Sources Of Non-Determinism
 
