@@ -13,7 +13,7 @@
 
 The CNCF Security Technical Advisory Group facilitates collaboration to exchange and produce knowledge and resources for building security in the cloud native ecosystem.
 
-Cloud Native involves building, deploying, and operating modern applications in cloud computing environments, typically using open source. This complex ecosystem presents a technology risk landscape that demands rethinking application and information security through the lens of developer experiencest.
+Cloud Native involves building, deploying, and operating modern applications in cloud computing environments, typically using open source. This complex ecosystem presents a technology risk landscape that demands rethinking application and information security through the lens of developer experience.
 
 We aim to significantly reduce the probability and impact of attacks, breaches, and compromises. By empowering developers and operators to understand and manage the security posture of their systems, we strive to fulfill the promise of enhanced productivity and operational efficiency.
 
@@ -69,7 +69,7 @@ If you are new to the group, we encourage you to check out our
 
 ## Related groups
 
-Explore groups affiliated with or relevant to Security TAG [here](governance/related-groupsd/README.md)
+Explore groups affiliated with or relevant to Security TAG [here](governance/related-groups/README.md)
 
 ## Members
 

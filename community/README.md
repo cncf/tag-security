@@ -8,7 +8,7 @@ Welcome to the Community Directory of the CNCF TAG Security repository. This dir
 
 - Contains the catalog of supply chain compromises.
 
-### Publicationst
+### Publications
 
 - Index of published papers, reports, whitepapers, and audio versions of publications. The source files are located in:
   - **resources/** if they are overarching documents.
