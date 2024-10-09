@@ -1,22 +1,22 @@
 ---
 services:
   setup:
-    image: node:18
+    image: node:22
     working_dir: /usr/src/app
     volumes:
       - "${PWD}:/usr/src/app"
   lint:
-    image: node:18
+    image: node:22
     working_dir: /usr/src/app
     volumes:
       - "${PWD}:/usr/src/app"
   spelling:
-    image: node:18
+    image: node:22
     working_dir: /usr/src/app
     volumes:
       - "${PWD}:/usr/src/app"
   links:
-    image: node:18
+    image: node:22
     working_dir: /usr/src/app
     volumes:
       - "${PWD}:/usr/src/app"
