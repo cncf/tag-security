@@ -34,7 +34,7 @@ How does it rate by these metrics? Please provide links if applicable.
 
 ### Static Analysis
 
-Does the project perform static analysis such as SAST or DAST? Please provide links if applicable.
+Does the project perform static analysis such as SAST or SCA? Please provide links if applicable.
 
 ## Sub-project Considerations
 
