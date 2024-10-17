@@ -108,3 +108,10 @@ project, architecture, and enhance team awareness on security.
 
 - Seattle, WA
 - February 1-2, 2023
+
+### 2024
+
+[CloudNativeSecurityCon North America](https://cloudnativesecurityconna24.sched.com/)
+
+- Seattle, WA
+- June 26-27, 2024
