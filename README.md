@@ -85,14 +85,14 @@ The TAG's working groups focus on specific areas and organize most community act
 These groups facilitate discussions, engagement, and publications with key stakeholders, operating differently based on their needs.
 Each group, led by a responsible leader, reaches consensus on issues and manages logistics. All materials, such as reports, white papers, documents, and reference architectures, are in the repository's /community directory.
 
-| Project | Leads |
+| Project | Leads | STAG Rep |
 |---------------------------------|---------------------------------------------|
-| [Automated Governance](/community/working-groups/automated-governance/README.md) | Matthew Flannery, Brandt Keller |
-| [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres |
-| [Compliance](/community/working-groups/compliance/README.md) | Anca Sailer, Robert Ficcaglia |
-| [Controls](/community/working-groups/controls/README.md) | Jon Zeolla |
-| [Security Reviews](/community/assessments/README.md) | Justin Cappos, Eddie Knight|
-| [Software Supply Chain](/community/working-groups/supply-chain-security/README.md) | Marina Moore, Michael Liebermann, John Kjell |
+| [Automated Governance](/community/working-groups/automated-governance/README.md) | Brandt Keller | Matthew Flannery |
+| [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres | Marina Moore |
+| [Compliance](/community/working-groups/compliance/README.md) | Anca Sailer, Robert Ficcaglia | Brandt Keller |
+| [Controls](/community/working-groups/controls/README.md) | Jon Zeolla | Brandt Keller |
+| [Security Reviews](/community/assessments/README.md) | Justin Cappos | Eddie Knight | 
+| [Software Supply Chain](/community/working-groups/supply-chain-security/README.md) | Michael Liebermann, John Kjell | Marina Moore |
 
 ## Additional information
 
