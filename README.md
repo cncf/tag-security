@@ -71,10 +71,6 @@ If you are new to the group, we encourage you to check out our
 
 Explore groups affiliated with or relevant to Security TAG [here](governance/related-groups/README.md)
 
-## Members
-
-<!-- cSpell:disable -->
-
 ## Leadership
 
 Details about the TAG Chairs, Tech Leads, and TOC Liaisons can be found on the [CNCF Technical Advisory Groups (TAGs) information page](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md)
