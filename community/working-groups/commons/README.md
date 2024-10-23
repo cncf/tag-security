@@ -1,4 +1,4 @@
-# Cross-Foundation Alignment Working Group
+# Commons Working Group
 
 ## Goals
 
@@ -14,14 +14,15 @@
 ## Deliverables
 
 1. Aid in the creation of a universal open source project security baseline.
+1. Contribute to the development of evaluation probes that can be used to evaluate Linux Foundation (and CNCF) projects against the universal open source project security baseline.
 
 ## Meeting Information
 
-- **Meeting:** Every 2 weeks on Tuesday at 2:00 PM Pacific Time (US and Canada) ([Calendar Invite](https://zoom.us/meeting/tJUtduGoqz4qGddkUvgs3jVjzUEY6Y8MEcT6/ics?icsToken=98tyKuCprjoiGtGQsBqERowcAoj4WfTwmCVfjadZlyrzBDMAaDX8LNdnC-RGSPX1))
-- **Meeting Notes:** [Google Docs](https://docs.google.com/document/d/1sa_dBQifM8Fbp1tmNEkdoZKYXMw4pCPv_TcGBy6M4O0/)
+- **Meeting:** Every 2 weeks on Wednesday at 10:30 ET ([Calendar Invite](https://zoom-lfx.platform.linuxfoundation.org/meeting/98902119803?password=089ce577-a05d-4d3c-9caa-73f8bfd90e5c))
+- **Meeting Notes:** [Google Docs](https://docs.google.com/document/d/14xJf4c4ugjwmSmk-V49-_xPNaqZe771zI9qn95TN7ws/edit)
 
 ## Contact
 
 - **Lead:** Eddie Knight
-- **STAG Rep:** Michael Lieberman
-- **Slack Channel:** [Link](https://cloud-native.slack.com/archives/C06B26A12AF)
+- **STAG Rep:** Marco De Benedictis
+- **Slack Channel:** [Link](https://cloud-native.slack.com/archives/C07EX4ZU15Y)
