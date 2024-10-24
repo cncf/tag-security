@@ -6,7 +6,6 @@
 
 - [Meeting Information](#meeting-information)
 - [Slack Information](#communications)
-- [Members](#members)
 - [Working Groups](#working-groups)
 
 ## About Us
@@ -91,8 +90,8 @@ Each group, led by a responsible leader, reaches consensus on issues and manages
 | [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres | Marina Moore |
 | [Compliance](/community/working-groups/compliance/README.md) | Anca Sailer, Robert Ficcaglia | Brandt Keller |
 | [Controls](/community/working-groups/controls/README.md) | Jon Zeolla | Brandt Keller |
-| [Security Reviews](/community/assessments/README.md) | Justin Cappos | Eddie Knight | 
-| [Software Supply Chain](/community/working-groups/supply-chain-security/README.md) | Michael Liebermann, John Kjell | Marina Moore |
+| [Security Reviews](/community/assessments/README.md) | Justin Cappos | Eddie Knight |
+| [Software Supply Chain](/community/working-groups/supply-chain-security/README.md) | Michael Lieberman, John Kjell | Marina Moore |
 | [Commons](/community/working-groups/commons/README.md) | Eddie Knight | Marco De Benedictis |
 
 ## Additional information
