@@ -653,7 +653,7 @@ SBOMには何千もの依存関係が含まれていることがあり、それ�
 
 成熟し自動化されたSBOMやCVEおよびVEXプログラムは、他のセキュリティおよびコンプライアンス管理に関連情報を提供する可能性があります。例えば、インフラストラクチャは、非準拠のシステムを観測可能性プラットフォームに自動的に報告したり、必要な暗号化ワークロードのID提供を拒否したりして、ゼロトラスト環境において準拠システムから効果的に隔離することができます。
 
-CNCFは、安全なサプライチェーンプロセスの設計を支援するために、[ソフトウェアサプライチェーンのベストプラクティス白書](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)を作成しました。この白書は、ソフトウェアサプライチェーンのセキュリティ確保に関する詳細を提供し、開発者とオペレータがサプライチェーンの様々な段階でのセキュリティ確保に利用できるCNCFの関連プロジェクトについて説明しています。
+CNCFは、安全なサプライチェーンプロセスの設計を支援するために、[ソフトウェアサプライチェーンのベストプラクティス白書](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)を作成しました。この白書は、ソフトウェアサプライチェーンのセキュリティ確保に関する詳細を提供し、開発者とオペレータがサプライチェーンの様々な段階でのセキュリティ確保に利用できるCNCFの関連プロジェクトについて説明しています。
 
 ##### GitOps<sup>(v2で追記)</sup>
 
@@ -1037,7 +1037,7 @@ RV.3.2
 24. [ATT&CK’s Threat matrix for containers](https://medium.com/mitre-engenuity/att-ck-for-containers-now-available-4c2359654bf1)
 25. [NIST Incident Response Guide](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-61r2.pdf)
 26. [Secure Defaults: Cloud Native 8](https://github.com/cncf/tag-security/blob/main/security-whitepaper/secure-defaults-cloud-native-8.md)
-27. [Software Supply Chain Best Practices White Paper](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)
+27. [Software Supply Chain Best Practices White Paper](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)
 28. Cloud Native Security Map - [https://cnsmap.netlify.app](https://cnsmap.netlify.app)
 29. [Center for Internet Security (CIS)](https://www.cisecurity.org/)
 30. [OpenSCAP](https://www.open-scap.org/)
