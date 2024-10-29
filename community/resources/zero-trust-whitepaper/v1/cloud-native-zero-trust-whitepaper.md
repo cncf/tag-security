@@ -2,7 +2,7 @@
 
 ## **CNCF -  TAG Security: Designing Zero Trust Using Cloud Native Platforms**
 
-<!-- markdownlint-disable MD036 MD025 MD024 -->
+<!-- markdownlint-disable MD036 MD025 MD024 MD033 -->
 <!-- cSpell:ignore markdownlint Microservices microservices microsegment microsegments Knative Knative's Linkerd Kindervag Forrester operationalized GCHQ UEBA apriori permissioning Coraza Curiefense Dapr Falco CISA -->
 <!-- cspell:disable -->
 
@@ -24,31 +24,33 @@ Project Lead: Mariusz Sabath, David Hadas
 ## Table of Contents
 
 - [Abstract](#abstract)
+
 1. [The Philosophy of Zero Trust](#1-the-philosophy-of-zero-trust)
-   - [Cloud Native Principles of Zero Trust](#)
-2. [Approaching Cloud Native Zero Trust Architecture](#)
-   - [Foundational Terms](#)
-   - [The Zero Trust Process](#)
-   - [Cloud Native Zero Trust Architectural Elements](#)
-   - [New Proposal for Confidence Levels](#)
-3. [Cloud Native Zero Trust Architecture Design](#)
-   - [Peer Identities](#)
-   - [Secure Communication](#)
-   - [Behavior Verification](#)
-   - [Access Control](#)
-   - [Instance Confidence Automation](#)
-4. [Techniques and Best Practices](#)
-   - [Protect Data Confidentiality and Integrity](#)
-   - [Prevent Unauthorized System Use](#)
+   - [Cloud Native Principles of Zero Trust](#cloud-native-principles-of-zero-trust)
+2. [Modeling a Cloud Native Zero Trust Architecture](#2-modeling-a-cloud-native-zero-trust-architecture)
+   - [Foundational Terms](#foundational-terms)
+   - [The Zero Trust Process](#the-zero-trust-process)
+   - [Cloud Native Zero Trust Architectural Elements](#cloud-native-zero-trust-architectural-elements)
+   - [New Proposal for Confidence Levels](#cloud-native-zero-trust-architectural-elements)
+3. [Cloud Native Zero Trust Architecture Design](#3-cloud-native-zero-trust-architecture-design)
+   - [Peer Identities](#peer-identities)
+   - [Secure Communication](#secure-communication)
+   - [Behavior Verification](#behavior-verification)
+   - [Access Control](#access-control)
+   - [Instance Confidence Automation](#instance-confidence-automation)
+4. [Techniques and Best Practices](#4-techniques-and-best-practices)
+   - [Protect Data Confidentiality and Integrity](#protect-data-confidentiality-and-integrity)
+   - [Prevent Unauthorized System Use](#prevent-unauthorized-system-use)
    - [Establish Limited Trust](#establish-limited-trust)
-* [Conclusion](#conclustion)
-* [Appendix](#appendix)
-   - [Glossary](#glossary)
-   - [References & Citations](#)
-   - [Contributors](#contributors)
-   - [Reviewers](#reviewers)
-   - [Acknowledgments](#acknowledgments)
-   - [Helpful Links](#helpful-links)
+
+- [Conclusion](#conclusion)
+- [Appendix](#appendix)
+  - [Glossary](#glossary)
+  - [References & Citations](#references--citations)
+  - [Contributors](#contributors)
+  - [Reviewers](#reviewers)
+  - [Acknowledgments](#acknowledgments)
+  - [Helpful Links](#helpful-links)
 
 **Note**: All tools, projects, libraries mentioned in the paper are mentioned as examples when describing a relevant section. Hence, such mention **should not be** taken as an official recommendation by TAG Security or CNCF. Readers should evaluate adoption of such tools, projects or libraries based on their own understanding and threat model of the system under review.
 
@@ -473,7 +475,7 @@ The Cloud Native Zero Trust Architecture (ZTA) design described in the previous 
 
 ## Protect Data Confidentiality and Integrity
 
-Ensuring the security of Service Requests****is paramount in Zero Trust. Any request from one entity to another must be encrypted, as the network cannot be trusted.
+Ensuring the security of Service Requests is paramount in Zero Trust. Any request from one entity to another must be encrypted, as the network cannot be trusted.
 
 Additionally, requests must be monitored by an Active Observer utilizing Security Behavior Analytics for Service Requests (SBA-SR) to assess the risk associated with servicing the request through a service instance and to identify compromised client identities from which the request originated.
 
@@ -503,7 +505,7 @@ To ensure all communications in-transit are encrypted, all services should use T
 
 ### Verify Service Instances
 
-Profiling the behavior of service instances****and evaluating Confidence Levels can leverage <!-- cspell:disable -->[eBPF](https://ebpf.io/) technology. Several CNCF projects use eBPF-based technology in observability, networking, and security ([Falco](https://falco.org/), [Cilium](https://cilium.io/), [Pixie](https://docs.px.dev/), and [KubeArmor](https://kubearmor.io/)). eBPF<!-- cspell:enable --> can be used to synthesize criteria describing standard service instance patterns, which can then evaluate the Confidence Level of running service instances.
+Profiling the behavior of service instances and evaluating Confidence Levels can leverage <!-- cspell:disable -->[eBPF](https://ebpf.io/) technology. Several CNCF projects use eBPF-based technology in observability, networking, and security ([Falco](https://falco.org/), [Cilium](https://cilium.io/), [Pixie](https://docs.px.dev/), and [KubeArmor](https://kubearmor.io/)). eBPF<!-- cspell:enable --> can be used to synthesize criteria describing standard service instance patterns, which can then evaluate the Confidence Level of running service instances.
 
 An Active Observer can also identify changes in the external communication performed by service instances using a network tap, as exemplified by the Knative [Security-Guard](https://knative.dev/docs/serving/app-security/security-guard-about/#security-guard-profile-and-criteria). Regardless of how the Active Observer calculates the Confidence Level of service instances, it should be integrated with automation to delete suspected compromised service instances.
 
@@ -871,7 +873,7 @@ Thank you for being an integral part of this endeavor!
 
 ## Helpful Links
 
-- Internet Crime Complaint Center (IC3) Annual report:  [https://www.ic3.gov/Media/PDF/AnnualReport/2022_IC3Report.pdf](https://www.ic3.gov/Media/PDF/AnnualReport/2022_IC3Report.pdf)
+- Internet Crime Complaint Center (IC3) Annual report:  [https://www.ic3.gov/AnnualReport/Reports/2022_IC3Report.pdf](https://www.ic3.gov/AnnualReport/Reports/2022_IC3Report.pdf)
 - President Biden’s Zero Trust Mandate: [https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf)
 - NIST SP 800-190, Application Container Security Guide: [https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-190.pdf](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-190.pdf)
 - NIST SP 800-63, Digital Identity Guidelines, [https://pages.nist.gov/800-63-3/](https://pages.nist.gov/800-63-3/)
@@ -882,11 +884,10 @@ Thank you for being an integral part of this endeavor!
 - DoD Enterprise DevSecOps Reference Design: [https://dodcio.defense.gov/Portals/0/Documents/DoD%20Enterprise%20DevSecOps%20Reference%20Design%20v1.0_Public%20Release.pdf](https://dodcio.defense.gov/Portals/0/Documents/DoD%20Enterprise%20DevSecOps%20Reference%20Design%20v1.0_Public%20Release.pdf)
 - Dorothy Denning- A New Paradigm for Trusted Systems, 1993: [https://dl.acm.org/doi/pdf/10.1145/283751.283772](https://dl.acm.org/doi/pdf/10.1145/283751.283772)
 - *A Zero Trust Architecture Model for Access Control in Cloud Native Applications in Multi-Location Environments*: [https://csrc.nist.gov/publications/detail/sp/800-207a/draft](https://csrc.nist.gov/publications/detail/sp/800-207a/draft)
-- Identity and Access Management section of tag-security whitepaper: [https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md#access](https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md#access)
+- Identity and Access Management section of tag-security whitepaper: [https://github.com/cncf/tag-security/blob/main/community/resources/security-whitepaper/v2/cloud-native-security-whitepaper.md#access](https://github.com/cncf/tag-security/blob/main/community/resources/security-whitepaper/v2/cloud-native-security-whitepaper.md#access)
 - Help implementing zero trust architecture (UK): [https://www.ncsc.gov.uk/collection/zero-trust-architecture/implementing-zta](https://www.ncsc.gov.uk/collection/zero-trust-architecture/implementing-zta)
-- Zero Trust Thought Paper (Canada): [https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/services-policies-for-government/information-management-technology/information-security/information-security-awareness/zero_trust_thought_paper.pdf](https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/services-policies-for-government/information-management-technology/information-security/information-security-awareness/zero_trust_thought_paper.pdf)
-- Essential Eight Maturity Model (Australia): [https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model)
+- Zero Trust Security Model (Canada): [https://www.cyber.gc.ca/en/guidance/zero-trust-security-model-itsap10008](https://www.cyber.gc.ca/en/guidance/zero-trust-security-model-itsap10008)
+- Essential Eight Maturity Model (Australia): [https://www.cyber.gov.au/sites/default/files/2023-11/PROTECT%20-%20Essential%20Eight%20Maturity%20Model%20%28November%202023%29.pdf](https://www.cyber.gov.au/sites/default/files/2023-11/PROTECT%20-%20Essential%20Eight%20Maturity%20Model%20%28November%202023%29.pdf)
 - Cybersecurity Policies (Europe): [https://digital-strategy.ec.europa.eu/en/policies/cybersecurity-policies](https://digital-strategy.ec.europa.eu/en/policies/cybersecurity-policies)
 - Success Story: Israel National Cyber Directorate Version 2.0 | NIST: [https://www.nist.gov/cyberframework/success-stories/israel-national-cyber-directorate-version-20](https://www.nist.gov/cyberframework/success-stories/israel-national-cyber-directorate-version-20)
 - Government Zero Trust Architecture (GovZTA) | Singapore Government Developer Portal (tech.gov.sg): [https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/government-zero-trust-architecture](https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/government-zero-trust-architecture)
-- 2022-2023 Best Undergraduate Cybersecurity Programs - US News Rankings: [https://www.usnews.com/best-colleges/rankings/computer-science/cybersecurity](https://www.usnews.com/best-colleges/rankings/computer-science/cybersecurity)
