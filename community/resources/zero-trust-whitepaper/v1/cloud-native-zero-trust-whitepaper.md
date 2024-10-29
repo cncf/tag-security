@@ -1,15 +1,54 @@
-CNCF -  TAG Security: Designing Zero Trust Using Cloud Native Platforms
+# Cloud Native Zero Trust Whitepaper
 
-[https://github.com/cncf/tag-security/issues/950](https://github.com/cncf/tag-security/issues/950)
+## **CNCF -  TAG Security: Designing Zero Trust Using Cloud Native Platforms**
+
+<!-- markdownlint-disable MD036 MD025 MD024 -->
+<!-- cSpell:ignore markdownlint Microservices microservices microsegment
+microsegments ddos CNCF hotspots untrusted toolset cgroups
+runtimes ABAC Knative Knative's Linkerd OIDC Forrester
+-->
+TAG Security issue: [https://github.com/cncf/tag-security/issues/950](https://github.com/cncf/tag-security/issues/950)
 
 STAG Representative - Eddie Knight
 
 Project Lead: Mariusz Sabath, David Hadas
 
+**Version**: 1.0 **Created**: 30 Nov 2024
 
-<span style="text-decoration:underline;">Table of Contents</span>
+**Status**: WIP | **In Review** | Approved
 
-[TOC]
+**Last Reviewed**: DD MMM 2024, **PDF Published**: DD MMM 2024 **Release Version**: 1.0
+
+**Final PDF Approvers** [] @name1 [] @name1
+
+## Table of Contents
+
+- [Abstract](#abstract)
+1. [The Philosophy of Zero Trust](#1-the-philosophy-of-zero-trust)
+   - [Cloud Native Principles of Zero Trust](#)
+2. [Approaching Cloud Native Zero Trust Architecture](#)
+   - [Foundational Terms](#)
+   - [The Zero Trust Process](#)
+   - [Cloud Native Zero Trust Architectural Elements](#)
+   - [New Proposal for Confidence Levels](#)
+3. [Cloud Native Zero Trust Architecture Design](#)
+   - [Peer Identities](#)
+   - [Secure Communication](#)
+   - [Behavior Verification](#)
+   - [Access Control](#)
+   - [Instance Confidence Automation](#)
+4. [Techniques and Best Practices](#)
+   - [Protect Data Confidentiality and Integrity](#)
+   - [Prevent Unauthorized System Use](#)
+   - [Establish Limited Trust](#establish-limited-trust)
+* [Conclusion](#conclustion)
+* [Appendix](#appendix)
+   - [Glossary](#glossary)
+   - [References & Citations](#)
+   - [Contributors](#contributors)
+   - [Reviewers](#reviewers)
+   - [Acknowledgments](#acknowledgments)
+   - [Helpful Links](#helpful-links)
 
 **Note**: All tools, projects, libraries mentioned in the paper are mentioned as examples when describing a relevant section. Hence, such mention **should not be** taken as an official recommendation by TAG Security or CNCF. Readers should evaluate adoption of such tools, projects or libraries based on their own understanding and threat model of the system under review.
 
@@ -335,6 +374,7 @@ External client entities— whether human users or external systems— must also
 After identities are assigned to all clients and services, the next step is to ensure that communication between these entities is secure.
 
 ## Secure Communication
+
 Zero Trust operates under the assumption that offenders may already have control over the cloud network. Therefore, a Zero Trust Architecture (ZTA) must ensure data confidentiality for communication between microservices, or between microservices and external entities. As discussed below, to achieve data confidentiality, we must verify the identity of every service and encrypt all communications. However, a ZTA requires not only data confidentiality, but also fine grained access control as well as behavior monitoring. To achieve either, we are also required to verify the identity of every client.
 
 ### Data Confidentiality
@@ -792,26 +832,12 @@ A structured approach to implementing Zero Trust principles, involving the conti
 (in alphabetical order):
 
     Aradhna Chetal
-
-
     Asad Faizi
-
-
     David Hadas
-
-
     Eddie Knight
-
-
     Kishore Nadendla
-
-
     Mariusz Sabath
-
-
     Philip Griffiths
-
-
     Victor Lu
 
 ## Reviewers
@@ -819,17 +845,9 @@ A structured approach to implementing Zero Trust principles, involving the conti
 The successful completion of this technical white paper would not have been possible without the invaluable contributions and insights of our esteemed reviewers. We extend our sincere appreciation to:
 
     Pushkar Joglekar
-
-
     Nate Waddington
-
-
     Andrés Vega
-
-
     Valerie Silverthorne
-
-
     Yoshiyuki Tabata
 
 ## Acknowledgments
@@ -837,23 +855,11 @@ The successful completion of this technical white paper would not have been poss
 We want to thank several contributors from whom we had excellent input and feedback and, as leading practitioners in the field, did much of the work that we write about in this document:
 
     José Carlos Chávez
-
-
     Matt Flannery
-
-
     Sundar Nadathur
-
-
     Andrew Martin
-
-
     Matteo Bisi
-
-
     Fabian Kammel
-
-
     Yaron Schneider
 
 For anyone involved in creating this paper, we express our heartfelt gratitude for your time, dedication, and professionalism. Your contributions have undoubtedly elevated the standard of our research, and we are immensely grateful for your collaboration.
@@ -862,22 +868,22 @@ Thank you for being an integral part of this endeavor!
 
 ## Helpful Links
 
-* Internet Crime Complaint Center (IC3) Annual report:  [https://www.ic3.gov/Media/PDF/AnnualReport/2022_IC3Report.pdf](https://www.ic3.gov/Media/PDF/AnnualReport/2022_IC3Report.pdf)
-* President Biden’s Zero Trust Mandate: [https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf)
-* NIST SP 800-190, Application Container Security Guide: [https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-190.pdf](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-190.pdf)
-* NIST SP 800-63, Digital Identity Guidelines, [https://pages.nist.gov/800-63-3/](https://pages.nist.gov/800-63-3/)
-* NIST SP 800-207, Zero Trust Architecture: [https://csrc.nist.gov/publications/detail/sp/800-207/final](https://csrc.nist.gov/publications/detail/sp/800-207/final)
-* CISA Zero Trust Maturity Model: [https://www.cisa.gov/zero-trust-maturity-model](https://www.cisa.gov/zero-trust-maturity-model)
-* Department of Defense (DoD) Zero Trust Reference Architecture: [https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf](https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf)
-* DoD Zero Trust Strategy (defense.gov): [https://dodcio.defense.gov/Portals/0/Documents/Library/DoD-ZTStrategy.pdf](https://dodcio.defense.gov/Portals/0/Documents/Library/DoD-ZTStrategy.pdf)
-* DoD Enterprise DevSecOps Reference Design: [https://dodcio.defense.gov/Portals/0/Documents/DoD%20Enterprise%20DevSecOps%20Reference%20Design%20v1.0_Public%20Release.pdf](https://dodcio.defense.gov/Portals/0/Documents/DoD%20Enterprise%20DevSecOps%20Reference%20Design%20v1.0_Public%20Release.pdf)
-* Dorothy Denning- A New Paradigm for Trusted Systems, 1993: [https://dl.acm.org/doi/pdf/10.1145/283751.283772](https://dl.acm.org/doi/pdf/10.1145/283751.283772)
-* *A Zero Trust Architecture Model for Access Control in Cloud Native Applications in Multi-Location Environments*: [https://csrc.nist.gov/publications/detail/sp/800-207a/draft](https://csrc.nist.gov/publications/detail/sp/800-207a/draft)
-* Identity and Access Management section of tag-security whitepaper: [https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md#access](https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md#access)
-* Help implementing zero trust architecture (UK): [https://www.ncsc.gov.uk/collection/zero-trust-architecture/implementing-zta](https://www.ncsc.gov.uk/collection/zero-trust-architecture/implementing-zta)
-* Zero Trust Thought Paper (Canada): [https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/services-policies-for-government/information-management-technology/information-security/information-security-awareness/zero_trust_thought_paper.pdf](https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/services-policies-for-government/information-management-technology/information-security/information-security-awareness/zero_trust_thought_paper.pdf)
-* Essential Eight Maturity Model (Australia): [https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model)
-* Cybersecurity Policies (Europe): [https://digital-strategy.ec.europa.eu/en/policies/cybersecurity-policies](https://digital-strategy.ec.europa.eu/en/policies/cybersecurity-policies)
-* Success Story: Israel National Cyber Directorate Version 2.0 | NIST: [https://www.nist.gov/cyberframework/success-stories/israel-national-cyber-directorate-version-20](https://www.nist.gov/cyberframework/success-stories/israel-national-cyber-directorate-version-20)
-* Government Zero Trust Architecture (GovZTA) | Singapore Government Developer Portal (tech.gov.sg): [https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/government-zero-trust-architecture](https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/government-zero-trust-architecture)
-* 2022-2023 Best Undergraduate Cybersecurity Programs - US News Rankings: [https://www.usnews.com/best-colleges/rankings/computer-science/cybersecurity](https://www.usnews.com/best-colleges/rankings/computer-science/cybersecurity)
+- Internet Crime Complaint Center (IC3) Annual report:  [https://www.ic3.gov/Media/PDF/AnnualReport/2022_IC3Report.pdf](https://www.ic3.gov/Media/PDF/AnnualReport/2022_IC3Report.pdf)
+- President Biden’s Zero Trust Mandate: [https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf)
+- NIST SP 800-190, Application Container Security Guide: [https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-190.pdf](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-190.pdf)
+- NIST SP 800-63, Digital Identity Guidelines, [https://pages.nist.gov/800-63-3/](https://pages.nist.gov/800-63-3/)
+- NIST SP 800-207, Zero Trust Architecture: [https://csrc.nist.gov/publications/detail/sp/800-207/final](https://csrc.nist.gov/publications/detail/sp/800-207/final)
+- CISA Zero Trust Maturity Model: [https://www.cisa.gov/zero-trust-maturity-model](https://www.cisa.gov/zero-trust-maturity-model)
+- Department of Defense (DoD) Zero Trust Reference Architecture: [https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf](https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf)
+- DoD Zero Trust Strategy (defense.gov): [https://dodcio.defense.gov/Portals/0/Documents/Library/DoD-ZTStrategy.pdf](https://dodcio.defense.gov/Portals/0/Documents/Library/DoD-ZTStrategy.pdf)
+- DoD Enterprise DevSecOps Reference Design: [https://dodcio.defense.gov/Portals/0/Documents/DoD%20Enterprise%20DevSecOps%20Reference%20Design%20v1.0_Public%20Release.pdf](https://dodcio.defense.gov/Portals/0/Documents/DoD%20Enterprise%20DevSecOps%20Reference%20Design%20v1.0_Public%20Release.pdf)
+- Dorothy Denning- A New Paradigm for Trusted Systems, 1993: [https://dl.acm.org/doi/pdf/10.1145/283751.283772](https://dl.acm.org/doi/pdf/10.1145/283751.283772)
+- *A Zero Trust Architecture Model for Access Control in Cloud Native Applications in Multi-Location Environments*: [https://csrc.nist.gov/publications/detail/sp/800-207a/draft](https://csrc.nist.gov/publications/detail/sp/800-207a/draft)
+- Identity and Access Management section of tag-security whitepaper: [https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md#access](https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md#access)
+- Help implementing zero trust architecture (UK): [https://www.ncsc.gov.uk/collection/zero-trust-architecture/implementing-zta](https://www.ncsc.gov.uk/collection/zero-trust-architecture/implementing-zta)
+- Zero Trust Thought Paper (Canada): [https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/services-policies-for-government/information-management-technology/information-security/information-security-awareness/zero_trust_thought_paper.pdf](https://www2.gov.bc.ca/assets/gov/british-columbians-our-governments/services-policies-for-government/information-management-technology/information-security/information-security-awareness/zero_trust_thought_paper.pdf)
+- Essential Eight Maturity Model (Australia): [https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model)
+- Cybersecurity Policies (Europe): [https://digital-strategy.ec.europa.eu/en/policies/cybersecurity-policies](https://digital-strategy.ec.europa.eu/en/policies/cybersecurity-policies)
+- Success Story: Israel National Cyber Directorate Version 2.0 | NIST: [https://www.nist.gov/cyberframework/success-stories/israel-national-cyber-directorate-version-20](https://www.nist.gov/cyberframework/success-stories/israel-national-cyber-directorate-version-20)
+- Government Zero Trust Architecture (GovZTA) | Singapore Government Developer Portal (tech.gov.sg): [https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/government-zero-trust-architecture](https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/government-zero-trust-architecture)
+- 2022-2023 Best Undergraduate Cybersecurity Programs - US News Rankings: [https://www.usnews.com/best-colleges/rankings/computer-science/cybersecurity](https://www.usnews.com/best-colleges/rankings/computer-science/cybersecurity)
