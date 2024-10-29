@@ -686,7 +686,7 @@ Gli amministratori e i team di sicurezza dovrebbero archiviare tutte le informaz
 
 Un programma SBOM, CVE e VEX maturo e automatizzato può fornire informazioni rilevanti ad altri controlli di sicurezza e conformità. Ad esempio, l'infrastruttura può segnalare automaticamente i sistemi non conformi a una piattaforma di osservabilità o negare di fornire l'identità crittografica di un workload, mettendola effettivamente in quarantena da sistemi conformi in ambienti Zero-Trust.
 
-La CNCF ha pubblicato il [Whitepaper sulle Best Practice nella Supply Chain](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf) per fornire un supporto nella progettazione di un processo sicuro all’interno della supply chain. Questo whitepaper fornisce maggiori dettagli sulla protezione della supply chain del software e discute i progetti CNCF rilevanti che sviluppatori e operatori possono utilizzare per proteggerne le varie fasi.
+La CNCF ha pubblicato il [Whitepaper sulle Best Practice nella Supply Chain](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf) per fornire un supporto nella progettazione di un processo sicuro all’interno della supply chain. Questo whitepaper fornisce maggiori dettagli sulla protezione della supply chain del software e discute i progetti CNCF rilevanti che sviluppatori e operatori possono utilizzare per proteggerne le varie fasi.
 
 ##### GitOps <sup>(novità nella v2)</sup>
 
@@ -1106,7 +1106,7 @@ Runtime
 
 26. [Secure Defaults: Cloud Native 8](https://github.com/cncf/tag-security/blob/main/security-whitepaper/secure-defaults-cloud-native-8.md)
 
-27. [Software Supply Chain Best Practices White Paper](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)
+27. [Software Supply Chain Best Practices White Paper](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)
 
 28. Cloud Native Security Map - [https://cnsmap.netlify.app](https://cnsmap.netlify.app)
 
