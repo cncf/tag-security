@@ -638,7 +638,7 @@ ATT&CK 的威胁矩阵由行和列组成，行表示技术，列表示战术。�
 
 成熟和自动化的 SBOM、CVE 和 VEX 程序可为其他安全和合规控制提供相关信息。例如，基础设施可能会自动向可观察平台报告不符合要求的系统，或拒绝提供必要的加密工作负载身份，从而在零信任环境中有效地将其与符合要求的系统隔离开来。
 
-CNCF 制作了[软件供应链最佳实践白皮书](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)，以帮助您设计安全的供应链流程。本白皮书提供了有关保护软件供应链的更多详细信息，并讨论了开发人员和运营商可用于保护供应链各个阶段的相关 CNCF 项目。
+CNCF 制作了[软件供应链最佳实践白皮书](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)，以帮助您设计安全的供应链流程。本白皮书提供了有关保护软件供应链的更多详细信息，并讨论了开发人员和运营商可用于保护供应链各个阶段的相关 CNCF 项目。
 
 ##### GitOps<sup>（v2 新增）</sup>
 
@@ -898,7 +898,7 @@ GitOps 流程负责向生产环境提供更改，如果该流程受到危害，�
 24. [ATT&CK’s Threat matrix for containers](https://medium.com/mitre-engenuity/att-ck-for-containers-now-available-4c2359654bf1)
 25. [NIST Incident Response Guide](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-61r2.pdf)
 26. [Secure Defaults: Cloud Native 8](https://github.com/cncf/tag-security/blob/main/security-whitepaper/secure-defaults-cloud-native-8.md)
-27. [Software Supply Chain Best Practices White Paper](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)
+27. [Software Supply Chain Best Practices White Paper](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)
 28. Cloud Native Security Map - [https://cnsmap.netlify.app](https://cnsmap.netlify.app)
 29. [Center for Internet Security (CIS)](https://www.cisecurity.org/)
 30. [OpenSCAP](https://www.open-scap.org/)

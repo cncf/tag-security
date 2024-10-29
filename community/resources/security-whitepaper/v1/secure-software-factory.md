@@ -1,6 +1,6 @@
 ## Introduction 
 
-A software supply chain is the series of steps performed when writing, testing, packaging, and distributing application software to end consumers. Given the increased prominence of software supply chain exploits and attacks, the [Cloud Native Computing Foundation (CNCF) Technical Advisory Group for Security](https://github.com/cncf/tag-security) published a whitepaper titled [“Software Supply Chain Best Practices”](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)[^1], which captures over 50 recommended practices to secure the software supply chain. That document is considered a prerequisite for the content described in this reference architecture.
+A software supply chain is the series of steps performed when writing, testing, packaging, and distributing application software to end consumers. Given the increased prominence of software supply chain exploits and attacks, the [Cloud Native Computing Foundation (CNCF) Technical Advisory Group for Security](https://github.com/cncf/tag-security) published a whitepaper titled [“Software Supply Chain Best Practices”](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)[^1], which captures over 50 recommended practices to secure the software supply chain. That document is considered a prerequisite for the content described in this reference architecture.
 
 This publication is a follow-up to that paper, targeted at system architects, developers, operators, and engineers in the areas of software development, security, and compliance. This reference architecture adopts the “Software Factory” model[^2] for designing a secure software supply chain.
 
@@ -1554,7 +1554,7 @@ Software Factory: [https://en.wikipedia.org/wiki/Software_factory](https://en.wi
 
 CNCF TAG-Security: [https://github.com/cncf/tag-security](https://github.com/cncf/tag-security)
 
-CNCF Supply Chain Security Paper: [https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)
+CNCF Supply Chain Security Paper: [https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)
 
 CNCF Cloud Native Security Whitepaper: [https://github.com/cncf/tag-security/blob/main/security-whitepaper/CNCF_cloud-native-security-whitepaper-Nov2020.pdf](https://github.com/cncf/tag-security/blob/main/security-whitepaper/CNCF_cloud-native-security-whitepaper-Nov2020.pdf)
 
