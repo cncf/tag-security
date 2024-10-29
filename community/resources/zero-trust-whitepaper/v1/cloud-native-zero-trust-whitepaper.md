@@ -3,10 +3,9 @@
 ## **CNCF -  TAG Security: Designing Zero Trust Using Cloud Native Platforms**
 
 <!-- markdownlint-disable MD036 MD025 MD024 -->
-<!-- cSpell:ignore markdownlint Microservices microservices microsegment
-microsegments ddos CNCF hotspots untrusted toolset cgroups
-runtimes ABAC Knative Knative's Linkerd OIDC Forrester
--->
+<!-- cSpell:ignore markdownlint Microservices microservices microsegment microsegments Knative Knative's Linkerd Kindervag Forrester operationalized GCHQ UEBA apriori permissioning Coraza Curiefense Dapr Falco CISA -->
+<!-- cspell:disable -->
+
 TAG Security issue: [https://github.com/cncf/tag-security/issues/950](https://github.com/cncf/tag-security/issues/950)
 
 STAG Representative - Eddie Knight
@@ -20,6 +19,7 @@ Project Lead: Mariusz Sabath, David Hadas
 **Last Reviewed**: DD MMM 2024, **PDF Published**: DD MMM 2024 **Release Version**: 1.0
 
 **Final PDF Approvers** [] @name1 [] @name1
+<!-- cspell:enable -->
 
 ## Table of Contents
 
@@ -305,7 +305,7 @@ Zero Trust advocates for network segmentation into smaller, isolated segments or
 
 ## Cloud Native Zero Trust Architectural Elements
 
-To build a robust ZTA for cloud native environments, we draw inspiration from established frameworks, such as the [US Department of Defence Reference Architecture](https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf), which identifies seven core pillars essential for securing modern systems.
+To build a robust ZTA for cloud native environments, we draw inspiration from established frameworks, such as the [US Department of Defense Reference Architecture](https://dodcio.defense.gov/Portals/0/Documents/Library/(U)ZT_RA_v2.0(U)_Sep22.pdf), which identifies seven core pillars essential for securing modern systems.
 
 In alignment with these pillars, we identify seven key elements of a Cloud Native ZTA.
 
@@ -439,7 +439,7 @@ Given the harsh assumption that all systems including all clients and services m
 
 Access Control policies under a ZTA must ensure **least privilege access**. This means clients are granted only the minimum permissions necessary to perform their specific role or task—nothing more. Fine-grained authorization applies to individual entities, whether they are human users, machines, or services. For instance, rather than granting access to a broad group of clients or services, Access Control policies should consider the unique identity of each client and the specific resource being requested.
 
-Each client must be authorized not just for the resource they are requesting, but for the specific action they wish to take. For example, an access control policy should define the specific APIs a client is allowed to access, or if the client is merely allowed to read a specific resource type or also to modify resources of this type. This prevents over-permissioning and enforces least-privilege principles.
+Each client must be authorized not just for the resource they are requesting, but for the specific action they wish to take. For example, an access control policy should define the specific APIs a client is allowed to access, or if the client is merely allowed to read a specific resource type or also to modify resources of this type. This prevents "over-permissioning" and enforces least-privilege principles.
 
 ### Microsegmentation and Service-Level Access Control
 
@@ -497,15 +497,15 @@ Guard’s SBA-SR identifies changes in service requests made by clients, calcula
 
 SBA-SR functionalities can also be integrated into Web Application Firewalls (WAFs) that maintain per-service state, capable of analyzing incoming and outgoing traffic to detect threats and ongoing attacks.
 
-Solutions like [Coraza](https://coraza.io) or [Curiefense](https://www.curiefense.io/) offer anomaly scoring for requests, making decisions to block them based on predefined thresholds. These anomaly scores can be developed further to incorporate SBA-SR features, enhancing their effectiveness.
+Solutions like <!-- cspell:disable -->[Coraza](https://coraza.io) or [Curiefense](https://www.curiefense.io/)<!-- cspell:enable --> offer anomaly scoring for requests, making decisions to block them based on predefined thresholds. These anomaly scores can be developed further to incorporate SBA-SR features, enhancing their effectiveness.
 
-To ensure all communications in-transit are encrypted, all services should use TLS v1.2 or higher, and all clients must verify the certificates presented by the server. CNCF projects [Istio](https://istio.io/), [Linkerd](https://linkerd.io/), [Dapr](https://dapr.io/), and [Knative](https://knative.dev/) provide robust TLS and certificate management solutions to secure inter-service communication.
+To ensure all communications in-transit are encrypted, all services should use TLS v1.2 or higher, and all clients must verify the certificates presented by the server. CNCF projects <!-- cspell:disable -->[Istio](https://istio.io/), [Linkerd](https://linkerd.io/), [Dapr](https://dapr.io/), and [Knative](https://knative.dev/)<!-- cspell:enable --> provide robust TLS and certificate management solutions to secure inter-service communication.
 
 ### Verify Service Instances
 
-Profiling the behavior of service instances****and evaluating Confidence Levels can leverage [eBPF](https://ebpf.io/) technology. Several CNCF projects use eBPF-based technology in observability, networking, and security ([Falco](https://falco.org/), [Cilium](https://cilium.io/), [Pixie](https://docs.px.dev/), and [KubeArmor](https://kubearmor.io/)). eBPF can be used to synthesize criteria describing standard service instance patterns, which can then evaluate the Confidence Level of running service instances.
+Profiling the behavior of service instances****and evaluating Confidence Levels can leverage <!-- cspell:disable -->[eBPF](https://ebpf.io/) technology. Several CNCF projects use eBPF-based technology in observability, networking, and security ([Falco](https://falco.org/), [Cilium](https://cilium.io/), [Pixie](https://docs.px.dev/), and [KubeArmor](https://kubearmor.io/)). eBPF<!-- cspell:enable --> can be used to synthesize criteria describing standard service instance patterns, which can then evaluate the Confidence Level of running service instances.
 
-An Active Observer can also identify changes in the external communication performed by service instances using a network tap, as exemplified by the Knative [Security-Guard](https://knative.dev/docs/serving/app-security/security-guard-about/#security-guard-profile-and-criteria). Regardless of how the Active Observer calculates the Confidence Level of service instances, it should be****integrated with automation to delete suspected compromised service instances.
+An Active Observer can also identify changes in the external communication performed by service instances using a network tap, as exemplified by the Knative [Security-Guard](https://knative.dev/docs/serving/app-security/security-guard-about/#security-guard-profile-and-criteria). Regardless of how the Active Observer calculates the Confidence Level of service instances, it should be integrated with automation to delete suspected compromised service instances.
 
 Another source for determining the Confidence Level of service instances is intelligence information about CVEs included in the service image, obtainable through image scanning before or during service orchestration.
 
@@ -515,7 +515,7 @@ In ZTA, preventing unauthorized system use is crucial for maintaining the securi
 
 ### Fine-grained Access Control
 
-Service mesh based solutions such as [Istio](https://istio.io/) and [Linkerd](https://linkerd.io/) offer opportunities to implement a gate in front of every service instance and support fine-grained access policies. Some tools, such as [Dapr](https://dapr.io/), have built-in access control.
+Service mesh based solutions such as <!-- cspell:disable -->[Istio](https://istio.io/) and [Linkerd](https://linkerd.io/) offer opportunities to implement a gate in front of every service instance and support fine-grained access policies. Some tools, such as [Dapr](https://dapr.io/)<!-- cspell:enable -->, have built-in access control.
 
 ### Dynamic Access Control
 
@@ -537,7 +537,7 @@ Identity verification is the first step in confirming the client’s identity. V
 
 With tokens such as [JSON Web Tokens (JWT)](https://jwt.io), the client obtains a token from a trusted third party, included in service requests to verify identity. As the request with the Identity Token travels across the endpoints, the identity attributes can be easily read by Policy Enforcement Points, allowing them to control access along the way.
 
-CNCF projects related to token-based identity include [Dex](https://dexidp.io/) (an OIDC identity and OAuth 2.0 provider), [Keycloak](https://www.keycloak.org/) (Identity and Access Management), and [SPIFFE and SPIRE](https://spiffe.io/) (a universal identity control plane suitable for managing identities in a multi-cloud environment).
+CNCF projects related to token-based identity include <!-- cspell:disable -->[Dex](https://dexidp.io/) (an OIDC identity and OAuth 2.0 provider), [Keycloak](https://www.keycloak.org/) (Identity and Access Management), and [SPIFFE and SPIRE](https://spiffe.io/)<!-- cspell:enable --> (a universal identity control plane suitable for managing identities in a multi-cloud environment).
 
 Best practices for JWT Tokens include verifying the signature, expiration, issuer, audience, and scope claims.
 
@@ -547,7 +547,7 @@ Identity may alternatively be established by the client presenting a client cert
 
 CNCF projects for managing certificates include [cert-manager](https://cert-manager.io/) (cloud native certificate management).
 
-Making mTLS standard for all communications in a cloud cluster is often achieved by deploying a service mesh. CNCF Service mesh projects [Istio](https://istio.io/), [SPIFFE](https://spiffe.io/), and [Linkerd](https://linkerd.io/) offer service-to-service identity verification mTLS. [Dapr](https://dapr.io/) also offers mTLS.
+Making mTLS standard for all communications in a cloud cluster is often achieved by deploying a service mesh. CNCF Service mesh projects <!-- cspell:disable -->[Istio](https://istio.io/), [SPIFFE](https://spiffe.io/), and [Linkerd](https://linkerd.io/) offer service-to-service identity verification mTLS. [Dapr](https://dapr.io/) also offers mTLS.<!-- cspell:enable -->
 
 ### Active Observer for Client Identities
 
@@ -557,7 +557,7 @@ Additional Confidence Level data can be aggregated from all service requests emi
 
 # Conclusion
 
-While the philosophy behind Zero Trust has been around for decades, its application in cloud native environments introduces unique challenges and opportunities. Protecting data confidentiality and integrity is a paramount in these dynamic and distributed systems. Every service request and instance must be continuously verified to ensure that only authorized entities gain access to sensitive data. Such verification includes both identity verification and behavioral verification using Security Behaviour Analytics. This approach helps cloud systems cope with threats while assuming cyber breaches are unavoidable.
+While the philosophy behind Zero Trust has been around for decades, its application in cloud native environments introduces unique challenges and opportunities. Protecting data confidentiality and integrity is a paramount in these dynamic and distributed systems. Every service request and instance must be continuously verified to ensure that only authorized entities gain access to sensitive data. Such verification includes both identity verification and behavioral verification using Security Behavior Analytics. This approach helps cloud systems cope with threats while assuming cyber breaches are unavoidable.
 
 Defining fine-grain access controls becomes critical in this context, allowing for more precise adjustments to who or what can access specific resources. To further enhance security, dynamic access controls based on the Confidence Level of requests should be introduced, adjusting access privileges in real-time according to the trustworthiness of each interaction.
 
@@ -830,7 +830,7 @@ A structured approach to implementing Zero Trust principles, involving the conti
 ## Contributors
 
 (in alphabetical order):
-
+<!-- cspell:disable -->
     Aradhna Chetal
     Asad Faizi
     David Hadas
@@ -839,21 +839,23 @@ A structured approach to implementing Zero Trust principles, involving the conti
     Mariusz Sabath
     Philip Griffiths
     Victor Lu
+<!-- cspell:enable -->
 
 ## Reviewers
 
 The successful completion of this technical white paper would not have been possible without the invaluable contributions and insights of our esteemed reviewers. We extend our sincere appreciation to:
-
+<!-- cspell:disable -->
     Pushkar Joglekar
     Nate Waddington
     Andrés Vega
     Valerie Silverthorne
     Yoshiyuki Tabata
+<!-- cspell:enable -->
 
 ## Acknowledgments
 
 We want to thank several contributors from whom we had excellent input and feedback and, as leading practitioners in the field, did much of the work that we write about in this document:
-
+<!-- cspell:disable -->
     José Carlos Chávez
     Matt Flannery
     Sundar Nadathur
@@ -861,6 +863,7 @@ We want to thank several contributors from whom we had excellent input and feedb
     Matteo Bisi
     Fabian Kammel
     Yaron Schneider
+<!-- cspell:enable -->
 
 For anyone involved in creating this paper, we express our heartfelt gratitude for your time, dedication, and professionalism. Your contributions have undoubtedly elevated the standard of our research, and we are immensely grateful for your collaboration.
 
