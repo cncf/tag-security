@@ -2,8 +2,8 @@
 
 ## **CNCF -  TAG Security: Designing Zero Trust Using Cloud Native Platforms**
 
-<!-- markdownlint-disable MD036 MD025 MD024 MD033 -->
-<!-- cSpell:ignore markdownlint Microservices microservices microsegment microsegments Knative Knative's Linkerd Kindervag Forrester operationalized GCHQ UEBA apriori permissioning Coraza Curiefense Dapr Falco CISA -->
+<!-- markdownlint-disable MD036 MD025 MD024 MD033 MD013 -->
+<!-- cSpell:ignore markdownlint Microservices microservices microsegment microsegments Microsegmentation microsegmentation Knative Knative's Linkerd Kindervag Forrester operationalized GCHQ UEBA apriori permissioning Coraza Curiefense Dapr Falco CISA -->
 <!-- cspell:disable -->
 
 TAG Security issue: [https://github.com/cncf/tag-security/issues/950](https://github.com/cncf/tag-security/issues/950)
@@ -46,7 +46,7 @@ Project Lead: Mariusz Sabath, David Hadas
 - [Conclusion](#conclusion)
 - [Appendix](#appendix)
   - [Glossary](#glossary)
-  - [References & Citations](#references--citations)
+  - [References and Citations](#references-and-citations)
   - [Contributors](#contributors)
   - [Reviewers](#reviewers)
   - [Acknowledgments](#acknowledgments)
@@ -70,11 +70,14 @@ By incorporating the concepts of Confidence Levels and Active Observers, a cloud
 
 # 1. The Philosophy of Zero Trust
 
-The concept of Zero Trust has undergone significant evolution, transitioning from a philosophical notion to a foundational cybersecurity model. The term "Zero Trust" was first coined by [Stephen Paul Marsh in his 1994 doctoral thesis at the University of Stirling](https://www.cs.stir.ac.uk/~kjt/techreps/pdf/TR133.pdf). In this work, titled "Formalizing Trust as a Computational Concept," Marsh introduced the idea that trust could be mathematically quantified, separate from human moral and ethical considerations. This theoretical framework established the groundwork for what would later become known as the Zero Trust philosophy.
+The concept of Zero Trust has undergone significant evolution, transitioning from a philosophical notion to a foundational cybersecurity model. The term "Zero Trust" was first coined by [Stephen Paul Marsh in his 1994 doctoral thesis at the University of Stirling](https://www.cs.stir.ac.uk/~kjt/techreps/pdf/TR133.pdf).
+In this work, titled "Formalizing Trust as a Computational Concept," Marsh introduced the idea that trust could be mathematically quantified, separate from human moral and ethical considerations. This theoretical framework established the groundwork for what would later become known as the Zero Trust philosophy.
 
-The practical application of Zero Trust coalesced in 2010 when John Kindervag, an analyst at Forrester Research, introduced a model that operationalized these principles. In his paper, ["No More Chewy Centers: Introducing the Zero Trust Model of Information Security,"](https://media.paloaltonetworks.com/documents/Forrester-No-More-Chewy-Centers.pdf) Kindervag proposed a security architecture where trust is never assumed and must be continually verified. This model, which segmented networks into zones with varying levels of trust, aimed to eliminate the vulnerabilities of traditional perimeter-based security systems, where internal networks were often overly trusted.
+The practical application of Zero Trust coalesced in 2010 when John Kindervag, an analyst at Forrester Research, introduced a model that operationalized these principles. In his paper, ["No More Chewy Centers: Introducing the Zero Trust Model of Information Security,"](https://media.paloaltonetworks.com/documents/Forrester-No-More-Chewy-Centers.pdf) Kindervag proposed a security architecture where trust is never assumed and must be continually verified.
+This model, which segmented networks into zones with varying levels of trust, aimed to eliminate the vulnerabilities of traditional perimeter-based security systems, where internal networks were often overly trusted.
 
-The implementation of Zero Trust principles was notably advanced by [Google's BeyondCorp initiative in 2009](https://www.beyondcorp.com/#:~:text=The%20BeyondCorp%20Story,and%20devices%20access%20internal%20applications.). BeyondCorp shifted security focus from the perimeter to individual users and devices, emphasizing continuous verification and least-privilege access. This approach was driven by the need to address sophisticated threats, as demonstrated by incidents like [Operation Aurora](https://en.wikipedia.org/wiki/Operation_Aurora) and the [MUSCULAR joint surveillance program](https://en.wikipedia.org/wiki/MUSCULAR) operated by the NSA and GCHQ against the internal networks of Google and Yahoo.
+The implementation of Zero Trust principles was notably advanced by [Google's BeyondCorp initiative in 2009](https://www.beyondcorp.com/#:~:text=The%20BeyondCorp%20Story,and%20devices%20access%20internal%20applications.). BeyondCorp shifted security focus from the perimeter to individual users and devices, emphasizing continuous verification and least-privilege access.
+This approach was driven by the need to address sophisticated threats, as demonstrated by incidents like [Operation Aurora](https://en.wikipedia.org/wiki/Operation_Aurora) and the [MUSCULAR joint surveillance program](https://en.wikipedia.org/wiki/MUSCULAR) operated by the NSA and GCHQ against the internal networks of Google and Yahoo.
 
 The proliferation of open-source projects such as Istio, Knative, SPIFFE, and OpenFGA has also played a crucial role in advancing Zero Trust. These projects provide robust frameworks for identity management, policy enforcement, Security Behavior Analytics, and secure communication within cloud native environments.
 
@@ -94,7 +97,8 @@ To follow the tenet of *Assume a Breach*, organizations must operate as if their
 
 The tenet of Always Verify emphasizes the necessity of continuous authentication, authorization, and monitoring for every interaction within the system, regardless of its origin. This tenet rejects the notion of implicit trust, instead insisting on rigorous verification of all entities — users and services, internal and external. In practice, this involves the actions of eliminating implicit trust, minimizing explicit trust, and monitoring behavior to verify trustworthiness.
 
-The following table summarizes the Cloud Native principles of Zero Trust as detailed in the remainder of this chapter.  The evidence for the principles below is discussed in **[NIST SP 800-207](https://csrc.nist.gov/pubs/sp/800/207/final)** chapter 2 *“Zero trust Basics”* with further details in chapter 3 “*Logical Components of Zero Trust Architecture*”*.* While the NIST paper discusses all kinds of systems, in generic terms such as assets and resources, here we focus solely on Cloud Native systems with a higher level of nuance.
+The following table summarizes the Cloud Native principles of Zero Trust as detailed in the remainder of this chapter.
+The evidence for the principles below is discussed in **[NIST SP 800-207](https://csrc.nist.gov/pubs/sp/800/207/final)** chapter 2 *“Zero trust Basics”* with further details in chapter 3 “*Logical Components of Zero Trust Architecture*”*.* While the NIST paper discusses all kinds of systems, in generic terms such as assets and resources, here we focus solely on Cloud Native systems with a higher level of nuance.
 
 <table>
   <tr>
@@ -203,7 +207,8 @@ Organizations must recognize that all cloud native images inherently contain vul
 
 Organizations must acknowledge that all deployed services are inherently vulnerable. This assumption should guide the planning and implementation of security measures. Any service deployed within a cloud native environment should be presumed to operate based on a vulnerable image and/or vulnerable configuration and to expose vulnerabilities through its service API.
 
-It is common for organizations to become aware of vulnerabilities when Common Vulnerabilities and Exposures (CVEs) related to their services are published. However, this awareness often comes after a period during which the services were susceptible to attack. The absence of a known vulnerability does not equate to security; vulnerabilities may exist that have yet to be discovered or disclosed. CVEs are typically published following the detection and reporting by white hat security researchers, but malicious actors may exploit these vulnerabilities long before they are publicly known.
+It is common for organizations to become aware of vulnerabilities when Common Vulnerabilities and Exposures (CVEs) related to their services are published. However, this awareness often comes after a period during which the services were susceptible to attack.
+The absence of a known vulnerability does not equate to security; vulnerabilities may exist that have yet to be discovered or disclosed. CVEs are typically published following the detection and reporting by white hat security researchers, but malicious actors may exploit these vulnerabilities long before they are publicly known.
 
 ### 3. Every Service Will be Exploited
 
@@ -245,7 +250,8 @@ Organizations should promptly identify and mitigate misused service instances �
 
 Organizations must operate under the assumption that even clients providing credible credentials may exhibit malicious behavior, such as when an offender has stolen client credentials. Furthermore, organizations should consider that a client with a history of good behavior might attempt to compromise the system in future requests. An attacker might leverage a legitimate user’s credentials or embed malicious code within a legitimate machine to send service requests.
 
-Therefore, it is crucial to always assume that any request made to a service API could potentially contain an exploit. Requests should be regarded as potential vectors for exploiting vulnerabilities within the service API. Relying on the implied trustworthiness of requests from authenticated senders is insufficient. Instead, a dynamic, per-request evaluation process must be employed. Each request should be meticulously assessed and assigned an appropriate Confidence Level, based on its potential to be an exploit. This continuous scrutiny ensures that organizations can effectively mitigate risks associated with seemingly legitimate but potentially harmful requests.
+Therefore, it is crucial to always assume that any request made to a service API could potentially contain an exploit. Requests should be regarded as potential vectors for exploiting vulnerabilities within the service API. Relying on the implied trustworthiness of requests from authenticated senders is insufficient. Instead, a dynamic, per-request evaluation process must be employed.
+Each request should be meticulously assessed and assigned an appropriate Confidence Level, based on its potential to be an exploit. This continuous scrutiny ensures that organizations can effectively mitigate risks associated with seemingly legitimate but potentially harmful requests.
 
 This principle is discussed in NIST 800-207 Section 3.3: “Trust Algorithms.”
 
@@ -259,7 +265,8 @@ This evaluation should consider the client's past behavior, including both its n
 
 Despite being discussed for twice as long as the concept of Zero Trust, the enforcement of least privilege remains an area of significant vulnerability in many systems. Organizations must implement dynamic and fine-grained access control to ensure that verified identities are only permitted to perform operations that align with their role and trustworthiness.
 
-Access to services should be evaluated and granted on a per-request basis, taking into account various parameters to make informed access decisions. These parameters include assessing whether the requested operation is appropriate for the identity in question, evaluating the Confidence Level of the sender's true identity, determining the likelihood that the request is not an exploit, and considering the overall context of the request. This context might include factors such as whether the sender is expected to make requests at that particular time of day, from a specific IP range, or in a certain sequence.
+Access to services should be evaluated and granted on a per-request basis, taking into account various parameters to make informed access decisions. These parameters include assessing whether the requested operation is appropriate for the identity in question, evaluating the Confidence Level of the sender's true identity, determining the likelihood that the request is not an exploit, and considering the overall context of the request.
+This context might include factors such as whether the sender is expected to make requests at that particular time of day, from a specific IP range, or in a certain sequence.
 
 # 2. Modeling a Cloud Native Zero Trust Architecture
 
@@ -273,7 +280,8 @@ Before we go deeper, we must first establish some key terms: Confidence Levels, 
 
 As discussed in [NIST SP 800-207 Chapter 2: “Zero Trust Basics”](https://csrc.nist.gov/pubs/sp/800/207/final), a **Confidence Level** refers to the dynamically calculated level of trust, based on the assessment of a subject and its context. At the end of this chapter, we will discuss an opportunity to enhance the use of Confidence Levels across the cybersecurity ecosystem.
 
-**Security Behavior Analytics (SBA)** refers to the field of Machine Learning and associated data analytics technologies that analyze entity behavior to inform security and confidence decisions. SBA compares an entity's security-related behavior to its norm or other predefined known criteria. The entity’s standard behavior is first examined through security glasses, and the behavior exposed is recorded. Once standard behavior is recorded, *Confidence Levels* can be deducted by evaluating the changes in the security-related behavior of the entity. SBA is a superset of traditional data analytics such as User-Entity Behavior Analytics (UEBA).
+**Security Behavior Analytics (SBA)** refers to the field of Machine Learning and associated data analytics technologies that analyze entity behavior to inform security and confidence decisions. SBA compares an entity's security-related behavior to its norm or other predefined known criteria. The entity’s standard behavior is first examined through security glasses, and the behavior exposed is recorded.
+Once standard behavior is recorded, *Confidence Levels* can be deducted by evaluating the changes in the security-related behavior of the entity. SBA is a superset of traditional data analytics such as User-Entity Behavior Analytics (UEBA).
 
 According to [NIST SP 800-207](https://csrc.nist.gov/pubs/sp/800/207/final), the policy decision/enforcement point “passes proper judgment to allow the subject to access the resource.” In this paper we name this essential functionality “Active Observer” while discussing its use and implementation. An **Active Observer** is a process that continuously monitors factors which influence an entity's Confidence Level within the system by collecting comprehensive Security Behavior Analytics.
 
@@ -299,11 +307,13 @@ Continuous analysis of clients, client requests, and services should compare act
 
 ### Step 3: Control
 
-Restricting access to resources based on client identity, client behavior, request behavior, device posture, and other contextual factors is essential for maintaining security. Specific controls and checks should be applied in front of every service, governing each action of every client. This includes avoiding long sessions based on previous credential validations to limit the impact of potential compromises.
+Restricting access to resources based on client identity, client behavior, request behavior, device posture, and other contextual factors is essential for maintaining security. Specific controls and checks should be applied in front of every service, governing each action of every client.
+This includes avoiding long sessions based on previous credential validations to limit the impact of potential compromises.
 
 The principle of least privilege must be strictly enforced, ensuring that clients have access only to the minimal resources necessary for their tasks. Unnecessary access should be eliminated, even if the associated risk is perceived as low.
 
-Zero Trust advocates for network segmentation into smaller, isolated segments or microsegments. Each service should be treated as a microsegment, with dedicated access controls to contain breaches and limit lateral movement within the network. By dividing the network into small segments, each containing a single microservice, more granular access controls can be applied, thereby reducing the attack surface. This approach prevents lateral movement between microservices, as each microservice operates with its own access control and is safeguarded from neighboring services.
+Zero Trust advocates for network segmentation into smaller, isolated segments or microsegments. Each service should be treated as a microsegment, with dedicated access controls to contain breaches and limit lateral movement within the network. By dividing the network into small segments, each containing a single microservice, more granular access controls can be applied, thereby reducing the attack surface.
+This approach prevents lateral movement between microservices, as each microservice operates with its own access control and is safeguarded from neighboring services.
 
 ## Cloud Native Zero Trust Architectural Elements
 
@@ -377,19 +387,24 @@ After identities are assigned to all clients and services, the next step is to e
 
 ## Secure Communication
 
-Zero Trust operates under the assumption that offenders may already have control over the cloud network. Therefore, a Zero Trust Architecture (ZTA) must ensure data confidentiality for communication between microservices, or between microservices and external entities. As discussed below, to achieve data confidentiality, we must verify the identity of every service and encrypt all communications. However, a ZTA requires not only data confidentiality, but also fine grained access control as well as behavior monitoring. To achieve either, we are also required to verify the identity of every client.
+Zero Trust operates under the assumption that offenders may already have control over the cloud network. Therefore, a Zero Trust Architecture (ZTA) must ensure data confidentiality for communication between microservices, or between microservices and external entities. As discussed below, to achieve data confidentiality, we must verify the identity of every service and encrypt all communications.
+However, a ZTA requires not only data confidentiality, but also fine grained access control as well as behavior monitoring. To achieve either, we are also required to verify the identity of every client.
 
 ### Data Confidentiality
 
-Every Cloud Native request, whether initiated by an internal microservice or an external client, must be performed using Transport Layer Security (TLS) to encrypt the channel. This guarantees that even if an offender intercepts the data between the client and server from the internal network, it will not gain access to the request and response data. However, to encrypt the data, the client and server must first agree on encryption keys. An offender may redirect the client traffic to a fake server and gain access to the pre-agreed upon encryption keys.
+Every Cloud Native request, whether initiated by an internal microservice or an external client, must be performed using Transport Layer Security (TLS) to encrypt the channel. This guarantees that even if an offender intercepts the data between the client and server from the internal network, it will not gain access to the request and response data.
+However, to encrypt the data, the client and server must first agree on encryption keys. An offender may redirect the client traffic to a fake server and gain access to the pre-agreed upon encryption keys.
 
-Such an attack can be part of a full fledged man-in-the-middle attack or may be used to obtain the Request data without involving the true server. To protect against offenders introducing fake servers, the client must first verify the identity of the service before sending the Request. Therefore, the microservice or external service must present a **certificate** signed by an entity that the client trusts apriori. Clients should only send requests to a service after verifying the authenticity of the certificate and verifying that the certificate was indeed provided to the identity of the service being approached.
+Such an attack can be part of a full fledged man-in-the-middle attack or may be used to obtain the Request data without involving the true server. To protect against offenders introducing fake servers, the client must first verify the identity of the service before sending the Request.
+Therefore, the microservice or external service must present a **certificate** signed by an entity that the client trusts apriori. Clients should only send requests to a service after verifying the authenticity of the certificate and verifying that the certificate was indeed provided to the identity of the service being approached.
 
-Combining service certificate verification with encryption suffice for achieving data confidentiality, protecting against data leakage in a cloud native environment under the control of potential offenders. However, a Zero Trust Architecture requires more than data confidentiality. It requires fine grained access controls, allowing each client to access only the subset of services as may be needed. It also requires monitoring the behavior of each client. We are therefore required to also verify the identity of every internal or external client.
+Combining service certificate verification with encryption suffice for achieving data confidentiality, protecting against data leakage in a cloud native environment under the control of potential offenders. However, a Zero Trust Architecture requires more than data confidentiality.
+It requires fine grained access controls, allowing each client to access only the subset of services as may be needed. It also requires monitoring the behavior of each client. We are therefore required to also verify the identity of every internal or external client.
 
 ### Client Credentials
 
-Clients, whether embedded in a microservice or any external systems, must present credentials that are verified by the receiving service. This can be done through tokens—such as JWT (JSON Web Tokens)—or by presenting client certificates that are verified by service instances using mutual Transport Layer Security (mTLS). Note that verifying the identity of clients or servers only ensures that the peer has the necessary client credentials and <span style="text-decoration:underline;">is not indicative of whether the peer is offensive or benign</span>.
+Clients, whether embedded in a microservice or any external systems, must present credentials that are verified by the receiving service. This can be done through tokens—such as JWT (JSON Web Tokens)—or by presenting client certificates that are verified by service instances using mutual Transport Layer Security (mTLS).
+Note that verifying the identity of clients or servers only ensures that the peer has the necessary client credentials and <span style="text-decoration:underline;">is not indicative of whether the peer is offensive or benign</span>.
 
 As will be discussed further in the following sections, once a client identity is verified, active observers should evaluate the confidence level of the specific client request behavior and the confidence level of the overall accumulative client behavior. The client identity and the respective confidence levels then need to be considered as part of Access Control to check whether the identity in question with the confidence levels in question, should be allowed.
 
@@ -419,17 +434,20 @@ See Security Behavior Analytics for Service Instances (SBA-SI) in image 6. \
 
 ### Input from Continuous Monitoring and Logging
 
-To enable effective behavior verification, **continuous monitoring and logging** are essential. By collecting and analyzing logs in real-time, organizations can detect unusual activities and trigger alerts for potential security incidents. These logs provide valuable input to Active Observers, enabling them to detect compromised clients or service instances. It also allows them to observe deviations from normal patterns that may indicate exploitation.
+To enable effective behavior verification, **continuous monitoring and logging** are essential. By collecting and analyzing logs in real-time, organizations can detect unusual activities and trigger alerts for potential security incidents.
+These logs provide valuable input to Active Observers, enabling them to detect compromised clients or service instances. It also allows them to observe deviations from normal patterns that may indicate exploitation.
 
 ### Security Behavior Analytics for Service Requests (SBA-SR)
 
-A common attack vector on services involves manipulating requests sent to service APIs. Such an attack may include reconnaissance  - surveying the service to identify potential weaknesses, or it may include an actual attempt to exploit the service either through known or unknown vulnerabilities.  Security Behavior Analytics for Service Requests (SBA-SR) is designed to detect irregularities in the communications between clients and services. SBA-SR distinguishes between benign requests and those that are potentially malicious. It analyzes request patterns to identify deviations from expected behavior which may signal dubious intentions by the sender. It consequently assigns a Confidence Level to each request.
+A common attack vector on services involves manipulating requests sent to service APIs. Such an attack may include reconnaissance  - surveying the service to identify potential weaknesses, or it may include an actual attempt to exploit the service either through known or unknown vulnerabilities.  Security Behavior Analytics for Service Requests (SBA-SR) is designed to detect irregularities in the communications between clients and services.
+SBA-SR distinguishes between benign requests and those that are potentially malicious. It analyzes request patterns to identify deviations from expected behavior which may signal dubious intentions by the sender. It consequently assigns a Confidence Level to each request.
 
 Requests flagged as suspicious should be handled by **Access Control** mechanisms (discussed later), ensuring that any potential threats are mitigated before they can exploit vulnerabilities or offer the offender more information to further the attack.
 
 ### Security Behavior Analytics for Service Instances (SBA-SI)
 
-Cloud Native often uses horizontal scaling such that every microservice is offered from a set of interchangeable Pods, each offering the service and each sharing the overall service load. Each pod is therefore an instance of the same service. A service instance may be compromised in advance and include malware that is triggered by some event or by the passage of time after the deployment. A service instance may also include a backdoor or may be ill configured or otherwise vulnerable allowing an offender to run malware as part of the service instance following some sequence of events. An exploited service may therefore include one or more exploited instances, while others instances may continue to behave as expected. Monitoring the behavior of instances is key to identify occurrences where an instance is being exploited.
+Cloud Native often uses horizontal scaling such that every microservice is offered from a set of interchangeable Pods, each offering the service and each sharing the overall service load. Each pod is therefore an instance of the same service. A service instance may be compromised in advance and include malware that is triggered by some event or by the passage of time after the deployment.
+A service instance may also include a backdoor or may be ill configured or otherwise vulnerable allowing an offender to run malware as part of the service instance following some sequence of events. An exploited service may therefore include one or more exploited instances, while others instances may continue to behave as expected. Monitoring the behavior of instances is key to identify occurrences where an instance is being exploited.
 
 SBA-SI monitors service instance behavior to detect irregularities indicating that a given instance is compromised, by discerning normal service behavior from malicious activity. When suspicious irregular behavior is detected, the Confidence Level of the service instance is adjusted. As discussed below, an **Instance Confidence Automation** should monitor service instance Confidence Levels to facilitate automated response, when a service instance is suspected as being exploited.
 
@@ -455,17 +473,22 @@ While implementing a ZTA under Cloud Native, we introduce a segment per microser
 
 Unlike traditional perimeter-based models, where trust is typically established once, followed by a stream of service-requests sent by the client, Zero Trust requires that every single request is evaluated independently **in real-time**, regardless of whether the client was previously verified. This allows access control decisions to factor the updated Confidence Levels calculated by **Active Observers**, as well as other per request attributes.
 
-The access control decision, taken per request, considers not only  the updated accumulated client confidence level, but also the request specific confidence level. As indicated earlier, the access control decision is also based on the specific action being made by the client, as part of the request. Additionally, the decision takes into account other contextual attributes of the request such as the time of day, day of week, source IP, etc..
+The access control decision, taken per request, considers not only  the updated accumulated client confidence level, but also the request specific confidence level. As indicated earlier, the access control decision is also based on the specific action being made by the client, as part of the request.
+Additionally, the decision takes into account other contextual attributes of the request such as the time of day, day of week, source IP, etc..
 
-For example, even if a client’s credentials are valid, its access may be restricted if recent behavior suggests a potential compromise, or if its current request is suspected as being an exploitation or reconnaissance attempt, or if it is made from a peculiar source or at a peculiar time, or if the service being approached is considered potentially compromised, or any combination of the above raised to the level justifying to block the request from this specific client to this specific service, given the action requested. All as defined by the service access control policy for this client identity.
+For example, even if a client’s credentials are valid, its access may be restricted if recent behavior suggests a potential compromise, or if its current request is suspected as being an exploitation or reconnaissance attempt, or if it is made from a peculiar source or at a peculiar time, or if the service being approached is considered potentially compromised
+or any combination of the above raised to the level justifying to block the request from this specific client to this specific service, given the action requested. All as defined by the service access control policy for this client identity.
 
-Secure Communication as described earlier, protects the Cloud Native system against offenders controlling the internal system network. The addition of Access Control utilizing Behavior Verification, further protects the system from offenders controlling legitimate clients or using legitimate client credentials to send traffic on behalf of some client identity. The next step is to utilize Behavior Verification to also consider the case of offenders controlling the service instances.
+Secure Communication as described earlier, protects the Cloud Native system against offenders controlling the internal system network. The addition of Access Control utilizing Behavior Verification, further protects the system from offenders controlling legitimate clients or using legitimate client credentials to send traffic on behalf of some client identity.
+The next step is to utilize Behavior Verification to also consider the case of offenders controlling the service instances.
 
 ## Instance Confidence Automation
 
-A foundational tenet of Zero Trust is that all services may be breached. Offenders may have different incentives to breach a service. For example to gather information about requests made to the service or the responses provided; Or to use the service to access data sources that the service has access to; Or to perform lateral movement and breach other target services; Or to use the service as a jumping stone in a covert, potentially distributed attack on other systems; Or even to mine cryptocurrency. In all such cases, a quick and immediate response of shutting down or limiting the breached service, can help curb the attack and prevent further damage.
+A foundational tenet of Zero Trust is that all services may be breached. Offenders may have different incentives to breach a service. For example to gather information about requests made to the service or the responses provided; Or to use the service to access data sources that the service has access to; Or to perform lateral movement and breach other target services;
+Or to use the service as a jumping stone in a covert, potentially distributed attack on other systems; Or even to mine cryptocurrency. In all such cases, a quick and immediate response of shutting down or limiting the breached service, can help curb the attack and prevent further damage.
 
-We therefore need to introduce Instance Confidence Automation as part of the ZTA. Instance Confidence Automation leverages the continuously updated Confidence Levels provided by Service Instance Active Observers. When the Confidence Level of a Service Instance falls below a certain threshold—indicating potential compromise—automated systems can immediately take corrective actions, for example by shutting down compromised service instances. Under Cloud Native, if an instance is deemed compromised, automation can trigger the deletion of the compromised instance, replacing it with a clean, well-behaving instance. Note that when replacing compromised instances, automation tools must also consider the overall availability of the service.
+We therefore need to introduce Instance Confidence Automation as part of the ZTA. Instance Confidence Automation leverages the continuously updated Confidence Levels provided by Service Instance Active Observers. When the Confidence Level of a Service Instance falls below a certain threshold—indicating potential compromise—automated systems can immediately take corrective actions, for example by shutting down compromised service instances.
+Under Cloud Native, if an instance is deemed compromised, automation can trigger the deletion of the compromised instance, replacing it with a clean, well-behaving instance. Note that when replacing compromised instances, automation tools must also consider the overall availability of the service.
 
 The combined introduction of Peer Identities, Secure Communication, Behavior Verification, Access Control and Instance Confidence Automation, allows us to construct a cohesive, practical design for a Cloud Native ZTA and concludes the primary contribution of this paper. Next we collected techniques of best practices that can be helpful for implementing the Cloud Native ZTA design discussed above.
 
@@ -495,7 +518,8 @@ Ensuring the security of service requests is a critical aspect of ZTA. An essent
 
 Guard can be deployed independently from Knative in various cloud native orchestration systems, including vanilla Kubernetes, where it will use machine-learning-based criteria synthesis to identify standard patterns used by service clients. Additionally, Guard supports the setting of manual criteria to enhance its flexibility.
 
-Guard’s SBA-SR identifies changes in service requests made by clients, calculates a Confidence Level for these requests, and integrates with Access Control to remove any requests suspected of being exploits. It also allows for the detection of unknown exploits targeting unknown vulnerabilities without relying on signatures, thus providing a layer of protection that preempts the usual race between the identification of CVEs, exploits, and the release of patches.
+Guard’s SBA-SR identifies changes in service requests made by clients, calculates a Confidence Level for these requests, and integrates with Access Control to remove any requests suspected of being exploits.
+It also allows for the detection of unknown exploits targeting unknown vulnerabilities without relying on signatures, thus providing a layer of protection that preempts the usual race between the identification of CVEs, exploits, and the release of patches.
 
 SBA-SR functionalities can also be integrated into Web Application Firewalls (WAFs) that maintain per-service state, capable of analyzing incoming and outgoing traffic to detect threats and ongoing attacks.
 
@@ -505,7 +529,8 @@ To ensure all communications in-transit are encrypted, all services should use T
 
 ### Verify Service Instances
 
-Profiling the behavior of service instances and evaluating Confidence Levels can leverage <!-- cspell:disable -->[eBPF](https://ebpf.io/) technology. Several CNCF projects use eBPF-based technology in observability, networking, and security ([Falco](https://falco.org/), [Cilium](https://cilium.io/), [Pixie](https://docs.px.dev/), and [KubeArmor](https://kubearmor.io/)). eBPF<!-- cspell:enable --> can be used to synthesize criteria describing standard service instance patterns, which can then evaluate the Confidence Level of running service instances.
+Profiling the behavior of service instances and evaluating Confidence Levels can leverage <!-- cspell:disable -->[eBPF](https://ebpf.io/) technology. Several CNCF projects use eBPF-based technology in observability, networking, and security ([Falco](https://falco.org/),
+[Cilium](https://cilium.io/), [Pixie](https://docs.px.dev/), and [KubeArmor](https://kubearmor.io/)). eBPF<!-- cspell:enable --> can be used to synthesize criteria describing standard service instance patterns, which can then evaluate the Confidence Level of running service instances.
 
 An Active Observer can also identify changes in the external communication performed by service instances using a network tap, as exemplified by the Knative [Security-Guard](https://knative.dev/docs/serving/app-security/security-guard-about/#security-guard-profile-and-criteria). Regardless of how the Active Observer calculates the Confidence Level of service instances, it should be integrated with automation to delete suspected compromised service instances.
 
@@ -513,7 +538,8 @@ Another source for determining the Confidence Level of service instances is inte
 
 ## Prevent Unauthorized System Use
 
-In ZTA, preventing unauthorized system use is crucial for maintaining the security and integrity of the network. This objective is achieved through techniques such as micro-segmentation and fine-grained access control, which are essential for limiting the reach and impact of potential attackers. By applying these methods, organizations can reduce the likelihood of a breach, and ensure that even if one segment is compromised, the attacker’s movement within the network is restricted, thus protecting the overall system.
+In ZTA, preventing unauthorized system use is crucial for maintaining the security and integrity of the network. This objective is achieved through techniques such as micro-segmentation and fine-grained access control, which are essential for limiting the reach and impact of potential attackers.
+By applying these methods, organizations can reduce the likelihood of a breach, and ensure that even if one segment is compromised, the attacker’s movement within the network is restricted, thus protecting the overall system.
 
 ### Fine-grained Access Control
 
@@ -525,13 +551,15 @@ This type of Access Control can be configured to block service requests based on
 
 ### Micro-Segmentation
 
-Micro-segmentation allows for the division of a network into smaller, isolated segments. Access control gates must be implemented within the cloud cluster network, ideally in front of every service or service instance. Such gates should support fine-grained access control ensuring access is given to specific client identities approaching specific services. Such gates should also support dynamic access control ensuring that access is granted based on Confidence Levels of the client, the client request, and the service.
+Micro-segmentation allows for the division of a network into smaller, isolated segments. Access control gates must be implemented within the cloud cluster network, ideally in front of every service or service instance. Such gates should support fine-grained access control ensuring access is given to specific client identities approaching specific services.
+Such gates should also support dynamic access control ensuring that access is granted based on Confidence Levels of the client, the client request, and the service.
 
 Using this approach, the attack surface is significantly reduced by implementing strict access controls and separating resources into smaller compartments. Even if an attacker manages to compromise one microsegment, their lateral movement is limited, preventing them from accessing other parts of the network.
 
 ## Establish Limited Trust
 
-Identity verification can be based on either client-sent tokens, mTLS client certificates, or both. Typically, the identity of the workload or service is represented by an Identity Token or Access Token, which is included with every request. This token can be inspected by Policy Enforcement Points to control access. Certificates, on the other hand, are designed to encrypt the connection between two points and can guarantee the identity of one or both access points (via TLS or mTLS).
+Identity verification can be based on either client-sent tokens, mTLS client certificates, or both. Typically, the identity of the workload or service is represented by an Identity Token or Access Token, which is included with every request.
+This token can be inspected by Policy Enforcement Points to control access. Certificates, on the other hand, are designed to encrypt the connection between two points and can guarantee the identity of one or both access points (via TLS or mTLS).
 
 Identity verification is the first step in confirming the client’s identity. Verified identities must also be monitored by an Active Observer to ensure credentials are not misused for malicious activity.
 
@@ -559,7 +587,8 @@ Additional Confidence Level data can be aggregated from all service requests emi
 
 # Conclusion
 
-While the philosophy behind Zero Trust has been around for decades, its application in cloud native environments introduces unique challenges and opportunities. Protecting data confidentiality and integrity is a paramount in these dynamic and distributed systems. Every service request and instance must be continuously verified to ensure that only authorized entities gain access to sensitive data. Such verification includes both identity verification and behavioral verification using Security Behavior Analytics. This approach helps cloud systems cope with threats while assuming cyber breaches are unavoidable.
+While the philosophy behind Zero Trust has been around for decades, its application in cloud native environments introduces unique challenges and opportunities. Protecting data confidentiality and integrity is a paramount in these dynamic and distributed systems.
+Every service request and instance must be continuously verified to ensure that only authorized entities gain access to sensitive data. Such verification includes both identity verification and behavioral verification using Security Behavior Analytics. This approach helps cloud systems cope with threats while assuming cyber breaches are unavoidable.
 
 Defining fine-grain access controls becomes critical in this context, allowing for more precise adjustments to who or what can access specific resources. To further enhance security, dynamic access controls based on the Confidence Level of requests should be introduced, adjusting access privileges in real-time according to the trustworthiness of each interaction.
 
@@ -827,7 +856,7 @@ Fundamental ideas and concepts that underpin the Zero Trust security model, incl
 
 A structured approach to implementing Zero Trust principles, involving the continuous identification, analysis, and control of entities and interactions within the environment.
 
-## References & Citations
+## References and Citations
 
 ## Contributors
 
@@ -887,7 +916,7 @@ Thank you for being an integral part of this endeavor!
 - Identity and Access Management section of tag-security whitepaper: [https://github.com/cncf/tag-security/blob/main/community/resources/security-whitepaper/v2/cloud-native-security-whitepaper.md#access](https://github.com/cncf/tag-security/blob/main/community/resources/security-whitepaper/v2/cloud-native-security-whitepaper.md#access)
 - Help implementing zero trust architecture (UK): [https://www.ncsc.gov.uk/collection/zero-trust-architecture/implementing-zta](https://www.ncsc.gov.uk/collection/zero-trust-architecture/implementing-zta)
 - Zero Trust Security Model (Canada): [https://www.cyber.gc.ca/en/guidance/zero-trust-security-model-itsap10008](https://www.cyber.gc.ca/en/guidance/zero-trust-security-model-itsap10008)
-- Essential Eight Maturity Model (Australia): [https://www.cyber.gov.au/sites/default/files/2023-11/PROTECT%20-%20Essential%20Eight%20Maturity%20Model%20%28November%202023%29.pdf](https://www.cyber.gov.au/sites/default/files/2023-11/PROTECT%20-%20Essential%20Eight%20Maturity%20Model%20%28November%202023%29.pdf)
+- Essential Eight Maturity Model (Australia): [https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model)
 - Cybersecurity Policies (Europe): [https://digital-strategy.ec.europa.eu/en/policies/cybersecurity-policies](https://digital-strategy.ec.europa.eu/en/policies/cybersecurity-policies)
 - Success Story: Israel National Cyber Directorate Version 2.0 | NIST: [https://www.nist.gov/cyberframework/success-stories/israel-national-cyber-directorate-version-20](https://www.nist.gov/cyberframework/success-stories/israel-national-cyber-directorate-version-20)
 - Government Zero Trust Architecture (GovZTA) | Singapore Government Developer Portal (tech.gov.sg): [https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/government-zero-trust-architecture](https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/government-zero-trust-architecture)
