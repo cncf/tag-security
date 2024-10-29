@@ -90,7 +90,7 @@ The paper lead creates a README.md with:
 - Original design decisions
 - Links to files in the repo
 
-### Blog Publishing and Coordination
+#### Blog Publishing and Coordination
 
 Coordinate with TAG leadership and CNCF for a blog post to increase visibility. Consider presenting at community events.
 
