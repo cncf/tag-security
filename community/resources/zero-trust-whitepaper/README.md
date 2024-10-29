@@ -2,7 +2,6 @@
 
 <!-- cSpell:ignore CNZTWP -->
 
-
 > :sunflower: **Click
 > _[here](v1/cloud-native-zero-trust-whitepaper.pdf)_ for
 > _version 1_ (PDF) whitepaper**
