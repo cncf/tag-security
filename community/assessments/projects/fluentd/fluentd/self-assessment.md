@@ -172,7 +172,7 @@ Fluentd is the default standard to solve Logging in containerized environments, 
   - Security vulnerabilites are to be reported at https://github.com/fluent/fluentd/security/advisories, as stated in their [security policy](https://github.com/fluent/fluentd/blob/master/SECURITY.md)
 * Incident Response.  
   -  Fluentd is trying to follow supply chain security using [DCO](https://probot.github.io/apps/dco/)  
-    [(Supply chain security)](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)  
+    [(Supply chain security)](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)
   - Because Fluentd is built on top of the Ruby Ecosystems, they must also check the licenses of dependent gems.
 
 ## Appendix
