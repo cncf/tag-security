@@ -28,7 +28,7 @@ Has the project completed an external security audit? If yes, how have they addr
 
 ### Metrics
 
-Which security best practices does the project follow (for example CNCF best practices badge, OpenSSF Best Practices, LFX Insights, CLOmonitor)? 
+Which security best practices does the project follow (for example CNCF best practices badge, OpenSSF Best Practices, LFX Insights, CLOmonitor)?
 
 How does it rate by these metrics? Please provide links if applicable.
 
