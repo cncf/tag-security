@@ -85,14 +85,14 @@ These groups facilitate discussions, engagement, and publications with key stake
 Each group, led by a responsible leader, reaches consensus on issues and manages logistics. All materials, such as reports, white papers, documents, and reference architectures, are in the repository's /community directory.
 
 | Project | Leads | STAG Rep |
-|---------------------------------|---------------------------------------------|
+|---------------------------------|---------------------------------------------|---------------------------------|
 | [Automated Governance](/community/working-groups/automated-governance/README.md) | Brandt Keller | Matthew Flannery |
 | [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres | Marina Moore |
+| [Commons](/community/working-groups/commons/README.md) | Eddie Knight | Marco De Benedictis |
 | [Compliance](/community/working-groups/compliance/README.md) | Anca Sailer, Robert Ficcaglia | Brandt Keller |
 | [Controls](/community/working-groups/controls/README.md) | Jon Zeolla | Brandt Keller |
 | [Security Reviews](/community/assessments/README.md) | Justin Cappos | Eddie Knight |
 | [Software Supply Chain](/community/working-groups/supply-chain-security/README.md) | Michael Lieberman, John Kjell | Marina Moore |
-| [Commons](/community/working-groups/commons/README.md) | Eddie Knight | Marco De Benedictis |
 
 ## Additional information
 
