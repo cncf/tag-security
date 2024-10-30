@@ -8,7 +8,7 @@ What ecosystem adoption has the project seen?
 
 ### Past TOC Reviews
 
-If already accepted, how has the project addressed comments from previous TAG or TOC reviews?
+If the project has undergone a previous TAG or TOC review, how has the project addressed comments from those reviews?
 
 ## Security Reviews
 
