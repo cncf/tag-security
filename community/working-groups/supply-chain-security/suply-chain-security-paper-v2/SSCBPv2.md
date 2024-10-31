@@ -45,7 +45,7 @@ This growth is evidenced by what multiple software supply chain vendors are witn
 
 Software supply chain attacks occur when the materials or processes of producing software are themselves compromised, resulting in vulnerabilities targeting downstream consumers of the produced software.
 Although the number of known, successful exploits remains comparatively small, the impact of these attacks has been extensive, as evidenced by incidents such as Log4j, NotPetya, and SolarWinds.
-The CNCF Technical Advisory Group (TAG) for Security maintains a detailed catalog ([link](https://tag-security.cncf.io/supply-chain-security/compromises/)) of known supply chain attacks to raise awareness of the increasing frequency of such occurrences coupled with lower barriers to success.
+The CNCF Technical Advisory Group (TAG) for Security maintains a detailed catalog ([link](https://tag-security.cncf.io/community/catalog/compromises/)) of known supply chain attacks to raise awareness of the increasing frequency of such occurrences coupled with lower barriers to success.
 
 This paper presents a holistic view of the software supply chain, providing information for both newcomers and experienced professionals in the field.
 
@@ -122,7 +122,6 @@ Readers should understand that these references are not an endorsement of any pr
 >[Compliance-focus, big-picture (CISO)](#compliance-focused-big-picture-ciso)
 >[Ops/platform folks setting up supply chain infrastructure](#ops-and-platform-teams-building-supply-chain-infrastructure)
 >[Security team of consumer (verifier)](#security-team-of-consumer-verifier)
->[Expert looking to discover more best practices](#expert-looking-to-discover-more-best-practices)
 >[End User Concerns & Use Cases](#end-user-concerns-and-use-cases)
 
 [Part 2](#part-2-overview)
@@ -276,7 +275,7 @@ To aid in these endeavors, a selection of tools and processes must be establishe
 In particular, the producer should:
 
 * Have secure coding best practices in place to ensure integrity and consistency across the code base.
-* Monitor dependencies used by their software, and respond to any incidents or vulnerabilities in these dependencies (see [SBOM](#sbom) and [VEX](#require-sboms-and-vex-statements-from-thirdparty-suppliers)).
+* Monitor dependencies used by their software, and respond to any incidents or vulnerabilities in these dependencies (see [SBOM](#sbom) and [VEX](#require-sboms-and-vex-statements-from-third-party-suppliers)).
 * Provide a template or stylesheet compatible with developers' preferred IDEs, containing the best coding guidelines.
 * Use a vulnerability risk assessment solution to scan the code, packages, and third party dependencies.
 This assessment should cross-reference the CVSS database with databases such as Nessus to identify vulnerabilities and to discover the latest packages or implement fixes.
@@ -550,7 +549,7 @@ The stages are:
 * [Artifacts](#artifacts)
 * [Deployments and Distribution](#deployments-and-distribution)
 
-![SLSA diagram showing an example build pipeline with producer, source, build, distribution, depenencies, and comsumer, with potential threats at and between each stage.][image1]
+![SLSA diagram showing an example build pipeline with producer, source, build, distribution, dependencies, and consumer, with potential threats at and between each stage.][image1]
 To illustrate how these stages fit together, consider the above diagram from the SLSA project.
 This illustration of the supply chain threats highlights all the areas where something can go wrong.
 This can be either a malicious attack, or it could be benign but still causing vulnerabilities.
@@ -687,9 +686,9 @@ MFA provides an additional layer of security, normally by requiring a soft or ph
 #### Use SSH keys to provide developers access to upstream source code repositories
 
 Developers contributing source code require a non-interactive way to access source code hosted repositories from their development tools.
-Instead of using passwords which are prone to common hacking techniques like brute force, password guessing and password spraying, SSH keys[27](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-27-4616ccb4d6ae4a3472a432b18926f014) or SSH certificates[28](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-28-4616ccb4d6ae4a3472a432b18926f014) should be used.
+Instead of using passwords which are prone to common hacking techniques like brute force, password guessing and password spraying, SSH keys[27](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-27-4616ccb4d6ae4a3472a432b18926f014) or SSH certificates[28](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-28-4616ccb4d6ae4a3472a432b18926f014) should be used.
 Agents in CI/CD pipelines should also be configured to access repositories using SSH Keys.
-All modern platforms like Github, Gitlab, BitBucket provide guidance on configuring access using SSH keys[29](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-29-4616ccb4d6ae4a3472a432b18926f014), including rotation and revocation of these keys.
+All modern platforms like Github, Gitlab, BitBucket provide guidance on configuring access using SSH keys[29](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-29-4616ccb4d6ae4a3472a432b18926f014), including rotation and revocation of these keys.
 
 There are environments where SSH may not be a viable authentication mechanism due to network policies.
 One possible approach to authentication is frequently rotating Access Tokens, scoped to only the necessary functions.
@@ -743,27 +742,27 @@ analyze how they will impact their supply chain.
 
 ### Verification
 
-####### *Verify third party artifacts and open source libraries*
+#### Verify third party artifacts and open source libraries
 
 Third party artifacts need to be verified using a range of approaches.
 All third party artifacts, open source libraries, and any other dependencies should be verified as part of continuous integration.Verification involves verifying their checksums against a known good source and checking any cryptographic signatures.
 Any software ingested should be scanned using Software Composition Analysis (SCA) tools to detect whether any vulnerable software is present in the final product.
 For even higher confidence, perform penetration and fuzz testing to ensure any third party artifacts are resistant to common attacks and no basic security flaws are present.
 
-####### Require SBOMs and VEX statements from third-party suppliers
+#### Require SBOMs and VEX statements from third-party suppliers
 
 Where possible, software vendors should be required to provide [Software Bills of Materials](https://www.ntia.gov/SBOM) (SBOMs) containing the explicit details of the software and versions used within the supplied product and Vulnerability Exploitability eXchange (VEX) statements that indicate whether specific vulnerabilities affect the software.
 This provides a clear and direct link to the dependencies, removing doubt on the version of dependencies that are used and thus removing the requirement of using heuristics via SCA tools.
 Ideally, signed metadata from the build process should accompany the SBOM.
 
-####### *Track dependencies between open source components*
+#### Track dependencies between open source components
 
 A register of a project’s open source components, dependencies, and vulnerabilities should always be maintained to help identify any deployed artifacts with new vulnerabilities.
 One of the most popular open source inventory implementations is OWASP Dependency-Track.
 Generating, receiving, or maintaining a supply chain inventory will help identify the software vendors, suppliers, and sources used in an organization, as well as the associated software and versions.
 Cataloging this inventory into a human and machine readable format allows organizations to correlate vulnerabilities as they are published against in-use or prospective software and to establish any impact.
 
-####### *Build libraries from source code*
+#### Build libraries from source code
 
 Software dependencies are often distributed in binary form such as tarballs, or stored in a package management repository.
 However, there is often no explicit connection between the binary in a repository and the source code itself.
@@ -775,7 +774,7 @@ Consequently, when possible, it is safer and more reliable to build the binaries
 This provides a clear link between the library source code and the compiled binary.
 However, because this process is time consuming and resource intensive, it may only be feasible within highly regulated environments.
 
-####### *Define trusted package managers, repositories, and libraries*
+#### Define trusted package managers, repositories, and libraries
 
 If building from source is not a viable option for every component, components from a trusted supplier which regularly maintains and updates those binary components in a backwards compatible way should be used.
 They should be vetted by using metrics and other [testing methods](#testing).
@@ -787,7 +786,7 @@ If organizations choose to host their own package managers and artifact reposito
 These hosted package managers must be properly configured to ensure that they do not have malicious packages and are using best practices for software distribution.
 When organizations choose to instead utilize external repositories, they should ensure that packages are signed by the correct authors and limit the pages ingested from untrusted repositories (such as through the use of an allowlist or other validation).
 
-####### *Generate an immutable SBOM of the code*
+#### Generate an immutable SBOM of the code
 
 While rebuilding a software artifact, it is best practice to also generate its SBOM.
 An SBOM provides a machine readable inventory of the contents of the artifact.
@@ -801,7 +800,7 @@ An SBOM generated through scanning isn’t likely to capture issues such as the 
 
 ### Automation
 
-####### *Scan software for vulnerabilities*
+#### Scan software for vulnerabilities
 
 Before software dependencies are brought into a system and periodically thereafter, they should be analyzed to ensure the vulnerabilities they include pose an acceptable risk to the organization.
 If the dependency poses an unacceptable risk, perform triage using a vulnerability management process to decide whether other mitigations may be applied to reduce risk, or whether the software or update should be blocked.
@@ -809,13 +808,13 @@ If the dependency poses an unacceptable risk, perform triage using a vulnerabili
 Note that instances may exist where the specific usage of the software does not expose or use the specific code containing the vulnerability.
 For these occurrences, analysis mechanisms such VEX or CVSS may be provided to mitigate the vulnerability.
 
-####### *Managing software licenses*
+#### Managing software licenses
 
 While not directly a security concern, licensing obligations are an important consideration when adding new dependencies.
 The Linux Foundation maintains the [Open Compliance Program](https://compliance.linuxfoundation.org/references/tools/) which provides several tools to ensure released software meets legal and regulatory requirements.
 Licensing metadata should be recorded during the build process and distributed within the artifact’s SBOM.
 
-####### Run software composition analysis on ingested software
+#### Run software composition analysis on ingested software
 
 At a minimum, a Software Composition Analysis (SCA) tool should be run against any dependencies used within the software being built.
 The SCA tool will use heuristics to identify the direct and transitive dependencies, and can also verify the contents of the SBOM.
@@ -844,7 +843,7 @@ The pipeline is created by joining together a series of hardened build steps.
 Each build step should be verified as trusted.
 Either by implementing each step through a hardened container image stored within a secured repository and deploying to a hardened orchestration platform such as Kubernetes, or by having attestations for the ingested materials and operations that stem from a trusted root.
 As an example, the US Air Force's Platform One is an implementation of this concept, which leverages hardened containers from the Platform One centralized artifact repository called "Iron Bank".
-This repository contains signed container images hardened according to the DoD Container Hardening Guide[37](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-37-dbfbf2c033ed60aef07c6cbd23c5b467).
+This repository contains signed container images hardened according to the DoD Container Hardening Guide[37](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-37-dbfbf2c033ed60aef07c6cbd23c5b467).
 
 By building the pipeline from hardened components, the likelihood of successful compromise of any build step is reduced.
 The pipeline orchestrator controls exactly what each stage is able to perform, implementing the required build step without additional software and reducing the attack surface of each component in the pipeline.
@@ -861,7 +860,7 @@ This division of responsibility should support least privilege authorization.
 * Pipeline steps themselves should be subject to automated testing to validate the efficacy of the security controls within the pipeline.
 * Pipeline steps should produce signed attestations for out-of-band verification of the build process.
 
-For more detail about build pipelines, see the TAG Security [Secure Software Factory Whitepaper](https://github.com/cncf/tag-security/blob/main/supply-chain-security/secure-software-factory/secure-software-factory.md).
+For more detail about build pipelines, see the TAG Security [Secure Software Factory Whitepaper](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/secure-software-factory/secure-software-factory.md).
 
 ### Verification
 
@@ -902,7 +901,7 @@ Assurance of the build is obtained when multiple builders, on separate infrastru
 
 The ability to build software in a verifiably reproducible manner is of growing importance as the software industry sees more attacks on build infrastructure.
 Building software in a reproducible way is not a trivial task however, and care needs to be taken to capture the required build environment and remove non-determinism from all aspects of the process.
-In what follows, several recommendations specific to the production of reproducible builds are given.[40](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-40-dbfbf2c033ed60aef07c6cbd23c5b467)
+In what follows, several recommendations specific to the production of reproducible builds are given.[40](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-40-dbfbf2c033ed60aef07c6cbd23c5b467)
 
 #### Recommendations For Reproducible Builds
 
@@ -926,20 +925,20 @@ A compiler may produce different output if source files are passed in differing 
 Some compilers may embed build information such as build time.
 The things that may affect determinism in a particular build depends on which tools and compilers are being used.
 [Reproducible Builds](https://reproducible-builds.org/) documents and offers solutions for many of these.
-Diffoscope[41](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-41-dbfbf2c033ed60aef07c6cbd23c5b467) can be used to identify the sources of build non-determinism.
+Diffoscope[41](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-41-dbfbf2c033ed60aef07c6cbd23c5b467) can be used to identify the sources of build non-determinism.
 
 ##### Record The Build Environment
 
 In order to reproduce a build environment, the versions and hashes of all tools and required configurations should be recorded and distributed with the software's source.
 Compilers, system libraries, build paths, and operating systems are some of the items that are required to be recorded to properly reproduce a build environment.
-Debian has created a .buildinfo[42](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-42-dbfbf2c033ed60aef07c6cbd23c5b467) file format that they use for this purpose.
+Debian has created a .buildinfo[42](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-42-dbfbf2c033ed60aef07c6cbd23c5b467) file format that they use for this purpose.
 Storing snapshots of historical build environments allows some forensic analysis and may be more achievable for some teams.
 
 ##### Automate Creation Of Build Environments
 
 Other developers or verifiers who wish to build your software need to be able to recreate the build environment with minimum effort.
 A project may use scripts to quickly retrieve and set up the required tools in a virtual environment.
-For example, tools like Vagrant[43](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-43-dbfbf2c033ed60aef07c6cbd23c5b467) can be used to declaratively create a virtual machine, or Dockerfiles and container images.
+For example, tools like Vagrant[43](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-43-dbfbf2c033ed60aef07c6cbd23c5b467) can be used to declaratively create a virtual machine, or Dockerfiles and container images.
 
 ##### Distribute Builds Across Different Infrastructure
 
@@ -947,7 +946,7 @@ To detect potential attacks on the build infrastructure an architecture can be d
 Each host independently and deterministically builds the same component.
 A hash of each resulting artifact can then be verified to ensure that the results match, and any divergence can be examined.
 To successfully attack such an architecture, the attacker must compromise multiple disparate systems.
-Rebuilderd[44](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-44-dbfbf2c033ed60aef07c6cbd23c5b467) is an example of a tool that can be used to set up independent *rebuilder* environments on different infrastructure.
+Rebuilderd[44](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-44-dbfbf2c033ed60aef07c6cbd23c5b467) is an example of a tool that can be used to set up independent *rebuilder* environments on different infrastructure.
 It currently supports rebuilding Arch Linux packages, with support for Debian packages planned for the future.
 
 ### Automation
@@ -975,7 +974,7 @@ in-toto provides a layout specification enabling out-of-band verification of CI/
 During the initialization phase of the platform trust should be bootstrapped in the system.
 Methods to bootstrap trust vary by installation type.
 The best practices described in the cloud native security whitepaper (including protection from unauthorized access, immutability, availability, auditing and accountability) should be followed during the platform hardening process.
-The CNCF provides the Cloud Native Trail Map[45](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-45-dbfbf2c033ed60aef07c6cbd23c5b467) as a starting point for architecting a secure application platform.
+The CNCF provides the Cloud Native Trail Map[45](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-45-dbfbf2c033ed60aef07c6cbd23c5b467) as a starting point for architecting a secure application platform.
 Additionally storage and network access need to be provisioned.
 The provisioning process should be described as IaC and happen through an automated and audited process.
 Cluster administrative credentials should be secured with hardware tokens.
@@ -1012,7 +1011,7 @@ This is because a compromised worker can potentially create an environment of th
 In addition to the environment, the worker's commands or actions should be passed in explicitly at provisioning time.
 There should be minimal decision logic in the worker itself.
 One method of doing this might be to use Kubernetes pod or job objects to deploy the workers for each step in the pipeline.
-The object definitions can be used to specify the environmental variables, commands, and volumes relevant to that particular step, while the base image itself remains minimal[46](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-46-dbfbf2c033ed60aef07c6cbd23c5b467).
+The object definitions can be used to specify the environmental variables, commands, and volumes relevant to that particular step, while the base image itself remains minimal[46](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-46-dbfbf2c033ed60aef07c6cbd23c5b467).
 For environments which do not use Kubernetes as an orchestrator, other methods exist for externally declaring the environment and commands that a container should execute.
 
 #### Write Output to a Separate Secured Storage Repository
@@ -1047,7 +1046,7 @@ For example: how much responsibility do application developers have for security
 
 Workloads should be issued short lived credentials with automated rotation.
 The CNCF maintained SPIFFE/SPIRE project provides a robust identity and certificate orchestration system.
-The publication "[Solving The Bottom Turtle](https://spiffe.io/book/)"[47](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-47-dbfbf2c033ed60aef07c6cbd23c5b467) is an excellent resource to consider when designing an organizational workload identity system.
+The publication "[Solving The Bottom Turtle](https://spiffe.io/book/)"[47](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-47-dbfbf2c033ed60aef07c6cbd23c5b467) is an excellent resource to consider when designing an organizational workload identity system.
 Certificate rotation policy is a decision based on the trade-off of system availability and the security impact of a lost key.
 In situations where the use of long-lived certificates is required, a robust certificate revocation system should be implemented.
 
@@ -1105,7 +1104,7 @@ The CNCF maintains The Update Framework (TUF), to enable the secure distribution
 Signatures and metadata about artifacts are stored, often adjacent to an OCI registry.
 TUF makes use of a "root-of-trust" model to delegate trust from a single root to the individual teams or developers who sign artifacts.
 This should be used to delegate to the expected signing entity for each artifact, which may be a build server or developer.
-It uses additional metadata to allow clients to verify the freshness of content in a repository and protect against common attacks on update systems[48](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-48-b48f8aeca0379d5092f46210756d7d22).
+It uses additional metadata to allow clients to verify the freshness of content in a repository and protect against common attacks on update systems[48](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-48-b48f8aeca0379d5092f46210756d7d22).
 Clients can make use of public keys to verify the contents of the repository.
 
 #### Use a store to manage metadata from in-toto
@@ -1113,7 +1112,7 @@ Clients can make use of public keys to verify the contents of the repository.
 Organizations that generate in-toto metadata need a way to track and store this metadata.
 This may be a database or a dedicated solution such as Archivista or Grafeas.
 Archivista is a CNCF project that provides a graph and storage mechanism for in-toto attestations.
-Grafeas is an open source artifact metadata API supporting in-toto link attestations as a type, and has a supporting Kubernetes admission controller called Kritis[49](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-49-b48f8aeca0379d5092f46210756d7d22).
+Grafeas is an open source artifact metadata API supporting in-toto link attestations as a type, and has a supporting Kubernetes admission controller called Kritis[49](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-49-b48f8aeca0379d5092f46210756d7d22).
 
 #### Distribute in-toto metadata with TUF
 
@@ -1143,7 +1142,7 @@ Finally, minimal trust must be placed in high-risk keys like those that are stor
 #### Use a container registry that supports OCI image-spec images
 
 An internal image registry should be deployed and configured to support internal artifact distribution with the security properties described in this section.
-This might be accomplished by distributing metadata using the recently standardized OCI artifact manifest[50](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-50-b48f8aeca0379d5092f46210756d7d22).
+This might be accomplished by distributing metadata using the recently standardized OCI artifact manifest[50](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-50-b48f8aeca0379d5092f46210756d7d22).
 
 ## Deployments and Distribution
 
