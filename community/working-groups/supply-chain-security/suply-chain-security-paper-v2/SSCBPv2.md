@@ -3,7 +3,7 @@
 Authors: Original White Paper authors, Marina Moore, Michael Lieberman, John Kjell, James Carnegie, Ben Cotton
 Reviewers:
 
-## Scope:
+## Scope
 
 This new publication modernizes the original Supply Chain Best Practices whitepaper by highlighting changes and improvements to supply chain security tools and practices since the time of its writing.
 It also adds discussion of personas, and how different groups of people should approach this whitepaper to get relevant guidance.
@@ -12,7 +12,7 @@ It provides a holistic, end-to-end guide for organizations and teams to build a 
 
 Some specific changes and additions to the original whitepaper include:
 
-* The addition of [personas](#audience/persona) and guidance for how different audiences can approach this paper.
+* The addition of [personas](#audiencepersona) and guidance for how different audiences can approach this paper.
 * Audit data handling best practices – clear, simple audits for third parties to run.
 Ensures third parties are securing data, limiting access, monitoring for data security events as required.
 * Discussion of VEX.
@@ -36,7 +36,7 @@ The following is a non-comprehensive list of topics that did not fit in this pap
 * Incident response and mitigation
 * [Compliance](https://github.com/cncf/tag-security/blob/main/community/working-groups/compliance/README.md)
 
-## Introduction 
+## Introduction
 
 Software supply chain attacks cost over $45 billion in 2023, with projections exceeding  more than $80 billion by 2026[^1].
 According to the Verizon DBIR 2024[^2], supply chain attacks grew 68% year-over-year.
@@ -49,7 +49,7 @@ The CNCF Technical Advisory Group (TAG) for Security maintains a detailed catalo
 
 This paper presents a holistic view of the software supply chain, providing information for both newcomers and experienced professionals in the field.
 
-### Non-goals 
+### Non-goals
 
 This paper does not detail tool-specific configurations, but it refers to existing documentation where it is reasonable and appropriate to ensure the reader has the most recent information.
 This paper does not provide instructions on assessing existing supply chains for security risk.
@@ -64,9 +64,9 @@ As a result, this paper may also refer to other projects, including both open so
 All such references, including references to existing documentation, are given as examples to the reader in an effort to provide real-world relatability.
 Readers should understand that these references are not an endorsement of any project or product by the CNCF or the paper’s authors and reviewers.
 
-## Table of Contents 
+## Table of Contents
 
-[Scope:](#scope:)
+[Scope](#scope)
 
 [Introduction](#introduction)
 
@@ -74,17 +74,17 @@ Readers should understand that these references are not an endorsement of any pr
 
 [Detailed Table of Contents](#detailed-table-of-contents)
 
-[Part 1: How to read this paper](#part-1:-how-to-read-this-paper)
+[Part 1: How to read this paper](#part-1-how-to-read-this-paper)
 
-[Audience/persona](#audience/persona)
+[Audience/persona](#audiencepersona)
 
-[Part 2](#part-2:-overview)
+[Part 2](#part-2-overview)
 
 [Securing the Software Supply Chain](#securing-the-software-supply-chain)
 
 [Concepts](#concepts)
 
-[Part 3: Software supply chain best practices reference](#part-3:-best-practices-reference)
+[Part 3: Software supply chain best practices reference](#part-3-best-practices-reference)
 
 [Software supply chain overview](#software-supply-chain-overview)
 
@@ -100,7 +100,7 @@ Readers should understand that these references are not an endorsement of any pr
 
 ## Detailed Table of Contents
 
-[Scope:](#scope:)
+[Scope:](#scope)
 
 >[Out of Scope](#out-of-scope)
 
@@ -113,32 +113,31 @@ Readers should understand that these references are not an endorsement of any pr
 
 [Detailed Table of Contents](#detailed-table-of-contents)
 
-[Part 1: How to read this paper](#part-1:-how-to-read-this-paper)
+[Part 1: How to read this paper](#part-1-how-to-read-this-paper)
 
-[Audience/persona](#audience/persona)
+[Audience/persona](#audiencepersona)
 
 >[Developer](#developer)
->[Producer’s Security Team](#producer’s-security-team)
->[Compliance-focus, big-picture (CISO)](#compliance-focused,-big-picture-\(ciso\))
+>[Producer’s Security Team](#producers-security-team)
+>[Compliance-focus, big-picture (CISO)](#compliance-focused-big-picture-ciso)
 >[Ops/platform folks setting up supply chain infrastructure](#ops-and-platform-teams-building-supply-chain-infrastructure)
->[Security team of consumer (verifier)](#security-team-of-consumer-\(verifier\))
->[Expert looking to discover more best practices](#heading=h.dm77ln9auip4)
+>[Security team of consumer (verifier)](#security-team-of-consumer-verifier)
+>[Expert looking to discover more best practices](#expert-looking-to-discover-more-best-practices)
 >[End User Concerns & Use Cases](#end-user-concerns-and-use-cases)
 
-[Part 2](#part-2:-overview)
+[Part 2](#part-2-overview)
 
 [Securing the Software Supply Chain](#securing-the-software-supply-chain)
 
 [Concepts](#concepts)
 
 >[Metadata](#metadata)
->[Vulnerability scanning](#vulnerability-scanning)
 >[Policy](#policy)
 >[Testing](#testing)
 >[Zero trust](#zero-trust)
 >[Root of trust](#root-of-trust)
 
-[Part 3: Software supply chain best practices reference](#part-3:-best-practices-reference)
+[Part 3: Software supply chain best practices reference](#part-3-best-practices-reference)
 
 [Software supply chain overview](#software-supply-chain-overview)
 
@@ -159,7 +158,7 @@ Readers should understand that these references are not an endorsement of any pr
 >[Verification:](#verification-2)
 >[Automation:](#automation-2)
 >[Controlled Environments:](#controlled-environments-1)
->[Secure Authentication/Access:](#secure-authentication-and-access:)
+>[Secure Authentication/Access:](#secure-authentication-and-access)
 
 [Artifacts](#artifacts)
 
@@ -241,7 +240,7 @@ Minimize the number of publishers to simplify the work of investigating publishe
 * **Recursive dependencies**:Ensure that all recursive dependencies are audited by either you or the vendor.
 If possible, minimize recursive dependencies and perform more scrutiny on each one.
 
-##### Protecting Source Code (see [Producer](#producer’s-security-team))
+##### Protecting Source Code (see [Producer](#producers-security-team))
 
 * **Signing Commits/Pushes**: Use cryptographic signing of commits and pushes to verify author identity and prevent unauthorized changes.
 * **Git Security**: Implement strong access controls, use two-factor authentication for repository access, and regularly review access logs.
@@ -277,7 +276,7 @@ To aid in these endeavors, a selection of tools and processes must be establishe
 In particular, the producer should:
 
 * Have secure coding best practices in place to ensure integrity and consistency across the code base.
-* Monitor dependencies used by their software, and respond to any incidents or vulnerabilities in these dependencies (see [SBOM](#sbom), [VEX](#require-sboms-and-vex-statements-from-third-party-suppliers) and [metrics](#vulnerability-scanning)).
+* Monitor dependencies used by their software, and respond to any incidents or vulnerabilities in these dependencies (see [SBOM](#sbom) and [VEX](#require-sboms-and-vex-statements-from-thirdparty-suppliers)).
 * Provide a template or stylesheet compatible with developers' preferred IDEs, containing the best coding guidelines.
 * Use a vulnerability risk assessment solution to scan the code, packages, and third party dependencies.
 This assessment should cross-reference the CVSS database with databases such as Nessus to identify vulnerabilities and to discover the latest packages or implement fixes.
@@ -374,7 +373,7 @@ Download software from trustworthy places, update your software regularly, and f
 This won’t protect you from a lot of sophisticated software supply chain attacks, but it helps prevent the most common ones.
 Having more end users companies fund and contribute to the projects they use also helps here.
 
-##### Protecting Ingestion (see [consumer](#security-team-of-consumer-\(verifier\)))
+##### Protecting Ingestion (see [consumer](#security-team-of-consumer-verifier))
 
 * **Publisher Trust**: Use software trusted sources.
 * **Verify Security**: Ingest security metadata like [SBOMs](#sbom), in-toto [attestations](#attestations) like SLSA, etc.
@@ -551,7 +550,7 @@ The stages are:
 * [Artifacts](#artifacts)
 * [Deployments and Distribution](#deployments-and-distribution)
 
-![][image1]
+![SLSA diagram showing an example build pipeline with producer, source, build, distribution, depenencies, and comsumer, with potential threats at and between each stage.][image1]
 To illustrate how these stages fit together, consider the above diagram from the SLSA project.
 This illustration of the supply chain threats highlights all the areas where something can go wrong.
 This can be either a malicious attack, or it could be benign but still causing vulnerabilities.
@@ -715,7 +714,7 @@ For software supply chains, the quality of the dependencies, direct or transitiv
 Ensuring dependencies are retrieved from trusted sources and have not been tampered with is a key part of the software supply chain.
 Depending upon the required risk profile, it may be appropriate to identify trusted repositories and rely directly upon them, in addition to disabling access to all other repositories.
 
-###### Second and Third-Party Risk Management
+### Second and Third-Party Risk Management
 
 When making determinations on accepting, limiting, or denying the use of second- and third-party software, organizations should use risk management processes to understand the risk presented by these materials.
 Not all software an organization may intend to use has the same level of support behind it, which may reflect significant differences in the overall level of quality, security, or responsiveness to issues across dependencies.
@@ -751,7 +750,7 @@ All third party artifacts, open source libraries, and any other dependencies sho
 Any software ingested should be scanned using Software Composition Analysis (SCA) tools to detect whether any vulnerable software is present in the final product.
 For even higher confidence, perform penetration and fuzz testing to ensure any third party artifacts are resistant to common attacks and no basic security flaws are present.
 
-####### *Require SBOMs and VEX statements from third-party suppliers*
+####### Require SBOMs and VEX statements from third-party suppliers
 
 Where possible, software vendors should be required to provide [Software Bills of Materials](https://www.ntia.gov/SBOM) (SBOMs) containing the explicit details of the software and versions used within the supplied product and Vulnerability Exploitability eXchange (VEX) statements that indicate whether specific vulnerabilities affect the software.
 This provides a clear and direct link to the dependencies, removing doubt on the version of dependencies that are used and thus removing the requirement of using heuristics via SCA tools.
@@ -779,7 +778,7 @@ However, because this process is time consuming and resource intensive, it may o
 ####### *Define trusted package managers, repositories, and libraries*
 
 If building from source is not a viable option for every component, components from a trusted supplier which regularly maintains and updates those binary components in a backwards compatible way should be used.
-They should be vetted by using [metrics](#vulnerability-scanning) and other [testing methods](#testing).
+They should be vetted by using metrics and other [testing methods](#testing).
 The supplier should publicly document their processes, and have a security incident response process with well defined SLAs.
 
 While there are public repositories and package managers that sign packages and provide the means to verify those signatures, highly regulated environments should minimize ingestion from public repositories, and try to rely on verification by build [reproducibility](https://salsa.debian.org/reproducible-builds/debian-rebuilder-setup).
@@ -816,7 +815,7 @@ While not directly a security concern, licensing obligations are an important co
 The Linux Foundation maintains the [Open Compliance Program](https://compliance.linuxfoundation.org/references/tools/) which provides several tools to ensure released software meets legal and regulatory requirements.
 Licensing metadata should be recorded during the build process and distributed within the artifact’s SBOM.
 
-####### *Run software composition analysis on ingested software*
+####### Run software composition analysis on ingested software
 
 At a minimum, a Software Composition Analysis (SCA) tool should be run against any dependencies used within the software being built.
 The SCA tool will use heuristics to identify the direct and transitive dependencies, and can also verify the contents of the SBOM.
@@ -992,7 +991,7 @@ For use cases where future forensics might need to be performed, it is prudent t
 
 ### Controlled Environments
 
-#### Ensure Build Pipeline has minimal network connectivity.
+#### Ensure Build Pipeline has minimal network connectivity
 
 The build pipeline should have no network connectivity other than to connect to the trusted sources of source code, the dependency repository and code signing infrastructure.The build workers will require a secure shared storage capability to pass data between each worker.
 This prevents the workers from repeatedly retrieving remote data for the build and thus improves performance.
@@ -1022,7 +1021,7 @@ The output artifacts of builds require similar security considerations as the in
 The output artifacts should be written to separate storage from the inputs.
 A process separate from the worker should then upload the artifacts to the appropriate repository for downstream consumption.
 
-### Secure Authentication and Access:
+### Secure Authentication and Access
 
 #### Only allow pipeline modifications through "pipeline as code"
 
@@ -1184,6 +1183,7 @@ Further, all verification should be done before artifacts are copied into the ai
 With this attestation, the verifier can ensure that the artifacts were valid at the time of ingestion.
 
 ##### Admission controller/deployment gate
+
 All software supply chain metadata should be verified at the deployment gate, for example by a Kubernetes admission controller.
 By performing verification at this stage, any mistakes or vulnerabilities in the software supply chain can be caught and addressed early in the process.
 Verification at the deployment gate can supplement, but not replace verification at the end of the pipeline.
@@ -1237,7 +1237,7 @@ Some Assumptions:
 
 [^3]:  IDE’s in the cloud are gaining popularity, so this might change in the future.
 
-[^4]:  https://www.cisa.gov/news-events/news/4-things-you-can-do-keep-yourself-cyber-safe
+[^4]:  [CISA report](https://www.cisa.gov/news-events/news/4-things-you-can-do-keep-yourself-cyber-safe)
 
 [^5]:  Direct dependencies are explicitly defined by a developer, but transitive dependencies are defined upstream and often not known to the developer.
 For a deeper explanation see [Direct Dependencies vs.
