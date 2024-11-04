@@ -686,7 +686,8 @@ MFA provides an additional layer of security, normally by requiring a soft or ph
 #### Use SSH keys to provide developers access to upstream source code repositories
 
 Developers contributing source code require a non-interactive way to access source code hosted repositories from their development tools.
-Instead of using passwords which are prone to common hacking techniques like brute force, password guessing and password spraying, SSH keys[27](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-27-4616ccb4d6ae4a3472a432b18926f014) or SSH certificates[28](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-28-4616ccb4d6ae4a3472a432b18926f014) should be used.
+Instead of using passwords which are prone to common hacking techniques like brute force, password guessing and password spraying,
+SSH keys[27](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-27-4616ccb4d6ae4a3472a432b18926f014) or SSH certificates[28](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-28-4616ccb4d6ae4a3472a432b18926f014) should be used.
 Agents in CI/CD pipelines should also be configured to access repositories using SSH Keys.
 All modern platforms like Github, Gitlab, BitBucket provide guidance on configuring access using SSH keys[29](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fn-29-4616ccb4d6ae4a3472a432b18926f014), including rotation and revocation of these keys.
 
