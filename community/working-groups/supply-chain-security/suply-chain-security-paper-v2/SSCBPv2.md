@@ -336,7 +336,7 @@ In some cases, upstream producers may not follow best practices, and may not pro
 When this happens, consumers can:
 
 * Mitigate this risk by either auditing software that is consumed or building the software in-house.
-* Engage with upstream producers to help improve their supply chain practices
+* Engage with upstream producers to help improve their supply chain practices.
 * Perform [Software Composition Analysis (SCA)](#run-software-composition-analysis-on-ingested-software) on consumed packages.
 
 ### End User Concerns and Use Cases
@@ -348,7 +348,7 @@ For use cases where software is being used to develop more software look, refer 
 #### Where do I start?
 
 For the end user consumer it might seem like security is not something you should have to deal with.
-It’s the problem of those providing me with software.
+You may thing that it’s the problem of those providing the software.
 This is mostly true when you buy software from vendors.
 There’s often contracts or agreements in place that if a vulnerability comes up in vendor provided software it’s the responsibility of the vendor to report to end users and fix that vulnerability.
 This isn’t true for open source software.
@@ -374,7 +374,7 @@ Having more end users companies fund and contribute to the projects they use als
 
 ##### Protecting Ingestion (see [consumer](#security-team-of-consumer-verifier))
 
-* **Publisher Trust**: Use software trusted sources.
+* **Publisher Trust**: Use software from trusted sources.
 * **Verify Security**: Ingest security metadata like [SBOMs](#sbom), in-toto [attestations](#attestations) like SLSA, etc.
 and verify that it fits your security needs.
 * **Secure Supply Chain Consumption Framework ([S2C2F](https://github.com/ossf/s2c2f)):** Follow best practices around consuming open source software.
@@ -493,7 +493,6 @@ Tools like TUF and Archivista can be used for such distribution (see [Deployment
 * **Verification:** Attestations must be verified against the supply chain policy.
 Verifiers can check for inconsistencies between the attestations of what occurred in the software supply chain, and what the policy requires from it.
 Such verification ensures that the supply chain policy is adhered to.
-
 **Storage:** Attestations should be stored after verification for future use.
 If a vulnerability is discovered later, attestations can be used as an audit trail to determine where in the supply chain the vulnerability was introduced.
 Storage mechanisms include Archivista, OCI, and [GitHub](https://github.blog/changelog/2024-05-02-artifact-attestations-public-beta/).
@@ -734,7 +733,7 @@ VEX documents give attestations from software providers about whether or not a p
 For example, a CVE in a software’s source code may not be present in the shipped binaries because the vulnerability is conditioned on a compile-time option that wasn’t used.
 
 These specifications offer a standardized approach to evaluating software packages and their dependencies, facilitating clear and consistent decision making during evaluation.
-The integration of the frameworks into security checks and gates throughout the S3C helps reduce risk and improve compliance with regulatory requirements.
+The integration of the frameworks into security checks and gates throughout the software supply chain helps reduce risk and improve compliance with regulatory requirements.
 
 Additionally, organizations should always monitor changes to second and third party software and services.
 Software and service vendors should list any changes to their Service Level Agreement (SLA) for the service or changes to the software (for example, maintaining a changelog).
