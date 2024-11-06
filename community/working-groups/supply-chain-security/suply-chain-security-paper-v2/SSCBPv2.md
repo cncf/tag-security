@@ -431,7 +431,7 @@ A software supply chain is made up of many people and machines, and only by work
 
 ## Concepts
 
-Before providing detailed security best practices for each of  the steps in the software supply chain, some tools and concepts that are relevant throughout the software supply chain are discussed.
+Before providing detailed security best practices for each of the steps in the software supply chain, some tools and concepts that are relevant throughout the software supply chain are discussed.
 These concepts come up in many of the stages of the supply chain, so they are described here for brevity.
 
 ### Metadata
@@ -509,7 +509,7 @@ More detail about software supply chain policy, including its evaluation and enf
 
 Properly testing and verifying software is a crucial aspect of ensuring not only its functionality, but also its security.
 Testing should be considered and attested to at each step of the delivery lifecycle.
-Test results should be captured as signed, verifiable attestations and which are stored so in a metadata store that it can be evaluated against supply chain policy.
+Test results should be captured as signed, verifiable attestations and which are stored in a metadata store so that it can be evaluated against supply chain policy.
 Software supply chain policy should list any expected tests to ensure they are run before deployment.
 
 ### Zero Trust
