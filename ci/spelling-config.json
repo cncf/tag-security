@@ -8,6 +8,8 @@
     "words": [
         "ABAC",
         "addfetnetgrent",
+        "AEST",
+        "Anca",
         "Aniszczyk",
         "antifragile",
         "APAC",
@@ -56,7 +58,9 @@
         "exploitability",
         "Expressibility",
         "Fianu",
+        "Ficcaglia",
         "FIPS",
+        "Flannery",
         "Flibble",
         "frontmatter",
         "Gamal",
@@ -66,8 +70,8 @@
         "GUAC",
         "helm",
         "HIPAA",
-        "HITRUST",
         "Hirschberg",
+        "HITRUST",
         "hotspots",
         "hyperconverged",
         "Inclusivity",
@@ -80,6 +84,7 @@
         "kata",
         "KETRMAX",
         "keycloak",
+        "Kjell",
         "Kube",
         "kubecon",
         "Kubernetes",
@@ -175,6 +180,7 @@
         "Virtool",
         "Wolt",
         "Yubi",
-        "Zalman"
+        "Zalman",
+        "Zeolla"
     ]
 }

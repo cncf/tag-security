@@ -17,6 +17,10 @@ The scope of this project includes:
 - Creation of best practice guidelines and documentation.
 - Potential development of tooling or integration patterns for common CI/CD platforms.
 
+## WIP Documentation
+
+- **Working Draft:** [Google Docs](https://docs.google.com/document/d/14pV0ooE40yuo0u_CH-OeWS8lZgMBfxo8F38QRIaKUXY)
+
 ## Meeting Information
 
 - **Meeting:** Every 2 weeks on Tuesday at 2:00 PM Pacific Time (US and Canada) ([Calendar Invite](https://zoom.us/meeting/tJUtduGoqz4qGddkUvgs3jVjzUEY6Y8MEcT6/ics?icsToken=98tyKuCprjoiGtGQsBqERowcAoj4WfTwmCVfjadZlyrzBDMAaDX8LNdnC-RGSPX1))
