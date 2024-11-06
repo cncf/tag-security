@@ -493,7 +493,7 @@ Tools like TUF and Archivista can be used for such distribution (see [Deployment
 * **Verification:** Attestations must be verified against the supply chain policy.
 Verifiers can check for inconsistencies between the attestations of what occurred in the software supply chain, and what the policy requires from it.
 Such verification ensures that the supply chain policy is adhered to.
-**Storage:** Attestations should be stored after verification for future use.
+* **Storage:** Attestations should be stored after verification for future use.
 If a vulnerability is discovered later, attestations can be used as an audit trail to determine where in the supply chain the vulnerability was introduced.
 Storage mechanisms include Archivista, OCI, and [GitHub](https://github.blog/changelog/2024-05-02-artifact-attestations-public-beta/).
 
