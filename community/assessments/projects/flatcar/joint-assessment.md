@@ -44,7 +44,7 @@ Compromising the update server would allow an attacker to “un-publish” a new
     <br/>2. Maintainers: That's a good catch, I've added 1.c. to discuss repository settings.
 11. SSH credential password enforcement
 12. 2FA for code repositories, build infrastructure, and VPN access
-13. Usage of soft/hard tokens as opposed to SMS 2FA as per [CNCF_SSCP_v1.pdf](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)
+13. Usage of soft/hard tokens as opposed to SMS 2FA as per [CNCF_SSCP_v1.pdf](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)
 14. Consider preventing any outbound internet access to the build infrastructure, to avoid command and control for hostile actors
 
 
