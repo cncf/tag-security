@@ -26,7 +26,7 @@ Reviewing industry and governmental standards (e.g., NIST, PCI, HIPAA) from a cl
 ## Meeting Information
 
 - **Weekly Meetings:** 10:00 AM Eastern Time (US and Canada)
-- **Meeting Link:** [Zoom Meeting](https://zoom.us/j/92729235315?pwd=ZFIxU3RSanlVODh4a1g2SFdJOGpoZz09)
+- **Meeting Link:** [Zoom Meeting](https://zoom-lfx.platform.linuxfoundation.org/meeting/94852354733?password=c99601ab-0a5a-4ea9-98e3-af9d12c59547)
 - **Meeting Notes:** [Meeting Notes Link](https://docs.google.com/document/d/1z9xvt-Z97j4CtEH1-nR9sMWul7jQkUi_fNY7BdMPgxM/edit#heading=h.88owgl3gm8w4)
 - **Calendar Invite:** See [CNCF calendar](https://calendar.google.com/calendar/u/0/embed?src=0b8u5el8ta4s93t2cm72tuvhhk@group.calendar.google.com&ctz=America/Los_Angeles) for invite
 
