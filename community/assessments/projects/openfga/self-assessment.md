@@ -518,6 +518,7 @@ All OpenFGA security issues can be found on the [Github advisories page](https:/
 
 ### Case Studies
 
+<!-- cSpell:ignore Sourcegraph -->
 The [list](https://github.com/openfga/community/blob/main/ADOPTERS.md) of projects that utilize OpenFGA include Okta FGA, Canonical (Juju & LXD), Docker, Wolt, Sourcegraph, Bump, Italarchivi, Read AI, Virtool, Configu, Fianu Labs, ExcID, Twintag, Mapped, Procure Ai, and many more.
 
 ### Related Projects/Vendors
