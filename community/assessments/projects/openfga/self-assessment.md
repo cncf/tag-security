@@ -156,7 +156,7 @@ Every time a server endpoint is invoked, OpenFGA validates that:
 
 #### Calling the Authorization Query endpoints
 
-When the [/check](https://openfga.dev/api/service#/Relationship%20Queries/Check), [/list-objects](https://openfga.dev/api/service#/Relationship%20Queries/ListObjects)  and [/list-users](https://openfga.dev/api/service#/Relationship%20Queries/ListUsers) endpoints are called, OpenFGA limits the number of simultaneous paths explored and enforces depth limitations on the graph traversal.
+When the [/check](https://openfga.dev/api/service#/Relationship%20Queries/Check), [/list-objects](https://openfga.dev/api/service#/Relationship%20Queries/ListObjects) and [/list-users](https://openfga.dev/api/service#/Relationship%20Queries/ListUsers) endpoints are called, OpenFGA limits the number of simultaneous paths explored and enforces depth limitations on the graph traversal.
 
 To protect against DoS attacks, OpenFGA restricts both the number of simultaneous paths explored and the depth of paths traversed in the graph.
 
