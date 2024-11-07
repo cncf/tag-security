@@ -526,4 +526,4 @@ The list of related projects is available as a [community resource](https://gith
 
 ### Third Party Security Reviews
 
-[Trail Of Bits](https://www.trailofbits.com/) published a [Comparative Language Security Assessment](https://github.com/trailofbits/publications/blob/master/reports/Policy_Language_Security_Comparison_and_TM.pdf) that evaluates Cedar, Rego and OpenFGA. 
+[Trail Of Bits](https://www.trailofbits.com/) published a [Comparative Language Security Assessment](https://github.com/trailofbits/publications/blob/master/reports/Policy_Language_Security_Comparison_and_TM.pdf) that evaluates Cedar, Rego and OpenFGA.
