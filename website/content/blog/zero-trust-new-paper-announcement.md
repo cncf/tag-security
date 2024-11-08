@@ -10,8 +10,8 @@ until the next release. It roughly presumed that access policy wouldn't be viola
 breached, and a vulnerable pod wouldn't be exploited. Up until now…
 
 After reading the TAG Security Zero Trust white paper, my understanding of this philosophy has radically changed,
-and my previous view shifted into something I'd call "Limited Trust." For some, the CNCF paper introduces, and for
-others reminds, of a notion of total lack of confidence, regardless of the request's source. It enforces
+and my previous view has shifted into something closer to _Limited_ Trust. The emphasis I took away 
+was on the notion of total lack of confidence, regardless of the request's source. It enforces
 a "trust nothing" policy, relying on metrics that are constantly evaluated and adjusted according to the current context.
 Stolen credentials of a benign user or an exploited Kubernetes instance will no longer be a foothold for significant damage,
 as non-standard activity is expected to be quickly identified and neutralised. This is the key takeaway from the document.
