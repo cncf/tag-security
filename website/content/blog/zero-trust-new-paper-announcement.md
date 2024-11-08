@@ -1,5 +1,5 @@
 ---
-title:  "An updated CNCF Zero Trust White Paper is looming"
+title:  "A reader's perspective on the latest Zero Trust White Paper"
 date:   2024-11-07 12:00:00 +0000
 author: Hubert Siwik
 ---
