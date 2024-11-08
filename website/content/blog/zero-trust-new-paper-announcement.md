@@ -9,7 +9,7 @@ until now, seeing it as an approach that blindly assumed that security, once gra
 until the next release. It roughly presumed that access policy wouldn't be violated, the network perimeter wouldn't be
 breached, and a vulnerable pod wouldn't be exploited. Up until now…
 
-After reading the Zero Trust paper by the CNCF security team, my understanding of this philosophy has radically changed,
+After reading the TAG Security Zero Trust white paper, my understanding of this philosophy has radically changed,
 and my previous view shifted into something I'd call "Limited Trust." For some, the CNCF paper introduces, and for
 others reminds, of a notion of total lack of confidence, regardless of the request's source. It enforces
 a "trust nothing" policy, relying on metrics that are constantly evaluated and adjusted according to the current context.
