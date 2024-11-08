@@ -4,5 +4,8 @@
         "code_blocks": false,
         "tables": false,
         "line_length": 512
+    },
+    "MD024": {
+        "siblings_only": true
     }
 }

@@ -6,7 +6,6 @@
 
 - [Meeting Information](#meeting-information)
 - [Slack Information](#communications)
-- [Members](#members)
 - [Working Groups](#working-groups)
 
 ## About Us
@@ -56,6 +55,7 @@ Join our open discussions and share news:
 
 - **Americas**: Weekly on Wednesdays at 10 am (UTC-7). [Zoom link](https://zoom-lfx.platform.linuxfoundation.org/meeting/92340369657?password=76e24ffd-69f2-41a8-8aed-13796805225d), Meeting ID: 923 4036 9657.
 - **EMEA**: Bi-weekly on Wednesdays at 1 pm UTC+0 (adjusts for daylight saving). [Zoom link](https://zoom-lfx.platform.linuxfoundation.org/meeting/98348738138?password=70e6a945-563a-491f-8485-ecf7394ec13a), Meeting ID: 983 4873 8138.
+- **APAC**: Bi-weekly on Wednesdays at 11 am (UTC+9). [Zoom link](https://zoom-lfx.platform.linuxfoundation.org/meeting/94315508827?password=0d7eaab8-a217-4c1b-b0a5-27ceded5743f), Meeting ID: 943 1550 8827.
 
 Check your local timezone [here](https://time.is/). Meetings are listed on the [CNCF calendar](https://www.cncf.io/calendar/) and the [TAG Security Calendar](https://calendar.google.com/calendar/u/0?cid=MGI4dTVlbDh0YTRzOTN0MmNtNzJ0dXZoaGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ).
 
@@ -69,10 +69,6 @@ If you are new to the group, we encourage you to check out our
 ## Related groups
 
 Explore groups affiliated with or relevant to Security TAG [here](governance/related-groups/README.md)
-
-## Members
-
-<!-- cSpell:disable -->
 
 ## Leadership
 
@@ -88,14 +84,15 @@ The TAG's working groups focus on specific areas and organize most community act
 These groups facilitate discussions, engagement, and publications with key stakeholders, operating differently based on their needs.
 Each group, led by a responsible leader, reaches consensus on issues and manages logistics. All materials, such as reports, white papers, documents, and reference architectures, are in the repository's /community directory.
 
-| Project | Leads |
-|---------------------------------|---------------------------------------------|
-| [Automated Governance](/community/working-groups/automated-governance/README.md) | Matthew Flannery, Brandt Keller |
-| [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres |
-| [Compliance](/community/working-groups/compliance/README.md) | Anca Sailer, Robert Ficcaglia |
-| [Controls](/community/working-groups/controls/README.md) | Jon Zeolla |
-| [Security Reviews](/community/assessments/README.md) | Justin Cappos, Eddie Knight|
-| [Software Supply Chain](/community/working-groups/supply-chain-security/README.md) | Marina Moore, Michael Liebermann, John Kjell |
+| Project | Leads | STAG Rep |
+|---------------------------------|---------------------------------------------|---------------------------------|
+| [Automated Governance](/community/working-groups/automated-governance/README.md) | Brandt Keller | Matthew Flannery |
+| [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres | Marina Moore |
+| [Commons](/community/working-groups/commons/README.md) | Eddie Knight | Marco De Benedictis |
+| [Compliance](/community/working-groups/compliance/README.md) | Anca Sailer, Robert Ficcaglia | Brandt Keller |
+| [Controls](/community/working-groups/controls/README.md) | Jon Zeolla | Brandt Keller |
+| [Security Reviews](/community/assessments/README.md) | Justin Cappos | Eddie Knight |
+| [Software Supply Chain](/community/working-groups/supply-chain-security/README.md) | Michael Lieberman, John Kjell | Marina Moore |
 
 ## Additional information
 
