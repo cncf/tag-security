@@ -14,6 +14,6 @@ and my previous view has shifted into something closer to _Limited_ Trust. The e
 was on the notion of total lack of confidence, regardless of the request's source. It enforces
 a "trust nothing" policy, relying on metrics that are constantly evaluated and adjusted according to the current context.
 Stolen credentials of a benign user or an exploited Kubernetes instance will no longer be a foothold for significant damage,
-as non-standard activity is expected to be quickly identified and neutralised. This is the key takeaway from the document.
+as non-standard activity is expected to be quickly identified and neutralised.
 
 To learn how to actually implement this, immerse yourself in the reading.
