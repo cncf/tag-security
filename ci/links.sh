@@ -6,7 +6,7 @@ shopt -s globstar
 FAILURE=0
 
 git config --global --add safe.directory /usr/src/app
-npm install -g markdown-link-check
+npm install -g markdown-link-check@3.12.2
 git fetch origin main:main
 # To run this on the entire repo, replace the following command with `$(find ./ -type f | grep .md)`
 for file_name in $(git diff --name-only $HEAD main -- ./**/*.md); do

@@ -348,7 +348,7 @@ For use cases where software is being used to develop more software look, refer 
 #### Where do I start?
 
 For the end user consumer it might seem like security is not something you should have to deal with.
-You may thing that it’s the problem of those providing the software.
+You may think that it’s the problem of those providing the software.
 This is mostly true when you buy software from vendors.
 There’s often contracts or agreements in place that if a vulnerability comes up in vendor provided software it’s the responsibility of the vendor to report to end users and fix that vulnerability.
 This isn’t true for open source software.
