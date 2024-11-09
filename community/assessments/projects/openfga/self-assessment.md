@@ -47,8 +47,6 @@ This assessment was contributed to by community members as part of the [Security
 | -- | -- |
 | Security Policy | [OpenFGA Security Policy](https://github.com/openfga/openfga/security/policy) |
 | Security Insights | [OpenFGA Security Insights](https://github.com/openfga/openfga/blob/main/SECURITY-INSIGHTS.yml) |
-| Security risks | [OpenFGA Security risks](https://github.com/orgs/openfga/security/risk) |
-| -- | -- |
 
 ## Overview
 
@@ -109,6 +107,8 @@ With this information, OpenFGA can be queried in different ways:
 
 - Using the [/list-objects](https://openfga.dev/api/service#/Relationship%20Queries/ListObjects) endpoint to ask questions like "What are all the documents for which `user:alice` is a `viewer`. With the data provided above, OpenFGA will return `{object_ids { "document:readme" }`
 
+- Using the [/list-users](https://openfga.dev/api/service#/Relationship%20Queries/ListUsers) endpoint to ask questions like "What are all the users that are a `viewer` of the `document:readme` object". With the data provided above, OpenFGA will return `{users { "user:alice" }`.
+
 ### Actors
 
 The actors within the system are the OpenFGA server, Database server, and the CLI/API clients.
@@ -155,7 +155,7 @@ Every time a server endpoint is invoked, OpenFGA validates that:
 
 #### Calling the Authorization Query endpoints
 
-When the [/check](https://openfga.dev/api/service#/Relationship%20Queries/Check) and [/list-objects](https://openfga.dev/api/service#/Relationship%20Queries/ListObjects) endpoints are called, OpenFGA limits the number of simultaneous paths explored and enforces depth limitations on the graph traversal.
+When the [/check](https://openfga.dev/api/service#/Relationship%20Queries/Check), [/list-objects](https://openfga.dev/api/service#/Relationship%20Queries/ListObjects) and [/list-users](https://openfga.dev/api/service#/Relationship%20Queries/ListUsers) endpoints are called, OpenFGA limits the number of simultaneous paths explored and enforces depth limitations on the graph traversal.
 
 To protect against DoS attacks, OpenFGA restricts both the number of simultaneous paths explored and the depth of paths traversed in the graph.
 
@@ -321,6 +321,7 @@ actions:
     relationships.queries:
       - check
       - expand
+      - list-users
       - list-objects
       - streamed-list-objects
 
@@ -452,11 +453,15 @@ By refraining from including PII in relationship tuples, users can simplify thei
 | - | - |
 | Build |  [![main](https://github.com/openfga/openfga/actions/workflows/main.yaml/badge.svg)](https://github.com/openfga/openfga/actions/workflows/main.yaml) [![pr](https://github.com/openfga/openfga/actions/workflows/pull_request.yaml/badge.svg)](https://github.com/openfga/openfga/actions/workflows/pull_request.yaml)  [![codecov](https://codecov.io/gh/openfga/openfga/branch/main/graph/badge.svg)](https://codecov.io/gh/openfga/openfga) |
 | Release| [![release.yaml](https://github.com/openfga/openfga/actions/workflows/release.yaml/badge.svg)](https://github.com/openfga/openfga/actions/workflows/release.yaml) |
-| Scanning | [![CodeQL](https://github.com/openfga/openfga/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/openfga/openfga/actions/workflows/github-code-scanning/codeql) [![Semgrep](https://github.com/openfga/openfga/actions/workflows/semgrep.yaml/badge.svg)](https://github.com/openfga/openfga/actions/workflows/semgrep.yaml) [![Snyk](https://snyk.io/test/github/openfga/openfga/main/badge.svg)](https://snyk.io/test/github/openfga/openfga)  |
+| Scanning | [![CodeQL](https://github.com/openfga/openfga/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/openfga/openfga/actions/workflows/github-code-scanning/codeql) [![Semgrep](https://github.com/openfga/openfga/actions/workflows/semgrep.yaml/badge.svg)](https://github.com/openfga/openfga/actions/workflows/semgrep.yaml) ![Snyk](https://snyk.io/test/github/openfga/openfga/main/badge.svg)  |
 | License| [![FOSSA](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fopenfga%2Fopenfga.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fopenfga%2Fopenfga?ref=badge_shield&issueType=license) [![FOSSA](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fopenfga%2Fopenfga.svg?type=shield&issueType=security)](https://app.fossa.com/projects/git%2Bgithub.com%2Fopenfga%2Fopenfga?ref=badge_shield&issueType=security)|
 | OpenSSF | [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/6374/badge)](https://www.bestpractices.dev/projects/6374) [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/openfga/openfga/badge)](https://securityscorecards.dev/viewer/?uri=github.com/openfga/openfga) |
 | CLOMonitor | [![openfga](https://img.shields.io/endpoint?url=https://clomonitor.io/api/projects/cncf/openfga/badge)](https://clomonitor.io/projects/cncf/openfga) |
 | | |
+
+### Release Process
+
+The release process is documented [here](https://github.com/openfga/openfga/blob/main/RELEASES.md).
 
 ### Communication Channels
 
@@ -512,8 +517,15 @@ All OpenFGA security issues can be found on the [Github advisories page](https:/
 
 ### Case Studies
 
-The [list](https://github.com/openfga/community/blob/main/ADOPTERS.md) of projects that utilize OpenFGA include Okta FGA, Twintag, Mapped, Procure Ai,Canonical (Juju & LFX), Wolt, Italarchivi, Read AI, Virtool, Configu, Fianu Labs, and ExcID.
+<!-- cSpell:ignore Sourcegraph -->
+The [list](https://github.com/openfga/community/blob/main/ADOPTERS.md) of projects that utilize OpenFGA include Okta FGA, Canonical (Juju & LXD), Docker, Wolt, Sourcegraph, Bump, Italarchivi, Read AI, Virtool, Configu, Fianu Labs, ExcID, Twintag, Mapped, Procure Ai, and many more.
 
 ### Related Projects/Vendors
 
 The list of related projects is available as a [community resource](https://github.com/openfga/community/blob/main/related-projects.md)
+
+### Third Party Security Reviews
+
+<!-- markdown-link-check-disable -->
+[Trail Of Bits](https://www.trailofbits.com/) published a [Comparative Language Security Assessment](https://github.com/trailofbits/publications/blob/master/reports/Policy_Language_Security_Comparison_and_TM.pdf) that evaluates Cedar, Rego and OpenFGA.
+<!-- markdown-link-check-enable -->
