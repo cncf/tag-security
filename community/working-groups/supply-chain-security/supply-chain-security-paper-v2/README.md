@@ -13,4 +13,4 @@ Larger updates may be proposed, but may be pushed to a future version of the pap
 
 ## Markdown
 
-The [markdown](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/suply-chain-security-paper-v2/SSCBPv2.md) file is available in the repository.
+The [markdown](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/supply-chain-security-paper-v2/SSCBPv2.md) file is available in the repository.
