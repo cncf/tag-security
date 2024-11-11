@@ -44,7 +44,7 @@ A table at the top for quick reference information, later used for indexing.
 
 |||
 | -- | -- |
-| Assessment Stage | Incomplete |
+| Assessment Stage | Complete |
 | Software | <https://github.com/lima-vm/lima> |
 | Security Provider | No |
 | Languages | Go  |
