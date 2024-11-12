@@ -21,4 +21,4 @@ To build on the success of the original white paper, and to reflect the maturing
 The updates to the paper include an exploration of the different personas that may be coming to the paper looking to learn about particular aspects of software supply chain security.
 The new version also includes updates to the best practice recommendations to reflect the current state of the ecosystem.
 
-To learn more, we welcome you to read the [paper](https://github.com/cncf/tag-security/blob/main/community/working-groups/supply-chain-security/suply-chain-security-paper-v2/SSCBPv2.md)!
+To learn more, we welcome you to read the [paper](https://github.com/cncf/tag-security/blob/93450ff2a67d63562d56fdc9f336965bf1615863/community/working-groups/supply-chain-security/supply-chain-security-paper-v2/SSCBPv2.md)!
