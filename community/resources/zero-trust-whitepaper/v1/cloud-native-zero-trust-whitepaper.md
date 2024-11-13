@@ -56,7 +56,7 @@ Project Lead: Mariusz Sabath, David Hadas
 
 # Abstract
 
-Contrary to what the name might suggest, the real world application of “Zero Trust” is far more nuanced than simply *trusting nothing*. The Zero Trust defense strategy assumes that the internal network is not to be trusted. This contrasts with a perimeter-based defense, which is designed to construct a trustworthy internal network. Instead, we can introduce measures to evaluate trustworthiness, then use such evaluations to control the network communications and its connected devices.
+Contrary to what the name might suggest, the real world application of “Zero Trust” is far more nuanced than simply *trusting nothing*. The Zero Trust defense strategy considers an internal network and its components to potentially be compromised and therefore must have there trustworthiness asserted at every connection. Without this assertion and verification, it cannot be trusted. This contrasts with a perimeter-based defense, which is designed to provide sufficient protections at the boundary such that the internal network is implicitly secure because nothing could possibly get in from the outside that is unauthorized. Zero Trust principles allow organizations and technologists to introduce measures that evaluate and verify trustworthiness, enabling the output of these evaluations to direct and enforce communications and activity within a network by the connected devices.
 
 While many of the well-worn concepts behind Zero Trust apply to *any* system, there remains a gap with regards to discussing Zero Trust from a Cloud Native perspective. This document seeks to codify the philosophy alongside an ideal design for implementing it in a Cloud Native system.
 
