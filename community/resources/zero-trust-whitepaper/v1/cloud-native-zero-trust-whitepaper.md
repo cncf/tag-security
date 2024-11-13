@@ -8,17 +8,17 @@
 
 TAG Security issue: [https://github.com/cncf/tag-security/issues/950](https://github.com/cncf/tag-security/issues/950)
 
-STAG Representative - Eddie Knight
-
-Project Lead: Mariusz Sabath, David Hadas
-
-**Version**: 1.0 **Created**: 30 Nov 2024
-
-**Status**: WIP | **In Review** | Approved
+**Version**: 1.0 **Created**: 30 Nov 2024 **Status**: WIP | **In Review** | Approved
 
 **Last Reviewed**: DD MMM 2024, **PDF Published**: DD MMM 2024 **Release Version**: 1.0
 
-**Final PDF Approvers** [] @name1 [] @name1
+**TAG Sponsor Approver** [X] @eddie-knight
+**TOC Liaison Approvers** [] @TheFoxAtWork [] $GITHUBHANDLE
+
+* **Project Lead**: @mrsabath, @davidhadas
+* **Contributors** (in alphabetical order): Aradhna Chetal, Asad Faizi, David Hadas, Eddie Knight, Kishore Nadendla, Mariusz Sabath, Philip Griffiths, Victor Lu
+* **Reviewers**: Pushkar Joglekar, Nate Waddington, Andrés Vega, Valerie Silverthorne, Yoshiyuki Tabata
+
 <!-- cspell:enable -->
 
 ## Table of Contents
