@@ -1,10 +1,11 @@
 # WasmEdge Security Self-assessment
+<!-- cSpell:ignore Ying Shen Hsieh ibmibmibm hydai wasmedge -->
 
 Authors: dm4(@dm4)
 
 Security reviewers: dm4(@dm4), Yi-Ying He(@q82419), Shen-Ta Hsieh(@ibmibmibm), Hung-Ying Tai(@hydai)
 
-### Table of contents
+## Table of contents
 
 * [Metadata](#metadata)
   * [Security links](#security-links)
@@ -19,29 +20,28 @@ Security reviewers: dm4(@dm4), Yi-Ying He(@q82419), Shen-Ta Hsieh(@ibmibmibm), H
 * [Project compliance](#project-compliance)
 * [Secure development practices](#secure-development-practices)
 * [Security issue resolution](#security-issue-resolution)
-* [Appendix](#appendix)
 
-### Metadata
+## Metadata
 
 A table at the top for quick reference information, later used for indexing.
 
 | Title | Detail |
 | -- | -- |
 | Assessment Stage | Incomplete. |
-| Software | https://github.com/WasmEdge/WasmEdge |
+| Software | <https://github.com/WasmEdge/WasmEdge> |
 | Security Provider | No.  |
 | Languages | C++ |
 | SBOM | The software bill of materials for WasmEdge can be found at [LICENSE.spdx](https://github.com/WasmEdge/WasmEdge/blob/master/LICENSE.spdx) |
 
-#### Security links
+### Security links
 
 | Doc | URL |
 | -- | -- |
-| Security file | https://github.com/WasmEdge/WasmEdge/blob/master/SECURITY.md |
-| Embargo policy | https://github.com/WasmEdge/WasmEdge/blob/master/docs/embargo-policy.md |
-| Security contacts | https://github.com/WasmEdge/WasmEdge/blob/master/docs/SECURITY_CONTACTS.md |
+| Security file | <https://github.com/WasmEdge/WasmEdge/blob/master/SECURITY.md> |
+| Embargo policy | <https://github.com/WasmEdge/WasmEdge/blob/master/docs/embargo-policy.md> |
+| Security contacts | <https://github.com/WasmEdge/WasmEdge/blob/master/docs/SECURITY_CONTACTS.md> |
 
-### Overview
+## Overview
 
 WasmEdge is a lightweight, high-performance, and extensible WebAssembly runtime.
 It is the fastest Wasm VM today. Its use cases include modern web application
@@ -49,7 +49,7 @@ architectures (Isomorphic & Jamstack applications), microservices on the edge
 cloud, serverless SaaS APIs, embedded functions, smart contracts, and smart
 devices.
 
-#### Background
+### Background
 
 The WasmEdge Runtime provides a well-defined execution sandbox for its contained
 WebAssembly bytecode program. The runtime offers isolation and protection for
@@ -58,77 +58,77 @@ processes) and memory space. The most important use case for WasmEdge is to
 safely execute user-defined or community-contributed code as plug-ins in a
 software product (e.g., SaaS, software-defined vehicles, edge nodes, or even
 blockchain nodes). It enables third-party developers, vendors, suppliers, and
-community members to extend and customize the software product. 
+community members to extend and customize the software product.
 
-#### Actors
+### Actors
 
 - WasmEdge Tool
-    - Provides CLI tools for users.
-    - The CLI tools offer a user-friendly interface to interact with WasmEdge
-      functionalities.
-    - Includes commands for compiling, running, and debugging WebAssembly
-      applications.
+  - Provides CLI tools for users.
+  - The CLI tools offer a user-friendly interface to interact with WasmEdge
+    functionalities.
+  - Includes commands for compiling, running, and debugging WebAssembly
+    applications.
 - WasmEdge Loader
-    - Loads the WebAssembly bytecode file.
-    - Parses the loaded bytecode to Abstract Syntax Tree (AST).
-    - Ensures that the bytecode is correctly structured for further processing.
+  - Loads the WebAssembly bytecode file.
+  - Parses the loaded bytecode to Abstract Syntax Tree (AST).
+  - Ensures that the bytecode is correctly structured for further processing.
 - WasmEdge Validator
-    - Validates the parsed bytecode AST to ensure it complies with WebAssembly
-      specifications.
-    - Checks for semantic correctness and security constraints.
-    - Ensures that the bytecode does not contain any invalid or malicious
-      instructions.
+  - Validates the parsed bytecode AST to ensure it complies with WebAssembly
+    specifications.
+  - Checks for semantic correctness and security constraints.
+  - Ensures that the bytecode does not contain any invalid or malicious
+    instructions.
 - WasmEdge Engine
-    - The actual WebAssembly runtime that executes the bytecode.
-    - Interprets the bytecode and performs the corresponding operations.
-    - Manages the execution environment, including memory, stack, and system
-      resources.
-    - Ensures efficient and secure execution of WebAssembly modules.
+  - The actual WebAssembly runtime that executes the bytecode.
+  - Interprets the bytecode and performs the corresponding operations.
+  - Manages the execution environment, including memory, stack, and system
+    resources.
+  - Ensures efficient and secure execution of WebAssembly modules.
 
-#### Actions
+### Actions
 
 To execute WebAssembly code, WasmEdge follows a series of steps involving
 multiple components, each with specific responsibilities. Here is a detailed
 description of the process, focusing on data flow and interactions between
 components:
 
-1. Interacting with Users (WasmEdge Tool)
-    - Data Input: The WasmEdge Tool provides a Command-Line Interface (CLI) for
-      users to interact with the WasmEdge functionalities.
-    - Action: Users can issue commands to compile, run, and debug WebAssembly
-      applications. These commands are processed by the CLI tools, which
-      internally utilize the Loader, Validator, and Engine components to carry
-      out the requested actions.
-    - Output: The CLI tools offer feedback to the users, such as execution
-      results, debug information, and error messages.
+* Interacting with Users (WasmEdge Tool)
+  - Data Input: The WasmEdge Tool provides a Command-Line Interface (CLI) for
+    users to interact with the WasmEdge functionalities.
+  - Action: Users can issue commands to compile, run, and debug WebAssembly
+    applications. These commands are processed by the CLI tools, which
+    internally utilize the Loader, Validator, and Engine components to carry
+    out the requested actions.
+  - Output: The CLI tools offer feedback to the users, such as execution
+    results, debug information, and error messages.
 
-2. Loading the WebAssembly Bytecode (WasmEdge Loader)
-    - Data Input: The process begins with the WasmEdge Loader component, which
-      receives a WebAssembly bytecode file as input.
-    - Action: The Loader reads and parses this bytecode file, converting it into
-      an Abstract Syntax Tree (AST).
-    - Output: The AST, which represents the structured form of the bytecode, is
-      produced as output for further processing.
+* Loading the WebAssembly Bytecode (WasmEdge Loader)
+  - Data Input: The process begins with the WasmEdge Loader component, which
+    receives a WebAssembly bytecode file as input.
+  - Action: The Loader reads and parses this bytecode file, converting it into
+    an Abstract Syntax Tree (AST).
+  - Output: The AST, which represents the structured form of the bytecode, is
+    produced as output for further processing.
 
-3. Validating the Bytecode (WasmEdge Validator)
-    - Data Input: The AST generated by the Loader is passed to the WasmEdge
-      Validator.
-    - Action: The Validator component checks the AST to ensure that it complies
-      with WebAssembly specifications. This involves verifying semantic
-      correctness and security constraints, ensuring there are no invalid or
-      malicious instructions.
-    - Output: If the bytecode is valid, the Validator produces a validated AST.
-      If invalid, it generates error messages indicating the issues found.
+* Validating the Bytecode (WasmEdge Validator)
+  - Data Input: The AST generated by the Loader is passed to the WasmEdge
+    Validator.
+  - Action: The Validator component checks the AST to ensure that it complies
+    with WebAssembly specifications. This involves verifying semantic
+    correctness and security constraints, ensuring there are no invalid or
+    malicious instructions.
+  - Output: If the bytecode is valid, the Validator produces a validated AST.
+    If invalid, it generates error messages indicating the issues found.
 
-4. Executing the Bytecode (WasmEdge Engine)
-    - Data Input: The validated AST is passed to the WasmEdge Engine, which is
-      the core component responsible for executing the WebAssembly code.
-    - Action: The Engine interprets the bytecode and performs the corresponding
-      operations. It manages the execution environment, including memory, stack,
-      and system resources. This ensures efficient and secure execution of the
-      WebAssembly modules.
-    - Output: The execution results, which could include changes in memory,
-      generated outputs, or responses from invoked functions.
+* Executing the Bytecode (WasmEdge Engine)
+  - Data Input: The validated AST is passed to the WasmEdge Engine, which is
+    the core component responsible for executing the WebAssembly code.
+  - Action: The Engine interprets the bytecode and performs the corresponding
+    operations. It manages the execution environment, including memory, stack,
+    and system resources. This ensures efficient and secure execution of the
+    WebAssembly modules.
+  - Output: The execution results, which could include changes in memory,
+    generated outputs, or responses from invoked functions.
 
 The interaction between these components ensures a smooth and secure execution
 flow for WebAssembly programs in WasmEdge. The Loader initiates the process by
@@ -138,7 +138,7 @@ interface for these operations. This modular approach allows for efficient
 handling and execution of WebAssembly code, making WasmEdge a robust and
 high-performance WebAssembly runtime.
 
-#### Goals
+### Goals
 
 - Provides a well-defined execution sandbox for its contained WebAssembly
   bytecode program.
@@ -146,11 +146,11 @@ high-performance WebAssembly runtime.
   space.
 - Execute user-defined or community-contributed code as plugins.
 
-#### Non-goals
+### Non-goals
 
 - Compile the C++ code into WebAssembly bytecode.
 
-### Self-assessment use
+## Self-assessment use
 
 This self-assessment is created by the WasmEdge team to perform an internal
 analysis of the project's security.  It is not intended to provide a security
@@ -168,7 +168,7 @@ incubation.  Taken together, this document and the joint-assessment serve as a
 cornerstone for if and when WasmEdge seeks graduation and is preparing for a
 security audit.
 
-### Security functions and features
+## Security functions and features
 
 - WasmEdge is a standalone WebAssembly runtime where all WebAssembly bytecode
   runs independently within this execution sandbox, rather than being managed by
@@ -179,39 +179,39 @@ security audit.
   they can add the `--dir guest_path:host_path:readonly` option in the WasmEdge
   CLI to assign the read-only configuration.
 
-### Project compliance
+## Project compliance
 
 * Currently, WasmEdge does not meet any security standards or sub-sections.
 
-### Secure development practices
+## Secure development practices
 
 - Development Pipeline
-    - WasmEdge Require contributors to sign off on web-based commits.
-    - The pull request must be approved by WasmEdge maintainer, committer or
-      reviewers before merge.
-    - The pull request must pass the CI jobs before merge.
-    - WasmEdge also participates in OSS-Fuzz
-      https://github.com/google/oss-fuzz/tree/master/projects/wasmedge. OSS-Fuzz
-      aims to make common open-source software more secure and stable by
-      combining modern fuzzing techniques with scalable, distributed execution.
-      Participating in OSS-Fuzz allows us to better identify potential issues in
-      WasmEdge through fuzzing.
+  - WasmEdge Require contributors to sign off on web-based commits.
+  - The pull request must be approved by WasmEdge maintainer, committer or
+    reviewers before merge.
+  - The pull request must pass the CI jobs before merge.
+  - WasmEdge also participates in OSS-Fuzz
+    <https://github.com/google/oss-fuzz/tree/master/projects/wasmedge>. OSS-Fuzz
+    aims to make common open-source software more secure and stable by
+    combining modern fuzzing techniques with scalable, distributed execution.
+    Participating in OSS-Fuzz allows us to better identify potential issues in
+    WasmEdge through fuzzing.
 - Communication Channels
-    - Internal
-        - Direct message on [WasmEdge Discord
-          server](https://discord.gg/h4KDyB8XTt).
-    - Inbound
-        - [WasmEdge Discord server](https://discord.gg/h4KDyB8XTt).
-        - **#wasmedge** channel on the [CNCF Slack](https://slack.cncf.io/).
-    - Outbound
-        - [WasmEdge Discord server](https://discord.gg/h4KDyB8XTt).
-        - **#wasmedge** channel on the [CNCF Slack](https://slack.cncf.io/).
-        - Mailing list <wasmedge@googlegroup.com>.
-        - We host a monthly community meeting to showcase new features, demo new
-          use cases, and a Q&A part.
-            - The first Tuesday of each month at 11PM Hong Kong Time/ 7AM PST.
+  - Internal
+    - Direct message on [WasmEdge Discord
+      server](https://discord.gg/h4KDyB8XTt).
+  - Inbound
+    - [WasmEdge Discord server](https://discord.gg/h4KDyB8XTt).
+    - **#wasmedge** channel on the [CNCF Slack](https://slack.cncf.io/).
+  - Outbound
+    - [WasmEdge Discord server](https://discord.gg/h4KDyB8XTt).
+    - **#wasmedge** channel on the [CNCF Slack](https://slack.cncf.io/).
+    - Mailing list <wasmedge@googlegroups.com>.
+    - We host a monthly community meeting to showcase new features, demo new
+      use cases, and a Q&A part.
+      - The first Tuesday of each month at 11PM Hong Kong Time/ 7AM PST.
 
-### Security issue resolution
+## Security issue resolution
 
 As stated in the [WasmEdge security
 document](https://github.com/WasmEdge/WasmEdge/blob/master/SECURITY.md), the
@@ -235,7 +235,7 @@ Email:
 
 Web:
 
-1. Please visit [GitHub Seuciry Advisory of
+1. Please visit [GitHub Security Advisory of
    WasmEdge](https://github.com/WasmEdge/WasmEdge/security/advisories/new)
    * You will receive a confirmation email upon submission
 
