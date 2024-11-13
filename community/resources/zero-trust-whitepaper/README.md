@@ -49,7 +49,7 @@ regeneration of the PDF.
 
 When significant changes to the intent, content, or numerous minor changes
 occur, the CNZTWP working group will assess and determine if a new major version
-of the PDF needs published.When this decision is made, the markdown content
+of the PDF needs published.  When this decision is made, the markdown content
 will be converted to text document and sent to the CNCF technical writers to
 create the PDF.  The PDF will then be published back into the repository
 annotating the new version, updating the links in the README.md accordingly.
