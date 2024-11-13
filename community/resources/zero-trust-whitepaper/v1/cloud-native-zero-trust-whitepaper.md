@@ -60,7 +60,7 @@ Contrary to what the name might suggest, the real world application of “Zero T
 
 While many of the well-worn concepts behind Zero Trust apply to *any* system, there remains a gap with regards to discussing Zero Trust from a Cloud Native perspective. This document seeks to codify the philosophy alongside an ideal design for implementing it in a Cloud Native system.
 
-The authors have compiled their experience and research findings into a set of principles and approaches. While many of the concepts herein are a distillation of past publications, extending those findings has led to a new proposal to standardize the generation and utilization of “Confidence Levels” as a data type. Confidence Levels quantify the trustworthiness of entities within a system, allowing for more dynamic and responsive security measures.
+The authors have compiled their experience and research findings into a set of principles and approaches. Many of the concepts herein such as “Confidence Levels” are a distillation of past publications. Confidence Levels quantify the trustworthiness of entities within a system, allowing for more dynamic and responsive security measures. Extending those findings has led to a new proposal to standardize the generation and utilization of “Confidence Levels” as a data type.
 
 Confidence Levels can be produced by “Active Observers,” a previously unnamed category of tools. Active Observers continuously monitor and analyze the security-related attributes and behaviors of entities in the system to quantify trustworthiness.
 
