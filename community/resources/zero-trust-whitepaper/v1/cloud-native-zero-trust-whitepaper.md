@@ -79,7 +79,7 @@ This model, which segmented networks into zones with varying levels of trust, ai
 The implementation of Zero Trust principles was notably advanced by [Google's BeyondCorp initiative in 2009](https://www.beyondcorp.com/#:~:text=The%20BeyondCorp%20Story,and%20devices%20access%20internal%20applications.). BeyondCorp shifted security focus from the perimeter to individual users and devices, emphasizing continuous verification and least-privilege access.
 This approach was driven by the need to address sophisticated threats, as demonstrated by incidents like [Operation Aurora](https://en.wikipedia.org/wiki/Operation_Aurora) and the [MUSCULAR joint surveillance program](https://en.wikipedia.org/wiki/MUSCULAR) operated by the NSA and GCHQ against the internal networks of Google and Yahoo.
 
-The proliferation of open-source projects such as Istio, Knative, SPIFFE, and OpenFGA has also played a crucial role in advancing Zero Trust. These projects provide robust frameworks for identity management, policy enforcement, Security Behavior Analytics, and secure communication within cloud native environments.
+The proliferation of open source projects such as Istio, Knative, SPIFFE, and OpenFGA has also played a crucial role in advancing Zero Trust. These projects provide robust frameworks for identity management, policy enforcement, Security Behavior Analytics, and secure communication within cloud native environments.
 
 The National Institute of Standards and Technology (NIST) has been pivotal in formalizing the Zero Trust model. [NIST's guidelines on Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final) outline key tenets such as continuous verification, least-privilege access, and micro-segmentation. These principles ensure that security measures are consistently applied across all network layers and endpoints, reinforcing the Zero Trust approach.
 
@@ -616,7 +616,7 @@ A cloud-native certificate management controller for Kubernetes, which automates
 
 #### **[Cilium](https://cilium.io/)**
 
-An open-source software that provides networking, security, and observability for cloud-native environments using the Linux kernel's extended Berkeley Packet Filter (eBPF) technology. Cilium enables fine-grained security policies and high-performance networking for Kubernetes clusters.
+An open source software that provides networking, security, and observability for cloud-native environments using the Linux kernel's extended Berkeley Packet Filter (eBPF) technology. Cilium enables fine-grained security policies and high-performance networking for Kubernetes clusters.
 
 #### **[CNCF Knative’s Security-Guard](https://knative.dev/docs/serving/app-security/security-guard-about/)**
 
@@ -624,11 +624,11 @@ A security extension developed as part of Knative. Security-Guard provides capab
 
 #### **[Curiefense](https://www.curiefense.io/)**
 
-An open-source, cloud-native application security platform that integrates a Web Application Firewall (WAF), API security, and bot management. Curiefense provides comprehensive protection for web applications and APIs against a wide range of threats, including injection attacks, cross-site scripting (XSS), and denial-of-service (DoS) attacks.
+An open source, cloud-native application security platform that integrates a Web Application Firewall (WAF), API security, and bot management. Curiefense provides comprehensive protection for web applications and APIs against a wide range of threats, including injection attacks, cross-site scripting (XSS), and denial-of-service (DoS) attacks.
 
 #### **[Dapr](https://dapr.io/)**
 
-Distributed Application Runtime, an open-source project that provides APIs and runtime support for building resilient, stateless, and stateful microservices. Dapr simplifies the development of microservices by providing building blocks for common capabilities such as service invocation, state management, and pub/sub messaging.
+Distributed Application Runtime, an open source project that provides APIs and runtime support for building resilient, stateless, and stateful microservices. Dapr simplifies the development of microservices by providing building blocks for common capabilities such as service invocation, state management, and pub/sub messaging.
 
 #### **[Dex](https://dexidp.io/)**
 
@@ -636,11 +636,11 @@ An OpenID Connect (OIDC) identity provider and OAuth 2.0 provider that provides 
 
 #### **[Falco](https://falco.org/)**
 
-An open-source runtime security tool for Kubernetes that uses eBPF and system call monitoring to detect anomalous behavior, threats, and security events in real-time. Falco helps in enforcing security policies and responding to incidents by integrating with various alerting and incident response systems.
+An open source runtime security tool for Kubernetes that uses eBPF and system call monitoring to detect anomalous behavior, threats, and security events in real-time. Falco helps in enforcing security policies and responding to incidents by integrating with various alerting and incident response systems.
 
 #### **[Istio](https://istio.io/)**
 
-An open-source service mesh that provides traffic management, security, and observability for microservices. Istio enables secure service-to-service communication, fine-grained access control, and detailed monitoring and tracing of application traffic within Kubernetes clusters.
+An open source service mesh that provides traffic management, security, and observability for microservices. Istio enables secure service-to-service communication, fine-grained access control, and detailed monitoring and tracing of application traffic within Kubernetes clusters.
 
 #### **[JSON Web Tokens (JWT)](https://datatracker.ietf.org/doc/rfc7519/)**
 
@@ -648,7 +648,7 @@ A compact, URL-safe means of representing claims to be transferred between two p
 
 #### **[Keycloak](https://www.keycloak.org/)**
 
-An open-source Identity and Access Management (IAM) solution that provides single sign-on (SSO), user federation, and fine-grained access control. Keycloak supports various authentication protocols and integrates with numerous applications and services to manage user identities and permissions.
+An open source Identity and Access Management (IAM) solution that provides single sign-on (SSO), user federation, and fine-grained access control. Keycloak supports various authentication protocols and integrates with numerous applications and services to manage user identities and permissions.
 
 #### **[KubeArmor](https://kubearmor.io/)**
 
@@ -660,19 +660,19 @@ A set of rules that define how groups of pods can communicate with each other an
 
 #### **[Knative](https://knative.dev/)**
 
-An open-source platform built on Kubernetes that provides components for deploying, managing, and running serverless workloads. Knative abstracts the complexity of Kubernetes, enabling developers to focus on writing code without worrying about infrastructure management.
+An open source platform built on Kubernetes that provides components for deploying, managing, and running serverless workloads. Knative abstracts the complexity of Kubernetes, enabling developers to focus on writing code without worrying about infrastructure management.
 
 #### **[Linkerd](https://linkerd.io/)**
 
-An open-source service mesh that provides observability, security, and reliability for Kubernetes applications. Linkerd offers features such as automatic mTLS, traffic splitting, and detailed metrics to help manage and secure microservices.
+An open source service mesh that provides observability, security, and reliability for Kubernetes applications. Linkerd offers features such as automatic mTLS, traffic splitting, and detailed metrics to help manage and secure microservices.
 
 #### **[Pixie](https://docs.px.dev/)**
 
-An open-source observability platform for Kubernetes that uses eBPF to collect and analyze performance, debugging, and security data from running applications. Pixie provides real-time insights into the health and performance of cloud-native applications, enabling developers to troubleshoot issues quickly.
+An open source observability platform for Kubernetes that uses eBPF to collect and analyze performance, debugging, and security data from running applications. Pixie provides real-time insights into the health and performance of cloud-native applications, enabling developers to troubleshoot issues quickly.
 
 #### **[SPIFFE and SPIRE](https://spiffe.io/)**
 
-The Secure Production Identity Framework for Everyone (SPIFFE) is a set of open-source standards for securely identifying and authenticating services in dynamic and heterogeneous environments. SPIRE (SPIFFE Runtime Environment) is the reference implementation of SPIFFE, providing tools to manage and distribute service identities across cloud-native platforms.
+The Secure Production Identity Framework for Everyone (SPIFFE) is a set of open source standards for securely identifying and authenticating services in dynamic and heterogeneous environments. SPIRE (SPIFFE Runtime Environment) is the reference implementation of SPIFFE, providing tools to manage and distribute service identities across cloud-native platforms.
 
 ### Terms
 
