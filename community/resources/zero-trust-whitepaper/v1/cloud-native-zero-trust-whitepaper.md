@@ -201,7 +201,7 @@ The evidence for the principles below is discussed in **[NIST SP 800-207](https:
 
 ### 1. Every Image Includes Vulnerabilities
 
-Organizations must recognize that all cloud native images inherently contain vulnerabilities. It is imperative to understand that no image is free from potential security flaws. Dependencies, base images, development tools, repositories, and continuous integration/continuous deployment (CI/CD) tools are all susceptible to exploitation, leading to vulnerable images. The extensive amount of code that constitutes these systems presents numerous opportunities for malicious actors over a large period.
+Organizations must recognize that all cloud native images inherently contain vulnerabilities. It is imperative to understand that no image is free from potential security flaws. Dependencies, base images, development tools, repositories, and continuous integration/continuous deployment (CI/CD) tools are all susceptible to exploitation, leading to vulnerable images. The extensive amount of code and complexity in how that code is introduced in the build systems or final image built presents numerous opportunities for threat actors to compromise target application and environments throughout their lifecycle.
 
 ### 2. Every Service is Vulnerable
 
