@@ -64,7 +64,7 @@ The authors have compiled their experience and research findings into a set of p
 
 Confidence Levels can be produced by “Active Observers,” a previously unnamed category of tools. Active Observers continuously monitor and analyze the security-related attributes and behaviors of entities in the system to quantify trustworthiness.
 
-By applying the philosophies of Zero Trust to an entire Cloud Native system with consideration paid to the unique context, this paper crafts a Cloud Native Zero Trust Architecture design. Using the latest technologies, it is becoming possible to build a system in such a way that Active Observers assign Confidence Levels to every entity in the system. This enables the architecture to adapt in real-time to emerging threats and anomalies, reinforcing the Zero Trust stance.
+By applying the philosophy of Zero Trust to an entire Cloud Native system with consideration paid to the unique context, this paper crafts a Cloud Native Zero Trust Architecture design. Using the latest technologies, it is becoming possible to build a system in such a way that Active Observers assign Confidence Levels to every entity in the system. This enables the architecture to adapt in real-time to emerging threats and anomalies, reinforcing the Zero Trust stance.
 
 By incorporating the concepts of Confidence Levels and Active Observers, a cloud architect may come closer to true *Zero Trust* than previously imagined.
 
