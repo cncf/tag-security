@@ -205,7 +205,7 @@ Organizations must recognize that all cloud native images inherently contain vul
 
 ### 2. Every Service is Vulnerable
 
-Organizations must acknowledge that all deployed services are inherently vulnerable. This assumption should guide the planning and implementation of security measures. Any service deployed within a cloud native environment should be presumed to operate based on a vulnerable image and/or vulnerable configuration and to expose vulnerabilities through its service API.
+Organizations must acknowledge that all deployed services are inherently vulnerable. This assumption should guide the planning and implementation of security measures. Any service deployed within a cloud native environment should be presumed to operate based on a vulnerable image and/or vulnerable configuration and that it will expose those vulnerabilities through its service API.
 
 It is common for organizations to become aware of vulnerabilities when Common Vulnerabilities and Exposures (CVEs) related to their services are published. However, this awareness often comes after a period during which the services were susceptible to attack.
 The absence of a known vulnerability does not equate to security; vulnerabilities may exist that have yet to be discovered or disclosed. CVEs are typically published following the detection and reporting by white hat security researchers, but malicious actors may exploit these vulnerabilities long before they are publicly known.
