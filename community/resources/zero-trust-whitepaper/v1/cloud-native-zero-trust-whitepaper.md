@@ -77,7 +77,6 @@ The practical application of Zero Trust coalesced in 2010 when John Kindervag, a
 This model, which segmented networks into zones with varying levels of trust, aimed to eliminate the vulnerabilities of traditional perimeter-based security systems, where internal networks were often overly trusted.
 
 The implementation of Zero Trust principles was notably advanced by [Google's BeyondCorp initiative in 2009](https://www.beyondcorp.com/#:~:text=The%20BeyondCorp%20Story,and%20devices%20access%20internal%20applications.). BeyondCorp shifted security focus from the perimeter to individual users and devices, emphasizing continuous verification and least-privilege access.
-This approach was driven by the need to address sophisticated threats, as demonstrated by incidents like [Operation Aurora](https://en.wikipedia.org/wiki/Operation_Aurora) and the [MUSCULAR joint surveillance program](https://en.wikipedia.org/wiki/MUSCULAR) operated by the NSA and GCHQ against the internal networks of Google and Yahoo.
 
 The proliferation of open source projects such as Istio, Knative, SPIFFE, and OpenFGA has also played a crucial role in advancing Zero Trust. These projects provide robust frameworks for identity management, policy enforcement, Security Behavior Analytics, and secure communication within cloud native environments.
 
