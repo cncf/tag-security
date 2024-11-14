@@ -85,7 +85,6 @@ The National Institute of Standards and Technology (NIST) has been pivotal in fo
 The history of Zero Trust started as a theoretical concept and evolved into a practical, essential cybersecurity framework. The contributions of early theorists, pioneering implementations by industry leaders, and the formalization by standardization bodies like NIST have collectively shaped the Zero Trust model, making it a cornerstone of modern cybersecurity strategies in cloud native environments.
 
 
-In this paper, we wish to emphasize critical elements that we consider as important to construct  a Zero Trust Architecture, collate commonly accepted concepts related to Zero Trust and, in isolated cases, propose novel approaches to improve Zero Trust implementations.
 
 ## Cloud Native Principles of Zero Trust
 
