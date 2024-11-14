@@ -80,7 +80,7 @@ The implementation of Zero Trust principles was notably advanced by [Google's Be
 
 The proliferation of open source projects such as Istio, Knative, SPIFFE, and OpenFGA has also played a crucial role in advancing Zero Trust. These projects provide robust frameworks for identity management, policy enforcement, Security Behavior Analytics, and secure communication within cloud native environments.
 
-The National Institute of Standards and Technology (NIST) has been pivotal in formalizing the Zero Trust model. [NIST's guidelines on Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final) outline key tenets and principles to help build systems that follows the model.
+The National Institute of Standards and Technology (NIST) has been pivotal in formalizing the Zero Trust model. [NIST's guidelines on Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final) outline key tenets and principles to help build systems that follow the model.
 
 The history of Zero Trust started as a theoretical concept and evolved into a practical, essential cybersecurity framework. The contributions of early theorists, pioneering implementations by industry leaders, and the formalization by standardization bodies like NIST have collectively shaped the Zero Trust model, making it a cornerstone of modern cybersecurity strategies in cloud native environments.
 
