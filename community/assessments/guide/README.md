@@ -190,7 +190,7 @@ questions and feedback to the reviewers and project.
 
 * Project lead presents to TAG during TAG meeting
 * Presentation is recorded as part of standard TAG process
-* Presentation slides are linked in the /assessments/projects/project-name/
+* Presentation slides are linked in the /community/assessments/projects/project-name/ folder
 
 The assessment team also should give a quick rundown of the assessment recommendations.
 
