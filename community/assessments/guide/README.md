@@ -35,10 +35,12 @@ and advance through the CNCF.  The below section breaks the creation of the
 package into steps that mirror the [current TOC process
 stages](https://github.com/cncf/toc/tree/main/process).
 
-### New projects
+### Abbreviated project assessment
 
-New projects are projects generally defined as very early on in their maturity.
-They may have an innovators pool of users.
+Projects which are very early on in their maturity may use a short process to 
+get some initial feedback by documenting their threat model and security design.
+They use an abbreviated process which does not result in a joint assessment or a 
+detailed review by TAG Security.
 
 Note: Responsible roles for specific items are in **bold**
 
@@ -46,7 +48,7 @@ Note: Responsible roles for specific items are in **bold**
 
 The self-assessment provides projects with the opportunity to examine the
 existing security provisions of the project.  It can serve as their initial
-security documentation for users.
+security documentation for users.   
 
 #### Create a [presentation issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=usecase-presentation&template=presentation.md&title=%5BPresentation%5D+Presentation+Title)
 
@@ -56,7 +58,7 @@ lead** submit the issue as the primary point of contact (POC).
 
 #### Present the project and self-assessment
 
-Be sure to add the presentation to proposed agenda topics in the [meeting
+To get rough feedback, please add the presentation to proposed agenda topics in the [meeting
 notes](https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/)
 and include the POC or **project lead**.  The community may provide feedback on
 the self-assessment or ask questions about the project.  Include anything you
@@ -69,10 +71,10 @@ PR, citing the presentation issue number to add the self-assessment to
 [assessments/projects](/community/assessments/projects)
 under its own folder.  The ticket may then be closed after merged in.
 
-### Growing projects
+### More detailed project assessment
 
-Growing projects are likely to have early adopters, having gone beyond
-innovators as their sole user base.
+A more mature project will likely want a more complete and comprehensive assessment
+of the project's security.
 
 Note: Responsible roles for specific items are in **bold**. If an incubation
 project did not complete a self-assessment during sandbox, they are recommended
@@ -92,25 +94,24 @@ Facilitator**](https://github.com/cncf/tag-security/blob/main/governance/roles.m
 determine if the project is ready for joint-assessment.  If ready, a channel will be
 created to coordinate the activities.
 
-#### Project leverages self-assessment to draft [joint assessment](joint-assessment.md)
+#### Project creates a self-assessment
 
-The project uses the self-assessment created from the sandbox phase to draft the
-joint assessment.  The joint assessment expands upon content of the self-assessment and
-provides the **reviewers** with a central starting point in assessing the
-current security stature of the project.
+As is listed in the above section, the project should create a self-assessment.
+This should be created as a google doc to make it easier for the TAG Security 
+members to edit and comment upon.
 
-#### Project provides the joint assessment and reviewers are assigned
+#### Project provides the self assessment and reviewers are assigned
 
 The project provides the reviewers with security relevant information about
- their project.  The joint assessment can include links to external documents and
+ their project.  The self assessment can include links to external documents and
  sources within the project's repository or website to provide additional
 details or reference where a process is kept.
 
-* **[Project lead](project-lead.md)** responds to the issue with draft document
-     (see [joint assessment](joint-assessment.md))
+* **[Project lead](project-lead.md)** responds to the issue with draft
+     self assessment
 * Issue assigned to **lead [security reviewer](security-reviewer.md)** who will
-     recruit at least one additional reviewer, if one is not already assigned,
-and facilitate the process.
+     recruit at least two additional reviewers, if one is not already assigned.
+     The security assessment facilitator will also likely help in this task.
 
 #### Conflict of interest statement and review
 
@@ -152,33 +153,34 @@ prior to the *3 week* time frame for a TSSA.
 * **Lead security reviewer or their designee** will perform an initial, clarifying
      assessment to:
   * Verify completeness
-  * Ask for clarifications
+  * Ask for clarifications 
   * Ensure terms are defined
   * Ensure concepts introduced are explained with context
   * Provide quick feedback
 
-#### Security assessment with optional hands-on assessment
+**Imporantantly, comments on the document should be addressed in the document text, as
+the comments will be lost when the document is later converted to markdown.**
+
+#### Security assessment
 
 The TSSA process provides time for the security reviewers and the project to
 address security and technical details associated with the project.  Information
-created or received out of the assessment is leveraged in finalizing the joint
+created or received out of the assessment is leveraged in finalizing the self
 assessment and creating the project's TSSA package in the README file.
-
-If the security reviewers include individuals capable of performing a hands-on
-assessment, the hands-on assessment is included in this step.
 
 * **Project** posts their document to the project security assessment channel,
      allowing at least one week for review prior to Q&A
-* **Security reviewers** review the joint-assessment document, links, and other
+* **Security reviewers** review the self-assessment document, links, and other
      materials provided by the project and provide  comments and questions
   * It is highly recommended that security reviewers familiarize themselves with
         the project's repo and docs if available
 * **Security reviewers and project lead/POCs** ensure all reviewer questions,
-     comments, and feedback are addressed and finalize the joint assessment
-* **Lead security reviewer or their designee,** with the assistance of the
-**security reviewers** create a [draft summary
-     document](joint-readme-template.md) to capture existing comments, feedback,
-     and recommendations prior to the presentation.
+     comments, and feedback are addressed and finalize the self assessment.
+     The project has final edit discretion on the self assessment document.
+* **The assessment team meets and presents their recommendations to the project**
+     in the form of a draft joint assessment.   The project and assessment team
+     work together to augment and improve this document, with the assessor having
+     final edit discretion.
 
 #### Presentation
 
@@ -190,26 +192,13 @@ questions and feedback to the reviewers and project.
 * Presentation is recorded as part of standard TAG process
 * Presentation slides are linked in the /assessments/projects/project-name/
 
-#### Final summary
+The assessment team also should give a quick rundown of the assessment recommendations.
 
-The final summary provides a cursory assessment of the project, background, summary
-of the joint assessment, and recommendations to the CNCF, the project, and other
-recommendations of note.  The final summary should also list the version or
-release the joint assessment covered to better enable tracking for updates of the
-TSSA package.
+#### Final artefacts which are committed
 
-* **Lead security reviewer** creates a branch labeled WIP and provides branch
-     information to additional reviewers.
-* **Lead security reviewer** places the [summary](joint-readme-template.md) into
-     branch for finalization
-* **Reviewers** either comment or provide changes (feedback and recommendations)
-     to the branch given and submit PR
-* Either **project lead or reviewers** may request further WG discussion
-* **Project lead** prepares a PR to /assessments/projects/project-name/ when all
-     comments, feedback, and recommendations are incorporated for the joint
-assessment and presentation slides.
-* PR approval of at least 1 **co-chair**, alongside other **reviewers'**
-approvals, is required before merging any artifacts.
+The self assessment and joint assessment are added to the repository under a 
+directory named for the project name.   The issue may then be closed and the PR 
+merged.  
 
 #### [Post-assessment survey](review-survey.md)
 
