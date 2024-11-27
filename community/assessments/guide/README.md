@@ -71,7 +71,7 @@ PR, citing the presentation issue number to add the self-assessment to
 [assessments/projects](/community/assessments/projects)
 under its own folder.  The ticket may then be closed after merged in.
 
-### More detailed project assessment
+### Joint assessment
 
 A more mature project will likely want a more complete and comprehensive assessment
 of the project's security.
