@@ -44,17 +44,17 @@ detailed review by TAG Security.
 
 Note: Responsible roles for specific items are in **bold**
 
-#### Complete a [self-assessment](self-assessment.md)
+#### Complete a self-assessment
 
-The self-assessment provides projects with the opportunity to examine the
+The [self-assessment](self-assessment.md) provides projects with the opportunity to examine the
 existing security provisions of the project.  It can serve as their initial
 security documentation for users.
 
-#### Create a [presentation issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=usecase-presentation&template=presentation.md&title=%5BPresentation%5D+Presentation+Title)
+#### Create a presentation issue
 
 This presentation should go over the self-assessment and provide TAG-Security
 with an initial understanding of the project.  It is recommended the **project
-lead** submit the issue as the primary point of contact (POC).
+lead** submit the [presentation issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=usecase-presentation&template=presentation.md&title=%5BPresentation%5D+Presentation+Title) as the primary point of contact (POC).
 
 #### Present the project and self-assessment
 
@@ -80,9 +80,9 @@ Note: Responsible roles for specific items are in **bold**. If an incubation
 project did not complete a self-assessment during sandbox, they are recommended
 to start with the self-assessment before pursing joint assessment.
 
-#### [Create tracking issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=triage-required&template=joint-assessment.md&title=%5BTSSA%5D+Project+Name)
+#### Create tracking issue
 
-The tracking issue serves to initiate the joint-assessments.  It provides an initial
+The [tracking issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=triage-required&template=joint-assessment.md&title=%5BTSSA%5D+Project+Name) serves to initiate the joint-assessments.  It provides an initial
  set of information to assist TAG-Security in  prioritizing the joint assessment as
 well as provide potential reviewers with a central location to manage the
 effort.
@@ -200,9 +200,9 @@ The self assessment and joint assessment are added to the repository under a
 directory named for the project name.   The issue may then be closed and the PR
 merged.  
 
-#### [Post-assessment survey](review-survey.md)
+#### Post-assessment survey
 
-The should be completed by the **reviewers**, **project lead**, and other
+The [post-assessment survey](review-survey.md) should be completed by the **reviewers**, **project lead**, and other
 members of the TSSA.  Once complete the survey may be shared directly to the
 Security Assessment Facilitator, technical leads, and co-chairs or be part of the PR into the
 /assessments/projects/project-name folder.
