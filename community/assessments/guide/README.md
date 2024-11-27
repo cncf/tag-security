@@ -6,20 +6,20 @@ should be assessed during a TAG-Security Security Assessment (TSSA).
 
 * [Roles](#roles)
 * [TSSA package steps](#tssa-package-steps)
-  * [New projects](#new-projects)
+  * [Abbreviated project assessment](#abbreviated-project-assessment)
     1. [Self-assessment](#complete-a-self-assessment)
     2. [Create issue](#create-a-presentation-issue)
     3. [Present](#present-the-project-and-self-assessment)
     4. [Submit PR](#submit-a-pr-to-include-the-self-assessment-in-the-repo)
-  * [Growing projects](#growing-projects)
+  * [More detailed project assessment](#more-detailed-project-assessment)
     1. [Create issue](#create-tracking-issue)
-    2. [Draft joint assessment](#project-provides-the-joint-assessment-and-reviewers-are-assigned)
-    3. [Reviewers assigned](#project-provides)
+    2. [Self-assessment](#project-creates-a-self-assessment)
+    3. [Reviewers assigned](#project-provides-the-self-assessment-and-reviewers-are-assigned)
     4. [Conflict of interest](#conflict-of-interest-statement-and-review)
     5. [Clarifying questions](#clarifying-questions-phase)
-    6. [Assessment](#security-assessment-with-optional-hands-on-assessment)
+    6. [Assessment](#security-assessment)
     7. [Presentation](#presentation)
-    8. [Final summary](#final-summary)
+    8. [Final artifacts](#final-artifacts-which-are-committed)
     9. [Survey](#post-assessment-survey)
 * [Additional process notes](#additional-process-notes)
 
@@ -37,9 +37,9 @@ stages](https://github.com/cncf/toc/tree/main/process).
 
 ### Abbreviated project assessment
 
-Projects which are very early on in their maturity may use a short process to 
+Projects which are very early on in their maturity may use a short process to
 get some initial feedback by documenting their threat model and security design.
-They use an abbreviated process which does not result in a joint assessment or a 
+They use an abbreviated process which does not result in a joint assessment or a
 detailed review by TAG Security.
 
 Note: Responsible roles for specific items are in **bold**
@@ -48,7 +48,7 @@ Note: Responsible roles for specific items are in **bold**
 
 The self-assessment provides projects with the opportunity to examine the
 existing security provisions of the project.  It can serve as their initial
-security documentation for users.   
+security documentation for users.
 
 #### Create a [presentation issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=usecase-presentation&template=presentation.md&title=%5BPresentation%5D+Presentation+Title)
 
@@ -97,7 +97,7 @@ created to coordinate the activities.
 #### Project creates a self-assessment
 
 As is listed in the above section, the project should create a self-assessment.
-This should be created as a google doc to make it easier for the TAG Security 
+This should be created as a google doc to make it easier for the TAG Security
 members to edit and comment upon.
 
 #### Project provides the self assessment and reviewers are assigned
@@ -153,12 +153,12 @@ prior to the *3 week* time frame for a TSSA.
 * **Lead security reviewer or their designee** will perform an initial, clarifying
      assessment to:
   * Verify completeness
-  * Ask for clarifications 
+  * Ask for clarification
   * Ensure terms are defined
   * Ensure concepts introduced are explained with context
   * Provide quick feedback
 
-**Imporantantly, comments on the document should be addressed in the document text, as
+**Importantly, comments on the document should be addressed in the document text, as
 the comments will be lost when the document is later converted to markdown.**
 
 #### Security assessment
@@ -194,10 +194,10 @@ questions and feedback to the reviewers and project.
 
 The assessment team also should give a quick rundown of the assessment recommendations.
 
-#### Final artefacts which are committed
+#### Final artifacts which are committed
 
-The self assessment and joint assessment are added to the repository under a 
-directory named for the project name.   The issue may then be closed and the PR 
+The self assessment and joint assessment are added to the repository under a
+directory named for the project name.   The issue may then be closed and the PR
 merged.  
 
 #### [Post-assessment survey](review-survey.md)
