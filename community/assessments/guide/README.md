@@ -11,7 +11,7 @@ should be assessed during a TAG-Security Security Assessment (TSSA).
     2. [Create issue](#create-a-presentation-issue)
     3. [Present](#present-the-project-and-self-assessment)
     4. [Submit PR](#submit-a-pr-to-include-the-self-assessment-in-the-repo)
-  * [More detailed project assessment](#more-detailed-project-assessment)
+  * [Joint assessment](#joint-assessment)
     1. [Create issue](#create-tracking-issue)
     2. [Self-assessment](#project-creates-a-self-assessment)
     3. [Reviewers assigned](#project-provides-the-self-assessment-and-reviewers-are-assigned)
