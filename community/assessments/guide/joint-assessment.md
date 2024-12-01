@@ -99,14 +99,14 @@ or overwhelming the servers)
 The joint-assessment is initially created by the project team and then
 collaboratively developed with the [security reviewers](security-reviewer.md) as
 part of the project's TAG-Security Security Assessment (TSSA) Process.
-Information about the TAG-Security Review can be found in the [CNCF TAG-Security
+Information about the TAG-Security Assessment can be found in the [CNCF TAG-Security
 Review Process Guide](./README.md).
 
 This document does not intend to provide a security audit of [project] and is
 not intended to be used in lieu of a security audit.  This document provides
 users of [project] with a security focused understanding of [project] and when
 taken with the [self-assessment](self-assessment.md) provide the community with
-the TAG-Security Review of the project.  Both of these documents may be used and
+the TAG-Security Assessment of the project.  Both of these documents may be used and
 references as part of a security audit.
 
 ## Intended Use

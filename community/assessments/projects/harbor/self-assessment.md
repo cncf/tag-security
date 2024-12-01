@@ -1027,7 +1027,7 @@ All new features must pass human review as well as automated testing. The projec
 
 
 *   Golint and Govet for managing compiler warnings, coding style, and correctness
-*   Gosec is used before each release as part of the internal security review
+*   Gosec is used before each release as part of the internal security assessment
 *   Black Duck Binary analysis is run every night for application security testing used to find security vulnerabilities that can make an application susceptible to attack
 
 

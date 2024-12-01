@@ -116,7 +116,7 @@ and facilitate the process.
 
 In order to remediate unfair advantage or ethical issues all reviewers are
 required to provide a statement indicating all hard and soft conflicts they
-maintain prior starting the security review.
+maintain prior starting the security assessment.
 
 * **Lead security reviewer and additional security reviewers** comment any
      conflict of interest in the project's assessment ticket using the below format:

@@ -32,7 +32,7 @@ In keeping with this commitment, we offer the following guidelines:
      Charter][charter],
      the open source license, and to be used for the equal benefit of all
      members of the community.  Further information on use of work may be found
-     in [Security Reviews:
+     in [Security Assessments:
      Outcome][review-outcome]
 
 ## Incident handling and escalation

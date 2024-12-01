@@ -10,7 +10,7 @@ What ecosystem adoption has the project seen?
 
 If the project has undergone a previous TAG or TOC review, how has the project addressed comments from those reviews?
 
-## Security Reviews
+## Security Assessments
 
 ### TAG Security Assessments
 

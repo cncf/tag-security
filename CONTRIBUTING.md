@@ -108,7 +108,7 @@ contributions to our documentation.
 
 ### Reporting Security Issues
 
-This group engages in [security reviews] of projects to improve their security
+This group engages in [security assessments] of projects to improve their security
 posture. Discussions about potential issues must adhere to the project's
 security reporting process and remain close-held to ensure responsible
 disclosure.
@@ -197,7 +197,7 @@ Here are some additional sources for good content guidelines:
 [CODE-OF-CONDUCT.md]: CODE-OF-CONDUCT.md
 [help is needed]: https://github.com/cncf/tag-security/labels/help%20wanted
 [communication channels]: README.md#Communications
-[security reviews]: /community/assessments/README.md
+[security assessments]: /community/assessments/README.md
 [CNCF Slack guidelines]: https://github.com/cncf/foundation/blob/main/slack-guidelines.md
 [code of conduct]: ./CODE-OF-CONDUCT.md
 [CNCF Style Guide]: https://github.com/cncf/foundation/blob/main/style-guide.md

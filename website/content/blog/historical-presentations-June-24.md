@@ -23,7 +23,7 @@ Enjoy!
 - [CNCF TAG-Security Deep Dive](https://kccnceu19.sched.com/event/Oscd/deep-dive-cncf-security-tag-justin-cappos-new-york-university-zhipeng-huang-huawei)
 \- [slides](https://docs.google.com/presentation/d/18nzXspPuRDRKfGUSI1ogFHmUOP_XHS78nz-0uTG9Ogs/edit?usp=sharing)
 | [video](https://www.youtube.com/watch?v=EF3nl80kpm4)
-- [Inside CNCF Project Security Reviews](https://kccnceu19.sched.com/event/MPdf/inside-the-cncf-project-security-reviews-justin-cormack-docker)
+- [Inside CNCF Project Security Assessments](https://kccnceu19.sched.com/event/MPdf/inside-the-cncf-project-security-reviews-justin-cormack-docker)
 \- [video](https://www.youtube.com/watch?v=0BkKpsrUo5k)
 
 ## Misc security-related talks

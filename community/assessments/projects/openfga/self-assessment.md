@@ -524,7 +524,7 @@ The [list](https://github.com/openfga/community/blob/main/ADOPTERS.md) of projec
 
 The list of related projects is available as a [community resource](https://github.com/openfga/community/blob/main/related-projects.md)
 
-### Third Party Security Reviews
+### Third Party Security Assessments
 
 <!-- markdown-link-check-disable -->
 [Trail Of Bits](https://www.trailofbits.com/) published a [Comparative Language Security Assessment](https://github.com/trailofbits/publications/blob/master/reports/Policy_Language_Security_Comparison_and_TM.pdf) that evaluates Cedar, Rego and OpenFGA.

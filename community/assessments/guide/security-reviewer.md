@@ -64,10 +64,10 @@ of the reviewer and with authorization.
 ### Required
 
 Unless approved by TAG-Security chairs, the lead reviewer will have previously
-performed a CNCF security review.  Exemptions to this are reviewed case by
+performed a CNCF security assessment.  Exemptions to this are reviewed case by
 case upon established need by the CNCF TAG-Security chairs in order to bootstrap
 the process as appropriate.  If a lead reviewer has not previously performed a
-security review, and the chairs concur with them fulfilling the role, it is
+security assessment, and the chairs concur with them fulfilling the role, it is
 encouraged that at least 1 additional reviewer have experience and be leveraged
 as the delegate or designee by the lead.
 
@@ -183,7 +183,7 @@ The Security Assessment Facilitator or a TAG-Security chair must review the
 Lead Security Reviewer conflict-of-interest assertion.
 
 If any hard conflicts, or multiple significant soft conflicts, are presented,
-then a TAG-Security chair must approve the security review team. Reasons for
+then a TAG-Security chair must approve the security assessment team. Reasons for
  accepting and rejecting conflicts should be documented.
 
 In most cases, the existence of a hard conflict will prevent a TAG member from
