@@ -91,7 +91,7 @@ Each group, led by a responsible leader, reaches consensus on issues and manages
 | [Commons](/community/working-groups/commons/README.md) | Eddie Knight | Marco De Benedictis |
 | [Compliance](/community/working-groups/compliance/README.md) | Anca Sailer, Robert Ficcaglia | Brandt Keller |
 | [Controls](/community/working-groups/controls/README.md) | Jon Zeolla | Brandt Keller |
-| [Security Reviews](/community/assessments/README.md) | Justin Cappos | Eddie Knight |
+| [Security Assessments](/community/assessments/README.md) | Justin Cappos | Eddie Knight |
 | [Software Supply Chain](/community/working-groups/supply-chain-security/README.md) | Michael Lieberman, John Kjell | Marina Moore |
 
 ## Additional information
@@ -100,6 +100,6 @@ Each group, led by a responsible leader, reaches consensus on issues and manages
 
 For [CNCF project proposal process](https://github.com/cncf/toc/blob/main/process)
 create a
-new [security review issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
+new [security assessment issue](https://github.com/cncf/tag-security/issues/new?assignees=&labels=assessment&template=security-assessment.md&title=%5BAssessment%5D+Project+Name)
 with a
 [self-assessment](/community/assessments/guide/self-assessment.md).

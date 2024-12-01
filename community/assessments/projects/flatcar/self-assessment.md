@@ -12,7 +12,7 @@ Authors: Danielle Tal and Thilo Fromm
 
 [the Appendix](#heading=h.7dxoyq24wwg8))
 
-This self-assessment thoroughly reflects on Flatcar Container Linux’ security mechanisms and processes, and lists and assesses security documentation. The document aims to provide a foundation for a [joint security review](/community/assessments/guide/joint-assessment.md) of the Flatcar project; target audience is [joint assessment reviewers](/community/assessments/guide/security-reviewer.md).
+This self-assessment thoroughly reflects on Flatcar Container Linux’ security mechanisms and processes, and lists and assesses security documentation. The document aims to provide a foundation for a [joint security assessment](/community/assessments/guide/joint-assessment.md) of the Flatcar project; target audience is [joint assessment reviewers](/community/assessments/guide/security-reviewer.md).
 
 
 # Metadata

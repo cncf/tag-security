@@ -427,7 +427,7 @@ Native Ecosystem:
     * Additional work on image reproducibility
 * **CNCF Requests**
 
-    We would welcome a third-party security review.
+    We would welcome a third-party security assessment.
 
 ## **Appendix**
 

@@ -158,14 +158,14 @@ With this information, OpenFGA can be queried in different ways:
 The joint-assessment is initially created by the project team and then
 collaboratively developed with the security reviewers as
 part of the project's TAG-Security Security Assessment (TSSA) Process.
-Information about the TAG-Security Review can be found in the [CNCF TAG-Security
-Review Process Guide](https://tag-security.cncf.io/assessments/guide/).
+Information about the TAG-Security Assessment can be found in the [CNCF TAG-Security
+Assessment Process Guide](https://tag-security.cncf.io/assessments/guide/).
 
 This document does not intend to provide a security audit of OpenFGA and is
 not intended to be used in lieu of a security audit.  This document provides
 users of the project with a security focused understanding of OpenFGA and, when
 taken with the [self-assessment](./self-assessment.md), provide the community with
-the TAG-Security Review of the project.  Both of these documents may be used and
+the TAG-Security Assessment of the project.  Both of these documents may be used and
 referenced as inputs to a separate security audit.
 
 OpenFGA is a project that provides a security service and as such, any defect
@@ -686,7 +686,7 @@ Artifacts included with each release:
 
 | Aspect | Details |
 |--------|---------|
-| Secure Development Practices | Optional secure development training is provided by Okta. | Security Review is done for every feature addition. |
+| Secure Development Practices | Optional secure development training is provided by Okta. | Security Assessment is done for every feature addition. |
 | Code Quality and Testing | CodeQL is used on every pull request. The team is confident in the test coverage. |
 | Binary Management | CLOMonitor check passes, and the team is aware of the dangers of allowing binaries in the project. |
 | OpenSSF Scorecard | Badge present. Score is 9.3, well above the average of 4. |

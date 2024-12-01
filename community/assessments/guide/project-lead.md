@@ -1,6 +1,6 @@
 # Project lead
 
-In the context of the project security review and self-assessment, the
+In the context of the project security assessment and self-assessment, the
 "project lead" should be someone on the security team for the project.  For new
 or smaller projects without an established security team, this could be a
 project maintainer or they may delegate to a regular contributor with an

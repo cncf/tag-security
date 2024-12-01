@@ -50,5 +50,5 @@ with non-critical issues captured as issues and noted below.
 The following recommendations are where help from the CNCF would assist SPIFFE/SPIRE to
 increase its effectiveness in cloud native security.
 
-* Conduct a formal security review/audit for the project as it is critical to security of services that use it.
+* Conduct a formal security assessment/audit for the project as it is critical to security of services that use it.
 * Provide an avenue for education of SPIFFE/SPIRE and advanced SPIFFE/SPIRE topology use cases for end users.

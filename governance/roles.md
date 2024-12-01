@@ -289,11 +289,11 @@ welcome and PRs can be approved by any single Chair.
 
 ### Security assessment facilitator
 
-[Security Reviews](/community/assessments) are part of the ongoing work of the group
+[Security Assessment](/community/assessments) are part of the ongoing work of the group
 and led by a security assessment facilitator (referred to in the rest of this
 sub-section as a facilitator). The facilitator is responsible for:
 
-* Ensuring that security reviews follow the assessment process.
+* Ensuring that security assessments follow the assessment process.
 * Helping to bootstrap security assessments and reviews.
 * Determining assessment schedule of reviews, considering TOC requirements.
 
@@ -304,7 +304,7 @@ TAG-Security](https://github.com/cncf/tag-security/issues?q=is%3Aopen+is%3Aissue
 will be addressed.  The facilitator is then responsible for reaching out to the
 project owners (via the GitHub issue said owners previously created in order to
 request an assessment), and coordinating the various requirements as outlined
-in the ["Joint Security Review" ticket
+in the ["Joint Security Assessment" ticket
 template](https://github.com/cncf/tag-security/issues/new/choose). Once the
 maintainers/owners of the project have been identified, the facilitator is
 responsible for reaching out to the TAG-Security community at large (i.e.
