@@ -11,14 +11,14 @@ Project team: Andres Vega, Andrew Jessup, Tyler Julian, Andrew Harding.
 * Source code: [github.com/spiffe/spiffe](https://github.com/spiffe/spiffe), [github.com/spiffe/spire](https://github.com/spiffe/spire)
 * Web site: [spiffe.io](https://spiffe.io/)
 
-
 ## Background
 
-Secure Production Identity Framework for Everyone (SPIFFE) are a set of APIs with SPIRE as the production-ready implementation and associated tooling that provide a uniform language for describing service identity in a wide range of workloads (including orchestration systems), verifying that identity, and providing a workload with documents that serve as proof of that identity. 
+Secure Production Identity Framework for Everyone (SPIFFE) are a set of APIs with SPIRE as the production-ready implementation and associated tooling that provide a uniform language for describing service identity in a wide range of workloads (including orchestration systems), verifying that identity, and providing a workload with documents that serve as proof of that identity.
 
-_Maturity_
+## Maturity
 
 (Examples)
+
 - Known end-users include: Bloomberg, Bytedance, Pinterest, Square, Uber, and Yahoo Japan. This is not an exhaustive list as other organizations may use SPIFFE and SPIRE privately (due to the sensitivity surrounding exposure of security frameworks being used).
 - SPIFFE and SPIRE are being used by numerous other companies, both large and small, to build higher layer products and services. This includes Decipher Technology Studios, F5 Networks, HashiCorp, Intel, Google, IBM, Tigera, VMware, and many others.
 - The SPIFFE project has 5 owners from 5 different organizations.
