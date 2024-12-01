@@ -384,7 +384,7 @@ could have catastrophic consequences to the organization.
     - malicious code protection is employed;
     - component and OpenFGA app related events are monitored and detected;
     - the correct configuration and operation of security features is tested and verified;
-    - information is checked for accuracy, completeness, validity, and authenticity. This is especially imporant in verifying and testing the model
+    - information is checked for accuracy, completeness, validity, and authenticity. This is especially important in verifying and testing the model
       syntax and semantics
 - Supply Chain Integrity and Attacks: How will risks related to OpenFGA itself, and its dependencies be assessed and tracked and remediated?
 - Incident Response, Disaster Recovery, Continuity, SRE: How will use of OpenFGA affect existing plans for responding to, investigating, and remediating
@@ -409,7 +409,7 @@ could have catastrophic consequences to the organization.
   - Malicious developers injecting malicious code or designs
 - Developer/App Design Failures
   - incorrect use of OpenFGA outside its intended design/goals
-  - incorrect confiuration of OpenFGA store, keys, certs, etc
+  - incorrect configuration of OpenFGA store, keys, certs, etc
   - incorrect definition of app code using OpenFGA to check relationships, conditions
   - incorrect or missing error handling code or corner cases
   - logging or leaking sensitive information
@@ -417,10 +417,10 @@ could have catastrophic consequences to the organization.
   - not using the latest secure releases
 - OpenFGA/App Operations Failures
   - failure to check the provenance and integrity of code used
-  - failure to check the provenance and integrity of confiuration used
+  - failure to check the provenance and integrity of configuration used
   - failure to check the provenance and integrity of model(s) used
   - failure to secure keys, OIDC TLS, or database encryption and access control and auditing
-  - failute to plan for continuity and disaster recovery
+  - failure to plan for continuity and disaster recovery
   - failure to plan for security incident response
   - OpenFGA API service unavailable at runtime, either failing in a secure closed way, or due to DoS attack
   - Store database unavailable at runtime, either failing in a secure closed way, or due to DoS attack
@@ -450,7 +450,7 @@ should be considered outside the scope of this review.
 Opportunities for improvement identified include:
 
 - Implement FGA for server API
-- Relook at user-defined API tokens as an authentication mechanism for API
+- Re-look at user-defined API tokens as an authentication mechanism for API
 - Make all installation scripts "secure by default"
 - Validate best practices such as using strong API token and avoiding PII
 
@@ -464,7 +464,7 @@ tokens present several weak points that result in the findings below.
 The project recommends oauth for secure authentication to the API. The recommendation
 is to mark shared API tokens as a relatively insecure method of authentication and
 that his be avoided in a production environment. This recommendation can be
-updated both in the documentation as well as a WARNING can be emmitted in the logs
+updated both in the documentation as well as a WARNING can be emitted in the logs
 when authentication via shared API tokens is enabled.
 
 The recommendation to enable Fine Grained Authorization for the API is being
@@ -479,14 +479,14 @@ and performing authorization on the proxy.
 |Weakness|Env vars are accessible to anyone with access to the container. There cannot be further permissions set on these like files. Keys further give access to stores and models.|
 |MITRE classification|TA0001: Initial Access -> T1078: Valid Accounts<br>TA0003: Persistence -> T1078: Valid Accounts<br>TA0004: Privilege Escalation -> T1078: Valid Accounts|
 |Actors|openfga.server|
-|Suggested Mitigation|Secrets mounted in filesystem can be restricted with permissions. Alternatively, <br>SPIFFE/ Spire integration may offer a much high level of security (specifically using x.509 SVIDs).|
+|Suggested Mitigation|Secrets mounted in filesystem can be restricted with permissions. Alternatively, <br>SPIFFE/ Spire integration may offer a much high level of security (specifically using x.509 <!-- cSpell:ignore SVIDs -->).|
 |Impact (High/ Med/ Low)|High|
 |Likelihood (High/ Med/ Low)|Low|
 
 |Summary|Authenticating with shared keys allows keys to be added to the list.|
 |--|--|
 |Discovered in self-assessment?|No|
-|Weakness|Shared API keys are open to manipulation and bruteforcing since they are fixed keys.|
+|Weakness|Shared API keys are open to manipulation and brute-forcing since they are fixed keys.|
 |MITRE classification|TA0003: Persistence -> T1136: Create Account|
 |Actors|openfga.server|
 |Suggested Mitigation|Being able to manipulate keys in the container requires access to container. However, impact will be high as openfga access will allow attackers to assign themselves arbitrary privileges.<br>Mitigations include, the ability to rotate keys on a frequent basis and forcing these API tokens to be mounted as files (can be permission controlled) instead of environment variables. Don't use shared keys. Use OAuth or SPIFFE.|
@@ -507,7 +507,7 @@ and performing authorization on the proxy.
 ### Setting secure defaults for install
 
 This section has findings related to default install options that can be made more
-secure. The artifacts analysed in this section include the helm chart for installation
+secure. The artifacts analyzed in this section include the helm chart for installation
 and default configuration options.
 
 
