@@ -21,7 +21,7 @@ deps:
 		fi; \
 		title_case=$$(echo "$$base_name" | sed -e 's/-/ /g' -e 's/\b\(.\)/\u\1/g' | sed 's/cncf/CNCF/Ig'); \
 		text_to_prepend="---\ntitle: \"$$title_case\"\n---\n"; \
-		sed -i "1s/^/$$text_to_prepend/" "$$file"; \
+		sed -i "" "1s/^/$$text_to_prepend/" "$$file"; \
 	done
 
 	# Set up Navbar and Sidebar contents
