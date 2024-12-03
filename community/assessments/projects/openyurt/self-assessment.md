@@ -1,6 +1,11 @@
 # OpenYurt Self-assessment
+This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process and is currently pending changes from the maintainer team.
 
-- Zeyu Zhao: <2733147505@qq.com>
+
+Authors: Zeyu Zhao(@vie-serendipity)
+Contributors/Reviewers:
+
+The Self-assessment is the initial document for projects to begin thinking about the security of the project, determining gaps in their security, and preparing any security documentation for their users.
 
 ## Table of contents
 
@@ -50,9 +55,26 @@
 
 ## Overview
 
-OpenYurt is an open-source project that focuses on extending your native Kubernetes to edge. It addresses specific challenges for cloud-edge orchestration in Kubernetes such as unreliable or disconnected cloud-edge networking, edge autonomy, edge device management, region-aware deployment, and so on.
+OpenYurt is an open-source initiative built upon Kubernetes, dedicated to fostering seamless collaboration between cloud and edge computing paradigms.
+It tackles distinctive hurdles in cloud-edge orchestration within the Kubernetes ecosystem, encompassing unreliable 
+or intermittent cloud-edge networking connectivity, edge autonomy, edge device management, region-aware deployment, 
+and various related intricacies.
 
 ## Background
+In the contemporary landscape, a significant portion of computational power is decentralized, dispersed across various 
+edge computing platforms and IoT devices in diverse forms. These distributed, heterogeneous resources often incur 
+substantial human capital expenditure.
+
+Kubernetes is an open source system for automating deployment, scaling, and management of containerized applications, which obscures
+underlying heterogeneous computing resources and dramatically mitigates management complexity.
+Nevertheless, due to the distinctive challenges inherent in cloud-edge scenarios, such as unstable 
+cloud-edge connectivity, disparities in multi-region application deployment, and inaccessible cloud-edge 
+operational management, direct utilization of Kubernetes in edge environments may result in unstable
+edge-side applications and difficulties to troubleshoot.
+
+By making non-intrusive enhancements, OpenYurt empowers customer to manage large scale edge
+computing workloads in different architecture (e.g., ARM and X86) in a native Kubernetes manner.
+![openyurt arch](arch.png)
 
 ## Actors
 
@@ -77,9 +99,34 @@ Yurt-iot-dock enables seamless integration of EdgeX Foundry into cloud-native ar
 
 ## Actions
 
+### Edge Autonomy
 
+1. Users utilize Yurtadm to join a node to an existing cluster, initiating a CSR request using a bootstrap token.
+2. Yurt Manager validates and subsequently approves the CSR.
+3. The Yurthub acquires the certificate from the CSR, successfully joining the cluster.
+4. Yurthub functions as a proxy for system components on the node, facilitating communication with the apiserver while caching responses locally.
+5. Upon cloud-edge network disconnection, Yurthub utilizes its local cache to serve as a server, responding to requests from kubelet and other system components.
+
+### Cloud-Edge Operations:
+
+1. When users use kubectl exec or logs commands, requests are relayed from the apiserver to the Raven service.
+2. The Raven server establishes a tunnel with the corresponding node-side Raven agent and forwards the request.
+3. The Raven agent on the node invokes kubelet to retrieve and return the requested information.
 
 ## Goals
+
+### General
+
++ Edge Autonomy: Ensures stable application operation on edge nodes during unreliable cloud-edge network conditions.
++ Cloud-Edge Operations: Provides operational channels for managing edge nodes efficiently.
++ IoT Device Management: Integrates EdgeX to facilitate comprehensive management of IoT devices.
++ Region-aware application deployment: customized deployment of multi-region applications.
+
+### Security
+
++ OpenYurt components should be protected and robust against tampering
++ Authenticating and authorizing access OpenYurt to control plane components
++ Protect the OpenYurt control plane from being compromised
 
 ## Non-goals
 
