@@ -14,6 +14,7 @@ deps:
 
 	# Update all imported markdown files to work as standalone hugo pages (except READMEs, see below)
 	# sed command is configured for the Netlify ubuntu env
+	# Line 25 has the "" to make it work on MacOS
 	find root -type f -name '*.md' | while IFS= read -r file; do \
 		base_name=$$(basename "$$file" .md); \
 		if [ "$$file" = "/_index.md" -o "$$base_name" = "README" ]; then \
