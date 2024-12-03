@@ -166,14 +166,19 @@ The [Contributing document](https://github.com/openyurtio/openyurt/blob/master/C
 
 #### Internal
 
-Team members use Github, WeChat, Ding Talk, and slack to communicate.
++ Team members use Github, [Ding Talk](https://github.com/openyurtio/openyurt/#Contact), and [OpenYurt Community Slack](https://join.slack.com/t/openyurt/shared_invite/zt-2ajsy47br-jl~zjumRsCAE~BlPRRsIvg) to communicate and discuss PRs.
++ [Community meetings](https://github.com/openyurtio/openyurt?tab=readme-ov-file#meeting) are held biweekly on Wednesdays for team members to discuss releases, feature proposals, and user issues.
+The minutes and recording for each meeting are openly available.
 
 #### Inbound
-Users communicate with the team through the [OpenYurt Community Slack](https://join.slack.com/t/openyurt/shared_invite/zt-2ajsy47br-jl~zjumRsCAE~BlPRRsIvg), [Github issues](https://github.com/openyurtio/openyurt/issues) or [Ding Talk](https://github.com/openyurtio/openyurt/#Contact).
++ Users contact with the OpenYurt team through the [OpenYurt Community Slack](https://join.slack.com/t/openyurt/shared_invite/zt-2ajsy47br-jl~zjumRsCAE~BlPRRsIvg) and [Ding Talk](https://github.com/openyurtio/openyurt/#Contact).
++ Users can post bug reports, feature requests, and support requests on [Github issues](https://github.com/openyurtio/openyurt/issues).
 
 #### Outbound
 
-Team members communicate with users through the [emailing list](https://groups.google.com/g/openyurt/).
++ The team now uses [OpenYurt Community Slack](https://join.slack.com/t/openyurt/shared_invite/zt-2ajsy47br-jl~zjumRsCAE~BlPRRsIvg) and [Ding Talk](https://github.com/openyurtio/openyurt/#Contact) to send community meeting reminders, meeting agendas, and project announcements to the community.
+
++ Team members communicate with users through the [emailing list](https://groups.google.com/g/openyurt/).
 
 ## Security issue resolution
 
