@@ -3,6 +3,8 @@ This assessment was created by community members as part of the [Security Pals](
 
 
 Authors: Zeyu Zhao(@vie-serendipity)
+Authors: Lu Chen(@luc99hen)
+
 Contributors/Reviewers:
 
 The Self-assessment is the initial document for projects to begin thinking about the security of the project, determining gaps in their security, and preparing any security documentation for their users.
@@ -142,13 +144,27 @@ This document provides the CNCF TAG-Security with an initial understanding of op
 
 ### Critical
 
++ In cloud-edge orchestration scenarios, edge node is vulnerable to security attacks. OpenYurt's design allows each node to use separate certificates and limited permissions, reducing the attack area.
++ Yurt Manager [enforces the seperation of RBAC](https://github.com/openyurtio/openyurt/blob/5cc4f7b0819bf5be2a4d235542d5b37fffd1b20c/docs/proposals/20240517-separate-yurtmanager-clients.md) for different controllers and webhooks. Following the principle of least authority, one controller or webhook in Yurt Manager will not be granted permissions it will not use.
++ Raven uses TLS and VPN protocols to secure network connections across domains. All cloud-edge and edge-edge container network communications are encrpted through two-way tls certificates and VPN.
++ Security scanning of code and image artifacts is integrated into the CI process to ensure that they are free of known vulnerabilities.
+
 ### Security Relevant
++ Yurtadm supports passing [bootstrap file](https://github.com/openyurtio/openyurt/issues/1290) instead of join token for node bootstrapping. In this way, join token will not be exposed to the user envronment.
 
 ## Project compliance
 
 OpenYurt does not document meeting particular compliance standards.
 
 ## Secure development practices
+
++ The OpenYurt project has [clear contributing
+  guidelines](https://github.com/openyurtio/openyurt/blob/master/CONTRIBUTING.md)
++ Anyone is encouraged to submit an issue, code, or documentation change
++ [Proposals](https://github.com/openyurtio/openyurt/tree/master/docs/proposals)
+  should be submitted before making a significant change
++ Decisions are made based on consensus between openyurt [community](https://github.com/openyurtio/community). Proposals and
+  ideas can either be submitted for agreement via a github issue or PR.
 
 ### Development Pipeline
 
@@ -159,8 +175,13 @@ The [Contributing document](https://github.com/openyurtio/openyurt/blob/master/C
     + Type check and lint ci.
     + Trivy scan is adopted to scan vulnerability for every image.
     + Unit tests and e2e tests.
+    + Automatic code coverage using [codecov.io](https://app.codecov.io/) is
+  generated in the PR for each submitted
 + Code Review
-    + Changes must be reviewed and merged by the project maintainers.
+    + Changes must be reviewed and merged by the project [maintainers](https://github.com/openyurtio/community/blob/main/community-membership.md).
++ Release
+    + The release process of a new version of OpenYurt(involving changelog, documents, helm charst) is detailed in the [release process document](https://github.com/openyurtio/openyurt/blob/master/RELEASE-PROCESS.md).
+
 
 ### Communication Channels
 
@@ -182,4 +203,57 @@ The minutes and recording for each meeting are openly available.
 
 ## Security issue resolution
 
+OpenYurt has a responsible disclosure process for reporting security vulnerabilities. This process is designed to ensure that vulnerabilities are handled in a timely and effective manner. The process can be found here: https://github.com/openyurtio/openyurt/security/policy
+
++ Security researchers can report vulnerabilities confidentially by emailing [security@mail.openyurt.io](mailto:security@mail.openyurt.io).
++ Security-related issues can be reported through GitHub issues at https://github.com/openyurtio/openyurt/issues
++ The maintainers will triage the vulnerability and determine the appropriate
+remediation.
++ Reporters can expect a response from OpenYurt project maintainers within 2 business days acknowledging receipt. It is the maintainers' responsibility to triage the severity of issues and determine remediation plans.
++ Remediation: OpenYurt commits to supporting the n-2 version minor version of the current major release; as well as the last minor version of the previous major release.
++ Disclosures: OpenYurt encourages the community to assist in identifying security breaches; in the event of a confirmed breach, reporters will receive full credit and have the option to stay informed and kept in the loop.
+
+#### Communication
+
+[GitHub Security
+Advisory](https://github.com/openyurtio/openyurt/security/advisories) will be
+used to communicate during the identification, fixing, and shipping of
+vulnerability mitigations.
+
+The advisory becomes public only when the patched version is released to inform
+the community about the breach and its potential security impact.
+
 ## Appendix
+
+
++ **Known Issues Over Time** <br>
+  OpenYurt doesn't have any security vulnerabilities pointed out as of the
+  tools and frameworks that it uses (for eg. Golang vulnerabilities).
++ **[CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/)** <br> 
+The OpenYurt project has got the passing badge in openssf best practices in [PR #2208](https://github.com/openyurtio/openyurt/pull/2208).
++ **Case Studies** <br>
+  Many organisations have adopted OpenYurt and are using our project
+  + Alibaba Cloud: Using OpenYurt as base framework and integrated with other cloud services (like SLB etc.) to provide hosted edge kubernetes service.
+  + Sangfor Technologies Inc: A company that focuses on providing security services, and uses OpenYurt for edge autonomy and operation and maintenance communication.
+  + China Telecom: Using OpenYurt for managing edge nodes across different IDC region and network
+  + Sony Group Corporation: Working on internal PoC for cloud and edge container orchestration.
+  + Lixiang Auto Inc: A company that designs and produces new energy vehicles, and uses OpenYurt for managing edge nodes, deploying edge applications.
+  + Shanghai Cue Co.,Ltd: Use OpenYurt to manage their retail edge AIBoxes.
+
++ **Related Projects / Vendors** 
+
+| TECHNOLOGY               | INTEGRATION                                                                                                                                                             | DESCRIPTION                                                                                                                                                                        |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| EdgeX Foundry                | [IoT Provider](https://openyurt.io/docs/user-manuals/iot/edgex-foundry/#1-add-device-virtual-components-manually)                                                                            | Deploy the EdgeX system and YurtIoTDock component on an existing OpenYurt cluster using PlatformAdmin.                                                               |
+| Calico                  | [Network Provider](https://github.com/openyurtio/openyurt/issues/857)                                                                   | Use Calico to configure a layer 3 network fabric designed for Kubernetes.                                |
+| eKuiper                | [Observability](https://ekuiper.org/docs/en/v1.13/)                                                                   | Use eKuiper to provide a streaming software framework (similar to Apache Flink) on the edge side.                                                                                                                             |
+| FabEdge                  | [Network Provider](https://juejin.cn/post/7028551925561819149)                                                                   | Use FabEdge to provide a solution for edge-edge-cloud container network to communicate with host network In an OpenYurt cluster.|
+| Flannel                  | [Network Provider](https://openyurt.io/docs/user-manuals/network/edge-pod-network)                                                                   | Use Flannel to configure a layer 3 network fabric designed for Kubernetes.                                |
+| Grafana                  | [Observability](https://openyurt.io/docs/user-manuals/monitoring/prometheus)                                                                   | Use Grafana dashboards to visualize metrics from edge node.                                                                                                 |
+| Helm                     | [Deploying OpenYurt on Kubernetes](https://openyurt.io/docs/installation/manually-setup)                                                                                                              | Use Helm charts to deploy OpenYurt Control Plane.                              |
+| Kubernetes               | [Deploying OpenYurt on Kubernetes](https://openyurt.io/docs/installation/manually-setup)                                                                                                              | Run OpenYurt component workloads on Kubernetes and extend Kubernetes across regions, clouds, and edges.                                                                         |
+| KubeVela                     | [Observability](https://kubevela.io/blog/2023/01/09/kubevela-openyurt-integration/)                                                                   | Consume OpenTelemetry logging signals from the wasmCloud host.                                                                     |
+| Prometheus               | [Observability](https://openyurt.io/docs/user-manuals/monitoring/prometheus)                                                                   | Consume OpenTelemetry metrics signals from the wasmCloud host.                                         |
+| Raven                    | [Network Provider](https://openyurt.io/docs/user-manuals/network/raven)                                                                   | Use raven to enhance edge-edge and edge-cloud network communication in an edge cluster.                                                                       |
+| Shifu                   | [IoT Provider](https://shifu.dev/technical-blogs/2022/06/17/openyurt/)                                                                   | Be compatible with various IoT device protocols and abstract them into a microservice software object.                                                                       |
+| WasmEdge                   | [WebAssembly Runtimes](https://www.cncf.io/blog/2022/02/07/wasmedge-and-openyurt-bring-cloud-computing-to-the-edge/)                                                                   | Use OpenYurt to Manage WasmEdge.
