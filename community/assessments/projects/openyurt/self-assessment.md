@@ -22,6 +22,8 @@ The Self-assessment is the initial document for projects to begin thinking about
   - [Yurtadm](#yurtadm)
   - [YurtIotDock](#yurtiotdock)
 - [Actions](#actions)
+  - [Edge Autonomy](#edge-autonomy)
+  - [Cloud-Edge Operations](#cloud-edge-operations)
 - [Goals](#goals)
 - [Non-goals](#non-goals)
 - [Self-assessment use](#self-assessment-use)
@@ -85,11 +87,12 @@ The yurt-manager consists of various controller and webhook processes to provide
 
 ### YurtHub
 
-Yurthub runs as a systemd service on the node, mainly responsible for proxying requests from pods and kubelet on the node,enabling node autonomy, and managing network topology.
+Yurthub runs as a systemd service on the node, mainly responsible for proxying requests from pods and kubelet on the node, enabling node autonomy, multiplexing traffic on the node, and managing network topology.
 
-### Raven Agent
+### Raven
 
-Raven enhances network capabilities. It provide L3 network connectivity among pods in different physical regions. Raven-agent is deployed as daemonset in every edge nodes.
+Raven enhances network capabilities. It provide L3 and L7 network connectivity among pods in different physical regions.
+The Raven server, functioning as a controller within the Yurt Manager, is deployed in the cloud, while Raven agents are distributed as DaemonSets across edge nodes.
 
 ### Yurtadm
 
@@ -109,10 +112,10 @@ Yurt-iot-dock enables seamless integration of EdgeX Foundry into cloud-native ar
 4. Yurthub functions as a proxy for system components on the node, facilitating communication with the apiserver while caching responses locally.
 5. Upon cloud-edge network disconnection, Yurthub utilizes its local cache to serve as a server, responding to requests from kubelet and other system components.
 
-### Cloud-Edge Operations:
+### Cloud-Edge Operations
 
 1. When users use kubectl exec or logs commands, requests are relayed from the apiserver to the Raven service.
-2. The Raven server establishes a tunnel with the corresponding node-side Raven agent and forwards the request.
+2. The Raven server establishes a secure tunnel with the Raven agent residing on the elected gateway node at the edge. This tunnel employs a dual-layer encryption approach: the L7 utilizes gRPC with mutual TLS, while L3 is safeguarded through IPsec protocols.
 3. The Raven agent on the node invokes kubelet to retrieve and return the requested information.
 
 ## Goals
@@ -123,6 +126,7 @@ Yurt-iot-dock enables seamless integration of EdgeX Foundry into cloud-native ar
 + Cloud-Edge Operations: Provides operational channels for managing edge nodes efficiently.
 + IoT Device Management: Integrates EdgeX to facilitate comprehensive management of IoT devices.
 + Region-aware application deployment: customized deployment of multi-region applications.
++ Traffic multiplexing: reuse traffic at both node and node-pool levels facilitates the integration of large-scale edge nodes.
 
 ### Security
 
@@ -224,7 +228,6 @@ The advisory becomes public only when the patched version is released to inform
 the community about the breach and its potential security impact.
 
 ## Appendix
-
 
 + **Known Issues Over Time** <br>
   OpenYurt doesn't have any security vulnerabilities pointed out as of the
