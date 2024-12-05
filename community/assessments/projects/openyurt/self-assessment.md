@@ -24,6 +24,7 @@ The Self-assessment is the initial document for projects to begin thinking about
 - [Actions](#actions)
   - [Edge Autonomy](#edge-autonomy)
   - [Cloud-Edge Operations](#cloud-edge-operations)
+  - [IoT device management](#iot-device-management)
 - [Goals](#goals)
 - [Non-goals](#non-goals)
 - [Self-assessment use](#self-assessment-use)
@@ -117,6 +118,13 @@ Yurt-iot-dock enables seamless integration of EdgeX Foundry into cloud-native ar
 1. When users use kubectl exec or logs commands, requests are relayed from the apiserver to the Raven service.
 2. The Raven server establishes a secure tunnel with the Raven agent residing on the elected gateway node at the edge. This tunnel employs a dual-layer encryption approach: the L7 utilizes gRPC with mutual TLS, while L3 is safeguarded through IPsec protocols.
 3. The Raven agent on the node invokes kubelet to retrieve and return the requested information.
+
+### IoT device management
+
+1. When users manage edge devices using [Yurt-IoT-Dock](https://openyurt.io/docs/core-concepts/yurt-iot-dock/), they create or update a custom resource called [Device](https://github.com/openyurtio/openyurt/blob/master/pkg/apis/iot/v1alpha1/device_types.go#L144) in the OpenYurt cluster.
+2. After Yurt-IoT-Dock lists/watches changes to the Device, it generates corresponding [EdgeX](https://www.edgexfoundry.org/) commands to control the device’s status.
+3. Yurt-IoT-Dock retrieves the device status in real-time from EdgeX and synchronizes this status with the corresponding Device status.
+4. Users can obtain the actual device status by querying the Device in the OpenYurt cluster.
 
 ## Goals
 
