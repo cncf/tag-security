@@ -2,10 +2,9 @@
 This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process and is currently pending changes from the maintainer team.
 
 
-Authors: Zeyu Zhao(@vie-serendipity)
-Authors: Lu Chen(@luc99hen)
+Authors: Zeyu Zhao(@vie-serendipity), Lu Chen(@luc99hen)
 
-Contributors/Reviewers:
+Contributors/Reviewers: Linbo He(@rambohe-ch), Bingchang Tang(@zyjhtangtang)
 
 The Self-assessment is the initial document for projects to begin thinking about the security of the project, determining gaps in their security, and preparing any security documentation for their users.
 
@@ -16,7 +15,7 @@ The Self-assessment is the initial document for projects to begin thinking about
 - [Overview](#overview)
 - [Background](#background)
 - [Actors](#actors)
-  - [Yurt Manager](#yurt-manager)
+  - [YurtManager](#yurt-manager)
   - [YurtHub](#yurthub)
   - [Raven Agent](#raven-agent)
   - [Yurtadm](#yurtadm)
@@ -49,7 +48,7 @@ The Self-assessment is the initial document for projects to begin thinking about
 | Software          | https://github.com/openyurtio/openyurt |
 | Security Provider | No.                                    |
 | Languages         | Go, Shell, Dockerfile                  |
-| SBOM              |                                        |
+| SBOM              | OpenYurt does not currently generate SBOMs on release |
 |                   |
 
 ### Security Links
@@ -70,20 +69,20 @@ In the contemporary landscape, a significant portion of computational power is d
 edge computing platforms and IoT devices in diverse forms. These distributed, heterogeneous resources often incur 
 substantial human capital expenditure.
 
-Kubernetes is an open source system for automating deployment, scaling, and management of containerized applications, which obscures
+Kubernetes is an open-source system for automating the deployment, scaling, and management of containerized applications, which obscures
 underlying heterogeneous computing resources and dramatically mitigates management complexity.
 Nevertheless, due to the distinctive challenges inherent in cloud-edge scenarios, such as unstable 
 cloud-edge connectivity, disparities in multi-region application deployment, and inaccessible cloud-edge 
 operational management, direct utilization of Kubernetes in edge environments may result in unstable
-edge-side applications and difficulties to troubleshoot.
+edge-side applications and difficulties in troubleshooting.
 
-By making non-intrusive enhancements, OpenYurt empowers customer to manage large scale edge
-computing workloads in different architecture (e.g., ARM and X86) in a native Kubernetes manner.
+By making non-intrusive enhancements, OpenYurt empowers customers to manage large-scale edge
+computing workloads in different architectures (e.g., ARM and X86) in a native Kubernetes manner.
 ![openyurt arch](arch.png)
 
 ## Actors
 
-### Yurt Manager
+### YurtManager
 The yurt-manager consists of various controller and webhook processes to provide desired functionality in a cloud-edge collaboration scenario. The yurt-manager is deployed in kubernetes control plane, usually consists of two instances, one leader and one backup.
 
 ### YurtHub
@@ -92,8 +91,8 @@ Yurthub runs as a systemd service on the node, mainly responsible for proxying r
 
 ### Raven
 
-Raven enhances network capabilities. It provide L3 and L7 network connectivity among pods in different physical regions.
-The Raven server, functioning as a controller within the Yurt Manager, is deployed in the cloud, while Raven agents are distributed as DaemonSets across edge nodes.
+Raven enhances network capabilities. It provides L3 and L7 network connectivity among pods in different physical regions.
+The Raven server, functioning as a controller within the YurtManager, is deployed in the cloud, while Raven agents are distributed as DaemonSets across edge nodes.
 
 ### Yurtadm
 
@@ -108,7 +107,7 @@ Yurt-iot-dock enables seamless integration of EdgeX Foundry into cloud-native ar
 ### Edge Autonomy
 
 1. Users utilize Yurtadm to join a node to an existing cluster, initiating a CSR request using a bootstrap token.
-2. Yurt Manager validates and subsequently approves the CSR.
+2. YurtManager validates and subsequently approves the CSR.
 3. The Yurthub acquires the certificate from the CSR, successfully joining the cluster.
 4. Yurthub functions as a proxy for system components on the node, facilitating communication with the apiserver while caching responses locally.
 5. Upon cloud-edge network disconnection, Yurthub utilizes its local cache to serve as a server, responding to requests from kubelet and other system components.
@@ -157,8 +156,8 @@ This document provides the CNCF TAG-Security with an initial understanding of op
 ### Critical
 
 + In cloud-edge orchestration scenarios, edge node is vulnerable to security attacks. OpenYurt's design allows each node to use separate certificates and limited permissions, reducing the attack area.
-+ Yurt Manager [enforces the seperation of RBAC](https://github.com/openyurtio/openyurt/blob/5cc4f7b0819bf5be2a4d235542d5b37fffd1b20c/docs/proposals/20240517-separate-yurtmanager-clients.md) for different controllers and webhooks. Following the principle of least authority, one controller or webhook in Yurt Manager will not be granted permissions it will not use.
-+ Raven uses TLS and VPN protocols to secure network connections across domains. All cloud-edge and edge-edge container network communications are encrpted through two-way tls certificates and VPN.
++ YurtManager [enforces the seperation of RBAC](https://github.com/openyurtio/openyurt/blob/5cc4f7b0819bf5be2a4d235542d5b37fffd1b20c/docs/proposals/20240517-separate-yurtmanager-clients.md) for different controllers and webhooks. Following the principle of least authority, one controller or webhook in YurtManager will not be granted permissions it will not use.
++ Raven uses TLS and VPN protocols to secure network connections across domains. All cloud-edge and edge-edge container network communications are encrypted through two-way TLS certificates and VPN.
 + Security scanning of code and image artifacts is integrated into the CI process to ensure that they are free of known vulnerabilities.
 
 ### Security Relevant
@@ -171,24 +170,24 @@ OpenYurt does not document meeting particular compliance standards.
 ## Secure development practices
 
 + The OpenYurt project has [clear contributing
-  guidelines](https://github.com/openyurtio/openyurt/blob/master/CONTRIBUTING.md)
+ guidelines](https://github.com/openyurtio/openyurt/blob/master/CONTRIBUTING.md)
 + Anyone is encouraged to submit an issue, code, or documentation change
 + [Proposals](https://github.com/openyurtio/openyurt/tree/master/docs/proposals)
-  should be submitted before making a significant change
+ should be submitted before making a significant change
 + Decisions are made based on consensus between openyurt [community](https://github.com/openyurtio/community). Proposals and
-  ideas can either be submitted for agreement via a github issue or PR.
+ ideas can either be submitted for agreement via a Github issue or PR.
 
 ### Development Pipeline
 
 The [Contributing document](https://github.com/openyurtio/openyurt/blob/master/CONTRIBUTING.md) contains details about development pipeline. The main points are summarized below.
 
 + Contributions are made via GitHub pull requests
-+ Pull request will trigger a github workflow including tests below
++ Pull request will trigger a Github workflow including tests below
     + Type check and lint ci.
-    + Trivy scan is adopted to scan vulnerability for every image.
+    + Trivy scan is adopted to scan vulnerabilities for every image.
     + Unit tests and e2e tests.
     + Automatic code coverage using [codecov.io](https://app.codecov.io/) is
-  generated in the PR for each submitted
+ generated in the PR for each submitted
 + Code Review
     + Changes must be reviewed and merged by the project [maintainers](https://github.com/openyurtio/community/blob/main/community-membership.md).
 + Release
@@ -238,33 +237,33 @@ the community about the breach and its potential security impact.
 ## Appendix
 
 + **Known Issues Over Time** <br>
-  OpenYurt doesn't have any security vulnerabilities pointed out as of the
-  tools and frameworks that it uses (for eg. Golang vulnerabilities).
+ OpenYurt doesn't have any security vulnerabilities pointed out as of the
+ tools and frameworks that it uses (for eg. Golang vulnerabilities).
 + **[CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/)** <br> 
 The OpenYurt project has got the passing badge in openssf best practices in [PR #2208](https://github.com/openyurtio/openyurt/pull/2208).
 + **Case Studies** <br>
-  Many organisations have adopted OpenYurt and are using our project
+ Many organizations have adopted OpenYurt and are using our project
   + Alibaba Cloud: Using OpenYurt as base framework and integrated with other cloud services (like SLB etc.) to provide hosted edge kubernetes service.
   + Sangfor Technologies Inc: A company that focuses on providing security services, and uses OpenYurt for edge autonomy and operation and maintenance communication.
   + China Telecom: Using OpenYurt for managing edge nodes across different IDC region and network
   + Sony Group Corporation: Working on internal PoC for cloud and edge container orchestration.
-  + Lixiang Auto Inc: A company that designs and produces new energy vehicles, and uses OpenYurt for managing edge nodes, deploying edge applications.
-  + Shanghai Cue Co.,Ltd: Use OpenYurt to manage their retail edge AIBoxes.
+  + Lixiang Auto Inc: A company that designs and produces new energy vehicles, and uses OpenYurt for managing edge nodes, and deploying edge applications.
+  + Shanghai Cue Co., Ltd: Use OpenYurt to manage their retail edge AIBoxes.
 
 + **Related Projects / Vendors** 
 
 | TECHNOLOGY               | INTEGRATION                                                                                                                                                             | DESCRIPTION                                                                                                                                                                        |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| EdgeX Foundry                | [IoT Provider](https://openyurt.io/docs/user-manuals/iot/edgex-foundry/#1-add-device-virtual-components-manually)                                                                            | Deploy the EdgeX system and YurtIoTDock component on an existing OpenYurt cluster using PlatformAdmin.                                                               |
-| Calico                  | [Network Provider](https://github.com/openyurtio/openyurt/issues/857)                                                                   | Use Calico to configure a layer 3 network fabric designed for Kubernetes.                                |
-| eKuiper                | [Observability](https://ekuiper.org/docs/en/v1.13/)                                                                   | Use eKuiper to provide a streaming software framework (similar to Apache Flink) on the edge side.                                                                                                                             |
-| FabEdge                  | [Network Provider](https://juejin.cn/post/7028551925561819149)                                                                   | Use FabEdge to provide a solution for edge-edge-cloud container network to communicate with host network In an OpenYurt cluster.|
-| Flannel                  | [Network Provider](https://openyurt.io/docs/user-manuals/network/edge-pod-network)                                                                   | Use Flannel to configure a layer 3 network fabric designed for Kubernetes.                                |
-| Grafana                  | [Observability](https://openyurt.io/docs/user-manuals/monitoring/prometheus)                                                                   | Use Grafana dashboards to visualize metrics from edge node.                                                                                                 |
-| Helm                     | [Deploying OpenYurt on Kubernetes](https://openyurt.io/docs/installation/manually-setup)                                                                                                              | Use Helm charts to deploy OpenYurt Control Plane.                              |
-| Kubernetes               | [Deploying OpenYurt on Kubernetes](https://openyurt.io/docs/installation/manually-setup)                                                                                                              | Run OpenYurt component workloads on Kubernetes and extend Kubernetes across regions, clouds, and edges.                                                                         |
-| KubeVela                     | [Observability](https://kubevela.io/blog/2023/01/09/kubevela-openyurt-integration/)                                                                   | Consume OpenTelemetry logging signals from the wasmCloud host.                                                                     |
-| Prometheus               | [Observability](https://openyurt.io/docs/user-manuals/monitoring/prometheus)                                                                   | Consume OpenTelemetry metrics signals from the wasmCloud host.                                         |
-| Raven                    | [Network Provider](https://openyurt.io/docs/user-manuals/network/raven)                                                                   | Use raven to enhance edge-edge and edge-cloud network communication in an edge cluster.                                                                       |
-| Shifu                   | [IoT Provider](https://shifu.dev/technical-blogs/2022/06/17/openyurt/)                                                                   | Be compatible with various IoT device protocols and abstract them into a microservice software object.                                                                       |
-| WasmEdge                   | [WebAssembly Runtimes](https://www.cncf.io/blog/2022/02/07/wasmedge-and-openyurt-bring-cloud-computing-to-the-edge/)                                                                   | Use OpenYurt to Manage WasmEdge.
+| EdgeX Foundry                | [IoT Provider](https://openyurt.io/docs/user-manuals/iot/edgex-foundry/#1-add-device-virtual-components-manually) | Deploy the EdgeX system and YurtIoTDock component on an existing OpenYurt cluster using PlatformAdmin.                                                               |
+| Calico                  | [Network Provider](https://github.com/openyurtio/openyurt/issues/857) | Use Calico to configure a layer 3 network fabric designed for Kubernetes.                                |
+| eKuiper                | [Observability](https://ekuiper.org/docs/en/v1.13/) | Use eKuiper to provide a streaming software framework (similar to Apache Flink) on the edge side.                                                                                                                             |
+| FabEdge                  | [Network Provider](https://juejin.cn/post/7028551925561819149) | Use FabEdge to provide a solution for edge-edge-cloud container network to communicate with host network In an OpenYurt cluster.|
+| Flannel                  | [Network Provider](https://openyurt.io/docs/user-manuals/network/edge-pod-network) | Use Flannel to configure a layer 3 network fabric designed for Kubernetes.                                |
+| Grafana                  | [Observability](https://openyurt.io/docs/user-manuals/monitoring/prometheus) | Use Grafana dashboards to visualize metrics from edge node.                                                                                                 |
+| Helm                     | [Deploying OpenYurt on Kubernetes](https://openyurt.io/docs/installation/manually-setup) | Use Helm charts to deploy OpenYurt Control Plane.                              |
+| Kubernetes               | [Deploying OpenYurt on Kubernetes](https://openyurt.io/docs/installation/manually-setup) | Run OpenYurt component workloads on Kubernetes and extend Kubernetes across regions, clouds, and edges.                                                                         |
+| KubeVela                     | [Observability](https://kubevela.io/blog/2023/01/09/kubevela-openyurt-integration/) | Consume OpenTelemetry logging signals from the wasmCloud host.                                                                     |
+| Prometheus               | [Observability](https://openyurt.io/docs/user-manuals/monitoring/prometheus) | Consume OpenTelemetry metrics signals from the wasmCloud host.                                         |
+| Raven                    | [Network Provider](https://openyurt.io/docs/user-manuals/network/raven) | Use raven to enhance edge-edge and edge-cloud network communication in an edge cluster.                                                                       |
+| Shifu                   | [IoT Provider](https://shifu.dev/technical-blogs/2022/06/17/openyurt/) | Be compatible with various IoT device protocols and abstract them into a microservice software object.                                                                       |
+| WasmEdge                   | [WebAssembly Runtimes](https://www.cncf.io/blog/2022/02/07/wasmedge-and-openyurt-bring-cloud-computing-to-the-edge/) | Use OpenYurt to Manage WasmEdge.
