@@ -2,7 +2,6 @@
 
 This document is intended to aid the project's maintainers, contributors, and users understand the project's security status and help identify points of improvement.
 
-*The project seeks a security reviewer for this document who is not part of the project maintainer team or community.*
 
 ## Table of contents
 
