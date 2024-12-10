@@ -25,7 +25,7 @@ This document is intended to aid the project's maintainers, contributors, and us
 
 |   |  |
 | -- | -- |
-| Assessment Stage | Incomplete |
+| Assessment Stage | Complete |
 | Software |  [Kubescape](https://kubescape.io)  |
 | Security Provider | Yes |
 | Languages | Go |
