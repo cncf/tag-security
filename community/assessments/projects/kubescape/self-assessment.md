@@ -286,7 +286,7 @@ For a complete list of closed security issues, please refer to [this link](https
 
 ### Responsible Disclosures Process
 
-In case of suspected security issues, incidents, or vulnerabilities, both external and internal to the project, Kubescape has a responsible disclosure process in place. The process is designed to handle security vulnerabilities quickly and sometimes privately. The primary goal of this process is to reduce the time users are vulnerable to publicly known exploits.
+In case of suspected security issues, incidents, or vulnerabilities, both external and internal to the project, Kubescape has a responsible disclosure process in place. The process is designed to handle security vulnerabilities quickly and sometimes privately. The primary goal of this process is to reduce the time users are vulnerable to publicly known exploits. Follow [these communication channels](#reporting-security-vulnerabilities)
 
 #### Vulnerability Response Process
 
