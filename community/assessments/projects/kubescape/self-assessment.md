@@ -333,5 +333,5 @@ There is a template for incident response for reference [here](https://github.co
 
 The Kubescape project is continuously improving its practices based on the OpenSSF recommendations, see scores [here](https://securityscorecards.dev/viewer/?uri=github.com/kubescape/kubescape)
 
-<!-- cSpell:ignore Grype Inspektor Synchornizer -->
+<!-- cSpell:ignore Grype Inspektor -->
 <!-- -->
