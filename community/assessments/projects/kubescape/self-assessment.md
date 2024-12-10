@@ -198,7 +198,6 @@ This self-assessment is not intended to provide a security audit of Kubescape or
 
 This document provides Kubescape users with an initial understanding of Kubescape's security, where to find existing security documentation, Kubescape's plans for security, and a general overview of Kubescape's security practices, both for the development of Kubescape and its operational security.
 
-This document provides the CNCF TAG-Security with an initial understanding of Kubescape to assist in a joint assessment necessary for projects under incubation. Taken together, this document and the joint assessment serve as a cornerstone for if and when Kubescape is preparing for a security audit.
 
 ## Security functions and features
 
