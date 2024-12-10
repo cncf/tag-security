@@ -326,7 +326,7 @@ There is a template for incident response for reference [here](https://github.co
 
 ### Known issues over time
 
-* The project did not have a private disclosure of any kind yet
+* At the time of preparation, the project had not had a private disclosure of any kind
 * Public issues can be found with the `security` label [here](https://github.com/kubescape/kubescape/labels/security)
 
 ### OpenSSF best practices
