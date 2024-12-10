@@ -94,7 +94,7 @@ This component is responsible for image vulnerability scanning. It can either pr
 
 ##### Node agent component
 
-This component has multiple purposes all bound to information available on Kubernetes nodes.
+This component has multiple purposes which are all bound to information available on Kubernetes nodes.
 
 * Produces SBOMs from the images available on the node (used by *KubeVuln*)
 * Produces information from the configurations of the Linux host of the Kubernetes node (used by *Kubescape*)
@@ -327,6 +327,6 @@ There is a template for incident response for reference [here](https://github.co
 
 ### OpenSSF best practices
 
-The Kubescape project is continuously improving its practices based on the OpenSSF recommendations, see scores [here](https://securityscorecards.dev/viewer/?uri=github.com/kubescape/kubescape)
+The Kubescape project is continuously improving its practices based on the OpenSSF recommendations, see [Scorecard Results](https://securityscorecards.dev/viewer/?uri=github.com/kubescape/kubescape) and [Best Practices Badge](https://www.bestpractices.dev/en/projects/6944)
 
 <!-- cSpell:ignore Grype Inspektor -->
