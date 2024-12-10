@@ -94,7 +94,7 @@ This component is responsible for image vulnerability scanning. It can either pr
 
 ##### Node agent component
 
-This component has multiple purposes all are related to information only available on Kubernetes nodes:
+This component serves multiple purposes, all of which are related to information that is only available on Kubernetes nodes:
 
 * Produces SBOMs from the images available on the node (used by *KubeVuln*)
 * Produces information from the configurations of the Linux host of the Kubernetes node (used by *Kubescape*)
