@@ -171,7 +171,7 @@ It responds to:
 This component is also entirely event-driven, and two actors trigger its actions:
 
 * Kubernetes API: *Synchronizer* responds to changes in the Kubernetes API objects - this triggers an action to send these objects to the connected Synchronizer server
-* Synchornizer server: Synchornizer server can trigger the *Synchronizer* component to store objects in Kubernetes API (this is limited by the *ClusterRole* the *Synchronizer* is assigned with)
+* Synchronizer server: Synchronizer server can trigger the *Synchronizer* component to store objects in Kubernetes API (this is limited by the *ClusterRole* the *Synchronizer* is assigned with)
 
 ### Goals
 
