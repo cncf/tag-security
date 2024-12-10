@@ -2,7 +2,6 @@
 
 This document is intended to aid the project's maintainers, contributors, and users understand the project's security status and help identify points of improvement.
 
-
 ## Table of contents
 
 * [Metadata](#metadata)
@@ -113,7 +112,7 @@ This component is an optional part of the Kubescape Operator. It enables users t
 
 #### Detailed overview
 
-A more detailed architectural representation, can be found [here](https://github.com/kubescape/helm-charts/blob/doc/charts/kubescape-operator/README.md#in-cluster-components-overview)
+A more detailed architectural representation, can be found [here](https://github.com/kubescape/helm-charts/tree/main/charts/kubescape-operator#in-cluster-components-overview)
 
 #### Objects
 
@@ -197,7 +196,6 @@ This component is also entirely event-driven, and two actors trigger its actions
 This self-assessment is not intended to provide a security audit of Kubescape or function as an independent assessment or attestation of Kubescape's security health.
 
 This document provides Kubescape users with an initial understanding of Kubescape's security, where to find existing security documentation, Kubescape's plans for security, and a general overview of Kubescape's security practices, both for the development of Kubescape and its operational security.
-
 
 ## Security functions and features
 
@@ -332,4 +330,3 @@ There is a template for incident response for reference [here](https://github.co
 The Kubescape project is continuously improving its practices based on the OpenSSF recommendations, see scores [here](https://securityscorecards.dev/viewer/?uri=github.com/kubescape/kubescape)
 
 <!-- cSpell:ignore Grype Inspektor -->
-<!-- -->
