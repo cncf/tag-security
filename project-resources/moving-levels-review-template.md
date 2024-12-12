@@ -2,6 +2,10 @@
 
 ## Project Overview
 
+### Security Champion
+
+Does your project have one or more individuals who are regularly leading or advocating for security improvements?
+
 ### Ecosystem Adoption
 
 What ecosystem adoption has the project seen?
