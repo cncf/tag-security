@@ -17,7 +17,6 @@ Here are the list of requirements for securing build pipelines. Each one has a l
 - SLSA (level 1)
 - in-toto
 
-
 ## 2. Validate environments and dependencies before usage
 
 ### Tool capability
@@ -163,7 +162,7 @@ Here are the list of requirements for securing build pipelines. Each one has a l
 - in-toto (can be validated via runtime trace attestations)
 - Tekton (Pipelines)
 
-## 14. Ensure Software Factory has minimal network connectivity.
+## 14. Ensure Software Factory has minimal network connectivity
 
 ### Tool capability
 
