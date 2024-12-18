@@ -21,9 +21,9 @@ This assessment was created by community members as part of the [Security Pals](
 
 ## Metadata
 
-|   |  |
+|    |    |
 | -- | -- |
-| Assessment Stage | Incomplete | 
+| Assessment Stage | Incomplete |
 | Software | A link to the External-Secret Operator's repository: [external-secrets](https://github.com/external-secrets/external-secrets) |
 | Security Provider | No  - Primary function is to sync passwords from external secret store to k8 clusters.|
 | Languages | Go, HCL, Makefile, Shell, Smarty, Dockerfile |
@@ -59,9 +59,9 @@ The External Secrets Operator (ESO) is a tool designed for Kubernetes, a widely-
 * Employs custom resource definitions (CRDs) like ExternalSecret to define how external secrets should be fetched and synchronized.
 * Isolation: Kubernetes Role-Based Access Control (RBAC) limits potential lateral movement in case of a compromise.
 * For the External Secrets Operator (ESO), the key actors based on its [architecture](https://external-secrets.io/latest/api/components/), which includes the Core Controller, the Cert Controller, and the Webhook, can be described as follows:
-  * Core Controller: The Core Controller is the primary component of ESO. It watches for `ExternalSecret` objects in Kubernetes and acts upon changes to these objects. It is responsible for fetching the secrets from external secret management systems and synchronizing them with Kubernetes Secrets. 
+  * Core Controller: The Core Controller is the primary component of ESO. It watches for `ExternalSecret` objects in Kubernetes and acts upon changes to these objects. It is responsible for fetching the secrets from external secret management systems and synchronizing them with Kubernetes Secrets.
   * Cert Controller: The Cert Controller is responsible for managing the TLS certificates that are used for secure communication within the Kubernetes cluster, particularly for the webhook service.
-  * Webhook: The Webhook in ESO is used for various purposes, including mutating or validating `ExternalSecrets` and other related custom resources. It plays a critical role in ensuring the integrity and correctness of the `ExternalSecret` resources. 
+  * Webhook: The Webhook in ESO is used for various purposes, including mutating or validating `ExternalSecrets` and other related custom resources. It plays a critical role in ensuring the integrity and correctness of the `ExternalSecret` resources.
 
 
 #### 3. Kubernetes Secrets
@@ -74,7 +74,7 @@ The External Secrets Operator (ESO) is a tool designed for Kubernetes, a widely-
 
 
 ### Actions
-The actions performed by ESO to synchronize secrets from external sources into Kubernetes can be outlined focusing on security checks, data handling, and interactions:
+The actions performed by ESO to synchronize secrets from/to external sources from/into Kubernetes can be outlined focusing on security checks, data handling, and interactions:
 
 #### 1. Client Request to External Secret Management System
 ESO, acting as a client, sends a request to an external secret management system (like AWS Secrets Manager). This request includes authentication and authorization checks to ensure that ESO is permitted to access the requested secrets.
@@ -88,7 +88,10 @@ ESO validates the format and integrity of the received secrets. If necessary, it
 #### 4. Synchronization to Kubernetes Secrets
 ESO then creates or updates Kubernetes Secret objects with the retrieved data. This step involves interacting with the Kubernetes API server, which includes RBAC checks to ensure that ESO has the necessary permissions to perform these operations.
 
-#### 5. Use by Kubernetes Workloads
+#### 5. Synchronization to Remote Provider
+ESO can synchronize secrets back to the provider using PushSecrets. It will keep the remote secret updated based on metadata provided by the user and information about the provider. Based on policy, if the local secret is deleted, remote secrets can either be orphaned or deleted completely.
+
+#### 6. Use by Kubernetes Workloads
 Applications or workloads running in Kubernetes can then access these secrets. Access to these secrets within Kubernetes is controlled by namespace-specific policies and RBAC, ensuring that only authorized workloads can retrieve them.
 
 To outline the actions performed by different components of the External Secrets Operator (ESO) that enable its proper functioning, we can break it down as follows:
@@ -98,6 +101,7 @@ To outline the actions performed by different components of the External Secrets
 * Secret Retrieval: Fetches secrets from external secret management systems (like AWS Secrets Manager, HashiCorp Vault) based on the details specified in ExternalSecret objects.
 * Data Transformation: Converts the fetched secrets into a format compatible with Kubernetes Secrets, if necessary.
 * Secret Synchronization: Creates or updates corresponding Kubernetes Secret objects with the fetched data, ensuring they are in sync with the external source.
+* Secret Push: Updates remote secrets at the provider based on the provided secret, transforming the secret if template data is provided by the user.
 
 #### 2. Cert Controller Actions:
 * Certificate Generation: Automatically generates and renews TLS certificates needed for the secure functioning of webhooks.
@@ -109,19 +113,25 @@ To outline the actions performed by different components of the External Secrets
 * Mutation: Optionally modifies ExternalSecret objects as per predefined rules or logic to ensure they meet certain criteria or standards before processing.
 
 
-
 ### Goals
-    
+
 #### 1. Secure Secret Management
 ESO's primary goal is to securely manage secrets within Kubernetes by leveraging external secret management systems. It ensures that sensitive information like API keys, passwords, and tokens are stored and managed in systems specifically designed for this purpose, offering robust security features.
 
 #### 2. Automated Synchronization
 ESO automates the synchronization of secrets from these external systems into Kubernetes, ensuring that applications always have access to the latest version of each secret.
 
-#### 3. Access Control
+#### 3. Automated Synchronization Back to the Provider
+Using PushSecrets, ESO can synchronize secrets FROM the Kubernetes cluster TO the remote provider. This is useful for backing up keys, sharing secrets between multiple clusters, maintaining a central secret manager that operates as a single source of truth.
+
+#### 4. Generate Temporary Secrets for Ephemeral usage
+
+With Generators it's possible to create temporary credentials for various puroses such as: STS token for AWS, Random Password, ECR access token, vault token, various webhook and more. These can easily be regenerated on a timer or manually.
+
+#### 5. Access Control
 By integrating with external secret managers, ESO inherits and enforces their access control mechanisms. It guarantees that only authorized parties can retrieve or modify the secrets, both in the external systems and when they are injected into Kubernetes.
 
-#### 4. Encryption and Integrity
+#### 6. Encryption and Integrity
 ESO ensures that the transmission of secrets from external systems to Kubernetes is secure, maintaining the confidentiality and integrity of the data throughout the process.
 
 
@@ -136,7 +146,7 @@ ESO does not function as an intrusion detection or prevention system. It does no
 #### 3. Full Lifecycle Management of Secrets
 The primary role of ESO is to synchronize secrets from external systems to Kubernetes. It does not manage the full lifecycle (like creation, rotation, and deletion) of secrets within the external systems.
 
-Caveat: With generators managing the full lifecycle is possible, given that the external provider allows a mechanism to do that (like with vault dynamic secrets). Example: [True Secrets Auto Rotation with ESO and Vault](https://dev.to/canelasevero/true-secrets-auto-rotation-with-eso-and-vault-1g4o).
+Caveat: With generators and PushSecrets managing the full lifecycle is possible, given that the external provider allows a mechanism to do that (like with vault dynamic secrets). Example: [True Secrets Auto Rotation with ESO and Vault](https://dev.to/canelasevero/true-secrets-auto-rotation-with-eso-and-vault-1g4o).
 
 #### 4. Direct Security Auditing or Compliance Assurance
 ESO does not perform security auditing or provide direct compliance assurance. It relies on the security and compliance features of the external secret management systems it integrates with.
@@ -154,7 +164,7 @@ This document provides the CNCF TAG-Security with an initial understanding of ES
 
 ### Critical Components
 * Authentication and Authorization Interface: Connects with external secret management systems; ensures only authenticated and authorized access to secrets.
-* Secret Synchronization Mechanism: Securely transfers secrets from external systems to Kubernetes, critical for maintaining the confidentiality and integrity of secret data.
+* Secret Synchronization Mechanism: Securely transfers secrets from/to external systems to/from Kubernetes, critical for maintaining the confidentiality and integrity of secret data.
 * Kubernetes Secrets Management: Handles the creation and updating of Kubernetes Secrets, a fundamental aspect of ensuring that only authorized Kubernetes workloads can access the synchronized secrets.
 
 ### Security Relevant Components.
@@ -164,7 +174,7 @@ This document provides the CNCF TAG-Security with an initial understanding of ES
 
 ## Project Compliance
 
-* Compliance - No specific compliance certifications or adherence to standards like PCI-DSS, COBIT, ISO, or GDPR have been documented. 
+* Compliance - No specific compliance certifications or adherence to standards like PCI-DSS, COBIT, ISO, or GDPR have been documented.
 
 ## Secure Development Practices
 
@@ -174,11 +184,10 @@ This document provides the CNCF TAG-Security with an initial understanding of ES
 * Code changes are submitted via Pull Requests (PRs) and must be reviewed and approved by at least one maintainer.
 * Commits to the `main` branch are merged only when a PR is approved and passes all checks.
 * Once a pull request has been opened it will be assigned to a reviewer from external-secrets/maintainers.
-* ESO uses the GitHub Bot [Paul the Alien](https://github.com/apps/paul-the-alien) (which is still in Alpha) to store the list of maintainers, to approve/merge PRs and to delete branches after PR merges.
 * Raising a PR triggers a series of GitHub actions and workflows whose component checks are broken down below:
   * [Sonar Cloud Quality Gate](https://sonarcloud.io/project/issues?id=external-secrets_external-secrets) check initiated by the sonarcloud bot which checks for bugs, vulnerabilities, security hotspots, code smells, code coverage and duplication
   * Developer Certificate of Origin (DCO) check to verify commits are signed correctly
-  * Detect noop ([skip-duplicate-actions](https://github.com/fkirc/skip-duplicate-actions)) 
+  * Detect noop ([skip-duplicate-actions](https://github.com/fkirc/skip-duplicate-actions))
   * Linting check
   * Diff check
   * Unit tests
@@ -206,7 +215,7 @@ This document provides the CNCF TAG-Security with an initial understanding of ES
 
 ### Ecosystem
 * ESO has replaced the now deprecated and archived kubernetes-external-secrets as detailed in this [issue](https://github.com/external-secrets/kubernetes-external-secrets/issues/864). It can be expected that the services that used kubernetes-external-secrets will migrate to ESO in the future.
-* ESO also maintains an official list of its [Adopters](https://github.com/external-secrets/external-secrets/blob/main/ADOPTERS.md). 
+* ESO also maintains an official list of its [Adopters](https://github.com/external-secrets/external-secrets/blob/main/ADOPTERS.md).
 
 ## Security Issue Resolution
 ESO's security policy can be found in [SECURITY.md](https://github.com/external-secrets/external-secrets/blob/main/SECURITY.md).
@@ -242,7 +251,7 @@ A few general use cases are available below followed by a case study:
 
 * Use Case 1: Managing secrets for multiple environments
 
-  A company has multiple environments for their applications, such as development, staging, and production. They use different credentials for each environment to access external resources, such as databases and cloud storage. ESO can be used to automatically synchronize these credentials to the appropriate Kubernetes secrets for each environment. This makes it easy to manage secrets and ensures that applications always have access to the correct credentials. 
+  A company has multiple environments for their applications, such as development, staging, and production. They use different credentials for each environment to access external resources, such as databases and cloud storage. ESO can be used to automatically synchronize these credentials to the appropriate Kubernetes secrets for each environment. This makes it easy to manage secrets and ensures that applications always have access to the correct credentials.
 
 * Use Case 2: Rotating secrets for security
 
