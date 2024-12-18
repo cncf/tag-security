@@ -1,25 +1,3 @@
----
-title: "CNCF Fuzzing handbook"
-author: [David Korczynski, Adam Korczynski]
-date: "2023-10-18"
-subject: "Markdown"
-keywords: [Markdown, Example]
-subtitle: "A handbook for fuzzing open source software"
-lang: "en"
-book: false
-titlepage: true
-colorlinks: true
-titlepage-color: "8545AF"
-titlepage-text-color: "FFFFFF"
-titlepage-rule-color: "FFFFFF"
-titlepage-rule-height: 2
-toc: true
-toc-own-page: true
-footer-left: "\\thetitle"
-footer-center: "![fuzzing overview](imgs/cncf-logo-footer.png)"
-titlepage-logo: "imgs/cncf-stacked-color.png"
-...
-
 # Introduction
 
 This paper introduces fuzzing to provide developers and security researchers a technical reference on navigating the open source fuzzing ecosystem. The paper introduces how to get started with fuzzing, how fuzzing is used by CNCF projects and how to establish a continuous, long-term fuzzing effort using open source frameworks. The goal is to provide a paper outlining the connection between several open source projects that together can be used in a modern software development cycle to provide continuous software security assurance.
