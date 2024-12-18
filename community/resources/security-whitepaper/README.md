@@ -1,6 +1,6 @@
 # Cloud Native Security Whitepaper
 
-> :sunflower: **Click
+> **Click
 > _[here](v2/CNCF_cloud-native-security-whitepaper-May2022-v2.pdf)_ for
 > _version 2_ (refreshed) whitepaper**
 
