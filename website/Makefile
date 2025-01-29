@@ -9,8 +9,8 @@ deps:
 	--include='*.md' --exclude='*'
 
 	# Move over content such as graphics and logos
-	mkdir -p static/community/resources/design/
-	rsync -av '../community/resources/design/' 'static/community/resources/design/' --exclude='#*'
+	mkdir -p static/resources/tag/design/
+	rsync -av '../resources/tag/design/' 'static/resources/tag/design/' --exclude='#*'
 
 	# Update all imported markdown files to work as standalone hugo pages (except READMEs, see below)
 	# sed command is configured for the Netlify ubuntu env
@@ -21,7 +21,7 @@ deps:
 		fi; \
 		title_case=$$(echo "$$base_name" | sed -e 's/-/ /g' -e 's/\b\(.\)/\u\1/g' | sed 's/cncf/CNCF/Ig'); \
 		text_to_prepend="---\ntitle: \"$$title_case\"\n---\n"; \
-		sed -i "1s/^/$$text_to_prepend/" "$$file"; \
+		sed -i '' "1s/^/$$text_to_prepend/" "$$file"; \
 	done
 
 	# Set up Navbar and Sidebar contents
