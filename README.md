@@ -1,6 +1,6 @@
 # Security Technical Advisory Group
 
-![Cloud Native Security Logo](/community/resources/design/logo/cloud-native-security-horizontal-darkmodesafe.svg)
+![Cloud Native Security Logo](resources/tag/logo/cloud-native-security-horizontal-darkmodesafe.svg)
 
 ## Quick links
 
@@ -32,12 +32,12 @@ Below is a list of publications by TAG Security. For a comprehensive collection 
 | [Catalog of Supply Chain Compromises](community/catalog/compromises) | November 2019 - Present |
 | [Software Supply Chain Best Practices](community/working-groups/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf) | May, 2021 |
 | [Evaluating your Supply Chain Security](community/working-groups/supply-chain-security/supply-chain-security-paper/secure-supply-chain-assessment.md) | May, 2021 |
-| [Cloud Native Security Lexicon](community/resources/security-lexicon/cloud-native-security-lexicon.md) | August, 2021 |
-| [Cloud Native Security Whitepaper](community/resources/security-whitepaper/v2/CNCF_cloud-native-security-whitepaper-May2022-v2.pdf) | May, 2022 |
+| [Cloud Native Security Lexicon](publications/security-lexicon/cloud-native-security-lexicon.md) | August, 2021 |
+| [Cloud Native Security Whitepaper](publications/security-whitepaper/v2/CNCF_cloud-native-security-whitepaper-May2022-v2.pdf) | May, 2022 |
 | [Cloud Native Security Controls Catalog](community/working-groups/controls/phase-one-announcement.md) | May, 2022 |
 | [Handling Build-time Dependency Vulnerabilities](community/working-groups/archive/policy/overview-policy-build-time-dependency-vulns.md) | June, 2022 |
 | [Secure Software Factory: A Reference Architecture to Securing the Software Supply Chain](community/working-groups/supply-chain-security/secure-software-factory/Secure_Software_Factory_Whitepaper.pdf) | May, 2022 |
-| [Secure Defaults](community/resources/security-whitepaper/secure-defaults-cloud-native-8.md) | February, 2022 |
+| [Secure Defaults](publications/security-whitepaper/secure-defaults-cloud-native-8.md) | February, 2022 |
 | [Open and Secure - A Manual for Practicing Threat Modeling to Assess and Fortify Open Source Security](community/assessments/Open_and_Secure.pdf) | November, 2023 |
 
 ## Governance
