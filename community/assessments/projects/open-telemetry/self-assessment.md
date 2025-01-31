@@ -261,10 +261,12 @@ OpenTelemetry is designed as a general-purpose telemetry framework, which means
 that it must be suitable for inclusion in many different workloads and services.
 Thus, we are concerned with several areas of security and secure development:
 
-1. Minimize the ability of our components to negatively impact the host process
-- e.g., do not throw exceptions or fatal errors.
+1. Minimize the ability of our components to negatively impact the host process - e.g., do not throw exceptions or fatal errors.
+
 2. Ensure that data cannot be inspected or tampered with in transit.
+
 3. Allow for secure configuration of SDKs and ecosystem components.
+
 4. Provide mechanisms to allow for the protection of sensitive data in signals,
 such as hashing, filtering, or masking of PII.
 
