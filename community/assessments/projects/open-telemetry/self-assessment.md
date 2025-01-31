@@ -1,27 +1,6 @@
 # OpenTelemetry Security Self Assessment
 
-This assessment was created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process and is currently pending changes from the maintainer team.
-
-The Self-assessment is the initial document for projects to begin thinking about the security of the project, determining gaps in their security, and preparing any security documentation for their users. This document is ideal for projects currently in the CNCF sandbox as well as projects that are looking to receive a joint assessment and currently in CNCF **Incubation**.
-
-For a detailed guide with step-by-step discussion and examples, check out the free Express Learning course provided by Linux Foundation Training & Certification: [Security Assessments for Open Source Projects](https://training.linuxfoundation.org/express-learning/security-self-assessments-for-open-source-projects-lfel1005/).
-
-## Table of contents
-
-* [Metadata](#metadata)
-  * [Security links](#security-links)
-* [Overview](#overview)
-  * [Actors](#actors)
-  * [Actions](#actions)
-  * [Background](#background)
-  * [Goals](#goals)
-  * [Non-goals](#non-goals)
-* [Self-assessment use](#self-assessment-use)
-* [Security functions and features](#security-functions-and-features)
-* [Project compliance](#project-compliance)
-* [Secure development practices](#secure-development-practices)
-* [Security issue resolution](#security-issue-resolution)
-* [Appendix](#appendix)
+_This assessment was initially created by community members as part of the [Security Pals](https://github.com/cncf/tag-security/issues/1102) process. The project recognizes their contribution to major parts of this document._
 
 ## Table of contents
 
@@ -44,12 +23,12 @@ For a detailed guide with step-by-step discussion and examples, check out the fr
 
 |   |  |
 | -- | -- |
-| Assessment Stage | Incomplete | 
-| Software | [OpenTelemetry](https://github.com/open-telemetry/opentelemetry.io/tree/main)  |
+| Assessment Stage | Complete |
+| Software | [OpenTelemetry](https://github.com/open-telemetry)  |
 | Website | https://opentelemetry.io |
 | Security Provider | No |
 | Languages | C++, .NET, Erlang / Elixir, Go, Java, JavaScript / TypeScript, PHP, Python, Ruby, Rust, Swift, Any Language |
-| SBOM | https://mvnrepository.com/artifact/io.opentelemetry/opentelemetry-bom |
+| SBOM | Varies based on language. |
 
 ### Security Links
 
@@ -62,23 +41,29 @@ For a detailed guide with step-by-step discussion and examples, check out the fr
    </td>
   </tr>
   <tr>
-   <td>Security best practices
+   <td>Security SIG
    </td>
-   <td><a href="https://github.com/open-telemetry/opentelemetry-collector/blob/main/docs/security-best-practices.md">https://github.com/open-telemetry/opentelemetry-collector/blob/main/docs/security-best-practices.md</a>
+   <td><a href="https://github.com/open-telemetry/sig-security">https://github.com/open-telemetry/sig-security</a>
    </td>
-   <tr>
-   <td>OpenTelemetry Website Security Policy
-   </td>
-   <td><a href="https://github.com/open-telemetry/opentelemetry.io/security/policy">https://github.com/open-telemetry/opentelemetry.io/security/policy</a>
-   </td>
-   </tr>
+  </tr>
+  <tr>
+      <td>Security Audit
+      </td>
+      <td><a href="https://opentelemetry.io/blog/2024/security-audit-results/">https://opentelemetry.io/blog/2024/security-audit-results/</a>
+      </td>
+  </tr>
+  <tr>
+      <td>Fuzzing Audit
+      </td>
+      <td><a href="https://opentelemetry.io/blog/2024/fuzzing-audit-results/">https://opentelemetry.io/blog/2024/fuzzing-audit-results/</a>
+      </td>
+  </tr>
 </table>
 
 
 ## Overview
 
-OpenTelemetry is an observability framework and toolkit that helps developers understand application behavior by instrumenting, generating, and exporting telemetry data for applications using OpenTelemetry. This includes open-source backends such as Jaeger and Prometheus, in addition to other commercial offerings.
-
+OpenTelemetry is an observability framework and standard for creating, processing, collecting, and exporting telemetry data from cloud-native applications. As an extensible and composable framework, it supports a wide variety of integration and deployment methods, and is intended to be a general-purpose library.
 
 ### Background
 
@@ -86,112 +71,115 @@ OpenTelemetry is an observability framework and toolkit designed to create and m
 
 The OpenTelemetry Collector offers a vendor-agnostic implementation on how to receive, process and export telemetry data. In addition, it removes the need to run, operate and maintain multiple agents/collectors in order to support open-source telemetry data formats (e.g. Jaeger, Prometheus, etc.) to multiple open-source or commercial back-ends. The Collector may utilize one or more Receivers which accept data from external services in a wide variety of telemetry data formats, it then processes the data and exports it to further Observability frontends/APIs such as Jaeger and Prometheus.
 
-OpenTelemetry does two important things:
+The primary goals of OpenTelemetry are as follows:
 
-1. Allows you to own the data that you generate rather than be stuck with a proprietary data format or tool.
+1. Provide a single, lightweight API specification and implementation that developers can embed into their libraries, which will emit strongly-typed instrumentation data.
 
-2. Allows you to learn a single set of APIs and conventions
+2. Provide a specification for both the structure and semantics of telemetry data via OTLP and Semantic Conventions.
 
-### Actors
+3. Build an ecosystem of instrumentation libraries, tools, and other utilities to aid developers in building and operating observable applications.
 
-**OpenTelemetry SDK / OTLP**
+Due to the complexity of the software observability space in general, we define a distinction between 'core' and 'ecosystem' components. Core components are the upstream implementations of our specification -- e.g., the API, SDK, and wire protocols. Unspecified or other tools are 'ecosystem' components.
 
-OpenTelemetry provides various SDKs for C++, .NET, Erlang / Elixir, Go, Java, JavaScript / TypeScript, PHP, Python, Ruby, Rust, Swift. These SDKs provide instrumentation for a system, and export raw traces, metrics, and logs.
+### Core Actors
 
-This instrumentation can be automatic, in which case, they export relevant telemetry to the OpenTelemetry Collector with minimal configuration from the user. Alternatively, they can be manual. In this case, the user manually configures the system using the SDK and OpenTelemetry API to provide the relevant data to the Collector.
+**OpenTelemetry API**
 
-Furthermore, in a third party application, such as microservices or applications with instrumented code, that produces data in the OTLP format may be used to send telemetry to the collector.
+The OpenTelemetry API is a comprehensive implementation of the [OpenTelemetry Specification](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/README.md) in a variety of languages. The API is designed to provide core functionality around distributed context propagation and telemetry signal definition.
 
-As these components are the primary source of incoming data, they can also become a the primary attack surface. A hypothetical attacker may be able to deliver a malicious payload by simply performing an action that is logged, these malicious payloads could be embedded scripts in the logs or trace data. They can use then exploit this to either attack the SDK and try to gain control of the system directly, or to attack components further compromise downstream components, such as the Collector. This could be done using script execution vulnerabilities or other such attacks.
+**OpenTelemetry SDK**
+
+OpenTelemetry provides various reference SDKs for C++, .NET, Erlang / Elixir, Go, Java, JavaScript / TypeScript, PHP, Python, Ruby, Rust, Swift. These SDKs provide instrumentation for a system, and export raw traces, metrics, logs, and profiling data. The functions of the reference SDK are defined in the [OpenTelemetry Specification](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/README.md). An SDK is responsible for the management, processing, and export of telemetry data. Our core SDK implementations are designed to be slim and efficient in order to reduce the overhead required to collect and export telemetry data.
+
+**OTLP and Semantic Conventions**
+
+To provide vendor agnostic transport, serialization, and deserialization of telemetry data OpenTelemetry has built and maintains a wire standard referred to as the [OpenTeLemetry Protocol (OTLP)](https://github.com/open-telemetry/opentelemetry-proto/blob/main/docs/specification.md), as well as [Semantic Conventions](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/README.md). OTLP over gRPC and HTTP, either in protobuf or JSON format, is the primary mechanism by which telemetry data is communicated between OpenTelemetry components (such as an SDK and a Collector, or between two Collectors, or to a vendor-specific ingest endpoint). Semantic Conventions, meanwhile, define a standard set of metadata that describes telemetry itself. Semantic Conventions are primarily consumed through auto-generated libraries, or other tooling.
+
+### Ecosystem Actors
 
 **OpenTelemetry Collector**
 
-The [OpenTelemetry Collector](https://opentelemetry.io/docs/collector/) is a vendor-agnostic implementation of how to receive, process and export telemetry data. It consists of multiple components: Receivers, Processors, Exporters, and Extensions. It serves as middleware between the raw telemetry feeds and telemetry frontends. It receives data via the the OTLP Receiver and other multiple receivers, each one receiving a potentially different format and telemetry data type, like Prometheus, Jaeger, Zipkin, etc using the OpenTelemetry Protocol. The collector then processes the data, handling jobs such as retries, batching, and encryption. It then exports the data to an Observability frontend, like Jaeger or Prometheus among others for analysis.
+The [OpenTelemetry Collector](https://opentelemetry.io/docs/collector/) is a binary agent designed to receive, process, and export telemetry data from one or many sources. Broadly, a Collector is a crucial part of an OpenTelemetry deployment and serves many functions: it can act as an agent that consumes telemetry data from local sources regardless of initial format and normalize it to OTLP, it can act as a gateway to aggregate data from many other Collector instances in order to filter, batch, and process that data, and it can be extended with custom components to perform almost any action a user needs (such as hydrating telemetry data with source maps for symbolification purposes, or adding location information through geo-ip lookups).
 
-While the components (Receiver, Processor, Exporter) are ostensibly separate parts of the Collector and can be enabled/disabled independently, they are all controlled by a central configuration in the Collector. In the context of the Collector, this configuration only exists in the memory. However, different deployments, such as Docker and Kubernetes have their own way of handling and storing the configuration.
+The Collector is designed to receive, process, and export data as _pipelines_.
 
-In order to prevent privilege escalation, the OpenTelemetry Collector should not be run as root.
+- Receivers consume telemetry data from a network connection, pipe, or by reading local system state and transform it to in-memory OTLP.
+- Processors can mutate the stream of telemetry data in order to perform actions like filtering, hashing, hydration, reaggregation, or sampling.
+- Connectors tie together multiple pipelines as observers of the pipeline state, allowing for certain types of transformations (e.g., translating spans into metrics).
+- Exporters serialize the in-memory OTLP into a desired format and exfiltrate the data to a remote or local endpoint (such as an observability tool or the local file system)
 
-The Receiver is responsible for accepting telemetry data, and as such, should use encryption communicating with telemetry providers. A compromised Receiver would allow the attacker to obtain unsanitized telemetry data with sensitive information.The Processor may also be misconfigured to prevent telemetry from reaching downstream services/components.
+Each part of a pipeline has a defined interface and responsibilities, and cannot access or mutate data outside of its own pipeline.
 
-The Processor component of the Collector is reponsible for the sanitization of incoming telemetry data. It ensures that any downstream components will not receive data that is confidential or malicious. While the Processor is responsible for sanitizing data, it should also not be vulnerable to any sort of injection which would allow an attacker to take control of the Processor. The Processor may also be used to modify telemetry data, or prevent telemetry from reaching downstream services/components.
+Pipelines are configured via a YAML file, but an optional remote configuration protocol exists as well known as [OpAMP](https://github.com/open-telemetry/opamp-spec/blob/main/specification.md), currently in Beta.
 
-The Exporter is responsible for delivering the processed telemetry data to telemetry frontends for visualization and storage. It should use encryption to safeguard the data as well. A compromised Exporter can be used to leak sensitive information if the data was not properly sanitized, or provide a means to attack any systems downstream of the Collector. It may also be misconfgured to prevent any exports of telemetry to downstream services.
+The Collector provides security and authentication mechanisms for receivers and exporters that use the provided HTTP and gRPC interfaces; Mechanisms include mTLS, OAuth/SAML support, etc. Custom Collector distributions may extend this with their own _extensions_.
 
-**Downstream Services**
+Collectors may need to run with elevated privileges in order to perform certain actions, such as scraping system metrics or logs. Upstream distributions of the Collector are designed with sensible defaults, such as not binding to all interfaces and not running as root, in order to reduce the attack surface of a Collector.
 
-OpenTelemetry can export data to Prometheus, Jaeger, or in the OTLP format, among others. While these actors do not influence the rest of the OpenTelemetry ecosystem directly, they are the recipients of data provided by the Collector, or in the case of Collectorless setups, the telemetry sources. If the telemetry data passing through the Collector is not sanitized properly, these services are now vulnerable to injection attacks inside the telemetry payload. Furthermore, they might now expose sensitive data themselves.
+**Instrumentation Libraries, Frameworks, and Zero-Code Agents**
 
-Compromising these services would allow an attacker to leak sensitive information, modify telemetry data, or delete all of the telemetry data collected.
+While the goal of OpenTelemetry is to provide native instrumentation to libraries and frameworks, a great deal of existing software does not utilize its API, or transmit OTLP data. In order to ease adoption and aid developers and operators in using OpenTelemetry, a variety of community and project supported _instrumentation components_ exist. In general, these components offer the following services and mechanisms:
+
+- Zero-code instrumentation via monkeypatching or other dynamic hooks.
+- Injection of the API and SDK into a process through runtime agent mechanisms.
+- Library-based instrumentation controlled by code imports.
+- External, eBPF-based instrumentation of processes using probes.
+- Compile-time injection of API calls based on heuristics.
+
+These are all _optional_ components of an OpenTelemetry system; They require additional configuration, and add additional security considerations. Some of them require privilege escalation by their very nature. It is recommended that operators carefully evaluate the additional privileges and permissions needed to utilize these components before installation. In addition, these instrumentation components will capture potentially sensitive data about production systems depending on the implementation details of software. For example, if an application transmits potentially sensitive data in a URL query string and HTTP client instrumentation is installed, these values will be added to a span.
 
 ### Actions
 
 **Telemetry Data Collection**
 
-These agents collect telemetry data (metrics, logs, traces) from the application. Data is often collected in a non-intrusive and secure manner. In this case, sensitive information will not be exposed. The agents must authenticate themselves to the backend systems where the data is sent. Agents are assigned unique identifiers or credentials, such as API keys, tokens, or digital certificates. During data transmission, these credentials are sent to the backend system. The backend system verifies these credentials according to a database or a token service. This process may also include authorization checks to confirm the agent's permissions for the requested actions.
+Ideally, telemetry data is collected in a secure and non-intrusive fashion. By design, OpenTelemetry and OTLP supports a push-based scheme where systems and collection agents can perform authN/Z to validate the consumers and senders of data. There are exceptions to this rule, especially around integration into existing data sources using a Collector. It is suggested that users carefully consider their threat model, data access policies, and the security capabilities of storage/analysis tools as part of their overall security posture.
 
 **Data Transmission**
 
-The application sends the collected telemetry data to a backend system (like a telemetry collector or directly to an analysis tool). The transmission often involves secure protocols like HTTPS/TLS. The backend system may require authentication and authorization to accept data, ensuring that only legitimate data is received.
-
-The agents must [authenticate themselves](https://opentelemetry.io/docs/collector/configuration/#service) to the backend systems where the data is sent.
-
-External API tokens and [TLS network](https://opentelemetry.io/docs/collector/configuration/#service) security encryption [resources](https://github.com/cloudflare/cfssl) are used to encrypt sensitive information to prevent third parties from querying OpenTelementry telemetry data.
+OTLP connections between various components can be secured using existing mechanisms in gRPC/HTTP such as TLS. Transmission is secure by default (TLS must be explicitly disabled in configuration), but users should carefully evaluate the recommendations of their storage and analysis tools in order to secure both transport and data access. Threats to data transmission are mostly around inauthentic traffic being sent to publicly exposed collection endpoints -- we suggest proxying public-facing Collectors or using various allow/denylist approaches to ensure that unwanted traffic can be properly filtered.
 
 **Data Processing and Aggregation**
 
-The backend processes and aggregates the data. This may involve transforming the data into a suitable format for analysis. During processing, the backend validates the integrity and format of the data. It may also implement role-based access controls to ensure that only authorized personnel or systems can access or modify the data.
+Collectors are capable of a wide variety of processing functions. These can include both simple actions -- e.g., removing all data points or spans where a certain attribute value matches a known identifier -- as well as complex, stateful ones. Some examples of this latter category include 'tail sampling', where span data is buffered on a single Collector in order to make a sampling decision for the entire trace at once. Another example is spatial re-aggregation of metric data, or converting between different metric types (such as turning a sum into a gauge).
+
+By design, the Collector's transformation capabilities are only accessible via configuration. A [transformation domain-specific language](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/pkg/ottl) is being developed that allows for a wide variety of advanced transforms, but it is an optional component.
 
 **Data Export and Integration**
 
 Once processed, the data is exported to various monitoring and analysis tools (like Prometheus, Jaeger, etc.). The export process includes secure API calls or data transmission methods. The receiving systems often authenticate the incoming data to ensure its validity.
 
-**Analysis and Visualization**
-
-The data is analyzed, and insights are presented through dashboards or alerts. Access to these insights is typically controlled through user authentication and authorization, ensuring that only authorized users can view or manipulate sensitive telemetry data.
-
-**Alerting and Incident Response**
-
-Alerts are generated in case of anomalies or incidents detected through telemetry data. Below are alerting modes and the priority from top to bottom, with the top being the highest priority.
-* Error rate alert: When the telemetry data error rate reaches the set threshold, the system will issue an alarm to help us quickly identify errors and maintain system performance.
-* Delayed alert: When the response time of the telemetry data exceeds the set threshold, the system issues an alert and helps us identify the scope of the impact on the user experience.
-* Saturation alert: An alarm will be triggered when a large amount of telemetry data causes resources to near saturation. The alarm helps us eliminate idle resources promptly.
-
-The alerting mechanism is secured to prevent false alerts and ensure that alerts reach the correct recipients. Incident response protocols are in place to handle any security incidents reported through these alerts.
-
-
 ### Goals
 
 **General**
 
-* Customized observability features: Opentelemetry aims to set sensible configurations by default, but also allows for a wide array of flexibility and configuration
-* Own your data: OpenTelemetry is an open source project, it also provides the open source OTLP for telemetry data. This allows you to use one protocol and data collection system that is independent of proprietary data formats or tools. However, the Opentelemetry collector is also capable of sending and receiving data to and from a wide array of proprietary data formats.
-* Simplicity: OpenTelemetry allows you to learn only a single set of APIs and conventions to capture traces and metrics, simplifying the application instrumentation process. Furthermore, the OpenTelemetry Collector supports multiple Receivers and Exporters, allowing you to manage data input and output from a single location.
+* Enable cloud-native observability through a standard for the instrumentation, structure, and meaning of telemetry data.
+* Turn telemetry data into a commodity feature of cloud-native systems, eliminating vendor lock-in.
+* Support bridges from legacy telemetry APIs and frameworks through an extensible and composable API and SDK design.
+* Nurture open source and commercial innovation by creating an open ecosystem for extending existing semantics.
+* Promulgate a data model for telemetry that moves past traditional 'three pillars' thinking by integrating signals through shared, distributed context.
 
 **Security**
 
-* Data integrity: The entire transaction of OpenTelemetry carries contextual information to ensure that each part can understand the whole transaction, and the error handling methods included in OpenTelemetry can also help maintain data integrity.
-* Data confidentiality: OpenTelemetry supports TLS encryption to secure your data in transport between external sources/sinks and the Collector.
-* Access control functionalities: Opentelemetry uses RBAC to control user access to data and functionality.
+OpenTelemetry is designed as a general-purpose telemetry framework, which means that it must be suitable for inclusion in many different workloads and services. Thus, we are concerned with several areas of security and secure development:
 
+1. Minimize the ability of our components to negatively impact the host process -- e.g., do not throw exceptions or fatal errors.
+2. Ensure that data cannot be inspected or tampered with in transit.
+3. Allow for secure configuration of SDKs and ecosystem components.
+4. Provide mechanisms to allow for the protection of sensitive data in signals, such as hashing, filtering, or masking of PII.
+
+There have been requests from the community to add non-repudibility guarantees to our data (e.g., sequence numbers, signed blobs, other forms of 'audit logging'), and we may elect to expand into this area in the future.
 
 ### Non-Goals
 
 **General**
 
-* User Interface for Data Visualization: OpenTelemetry primarily focuses on data collection and instrumentation. It does not aim to provide comprehensive data visualization or user interface solutions. For visualization, it is typically integrated with other tools.
-* Data Storage Solutions: OpenTelemetry does not provide a data storage solution for telemetry data. It is up to the users to integrate it with databases or data storage systems where the telemetry data will be stored and analyzed.
-* Automatic Troubleshooting and Resolution: OpenTelemetry collects and provides data that can be vital for troubleshooting, but it does not automate the problem resolution process. It provides the data necessary to diagnose issues, but resolving them typically requires human intervention or additional tools.
+OpenTelemetry does not seek to provide storage, analysis, visualization, or query interfaces for telemetry data. We also do not aim to provide application or service security features.
 
 **Security**
 
-* End-to-end Application Security: The primary focus of the project OpenTelemetry is for monitoring and observability, and the applications of this project require other tools, and code analysis and application security are unavailable. Hence, it does not replace the need for dedicated application security tools and practices.
-* Automated Security Patching and Updates: OpenTelemetry project does not manage neither does it automate the application of security patches for software systems. This remains the responsibility of the system administrators or other security tools which are using OpenTelemetry to keep the softwares and their systems updated on security patches.
-* Compliance Auditing and Reporting: Even though we see that OpenTelemetry can certainly help in collecting data that might be relevant for compliance purposes, it is not a compliance auditing tool. Hence, it does not provide specific features for compliance reporting or auditing against standards like GDPR, HIPAA, or PCI-DSS.
+While OpenTelemetry can be used to collect logs and events for SIEM purposes, our focus is on application and system observability. However, it is an area that we will potentially invest more into based on community feedback and demand. Furthermore, we do not provide guarantees around the security of data stores, analysis tools, visualization, or query interfaces for OpenTelemetry-sourced data. We provide sensible defaults to minimize the impact of DDoS or other attacks against telemetry collection, but we cannot prevent users from opening themselves up to such attacks if they modify these defaults or deploy Collectors that are open to the world.
 
 ## Self-Assessment Use
-
-This self-assessment is created by the Security Pals team to perform an internal analysis of the project's security. It is not intended to provide a security audit of OpenTelemetry, or function as an independent assessment or attestation of OpenTelemetry's security health.
 
 This document serves to provide OpenTelemetry users with an initial understanding of OpenTelemetry's security, where to find existing security documentation, OpenTelemetry plans for security, and general overview of OpenTelemetry security practices, both for development of OpenTelemetry as well as security of OpenTelemetry.
 
@@ -201,73 +189,63 @@ This document provides the CNCF TAG-Security with an initial understanding of Op
 
 See [Actors](#actors) and [Actions](#actions) for more detailed description of the critical actors, actions, and potential threats.
 
-
 ### Critical
 
-**Telemetry Data Encryption**
+**Authentication mechanisms between OTLP receivers and exporters**
 
-Encryption of telemetry data in OpenTelemetry is critical for protecting data confidentiality and integrity during transmission. This process involves transforming the readable telemetry data (metrics, logs, and traces) into an encrypted format, which can only be deciphered by authorized parties with the appropriate decryption keys. It serves as the first line of defense against data breaches, making it a fundamental aspect in threat modeling for assessing risks related to eavesdropping and data tampering.
+OTLP is built on gRPC and HTTP, and thus relies on the TLS and authentication mechanisms supported by HTTP/2 and HTTP. These include bearer tokens via OAuth 2.0, x.509 client certificates for mutual TLS, and API key authentication.
 
-**Authentication and Authorization Mechanisms**
+**Data validation and sanitization**
 
-These mechanisms in OpenTelemetry ensure that only authenticated and authorized entities can interact with the system, playing a crucial role in safeguarding against unauthorized access and manipulation. In threat modeling, they are key to evaluating the potential risks of system penetration and data breaches.
+Semantic conventions are designed to reduce the likelihood that sensitive data is recorded by an instrumentation library, but in real-world use cases sensitive data is almost always recorded into telemetry. In order to prevent it from leaving a secured network, a variety of filtering methods are provided to users. Our recommended deployment configuration of OpenTelemetry includes Collectors which are responsible for managing these filters using one of the aforementioned options (such as a Transform processor).
 
-**Data Integrity Checks**
+**Access control for configuration**
 
-Ensuring the integrity of telemetry data in OpenTelemetry is essential for reliable system monitoring and decision-making. Data integrity checks are crucial in threat modeling to identify potential manipulation threats and maintain the trustworthiness of operational data.
-
-**Context Propagation Security**
-
-In OpenTelemetry, secure context propagation is critical for maintaining trace integrity across services. The context in distributed tracing includes information necessary to maintain the trace's continuity as it moves from one service to another. This typically includes trace identifiers, span identifiers, and other metadata that links individual service calls to the overarching trace. Distributed tracing tracks the journey of a request as it traverses through these microservices, creating a trace that represents the entire flow. It's a key defense against trace manipulation, playing an important role in threat modeling, especially in distributed tracing scenarios.
-
+OpenTelemetry components can be configured in code, through environment variables, and in some cases through configuration files or remote configuration APIs. In all cases, users should ensure that sources of configuration do not leak potentially sensitive values such as API keys for authenticating with telemetry backends.
 
 ### Security Relevant
 
-**Configurable Data Scrubbing**
+**Configurable sampling rates and data limits**
 
-OpenTelemetry's data scrubbing feature allows for the removal or anonymization of sensitive information, crucial for privacy compliance and reducing exposure risks. It's a significant factor in threat modeling, particularly in handling sensitive information.
+In order to prevent DDoS of Collectors or backend analysis tools, OpenTelemetry strongly recommends that production deployments utilize data sampling strategies to reduce the volume of telemetry collected and processed. In addition, we set default limits on the size of telemetry payloads in order to limit the ability of telemetry to overwhelm a network link or storage device.
 
-**Role-Based Access Control (RBAC) for Dashboards and Tools**
+**Tenancy isolation**
 
-RBAC in OpenTelemetry controls user access to data and functionalities, preventing unauthorized actions and enhancing system security. It's a critical consideration in threat modeling for assessing risks related to unauthorized access and privilege escalation.
+When deploying multi-tenant Collectors, users should strive to institute appropriate per-pipeline authentication methods to disallow telemetry data from one tenant being sent to a different pipeline. A popular mitigation strategy here is to deploy single-tenant Collectors.
 
-**Monitoring and Auditing**
+**Rate limiting**
 
-This feature in OpenTelemetry tracks system activities and is vital for security audits and analysis. Monitoring and auditing apply to both the performance and the security of the telemetry data pipeline. For example, metrics, logs, and alerts can be used for the OpenTelemetry agents, collectors, and exporters. Reports, dashboards, and notifications can be used for the databases or cloud services that store the telemetry data. It plays a significant role in threat modeling for identifying unauthorized activities and breaches, enhancing incident detection and response strategies.
+OTLP clients and servers are expected to support exponential backoff and other forms of rate limiting/backpressure handling. This may result in telemetry data being dropped, which is also why it is suggested to rely on multi-signal telemetry (e.g., not _only_ sending trace data from a service) and to potentially deploy Collectors in per-signal pools so that the loss of one signal does not negatively impact the ability to inspect a service's state. In addition, it is suggested to use reverse proxies to load balance traffic into Collector pools.
 
-**Reverse Proxy**
+**Management protocol security**
 
-A reverse proxy sits between the clients (which could be instrumented applications or OpenTelemetry agents) and the backend services (like telemetry collectors or observability platforms). It manages the incoming traffic and applies rate limiting and throttling rules to control the flow of requests. This setup is crucial for protecting the backend services from being overwhelmed by excessive traffic or potential denial-of-service attacks.
-
-**Regular Security Updates and Patch Management**
-
-Regularly updating and patching OpenTelemetry components is essential for maintaining system security and protecting against known vulnerabilities. This practice is a crucial aspect of threat modeling, focusing on the system's defenses against known exploits.
-
+OpAMP provides [connection management](https://github.com/open-telemetry/opamp-spec/blob/main/specification.md#connection-settings-management) features that allow agents and servers to not only securely communicate with each other, but for secure connections to be established in various ways. Trust on first use, registration on first use, client-initiated, and server-initiated flows all exist. Depending on the exact needs of a deployment, different strategies will make the most sense.
 
 ## Secure Development Practices
 
 ### Development Pipeline
 
-All code is maintained on [Github](https://github.com/open-telemetry/opentelemetry.io/tree/main).
+All code is maintained on [GitHub](https://github.com/open-telemetry/). The project provides security recommendations to each SIG.
 
 * Contributions and Changes
-  * Code changes are submitted via Pull Requests (PRs) and must be signed and verified.
+  * Code changes are submitted via Pull Requests (PRs). Contributors must have signed a CLA.
   * Commits to the main branch directly are not allowed.
 * Code Review
   * Changes must be reviewed and merged by the project maintainers.
   * The code is reviewed by multiple members from various teams and then approved by all of the reviewers before passing the check.
 * Automated Testing
   * In each PR, the code has to pass through various security checks and vulnerability analysis, to find if the code is secure and would not fail basic testing.
-  * Tools like CodeQL and GoSec have been adopted for security scanning.
+  * Tools like CodeQL and GoSec have been adopted for security scanning in some repositories.
   * The project utilizes various vulnerability tests, unit tests and neutral tests to quantify whether the changes would be safe in basic context, before the reviews done by the project maintainers.
 * Dependency Management
-  * The project regularly updates its dependencies and check for vulnerabilities and keeps its github updated at all times asynchronously.
+  * Many SIGs use automated scanners such as Dependabot or Renovate to automate dependency updates, though not all..
 
 ### Communication Channels
 * Internal
   * The OpenTelemetry team mostly uses platforms like GitHub, Slack, or email lists for internal communications within the teams.
+  * Regular SIG meetings are held over Zoom for maintainers and contributors to each SIG.
 * Inbound
-  * Users and contributors to the OpenTelemetry project can communicate with the OpenTelemetry team via GitHub issues, mailing lists, CNCF and through Slack channels as well.
+  * Users and contributors to the OpenTelemetry project can communicate with the OpenTelemetry team via GitHub issues, StackOverflow, CNCF and through Slack channels as well.
 * Outbound
   * The updates and announcements from OpenTelemetry are made through OpenTelemetry Blog, GitHub, CNCF mailing lists, and social media channels.
 
@@ -277,75 +255,44 @@ OpenTelemetry is a toolkit to design and export telemetry data. The project is s
 
 Reference to the first integrations that offer-first party support for OpenTelemetry is present here in [Integrations](https://opentelemetry.io/ecosystem/integrations/)
 
-
 ## Security Issue Resolution
 
 
 ### Responsible Disclosure Process
 
-For any projects under the OpenTelemetry project, any security issue is not to be reported through Github but through the steps defined in the [Security Policy](https://github.com/open-telemetry/opentelemetry.io/security/policy). The way to report any Vulnerability is through 'Report a Vulnerability' and creating a private channel between the reporter and the maintainers.
+All security issues are to be reported as defined in the [Security Policy](https://github.com/open-telemetry/opentelemetry.io/security/policy).
 
-The technical team of maintainers recieve the Github notification for the vulnerability. If a report is made by email via encrypted messages, only the OpenTelemetry Technical Committee should be able to decrypt the message and they provide the issue to the respective team maintainers of the relevant repositories, as the respective team might not have the private key to decrypt the report that is sent throught the private channel of communcation. The OTel SIG Security might get involved in any of those steps.
+We leverage the GitHub Security reporting flow in order to create private channels between reporters and members of the Technical Committee. TC members are able to invite SIG maintainers or other relevant participants to these issues in order to deploy and coordinate fixes.
 
+In the event that a security issue requires a coordinated response, the TC and GC will work together with external parties on disclosure.
 
 ### Incident Response
 
-See [Security Policy](https://github.com/open-telemetry/opentelemetry.io/security/policy) for a description for how incidents should be communicated, triaged, confirmed, and notified.
-
-The OpenTelemetry team likely follows a structured process for patching a vulnerabilty, releasing it as soon as possible, and publicly communicating about vulnerabilities.
-
-Reporters are expected to comply with agreed-upon dates for public disclosure, ensuring a responsible and coordinated release of information according to the Policy mentioned before.
-
+SIG Security is expected to handle incident response in line with the previous notes on disclosure.
 
 ## Appendix
 
-
 ### Known Issues Over Time
 
-The Enhancements Telemetry security-related issues can be searched using the keywords "Security type:pr," and the fixes can be searched using the keywords "fix type:pr." it can be queried using[ https://github.com/open-telemetry/opentelemetry.io/issues](https://github.com/open-telemetry/opentelemetry.io/issues).
+CVEs published by the project are available on CVS.org. A selection follows:
 
-Consider security when making pull requests, and need to consider the possibility of exposing sensitive information.
+- [CVE-2024-45043](https://www.cve.org/CVERecord?id=CVE-2024-45043)
+- [CVE-2024-42368](https://www.cve.org/CVERecord?id=CVE-2024-42368)
+- [CVE-2023-45142](https://www.cve.org/CVERecord?id=CVE-2023-45142)
+- [CVE-2023-39951](https://www.cve.org/CVERecord?id=CVE-2023-39951)
 
+### OpenSSF Best Practices
 
-### Recommendation to the project team
+We continue to progress towards achieving OpenSSF Best Practices badges across all of our repositories and SIGs. You can find our current overview at [CLOMonitor](https://clomonitor.io/projects/cncf/open-telemetry). Our focus has been on ensuring that the most public-facing components such as the Collector have achieved this badge, which it has.
 
-**Security**
+### Adopters and Case Studies
 
-* Encryption: Use encrypted transfer protocol (HTTPS) to keep data secure in transit
-* Clean telemetry data: Regularly clean telemetry data to prevent data leakage
-* Avoid sensitive information: When recording telemetry data about sensitive information, it needs to be encrypted for added protection.
-* Update dependencies: Keeps OpenTelemetry's dependencies up-to-date and ensures that OpenTelemetry can maintain optimal performance.
-* CII Best Practices: OpenTelemetry should participate in the CII best practices and align themselves with it, so that it improves the trust and security of their code, helps in identifying and managing risk in development and other fundamental usecases. 
+We maintain a [list of adopters](https://opentelemetry.io/ecosystem/adopters/), along with blog posts and other supporting information about it, on our website. This is not an exhaustive list.
 
-**Reliability**
+In addition, the CNCF collects [case studies about OpenTelemetry](https://www.cncf.io/case-studies/?_sft_lf-project=opentelemetry) as a part of their efforts.
 
-* Avoid outdated APIs: Use the latest API version to avoid unreliability caused by obsolete APIs.
-* Ensure adequate metrics: OpeTelemetry collects sufficient metrics to analyze application behavior and performance better.
-* Fault tolerance mechanism: Set up a reasonable fault-tolerance mechanism so OpenTelemetry can run stably when an error occurs and implement data telemetry.
-* Leverage distributed tracing: Use the distributed tracing of requests on different links provided by the OpenTelemetry platform to help identify abnormal parameters and performance bottlenecks.
+### Related Projects
 
+OpenTelemetry is a unique project, as there are no other large-scale standards efforts around telemetry unification. While prior art exists in specific languages such as [Micrometer](https://micrometer.io/) for Java, or [System.Diagnostics](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics?view=net-9.0) in .NET, there are few universal efforts to create a single observability facade at the API and SDK level. In addition, while standards efforts around data normalization for telemetry exist -- the [Elastic Common Schema](https://github.com/elastic/ecs) or the [Common Log Format](https://en.wikipedia.org/wiki/Common_Log_Format) for instance -- there has not been a successful normalization project with the breadth that OpenTelemetry Semantic Conventions seek to provide.
 
-
-### Case Studies
-
-We've seen users of OpenTelemetry use the following way:
-
-* [Kubernetes](https://opentelemetry.io/docs/kubernetes/) is used to deploy and manage applications, but traditional monitoring technology has many limitations, so OpenTelemetry is used to observe applications in the Kubernetes environment. Deploy the OpenTelemetry collector on Kubernetes, add the OpenTelemetry SDK to help capture critical contextual information in the application and some performance data, and then use the OTEL detection library provided by OpenTelemetry to transfer the collected data to Prometheus to analyze the data. Perform visualization. Help better analyze and understand application performance through visual data. The powerful methods and accurate data brought by OpenTelemetry can help Kubernetes environments find and solve problems promptly and improve application availability.
-
-* OpenTelemetry makes generating, collecting, and exporting data from applications easy. We can use OpenTelemetry for system monitoring and then use a visual monitoring system to integrate the data sets generated by OpenTelemetry. For example, use AWS to build a simple microservice. After completing this configuration, use OpenTelemetry in the service to parse and track some contextual information. After the data collection, use Jaeger to connect to OpenTelemetry to obtain a more beautiful visual interface. When we try to access Jaeger, we can see some exception stack information, which helps us analyze online exceptions and understand the operating response of the system.
-
-In this case, OpenTelemetry, as a data collection medium, can help us better obtain and transmit data to other visualization platforms to help us identify some defects in the system.
-
-
-
-### Related Projects/Vendors
-
-As a vendor-neutral open-source observability framework, Opentelemetry helps users better telemetry different data, including traces, metrics, and logs. It facilitates comprehensive insights into application performance. Due to the framework's diverse language support, it helps optimize the system's reliability and is of more significant help in troubleshooting.
-
-OpenTelemetry is vendor and tool-agnostic, and it can be used with different observability backends, improving overall ease of use. Enable OpenTelemetry through native OTLP, helping add-on products deepen the connection with OpenTelemetry. Regarding observability backends that OpenTelemetry can be used together, there are Jaeger, Prometheus, Grafana, etc.
-
-
-* **Prometheus**: Both Prometheus and OpenTelemetry can collect metrics across applications and services. However, Prometheus focuses more on the pull model, and OpenTelemetry includes both push and pull models. In addition, OpenTelemetry does not have built-in alarms, but Prometheus does. OpenTelemetry combining built-in alerts in Prometheus helps create an observability ecosystem and improve stability.
-* **Grafana**: OpenTelemetry and Grafana complement each other, and the visualization in Grafana's dashboard can better help analyze various types of data collected from OpenTelemetry. In addition, Grafana supports enable interoperability from OpenTelemetry by calling on SDKs and application observability standards, among others, integrating telemetry into a unified open-source monitoring backend.
-* **Jaeger**: Jaeger is a distributed tracing system that can be started and run in a local environment. Users can first use OpenTelemetry to detect various indicators of the application and then send the tracking data to Jaeger. The advantage of using Jaeger is that it makes finding the source of latency and lack of concurrency easier. All in all, Jaeger is more focused, while OpenTelemetry is a broader framework.
-
+This is not to say that we stand alone -- there are many related projects in this space. Tools such as Jaeger, Zipkin, Prometheus, Elastic/OpenSearch all have large user communities and are very popular destinations for OpenTelemetry-generated signals. Components, like the Collector, have peers such as fluentBit or Vector, not to mention proprietary options like Cribl. Part of the reason that we encourage ecosystem development, however, is that none of these projects really encompass our unified vision of overlapping telemetry signals connected through a distributed context.
