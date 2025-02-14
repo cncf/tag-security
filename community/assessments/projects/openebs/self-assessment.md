@@ -34,13 +34,15 @@ Author: Niladri Halder ([@niladrih](https://github.com/niladrih))
 
 ## Metadata
 
+| | |
 | -- | -- |
 | Assessment Stage | Complete |
 | Software | <https://github.com/openebs/openebs>, <https://github.com/openebs/dynamic-localpv-provisioner>, <https://github.com/openebs/mayastor>, <https://github.com/openebs/zfs-localpv>, <https://github.com/openebs/lvm-localpv> |
 | Website | <https://openebs.io/> |
-| Security Provider | No  |
+| Security Provider | No |
 | Languages | Go, Rust |
 | SBOM | OpenEBS does not currently generate SBOMs |
+| | |
 
 ### Security links
 
