@@ -316,7 +316,7 @@ In addition, Kubescape has a Fix Disclosure Process that includes disclosing for
 
 ## Incident Response
 
-There is a template for incident response for reference [here](https://github.com/cncf/tag-security/blob/main/community/resources/project-resources/templates/incident-response.md)
+There is a template for incident response for reference [here](https://github.com/cncf/tag-security/blob/mainresources/tag/project/templates/incident-response.md)
 
 ## Appendix
 
