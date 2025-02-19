@@ -20,7 +20,6 @@ Welcome to the Community Directory of the CNCF TAG Security repository. This dir
 - **archive/policy/**: Contains archived Policy-as-Code assets.
 - **automated-governance/**: Assets for the Automated Governance working group.
 - **compliance/**: Assets for the Compliance working group.
-- **controls/**: Assets for the Controls working group.
 - **research/**: Assets related to the Research working group.
 - **supply-chain-security/**: Resources and documents for the Supply Chain Security working group.
 - **catalog/**: Contains the catalog of working group activities and documents.

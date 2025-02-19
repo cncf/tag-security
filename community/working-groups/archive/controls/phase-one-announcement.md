@@ -3,7 +3,7 @@
 The CNCF Security Technical Advisory Group ("Security TAG") has provided a
 wealth of information to assist organizations in the planning and design of
 secure cloud native systems, including the [Cloud Native Security
-Whitepaper](https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/CNCF_cloud-native-security-whitepaper-May2022-v2.pdf)
+Whitepaper](https://github.com/cncf/tag-security/blob/88c2b68b740cf89684cfdd70dafeff8130b1b681/security-whitepaper/CNCF_cloud-native-security-whitepaper-Nov2020.pdf)
 (CNSWP) and the [Software Supply Chain Best Practices
 Paper](https://github.com/cncf/tag-security/blob/88c2b68b740cf89684cfdd70dafeff8130b1b681/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf)
 (SSCP). Organizations would like to self-assess their company’s alignment with
