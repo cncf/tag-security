@@ -90,7 +90,6 @@ Each group, led by a responsible leader, reaches consensus on issues and manages
 | [Catalog of Supply Chain Compromises](/community/catalog/README.md) | Santiago Arias Torres | Marina Moore |
 | [Commons](/community/working-groups/commons/README.md) | Eddie Knight | Marco De Benedictis |
 | [Compliance](/community/working-groups/compliance/README.md) | Anca Sailer, Robert Ficcaglia | Brandt Keller |
-| [Controls](/community/working-groups/controls/README.md) | Jon Zeolla | Brandt Keller |
 | [Security Assessments](/community/assessments/README.md) | Justin Cappos | Eddie Knight |
 | [Software Supply Chain](/community/working-groups/supply-chain-security/README.md) | Michael Lieberman, John Kjell | Marina Moore |
 
