@@ -29,6 +29,7 @@ of compromise needs added, please include that as well.
 <!-- cSpell:disable -->
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
+| [Solana Web3.js Code Injection](2024/solana_web3js.md) | 2024 | Social Engineering/Phishing Attack | [1](https://www.reversinglabs.com/blog/malware-found-in-solana-npm-library-with-50m-downloads) [2](https://x.com/0xMert_/status/1864069157257613719) |
 | [Polyfill.io Infrastructure Takeover Leading to Malware Distribution](2024/polyfill.md) | 2024 | Publishing Infrastructure | [1](https://sansec.io/research/polyfill-supply-chain-attack) |
 | [Malware Disguised as Installer used to target Korean Public Institution](2024/targeted-signed-endoor.md) | 2024 | Trust and Signing | [1](https://asec.ahnlab.com/en/63396/) |
 | [3proxy signing incident](2024/laixi-3proxy.md) | 2024 | Trust and Signing | [1](https://news.sophos.com/en-us/2024/04/09/smoke-and-screen-mirrors-a-strange-signed-backdoor/) |
