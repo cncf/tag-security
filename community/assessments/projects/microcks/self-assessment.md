@@ -215,7 +215,7 @@ We have also created a guide titled "[Joining Microcks Community Meetings](https
 #### Ecosystem
 
 See, the big picture:
-![Microcks actions](images/microcks-cloud-native-ecosystem.png)
+  ![Microcks actions](images/microcks-cloud-native-ecosystem.png)
 
 More details:
 
@@ -251,10 +251,10 @@ More details:
 
 * [Open SSF Best Practices](https://www.bestpractices.dev/en):
 
-    Our current **Open Source Security Foundation (OpenSSF) score** for the main repository is **97%** ([View Score](https://www.bestpractices.dev/fr/projects/7513)).
-    However, the Microcks team is committed to improving this score to **100%** and achieving the passing stage.
+  Our current **Open Source Security Foundation (OpenSSF) score** for the main repository is **97%** ([View Score](https://www.bestpractices.dev/fr/projects/7513)).
+  However, the Microcks team is committed to improving this score to **100%** and achieving the passing stage.
 
-    Why Not 100%? We currently have a **temporary outstanding issue** with **Microcks UI-related dependencies** that we are unable to upgrade, preventing us from reaching **100%** compliance. This issue is specific to the **Microcks UI** and does not impact the **core services** of Microcks, which are typically used directly by applications relying on Microcks. To address this, we have initiated a **brainstorming session and action plan** with the community. You can follow the discussion and progress here: [GitHub Discussion #1458](https://github.com/orgs/microcks/discussions/1458). This is a **work in progress**, and we aim to resolve it in the coming months.
+  Why Not 100%? We currently have a **temporary outstanding issue** with **Microcks UI-related dependencies** that we are unable to upgrade, preventing us from reaching **100%** compliance. This issue is specific to the **Microcks UI** and does not impact the **core services** of Microcks, which are typically used directly by applications relying on Microcks. To address this, we have initiated a **brainstorming session and action plan** with the community. You can follow the discussion and progress here: [GitHub Discussion #1458](https://github.com/orgs/microcks/discussions/1458). This is a **work in progress**, and we aim to resolve it in the coming months.
 
 * Case Studies:
   * [Revolutionizing API Strategy: Lombard Odier's Success Story with Microcks](https://microcks.io/blog/lombard-odier-revolutionizing-api-strategy/)
@@ -269,6 +269,6 @@ More details:
 
 * Related Projects / Vendors:
 
-    We have addressed this common question in our overview documentation. See: [Overview - Alternatives](https://microcks.io/documentation/overview/alternatives/).
+  We have addressed this common question in our overview documentation. See: [Overview - Alternatives](https://microcks.io/documentation/overview/alternatives/).
 
-    We often receive questions about **Microcks vs Pact**. Here is our blog post discussing this topic: [Microcks and Pact for API Contract Testing](https://medium.com/@lbroudoux/microcks-and-pact-for-api-contract-testing-3e0e7d4516ca).
+  We often receive questions about **Microcks vs Pact**. Here is our blog post discussing this topic: [Microcks and Pact for API Contract Testing](https://medium.com/@lbroudoux/microcks-and-pact-for-api-contract-testing-3e0e7d4516ca).
