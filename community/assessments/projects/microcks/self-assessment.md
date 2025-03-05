@@ -156,13 +156,16 @@ As a Github hosted project, we rely on the Github authentication mechanisms. All
 
 #### Release, testing and assessment process
 
-Microcks components are distributed as OCI container images for container runtimes such as Docker or Podman. The Microcks container images adhere to a versioning scheme where the **x.y.z** or **x.y.z-fix-N** (for critical fixes) tag denotes a stable release from a GitHub repo tag and is immutable. Additionally, there are mutable tags like `latest` and `nightly` that point to the most recent stable or potentially unstable build, respectively.
+Microcks components are distributed as OCI container images for container runtimes such as Docker or Podman.
+The Microcks container images adhere to a versioning scheme where the **x.y.z** or **x.y.z-fix-N** (for critical fixes) tag denotes a stable release from a GitHub repo tag and is immutable.
+Additionally, there are mutable tags like `latest` and `nightly` that point to the most recent stable or potentially unstable build, respectively.
 
 The project has fully [automated the build and release process](https://github.com/microcks/microcks/issues/1468) so all delivered components and their provenance attestations are signed using the GitHub Action provided identities (following the in-toto framework).
 
 For a full description of [Microcks container images](https://microcks.io/documentation/references/container-images/ ), software supply chain security including SBOM and provenance attestations.
   
-We have also made significant efforts to enhance our **overall security and compliance** across all **19 repositories** using **CLOMonitor checks** ([View CLOMonitor Report](https://clomonitor.io/projects/cncf/microcks)). Currently, our **overall CLOMonitor score is 98**, rating Microcks at an **"A" grade**. This was a **long process initiated in June 2024** ([Issue #1201](https://github.com/microcks/microcks/issues/1201)), reflecting our continued commitment to improving project security and best practices.  
+We have also made significant efforts to enhance our **overall security and compliance** across all **19 repositories** using **CLOMonitor checks** ([View CLOMonitor Report](https://clomonitor.io/projects/cncf/microcks)).
+Currently, our **overall CLOMonitor score is 98**, rating Microcks at an **"A" grade**. This was a **long process initiated in June 2024** ([Issue #1201](https://github.com/microcks/microcks/issues/1201)), reflecting our continued commitment to improving project security and best practices.  
 
 Microcks ranks **#8 among 205 CNCF projects** (including Incubating and Graduated projects!). Additionally, we hold the **top position** for the **most repositories and checks among all CNCF projects**.  
 
