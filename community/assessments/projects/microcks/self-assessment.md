@@ -201,9 +201,11 @@ In case of **emergencies** and **only if** maintainers are away from their keybo
 
 Microcks hosts two monthly community meetings (documented [here](https://github.com/microcks/community?tab=readme-ov-file#community-meetings)), tailored for different time zones. Here’s how to join and participate:
 
-* APAC-friendly Meeting: Second Thursday of each month
+* APAC-friendly Meeting: Second Thursday of each month: 
+
   Time: 9–10 a.m. CET / 1–2 p.m. Bengaluru
-* America-friendly Meeting: Fourth Thursday of each month
+* America-friendly Meeting: Fourth Thursday of each month: 
+
   Time: 6–7 p.m. CET / 1–2 p.m. EST / 9–10 a.m. PST
   
 The event is listed on the [CNCF calendar](https://www.cncf.io/calendar) and [Microcks meetings](https://zoom-lfx.platform.linuxfoundation.org/meetings/microcks?view=month).
