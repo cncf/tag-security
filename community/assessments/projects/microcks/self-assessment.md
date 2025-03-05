@@ -205,7 +205,7 @@ In case of **emergencies** and **only if** maintainers are away from their keybo
 
 Microcks hosts two monthly community meetings (documented [here](https://github.com/microcks/community?tab=readme-ov-file#community-meetings)), tailored for different time zones. Here’s how to join and participate:
 
-* APAC-friendly Meeting: Second Thursday of each month: 
+* APAC-friendly Meeting: Second Thursday of each month:
 Time: 9–10 a.m. CET / 1–2 p.m. Bengaluru
 * America-friendly Meeting: Fourth Thursday of each month: Time: 6–7 p.m. CET / 1–2 p.m. EST / 9–10 a.m. PST
 
@@ -256,7 +256,9 @@ More details:
   Our current **Open Source Security Foundation (OpenSSF) score** for the main repository is **97%** ([View Score](https://www.bestpractices.dev/fr/projects/7513)).
   However, the Microcks team is committed to improving this score to **100%** and achieving the passing stage.
 
-  Why Not 100%? We currently have a **temporary outstanding issue** with **Microcks UI-related dependencies** that we are unable to upgrade, preventing us from reaching **100%** compliance. This issue is specific to the **Microcks UI** and does not impact the **core services** of Microcks, which are typically used directly by applications relying on Microcks. To address this, we have initiated a **brainstorming session and action plan** with the community. You can follow the discussion and progress here: [GitHub Discussion #1458](https://github.com/orgs/microcks/discussions/1458). This is a **work in progress**, and we aim to resolve it in the coming months.
+  Why Not 100%? We currently have a **temporary outstanding issue** with **Microcks UI-related dependencies** that we are unable to upgrade, preventing us from reaching **100%** compliance.
+  This issue is specific to the **Microcks UI** and does not impact the **core services** of Microcks, which are typically used directly by applications relying on Microcks. To address this, we have initiated a **brainstorming session and action plan** with the community.
+  You can follow the discussion and progress here: [GitHub Discussion #1458](https://github.com/orgs/microcks/discussions/1458). This is a **work in progress**, and we aim to resolve it in the coming months.
 
 * Case Studies:
   * [Revolutionizing API Strategy: Lombard Odier's Success Story with Microcks](https://microcks.io/blog/lombard-odier-revolutionizing-api-strategy/)
