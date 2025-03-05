@@ -181,6 +181,7 @@ Microcks ranks **#8 among 205 CNCF projects** (including Incubating and Graduate
 Microcks remains dedicated to maintaining and improving security and compliance across our projects!
 
 Tools we use to secure our supply chain:
+
 * Sonar Cloud,
 * FOSSA,
 * Cosign / Sigstore,
@@ -190,12 +191,13 @@ Tools we use to secure our supply chain:
 #### Communication Channels
 
 | Platforms | Link |
-  |-----------|------|
-  | 💬 Discord (preferred) | [Discord](https://microcks.io/discord-invite) |
-  | 💬 Slack (alternate) | [Slack](https://cloud-native.slack.com/archives/C05BYHW1TNJ) |
-  | 💬 Discussions | [GitHub discussions](https://github.com/orgs/microcks/discussions) |
+|-----------|------|
+| 💬 Discord (preferred) | [Discord](https://microcks.io/discord-invite) |
+| 💬 Slack (alternate) | [Slack](https://cloud-native.slack.com/archives/C05BYHW1TNJ) |
+| 💬 Discussions | [GitHub discussions](https://github.com/orgs/microcks/discussions) |
 
-For private communications between maintainers and handling sensitive online topics, we use Discord DM (Direct Message). In case of **emergencies** and **only if** maintainers are away from their keyboards, we use mobile phone numbers.
+For private communications between maintainers and handling sensitive online topics, we use Discord DM (Direct Message).
+In case of **emergencies** and **only if** maintainers are away from their keyboards, we use mobile phone numbers.
 
 Microcks hosts two monthly community meetings (documented [here](https://github.com/microcks/community?tab=readme-ov-file#community-meetings)), tailored for different time zones. Here’s how to join and participate:
 
