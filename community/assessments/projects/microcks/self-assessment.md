@@ -212,7 +212,8 @@ We have also created a guide titled "[Joining Microcks Community Meetings](https
 
 #### Ecosystem
 
-See, the [big picture](https://docs.google.com/presentation/d/1dQpmqwOKFroAHPzhAzSXip1AnM96WUH-9UrVNiBgtP0/edit#slide=id.g32b6d8da232_0_279)
+See, the big picture:
+![Microcks actions](images/microcks-cloud-native-ecosystem.png)
 
 More details:
 
