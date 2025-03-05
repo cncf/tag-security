@@ -160,7 +160,7 @@ Microcks components are distributed as OCI container images for container runtim
 
 The project has fully [automated the build and release process](https://github.com/microcks/microcks/issues/1468) so all delivered components and their provenance attestations are signed using the GitHub Action provided identities (following the in-toto framework).
 
-For a full description of Microcks container images, software supply chain security including SBOM and provenance attestations, see: https://microcks.io/documentation/references/container-images/  
+For a full description of [Microcks container images](https://microcks.io/documentation/references/container-images/ ), software supply chain security including SBOM and provenance attestations.
   
 We have also made significant efforts to enhance our **overall security and compliance** across all **19 repositories** using **CLOMonitor checks** ([View CLOMonitor Report](https://clomonitor.io/projects/cncf/microcks)). Currently, our **overall CLOMonitor score is 98**, rating Microcks at an **"A" grade**. This was a **long process initiated in June 2024** ([Issue #1201](https://github.com/microcks/microcks/issues/1201)), reflecting our continued commitment to improving project security and best practices.  
 
@@ -191,9 +191,9 @@ Tools we use to secure our supply chain:
 
 | Platforms | Link |
   |-----------|------|
-  | 💬 Discord (preferred) | https://microcks.io/discord-invite |
-  | 💬 Slack (alternate) | https://cloud-native.slack.com/archives/C05BYHW1TNJ |
-  | 💬 Discussions | https://github.com/orgs/microcks/discussions |
+  | 💬 Discord (preferred) | [Discord](https://microcks.io/discord-invite) |
+  | 💬 Slack (alternate) | [Slack](https://cloud-native.slack.com/archives/C05BYHW1TNJ) |
+  | 💬 Discussions | [GitHub discussions](https://github.com/orgs/microcks/discussions) |
 
 For private communications between maintainers and handling sensitive online topics, we use Discord DM (Direct Message). In case of **emergencies** and **only if** maintainers are away from their keyboards, we use mobile phone numbers.
 
@@ -204,13 +204,13 @@ Microcks hosts two monthly community meetings (documented [here](https://github.
 * America-friendly Meeting: Fourth Thursday of each month
   Time: 6–7 p.m. CET / 1–2 p.m. EST / 9–10 a.m. PST
   
-The event is listed on the CNCF calendar: https://www.cncf.io/calendar and https://zoom-lfx.platform.linuxfoundation.org/meetings/microcks?view=month
+The event is listed on the [CNCF calendar](https://www.cncf.io/calendar) and [Microcks meetings](https://zoom-lfx.platform.linuxfoundation.org/meetings/microcks?view=month).
 
 We have also created a guide titled "[Joining Microcks Community Meetings](https://github.com/microcks/community/blob/main/JOIN-OUR-MEETINGS.md)" to help newcomers join us with less friction.
 
 #### Ecosystem
 
-See, the big picture: https://docs.google.com/presentation/d/1dQpmqwOKFroAHPzhAzSXip1AnM96WUH-9UrVNiBgtP0/edit#slide=id.g32b6d8da232_0_279
+See, the [big picture](https://docs.google.com/presentation/d/1dQpmqwOKFroAHPzhAzSXip1AnM96WUH-9UrVNiBgtP0/edit#slide=id.g32b6d8da232_0_279)
 
 More details:
 
@@ -219,8 +219,8 @@ More details:
 * [OIDC](https://microcks.io/blog/mocking-oidc-redirect/)
 * [Prometheus](https://microcks.io/documentation/explanations/monitoring/#technical-metrics)
 * [Grafana](https://microcks.io/documentation/explanations/monitoring/#grafana-dashboard)
-* [OpenTelemetry](https://microcks.io/blog/observability-for-microcks-at-scale/ & https://microcks.io/documentation/explanations/monitoring/#opentelemetry-support)
-* [Keycloak](https://microcks.io/documentation/guides/administration/users/ & https://microcks.io/documentation/references/configuration/security-config/#identity-management)
+* [OpenTelemetry](https://microcks.io/blog/observability-for-microcks-at-scale/) & [Documentation](https://microcks.io/documentation/explanations/monitoring/#opentelemetry-support)
+* [Keycloak](https://microcks.io/documentation/guides/administration/users/) & [Identity Management](https://microcks.io/documentation/references/configuration/security-config/#identity-management)
 * [Cosign](https://microcks.io/documentation/references/container-images/#signatures)
 * [SLSA](https://microcks.io/documentation/references/container-images/#provenance)
 * [Podman](https://microcks.io/documentation/guides/installation/podman-compose/)
@@ -230,8 +230,8 @@ More details:
 * [Tekton](https://microcks.io/documentation/guides/automation/tekton/)
 * [Jenkins](https://microcks.io/documentation/guides/automation/jenkins/)
 * [GitHub Actions](https://microcks.io/documentation/guides/automation/github-actions/)
-* [Dagger](https://daggerverse.dev/mod/github.com/fluent-ci-templates/microcks-pipeline@645fe89a0d2a46afbfb778a938cddc06d26b4c4c)
-* [Testcontainers](https://microcks.io/documentation/guides/usage/developing-testcontainers/ & https://testcontainers.com/modules/microcks/)
+* [Dagger](https://daggerverse.dev/mod/github.com/fluent-ci-templatesmicrocks-pipeline@645fe89a0d2a46afbfb778a938cddc06d26b4c4c)
+* [Testcontainers](https://microcks.io/documentation/guides/usage/developing-testcontainers/) & [Official modules](https://testcontainers.com/modules/microcks/)
 * [Docker Extension](https://www.docker.com/blog/get-started-with-the-microcks-docker-extension-for-api-mocking-and-testing/)
 
 ### Security issue resolution
