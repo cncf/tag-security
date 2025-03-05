@@ -1,0 +1,19 @@
+cases:
+  - urls:
+    - https://www.darkreading.com/threat-intelligence/iranian-apt-targets-us-drokbk-spyware-github
+    - https://www.secureworks.com/blog/drokbk-malware-uses-github-as-dead-drop-resolver
+    notes: log4j to vmware horizon path, use of github for c2
+  - urls:
+    - https://www.darkreading.com/cyberattacks-data-breaches/chinese-apt-targets-hong-kong-in-supply-chain-attack
+    - https://www.security.com/threat-intelligence/carderbee-software-supply-chain-certificate-abuse
+    notes: targeted code signing with hardware program certificate
+  - urls:
+    - https://www.cloudsek.com/blog/born-group-supply-chain-breach-in-depth-analysis-of-intelbrokers-jenkins-exploitation
+    notes: jenkins rce to github pat exfiltration to secret scanning to attack downstream entities
+  - urls:
+    - https://www.bleepingcomputer.com/news/security/north-korean-hackers-exploit-vpn-update-flaw-to-install-malware/
+    - https://asec.ahnlab.com/en/61934/
+    notes: vulnerability in update protocols exploited to deliver malware
+  - urls:
+    - https://www.volexity.com/blog/2024/08/02/stormbamboo-compromises-isp-to-abuse-insecure-software-update-mechanisms/
+    notes: dns takeover to exploit update protocols in order to deliver malware
