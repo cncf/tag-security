@@ -197,6 +197,7 @@ Tools we use to secure our supply chain:
 | 💬 Discussions | [GitHub discussions](https://github.com/orgs/microcks/discussions) |
 
 For private communications between maintainers and handling sensitive online topics, we use Discord DM (Direct Message).
+
 In case of **emergencies** and **only if** maintainers are away from their keyboards, we use mobile phone numbers.
 
 Microcks hosts two monthly community meetings (documented [here](https://github.com/microcks/community?tab=readme-ov-file#community-meetings)), tailored for different time zones. Here’s how to join and participate:
