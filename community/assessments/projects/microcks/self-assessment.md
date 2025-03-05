@@ -1,5 +1,7 @@
 # Microcks Self-assessment
 
+<!-- cSpell:ignore Microcks Yacine Kheddache yada Broudoux lbroudoux missings microcks Microcks's protos Devfile Strimzi Bengaluru Traefik Odier's Ludovic Pourrat Gschwend -->
+
 March 2025, written by Microcks [Maintainers](https://github.com/microcks/.github/blob/main/MAINTAINERS.md): Yacine Kheddache([@yada](https://github.com/yada)) & Laurent Broudoux([@lbroudoux](https://github.com/lbroudoux)).
 
 ## Self-assessment outline
