@@ -214,25 +214,25 @@ See, the big picture: https://docs.google.com/presentation/d/1dQpmqwOKFroAHPzhAz
 
 More details:
 
-* Helm: https://microcks.io/documentation/references/configuration/helm-chart-config/
-* Kubernetes Operator: https://microcks.io/documentation/guides/installation/kubernetes-operator/
-* OIDC: https://microcks.io/blog/mocking-oidc-redirect/
-* Prometheus: https://microcks.io/documentation/explanations/monitoring/#technical-metrics
-* Grafana: https://microcks.io/documentation/explanations/monitoring/#grafana-dashboard
-* OpenTelemetry: https://microcks.io/blog/observability-for-microcks-at-scale/ & https://microcks.io/documentation/explanations/monitoring/#opentelemetry-support
-* Keycloak: https://microcks.io/documentation/guides/administration/users/ & https://microcks.io/documentation/references/configuration/security-config/#identity-management
-* Cosign: https://microcks.io/documentation/references/container-images/#signatures
-* SLSA: https://microcks.io/documentation/references/container-images/#provenance
-* Podman: https://microcks.io/documentation/guides/installation/podman-compose/
-Backstage: https://microcks.io/blog/backstage-integration-launch/
-* Traefik: https://doc.traefik.io/traefik-hub/api-mocking/on-premises-setup
-* GitLab: https://about.gitlab.com/blog/2023/09/27/microcks-and-gitlab-part-one/
-* Tekton: https://microcks.io/documentation/guides/automation/tekton/
-* Jenkins: https://microcks.io/documentation/guides/automation/jenkins/
-* GitHub Actions: https://microcks.io/documentation/guides/automation/github-actions/
-* Dagger: https://daggerverse.dev/mod/github.com/fluent-ci-templates/microcks-pipeline@645fe89a0d2a46afbfb778a938cddc06d26b4c4c
-* Testcontainers: https://microcks.io/documentation/guides/usage/developing-testcontainers/ & https://testcontainers.com/modules/microcks/
-* Docker Extension: https://www.docker.com/blog/get-started-with-the-microcks-docker-extension-for-api-mocking-and-testing/
+* [Helm](https://microcks.io/documentation/references/configuration/helm-chart-config/)
+* [Kubernetes Operator](https://microcks.io/documentation/guides/installation/kubernetes-operator/)
+* [OIDC](https://microcks.io/blog/mocking-oidc-redirect/)
+* [Prometheus](https://microcks.io/documentation/explanations/monitoring/#technical-metrics)
+* [Grafana](https://microcks.io/documentation/explanations/monitoring/#grafana-dashboard)
+* [OpenTelemetry](https://microcks.io/blog/observability-for-microcks-at-scale/ & https://microcks.io/documentation/explanations/monitoring/#opentelemetry-support)
+* [Keycloak](https://microcks.io/documentation/guides/administration/users/ & https://microcks.io/documentation/references/configuration/security-config/#identity-management)
+* [Cosign](https://microcks.io/documentation/references/container-images/#signatures)
+* [SLSA](https://microcks.io/documentation/references/container-images/#provenance)
+* [Podman](https://microcks.io/documentation/guides/installation/podman-compose/)
+* [Backstage](https://microcks.io/blog/backstage-integration-launch/)
+* [Traefik](https://doc.traefik.io/traefik-hub/api-mocking/on-premises-setup)
+* [GitLab](https://about.gitlab.com/blog/2023/09/27/microcks-and-gitlab-part-one/)
+* [Tekton](https://microcks.io/documentation/guides/automation/tekton/)
+* [Jenkins](https://microcks.io/documentation/guides/automation/jenkins/)
+* [GitHub Actions](https://microcks.io/documentation/guides/automation/github-actions/)
+* [Dagger](https://daggerverse.dev/mod/github.com/fluent-ci-templates/microcks-pipeline@645fe89a0d2a46afbfb778a938cddc06d26b4c4c)
+* [Testcontainers](https://microcks.io/documentation/guides/usage/developing-testcontainers/ & https://testcontainers.com/modules/microcks/)
+* [Docker Extension](https://www.docker.com/blog/get-started-with-the-microcks-docker-extension-for-api-mocking-and-testing/)
 
 ### Security issue resolution
 
@@ -246,20 +246,21 @@ Backstage: https://microcks.io/blog/backstage-integration-launch/
 
 * [Open SSF Best Practices](https://www.bestpractices.dev/en):
 
-    Our current **Open Source Security Foundation (OpenSSF) score** for the main repository is **97%** ([View Score](https://www.bestpractices.dev/fr/projects/7513)). However, the Microcks team is committed to improving this score to **100%** and achieving the passing stage.
+    Our current **Open Source Security Foundation (OpenSSF) score** for the main repository is **97%** ([View Score](https://www.bestpractices.dev/fr/projects/7513)).
+    However, the Microcks team is committed to improving this score to **100%** and achieving the passing stage.
 
     Why Not 100%? We currently have a **temporary outstanding issue** with **Microcks UI-related dependencies** that we are unable to upgrade, preventing us from reaching **100%** compliance. This issue is specific to the **Microcks UI** and does not impact the **core services** of Microcks, which are typically used directly by applications relying on Microcks. To address this, we have initiated a **brainstorming session and action plan** with the community. You can follow the discussion and progress here: [GitHub Discussion #1458](https://github.com/orgs/microcks/discussions/1458). This is a **work in progress**, and we aim to resolve it in the coming months.
 
 * Case Studies:
-    * [Revolutionizing API Strategy: Lombard Odier's Success Story with Microcks](https://microcks.io/blog/lombard-odier-revolutionizing-api-strategy/)
-    * [CNAM Partners with Microcks for Automated SOAP Service Mocking](https://microcks.io/blog/cnam-soap-service-mocking/)
-    * [J.B. Hunt: Mock It till You Make It with Microcks](https://microcks.io/blog/jb-hunt-mock-it-till-you-make-it/)
+  * [Revolutionizing API Strategy: Lombard Odier's Success Story with Microcks](https://microcks.io/blog/lombard-odier-revolutionizing-api-strategy/)
 
     > [Ludovic Pourrat](https://www.linkedin.com/in/ludovic-pourrat/) - API Architect | Platform Architect at Lombard Odier Group:
     > Microcks is a robust open source tool that has become an essential solution for Lombard Odier. It enables us to manage, maintain, and automate the lifecycle of our extensive API ecosystem efficiently. At the heart of our remarkable journey, Microcks has become a key asset that achieves the right balance between innovation and stability, empowering developers with fast iterations of their APIs.
+  * [J.B. Hunt: Mock It till You Make It with Microcks](https://microcks.io/blog/jb-hunt-mock-it-till-you-make-it/)
 
     > [Carol Gschwend](https://www.linkedin.com/in/carol-gschwend-207650134/) - Expert Software Engineer at J.B. Hunt Transport Services, Inc:
     > The developers of the project mentioned above saved at least 7 months using Microcks. They were not only able to work concurrently but also captured the exact business requirements specified by the product owner in the form of example request/response pairs. These persistent mocks can now be utilized in sandbox environments if needed.
+  * [CNAM Partners with Microcks for Automated SOAP Service Mocking](https://microcks.io/blog/cnam-soap-service-mocking/)
 
 * Related Projects / Vendors:
 
