@@ -29,7 +29,7 @@ A table at the top for quick reference information, later used for indexing.
 
 |||
 | -- | -- |
-| Assessment Stage | Incomplete |
+| Assessment Stage | Complete |
 | Software | [https://github.com/microcks/microcks](https://github.com/microcks/microcks) |
 | Security Provider? | No. Microcks is not be considered a security provider |
 | Languages | Java |
