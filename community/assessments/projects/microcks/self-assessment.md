@@ -255,7 +255,7 @@ More details:
 
 * [Open SSF Best Practices](https://www.bestpractices.dev/en):
 
-  Our current **Open Source Security Foundation (OpenSSF) score** for the main repository is **97%** ([View Score](https://www.bestpractices.dev/fr/projects/7513)).
+  Our current **Open Source Security Foundation (OpenSSF) score** for the main repository is **99%** ([View Score](https://www.bestpractices.dev/fr/projects/7513)).
   However, the Microcks team is committed to improving this score to **100%** and achieving the passing stage.
 
   Why Not 100%? We currently have a **temporary outstanding issue** with **Microcks UI-related dependencies** that we are unable to upgrade, preventing us from reaching **100%** compliance.
