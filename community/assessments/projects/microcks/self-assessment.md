@@ -195,6 +195,8 @@ Tools we use to secure our supply chain:
 
 #### Communication Channels
 
+If you want to report a vulnerability, please follow the guidelines in our [`SECURITY.md`](https://github.com/microcks/.github/blob/main/SECURITY.md) document to ensure responsible disclosure and prompt resolution.
+
 | Platforms | Link |
 |-----------|------|
 | 💬 Discord (preferred) | [Discord](https://microcks.io/discord-invite) |
