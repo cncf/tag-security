@@ -51,11 +51,13 @@ Microcks is a tool for **mocking and testing** your APIs and microservices. It l
 Microcks facilitates **rapid simulation generation**, **automated API testing**, and **seamless CI/CD integration**, streamlining development and deployment processes. Microcks **empowers teams** to optimize services, cloud native development and **accelerate product releases**, gaining a competitive advantage.
 
 **The Problems**:
+
 * API Dependencies in Development: When building or testing a system that relies on APIs (internal or external), those APIs might not always be available, might be slow, or might not exist yet. This makes development and testing difficult.
 * Realistic API Testing: Traditional unit tests don’t fully test API interactions, and manually setting up API responses is time-consuming and error-prone.
 * Consistency Across Environments:  Ensuring API behaviors are consistent across dev, test, and production environments is hard. Mocks can drift from reality, making tests unreliable.
 
 **How Microcks Solves It**:
+
 * API Mocking: It automatically generates realistic mock versions of APIs based on OpenAPI, AsyncAPI, or other API contracts. These mocks behave like the real API, so developers can work without waiting for an actual backend.
 * Contract-Based Testing: It verifies that real APIs conform to their defined contract (e.g., OpenAPI spec) by running automated tests against them.
 * Supports Multiple Protocols: Works with REST, GraphQL, gRPC, WebSockets, and event-driven APIs, making it useful for modern microservices.
@@ -140,8 +142,6 @@ Below are the critical security components of the Microcks project that are esse
 4. **Encryption in Transit**  
    * All API endpoints exposed by Microcks components are encrypted using TLS. Microcks integrates smoothly with your KPI or other CNCF project like cert-manager. This protects sensitive information from being intercepted during communication and it is essential for some adopters since Microcks can expose API mocks with examples that may contain sensitive personal information or company data.
 
-
-
 #### Security-Relevant Components  
 
 These are important components of the project that contribute to enhancing the overall security of Microcks. These items should also be considered in threat modeling and can be configured or adjusted to improve the system’s security posture:
@@ -163,7 +163,7 @@ These are important components of the project that contribute to enhancing the o
    All our container images are scanned for vulnerabilities with both [Clair](https://www.redhat.com/en/topics/containers/what-is-clair) on  [Quay.io](https://quay.io/) and [Docker Scout](https://docs.docker.com/scout/) on  [Docker Hub](https://hub.docker.com/). Scanning reports are available for each image on every repository.
    Regular updates and patches to container images are crucial for protecting against known vulnerabilities.
 
-The container images base layers as well as the Microcks application dependencies are regularly updated as per the SECURITY-INSIGHTS.yml and DEPENDENCY_POLICY.md file you may find in each GitHub source repository. See full details in our documentation: https://microcks.io/documentation/references/container-images/
+The container images base layers as well as the Microcks application dependencies are regularly updated as per the SECURITY-INSIGHTS.yml and DEPENDENCY_POLICY.md file you may find in each GitHub source repository. See full details in our documentation: [Container Images](https://microcks.io/documentation/references/container-images/)
 
 These security-relevant components are crucial for the overall security of Microcks and can be adjusted based on deployment needs to improve security posture.
 
