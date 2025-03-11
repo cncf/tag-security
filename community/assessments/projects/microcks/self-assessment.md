@@ -50,11 +50,24 @@ Microcks is a tool for **mocking and testing** your APIs and microservices. It l
 
 Microcks facilitates **rapid simulation generation**, **automated API testing**, and **seamless CI/CD integration**, streamlining development and deployment processes. Microcks **empowers teams** to optimize services, cloud native development and **accelerate product releases**, gaining a competitive advantage.
 
+**The Problems**:
+* API Dependencies in Development: When building or testing a system that relies on APIs (internal or external), those APIs might not always be available, might be slow, or might not exist yet. This makes development and testing difficult.
+* Realistic API Testing: Traditional unit tests don’t fully test API interactions, and manually setting up API responses is time-consuming and error-prone.
+* Consistency Across Environments:  Ensuring API behaviors are consistent across dev, test, and production environments is hard. Mocks can drift from reality, making tests unreliable.
+
+**How Microcks Solves It**:
+* API Mocking: It automatically generates realistic mock versions of APIs based on OpenAPI, AsyncAPI, or other API contracts. These mocks behave like the real API, so developers can work without waiting for an actual backend.
+* Contract-Based Testing: It verifies that real APIs conform to their defined contract (e.g., OpenAPI spec) by running automated tests against them.
+* Supports Multiple Protocols: Works with REST, GraphQL, gRPC, WebSockets, and event-driven APIs, making it useful for modern microservices.
+
+**The Core Value**:
+Microcks helps developers and testers work independently, detect API issues early such as incorrect responses, contract violations, or unexpected changes (breaking changes or regressions) and ensure that APIs behave as expected across different environments without manually maintaining mocks or writing complex test scripts.
+
 #### Actors
 
 Microcks actors are:
 
-* The Microcks main web application (also called webapp) that holds the UI resources as well as API endpoints. This component wraps a database for holding your data such as the repository of API simulations and Tests,
+* The Microcks main web application (also called webapp) that holds the UI front-end resources (HTML, JS, and CSS) as well as API endpoints. This component wraps a database for holding your data such as the repository of API simulations and Tests,
 
 * The Microcks Postman runtime (microcks-postman-runtime) that allows the execution of Postman Collection tests and calls back Microcks for storing results,
 
@@ -74,13 +87,13 @@ See the [Architecture & deployment options](https://microcks.io/documentation/ex
 The goal of the Microcks project is to ease cloud native applications adoption by addressing the pains of dealing with complex, distributed, and multi-protocol applications:
 
 * **Simplifying API Development & Testing:** Enabling teams to rapidly mock and test APIs, including REST, SOAP, GraphQL, gRPC, and AsyncAPI.  
-* **Enhancing API-First Practices:** Supporting contract-driven development by leveraging API specifications.  
-* **Facilitating CI/CD Integration:** Automating API testing and validation within DevOps pipelines.  
+* **Enhancing API-First Practices:** Supporting contract-driven development by leveraging API specifications. Microcks verifies that real APIs conform to their defined contract (e.g., OpenAPI spec) by running manual or automated tests against them.
+* **Facilitating CI/CD Integration:** Automating API testing and validation within DevOps pipelines.
 * **Bridging Business and Technical Stakeholders:** Connecting API producers and consumers by ensuring standardized API specifications and seamless collaboration.  
 
 Microcks incorporates several security measures to ensure safe API testing and mocking:  
 
-* **Access Control & Authentication:** Supports authentication mechanisms such as OAuth2 and OpenID Connect to secure API access.  
+* **Access Control & Authentication:** Supports authentication mechanisms such as OAuth2 and OpenID Connect to secure API access. Microcks secures its services using OAuth2 and OpenID authentication with Keycloak, including support for role-based access control (RBAC). Learn more here: [Microcks Security Configuration](https://microcks.io/documentation/references/configuration/security-config/#identity-management).
 * **Data Integrity & Confidentiality:** Ensures proper handling of API specifications and test data, preventing unauthorized modifications.  
 * **Secure Deployment Options:** Can be deployed in isolated environments to restrict unauthorized access.
 
@@ -125,7 +138,9 @@ Below are the critical security components of the Microcks project that are esse
    * Microcks securely stores API specifications (such as OpenAPI, AsyncAPI, gRPC protos,…) and test results. Proper handling of these files with a customizable RBAC system prevents unauthorized changes and ensures that they remain intact and secure for testing purposes.
 
 4. **Encryption in Transit**  
-   * All API endpoints exposed by Microcks components are encrypted using TLS. Microcks integrates smoothly with your KPI or other CNCF project like cert-manager. This protects sensitive information from being intercepted during communication.
+   * All API endpoints exposed by Microcks components are encrypted using TLS. Microcks integrates smoothly with your KPI or other CNCF project like cert-manager. This protects sensitive information from being intercepted during communication and it is essential for some adopters since Microcks can expose API mocks with examples that may contain sensitive personal information or company data.
+
+
 
 #### Security-Relevant Components  
 
@@ -144,7 +159,11 @@ These are important components of the project that contribute to enhancing the o
    * Microcks allows mocking and testing APIs in isolated environments. Configuring secure and properly isolated testing environments helps mitigate risks of testing on production systems or with untrusted data.
 
 5. **Container Security**  
-   * Microcks is deployed using containers (e.g., Docker), ensuring that the containers are secure and scanned for vulnerabilities. Regular updates and patches to container images are crucial for protecting against known vulnerabilities.
+   * Microcks components are distributed as [OCI](https://opencontainers.org/) container images that can be executed using container runtimes such as [Docker](https://www.docker.com/) or [Podman](https://podman.io/).
+   All our container images are scanned for vulnerabilities with both [Clair](https://www.redhat.com/en/topics/containers/what-is-clair) on  [Quay.io](https://quay.io/) and [Docker Scout](https://docs.docker.com/scout/) on  [Docker Hub](https://hub.docker.com/). Scanning reports are available for each image on every repository.
+   Regular updates and patches to container images are crucial for protecting against known vulnerabilities.
+
+The container images base layers as well as the Microcks application dependencies are regularly updated as per the SECURITY-INSIGHTS.yml and DEPENDENCY_POLICY.md file you may find in each GitHub source repository. See full details in our documentation: https://microcks.io/documentation/references/container-images/
 
 These security-relevant components are crucial for the overall security of Microcks and can be adjusted based on deployment needs to improve security posture.
 
