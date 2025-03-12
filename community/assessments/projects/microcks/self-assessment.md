@@ -250,7 +250,7 @@ We have also created a guide titled "[Joining Microcks Community Meetings](https
 #### Ecosystem
 
 See, the big picture:
-  ![Microcks actions](images/microcks-cloud-native-ecosystem.png)
+  ![Microcks ecosystem](images/microcks-cloud-native-ecosystem.png)
 
 More details:
 
