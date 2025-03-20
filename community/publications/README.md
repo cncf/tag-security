@@ -29,6 +29,7 @@ This document lists all the publications and resources that TAG Security has pro
 | | Spiffe-Spire | Markdown | [Link](/community/assessments/projects/spiffe-spire) |
 | **Supply Chain Security** | | | |
 | | Software Supply Chain Best Practices v2 | Markdown | [Link](/community/working-groups/supply-chain-security/supply-chain-security-paper-v2/SSCBPv2.md) |
+| | | PDF | [Link](/community/working-groups/supply-chain-security/supply-chain-security-paper-v2/Software_Supply_Chain_Practices_whitepaper_v2.pdf) |
 | | Software Supply Chain Best Practices | Markdown | [Link](/community/working-groups/supply-chain-security/supply-chain-security-paper/sscsp.md) |
 | | | PDF | [Link](/community/working-groups/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf) |
 | | Evaluating your supply chain security | Markdown | [Link](/community/working-groups/supply-chain-security/supply-chain-security-paper/secure-supply-chain-assessment.md) |
