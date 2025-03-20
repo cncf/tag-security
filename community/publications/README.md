@@ -4,7 +4,7 @@ This document lists all the publications and resources that TAG Security has pro
 
 | Publication | Description | Format | Link |
 |-------------|--------------|--------|------|
-| **Cloud Native Security Controls Catalog** | Mapping of Cloud Native Security Whitepaper and Software Supply Chain Best Practices Paper to NIST SP800-53r5 | Markdown | [Link](/community/working-groups/controls/phase-one-announcement.md) |
+| **Cloud Native Security Controls Catalog** | Mapping of Cloud Native Security Whitepaper and Software Supply Chain Best Practices Paper to NIST SP800-53r5 | Markdown | [Link](/community/working-groups/archive/controls/phase-one-announcement.md) |
 | | | Spreadsheet | [Link](https://docs.google.com/spreadsheets/d/1GUohOTlLw9FKUQ3O23X7ypvJLXN-B3veJGe6YE6JYfU/edit?usp=sharing) |
 | **Cloud Native Security Lexicon** | Standardization of terminologies specific to Cloud Native Security | Markdown | [Link](/community/resources/security-lexicon/cloud-native-security-lexicon.md) |
 | **Cloud Native Security Whitepaper** | Information about building, distributing, deploying, and running secure cloud native capabilities | Markdown (v2) | [Link](/community/resources/security-whitepaper/v2/cloud-native-security-whitepaper.md) |
