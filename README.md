@@ -30,7 +30,7 @@ Below is a list of publications by TAG Security. For a comprehensive collection 
 |-------------|------|
 | [Formal Verification for Policy Configurations](community/working-groups/archive/policy/overview-policy-formal-verification.md) | August, 2019 |
 | [Catalog of Supply Chain Compromises](community/catalog/compromises) | November 2019 - Present |
-| [Software Supply Chain Best Practices](community/working-groups/supply-chain-security/supply-chain-security-paper/CNCF_SSCP_v1.pdf) | May, 2021 |
+| [Software Supply Chain Best Practices](community/working-groups/supply-chain-security/supply-chain-security-paper-v2/Software_Supply_Chain_Practices_whitepaper_v2.pdf) | March, 2025 |
 | [Evaluating your Supply Chain Security](community/working-groups/supply-chain-security/supply-chain-security-paper/secure-supply-chain-assessment.md) | May, 2021 |
 | [Cloud Native Security Lexicon](community/resources/security-lexicon/cloud-native-security-lexicon.md) | August, 2021 |
 | [Cloud Native Security Whitepaper](community/resources/security-whitepaper/v2/CNCF_cloud-native-security-whitepaper-May2022-v2.pdf) | May, 2022 |
