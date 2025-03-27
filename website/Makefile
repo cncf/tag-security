@@ -14,7 +14,7 @@ deps:
 
 	# Update all imported markdown files to work as standalone hugo pages (except READMEs, see below)
 	# sed command is configured for the Netlify ubuntu env
-	# If you're NOT running this on a mac, you'll need to remove the empty string after -i (line 25)
+	# If you're running this on a mac, you'll need to add double quotes after -i in the sed command below: `sed -i "" "1s/^/$$text_to_prepend/" "$$file"; \`
 	find root -type f -name '*.md' | while IFS= read -r file; do \
 		base_name=$$(basename "$$file" .md); \
 		if [ "$$file" = "/_index.md" -o "$$base_name" = "README" ]; then \
@@ -22,7 +22,7 @@ deps:
 		fi; \
 		title_case=$$(echo "$$base_name" | sed -e 's/-/ /g' -e 's/\b\(.\)/\u\1/g' | sed 's/cncf/CNCF/Ig'); \
 		text_to_prepend="---\ntitle: \"$$title_case\"\n---\n"; \
-		sed -i "" "1s/^/$$text_to_prepend/" "$$file"; \
+		sed -i "1s/^/$$text_to_prepend/" "$$file"; \
 	done
 
 	# Set up Navbar and Sidebar contents
