@@ -7,6 +7,11 @@
         "replacement": "{{BASEURL}}/"
       }
     ],
+    "ignorePatterns": [
+      {
+        "pattern": "^https://dodcio.defense.gov/Portals/0/Documents/"
+      }
+    ],
     "retryCount": 5,
     "retryOn429": true,
     "timeout": "20s",
