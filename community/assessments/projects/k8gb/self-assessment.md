@@ -110,6 +110,19 @@ See also [Intended use](#intended-use).
 ### Non-goals
 
 Non-goals that a reasonable reader of k8gb’s documentation could believe may be in scope.
+The k8gb project is focused on providing global load balancing and failover capabilities for Kubernetes applications. However, there are certain security-related features and responsibilities that are intentionally out of scope. Below are the non-goals, along with explanations for why they are not within the project's scope:
+
+#### Traffic Handling and TLS Termination:
+
+k8gb does not pass application traffic through itself or handle TLS/HTTP connections directly. These responsibilities are offloaded to referenced networking resources, such as Kubernetes Ingress controllers or service meshes.
+
+**Reason**: k8gb is designed to manage DNS-based global load balancing and failover, not to act as a proxy or gateway for application traffic.
+
+#### Security of Referenced Networking Resources:
+
+k8gb does not enforce or manage security configurations (e.g., TLS settings) for the networking resources it references, such as Ingress controllers.
+
+**Reason**: Security configurations for these resources are the responsibility of the user or the specific networking solution being used.
 
 ## Self-assessment use
 
