@@ -41,7 +41,7 @@ out organization-wide (both technically and administratively through training / 
 
 Automated governance in cloud-native security ensures consistent enforcement of security and compliance policies at scale, reducing human error and improving
 efficiency. By leveraging Policy-as-Code (PaC), security teams can automate policy enforcement in CI/CD pipelines, Kubernetes clusters, and cloud environments,
-ensuring continuous compliance with frameworks like NIST, PCI-DSS, and SOC 2. It enhances risk mitigation, auditability, and incident response by providing
+ensuring continuous compliance with frameworks like NIST 800-53, PCI-DSS, and SOC 2. It enhances risk mitigation, auditability, and incident response by providing
 real-time drift detection and security posture management. With tools like OPA, Kyverno, CSPM, and CIEM, organizations can secure cloud-native workloads without
 slowing down development, making automated governance a critical component of DevSecOps and cloud security strategies.
 
