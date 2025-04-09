@@ -51,30 +51,32 @@ Flux is a tool for keeping Kubernetes clusters in sync with sources of configura
 
 Actors are defined according to the separation between Flux components as represented in the Git repositories architecture. Each actor has its own role, scope, and repository.
 
-In the Flux Ecosystem, it means the `flux` CLI, Flux GitOps Toolkit (Go SDK) and Flux controllers.
+In the Flux Ecosystem, the actors are the `flux` CLI, the Flux GitOps Toolkit (Go SDK) and the Flux controllers.
 
-Flux controllers are Go applications that communicate with the Kubernetes API and continuously reconcile the cluster desired state. Each controller is core to Flux, with a specific scope and integrations with external systems (e.g., Git repositories, container registries, object storage, alerting systems, KMS systems).
+Flux controllers are Go applications that communicate with the Kubernetes API and continuously reconcile the cluster desired state
+through APIs implemented as Kubernetes custom resources (CRDs and CR objects).
+Each controller is core to Flux, with a specific scope and integrations with external systems (e.g., Git repositories, container registries, object storage, alerting systems, KMS systems).
 
-Documentation for each controller and CRD is available on the Flux website:
+Documentation for each controller and API is available on the Flux website:
 
 - [Source Controller](https://fluxcd.io/flux/components/source/)
-    - [GitRepository CRD](https://fluxcd.io/flux/components/source/gitrepositories/)
-    - [OCIRepository CRD](https://fluxcd.io/flux/components/source/ocirepositories/)
-    - [HelmRepository CRD](https://fluxcd.io/flux/components/source/helmrepositories/)
-    - [HelmChart CRD](https://fluxcd.io/flux/components/source/helmcharts/)
-    - [Bucket CRD](https://fluxcd.io/flux/components/source/buckets/)
+    - [GitRepository API](https://fluxcd.io/flux/components/source/gitrepositories/)
+    - [OCIRepository API](https://fluxcd.io/flux/components/source/ocirepositories/)
+    - [HelmRepository API](https://fluxcd.io/flux/components/source/helmrepositories/)
+    - [HelmChart API](https://fluxcd.io/flux/components/source/helmcharts/)
+    - [Bucket API](https://fluxcd.io/flux/components/source/buckets/)
 - [Kustomize Controller](https://fluxcd.io/flux/components/kustomize/)
-    - [Kustomization CRD](https://fluxcd.io/flux/components/kustomize/kustomizations/)
+    - [Kustomization API](https://fluxcd.io/flux/components/kustomize/kustomizations/)
 - [Helm Controller](https://fluxcd.io/flux/components/helm/)
-    - [HelmRelease CRD](https://fluxcd.io/flux/components/helm/helmreleases/)
+    - [HelmRelease API](https://fluxcd.io/flux/components/helm/helmreleases/)
 - [Notification Controller](https://fluxcd.io/flux/components/notification/)
-    - [Provider CRD](https://fluxcd.io/flux/components/notification/providers/)
-    - [Alert CRD](https://fluxcd.io/flux/components/notification/alerts/)
-    - [Receiver CRD](https://fluxcd.io/flux/components/notification/receivers/)
+    - [Provider API](https://fluxcd.io/flux/components/notification/providers/)
+    - [Alert API](https://fluxcd.io/flux/components/notification/alerts/)
+    - [Receiver API](https://fluxcd.io/flux/components/notification/receivers/)
 - [Image Automation Controllers](https://fluxcd.io/flux/components/image/)
-    - [ImageRepository CRD](https://fluxcd.io/flux/components/image/imagerepositories/)
-    - [ImagePolicy CRD](https://fluxcd.io/flux/components/image/imagepolicies/)
-    - [ImageUpdateAutomation CRD](https://fluxcd.io/flux/components/image/imageupdateautomations/)
+    - [ImageRepository API](https://fluxcd.io/flux/components/image/imagerepositories/)
+    - [ImagePolicy API](https://fluxcd.io/flux/components/image/imagepolicies/)
+    - [ImageUpdateAutomation API](https://fluxcd.io/flux/components/image/imageupdateautomations/)
 
 #### Flux CLI
 
