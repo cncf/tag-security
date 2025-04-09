@@ -23,41 +23,66 @@ This draft serves as a self-assessment for Flux’s security posture and GitOps 
 
 ## Metadata
 
-|                    |                                                       |
-|--------------------|-------------------------------------------------------|
-| Assessment Stage   | Draft                                                 |
-| Software           | [Flux](https://github.com/fluxcd/flux)                |
-| Website            | <https://fluxcd.io>                                   |
-| Security Provider  | TBD                                                   |
-| Languages          | Go, YAML                                              |
-| SBOM               | TBD                                                   |
+|                   |                                                                                                                                                                                                                |
+|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Assessment Stage  | Draft                                                                                                                                                                                                          |
+| Software          | [Flux](https://github.com/fluxcd/flux2)                                                                                                                                                                        |
+| Website           | <https://fluxcd.io>                                                                                                                                                                                            |
+| Security Provider | Flux is a security provider in a GitOps context by providing features such as multi-tenancy lockdown, Kubernetes secrets decryption, OCI artifacts integrity verification and Git commit signing verification. |
+| Languages         | Go                                                                                                                                                                                                             |
+| SBOM              | Flux ships SBOMs for all its components, the SBOMs are embedded as OCI layers in the Flux container images.                                                                                                    |
 
 ### Security Links
 
-| Doc                            | URL          |
-|--------------------------------|--------------|
-| Security Policy                | (URL TBD)    |
-| Vulnerability Disclosure       | (URL TBD)    |
+| Doc                      | URL                                                                                                                                |
+|--------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| Security Policy          | [https://fluxcd.io/security/](https://fluxcd.io/security/)                                                                         |
+| Security Best Practices  | [https://fluxcd.io/flux/security/best-practices/](https://fluxcd.io/flux/security/best-practices/)                                 |
+| SLSA Assessment          | [https://fluxcd.io/flux/security/slsa-assessment/](https://fluxcd.io/flux/security/slsa-assessment/)                               |
+| Secrets Management       | [https://fluxcd.io/flux/security/secrets-management/](https://fluxcd.io/flux/security/secrets-management/)                         |
+| Flux multi-tenancy       | [https://fluxcd.io/flux/installation/configuration/multitenancy/](https://fluxcd.io/flux/installation/configuration/multitenancy/) |
+| Vulnerability Disclosure | [https://github.com/fluxcd/flux2/security](https://github.com/fluxcd/flux2/security)                                               |
 
 ## Overview
 
-Flux is a tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories) and automating updates when new code is deployed. Built from the ground up to leverage Kubernetes' API extension system, Flux integrates with Prometheus and other core components of the Kubernetes ecosystem. It supports multi-tenancy and the synchronization of an arbitrary number of Git repositories.
+Flux is a tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories) and automating updates when new code is deployed. Built from the ground up to leverage Kubernetes' API extension system, Flux integrates with Prometheus and other core components of the Kubernetes ecosystem. It supports multi-tenancy and the synchronization of an arbitrary number of Git repositories, OCI artifacts, and S3-compatible buckets.
 
 ### Actors
 
 Actors are defined according to the separation between Flux components as represented in the Git repositories architecture. Each actor has its own role, scope, and repository.
 
-In the Flux Ecosystem, it means the flux CLI, Flux Gitops Toolkit and the six controllers.
+In the Flux Ecosystem, it means the `flux` CLI, Flux GitOps Toolkit (Go SDK) and Flux controllers.
 
-Flux controllers are Go applications that communicate with the Kubernetes API and continuously reconcile custom resources. Each controller is core to Flux, with a specific scope and integrations with external systems (e.g., Git repositories, container registries, object storage, alerting systems).
+Flux controllers are Go applications that communicate with the Kubernetes API and continuously reconcile the cluster desired state. Each controller is core to Flux, with a specific scope and integrations with external systems (e.g., Git repositories, container registries, object storage, alerting systems, KMS systems).
+
+Documentation for each controller and CRD is available on the Flux website:
+
+- [Source Controller](https://fluxcd.io/flux/components/source/)
+    - [GitRepository CRD](https://fluxcd.io/flux/components/source/gitrepositories/)
+    - [OCIRepository CRD](https://fluxcd.io/flux/components/source/ocirepositories/)
+    - [HelmRepository CRD](https://fluxcd.io/flux/components/source/helmrepositories/)
+    - [HelmChart CRD](https://fluxcd.io/flux/components/source/helmcharts/)
+    - [Bucket CRD](https://fluxcd.io/flux/components/source/buckets/)
+- [Kustomize Controller](https://fluxcd.io/flux/components/kustomize/)
+    - [Kustomization CRD](https://fluxcd.io/flux/components/kustomize/kustomizations/)
+- [Helm Controller](https://fluxcd.io/flux/components/helm/)
+    - [HelmRelease CRD](https://fluxcd.io/flux/components/helm/helmreleases/)
+- [Notification Controller](https://fluxcd.io/flux/components/notification/)
+    - [Provider CRD](https://fluxcd.io/flux/components/notification/providers/)
+    - [Alert CRD](https://fluxcd.io/flux/components/notification/alerts/)
+    - [Receiver CRD](https://fluxcd.io/flux/components/notification/receivers/)
+- [Image Automation Controllers](https://fluxcd.io/flux/components/image/)
+    - [ImageRepository CRD](https://fluxcd.io/flux/components/image/imagerepositories/)
+    - [ImagePolicy CRD](https://fluxcd.io/flux/components/image/imagepolicies/)
+    - [ImageUpdateAutomation CRD](https://fluxcd.io/flux/components/image/imageupdateautomations/)
 
 #### Flux CLI
 
-The Flux CLI is a command-line tool for managing Flux controllers, bootstrapping GitOps environments, and interacting with custom resources. It supports workflows such as bootstrap, reconcile, create, delete, and suspend—streamlining GitOps operations through automation.
+The Flux CLI is a command-line tool for managing Flux controllers, bootstrapping GitOps environments, and interacting with Flux custom resources. It supports workflows such as bootstrap, reconcile, create, delete, and suspend—streamlining GitOps operations through automation.
 
-#### Flux Gitops Toolkit
+#### Flux GitOps Toolkit
 
-The Flux Gitops Toolkit (SDK) provides shared Go libraries and utilities used across all Flux controllers. It enables consistent behavior for GitOps operations, source handling, authentication, and runtime behavior. The toolkit includes modules for Git, Helm, Kustomize, OCI, authentication, SSA (server-side apply), and more, supporting functionalities like reconciliation, patching, event recording, and caching.
+The Flux GitOps Toolkit (SDK) provides shared Go libraries and utilities used across all Flux controllers. It enables consistent behavior for GitOps operations, source handling, authentication, and runtime behavior. The toolkit includes modules for Git, Helm, Kustomize, OCI, authentication, SSA (server-side apply), and more, supporting functionalities like reconciliation, patching, event recording, and caching.
 
 #### source-controller
 
@@ -65,11 +90,11 @@ The source-controller fetches, verifies, and caches external sources (Git, Helm,
 
 **Custom Resources:**
 
-- **GitRepository:** References a Git repo and tracks specific branches, commits, or tags.
-- **OCIRepository:** References an OCI registry for pulling artifact bundles.
-- **Bucket:** References an S3-compatible object storage bucket.
-- **HelmRepository:** Defines an external Helm chart repository.
-- **HelmChart:** Resolves and fetches charts from a HelmRepository or a Git source.
+- **GitRepository:** References a Git repository and tracks specific branches, commits, or tags.
+- **OCIRepository:** References a container registry for pulling OCI artifacts based on tags and semver expressions.
+- **Bucket:** References an S3-compatible object storage bucket for pulling Kubernetes manifests.
+- **HelmRepository:** Defines an external Helm chart repository for pulling Helm index files.
+- **HelmChart:** Resolves and fetches Helm charts from a Helm repository, a Git repository or an OCI repository.
 
 It also feeds artifacts to the kustomize-controller and helm-controller and triggers updates via Kubernetes API watches.
 
@@ -81,7 +106,7 @@ The kustomize-controller renders and applies Kubernetes manifests using Kustomiz
 
 - **Kustomization:** Handles fetching, decrypting, building, validating, and applying Kustomize overlays or plain Kubernetes manifests.
 
-It consumes artifacts from the source-controller and can be triggered by the notification-controller.
+It consumes artifacts from the source-controller and integrates with the notification-controller for alerting and reconciliation.
 
 #### helm-controller
 
@@ -138,7 +163,7 @@ Flux controllers receive reconciliation requests, retrieve configuration artifac
 
 ### Source Reconciliation
 
-The source-controller polls external systems such as Git, Helm, or S3, authenticates using provided credentials, and fetches artifacts representing the desired system state.
+The source-controller polls external systems such as Git, OCI, or S3, authenticates using provided credentials, and fetches artifacts representing the desired system state.
 
 ### Kustomization Reconciliation
 
@@ -165,12 +190,12 @@ GitOps presents challenges such as maintaining security across multiple environm
 ### Generic Goals
 
 - Empower users to leverage GitOps for both applications and infrastructure using declarative, version-controlled configuration.
-- Remain non-opinionated and adaptable to company constraints.
+- Remain non-opinionated and adaptable to user's constraints.
 - Scale with company growth and evolving continuous delivery needs.
 - Ensure robust disaster recovery capabilities.
 - Provide an open and extensible set of tools for continuous and progressive delivery on Kubernetes.
 - Integrate seamlessly with existing CI/CD pipelines, Git providers, container registries, and cloud-native tooling.
-- Offer strong interoperability with popular Kubernetes tools like Kustomize, Helm, OPA, Kyverno, and admission controllers.
+- Offer strong interoperability with popular Kubernetes tools like Kustomize, Helm, Prometheus, and admission controllers.
 - Enable interactions with tools beyond the native scope through custom controllers.
 - Foster a vibrant open source ecosystem of dashboards, UIs, and hosted services built on top of Flux.
 
@@ -179,33 +204,36 @@ GitOps presents challenges such as maintaining security across multiple environm
 - Design Flux with a secure-by-default architecture that enables auditable, isolated, and compliant GitOps workflows.
 - Enforce a pull-based deployment model to avoid external push-based access into the cluster, thereby minimizing the attack surface.
 - Utilize minimal and scoped permissions via Kubernetes-native RBAC, service account impersonation, and namespace-scoped resources to adhere to the principle of least privilege.
+- Support multi-tenancy and namespace isolation to ensure that different teams or applications can operate independently without interference.
 - Guarantee that all changes are auditable through Git history, pull requests, and signed commits.
-- Support secure data handling with TLS for transport encryption, integration with secret management tools (e.g., Mozilla SOPS, KMS), and prevention of sensitive data exposure.
+- Integrate with Cosign, Notary and OpenPGP for signature verification of OCI artifacts, Helm charts and Git commits to ensure the integrity and authenticity of deployed artifacts.
+- Support secure data handling with TLS and SSH for transport encryption, integration with secret management tools (e.g., Mozilla SOPS, KMS), and prevention of sensitive data exposure.
 - Integrate with policy engines and admission controllers to validate and gate configuration changes before application.
 
 ## Non-Goals
 
 ### General Non-Goals
 
-- Flux does not aim to replace or serve as a general-purpose CI/CD system; it complements existing CI tools but does not handle build, test, or artifact packaging tasks.
+- Flux does not aim to replace or serve as a general-purpose CI/CD system; it complements existing CI tools but does not handle build, test, or container image packaging tasks.
 - Flux does not provide a user interface or dashboard out of the box; while UIs exist in the ecosystem, Flux is inherently CLI- and Kubernetes-native.
 - Flux does not manage or provision cloud infrastructure directly (e.g., no built-in support for Terraform or cloud APIs); infrastructure management must be defined declaratively through Kubernetes CRDs or Git.
-- Flux does not offer its own policy engine, configuration management language, or DSL—instead, it integrates with existing tools like OPA, Kyverno, Helm, and Kustomize.
-- Flux is not designed to act as a centralized orchestration platform for non-Kubernetes environments (e.g., virtual machines, serverless functions).
+- Flux does not offer its own policy engine, configuration management language, or DSL—instead, it integrates with existing tools like Kubernetes CEL Validating Admission Policy, OPA and Kyverno.
 
 ### Security Non-Goals
 
 - Flux does not secure the Git provider itself; repository permissions, branch protections, and access controls must be managed externally.
-- Flux does not encrypt or protect secrets at rest; it relies on Kubernetes-native secret management and external tools (e.g., Sealed Secrets, Vault) for handling secrets.
+- Flux does not encrypt or protect secrets at rest; it relies on Kubernetes-native secret management and external tools (e.g., SOPS, Sealed Secrets, Vault) for handling secrets encryption.
 - Flux does not guarantee the security or compliance of third-party integrations such as container registries or image scanners—users must secure these components independently.
-- Flux does not aim to detect or prevent malicious activity within a Git repository; it assumes that commits represent intentional, authorized changes.
+- Flux does not aim to detect or prevent malicious activity within a Git repository; unless Git commit signature verification is enabled.
 - Flux does not prevent misconfigurations in reconciliation intervals, RBAC, or source definitions that could lead to drift, privilege escalation, or DDoS risks.
 
 ## Self-Assessment Use
 
-This section is intended for internal evaluation of Flux’s security posture and operational practices. 
+This section is intended for internal evaluation of Flux’s security posture and operational practices.
 
-<!-- TODO -->
+This self-assessment is not intended to provide a security audit of Flux, or function as an independent assessment or attestation of Flux security health.
+
+CNCF has sponsored several security audits for the Flux project, the most recent one was performed by **Trail of Bits**, the final report can be fund at [https://fluxcd.io/flux-security-report-with-review-2023.pdf](https://fluxcd.io/flux-security-report-with-review-2023.pdf).
 
 ## Security Functions and Features
 
@@ -213,34 +241,42 @@ See the Actors and Actions sections for detailed descriptions of critical securi
 
 ### Critical Security Components
 
-- **Built-in Authentication and Transport Security:**  
-  Flux enforces secure, pull-based deployments by using TLS for all communications and verifying container images through Sigstore Cosign. Integrated SLSA provenance and SBOMs ensure every build is verifiable and the supply chain remains trusted.
+- **Built-in Authentication and Transport Security:**
+  Flux enforces secure, pull-based deployments by using TLS and SSH for all communications and by verifying the authenticity of external sources using Git commit signatures and OCI artifacts signatures. This ensures that only trusted sources are used for reconciliation.
 
-- **Immutable and Auditable Configuration:**  
+- **Workload Identity:**
+  Flux integrates with Kubernetes Workload Identity to authenticate with external systems (e.g., Git, OCI, S3, KMS) hosted by Cloud vendors (Azure, AWS, GCP). This eliminates the need for static credentials and minimizes the risk of credential leakage.
+
+- **Immutable and Auditable Configuration:**
   By relying on Git as the single source of truth, Flux guarantees that all configuration changes are immutable and fully auditable via Git commit history. This design minimizes the risk of unauthorized changes and enables rapid rollback.
 
-- **Native RBAC and Service Account Impersonation:**  
+- **Native RBAC and Service Account Impersonation:**
   Flux leverages Kubernetes-native RBAC and service account impersonation to restrict controller permissions, ensuring that each component accesses only the resources necessary for its operation.
 
 ### Security Relevant Features
 
-- **Configurable Secrets Management:**  
-  Flux integrates with secret management solutions like Mozilla SOPS and Kubernetes secrets, enabling sensitive data to be encrypted at rest and managed securely.
+- **Multi-Tenancy Lockdown:**
+  Flux supports assigning Kubernetes Service Accounts to external sources (Git, OCI, Buckets, Helm charts), allowing cluster admins to define which repositories can access specific namespaces using plain Kubernetes RBAC. This feature enables multi-tenancy and namespace isolation, ensuring that different teams or applications can operate independently without altering each other's configurations.
 
-- **Pod Security and Hardening:**  
+- **Provenance and integrity verification:**
+  Flux supports verifying the integrity and provenance of OCI artifacts and Helm charts signed with Cosign private keys, Cosign keyless (OIDC) and Notary Notation private keys.
+  For Git repositories, Flux can verify the authenticity of commits using OpenPGP signatures. This ensures that only trusted sources are reconciled to the cluster.
+
+- **Secrets Management:**
+  Flux integrates with secret management solutions like CNCF SOPS, AWS KMS, Azure Key Vault, Google Cloud KMS and Hashicorp Vault, enabling sensitive data to be encrypted at rest and managed securely.
+
+- **Policy and Admission Controller Integration:**
+  Flux can integrate with external policy engines and admission controllers (e.g., Kubernetes CEL Validating Admission Policy, OPA, Kyverno) to validate configuration changes before application, enhancing overall security.
+
+- **Pod Security and Hardening:**
   Flux controller deployments adhere to Kubernetes restricted pod security standards—including non-root execution, read-only filesystems, minimal Linux capabilities, and seccomp profiles—to reduce the attack surface.
-
-- **Flexible Multi-Tenancy and Cross-Namespace Controls:**  
-  Flux supports namespace-scoped reconciliation and configurable cross-namespace reference policies, ensuring strict isolation between tenants while permitting controlled inter-namespace operations.
-
-- **Policy and Admission Controller Integration:**  
-  Flux can integrate with external policy engines and admission controllers (e.g., OPA, Kyverno) to validate configuration changes before application, enhancing overall security.
+  Flux controllers use Go native libraries for cryptographic operations, ensuring that sensitive data is handled securely and minimizing the risk of vulnerabilities associated with third-party libraries.
 
 ## Project Compliance
 
 Flux does not currently claim formal certification against regulatory frameworks such as ISO 27001, SOC 2, HIPAA, or PCI-DSS, as these typically apply to commercial services rather than open-source components. However, Flux aligns with open-source best practices and supply chain security standards—particularly through its adoption of the SLSA framework at Build Level 3 and its publication of SBOMs and signed artifacts.
 
-Flux follows CNCF Security Best Practices and is actively assessed by the CNCF Security TAG as part of project graduation requirements. It employs tools like Sigstore, GitHub OIDC, and GitHub Actions for provenance and artifact signing, documenting these practices in its Security documentation.
+Flux follows CNCF Security Best Practices which have been assessed by the CNCF Security TAG as part of project graduation. It employs tools like Sigstore, GitHub OIDC, and GitHub Actions for provenance and artifact signing, documenting these practices in its Security documentation.
 
 While not subject to specific legal compliance mandates, Flux is built with enterprise-readiness and security in mind, providing mechanisms (e.g., RBAC, multi-tenancy, auditability via Git, policy integration) to support downstream compliance needs.
 
@@ -248,11 +284,11 @@ While not subject to specific legal compliance mandates, Flux is built with ente
 
 ### Development Pipeline
 
-All code is maintained on GitHub. The project enforces security best practices across its repositories and offers guidance to SIGs and contributors. All Flux CD GitHub repositories are available at: [https://github.com/fluxcd](https://github.com/fluxcd).
+All code is maintained on GitHub. The project enforces security best practices across its repositories and offers guidance to contributors. All Flux CD GitHub repositories are available at: [https://github.com/fluxcd](https://github.com/fluxcd).
 
 ### Contributions and Changes
 
-- Code changes are submitted via Pull Requests (PRs). Contributors must sign a Contributor License Agreement (CLA).
+- Code changes are submitted via Pull Requests (PRs). Contributors must sign off on commits using the Developer Certificate of Origin (DCO) to certify that they have the right to submit the code and that it is not subject to any third-party licenses.
 - Direct commits to the main branch are disallowed; all changes undergo peer review and CI checks.
 - GitHub branch protection rules enforce review and testing workflows.
 - Commit signing is required for maintainers and encouraged for all contributors.
@@ -260,8 +296,8 @@ All code is maintained on GitHub. The project enforces security best practices a
 ### Code Review
 
 - Every PR must be reviewed and approved by at least one project maintainer.
-- Critical or architectural changes typically require review and approval by multiple maintainers and/or code owners.
-- The GitHub CODE-MAINTAINERS file from the Flux community repository is used to assign reviewers.
+- RFCs with architectural changes require review and approval by at least two core maintainers.
+- The CORE-MAINTAINERS file from the Flux community repository is used to assign reviewers.
 
 ### Automated Testing
 
@@ -277,25 +313,24 @@ All code is maintained on GitHub. The project enforces security best practices a
 - Flux controller images are minimal—based on Alpine and statically compiled Go binaries—reducing the attack surface.
 - Each release includes a detailed SBOM listing Go modules and OS packages to support transparency and vulnerability tracking.
 - The Flux team actively monitors for CVEs in upstream dependencies and Alpine packages, issuing patch releases promptly when vulnerabilities are discovered.
-- Images are rebuilt and published regularly using the latest Alpine and Go releases to incorporate upstream fixes.
 
 ### Release Integrity
 
 - All releases are automated via GitHub Actions using version-controlled workflows and Makefiles.
 - Every release includes a Software Bill of Materials (SBOM) in SPDX format, generated with Syft.
 - Container images are immutable and signed using Sigstore Cosign with GitHub OIDC, then verified in Rekor transparency logs.
-- SLSA provenance attestations (Level 3) are generated per architecture using GitHub-hosted runners and Docker Buildkit.
+- SLSA provenance attestations (Level 3) are generated per architecture using GitHub-hosted runners and the official [SLSA GitHub Generator](https://github.com/slsa-framework/slsa-github-generator).
 - Provenance metadata, including SHA-256 digests of artifacts, is cryptographically signed and decoupled from the build environment to ensure isolation and integrity.
 
 ### Communication Channels
 
-**Internal:**  
+**Internal:**
 Discussions among Flux contributors take place on the `#flux-contributors` channel in the CNCF Slack workspace.
 
-**Incoming:**  
+**Incoming:**
 Requests and questions can be submitted on the `#flux` channel in the CNCF Slack workspace or on GitHub Discussions.
 
-**Outgoing:**  
+**Outgoing:**
 Announcements are made on the `cncf-flux-dev` mailing list.
 
 ## Security Issue Resolution
