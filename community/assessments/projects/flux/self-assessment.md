@@ -88,7 +88,7 @@ The Flux GitOps Toolkit (SDK) provides shared Go libraries and utilities used ac
 
 #### source-controller
 
-The source-controller fetches, verifies, and caches external sources (Git, Helm, OCI, Buckets) as versioned, in-cluster artifacts, enabling other controllers to consume consistent, immutable resources for reconciliation.
+The source-controller fetches, verifies, and caches configuration from external sources (Git, Helm, OCI, Buckets) as versioned, in-cluster artifacts, enabling other controllers to consume consistent, immutable resources for reconciliation.
 
 **Custom Resources:**
 
