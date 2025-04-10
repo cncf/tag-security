@@ -370,4 +370,13 @@ The Flux team strives to issue fixes promptly, adhering to CNCF and open source 
 
 ## Appendix
 
-<!-- TODO -->
+### CII Best Practices
+
+Flux has achieved the [CII silver badge](https://www.bestpractices.dev/en/projects/4782) and is in the process of working towards attaining a gold badge.
+The CII badge is displayed on the Flux's primary repository at [https://github.com/fluxcd/flux2](https://github.com/fluxcd/flux2).
+
+### OpenSSF Scorecard
+
+Flux runs in CI the OpenSSF Scorecard GitHub Action on every commit to the main branch and on a weekly basis.
+The latest results are available at [https://scorecard.dev/viewer/?uri=github.com/fluxcd/flux2](https://scorecard.dev/viewer/?uri=github.com/fluxcd/flux2)
+and the OpenSSF scorecard badge is displayed on the Flux's primary repository at [https://github.com/fluxcd/flux2](https://github.com/fluxcd/flux2).
