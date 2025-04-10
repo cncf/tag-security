@@ -1,4 +1,4 @@
-<!-- cSpell:ignore Flux GitOps OCI k8s KinD CRDs SLSA Cosign Syft Rekor Makefiles Kustomization subprojects Lockdown lockdown-->
+<!-- cSpell:ignore Flux GitOps OCI k8s KinD CRDs SLSA Cosign Syft Rekor Makefiles Kustomization Kustomizations subprojects Lockdown lockdown-->
 
 # CNCF Flux Self Assessment
 
@@ -157,32 +157,92 @@ It consumes image data from the image-reflector-controller and pushes updated ma
 
 ### GitOps Reconciliation
 
-The system watches a version-controlled Git repository for configuration changes, validates the repository’s authenticity and access permissions, and applies those changes to the Kubernetes cluster to reconcile it with the declared state.
+The system watches a version-controlled Git repository for configuration changes,
+validates the repository’s authenticity and access permissions, and applies those
+changes to the Kubernetes cluster to reconcile it with the declared state.
 
-### Toolkit-Driven Delivery Execution
+Besides Git, Flux supports other sources such as container registries and S3-compatible object storage,
+these sources are usually used as intermediate storage between the Git repositories and the cluster.
 
-Flux controllers receive reconciliation requests, retrieve configuration artifacts from trusted sources, and apply desired state changes to the cluster using Kubernetes-native APIs. Access control is enforced through RBAC and source authentication, with the execution pipeline composed of reusable APIs in the GitOps Toolkit.
+To facilitate the decoupling of GitOps workflows from the Git provider, the Flux project provides
+an OCI Artifact media type `application/vnd.cncf.flux.content.v1.tar+gzip` for storing Git repository contents
+in container registries. The Flux OCI Artifacts can be signed with Cosign or Notary Notation and verified
+in the cluster to ensure the integrity of the artifacts.
+
+For more information on how the Flux CLI can be used to manage artifacts, including signing and verification,
+see the [Flux OCI Artifacts](https://fluxcd.io/flux/cheatsheets/oci-artifacts/) guide.
+
+### GitOps-Driven Delivery
+
+Flux controllers receive reconciliation requests, retrieve configuration artifacts from trusted sources,
+and apply desired state changes to the cluster including garbage collection of stale resources.
+
+In the final stage of the reconciliation, the Flux controllers perform a series of health checks
+to ensure that the rollout was successful and that the managed workloads have reached the desired state.
+
+Access control to Kubernetes API is enforced through RBAC, each controller operating within the scope
+of its own service account or if multi-tenancy is enabled, using the service account assigned to a tenant namespace.
 
 ### Source Reconciliation
 
-The source-controller polls external systems such as Git, OCI, or S3, authenticates using provided credentials, and fetches artifacts representing the desired system state.
+The source-controller polls external systems such as Git, OCI, or S3, authenticates using provided credentials,
+and fetches artifacts representing the desired system state.
 
 The source-controller can be configured to verify the integrity of the upstream sources using cryptographic signatures:
 
 - **Git:** Verifies commit signatures using OpenPGP keys.
 - **OCI:** Verifies OCI artifact signatures using Sigstore Cosign or Notary Notation.
 
-### Kustomization Reconciliation
+### Cluster Reconciliation
 
-The kustomize-controller reads a defined configuration overlay from a validated source and applies its Kubernetes resources to the cluster at regular intervals. If live resources are manually altered, they are reverted (unless reconciliation is paused), ensuring that the declared state in Git remains authoritative.
+The kustomize-controller reads the defined configuration from validated sources
+and performs a series of operations to decrypt, build, validate, and apply the configuration to the cluster.
+The kustomize-controller relies on Kubernetes server-side apply (SSA) and only performs actions
+on resources that have drifted from the desired state.
 
-### Cluster Bootstrap Execution
+The helm-controller reads the defined Helm charts from validated sources
+and performs a series of operations using the Helm Go SDK to install, upgrade, test,
+rollback, and uninstall Helm releases. The helm-controller actions are identical to the
+Helm CLI commands, except for Kubernetes CRDs lifecycle management. Flux keeps the CRDs in sync
+with the desired state as defined in Helm charts, while the Helm CLI ignores CRDs changes during
+upgrades which can lead to various issues for the underlying controllers.
 
-The bootstrap process installs Flux into a target cluster by applying manifests that define its components and configuration. It sets up a GitRepository and Kustomization to manage itself, pushing this configuration to a version-controlled repository. Authentication is enforced via CLI credentials or service accounts, and Flux begins reconciling itself like any other resource post-setup.
+Both controllers are capable of drift detection and correction, if live resources are manually altered,
+they are reverted, ensuring that the declared state in Git remains authoritative.
 
-### Provide Observability
+Note that the drift detection and correction is not a security feature, Flux allows users to
+disable the reconciliation of Kustomizations and HelmReleases and also allows users to
+ignore certain resources from being corrected.
 
-Flux emits Kubernetes events for all operations. These events are annotated with details on the involved resources, allowing end-users to leverage events, metrics, alerts, and traces for real-time visibility into reconciliation progress, successes, and failures.
+### Cluster Bootstrap
+
+The bootstrap process installs Flux into a target cluster by applying manifests that define its
+components and configuration. It sets up a GitRepository and Kustomization to manage itself,
+pushing this configuration to a version-controlled repository. Authentication is enforced via CLI
+credentials or service accounts, and Flux begins reconciling itself like any other resource post-setup.
+
+### Audit Trail
+
+The Flux controllers follow the Kubernetes structured logging conventions. The
+logs are in JSON format and can be collected and analyzed to monitor the operations of the controllers.
+
+The Flux controllers support structured logging with the following common labels:
+
+- `level` can be `debug`, `info` or `error`
+- `ts` timestamp in the ISO 8601 format
+- `msg` info or error description
+- `error` error details (present when `level` is `error`)
+- `controllerGroup` the Flux CR group
+- `controllerKind` the Flux CR kind
+- `name` The Flux CR name
+- `namespace` The Flux CR namespace
+- `reconcileID` the UID of the Flux reconcile operation
+- `revision` the revision of the source that was reconciled (Git commit SHA, OCI digest, etc.)
+- `output` the list of Kubernetes resources that were applied to the cluster including the action taken (`created`, `configured`, `deleted`)
+
+In addition to logs, the Flux controllers emit Kubernetes events for all operations and status changes.
+These events are annotated with details on the involved resources, allowing end-users to leverage events,
+metrics, alerts, and traces for real-time visibility into reconciliation progress, successes, and failures.
 
 ## Background
 
