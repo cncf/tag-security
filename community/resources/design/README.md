@@ -51,13 +51,13 @@
 	<th colspan="4">Main Colors</th>
 </tr>
 <tr style:"background-color:#FFFFFF">
-	<td><br><img src="colors/%236F6F7F.png" alt="light gray"><br><br></td>
-	<td><img src="colors/%23474756.png" alt="medium gray"></td>
-	<td><img src="colors/%23141419.png" alt="black"></td>
-	<td><img src="colors/%23152356.png" alt="dark blue"></td>
-	<td><img src="colors/%234A6CA4.png" alt="medium blue"></td>
-	<td><img src="colors/%23389BB2.png" alt="robins egg blue"></td>
-	<td><img src="colors/%2385C2D2.png" alt="light blue"></td>
+	<td><br><img src="colors/6F6F7F.png" alt="light gray"><br><br></td>
+	<td><img src="colors/474756.png" alt="medium gray"></td>
+	<td><img src="colors/141419.png" alt="black"></td>
+	<td><img src="colors/152356.png" alt="dark blue"></td>
+	<td><img src="colors/4A6CA4.png" alt="medium blue"></td>
+	<td><img src="colors/389BB2.png" alt="robins egg blue"></td>
+	<td><img src="colors/85C2D2.png" alt="light blue"></td>
 </tr>
 <tr style:"background-color:#FFFFFF">
 	<th>#6F6F7F</th>
@@ -77,9 +77,9 @@
 	<th colspan="3">Accent Colors</th>
 </tr>
 <tr style="background-color:#FFFFFF">
-	<td><br><img src="colors/%23D81637.png" alt="red"><br><br></td>
-	<td><img src="colors/%23F98903.png" alt="orange"></td>
-	<td><img src="colors/%23F7C906.png" alt="yellow"></td>
+	<td><br><img src="colors/D81637.png" alt="red"><br><br></td>
+	<td><img src="colors/F98903.png" alt="orange"></td>
+	<td><img src="colors/F7C906.png" alt="yellow"></td>
 </tr>
 <tr style="background-color:#FFFFFF">
         <th>#D81637</th>
