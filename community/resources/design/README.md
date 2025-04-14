@@ -1,4 +1,4 @@
-## Security TAG Logos
+# Security TAG Logos
 
 *Note: GitHub Flavored Markdown used in the Readme doesn't support background colors. The white logos below are displayed on the medium grey (#474756) in its row.*
 
