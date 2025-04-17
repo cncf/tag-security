@@ -19,3 +19,53 @@ command = "make preview-build"
 
 [context.branch-deploy]
 command = "make preview-build"
+
+[[redirects]]
+  from = "/community/resources/design/colours/%236F6F7F.png"
+  to = "/community/resources/design/colours/6F6F7F.png"
+  status = 301
+
+  [[redirects]]
+  from = "/community/resources/design/colours/%234A6CA4.png"
+  to = "/community/resources/design/colours/4A6CA4.png"
+  status = 301
+
+  [[redirects]]
+  from = "/community/resources/design/colours/%2385C2D2.png"
+  to = "/community/resources/design/colours/85C2D2.png"
+  status = 301
+
+  [[redirects]]
+  from = "/community/resources/design/colours/%23389BB2.png"
+  to = "/community/resources/design/colours/389BB2.png"
+  status = 301
+
+  [[redirects]]
+  from = "/community/resources/design/colours/%23141419.png"
+  to = "/community/resources/design/colours/141419.png"
+  status = 301
+
+  [[redirects]]
+  from = "/community/resources/design/colours/%23152356.png"
+  to = "/community/resources/design/colours/152356.png"
+  status = 301
+
+  [[redirects]]
+  from = "/community/resources/design/colours/%23474756.png"
+  to = "/community/resources/design/colours/474756.png"
+  status = 301
+
+  [[redirects]]
+  from = "/community/resources/design/colours/%23D81637.png"
+  to = "/community/resources/design/colours/D81637.png"
+  status = 301
+
+  [[redirects]]
+  from = "/community/resources/design/colours/%23F7C906.png"
+  to = "/community/resources/design/colours/F7C906.png"
+  status = 301
+
+  [[redirects]]
+  from = "/community/resources/design/colours/%23F98903.png"
+  to = "/community/resources/design/colours/F98903.png"
+  status = 301
