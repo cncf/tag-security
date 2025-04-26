@@ -90,7 +90,7 @@ Microcks actors are:
 
 The schema below represents a full-featured architecture deployment with relations and actions between actors and connection to outer brokers. We represented Kafka ones (X broker) as well as brokers (Y and Z) from other protocols. Microcks users access the main webapp either from their browser to see the console or from the CLI or any other application using the API endpoints.
 
-![Microcks actions](images/architecture-full.png)
+![Microcks actions](pics/architecture-full.png)
 
 See the [Architecture & deployment options](https://microcks.io/documentation/explanations/deployment-options/) documentation for comprehensive details.
 
@@ -250,7 +250,7 @@ We have also created a guide titled "[Joining Microcks Community Meetings](https
 #### Ecosystem
 
 See, the big picture:
-  ![Microcks ecosystem](images/microcks-cloud-native-ecosystem.png)
+  ![Microcks ecosystem](pics/microcks-cloud-native-ecosystem.png)
 
 More details:
 
