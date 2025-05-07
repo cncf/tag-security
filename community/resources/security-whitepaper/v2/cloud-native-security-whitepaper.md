@@ -173,7 +173,7 @@ matters.
 ### Assumptions
 
 All terms, concepts, and mechanisms used are defined as per
-the [Cloud Native Security Lexicon](https://github.com/cncf/tag-security/blob/main/security-lexicon/cloud-native-security-lexicon.md)
+the [Cloud Native Security Lexicon](https://tag-security.cncf.io/community/resources/security-lexicon/cloud-native-security-lexicon)
 and [Cloud Native Glossary](https://glossary.cncf.io/). This paper does not seek to change these definitions or expand
 upon it.
 
