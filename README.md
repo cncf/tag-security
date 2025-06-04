@@ -91,7 +91,7 @@ Each group, led by a responsible leader, reaches consensus on issues and manages
 | [Commons](/community/working-groups/commons/README.md) | Eddie Knight | Marco De Benedictis |
 | [Compliance](/community/working-groups/compliance/README.md) | Anca Sailer, Robert Ficcaglia | Brandt Keller |
 | [Security Assessments](/community/assessments/README.md) | Justin Cappos | Eddie Knight |
-| [Software Supply Chain](/community/working-groups/supply-chain-security/README.md) | Michael Lieberman, John Kjell | Marina Moore |
+| [Software Supply Chain](/community/working-groups/supply-chain-security/README.md) | Michael Lieberman | Marina Moore |
 
 ## Additional information
 
