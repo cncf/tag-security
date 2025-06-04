@@ -14,5 +14,6 @@ A big thank you to all the emeritus leaders of this TAG! Your hard work and dedi
 | Aradhana Chetal  | TIAA            | June, 2021 - September, 2023      | @achetal01    |
 | Andrew Martin    | ControlPlane    | March, 2022 - March, 2024         | @sublimino    |
 | Pushkar Joglekar | Independent     | June, 2023 - June, 2025           | @PushkarJ     |
+| John Kjell       | ControlPlane    | January, 2025 - June 2025         | @jkjell       |
 
 <!-- cSpell:disable -->
