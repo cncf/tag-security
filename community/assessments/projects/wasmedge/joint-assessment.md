@@ -12,22 +12,6 @@ Project team: Hung-Ying Tai @hydai, Meng-Han Lee @dm4
 * Source code: <https://github.com/WasmEdge/WasmEdge>
 * Web site: <https://wasmedge.org/>
 
-## Background
-
-WasmEdge is a lightweight, high-performance, and extensible WebAssembly runtime designed for cloud-native edge computing environments.
-As the fastest WebAssembly VM currently available, WasmEdge provides a secure sandboxed environment for running untrusted or third-party code in edge computing, serverless, and IoT scenarios.
-The project addresses the critical need for secure code execution with minimal resource footprint, enabling safe plugin architectures and cross-platform compatibility across diverse deployment environments.
-
-### Maturity
-
-* Modern web applications: Isomorphic and Jamstack applications with server-side WebAssembly execution
-* Edge computing: Microservices on edge cloud, IoT and embedded device applications
-* Serverless computing: Serverless SaaS APIs and Function-as-a-Service platforms
-* Smart contracts: Secure execution environment for blockchain applications
-* Machine learning at the edge: WASI-NN support for ML inference with frameworks like OpenVINO and PyTorch
-* Container ecosystem integration: Kubernetes WebAssembly runtime, Docker compatibility, CRI-O & crun support
-* Standards compliance: Full WebAssembly specification and WASI implementation
-
 ## Summary
 
 The project has built a reasonably secure system with appropriate security controls. However, the security limitations, testing requirements, and benefits could be better communicated to users. Additional focus on going above common recommendations would strengthen the project's security posture. The assessment team appreciates WasmEdge's cooperation in answering questions and clarifying the self-assessment document.
