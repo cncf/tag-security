@@ -53,11 +53,10 @@ Join our open discussions and share news:
 
 ## Meeting Information
 
-- **Americas**: Weekly on Wednesdays at 10 am (UTC-7). [Zoom link](https://zoom-lfx.platform.linuxfoundation.org/meeting/92340369657?password=76e24ffd-69f2-41a8-8aed-13796805225d), Meeting ID: 923 4036 9657.
-- **EMEA**: Bi-weekly on Wednesdays at 1 pm UTC+0 (adjusts for daylight saving). [Zoom link](https://zoom-lfx.platform.linuxfoundation.org/meeting/98348738138?password=70e6a945-563a-491f-8485-ecf7394ec13a), Meeting ID: 983 4873 8138.
-- **APAC**: Bi-weekly on Wednesdays at 11 am (UTC+9). [Zoom link](https://zoom-lfx.platform.linuxfoundation.org/meeting/94315508827?password=0d7eaab8-a217-4c1b-b0a5-27ceded5743f), Meeting ID: 943 1550 8827.
+- **Americas**: Weekly on Wednesdays at 10 am (UTC-7). [Zoom link](https://zoom-lfx.platform.linuxfoundation.org/meeting/99826624011?password=1f36a78e-7dd1-43e6-b3c8-6a305038acb5),
+- **APAC**: Bi-weekly on Thursday at 11 am (UTC+9). [Zoom link](https://zoom-lfx.platform.linuxfoundation.org/meeting/99241433042?password=ac8fe376-2fdf-4b90-b4de-a19a31fdb726).
 
-Check your local timezone [here](https://time.is/). Meetings are listed on the [CNCF calendar](https://www.cncf.io/calendar/) and the [TAG Security Calendar](https://calendar.google.com/calendar/u/0?cid=MGI4dTVlbDh0YTRzOTN0MmNtNzJ0dXZoaGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ).
+Check your local timezone [here](https://time.is/). Meetings are listed on the [CNCF calendar](https://www.cncf.io/calendar/) (filter by TAG Security and Compliance!)
 
 To add a topic to the agenda, review our [process](governance/process.md#getting-on-the-agenda).
 
