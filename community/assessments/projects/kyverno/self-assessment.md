@@ -74,7 +74,7 @@ Kyverno's security, where to find existing security documentation, Kyverno plans
 security, and general overview of Kyverno security practices, both for development of
 Kyverno as well as security of Kyverno.
 
-This document provides the CNCF SIG-Security with an initial understanding of Kyverno
+This document provides the CNCF TAG-Security with an initial understanding of Kyverno
 to assist in a joint-review, necessary for projects under incubation.  Taken
 together, this document and the joint-review serve as a cornerstone for if and when
 Kyverno seeks graduation and is preparing for a security audit.
@@ -86,43 +86,79 @@ The following diagram shows the logical architecture for Kyverno. Each major com
 
 ![Kyverno Logical Architecture](images/kyverno-architecture.png)
 
-### Webhook
+Kyverno consists of four main controllers that work together to provide comprehensive policy management capabilities. Each controller handles specific aspects of policy processing, from admission control to background operations and cleanup tasks.
 
-The `Webhook` component registers as a validating and mutating admission webhook and receives `AdmissionReview` requests from the API server to validate and mutate configuration changes, based on policies. Users can configure which namespaces and resources the webhooks will receive via command line options or the ConfigMap.
+### Admission Controller 
 
-The `Webhook` also creates and updates `GenerateRequest` and `PolicyChangeRequest` resources to trigger updates via other Kyverno controllers.
+* Receives AdmissionReview requests from the Kubernetes API server through validating and mutating webhooks.
+* Processes validate, mutate, and image validating rules.
+* Manages and renews certificates as Kubernetes Secrets for webhook use through the embedded Cert Renewer.
+* Manages and configures webhook rules dynamically based on installed policies through the embedded Webhook Controller.
+* Performs policy validation for the `Policy`, `ClusterPolicy`, `ValidatingPolicy`, `ImageValidatingPolicy`, `MutatingPolicy`, `GeneratingPolicy`, `DeletingPolicy`, and `PolicyException` custom resources.
+* Processes Policy Exceptions.
+* Generates `EphemeralReport` and `ClusterEphemeralReport` intermediary resources for further processing by the Reports Controller.
+* Generates `UpdateRequest` intermediary resources for further processing by the Background Controller.
 
-### Webhook Monitor
+### Reports Controller 
 
-On startup, Kyverno's `Webhook Monitor` component generates a self-signed certificate (or uses a user-provided certificate) and auto-creates the webhook configurations required to register Kyverno as an admission webhook. The component also periodically monitors if Kyverno is receiving webhook events and recreates the certificate and webhook configurations if needed.
+* Responsible for creation and reconciliation of the final `PolicyReport` and `ClusterPolicyReport` custom resources.
+* Performs background scans and generates, processes, and converts `EphemeralReport` and `ClusterEphemeralReport` intermediary resources into the final policy report resources.
 
-### Generate Controller
+### Background Controller 
 
-The `Generate Controller` watches `GenerateRequest` resources and creates, updates, and deletes Kubernetes resources based on Kyverno [generate rules](https://kyverno.io/docs/writing-policies/generate/). The `Generate Controller` also watches for changes in policy definitions to update generated resources.
+* Processes generate and mutate-existing rules of the `Policy` or `ClusterPolicy`, and the mutate-existing functionality of the `MutatingPolicy` and `GeneratingPolicy`.
+* Processes policy add, update, and delete events.
+* Processes and generates `UpdateRequest` intermediary resources to generate or mutate the final resource.
+* Generates `EphemeralReport` and `ClusterEphemeralReport` intermediary resources for further processing by the Reports Controller.
 
-### Policy Controller
+### Cleanup Controller 
 
-The `Policy Controller` performs periodic background scans on existing configurations and creates or updates policy reports based on changes and background scans. The `Policy Controller` watches `ReportChangeRequest` resources and creates, updates, and delete Kyverno [Policy Report](https://kyverno.io/docs/policy-reports/) resources. The `Policy Controller` also watches for changes in policies definitions to update policy reports.
+* Processes `CleanupPolicy` and `DeletingPolicy` resources.
+* Performs policy validation for the CleanupPolicy and ClusterCleanupPolicy custom resources through a webhook server.
+* Reconciles its webhook through a webhook controller.
+* Manages and renews certificates as Kubernetes Secrets for use in the webhook.
+* Creates and reconciles CronJobs used as the mechanism to trigger cleanup.
+* Handles the cleanup by deleting resources from the Kubernetes API.
 
 ## Physical Architecture
 
-Kyverno can be installed using a [Helm chart](https://artifacthub.io/packages/helm/kyverno/kyverno) or YAML files (see [installation doc](https://kyverno.io/docs/installation/)).  
-
-The Kyverno application consists of a:
-1. Service
-2. Deployment
-3. Roles
-4. Role Bindings
-5. Custom Resource Definitions
-6. Service account
-
-When Kyverno runs, it will check for a named `Secret` with a certificate to use for webhook registration. If the secret does not exist, Kyverno will generate a self-signed certificate and store it in the secret. Kyverno will then generate or update the mutating and validating webhook configurations.
+Kyverno can be installed using a [Helm chart](https://artifacthub.io/packages/helm/kyverno/kyverno) or YAML files (see [installation doc](https://kyverno.io/docs/installation/)).
 
 The diagram below shows the Kyverno physical architecture:
 
 ![Kyverno Physical Architecture](images/kyverno-physical-architecture.png)
 
-**NOTE:** Currently Kyverno runs as one multi-instance (HA) `Pod` managed by a single `Deployment`. In the future the different controllers may be packaged in separate deployments to allow flexibility in scaling and tuning each component.
+A standard Kyverno installation consists of a number of different components, some of which are optional:
+
+**Deployments**
+* Admission controller (required): The main component of Kyverno which handles webhook callbacks from the API server for verification, mutation, Policy Exceptions, and the processing engine.
+* Background controller (optional): The component responsible for processing of generate and mutate-existing rules.
+* Reports controller (optional): The component responsible for handling of Policy Reports.
+* Cleanup controller (optional): The component responsible for processing of Cleanup Policies and Deleting Policies.
+
+**Services**
+* Services needed to receive webhook requests.
+* Services needed for monitoring of metrics.
+
+**ServiceAccounts**
+* One ServiceAccount per controller to segregate and confine the permissions needed for each controller to operate on the resources for which it is responsible.
+
+**ConfigMaps**
+* ConfigMap for holding the main Kyverno configuration.
+* ConfigMap for holding the metrics configuration.
+
+**Secrets**
+* Secrets for webhook registration and authentication with the API server.
+
+**Roles and Bindings**
+* Roles and ClusterRoles, Bindings and ClusterRoleBindings authorizing the various ServiceAccounts to act on the resources in their scope.
+
+**Webhooks**
+* ValidatingWebhookConfigurations for receiving both policy and resource validation requests.
+* MutatingWebhookConfigurations for receiving both policy and resource mutating requests.
+
+**CustomResourceDefinitions**
+* CRDs which define the custom resources corresponding to policies, reports, and their intermediary resources.
 
 ## Security functions and features
 
