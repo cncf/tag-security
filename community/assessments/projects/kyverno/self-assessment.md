@@ -4,7 +4,7 @@
 |**Completed**:               | *tbd*                                 |
 |-----------------------------|---------------------------------------|
 |**Security reviewer(s)**:    | <!-- cspell:disable --> John Kinsella, Wesley Steehouwer (@dutchshark) |
-|**Project security lead**:   | <!-- cspell:disable --> Jim Bugwadia  |
+|**Project security lead**:   | <!-- cspell:disable --> Jim Bugwadia, Shuting Zhao  |
 | **Source code**:            | https://github.com/kyverno/kyverno    |
 | **Web site**:               | https://kyverno.io/                   |
 
@@ -55,30 +55,23 @@ While this is powerful, it also creates a few challenges:
 2. Kubernetes configurations are not secure by default. Security and best practices need to be configured for workloads.
 3. A resource's configurations is shared across organizational roles (dev-sec-ops) and chances of misconfigurations, or lack of proper configuration, increase as there is no clear ownership. Whether developers, operators, or security engineers are responsible for more `advanced` configuration settings may not be obvious.
 
-### Goal
+### Goals
 
 The goal of the Kyverno project is to simplify configuration security and automate processes that otherwise require manual handoffs and coordination across operators and developers. While initially focused on Kubernetes, Kyverno has been extended to support non-Kubernetes resources through new policy types (`ValidatingPolicy`, `ImageValidatingPolicy`, `MutatingPolicy`) that utilize CommonExpressionLanguage, enabling validation of any JSON or YAML payload including Terraform files, Dockerfiles, cloud configurations, and service authorization requests.
 
 ### Non-goals
 
 Kyverno is  designed for Kubernetes environments, and has been extended with additional tools and new policy types to support non-Kubernetes use cases. The default Kyverno installation operates as an admission controller and is optimized for Kubernetes resource management. The new CEL-based policy types provide a seamless approach to handling non-Kubernetes resources.
+
 Kyverno complements and extends the Kubernetes' native ValidatingAdmissionPolicy and MutatingAdmissionPolicy types. Kyverno provides features such as comprehensive reporting, exception management, and periodic scanning, for the native policies. For more complex policy logic which cannot be handled by the native types, Kyverno offers custom policy types which cleanly extend the native types and provide additional attributes and extended custom CEL libraries. Kyverno also supports converting its own policy types, to the native types for fast execution in the API server, whenever possible.
 
 ## Self-assessment use
 
-This self-assessment is created by the Kyverno team to perform an internal analysis of the
-project's security.  It is not intended to provide a security audit of Kyverno, or
-function as an independent assessment or attestation of Kyverno's security health.
+This self-assessment is created by the Kyverno team to perform an internal analysis of the project's security.  It is not intended to provide a security audit of Kyverno, or function as an independent assessment or attestation of Kyverno's security health.
 
-This document serves to provide Kyverno users with an initial understanding of
-Kyverno's security, where to find existing security documentation, Kyverno plans for
-security, and general overview of Kyverno security practices, both for development of
-Kyverno as well as security of Kyverno.
+This document serves to provide Kyverno users with an initial understanding of Kyverno's security, where to find existing security documentation, Kyverno plans for security, and general overview of Kyverno security practices, both for development of Kyverno as well as security of Kyverno.
 
-This document provides the CNCF TAG-Security with an initial understanding of Kyverno
-to assist in a joint-review, necessary for projects under incubation.  Taken
-together, this document and the joint-review serve as a cornerstone for if and when
-Kyverno seeks graduation and is preparing for a security audit.
+This document provides the CNCF TAG-Security with an initial understanding of Kyverno to assist in a joint-review, necessary for projects under incubation.  Taken together, this document and the joint-review serve as a cornerstone for if and when Kyverno seeks graduation and is preparing for a security audit.
 
 
 ## Logical Architecture
@@ -194,7 +187,7 @@ The [Kyverno container images](https://github.com/orgs/kyverno/packages) are hos
 
 The [Kyverno Helm chart](https://artifacthub.io/packages/helm/kyverno/kyverno) is hosted in ArtifactHub. There is a pending issue to to sign the Helm Chart using Sigstore Cosign (https://github.com/kyverno/kyverno/issues/2758).
 
-The [Kyverno installation YAMLs](https://github.com/kyverno/kyverno/blob/main/definitions/install.yaml) are hosted in the GitHub repository.
+The [Kyverno installation YAMLs](https://github.com/kyverno/kyverno/blob/main/config/install-latest-testing.yaml) are hosted in the GitHub repository.
 
 A Software Bill of Materials (SBOM) is produced and made available for each release (https://main.kyverno.io/docs/security/#fetching-the-sbom-for-kyverno).
 
@@ -224,9 +217,9 @@ All Kyverno security related issues (both fixes and enhancements) are labeled wi
   https://github.com/kyverno/kyverno/labels/security
 
 
-### [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/)
+### [CII Best Practices](https://www.bestpractices.dev/)
 
-The Kyverno project has adopted the OSSF/Scorecard and is tracking progress in [issue #2617](https://github.com/kyverno/kyverno/issues/2617).
+The Kyverno project has passed the OpenSSF Scorecard check and is actively working towards achieving silver/gold level certification. Progress is being tracked via [issue 10908](https://github.com/kyverno/kyverno/issues/10908).
 
 ### Related Projects / Vendors
 
