@@ -61,9 +61,8 @@ The goal of the Kyverno project is to simplify configuration security and automa
 
 ### Non-goals
 
-Kyverno is primarily designed for Kubernetes environments, though it has been extended with additional tools and new policy types to support non-Kubernetes use cases. The core Kyverno engine remains optimized for Kubernetes resource management, while the CEL-based policy types provide a more integrated approach to handling non-Kubernetes resources.
-
-Kyverno is not intended to replace Kubernetes' native ValidatingAdmissionPolicy and MutatingAdmissionPolicy. Instead, it fully supports converting Kyverno mutate policies and validating policies to these native Kubernetes policy types, while providing additional features such as comprehensive reporting capabilities and extended custom CEL libraries that enhance the native Kubernetes admission control experience.
+Kyverno is  designed for Kubernetes environments, and has been extended with additional tools and new policy types to support non-Kubernetes use cases. The default Kyverno installation operates as an admission controller and is optimized for Kubernetes resource management. The new CEL-based policy types provide a seamless approach to handling non-Kubernetes resources.
+Kyverno complements and extends the Kubernetes' native ValidatingAdmissionPolicy and MutatingAdmissionPolicy types. Kyverno provides features such as comprehensive reporting, exception management, and periodic scanning, for the native policies. For more complex policy logic which cannot be handled by the native types, Kyverno offers custom policy types which cleanly extend the native types and provide additional attributes and extended custom CEL libraries. Kyverno also supports converting its own policy types, to the native types for fast execution in the API server, whenever possible.
 
 ## Self-assessment use
 
