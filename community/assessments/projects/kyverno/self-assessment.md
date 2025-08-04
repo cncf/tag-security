@@ -61,17 +61,25 @@ The goal of the Kyverno project is to simplify configuration security and automa
 
 ### Non-goals
 
-Kyverno is  designed for Kubernetes environments, and has been extended with additional tools and new policy types to support non-Kubernetes use cases. The default Kyverno installation operates as an admission controller and is optimized for Kubernetes resource management. The new CEL-based policy types provide a seamless approach to handling non-Kubernetes resources.
+Kyverno is designed for Kubernetes environments, and has been extended with additional tools and new policy types to support non-Kubernetes use cases. The default Kyverno installation operates as an admission controller and is optimized for Kubernetes resource management. The new CEL-based policy types provide a seamless approach to handling non-Kubernetes resources.
 
 Kyverno complements and extends the Kubernetes' native ValidatingAdmissionPolicy and MutatingAdmissionPolicy types. Kyverno provides features such as comprehensive reporting, exception management, and periodic scanning, for the native policies. For more complex policy logic which cannot be handled by the native types, Kyverno offers custom policy types which cleanly extend the native types and provide additional attributes and extended custom CEL libraries. Kyverno also supports converting its own policy types, to the native types for fast execution in the API server, whenever possible.
 
 ## Self-assessment use
 
-This self-assessment is created by the Kyverno team to perform an internal analysis of the project's security.  It is not intended to provide a security audit of Kyverno, or function as an independent assessment or attestation of Kyverno's security health.
+This self-assessment is created by the Kyverno team to perform an internal analysis of the 
+project's security. It is not intended to provide a security audit of Kyverno, or 
+function as an independent assessment or attestation of Kyverno's security health.
 
-This document serves to provide Kyverno users with an initial understanding of Kyverno's security, where to find existing security documentation, Kyverno plans for security, and general overview of Kyverno security practices, both for development of Kyverno as well as security of Kyverno.
+This document serves to provide Kyverno users with an initial understanding of Kyverno's 
+security, where to find existing security documentation, Kyverno plans for 
+security, and general overview of Kyverno security practices, both for development of 
+Kyverno as well as security of Kyverno.
 
-This document provides the CNCF TAG-Security with an initial understanding of Kyverno to assist in a joint-review, necessary for projects under incubation.  Taken together, this document and the joint-review serve as a cornerstone for if and when Kyverno seeks graduation and is preparing for a security audit.
+This document provides the CNCF TAG-Security with an initial understanding of Kyverno
+to assist in a joint-review, necessary for projects under incubation. Taken 
+together, this document and the joint-review serve as a cornerstone for if and when 
+Kyverno seeks graduation and is preparing for a security audit.
 
 
 ## Logical Architecture
