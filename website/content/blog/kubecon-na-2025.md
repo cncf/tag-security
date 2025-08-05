@@ -1,5 +1,6 @@
 ---
 title: KubeCon NA 2025 Schedule Announced!
+date: 2026-08-06 09:00:00 -05:00
 author: Evan Anderson, Jennifer Power
 ---
 
