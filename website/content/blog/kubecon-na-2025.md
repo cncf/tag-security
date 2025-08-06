@@ -1,7 +1,7 @@
 ---
 title: KubeCon NA 2025 Schedule Announced!
 date: 2025-08-06 09:00:00 -05:00
-author: Evan Anderson, Jennifer Power
+author: Evan Anderson and Jennifer Power
 ---
 
 [https://kccncna2025.sched.com/list/descriptions/type/Security](https://kccncna2025.sched.com/list/descriptions/type/Security)
