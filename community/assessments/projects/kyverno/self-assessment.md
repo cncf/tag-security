@@ -4,7 +4,7 @@
 |**Completed**:               | *tbd*                                 |
 |-----------------------------|---------------------------------------|
 |**Security reviewer(s)**:    | <!-- cspell:disable --> John Kinsella, Wesley Steehouwer (@dutchshark) |
-|**Project security lead**:   | <!-- cspell:disable --> Jim Bugwadia  |
+|**Project security lead**:   | <!-- cspell:disable --> Jim Bugwadia, Shuting Zhao  |
 | **Source code**:            | https://github.com/kyverno/kyverno    |
 | **Web site**:               | https://kyverno.io/                   |
 
@@ -44,7 +44,7 @@
 
 ## Overview
 
-Kyverno helps secure and automates Kubernetes configurations using policies defined as Kubernetes custom resources. It operates as an Kubernetes admission controller and a command-line for off-cluster use.
+Kyverno helps secure and automates configurations using policies defined as Kubernetes custom resources. It operates as a Kubernetes admission controller and provides command-line tools for off-cluster use. Additionally, Kyverno has been extended with new policy types (`ValidatingPolicy`, `ImageValidatingPolicy`, `MutatingPolicy`) that utilize CommonExpressionLanguage to support non-Kubernetes resources, enabling policy validation for any JSON or YAML payload including Terraform files, Dockerfiles, cloud configurations, and service authorization requests.
 
 ### Background
 
@@ -55,29 +55,23 @@ While this is powerful, it also creates a few challenges:
 2. Kubernetes configurations are not secure by default. Security and best practices need to be configured for workloads.
 3. A resource's configurations is shared across organizational roles (dev-sec-ops) and chances of misconfigurations, or lack of proper configuration, increase as there is no clear ownership. Whether developers, operators, or security engineers are responsible for more `advanced` configuration settings may not be obvious.
 
-### Goal
+### Goals
 
-The goal of the Kyverno project is to simplify Kubernetes configuration security and automate processes that otherwise require manual handoffs and coordination across Kubernetes cluster operators and developers.
+The goal of the Kyverno project is to simplify configuration security and automate processes that otherwise require manual handoffs and coordination across operators and developers. While initially focused on Kubernetes, Kyverno has been extended to support non-Kubernetes resources through new policy types (`ValidatingPolicy`, `ImageValidatingPolicy`, `MutatingPolicy`) that utilize CommonExpressionLanguage, enabling validation of any JSON or YAML payload including Terraform files, Dockerfiles, cloud configurations, and service authorization requests.
 
 ### Non-goals
 
-Kyverno is not a general purpose policy engine i.e. it is not designed for use outside of Kubernetes.
+Kyverno is  designed for Kubernetes environments, and has been extended with additional tools and new policy types to support non-Kubernetes use cases. The default Kyverno installation operates as an admission controller and is optimized for Kubernetes resource management. The new CEL-based policy types provide a seamless approach to handling non-Kubernetes resources.
+
+Kyverno complements and extends the Kubernetes' native ValidatingAdmissionPolicy and MutatingAdmissionPolicy types. Kyverno provides features such as comprehensive reporting, exception management, and periodic scanning, for the native policies. For more complex policy logic which cannot be handled by the native types, Kyverno offers custom policy types which cleanly extend the native types and provide additional attributes and extended custom CEL libraries. Kyverno also supports converting its own policy types, to the native types for fast execution in the API server, whenever possible.
 
 ## Self-assessment use
 
-This self-assessment is created by the Kyverno team to perform an internal analysis of the
-project's security.  It is not intended to provide a security audit of Kyverno, or
-function as an independent assessment or attestation of Kyverno's security health.
+This self-assessment is created by the Kyverno team to perform an internal analysis of the project's security.  It is not intended to provide a security audit of Kyverno, or function as an independent assessment or attestation of Kyverno's security health.
 
-This document serves to provide Kyverno users with an initial understanding of
-Kyverno's security, where to find existing security documentation, Kyverno plans for
-security, and general overview of Kyverno security practices, both for development of
-Kyverno as well as security of Kyverno.
+This document serves to provide Kyverno users with an initial understanding of Kyverno's security, where to find existing security documentation, Kyverno plans for security, and general overview of Kyverno security practices, both for development of Kyverno as well as security of Kyverno.
 
-This document provides the CNCF SIG-Security with an initial understanding of Kyverno
-to assist in a joint-review, necessary for projects under incubation.  Taken
-together, this document and the joint-review serve as a cornerstone for if and when
-Kyverno seeks graduation and is preparing for a security audit.
+This document provides the CNCF TAG-Security with an initial understanding of Kyverno to assist in a joint-review, necessary for projects under incubation.  Taken together, this document and the joint-review serve as a cornerstone for if and when Kyverno seeks graduation and is preparing for a security audit.
 
 
 ## Logical Architecture
@@ -86,43 +80,79 @@ The following diagram shows the logical architecture for Kyverno. Each major com
 
 ![Kyverno Logical Architecture](images/kyverno-architecture.png)
 
-### Webhook
+Kyverno consists of four main controllers that work together to provide comprehensive policy management capabilities. Each controller handles specific aspects of policy processing, from admission control to background operations and cleanup tasks.
 
-The `Webhook` component registers as a validating and mutating admission webhook and receives `AdmissionReview` requests from the API server to validate and mutate configuration changes, based on policies. Users can configure which namespaces and resources the webhooks will receive via command line options or the ConfigMap.
+### Admission Controller 
 
-The `Webhook` also creates and updates `GenerateRequest` and `PolicyChangeRequest` resources to trigger updates via other Kyverno controllers.
+* Receives AdmissionReview requests from the Kubernetes API server through validating and mutating webhooks.
+* Processes validate, mutate, and image validating rules.
+* Manages and renews certificates as Kubernetes Secrets for webhook use through the embedded Cert Renewer.
+* Manages and configures webhook rules dynamically based on installed policies through the embedded Webhook Controller.
+* Performs policy validation for the `Policy`, `ClusterPolicy`, `ValidatingPolicy`, `ImageValidatingPolicy`, `MutatingPolicy`, `GeneratingPolicy`, `DeletingPolicy`, and `PolicyException` custom resources.
+* Processes Policy Exceptions.
+* Generates `EphemeralReport` and `ClusterEphemeralReport` intermediary resources for further processing by the Reports Controller.
+* Generates `UpdateRequest` intermediary resources for further processing by the Background Controller.
 
-### Webhook Monitor
+### Reports Controller 
 
-On startup, Kyverno's `Webhook Monitor` component generates a self-signed certificate (or uses a user-provided certificate) and auto-creates the webhook configurations required to register Kyverno as an admission webhook. The component also periodically monitors if Kyverno is receiving webhook events and recreates the certificate and webhook configurations if needed.
+* Responsible for creation and reconciliation of the final `PolicyReport` and `ClusterPolicyReport` custom resources.
+* Performs background scans and generates, processes, and converts `EphemeralReport` and `ClusterEphemeralReport` intermediary resources into the final policy report resources.
 
-### Generate Controller
+### Background Controller 
 
-The `Generate Controller` watches `GenerateRequest` resources and creates, updates, and deletes Kubernetes resources based on Kyverno [generate rules](https://kyverno.io/docs/writing-policies/generate/). The `Generate Controller` also watches for changes in policy definitions to update generated resources.
+* Processes generate and mutate-existing rules of the `Policy` or `ClusterPolicy`, and the mutate-existing functionality of the `MutatingPolicy` and `GeneratingPolicy`.
+* Processes policy add, update, and delete events.
+* Processes and generates `UpdateRequest` intermediary resources to generate or mutate the final resource.
+* Generates `EphemeralReport` and `ClusterEphemeralReport` intermediary resources for further processing by the Reports Controller.
 
-### Policy Controller
+### Cleanup Controller 
 
-The `Policy Controller` performs periodic background scans on existing configurations and creates or updates policy reports based on changes and background scans. The `Policy Controller` watches `ReportChangeRequest` resources and creates, updates, and delete Kyverno [Policy Report](https://kyverno.io/docs/policy-reports/) resources. The `Policy Controller` also watches for changes in policies definitions to update policy reports.
+* Processes `CleanupPolicy` and `DeletingPolicy` resources.
+* Performs policy validation for the CleanupPolicy and ClusterCleanupPolicy custom resources through a webhook server.
+* Reconciles its webhook through a webhook controller.
+* Manages and renews certificates as Kubernetes Secrets for use in the webhook.
+* Creates and reconciles CronJobs used as the mechanism to trigger cleanup.
+* Handles the cleanup by deleting resources from the Kubernetes API.
 
 ## Physical Architecture
 
-Kyverno can be installed using a [Helm chart](https://artifacthub.io/packages/helm/kyverno/kyverno) or YAML files (see [installation doc](https://kyverno.io/docs/installation/)).  
-
-The Kyverno application consists of a:
-1. Service
-2. Deployment
-3. Roles
-4. Role Bindings
-5. Custom Resource Definitions
-6. Service account
-
-When Kyverno runs, it will check for a named `Secret` with a certificate to use for webhook registration. If the secret does not exist, Kyverno will generate a self-signed certificate and store it in the secret. Kyverno will then generate or update the mutating and validating webhook configurations.
+Kyverno can be installed using a [Helm chart](https://artifacthub.io/packages/helm/kyverno/kyverno) or YAML files (see [installation doc](https://kyverno.io/docs/installation/)).
 
 The diagram below shows the Kyverno physical architecture:
 
 ![Kyverno Physical Architecture](images/kyverno-physical-architecture.png)
 
-**NOTE:** Currently Kyverno runs as one multi-instance (HA) `Pod` managed by a single `Deployment`. In the future the different controllers may be packaged in separate deployments to allow flexibility in scaling and tuning each component.
+A standard Kyverno installation consists of a number of different components, some of which are optional:
+
+**Deployments**
+* Admission controller (required): The main component of Kyverno which handles webhook callbacks from the API server for verification, mutation, Policy Exceptions, and the processing engine.
+* Background controller (optional): The component responsible for processing of generate and mutate-existing rules.
+* Reports controller (optional): The component responsible for handling of Policy Reports.
+* Cleanup controller (optional): The component responsible for processing of Cleanup Policies and Deleting Policies.
+
+**Services**
+* Services needed to receive webhook requests.
+* Services needed for monitoring of metrics.
+
+**ServiceAccounts**
+* One ServiceAccount per controller to segregate and confine the permissions needed for each controller to operate on the resources for which it is responsible.
+
+**ConfigMaps**
+* ConfigMap for holding the main Kyverno configuration.
+* ConfigMap for holding the metrics configuration.
+
+**Secrets**
+* Secrets for webhook registration and authentication with the API server.
+
+**Roles and Bindings**
+* Roles and ClusterRoles, Bindings and ClusterRoleBindings authorizing the various ServiceAccounts to act on the resources in their scope.
+
+**Webhooks**
+* ValidatingWebhookConfigurations for receiving both policy and resource validation requests.
+* MutatingWebhookConfigurations for receiving both policy and resource mutating requests.
+
+**CustomResourceDefinitions**
+* CRDs which define the custom resources corresponding to policies, reports, and their intermediary resources.
 
 ## Security functions and features
 
@@ -145,7 +175,7 @@ Kyverno does not currently document meeting particular compliance standards.
 
 ## Secure development practices
 
-The Kyverno project follows established CNCF and OSS best practices for code development and delivery:
+The Kyverno project follows established CNCF and OSS best practices for code development and delivery.
 
 ### Development Pipeline
 
@@ -157,7 +187,7 @@ The [Kyverno container images](https://github.com/orgs/kyverno/packages) are hos
 
 The [Kyverno Helm chart](https://artifacthub.io/packages/helm/kyverno/kyverno) is hosted in ArtifactHub. There is a pending issue to to sign the Helm Chart using Sigstore Cosign (https://github.com/kyverno/kyverno/issues/2758).
 
-The [Kyverno installation YAMLs](https://github.com/kyverno/kyverno/blob/main/definitions/install.yaml) are hosted in the GitHub repository.
+The [Kyverno installation YAMLs](https://github.com/kyverno/kyverno/blob/main/config/install-latest-testing.yaml) are hosted in the GitHub repository.
 
 A Software Bill of Materials (SBOM) is produced and made available for each release (https://main.kyverno.io/docs/security/#fetching-the-sbom-for-kyverno).
 
@@ -187,9 +217,9 @@ All Kyverno security related issues (both fixes and enhancements) are labeled wi
   https://github.com/kyverno/kyverno/labels/security
 
 
-### [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/)
+### [CII Best Practices](https://www.bestpractices.dev/)
 
-The Kyverno project has adopted the OSSF/Scorecard and is tracking progress in [issue #2617](https://github.com/kyverno/kyverno/issues/2617).
+The Kyverno project has passed the OpenSSF Scorecard check and is actively working towards achieving silver/gold level certification. Progress is being tracked via [issue 10908](https://github.com/kyverno/kyverno/issues/10908).
 
 ### Related Projects / Vendors
 
