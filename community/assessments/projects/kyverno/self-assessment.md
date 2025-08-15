@@ -44,7 +44,7 @@
 
 ## Overview
 
-Kyverno helps secure and automates configurations using policies defined as Kubernetes custom resources. It operates as a Kubernetes admission controller and provides command-line tools for off-cluster use. Additionally, Kyverno has been extended with new policy types (`ValidatingPolicy`, `ImageValidatingPolicy`, `MutatingPolicy`) that utilize CommonExpressionLanguage to support non-Kubernetes resources, enabling policy validation for any JSON or YAML payload including Terraform files, Dockerfiles, cloud configurations, and service authorization requests.
+Kyverno helps secure and automates configurations using policies defined as Kubernetes custom resources. It operates as a Kubernetes admission controller and provides command-line tools for off-cluster use. Additionally, Kyverno has been extended with new policy types (`ValidatingPolicy`, `ImageValidatingPolicy`, `MutatingPolicy`) that utilize CommonExpressionLanguage (CEL) to support non-Kubernetes resources, enabling policy validation for any JSON or YAML payload including Terraform files, Dockerfiles, cloud configurations, and service authorization requests.
 
 ### Background
 
@@ -57,21 +57,27 @@ While this is powerful, it also creates a few challenges:
 
 ### Goals
 
-The goal of the Kyverno project is to simplify configuration security and automate processes that otherwise require manual handoffs and coordination across operators and developers. While initially focused on Kubernetes, Kyverno has been extended to support non-Kubernetes resources through new policy types (`ValidatingPolicy`, `ImageValidatingPolicy`, `MutatingPolicy`) that utilize CommonExpressionLanguage, enabling validation of any JSON or YAML payload including Terraform files, Dockerfiles, cloud configurations, and service authorization requests.
+The goal is to enforce security policies across Kubernetes resources to prevent insecure configurations and ensure compliance. User-defined YAML and CEL policies are enforced through admission control to prevent non-compliant Kubernetes resources from being created or modified, providing immediate feedback to users. If the admission controller is unavailable, CLI tools and background scanning provide alternative enforcement mechanisms to maintain security posture. Kyverno also provides automation through mutation and generation capabilities to automatically fix configurations and create required resources, simplifying security management. CLI tools extend this enforcement to non-Kubernetes resources like Terraform files and Dockerfiles.
 
 ### Non-goals
 
-Kyverno is  designed for Kubernetes environments, and has been extended with additional tools and new policy types to support non-Kubernetes use cases. The default Kyverno installation operates as an admission controller and is optimized for Kubernetes resource management. The new CEL-based policy types provide a seamless approach to handling non-Kubernetes resources.
-
-Kyverno complements and extends the Kubernetes' native ValidatingAdmissionPolicy and MutatingAdmissionPolicy types. Kyverno provides features such as comprehensive reporting, exception management, and periodic scanning, for the native policies. For more complex policy logic which cannot be handled by the native types, Kyverno offers custom policy types which cleanly extend the native types and provide additional attributes and extended custom CEL libraries. Kyverno also supports converting its own policy types, to the native types for fast execution in the API server, whenever possible.
+Kyverno is NOT designed to address Kubernetes security flaws, as it cannot protect against vulnerabilities in the Kubernetes API server or underlying infrastructure and Kyverno's policy enforcement may be bypassed if Kubernetes has a security flaw. Kyverno does not enforce security requirements that weren't explicitly defined, it enforces only the policies that users define. Kyverno does not replace Kubernetes RBAC, as RBAC controls access while Kyverno enforces policy compliance. Kyverno also does not replace Kubernetes' built-in policy controls like ValidatingAdmissionPolicies and MutatingAdmissionPolicies, but complements these native controls with additional features such as comprehensive reporting, exception management, and periodic scanning.
 
 ## Self-assessment use
 
-This self-assessment is created by the Kyverno team to perform an internal analysis of the project's security.  It is not intended to provide a security audit of Kyverno, or function as an independent assessment or attestation of Kyverno's security health.
+This self-assessment is created by the Kyverno team to perform an internal analysis of the 
+project's security. It is not intended to provide a security audit of Kyverno, or 
+function as an independent assessment or attestation of Kyverno's security health.
 
-This document serves to provide Kyverno users with an initial understanding of Kyverno's security, where to find existing security documentation, Kyverno plans for security, and general overview of Kyverno security practices, both for development of Kyverno as well as security of Kyverno.
+This document serves to provide Kyverno users with an initial understanding of Kyverno's 
+security, where to find existing security documentation, Kyverno plans for 
+security, and general overview of Kyverno security practices, both for development of 
+Kyverno as well as security of Kyverno.
 
-This document provides the CNCF TAG-Security with an initial understanding of Kyverno to assist in a joint-review, necessary for projects under incubation.  Taken together, this document and the joint-review serve as a cornerstone for if and when Kyverno seeks graduation and is preparing for a security audit.
+This document provides the CNCF TAG-Security with an initial understanding of Kyverno
+to assist in a joint-review, necessary for projects under incubation. Taken 
+together, this document and the joint-review serve as a cornerstone for if and when 
+Kyverno seeks graduation and is preparing for a security audit.
 
 
 ## Logical Architecture
