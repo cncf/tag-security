@@ -1,6 +1,7 @@
 # Self-assessment
 
-Authors: Leonard Wang, Ashna Mehrotra  
+Authors: Leonard Wang
+
 Date: July 22nd, 2025
 
 ## Self-assessment outline
@@ -54,17 +55,16 @@ Container images often contain third-party dependencies that are vulnerable to C
 
 ### Actors
 
-- **Copacetic CLI (Copa):** Copacetic’s core is a command-line tool (`copa`) written in Go that orchestrates the entire patching process. It acts as a frontend to the BuildKit image builder, taking an existing container image (by reference) and an optional vulnerability scan report as inputs. The CLI parses the vulnerability report, coordinates fetching the necessary updates, and invokes BuildKit to apply patches. If the vulnerability report is omitted, Copa updates all outdated packages in the image. The Copacetic CLI runs on the user’s machine or CI environment.
-- **BuildKit Engine:** BuildKit is the container build engine that Copacetic leverages to perform image modifications in a safe, isolated manner. For safe and isolated - BuildKit executes update commands inside ephemeral build containers; the target image filesystem is mounted in the builder and mutations are captured as a new layer. We recommend running BuildKit in rootless mode or within a containerized daemon and, if exposing BuildKit over TCP, using mTLS between client and daemon. Copa does not run update commands on the host. Trust assumptions: we trust the BuildKit daemon and its worker runtime, plus any helper images used during patching. Isolation specifics: (a) ephemeral containers for update steps; (b) no host filesystem writes; (c) hardened deployment: rootless where possible; mTLS recommended when BuildKit is remote. Trust boundary: BuildKit and its worker (runc/containerd) must be trusted components.
+- **Copacetic CLI:** Copacetic’s core is a command-line tool (`copa`) written in Go that orchestrates the entire patching process. It acts as a frontend to the BuildKit image builder, taking an existing container image (by reference) and an optional vulnerability scan report as inputs. The CLI parses the vulnerability report, coordinates fetching the necessary updates, and invokes BuildKit to apply patches. If the vulnerability report is omitted, Copacetic updates all outdated packages in the image. The Copacetic CLI runs on the user’s machine or CI environment.
+- **BuildKit Engine:** BuildKit is the container build engine that Copacetic leverages to perform image modifications in a safe, isolated manner. For safe and isolated - BuildKit executes update commands inside ephemeral build containers; the target image filesystem is mounted in the builder and mutations are captured as a new layer. We recommend running BuildKit in rootless mode or within a containerized daemon and, if exposing BuildKit over TCP, using mTLS between client and daemon. Copacetic does not run update commands on the host. Trust assumptions: we trust the BuildKit daemon and its worker runtime, plus any helper images used during patching. Isolation specifics: (a) ephemeral containers for update steps; (b) no host filesystem writes; (c) hardened deployment: rootless where possible; mTLS recommended when BuildKit is remote. Trust boundary: BuildKit and its worker (runc/containerd) must be trusted components.
 - **Vulnerability Scanner (External):** Copacetic itself does not scan for vulnerabilities; it relies on an external container vulnerability scanner to produce an input report for packages. The scanner’s output is consumed by Copacetic’s parser. If no scanner report is provided, Copacetic’s patching capability is limited to known package updates only.
-- **OS Package Manager & Update Tools:** As part of the patching process, Copacetic utilizes the target Linux distribution’s package manager tools (e.g., `apt`, `apk`) to obtain and install updates. These tools aren’t long-running actors but are invoked within the BuildKit environment. If the target image lacks the necessary package manager or metadata (e.g., a distroless image), Copacetic’s BuildKit instructions will pull in a helper container to provide the needed package databases and binaries.
-- **Repository trust model:** Copa defers authenticity and integrity checks to the target OS package manager.
-  - **Debian/Ubuntu (APT):** APT verifies repository **metadata** signatures via apt-secure (signed `InRelease` or `Release` + `Release.gpg`) using trusted archive keys; package payloads are verified by **hashes referenced in the signed metadata**. 
-  - **Alpine (apk):** `apk` verifies **package** and **APKINDEX** signatures using RSA public keys in `/etc/apk/keys/`. Only repositories whose keys are present/trusted will install.
-  - **RPM (dnf/yum):** Enable `gpgcheck=1` to verify **package** signatures and `repo_gpgcheck=1` to verify **repository metadata** signatures; configure each repo’s `gpgkey=` accordingly.
-  - Across all ecosystems, Copa uses official repositories.
+- **OS Package Manager & Update Tools:** As part of the patching process, Copacetic utilizes the target Linux distribution’s package manager tools (e.g., `apt`, `apk`) to obtain and install updates. These tools aren’t long-running actors but are invoked within the BuildKit environment. If the target image lacks the necessary package manager or metadata (e.g., a distro-less image), Copacetic’s BuildKit instructions will pull in a helper container to provide the needed package databases and binaries.
+- **Repository trust model:** Copacetic defers authenticity and integrity checks to the target OS package manager.
+  - **Debian/Ubuntu (APT):** APT verifies repository **metadata** signatures via apt-secure (signed `InRelease` or `Release` + `Release.gpg`) using trusted archive keys; package payloads are verified by **hashes referenced in the signed metadata**.
+  - **Alpine (apk):** `apk` verifies **package** and signatures using RSA public keys in `/etc/apk/keys/`. Only repositories whose keys are present/trusted will install.
+  - Across all ecosystems, Copacetic uses official repositories.
 
-- **Container Registries:** Copacetic has the ability to rely on the user’s local Docker or container runtime configuration to authenticate with private registries. Copa can push a patched image to a registry.
+- **Container Registries:** Copacetic has the ability to rely on the user’s local Docker or container runtime configuration to authenticate with private registries. Copacetic can push a patched image to a registry.
 - **QEMU:** QEMU is a tool Copacetic connects to for emulating different architecture environments, in order to support multi-arch patching.
 - **GitHub Actions:** Copacetic provides a GitHub Action for users who want to utilize it in GitHub CI/CD pipelines as a first-class integration.
 - **Docker Desktop Users:** Copacetic provides a Docker Desktop extension for users who prefer a GUI interface.
@@ -78,19 +78,19 @@ Container images often contain third-party dependencies that are vulnerable to C
   Copacetic sets up an isolated environment to apply patches using BuildKit. It mounts the target image’s filesystem and retrieves package metadata. If the image lacks necessary tooling, Copacetic pulls a base image to supply them. These tools are injected in a transient layer to enable consistent patching.
 
 - **Obtain and Process Updates:**  
-  Copacetic uses the distro’s package manager inside the sandbox to fetch update packages from trusted OS repositories. These are limited to only the packages listed in the Update Manifest. Package verification, including signatures and checksums, is handled by the native package manager.
+  Copacetic uses the respective package manager inside the sandbox to fetch update packages from trusted OS repositories. These are limited to only the packages listed in the Update Manifest. Package verification, including signatures and checksums, is handled by the native package manager.
 
 - **Apply Patches to Image:**  
   Copacetic applies the updates to the image’s filesystem using BuildKit’s diff/merge capabilities and commits the changes as a new layer. The original image is not altered. The patched image is a new artifact created alongside the original, typically with a new tag.
 
 - **Output and Reporting:**  
-  Users can optionally generate a VEX (Vulnerability Exploitability eXchange) report documenting which vulnerabilities were fixed. This helps in compliance and audit workflows. Users can also rescan the patched image or push it to a registry using external tools. There's no explicit, built-in in-toto attestation emitted by Copa itself, but we are considering this functionality in the future. 
+  Users can optionally generate a VEX (Vulnerability Exploitability eXchange) report documenting which vulnerabilities were fixed. This helps in compliance and audit workflows. Users can also scan the patched image again or push it to a registry using external tools. There's no explicit, built-in in-toto attestation emitted by Copacetic itself, but we are considering this functionality in the future.
 
 - **Registry Operations:**  
-  Copa pulls source container images from registries and pushes patched container images to registries if selected. This requires appropriate registry credentials and permissions.
+  Copacetic pulls source container images from registries and pushes patched container images to registries if selected. This requires appropriate registry credentials and permissions.
 
 - **Multi-Architecture Patching:**  
-  If patching a multi-platform image, Copa coordinates with QEMU and handles architecture-specific package selection and installation.
+  If patching a multi-platform image, Copacetic coordinates with QEMU and handles architecture-specific package selection and installation.
 
 ### Goals
 
@@ -126,7 +126,7 @@ This document provides the CNCF TAG-Security with an initial understanding of Co
   Copacetic relies on the image’s package manager (e.g., `apt`, `apk`) to retrieve and install updates. These package managers use existing mechanisms like GPG signatures and HTTPS to verify the authenticity and integrity of updates.
 
 - **Minimal Patch Layer (Non-Destructive Updates):**  
-  Copacetic appends a single patch layer on top of the original image, preserving the original layers and provenance. This design enables easy auditing and minimizes the potential for introducing new issues. Furthermore, on subsequent patches, Copa will only create one new patch layer and preserve previous patches to prevent a large cumulation of patched layers.
+  Copacetic appends a single patch layer on top of the original image, preserving the original layers and provenance. This design enables easy auditing and minimizes the potential for introducing new issues. Furthermore, on subsequent patches, Copacetic will only create one new patch layer and preserve previous patches to prevent a large cumulation of patched layers.
 
 - **Extensible Scanner Integration:**  
   Copacetic supports pluggable vulnerability scanners, allowing users to choose trusted tools aside from Trivy like Grype. This enables alignment with internal security policies and reduces reliance on any single source of vulnerability intelligence.
@@ -161,7 +161,7 @@ Copacetic has no written record of complying with a well known security standard
 - **Communication Channels:**  
   - Internal: Through the Copacetic Slack channel or our weekly Zoom Community meetings.  
   - Inbound: Through Slack, GitHub Issues, or by attending the weekly Zoom Community meetings.  
-  - Outbound: Typically through Slack/GitHub Issues, but we also have a mailing list - project-copa@googlegroups.com.
+  - Outbound: Typically through Slack/GitHub Issues, but we also have a mailing list - [project-copa@googlegroups.com](mailto:project-copa@googlegroups.com).
 
 - **Ecosystem:** Copacetic fits into the Cloud-Native ecosystem by providing patching capabilities that can be plugged into container build and release pipelines. Copacetic is often plugged into CI/CD pipelines and also has integrations with registries such as Azure Container Registry.
 
