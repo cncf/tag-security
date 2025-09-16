@@ -1025,7 +1025,7 @@ It is critical to note, however, that organizations are entirely responsible for
      https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html
 
 [^6]:
-     https://github.com/cncf/tag-security/tree/main/supply-chain-security/compromises
+     https://github.com/cncf/tag-security/tree/main/community/catalog/compromises
 
 [^7]:
      See, for example: https://www.atlanticcouncil.org/in-depth-research-reports/report/breaking-trust-shades-of-crisis-across-an-insecure-software-supply-chain/
