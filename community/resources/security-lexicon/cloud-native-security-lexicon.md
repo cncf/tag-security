@@ -1,10 +1,10 @@
+<!-- cspell:disable-next-line -->
+<!-- markdownlint-disable MD033 MD041  -->
 <!---
 Copyright 2021 CNCF TAG-Security
 Licensed under the Creative Common Attribution 4.0 International License
 SPDX-License-Identifier: CC-BY-4.0
 --->
-<!-- cspell:disable-next-line -->
-<!-- markdownlint-disable MD033 -->
 
 # Shared with CNCF Community
 
@@ -56,7 +56,7 @@ SPDX-License-Identifier: CC-BY-4.0
     - [Certificate root of trust](#certificate-root-of-trust)
     - [Infrastructure-as-Code Security](#infrastructure-as-code-security)
     <!-- cspell:disable-next-line -->
-    - [ABAC, RBAC, and MAC](#ABAC-rbac-and-mac)
+    - [ABAC, RBAC, and MAC](#abac-rbac-and-mac)
   - [Hardware](#hardware)
     - [Trusted Platform Module (TPM/vTPM)](#trusted-platform-module-tpmvtpm)
     - [Hardware Security Module](#hardware-security-module)
