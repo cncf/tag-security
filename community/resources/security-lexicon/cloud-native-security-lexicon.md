@@ -1,10 +1,10 @@
-<!--- 
+<!-- cspell:disable-next-line -->
+<!-- markdownlint-disable MD033 MD041  -->
+<!---
 Copyright 2021 CNCF TAG-Security
 Licensed under the Creative Common Attribution 4.0 International License
 SPDX-License-Identifier: CC-BY-4.0
 --->
-<!-- cspell:disable-next-line -->
-<!-- markdownlint-disable MD033 -->
 
 # Shared with CNCF Community
 
@@ -29,6 +29,7 @@ SPDX-License-Identifier: CC-BY-4.0
     - [Attack vector](#attack-vector)
     - [Security Requirements](#security-requirements)
     - [Security Policy as Code](#security-policy-as-code)
+    - [Automated Governance](#automated-governance)
     - [Shift Security Left](#shift-security-left)
     - [Least Privilege](#least-privilege)
     - [Immutability](#immutability)
@@ -55,7 +56,7 @@ SPDX-License-Identifier: CC-BY-4.0
     - [Certificate root of trust](#certificate-root-of-trust)
     - [Infrastructure-as-Code Security](#infrastructure-as-code-security)
     <!-- cspell:disable-next-line -->
-    - [ABAC, RBAC, and MAC](#ABAC-rbac-and-mac)
+    - [ABAC, RBAC, and MAC](#abac-rbac-and-mac)
   - [Hardware](#hardware)
     - [Trusted Platform Module (TPM/vTPM)](#trusted-platform-module-tpmvtpm)
     - [Hardware Security Module](#hardware-security-module)
@@ -135,6 +136,16 @@ environments
 | Organizational Use | Tools such as Open Policy Agent or platforms such as <!-- cspell:disable -->Istio provide flexible policy definition and enforcement mechanisms that support the practice of security policy as code. |
 | References | <https://www.thoughtworks.com/radar/techniques/security-policy-as-code> |
 |  | [Go to Table of Content](#index)  |
+
+### Automated Governance
+
+|                    |                                                                                                                                                                                                                                                                                                                                                                             |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Definition         | Automated governance is the concept of using automation to consistently enforce an organization's governance policies and security controls across its technical environment. It leverages tools and practices like Policy as Code to integrate automated checks directly into workflows, providing quick feedback loops on security and compliance posture.                |
+| Terms              | [Security Policy as Code](#security-policy-as-code), [Compliance and Security](#compliance-and-security)                                                                                                                                                                                                                                                                    |
+| Organizational Use | An organization uses automated governance to ensure that resources like committed code or a container image automatically meet predefined security, compliance, and operational policies. This is achieved by using policy tools like Open Policy Agent (OPA) and aligning automated policy enforcement with higher-level organizational policies and strategic objectives. |
+| References         | - <https://itrevolution.com/articles/what-is-automated-governance/> <br /> - <https://tag-security.cncf.io/community/resources/automated-governance-maturity-model/?ajs_aid=5c4aee08-5f6a-40a6-8bf2-d1180bc9dfa5>                                                                                                                                                           |
+|                    | [Go to Table of Content](#index)                                                                                                                                                                                                                                                                                                                                            |
 
 ### Shift Security Left
 
