@@ -4,6 +4,8 @@
 Here are the list of requirements for securing the source code, which is a subcategory of the overall requirements for supply chain security. For each requirement is a list of tools used to meet that requirement.
 {{% /blocks/lead %}}
 
+This mapping is community maintained.  Feel free to add tools by opening a PR.
+
 ## 1. Require signed commits
 
 ### Tool capability
