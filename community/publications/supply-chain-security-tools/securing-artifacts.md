@@ -4,6 +4,8 @@
 Here are the list of requirements for securing artifacts. Each one has a list of tools used to achieve it.
 {{% /blocks/lead %}}
 
+This mapping is community maintained.  Feel free to add tools by opening a PR.
+
 ## 1. Sign Every Step in the Build Process
 
 ### Tool capability
