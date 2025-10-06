@@ -1,12 +1,14 @@
 # Securing Deployments
 
+<!-- cspell:ignore Rekor -->
+
 {{% blocks/lead color="white" align="left" %}}
 Here are the list of requirements for securing deployments. Each one has a list of tools used to achieve it.
 {{% /blocks/lead %}}
 
 This mapping is community maintained.  Feel free to add tools by opening a PR.
 
-## 1. Ensure clients can perform Verification of Artefacts and associated metadata
+## 1. Ensure clients can perform Verification of Artifacts and associated metadata
 
 ### Tool capability
 
@@ -19,7 +21,6 @@ This mapping is community maintained.  Feel free to add tools by opening a PR.
 - TUF
 - Tekton (chains with sigstore)
 - Kyverno (Kyverno policies validate artifacts and metadata)
-
 
 ## 2. Ensure clients can verify the "freshness" of files
 

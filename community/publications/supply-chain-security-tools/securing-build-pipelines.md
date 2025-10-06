@@ -1,5 +1,7 @@
 # Securing Build Pipelines
 
+<!-- cspell:ignore apko sublayouts Rekor -->
+
 {{% blocks/lead color="white" align="left" %}}
 Here are the list of requirements for securing build pipelines. Each one has a list of tools used to achieve it.
 {{% /blocks/lead %}}
@@ -260,7 +262,7 @@ This mapping is community maintained.  Feel free to add tools by opening a PR.
 - SPIFFE
 - Tekton (TEP to integrate with SPIRE)
 
-## 21. Deploy monitoring tools to software factory to detect malicious behaviour
+## 21. Deploy monitoring tools to software factory to detect malicious behavior
 
 ### Tool capability
 

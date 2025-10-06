@@ -102,7 +102,6 @@ This mapping is community maintained.  Feel free to add tools by opening a PR.
 - in-toto (threshold of human review attestations)
 - GitHub
 
-
 ## 9. Use branch protection rules
 
 ### Tool capability
@@ -155,4 +154,3 @@ This mapping is community maintained.  Feel free to add tools by opening a PR.
 ### Tools
 
 - SPIFFE (maybe, spiffe does short-lived credentials, but not sure if anyone is using this for source code repos)
-

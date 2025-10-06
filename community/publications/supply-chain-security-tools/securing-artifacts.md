@@ -1,5 +1,7 @@
 # Securing Artifacts
 
+<!-- cspell:ignore Rekor Fulcio -->
+
 {{% blocks/lead color="white" align="left" %}}
 Here are the list of requirements for securing artifacts. Each one has a list of tools used to achieve it.
 {{% /blocks/lead %}}
@@ -30,7 +32,7 @@ This mapping is community maintained.  Feel free to add tools by opening a PR.
 - in-toto
 - Kyverno (signatures of output images are verified before running containers)
 
-## 3. Use TUF/Notary to manage signing of artefacts
+## 3. Use TUF/Notary to manage signing of artifacts
 
 ### Tool capability
 
@@ -56,8 +58,7 @@ This mapping is community maintained.  Feel free to add tools by opening a PR.
 - in-toto (integrated with Rekor, Grafeas, Archivist etc.)
 - Tekton (chains)
 
-
-## 5. Limit which artefacts any given party is authorized to certify
+## 5. Limit which artifacts any given party is authorized to certify
 
 ### Tool capability
 
@@ -69,7 +70,6 @@ This mapping is community maintained.  Feel free to add tools by opening a PR.
 - in-toto
 - TUF
 - Kyverno (Kyverno policy on who is trusted for each signature)
-
 
 ## 6. Build in a system for rotating and revoking private keys
 
@@ -98,7 +98,7 @@ This mapping is community maintained.  Feel free to add tools by opening a PR.
 - Tekton (Pipelines and Chains)
 - Kyverno (Kyverno works with OCI registries)
 
-## 8. Encrypt artefacts before distribution & ensure only authorized platforms have decryption capabilities
+## 8. Encrypt artifacts before distribution & ensure only authorized platforms have decryption capabilities
 
 ### Tool capability
 
