@@ -1,10 +1,14 @@
 # Securing Materials
 
+<!-- cSpell:ignore apko -->
+
 {{% blocks/lead color="white" align="left" %}}
 Here are the list of requirements for securing materials. Each one has a list of tools used to achieve it.
 {{% /blocks/lead %}}
 
-## 1. Verify third party artefacts and open source libraries
+This mapping is community maintained.  Feel free to add tools by opening a PR.
+
+## 1. Verify third party artifacts and open source libraries
 
 ### Tool capability
 
@@ -14,7 +18,6 @@ Here are the list of requirements for securing materials. Each one has a list of
 ### Tools
 
 - in-toto (can be validated via alpha-omega attestations, review attestations)
-
 
 ## 2. Require SBOM from third party supplier
 

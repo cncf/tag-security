@@ -4,6 +4,8 @@
 Here are the list of requirements for securing the source code, which is a subcategory of the overall requirements for supply chain security. For each requirement is a list of tools used to meet that requirement.
 {{% /blocks/lead %}}
 
+This mapping is community maintained.  Feel free to add tools by opening a PR.
+
 ## 1. Require signed commits
 
 ### Tool capability
@@ -100,7 +102,6 @@ Here are the list of requirements for securing the source code, which is a subca
 - in-toto (threshold of human review attestations)
 - GitHub
 
-
 ## 9. Use branch protection rules
 
 ### Tool capability
@@ -153,4 +154,3 @@ Here are the list of requirements for securing the source code, which is a subca
 ### Tools
 
 - SPIFFE (maybe, spiffe does short-lived credentials, but not sure if anyone is using this for source code repos)
-
