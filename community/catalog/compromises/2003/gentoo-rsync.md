@@ -16,4 +16,4 @@ responsible for serving package sources to users.
 
 ## References
 
-- https://archives.gentoo.org/gentoo-announce/message/7b0581416ddd91522c14513cb789f17a
+- [Gentoo Linux server compromised](https://www.zdnet.com/article/gentoo-linux-server-compromised/)
