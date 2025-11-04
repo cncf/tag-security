@@ -132,7 +132,7 @@ This self-assessment is created by the Podman team to perform an internal analys
 
 This document serves to provide Podman users with an initial understanding of Podman's security, where to find existing security documentation, Podman plans for security, and general overview of Podman security practices, both for development of Podman as well as security of Podman.
 
-This document provides the CNCF TAG-Security with an initial understanding of Podman to assist in a joint-assessment, necessary for projects under incubation.  Taken together, this document and the joint-assessment serve as a cornerstone for if and when Podman seeks graduation and is preparing for a security audit.
+This document provides CNCF TAG-Security and Compliance with an initial understanding of Podman to assist in a joint-assessment, necessary for projects under incubation.  Taken together, this document and the joint-assessment serve as a cornerstone for if and when Podman seeks graduation and is preparing for a security audit.
 
 ## Security functions and features
 
