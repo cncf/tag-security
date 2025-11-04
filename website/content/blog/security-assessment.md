@@ -1,7 +1,7 @@
 ---
 title: "Strengthening Cloud Native Security: The Value of TAG Security and Compliance Joint Assessments"
 date: 2025-10-05 10:30:00 -0700
-author: [Satarupa Deb]
+author: Satarupa Deb
 ---
 
 The CNCF space is growing fast, now we have thousands of projects that power everything from container orchestration to service mesh technologies, and with each day that number keeps mounting. But with rapid growth comes a big challenge: how to make sure all of these critical building blocks are secure?
