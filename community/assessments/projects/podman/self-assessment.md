@@ -20,7 +20,13 @@
 
 ## Metadata
 
-|||| | \-- | \-- | | Assessment Stage | Incomplete | | Software | [https://github.com/containers/podman](https://github.com/containers/podman) | | Security Provider | No | | Languages | Go | | SBOM | [https://github.com/containers/podman/blob/main/go.mod](https://github.com/containers/podman/blob/main/go.mod) |
+|||
+| --- | --- |
+| Assessment Stage | Incomplete |
+| Software | [https://github.com/containers/podman](https://github.com/containers/podman) |
+| Security Provider | No |
+| Languages | Go |
+| SBOM | [https://github.com/containers/podman/blob/main/go.mod](https://github.com/containers/podman/blob/main/go.mod) |
 
 ### Security links
 
