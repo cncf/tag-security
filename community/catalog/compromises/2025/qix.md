@@ -1,15 +1,14 @@
 # npm phishing campaign
 
-In September 2025, an npm maintainer (Qix) was compromised by a phishing email `support [at] npmjs [dot] help` (created three days before the attack). 
+In September 2025, an npm maintainer (Qix) was compromised by a phishing email `support [at] npmjs [dot] help` (created three days before the attack).
 The adversaries uploaded malicious code to 18 npm packages maintained by the developer, with more than 2 billion downloads per week.
-The malware injects itself within the browser, watches for cryptocurrent wallets transfers, rewrites destinations to attacker controlled addresses, hijacks the transactions, and remains stealthy.
+The malware injects itself within the browser, watches for cryptocurrency wallets transfers, rewrites destinations to attacker controlled addresses, hijacks the transactions, and remains stealthy.
 
 ## Impact
 
 * The compromised versions of the packages were removed within the same day.
 * Although the packages compromised were quite popular, the economic impact of the attack was not severe. Only $500 was stolen as of September 9th.
 * The attack may have inspired similar campaigns in other package managers such as [crates.io](https://blog.rust-lang.org/2025/09/12/crates-io-phishing-campaign/) and [PyPi](https://blog.pypi.org/posts/2025-09-23-plenty-of-phish-in-the-sea/).
-
 
 ## Type of Compromise
 
