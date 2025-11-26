@@ -42,25 +42,22 @@ Security reviewers:
 | CVE scanning | https://scans.k3s.io/
 ## Overview
 
-K3s is a lightweight and fully certified Kubernetes distribution that prioritizes a minimal footprint and simplified operations. This design offers inherent advantages for resource-constrained environments.
-
+K3s is a lightweight and fully certified Kubernetes distribution that prioritizes a minimal footprint and simplified operations, while offering lightweight default implimentations of pluggable components such as LoadBalancer Services, Ingress, and Persistent Volumes. This design offers inherent advantages for resource-constrained or ephemeral environments.
 
 ### Background
 
-K3s is a lightweight, opinionated Kubernetes distribution optimized for edge, IoT, and CI/CD environments. It achieves its small binary size by removing legacy or unnecessary components and replacing more resource-intensive ones with lightweight alternatives. K3s is secure by default, and operation of all Kubernetes control plane components is encapsulated in a single binary and process. K3s easily allows automation and management of complex cluster operations like distributing certificates.
+K3s is a lightweight, opinionated Kubernetes distribution optimized for edge, IoT, and CI/CD environments. It achieves its small binary size by removing legacy or unnecessary components and replacing more resource-intensive ones with lightweight alternatives. K3s ships with sensible defaults, and operation of all Kubernetes control plane components is encapsulated in a single binary and process. K3s easily allows automation and management of complex operations such as certificate management, node join, and datastore cluster membership.
 
-When considering using k3s, note that external dependencies have been minimized; the only requirements are a modern kernel and cgroup mounts. There are several packages included within the k3s binary that allow for quick and seamless cluster creation. Some of these packages include, containerd, Flannel CNI, Traefik Ingress Controller, Spegel, and more.
-
-
+When considering using K3s, note that external dependencies have been minimized; the only requirements are a modern kernel and cgroup mounts. There are several packages included within the k3s binary that allow for quick and seamless cluster creation. These components include but are not limited to containerd, Flannel CNI, Kube-Router Network Policy engine, Traefik Ingress Controller, Spegel, and more.
 
 ### Actors
 
 - **K3s Server:** A cluster node that executes the `k3s server` command and runs control-plane components (API Server, Controller Manager, Scheduler), datastore components and the supervisor. It can optionally run K3s agent components as well, hence acting as both Server and Agent
-- **K3s Agent:** A cluster node that executes the `k3s agent` command and runs typical agent components such as Kubelet and containerd. It requires a k3s server to be running in the cluster. 
-- **Cluster Data Store:** As other Kubernetes distributions, K3s requires a datastore to function but it does not need to be etcd. By using the project [Kine](https://github.com/k3s-io/kine) k3s supports different datastores. K3s includes two embedded options: SQLite and etcd. It also supports [external databases](https://docs.k3s.io/datastore#external-datastore-configuration-parameters) 
+- **K3s Agent:** A cluster node that executes the `k3s agent` command and runs typical agent components such as Kubelet and containerd. It requires a k3s server to be running in the cluster.
+- **Cluster Data Store:** As other Kubernetes distributions, K3s requires a datastore to function but it does not need to be etcd. By using the project [Kine](https://github.com/k3s-io/kine) k3s supports different datastores. K3s includes two embedded options: SQLite and etcd. It also supports [external databases](https://docs.k3s.io/datastore#external-datastore-configuration-parameters).
 - **Packaged Components:** Bundled components like containerd, Flannel, CoreDNS, and Traefik. The security of these components is crucial to the overall security posture.
 - **Host OS:** K3s does not modify the host operating system, so host hardening is a manual, but critical, responsibility.
-- **Supervisor:** It's an HTTPs server that sits in the server nodes and provider services for the cluster: distributing signed certificates, configuration for agent bootstrapping, websocket servers for agents to contact K3s server and so on.
+- **Supervisor:** The "glue" that ties K3s together by managing configuration and startup of services for the cluster: distributing signed certificates, generating configuration for agent bootstrapping, hosting websocket endpoints for "konnectivity service" (apiserver-network-proxy) tunnels, and so on.
 
 ### Actions
 
@@ -71,15 +68,13 @@ When considering using k3s, note that external dependencies have been minimized;
 - **Upgrades:** K3s project provides extensive documentation on [K3s Upgrades](https://docs.k3s.io/upgrades) - You can upgrade K3s by using the installation script, or by manually installing the binary of the desired version.
 Upgrades performed via the installation script or using our [automated upgrades feature](https://docs.k3s.io/upgrades/automated) can be tied to different release channels. The following channels are available: **stable**, **latest** or specific version i.e. **v1.33**.
 
-
 ![k3s-arch](k3s-arch.png)
-
 
 ### Goals
 
-- Be lightweight - K3s is engineered to have a minimal footprint in terms of both memory and disk space. 
-- Simplify installation and management - K3s makes Kubernetes more accessible to developers, hobbyists, and teams without deep Kubernetes expertise. 
-- Be fully compliant and production-ready - Despite its small size, K3s provides all the functionality required to run containerized workloads in production. 
+- Be lightweight - K3s is engineered to have a minimal footprint in terms of both memory and disk space.
+- Simplify installation and management - K3s makes Kubernetes more accessible to developers, hobbyists, and teams without deep Kubernetes expertise.
+- Be fully compliant and production-ready - Despite its small size, K3s provides all the functionality required to run containerized workloads in production.
 - Enable cloud-native adoption in new environments - K3s expands the reach of Kubernetes to use cases where standard Kubernetes is not a practical solution due to resource limitations.
 
 ### Non-Goals
@@ -95,34 +90,31 @@ This document serves to provide K3s users with an initial understanding of K3s's
 
 This document provides K3s maintainers and stakeholders with additional context to help inform the roadmap creation process, so that security and feature improvements can be prioritized accordingly.
 
-
 ## Security functions and features
 
 | Component | Applicability | Description of Importance |
 | --------- | ------------- | ------------------------- |
-| Role-Based Access Control | Critical | RBAC is fundamental to Kubernetes security, enforcing the principle of least privilege. It strictly controls what users and service accounts can do, preventing unauthorized resource manipulation and reducing the blast radius of any compromised component. |
-| Pod Security Admission (PSA) | Critical | PSA enforces policies that restrict the security context of Pods. This is crucial for maintaining the security integrity of the cluster by preventing privileged containers, restricting host namespace access, and blocking dangerous capabilities that could allow container escape. |
+| Role-Based Access Control | Critical | RBAC is fundamental to Kubernetes security, enforcing the principle of least privilege. It strictly controls what users and service accounts can do, preventing unauthorized resource manipulation and reducing the blast radius of any compromised component. K3s includes the default RBAC and authn/authz managed by the Kubernetes apiserver, and a small number of additional roles and service accounts that are used by components bundled with K3s. |
+| Pod Security Admission (PSA) | Critical | PSA enforces policies that restrict the security context of Pods. This is crucial for maintaining the security integrity of the cluster by preventing privileged containers, restricting host namespace access, and blocking dangerous capabilities that could allow container escape. K3s does not include any Pod Security admission configuration by default, but does provide documentation on how users can enable it as part of the Hardening Guide. |
 | Secrets encryption | Security relevant | K3s contains a CLI tool `k3s secrets-encrypt`, that enables/disables secrets encryption, rotates/deletes the keys and reencrypts secrets |
 | NetworkPolicy | Security relevant | Network Policies are essential for implementing micro-segmentation within the cluster. They define rules for which Pods are allowed to communicate with which other Pods or external endpoints, effectively limiting lateral movement in case of a breach. K3s implemments this using the kube-router project. |
 | ServiceAccount Tokens | Critical | Service accounts provide an identity for processes running in a Pod. Limiting token projection to bound ServiceAccount tokens with short expiration times prevents indefinite access and ensures that the identity of the Pod is tied to its current lifecycle. |
 | Security Context | Security Relevant | Security Contexts allow users to define privilege and access controls (e.g., running as a non-root user, setting allowPrivilegeEscalation: false) at the Pod or Container level. This is a primary tool for users to voluntarily reduce the privileges granted to their workloads. |
-| Certificate handling | Security relevant | K3s generates certificates and keys for the different Kubernetes components. They are valid for 365 days. It also implements a tool that allows rotating them and checking their expiration date: `k3s certificate` |
-| K3s internal tokens | Security relevant | K3s uses tokens to secure the node join process and to encrypt confidential information that is persisted to the datastored. Tokens authenticate the cluster to the joining node, and the node to the cluster. K3s also supports [bootstrap tokens](https://kubernetes.io/docs/reference/access-authn-authz/bootstrap-tokens/) and a tool to manage tokens: `k3s token` |
+| Certificate handling | Security relevant | K3s generates certificates and keys for the different Kubernetes components. Leaf certificates are valid for 365 days; CA certificates are valid for 3650 days. It also implements a tool that allows rotating certificates and checking their expiration date: `k3s certificate`. Leaf certificates are automatically renewed as necessary, and Kubernetes events are generated to warn administrators when manual action is necessary. |
+| K3s internal tokens | Security relevant | K3s uses tokens to secure the node join process and to encrypt confidential information that is persisted to the datastore. Tokens authenticate the cluster to the joining node, and the node to the cluster. K3s also supports [kubeadm-style bootstrap tokens](https://kubernetes.io/docs/reference/access-authn-authz/bootstrap-tokens/) and a tool to manage tokens: `k3s token` |
 | Flannel wireguard encapsulation | Security relevant | K3s supports the wireguard backend of Flannel, which allows to encrypt all cluster network traffic between nodes using authenticated peer-to-peer tunnels. Users can configure and enable this feature to prevent network eavesdropping and ensure data integrity within the CNI layer. |
 
-
-
 ## Project Compliance
-K3s offers the option to follow the [CIS Benchmark assesment here](https://docs.k3s.io/security)
+The K3s [Security Documentation](https://docs.k3s.io/security) offers instruction for administrators on how to enable at-rest of encryption of resources, harden clusters, and perform security assessments in line with the CIS Benchmark for Kubernetes.
 
 ### Future State
-Roadmap and future development can be found here at the [project board in GitHub](https://github.com/orgs/k3s-io/projects/6)
+Roadmap and issues slated for future development are tracked on the [project board in GitHub](https://github.com/orgs/k3s-io/projects/6).
 
-List of ADR (similiar to Kubernetes KEPs) here: https://github.com/k3s-io/k3s/tree/main/docs/adrs
+Architecture Decision Reports (ADRs; similiar to Kubernetes KEPs) are available at https://github.com/k3s-io/k3s/tree/main/docs/adrs.
 
 ## Secure Development Practices
-Although the K3s project is still sandbox, we strive to implement the highest standard of secure development best practices, as noted below.
-
+Although the K3s project is still sandbox, we strive to implement the highest standard of secure development best practices.
+See the Appendix section below for links to our OpenSSF Best Practices project report and scorecard.
 
 ### Deployment Pipeline
 In order to secure the SDLC from development to deployment, the following measures are in place. Please consult the roadmap for information about how this list is growing.
@@ -158,23 +150,24 @@ Mailing lists:
 - [cncf-k3s-users@lists.cncf.io](https://lists.cncf.io/g/cncf-k3s-users)
 - [cncf-k3s-dev@lists.cncf.io](https://lists.cncf.io/g/cncf-k3s-dev)
 - [cncf-k3s-maintainers@lists.cncf.io](https://lists.cncf.io/g/cncf-k3s-maintainers)
--
 
-Internal/External discssions and ideas: GitHub Discussions, GitHub Issues , GitHub PRs
+Internal/External discussions and ideas:
+- GitHub Discussions
+- GitHub Issues
+- GitHub PRs
 
 Community Meeting:
-Twice a month: AMS and APAC friendly - https://zoom-lfx.platform.linuxfoundation.org/meetings/k3s?view=week
+- Twice a month: AMS and APAC friendly - https://zoom-lfx.platform.linuxfoundation.org/meetings/k3s?view=week
 
 ## Security Issue Resolution
 
 The K3s security policy can be quickly found through both the [README.md](https://github.com/k3s-io/k3s/blob/main/README.md#security) and the [GitHub Security Policy Document](https://github.com/k3s-io/k3s/blob/main/.github/SECURITY.md).
 
-
 ### Responsible Disclosure Practice
 
-The K3s project does not accept vulnerability reports through the [GitHub Vulnerability Reporting](htt‌ps://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing/privately-reporting-a-security-vulnerability) tool. Users attempting to report an security issue via the Create Issue or Vulnerability Reporting workflows will be redirected to our security policy document, which requests that they make contact via e-mail.
+The K3s project does not accept vulnerability reports through the [GitHub Vulnerability Reporting](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing/privately-reporting-a-security-vulnerability) tool. Users attempting to report an security issue via the Create Issue or Vulnerability Reporting workflows will be redirected to our security policy document, which requests that they make contact via e-mail.
 
-Anyone can make a report by going e-mailing security@k3s.io. In the event that a report is received, a maintainer will collaborate directly with the reporter until it is resolved.
+Anyone can make a report by e-mailing security@k3s.io. In the event that a report is received, a maintainer will communicate directly with the reporter until it is resolved. Reporters concertned about the privacy or security of their e-mail communications may request GPG keys prior to communicating vulnerability details, which can be validated against public keyservers and the maintainer's public keys published on GitHub (`https://github.com/<USERNAME>.gpg`).
 
 ### Incident Response
 
