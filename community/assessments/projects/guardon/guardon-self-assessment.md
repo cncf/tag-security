@@ -2,8 +2,8 @@
 
 **Project:** Guardon  
 **Type:** Browser-based Kubernetes YAML & Policy Validator  
-**Website:** https://github.com/sajalkn/guardon  
-**Contact:** security@guardon.dev  
+**Website:** [https://github.com/sajalkn/guardon](https://chromewebstore.google.com/detail/jhhegdmiakbocegfcfjngkodicpjkgpb?utm_source=item-share-cb)  
+**Contact:** sajalnigam@gmail.com 
 **Assessment Version:** v1.0  
 **Last Updated:** 2025-XX-XX
 
