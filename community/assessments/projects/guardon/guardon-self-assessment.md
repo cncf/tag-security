@@ -5,7 +5,7 @@
 **Website:** [Guardon](https://chromewebstore.google.com/detail/jhhegdmiakbocegfcfjngkodicpjkgpb?utm_source=item-share-cb)  
 **Contact:** sajalnigam@gmail.com 
 **Assessment Version:** v1.0  
-**Last Updated:** 2025-XX-XX
+**Last Updated:** 2025-11-28
 
 ---
 
