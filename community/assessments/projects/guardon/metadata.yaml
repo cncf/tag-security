@@ -4,11 +4,11 @@ project:
   repo: "https://github.com/sajalkn/guardon"
   maintainers:
     - name: Sajal Nigam
-      email: security@guardon.dev
+      email: sajalnigam@gmail.com
       role: Lead Maintainer
 
 security:
-  contact: security@guardon.dev
+  contact: sajalnigam@gmail.com
   policy: "https://github.com/sajalkn/guardon/security/policy"
   incident_response: "https://github.com/sajalkn/guardon/docs/incident-response.md"
 
