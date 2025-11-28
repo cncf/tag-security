@@ -175,7 +175,7 @@ Full threat model available in `guardon-threat-model.md`.
 
 ## 9. Vulnerability Reporting & Incident Response
 
-**Contact:** security@guardon.dev  
+**Contact:** sajalnigam@gmail.com  
 **Policy:** SECURITY.md follows TAG-Security template
 
 Incident handling workflow:
