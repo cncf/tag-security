@@ -13,10 +13,24 @@
 
 Guardon is a **fully client-side browser extension** (Chrome/Edge/Brave) that performs:
 
-- Kubernetes YAML validation  
-- Misconfiguration detection  
-- Kyverno-policy evaluation  
-- Inline annotations on GitHub/GitLab
+- **Instant Kubernetes YAML validation** — Flags security misconfigurations as you browse GitHub/GitLab, with no CI/CD required.
+
+- **Schema-aware checks** — Validates manifests against uploaded Kubernetes OpenAPI/CRD schemas to ensure required fields and type safety.
+
+- **Customizable rule engine** — Supports JSON-based rules and Kyverno policy import for organization-specific governance standards.
+
+- **Multi-document YAML support** — Handles complex manifests containing multiple resources in a single file.
+
+- **Actionable fix suggestions** — Generates copy-paste-ready YAML patches for every violation.
+
+- **Dark mode UI** — Provides a seamless experience across day and night workflows.
+
+- **Offline-first** — All validation runs fully locally in your browser with zero network calls.
+
+- **Manual paste & validation** — Validate any YAML by pasting it directly into the extension popup, even outside GitHub/GitLab.
+
+- **Enterprise-ready** — Import/manage custom rules, preview Kyverno policies, and enforce governance at organizational scale.
+
 
 Guardon shifts Kubernetes security **far left**, helping developers identify misconfigurations **before** they reach CI pipelines or clusters.  
 All validation happens locally inside the browser using **JavaScript + WebAssembly**.  
