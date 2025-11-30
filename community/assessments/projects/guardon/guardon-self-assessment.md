@@ -33,7 +33,7 @@ Guardon is a **fully client-side browser extension** (Chrome/Edge/Brave) that pe
 
 
 Guardon shifts Kubernetes security **far left**, helping developers identify misconfigurations **before** they reach CI pipelines or clusters.  
-All validation happens locally inside the browser using **JavaScript + WebAssembly**.  
+All validation happens locally inside the browser using **JavaScript**.  
 No backend, no cloud service, and **no user data ever leaves the machine**.
 
 ---
@@ -46,7 +46,7 @@ Guardon has a strict and minimal security boundary:
 - No backend infrastructure  
 - No telemetry or analytics  
 - No transmission of YAML or policies to external systems  
-- Kyverno engine executes inside a local WebAssembly sandbox  
+- Instead, Guardon converts Kyverno policies to its own internal rule format for validation in the browser 
 - No Kubernetes cluster access, no secrets, no tokens  
 - Only interacts with user-selected YAML files or GitHub/GitLab DOM content
 
@@ -54,7 +54,7 @@ Guardon has a strict and minimal security boundary:
 
 - Browser (Chrome/Brave/Edge)  
 - Guardon WebExtension JS/TS code  
-- Embedded Kyverno-WASM engine  
+- Embedded Kyverno-rules engine  
 - Local storage for rules and configuration
 
 ---
@@ -79,29 +79,29 @@ Guardon has a strict and minimal security boundary:
 
 ---
 
-## 4. System Architecture
+## System Architecture
 
-Guardon is composed of four main modules:
+Guardon is built around four core modules:
 
-1. **Content Script**  
-   - Injected into GitHub/GitLab UI  
-   - Extracts YAML sections from PR diffs or files  
-   - Renders inline annotations
+### **1. Content Script**
+- Injected directly into GitHub/GitLab pages  
+- Extracts Kubernetes YAML from PRs, files, and diffs  
+- Displays inline annotations and highlights misconfigurations  
 
-2. **Worker Engine**  
-   - Runs the Kyverno WASM policy evaluator  
-   - Performs Kubernetes schema validation  
-   - Executes custom rules from user-defined collections
+### **2. Validation Engine**
+- Parses YAML and performs schema validation using `js-yaml`  
+- Evaluates JSON-based custom rules and imported Kyverno policies  
+- Generates actionable, copy-paste-ready fix suggestions for every issue  
 
-3. **Background Service Worker**  
-   - Handles cross-tab messaging  
-   - Optional background fetch of referenced YAMLs  
-   - Manages rule bundles
+### **3. Background Service Worker**
+- Manages cross-tab communication and extension lifecycle events  
+- Handles background tasks such as rule bundle loading and remote fetches  
+- Coordinates storage, caching, and sync of custom rules  
 
-4. **Extension UI**  
-   - Popup for validation  
-   - Options page for rule configuration  
-   - Rule editor and custom bundles
+### **4. Extension UI**
+- Popup interface for instant YAML validation and fix previews  
+- Options page for rule import, export, and advanced customization  
+- Built-in rule editor for creating and managing custom rule bundles
 
 ---
 
@@ -111,7 +111,7 @@ Guardon is composed of four main modules:
 - **Developer**: Uses Guardon while browsing YAML on GitHub/GitLab  
 - **Browser**: Provides sandboxed execution environment  
 - **Local Guardon Engine**: Performs validation  
-- **Kyverno-WASM**: Evaluates policies locally  
+- **Kyverno-JS**: Evaluates policies locally  
 - **Rule Sources**: User-imported Kyverno rules stored locally  
 
 ### **Data Flow Summary**
@@ -130,7 +130,7 @@ Guardon is composed of four main modules:
 
 ### **Critical (Non-Configurable)**  
 - Kubernetes schema validation  
-- Local Kyverno-WASM policy execution  
+- Local Kyverno-JS policy execution  
 - Secure sandboxing of rule engine  
 - YAML isolation and strict parsing  
 - Immutable validation results  
@@ -176,13 +176,11 @@ Full threat model available in `guardon-threat-model.md`.
 - MIT License  
 - CI pipeline with:
   - Static code analysis (ESLint)
-  - npm audit
-  - WASM linting  
+  - npm audit 
 - Automated dependency scanning  
 - Reproducible build plan  
 - Release bundles signed with GitHub provenance  
-- Mandatory code review for PRs  
-- Vulnerability reporting: security@guardon.dev  
+- Mandatory code review for PRs   
 - SECURITY.md published in repository
 
 ---
@@ -208,7 +206,6 @@ Guardon follows a **90-day disclosure window** or faster if required.
 
 ## 10. Known Limitations
 
-- Depends on browser WASM performance  
 - Limited by GitHub/GitLab DOM stability  
 - Multi-GB YAML files not supported  
 - Will not detect runtime or CVE-level vulnerabilities  
@@ -222,7 +219,6 @@ Guardon follows a **90-day disclosure window** or faster if required.
 - Signed rule packs  
 - Rule provenance verification  
 - In-extension SBOM viewer  
-- WASM sandbox hardening  
 - AI-assisted policy recommendations  
 - Support for JetBrains/VScode extensions  
 - Organization-managed rule registries  
