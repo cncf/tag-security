@@ -1,7 +1,7 @@
 # Guardon — Threat Model (STRIDE-Based)
 
 **Methodology:** STRIDE  
-**Scope:** Browser extension + WASM policy engine + YAML parsing  
+**Scope:** Browser extension + JS policy engine + YAML parsing  
 **Version:** v1.0
 
 ---
@@ -13,7 +13,7 @@
 - Validation results  
 - Local rule storage  
 - Browser’s trust environment  
-- WASM engine integrity  
+- JS engine integrity  
 - Guardon extension code
 
 ---
@@ -23,7 +23,7 @@
 ### **Primary**
 - Developer (authorized)  
 - Guardon Extension  
-- Kyverno-WASM engine  
+- Kyverno-JS engine  
 - Browser sandbox  
 
 ### **Secondary**
@@ -45,7 +45,7 @@
 ### **S — Spoofing**
 **Risks:**
 - Impersonation of rule sources  
-- Malicious WASM module tampering  
+- Malicious JS module tampering  
 - Fake extension versions
 
 **Mitigations:**
@@ -64,8 +64,7 @@
 
 **Mitigations:**
 - Local storage schema validation  
-- Immutable rule parsing  
-- Deterministic WASM behavior  
+- Immutable rule parsing    
 - Content-Security-Policy enforcement  
 
 ---
@@ -112,15 +111,13 @@
 
 ### **E — Elevation of Privilege**
 **Risks:**
-- Extension gaining access to tokens  
-- WASM escaping sandbox  
+- Extension gaining access to tokens   
 - DOM injection attacks escalating permissions
 
 **Mitigations:**
 - No access to cookies, tokens, or storage  
 - Browser sandbox isolation  
-- Restricted extensions permissions (read-only)  
-- Strict WASM runtime boundaries  
+- Restricted extensions permissions (read-only)    
 
 ---
 
@@ -139,11 +136,6 @@
 
 - Browser DOM  
 - Local rule storage  
-- WebAssembly engine  
 - YAML parser  
 - Extension update mechanism  
-
----
-
-## 6. High-Level Data Flow Diagram (DFD)
 
