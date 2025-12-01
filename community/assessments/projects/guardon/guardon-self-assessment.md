@@ -81,6 +81,9 @@ Guardon has a strict and minimal security boundary:
 
 ## System Architecture
 
+<img width="3640" height="1450" alt="guardon-1" src="https://github.com/user-attachments/assets/e2723ac6-61fa-4e58-a4ea-b12a58cd089f" />
+
+
 Guardon is built around four core modules:
 
 ### **1. Content Script**
