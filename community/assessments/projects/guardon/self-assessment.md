@@ -181,7 +181,7 @@ Full threat model available in `guardon-threat-model.md`.
   - Static code analysis (ESLint)
   - npm audit 
 - Automated dependency scanning  
-- Reproducible build plan  
+- Consistent and Auditable Build Process  
 - Release bundles signed with GitHub provenance  
 - Mandatory code review for PRs   
 - SECURITY.md published in repository
