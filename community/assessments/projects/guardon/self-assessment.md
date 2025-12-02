@@ -256,5 +256,3 @@ Guardon follows a **90-day disclosure window** or faster if required.
 - “Require resource limits/requests”  
 - “Block privileged containers”  
 - “Prevent hostNetwork usage”
-
----
