@@ -3,7 +3,7 @@
 **Project:** Guardon  
 **Type:** Browser-based Kubernetes YAML & Policy Validator  
 **Website:** [Guardon](https://chromewebstore.google.com/detail/jhhegdmiakbocegfcfjngkodicpjkgpb?utm_source=item-share-cb)  
-**Contact:** sajalnigam@gmail.com 
+**Contact:** [sajalnigam@gmail.com](mailto:sajalnigam@gmail.com)  
 **Assessment Version:** v1.0  
 **Last Updated:** 2025-11-28
 
@@ -31,8 +31,8 @@ Guardon is a **fully client-side browser extension** (Chrome/Edge/Brave) that pe
 
 - **Enterprise-ready** — Import/manage custom rules, preview Kyverno policies, and enforce governance at organizational scale.
 
-
-Guardon shifts Kubernetes security **far left**, helping developers identify misconfigurations **before** they reach CI pipelines or clusters.  
+Guardon shifts Kubernetes security **far left**, helping developers identify misconfigurations
+**before** they reach CI pipelines or clusters.  
 All validation happens locally inside the browser using **JavaScript**.  
 No backend, no cloud service, and **no user data ever leaves the machine**.
 
@@ -46,7 +46,7 @@ Guardon has a strict and minimal security boundary:
 - No backend infrastructure  
 - No telemetry or analytics  
 - No transmission of YAML or policies to external systems  
-- Instead, Guardon converts Kyverno policies to its own internal rule format for validation in the browser 
+- Instead, Guardon converts Kyverno policies to its own internal rule format for validation in the browser
 - No Kubernetes cluster access, no secrets, no tokens  
 - Only interacts with user-selected YAML files or GitHub/GitLab DOM content
 
@@ -62,6 +62,7 @@ Guardon has a strict and minimal security boundary:
 ## 3. Goals and Non-Goals
 
 ### **Goals**
+
 - Detect Kubernetes misconfigurations early, at authoring time  
 - Enforce governance standards using Kyverno rules  
 - Provide deterministic and reproducible validation results  
@@ -70,6 +71,7 @@ Guardon has a strict and minimal security boundary:
 - Offer zero-trust handling of user data (no outbound calls)
 
 ### **Non-Goals**
+
 - Not a runtime security tool  
 - Not a replacement for PSP, PSA, Gatekeeper, or Kyverno in-cluster  
 - Not a network or API security solution  
@@ -81,27 +83,30 @@ Guardon has a strict and minimal security boundary:
 
 ## System Architecture
 
-<img width="3640" height="1213" alt="guardon-arch" src="https://github.com/user-attachments/assets/765d980f-2fad-412a-b6d5-07252a46c462" />
-
+![Guardon Architecture](https://github.com/user-attachments/assets/765d980f-2fad-412a-b6d5-07252a46c462)
 
 Guardon is built around four core modules:
 
 ### **1. Content Script**
+
 - Injected directly into GitHub/GitLab pages  
 - Extracts Kubernetes YAML from PRs, files, and diffs  
 - Displays inline annotations and highlights misconfigurations  
 
 ### **2. Validation Engine**
+
 - Parses YAML and performs schema validation using `js-yaml`  
 - Evaluates JSON-based custom rules and imported Kyverno policies  
 - Generates actionable, copy-paste-ready fix suggestions for every issue  
 
 ### **3. Background Service Worker**
+
 - Manages cross-tab communication and extension lifecycle events  
 - Handles background tasks such as rule bundle loading and remote fetches  
 - Coordinates storage, caching, and sync of custom rules  
 
 ### **4. Extension UI**
+
 - Popup interface for instant YAML validation and fix previews  
 - Options page for rule import, export, and advanced customization  
 - Built-in rule editor for creating and managing custom rule bundles
@@ -111,6 +116,7 @@ Guardon is built around four core modules:
 ## 5. Actors and Data Flow
 
 ### **Actors**
+
 - **Developer**: Uses Guardon while browsing YAML on GitHub/GitLab  
 - **Browser**: Provides sandboxed execution environment  
 - **Local Guardon Engine**: Performs validation  
@@ -132,6 +138,7 @@ Guardon is built around four core modules:
 ## 6. Critical Security Functions
 
 ### **Critical (Non-Configurable)**  
+
 - Kubernetes schema validation  
 - Local Kyverno-JS policy execution  
 - Secure sandboxing of rule engine  
@@ -140,8 +147,10 @@ Guardon is built around four core modules:
 - No-network guarantee  
 - No access to browser cookies, tokens, or secrets  
 - Extension CSP preventing inline script execution
+- Architecture and policies minimize dependency risk, but ongoing vigilance  is required
 
 ### **Security-Relevant (Configurable)**  
+
 - Custom rule bundle imports  
 - Background fetch helper for related YAMLs  
 - Organization-specific governance packs  
@@ -151,7 +160,8 @@ Guardon is built around four core modules:
 
 ## 7. Threat Model (High-Level)
 
-### Guardon mitigates:
+### Guardon mitigates
+
 - Misconfigured workloads (privileged pods, hostPath, missing limits, etc.)  
 - RBAC over-permission  
 - Pod Security violations  
@@ -160,7 +170,8 @@ Guardon is built around four core modules:
 - Incorrect multi-document YAML compositions  
 - Unsafe defaults (no resource limits, insecure capabilities)
 
-### Guardon does NOT mitigate:
+### Guardon does NOT mitigate
+
 - Runtime container escape  
 - Host/kernel compromise  
 - Image-level supply-chain attacks  
@@ -179,18 +190,19 @@ Full threat model available in `guardon-threat-model.md`.
 - MIT License  
 - CI pipeline with:
   - Static code analysis (ESLint)
-  - npm audit 
+  - npm audit
 - Automated dependency scanning  
 - Consistent and Auditable Build Process  
 - Release bundles signed with GitHub provenance  
-- Mandatory code review for PRs   
+- Mandatory code review for PRs
 - SECURITY.md published in repository
+- Obtaining a OpenSSF badge is also on the roadmap
 
 ---
 
 ## 9. Vulnerability Reporting & Incident Response
 
-**Contact:** sajalnigam@gmail.com  
+**Contact:** [sajalnigam@gmail.com](mailto:sajalnigam@gmail.com)  
 **Policy:** SECURITY.md follows TAG-Security template
 
 Incident handling workflow:
@@ -202,6 +214,7 @@ Incident handling workflow:
 5. Public security advisory via GitHub Security Advisories  
 6. Patch release with clear changelog  
 7. Update community channels  
+
 
 Guardon follows a **90-day disclosure window** or faster if required.
 
@@ -232,12 +245,14 @@ Guardon follows a **90-day disclosure window** or faster if required.
 ## Appendix
 
 ### Example Use Cases
+
 - Detect privileged pod before code review  
 - Validate RBAC roles from GitHub UI  
 - Local evaluation of Kyverno policies before commits  
 - Quick governance compliance checks for microservices teams
 
 ### Example Policies
+
 - “Disallow hostPath”  
 - “Require resource limits/requests”  
 - “Block privileged containers”  
@@ -245,4 +260,4 @@ Guardon follows a **90-day disclosure window** or faster if required.
 
 ---
 
-**End of Document**
+
