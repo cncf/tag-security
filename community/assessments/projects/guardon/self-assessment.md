@@ -215,7 +215,6 @@ Incident handling workflow:
 6. Patch release with clear changelog  
 7. Update community channels  
 
-
 Guardon follows a **90-day disclosure window** or faster if required.
 
 ---
@@ -259,5 +258,3 @@ Guardon follows a **90-day disclosure window** or faster if required.
 - “Prevent hostNetwork usage”
 
 ---
-
-
