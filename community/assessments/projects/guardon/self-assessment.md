@@ -237,7 +237,7 @@ Guardon follows a **90-day disclosure window** or faster if required.
 - AI-assisted policy recommendations  
 - Support for JetBrains/VScode extensions  
 - Organization-managed rule registries  
-- Policy drift detection across repository
+- Policy drift detection across repo
 
 ---
 
