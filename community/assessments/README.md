@@ -1,8 +1,8 @@
-# TAG-Security Security Assessment (TSSA) Process
+# TAG-Security and Compliance Security Assessment (TSSA) Process
 
 ## Goals
 
-The [TAG-Security Security Assessment Process](guide) (formerly the security
+The [TAG-Security and Compliance Security Assessment Process](guide) (formerly the security
 review process) is designed to accelerate the adoption of cloud native
 technologies based on the below goals and assumptions:
 
@@ -20,7 +20,7 @@ breaches. This process achieves this in two ways:
 Security assessments are essential but time-intensive processes that each company,
 organization, and project must perform to meet their unique commitments to users and
 stakeholders. In open source, finding security-related information can be overwhelmingly
-difficult and time-consuming. The CNCF TAG-Security Security Assessment Process, hereafter
+difficult and time-consuming. The CNCF TAG-Security and Compliance Security Assessment Process, hereafter
 “TSSA” Process, aims to enhance the discovery of security information and streamline
 internal and external assessments in multiple ways:
 
@@ -107,7 +107,7 @@ and other members of the TAG.
 
 * If you are interested in a TSSA for your project and you are
   willing to volunteer as [project lead](guide/project-lead.md) or you are a
-  TAG-Security member and want to recommend a project to assess, please [file an
+  TAG-Security and Compliance member and want to recommend a project to assess, please [file an
   issue](https://github.com/cncf/tag-security/issues/new?template=joint-assessment.md)
 
 See the [TSSA guide](guide) for more details.  To understand how we
