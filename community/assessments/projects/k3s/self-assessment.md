@@ -42,7 +42,7 @@ Security reviewers:
 | CVE scanning | https://scans.k3s.io/
 ## Overview
 
-K3s is a lightweight and fully certified Kubernetes distribution that prioritizes a minimal footprint and simplified operations, while offering lightweight default implimentations of pluggable components such as LoadBalancer Services, Ingress, and Persistent Volumes. This design offers inherent advantages for resource-constrained or ephemeral environments.
+K3s is a lightweight and fully certified Kubernetes distribution that prioritizes a minimal footprint and simplified operations, while offering lightweight default implementations of pluggable components such as LoadBalancer Services, Ingress, and Persistent Volumes. This design offers inherent advantages for resource-constrained or ephemeral environments.
 
 ### Background
 
@@ -96,8 +96,8 @@ This document provides K3s maintainers and stakeholders with additional context 
 | --------- | ------------- | ------------------------- |
 | Role-Based Access Control | Critical | RBAC is fundamental to Kubernetes security, enforcing the principle of least privilege. It strictly controls what users and service accounts can do, preventing unauthorized resource manipulation and reducing the blast radius of any compromised component. K3s includes the default RBAC and authn/authz managed by the Kubernetes apiserver, and a small number of additional roles and service accounts that are used by components bundled with K3s. |
 | Pod Security Admission (PSA) | Critical | PSA enforces policies that restrict the security context of Pods. This is crucial for maintaining the security integrity of the cluster by preventing privileged containers, restricting host namespace access, and blocking dangerous capabilities that could allow container escape. K3s does not include any Pod Security admission configuration by default, but does provide documentation on how users can enable it as part of the Hardening Guide. |
-| Secrets encryption | Security relevant | K3s contains a CLI tool `k3s secrets-encrypt`, that enables/disables secrets encryption, rotates/deletes the keys and reencrypts secrets |
-| NetworkPolicy | Security relevant | Network Policies are essential for implementing micro-segmentation within the cluster. They define rules for which Pods are allowed to communicate with which other Pods or external endpoints, effectively limiting lateral movement in case of a breach. K3s implemments this using the kube-router project. |
+| Secrets encryption | Security relevant | K3s contains a CLI tool `k3s secrets-encrypt`, that enables/disables secrets encryption, rotates/deletes the keys and re-encrypts secrets |
+| NetworkPolicy | Security relevant | Network Policies are essential for implementing micro-segmentation within the cluster. They define rules for which Pods are allowed to communicate with which other Pods or external endpoints, effectively limiting lateral movement in case of a breach. K3s implements this using the kube-router project. |
 | ServiceAccount Tokens | Critical | Service accounts provide an identity for processes running in a Pod. Limiting token projection to bound ServiceAccount tokens with short expiration times prevents indefinite access and ensures that the identity of the Pod is tied to its current lifecycle. |
 | Security Context | Security Relevant | Security Contexts allow users to define privilege and access controls (e.g., running as a non-root user, setting allowPrivilegeEscalation: false) at the Pod or Container level. This is a primary tool for users to voluntarily reduce the privileges granted to their workloads. |
 | Certificate handling | Security relevant | K3s generates certificates and keys for the different Kubernetes components. Leaf certificates are valid for 365 days; CA certificates are valid for 3650 days. It also implements a tool that allows rotating certificates and checking their expiration date: `k3s certificate`. Leaf certificates are automatically renewed as necessary, and Kubernetes events are generated to warn administrators when manual action is necessary. |
@@ -110,7 +110,7 @@ The K3s [Security Documentation](https://docs.k3s.io/security) offers instructio
 ### Future State
 Roadmap and issues slated for future development are tracked on the [project board in GitHub](https://github.com/orgs/k3s-io/projects/6).
 
-Architecture Decision Reports (ADRs; similiar to Kubernetes KEPs) are available at https://github.com/k3s-io/k3s/tree/main/docs/adrs.
+Architecture Decision Reports (ADRs; similar to Kubernetes KEPs) are available at https://github.com/k3s-io/k3s/tree/main/docs/adrs.
 
 ## Secure Development Practices
 Although the K3s project is still sandbox, we strive to implement the highest standard of secure development best practices.
@@ -118,7 +118,7 @@ See the Appendix section below for links to our OpenSSF Best Practices project r
 
 ### Deployment Pipeline
 In order to secure the SDLC from development to deployment, the following measures are in place. Please consult the roadmap for information about how this list is growing.
-- All commiters are required to sign their commits and comply with the CNCF Developer Certificate of Origin (DCO)
+- All committers are required to sign their commits and comply with the CNCF Developer Certificate of Origin (DCO)
 - Branch protection on the default (`main`) branch:
   - Require signed commits
   - Required on pull request before merging
@@ -134,7 +134,7 @@ In order to secure the SDLC from development to deployment, the following measur
 
 The release process is automated. Releases are triggered using the GitHub release action, which triggers the [release workflow](https://github.com/k3s-io/k3s/blob/main/.github/workflows/release.yml) to produce:
   - K3s binary and checksum artifacts
-  - K3s airgap image tarballs
+  - K3s air-gap image tarballs
   - K3s images published to ghcr.io and docker.io
 
 Releases are signed by GitHub's verified signature. All release artifacts are built using GitHub Actions using ephemeral GitHub Hosted Runners.
@@ -144,7 +144,7 @@ Releases are signed by GitHub's verified signature. All release artifacts are bu
 Communication happens in the public Slacks:
 - CNCF Slack [#k3s channel](https://cloud-native.slack.com/archives/C0196ULKX8S ).
 - Rancher-users Slack [#k3s channel ](https://rancher-users.slack.com/archives/CGGQEHPPW).
-- Rancher-users Slack [#k3s-contrubutor channel](https://rancher-users.slack.com/archives/CGXR87T8B).
+- Rancher-users Slack [#k3s-contributor channel](https://rancher-users.slack.com/archives/CGXR87T8B).
 
 Mailing lists:
 - [cncf-k3s-users@lists.cncf.io](https://lists.cncf.io/g/cncf-k3s-users)
@@ -167,7 +167,7 @@ The K3s security policy can be quickly found through both the [README.md](https:
 
 The K3s project does not accept vulnerability reports through the [GitHub Vulnerability Reporting](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing/privately-reporting-a-security-vulnerability) tool. Users attempting to report an security issue via the Create Issue or Vulnerability Reporting workflows will be redirected to our security policy document, which requests that they make contact via e-mail.
 
-Anyone can make a report by e-mailing security@k3s.io. In the event that a report is received, a maintainer will communicate directly with the reporter until it is resolved. Reporters concertned about the privacy or security of their e-mail communications may request GPG keys prior to communicating vulnerability details, which can be validated against public keyservers and the maintainer's public keys published on GitHub (`https://github.com/<USERNAME>.gpg`).
+Anyone can make a report by e-mailing security@k3s.io. In the event that a report is received, a maintainer will communicate directly with the reporter until it is resolved. Reporters concerned about the privacy or security of their e-mail communications may request GPG keys prior to communicating vulnerability details, which can be validated against public keyservers and the maintainer's public keys published on GitHub (`https://github.com/<USERNAME>.gpg`).
 
 ### Incident Response
 
