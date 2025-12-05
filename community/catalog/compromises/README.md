@@ -29,6 +29,9 @@ of compromise needs added, please include that as well.
 <!-- cSpell:disable -->
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
+| [Shai-Hulud](2025/shai-hulud.md) | 2025 | Attack Chaining | [1](https://www.cisa.gov/news-events/alerts/2025/09/23/widespread-supply-chain-compromise-impacting-npm-ecosystem) [2](https://socket.dev/blog/ongoing-supply-chain-attack-targets-crowdstrike-npm-packages) |
+| [npm phishing campaign](2025/qix.md) | 2025 | Social Engineering/Phishing Attack/Attack Chaining | [1](https://www.aikido.dev/blog/npm-debug-and-chalk-packages-compromised) |
+| [nullifAI](2025/nullifAI.md) | 2025 | Trust and Signing | [1](https://www.reversinglabs.com/blog/rl-identifies-malware-ml-model-hosted-on-hugging-face) |
 | [Solana Web3.js Code Injection](2024/solana_web3js.md) | 2024 | Social Engineering/Phishing Attack | [1](https://www.reversinglabs.com/blog/malware-found-in-solana-npm-library-with-50m-downloads) [2](https://x.com/0xMert_/status/1864069157257613719) |
 | [Polyfill.io Infrastructure Takeover Leading to Malware Distribution](2024/polyfill.md) | 2024 | Publishing Infrastructure | [1](https://sansec.io/research/polyfill-supply-chain-attack) |
 | [Malware Disguised as Installer used to target Korean Public Institution](2024/targeted-signed-endoor.md) | 2024 | Trust and Signing | [1](https://asec.ahnlab.com/en/63396/) |
