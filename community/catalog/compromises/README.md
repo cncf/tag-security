@@ -8,7 +8,7 @@ The goal is not to catalog every known supply chain attack, but rather to captur
 many examples of different kinds of attack, so that we can better understand the
 patterns and develop best practices and tools.
 
-For definitions of each compromise type, please check out our [compromise definitions page](community/catalog/compromises/compromise-definitions.md)
+For definitions of each compromise type, please check out our [compromise definitions page](compromise-definitions.md)
 
 We welcome additions to this catalog by [filing an
 issue](https://github.com/cncf/tag-security/issues/new/choose) or [github pull
@@ -29,6 +29,13 @@ of compromise needs added, please include that as well.
 <!-- cSpell:disable -->
 | Name              | Year               | Type of compromise    | Link        |
 | ----------------- | ------------------ | ------------------    | ----------- |
+| [Oracle Cloud SSO and Identity Infrastructure Compromise](2025/oracle-cloud.md) | 2025 | Publishing Infrastructure | [1](https://www.cloudsek.com/blog/the-biggest-supply-chain-hack-of-2025-6m-records-for-sale-exfiltrated-from-oracle-cloud-affecting-over-140k-tenants) |
+| [Widespread npm Ecosystem Compromise](2025/npm-ecosystem.md) | 2025 |  Malicious Maintainer | [1](https://www.paloaltonetworks.com/blog/cloud-security/npm-supply-chain-attack/) |
+| [Red Hat Consulting GitLab Instance Breach](2025/rh-gitlab-instance.md) | 2025 | Publishing Infrastructure | [1](https://www.redhat.com/en/blog/security-update-incident-related-red-hat-consulting-gitlab-instance) |
+| [The Nx s1ngularity Attack Leading to Credentials Leak](2025/nx-platform.md) | 2025 | Attack Chaining | [1](https://www.kaspersky.com/blog/nx-build-s1ngularity-supply-chain-attack/54223/) |
+| [The GhostAction Github Workflow Injection](2025/ghost-action.md) | 2025 | Publishing Infrastructure | [1](https://blog.gitguardian.com/ghostaction-campaign-3-325-secrets-stolen/) |
+| [reviewdog/action-setup@v1 GitHub Action Compromise](2025/review-dog.md)| 2025 | Publishing Infrastructure | [1](https://www.wiz.io/blog/new-github-action-supply-chain-attack-reviewdog-action-setup) |
+| [tj-actions/changed-files GitHub Action Compromise](2025/changed-files.md) | 2025 | Attack Chaining | [1](https://github.com/advisories/GHSA-mrrh-fwg8-r2c3/) |
 | [Solana Web3.js Code Injection](2024/solana_web3js.md) | 2024 | Social Engineering/Phishing Attack | [1](https://www.reversinglabs.com/blog/malware-found-in-solana-npm-library-with-50m-downloads) [2](https://x.com/0xMert_/status/1864069157257613719) |
 | [Polyfill.io Infrastructure Takeover Leading to Malware Distribution](2024/polyfill.md) | 2024 | Publishing Infrastructure | [1](https://sansec.io/research/polyfill-supply-chain-attack) |
 | [Malware Disguised as Installer used to target Korean Public Institution](2024/targeted-signed-endoor.md) | 2024 | Trust and Signing | [1](https://asec.ahnlab.com/en/63396/) |
@@ -68,7 +75,7 @@ of compromise needs added, please include that as well.
 | [NPM reverse shells and data mining](2020/nodejs.md) | 2020 | Dev Tooling | [1](https://www.bleepingcomputer.com/news/security/npm-nukes-nodejs-malware-opening-windows-linux-reverse-shells/) |
 | [Binaries of the CLI for `monero` compromised](2019/monero.md) | 2019 | Publishing Infrastructure | [1](https://web.getmonero.org/2019/11/19/warning-compromised-binaries.html), [2](https://github.com/monero-project/monero/issues/6151), [3](https://web.archive.org/web/20230630012925/https://old.reddit.com/r/Monero/comments/dyfozs/security_warning_cli_binaries_available_on/) |
 | [Webmin backdoor](2019/webmin-backdoor.md) | 2019 | Dev Tooling | [1](https://www.zdnet.com/article/backdoor-found-in-webmin-a-popular-web-based-utility-for-managing-unix-servers/), [2](http://www.webmin.com/exploit.html) |
-| [purescript-npm](2019/purescript-npm.md) | 2019 | Source Code | [1](https://www.npmjs.com/advisories/1082) and [2](https://www.npmjs.com/advisories/1082) |
+| [purescript-npm](2019/purescript-npm.md) | 2019 | Source Code | [1](https://github.com/advisories/GHSA-jxf5-7x3j-8j9m) |
 | [electron-native-notify](2019/electron-native-notify.md) | 2019 | Source Code | [1](https://blog.npmjs.org/post/185397814280/plot-to-steal-cryptocurrency-foiled-by-the-npm), [2](https://komodoplatform.com/update-agama-vulnerability/)|
 | [PyPI typosquatting](2019/pypi.md) | 2019 | Negligence | [1](https://blog.reversinglabs.com/blog/suppy-chain-malware-detecting-malware-in-package-manager-repositories) |
 | [ROS build farm compromise](2019/ros.md) | 2019 | Trust and Signing <br>Publishing Infrastructure</br> | [1](https://discourse.ros.org/t/security-issue-on-ros-build-farm/9342/8), [2](https://discourse.ros.org/t/new-gpg-keys-deployed-for-packages-ros-org/9454) |
@@ -87,8 +94,8 @@ of compromise needs added, please include that as well.
 | [HandBrake](2017/handbrake.md) | 2017 | Publishing Infrastructure | [1](https://blog.malwarebytes.com/threat-analysis/mac-threat-analysis/2017/05/handbrake-hacked-to-drop-new-variant-of-proton-malware/) |
 | [Kingslayer](2017/kingslayer.md) | 2017 | Publishing Infrastructure | [1](https://comsecglobal.com/kingslayer-a-supply-chain-attack/) |
 | [HackTask](2017/hacktask.md) | 2017 | Negligence | [1](https://securityintelligence.com/news/typosquatting-attack-puts-developers-at-risk-from-infected-javascript-packages/) |
-| [NotPetya](2017/notpetya.md) | 2017 | Attack Chaining | [1](https://www.welivesecurity.com/2017/07/04/analysis-of-telebots-cunning-backdoor/) |
-| [Bitcoin Gold](2017/bitcoingold.md) | 2017 | Source Code | [1](https://bitcoingold.org/critical-warning-nov-26/) |
+| [NotPetya](2017/notpetya.md) | 2017 | Attack Chaining | [1](https://www.wired.com/story/notpetya-cyberattack-ukraine-russia-code-crashed-the-world/) |
+| [Bitcoin Gold](2017/bitcoingold.md) | 2017 | Source Code | [1](https://www.investopedia.com/news/bitcoin-gold-hack-shows-51-attack-real/) |
 | [ExpensiveWall](2017/expensivewall.md) | 2017 | Dev Tooling | [1](https://blog.checkpoint.com/2017/09/14/expensivewall-dangerous-packed-malware-google-play-will-hit-wallet/), [2](https://research.checkpoint.com/expensivewall-dangerous-packed-malware-google-play-will-hit-wallet/) |
 | [OSX Elmedia player](2017/elmedia.md) | 2017 | Publishing infrastructure | [1](https://www.hackread.com/hackers-infect-mac-users-proton-malware-using-elmedia-player/) |
 | [GitHub password recovery issues](2016/gh-unicode.md) | 2016 | Dev Tool <br> Source Code </br> | [1](https://bounty.github.com/researchers/jagracey.html), [2](https://dev.to/jagracey/hacking-github-s-auth-with-unicode-s-turkish-dotless-i-460n) |
@@ -110,6 +117,6 @@ of compromise needs added, please include that as well.
 | [WordPress backdoor](2007/wordpress.md) | 2007 | Source Code <br> Publishing Infrastructure </br> | [1](https://lwn.net/Articles/224997/) |
 | [SquirrelMail backdoor](2007/squirrelmail.md) | 2007 | Source Code <br> Publishing Infrastructure | [1](https://lwn.net/Articles/262688/) |
 | [Linux Kernel CVS Repository Hack](2003/kernel-repository.md) | 2003 | Source Code <br> Dev Tooling | [1](https://lwn.net/Articles/57135/) |
-| [gentoo rsync compromise](2003/gentoo-rsync.md) | 2003 | Publishing Infrastructure | [1](https://archives.gentoo.org/gentoo-announce/message/7b0581416ddd91522c14513cb789f17a) |
+| [gentoo rsync compromise](2003/gentoo-rsync.md) | 2003 | Publishing Infrastructure | [1](https://www.zdnet.com/article/gentoo-linux-server-compromised/) |
 | [Debian infra compromise](2003/debian.md) | 2003 | Publishing infrastructure | [1](https://www.debian.org/News/2003/20031202) |
 | [Unix Support Group login backdoor](1975/login-bell.md) | 1975 | Dev Tooling | [1](https://niconiconi.neocities.org/posts/ken-thompson-really-did-launch-his-trusting-trust-trojan-attack-in-real-life/) |
