@@ -7,3 +7,4 @@ modified
 website/root/*
 !website/root/.gitkeep
 website/static/design/
+curriculum/ 
